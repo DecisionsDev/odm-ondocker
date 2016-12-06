@@ -1,0 +1,32 @@
+<server description="executionserver">
+	<!-- Enable features -->
+	<featureManager>
+		<feature>servlet-3.1</feature>
+		<feature>appSecurity-2.0</feature>
+		<feature>jsp-2.3</feature>
+		<feature>jdbc-4.1</feature>
+		<feature>ssl-1.0</feature>
+	</featureManager>
+	<!-- host="*" -->
+	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9080" httpsPort="9443" />
+	<!-- RES datasource -->
+	<library id="DerbyLib">
+   		 <fileset dir="${server.config.dir}/resources"/>
+	</library>
+	<jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
+	<dataSource id="jdbc/resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="DerbyJdbcDriver">
+		<properties databaseName="resdb" serverName="dbserver"
+					portNumber="1527" createDatabase="create" user="RES" password="RES" />
+	</dataSource>
+	<!-- Managed executor service for Decision Runner -->
+	<managedExecutorService jndiName="concurrent/drExecutorService"/>
+	
+	<!-- Logging -->
+	<logging traceSpecification="*=audit:ilog.rules.*=all:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
+	
+
+	<!-- RES console -->
+	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
+	</application>
+
+</server>

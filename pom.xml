@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ilog.rules.demo</groupId>
+    <artifactId>odm-docker-compose</artifactId>
+    <packaging>pom</packaging>
+    <name>odm-docker-compose</name>
+    <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>zip-source-code</id>
+                        <phase>process-test-resources</phase>
+                        <configuration>
+                            <tasks>
+                            	<delete file="odm-docker-compose.zip"/>
+                                <zip destfile="odm-docker-compose.zip"  >
+                                    <zipfileset dir="./" prefix="docker-compose">
+                                        <exclude name="**/target/**"/>
+                                        <exclude name=".idea/**"/>
+                                        <exclude name="src/**"/>
+                                        <exclude name=".*"/>
+                                        <exclude name="pom-local.xml"/>
+                                        <exclude name="docker-compose-ctc.yml"/>
+                                        <exclude name=".idea/**"/>
+                                        <exclude name=".git/**"/>
+                                        <exclude name="*.iml"/>
+                                    </zipfileset>
+                                    <zipfileset dir="src/main/resources/" includes=".dockerignore" />
+                                    <zipfileset dir="${project.basedir}/target/demo/" includes="README.html" prefix="docker-compose"/>
+                                </zip>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.ruleoftech</groupId>
+                <artifactId>markdown-page-generator-plugin</artifactId>
+                <version>0.10</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${basedir}/target/demo</outputDirectory>
+                    <inputEncoding>UTF-8</inputEncoding>
+                    <outputEncoding>ISO-8859-15</outputEncoding>
+                    <inputDirectory>${project.basedir}</inputDirectory>
+                    <headerHtmlFile>${project.basedir}/src/main/resources/markdown/html/header.html</headerHtmlFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

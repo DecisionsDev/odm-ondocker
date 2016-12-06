@@ -1,0 +1,67 @@
+version: '2'
+services:
+  dbserver:
+    build: 
+        context: ./
+        dockerfile: ./derby-server-db/Dockerfile
+    ports:
+    - 1527:1527
+    environment:
+    - SAMPLE=true
+
+  decisionserverconsole:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisionserverconsole/Dockerfile
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9080:9080
+    - 1883:1883
+
+  decisionrunner:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisionrunner/Dockerfile
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    - decisionserverconsole
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9070:9080
+
+  decisioncenter:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisioncenter/Dockerfile
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9060:9060
+    
+  decisionserverruntime:
+    build:
+      context: ../
+      dockerfile: ./docker-compose/decisionserverruntime/Dockerfile
+    links:
+    - dbserver
+    - decisionserverconsole
+    depends_on:
+    - dbserver
+    - decisionserverconsole
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9090:9080
+    - 9443

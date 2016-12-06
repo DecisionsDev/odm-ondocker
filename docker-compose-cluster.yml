@@ -1,0 +1,76 @@
+version: '2'
+services:
+  dbserver:
+    build: derby-server-db
+    volumes:
+    - ./:/opt/db-derby-10.12.1.1-bin
+    ports:
+    - 1527:1527
+    environment:
+    - SAMPLE=true
+    
+  # Decision Server Runtime Part 
+  decisionserverconsole:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisionserverconsole/Dockerfile
+    links:
+    - dbserver
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9080:9080
+    - 1883:1883
+
+  decisionserverruntime:
+    build:
+      context: ../
+      dockerfile: ./docker-compose/decisionserverruntime/Dockerfile
+    links:
+    - dbserver
+    - decisionserverconsole
+    environment:
+    - EXCLUDE_PORTS=9443
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9080
+    
+  decisionrunner:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisionrunner/Dockerfile
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    - decisionserverconsole
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9070:9080
+
+  decisioncenter:
+    build: 
+      context: ../
+      dockerfile: ./docker-compose/decisioncenter/Dockerfile
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9060:9060
+    
+
+  # The load balancer for the Runtime.
+  lb:
+    image: dockercloud/haproxy
+    links:
+    - decisionserverruntime
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 80:80
+    - 1936:1936
