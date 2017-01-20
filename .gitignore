@@ -1,0 +1,7 @@
+/target
+/.idea
+.jazzignore
+.dockerignore
+ds-ei-distrib-bundles.iml
+pom-local.xml
+docker-compose-ctc.yml
