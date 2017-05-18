@@ -250,6 +250,6 @@
 	    </application-bnd>
     </application>
 
-	<webContainer enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
+	<webContainer deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
 	<applicationMonitor updateTrigger="mbean" />
 </server>

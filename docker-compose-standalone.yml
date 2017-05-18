@@ -2,16 +2,14 @@ version: '2'
 services:
 
   standalone:
-    image: odmdocker/standalone:8.9.0
+    image: odmdocker/standalone:latest
     build: 
       context: ../
       dockerfile: ./docker-compose/standalone/Dockerfile
-    volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
     environment:
     - SAMPLE=true
     volumes:
     - ./:/config/dbdata/
     ports:
-    - 9080:9060
+    - 9060:9060
     
