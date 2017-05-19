@@ -17,9 +17,9 @@
                         <phase>process-test-resources</phase>
                         <configuration>
                             <tasks>
-                            	<delete file="odm-docker-compose.zip"/>
-                                <zip destfile="odm-docker-compose.zip"  >
-                                    <zipfileset dir="./" prefix="docker-compose">
+                            	<delete file="odm-ondocker.zip"/>
+                                <zip destfile="odm-ondocker.zip"  >
+                                    <zipfileset dir="./" prefix="odm-ondocker">
                                         <exclude name="**/target/**"/>
                                         <exclude name=".idea/**"/>
                                         <exclude name="src/**"/>
@@ -31,7 +31,7 @@
                                         <exclude name="*.iml"/>
                                     </zipfileset>
                                     <zipfileset dir="src/main/resources/" includes=".dockerignore" />
-                                    <zipfileset dir="${project.basedir}/target/demo/" includes="README.html" prefix="docker-compose"/>
+                                    <zipfileset dir="${project.basedir}/target/demo/" includes="README.html" prefix="odm-ondocker"/>
                                 </zip>
                             </tasks>
                         </configuration>

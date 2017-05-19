@@ -1,15 +1,16 @@
 FROM websphere-liberty:8.5.5.9-webProfile7
-
+ARG ODMDOCKERDIR
 MAINTAINER Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 ENV APP_NAME DecisionRunner
+ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/apps/extract
-COPY ./docker-compose/decisionrunner/script $SCRIPT
-COPY ./docker-compose/decisionrunner/server.xml /config/
-COPY ./docker-compose/dbdriver/derbyclient.jar /config/resources
+COPY $ODMDOCKERDIR/decisionrunner/script $SCRIPT
+COPY $ODMDOCKERDIR/decisionrunner/server.xml /config/
+COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
 
 RUN cd /config/apps/extract && \ 

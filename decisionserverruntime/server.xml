@@ -28,5 +28,5 @@
 	<!-- RES console -->
 	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
 	</application>
-
+    <webContainer deferServletLoad="false" />
 </server>

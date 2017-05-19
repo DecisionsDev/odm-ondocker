@@ -1,6 +1,7 @@
 FROM websphere-liberty:8.5.5.9-webProfile7
-
+ARG ODMDOCKERDIR
 MAINTAINER Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 RUN mkdir /config/resources && \
@@ -9,16 +10,16 @@ RUN mkdir /config/resources && \
 	mkdir -p /config/dbdata
 
 
-COPY ./docker-compose/standalone/server.xml /config/
-COPY ./docker-compose/dbdriver/derby-10*.jar /config/resources
-COPY ./docker-compose/standalone/script $SCRIPT
+COPY ${ODMDOCKERDIR}/standalone/server.xml /config/
+COPY ${ODMDOCKERDIR}/dbdriver/derby-10*.jar /config/resources
+COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
 ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
 RUN chmod -R a+x $SCRIPT
 
 # Sample DB 
-ADD ./docker-compose/derby-server-db/data.tar.gz /upload/
+ADD ${ODMDOCKERDIR}/derby-server-db/data.tar.gz /upload/
 
 # Decision Center
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
@@ -55,7 +56,7 @@ RUN mkdir -p /config/apps/extract && \
     cd /config/apps/DecisionRunner.war && \
     chmod -R a+x $SCRIPT
 RUN    perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
-
+VOLUME ["/config/dbdata/"]
 EXPOSE 9080
 
 CMD ["/script/runserver.sh"]

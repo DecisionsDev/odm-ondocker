@@ -1,15 +1,21 @@
 version: '2'
 services:
-
+  # This following property is defined in the .env file. It's allow to customize your docker images.
+  # ODMVERSION : The Operational Decision Management version
+  # ODMDOCKERDIR : The Directory where this 
   standalone:
-    image: odmdocker/standalone:latest
+    image: $PREFIXIMAGE/standalone:$ODMVERSION
     build: 
       context: ../
-      dockerfile: ./docker-compose/standalone/Dockerfile
+      dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
     environment:
     - SAMPLE=true
-    volumes:
-    - ./:/config/dbdata/
     ports:
     - 9060:9060
+    # Uncomment this line to persist your data. Note that on OSX you need to share this
+    # current directory in the Perference menu -> File Sharing menu.
+    #    volumes:
+    #    - ./:/config/dbdata/
     
