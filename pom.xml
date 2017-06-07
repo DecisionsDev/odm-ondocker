@@ -30,7 +30,12 @@
                                         <exclude name=".git/**"/>
                                         <exclude name="*.iml"/>
                                     </zipfileset>
-                                    <zipfileset dir="src/main/resources/" includes=".dockerignore" />
+                                    <zipfileset dir="src/main/resources/">
+                                        <include name=".dockerignore"/>
+                                    </zipfileset> 
+                                    <zipfileset dir="./" prefix="odm-ondocker">
+                                          <include name=".env"/>
+                                    </zipfileset>
                                     <zipfileset dir="${project.basedir}/target/demo/" includes="README.html" prefix="odm-ondocker"/>
                                 </zip>
                             </tasks>

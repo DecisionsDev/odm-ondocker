@@ -9,3 +9,5 @@
 !./docker-compose**
 !**/odm-docker
 !./odm-docker**
+!**/odm-ondocker
+!./odm-ondocker**
