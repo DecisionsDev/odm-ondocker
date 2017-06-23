@@ -12,7 +12,7 @@ It includes Docker files and Docker compose descriptors. Docker files are used t
 [IBM ODM](https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.0/welcome/kc_welcome_odmV.html) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
 
 
-![Flow](doc/images/Fig1.png)
+![Flow](docs/images/Fig1.png)
 
 In addition to this repository about ODM on Docker, there is a dedicated repository to deploy [ODM on Kubernetes](![Flow](images/ODMinKubernetes-DeploymentOverview.png)).
 ## Deploying ODM Rules in the following environments
