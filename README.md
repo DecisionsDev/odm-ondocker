@@ -1,6 +1,7 @@
 # IBM-ODM-Docker
-IBM Operational Decision Manager on Docker
+IBM Operational Decision Manager on Docker.
 
+ 
 [![Build Status](https://travis-ci.org/lgrateau/odm-ondocker.svg?branch=master)](https://travis-ci.org/lgrateau/odm-ondocker)
 
 
@@ -21,7 +22,9 @@ In addition to this repository about ODM on Docker, there is a dedicated reposit
 - [ODM Clustered Docker topology](docs/README_cluster.md): Explain how to build and instanciate one docker image per ODM Components with possibility to scale the number of container. (For Production purpose) 
  
 ## References
-
+- [ODM on Kubernetes](https://github.com/PierreFeillet/IBM-ODM-Kubernetes/?cm_mc_uid=48109996374214948388780&cm_mc_sid_50200000=1497520790).
+- [DevWorks article : Deploy an IBM Operational Decision Manager topology with Docker Compose ](https://www.ibm.com/developerworks/library/mw-1612-grateau-trs/1612-grateau.html)
+- [IBM Operational Decision Manager Developer Center](https://developer.ibm.com/odm/)
 # License
 [MIT](License.txt)
 
