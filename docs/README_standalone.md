@@ -1,14 +1,18 @@
 
-This part will show you how to start in Docker an ODM Standalone Docker container using Docker Compose.
+This part will show you how to build and start a Docker image that contain all the ODM component in one container.
 
-This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.7.0. 
+
+
+![Flow](images/ClusterFig01.png)
+
+This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.7.0. 
 
 First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
 ## Setup your environment
 
 ### ODM Installation.
-To create IBM ODM Docker images, you need to install one of the following parts of IBM ODM:         
+To create this IBM ODM Docker image, you need to install one of the following parts of IBM ODM:         
 * Decision Center (WebSphere Liberty Profile option)
 * Decision Server Rules (WebSphere Liberty Profile option)
 
@@ -54,12 +58,13 @@ Now you are ready to build and run the Docker images.
 Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
 
 ```
-docker-compose -f odm-standalone.yml up
+docker-compose -f odm-cluster.yml up
 ```
 
 This command creates one docker container with the following component:
 
 * Embedded Derby database
+* HA Proxy load balancer.
 * ODM Decision Server runtime.
 * ODM Decision Server console
 * ODM Business Console
@@ -76,9 +81,9 @@ You can access the application with this URLs:
 | [Decision Runner]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/testing> |resDeployer|resDeployer|
 | [Teamserver]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
 
+## Verify the Docker images
 
-You can check the containers status using the command:
-
+You can check the container status with the following command: 
 ```
-docker-compose ps
+ docker-compose ps
 ```
