@@ -7,7 +7,7 @@ This will save time for everyone._
 
 ## Understanding the Basics
 
-If you don't understand what a *pull request* is, or how to submit one, please refer to the [help documentation][]
+If you don't understand what a *pull request* is, or how to submit one, please refer to the [help documentation](https://help.github.com/articles/about-pull-requests/)
 provided by GitHub.
 
 ## Is It Really a Support Issue
@@ -24,7 +24,7 @@ enhancement, please open a new ticket before submitting your pull request.
 ## Discuss Non-Trivial Contributions with the Committers
 
 If your desired contribution is more than a non-trivial fix, you should discuss it on the
-[contributor's mailing list][ml-dev].  If you currently are not a member, you can request to be added.
+[contributor's mailing list](https://github.com/lgrateau/odm-ondocker/issues/11).  If you currently are not a member, you can request to be added.
 
 
 ## New features
@@ -101,8 +101,7 @@ slightly different.
 
 If the pull request changes the functional behaviour or is fixing a defect, the unit test cases should be modified to
 reflect this.  The committer reviewing your pull request is likely to request the appropriate changes in the test
-cases. The test case must be written using [Intern].
-
+cases. 
 It is expected that you will have tested your changes against the existing test cases and appropriate platforms prior to
 submitting your pull request.
 
@@ -246,8 +245,8 @@ request.
 
 [help documentation]: http://help.github.com/send-pull-requests
 [bug database]: ../../issues
-[ml-users]: TODO
-[ml-dev]: TODO
+[ml-users]: https://github.com/lgrateau/odm-ondocker/issues/11
+[ml-dev]: Thttps://github.com/lgrateau/odm-ondocker/issues/12
 [Creating a Pull Request]: https://help.github.com/articles/creating-a-pull-request
 [Fork a Repo]: https://help.github.com/articles/fork-a-repo
 [coding guidelines]: https://github.com/ibm-js/sdk/blob/master/GUIDELINES.md
