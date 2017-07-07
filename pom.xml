@@ -20,15 +20,19 @@
                             	<delete file="odm-ondocker.zip"/>
                                 <zip destfile="odm-ondocker.zip"  >
                                     <zipfileset dir="./" prefix="odm-ondocker">
-                                        <exclude name="**/target/**"/>
-                                        <exclude name=".idea/**"/>
-                                        <exclude name="src/**"/>
-                                        <exclude name=".*"/>
-                                        <exclude name="pom-local.xml"/>
-                                        <exclude name="docker-compose-ctc.yml"/>
-                                        <exclude name=".idea/**"/>
-                                        <exclude name=".git/**"/>
-                                        <exclude name="*.iml"/>
+                                        <include name="dbdriver/**"/>  
+                                        <include name="decisioncenter/**"/>
+                                        <include name="decisionrunner/**"/>  
+                                        <include name="decisionserverconsole/**"/>
+                                        <include name="decisionserverruntime/**"/>    
+                                        <include name="derby-server-db/**"/>
+                                        <include name="standalone/**"/>
+                                        <include name="README.md"/>
+                                        <include name="docs/**"/>  
+                                        <include name="LICENSE"/>                                            
+                                        <include name="odm-cluster.yml"/>  
+                                        <include name="odm-standalone.yml"/> 
+                                        <include name="docker-compose.yml"/>                                                  
                                     </zipfileset>
                                     <zipfileset dir="src/main/resources/">
                                         <include name=".dockerignore"/>
