@@ -33,5 +33,5 @@ For issues relating specifically to the Dockerfiles and scripts, please use the 
 
 
 # License
-[MIT](License.txt)
+[Apache 2.0](LICENSE)
 

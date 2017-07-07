@@ -107,7 +107,7 @@ submitting your pull request.
 
 ## Licensing
 
-All of your submissions are licensed under MIT License.
+All of your submissions are licensed under Apache 2.0 License.
 
 # Submitting a Pull Request
 
