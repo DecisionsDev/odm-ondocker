@@ -35,3 +35,5 @@ For issues relating specifically to the Dockerfiles and scripts, please use the 
 # License
 [Apache 2.0](LICENSE)
 
+# Notice
+© Copyright IBM Corporation 2017.
