@@ -245,11 +245,9 @@ request.
 
 [help documentation]: http://help.github.com/send-pull-requests
 [bug database]: ../../issues
-[ml-users]: https://github.com/lgrateau/odm-ondocker/issues/11
-[ml-dev]: Thttps://github.com/lgrateau/odm-ondocker/issues/12
+[ml-users]: mailto:odmdev_open_source_user@wwpdl.vnet.ibm.com
 [Creating a Pull Request]: https://help.github.com/articles/creating-a-pull-request
 [Fork a Repo]: https://help.github.com/articles/fork-a-repo
 [coding guidelines]: https://github.com/ibm-js/sdk/blob/master/GUIDELINES.md
-[Intern]: http://theintern.io/
 [interactive rebase]: http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages
 [rebasing]: http://git-scm.com/book/en/Git-Branching-Rebasing
