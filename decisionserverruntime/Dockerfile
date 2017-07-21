@@ -20,6 +20,6 @@ RUN cd /config/apps/extract && \
     mv extract DecisionService.war && \
     cd /config/apps/DecisionService.war && \
     chmod -R a+x $SCRIPT
-EXPOSE 9080
+EXPOSE 9080 9443
 
 CMD ["/script/runds.sh"]

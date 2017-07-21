@@ -18,6 +18,5 @@ RUN cd /config/apps/res.war && \
     chmod -R a+x $SCRIPT && \
     perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml 
 
-EXPOSE 9080
-
+EXPOSE 9080 9443 1883
 CMD ["/script/runds.sh"]

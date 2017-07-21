@@ -12,5 +12,5 @@ COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 
-EXPOSE 9060
+EXPOSE 9060 9443
 

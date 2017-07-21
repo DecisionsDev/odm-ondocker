@@ -23,6 +23,6 @@ RUN cd /config/apps/extract && \
     chmod -R a+x $SCRIPT
 RUN    perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
 
-EXPOSE 9080
+EXPOSE 9080 9443
 
 CMD ["/script/rundr.sh"]
