@@ -1,6 +1,8 @@
 FROM websphere-liberty:8.5.5.9-webProfile7
 ARG ODMDOCKERDIR
-MAINTAINER Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>" 
+MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME DecisionRunner
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV CONNECTION_POOL_SIZE 20
