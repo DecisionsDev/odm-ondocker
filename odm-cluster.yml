@@ -58,7 +58,7 @@ services:
     - 9070:9080
 
   decisioncenter:
-    image: $PREFIXIMAGE/decisionrunner:$ODMVERSION
+    image: $PREFIXIMAGE/decisioncenter:$ODMVERSION
     build: 
       context: ../
       dockerfile: ./$ODMDOCKERDIR/decisioncenter/Dockerfile
