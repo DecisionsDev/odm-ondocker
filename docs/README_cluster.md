@@ -84,7 +84,7 @@ You can access the application with this URLs:
 | [Decision Server Runtime](http://localhost/DecisionService) |<http://localhost/DecisionService> |N/A|N/A|
 | [Decision Center]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter/t/library> |rtsAdmin|rtsAdmin|
 | [Decision Runner]( http://localhost:9070/DecisionRunner) |  <http://localhost:9070/testing> |resDeployer|resDeployer|
-| [Teamserver]( http://localhost:9060/teamserver) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
+| [Teamserver]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |rtsAdmin|rtsAdmin|
 | [Load balancer stats](http://localhost:1936/) | <http://localhost:1936/> | stats | stats |
 
 
