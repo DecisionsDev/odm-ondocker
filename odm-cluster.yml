@@ -23,6 +23,8 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     links:
     - dbserver
+    environment:
+    - DECISION_SERVICE_URL=http://localhost/DecisionService
     ports:
     - 9080:9080
     - 1883:1883
