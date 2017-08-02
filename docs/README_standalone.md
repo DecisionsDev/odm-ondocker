@@ -28,9 +28,9 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 *installation_directory/executionserver/applicationservers/WLP855/DecisionRunner.war*
 
-### Clone the odm-ondocker code 
+### Clone the odm-ondocker code
 
-```git clone http://github.com/lgrateau/odm-ondocker/``` in the IBM ODM installation directory.
+```git clone https://github.com/ODMDev/odm-ondocker.git``` in the IBM ODM installation directory.
 
 ### Copy .dockerignore file
 
