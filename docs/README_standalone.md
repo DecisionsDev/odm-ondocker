@@ -1,5 +1,5 @@
 
-This part will show you how to build and start a Docker image that contain all the ODM components in one container.
+This part will show you how to build and start a Docker image that contains all the ODM components in one container.
 
 
 
@@ -61,7 +61,7 @@ Open a command prompt in the directory **installation_directory/odm-ondocker** a
 docker-compose -f odm-standalone.yml up
 ```
 
-This command creates one docker container with the following component:
+This command creates one docker container with the following components:
 
 * Embedded Derby database
 * HA Proxy load balancer
