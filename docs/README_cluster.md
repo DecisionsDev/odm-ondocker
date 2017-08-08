@@ -64,11 +64,10 @@ This command builds, creates, and runs six Docker containers:
 
 * Embedded Derby database
 * Load balancer high availability proxy server
-* ODM Decision Server runtime.
+* ODM Decision Server runtime
 * ODM Decision Server console
-* ODM Business Console
-* ODM Teamcenter.
-* ODM Decision Runner.
+* ODM Decision Center
+* ODM Decision Runner
 
 If the Docker container is not already built, Docker Compose builds it and runs it.
 
@@ -82,9 +81,9 @@ You can access the application with this URLs:
 |:-----:|:-----:|:-----:|:-----:|
 | [Decision Server Console](http://localhost:9080/res) | <http://localhost:9080/res> |resAdmin|resAdmin|
 | [Decision Server Runtime](http://localhost/DecisionService) |<http://localhost/DecisionService> |N/A|N/A|
-| [Decision Center]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter/t/library> |rtsAdmin|rtsAdmin|
-| [Decision Runner]( http://localhost:9070/DecisionRunner) |  <http://localhost:9070/testing> |resDeployer|resDeployer|
-| [Teamserver]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |rtsAdmin|rtsAdmin|
+| [Decision Center Business Console]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter> |rtsAdmin|rtsAdmin|
+| [Decision Center Enterprise Console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |rtsAdmin|rtsAdmin|
+| [Decision Runner]( http://localhost:9070/DecisionRunner) |  <http://localhost:9070/DecisionRunner> |resDeployer|resDeployer|
 | [Load balancer stats](http://localhost:1936/) | <http://localhost:1936/> | stats | stats |
 
 
