@@ -1,5 +1,5 @@
 
-This part will show you how to build and start a Docker image that contain all the ODM component in one container.
+This part will show you how to build and start a Docker image that contain all the ODM components in one container.
 
 
 
@@ -38,7 +38,7 @@ Copy the odm-ondocker/src/main/resources/.dockerignore file in your IBM ODM inst
 
 ```cp odm-ondocker/src/main/resources/.dockerignore ./```
 
-At the end of this steps you should have something like that : 
+At the end of these steps you should have something like : 
 
 ![Flow](images/Fig2.png)
 ### Verify that Docker Engine and Docker Compose are running.
@@ -52,24 +52,23 @@ Open a command prompt and run the following two operations:
     docker-compose version 1.8.1
   ```
 
-Now you are ready to build and run the Docker images.
+You are now ready to build and run the Docker images.
 
 ## Build and run the docker image
 Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
 
 ```
-docker-compose -f odm-cluster.yml up
+docker-compose -f odm-standalone.yml up
 ```
 
 This command creates one docker container with the following component:
 
 * Embedded Derby database
-* HA Proxy load balancer.
-* ODM Decision Server runtime.
+* HA Proxy load balancer
+* ODM Decision Server runtime
 * ODM Decision Server console
-* ODM Business Console
-* ODM Teamcenter.
-* ODM Decision Runner.
+* ODM Decision Center
+* ODM Decision Runner
 
 You can access the application with this URLs:
 
@@ -77,9 +76,9 @@ You can access the application with this URLs:
 |:-----:|:-----:|:-----:|:-----:|
 | [Decision Server Console](http://localhost:9080/res) | <http://localhost:9080/res> |resAdmin|resAdmin|
 | [Decision Server Runtime](http://localhost:9080/DecisionService) |<http://localhost:9080/DecisionService> |N/A|N/A|
-| [Decision Center]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/decisioncenter> |rtsAdmin|rtsAdmin|
-| [Decision Runner]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/testing> |resDeployer|resDeployer|
-| [Teamserver]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
+| [Decision Center Business Console]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/decisioncenter> |rtsAdmin|rtsAdmin|
+| [Decision Center Enterprise Console]( http://localhost:9080/teamserver) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
+| [Decision Runner]( http://localhost:9080/DecisionRunner) |  <http://localhost:9080/DecisionRunner> |resDeployer|resDeployer|
 
 ## Verify the Docker images
 
