@@ -1,0 +1,13 @@
+<server>
+	<!-- Decision Runner -->
+	<application type="war" id="DecisionRunner" name="DecisionRunner" context-root="/DecisionRunner" location="${server.config.dir}/apps/DecisionRunner.war">
+       <application-bnd>
+		<security-role name="resAdministrators">
+			<group name="resAdministrators" />
+		</security-role>
+		<security-role name="resDeployers">
+			<group name="resDeployers" />
+		</security-role>
+    </application-bnd>
+ </application>
+</server>
