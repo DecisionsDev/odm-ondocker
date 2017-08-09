@@ -8,6 +8,7 @@ RUN \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/resources
 COPY $ODMDOCKERDIR/decisionserverconsole/script $SCRIPT
+COPY $ODMDOCKERDIR/common/config/decisionserver /config
 COPY $ODMDOCKERDIR/decisionserverconsole/config /config
 ADD $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 RUN mkdir -p /config/apps/res.war

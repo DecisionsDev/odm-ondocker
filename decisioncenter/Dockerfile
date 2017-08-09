@@ -5,6 +5,7 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 RUN mkdir /config/resources
+COPY $ODMDOCKERDIR/common/config/decisioncenter /config
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 

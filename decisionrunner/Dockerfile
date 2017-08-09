@@ -11,6 +11,7 @@ RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/apps/extract
 COPY $ODMDOCKERDIR/decisionrunner/script $SCRIPT
+COPY $ODMDOCKERDIR/common/config/decisionserver /config
 COPY $ODMDOCKERDIR/decisionrunner/config /config
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/

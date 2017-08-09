@@ -1,4 +1,5 @@
 <server>
+  <!-- decision center datasource -->
   <library id="decisioncenter-libraries">
 		<fileset dir="${server.config.dir}/lib"
 			includes="commons-logging-1.1.jar" />
@@ -9,7 +10,7 @@
 	</library>
 
 	<jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
-  
+
 	<dataSource id="jdbc/resdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="DerbyJdbcDriver">
 		<properties databaseName="rtsdb" serverName="dbserver"
 					portNumber="1527" createDatabase="create" user="ilog" password="ilog" />
