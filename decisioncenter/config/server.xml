@@ -1,0 +1,24 @@
+<server description="teamserver">
+
+	<!-- feature manager -->
+	<include optional="true" location="./featureManager.xml"/>
+
+	<!-- datasource config -->
+	<include optional="true" location="./datasource.xml"/>
+
+	<!-- include web security config -->
+	<include optional="true" location="./webSecurity.xml"/>
+
+	<!-- include application declaration -->
+	<include optional="true" location="./application.xml"/>
+
+	<!-- http endpoint -->
+	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
+
+	<variable name="defaultHostName" value="localhost" />
+
+	<webContainer enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
+
+	<applicationMonitor updateTrigger="mbean" />
+
+</server>

@@ -1,0 +1,80 @@
+<server>
+  <!-- Web application security -->
+	<basicRegistry id="basic" realm="customRealm">
+		<user name="rtsAdmin" password="rtsAdmin"/>
+		<user name="rtsConfig" password="rtsConfig"/>
+		<user name="rtsUser1" password="rtsUser1"/>
+		<user name="rtsUser2" password="rtsUser2"/>
+		<user name="Eli" password="Eli"/>
+		<user name="Val" password="Val"/>
+		<user name="joe" password="helloworld"/>
+		<user name="jack" password="helloworld"/>
+		<user name="averell" password="helloworld"/>
+		<user name="william" password="helloworld"/>
+		<user name="billy" password="helloworld"/>
+		<user name="phil" password="helloworld"/>
+		<user name="Paul" password="Paul"/>
+		<user name="Bea" password="Bea"/>
+		<user name="Abu" password="Abu"/>
+		<user name="resAdmin" password="resAdmin"/>
+		<user name="resDeployer" password="resDeployer"/>
+		<user name="resMonitor" password="resMonitor"/>
+		<group name="rtsAdministrator">
+			<member name="rtsAdmin"/>
+			<member name="averell"/>
+		</group>
+		<group name="rtsInstaller">
+			<member name="rtsAdmin"/>
+		</group>
+		<group name="rtsConfigManager">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+		</group>
+		<group name="rtsUser">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+			<member name="rtsUser1"/>
+			<member name="rtsUser2"/>
+			<member name="Eli"/>
+			<member name="Val"/>
+			<member name="william"/>
+			<member name="billy"/>
+			<member name="joe"/>
+			<member name="jack"/>
+			<member name="phil"/>
+			<member name="Paul"/>
+			<member name="Bea"/>
+			<member name="Abu"/>
+		</group>
+		<group name="Eligibility">
+			<member name="Eli"/>
+			<member name="Val"/>
+		</group>
+		<group name="Validator">
+			<member name="Val"/>
+		</group>
+		<group name="mycompany_insurancerules_admin">
+			<member name="william"/>
+		</group>
+		<group name="mycompany_car_insurance_PM">
+			<member name="rtsUser1"/>
+			<member name="billy"/>
+			<member name="joe"/>
+		</group>
+		<group name="mycompany_home_insurance_PM">
+			<member name="billy"/>
+			<member name="jack"/>
+		</group>
+		<group name="mycompany_rule_experts">
+			<member name="billy"/>
+			<member name="phil"/>
+		</group>
+		<group name="ruleViewer">
+			<member name="rtsUser1"/>
+			<member name="joe"/>
+		</group>
+		<group name="ruleEditor">
+			<member name="jack"/>
+		</group>
+	</basicRegistry>
+</server>

@@ -1,0 +1,87 @@
+<server>
+	<!-- Team server -->
+	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
+		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
+		<application-bnd>
+			<security-role name="rtsAdministrator">
+				<group name="rtsAdministrator" />
+			</security-role>
+			<security-role name="rtsInstaller">
+				<group name="rtsInstaller" />
+			</security-role>
+			<security-role name="rtsConfigManager">
+				<group name="rtsConfigManager" />
+			</security-role>
+			<security-role name="rtsUser">
+				<group name="rtsUser" />
+			</security-role>
+			<security-role name="Eligibility">
+				<group name="Eligibility" />
+			</security-role>
+			<security-role name="Validator">
+				<group name="Validator" />
+			</security-role>
+			<security-role name="mycompany_insurancerules_admin">
+				<group name="mycompany_insurancerules_admin" />
+			</security-role>
+			<security-role name="mycompany_car_insurance_PM">
+				<group name="mycompany_car_insurance_PM" />
+			</security-role>
+			<security-role name="mycompany_home_insurance_PM">
+				<group name="mycompany_home_insurance_PM" />
+			</security-role>
+			<security-role name="mycompany_rule_experts">
+				<group name="mycompany_rule_experts" />
+			</security-role>
+			<security-role name="ruleViewer">
+				<group name="ruleViewer"/>
+			</security-role>
+			<security-role name="ruleEditor">
+				<group name="ruleEditor"/>
+			</security-role>
+		</application-bnd>
+	</application>
+
+	<!-- Decision Center -->
+	<application id="decisioncenter" location="${server.config.dir}/apps/decisioncenter.war" name="decisioncenter">
+		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
+		<application-bnd>
+			<security-role name="rtsAdministrator">
+				<group name="rtsAdministrator" />
+			</security-role>
+			<security-role name="rtsInstaller">
+				<group name="rtsInstaller" />
+			</security-role>
+			<security-role name="rtsConfigManager">
+				<group name="rtsConfigManager" />
+			</security-role>
+			<security-role name="rtsUser">
+				<group name="rtsUser" />
+			</security-role>
+			<security-role name="Eligibility">
+				<group name="Eligibility" />
+			</security-role>
+			<security-role name="Validator">
+				<group name="Validator" />
+			</security-role>
+			<security-role name="mycompany_insurancerules_admin">
+				<group name="mycompany_insurancerules_admin" />
+			</security-role>
+			<security-role name="mycompany_car_insurance_PM">
+				<group name="mycompany_car_insurance_PM" />
+			</security-role>
+			<security-role name="mycompany_home_insurance_PM">
+				<group name="mycompany_home_insurance_PM" />
+			</security-role>
+			<security-role name="mycompany_rule_experts">
+				<group name="mycompany_rule_experts" />
+			</security-role>
+			<security-role name="ruleViewer">
+				<group name="ruleViewer"/>
+			</security-role>
+			<security-role name="ruleEditor">
+				<group name="ruleEditor"/>
+			</security-role>
+		</application-bnd>
+	</application>
+</server>
