@@ -1,0 +1,39 @@
+<server description="teamserver">
+
+	<!-- feature manager -->
+	<include optional="true" location="./featureManager.xml"/>
+
+	<!-- Datasource and libraries -->
+	<include optional="true" location="./datasource.xml"/>
+
+	<!-- Web security -->
+	<include optional="true" location="./webSecurity.xml"/>
+
+	<!-- application declarations -->
+	<!-- Decision Center -->
+	<include optional="true" location="./decisioncenter_application.xml"/>
+
+	<!-- Decision Server console -->
+	<include optional="true" location="./decisionserverconsole_application.xml"/>
+
+	<!-- Decision Server Runtime -->
+	<include optional="true" location="./decisionserverruntime_application.xml"/>
+
+	<!-- Decsion Runner -->
+	<include optional="true" location="./decisionrunner_application.xml"/>
+
+	<!-- Managed executor service for Decision Runner -->
+	<managedExecutorService jndiName="concurrent/drExecutorService"/>
+
+	<variable name="defaultHostName" value="localhost" />
+
+	<!-- http endpoint -->
+	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
+
+	<!-- Logging -->
+	<logging traceSpecification="*=audit:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
+
+	<webContainer deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
+
+	<applicationMonitor updateTrigger="mbean" />
+</server>
