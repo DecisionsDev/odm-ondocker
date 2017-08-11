@@ -1,6 +1,6 @@
 <server>
   <!-- decision center datasource -->
-  <library id="decisioncenter-libraries">
+  <library id="decisioncenter-library">
 		<fileset dir="${server.config.dir}/lib"
 			includes="commons-logging-1.1.jar" />
 	</library>
