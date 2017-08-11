@@ -1,4 +1,4 @@
-FROM websphere-liberty:8.5.5.9-webProfile7
+FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 LABEL maintainer="Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com" 
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
