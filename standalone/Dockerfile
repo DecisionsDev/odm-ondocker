@@ -34,7 +34,8 @@ RUN cd /config/apps/res.war && \
     unzip ../res-file.war && \
     rm ../res-file.war && \
     chmod -R a+x $SCRIPT && \
-    perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml
+    perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml && \
+    perl -i -p0e 's/(<param-name>onDocker<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
