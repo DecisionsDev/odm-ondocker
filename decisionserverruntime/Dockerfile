@@ -12,6 +12,7 @@ RUN mkdir /config/resources && \
 COPY $ODMDOCKERDIR/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/decisionserver /config
 COPY $ODMDOCKERDIR/decisionserverruntime/config /config
+COPY $ODMDOCKERDIR/common/config/security /config/resources/security
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
 

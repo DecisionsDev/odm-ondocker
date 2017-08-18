@@ -7,6 +7,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 RUN mkdir /config/resources
 COPY $ODMDOCKERDIR/common/config/decisioncenter /config
 COPY $ODMDOCKERDIR/decisioncenter/config /config
+COPY $ODMDOCKERDIR/common/config/security /config/resources/security
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
