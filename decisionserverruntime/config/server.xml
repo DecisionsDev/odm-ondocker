@@ -22,4 +22,7 @@
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
 	<webContainer deferServletLoad="false" />
+	
+	<webAppSecurity useAuthenticationDataForUnprotectedResource="false" />
+	
 </server>
