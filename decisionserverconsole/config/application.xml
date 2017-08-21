@@ -1,0 +1,16 @@
+<server>
+	<!-- Decision Server Console -->
+	<application type="war" id="res" name="res" location="${server.config.dir}/apps/res.war">
+		<application-bnd>
+			<security-role name="resAdministrators">
+				<group name="resAdministrators" />
+			</security-role>
+			<security-role name="resDeployers">
+				<group name="resDeployers" />
+			</security-role>
+			<security-role name="resMonitors">
+				<group name="resMonitors" />
+			</security-role>
+		</application-bnd>
+	</application>
+</server>

@@ -1,6 +1,6 @@
-FROM websphere-liberty:8.5.5.9-webProfile7
+FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>" 
+LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 ENV APP_NAME DecisionService
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -10,11 +10,13 @@ RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/apps/extract
 COPY $ODMDOCKERDIR/decisionserverruntime/script $SCRIPT
-COPY $ODMDOCKERDIR/decisionserverruntime/server.xml /config/
+COPY $ODMDOCKERDIR/common/config/decisionserver /config
+COPY $ODMDOCKERDIR/decisionserverruntime/config /config
+COPY $ODMDOCKERDIR/common/config/security /config/resources/security
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
 
-RUN cd /config/apps/extract && \ 
+RUN cd /config/apps/extract && \
     unzip ../DecisionService.war && \
 	cd ../ && \
     rm -rf DecisionService.war && \
