@@ -10,6 +10,7 @@ RUN \
 COPY $ODMDOCKERDIR/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/decisionserver /config
 COPY $ODMDOCKERDIR/decisionserverconsole/config /config
+COPY $ODMDOCKERDIR/common/config/security /config/resources/security
 ADD $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 RUN mkdir -p /config/apps/res.war
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war

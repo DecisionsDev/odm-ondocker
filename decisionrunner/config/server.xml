@@ -3,6 +3,9 @@
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
+	<!-- http session config -->
+	<include optional="true" location="./httpSession.xml"/>
+
 	<!-- datasource config -->
 	<include optional="true" location="./datasource.xml"/>
 

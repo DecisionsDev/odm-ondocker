@@ -3,6 +3,9 @@
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
+	<!-- http session config -->
+	<include optional="true" location="./httpSession.xml"/>
+
 	<!-- datasource config -->
 	<include optional="true" location="./datasource.xml"/>
 
@@ -20,6 +23,9 @@
 
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
-	
+
 	<webContainer deferServletLoad="false" />
+	
+	<webAppSecurity useAuthenticationDataForUnprotectedResource="false" />
+	
 </server>
