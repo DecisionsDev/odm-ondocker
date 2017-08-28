@@ -2,7 +2,7 @@ version: '2'
 services:
   dbserver:
     image: $PREFIXIMAGE/dbserver:$ODMVERSION
-    build: 
+    build:
         context: ./
         dockerfile: ./derby-server-db/Dockerfile
     ports:
@@ -16,9 +16,9 @@ services:
 
   decisionserverconsole:
     image: $PREFIXIMAGE/decisionserverconsole:$ODMVERSION
-    build: 
+    build:
       context: ../
-      dockerfile: ./$ODMDOCKERDIR/decisionserverconsole/Dockerfile
+      dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     links:
@@ -31,7 +31,7 @@ services:
     image: $PREFIXIMAGE/decisionserverruntime:$ODMVERSION
     build:
       context: ../
-      dockerfile: ./$ODMDOCKERDIR/decisionserverruntime/Dockerfile
+      dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverruntime/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     links:
@@ -41,12 +41,12 @@ services:
     - EXCLUDE_PORTS=9443
     ports:
     - 9080
-    
+
   decisionrunner:
     image: $PREFIXIMAGE/decisionrunner:$ODMVERSION
-    build: 
+    build:
       context: ../
-      dockerfile: ./$ODMDOCKERDIR/decisionrunner/Dockerfile
+      dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionrunner/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     links:
@@ -58,8 +58,8 @@ services:
     - 9070:9080
 
   decisioncenter:
-    image: $PREFIXIMAGE/decisionrunner:$ODMVERSION
-    build: 
+    image: $PREFIXIMAGE/decisioncenter:$ODMVERSION
+    build:
       context: ../
       dockerfile: ./$ODMDOCKERDIR/decisioncenter/Dockerfile
       args:
@@ -70,7 +70,7 @@ services:
     - dbserver
     ports:
     - 9060:9060
-    
+
 
   # The load balancer for the Runtime.
   lb:

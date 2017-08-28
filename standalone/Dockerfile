@@ -12,13 +12,13 @@ RUN mkdir /config/resources && \
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
 RUN mv /config/application.xml /config/decisioncenter_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionrunner/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config
 RUN mv /config/application.xml /config/decisionrunner_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionserverconsole/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config
 RUN mv /config/application.xml /config/decisionserverconsole_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionserverruntime/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config
 RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 
 COPY ${ODMDOCKERDIR}/standalone/config /config

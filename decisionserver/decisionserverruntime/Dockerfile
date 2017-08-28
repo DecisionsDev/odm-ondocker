@@ -9,9 +9,10 @@ ENV SCRIPT /script
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/apps/extract
-COPY $ODMDOCKERDIR/decisionserverruntime/script $SCRIPT
-COPY $ODMDOCKERDIR/common/config/decisionserver /config
-COPY $ODMDOCKERDIR/decisionserverruntime/config /config
+
+COPY $ODMDOCKERDIR/decisionserver/config /config
+COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
+COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
 COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
