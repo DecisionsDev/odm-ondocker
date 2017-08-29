@@ -4,7 +4,7 @@ This part will show you how to start  an ODM Cluster Docker topology for develop
 
 ![Flow](images/ClusterFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.7.0. 
+This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.7.0.
 
 First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
@@ -33,17 +33,17 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 ### Copy .dockerignore file
 
-Copy the odm-ondocker/src/main/resources/.dockerignore file in your IBM ODM installation directory.
+Copy the odm-ondocker/resources/.dockerignore file in your IBM ODM installation directory.
 
-```cp odm-ondocker/src/main/resources/.dockerignore ./```
+```cp odm-ondocker/resources/.dockerignore ./```
 
-At the end of this steps you should have something like that : 
+At the end of this steps you should have something like that :
 
 ![Flow](images/Fig2.png)
 ### Verify that Docker Engine and Docker Compose are running.
 
 Open a command prompt and run the following two operations:    	
-  
+
   ```
     > docker -–version
     Docker version 1.12.3
@@ -71,7 +71,7 @@ This command builds, creates, and runs six Docker containers:
 
 If the Docker container is not already built, Docker Compose builds it and runs it.
 
-You could also start only one of the components. 
+You could also start only one of the components.
 
 For example: ```docker-compose -f odm-cluster.yml up decisioncenter``` starts the Decision Center and its dependencies, including the dbserver Derby Network server.
 
@@ -96,11 +96,11 @@ You should see two runtime environments attached to the Rule Execution Server co
 
 ## Verify the Docker images
 
-You can check the container status with the following command: 
+You can check the container status with the following command:
 ```
  docker-compose ps
 ```
- The following screen capture shows the list of running containers. 
+ The following screen capture shows the list of running containers.
 
 ![Flow](images/StandardFig02.png)
 
@@ -108,5 +108,5 @@ To check the clustered Decision Server topology, complete the following steps:
 
 * Open the Rule Execution Server console at http://localhost:9080/res (use the following user name and password: resAdmin / resAdmin )
 * Open the REST Test form at http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native
-* Click the Execute Request button twice. 
+* Click the Execute Request button twice.
 * Click the Server Info tab. You should see  execution units.

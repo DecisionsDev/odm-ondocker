@@ -32,13 +32,12 @@
                                         <include name="odm-standalone.yml"/>
                                         <include name="docker-compose.yml"/>
                                     </zipfileset>
-                                    <zipfileset dir="src/main/resources/">
+                                    <zipfileset dir="./resources">
                                         <include name=".dockerignore"/>
                                     </zipfileset>
                                     <zipfileset dir="./" prefix="odm-ondocker">
                                           <include name=".env"/>
                                     </zipfileset>
-                                    <zipfileset dir="${project.basedir}/target/demo/" includes="README.html" prefix="odm-ondocker"/>
                                 </zip>
                             </tasks>
                         </configuration>
@@ -47,26 +46,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.ruleoftech</groupId>
-                <artifactId>markdown-page-generator-plugin</artifactId>
-                <version>0.10</version>
-                <executions>
-                    <execution>
-                        <phase>process-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <outputDirectory>${basedir}/target/demo</outputDirectory>
-                    <inputEncoding>UTF-8</inputEncoding>
-                    <outputEncoding>ISO-8859-15</outputEncoding>
-                    <inputDirectory>${project.basedir}</inputDirectory>
-                    <headerHtmlFile>${project.basedir}/src/main/resources/markdown/html/header.html</headerHtmlFile>
-                </configuration>
             </plugin>
         </plugins>
     </build>
