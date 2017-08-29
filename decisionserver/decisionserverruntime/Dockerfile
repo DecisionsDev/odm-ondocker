@@ -14,7 +14,7 @@ COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
+COPY $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
 
 RUN cd /config/apps/extract && \

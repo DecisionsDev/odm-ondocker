@@ -10,12 +10,12 @@ ENV SCRIPT /script
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/apps/extract
-	
+
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
+COPY $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
 
 RUN cd /config/apps/extract && \

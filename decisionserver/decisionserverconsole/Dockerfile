@@ -7,12 +7,12 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 RUN \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/resources
-	
+
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-ADD $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
+ADD $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
 RUN mkdir -p /config/apps/res.war
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war
 RUN cd /config/apps/res.war && \

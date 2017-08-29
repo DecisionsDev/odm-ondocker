@@ -22,7 +22,7 @@ COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml
 RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 
 COPY ${ODMDOCKERDIR}/standalone/config /config
-COPY ${ODMDOCKERDIR}/dbdriver/derby-10*.jar /config/resources
+COPY ${ODMDOCKERDIR}/common/dbdriver/derby-10*.jar /config/resources
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
 ENV CONNECTION_POOL_SIZE 20

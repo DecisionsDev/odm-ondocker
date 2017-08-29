@@ -8,7 +8,7 @@ RUN mkdir /config/resources
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
+COPY $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
 
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
