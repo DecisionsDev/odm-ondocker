@@ -1,4 +1,8 @@
 <server>
+	<library id="decisioncenter-libraries">
+		<fileset dir="${server.config.dir}/lib" includes="commons-logging-1.1.jar" />
+	</library>
+	
 	<!-- Team server -->
 	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
 		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
@@ -14,30 +18,6 @@
 			</security-role>
 			<security-role name="rtsUser">
 				<group name="rtsUser" />
-			</security-role>
-			<security-role name="Eligibility">
-				<group name="Eligibility" />
-			</security-role>
-			<security-role name="Validator">
-				<group name="Validator" />
-			</security-role>
-			<security-role name="mycompany_insurancerules_admin">
-				<group name="mycompany_insurancerules_admin" />
-			</security-role>
-			<security-role name="mycompany_car_insurance_PM">
-				<group name="mycompany_car_insurance_PM" />
-			</security-role>
-			<security-role name="mycompany_home_insurance_PM">
-				<group name="mycompany_home_insurance_PM" />
-			</security-role>
-			<security-role name="mycompany_rule_experts">
-				<group name="mycompany_rule_experts" />
-			</security-role>
-			<security-role name="ruleViewer">
-				<group name="ruleViewer"/>
-			</security-role>
-			<security-role name="ruleEditor">
-				<group name="ruleEditor"/>
 			</security-role>
 		</application-bnd>
 	</application>
@@ -57,30 +37,6 @@
 			</security-role>
 			<security-role name="rtsUser">
 				<group name="rtsUser" />
-			</security-role>
-			<security-role name="Eligibility">
-				<group name="Eligibility" />
-			</security-role>
-			<security-role name="Validator">
-				<group name="Validator" />
-			</security-role>
-			<security-role name="mycompany_insurancerules_admin">
-				<group name="mycompany_insurancerules_admin" />
-			</security-role>
-			<security-role name="mycompany_car_insurance_PM">
-				<group name="mycompany_car_insurance_PM" />
-			</security-role>
-			<security-role name="mycompany_home_insurance_PM">
-				<group name="mycompany_home_insurance_PM" />
-			</security-role>
-			<security-role name="mycompany_rule_experts">
-				<group name="mycompany_rule_experts" />
-			</security-role>
-			<security-role name="ruleViewer">
-				<group name="ruleViewer"/>
-			</security-role>
-			<security-role name="ruleEditor">
-				<group name="ruleEditor"/>
 			</security-role>
 		</application-bnd>
 	</application>

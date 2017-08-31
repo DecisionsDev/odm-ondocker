@@ -7,23 +7,22 @@ ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
-	mkdir -p /config/apps/extract \
 	mkdir -p /config/dbdata
 
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
 RUN mv /config/application.xml /config/decisioncenter_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionrunner/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config
 RUN mv /config/application.xml /config/decisionrunner_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionserverconsole/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config
 RUN mv /config/application.xml /config/decisionserverconsole_application.xml
 
-COPY ${ODMDOCKERDIR}/decisionserverruntime/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config
 RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 
 COPY ${ODMDOCKERDIR}/standalone/config /config
-COPY ${ODMDOCKERDIR}/dbdriver/derby-10*.jar /config/resources
+COPY ${ODMDOCKERDIR}/common/dbdriver/derby-10*.jar /config/resources
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
 ENV CONNECTION_POOL_SIZE 20
@@ -37,6 +36,21 @@ ADD ${ODMDOCKERDIR}/derby-server-db/data.tar.gz /upload/
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
+RUN mkdir -p /config/apps/extract && \
+    cd /config/apps/extract && \
+    unzip ../decisioncenter.war && \
+    cd ../ && \
+    rm -rf decisioncenter.war && \
+    mv extract decisioncenter.war && \
+    mkdir -p /config/apps/extract && \
+    cd /config/apps/extract && \
+    unzip ../teamserver.war && \
+    cd ../ && \
+    rm -rf teamserver.war && \
+    mv extract teamserver.war && \
+    mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config && \
+    perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' /config/apps/decisioncenter.war/WEB-INF/web.xml
+COPY $ODMDOCKERDIR/standalone/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
 RUN mkdir -p /config/apps/res.war
@@ -50,7 +64,8 @@ RUN cd /config/apps/res.war && \
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
-RUN cd /config/apps/extract && \
+RUN mkdir -p /config/apps/extract && \
+    cd /config/apps/extract && \
     unzip ../DecisionService.war && \
 	cd ../ && \
     rm -rf DecisionService.war && \

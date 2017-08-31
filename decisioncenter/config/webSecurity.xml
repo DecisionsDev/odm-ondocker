@@ -1,0 +1,25 @@
+<server>
+  <!-- Web application security -->
+	<basicRegistry id="basic" realm="customRealm">
+		<user name="rtsAdmin" password="rtsAdmin"/>
+		<user name="rtsConfig" password="rtsConfig"/>
+		<user name="rtsUser1" password="rtsUser1"/>
+		<user name="rtsUser2" password="rtsUser2"/>
+		<group name="rtsAdministrator">
+			<member name="rtsAdmin"/>
+		</group>
+		<group name="rtsInstaller">
+			<member name="rtsAdmin"/>
+		</group>
+		<group name="rtsConfigManager">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+		</group>
+		<group name="rtsUser">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+			<member name="rtsUser1"/>
+			<member name="rtsUser2"/>
+		</group>
+	</basicRegistry>
+</server>

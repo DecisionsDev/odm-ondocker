@@ -1,3 +1,0 @@
-<server>
-	<httpSession useContextRootAsCookiePath="true" invalidateOnUnauthorizedSessionRequestException="true" />
-</server>

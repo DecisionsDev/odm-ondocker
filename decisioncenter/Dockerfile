@@ -5,13 +5,30 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 RUN mkdir /config/resources
-COPY $ODMDOCKERDIR/common/config/decisioncenter /config
+
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-COPY $ODMDOCKERDIR/dbdriver/derbyclient.jar /config/resources
+COPY $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
 
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
+
+RUN mkdir -p /config/apps/extract && \
+	cd /config/apps/extract && \
+    unzip ../decisioncenter.war && \
+	cd ../ && \
+    rm -rf decisioncenter.war && \
+    mv extract decisioncenter.war && \
+    mkdir -p /config/apps/extract && \
+	cd /config/apps/extract && \
+    unzip ../teamserver.war && \
+	cd ../ && \
+    rm -rf teamserver.war && \
+    mv extract teamserver.war && \
+	mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config && \
+	perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' /config/apps/decisioncenter.war/WEB-INF/web.xml
+
+COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 EXPOSE 9060 9443

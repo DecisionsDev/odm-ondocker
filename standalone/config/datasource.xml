@@ -1,9 +1,5 @@
 <server>
-  <!-- Decision Center Datasource -->
-	<library id="decisioncenter-libraries">
-		<fileset dir="${server.config.dir}/lib"
-			includes="commons-logging-1.1.jar" />
-	</library>
+  	<!-- Decision Center Datasource -->
 	<dataSource id="derbyEmbedded" isolationLevel="TRANSACTION_READ_COMMITTED" jndiName="jdbc/ilogDataSource">
 		<jdbcDriver>
 			<library name="derby-library">
