@@ -6,8 +6,8 @@
 !teamserver/applicationservers/WLP855/teamserver.war
 !teamserver/lib/commons-logging-1.1.jar
 !**/docker-compose
-!./docker-compose**
+!docker-compose**
 !**/odm-docker
-!./odm-docker**
+!odm-docker**
 !**/odm-ondocker
-!./odm-ondocker**
+!odm-ondocker**
