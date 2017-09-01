@@ -30,7 +30,7 @@ ENV SCRIPT /script
 RUN chmod -R a+x $SCRIPT
 
 # Sample DB
-ADD ${ODMDOCKERDIR}/derby-server-db/data.tar.gz /upload/
+ADD ${ODMDOCKERDIR}standalone/data.tar.gz /upload/
 
 # Decision Center
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
@@ -50,7 +50,7 @@ RUN mkdir -p /config/apps/extract && \
     mv extract teamserver.war && \
     mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config && \
     perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' /config/apps/decisioncenter.war/WEB-INF/web.xml
-COPY $ODMDOCKERDIR/standalone/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
 RUN mkdir -p /config/apps/res.war
