@@ -30,7 +30,7 @@ ENV SCRIPT /script
 RUN chmod -R a+x $SCRIPT
 
 # Sample DB
-ADD ${ODMDOCKERDIR}standalone/data.tar.gz /upload/
+ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
 # Decision Center
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
