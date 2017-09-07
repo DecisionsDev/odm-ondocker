@@ -5,7 +5,7 @@ This part will show you how to build and start a Docker image that contains all 
 
 ![Flow](images/StandaloneFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.7.0. 
+This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.7.0.
 
 First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
@@ -34,17 +34,17 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 ### Copy .dockerignore file
 
-Copy the odm-ondocker/src/main/resources/.dockerignore file in your IBM ODM installation directory.
+Copy the odm-ondocker/resources/.dockerignore file in your IBM ODM installation directory.
 
-```cp odm-ondocker/src/main/resources/.dockerignore ./```
+```cp odm-ondocker/resources/.dockerignore ./```
 
-At the end of these steps you should have something like : 
+At the end of these steps you should have something like :
 
 ![Flow](images/Fig2.png)
 ### Verify that Docker Engine and Docker Compose are running.
 
 Open a command prompt and run the following two operations:    	
-  
+
   ```
     > docker -–version
     Docker version 1.12.3
@@ -82,7 +82,7 @@ You can access the application with this URLs:
 
 ## Verify the Docker images
 
-You can check the container status with the following command: 
+You can check the container status with the following command:
 ```
  docker-compose ps
 ```
