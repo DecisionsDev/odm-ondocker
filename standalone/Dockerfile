@@ -22,8 +22,12 @@ COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml
 RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 
 COPY ${ODMDOCKERDIR}/standalone/config /config
-COPY ${ODMDOCKERDIR}/common/dbdriver/derby-10*.jar /config/resources
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
+
+# Begin - Configuration for the database
+ENV DRIVER_URL http://central.maven.org/maven2/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+RUN wget $DRIVER_URL && mv derby* /config/resources
+# End - Configuration for the database
 
 ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
