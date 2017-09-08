@@ -15,7 +15,7 @@ services:
     ports:
     - 9080:9060
     # Uncomment this line to persist your data. Note that on OSX you need to share this
-    # current directory in the Perference menu -> File Sharing menu.
+    # current directory in the Preference menu -> File Sharing menu.
     #    volumes:
     #    - ./:/config/dbdata/
     

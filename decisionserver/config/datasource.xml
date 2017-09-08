@@ -1,11 +1,31 @@
 <server>
+
   <!-- decision server datasource -->
-  <library id="DerbyLib">
-       <fileset dir="${server.config.dir}/resources"/>
+  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" 
+            transactional="true" type="javax.sql.ConnectionPoolDataSource">
+        <!--
+        <properties
+          databaseName='${cloud.services.mydb.connection.name}'
+          user='${cloud.services.mydb.connection.user}'
+          password='${cloud.services.mydb.connection.password}' 
+          portNumber='${cloud.services.mydb.connection.port}'
+          serverName='${cloud.services.mydb.connection.host}'/> 
+        -->
+        <properties
+          databaseName="odmdb"
+          user="odm"
+          password="odm"
+          portNumber="5432" 
+          serverName="dbserver" /> 
+  </dataSource>    
+
+  <jdbcDriver id="postgresql-driver" 
+            javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
+            javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"            
+            libraryRef="postgresql-library"/>  
+
+  <library id="postgresql-library">       
+	    <fileset id="postgresql-fileset"  dir="${server.config.dir}/resources" />   
   </library>
-  <jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
-  <dataSource id="jdbc/resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="DerbyJdbcDriver">
-    <properties databaseName="resdb" serverName="dbserver"
-          portNumber="1527" createDatabase="create" user="RES" password="RES" />
-  </dataSource>
+  
 </server>

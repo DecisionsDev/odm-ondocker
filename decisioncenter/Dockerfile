@@ -8,7 +8,16 @@ RUN mkdir /config/resources
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-COPY $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
+
+# Begin - Configuration for the database
+ARG DRIVER_URL
+ENV DRIVER_URL $DRIVER_URL
+
+RUN wget $DRIVER_URL && \
+    case $DRIVER_URL in \
+      *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
+      *postgresql* ) mv postgresql* /config/resources ;; esac
+# End - Configuration for the database
 
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/

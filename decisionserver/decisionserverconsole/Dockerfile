@@ -12,7 +12,17 @@ COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config/security /config/resources/security
-ADD $ODMDOCKERDIR/common/dbdriver/derbyclient.jar /config/resources
+
+# Begin - Configuration for the database
+ARG DRIVER_URL
+ENV DRIVER_URL $DRIVER_URL
+
+RUN wget $DRIVER_URL && \
+    case $DRIVER_URL in \
+      *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
+      *postgresql* ) mv postgresql* /config/resources ;; esac
+# End - Configuration for the database
+
 RUN mkdir -p /config/apps/res.war
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war
 RUN cd /config/apps/res.war && \

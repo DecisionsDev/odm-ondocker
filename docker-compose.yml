@@ -12,7 +12,7 @@ services:
     environment:
     - SAMPLE=true
    # Uncomment this line to persist your data. Note that on OSX you need to share this
-   # current directory in the Perference menu -> File Sharing menu.
+   # current directory in the Preference menu -> File Sharing menu.
    #    volumes:
    #    - ./:/opt/db-derby-10.12.1.1-bin
 
@@ -23,6 +23,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
     depends_on:
@@ -38,6 +39,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
     depends_on:
@@ -53,6 +55,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
     - decisionserverconsole
@@ -70,6 +73,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
     depends_on:
