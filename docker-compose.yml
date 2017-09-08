@@ -4,7 +4,7 @@ services:
     image: $PREFIXIMAGE/dbserver:$ODMVERSION
     build:
         context: ../
-        dockerfile: ./${ODMDOCKERDIR}/derby-server-db/Dockerfile
+        dockerfile: ./${ODMDOCKERDIR}/databases/derby/Dockerfile
         args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     ports:

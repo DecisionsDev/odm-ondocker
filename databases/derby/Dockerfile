@@ -24,8 +24,8 @@ apt-get update &&\
 	mkdir -p /upload &&\
 	rm -rf /var/lib/apt/lists/*
 
-ADD $ODMDOCKERDIR/derby-server-db/data.tar.gz /upload/
-COPY $ODMDOCKERDIR/derby-server-db/script/rundb.sh /db-derby-10.12.1.1-bin/bin/
+ADD $ODMDOCKERDIR/databases/derby/data.tar.gz /upload/
+COPY $ODMDOCKERDIR/databases/derby/script/rundb.sh /db-derby-10.12.1.1-bin/bin/
 RUN \
 	rm -Rf /etc/supervisor/supervisord.conf &&\
 	chmod a+x /db-derby-10.12.1.1-bin/bin/rundb.sh &&\
