@@ -14,7 +14,7 @@ RUN mkdir /config/resources && \
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
-COPY $ODMDOCKERDIR/common/config/security /config/resources/security
+COPY $ODMDOCKERDIR/common/security /config/resources/security
 
 # Begin - Configuration for the database
 ARG DRIVER_URL

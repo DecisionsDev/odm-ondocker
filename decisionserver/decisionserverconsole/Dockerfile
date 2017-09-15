@@ -11,7 +11,7 @@ RUN \
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
-COPY $ODMDOCKERDIR/common/config/security /config/resources/security
+COPY $ODMDOCKERDIR/common/security /config/resources/security
 
 # Begin - Configuration for the database
 ARG DRIVER_URL

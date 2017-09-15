@@ -7,7 +7,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 RUN mkdir /config/resources
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
-COPY $ODMDOCKERDIR/common/config/security /config/resources/security
+COPY $ODMDOCKERDIR/common/security /config/resources/security
 
 # Begin - Configuration for the database
 ARG DRIVER_URL
