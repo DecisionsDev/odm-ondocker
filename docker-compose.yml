@@ -42,6 +42,7 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
+    - decisionserverconsole
     depends_on:
     - dbserver
     - decisionserverconsole
