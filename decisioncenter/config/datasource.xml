@@ -1,8 +1,7 @@
 <server>
 
   <!-- decision center datasource -->	
-  <dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="postgresql-driver" 
-            transactional="true" type="javax.sql.ConnectionPoolDataSource">
+  <dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
         <!--
         <properties
           databaseName='${cloud.services.mydb.connection.name}'

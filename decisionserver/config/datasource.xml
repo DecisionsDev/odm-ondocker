@@ -1,8 +1,7 @@
 <server>
 
   <!-- decision server datasource -->
-  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" 
-            transactional="true" type="javax.sql.ConnectionPoolDataSource">
+  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
         <!--
         <properties
           databaseName='${cloud.services.mydb.connection.name}'
