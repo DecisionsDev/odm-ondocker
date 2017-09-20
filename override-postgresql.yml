@@ -4,10 +4,10 @@ services:
     build:
         dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
     environment:
-            POSTGRES_USER: odm
-            POSTGRES_PASSWORD: odm
-            POSTGRES_DB: odmdb
-            PGDATA: /pgdata
+      - POSTGRES_USER=odm
+      - POSTGRES_PASSWORD=odm
+      - POSTGRES_DB=odmdb
+      - PGDATA=/pgdata
     ports:
     - 5432:5432
 
