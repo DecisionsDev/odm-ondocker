@@ -16,6 +16,7 @@ ENV DRIVER_URL $DRIVER_URL
 RUN wget $DRIVER_URL && \
     case $DRIVER_URL in \
       *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
+      *mysql* ) mv mysql* /config/resources && mv /config/datasource-mysql.xml /config/datasource.xml ;; \
       *postgresql* ) mv postgresql* /config/resources ;; esac
 # End - Configuration for the database
 
