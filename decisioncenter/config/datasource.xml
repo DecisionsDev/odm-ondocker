@@ -15,7 +15,7 @@
           user="odm"
           password="odm"
           portNumber="5432"
-          serverName="odm-dbserver" /> 
+          serverName="dbserver" /> 
   </dataSource>
 
   <jdbcDriver id="postgresql-driver"

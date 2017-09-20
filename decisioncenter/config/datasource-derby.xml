@@ -7,7 +7,7 @@
 	<jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
 
 	<dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="DerbyJdbcDriver">
-		<properties.derby.client databaseName="rtsdb" serverName="odm-dbserver"
+		<properties.derby.client databaseName="rtsdb" serverName="dbserver"
 					portNumber="1527" createDatabase="create" user="ilog" password="ilog" />
 	</dataSource>
 </server>
