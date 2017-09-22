@@ -1,3 +1,18 @@
 language: java
-sudo: false
-script: mvn clean verify
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - mvn clean verify
+  - docker-compose build
+  - docker-compose up -d
+  - cd test/
+  - ./wait-for-url.sh http://localhost:9080/res
+  - ./wait-for-url.sh http://localhost:9090/DecisionService
+  - ./wait-for-url.sh http://localhost:9060/decisioncenter
+  - ./wait-for-url.sh http://localhost:9060/teamserver
+  - ./wait-for-url.sh http://localhost:9070/DecisionRunner
+  # - ./check-authentication.sh
