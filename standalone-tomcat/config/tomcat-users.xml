@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users>
+  <!-- Decision Center users and roles -->
+  <role rolename="rtsInstaller"/>
+  <role rolename="rtsAdministrator"/>
+  <role rolename="rtsConfigManager"/>
+  <role rolename="rtsUser"/>
+  
+  <user username="rtsUser1" password="rtsUser1" roles="rtsUser" />
+  <user username="rtsUser2" password="rtsUser2" roles="rtsUser" />
+  <user username="rtsAdmin" password="rtsAdmin" roles="rtsAdministrator,rtsInstaller" />
+  <user username="rtsConfig" password="rtsConfig" roles="rtsConfigManager" />
+  
+  <!-- Rule Execution users and roles  -->
+  <role rolename="resAdministrators"/>
+  <role rolename="resDeployers"/>
+  <role rolename="resMonitors"/>
+  <user username="resAdmin" password="resAdmin" roles="resAdministrators,resDeployers,resMonitors"/>
+  <user username="resDeployer" password="resDeployer" roles="resDeployers,resMonitors"/>
+  <user username="resMonitor" password="resMonitor" roles="resMonitors"/>
+</tomcat-users>

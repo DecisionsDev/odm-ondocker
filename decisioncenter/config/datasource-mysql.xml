@@ -1,0 +1,12 @@
+<server>
+  <!-- decision center datasource -->
+  <library id="MySQLLib">
+    <fileset dir="${server.config.dir}/resources"/>
+  </library>
+  
+  <jdbcDriver id="MySQLDriver" libraryRef="MySQLLib"/>
+  <dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="MySQLDriver">
+    <properties databaseName="odmdb" user="odm" password="odm" serverName="dbserver" portNumber="3306"/>
+  </dataSource>
+
+</server>

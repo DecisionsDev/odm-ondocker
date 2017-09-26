@@ -1,0 +1,32 @@
+version: '2'
+services:
+  dbserver:
+    build:
+        dockerfile: ./${ODMDOCKERDIR}/databases/mysql/Dockerfile
+    environment:
+      - MYSQL_ROOT_PASSWORD=odm
+      - MYSQL_DATABASE=odmdb
+      - MYSQL_USER=odm
+      - MYSQL_PASSWORD=odm
+    ports:
+    - 3306:3306
+
+  decisionserverconsole:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_MYSQL
+    
+  decisionrunner:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_MYSQL
+
+  decisionserverruntime:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_MYSQL
+
+  decisioncenter:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_MYSQL
