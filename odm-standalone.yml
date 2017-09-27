@@ -2,10 +2,10 @@ version: '2'
 services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
-  # ODMDOCKERDIR : The Directory where this 
+  # ODMDOCKERDIR : The Directory where this
   standalone:
-    image: $PREFIXIMAGE/standalone:$ODMVERSION
-    build: 
+    image: $REPOSITORY/$PREFIXIMAGE-standalone:$ODMVERSION
+    build:
       context: ../
       dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
       args:
@@ -18,4 +18,3 @@ services:
     # current directory in the Preference menu -> File Sharing menu.
     #    volumes:
     #    - ./:/config/dbdata/
-    

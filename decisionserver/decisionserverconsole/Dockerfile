@@ -11,7 +11,7 @@ RUN \
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
-COPY $ODMDOCKERDIR/common/config/security /config/resources/security
+COPY $ODMDOCKERDIR/common/security /config/resources/security
 
 # Begin - Configuration for the database
 ARG DRIVER_URL
@@ -20,6 +20,7 @@ ENV DRIVER_URL $DRIVER_URL
 RUN wget $DRIVER_URL && \
     case $DRIVER_URL in \
       *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
+      *mysql* ) mv mysql* /config/resources && mv /config/datasource-mysql.xml /config/datasource.xml ;; \
       *postgresql* ) mv postgresql* /config/resources ;; esac
 # End - Configuration for the database
 

@@ -1,7 +1,7 @@
 version: '2'
 services:
   dbserver:
-    image: $PREFIXIMAGE/dbserver:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-dbserver:$ODMVERSION
     build:
         context: ../
         dockerfile: ./${ODMDOCKERDIR}/databases/derby/Dockerfile
@@ -17,7 +17,7 @@ services:
    #    - ./:/opt/db-derby-10.12.1.1-bin
 
   decisionserverconsole:
-    image: $PREFIXIMAGE/decisionserverconsole:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
     build:
       context: ../
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
@@ -33,7 +33,7 @@ services:
     - 1883:1883
 
   decisionrunner:
-    image: $PREFIXIMAGE/decisionrunner:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
       context: ../
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
@@ -42,6 +42,7 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
+    - decisionserverconsole
     depends_on:
     - dbserver
     - decisionserverconsole
@@ -49,7 +50,7 @@ services:
     - 9070:9080
 
   decisionserverruntime:
-    image: $PREFIXIMAGE/decisionserverruntime:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
     build:
       context: ../
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
@@ -67,7 +68,7 @@ services:
     - 9443
 
   decisioncenter:
-    image: $PREFIXIMAGE/decisioncenter:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
     build:
       context: ../
       dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
