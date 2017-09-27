@@ -4,7 +4,7 @@ This part will show you how to start  an ODM Cluster Docker topology for develop
 
 ![Flow](images/ClusterFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.7.0.
+This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.8.x.
 
 First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
