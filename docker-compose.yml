@@ -1,7 +1,7 @@
 version: '2'
 services:
   dbserver:
-    image: $REPOSITORY/$PREFIXIMAGE-dbserver:$ODMVERSION
+    image: $REPOSITORY/dbserver:$ODMVERSION
     build:
         context: ../
         dockerfile: ./${ODMDOCKERDIR}/databases/derby/Dockerfile
