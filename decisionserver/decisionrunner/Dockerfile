@@ -39,7 +39,7 @@ RUN cd /config/apps/extract && \
     chmod -R a+x $SCRIPT
 RUN perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml && \
     perl -i -p0e 's/(<param-name>RES_URL<\/param-name>.*?)(<param-value\/>)/\1<param-value><\/param-value>/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml && \
-    perl -i -p0e 's/(<param-name>RES_URL<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1http:\/\/decisionserverconsole:9080\/res\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+    perl -i -p0e 's/(<param-name>RES_URL<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1http:\/\/odm-decisionserverconsole:9080\/res\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
 
 EXPOSE 9080 9443
 
