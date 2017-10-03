@@ -8,10 +8,16 @@ if [ ! -f /config/initialized.flag ] ; then
 	touch /config/initialized.flag
 fi;
 
-if [ -n "$COM_IBM_RULES_METERING_ENABLE" ]
-then
+
+if [ -n "$DBSERVER_NAME" ] 
+then 
+	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
+fi;
+
+if [ -n "$COM_IBM_RULES_METERING_ENABLE" ] 
+then 
 	cd  /config/apps/DecisionService.war/WEB-INF/classes;
 	sed -i 's/{pluginClass=HTDS}/{pluginClass=Metering,enable=true},{pluginClass=DVS},{pluginClass=HTDS}/g' 	ra.xml
-fi
+fi;
 
 /opt/ibm/docker/docker-server run defaultServer

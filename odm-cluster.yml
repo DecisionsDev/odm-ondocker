@@ -16,7 +16,7 @@ services:
     #    volumes:
     #    - ./:/opt/db-derby-10.12.1.1-bin
 
-  decisionserverconsole:
+  odm-decisionserverconsole:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
     build:
       context: ../
@@ -32,7 +32,7 @@ services:
     - 9080:9080
     - 1883:1883
 
-  decisionserverruntime:
+  odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
     build:
       context: ../
@@ -42,13 +42,13 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     environment:
     - EXCLUDE_PORTS=9443
     ports:
     - 9080
 
-  decisionrunner:
+  odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
       context: ../
@@ -58,14 +58,14 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     depends_on:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     ports:
     - 9070:9080
 
-  decisioncenter:
+  odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
     build:
       context: ../
@@ -84,7 +84,7 @@ services:
   lb:
     image: dockercloud/haproxy
     links:
-    - decisionserverruntime
+    - odm-decisionserverruntime
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     ports:
