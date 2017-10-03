@@ -10,13 +10,13 @@ services:
     ports:
     - 1527:1527
     environment:
-    - SAMPLE=true
+      - SAMPLE=true
    # Uncomment this line to persist your data. Note that on OSX you need to share this
    # current directory in the Preference menu -> File Sharing menu.
    #    volumes:
    #    - ./:/opt/db-derby-10.12.1.1-bin
 
-  decisionserverconsole:
+  odm-decisionserverconsole:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
     build:
       context: ../
@@ -31,8 +31,10 @@ services:
     ports:
     - 9080:9080
     - 1883:1883
+   # environment:
+   # - DBSERVER_NAME=dbserver
 
-  decisionrunner:
+  odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
       context: ../
@@ -42,14 +44,14 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     depends_on:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     ports:
     - 9070:9080
 
-  decisionserverruntime:
+  odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
     build:
       context: ../
@@ -59,15 +61,15 @@ services:
         - DRIVER_URL=$DRIVER_URL_DERBY
     links:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     depends_on:
     - dbserver
-    - decisionserverconsole
+    - odm-decisionserverconsole
     ports:
     - 9090:9080
     - 9443
 
-  decisioncenter:
+  odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
     build:
       context: ../
