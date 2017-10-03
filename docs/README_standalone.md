@@ -5,7 +5,7 @@ This part will show you how to build and start a Docker image that contains all 
 
 ![Flow](images/StandaloneFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.7.0.
+This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.8.x.
 
 First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
