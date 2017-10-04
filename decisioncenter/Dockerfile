@@ -13,7 +13,7 @@ COPY $ODMDOCKERDIR/common/security /config/resources/security
 ARG DRIVER_URL
 ENV DRIVER_URL $DRIVER_URL
 
-RUN wget $DRIVER_URL && \
+RUN wget -nv $DRIVER_URL && \
     case $DRIVER_URL in \
       *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
       *mysql* ) mv mysql* /config/resources && mv /config/datasource-mysql.xml /config/datasource.xml ;; \
@@ -26,13 +26,13 @@ COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 
 RUN mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
-    unzip ../decisioncenter.war && \
+    unzip -q ../decisioncenter.war && \
 	cd ../ && \
     rm -rf decisioncenter.war && \
     mv extract decisioncenter.war && \
     mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
-    unzip ../teamserver.war && \
+    unzip -q ../teamserver.war && \
 	cd ../ && \
     rm -rf teamserver.war && \
     mv extract teamserver.war && \
