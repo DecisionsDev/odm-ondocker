@@ -16,7 +16,7 @@ else
 fi
 
 echo "unzipp odm distribution..."
-unzip $HOME/.cache/$ODM_FILE_NAME -d .
+unzip -q $HOME/.cache/$ODM_FILE_NAME -d .
 
 echo "copy odm-ondocker into ODM distribution..."
 cp -R odm-ondocker install
