@@ -4,11 +4,13 @@ LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRA
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-RUN mkdir /config/resources
+ENV SCRIPT /script
+RUN mkdir /config/resources && \
+  mkdir -p $SCRIPT
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/security /config/resources/security
-
+COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 # Begin - Configuration for the database
 ARG DRIVER_URL
 ENV DRIVER_URL $DRIVER_URL
@@ -36,9 +38,13 @@ RUN mkdir -p /config/apps/extract && \
 	cd ../ && \
     rm -rf teamserver.war && \
     mv extract teamserver.war && \
+    chmod -R a+x $SCRIPT && \
 	mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config && \
 	perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' /config/apps/decisioncenter.war/WEB-INF/web.xml
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 EXPOSE 9060 9443
+
+
+CMD ["/script/rundc.sh"]
