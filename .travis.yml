@@ -28,9 +28,17 @@ script:
   - ./build.sh
   - docker-compose up -d
   - cd test/
+  - chmod +x check-for-docker-url.sh
   - ./wait-for-url.sh http://localhost:9070/DecisionRunner
   - ./wait-for-url.sh http://localhost:9090/DecisionService
   - ./wait-for-url.sh http://localhost:9060/decisioncenter
   - ./wait-for-url.sh http://localhost:9060/teamserver
   - ./wait-for-url.sh http://localhost:9080/res
-  # - ./check-authentication.sh
+  - ./check-for-docker-url.sh odmondocker_decisionrunner_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_decisionserverruntime_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_decisionserverconsole_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        decisionrunner
+  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        decisionserverconsole
+  - ./check-for-docker-url.sh odmondocker_decisionserverruntime_1 decisionserverconsole
+  - cd ../
