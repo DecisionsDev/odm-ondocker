@@ -32,11 +32,11 @@ script:
   - ./wait-for-url.sh http://localhost:9060/decisioncenter
   - ./wait-for-url.sh http://localhost:9060/teamserver
   - ./wait-for-url.sh http://localhost:9080/res
-  - ./check-for-docker-url.sh odmondocker_decisionrunner_1        dbserver
-  - ./check-for-docker-url.sh odmondocker_decisionserverruntime_1 dbserver
-  - ./check-for-docker-url.sh odmondocker_decisionserverconsole_1 dbserver
-  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        dbserver
-  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        decisionrunner
-  - ./check-for-docker-url.sh odmondocker_decisioncenter_1        decisionserverconsole
-  - ./check-for-docker-url.sh odmondocker_decisionserverruntime_1 decisionserverconsole
+  - ./check-for-docker-url.sh odmondocker_odm-decisionrunner_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverconsole_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        decisionrunner
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        decisionserverconsole
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 decisionserverconsole
   - cd ../
