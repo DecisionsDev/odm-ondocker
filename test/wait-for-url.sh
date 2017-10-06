@@ -10,7 +10,7 @@ until $(curl --connect-timeout 180 --output /dev/null --silent --head --fail $1)
         exit 1
     fi
     printf '.'
-    sleep 10
+    sleep 15
 done
 
 printf "OK"
