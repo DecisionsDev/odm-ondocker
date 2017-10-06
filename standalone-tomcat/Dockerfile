@@ -15,7 +15,7 @@ RUN chmod -R a+x $SCRIPT
 # Begin - Configuration for the database
 ENV DERBY_URL http://www-eu.apache.org/dist//db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
 ENV DERBY_FOLDER db-derby-10.12.1.1-bin
-RUN wget $DERBY_URL && \
+RUN wget -nv $DERBY_URL && \
     tar xzf ${DERBY_FOLDER}.tar.gz && \
     rm -rf ${DERBY_FOLDER}.tar.gz && \ 
     cp ${DERBY_FOLDER}/lib/derby.jar ${CATALINA_HOME}/lib && \
@@ -38,13 +38,13 @@ COPY ./teamserver/applicationservers/tomcat8/teamserver.war ${CATALINA_HOME}/web
 COPY ./teamserver/applicationservers/tomcat8/decisioncenter.war ${CATALINA_HOME}/webapps/
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ${CATALINA_HOME}/webapps/extract && \
-    unzip ../teamserver.war && \
+    unzip -q ../teamserver.war && \
     cd ../ && \
     rm -rf teamserver.war && \
     mv extract teamserver && \
     mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ${CATALINA_HOME}/webapps/extract && \
-    unzip ../decisioncenter.war && \
+    unzip -q ../decisioncenter.war && \
     cd ../ && \
     rm -rf decisioncenter.war && \
     mv extract decisioncenter && \
@@ -56,7 +56,7 @@ COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties $
 COPY ./executionserver/applicationservers/tomcat8/res.war ${CATALINA_HOME}/webapps/
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ${CATALINA_HOME}/webapps/extract && \
-    unzip ../res.war && \
+    unzip -q ../res.war && \
     cd ../ && \
     rm -rf res.war && \
     mv extract res && \
@@ -67,7 +67,7 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
 COPY ./executionserver/applicationservers/tomcat8/DecisionService.war ${CATALINA_HOME}/webapps
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ${CATALINA_HOME}/webapps/extract && \
-    unzip ../DecisionService.war && \
+    unzip -q ../DecisionService.war && \
     cd ../ && \
     rm -rf DecisionService.war && \
     mv extract DecisionService
@@ -76,7 +76,7 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
 COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war ${CATALINA_HOME}/webapps
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ${CATALINA_HOME}/webapps/extract && \
-    unzip ../DecisionRunner.war && \
+    unzip -q ../DecisionRunner.war && \
 	cd ../ && \
     rm -rf DecisionRunner.war && \
     mv extract DecisionRunner && \

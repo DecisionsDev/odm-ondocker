@@ -26,7 +26,7 @@ COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
 # Begin - Configuration for the database
 ENV DRIVER_URL http://central.maven.org/maven2/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
-RUN wget $DRIVER_URL && mv derby* /config/resources
+RUN wget -nv $DRIVER_URL && mv derby* /config/resources
 # End - Configuration for the database
 
 ENV CONNECTION_POOL_SIZE 20
@@ -42,13 +42,13 @@ COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 RUN mkdir -p /config/apps/extract && \
     cd /config/apps/extract && \
-    unzip ../decisioncenter.war && \
+    unzip -q ../decisioncenter.war && \
     cd ../ && \
     rm -rf decisioncenter.war && \
     mv extract decisioncenter.war && \
     mkdir -p /config/apps/extract && \
     cd /config/apps/extract && \
-    unzip ../teamserver.war && \
+    unzip -q ../teamserver.war && \
     cd ../ && \
     rm -rf teamserver.war && \
     mv extract teamserver.war && \
@@ -60,7 +60,7 @@ COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties /config/
 RUN mkdir -p /config/apps/res.war
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war
 RUN cd /config/apps/res.war && \
-    unzip ../res-file.war && \
+    unzip -q ../res-file.war && \
     rm ../res-file.war && \
     chmod -R a+x $SCRIPT && \
     perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml && \
@@ -70,7 +70,7 @@ RUN cd /config/apps/res.war && \
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
 RUN mkdir -p /config/apps/extract && \
     cd /config/apps/extract && \
-    unzip ../DecisionService.war && \
+    unzip -q ../DecisionService.war && \
 	cd ../ && \
     rm -rf DecisionService.war && \
     mv extract DecisionService.war && \
@@ -80,7 +80,7 @@ RUN mkdir -p /config/apps/extract && \
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
 RUN mkdir -p /config/apps/extract && \
     cd /config/apps/extract && \
-    unzip ../DecisionRunner.war && \
+    unzip -q ../DecisionRunner.war && \
 	cd ../ && \
     rm -rf DecisionRunner.war && \
     mv extract DecisionRunner.war && \
