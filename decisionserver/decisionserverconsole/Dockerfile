@@ -17,7 +17,7 @@ COPY $ODMDOCKERDIR/common/security /config/resources/security
 ARG DRIVER_URL
 ENV DRIVER_URL $DRIVER_URL
 
-RUN wget $DRIVER_URL && \
+RUN wget -nv $DRIVER_URL && \
     case $DRIVER_URL in \
       *derby* ) mv derby* /config/resources && mv /config/datasource-derby.xml /config/datasource.xml ;; \
       *mysql* ) mv mysql* /config/resources && mv /config/datasource-mysql.xml /config/datasource.xml ;; \
@@ -27,7 +27,7 @@ RUN wget $DRIVER_URL && \
 RUN mkdir -p /config/apps/res.war
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war
 RUN cd /config/apps/res.war && \
-    unzip ../res-file.war && \
+    unzip -q ../res-file.war && \
     rm ../res-file.war && \
     sed -i 's/<param-value>jmx<\/param-value>/<param-value>tcpip<\/param-value>/g' /config/apps/res.war/WEB-INF/web.xml && \
     chmod -R a+x $SCRIPT && \

@@ -8,4 +8,8 @@ if [ ! -f /config/initialized.flag ] ; then
 	touch /config/initialized.flag
 fi;
 
+if [ -n "$DBSERVER_NAME" ] 
+then 
+	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
+fi
 /opt/ibm/docker/docker-server run defaultServer

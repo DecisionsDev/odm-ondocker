@@ -1,12 +1,12 @@
-# Pull base image. 
+# Pull base image.
 FROM java:7
 ARG ODMDOCKERDIR
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>" 
+LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
 # Retrieve Recent zip file from H2 site
-ENV DERBY_INSTALL=/db-derby-10.12.1.1-bin 
-ENV DERBY_HOME=/db-derby-10.12.1.1-bin 
+ENV DERBY_INSTALL=/db-derby-10.12.1.1-bin
+ENV DERBY_HOME=/db-derby-10.12.1.1-bin
 ENV CLASSPATH=/$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:.
 ENV DOWNLOAD http://wwwftp.ciril.fr/pub/apache//db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
 ENV DERBY_INSTALL=/opt/db-derby-10.12.1.1-bin
@@ -16,7 +16,7 @@ ENV CLASSPATH=/$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:.
 RUN \
 apt-get update &&\
 	apt-get install -y  wget supervisor   &&\
-	wget $DOWNLOAD &&\
+	wget -nv $DOWNLOAD &&\
 	tar xzf db-derby-10.12.1.1-bin.tar.gz &&\
 	rm -Rf /db-derby-10.12.1.1-bin.tar.gz &&\
 	mkdir -p /dbs &&\
