@@ -1,3 +1,9 @@
+language: java
+
+cache:
+  directories:
+    - $HOME/.cache
+
 sudo: required
 
 services:
@@ -7,6 +13,7 @@ env:
   - DOCKER_COMPOSE_VERSION=1.8.1
 
 before_install:
+  - mkdir -p $HOME/.cache
   - sudo rm /usr/local/bin/docker-compose
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
@@ -17,3 +24,19 @@ before_install:
 script:
   - chmod +x build.sh
   - ./build.sh
+  - docker-compose up -d
+  - cd test/
+  - chmod +x check-for-docker-url.sh
+  - ./wait-for-url.sh http://localhost:9070/DecisionRunner
+  - ./wait-for-url.sh http://localhost:9090/DecisionService
+  - ./wait-for-url.sh http://localhost:9060/decisioncenter
+  - ./wait-for-url.sh http://localhost:9060/teamserver
+  - ./wait-for-url.sh http://localhost:9080/res
+  - ./check-for-docker-url.sh odmondocker_odm-decisionrunner_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverconsole_1 dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        dbserver
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        odm-decisionrunner
+  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        odm-decisionserverconsole
+  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 odm-decisionserverconsole
+  - cd ../
