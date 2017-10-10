@@ -3,8 +3,8 @@ services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this 
-  standalone:
-    image: $PREFIXIMAGE/standalone-tomcat:$ODMVERSION
+  odm-standalone:
+    image: $REPOSITORY/$PREFIXIMAGE-standalone-tomcat:$ODMVERSION
     build: 
       context: ../
       dockerfile: ./$ODMDOCKERDIR/standalone-tomcat/Dockerfile
@@ -13,7 +13,7 @@ services:
     environment:
     - SAMPLE=true
     ports:
-    - 8080:8080
+    - 8090:8080
     # Uncomment this line to persist your data. Note that on OSX you need to share this
     # current directory in the Preference menu -> File Sharing menu.
     #    volumes:

@@ -3,7 +3,7 @@ services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this
-  standalone:
+  odm-standalone:
     image: $REPOSITORY/$PREFIXIMAGE-standalone:$ODMVERSION
     build:
       context: ../
