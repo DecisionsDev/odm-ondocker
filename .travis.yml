@@ -1,4 +1,4 @@
-language: java
+language: generic
 
 cache:
   directories:
@@ -24,6 +24,8 @@ before_install:
 script:
   - chmod +x build.sh
   - ./build.sh
+  - sudo service postgresql stop
+  - while sudo lsof -Pi :5432 -sTCP:LISTEN -t; do sleep 1; done
   - docker-compose up -d
   - cd test/
   - chmod +x check-for-docker-url.sh
