@@ -4,6 +4,7 @@
 		<user name="resAdmin" password="resAdmin" />
 		<user name="resDeployer" password="resDeployer" />
 		<user name="resMonitor" password="resMonitor" />
+		<user name="resExecutor" password="resExecutor" />
 		<group name="resAdministrators">
 			<member name="resAdmin" />
 		</group>
@@ -15,6 +16,10 @@
 			<member name="resAdmin" />
 			<member name="resDeployer" />
 			<member name="resMonitor" />
+		</group>
+		<group name="resExecutors">
+			<member name="resAdmin" />
+			<member name="resExecutor" />
 		</group>
 	</basicRegistry>
 </server>
