@@ -11,22 +11,22 @@ services:
     ports:
     - 3306:3306
 
-  decisionserverconsole:
+  odm-decisionserverconsole:
     build:
       args:
         - DRIVER_URL=$DRIVER_URL_MYSQL
     
-  decisionrunner:
+  odm-decisionrunner:
     build:
       args:
         - DRIVER_URL=$DRIVER_URL_MYSQL
 
-  decisionserverruntime:
+  odm-decisionserverruntime:
     build:
       args:
         - DRIVER_URL=$DRIVER_URL_MYSQL
 
-  decisioncenter:
+  odm-decisioncenter:
     build:
       args:
         - DRIVER_URL=$DRIVER_URL_MYSQL

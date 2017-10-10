@@ -1,0 +1,31 @@
+version: '2'
+services:
+  dbserver:
+    build:
+        dockerfile: ./${ODMDOCKERDIR}/databases/derby/Dockerfile
+    ports:
+    - 1527:1527
+   # Uncomment this line to persist your data. Note that on OSX you need to share this
+   # current directory in the Preference menu -> File Sharing menu.
+   #    volumes:
+   #    - ./:/opt/db-derby-10.12.1.1-bin
+
+  odm-decisionserverconsole:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_DERBY
+    
+  odm-decisionrunner:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_DERBY
+
+  odm-decisionserverruntime:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_DERBY
+
+  odm-decisioncenter:
+    build:
+      args:
+        - DRIVER_URL=$DRIVER_URL_DERBY

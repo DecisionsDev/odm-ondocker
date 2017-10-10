@@ -4,17 +4,21 @@ services:
     image: $REPOSITORY/dbserver:$ODMVERSION
     build:
         context: ../
-        dockerfile: ./${ODMDOCKERDIR}/databases/derby/Dockerfile
+        dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
         args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     ports:
-    - 1527:1527
+    - 5432:5432
     environment:
-    - SAMPLE=true
-    # Uncomment this line to persist your data. Note that on OSX you need to share this
-    # current directory in the Preference menu -> File Sharing menu.
-    #    volumes:
-    #    - ./:/opt/db-derby-10.12.1.1-bin
+      - POSTGRES_USER=odm
+      - POSTGRES_PASSWORD=odm
+      - POSTGRES_DB=odmdb
+      - PGDATA=/pgdata
+      - SAMPLE=true
+# Uncomment this line to persist your data. Note that on OSX you need to share this
+# current directory in the Preference menu -> File Sharing menu.
+#    volumes:
+#      - ./pgdata:/pgdata
 
   odm-decisionserverconsole:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
@@ -23,7 +27,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_DERBY
+        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     environment:
@@ -39,7 +43,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverruntime/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_DERBY
+        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -55,7 +59,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionrunner/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_DERBY
+        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -72,7 +76,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisioncenter/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_DERBY
+        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     depends_on:
