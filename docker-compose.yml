@@ -87,3 +87,5 @@ services:
     - dbserver
     ports:
     - 9060:9060
+    environment:
+    - LDAP=true

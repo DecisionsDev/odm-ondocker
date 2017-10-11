@@ -1,0 +1,14 @@
+<server>
+  	<!-- Web application security -->
+	<ldapRegistry id="ldap" realm="OpenLdapRealm" 
+    	host="openldap" port="389" ldapType="Custom" ignoreCase="true" recursiveSearch="true"
+    	baseDN="dc=example,dc=org" bindDN="cn=admin,dc=example,dc=org" bindPassword="admin">
+    	<customFilters
+    		userFilter="(uid=%v)" 
+    		groupFilter="(cn=%v)"
+    		userIdMap="*:uid" 
+    		groupIdMap="*:cn" 
+    		groupMemberIdMap="groupOfNames:member">
+    	</customFilters>    
+	</ldapRegistry>
+</server>

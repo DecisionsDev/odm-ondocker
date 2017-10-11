@@ -1,0 +1,97 @@
+dn: ou=groups,dc=example,dc=org
+changetype: add
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=users,dc=example,dc=org
+changetype: add
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=resAdministrator,ou=groups,dc=example,dc=org
+changetype: add
+cn: resAdministrator
+objectClass: groupOfNames
+member:
+
+dn: cn=resDeployer,ou=groups,dc=example,dc=org
+changetype: add
+cn: resDeployer
+objectClass: groupOfNames
+member:
+
+dn: cn=resMonitor,ou=groups,dc=example,dc=org
+changetype: add
+cn: resMonitor
+objectClass: groupOfNames
+member:
+
+dn: cn=rtsAdministrator,ou=groups,dc=example,dc=org
+changetype: add
+cn: rtsAdministrator
+objectClass: groupOfNames
+member: cn=rtsAdmin,ou=users,dc=example,dc=org
+
+dn: cn=rtsConfigManager,ou=groups,dc=example,dc=org
+changetype: add
+cn: rtsConfigManager
+objectClass: groupOfNames
+member: cn=rtsAdmin,ou=users,dc=example,dc=org
+member: cn=rtsConfig,ou=users,dc=example,dc=org
+
+dn: cn=rtsInstaller,ou=groups,dc=example,dc=org
+changetype: add
+cn: rtsInstaller
+objectClass: groupOfNames
+member: cn=rtsAdmin,ou=users,dc=example,dc=org
+
+dn: cn=rtsUser,ou=groups,dc=example,dc=org
+changetype: add
+cn: rtsUser
+objectClass: groupOfNames
+member: cn=rtsAdmin,ou=users,dc=example,dc=org
+member: cn=rtsConfig,ou=users,dc=example,dc=org
+member: cn=rtsUser1,ou=users,dc=example,dc=org
+member: cn=rtsUser2,ou=users,dc=example,dc=org
+
+dn: cn=rtsAdmin,ou=users,dc=example,dc=org
+changetype: add
+cn:  rtsAdmin
+objectclass: inetOrgPerson
+sn: rtsAdmin
+uid: rtsAdmin
+userpassword: {MD5}2d9PxjuuZcgEQok1jyXRzQ==
+
+dn: cn=rtsConfig,ou=users,dc=example,dc=org
+changetype: add
+cn:  rtsConfig
+objectclass: inetOrgPerson
+sn: rtsConfig
+uid: rtsConfig
+userpassword: {MD5}n+PgBrzkSMIMxN/MaCSqlw==
+
+dn: cn=rtsUser1,ou=users,dc=example,dc=org
+changetype: add
+cn:  rtsUser1
+objectclass: inetOrgPerson
+sn: rtsUser1
+uid: rtsUser1
+userpassword: {MD5}FH7CXd9QSWre0b8/orJ2WA==
+
+dn: cn=rtsUser2,ou=users,dc=example,dc=org
+changetype: add
+cn:  rtsUser2
+objectclass: inetOrgPerson
+sn: rtsUser2
+uid: rtsUser2
+userpassword: {MD5}LcPKCcnYngXRwexD/PMhWQ==
+
+dn: cn=John Doe,ou=users,dc=example,dc=org
+changetype: add
+cn: John Doe
+givenname: John
+mail: jdoe@example.org
+objectclass: inetOrgPerson
+sn: Doe
+uid: jdoe
+userpassword: {MD5}oxQF0nK5Tl0S6aUqZl07/g==

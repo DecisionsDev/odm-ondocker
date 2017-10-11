@@ -1,0 +1,59 @@
+dn: ou=Users,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: Users
+
+dn: cn=James Bond,ou=Users,dc=example,dc=org
+changetype: add
+cn: James Bond
+givenname: James
+mail: jbond@example.org
+objectclass: inetOrgPerson
+objectclass: top
+sn: Bond
+uid: jbond
+userpassword: {MD5}1SSHa7+nED1cNOFqtXHCdw==
+
+dn: cn=Jane Smith,ou=Users,dc=example,dc=org
+changetype: add
+cn: Jane Smith
+givenname: Jane
+mail: jsmith@example.org
+objectclass: inetOrgPerson
+objectclass: top
+sn: Smith
+uid: jsmith
+userpassword: {MD5}Oc5+KoVztBznO1ukFhf49w==
+
+dn: cn=John Doe,ou=Users,dc=example,dc=org
+changetype: add
+cn: John Doe
+givenname: John
+mail: jdoe@example.org
+objectclass: inetOrgPerson
+objectclass: top
+sn: Doe
+uid: jdoe
+userpassword: {MD5}oxQF0nK5Tl0S6aUqZl07/g==
+
+dn: ou=Groups,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: Groups
+
+dn: cn=ODMGroup1,ou=Groups,dc=example,dc=org
+changetype: add
+cn: ODMGroup1
+member: cn=Jane Smith,ou=Users,dc=example,dc=org
+member: cn=James Bond,ou=Users,dc=example,dc=org
+objectclass: groupOfNames
+objectclass: top
+
+dn: cn=ODMGroup2,ou=Groups,dc=example,dc=org
+changetype: add
+cn: ODMGroup2
+member: cn=John Doe,ou=Users,dc=example,dc=org
+objectclass: groupOfNames
+objectclass: top
