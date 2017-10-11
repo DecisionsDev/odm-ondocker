@@ -30,7 +30,7 @@ script:
   - cd test/
   - chmod +x check-for-docker-url.sh
   - ./wait-for-url.sh http://localhost:9070/DecisionRunner
-  - ./wait-for-url.sh http://localhost:9090/DecisionService
+  - ./wait-for-url.sh http://localhost:9090/DecisionService resExecutor resExecutor
   - ./wait-for-url.sh http://localhost:9060/decisioncenter
   - ./wait-for-url.sh http://localhost:9060/teamserver
   - ./wait-for-url.sh http://localhost:9080/res
