@@ -27,18 +27,4 @@ script:
   - sudo service postgresql stop
   - while sudo lsof -Pi :5432 -sTCP:LISTEN -t; do sleep 1; done
   - docker-compose up -d
-  - cd test/
-  - chmod +x check-for-docker-url.sh
-  - ./wait-for-url.sh http://localhost:9070/DecisionRunner
-  - ./wait-for-url.sh http://localhost:9090/DecisionService resExecutor resExecutor
-  - ./wait-for-url.sh http://localhost:9060/decisioncenter
-  - ./wait-for-url.sh http://localhost:9060/teamserver
-  - ./wait-for-url.sh http://localhost:9080/res
-  - ./check-for-docker-url.sh odmondocker_odm-decisionrunner_1        dbserver
-  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 dbserver
-  - ./check-for-docker-url.sh odmondocker_odm-decisionserverconsole_1 dbserver
-  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        dbserver
-  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        odm-decisionrunner
-  - ./check-for-docker-url.sh odmondocker_odm-decisioncenter_1        odm-decisionserverconsole
-  - ./check-for-docker-url.sh odmondocker_odm-decisionserverruntime_1 odm-decisionserverconsole
-  - cd ../
+  - ./test/suite.sh
