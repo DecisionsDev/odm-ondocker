@@ -3,6 +3,13 @@ IBM Operational Decision Manager on Docker.
 
  
 [![Build Status](https://travis-ci.org/ODMDev/odm-ondocker.svg?branch=master)](https://travis-ci.org/ODMDev/odm-ondocker)
+<p align="center">
+  <a href="https://join.slack.com/t/odmdev/shared_invite/enQtMjU0NzIwMjM1MTg0LTQyYTMzNGQ4NzJkMDYxMDU5MDRmYTM4MjcxN2RiMzNmZWZmY2UzYzRhMjk0N2FmZjU2YzJlMTRmN2FhZDY4NmQ">
+        Follow us on slack
+        <br>
+        <img src="https://a.slack-edge.com/436da/marketing/img/meta/favicon-32.png">
+  </a>
+</p>
 
 
 #  Deploy IBM Operational Decision Manager Standard on Docker from Dev to Production 
