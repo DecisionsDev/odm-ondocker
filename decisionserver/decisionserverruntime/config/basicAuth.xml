@@ -12,3 +12,8 @@
 	<auth-method>BASIC</auth-method>
 	<realm-name>Decision Service</realm-name>
 </login-config>
+
+<security-role>
+	<description>The role that is required to use Decision Server Runtime - resExecutors</description>
+	<role-name>resExecutors</role-name>
+</security-role>

@@ -8,16 +8,16 @@
 		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
 		<application-bnd>
 			<security-role name="rtsAdministrator">
-				<group name="rtsAdministrator" />
+				<group name="rtsAdministrators" />
 			</security-role>
 			<security-role name="rtsInstaller">
-				<group name="rtsInstaller" />
+				<group name="rtsInstallers" />
 			</security-role>
 			<security-role name="rtsConfigManager">
-				<group name="rtsConfigManager" />
+				<group name="rtsConfigManagers" />
 			</security-role>
 			<security-role name="rtsUser">
-				<group name="rtsUser" />
+				<special-subject type="ALL_AUTHENTICATED_USERS" />
 			</security-role>
 		</application-bnd>
 	</application>
@@ -27,16 +27,16 @@
 		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
 		<application-bnd>
 			<security-role name="rtsAdministrator">
-				<group name="rtsAdministrator" />
+				<group name="rtsAdministrators" />
 			</security-role>
 			<security-role name="rtsInstaller">
-				<group name="rtsInstaller" />
+				<group name="rtsInstallers" />
 			</security-role>
 			<security-role name="rtsConfigManager">
-				<group name="rtsConfigManager" />
+				<group name="rtsConfigManagers" />
 			</security-role>
 			<security-role name="rtsUser">
-				<group name="rtsUser" />
+				<special-subject type="ALL_AUTHENTICATED_USERS" />
 			</security-role>
 		</application-bnd>
 	</application>

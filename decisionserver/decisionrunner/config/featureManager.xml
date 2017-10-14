@@ -6,5 +6,6 @@
 		<feature>jsp-2.3</feature>
 		<feature>jdbc-4.1</feature>
 		<feature>concurrent-1.0</feature>
+		<feature>ldapRegistry-3.0</feature>
 	</featureManager>
 </server>

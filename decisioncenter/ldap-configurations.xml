@@ -4,7 +4,7 @@
 			<ldapUrl>ldap://openldap:389</ldapUrl>
 			<searchConnectionDN>cn=admin,dc=example,dc=org</searchConnectionDN>
 			<searchConnectionPassword>admin</searchConnectionPassword>
-			<groupSearchBase>ou=Groups,dc=example,dc=org</groupSearchBase>
+			<groupSearchBase>ou=groups,dc=example,dc=org</groupSearchBase>
 			<groupSearchFilter>(cn=*)</groupSearchFilter>
 			<groupNameAttribute>cn</groupNameAttribute>
 			<groupMemberAttribute>member</groupMemberAttribute>

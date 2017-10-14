@@ -8,21 +8,18 @@
 
 	<!-- datasource config -->
 	<include optional="true" location="./datasource.xml"/>
+	
+	<!-- include web security config -->
+	<include optional="true" location="./webSecurity.xml"/>
 
 	<!-- include application declaration -->
 	<include optional="true" location="./application.xml"/>
-
-	<!-- include web security config -->
-	<include optional="true" location="./webSecurity.xml"/>
 	
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9080" httpsPort="9443" />
 
 	<!-- logging -->
 	<logging traceSpecification="*=audit:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
-
-	<!-- Managed executor service for Decision Runner -->
-	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
 	<webContainer deferServletLoad="false" />
 	

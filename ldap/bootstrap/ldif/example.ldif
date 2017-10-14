@@ -8,51 +8,94 @@ changetype: add
 objectClass: organizationalUnit
 ou: users
 
-dn: cn=resAdministrator,ou=groups,dc=example,dc=org
+dn: cn=resAdministrators,ou=groups,dc=example,dc=org
 changetype: add
-cn: resAdministrator
+cn: resAdministrators
 objectClass: groupOfNames
-member:
+member: cn=resAdmin,ou=users,dc=example,dc=org
 
-dn: cn=resDeployer,ou=groups,dc=example,dc=org
+dn: cn=resDeployers,ou=groups,dc=example,dc=org
 changetype: add
-cn: resDeployer
+cn: resDeployers
 objectClass: groupOfNames
-member:
+member: cn=resAdmin,ou=users,dc=example,dc=org
+member: cn=resDeployer,ou=users,dc=example,dc=org
 
-dn: cn=resMonitor,ou=groups,dc=example,dc=org
+dn: cn=resExecutors,ou=groups,dc=example,dc=org
 changetype: add
-cn: resMonitor
+cn: resExecutors
 objectClass: groupOfNames
-member:
+member: cn=resAdmin,ou=users,dc=example,dc=org
+member: cn=resExecutor,ou=users,dc=example,dc=org
 
-dn: cn=rtsAdministrator,ou=groups,dc=example,dc=org
+dn: cn=resMonitors,ou=groups,dc=example,dc=org
 changetype: add
-cn: rtsAdministrator
+cn: resMonitors
+objectClass: groupOfNames
+member: cn=resAdmin,ou=users,dc=example,dc=org
+member: cn=resDeployer,ou=users,dc=example,dc=org
+member: cn=resMonitor,ou=users,dc=example,dc=org
+
+dn: cn=rtsAdministrators,ou=groups,dc=example,dc=org
+changetype: add
+cn: rtsAdministrators
 objectClass: groupOfNames
 member: cn=rtsAdmin,ou=users,dc=example,dc=org
 
-dn: cn=rtsConfigManager,ou=groups,dc=example,dc=org
+dn: cn=rtsConfigManagers,ou=groups,dc=example,dc=org
 changetype: add
-cn: rtsConfigManager
+cn: rtsConfigManagers
 objectClass: groupOfNames
 member: cn=rtsAdmin,ou=users,dc=example,dc=org
 member: cn=rtsConfig,ou=users,dc=example,dc=org
 
-dn: cn=rtsInstaller,ou=groups,dc=example,dc=org
+dn: cn=rtsInstallers,ou=groups,dc=example,dc=org
 changetype: add
-cn: rtsInstaller
+cn: rtsInstallers
 objectClass: groupOfNames
 member: cn=rtsAdmin,ou=users,dc=example,dc=org
 
-dn: cn=rtsUser,ou=groups,dc=example,dc=org
+dn: cn=rtsUsers,ou=groups,dc=example,dc=org
 changetype: add
-cn: rtsUser
+cn: rtsUsers
 objectClass: groupOfNames
 member: cn=rtsAdmin,ou=users,dc=example,dc=org
 member: cn=rtsConfig,ou=users,dc=example,dc=org
 member: cn=rtsUser1,ou=users,dc=example,dc=org
 member: cn=rtsUser2,ou=users,dc=example,dc=org
+member: cn=John Doe,ou=users,dc=example,dc=org
+
+dn: cn=resAdmin,ou=users,dc=example,dc=org
+changetype: add
+cn:  resAdmin
+objectclass: inetOrgPerson
+sn: resAdmin
+uid: resAdmin
+userpassword: {MD5}Pk8h+Os1x1MY6f6pybMhiQ==
+
+dn: cn=resDeployer,ou=users,dc=example,dc=org
+changetype: add
+cn:  resDeployer
+objectclass: inetOrgPerson
+sn: resDeployer
+uid: resDeployer
+userpassword: {MD5}1ls/KZDexEl6sDoNT4SapQ==
+
+dn: cn=resExecutor,ou=users,dc=example,dc=org
+changetype: add
+cn:  resExecutor
+objectclass: inetOrgPerson
+sn: resExecutor
+uid: resExecutor
+userpassword: {MD5}kxkHdA4WPL2x19/Rb4fHAw==
+
+dn: cn=resMonitor,ou=users,dc=example,dc=org
+changetype: add
+cn:  resMonitor
+objectclass: inetOrgPerson
+sn: resMonitor
+uid: resMonitor
+userpassword: {MD5}Xju3huGK2V7LA8gxzQoWrQ==
 
 dn: cn=rtsAdmin,ou=users,dc=example,dc=org
 changetype: add

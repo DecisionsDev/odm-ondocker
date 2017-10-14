@@ -1,8 +1,7 @@
 version: '2'
 services:
   openldap:
-    #image: osixia/openldap:1.1.9
-    #container_name: openldap
+    image: $REPOSITORY/openldap:$ODMVERSION
     build:
         context: ../
         dockerfile: ./${ODMDOCKERDIR}/ldap/Dockerfile
@@ -46,8 +45,10 @@ services:
       - "636:636"
     domainname: "example.org" # important: same as hostname
     hostname: "example.org"
+    
   phpldapadmin:
-    image: osixia/phpldapadmin:latest
+    image: osixia/phpldapadmin:0.7.0
+    #image: osixia/phpldapadmin:latest
     #container_name: phpldapadmin
     environment:
       PHPLDAPADMIN_LDAP_HOSTS: "openldap"
@@ -56,3 +57,31 @@ services:
       - "8080:80"
     depends_on:
       - openldap
+      
+  odm-decisionserverconsole:
+    depends_on:
+      - openldap
+    environment:
+      - REGISTRY=ldap
+      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    
+  odm-decisionrunner:
+    depends_on:
+      - openldap
+    environment:
+      - REGISTRY=ldap
+      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    
+  odm-decisionserverruntime:
+    depends_on:
+      - openldap
+    environment:
+      - REGISTRY=ldap
+      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    
+  odm-decisioncenter:
+    depends_on:
+      - openldap
+    environment:
+      - REGISTRY=ldap
+      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.

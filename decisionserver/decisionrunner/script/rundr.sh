@@ -12,4 +12,14 @@ if [ -n "$DBSERVER_NAME" ]
 then 
 	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
 fi
+
+if [ "$REGISTRY" = "ldap" ]
+then
+	echo "Use LDAP registry"
+	cp /config/webSecurity-ldap.xml /config/webSecurity.xml
+else
+	echo "Use basic registry"
+	cp /config/webSecurity-basic.xml /config/webSecurity.xml
+fi
+
 /opt/ibm/docker/docker-server run defaultServer
