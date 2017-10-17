@@ -1,22 +1,22 @@
 
-This part will show you how to build and start a Docker image that contains all the ODM components in one container.
+This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. It applies to Operational Decision Manager Standard V8.9.0.x and to earlier versions up to V8.8.x.
 
 
 
 ![Flow](images/StandaloneFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.x and previous versions back as far as IBM ODM V8.8.x.
 
-First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
-## Setup your environment
+## Setting up your environment
 
-### ODM Installation.
-To create this IBM ODM Docker image, you need to install one of the following parts of IBM ODM:         
-* Decision Center (WebSphere Liberty Profile option)
-* Decision Server Rules (WebSphere Liberty Profile option)
+Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
-On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere Liberty Profile option, find the required WAR files in the following locations:
+### Install Operational Decision Manager
+To create the Operational Decision Manager docker image, install one of the following components:         
+* Decision Center, with the WebSphere Liberty Profile option,
+* Decision Server Rules, with the WebSphere Liberty Profile option.
+
+Go to the Operational Decision Manager installation directory and locate the required WAR files in the directories listed below:
 
 *installation_directory/executionserver/applicationservers/WLP855/res.war*
 
@@ -30,20 +30,20 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 ### Clone the odm-ondocker code
 
-```git clone https://github.com/ODMDev/odm-ondocker.git``` in the IBM ODM installation directory.
+From the ODM installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```. 
 
 ### Copy .dockerignore file
 
-Copy the odm-ondocker/resources/.dockerignore file in your IBM ODM installation directory.
+Copy the odm-ondocker/resources/.dockerignore file into the ODM installation directory.
 
 ```cp odm-ondocker/resources/.dockerignore ./```
 
-At the end of these steps you should have something like :
+When the copy is complete, the content of your repository should be similar to this:
 
 ![Flow](images/Fig2.png)
-### Verify that Docker Engine and Docker Compose are running.
+### Verify that Docker Engine and Docker Compose are running
 
-Open a command prompt and run the following two operations:    	
+Open a command prompt and run the following two commands:    	
 
   ```
     > docker -–version
@@ -52,9 +52,9 @@ Open a command prompt and run the following two operations:
     docker-compose version 1.8.1
   ```
 
-You are now ready to build and run the Docker images.
+Now you are ready to build and run the docker images.
 
-## Build and run the docker image
+## Building and running the docker image
 Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
 
 ```
@@ -70,7 +70,7 @@ This command creates one docker container with the following components:
 * ODM Decision Center
 * ODM Decision Runner
 
-You can access the application with this URLs:
+You can access the application with these URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
@@ -80,7 +80,7 @@ You can access the application with this URLs:
 | [Decision Center Enterprise Console]( http://localhost:9080/teamserver) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
 | [Decision Runner]( http://localhost:9080/DecisionRunner) |  <http://localhost:9080/DecisionRunner> |resDeployer|resDeployer|
 
-## Verify the Docker images
+## Verifying the docker images
 
 You can check the container status with the following command:
 ```

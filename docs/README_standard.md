@@ -1,21 +1,20 @@
 
-This part will show you how to start  an ODM unclustered Docker topology for development using Docker Compose.
+This tutorial explains how to start an IBM Operational Decision Manager unclustered docker topology for development, using Docker Compose. It applies to Operational Decision Manager Standard V8.9.0.1 and to earlier versions up to v8.8.x.
 
 
 ![Flow](images/Fig1.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.8.x.
 
-First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
-## Setup your environment
+## Setting up your environment
+Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
-### ODM Installation.
-To create IBM ODM Docker images, you need to install one of the following parts of IBM ODM:         
-* Decision Center (WebSphere Liberty Profile option)
-* Decision Server Rules (WebSphere Liberty Profile option)
+### Install Operational Decision Manager
+To create Operational Decision Manager docker images, install one of the following components:         
+* Decision Center, with the WebSphere Liberty Profile option,
+* Decision Server Rules, with the WebSphere Liberty Profile option.
 
-On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere Liberty Profile option, find the required WAR files in the following locations:
+Go to the Operational Decision Manager installation directory and locate the required WAR files in the directories listed below:
 
 *installation_directory/executionserver/applicationservers/WLP855/res.war*
 
@@ -29,20 +28,20 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 ### Clone the odm-ondocker code
 
-```git clone https://github.com/ODMDev/odm-ondocker.git``` in the IBM ODM installation directory.
+In the installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```.
 
 ### Copy .dockerignore file
 
-Copy the odm-ondocker/resources/.dockerignore file in your IBM ODM installation directory.
+Copy the odm-ondocker/resources/.dockerignore file into the ODM installation directory.
 
 ```cp odm-ondocker/resources/.dockerignore ./```
 
-At the end of this steps you should have something like that :
+When the copy is complete, the content of your repository should be similar to this:
 
 ![Flow](images/Fig2.png)
 ### Verify that Docker Engine and Docker Compose are running.
 
-Open a command prompt and run the following two operations:    	
+Open a command prompt and run the following two commands:    	
 
   ```
     > docker -–version
@@ -51,7 +50,7 @@ Open a command prompt and run the following two operations:
     docker-compose version 1.8.1
   ```
 
-Now you are ready to build and run the Docker images.
+Now you are ready to build and run the docker images.
 
 ## Build and run the docker image
 Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
@@ -60,7 +59,7 @@ Open a command prompt in the directory **installation_directory/odm-ondocker** a
 docker-compose  up
 ```
 
-This command builds, creates, and runs five Docker containers:
+This command builds, creates, and runs five docker containers:
 
 * Derby Network database server
 * ODM Decision Server runtime
@@ -68,11 +67,11 @@ This command builds, creates, and runs five Docker containers:
 * ODM Decision Center
 * ODM Decision Runner
 
-If the Docker container is not already built, Docker Compose builds it and runs it.
+Docker Compose builds and runs the containers if they are not already built.
 
-You could also start only one of the components.
+You can also choose to start only one Operational Decision Manager component. For example, this command line starts Decision Center and its dependencies, including the dbserver Derby Network server.
 
-For example: ```docker-compose up decisioncenter``` starts the Decision Center and its dependencies, including the dbserver Derby Network server.
+```docker-compose up decisioncenter```
 
 You can access the application with this URLs:
 
@@ -85,12 +84,12 @@ You can access the application with this URLs:
 | [Decision Runner]( http://localhost:9070/DecisionRunner) |  <http://localhost:9070/DecisionRunner> |resDeployer|resDeployer|
 
 
-## Verify the Docker images
+## Verifying the docker images
 
 You can check the container status with the following command:
 ```
  docker-compose ps
 ```
- The following screen capture shows the list of running containers.
+ This screen capture displays the list of running containers.
 
 ![Flow](images/StandardFig02.png)

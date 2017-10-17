@@ -1,21 +1,20 @@
 
-This part will show you how to start  an ODM Cluster Docker topology for development using Docker Compose.
+This tutorial explains how to start an Operational Decision Manager docker cluster topology for development, using Docker Compose. It applies to Operational Decision Management Standard V8.9.0.1 and to earlier versions up to v8.8.x.
 
 
 ![Flow](images/ClusterFig01.png)
 
-This tutorial applies to IBM ODM Standard V8.9.0.1 and previous versions back as far as IBM ODM V8.8.x.
 
-First, you need to install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
+## Setting up your environment
 
-## Setup your environment
+Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
-### ODM Installation.
-To create IBM ODM Docker images, you need to install one of the following parts of IBM ODM:         
-* Decision Center (WebSphere Liberty Profile option)
-* Decision Server Rules (WebSphere Liberty Profile option)
+### Install Operational Decision Manager
+To create Operational Decision Manager docker images, install one of the following components:         
+* Decision Center, with the WebSphere Liberty Profile option,
+* Decision Server Rules, with the WebSphere Liberty Profile option.
 
-On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere Liberty Profile option, find the required WAR files in the following locations:
+Go to the Operational Decision Manager installation directory and locate the required WAR files in the directories listed below:
 
 *installation_directory/executionserver/applicationservers/WLP855/res.war*
 
@@ -29,20 +28,20 @@ On the file system where you installed IBM ODM V8.8.x or V8.9.x with WebSphere L
 
 ### Clone the odm-ondocker code
 
-```git clone https://github.com/ODMDev/odm-ondocker.git``` in the IBM ODM installation directory.
+In the installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```.
 
-### Copy .dockerignore file
+### Copy the .dockerignore file
 
-Copy the odm-ondocker/resources/.dockerignore file in your IBM ODM installation directory.
+Copy the odm-ondocker/resources/.dockerignore file into the ODM installation directory.
 
 ```cp odm-ondocker/resources/.dockerignore ./```
 
-At the end of this steps you should have something like that :
+When the copy is complete, the content of your repository should be similar to this:
 
 ![Flow](images/Fig2.png)
-### Verify that Docker Engine and Docker Compose are running.
+### Verify that Docker Engine and Docker Compose are running
 
-Open a command prompt and run the following two operations:    	
+Open a command prompt and run the following two commands:    	
 
   ```
     > docker -–version
@@ -51,16 +50,16 @@ Open a command prompt and run the following two operations:
     docker-compose version 1.8.1
   ```
 
-Now you are ready to build and run the Docker images.
+Now you are ready to build and run the docker images.
 
-## Build and run the docker image
+## Building and running the docker image
 Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
 
 ```
 docker-compose -f odm-cluster.yml up
 ```
 
-This command builds, creates, and runs six Docker containers:
+This command builds, creates, and runs these six docker containers:
 
 * Embedded Derby database
 * Load balancer high availability proxy server
@@ -69,13 +68,13 @@ This command builds, creates, and runs six Docker containers:
 * ODM Decision Center
 * ODM Decision Runner
 
-If the Docker container is not already built, Docker Compose builds it and runs it.
+Docker Compose builds and runs the containers if they are not already built.
 
-You could also start only one of the components.
+You can also choose to start only one Operational Decision Manager component. For example, this command line starts Decision Center and its dependencies, including the dbserver Derby Network server.
 
-For example: ```docker-compose -f odm-cluster.yml up decisioncenter``` starts the Decision Center and its dependencies, including the dbserver Derby Network server.
+```docker-compose -f odm-cluster.yml up decisioncenter```
 
-You can access the application with this URLs:
+You can access the application with these URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
@@ -94,19 +93,20 @@ docker-compose -f odm-cluster.yml scale decisionserverruntime=2
 
 You should see two runtime environments attached to the Rule Execution Server console. The load balancer is configured with a round robin algorithm, the default load-balancing logic that dispatches a new request to the next cluster member in a circular list.
 
-## Verify the Docker images
+## Verifying the docker images
 
 You can check the container status with the following command:
 ```
  docker-compose ps
 ```
- The following screen capture shows the list of running containers.
+ This screen capture displays the list of running containers.
 
 ![Flow](images/StandardFig02.png)
 
 To check the clustered Decision Server topology, complete the following steps:
 
-* Open the Rule Execution Server console at http://localhost:9080/res (use the following user name and password: resAdmin / resAdmin )
-* Open the REST Test form at http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native
+* Open the Rule Execution Server console at http://localhost:9080/res with these username and password: resAdmin / resAdmin.
+* Open the REST Test form at http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native.
 * Click the Execute Request button twice.
-* Click the Server Info tab. You should see  execution units.
+* Click the Server Info tab. 
+  You should see  execution units.
