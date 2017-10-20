@@ -26,6 +26,7 @@ changetype: add
 cn: resExecutors
 objectClass: groupOfNames
 member: cn=resAdmin,ou=users,dc=example,dc=org
+member: cn=resDeployer,ou=users,dc=example,dc=org
 member: cn=resExecutor,ou=users,dc=example,dc=org
 
 dn: cn=resMonitors,ou=groups,dc=example,dc=org
@@ -35,6 +36,7 @@ objectClass: groupOfNames
 member: cn=resAdmin,ou=users,dc=example,dc=org
 member: cn=resDeployer,ou=users,dc=example,dc=org
 member: cn=resMonitor,ou=users,dc=example,dc=org
+member: cn=John Doe,ou=users,dc=example,dc=org
 
 dn: cn=rtsAdministrators,ou=groups,dc=example,dc=org
 changetype: add
