@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!--
 
-  Licensed Materials - Property of IBM
-  5724X98 5724Y15 5655V82 5724X99 5724Y16 5655V89 5725B69 5655W88 5725C52 5655W90 5655Y31
-  Copyright IBM Corp. 1987, 2016 All Rights Reserved
-  US Government Users Restricted Rights - Use, duplication or
-  disclosure restricted by GSA ADP Schedule Contract with
-  IBM Corp.
-
---><!--
-
  This deployment descriptor provides the default configuration of the
  Rule Execution Server XU (Execution Unit) for JCA 1.5 and documents
  when and how to alter the descriptor.

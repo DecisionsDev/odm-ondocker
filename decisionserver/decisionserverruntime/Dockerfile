@@ -1,6 +1,9 @@
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
+LABEL ProductID="xxxxxx"
+LABEL ProductName="Operational Decision Manager"
+LABEL ProductVersion="8.9.1"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 ENV APP_NAME DecisionService
 ENV ODMDOCKERDIR $ODMDOCKERDIR
