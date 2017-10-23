@@ -5,7 +5,7 @@
 			<searchConnectionDN>cn=admin,dc=example,dc=org</searchConnectionDN>
 			<searchConnectionPassword>admin</searchConnectionPassword>
 			<groupSearchBase>ou=groups,dc=example,dc=org</groupSearchBase>
-			<groupSearchFilter>(cn=*)</groupSearchFilter>
+			<groupSearchFilter>(cn=rts*)</groupSearchFilter>
 			<groupNameAttribute>cn</groupNameAttribute>
 			<groupMemberAttribute>member</groupMemberAttribute>
 			<userIdAttribute>uid</userIdAttribute>
