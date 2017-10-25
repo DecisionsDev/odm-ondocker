@@ -23,6 +23,7 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
+    sync && \
     $SCRIPT/defaultInstall.sh && \
     cd /config/apps/extract && \
     unzip -q ../res.war && \
