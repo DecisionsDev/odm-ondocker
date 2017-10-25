@@ -12,21 +12,17 @@ services:
     - 3306:3306
 
   odm-decisionserverconsole:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_MYSQL
+    environment:
+      - DRIVER_URL=$DRIVER_URL_MYSQL
     
   odm-decisionrunner:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_MYSQL
+     environment:
+      - DRIVER_URL=$DRIVER_URL_MYSQL
 
   odm-decisionserverruntime:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_MYSQL
+     environment:
+      - DRIVER_URL=$DRIVER_URL_MYSQL
 
   odm-decisioncenter:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_MYSQL
+     environment:
+      - DRIVER_URL=$DRIVER_URL_MYSQL

@@ -11,21 +11,17 @@ services:
    #    - ./:/opt/db-derby-10.12.1.1-bin
 
   odm-decisionserverconsole:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_DERBY
+    environment:
+      - DRIVER_URL=$DRIVER_URL_DERBY
     
   odm-decisionrunner:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_DERBY
+    environment:
+      - DRIVER_URL=$DRIVER_URL_DERBY
 
   odm-decisionserverruntime:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_DERBY
+    environment:
+      - DRIVER_URL=$DRIVER_URL_DERBY
 
   odm-decisioncenter:
-    build:
-      args:
-        - DRIVER_URL=$DRIVER_URL_DERBY
+    environment:
+      - DRIVER_URL=$DRIVER_URL_DERBY

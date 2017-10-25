@@ -8,29 +8,22 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
+
 RUN mkdir /config/resources && \
   mkdir -p $SCRIPT
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
-# Begin - Configuration for the database
-ARG DRIVER_URL
-ENV DRIVER_URL $DRIVER_URL
-
-RUN wget -nv $DRIVER_URL && \
-    case $DRIVER_URL in \
-      *derby* ) mv derby* /config/resources && cp /config/datasource-derby.xml /config/datasource.xml ;; \
-      *mysql* ) mv mysql* /config/resources && cp /config/datasource-mysql.xml /config/datasource.xml ;; \
-      *postgresql* ) mv postgresql* /config/resources && cp /config/datasource-postgres.xml /config/datasource.xml ;; esac
-# End - Configuration for the database
+COPY $ODMDOCKERDIR/common/script $SCRIPT
 
 COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
-  mkdir -p /config/apps/extract && \
+	$SCRIPT/commonInstall.sh && \
+	mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
     unzip -q ../decisioncenter.war && \
 	cd ../ && \

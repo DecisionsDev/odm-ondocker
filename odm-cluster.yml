@@ -27,7 +27,6 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     environment:
@@ -43,7 +42,6 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionserverruntime/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -59,7 +57,6 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisionserver/decisionrunner/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -76,7 +73,6 @@ services:
       dockerfile: ./$ODMDOCKERDIR/decisioncenter/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
-        - DRIVER_URL=$DRIVER_URL_POSTGRES
     links:
     - dbserver
     depends_on:
