@@ -26,24 +26,33 @@ fi
 # End - Configuration for the user registry
 
 # Begin - Configuration for the database
-#ARG DRIVER_URL
-#ENV DRIVER_URL $DRIVER_URL
-echo "DRIVER_URL: $DRIVER_URL"
-echo "POSTGRES: $DRIVER_URL_POSTGRES"
-
-if [ -n "$DRIVER_URL" ]
+if [ -n "$DB_DRIVER_URL" ]
 then
-    case $DRIVER_URL in
-      *derby* ) wget -nv $DRIVER_URL
-				mv derby* /config/resources 
-				cp /config/datasource-derby.xml /config/datasource.xml 
-				;;
-      *mysql* ) wget -nv $DRIVER_URL
-				mv mysql* /config/resources 
-				cp /config/datasource-mysql.xml /config/datasource.xml 
-				;;
-      *postgresql* ) cp /config/datasource-postgres.xml /config/datasource.xml 
-					 ;; 
+	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
+	wget -nv $DB_DRIVER_URL
+    case $DB_DRIVER_URL in
+    	*derby* ) mv derby* /config/resources 
+				  cp /config/datasource-derby.xml /config/datasource.xml 
+				  ;;
+      	*mysql* ) mv mysql* /config/resources 
+				  cp /config/datasource-mysql.xml /config/datasource.xml 
+				  ;;
+      	*postgresql* ) mv postgresql* /config/resources 
+					   cp /config/datasource-postgres.xml /config/datasource.xml 
+					   ;; 
+	esac
+elif [ -n "$DB_TYPE" ]
+then
+	echo "Use DB_TYPE: $DB_TYPE"
+	case $DB_TYPE in
+		*derby* ) /script/installDerby.sh
+				  cp /config/datasource-derby.xml /config/datasource.xml 
+				  ;;
+		*mysql* ) /script/installMySQL.sh
+				  cp /config/datasource-mysql.xml /config/datasource.xml 
+				  ;;
+      	*postgresql* ) cp /config/datasource-postgres.xml /config/datasource.xml 
+					   ;; 
 	esac
 else
 	echo "Use PostgreSQL as database by default"

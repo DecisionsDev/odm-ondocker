@@ -23,7 +23,7 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
-    $SCRIPT/commonInstall.sh && \
+    $SCRIPT/defaultInstall.sh && \
     cd /config/apps/extract && \
     unzip -q ../DecisionRunner.war && \
     cd ../ && \

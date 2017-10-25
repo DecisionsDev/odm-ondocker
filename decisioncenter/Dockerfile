@@ -22,7 +22,7 @@ COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
-	$SCRIPT/commonInstall.sh && \
+	$SCRIPT/defaultInstall.sh && \
 	mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
     unzip -q ../decisioncenter.war && \
