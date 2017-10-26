@@ -8,11 +8,6 @@ if [ ! -f /config/initialized.flag ] ; then
 	touch /config/initialized.flag
 fi;
 
-if [ -n "$DBSERVER_NAME" ] 
-then 
-	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
-fi
-
 # Begin - Configuration for the user registry
 if [ "$REGISTRY" = "ldap" ]
 then
@@ -58,5 +53,10 @@ else
 	cp /config/datasource-postgres.xml /config/datasource.xml
 fi
 # End - Configuration for the database
+
+if [ -n "$DBSERVER_NAME" ] 
+then 
+	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
+fi
 
 /opt/ibm/docker/docker-server run defaultServer
