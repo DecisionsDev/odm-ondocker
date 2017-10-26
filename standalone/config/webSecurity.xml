@@ -11,17 +11,17 @@
 		<user name="resDeployer" password="resDeployer"/>
 		<user name="resMonitor" password="resMonitor"/>
 		<!-- Groups for Decision Center -->
-		<group name="rtsAdministrator">
+		<group name="rtsAdministrators">
 			<member name="rtsAdmin"/>
 		</group>
-		<group name="rtsInstaller">
+		<group name="rtsInstallers">
 			<member name="rtsAdmin"/>
 		</group>
-		<group name="rtsConfigManager">
+		<group name="rtsConfigManagers">
 			<member name="rtsAdmin"/>
 			<member name="rtsConfig"/>
 		</group>
-		<group name="rtsUser">
+		<group name="rtsUsers">
 			<member name="rtsAdmin"/>
 			<member name="rtsConfig"/>
 			<member name="rtsUser1"/>

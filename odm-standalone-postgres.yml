@@ -1,0 +1,29 @@
+version: '2'
+services:
+  dbserver:
+    image: postgres:9.5
+    ports:
+    - 5432:5432
+    environment:
+      - POSTGRES_USER=odm
+      - POSTGRES_PASSWORD=odm
+      - POSTGRES_DB=odmdb
+      - PGDATA=/pgdata
+# Uncomment this line to persist your data. Note that on OSX you need to share this
+# current directory in the Preference menu -> File Sharing menu.
+#    volumes:
+#      - ./pgdata:/pgdata
+
+  odm-standalone:
+    image: $REPOSITORY/$PREFIXIMAGE-standalone:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+    environment:
+      - DB_TYPE=postgres
+      # DB_TYPE could be set to "postgres" or "h2". If it is set to "h2" or not set, the H2 embedded database is used.
+      # DB_DRIVER_URL could be used optionally to override the driver that is used by default for PostgreSQL.
+    ports:
+      - 9080:9060

@@ -25,8 +25,9 @@ COPY ${ODMDOCKERDIR}/standalone/config /config
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
 # Begin - Configuration for the database
-ENV DRIVER_URL http://central.maven.org/maven2/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
-RUN wget -nv $DRIVER_URL && mv derby* /config/resources
+# Install the driver for H2 and for PostgreSQL
+RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \
+    wget -nv https://jdbc.postgresql.org/download/postgresql-9.3-1104.jdbc4.jar && mv postgres* /config/resources
 # End - Configuration for the database
 
 ENV CONNECTION_POOL_SIZE 20

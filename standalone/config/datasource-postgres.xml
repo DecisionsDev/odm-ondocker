@@ -1,0 +1,31 @@
+<server>
+
+	<library id="postgresql-library"><fileset id="postgresql-fileset"  dir="${server.config.dir}/resources" />
+  	</library>
+
+  	<jdbcDriver id="postgresql-driver"
+            javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
+            javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"
+            libraryRef="postgresql-library"/>
+
+  	<!-- Decision Center Datasource -->
+	<dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
+        <properties
+          	databaseName="odmdb"
+          	user="odm"
+          	password="odm"
+          	portNumber="5432"
+          	serverName="dbserver" /> 
+  </dataSource>
+
+	<!-- RES datasource -->
+	<dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
+        <properties
+         	databaseName="odmdb"
+          	user="odm"
+          	password="odm"
+          	portNumber="5432"
+          	serverName="dbserver" />
+  	</dataSource>
+
+</server>
