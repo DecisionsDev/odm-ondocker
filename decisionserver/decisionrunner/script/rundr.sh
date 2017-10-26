@@ -36,9 +36,9 @@ then
       	*mysql* ) mv mysql* /config/resources 
 				  cp /config/datasource-mysql.xml /config/datasource.xml 
 				  ;;
-      	*postgresql* ) mv postgresql* /config/resources 
-					   cp /config/datasource-postgres.xml /config/datasource.xml 
-					   ;; 
+      	*postgres* ) mv postgres* /config/resources 
+					 cp /config/datasource-postgres.xml /config/datasource.xml 
+					 ;; 
 	esac
 elif [ -n "$DB_TYPE" ]
 then
@@ -50,8 +50,8 @@ then
 		*mysql* ) /script/installMySQL.sh
 				  cp /config/datasource-mysql.xml /config/datasource.xml 
 				  ;;
-      	*postgresql* ) cp /config/datasource-postgres.xml /config/datasource.xml 
-					   ;; 
+      	*postgres* ) cp /config/datasource-postgres.xml /config/datasource.xml 
+					 ;; 
 	esac
 else
 	echo "Use PostgreSQL as database by default"

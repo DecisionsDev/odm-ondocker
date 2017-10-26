@@ -13,23 +13,23 @@ services:
   odm-decisionserverconsole:
     environment:
       - DB_TYPE=derby
-      # DB_TYPE could be set to "derby", "mysql" or "postgresql". If it is not set, the postgresql database is used by default.
+      # DB_TYPE could be set to "derby", "mysql" or "postgres". If it is not set, the PostgreSQL database is used by default.
       # DB_DRIVER_URL could be used optionally to override the driver that is used by default for a given database.
     
   odm-decisionrunner:
     environment:
       - DB_TYPE=derby
-      # DB_TYPE could be set to "derby", "mysql" or "postgresql". If it is not set, the postgresql database is used by default.
+      # DB_TYPE could be set to "derby", "mysql" or "postgres". If it is not set, the PostgreSQL database is used by default.
       # DB_DRIVER_URL could be used optionally to override the driver that is used by default for a given database.
 
   odm-decisionserverruntime:
     environment:
       - DB_TYPE=derby
-      # DB_TYPE could be set to "derby", "mysql" or "postgresql". If it is not set, the postgresql database is used by default.
+      # DB_TYPE could be set to "derby", "mysql" or "postgres". If it is not set, the PostgreSQL database is used by default.
       # DB_DRIVER_URL could be used optionally to override the driver that is used by default for a given database.
 
   odm-decisioncenter:
     environment:
       - DB_TYPE=derby
-      # DB_TYPE could be set to "derby", "mysql" or "postgresql". If it is not set, the postgresql database is used by default.
+      # DB_TYPE could be set to "derby", "mysql" or "postgres". If it is not set, the PostgreSQL database is used by default.
       # DB_DRIVER_URL could be used optionally to override the driver that is used by default for a given database.
