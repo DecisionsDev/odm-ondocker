@@ -22,6 +22,8 @@ before_install:
   - docker-compose version
 
 script:
+  # Make error if 'LICENSE(D) and IBM are found on a same line.'
+  - ! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude="*.tar.gz" --exclude=".travis.yml" .
   - chmod +x build.sh
   - ./build.sh
   - sudo service postgresql stop
