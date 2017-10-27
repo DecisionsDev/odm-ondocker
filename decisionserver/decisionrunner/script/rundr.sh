@@ -39,7 +39,8 @@ then
       	*mysql* ) mv mysql* /config/resources 
 				  cp /config/datasource-mysql.xml /config/datasource.xml 
 				  ;;
-      	*postgres* ) mv postgres* /config/resources 
+      	*postgres* ) rm /config/resources/postgres*
+					 mv postgres* /config/resources 
 					 cp /config/datasource-postgres.xml /config/datasource.xml 
 					 ;; 
 	esac
