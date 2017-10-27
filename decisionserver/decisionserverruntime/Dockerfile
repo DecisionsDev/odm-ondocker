@@ -24,7 +24,7 @@ COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/app
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
-    $SCRIPT/defaultInstall.sh && \
+    $SCRIPT/installPostgres.sh && \
     cd /config/apps/extract && \
     unzip -q ../DecisionService.war && \
     cd ../ && \

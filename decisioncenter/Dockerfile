@@ -23,7 +23,7 @@ COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
 	sync && \
-	$SCRIPT/defaultInstall.sh && \
+	$SCRIPT/installPostgres.sh && \
 	mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
     unzip -q ../decisioncenter.war && \

@@ -24,7 +24,7 @@ COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
-    $SCRIPT/defaultInstall.sh && \
+    $SCRIPT/installPostgres.sh && \
     cd /config/apps/extract && \
     unzip -q ../DecisionRunner.war && \
     cd ../ && \
