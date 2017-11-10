@@ -4,7 +4,7 @@ services:
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this
   odm-standalone:
-    image: $REPOSITORY/$PREFIXIMAGE-standalone:$ODMVERSION
+    image: $REPOSITORY/odm:$ODMVERSION
     build:
       context: ../
       dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
