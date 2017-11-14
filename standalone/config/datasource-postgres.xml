@@ -9,8 +9,18 @@
             libraryRef="postgresql-library"/>
 
   	<!-- Decision Center Datasource -->
-	<dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
-        <properties
+	<dataSource id="dcdatasource"
+				isolationLevel="TRANSACTION_READ_COMMITTED"
+				jndiName="jdbc/ilogDataSource"
+				statementCacheSize="150"
+				jdbcDriverRef="postgresql-driver"
+				type="javax.sql.ConnectionPoolDataSource">
+        <connectionManager
+			maxPoolSize="25"
+			minPoolSize="10"
+			connectionTimout="10s"
+			agedTimeout="30m"/>
+		<properties
           	databaseName="odmdb"
           	user="odm"
           	password="odm"
