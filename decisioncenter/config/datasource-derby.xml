@@ -6,8 +6,21 @@
 
 	<jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
 
-	<dataSource id="dcdatasource" jndiName="jdbc/ilogDataSource" jdbcDriverRef="DerbyJdbcDriver">
-		<properties.derby.client databaseName="rtsdb" serverName="dbserver"
-					portNumber="1527" createDatabase="create" user="ilog" password="ilog" />
+	<dataSource id="dcdatasource" 
+				isolationLevel="TRANSACTION_READ_COMMITTED"
+				jndiName="jdbc/ilogDataSource"
+				statementCacheSize="150"
+				jdbcDriverRef="DerbyJdbcDriver">
+		<connectionManager
+			maxPoolSize="25"
+			minPoolSize="10"
+			connectionTimout="10s"
+			agedTimeout="30m"/>
+		<properties.derby.client databaseName="rtsdb"
+								serverName="dbserver"
+								portNumber="1527"
+								createDatabase="create"
+								user="ilog"
+								password="ilog" />
 	</dataSource>
 </server>

@@ -10,10 +10,20 @@
 				libraryRef="H2Lib"/>
 
   	<!-- Decision Center Datasource -->
-	<dataSource id="dc-h2Embedded" isolationLevel="TRANSACTION_READ_COMMITTED" jndiName="jdbc/ilogDataSource"
-			statementCacheSize="100" jdbcDriverRef="H2Driver" type="javax.sql.ConnectionPoolDataSource">
-		<connectionManager maxPoolSize="20" minPoolSize="5" connectionTimout="10s" agedTimeout="30m"/>
-	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;auto_server=true;LOCK_TIMEOUT=40000" user="rts" password="rts"/>
+	<dataSource id="dc-h2Embedded"
+				isolationLevel="TRANSACTION_READ_COMMITTED"
+				jndiName="jdbc/ilogDataSource"
+				statementCacheSize="150"
+				jdbcDriverRef="H2Driver"
+				type="javax.sql.ConnectionPoolDataSource">
+		<connectionManager
+				maxPoolSize="25"
+				minPoolSize="10"
+				connectionTimout="10s"
+				agedTimeout="30m"/>
+	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;LOCK_TIMEOUT=40000"
+					user="rts"
+					password="rts"/>
 	</dataSource>
 
 	<!-- RES datasource -->
