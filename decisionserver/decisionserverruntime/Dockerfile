@@ -1,7 +1,7 @@
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-LABEL ProductID="xxxxxx"
+LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
 LABEL ProductVersion="8.9.1"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
@@ -30,7 +30,7 @@ RUN chmod -R a+x $SCRIPT && \
     cd ../ && \
     rm -rf DecisionService.war && \
     mv extract DecisionService.war
-    
+
 EXPOSE 9080 9443
 
 CMD ["/script/runds.sh"]
