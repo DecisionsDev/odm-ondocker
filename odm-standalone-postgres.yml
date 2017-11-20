@@ -5,9 +5,9 @@ services:
     ports:
     - 5432:5432
     environment:
+      - POSTGRES_DB=odmdb
       - POSTGRES_USER=odm
       - POSTGRES_PASSWORD=odm
-      - POSTGRES_DB=odmdb
       - PGDATA=/pgdata
 # Uncomment this line to persist your data. Note that on OSX you need to share this
 # current directory in the Preference menu -> File Sharing menu.
@@ -23,7 +23,12 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
     environment:
       - DB_TYPE=postgres
-      # DB_TYPE could be set to "postgres" or "h2". If it is set to "h2" or not set, the H2 embedded database is used.
-      # DB_DRIVER_URL could be used optionally to override the driver that is used by default for PostgreSQL.
+      # DB_TYPE can be set to "postgres" or "h2". If it is set to "h2" or not set, the H2 embedded database is used.
+      # DB_DRIVER_URL can be used optionally to override the driver that is used by default for PostgreSQL.
+      - DB_NAME=odmdb
+      - DB_USER=odm
+      - DB_PASSWORD=odm
+      - DB_SERVER_NAME=dbserver
+      # DB_PORT_NUMBER can be used to override the default port number that is 5432 for PostgreSQL.
     ports:
       - 9080:9060

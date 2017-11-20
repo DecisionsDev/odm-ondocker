@@ -48,9 +48,26 @@ else
 fi
 # End - Configuration for the database
 
-if [ -n "$DBSERVER_NAME" ] 
+# Change values for the datasource if required
+if [ -n "$DB_SERVER_NAME" ] 
 then 
-	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml
+	sed -i 's|dbserver|'$DB_SERVER_NAME'|g' /config/datasource.xml
+fi
+if [ -n "$DB_PORT_NUMBER" ] 
+then 
+	sed -i 's|5432|'$DB_PORT_NUMBER'|g' /config/datasource.xml
+fi
+if [ -n "$DB_NAME" ] 
+then 
+	sed -i 's|odmdb|'$DB_NAME'|g' /config/datasource.xml
+fi
+if [ -n "$DB_USER" ] 
+then 
+	sed -i 's|odmusr|'$DB_USER'|g' /config/datasource.xml
+fi
+if [ -n "$DB_PASSWORD" ] 
+then 
+	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
 fi
 
 /opt/ibm/docker/docker-server run defaultServer

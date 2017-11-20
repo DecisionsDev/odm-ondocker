@@ -13,12 +13,12 @@
 	<dataSource id="dc-h2Embedded" isolationLevel="TRANSACTION_READ_COMMITTED" jndiName="jdbc/ilogDataSource"
 			statementCacheSize="100" jdbcDriverRef="H2Driver" type="javax.sql.ConnectionPoolDataSource">
 		<connectionManager maxPoolSize="20" minPoolSize="5" connectionTimout="10s" agedTimeout="30m"/>
-	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;auto_server=true;LOCK_TIMEOUT=40000" user="odm" password="odm"/>
+	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;auto_server=true;LOCK_TIMEOUT=40000" user="rts" password="rts"/>
 	</dataSource>
 
 	<!-- RES datasource -->
 	<dataSource id="res-h2Embedded" jndiName="jdbc/resdatasource" jdbcDriverRef="H2Driver">
-		<properties URL="jdbc:h2:${server.config.dir}/dbdata/resdb;MODE=HSQLDB;auto_server=true" user="odm" password="odm"/>
+		<properties URL="jdbc:h2:${server.config.dir}/dbdata/resdb;MODE=HSQLDB;auto_server=true" user="res" password="res"/>
 	</dataSource>
 
 </server>
