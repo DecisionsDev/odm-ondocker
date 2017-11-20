@@ -5,7 +5,7 @@
 	
 	<!-- Team server -->
 	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
-		<classloader commonLibraryRef="decisioncenter-libraries" delegation="parentLast" />
+		<classloader delegation="parentLast" />
 		<application-bnd>
 			<security-role name="rtsAdministrator">
 				<group name="rtsAdministrators" />
