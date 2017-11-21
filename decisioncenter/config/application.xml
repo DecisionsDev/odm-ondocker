@@ -1,4 +1,5 @@
 <server>
+
 	<!-- Team server -->
 	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
 		<classloader delegation="parentLast" />

@@ -38,6 +38,7 @@ RUN chmod -R a+x $SCRIPT
 ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
 # Decision Center
+
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 RUN mkdir -p /config/apps/extract && \
