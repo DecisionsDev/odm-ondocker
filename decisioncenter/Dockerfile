@@ -17,7 +17,6 @@ COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
-COPY ./teamserver/lib/commons-logging-1.1.jar /config/lib/
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
 

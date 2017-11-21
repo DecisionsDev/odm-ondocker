@@ -1,8 +1,4 @@
 <server>
-	<library id="decisioncenter-libraries">
-		<fileset dir="${server.config.dir}/lib" includes="commons-logging-1.1.jar" />
-	</library>
-	
 	<!-- Team server -->
 	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
 		<classloader delegation="parentLast" />
