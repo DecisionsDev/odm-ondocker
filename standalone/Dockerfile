@@ -10,6 +10,7 @@ RUN mkdir /config/resources && \
 	mkdir -p /config/dbdata
 
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
 RUN mv /config/application.xml /config/decisioncenter_application.xml
 
 COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config
@@ -39,7 +40,7 @@ ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
 # Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
-COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
+COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war /config/apps/
 RUN mkdir -p /config/apps/extract && \
     cd /config/apps/extract && \
     unzip -q ../decisioncenter.war && \

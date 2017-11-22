@@ -70,4 +70,14 @@ then
 	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
 fi
 
+# Begin - Add DC Rest Api Web App
+if [ -e /config/apps/decisioncenter-api.war ]
+then
+       echo “Add DC Rest Api Web App”
+       cp -f /config/application-withRestApi.xml /config/decisioncenter_application.xml
+else
+       echo “DC Rest Api Web App Not Present”
+fi
+# End - Add DC Rest Api Web App
+
 /opt/ibm/docker/docker-server run defaultServer
