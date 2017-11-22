@@ -57,6 +57,16 @@ else
 fi
 # End - Configuration for the database
 
+# Begin - Add DC Rest Api Web App
+if [ -e /config/apps/decisioncenter-api.war ]
+then
+        echo "Add DC Rest Api Web App"
+        cp /config/application-withRestApi.xml /config/application.xml
+else
+        echo "DC Rest Api Web App Not Present"
+fi
+# End - Add DC Rest Api Web App
+
 if [ -n "$DBSERVER_NAME" ]
 then
 	sed -i 's|dbserver|'$DBSERVER_NAME'|g' /config/datasource.xml

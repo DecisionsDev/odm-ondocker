@@ -3,6 +3,7 @@
 !executionserver/applicationservers/WLP855/DecisionService.war
 !executionserver/applicationservers/WLP855/DecisionRunner.war
 !teamserver/applicationservers/WLP855/decisioncenter.war
+!teamserver/applicationservers/WLP855/decisioncenter-api.war
 !teamserver/applicationservers/WLP855/teamserver.war
 !teamserver/lib/commons-logging-1.1.jar
 !**/docker-compose

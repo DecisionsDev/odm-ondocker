@@ -18,7 +18,7 @@ COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
-COPY ./teamserver/applicationservers/WLP855/decisioncenter.war /config/apps/
+COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
 	sync && \
