@@ -8,6 +8,13 @@ then
 	sed -i 's|odm-decisionrunner|'$DECISIONRUNNER_NAME'|g' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
+if [ -n "$DC_PERSISTENCE_LOCAL" ]
+then
+        sed -i 's|DC_PERSISTENCE_LOCAL|'$DC_PERSISTENCE_LOCAL'|g' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+else
+        sed -i 's|DC_PERSISTENCE_LOCAL|'en_US'|g' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
 # Begin - Configuration for the user registry
 if [ "$REGISTRY" = "ldap" ]
 then

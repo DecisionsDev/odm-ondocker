@@ -8,6 +8,7 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
+ENV DC_PERSISTENCE_LOCAL en_US
 
 RUN mkdir /config/resources && \
   mkdir -p $SCRIPT

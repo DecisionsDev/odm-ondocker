@@ -70,6 +70,13 @@ then
 	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
 fi
 
+if [ -n "$DC_PERSISTENCE_LOCAL" ]
+then
+        sed -i 's|DC_PERSISTENCE_LOCAL|'$DC_PERSISTENCE_LOCAL'|g' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+else
+        sed -i 's|DC_PERSISTENCE_LOCAL|'en_US'|g' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
 # Begin - Add DC Rest Api Web App
 if [ -e /config/apps/decisioncenter-api.war ]
 then
