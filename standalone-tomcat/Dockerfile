@@ -13,7 +13,7 @@ COPY ${ODMDOCKERDIR}/standalone-tomcat/script $SCRIPT
 RUN chmod -R a+x $SCRIPT
 
 # Begin - Configuration for the database
-ENV DERBY_URL http://www-eu.apache.org/dist//db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
+ENV DERBY_URL http://archive.apache.org/dist/db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
 ENV DERBY_FOLDER db-derby-10.12.1.1-bin
 RUN wget -nv $DERBY_URL && \
     tar xzf ${DERBY_FOLDER}.tar.gz && \
