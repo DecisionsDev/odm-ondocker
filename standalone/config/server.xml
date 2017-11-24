@@ -31,8 +31,7 @@
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
 
 	<!-- Logging -->
-	<logging traceSpecification="*=audit:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
-
+	<logging traceSpecification="*=audit:com.ibm.rules.*=fine" consoleLogLevel="INFO" />
 	<webContainer deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
 
 	<applicationMonitor updateTrigger="mbean" />
