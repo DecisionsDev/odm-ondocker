@@ -30,7 +30,7 @@ Go to the Operational Decision Manager installation directory and locate the req
 
 ### Clone the odm-ondocker code
 
-From the ODM installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```. 
+From the ODM installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```.
 
 ### Copy .dockerignore file
 
@@ -60,6 +60,8 @@ Open a command prompt in the directory **installation_directory/odm-ondocker** a
 ```
 docker-compose -f odm-standalone.yml up
 ```
+
+Note: If you have trouble on Windows os see this [issue](https://github.com/ODMDev/odm-ondocker/issues/100)
 
 This command creates one docker container with the following components:
 

@@ -59,6 +59,8 @@ Open a command prompt in the directory **installation_directory/odm-ondocker** a
 docker-compose -f odm-cluster.yml up
 ```
 
+Note: If you have trouble on Windows os see this [issue](https://github.com/ODMDev/odm-ondocker/issues/100)
+
 This command builds, creates, and runs these six docker containers:
 
 * Embedded Derby database
@@ -108,5 +110,5 @@ To check the clustered Decision Server topology, complete the following steps:
 * Open the Rule Execution Server console at http://localhost:9080/res with these username and password: resAdmin / resAdmin.
 * Open the REST Test form at http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native.
 * Click the Execute Request button twice.
-* Click the Server Info tab. 
+* Click the Server Info tab.
   You should see  execution units.

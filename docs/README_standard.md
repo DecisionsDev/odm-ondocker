@@ -59,6 +59,8 @@ Open a command prompt in the directory **installation_directory/odm-ondocker** a
 docker-compose  up
 ```
 
+Note: If you have trouble on Windows os see this [issue](https://github.com/ODMDev/odm-ondocker/issues/100)
+
 This command builds, creates, and runs five docker containers:
 
 * Derby Network database server
