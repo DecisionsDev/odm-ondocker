@@ -5,7 +5,12 @@
 !teamserver/applicationservers/WLP855/decisioncenter.war
 !teamserver/applicationservers/WLP855/decisioncenter-api.war
 !teamserver/applicationservers/WLP855/teamserver.war
-!teamserver/lib/commons-logging-1.1.jar
+!executionserver/applicationservers/tomcat8/res.war
+!executionserver/applicationservers/tomcat8/DecisionService.war
+!executionserver/applicationservers/tomcat8/DecisionRunner.war
+!teamserver/applicationservers/tomcat8/decisioncenter.war
+!teamserver/applicationservers/tomcat8/decisioncenter-api.war
+!teamserver/applicationservers/tomcat8/teamserver.war
 !**/docker-compose
 !docker-compose**
 !**/odm-docker

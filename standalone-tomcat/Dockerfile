@@ -33,7 +33,6 @@ RUN cd ${CATALINA_HOME}/webapps && \
     rm -rf *
 
 # Decision Center
-COPY ./teamserver/lib/commons-logging-1.1.jar ${CATALINA_HOME}/lib/
 COPY ./teamserver/applicationservers/tomcat8/teamserver.war ${CATALINA_HOME}/webapps/
 COPY ./teamserver/applicationservers/tomcat8/decisioncenter.war ${CATALINA_HOME}/webapps/
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
