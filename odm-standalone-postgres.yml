@@ -21,6 +21,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     environment:
       - DB_TYPE=postgres
       # DB_TYPE can be set to "postgres" or "h2". If it is set to "h2" or not set, the H2 embedded database is used.

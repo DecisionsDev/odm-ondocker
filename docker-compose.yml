@@ -27,6 +27,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     links:
     - dbserver
     depends_on:
@@ -36,7 +37,7 @@ services:
     - 1883:1883
     #environment:
     #- DBSERVER_NAME=dbserver
-    
+
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -44,6 +45,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -60,6 +62,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -77,6 +80,7 @@ services:
       dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     links:
     - dbserver
     depends_on:

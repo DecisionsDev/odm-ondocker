@@ -10,6 +10,7 @@ services:
       dockerfile: ./$ODMDOCKERDIR/standalone-tomcat/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
     environment:
     - SAMPLE=true
     ports:

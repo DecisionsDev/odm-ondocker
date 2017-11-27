@@ -1,6 +1,10 @@
 FROM tomcat:8.5.21
 ARG ODMDOCKERDIR
+ARG ODMVERSION
 LABEL maintainer="Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+LABEL ProductID="xxxxxxxxxxxxxxxxx"
+LABEL ProductName="Operational Decision Manager"
+LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdmOnTomcat
@@ -17,7 +21,7 @@ ENV DERBY_URL http://www-eu.apache.org/dist//db/derby/db-derby-10.12.1.1/db-derb
 ENV DERBY_FOLDER db-derby-10.12.1.1-bin
 RUN wget -nv $DERBY_URL && \
     tar xzf ${DERBY_FOLDER}.tar.gz && \
-    rm -rf ${DERBY_FOLDER}.tar.gz && \ 
+    rm -rf ${DERBY_FOLDER}.tar.gz && \
     cp ${DERBY_FOLDER}/lib/derby.jar ${CATALINA_HOME}/lib && \
     cp ${DERBY_FOLDER}/lib/derbyLocale* ${CATALINA_HOME}/lib && \
     rm -rf ${DERBY_FOLDER}
@@ -70,7 +74,7 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ../ && \
     rm -rf DecisionService.war && \
     mv extract DecisionService
-    
+
 # Decision Runner
 COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war ${CATALINA_HOME}/webapps
 RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
