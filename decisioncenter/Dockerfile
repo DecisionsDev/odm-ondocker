@@ -18,13 +18,14 @@ COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
+COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
 	sync && \
-	$SCRIPT/installPostgres.sh && \
+	if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi && \
 	mkdir -p /config/apps/extract && \
 	cd /config/apps/extract && \
     unzip -q ../decisioncenter.war && \
