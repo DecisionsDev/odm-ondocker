@@ -48,7 +48,7 @@ else
 fi
 # End - Configuration for the database
 
-# Change values for the datasource if required
+# Begin - Change values for the datasource if required
 if [ -n "$DB_SERVER_NAME" ] 
 then 
 	sed -i 's|dbserver|'$DB_SERVER_NAME'|g' /config/datasource.xml
@@ -69,6 +69,7 @@ if [ -n "$DB_PASSWORD" ]
 then 
 	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
 fi
+# End - Change values for the datasource if required
 
 if [ -n "$DC_PERSISTENCE_LOCALE" ]
 then
