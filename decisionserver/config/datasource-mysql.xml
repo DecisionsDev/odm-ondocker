@@ -4,8 +4,13 @@
     <fileset dir="${server.config.dir}/resources"/>
   </library>
   
-  <jdbcDriver id="MySQLDriver" libraryRef="MySQLLib"/>
-  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MySQLDriver">
+   <jdbcDriver id="MySQLDriver"
+  			javax.sql.ConnectionPoolDataSource="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"
+  			javax.sql.DataSource="com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
+  			javax.sql.XADataSource="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource"
+  			libraryRef="MySQLLib"/>
+
+  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MySQLDriver" type="javax.sql.ConnectionPoolDataSource">
     <properties databaseName="odmdb" user="odmusr" password="odmpwd" serverName="dbserver" portNumber="3306" />
   </dataSource>
 
