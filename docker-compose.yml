@@ -36,7 +36,7 @@ services:
     - 9080:9080
     - 1883:1883
     #environment:
-    #- DBSERVER_NAME=dbserver
+    #- DB_SERVER_NAME=dbserver
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
