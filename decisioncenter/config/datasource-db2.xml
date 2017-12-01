@@ -17,8 +17,8 @@
 				agedTimeout="30m"/>
     <properties.db2.jcc  
     	databaseName="odmdb"
-		user="odm"
-		password="odm"
+		user="odmusr"
+		password="odmpwd"
 		serverName="dbserver" 
 		portNumber="50000"/>
   </dataSource>

@@ -6,7 +6,7 @@
   
   <jdbcDriver id="MySQLDriver" libraryRef="MySQLLib"/>
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MySQLDriver">
-    <properties databaseName="odmdb" user="odm" password="odm" serverName="dbserver" portNumber="3306" />
+    <properties databaseName="odmdb" user="odmusr" password="odmpwd" serverName="dbserver" portNumber="3306" />
   </dataSource>
 
 </server>

@@ -5,7 +5,7 @@
   </library>
   <jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="DerbyJdbcDriver">
-    <properties.derby.client databaseName="resdb" serverName="dbserver"
-          portNumber="1527" createDatabase="create" user="RES" password="RES" />
+    <properties.derby.client databaseName="odmdb" serverName="dbserver"
+          portNumber="1527" createDatabase="create" user="odmusr" password="odmpwd" />
   </dataSource>
 </server>

@@ -10,8 +10,8 @@ services:
     ports:
     - 5432:5432
     environment:
-      - POSTGRES_USER=odm
-      - POSTGRES_PASSWORD=odm
+      - POSTGRES_USER=odmusr
+      - POSTGRES_PASSWORD=odmpwd
       - POSTGRES_DB=odmdb
       - PGDATA=/pgdata
       - SAMPLE=true
