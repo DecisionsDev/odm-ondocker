@@ -20,12 +20,13 @@ COPY $ODMDOCKERDIR/decisionserver/decisionrunner/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/common/script $SCRIPT
+COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
-    $SCRIPT/installPostgres.sh && \
+    if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi && \
     cd /config/apps/extract && \
     unzip -q ../DecisionRunner.war && \
     cd ../ && \

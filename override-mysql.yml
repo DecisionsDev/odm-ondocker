@@ -4,10 +4,10 @@ services:
     build:
         dockerfile: ./${ODMDOCKERDIR}/databases/mysql/Dockerfile
     environment:
-      - MYSQL_ROOT_PASSWORD=odm
+      - MYSQL_ROOT_PASSWORD=odmpwd
       - MYSQL_DATABASE=odmdb
-      - MYSQL_USER=odm
-      - MYSQL_PASSWORD=odm
+      - MYSQL_USER=odmusr
+      - MYSQL_PASSWORD=odmpwd
     ports:
     - 3306:3306
 

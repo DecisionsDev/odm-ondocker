@@ -1,0 +1,26 @@
+<server>
+  <!-- decision center datasource -->
+  <library id="DB2Lib">
+    <fileset dir="${server.config.dir}/resources"/>
+  </library>
+  
+  <jdbcDriver id="DB2Driver" libraryRef="DB2Lib"/>
+  <dataSource id="dcdatasource"
+			  isolationLevel="TRANSACTION_READ_COMMITTED"
+			  jndiName="jdbc/ilogDataSource"
+			  statementCacheSize="150"
+			  jdbcDriverRef="DB2Driver">
+		<connectionManager
+				maxPoolSize="25"
+				minPoolSize="10"
+				connectionTimout="10s"
+				agedTimeout="30m"/>
+    <properties.db2.jcc  
+    	databaseName="odmdb"
+		user="odmusr"
+		password="odmpwd"
+		serverName="dbserver" 
+		portNumber="50000"/>
+  </dataSource>
+
+</server>

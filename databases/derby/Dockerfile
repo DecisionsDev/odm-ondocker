@@ -8,7 +8,7 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV DERBY_INSTALL=/db-derby-10.12.1.1-bin
 ENV DERBY_HOME=/db-derby-10.12.1.1-bin
 ENV CLASSPATH=/$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:.
-ENV DOWNLOAD http://wwwftp.ciril.fr/pub/apache//db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
+ENV DOWNLOAD=http://archive.apache.org/dist/db/derby/db-derby-10.12.1.1/db-derby-10.12.1.1-bin.tar.gz
 ENV DERBY_INSTALL=/opt/db-derby-10.12.1.1-bin
 ENV CLASSPATH=/$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:.
 

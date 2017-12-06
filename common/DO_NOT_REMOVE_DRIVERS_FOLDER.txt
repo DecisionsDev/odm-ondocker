@@ -1,0 +1,1 @@
+The `drivers` folder is used to add additional drivers. These drivers will be copied to the `/config/resources` folder of the ODM Docker images at build time.

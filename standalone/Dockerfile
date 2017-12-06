@@ -9,7 +9,6 @@ MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_sou
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
-ENV DC_PERSISTENCE_LOCALE en_US
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/dbdata
@@ -33,7 +32,7 @@ COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
 RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \
-    wget -nv https://jdbc.postgresql.org/download/postgresql-9.3-1104.jdbc4.jar && mv postgres* /config/resources
+    wget -nv https://jdbc.postgresql.org/download/postgresql-9.4.1212.jar && mv postgres* /config/resources
 # End - Configuration for the database
 
 ENV CONNECTION_POOL_SIZE 20

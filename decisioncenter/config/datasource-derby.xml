@@ -16,11 +16,11 @@
 			minPoolSize="10"
 			connectionTimout="10s"
 			agedTimeout="30m"/>
-		<properties.derby.client databaseName="rtsdb"
+		<properties.derby.client databaseName="odmdb"
 								serverName="dbserver"
 								portNumber="1527"
 								createDatabase="create"
-								user="ilog"
-								password="ilog" />
+								user="odmusr"
+								password="odmpwd" />
 	</dataSource>
 </server>

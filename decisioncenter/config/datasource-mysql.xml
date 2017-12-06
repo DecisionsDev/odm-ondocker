@@ -4,20 +4,26 @@
     <fileset dir="${server.config.dir}/resources"/>
   </library>
   
-  <jdbcDriver id="MySQLDriver" libraryRef="MySQLLib"/>
+  <jdbcDriver id="MySQLDriver"
+  			javax.sql.ConnectionPoolDataSource="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"
+  			javax.sql.DataSource="com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
+  			javax.sql.XADataSource="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource"
+  			libraryRef="MySQLLib"/>
+
   <dataSource id="dcdatasource"
 			  isolationLevel="TRANSACTION_READ_COMMITTED"
 			  jndiName="jdbc/ilogDataSource"
 			  statementCacheSize="150"
-			  jdbcDriverRef="MySQLDriver">
+			  jdbcDriverRef="MySQLDriver"
+			  type="javax.sql.ConnectionPoolDataSource">
 		<connectionManager
 				maxPoolSize="25"
 				minPoolSize="10"
 				connectionTimout="10s"
 				agedTimeout="30m"/>
     <properties databaseName="odmdb"
-				user="odm"
-				password="odm"
+				user="odmusr"
+				password="odmpwd"
 				serverName="dbserver" 
 				portNumber="3306"/>
   </dataSource>

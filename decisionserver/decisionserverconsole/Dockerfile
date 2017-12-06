@@ -13,19 +13,20 @@ ENV SCRIPT /script
 
 RUN mkdir -p $SCRIPT && \
 	mkdir -p /config/resources && \
-  mkdir -p /config/apps/extract
+    mkdir -p /config/apps/extract
 
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/common/script $SCRIPT
+COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
-    $SCRIPT/installPostgres.sh && \
+    if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi && \
     cd /config/apps/extract && \
     unzip -q ../res.war && \
     cd ../ && \

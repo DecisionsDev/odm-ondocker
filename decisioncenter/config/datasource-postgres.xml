@@ -22,15 +22,16 @@
         -->
         <properties
           databaseName="odmdb"
-          user="odm"
-          password="odm"
+          user="odmusr"
+          password="odmpwd"
           portNumber="5432"
           serverName="dbserver" /> 
   </dataSource>
 
   <jdbcDriver id="postgresql-driver"
-            javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
             javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"
+            javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
+            
             libraryRef="postgresql-library"/>
 
   <library id="postgresql-library">
