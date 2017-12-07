@@ -6,9 +6,9 @@ LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="IBM Operational Decision Manager"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+
 ENV APP_NAME DecisionServerConsole
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-
 ENV SCRIPT /script
 
 RUN mkdir -p $SCRIPT && \
@@ -21,6 +21,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
+COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/features $SCRIPT
 
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/
 
@@ -35,6 +36,8 @@ RUN chmod -R a+x $SCRIPT && \
     sed -i 's/<param-value>jmx<\/param-value>/<param-value>tcpip<\/param-value>/g' /config/apps/res.war/WEB-INF/web.xml && \
     perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml && \
     perl -i -p0e 's/(<param-name>onDocker<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml
+
+RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
 
 EXPOSE 9080 9443 1883
 
