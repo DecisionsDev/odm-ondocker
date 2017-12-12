@@ -41,7 +41,6 @@ function runFeatureScript() {
   local featureDir=$1
   local featureName=$2
   local featureScript="$featureDir/$featureName.sh"
-  chmod +x $featureScript
   $featureScript
 }
 
