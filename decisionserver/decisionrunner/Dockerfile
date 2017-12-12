@@ -32,8 +32,9 @@ RUN chmod -R a+x $SCRIPT && \
     cd ../ && \
     rm -rf DecisionRunner.war && \
     mv extract DecisionRunner.war && \
-    /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense && \
-    perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+    /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
+
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
 
 EXPOSE 9080 9443
 

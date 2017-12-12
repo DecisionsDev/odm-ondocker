@@ -21,7 +21,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
-COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/features $SCRIPT
+COPY $ODMDOCKERDIR/common/features $SCRIPT
 
 COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/
 

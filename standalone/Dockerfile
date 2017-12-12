@@ -29,6 +29,9 @@ RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 COPY ${ODMDOCKERDIR}/standalone/config /config
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
+COPY $ODMDOCKERDIR/common/script $SCRIPT
+COPY $ODMDOCKERDIR/common/features $SCRIPT
+
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
 RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \
@@ -57,8 +60,10 @@ RUN mkdir -p /config/apps/extract && \
     cd ../ && \
     rm -rf teamserver.war && \
     mv extract teamserver.war && \
-    mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config && \
-    perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' /config/apps/decisioncenter.war/WEB-INF/web.xml
+    mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config
+
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/web.xml
+
 COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
@@ -67,9 +72,9 @@ COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.w
 RUN cd /config/apps/res.war && \
     unzip -q ../res-file.war && \
     rm ../res-file.war && \
-    chmod -R a+x $SCRIPT && \
-    perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml && \
-    perl -i -p0e 's/(<param-name>onDocker<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml
+    chmod -R a+x $SCRIPT
+
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
@@ -92,7 +97,11 @@ RUN mkdir -p /config/apps/extract && \
     /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense && \
     cd /config/apps/DecisionRunner.war && \
     chmod -R a+x $SCRIPT
-RUN    perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
+
+RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
+
 VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
