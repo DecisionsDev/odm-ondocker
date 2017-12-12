@@ -32,10 +32,10 @@ RUN chmod -R a+x $SCRIPT && \
     unzip -q ../res.war && \
     cd ../ && \
     rm -rf res.war && \
-    mv extract res.war && \
-    sed -i 's/<param-value>jmx<\/param-value>/<param-value>tcpip<\/param-value>/g' /config/apps/res.war/WEB-INF/web.xml && \
-    perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml && \
-    perl -i -p0e 's/(<param-name>onDocker<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' /config/apps/res.war/WEB-INF/web.xml
+    mv extract res.war
+
+RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip /config/apps/res.war/WEB-INF/web.xml && \
+		$SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
 
