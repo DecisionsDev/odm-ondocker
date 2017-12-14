@@ -35,6 +35,9 @@ services:
     ports:
     - 9080:9080
     - 1883:1883
+    - 9943:9443
+    environment:
+    - KEYSTORE_PASSWORD=express1
     #environment:
     #- DB_SERVER_NAME=dbserver
 
