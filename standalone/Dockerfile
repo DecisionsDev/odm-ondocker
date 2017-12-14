@@ -49,59 +49,30 @@ RUN chmod -R a+x $SCRIPT
 ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP855/teamserver.war /config/apps/
-COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war /config/apps/
-RUN mkdir -p /config/apps/extract && \
-    cd /config/apps/extract && \
-    unzip -q ../decisioncenter.war && \
-    cd ../ && \
-    rm -rf decisioncenter.war && \
-    mv extract decisioncenter.war && \
-    mkdir -p /config/apps/extract && \
-    cd /config/apps/extract && \
-    unzip -q ../teamserver.war && \
-    cd ../ && \
-    rm -rf teamserver.war && \
-    mv extract teamserver.war && \
-    mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/config
+COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
+COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/web.xml
+RUN $SCRIPT/extractApp.sh decisioncenter.war && \
+    $SCRIPT/extractApp.sh teamserver.war && \
+    mkdir -p /$APPS/decisioncenter.war/WEB-INF/classes/config
 
-COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /$APPS/decisioncenter.war/WEB-INF/web.xml
+
+COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
-RUN mkdir -p /config/apps/res.war
-COPY ./executionserver/applicationservers/WLP855/res.war /config/apps/res-file.war
-RUN cd /config/apps/res.war && \
-    unzip -q ../res-file.war && \
-    rm ../res-file.war && \
-    chmod -R a+x $SCRIPT
-
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/WLP855/res.war $APPS
+RUN $SCRIPT/extractApp.sh res.war
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
-COPY ./executionserver/applicationservers/WLP855/DecisionService.war /config/apps/
-RUN mkdir -p /config/apps/extract && \
-    cd /config/apps/extract && \
-    unzip -q ../DecisionService.war && \
-	cd ../ && \
-    rm -rf DecisionService.war && \
-    mv extract DecisionService.war && \
-    cd /config/apps/DecisionService.war
+COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
+RUN $SCRIPT/extractApp.sh DecisionService.war
 
 # Decision Runner
-COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war /config/apps/
-RUN mkdir -p /config/apps/extract && \
-    cd /config/apps/extract && \
-    unzip -q ../DecisionRunner.war && \
-	cd ../ && \
-    rm -rf DecisionRunner.war && \
-    mv extract DecisionRunner.war && \
-    /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense && \
-    cd /config/apps/DecisionRunner.war && \
-    chmod -R a+x $SCRIPT
-
-RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
+RUN $SCRIPT/extractApp.sh DecisionRunner.war
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
