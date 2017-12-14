@@ -95,8 +95,13 @@ function loadFeatures() {
   else
     echo "$featureFile not found."
   fi
-
 }
+
+if [ ! "$1" ]
+then
+  echo "ERROR: Please specify feature directory."
+  return 0
+fi
 
 # $1 feature directory
 odmVersion=$($SCRIPT/extractODMVersion.sh)
