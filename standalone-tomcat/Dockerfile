@@ -6,9 +6,12 @@ LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdmOnTomcat
 ENV SCRIPT $CATALINA_HOME/script
+ENV APPS /config/apps
+
 RUN mkdir -p $SCRIPT && \
 	mkdir -p $CATALINA_HOME/dbdata
 
@@ -91,7 +94,7 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
 
-RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 VOLUME ["/usr/local/tomcat/dbdata/"]
 EXPOSE 8080

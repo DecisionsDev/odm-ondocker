@@ -99,5 +99,5 @@ function loadFeatures() {
 }
 
 # $1 feature directory
-# $2 the current product version
-loadFeatures $1 $2
+odmVersion=$($SCRIPT/extractODMVersion.sh)
+loadFeatures $1 $odmVersion

@@ -10,6 +10,7 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 ENV APP_NAME DecisionServerConsole
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
+ENV APPS /config/apps
 
 RUN mkdir -p $SCRIPT && \
 	mkdir -p /config/resources && \
@@ -37,7 +38,7 @@ RUN chmod -R a+x $SCRIPT && \
 RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip /config/apps/res.war/WEB-INF/web.xml && \
 		$SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
 
-RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 EXPOSE 9080 9443 1883
 

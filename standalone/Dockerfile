@@ -6,9 +6,12 @@ LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="IBM Operational Decision Manager Non-Production"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
+ENV APPS /config/apps
+
 RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/dbdata
@@ -100,7 +103,7 @@ RUN mkdir -p /config/apps/extract && \
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
 
-RUN $SCRIPT/loadFeatures.sh $SCRIPT $ODMVERSION
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
