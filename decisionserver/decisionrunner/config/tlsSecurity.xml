@@ -1,0 +1,4 @@
+<server>
+  <keyStore id="defaultKeyStore" location="keystore.jks" password="__PASSWORD__"  type="JKS" />
+  <ssl id="myDefaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLS" />
+</server>

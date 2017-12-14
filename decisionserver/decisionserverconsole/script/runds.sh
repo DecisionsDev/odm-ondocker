@@ -18,13 +18,17 @@ fi
 # End - Configuration for the tls security
 
 # Begin - Configuration for the user registry
-if [ "$REGISTRY" = "ldap" ]
+# For kubernetes in the case of a user want to override the configuration
+if [ ! -f "/config/webSecurity.xml" ]
 then
-	echo "Use LDAP registry"
-	cp /config/webSecurity-ldap.xml /config/webSecurity.xml
-else
-	echo "Use basic registry"
-	cp /config/webSecurity-basic.xml /config/webSecurity.xml
+	if [ "$REGISTRY" = "ldap" ]
+	then
+		echo "Use LDAP registry"
+		cp /config/webSecurity-ldap.xml /config/webSecurity.xml
+	else
+		echo "Use basic registry"
+		cp /config/webSecurity-basic.xml /config/webSecurity.xml
+	fi
 fi
 # End - Configuration for the user registry
 
