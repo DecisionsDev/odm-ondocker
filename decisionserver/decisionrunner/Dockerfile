@@ -33,7 +33,7 @@ RUN $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
 
-RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /$APPS/DecisionRunner.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 EXPOSE 9080 9443
 

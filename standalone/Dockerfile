@@ -55,16 +55,16 @@ COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
-    mkdir -p /$APPS/decisioncenter.war/WEB-INF/classes/config
+    mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /$APPS/decisioncenter.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
 RUN $SCRIPT/extractApp.sh res.war
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
