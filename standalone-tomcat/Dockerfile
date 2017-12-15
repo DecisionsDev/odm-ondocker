@@ -6,14 +6,20 @@ LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdmOnTomcat
 ENV SCRIPT $CATALINA_HOME/script
+ENV APPS /config/apps
+
 RUN mkdir -p $SCRIPT && \
 	mkdir -p $CATALINA_HOME/dbdata
 
 COPY ${ODMDOCKERDIR}/standalone-tomcat/config ${CATALINA_HOME}/conf
 COPY ${ODMDOCKERDIR}/standalone-tomcat/script $SCRIPT
+COPY $ODMDOCKERDIR/common/script $SCRIPT
+COPY $ODMDOCKERDIR/common/features $SCRIPT
+
 RUN chmod -R a+x $SCRIPT
 
 # Begin - Configuration for the database
@@ -51,8 +57,10 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     cd ../ && \
     rm -rf decisioncenter.war && \
     mv extract decisioncenter && \
-    mkdir -p ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/classes/config && \
-    perl -i -p0e 's/(<param-name>com\.ibm\.rules\.decisioncenter\.setup\.configuration-file<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1\/config\/decisioncenter-configuration\.properties\3/s' ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/web.xml
+    mkdir -p ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/classes/config
+
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/web.xml
+
 COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
@@ -62,9 +70,9 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     unzip -q ../res.war && \
     cd ../ && \
     rm -rf res.war && \
-    mv extract res && \
-    perl -i -p0e 's/(<param-name>autoCreateSchema<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' ${CATALINA_HOME}/webapps/res/WEB-INF/web.xml && \
-    perl -i -p0e 's/(<param-name>onDocker<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' ${CATALINA_HOME}/webapps/res/WEB-INF/web.xml
+    mv extract res
+
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/tomcat8/DecisionService.war ${CATALINA_HOME}/webapps
@@ -82,8 +90,11 @@ RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
     unzip -q ../DecisionRunner.war && \
 	cd ../ && \
     rm -rf DecisionRunner.war && \
-    mv extract DecisionRunner && \
-    perl -i -p0e 's/(<param-name>ForceDatabaseTableCreation<\/param-name>.*?<param-value>)(false)(<\/param-value>)/\1true\3/s' ${CATALINA_HOME}/webapps/DecisionRunner/WEB-INF/web.xml
+    mv extract DecisionRunner
+
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
+
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 VOLUME ["/usr/local/tomcat/dbdata/"]
 EXPOSE 8080
