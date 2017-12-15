@@ -15,6 +15,9 @@
 	<!-- include application declaration -->
 	<include optional="true" location="./application.xml"/>
 
+	<!-- include tls/https config -->
+  <include optional="true" location="./tlsSecurity.xml"/>
+
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
 

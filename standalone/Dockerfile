@@ -29,6 +29,8 @@ RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 COPY ${ODMDOCKERDIR}/standalone/config /config
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
+COPY $ODMDOCKERDIR/common/security /config/resources/security
+
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
 RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \

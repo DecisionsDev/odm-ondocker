@@ -42,6 +42,7 @@ RUN chmod -R a+x $SCRIPT && \
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 COPY $ODMDOCKERDIR/decisioncenter/ldap-configurations.xml /config/apps/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml
+COPY $ODMDOCKERDIR/decisioncenter/default-ldap-configurations.xml /config/apps/decisioncenter.war/WEB-INF/classes/config/default-ldap-configurations.xml
 COPY $ODMDOCKERDIR/decisioncenter/group-security-configurations.xml /config/apps/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
 EXPOSE 9060 9443
