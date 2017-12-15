@@ -32,8 +32,7 @@ then
 	then
 		echo "Use LDAP registry"
 		cp /config/webSecurity-ldap.xml /config/webSecurity.xml
-		perl -i -p0e 's/(com\.ibm\.rules\.decisioncenter\.setup\.ldap-configurations=)(.*?)/\1\/config\/ldap-configurations\.xml/s' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-		perl -i -p0e 's/(com\.ibm\.rules\.decisioncenter\.setup\.group-security-configurations=)(\/config\/group-security-configurations\.xml)/\1/s' /config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+                cp /config/deault-ldap-configurations.xml /config/ldap-configurations.xml
 	else
 		echo "Use basic registry"
 		cp /config/webSecurity-basic.xml /config/webSecurity.xml
