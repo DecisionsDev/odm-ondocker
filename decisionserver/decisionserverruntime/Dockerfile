@@ -27,7 +27,7 @@ COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
-    if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh;
+    if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
 RUN $SCRIPT/extractApp.sh DecisionService.war
 
