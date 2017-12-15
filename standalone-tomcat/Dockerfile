@@ -10,7 +10,7 @@ MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdmOnTomcat
 ENV SCRIPT $CATALINA_HOME/script
-ENV APPS /config/apps
+ENV APPS $CATALINA_HOME/webapps
 
 RUN mkdir -p $SCRIPT && \
 	mkdir -p $CATALINA_HOME/dbdata
@@ -39,60 +39,33 @@ ENV CONNECTION_POOL_SIZE 20
 ADD ${ODMDOCKERDIR}/standalone-tomcat/data.tar.gz ${CATALINA_HOME}/upload/
 
 # Remove existing web applications
-RUN cd ${CATALINA_HOME}/webapps && \
-    rm -rf *
+RUN rm -rf $APPS/*
 
 # Decision Center
-COPY ./teamserver/applicationservers/tomcat8/teamserver.war ${CATALINA_HOME}/webapps/
-COPY ./teamserver/applicationservers/tomcat8/decisioncenter.war ${CATALINA_HOME}/webapps/
-RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
-    cd ${CATALINA_HOME}/webapps/extract && \
-    unzip -q ../teamserver.war && \
-    cd ../ && \
-    rm -rf teamserver.war && \
-    mv extract teamserver && \
-    mkdir -p ${CATALINA_HOME}/webapps/extract && \
-    cd ${CATALINA_HOME}/webapps/extract && \
-    unzip -q ../decisioncenter.war && \
-    cd ../ && \
-    rm -rf decisioncenter.war && \
-    mv extract decisioncenter && \
-    mkdir -p ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/classes/config
+COPY ./teamserver/applicationservers/tomcat8/teamserver.war $APPS
+COPY ./teamserver/applicationservers/tomcat8/decisioncenter.war $APPS
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties /config/apps/decisioncenter.war/WEB-INF/web.xml
+RUN $SCRIPT/extractApp.sh decisioncenter.war && \
+    $SCRIPT/extractApp.sh teamserver.war && \
+    mkdir -p /$APPS/decisioncenter.war/WEB-INF/classes/config
 
-COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties ${CATALINA_HOME}/webapps/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
+
+COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
-COPY ./executionserver/applicationservers/tomcat8/res.war ${CATALINA_HOME}/webapps/
-RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
-    cd ${CATALINA_HOME}/webapps/extract && \
-    unzip -q ../res.war && \
-    cd ../ && \
-    rm -rf res.war && \
-    mv extract res
-
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /config/apps/res.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/tomcat8/res.war $APPS
+RUN $SCRIPT/extractApp.sh res.war
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
-COPY ./executionserver/applicationservers/tomcat8/DecisionService.war ${CATALINA_HOME}/webapps
-RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
-    cd ${CATALINA_HOME}/webapps/extract && \
-    unzip -q ../DecisionService.war && \
-    cd ../ && \
-    rm -rf DecisionService.war && \
-    mv extract DecisionService
+COPY ./executionserver/applicationservers/tomcat8/DecisionService.war $APPS
+RUN $SCRIPT/extractApp.sh DecisionService.war
 
 # Decision Runner
-COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war ${CATALINA_HOME}/webapps
-RUN mkdir -p ${CATALINA_HOME}/webapps/extract && \
-    cd ${CATALINA_HOME}/webapps/extract && \
-    unzip -q ../DecisionRunner.war && \
-	cd ../ && \
-    rm -rf DecisionRunner.war && \
-    mv extract DecisionRunner
-
-RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true /config/apps/DecisionRunner.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war $APPS
+RUN $SCRIPT/extractApp.sh DecisionRunner.war
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 

@@ -3,7 +3,7 @@ services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this
-  odm-standalone:
+  odm-standalone-tomcat:
     image: $REPOSITORY/odm-tomcat:$ODMVERSION
     build:
       context: ../
