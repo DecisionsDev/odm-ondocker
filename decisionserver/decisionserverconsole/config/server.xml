@@ -12,7 +12,7 @@
 	<!-- include web security config -->
 	<include optional="true" location="./webSecurity.xml"/>
 
-		<!-- include web security config -->
+	<!-- include tls/https config -->
 	<include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- include application declaration -->

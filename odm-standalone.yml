@@ -15,6 +15,7 @@ services:
     - SAMPLE=true
     ports:
     - 9080:9060
+    - 9453:9453
     # Uncomment this line to persist your data. Note that on OSX you need to share this
     # current directory in the Preference menu -> File Sharing menu.
     #    volumes:

@@ -15,7 +15,7 @@
 	<!-- include application declaration -->
 	<include optional="true" location="./application.xml"/>
 
-	<!-- include web security config -->
+	<!-- include tls/https config -->
   <include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- http endpoint -->

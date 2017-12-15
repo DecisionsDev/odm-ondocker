@@ -13,7 +13,7 @@ if [ -n "$KEYSTORE_PASSWORD" ]
 then
 	sed -i 's|__PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
 else
-	sed -i 's|__PASSWORD__|'password'|g' /config/tlsSecurity.xml
+	sed -i 's|__PASSWORD__|'changeme'|g' /config/tlsSecurity.xml
 fi
 # End - Configuration for the tls security
 

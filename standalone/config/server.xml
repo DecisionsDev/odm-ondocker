@@ -22,6 +22,9 @@
 	<!-- Decsion Runner -->
 	<include optional="true" location="./decisionrunner_application.xml"/>
 
+	<!-- include tls/https config -->
+  <include optional="true" location="./tlsSecurity.xml"/>
+
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
