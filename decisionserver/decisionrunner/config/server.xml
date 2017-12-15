@@ -18,6 +18,9 @@
 	<!-- http endpoint -->
   <httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9080" httpsPort="9443" />
 
+	<!-- include tls/https config -->
+  <include optional="true" location="./tlsSecurity.xml"/>
+
 	<!-- logging -->
 	<logging traceSpecification="*=audit:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
 
