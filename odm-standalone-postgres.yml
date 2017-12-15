@@ -1,7 +1,7 @@
 version: '2'
 services:
   dbserver:
-    image: postgres:9.5
+    image: postgres:9.5.10
     ports:
     - 5432:5432
     environment:
