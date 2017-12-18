@@ -45,27 +45,27 @@ RUN rm -rf $APPS/*
 COPY ./teamserver/applicationservers/tomcat8/teamserver.war $APPS
 COPY ./teamserver/applicationservers/tomcat8/decisioncenter*.war $APPS/
 
-RUN $SCRIPT/extractApp.sh decisioncenter.war && \
-    $SCRIPT/extractApp.sh teamserver.war && \
+RUN $SCRIPT/extractApp.sh decisioncenter.war decisioncenter && \
+    $SCRIPT/extractApp.sh teamserver.war teamserver && \
     mkdir -p /$APPS/decisioncenter.war/WEB-INF/classes/config
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/web.xml
 
 COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/tomcat8/res.war $APPS
-RUN $SCRIPT/extractApp.sh res.war
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
+RUN $SCRIPT/extractApp.sh res.war res
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/tomcat8/DecisionService.war $APPS
-RUN $SCRIPT/extractApp.sh DecisionService.war
+RUN $SCRIPT/extractApp.sh DecisionService.war DecisionService
 
 # Decision Runner
 COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war $APPS
-RUN $SCRIPT/extractApp.sh DecisionRunner.war
-RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
+RUN $SCRIPT/extractApp.sh DecisionRunner.war DecisionRunner
+RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
