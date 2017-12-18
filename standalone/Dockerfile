@@ -64,7 +64,7 @@ COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/de
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
 RUN $SCRIPT/extractApp.sh res.war
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS

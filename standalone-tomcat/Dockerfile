@@ -39,8 +39,7 @@ ENV CONNECTION_POOL_SIZE 20
 ADD ${ODMDOCKERDIR}/standalone-tomcat/data.tar.gz ${CATALINA_HOME}/upload/
 
 # Remove existing web applications
-RUN cd ${CATALINA_HOME}/webapps && \
-    rm -rf *
+RUN rm -rf $APPS/*
 
 # Decision Center
 COPY ./teamserver/applicationservers/tomcat8/teamserver.war $APPS
@@ -55,16 +54,16 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 # Decision Server Console
-COPY ./executionserver/applicationservers/WLP855/res.war $APPS
+COPY ./executionserver/applicationservers/tomcat8/res.war $APPS
 RUN $SCRIPT/extractApp.sh res.war
 RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true /$APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
-COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
+COPY ./executionserver/applicationservers/tomcat8/DecisionService.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionService.war
 
 # Decision Runner
-COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
+COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
