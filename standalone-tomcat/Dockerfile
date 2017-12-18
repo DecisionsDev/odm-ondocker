@@ -43,7 +43,7 @@ RUN rm -rf $APPS/*
 
 # Decision Center
 COPY ./teamserver/applicationservers/tomcat8/teamserver.war $APPS
-COPY ./teamserver/applicationservers/tomcat8/decisioncenter.war $APPS
+COPY ./teamserver/applicationservers/tomcat8/decisioncenter*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
