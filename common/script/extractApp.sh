@@ -14,10 +14,17 @@ fi
 
 appFile=$1
 
-echo "Extracting $appFile to $APPS..."
+if [ "$2" ]
+then
+  targetDir=$2
+else
+  targetDir=$appFile
+fi
+
+echo "Extracting $appFile to $APPS/$targetDir..."
 
 cd $APPS
 mkdir extract
 unzip -q $appFile -d extract
 rm -rf $appFile
-mv extract $appFile
+mv extract $targetDir
