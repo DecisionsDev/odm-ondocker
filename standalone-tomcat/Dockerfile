@@ -65,6 +65,7 @@ RUN $SCRIPT/extractApp.sh DecisionService.war DecisionService
 # Decision Runner
 COPY ./executionserver/applicationservers/tomcat8/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war DecisionRunner
+RUN /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
