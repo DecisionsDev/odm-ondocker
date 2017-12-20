@@ -35,6 +35,7 @@ services:
     ports:
     - 9080:9080
     - 1883:1883
+    - 9843:9443
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -48,9 +49,9 @@ services:
     - dbserver
     - odm-decisionserverconsole
     environment:
-    - EXCLUDE_PORTS=9443
+    - EXCLUDE_PORTS=9080
     ports:
-    - 9080
+    - 9443
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -68,6 +69,7 @@ services:
     - odm-decisionserverconsole
     ports:
     - 9070:9080
+    - 9743:9443
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -83,7 +85,8 @@ services:
     - dbserver
     ports:
     - 9060:9060
-
+    - 9453:9453
+    
   # The load balancer for the Runtime.
   lb:
     image: dockercloud/haproxy
