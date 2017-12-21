@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$defaultDatabase=$1
+defaultDatabase=$1
 
 # Begin - Configuration for the database
 if [ -n "$DB_DRIVER_URL" ]
@@ -62,12 +62,12 @@ then
 			  ;;
 	esac
 else
-	if [ "$defaultDatabase" == "h2"]; then
+	if [ "$defaultDatabase" == "h2" ]; then
 		echo "Use H2 as database by default"
 		cp /config/datasource-h2.xml /config/datasource.xml
 	else
 		echo "Use PostgreSQL as database by default"
 		cp /config/datasource-postgres.xml /config/datasource.xml
-	fi	
+	fi
 fi
 # End - Configuration for the database

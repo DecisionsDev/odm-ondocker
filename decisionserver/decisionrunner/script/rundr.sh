@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$SCRIPT/updateDRConfiguration.sh
+$SCRIPT/updateDRConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
 
