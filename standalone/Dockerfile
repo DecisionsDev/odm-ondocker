@@ -18,6 +18,7 @@ RUN mkdir /config/resources && \
 
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
+COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
 RUN mv /config/application.xml /config/decisioncenter_application.xml
 
 COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config
