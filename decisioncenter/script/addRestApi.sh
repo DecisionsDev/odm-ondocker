@@ -1,10 +1,16 @@
 #!/bin/bash
 
+applicationXml=$1
+
+if [ ! $applicationXml ]; then
+  applicationXml="application.xml"
+fi
+
 # Begin - Add DC Rest Api Web App
-if [ -e /config/apps/decisioncenter-api.war ]
+if [ -e $APPS/decisioncenter-api.war ]
 then
-        echo "Add DC Rest Api Web App"
-        cp /config/application-withRestApi.xml /config/application.xml
+        echo "Add DC Rest Api Web App in $applicationXml"
+        cp -f /config/application-withRestApi.xml /config/$applicationXml
 else
         echo "DC Rest Api Web App is not present"
 fi

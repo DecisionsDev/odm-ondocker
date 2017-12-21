@@ -2,6 +2,8 @@
 
 $SCRIPT/updateDCConfigurations.sh
 
+$SCRIPT/updatePersistenceLocale.sh
+
 $SCRIPT/configureTlsSecurity.sh
 
 $SCRIPT/configureUserRegistry.sh
