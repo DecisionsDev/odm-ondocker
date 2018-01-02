@@ -14,4 +14,6 @@ $SCRIPT/changeDatasource.sh
 
 $SCRIPT/addRestApi.sh
 
+$SCRIPT/jvmOptions.sh
+
 /opt/ibm/docker/docker-server run defaultServer
