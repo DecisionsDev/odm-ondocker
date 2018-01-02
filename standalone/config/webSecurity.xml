@@ -5,11 +5,12 @@
 		<user name="rtsAdmin" password="rtsAdmin"/>
 		<user name="rtsConfig" password="rtsConfig"/>
 		<user name="rtsUser1" password="rtsUser1"/>
-		<user name="rtsUser2" password="rtsUser2"/>	
+		<user name="rtsUser2" password="rtsUser2"/>
 		<!-- Users for Rule Execution Server -->
 		<user name="resAdmin" password="resAdmin"/>
 		<user name="resDeployer" password="resDeployer"/>
 		<user name="resMonitor" password="resMonitor"/>
+		<user name="resExecutor" password="resExecutor" />
 		<!-- Groups for Decision Center -->
 		<group name="rtsAdministrators">
 			<member name="rtsAdmin"/>
@@ -39,6 +40,11 @@
 			<member name="resAdmin" />
 			<member name="resDeployer" />
 			<member name="resMonitor" />
+		</group>
+		<group name="resExecutors">
+			<member name="resAdmin" />
+			<member name="resDeployer" />
+			<member name="resExecutor" />
 		</group>
 	</basicRegistry>
 </server>
