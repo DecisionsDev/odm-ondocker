@@ -13,6 +13,7 @@ services:
         - ODMVERSION=$ODMVERSION
     environment:
     - SAMPLE=true
+    - LICENSE=$LICENSE
     ports:
     - 9080:9060
     - 9453:9453

@@ -16,6 +16,8 @@ RUN mkdir /config/resources && \
 	mkdir -p $SCRIPT && \
 	mkdir -p /config/dbdata
 
+COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
+
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
 COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
 COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT

@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+$SCRIPT/checkLicense.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then
 	if [ "$SAMPLE" = "true" ] ; then
