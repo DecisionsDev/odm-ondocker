@@ -23,10 +23,11 @@ before_install:
 
 script:
   # Make error if 'LICENSE(D) and IBM are found on a same line.'
-  - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml' ."
+  - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml' --exclude-dir='licenses' ."
   - chmod +x build.sh
   - ./build.sh
   - sudo service postgresql stop
   - while sudo lsof -Pi :5432 -sTCP:LISTEN -t; do sleep 1; done
+  - export LICENSE=accept
   - docker-compose up -d
   - ./test/suite.sh
