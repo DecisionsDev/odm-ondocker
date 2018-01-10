@@ -22,7 +22,7 @@
   <include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- logging -->
-	<logging traceSpecification="*=audit:com.ibm.rules.*=all:com.ibm.rules.res.execution.*=all:com.ibm.rules.res.execution=all" consoleLogLevel="INFO"/>
+	<logging traceSpecification="*=audit:com.ibm.rules.*=info:com.ilog.rules.*=info"/>
 
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
