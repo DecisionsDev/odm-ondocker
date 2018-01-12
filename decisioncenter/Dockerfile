@@ -39,6 +39,6 @@ COPY $ODMDOCKERDIR/decisioncenter/ldap-configurations.xml $APPS/decisioncenter.w
 COPY $ODMDOCKERDIR/decisioncenter/default-ldap-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/default-ldap-configurations.xml
 COPY $ODMDOCKERDIR/decisioncenter/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
-EXPOSE 9060 9443
+EXPOSE 9060 9453
 
 CMD ["/script/rundc.sh"]
