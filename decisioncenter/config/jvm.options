@@ -1,2 +1,2 @@
 -Djavax.net.ssl.trustStore=/config/resources/security/truststore.jks
--Djavax.net.ssl.trustStorePassword=__PASSWORD__
+-Djavax.net.ssl.trustStorePassword=__TRUSTSTORE_PASSWORD__
