@@ -23,7 +23,7 @@ before_install:
 
 script:
   # Make error if 'LICENSE(D) and IBM are found on a same line.'
-  - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml' --exclude-dir='licenses' ."
+  - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml' --exclude-dir='licenses' --exclude-dir='dockerhub' ."
   - chmod +x build.sh
   - ./build.sh
   - sudo service postgresql stop
