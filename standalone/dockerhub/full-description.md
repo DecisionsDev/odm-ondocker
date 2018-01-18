@@ -20,23 +20,23 @@
 
   # Overview
 
-  The images in this repository contain IBM Operational Decision Manager for Developers based on IBM Websphere Application Server Liberty for Developper image. See the license section below for restrictions relating to the use of this image. For more information about  IBM Operational Decision Manager , see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.1/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
+  The images in this repository contain IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developper image. See the license section below for restrictions relative to the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
 
 
   # Usage
 
-This image contain the IBM Operational Decision Manager with all the component in a single image.
+This image contains IBM Operational Decision Manager with all the components in a single image.
 This allow to evaluate products.
 
-1.	This  image contains a server pre-configure with a database that is accessible  9060 and 9443 for HTTP and HTTPS respectively.
+1.	This image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 
   	```console
   	$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 \
   	    ibmcom/odm
   	```
-You need to accept the license before launching this image. License is available in the bottom of this page.
+You must accept the license before launching the image. The license is available at the bottom of this page.
 
-When the server is started, you can access the application with these URLs:
+When the server is started, you can access the applications with these URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
@@ -49,7 +49,7 @@ When the server is started, you can access the application with these URLs:
 
   # License
 
-  The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+  The Docker files and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
   Licenses for the products installed within the images are as follows:
   -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
