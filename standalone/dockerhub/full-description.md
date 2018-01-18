@@ -1,4 +1,6 @@
 
+This repository is the home directory of IBM Operational Decision Manager for Developers, where you can find early access material for this program.
+
 # Quick reference
 
 -	**Where to get help**:   [The ODMDev community](https://developer.ibm.com/odm/)
