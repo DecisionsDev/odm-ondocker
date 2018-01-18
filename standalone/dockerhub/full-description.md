@@ -6,7 +6,7 @@
 -	**Where to file issues**:  
   https://github.com/ODMDev/odm-ondocker/issues
 
--	**Maintained by**:   [The IBM WASdev Community](https://github.com/ODMDev)
+-	**Maintained by**:   [The ODMDev Community](https://github.com/ODMDev)
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
 
@@ -52,4 +52,6 @@ When the server is started, you can access the application with these URLs:
   The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
   Licenses for the products installed within the images are as follows:
-  -	[IBM Operation Decision Manager for Developper ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
+  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
+
+Note: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
