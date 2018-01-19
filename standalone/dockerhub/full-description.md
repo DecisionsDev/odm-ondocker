@@ -1,12 +1,12 @@
 
 # Quick reference
 
--	**Where to get help**:   [The ODMDev community](https://developer.ibm.com/odm/)
+-	**Where to get help**:   [ODMDev community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
   https://github.com/ODMDev/odm-ondocker/issues
 
--	**Maintained by**:   [The ODMDev Community](https://github.com/ODMDev)
+-	**Maintained by**:   [ODMDev Community](https://github.com/ODMDev)
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
 
@@ -16,11 +16,11 @@
   docs repo's odm/(https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub) directory (history)
 
   -	**Supported Docker versions**:  
-  	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
+  	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
   # Overview
 
-  The images in this repository contain IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developper image. See the license section below for restrictions relative to the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
+  The images in this repository contain IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developper image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
 
 
   # Usage
@@ -49,7 +49,7 @@ When the server is started, you can access the applications with these URLs:
 
   # License
 
-  The Docker files and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+  The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
   Licenses for the products installed within the images are as follows:
   -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
