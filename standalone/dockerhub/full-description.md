@@ -28,7 +28,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
   # Usage
 
 This image contains IBM Operational Decision Manager with all the components in a single image.
-This allows you to evaluate products.
+It allows you to evaluate products.
 
 1.	This image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 
