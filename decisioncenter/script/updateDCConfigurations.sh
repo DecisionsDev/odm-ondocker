@@ -39,7 +39,13 @@ else
         sed -i 's|decisionrunner-port|'9080'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
-if [ -n "$ENABLE_LDAP" ]
+if [ "$REGISTRY" = "ldap" ]
+then
+  echo "Use default LDAP registry"
+  cp /config/apps/decisioncenter.war/WEB-INF/classes/config/default-ldap-configurations.xml /config/apps/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml
+fi
+
+if [ -s "/config/apps/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml" ] 
 then
  echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
         sed -i 's|ldap-sync-mode|'users'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties

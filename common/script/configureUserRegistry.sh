@@ -8,7 +8,6 @@ then
 	then
 		echo "Use LDAP registry"
 		cp /config/webSecurity-ldap.xml /config/webSecurity.xml
-    cp /config/deault-ldap-configurations.xml /config/ldap-configurations.xml
 	else
 		echo "Use basic registry"
 		cp /config/webSecurity-basic.xml /config/webSecurity.xml
