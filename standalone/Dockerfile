@@ -12,9 +12,7 @@ ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
 
-RUN mkdir /config/resources && \
-	mkdir -p $SCRIPT && \
-	mkdir -p /config/dbdata
+RUN mkdir -p /config/dbdata
 
 COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
 
@@ -35,7 +33,10 @@ RUN mv /config/application.xml /config/decisionserverruntime_application.xml
 COPY ${ODMDOCKERDIR}/standalone/config /config
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 
-COPY $ODMDOCKERDIR/common/security /config/resources/security
+COPY $ODMDOCKERDIR/common/config /config
+COPY $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
+COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 
