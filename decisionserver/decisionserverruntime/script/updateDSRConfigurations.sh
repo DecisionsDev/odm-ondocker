@@ -2,6 +2,11 @@
 
 echo "Update Decision Server Runtime configurations"
 
+if [ -z $CONNECTION_POOL_SIZE ]; then
+	echo "The environment variable CONNECTION_POOL_SIZE is not configured."
+	exit 1
+fi
+
 if [ ! -f /config/initialized.flag ] ; then
 	cd /config/apps/DecisionService.war/WEB-INF;
 	sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml

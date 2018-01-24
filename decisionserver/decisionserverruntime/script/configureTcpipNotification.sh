@@ -6,6 +6,8 @@ tcpipPort=1883
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]
 then
   tcpipHost="$DECISIONSERVERCONSOLE_NAME"
+else
+  echo "The environment variable DECISIONSERVERCONSOLE_NAME is not configured. The tcpip host is set to default value $tcpipHost"
 fi
 
 echo "Enable tcpip notification between Decision Server Runtime XU and Decision Server Console $tcpipHost on port $tcpipPort"
