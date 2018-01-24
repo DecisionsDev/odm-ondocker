@@ -13,6 +13,9 @@ ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
 ENV APPS /config/apps
 
+RUN mkdir -p $SCRIPT && \
+		mkdir -p /config/resources
+
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
