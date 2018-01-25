@@ -31,3 +31,6 @@ script:
   - export LICENSE=accept
   - docker-compose up -d
   - ./test/suite.sh
+
+notifications:
+  slack: ibm-cloud:LbtLkB6RShLAntBS4thdFlqY
