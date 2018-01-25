@@ -2,6 +2,7 @@
 !executionserver/applicationservers/WLP855/res.war
 !executionserver/applicationservers/WLP855/DecisionService.war
 !executionserver/applicationservers/WLP855/DecisionRunner.war
+!executionserver/lib**
 !teamserver/applicationservers/WLP855/decisioncenter.war
 !teamserver/applicationservers/WLP855/decisioncenter-api.war
 !teamserver/applicationservers/WLP855/teamserver.war
@@ -11,6 +12,7 @@
 !teamserver/applicationservers/tomcat8/decisioncenter.war
 !teamserver/applicationservers/tomcat8/decisioncenter-api.war
 !teamserver/applicationservers/tomcat8/teamserver.war
+!teamserver/lib**
 !**/docker-compose
 !docker-compose**
 !**/odm-docker
