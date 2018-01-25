@@ -1,6 +1,7 @@
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
+ARG DECISIONSERVERCONSOLE_NAME
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="IBM Operational Decision Manager"
@@ -9,9 +10,10 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 
 ENV APP_NAME DecisionServerRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
 ENV APPS /config/apps
+ENV CONNECTION_POOL_SIZE 20
+ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 RUN mkdir -p $SCRIPT && \
 		mkdir -p /config/resources

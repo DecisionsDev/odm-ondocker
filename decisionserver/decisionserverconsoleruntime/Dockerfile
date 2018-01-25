@@ -9,9 +9,9 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com
 
 ENV APP_NAME DecisionServerConsoleRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CONNECTION_POOL_SIZE 20
 ENV SCRIPT /script
 ENV APPS /config/apps
+ENV CONNECTION_POOL_SIZE 20
 
 RUN mkdir -p $SCRIPT && \
 		mkdir -p /config/resources
@@ -21,6 +21,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverconsoleruntime/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsoleruntime/script $SCRIPT
+COPY $ODMDOCKERDIR/common/config /config
 COPY $ODMDOCKERDIR/common/security /config/resources/security
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources

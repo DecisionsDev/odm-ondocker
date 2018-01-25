@@ -28,7 +28,8 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
-        - DECISIONSERVERCONSOLE_NAME=localhost
+    environment:
+      - DECISION_SERVICE_URL=http://localhost:9080/DecisionService
     links:
     - dbserver
     depends_on:
@@ -64,6 +65,8 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+    environment:
+      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
     - dbserver
     - odm-decisionserverconsole
