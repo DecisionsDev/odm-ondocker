@@ -22,7 +22,9 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsoleruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/config /config
-COPY $ODMDOCKERDIR/common/security /config/resources/security
+COPY $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
+COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
