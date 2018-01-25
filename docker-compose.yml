@@ -28,8 +28,6 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
-    environment:
-      - DECISION_SERVICE_URL=http://localhost:9080/DecisionService
     links:
     - dbserver
     depends_on:
