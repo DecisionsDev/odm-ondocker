@@ -54,6 +54,7 @@ wait_for_url http://localhost:9090/DecisionService resExecutor resExecutor
 wait_for_url http://localhost:9060/decisioncenter
 wait_for_url http://localhost:9060/teamserver
 wait_for_url http://localhost:9080/res
+wait_for_url http://localhost:9080/DecisionService resExecutor resExecutor
 
 check_for_docker_url odmondocker_odm-decisionrunner_1        dbserver
 check_for_docker_url odmondocker_odm-decisionserverruntime_1 dbserver
