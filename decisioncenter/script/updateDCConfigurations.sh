@@ -39,17 +39,20 @@ else
         sed -i 's|decisionrunner-port|'9080'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
-if [ "$REGISTRY" = "ldap" ]
+if [ -s "/config/auth/ldap-configurations.xml" ] 
 then
-  echo "Use default LDAP registry"
-  cp /config/apps/decisioncenter.war/WEB-INF/classes/config/default-ldap-configurations.xml /config/apps/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml
+  echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
+  sed -i 's|ldap-sync-mode|'users'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|ldap-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/ldap-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+else
+  echo "Update LDAP synchronization mode to none in decisioncenter-configuration.properties"
+  sed -i 's|ldap-sync-mode|'none'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|ldap-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
-if [ -s "/config/apps/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml" ] 
+if [ -s "/config/auth/group-security-configurations.xml" ] 
 then
- echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
-        sed -i 's|ldap-sync-mode|'users'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|group-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/group-security-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 else
- echo "Update LDAP synchronization mode to none in decisioncenter-configuration.properties"
-        sed -i 's|ldap-sync-mode|'none'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|group-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi

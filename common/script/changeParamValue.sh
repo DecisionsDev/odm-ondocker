@@ -5,7 +5,7 @@ oldValue=$2
 newValue=$3
 file=$4
 
-echo "change the value of param $paramName from $oldValue to $newValue in $file"
+echo "Change the value of parameter $paramName from $oldValue to $newValue in $file"
 
 # . matches any value
 if [ $oldValue = "." ]

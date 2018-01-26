@@ -1,0 +1,50 @@
+<server>
+  <!-- Web application security -->
+	<basicRegistry id="basic" realm="customRealm">
+		<!-- Users for Decision Center -->
+		<user name="rtsAdmin" password="rtsAdmin"/>
+		<user name="rtsConfig" password="rtsConfig"/>
+		<user name="rtsUser1" password="rtsUser1"/>
+		<user name="rtsUser2" password="rtsUser2"/>
+		<!-- Users for Rule Execution Server -->
+		<user name="resAdmin" password="resAdmin"/>
+		<user name="resDeployer" password="resDeployer"/>
+		<user name="resMonitor" password="resMonitor"/>
+		<user name="resExecutor" password="resExecutor" />
+		<!-- Groups for Decision Center -->
+		<group name="rtsAdministrators">
+			<member name="rtsAdmin"/>
+		</group>
+		<group name="rtsInstallers">
+			<member name="rtsAdmin"/>
+		</group>
+		<group name="rtsConfigManagers">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+		</group>
+		<group name="rtsUsers">
+			<member name="rtsAdmin"/>
+			<member name="rtsConfig"/>
+			<member name="rtsUser1"/>
+			<member name="rtsUser2"/>
+		</group>
+		<!-- Groups for Rule Execution Server -->
+		<group name="resAdministrators">
+			<member name="resAdmin" />
+		</group>
+		<group name="resDeployers">
+			<member name="resAdmin" />
+			<member name="resDeployer" />
+		</group>
+		<group name="resMonitors">
+			<member name="resAdmin" />
+			<member name="resDeployer" />
+			<member name="resMonitor" />
+		</group>
+		<group name="resExecutors">
+			<member name="resAdmin" />
+			<member name="resDeployer" />
+			<member name="resExecutor" />
+		</group>
+	</basicRegistry>
+</server>

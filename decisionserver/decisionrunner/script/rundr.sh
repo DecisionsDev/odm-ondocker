@@ -4,8 +4,6 @@ $SCRIPT/updateDRConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
 
-$SCRIPT/configureUserRegistry.sh
-
 $SCRIPT/configureDatabase.sh
 
 $SCRIPT/changeDatasource.sh

@@ -61,27 +61,23 @@ services:
   odm-decisionserverconsole:
     depends_on:
       - openldap
-    environment:
-      - REGISTRY=ldap
-      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    volumes:
+      - ./ldap/auth:/config/auth
     
   odm-decisionrunner:
     depends_on:
       - openldap
-    environment:
-      - REGISTRY=ldap
-      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    volumes:
+      - ./ldap/auth:/config/auth
     
   odm-decisionserverruntime:
     depends_on:
       - openldap
-    environment:
-      - REGISTRY=ldap
-      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    volumes:
+      - ./ldap/auth:/config/auth
     
   odm-decisioncenter:
     depends_on:
       - openldap
-    environment:
-      - REGISTRY=ldap
-      # Set REGISTRY to "ldap" to use a ldap registry, otherwise a basic registry is used.
+    volumes:
+      - ./ldap/auth:/config/auth

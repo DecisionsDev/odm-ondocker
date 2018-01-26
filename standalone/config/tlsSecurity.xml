@@ -1,0 +1,6 @@
+<server>
+  <sslDefault sslRef="odmDefaultSSLConfig" />
+  <ssl id="odmDefaultSSLConfig" keyStoreRef="odmDefaultKeyStore" trustStoreRef="odmDefaultTrustStore" />
+  <keyStore id="odmDefaultKeyStore" location="/config/security/keystore.jks" password="__KEYSTORE_PASSWORD__" type="JKS" />
+  <keyStore id="odmDefaultTrustStore" location="/config/security/truststore.jks" password="__TRUSTSTORE_PASSWORD__" type="JKS" />
+</server>

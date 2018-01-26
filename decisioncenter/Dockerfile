@@ -35,9 +35,6 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-COPY $ODMDOCKERDIR/decisioncenter/ldap-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/ldap-configurations.xml
-COPY $ODMDOCKERDIR/decisioncenter/default-ldap-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/default-ldap-configurations.xml
-COPY $ODMDOCKERDIR/decisioncenter/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
 EXPOSE 9060 9453
 
