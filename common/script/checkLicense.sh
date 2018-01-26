@@ -30,9 +30,9 @@ elif [ "$LICENSE" = "view" ]; then
 
   cat $APPS/$licenseFile
 
-  echo -e "Set environment variable LICENSE=accept to indicate acceptance of license terms and conditions."
+  echo -e "Set environment variable LICENSE=accept to indicate acceptance of license terms and conditions. Ex: docker run -e LICENSE=accept ..."
   exit 1
 else
-  echo -e "Set environment variable LICENSE=accept to indicate acceptance of license terms and conditions.\n\nLicense agreements and information can be viewed by running this image with the environment variable LICENSE=view. You can also set the LANG environment variable to view the license in a different language."
+  echo -e "Set environment variable LICENSE=accept to indicate acceptance of license terms and conditions.Ex: docker run -e LICENSE=accept...\n\nLicense agreements and information can be viewed by running this image with the environment variable LICENSE=view. You can also set the LANG environment variable to view the license in a different language.Ex: docker run -e LICENSE=view .."
   exit 1
 fi

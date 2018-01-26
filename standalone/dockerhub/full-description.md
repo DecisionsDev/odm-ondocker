@@ -28,9 +28,9 @@ This repository is the home directory of IBM Operational Decision Manager for De
   # Usage
 
 This image contains IBM Operational Decision Manager with all the components in a single image.
-This allow to evaluate products.
+It allows you to evaluate the product.
 
-1.	This image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
+The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 
   	```console
   	$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 \
