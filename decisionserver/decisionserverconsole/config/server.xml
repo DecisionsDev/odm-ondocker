@@ -10,7 +10,7 @@
 	<include optional="true" location="./datasource.xml"/>
 
 	<!-- include web security config -->
-	<include optional="true" location="./webSecurity.xml"/>
+	<include optional="true" location="./auth/webSecurity.xml"/>
 
 	<!-- include tls/https config -->
 	<include optional="true" location="./tlsSecurity.xml"/>

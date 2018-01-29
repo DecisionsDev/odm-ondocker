@@ -16,8 +16,8 @@ else
     echo "ODM distribution: Loading finished..."
 fi
 
-echo "unzipp odm distribution..."
-unzip -q $HOME/.cache/$ODM_FILE_NAME -d .
+echo "unzip odm distribution..."
+unzip -q $HOME/.cache/$ODM_FILE_NAME -d install
 
 echo "copy odm-ondocker into ODM distribution..."
 cp -R odm-ondocker install
@@ -31,8 +31,8 @@ docker-compose build
 echo "build ODM standalone docker image..."
 docker-compose -f odm-standalone.yml build
 
-echo "build ODM standalone tomcat8 docker image..."
-docker-compose -f odm-standalone-tomcat.yml build
+# echo "build ODM standalone tomcat8 docker image..."
+# docker-compose -f odm-standalone-tomcat.yml build
 
 echo "build ODM cluster docker images..."
 docker-compose -f odm-cluster.yml build
