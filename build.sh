@@ -31,8 +31,8 @@ docker-compose build
 echo "build ODM standalone docker image..."
 docker-compose -f odm-standalone.yml build
 
-echo "build ODM standalone tomcat8 docker image..."
-docker-compose -f odm-standalone-tomcat.yml build
+# echo "build ODM standalone tomcat8 docker image..."
+# docker-compose -f odm-standalone-tomcat.yml build
 
 echo "build ODM cluster docker images..."
 docker-compose -f odm-cluster.yml build
