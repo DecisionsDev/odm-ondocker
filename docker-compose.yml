@@ -21,10 +21,10 @@ services:
 #      - ./pgdata:/pgdata
 
   odm-decisionserverconsole:
-    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsoleruntime:$ODMVERSION
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
     build:
       context: ../
-      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsoleruntime/Dockerfile
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
