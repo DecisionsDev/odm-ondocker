@@ -2,6 +2,8 @@
 
 $SCRIPT/updateDSRConfigurations.sh
 
+$SCRIPT/configureTcpipNotification.sh
+
 $SCRIPT/configureTlsSecurity.sh
 
 $SCRIPT/enableMetering.sh

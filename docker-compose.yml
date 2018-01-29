@@ -37,9 +37,6 @@ services:
     - 1883:1883
     - 9843:9443
 
-    #environment:
-    #- DB_SERVER_NAME=dbserver
-
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -58,7 +55,6 @@ services:
     - 9070:9080
     - 9743:9443
 
-
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
     build:
@@ -67,6 +63,8 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+    environment:
+      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -76,7 +74,6 @@ services:
     ports:
     - 9090:9080
     - 9943:9443
-
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
