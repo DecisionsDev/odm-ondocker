@@ -42,7 +42,7 @@ COPY ${ODMDOCKERDIR}/common/features $SCRIPT
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
 RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \
-    wget -nv https://jdbc.postgresql.org/download/postgresql-42.1.4.jar && mv postgres* /config/resources
+    wget -nv https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources
 # End - Configuration for the database
 
 ENV CONNECTION_POOL_SIZE 20
