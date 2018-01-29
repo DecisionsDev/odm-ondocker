@@ -1,3 +1,10 @@
+FROM alpine:3.5 AS builder
+COPY ./teamserver/lib/* /teamserver/lib/
+COPY ./executionserver/lib/* /executionserver/lib/
+
+RUN apk add --no-cache zip
+RUN mkdir work;cd work;zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -23,8 +30,6 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
-COPY ./teamserver/lib/* /teamserver/lib/
-COPY ./executionserver/lib/* /executionserver/lib/
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \
@@ -37,12 +42,7 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-
-RUN apt-get update
-RUN apt-get install -y zip
-
-RUN mkdir $APPS/decisioncenter.war/assets
-RUN zip -r $APPS/decisioncenter.war/assets/decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar
+COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 
 
 EXPOSE 9060 9453
