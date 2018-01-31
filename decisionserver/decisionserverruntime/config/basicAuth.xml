@@ -1,7 +1,8 @@
 <security-constraint>
 	<web-resource-collection>
 		<web-resource-name>Decision Service</web-resource-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/ws/*</url-pattern>
+		<url-pattern>/rest/*</url-pattern>
 	</web-resource-collection>
 	<auth-constraint>
 		<role-name>resExecutors</role-name>
