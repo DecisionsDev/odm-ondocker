@@ -27,7 +27,7 @@ docs repo's odm/(https://github.com/ODMDev/odm-ondocker/tree/master/standalone/d
 
   # Overview
 
-  The images in this repository contain IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
 
 
   # Usage
@@ -41,9 +41,9 @@ The image contains a server that is preconfigured with a database accessible thr
   	$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 \
   	    ibmcom/odm
   	```
-You must accept the license before launching the image. The license is available at the bottom of this page.
+You must accept the license before you launch the image. The license is available at the bottom of this page.
 
-When the server is started, you can access the applications with these URLs:
+When the server is started, you can access the ODM applications with the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
@@ -58,7 +58,7 @@ When the server is started, you can access the applications with these URLs:
 
   The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-  License information for the products installed within the images is as follows:
+  License information for the products installed within the image is as follows:
   -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
 
 Note: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
