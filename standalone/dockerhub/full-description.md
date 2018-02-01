@@ -14,8 +14,8 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
   [`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
 
--	**Source of this description**:  
-docs repo's odm/(https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub) directory (history)
+-	**Source of this description**: 
+        (https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub)
 
 -	**Supported Docker versions**:  
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
@@ -59,6 +59,6 @@ When the server is started, you can access the ODM applications with the followi
   The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
   License information for the products installed within the image is as follows:
-  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
+  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt)
 
-Note: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
+**Note**: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
