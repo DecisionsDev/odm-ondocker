@@ -19,6 +19,11 @@ docs repo's odm/(https://github.com/ODMDev/odm-ondocker/tree/master/standalone/d
 
 -	**Supported Docker versions**:  
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
+	
+-	**Rule Designer development environment for ODM developers**:  
+	[latest release](https://github.com/ODMDev/ruledesigner/raw/master)
+	
+	[Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
   # Overview
 
