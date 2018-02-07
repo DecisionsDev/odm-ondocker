@@ -3,7 +3,7 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
-LABEL ProductName="IBM Operational Decision Manager Non-Production"
+LABEL ProductName="IBM Operational Decision Manager for Developers"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
