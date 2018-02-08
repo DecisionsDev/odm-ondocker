@@ -24,6 +24,7 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
+COPY $ODMDOCKERDIR/webpage/out/
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \

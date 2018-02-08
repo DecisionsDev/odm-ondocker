@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="odm-ondocker-webpage:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="odm-ondocker-webpage-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="odm-ondocker-webpage:war exploded" />
+    </root>
+  </artifact>
+</component>
