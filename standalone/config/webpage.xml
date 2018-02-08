@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<server description="new server">
-  <!-- Enable features -->
-  <featureManager>
-    <feature>webProfile-7.0</feature>
-    <feature>localConnector-1.0</feature>
-  </featureManager>
-  <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
-  <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443" />
-  <!-- Automatically expand WAR files and EAR files -->
-  <applicationManager autoExpand="true" />
-  <applicationMonitor updateTrigger="mbean" />
+<server description="webpage">
 
   <library id="config">
     <folder dir="/config" />
   </library>
 
-  <application id="odm_ondocker_webpage_war_exploded" location="/config/apps/odm-ondocker-webpage-1.0-SNAPSHOT" name="/" type="war">
+  <application id="odm_ondocker_webpage_war_exploded" location="/config/apps/odm-ondocker-webpage-1.0-SNAPSHOT.war" name="/" type="war">
     <classloader privateLibraryRef="config" />
   </application>
 </server>
