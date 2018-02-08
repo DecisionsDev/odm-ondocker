@@ -22,6 +22,9 @@
 	<!-- Decsion Runner -->
 	<include optional="true" location="./decisionrunner_application.xml"/>
 
+	<!-- webpage -->
+	<include optional="true" location="./webpage.xml"/>
+
 	<!-- include tls/https config -->
   	<include optional="true" location="./tlsSecurity.xml"/>
 
