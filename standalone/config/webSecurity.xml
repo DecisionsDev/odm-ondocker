@@ -1,6 +1,8 @@
 <server>
   <!-- Web application security -->
 	<basicRegistry id="basic" realm="customRealm">
+		<!-- ODM Super User -->
+        	<user name="odmAdmin" password="odmAdmin"/>    
 		<!-- Users for Decision Center -->
 		<user name="rtsAdmin" password="rtsAdmin"/>
 		<user name="rtsConfig" password="rtsConfig"/>
@@ -13,16 +15,20 @@
 		<user name="resExecutor" password="resExecutor" />
 		<!-- Groups for Decision Center -->
 		<group name="rtsAdministrators">
+			<member name="odmAdmin"/>
 			<member name="rtsAdmin"/>
 		</group>
 		<group name="rtsInstallers">
+			<member name="odmAdmin"/>
 			<member name="rtsAdmin"/>
 		</group>
 		<group name="rtsConfigManagers">
+			<member name="odmAdmin"/>
 			<member name="rtsAdmin"/>
 			<member name="rtsConfig"/>
 		</group>
 		<group name="rtsUsers">
+			<member name="odmAdmin"/>
 			<member name="rtsAdmin"/>
 			<member name="rtsConfig"/>
 			<member name="rtsUser1"/>
@@ -30,18 +36,22 @@
 		</group>
 		<!-- Groups for Rule Execution Server -->
 		<group name="resAdministrators">
+			<member name="odmAdmin"/>
 			<member name="resAdmin" />
 		</group>
 		<group name="resDeployers">
+			<member name="odmAdmin"/>
 			<member name="resAdmin" />
 			<member name="resDeployer" />
 		</group>
 		<group name="resMonitors">
+			<member name="odmAdmin"/>
 			<member name="resAdmin" />
 			<member name="resDeployer" />
 			<member name="resMonitor" />
 		</group>
 		<group name="resExecutors">
+			<member name="odmAdmin"/>
 			<member name="resAdmin" />
 			<member name="resDeployer" />
 			<member name="resExecutor" />
