@@ -63,6 +63,8 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
+
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
