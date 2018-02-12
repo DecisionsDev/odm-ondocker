@@ -24,7 +24,7 @@ enhancement, please open a new ticket before submitting your pull request.
 ## Discuss Non-Trivial Contributions with the Committers
 
 If your desired contribution is more than a non-trivial fix, you should discuss it on the
-[contributor's mailing list](https://github.com/lgrateau/odm-ondocker/issues/11).  If you currently are not a member, you can request to be added.
+[contributor's mailing list](mailto:odmdev_open_source_user@wwpdl.vnet.ibm.com).  If you currently are not a member, you can request to be added.
 
 
 ## New features
@@ -89,7 +89,7 @@ By making a contribution to this project, I certify that:
   Signed-off-by: Laura Cowen <laura.cowen@email.com>
   ```
   You must use your real name (no pseudonyms or anonymous contributions, sorry).
-  
+
   Instead of typing that in every git commit message, your Git tools might let you automatically add the details for you. If you configure them to do that, when you issue the `git commit` command, just add the `-s` option.
 
 If you are an IBMer, please contact us directly as the contribution process is
@@ -101,7 +101,7 @@ slightly different.
 
 If the pull request changes the functional behaviour or is fixing a defect, the unit test cases should be modified to
 reflect this.  The committer reviewing your pull request is likely to request the appropriate changes in the test
-cases. 
+cases.
 It is expected that you will have tested your changes against the existing test cases and appropriate platforms prior to
 submitting your pull request.
 
