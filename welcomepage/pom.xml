@@ -2,23 +2,25 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <name>odm-ondocker-webpage</name>
+  <name>odm-ondocker-welcomepage</name>
   <groupId>com.ibm.odm.ondocker</groupId>
-  <artifactId>odm-ondocker-webpage</artifactId>
+  <artifactId>odm-ondocker-welcomepage</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
+
   <build>
-     <plugins>
-       <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-war-plugin</artifactId>
-         <version>2.3</version>
-         <configuration>
-           <warName>webpage</warName>
-         </configuration>
-       </plugin>
-     </plugins>
-   </build>
+   <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-war-plugin</artifactId>
+       <version>2.3</version>
+       <configuration>
+         <warName>welcomepage</warName>
+       </configuration>
+     </plugin>
+   </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -27,4 +29,5 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
 </project>

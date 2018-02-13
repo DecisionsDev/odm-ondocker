@@ -10,6 +10,10 @@
 	<include optional="true" location="./webSecurity.xml"/>
 
 	<!-- application declarations -->
+
+	<!-- welcomepage -->
+	<include optional="true" location="./welcomepage_application.xml"/>
+
 	<!-- Decision Center -->
 	<include optional="true" location="./decisioncenter_application.xml"/>
 
@@ -21,9 +25,6 @@
 
 	<!-- Decsion Runner -->
 	<include optional="true" location="./decisionrunner_application.xml"/>
-
-	<!-- webpage -->
-	<include optional="true" location="./webpage_application.xml"/>
 
 	<!-- include tls/https config -->
   <include optional="true" location="./tlsSecurity.xml"/>

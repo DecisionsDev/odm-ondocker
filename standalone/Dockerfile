@@ -1,9 +1,9 @@
 FROM maven:3.5.2-jdk-7-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-COPY $ODMDOCKERDIR/webpage /webpage
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
-RUN cd /webpage ; mvn clean install
+RUN cd /welcomepage; mvn clean install
 
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
@@ -60,7 +60,7 @@ RUN chmod -R a+x $SCRIPT
 ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
 # Welcome page
-COPY --from=builder /webpage/target/webpage.war $APPS
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 
 # Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
@@ -88,9 +88,6 @@ COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
-
-# Webpage
-COPY $ODMDOCKERDIR/webpage/target/webpage.war $APPS
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
