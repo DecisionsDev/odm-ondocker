@@ -5,9 +5,20 @@
   <name>odm-ondocker-webpage</name>
   <groupId>com.ibm.odm.ondocker</groupId>
   <artifactId>odm-ondocker-webpage</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
-
+  <build>
+     <plugins>
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-war-plugin</artifactId>
+         <version>2.3</version>
+         <configuration>
+           <warName>webpage</warName>
+         </configuration>
+       </plugin>
+     </plugins>
+   </build>
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
