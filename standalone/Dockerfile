@@ -90,7 +90,7 @@ RUN /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 # Webpage
-COPY $ODMDOCKERDIR/webpage/target/odm-ondocker-webpage-1.0-SNAPSHOT.war $APPS
+COPY $ODMDOCKERDIR/webpage/target/webpage.war $APPS
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
