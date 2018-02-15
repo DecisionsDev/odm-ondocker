@@ -33,9 +33,7 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 
-RUN chmod -R a+x $SCRIPT && \
-    sync && \
-    if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
+RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
 RUN $SCRIPT/extractApp.sh res.war
 RUN $SCRIPT/extractApp.sh DecisionService.war
