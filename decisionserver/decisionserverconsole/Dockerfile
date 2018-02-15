@@ -14,8 +14,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 ENV CONNECTION_POOL_SIZE 20
 
-RUN mkdir -p $SCRIPT && \
-		mkdir -p /config/resources
+RUN mkdir -p $SCRIPT && mkdir -p /config/resources
 
 COPY --from=NetcatBuilder /bin/nc.traditional /bin/nc
 
