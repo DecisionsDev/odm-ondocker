@@ -5,6 +5,10 @@ COPY ./executionserver/lib/* /executionserver/lib/
 RUN apk add --no-cache zip
 RUN mkdir work;cd work;zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar
 
+FROM websphere-liberty:webProfile7 AS NetcatBuilder
+RUN apt-get update
+RUN apt-get install -y netcat
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -43,7 +47,7 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
-
+COPY --from=NetcatBuilder /bin/nc.traditional /bin/nc 
 
 EXPOSE 9060 9453
 

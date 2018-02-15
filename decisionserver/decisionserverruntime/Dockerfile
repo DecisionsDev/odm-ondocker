@@ -1,3 +1,7 @@
+FROM websphere-liberty:webProfile7 AS NetcatBuilder
+RUN apt-get update
+RUN apt-get install -y netcat
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -17,6 +21,8 @@ ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 RUN mkdir -p $SCRIPT && \
 		mkdir -p /config/resources
+
+COPY --from=NetcatBuilder /bin/nc.traditional /bin/nc
 
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
