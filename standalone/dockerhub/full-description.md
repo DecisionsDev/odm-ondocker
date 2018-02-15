@@ -11,9 +11,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Maintained by**:   [ODMDev Community](https://github.com/ODMDev)
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
-
-  [`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
-
+ [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), 
 -	**Source of this description**:
         https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
 
