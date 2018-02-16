@@ -1,4 +1,4 @@
-FROM alpine:3.5 AS builder
+FROM alpine:3.6 AS builder
 COPY ./teamserver/lib/* /teamserver/lib/
 COPY ./executionserver/lib/* /executionserver/lib/
 
