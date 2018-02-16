@@ -11,12 +11,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Maintained by**:   [ODMDev Community](https://github.com/ODMDev)
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
- [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), 
+ [`i386`](https://hub.docker.com/r/i386/websphere-liberty/),
 -	**Source of this description**:
         https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
 
 -	**Supported Docker versions**:  
-	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
+	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 17 on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
 	[Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
