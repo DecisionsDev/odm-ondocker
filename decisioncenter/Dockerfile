@@ -46,4 +46,5 @@ COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.wa
 
 EXPOSE 9060 9453
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/rundc.sh"]

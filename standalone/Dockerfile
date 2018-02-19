@@ -86,4 +86,5 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/runserver.sh"]

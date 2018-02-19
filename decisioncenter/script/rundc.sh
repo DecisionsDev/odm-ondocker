@@ -14,4 +14,4 @@ $SCRIPT/addRestApi.sh
 
 $SCRIPT/jvmOptions.sh
 
-/opt/ibm/docker/docker-server run defaultServer
+/opt/ibm/wlp/bin/server run defaultServer
