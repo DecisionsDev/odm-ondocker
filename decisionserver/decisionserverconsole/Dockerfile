@@ -39,4 +39,5 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 EXPOSE 9080 9443 1883
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/run.sh"]

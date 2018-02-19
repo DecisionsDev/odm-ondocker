@@ -31,4 +31,4 @@ $SCRIPT/configureTlsSecurity.sh
 
 $SCRIPT/addRestApi.sh decisioncenter_application.xml
 
-/opt/ibm/docker/docker-server run defaultServer
+/opt/ibm/wlp/bin/server run defaultServer

@@ -38,4 +38,5 @@ RUN $SCRIPT/extractApp.sh DecisionService.war
 
 EXPOSE 9080 9443
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/runds.sh"]

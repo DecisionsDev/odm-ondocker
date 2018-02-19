@@ -37,4 +37,5 @@ RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/Deci
 
 EXPOSE 9080 9443
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/rundr.sh"]
