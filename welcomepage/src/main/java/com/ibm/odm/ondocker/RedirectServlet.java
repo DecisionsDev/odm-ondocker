@@ -9,27 +9,38 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class Main extends HttpServlet {
+public class RedirectServlet extends HttpServlet {
 
     private static final String DASHBOARD_KEY="dashboard";
     private static final String REDIRECT_URI_KEY="redirect_url";
 
+    private boolean is_dashboard;
+    private String url;
+
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void init() throws ServletException {
         InputStream is = getClass().getClassLoader().getResourceAsStream("app.properties");
         if (null == is)
             throw new ServletException("Could not read the app.properties file.");
 
-        Properties prop = new Properties();
-        prop.load(is);
-        String is_dashboard = prop.getProperty(DASHBOARD_KEY);
-
-        if ("true".equals(is_dashboard)) {
-            this.getServletContext().getRequestDispatcher("/views/index.jsp").forward(request, response);
-        } else {
-            String redirect_uri = generateUrl(request, prop.getProperty(REDIRECT_URI_KEY));
-            response.sendRedirect(redirect_uri);
+        try {
+            Properties prop = new Properties();
+            prop.load(is);
+            is_dashboard = Boolean.parseBoolean(prop.getProperty(DASHBOARD_KEY));
+            url = prop.getProperty(REDIRECT_URI_KEY);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new ServletException("Could not read the app.properties file.");
         }
+    }
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (is_dashboard)
+            this.getServletContext().getRequestDispatcher("/views/index.jsp").forward(request, response);
+
+        else
+            response.sendRedirect(generateUrl(request, url));
     }
 
     /**

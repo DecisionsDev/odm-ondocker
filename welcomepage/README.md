@@ -8,7 +8,7 @@ e.g. for Liberty:
 >    <library id="config">
 >    <folder dir="${server.config.dir}\config" />
 >    </library>
->    <application id="odm_ondocker_webpage_war_exploded" location="/home/jpichon/Desktop/ODMDev/install/odm-ondocker/webpage/target/odm-ondocker-webpage-1.0-SNAPSHOT" name="odm_ondocker_webpage_war_exploded" type="war">
+>    <application id="odm_ondocker_webpage_war_exploded" location="${odm-ondocker}/welcomepage/target/odm-ondocker-webpage-1.0-SNAPSHOT" name="odm_ondocker_webpage_war_exploded" type="war">
 >    <classloader privateLibraryRef="config" />
 >    </application>
 >    ```

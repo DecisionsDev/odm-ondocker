@@ -5,12 +5,23 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>Index</servlet-name>
-        <servlet-class>com.ibm.odm.ondocker.Main</servlet-class>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.ibm.odm.ondocker.RedirectServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Index</servlet-name>
+        <servlet-name>RedirectServlet</servlet-name>
         <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>com.ibm.odm.ondocker.FileServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/images/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
