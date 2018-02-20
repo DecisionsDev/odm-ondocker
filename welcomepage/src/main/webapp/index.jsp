@@ -161,8 +161,7 @@
 
     <section id="welcome-section">
       <article id="welcome-section-content">
-        <img src="${pageContext.request.contextPath}/images/WAS-Liberty-Logo-White.png">
-        <img src="${pageContext.request.contextPath}/images/ODM_icon_V2.jpg">
+        <img src="images/ODM_icon.png">
         <h1>Welcome to Liberty</h1>
         <h2 class="secondary">WebSphere Application Server V16.0.0.3</h2>
         <h3>Available applications</h3>
@@ -189,7 +188,7 @@
 
     <footer>
       <article>
-        <img src="${pageContext.request.contextPath}/images/ibm-white-logo-small.png">
+        <img src="images/ibm-white-logo-small.png">
         <p id="footer-copy">
           Licensed Materials &#8212 Property of IBM &copy Copyright IBM Corp.
           1997, 2015. All Rights Reserved. IBM, and the IBM logo are

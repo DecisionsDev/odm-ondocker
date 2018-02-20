@@ -11,17 +11,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>RedirectServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>^/$</url-pattern>
     </servlet-mapping>
-
-    <servlet>
-        <servlet-name>FileServlet</servlet-name>
-        <servlet-class>com.ibm.odm.ondocker.FileServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>FileServlet</servlet-name>
-        <url-pattern>/images/*</url-pattern>
-    </servlet-mapping>
-
 </web-app>

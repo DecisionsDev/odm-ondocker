@@ -11,8 +11,8 @@ import java.util.Properties;
 
 public class RedirectServlet extends HttpServlet {
 
-    private static final String DASHBOARD_KEY="dashboard";
-    private static final String REDIRECT_URI_KEY="redirect_url";
+    public static final String DASHBOARD_KEY="dashboard";
+    public static final String REDIRECT_URI_KEY="redirect_url";
 
     private boolean is_dashboard;
     private String url;
@@ -37,8 +37,7 @@ public class RedirectServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (is_dashboard)
-            this.getServletContext().getRequestDispatcher("/views/index.jsp").forward(request, response);
-
+            this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
         else
             response.sendRedirect(generateUrl(request, url));
     }
