@@ -1,0 +1,10 @@
+<server description="welcomepage">
+
+  <library id="config">
+    <folder dir="${server.config.dir}" />
+  </library>
+
+  <application type="war" id="welcomepage" location="${server.config.dir}/apps/welcomepage.war" name="/">
+    <classloader privateLibraryRef="config" />
+  </application>
+</server>

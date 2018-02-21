@@ -1,3 +1,10 @@
+FROM maven:3.5.2-jdk-7-alpine AS builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install
+
 FROM alpine:3.5 AS builder
 COPY ./teamserver/lib/* /teamserver/lib/
 COPY ./executionserver/lib/* /executionserver/lib/
