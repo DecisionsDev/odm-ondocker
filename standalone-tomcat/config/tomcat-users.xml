@@ -15,7 +15,7 @@
   <role rolename="resAdministrators"/>
   <role rolename="resDeployers"/>
   <role rolename="resMonitors"/>
-  <user username="resAdmin" password="resAdmin" roles="resAdministrators,resDeployers,resMonitors"/>
-  <user username="resDeployer" password="resDeployer" roles="resDeployers,resMonitors"/>
-  <user username="resMonitor" password="resMonitor" roles="resMonitors"/>
+  <user username="resAdmin" password="resAdmin" roles="resAdministrators" />
+  <user username="resDeployer" password="resDeployer" roles="resDeployers" />
+  <user username="resMonitor" password="resMonitor" roles="resMonitors" />
 </tomcat-users>
