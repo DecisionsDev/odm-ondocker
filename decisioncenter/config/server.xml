@@ -27,4 +27,6 @@
 
 	<applicationMonitor updateTrigger="mbean" />
 
+        <logging traceSpecification="*=audit:org.apache.solr.*=warning:com.ibm.rules.bdsl.search.solr.*=warning"/>
+
 </server>
