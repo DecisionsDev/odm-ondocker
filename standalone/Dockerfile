@@ -10,7 +10,7 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
-LABEL ProductName="IBM Operational Decision Manager Non-Production"
+LABEL ProductName="IBM Operational Decision Manager for Developers"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
@@ -73,6 +73,8 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
+
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
@@ -94,4 +96,5 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/runserver.sh"]

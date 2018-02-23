@@ -11,18 +11,21 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Maintained by**:   [ODMDev Community](https://github.com/ODMDev)
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
+ [`i386`](https://hub.docker.com/r/i386/websphere-liberty/),
+-	**Source of this description**:
+        https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
 
-  [`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
+-	**Supported Docker versions**:  
+	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 17 on a best-effort basis)
 
-  -	**Source of this description**:  
-  docs repo's odm/(https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub) directory (history)
+-	**Rule Designer development environment for ODM developers**:  
+	[Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
-  -	**Supported Docker versions**:  
-  	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
+	[latest release](https://github.com/ODMDev/ruledesigner/raw/master)
 
   # Overview
 
-  The images in this repository contain IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developper image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
 
 
   # Usage
@@ -36,9 +39,9 @@ The image contains a server that is preconfigured with a database accessible thr
   	$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 \
   	    ibmcom/odm
   	```
-You must accept the license before launching the image. The license is available at the bottom of this page.
+You must accept the license before you launch the image. The license is available at the bottom of this page.
 
-When the server is started, you can access the applications with these URLs:
+When the server is started, you can access the ODM applications with the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
@@ -53,7 +56,7 @@ When the server is started, you can access the applications with these URLs:
 
   The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-  Licenses for the products installed within the images are as follows:
-  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt) in the  image
+  License information for the products installed within the image is as follows:
+  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt)
 
-Note: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
+**Note**: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.

@@ -11,6 +11,7 @@ import java.util.Properties;
 
 public class RedirectServlet extends HttpServlet {
 
+    public static final String PROPERTIES_FILE="app.properties";
     public static final String DASHBOARD_KEY="dashboard";
     public static final String REDIRECT_URI_KEY="redirect_url";
 
@@ -19,9 +20,11 @@ public class RedirectServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        InputStream is = getClass().getClassLoader().getResourceAsStream("app.properties");
+        System.out.println("INIT");
+        InputStream is = getClass().getClassLoader().getResourceAsStream(PROPERTIES_FILE);
         if (null == is)
-            throw new ServletException("Could not read the app.properties file.");
+            throw new ServletException("Could not read the " + PROPERTIES_FILE + " file.");
+
 
         try {
             Properties prop = new Properties();
@@ -30,15 +33,16 @@ public class RedirectServlet extends HttpServlet {
             url = prop.getProperty(REDIRECT_URI_KEY);
         } catch (IOException e) {
             e.printStackTrace();
-            throw new ServletException("Could not read the app.properties file.");
+            throw new ServletException("Could not read the " + PROPERTIES_FILE + " file.");
         }
     }
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (is_dashboard)
+        if (is_dashboard) {
+            System.out.println("DASHBOARD");
             this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
-        else
+        } else
             response.sendRedirect(generateUrl(request, url));
     }
 

@@ -16,7 +16,7 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 
 ENV APP_NAME DecisionRunner
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CONNECTION_POOL_SIZE 20
+ENV CONNECTION_POOL_SIZE 60
 ENV SCRIPT /script
 ENV APPS /config/apps
 
@@ -44,4 +44,5 @@ RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/Deci
 
 EXPOSE 9080 9443
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/rundr.sh"]

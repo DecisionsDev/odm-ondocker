@@ -9,9 +9,6 @@ FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-LABEL ProductID="xxxxxxxxxxxxxxxxx"
-LABEL ProductName="IBM Operational Decision Manager"
-LABEL ProductVersion=$ODMVERSION
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
 ENV APP_NAME DecisionServerConsole
@@ -20,8 +17,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 ENV CONNECTION_POOL_SIZE 20
 
-RUN mkdir -p $SCRIPT && \
-		mkdir -p /config/resources
+RUN mkdir -p $SCRIPT && mkdir -p /config/resources
 
 COPY $ODMDOCKERDIR/decisionserver/config /config
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
@@ -52,4 +48,5 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 EXPOSE 9080 9443 1883
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/run.sh"]

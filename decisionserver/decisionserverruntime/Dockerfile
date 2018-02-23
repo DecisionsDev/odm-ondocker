@@ -19,7 +19,7 @@ ENV APP_NAME DecisionServerRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
-ENV CONNECTION_POOL_SIZE 20
+ENV CONNECTION_POOL_SIZE 60
 ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 RUN mkdir -p $SCRIPT && \
@@ -45,4 +45,5 @@ RUN $SCRIPT/extractApp.sh DecisionService.war
 
 EXPOSE 9080 9443
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/runds.sh"]

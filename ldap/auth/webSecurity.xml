@@ -1,5 +1,16 @@
 <server>
-  	<!-- Web application security -->
+  	 <!-- ODM Super User -->
+        <basicRegistry id="basic" realm="customRealm">
+           <user name="odmAdmin" password="odmAdmin" />
+           <group name="resAdministrators">
+                 <member name="odmAdmin" />
+           </group>
+           <group name="rtsAdministrators">
+                 <member name="odmAdmin" />
+           </group>
+        </basicRegistry>
+
+        <!-- Web application security -->
 	<ldapRegistry id="ldap" realm="OpenLdapRealm" 
     	host="openldap" port="389" ldapType="Custom" ignoreCase="true" recursiveSearch="true"
     	baseDN="dc=example,dc=org" bindDN="cn=admin,dc=example,dc=org" bindPassword="admin">

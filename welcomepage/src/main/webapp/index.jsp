@@ -164,14 +164,14 @@
         <img src="images/ODM_icon.png">
         <h1>Welcome to Liberty</h1>
         <h2 class="secondary">WebSphere Application Server V16.0.0.3</h2>
-        <h3>Available applications</h3>
-        <ul>
-          <li>Decision Server Console: <a href="/res">/res</a></li>
-          <li>Decision Server Runtime: <a href="/DecisionService">/DecisionService</a></li>
-          <li>Decision Center Business Console: <a href="/decisioncenter">/decisioncenter</a></li>
-          <li>Decision Center Enterprise Console: <a href="/teamserver">/teamserver</a></li>
-          <li>Decision Runner: <a href="/DecisionRunner">/DecisionRunner</a></li>
-        </ul>
+            <h3>Available applications</h3>
+            <ul>
+              <li>Decision Server Console: <a href="/res">/res</a></li>
+              <li>Decision Server Runtime: <a href="/DecisionService">/DecisionService</a></li>
+              <li>Decision Center Business Console: <a href="/decisioncenter">/decisioncenter</a></li>
+              <li>Decision Center Enterprise Console: <a href="/teamserver">/teamserver</a></li>
+              <li>Decision Runner: <a href="/DecisionRunner">/DecisionRunner</a></li>
+            </ul>
       </article>
     </section>
 

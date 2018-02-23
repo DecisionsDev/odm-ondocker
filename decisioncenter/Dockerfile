@@ -5,7 +5,7 @@ COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn clean install
 
-FROM alpine:3.5 AS builder
+FROM alpine:3.6 AS builder
 COPY ./teamserver/lib/* /teamserver/lib/
 COPY ./executionserver/lib/* /executionserver/lib/
 
@@ -51,7 +51,7 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 
-
 EXPOSE 9060 9453
 
+ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/rundc.sh"]
