@@ -13,10 +13,10 @@ public class RedirectServlet extends HttpServlet {
 
     public static final String PROPERTIES_FILE="app.properties";
     public static final String DASHBOARD_KEY="dashboard";
-    public static final String REDIRECT_URI_KEY="redirect_url";
+    public static final String REDIRECT_URL_KEY="redirect_url";
 
-    private boolean is_dashboard;
-    private String url;
+    private boolean use_dashboard = false;
+    private String redirect_url = null;
 
     @Override
     public void init() throws ServletException {
@@ -25,12 +25,14 @@ public class RedirectServlet extends HttpServlet {
         if (null == is)
             throw new ServletException("Could not read the " + PROPERTIES_FILE + " file.");
 
-
         try {
+            System.out.println("Read properties in the " + PROPERTIES_FILE + " file.");
             Properties prop = new Properties();
             prop.load(is);
-            is_dashboard = Boolean.parseBoolean(prop.getProperty(DASHBOARD_KEY));
-            url = prop.getProperty(REDIRECT_URI_KEY);
+            use_dashboard = Boolean.parseBoolean(prop.getProperty(DASHBOARD_KEY));
+            System.out.println(DASHBOARD_KEY + ": " + use_dashboard);
+            redirect_url = prop.getProperty(REDIRECT_URL_KEY);
+            System.out.println(REDIRECT_URL_KEY + ": " + redirect_url);
         } catch (IOException e) {
             e.printStackTrace();
             throw new ServletException("Could not read the " + PROPERTIES_FILE + " file.");
@@ -39,11 +41,15 @@ public class RedirectServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (is_dashboard) {
-            System.out.println("DASHBOARD");
+        if (use_dashboard) {
+            System.out.println("Display DASHBOARD");
             this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
-        } else
-            response.sendRedirect(generateUrl(request, url));
+        } 
+        else if (redirect_url != null) {
+            String url = generateUrl(request, redirect_url);
+            System.out.println("Redirect to " + url);
+            response.sendRedirect(url);
+        }
     }
 
     /**

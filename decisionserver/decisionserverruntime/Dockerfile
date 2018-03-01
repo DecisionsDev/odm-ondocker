@@ -35,6 +35,10 @@ COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jk
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
+# Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 
 RUN chmod -R a+x $SCRIPT && \

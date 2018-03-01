@@ -31,6 +31,10 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
+# Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 
