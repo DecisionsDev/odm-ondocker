@@ -3,7 +3,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>WebSphere Application Server V16.0.0.3</title>
+  <link rel="icon" href="images/ODM-favicon.png" type="image/png" />
+  <title>IBM ODM</title>
   <style>
     body{
       color: white;
@@ -35,7 +36,7 @@
     }
     h1{
       color: white;
-      font-size: 3.814rem;
+      font-size: 3rem;
       font-weight: lighter;
       margin: 0;
       text-align: left;
@@ -161,17 +162,16 @@
 
     <section id="welcome-section">
       <article id="welcome-section-content">
-        <img src="images/ODM_icon.png">
-        <h1>Welcome to Liberty</h1>
-        <h2 class="secondary">WebSphere Application Server V16.0.0.3</h2>
-            <h3>Available applications</h3>
-            <ul>
-              <li>Decision Server Console: <a href="/res">/res</a></li>
-              <li>Decision Server Runtime: <a href="/DecisionService">/DecisionService</a></li>
-              <li>Decision Center Business Console: <a href="/decisioncenter">/decisioncenter</a></li>
-              <li>Decision Center Enterprise Console: <a href="/teamserver">/teamserver</a></li>
-              <li>Decision Runner: <a href="/DecisionRunner">/DecisionRunner</a></li>
-            </ul>
+        <img src="images/ODM-icon.png">
+        <h1>Welcome to IBM Operational Decision Manager</h1>
+        <h2 class="secondary">Developer Edition</h2>
+          <ul>
+            <li><a href="/decisioncenter">Decision Center Business Console</a></li>
+            <li><a href="/teamserver">Decision Center Enterprise Console</a></li>
+            <li><a href="/res">Decision Server Console</a></li>
+            <li><a href="/DecisionService">Decision Server Runtime</a></li>
+            <li><a href="/DecisionRunner">Decision Runner</a></li>
+          </ul>
       </article>
     </section>
 
@@ -179,9 +179,9 @@
       <article>
         <h2>Additional Resources</h2>
         <ul>
-          <li><a href="http://wasdev.net/?wlp=welcome">WASdev Community</a></li>
-          <li><a href="http://www14.software.ibm.com/webapp/wsbroker/redirect?version=phil&product=was-nd-mp&topic=cwlp_about">Liberty Documentation</a></li>
-          <li><a href="http://wasdev.net/answers/?wlp=welcome">WASdev Forum</a></li>
+          <li><a href="https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.2/com.ibm.odm.icp/kc_welcome_odm_icp.html">ODM Documentation</a></li>
+          <li><a href="https://developer.ibm.com/odm/">ODMDev Community</a></li>
+          <li><a href="https://developer.ibm.com/answers/topics/ibmodm.html">ODMDev Forum</a></li>
         </ul>
       </article>
     </section>
@@ -191,7 +191,7 @@
         <img src="images/ibm-white-logo-small.png">
         <p id="footer-copy">
           Licensed Materials &#8212 Property of IBM &copy Copyright IBM Corp.
-          1997, 2015. All Rights Reserved. IBM, and the IBM logo are
+          1997, 2018. All Rights Reserved. IBM, and the IBM logo are
           trademarks or registered trademarks of International Business
           Machines Corp., registered in many jurisdictions worldwide. Other
           product and service names might be trademarks of IBM or other
@@ -203,32 +203,5 @@
 
     <div id="footer-extra-background"></div>
 </body>
-
-<!-- The call below attempts to get a latest release marker file from a specific location. -->
-<!-- It's expected that the returned object will be a piece of JavaScript defining a       -->
-<!-- variable called latestReleasedVersion that contains the following fields:             -->
-<!-- version: The version number of the latest released product                            -->
-<!-- availableAt: The URL where you can get the latest version (from a Web Browser)        -->
-<!-- availableAtLabel: The label to show on the anchor tag                                 -->
-<script type="text/javascript" src="https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp_ga_latestversion.js"></script>
-<script type="text/javascript">
-    var urlForCssEnhancements = "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/adminCenter-welcome.css";
-    var isLibertyUpdateAvailable = false;
-    function doVersionCheck(latestVersion) {
-        // Check that the remote file was located
-        // and contains the required version details
-        if (latestVersion != null && latestVersion.productName != null
-            && latestVersion.availableFrom != null
-            && latestVersion.version != null) {
-
-            // Check if the online version differs from this current version
-            if ("16.0.0.3" !== latestVersion.version) {
-                isLibertyUpdateAvailable = true;
-            }
-        }
-    }
-    doVersionCheck(latestReleasedVersion);
-</script>
-<script type="text/javascript" src="https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/adminCenter-welcome.js"></script>
 
 </html>

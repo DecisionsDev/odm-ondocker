@@ -1,8 +1,8 @@
 
 # Configuration
 
-You must configure your server to have a app.properties file
-e.g. for Liberty:
+You must configure your Liberty server to have an app.properties file:
+
 > server.xml: 
 >    ``` 
 >    <library id="config">
@@ -13,12 +13,12 @@ e.g. for Liberty:
 >    </application>
 >    ```
 
-
-And the app.properties should contain those 2 keys:
+And the app.properties file should contain those 2 keys:
 > app.properties
 > ```
-> dashboard=true
+> dashboard=false
 > redirect_url=/DecisionRunner
 > ```
+
 > `dashboard` is a boolean to say if we should display the Dashboard view.
-> In case of `dashboard` is false, `redirect_url` must be set as the url to redirect.
+> In case of `dashboard` is false, `redirect_url` must be set to the url to redirect.
