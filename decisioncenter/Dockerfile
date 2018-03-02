@@ -1,4 +1,11 @@
-FROM alpine:3.6 AS builder
+FROM maven:3.5.2-jdk-7-alpine AS builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install
+
+FROM alpine:3.6 AS apiBuilder
 COPY ./teamserver/lib/* /teamserver/lib/
 COPY ./executionserver/lib/* /executionserver/lib/
 
@@ -28,6 +35,10 @@ COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jk
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
+# Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
 
@@ -42,7 +53,8 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
+
+COPY --from=apiBuilder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 
 EXPOSE 9060 9453
 

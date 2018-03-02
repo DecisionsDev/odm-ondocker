@@ -1,3 +1,10 @@
+FROM maven:3.5.2-jdk-7-alpine AS builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -23,6 +30,10 @@ COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jk
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
+# Decision Runner
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
 
 RUN chmod -R a+x $SCRIPT && \

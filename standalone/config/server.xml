@@ -10,6 +10,10 @@
 	<include optional="true" location="./webSecurity.xml"/>
 
 	<!-- application declarations -->
+
+	<!-- welcomepage -->
+	<include optional="true" location="./welcomepage_application.xml"/>
+
 	<!-- Decision Center -->
 	<include optional="true" location="./decisioncenter_application.xml"/>
 
@@ -23,7 +27,7 @@
 	<include optional="true" location="./decisionrunner_application.xml"/>
 
 	<!-- include tls/https config -->
-  	<include optional="true" location="./tlsSecurity.xml"/>
+  <include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>

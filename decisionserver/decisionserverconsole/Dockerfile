@@ -1,3 +1,10 @@
+FROM maven:3.5.2-jdk-7-alpine AS builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -24,6 +31,10 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
+# Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
 COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 

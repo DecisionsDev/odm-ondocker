@@ -1,3 +1,10 @@
+FROM maven:3.5.2-jdk-7-alpine AS builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install
+
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -52,6 +59,9 @@ RUN chmod -R a+x $SCRIPT
 # Sample DB
 ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
 
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+
 # Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
@@ -64,7 +74,6 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 
 COPY ${ODMDOCKERDIR}/standalone/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
-
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS

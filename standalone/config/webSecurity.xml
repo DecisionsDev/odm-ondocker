@@ -2,7 +2,7 @@
 	<!-- Web application security -->
 	<basicRegistry id="basic" realm="customRealm">
 		<!-- ODM super user -->
-		<user name="odmAdmin" password="odmAdmin"/> 
+		<user name="odmAdmin" password="odmAdmin"/>
 		<!-- Users for Decision Center -->
 		<user name="rtsAdmin" password="rtsAdmin"/>
 		<user name="rtsConfig" password="rtsConfig"/>
