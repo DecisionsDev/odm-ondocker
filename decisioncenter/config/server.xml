@@ -21,6 +21,9 @@
 	<!-- include tls/https config -->
   	<include optional="true" location="./tlsSecurity.xml"/>
 
+       <!-- include logging config -->
+        <include optional="true" location="./logging.xml"/>
+
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
 
@@ -30,6 +33,5 @@
 
 	<applicationMonitor updateTrigger="mbean" />
 
-        <logging traceSpecification="*=audit:org.apache.solr.*=warning:com.ibm.rules.bdsl.search.solr.*=warning"/>
 
 </server>
