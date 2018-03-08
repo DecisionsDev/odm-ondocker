@@ -3,7 +3,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/ODM-favicon.png" type="image/png" />
   <title>IBM ODM</title>
   <style>
     body{
