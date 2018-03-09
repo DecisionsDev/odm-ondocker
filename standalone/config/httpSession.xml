@@ -1,0 +1,5 @@
+<server>
+	<httpSession logoutOnHttpSessionExpire="true" allowLogoutPageRedirectToAnyHost="true"  singleSignonEnabled="false"  cookieName="odmdev" invalidateOnUnauthorizedSessionRequestException="true" invalidationTimeout="8h" />
+        <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
+        <webAppSecurity includePathInWASReqURL="true" />
+</server>
