@@ -15,9 +15,9 @@ IBM Operational Decision Manager on Docker.
 </p>
 
 
-#  Deploy IBM Operational Decision Manager Standard on Docker from Dev to Production
+#  Deploy IBM Operational Decision Manager  on Docker from Dev to Production
 
-This repository centralizes the material to deploy IBM Operational Decision Manager Standard in Docker.
+This repository centralizes the material to deploy IBM Operational Decision Manager in Docker.
 It includes Docker files and Docker compose descriptors. Docker files are used to build images of ODM runtimes. And docker-compose descriptor can be used to group this build, push to your repository and run your topology from Development to production.
 
 [IBM ODM](https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.0/welcome/kc_welcome_odmV.html) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
