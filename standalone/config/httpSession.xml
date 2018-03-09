@@ -1,0 +1,3 @@
+<server>
+  <httpSession logoutOnHttpSessionExpire="true" allowLogoutPageRedirectToAnyHost="true"  singleSignonEnabled="false"  cookieName="odmdev"  />
+</server>

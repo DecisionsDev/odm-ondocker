@@ -27,6 +27,9 @@
 	<include optional="true" location="./decisionrunner_application.xml"/>
 
 	<!-- include tls/https config -->
+  <include optional="true" location="./httpSession.xml"/>
+
+	<!-- include tls/https config -->
   <include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- Managed executor service for Decision Runner -->
