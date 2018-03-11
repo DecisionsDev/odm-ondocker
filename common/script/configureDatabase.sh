@@ -9,15 +9,15 @@ then
 	wget -nv $DB_DRIVER_URL
   case $DB_DRIVER_URL in
 		*derby* )
-				rm /config/resources/derby*
-			  mv derby* /config/resources
-			  cp /config/datasource-derby.xml /config/datasource.xml
-			  ;;
+			 	rm /config/resources/derby*
+			 	mv derby* /config/resources
+			 	cp /config/datasource-derby.xml /config/datasource.xml
+			 	;;
     *mysql* )
 				rm /config/resources/mysql*
-			  mv mysql* /config/resources
-			  cp /config/datasource-mysql.xml /config/datasource.xml
-			  ;;
+				mv mysql* /config/resources
+				cp /config/datasource-mysql.xml /config/datasource.xml
+				;;
     *postgres* )
 				rm /config/resources/postgres*
 				mv postgres* /config/resources
@@ -27,6 +27,11 @@ then
 				rm /config/resources/db2*
 				mv db2* /config/resources
 				cp /config/datasource-db2.xml /config/datasource.xml
+				;;
+		*h2* )
+				rm /config/resources/h2*
+				mv h2* /config/resources
+				cp /config/datasource-h2.xml /config/datasource.xml
 				;;
 	esac
 elif [ -n "$DB_TYPE" ]
@@ -49,6 +54,7 @@ then
 		*db2* )
 				cp /config/datasource-db2.xml /config/datasource.xml
 				;;
+		# For h2, we do not have to install the driver here since it is installed by default at build time (only for the standalone topology)
 		*h2* )
 				cp /config/datasource-h2.xml /config/datasource.xml
 			  ;;

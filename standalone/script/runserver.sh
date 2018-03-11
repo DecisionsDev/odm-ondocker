@@ -23,7 +23,7 @@ $SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh h2
 
-$SCRIPT/changeDatasource.sh
+$SCRIPT/updateDatasource.sh
 
 $SCRIPT/updatePersistenceLocale.sh
 
