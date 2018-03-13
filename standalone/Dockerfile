@@ -14,6 +14,7 @@ LABEL ProductName="IBM Operational Decision Manager for Developers"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
+ENV LANG C.UTF-8
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
