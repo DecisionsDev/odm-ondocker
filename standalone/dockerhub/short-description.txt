@@ -1,1 +1,1 @@
-Official IBM Operational Decision Manager for Developers image. Early access material.
+Official IBM Operational Decision Manager for Developers image.
