@@ -18,4 +18,7 @@
   <user username="resAdmin" password="resAdmin" roles="resAdministrators" />
   <user username="resDeployer" password="resDeployer" roles="resDeployers" />
   <user username="resMonitor" password="resMonitor" roles="resMonitors" />
-</tomcat-users>
+  
+  <!-- ODM super user -->
+  <user username="odmAdmin" password="odmAdmin" roles="rtsAdministrator,rtsInstaller,resAdministrators" />
+  </tomcat-users>

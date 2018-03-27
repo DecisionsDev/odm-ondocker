@@ -21,6 +21,7 @@ LABEL ProductName="IBM Operational Decision Manager"
 LABEL ProductVersion=$ODMVERSION
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+ENV LANG C.UTF-8
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script

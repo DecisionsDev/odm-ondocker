@@ -18,6 +18,8 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
+ENV DC_PERSISTENCE_LOCALE zh_CN
+ENV SAMPLE false
 
 RUN mkdir -p /config/dbdata
 
@@ -87,7 +89,6 @@ RUN $SCRIPT/extractApp.sh DecisionService.war
 # Decision Runner
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
-RUN /opt/ibm/wlp/bin/installUtility install concurrent-1.0 --acceptLicense
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
