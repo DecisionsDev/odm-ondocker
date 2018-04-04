@@ -1,0 +1,3 @@
+<server>
+        <logging traceSpecification="*=audit:com.ibm.rules.*=info:com.ilog.rules.*=info"/>
+</server>
