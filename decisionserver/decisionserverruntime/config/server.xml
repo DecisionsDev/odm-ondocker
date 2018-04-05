@@ -22,7 +22,7 @@
         <include optional="true" location="./tlsSecurity.xml"/>
 
         <!-- include logging config -->
-        <include optional="true" location="./logging.xml"/>
+        <include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9080" httpsPort="9443" />
