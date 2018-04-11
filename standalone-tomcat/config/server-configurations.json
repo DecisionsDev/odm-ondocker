@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Decision Service Execution",
+    "kind": "RES",
+    "url": "http://localhost:8080/res",
+    "loginServer": "odmAdmin",
+    "loginPassword": "odmAdmin",
+    "description": "Use this server to deploy decision services that you want to execute.",
+    "groups": [
+      "*"
+    ]
+  },
+  {
+    "name": "Test and Simulation Execution",
+    "kind": "DECISION_RUNNER",
+    "url": "http://localhost:8080/DecisionRunner",
+    "loginServer": "odmAdmin",
+    "loginPassword": "odmAdmin",
+    "description": "Use this server to run tests and simulations for decision services.",
+    "groups": [
+      "*"
+    ]
+  }
+]

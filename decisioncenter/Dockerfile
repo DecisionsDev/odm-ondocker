@@ -26,7 +26,6 @@ ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
-ENV DC_SERVER_CONFIG /config/server-configurations.json
 
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT

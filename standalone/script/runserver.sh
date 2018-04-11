@@ -19,6 +19,18 @@ if [ ! -f /config/initialized.flag ] ; then
 	touch /config/initialized.flag
 fi;
 
+FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
+echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
+
+if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
+then
+  echo "ServerExt class found. Use /config/server-configurations.json server definition"
+  cp /config/new-decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+else
+  echo "ServerExt class not found. Use old decisioncenter-configuration.properties server definition"
+        cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
 $SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh h2

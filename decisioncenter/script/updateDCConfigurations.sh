@@ -2,7 +2,18 @@
 
 echo "Update Decision Center configurations"
 
-if [ -n "$DC_SERVER_CONFIG" ]
+FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
+echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
+
+if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
+then
+  echo "ServerExt class found then set DC_SERVER_CONFIG to /config/server-configurations.json"
+  DC_SERVER_CONFIG="/config/server-configurations.json"
+else
+  echo "ServerExt class not found. Use old way Decision Center server configuration"
+fi
+
+if [ -n "DC_SERVER_CONFIG" ]
 then
   echo "DC_SERVER_CONFIG set to $DC_SERVER_CONFIG"
 else
@@ -29,6 +40,7 @@ then
   echo "Update decision runner name to $DECISIONRUNNER_NAME in $DC_SERVER_CONFIG"
 	sed -i 's|odm-decisionrunner|'$DECISIONRUNNER_NAME'|g' $DC_SERVER_CONFIG
 fi
+
 
 if [ -n "$ENABLE_TLS" ]
 then
