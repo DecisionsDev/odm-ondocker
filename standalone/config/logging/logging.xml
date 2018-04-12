@@ -1,0 +1,3 @@
+<server>
+	<logging traceSpecification="*=audit:com.ibm.rules.*=fine" consoleLogLevel="INFO" />
+</server>

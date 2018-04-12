@@ -22,4 +22,18 @@ then
 	sed -i 's/{pluginClass=HTDS}/{pluginClass=Metering,enable=true},{pluginClass=DVS},{pluginClass=HTDS}/g' ra.xml
 fi
 
+FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
+echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
+
+if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
+then
+  echo "Update decisioncenter-configuration.properties with ${CATALINA_HOME}/conf/server-configurations.json"
+	cd $APPS/decisioncenter/WEB-INF/classes/config
+        cp ${CATALINA_HOME}/conf/new-decisioncenter-configuration.properties decisioncenter-configuration.properties
+        sed -i "s|CATALINA_HOME|$CATALINA_HOME|g" decisioncenter-configuration.properties
+else
+  echo "Use old decisioncenter-configuration.properties definition"
+        cp ${CATALINA_HOME}/new-decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
 catalina.sh run

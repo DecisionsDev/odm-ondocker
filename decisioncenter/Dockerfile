@@ -53,8 +53,6 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
-COPY $ODMDOCKERDIR/decisioncenter/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-
 COPY --from=apiBuilder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 
 EXPOSE 9060 9453

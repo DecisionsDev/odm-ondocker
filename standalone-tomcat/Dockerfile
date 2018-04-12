@@ -51,7 +51,7 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war decisioncenter && \
 
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/web.xml
 
-COPY ${ODMDOCKERDIR}/standalone-tomcat/decisioncenter-configuration.properties $APPS/decisioncenter/WEB-INF/classes/config/decisioncenter-configuration.properties
+RUN mkdir $APPS/decisioncenter/WEB-INF/classes/config
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/tomcat8/res.war $APPS

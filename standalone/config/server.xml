@@ -32,6 +32,10 @@
 	<!-- include tls/https config -->
   	<include optional="true" location="./tlsSecurity.xml"/>
 
+	<!-- include logging config -->
+        <include optional="true" location="./logging/logging.xml"/>
+
+
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
@@ -40,8 +44,6 @@
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
 
-	<!-- Logging -->
-	<logging traceSpecification="*=audit:com.ibm.rules.*=fine" consoleLogLevel="INFO" />
 	<webContainer deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
 
 	<applicationMonitor updateTrigger="mbean" />
