@@ -14,8 +14,8 @@
 !teamserver/applicationservers/tomcat8/teamserver.war
 !teamserver/lib/**/*
 !**/docker-compose
-!docker-compose*
+!docker-compose**
 !**/odm-docker
-!odm-docker/**/*
+!odm-docker**
 !**/odm-ondocker
 !odm-ondocker/**/*
