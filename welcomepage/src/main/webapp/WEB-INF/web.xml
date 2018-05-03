@@ -14,4 +14,10 @@
         <url-pattern></url-pattern>
     </servlet-mapping>
 
+
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/AppExceptionHandler</location>
+    </error-page>
+
 </web-app>
