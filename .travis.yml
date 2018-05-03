@@ -10,7 +10,7 @@ services:
   - docker
 
 env:
-  - DOCKER_COMPOSE_VERSION=1.8.1
+  - DOCKER_COMPOSE_VERSION=1.21.1
 
 before_install:
   - mkdir -p $HOME/.cache
