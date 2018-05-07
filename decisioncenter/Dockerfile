@@ -32,8 +32,8 @@ RUN chmod -R a+x $SCRIPT && \
 RUN mkdir -p $APPS
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
-RUN  ls  /config/resources/
-RUN chmod a+x $SCRIPT/* && $SCRIPT/extractApp.sh decisioncenter.war && \
+
+RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
