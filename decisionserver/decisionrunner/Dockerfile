@@ -8,7 +8,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 # Install missing require package in the alpine builder image
-RUN apk add --no-cache bash perl
+RUN apk add --no-cache bash perl ca-certificates wget
 # Build welcome page
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 # Decision Runner
