@@ -12,8 +12,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash perl
 # Build Welcome page
-RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
-RUN mkdir -p $APPS
+RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP855/res.war $APPS
