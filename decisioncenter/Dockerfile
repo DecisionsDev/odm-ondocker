@@ -3,7 +3,7 @@ ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
-RUN cd /welcomepage; mvn clean install
+RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 
 FROM alpine:3.6 AS apiBuilder
 # Setup the variable
@@ -19,7 +19,8 @@ COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 
-RUN apk add --no-cache zip bash perl
+RUN apk add --no-cache zip bash perl ca-certificates wget
+
 RUN mkdir work;cd work;zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar
 
 COPY $ODMDOCKERDIR/common/script $SCRIPT

@@ -10,7 +10,7 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 # Install missing require package in the alpine builder image
-RUN apk add --no-cache bash perl
+RUN apk add --no-cache bash perl ca-certificates wget
 # Build Welcome page
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 
