@@ -1,51 +1,21 @@
 FROM maven:3.5.2-jdk-7-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
-COPY $ODMDOCKERDIR/welcomepage /welcomepage
-
-RUN cd /welcomepage; mvn clean install
-
-FROM websphere-liberty:webProfile7
-ARG ODMDOCKERDIR
-ARG ODMVERSION
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
-LABEL ProductID="xxxxxxxxxxxxxxxxx"
-LABEL ProductName="IBM Operational Decision Manager for Developers"
-LABEL ProductVersion=$ODMVERSION
-MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
-
-ENV LANG C.UTF-8
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
 
-RUN mkdir -p /config/dbdata
+RUN apk add --no-cache  perl ca-certificates wget
 
-COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
 COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
-RUN mv /config/application.xml /config/decisioncenter_application.xml
-
-COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config
-RUN mv /config/application.xml /config/decisionrunner_application.xml
-
-COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config
-RUN mv /config/application.xml /config/decisionserverconsole_application.xml
-
-COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config
-RUN mv /config/application.xml /config/decisionserverruntime_application.xml
-
-COPY ${ODMDOCKERDIR}/standalone/config /config
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
-
-COPY ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
-COPY ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
 COPY ${ODMDOCKERDIR}/common/script $SCRIPT
 COPY ${ODMDOCKERDIR}/common/features $SCRIPT
+
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
+RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
+RUN mkdir -p /config/dbdata /config/resources
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
 
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
@@ -53,15 +23,7 @@ RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.19
     wget -nv https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources
 # End - Configuration for the database
 
-ENV CONNECTION_POOL_SIZE 20
-ENV SCRIPT /script
-RUN chmod -R a+x $SCRIPT
-
-# Sample DB
-ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
-
-# Welcome page
-COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
 # Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
@@ -89,8 +51,48 @@ COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
+# Load Feature
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
+FROM websphere-liberty:webProfile7
+ARG ODMDOCKERDIR
+ARG ODMVERSION
+LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+LABEL ProductID="xxxxxxxxxxxxxxxxx"
+LABEL ProductName="IBM Operational Decision Manager for Developers"
+LABEL ProductVersion=$ODMVERSION
+MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
+
+ENV LANG C.UTF-8
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV APP_NAME StandaloneOdm
+ENV SCRIPT /script
+ENV APPS /config/apps
+
+COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisioncenter_application.xml
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
+COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
+COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml
+COPY ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
+COPY ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
+COPY ${ODMDOCKERDIR}/standalone/config /config
+COPY --from=builder /config/dbdata /config
+
+ENV CONNECTION_POOL_SIZE 20
+
+# Sample DB
+ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
+
+# Welcome page
+COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+COPY --from=builder /config/resources/postgres*  /config/resources
+COPY --from=builder /config/resources/h2*  /config/resources
+COPY --from=builder /config/dbdata /config
+COPY --from=builder $APPS $APPS
+COPY --from=builder $SCRIPT $SCRIPT
 VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
