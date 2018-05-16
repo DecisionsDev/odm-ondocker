@@ -182,11 +182,11 @@
         <h1>Welcome to IBM Operational Decision Manager</h1>
         <h2 class="secondary">Developer Edition</h2>
           <ul>
-            <li><a href="/decisioncenter">Decision Center Business Console</a></li>
-            <li><a href="/teamserver">Decision Center Enterprise Console</a></li>
-            <li><a href="/res">Decision Server Console</a></li>
-            <li><a href="/DecisionService">Decision Server Runtime</a></li>
-            <li><a href="/DecisionRunner">Decision Runner</a></li>
+            <li><a href="/decisioncenter" target="_blank">Decision Center Business Console</a></li>
+            <li><a href="/teamserver" target="_blank">Decision Center Enterprise Console</a></li>
+            <li><a href="/res" target="_blank">Decision Server Console</a></li>
+            <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
+            <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
           </ul>
       </article>
     </section>
@@ -195,9 +195,9 @@
       <article>
         <h2>Additional Resources</h2>
         <ul>
-          <li><a href="https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.2/com.ibm.odm.icp/kc_welcome_odm_icp.html">ODM Documentation</a></li>
-          <li><a href="https://developer.ibm.com/odm/">ODMDev Community</a></li>
-          <li><a href="https://developer.ibm.com/answers/topics/ibmodm.html">ODMDev Forum</a></li>
+          <li><a href="https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.2/com.ibm.odm.icp/kc_welcome_odm_icp.html" target="_blank">ODM Documentation</a></li>
+          <li><a href="https://developer.ibm.com/odm/" target="_blank">ODMDev Community</a></li>
+          <li><a href="https://developer.ibm.com/answers/topics/ibmodm.html" target="_blank">ODMDev Forum</a></li>
         </ul>
       </article>
     </section>
