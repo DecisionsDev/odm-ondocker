@@ -40,7 +40,7 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
+COPY ./teamserver/applicationservers/WLP855/teamserver*.war $APPS/
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
 
 RUN chmod -R a+x $SCRIPT && \

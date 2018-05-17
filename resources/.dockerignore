@@ -6,6 +6,7 @@
 !teamserver/applicationservers/WLP855/decisioncenter.war
 !teamserver/applicationservers/WLP855/decisioncenter-api.war
 !teamserver/applicationservers/WLP855/teamserver.war
+!teamserver/applicationservers/WLP855/teamserver-dbdump.war
 !executionserver/applicationservers/tomcat8/res.war
 !executionserver/applicationservers/tomcat8/DecisionService.war
 !executionserver/applicationservers/tomcat8/DecisionRunner.war
