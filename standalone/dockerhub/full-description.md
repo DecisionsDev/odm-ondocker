@@ -1,5 +1,5 @@
 
-This repository is the home directory of IBM Operational Decision Manager for Developers, where you can find early access material for this program.
+This repository is the home directory of IBM Operational Decision Manager for Developers.
 
 # Quick reference
 
@@ -35,10 +35,9 @@ It allows you to evaluate the product.
 
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 
-  	```console
-  	$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 \
-  	    ibmcom/odm
-  	```
+```console
+$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 ibmcom/odm
+```
 You must accept the license before you launch the image. The license is available at the bottom of this page.
 
 When the server is started, you can access the ODM applications with the following URLs:
