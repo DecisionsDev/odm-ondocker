@@ -13,10 +13,6 @@
 !teamserver/applicationservers/tomcat8/decisioncenter.war
 !teamserver/applicationservers/tomcat8/decisioncenter-api.war
 !teamserver/applicationservers/tomcat8/teamserver.war
-!teamserver/lib**
-!**/docker-compose
-!docker-compose**
-!**/odm-docker
-!odm-docker**
-!**/odm-ondocker
-!odm-ondocker**
+!teamserver/lib/**/*
+!docker-compose*
+!odm-ondocker/**/*
