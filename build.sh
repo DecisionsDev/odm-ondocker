@@ -7,8 +7,8 @@ cd ../
 
 if [ ! -f $HOME/.cache/$ODM_FILE_NAME ]; then
     echo "ODM distribution: Starting download..."
-    AUTH_TOKEN=$(curl -i -H "X-Auth-User: $AUTH_USER" -H "X-Auth-Key:$AUTH_KEY" https://dal05.objectstorage.softlayer.net/auth/v1.0 | grep -E "X-Auth-Token:" | awk {'print $2'})
-    curl -O -H "X-Auth-Token: $AUTH_TOKEN" $ODM_URL
+    ODM_ZIP_URL=${ODM_URL}/${ODM_VERSION}/icp-docker-compose-build-images-${ODM_VERSION}.zip
+    curl  $ODM_ZIP_URL -u ${ARTIFACTORY_USER}:${ARTIFACTORY_PASSWORD} -o $ODM_FILE_NAME
     mv $ODM_FILE_NAME $HOME/.cache/
     echo "ODM distribution: download finished..."
 else
