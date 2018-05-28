@@ -1,4 +1,4 @@
 <server>
   <!-- Enable features -->
-      <logging traceSpecification="*=audit:org.apache.solr.*=warning:com.ibm.rules.bdsl.search.solr.*=warning"/>
+      <logging traceFileName="stdout" traceFormat="BASIC" traceSpecification="*=audit:org.apache.solr.*=warning:com.ibm.rules.bdsl.search.solr.*=warning"/>
 </server>
