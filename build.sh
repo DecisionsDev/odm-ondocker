@@ -25,7 +25,9 @@ cp -R odm-ondocker install
 cd install/odm-ondocker
 cp resources/.dockerignore ../
 cat ../.dockerignore
-ls -la ../executionserver/applicationservers/WLP855
+ls -la ../
+pwd
+ls -la ../executionserver/applicationservers/WLP855/
 echo "build ODM standard docker images..."
 docker-compose build
 
