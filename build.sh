@@ -17,17 +17,14 @@ else
 fi
 
 echo "unzip odm distribution..."
-unzip -q $HOME/.cache/$ODM_FILE_NAME 
+unzip -q $HOME/.cache/$ODM_FILE_NAME
 
 echo "copy odm-ondocker into ODM distribution..."
 cp -R odm-ondocker install
 
 cd install/odm-ondocker
 cp resources/.dockerignore ../
-cat ../.dockerignore
-ls -la ../
-pwd
-ls -la ../executionserver/applicationservers/WLP855/
+
 echo "build ODM standard docker images..."
 docker-compose build
 
