@@ -8,9 +8,10 @@ cd ../
 if [ ! -f $HOME/.cache/$ODM_FILE_NAME ]; then
     echo "ODM distribution: Starting download..."
     ODM_ZIP_URL=${ODM_URL}/${ODM_VERSION}/icp-docker-compose-build-images-${ODM_VERSION}.zip
-    echo "PD : ${ARTIPWD}"
+    echo "PD : ${ODM_URL}"
+    echo "PD : ${ARTIAUTHPWD}"
     echo "USERNAME : ${ARTIFACTORY_USER}"
-    echo "CURL : curl  $ODM_ZIP_URL -u '${ARTIFACTORY_USER}:${ARTIPWD}' -o $ODM_FILE_NAME"
+    echo "CURL : curl  $ODM_ZIP_URL -u '${ARTIFACTORY_USER}:${ARTIAUTHPWD}' -o $ODM_FILE_NAME"
     curl  $ODM_ZIP_URL -u '${ARTIFACTORY_USER}:${ARTIPWD}' -o $ODM_FILE_NAME
 
     mv $ODM_FILE_NAME $HOME/.cache/
