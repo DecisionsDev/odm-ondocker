@@ -13,7 +13,7 @@ if [ ! -f $HOME/.cache/$ODM_FILE_NAME ]; then
     echo "PD : ${ARTIAUTHPWD}"
     echo "USERNAME : ${ARTIFACTORY_USER}"
 
-    echo "CURL : curl  $ODM_ZIP_URL -u "${ARTIFACTORY_USER}:${ARTIAUTHPWD}"-o $ODM_FILE_NAME"
+    echo "CURL : curl  $ODM_ZIP_URL -u "${ARTIFACTORY_USER}:${ARTIFACTORY_PWD}"-o $ODM_FILE_NAME"
     curl  $ODM_ZIP_URL -u "${ARTIFACTORY_USER}:${ARTIPWD}" -o $ODM_FILE_NAME -v
     tail -f 100 $ODM_FILE_NAME
     mv $ODM_FILE_NAME $HOME/.cache/
