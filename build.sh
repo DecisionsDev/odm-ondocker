@@ -7,8 +7,9 @@ cd ../
 
 if [ ! -f $HOME/.cache/$ODM_FILE_NAME ]; then
     echo "ODM distribution: Starting download... ${ODM_URL}/${ODM_VERSION}/icp-docker-compose-build-images-${ODM_VERSION}.zip"
+    PASSDEC=`echo ${ARTIFACTORY_PASSWORD}|base64 --decode`
     ODM_ZIP_URL=${ODM_URL}/${ODM_VERSION}/icp-docker-compose-build-images-${ODM_VERSION}.zip
-    curl  $ODM_ZIP_URL -u '${ARTIFACTORY_USER}:${ARTIFACTORY_PASSWORD}' -o $ODM_FILE_NAME
+    curl  $ODM_ZIP_URL -u '${ARTIFACTORY_USER}:$PASSDEC' -o $ODM_FILE_NAME
     tail -100 $ODM_FILE_NAME
     mv $ODM_FILE_NAME $HOME/.cache/
     echo "ODM distribution: download finished..."
