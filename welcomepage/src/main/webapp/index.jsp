@@ -171,6 +171,19 @@
       z-index: -1;
       position: fixed;
     }
+
+    .presentation-container {
+      margin-top: 15px;
+    }
+    .presentation-content {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .presentation-content.right {
+      padding-left: 10px;
+      margin-left: 10px;
+      border-left: 2px solid #1A304C;
+    }
   </style>
 </head>
 <body>
@@ -180,14 +193,23 @@
       <article id="welcome-section-content">
         <img src="images/ODM-icon.png">
         <h1>Welcome to IBM Operational Decision Manager</h1>
-        <h2 class="secondary">Developer Edition</h2>
-          <ul>
-            <li><a href="/decisioncenter" target="_blank">Decision Center Business Console</a></li>
-            <li><a href="/teamserver" target="_blank">Decision Center Enterprise Console</a></li>
-            <li><a href="/res" target="_blank">Decision Server Console</a></li>
-            <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
-            <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
-          </ul>
+
+        <div class="presentation-container">
+          <div class="presentation-content left">
+            <h2 class="secondary">Developer Edition</h2>
+            <ul>
+              <li><a href="/decisioncenter" target="_blank">Decision Center Business Console</a></li>
+              <li><a href="/teamserver" target="_blank">Decision Center Enterprise Console</a></li>
+              <li><a href="/res" target="_blank">Decision Server Console</a></li>
+              <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
+              <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
+            </ul>
+          </div>
+
+          <div class="presentation-content right">
+            <iframe src="https://www.youtube.com/embed/ccdFtyy34x8?rel=0&amp;showinfo=0&amp;" gesture="media" allow="autoplay; encrypted-media" allowfullscreen="true" class="media--iframe" frameborder="0" width="560" height="315"></iframe>
+          </div>
+        </div>
       </article>
     </section>
 
