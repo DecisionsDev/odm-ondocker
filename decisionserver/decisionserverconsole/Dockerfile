@@ -12,7 +12,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
-RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && $SCRIPT/fixWLPForProduction.sh
+RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash perl ca-certificates wget
 # Build Welcome page

@@ -7,7 +7,7 @@ RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
-RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && $SCRIPT/fixWLPForProduction.sh
+RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 
 FROM alpine:3.6 AS apiBuilder
 # Setup the variable
