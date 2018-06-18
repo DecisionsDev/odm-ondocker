@@ -7,6 +7,9 @@ COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
+# Use production liberty if needed
+COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
+RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && $SCRIPT/fixWLPForProduction.sh
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash perl ca-certificates wget
 # Build welcome page
@@ -52,7 +55,7 @@ COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder $APPS $APPS
 COPY --from=builder /config/resources/postgres*  /config/resources
 COPY --from=builder $SCRIPT $SCRIPT
-
+COPY --from=builder /wlp-embeddable/wlp  /opt/ibm/wlp
 EXPOSE 9080 9443
 
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]
