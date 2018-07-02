@@ -23,7 +23,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Rule Designer development environment for ODM developers**:  
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
-	Eclipse v4.4.2 is required. [latest release](https://github.com/ODMDev/ruledesigner/raw/master)
+	Eclipse v4.4.2 is required. [latest release](https://raw.githubusercontent.com/ODMDev/ruledesigner/8.9.2/p2)
 
   # Overview
 
