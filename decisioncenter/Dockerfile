@@ -4,6 +4,10 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
+COPY $ODMDOCKERDIR/common/script $SCRIPT
+# Use production liberty if needed
+COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
+RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 
 FROM alpine:3.6 AS apiBuilder
 # Setup the variable
@@ -70,6 +74,7 @@ COPY --from=apiBuilder $APPS $APPS
 COPY --from=apiBuilder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=apiBuilder /config/resources/postgres*  /config/resources
 COPY --from=apiBuilder $SCRIPT $SCRIPT
+COPY --from=builder /wlp-embeddable/wlp  /opt/ibm/wlp
 EXPOSE 9060 9453
 
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]
