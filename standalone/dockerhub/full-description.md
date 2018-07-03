@@ -23,7 +23,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Rule Designer development environment for ODM developers**:  
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
-	Eclipse v4.4.2 is required. [latest release](https://raw.githubusercontent.com/ODMDev/ruledesigner/8.9.2/p2)
+	Use Eclipse v4.4.2. The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.9.2/p2
 
   # Overview
 
@@ -42,12 +42,12 @@ $ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 ibmcom/odm
 ```
 You must accept the license before you launch the image. The license is available at the bottom of this page.
 
-When the server is started, you can access the ODM applications with the following URLs:
+When the server is started, you can display a welcome page that lists all the ODM applications by accessing the URL http://localhost:9060. You can also directly access the individual applications through the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
 | [Decision Server Console](http://localhost:9060/res) | <http://localhost:9060/res> |odmAdmin|odmAdmin|
-| [Decision Server Runtime](http://localhost:9060/DecisionService) |<http://localhost:9060/DecisionService> |N/A|N/A|
+| [Decision Server Runtime](http://localhost:9060/DecisionService) |<http://localhost:9060/DecisionService> |odmAdmin|odmAdmin|
 | [Decision Center Business Console]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter> |odmAdmin|odmAdmin|
 | [Decision Center Enterprise Console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |odmAdmin|odmAdmin|
 | [Decision Runner]( http://localhost:9060/DecisionRunner) |  <http://localhost:9060/DecisionRunner> |odmAdmin|odmAdmin|
