@@ -3,7 +3,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 # Quick reference
 
--	**Video**:   [IBM Decision Automation](https://www.youtube.com/watch?v=ccdFtyy34x8&feature=youtu.be)
+-	**Video**:
+
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8" target="_blank">
+        <img src="http://img.youtube.com/vi/ccdFtyy34x8/0.jpg"
+        alt="IBM Decision Automation" width="320" height="240" border="10" />
+    </a>
 
 -	**Where to get help**:   [ODMDev community](https://developer.ibm.com/odm/)
 
