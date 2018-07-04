@@ -1,6 +1,7 @@
 FROM maven:3.5.2-jdk-7-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV THIRDPARTY /thirdpartylib
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
@@ -9,9 +10,7 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
 RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 
-FROM alpine:3.6 AS apiBuilder
 # Setup the variable
-ARG ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 
@@ -22,7 +21,7 @@ COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
-
+COPY $ODMDOCKERDIR/common/features $SCRIPT
 RUN apk add --no-cache zip bash perl ca-certificates wget
 
 RUN mkdir work;cd work;zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar
@@ -42,7 +41,11 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
-
+# Fix for WLP 18.0.0.2
+RUN echo $THIRDPARTY && mkdir /thirdpartylib
+COPY ./executionserver/lib/jaxws /thirdpartylib
+# End Fix
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
@@ -70,10 +73,10 @@ COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jk
 # Welcome page
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 # Copy Artifact
-COPY --from=apiBuilder $APPS $APPS
-COPY --from=apiBuilder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
-COPY --from=apiBuilder /config/resources/postgres*  /config/resources
-COPY --from=apiBuilder $SCRIPT $SCRIPT
+COPY --from=builder $APPS $APPS
+COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
+COPY --from=builder /config/resources/postgres*  /config/resources
+COPY --from=builder $SCRIPT $SCRIPT
 COPY --from=builder /wlp-embeddable/wlp  /opt/ibm/wlp
 EXPOSE 9060 9453
 

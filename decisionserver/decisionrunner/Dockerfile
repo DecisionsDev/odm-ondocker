@@ -3,10 +3,12 @@ ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
+ENV THIRDPARTY /thirdpartylib
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
+COPY $ODMDOCKERDIR/common/features $SCRIPT
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
 RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
@@ -16,7 +18,11 @@ RUN apk add --no-cache bash perl ca-certificates wget
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 # Decision Runner
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
-
+# Fix for WLP 18.0.0.2
+RUN mkdir $THIRDPARTY
+COPY ./executionserver/lib/jaxws $THIRDPARTY
+RUN ls $THIRDPARTY
+# End Fix
 RUN chmod -R a+x $SCRIPT && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
@@ -24,7 +30,7 @@ RUN chmod -R a+x $SCRIPT && \
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
-
+RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 FROM websphere-liberty:webProfile7
 ARG ODMDOCKERDIR
