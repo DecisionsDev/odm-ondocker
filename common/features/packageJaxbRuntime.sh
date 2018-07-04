@@ -1,7 +1,6 @@
 #!/bin/bash
 # Since Liberty 18.0.O.2 RES console require to package jaxb implementaton.
-set -x
-echo "running packageJaxbRuntime.sh "
+echo "Running packageJaxbRuntime.sh "
 
 # Process RES Console if needed
 if [ -d "$APPS/res.war" ] && [ -d "$APPS/DecisionService.war" ]; then

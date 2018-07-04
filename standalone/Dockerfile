@@ -3,7 +3,7 @@ ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
-
+ENV THIRDPARTY /thirdpartylib
 RUN apk add --no-cache  perl ca-certificates wget
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
@@ -52,6 +52,10 @@ RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
 # Load Feature
+# Fix for WLP 18.0.0.2
+RUN mkdir $THIRDPARTY
+COPY ./executionserver/lib/jaxws $THIRDPARTY
+# End Fix
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 FROM websphere-liberty:webProfile7
