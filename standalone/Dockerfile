@@ -31,6 +31,7 @@ COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
+    $SCRIPT/extractApp.sh decisioncenter-api.war && \
     mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
