@@ -2,6 +2,8 @@
 # Since Liberty 18.0.O.2 RES console require to package jaxb implementaton.
 echo "Running packageJaxbRuntime.sh "
 
+# Process only for clustered topology
+
 # Process RES Console if needed
 if [ -d "$APPS/res.war" ] && [ -d "$APPS/DecisionService.war" ]; then
 JAXBPATTERN="$APPS/res.war/WEB-INF/lib/jaxb*.jar"
@@ -24,5 +26,6 @@ if [ -d "$APPS/decisioncenter.war" ]; then
   if  ! ls $JAXBPATTERN 1> /dev/null 2>&1;  then
     cp $THIRDPARTY/jaxb*.jar $APPS/decisioncenter.war/WEB-INF/lib
     cp $THIRDPARTY/jaxb*.jar $APPS/teamserver.war/WEB-INF/lib
+    cp $THIRDPARTY/jaxb*.jar $APPS/decisioncenter-api.war/WEB-INF/lib
   fi
 fi
