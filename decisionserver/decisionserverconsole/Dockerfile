@@ -1,4 +1,4 @@
-FROM maven:3.5.2-jdk-7-alpine AS builder
+FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
