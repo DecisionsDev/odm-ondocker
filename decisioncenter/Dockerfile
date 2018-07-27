@@ -71,6 +71,8 @@ COPY $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.key
 COPY $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 
+COPY $ODMDOCKERDIR/common/drivers /config/resources
+
 # Welcome page
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 # Copy Artifact
