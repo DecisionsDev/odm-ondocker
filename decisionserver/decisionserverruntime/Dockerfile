@@ -1,4 +1,4 @@
-ARG FROMLIBERTY=websphere-liberty:webProfile7
+ARG FROMLIBERTY
 FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR

@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   openldap:
     image: $REPOSITORY/openldap:$ODMVERSION
@@ -45,7 +45,7 @@ services:
       - "636:636"
     domainname: "example.org" # important: same as hostname
     hostname: "example.org"
-    
+
   phpldapadmin:
     image: osixia/phpldapadmin:0.7.0
     #image: osixia/phpldapadmin:latest
@@ -57,25 +57,25 @@ services:
       - "8080:80"
     depends_on:
       - openldap
-      
+
   odm-decisionserverconsole:
     depends_on:
       - openldap
     volumes:
       - ./ldap/auth:/config/auth
-    
+
   odm-decisionrunner:
     depends_on:
       - openldap
     volumes:
       - ./ldap/auth:/config/auth
-    
+
   odm-decisionserverruntime:
     depends_on:
       - openldap
     volumes:
       - ./ldap/auth:/config/auth
-    
+
   odm-decisioncenter:
     depends_on:
       - openldap

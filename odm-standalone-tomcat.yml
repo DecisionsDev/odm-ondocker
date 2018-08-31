@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version

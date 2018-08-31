@@ -28,6 +28,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     links:
     - dbserver
     environment:
@@ -45,6 +46,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -61,6 +63,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -79,6 +82,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     links:
     - dbserver
     depends_on:
