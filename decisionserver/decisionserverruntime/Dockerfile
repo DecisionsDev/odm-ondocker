@@ -1,3 +1,4 @@
+ARG FROMLIBERTY=websphere-liberty:webProfile7
 FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -15,7 +16,7 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
-RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
+RUN echo "Use the liberty image : $FROMLIBERTY" && chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash perl ca-certificates wget
 # Build welcome page
@@ -32,7 +33,7 @@ COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
 
 RUN $SCRIPT/extractApp.sh DecisionService.war
 
-FROM websphere-liberty:webProfile7
+FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
 ARG DECISIONSERVERCONSOLE_NAME

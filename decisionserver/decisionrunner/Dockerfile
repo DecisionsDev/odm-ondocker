@@ -1,3 +1,4 @@
+ARG FROMLIBERTY
 FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -32,7 +33,7 @@ RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
-FROM websphere-liberty:webProfile7
+FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
