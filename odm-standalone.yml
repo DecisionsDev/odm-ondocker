@@ -11,6 +11,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     environment:
     - SAMPLE=true
     - LICENSE=$LICENSE
