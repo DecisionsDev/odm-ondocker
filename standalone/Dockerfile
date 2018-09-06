@@ -53,11 +53,7 @@ COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 
-# Load Feature
-# Fix for WLP 18.0.0.2
-RUN mkdir $THIRDPARTY
-COPY ./executionserver/lib/jaxws $THIRDPARTY
-# End Fix
+
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 FROM ${FROMLIBERTY}
