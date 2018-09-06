@@ -19,11 +19,7 @@ RUN apk add --no-cache bash perl ca-certificates wget
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 # Decision Runner
 COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
-# Fix for WLP 18.0.0.2
-RUN mkdir $THIRDPARTY
-COPY ./executionserver/lib/jaxws $THIRDPARTY
-RUN ls $THIRDPARTY
-# End Fix
+
 RUN chmod -R a+x $SCRIPT && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi

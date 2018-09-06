@@ -43,10 +43,6 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
-# Fix for WLP 18.0.0.2
-RUN echo $THIRDPARTY && mkdir /thirdpartylib
-COPY ./executionserver/lib/jaxws /thirdpartylib
-# End Fix
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 FROM ${FROMLIBERTY}
