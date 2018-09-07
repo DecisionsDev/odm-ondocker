@@ -29,8 +29,10 @@ RUN chmod -R a+x $SCRIPT && mkdir $APPS
 # Decision Center
 COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
 COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
+COPY ./teamserver/applicationservers/WLP855/decisionmodel*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
+    $SCRIPT/extractApp.sh decisionmodel.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
     mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
@@ -72,8 +74,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisioncenter_application.xml
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application-withRestApi.xml /config
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config
 COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
 COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
 COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml

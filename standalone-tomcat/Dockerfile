@@ -44,8 +44,10 @@ RUN rm -rf $APPS/*
 # Decision Center
 COPY ./teamserver/applicationservers/tomcat8/teamserver.war $APPS
 COPY ./teamserver/applicationservers/tomcat8/decisioncenter*.war $APPS/
+COPY ./teamserver/applicationservers/tomcat8/decisionmodel*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war decisioncenter && \
+    $SCRIPT/extractApp.sh decisionmodel.war decisionmodel && \
     $SCRIPT/extractApp.sh teamserver.war teamserver && \
     mkdir -p /$APPS/decisioncenter.war/WEB-INF/classes/config
 

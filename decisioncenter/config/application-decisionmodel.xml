@@ -1,0 +1,5 @@
+	<!-- Decision Model -->
+	<application id="decisionmodel" location="${server.config.dir}/apps/decisionmodel.war" name="decisionmodel">
+		<classloader delegation="parentLast" />
+	</application>
+

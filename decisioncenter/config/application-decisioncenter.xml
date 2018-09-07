@@ -1,0 +1,18 @@
+	<!-- Decision Center -->
+	<application id="decisioncenter" location="${server.config.dir}/apps/decisioncenter.war" name="decisioncenter">
+		<classloader delegation="parentLast" />
+		<application-bnd>
+			<security-role name="rtsAdministrator">
+				<group name="rtsAdministrators" />
+			</security-role>
+			<security-role name="rtsInstaller">
+				<group name="rtsInstallers" />
+			</security-role>
+			<security-role name="rtsConfigManager">
+				<group name="rtsConfigManagers" />
+			</security-role>
+			<security-role name="rtsUser">
+				<special-subject type="ALL_AUTHENTICATED_USERS" />
+			</security-role>
+		</application-bnd>
+	</application>

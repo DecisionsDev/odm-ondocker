@@ -24,6 +24,8 @@ Go to the Operational Decision Manager installation directory and locate the req
 
 *installation_directory/teamserver/applicationservers/WLP855/decisioncenter.war*
 
+*installation_directory/teamserver/applicationservers/WLP855/decisionmodel.war* (starting from ODM 8.10)
+
 *installation_directory/executionserver/applicationservers/WLP855/DecisionRunner.war*
 
 ### Clone the odm-ondocker code
@@ -73,7 +75,7 @@ Docker Compose builds and runs the containers if they are not already built.
 
 You can also choose to start only one Operational Decision Manager component. For example, this command line starts Decision Center and its dependencies, including the dbserver Derby Network server.
 
-```docker-compose up decisioncenter```
+```docker-compose up odm-decisioncenter```
 
 You can access the application with this URLs:
 

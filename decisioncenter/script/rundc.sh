@@ -10,7 +10,7 @@ $SCRIPT/configureDatabase.sh
 
 $SCRIPT/updateDatasource.sh
 
-$SCRIPT/addRestApi.sh
+$SCRIPT/addDCApplications.sh
 
 $SCRIPT/jvmOptions.sh
 
