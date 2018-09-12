@@ -1,6 +1,7 @@
 FROM tomcat:8.5.21
 ARG ODMDOCKERDIR
 ARG ODMVERSION
+ARG ODMDBVERSION
 LABEL maintainer="Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
@@ -36,7 +37,7 @@ RUN wget -nv $DERBY_URL && \
 ENV CONNECTION_POOL_SIZE 20
 
 # Sample DB
-ADD ${ODMDOCKERDIR}/standalone-tomcat/data.tar.gz ${CATALINA_HOME}/upload/
+ADD ${ODMDOCKERDIR}/standalone-tomcat/data-$ODMDBVERSION.tar.gz ${CATALINA_HOME}/upload/
 
 # Remove existing web applications
 RUN rm -rf $APPS/*

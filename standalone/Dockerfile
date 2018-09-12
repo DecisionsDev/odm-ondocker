@@ -61,6 +61,7 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
+ARG ODMDBVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="IBM Operational Decision Manager for Developers"
@@ -87,7 +88,7 @@ COPY --from=builder /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
 
 # Sample DB
-ADD ${ODMDOCKERDIR}/standalone/data.tar.gz /upload/
+ADD ${ODMDOCKERDIR}/standalone/data-$ODMDBVERSION.tar.gz /upload/
 
 # Welcome page
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS

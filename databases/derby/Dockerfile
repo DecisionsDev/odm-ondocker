@@ -1,6 +1,7 @@
 # Pull base image.
 FROM java:7
 ARG ODMDOCKERDIR
+ARG ODMDBVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
@@ -24,7 +25,7 @@ apt-get update &&\
 	mkdir -p /upload &&\
 	rm -rf /var/lib/apt/lists/*
 
-ADD $ODMDOCKERDIR/databases/derby/data.tar.gz /upload/
+ADD $ODMDOCKERDIR/databases/derby/data-$ODMDBVERSION.tar.gz /upload/
 COPY $ODMDOCKERDIR/databases/derby/script/rundb.sh /db-derby-10.12.1.1-bin/bin/
 RUN \
 	rm -Rf /etc/supervisor/supervisord.conf &&\

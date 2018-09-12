@@ -11,6 +11,7 @@ services:
       args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
+        - ODMDBVERSION=$ODMDBVERSION
     environment:
     - SAMPLE=true
     ports:

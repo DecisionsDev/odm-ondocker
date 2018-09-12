@@ -24,7 +24,7 @@ Go to the Operational Decision Manager installation directory and locate the req
 
 *installation_directory/teamserver/applicationservers/WLP855/decisioncenter.war*
 
-*installation_directory/teamserver/applicationservers/WLP855/decisionmodel.war* (starting from ODM 8.10)
+*installation_directory/teamserver/applicationservers/WLP855/decisionmodel.war* (starting from ODM vnext)
 
 *installation_directory/executionserver/applicationservers/WLP855/DecisionRunner.war*
 
