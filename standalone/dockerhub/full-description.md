@@ -4,11 +4,8 @@ This repository is the home directory of IBM Operational Decision Manager for De
 # Quick reference
 
 -	**Video**:
+[![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
 
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8" target="_blank">
-        <img src="http://img.youtube.com/vi/ccdFtyy34x8/0.jpg"
-        alt="IBM Decision Automation" width="320" height="240" border="10" />
-    </a>
 
 -	**Where to get help**:   [ODMDev community](https://developer.ibm.com/odm/)
 
@@ -30,7 +27,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 	Use Eclipse v4.4.2. The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.9.2/p2
 
-  # Overview
+# Overview
 
   The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
 
