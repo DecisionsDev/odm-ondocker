@@ -168,6 +168,9 @@
 		<Context docBase="decisioncenter" path="/decisioncenter" reloadable="false">
 			<ResourceLink global="jdbc/ilogDataSource" name="jdbc/ilogDataSource" type="javax.sql.DataSource"/>
 		</Context>
+		<Context docBase="decisioncenter-api" path="/decisioncenter-api" reloadable="false">
+			<ResourceLink global="jdbc/ilogDataSource" name="jdbc/ilogDataSource" type="javax.sql.DataSource"/>
+		</Context>
 		<Context docBase="decisionmodel" path="/decisionmodel" reloadable="false">
 		</Context>
 		<!-- Context paths for RES webapps and loggers -->
