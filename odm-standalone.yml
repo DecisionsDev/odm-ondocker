@@ -22,4 +22,4 @@ services:
     # Uncomment this line to persist your data. Note that on OSX you need to share this
     # current directory in the Preference menu -> File Sharing menu.
     #    volumes:
-    #    - ./:/config/dbdata/
+    #    - ./h2data:/config/dbdata/
