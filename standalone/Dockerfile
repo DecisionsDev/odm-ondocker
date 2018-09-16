@@ -16,7 +16,7 @@ COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
+#COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
 
 # Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
@@ -75,7 +75,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config
+COPY ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
 COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
 COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
 COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml

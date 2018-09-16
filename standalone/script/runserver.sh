@@ -42,6 +42,6 @@ $SCRIPT/updatePersistenceLocale.sh
 
 $SCRIPT/configureTlsSecurity.sh
 
-$SCRIPT/addDCApplications.sh config/decisioncenter_application.xml
+$SCRIPT/addDCApplications.sh /config/decisioncenter_application.xml
 
 /opt/ibm/wlp/bin/server run defaultServer

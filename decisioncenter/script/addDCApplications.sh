@@ -3,13 +3,13 @@
 applicationXml=$1
 
 if [ ! ${applicationXml} ]; then
-  applicationXml="config/application.xml"
+  applicationXml="/config/application.xml"
 fi
 
 function addApplication {
     if [ -e "${APPS}/$1.war" ]
     then
-        cat "config/application-$1.xml" >> ${applicationXml}
+        cat "/config/application-$1.xml" >> ${applicationXml}
     fi
 }
 
