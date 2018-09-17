@@ -1,7 +1,10 @@
 **
-!executionserver/applicationservers/WLP*/res.war
-!executionserver/applicationservers/WLP*/DecisionService.war
-!executionserver/applicationservers/WLP*/DecisionRunner.war
+!executionserver/applicationservers/WLP/res.war
+!executionserver/applicationservers/WLP/DecisionService.war
+!executionserver/applicationservers/WLP/DecisionRunner.war
+!executionserver/applicationservers/WLP855/res.war
+!executionserver/applicationservers/WLP855/DecisionService.war
+!executionserver/applicationservers/WLP855/DecisionRunner.war
 !executionserver/lib/**/*
 !teamserver/applicationservers/WLP/decisioncenter.war
 !teamserver/applicationservers/WLP/decisioncenter-api.war
