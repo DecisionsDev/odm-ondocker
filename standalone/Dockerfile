@@ -27,8 +27,8 @@ RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.19
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP855/teamserver.war $APPS
-COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/teamserver.war $APPS
+COPY ./teamserver/applicationservers/WLP*/decisioncenter*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
@@ -40,16 +40,16 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
 # Decision Server Console
-COPY ./executionserver/applicationservers/WLP855/res.war $APPS
+COPY ./executionserver/applicationservers/WLP*/res.war $APPS
 RUN $SCRIPT/extractApp.sh res.war
 RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
-COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
+COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionService.war
 
 # Decision Runner
-COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
+COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 

@@ -33,9 +33,9 @@ RUN chmod -R a+x $SCRIPT && \
 	  if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
 # Decision Center
-RUN mkdir -p $APPS
-COPY ./teamserver/applicationservers/WLP855/teamserver*.war $APPS/
-COPY ./teamserver/applicationservers/WLP855/decisioncenter*.war $APPS/
+RUN mkdir -p $APPS 
+COPY ./teamserver/applicationservers/WLP*/teamserver*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/decisioncenter*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh teamserver.war && \
