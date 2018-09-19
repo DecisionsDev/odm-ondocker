@@ -34,8 +34,8 @@ RUN chmod -R a+x $SCRIPT && \
 
 # Decision Center
 RUN mkdir -p $APPS
-COPY ./teamserver/applicationservers/WLP855/teamserver*.war $APPS/
-COPY ./teamserver/applicationservers/WLP855/decision*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/teamserver*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisionmodel.war && \

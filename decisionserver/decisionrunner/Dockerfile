@@ -18,7 +18,7 @@ RUN apk add --no-cache bash perl ca-certificates wget
 # Build welcome page
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 # Decision Runner
-COPY ./executionserver/applicationservers/WLP855/DecisionRunner.war $APPS
+COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 
 RUN chmod -R a+x $SCRIPT && \
     sync && \

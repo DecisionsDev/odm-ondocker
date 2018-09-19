@@ -20,8 +20,8 @@ RUN apk add --no-cache bash perl ca-certificates wget
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 
 # Decision Server Console
-COPY ./executionserver/applicationservers/WLP855/res.war $APPS
-COPY ./executionserver/applicationservers/WLP855/DecisionService.war $APPS
+COPY ./executionserver/applicationservers/WLP*/res.war $APPS
+COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
 RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
