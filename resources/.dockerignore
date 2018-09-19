@@ -8,10 +8,10 @@
 !executionserver/lib/**/*
 !teamserver/applicationservers/WLP/decisioncenter.war
 !teamserver/applicationservers/WLP/decisioncenter-api.war
+!teamserver/applicationservers/WLP/decisionmodel.war
 !teamserver/applicationservers/WLP/teamserver*.war
 !teamserver/applicationservers/WLP/teamserver-dbdump.war
 !teamserver/applicationservers/WLP855/decisioncenter.war
-!teamserver/applicationservers/WLP855/decisionmodel.war
 !teamserver/applicationservers/WLP855/decisioncenter-api.war
 !teamserver/applicationservers/WLP855/teamserver*.war
 !teamserver/applicationservers/WLP855/teamserver-dbdump.war
