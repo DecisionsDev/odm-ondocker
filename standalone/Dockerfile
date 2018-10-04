@@ -53,18 +53,19 @@ RUN $SCRIPT/extractApp.sh DecisionService.war
 COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
-
-
+# Sample DB
+ADD ${ODMDOCKERDIR}/standalone/data-8.10.0.tar.gz /db810
+ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
+# Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
 RUN $SCRIPT/loadFeatures.sh $SCRIPT
+
+
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
 ARG ODMDBVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
-LABEL ProductID="xxxxxxxxxxxxxxxxx"
-LABEL ProductName="IBM Operational Decision Manager for Developers"
-LABEL ProductVersion=$ODMVERSION
 MAINTAINER "Laurent GRATEAU <laurent.grateau@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
 ENV LANG C.UTF-8
@@ -87,7 +88,8 @@ COPY --from=builder /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
 
 # Sample DB
-ADD ${ODMDOCKERDIR}/standalone/data-$ODMDBVERSION.tar.gz /upload/
+COPY --from=builder /upload/* /upload/
+
 
 # Welcome page
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS
