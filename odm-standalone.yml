@@ -1,10 +1,12 @@
-version: '3'
+version: '2'
 services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this
   odm-standalone:
     image: $REPOSITORY/odm:$ODMVERSION
+    mem_limit: 4G
+    memswap_limit: 4G
     build:
       context: ../
       dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
