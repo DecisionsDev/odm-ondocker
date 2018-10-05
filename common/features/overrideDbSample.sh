@@ -12,7 +12,10 @@ then
   return 0
 fi
 
-echo "running overrideDbSample.sh $ODMVERSION +++++++++"
+echo "running overrideDbSample.sh"
 export DBVERSIONTOCOPY=8.10.0
+if [ -d "/db810" ]
+then
 rm /upload/*
-cp /db810/* /upload/ 
+cp /db810/* /upload/
+fi
