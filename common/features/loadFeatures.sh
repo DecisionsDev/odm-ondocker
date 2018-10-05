@@ -104,5 +104,5 @@ then
 fi
 
 # $1 feature directory
-odmVersion=$($SCRIPT/extractODMVersion.sh)
+export odmVersion=$($SCRIPT/extractODMVersion.sh)
 loadFeatures $1 $odmVersion
