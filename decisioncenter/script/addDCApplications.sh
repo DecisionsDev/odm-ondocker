@@ -18,7 +18,6 @@ function addApplication {
 touch ${applicationXml}
 
 echo "<server>" >> ${applicationXml}
-cat ${applicationXml}
 
 addApplication decisioncenter
 addApplication decisionmodel
@@ -27,6 +26,6 @@ addApplication decisioncenter-api
 addApplication teamserver-dbdump
 
 echo "</server>" >> ${applicationXml}
-cat ${applicationXml}
+
 
 # End - Add DC Apps
