@@ -1,3 +1,4 @@
+
 This repository is the home directory of IBM Operational Decision Manager for Developers.
 
 # Quick reference
@@ -6,12 +7,14 @@ This repository is the home directory of IBM Operational Decision Manager for De
 [![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
 
 
--	**Where to get help**:   [ODMDev community](https://developer.ibm.com/odm/)
+-	**Where to get help**:
+  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
+  * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
   https://github.com/ODMDev/odm-ondocker/issues
 
--	**Maintained by**:   [ODMDev Community](https://github.com/ODMDev)
+-	**Maintained by**:  IBM ODM Team.
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
  `amd64`, `ppc64le`, `s390x`
@@ -28,7 +31,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODMDev](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
 
 
   # Usage
