@@ -60,9 +60,8 @@ then
 			  ;;
 	esac
 else
-	if [ -f "/config/customdatasource/datasource.xml" ]; then
-		echo "Use Custom datasource as database"
-		cp /config/customdatasource/datasource.xml /config/datasource.xml
+	if [ -d "/config/customdatasource" ]; then
+		echo "Use Custom datasource"
 	else
 		if [ "$defaultDatabase" == "h2" ]; then
 			echo "Use H2 as database by default"
