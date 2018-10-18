@@ -57,7 +57,8 @@ RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/Deci
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.0.tar.gz /db810
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
-RUN $SCRIPT/loadFeatures.sh $SCRIPT
+RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+chmod -R 777 $APPS
 
 
 
