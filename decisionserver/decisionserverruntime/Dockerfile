@@ -31,7 +31,8 @@ RUN chmod -R a+x $SCRIPT && \
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
-RUN $SCRIPT/extractApp.sh DecisionService.war
+RUN $SCRIPT/extractApp.sh DecisionService.war && \
+chmod -R 777 $APPS
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR

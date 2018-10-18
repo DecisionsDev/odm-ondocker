@@ -30,7 +30,8 @@ RUN $SCRIPT/extractApp.sh res.war && $SCRIPT/extractApp.sh DecisionService.war
 RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-INF/web.xml && \
 		$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
-RUN $SCRIPT/loadFeatures.sh $SCRIPT
+RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+chmod -R 777 $APPS
 
 
 FROM ${FROMLIBERTY}

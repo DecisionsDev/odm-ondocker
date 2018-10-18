@@ -27,7 +27,8 @@ RUN chmod -R a+x $SCRIPT && \
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
-RUN $SCRIPT/loadFeatures.sh $SCRIPT
+RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+chmod -R 777 $APPS
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
