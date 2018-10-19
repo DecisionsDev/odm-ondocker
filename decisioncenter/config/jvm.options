@@ -1,2 +1,4 @@
 -Djavax.net.ssl.trustStore=/config/security/truststore.jks
 -Djavax.net.ssl.trustStorePassword=__TRUSTSTORE_PASSWORD__
+-Duser.language=en
+-Duser.country=US
