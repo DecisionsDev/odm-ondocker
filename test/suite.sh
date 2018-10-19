@@ -33,7 +33,7 @@ check_for_docker_url () {
 
     echo "Test $dockerurl availability in $dockerimg image."
 
-    docker exec -ti $dockerimg bash -c " \
+    docker exec -u 0:0 -ti $dockerimg bash -c " \
         apt-get -qq update && \
         apt-get -qq install -y iputils-ping && \
         ping -q -c5 $dockerurl > /dev/null && \
