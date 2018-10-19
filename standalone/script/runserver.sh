@@ -5,10 +5,11 @@ $SCRIPT/checkLicense.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then
     # if $SAMPLE not exist, or set to true
-	if [ -z "$SAMPLE" ] || [ "$SAMPLE" = "true" ] ; then
-		if [ -d "/config/dbdata/" ]; then
-  			cp -R /upload/* /config/dbdata/
+	if  [ "$SAMPLE" = "true" ] ; then
+		if [ ! -d "/config/dbdata/" ]; then
+				mkdir /config/dbdata
 		fi;
+		cp -R /upload/* /config/dbdata/
 	fi;
 	touch /config/initializeddb.flag
 fi;
