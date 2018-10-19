@@ -3,9 +3,13 @@ INFORMAÇÕES DA LICENÇA
 Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições da seguinte Informação sobre a Licença a seguir, além dos termos de licença do Programa acordados anteriormente pelo Cliente e pela IBM. Se o Cliente não tiver acordado anteriormente com os termos de licença em vigor para o Programa, o Contrato de Licença Internacional para Programas Não Garantidos (Z125-5589-05) será aplicável.
 
 Nome do Programa (Número do Programa):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Os termos padrão a seguir se aplicam o uso do Programa pelo Licenciado.
+
+Usos Proibidos
+
+O Licenciado não pode usar ou autorizar terceiros a usarem o Programa de maneira independente ou em combinação com outros serviços ou produtos, em apoio a qualquer das seguintes atividades de alto risco: design, construção, controle ou manutenção de instalações nucleares, sistemas de transporte público, sistemas de controle de tráfego aéreo, sistemas de controle automotivo, sistemas de armas, navegação ou comunicação de aeronaves ou qualquer outra atividade em que a falha do programa possa causar uma ameaça de morte ou ferimento grave.
 
 Imagem de Instalação de Multiproduto
 
@@ -13,10 +17,10 @@ O Programa é fornecido como parte de uma imagem de instalação de multi produto. 
 
 Programas de Apoio
 
-O Programa está licenciado como um pacote de multi-produto e inclui os Programas de Apoio identificados abaixo. O Licenciado está autorizado a instalar e usar tais Programas de Apoio apenas para suportar o uso do Programa Principal pelo Licenciado sob este/ao abrigo deste Contrato/Acordo e dentro dos limites das Provas de Titularidade para o Programa (salvo se forem fornecidos direitos mais amplos em qualquer ou parte deste documento de Informação sobre Licença). A frase "para suportar o uso/a utilização do Licenciado" incluiria somente os usos/as utilizações necessários(as) ou de outra forma relacionados ao uso/à utilização licenciado(a) do Programa Principal ou de outro Programa de Apoio ou do Pacote/Lote. Os Programas de Apoio não podem ser usados para qualquer outro propósito/fim. O Licenciado não está autorizado a transferir ou recomercializar os Programas de Apoio separados do Programa Principal. Um Programa de Apoio pode ser acompanhado pelos termos de licença, e tais termos, se houver algum, se aplicam ao uso desse Programa de Apoio pelo Licenciado. Em caso de conflito, os termos presentes neste documento de Informação sobre a Licença suplantam os termos do Programa de Apoio. Quando expira ou termina o direito do Licenciado de usar o Programa, o Licenciado deve descontinuar o uso, destruir ou devolver de imediato todas as cópias dos Programas de Apoio para o terceiro do qual o Licenciado adquiriu o Programa. Se o Licenciado tiver feito download dos Programas de Apoio, o Licenciado deve entrar em contato/contacto com o terceiro do qual o Licenciado adquiriu o Programa. Se o Licenciado deseja licenciar os Programas de Apoio para qualquer uso além dos limites definidos acima, deve entrar em contato/contacto com um Representante de Vendas IBM ou com o terceiro do qual o Licenciado adquiriu o Programa para obter a licença apropriada.
+O Licenciado está autorizado a instalar e usar/utilizar os Programas de Apoio identificados abaixo. O Licenciado está autorizado a instalar e usar/utilizar tais Programas de Apoio apenas para suportar o/a usar/utilizar do Programa Principal pelo Licenciado sob/ao abrigo desse Contrato/Acordo. A frase "para suportar o/a uso/utilização pelo Licenciado" incluiria apenas usos/utilizações necessários/necessárias, ou de outra forma diretamente relacionados/relacionadas, a um/uma uso/utilização licenciado/licenciada do Programa Principal ou de outro Programa de Apoio. Os Programas de Apoio não podem ser usados para qualquer outro propósito/fim. Um Programa de Apoio pode ser acompanhado pelos termos de licença, e tais termos, se houver algum, se aplicam ao uso desse Programa de Apoio pelo Licenciado. Em caso de conflito, os termos presentes neste documento de Informação sobre a Licença suplantam os termos do Programa de Apoio. O Licenciado deve obter/adquirir titularidades suficientes para o Programa, como um todo, para cobrir a instalação e o/a uso/utilização pelo Licenciado de todos os Programas de Apoio, a menos que titularidades distintas sejam fornecidas nesse documento de Informações sobre a Licença. Por exemplo, se esse Programa fosse licenciado em uma base de PVU (Processor Value Unit) e o Licenciado instalasse o Programa Principal ou um Programa de Apoio em uma máquina de 100 PVU (física ou virtual) e outro Programa de Apoio em uma segunda máquina de 100 PVU, ele seria obrigado a obter/adquirir titularidades de 200 PVU para o Programa.
 
-A seguir estão os Programas de Apoio que são licenciados com o Programa:
-IBM WebSphere Liberty 17
+Programas de Apoio:
+IBM WebSphere Liberty 18
 
 Limitação de Desenvolvedor
 
@@ -34,10 +38,6 @@ Componentes Fonte e Materiais de Amostra
 
 O Programa pode incluir alguns componentes na forma de código-fonte ("Componentes Fonte") e outros materiais identificados como Materiais de Amostra. O Licenciado pode copiar e modificar Componentes Fonte e Materiais de Amostra apenas para uso interno, contanto que tal uso esteja dentro dos limites dos direitos de licença sob este/ao abrigo deste Contrato/Acordo, desde que, no entanto, esse Licenciado não possa alterar ou excluir quaisquer informações de direitos autorais/de autor ou avisos contidos nos Componentes Fonte ou nos Materiais de Amostra. A IBM fornece os Componentes Fonte e Materiais de Amostra sem obrigação de suporte e "NO ESTADO EM QUE SE ENCONTRAM (""AS IS"")", SEM NENHUM TIPO DE GARANTIA, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM PROPÓSITO/FIM ESPECÍFICO.
 
-Usos Proibidos
-
-O Licenciado não pode usar ou autorizar terceiros a usarem o Programa de maneira independente ou em combinação com outros serviços ou produtos, em apoio a qualquer das seguintes atividades de alto risco: design, construção, controle ou manutenção de instalações nucleares, sistemas de transporte público, sistemas de controle de tráfego aéreo, sistemas de controle automotivo, sistemas de armas, navegação ou comunicação de aeronaves ou qualquer outra atividade em que a falha do programa possa causar uma ameaça de morte ou ferimento grave.
-
 Restrições de Importação e Exportação
 
 Este Programa pode conter criptografia/encriptação. A transferência para ou o uso pelos usuários/utilizadores do Programa podem ser proibidos ou estarem sujeitos às leis de exportação ou importação, regulamentos ou políticas, incluindo/inclusive aqueles Regulamentos de Administração de Exportação dos Estados Unidos. O Licenciado assume toda a responsabilidade de conformidade com todas as leis, regulamentos e políticas aplicáveis relativas à exportação, importação ou uso deste Programa, incluindo/inclusive mas não limitado a, restrições dos Estados Unidos da América sobre exportações ou reexportações. Para obter a classificação de exportação deste Programa, consulte: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Dados e Serviços de Terceiros
 
 O Programa pode conter links para ou ser usado para acessar/aceder a serviços de dados de terceiros, banco de dados/base de dados, serviços da Web, software ou outro conteúdo de terceiro (todos, "conteúdo"). O acesso a esse conteúdo é fornecido NO ESTADO EM QUE SE ENCONTRA ("AS IS"), SEM GARANTIA DE QUALQUER TIPO, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM PROPÓSITO/FIM ESPECÍFICO. O acesso pode ser rescindido/posto termo pelos terceiros interessados, a seu exclusivo critério e a qualquer momento. Pode ser requerido que o Licenciado celebre contratos/acordos separados com os terceiros para acessar/aceder a ou usar tal conteúdo. A IBM não é uma parte em tais contratos/acordos separados e, como uma condição expressa desta licença, o Licenciado concorda em cumprir com os termos desses contratos/acordos separados.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Contrato de Licença Internacional para Programas Não Garantidos

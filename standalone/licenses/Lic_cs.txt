@@ -3,9 +3,13 @@ LICENÈNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základì následujících podmínek uvedených v dokumentu Licenèní informace, které doplòují licenèní podmínky pro Program, s nimiž døíve Zákazník a IBM vyjádøili souhlas Pokud Zákazník døíve nevyjádøil souhlas s úèinnými licenèními podmínkami pro Program, uplatní se licence Mezinárodní licenèní smlouva pro programy bez záruky (Z125-5589-05).
 
 Název Programu (Èíslo Programu):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
+
+Zakázané užívání
+
+Držitel licence nesmí používat ani nesmí zmocnit další osoby používat Program samotný nebo ve spojení s jinými službami a produkty na podporu kterékoliv z následujících vysoce rizikových èinností: návrh, konstrukce, øízení nebo údržba jaderných zaøízení, systémy hromadné pøepravy, systémy øízení letecké dopravy, systémy øízení automobilù, zbrojní systémy nebo systémy letecké navigace èi komunikace, nebo jakékoliv jiné èinnosti, pøi které by mohlo selhání programu zpùsobit vznik závažného rizika smrti nebo vážného úrazu.
 
 Multiproduktový instalaèní obraz
 
@@ -13,10 +17,10 @@ Program je dodáván jako souèást multiproduktového instalaèního obrazu. Držitel l
 
 Podpùrné programy
 
-Program je licencován jako multiprogramový balík zahrnující níže identifikované Podpùrné programy. Držitel licence je oprávnìn nainstalovat a užívat tyto Podpùrné programy pouze k podpoøe užívání Základního programu Držitelem licence v souladu s touto Smlouvou a v rámci omezení stanovených dokumentem o oprávnìní (Proof of Entitlement), ledaže by na jiném místì v tomto dokumentu Licenèní informace byl stanoven širší rozsah práv. Výraz "na podporu svého užívání" by mìl zahrnovat pouze nezbytné užívání nebo užívání, které pøímo souvisí s licencovaným užíváním služby Principal Program nebo jiného Podpùrného programu nebo Programu v balíku. Podpùrné programy nesmí být užívány k žádnému jinému úèelu. Držitel licence není oprávnìn Podpùrné programy pøevádìt nebo dále prodávat nezávisle na Základním programu. K Podpùrnému programu mohou být pøipojeny licenèní podmínky. Tyto podmínky (pokud existují) platí pro užívání tohoto Podpùrného programu Držitelem licence. V pøípadì rozporu podmínek mají pøednost podmínky uvedené v tomto dokumentu Licenèní informace pøed podmínkami Podpùrného programu. Jestliže oprávnìní Držitele licence na užívání Programu skonèí, je Držitel licence povinen pøestat používat, znièit nebo bezodkladnì vrátit všechny kopie Podpùrných programù smluvní stranì, od níž získal Program. Jestliže Držitel licence stáhnul Podpùrné programy, je povinen kontaktovat smluvní stranu, od níž zakoupil Program. Jestliže chce Držitel licence Podpùrné programy licencovat pro jakékoli užívání pøesahující výše uvedené limity, musí se obrátit za úèelem poøízení pøíslušných licencí na Obchodního zástupce IBM nebo na smluvní stranu, od které Program získal.
+Držitel licence je oprávnìn nainstalovat a užívat Podpùrné programy identifikované níže. Držitel licence je oprávnìn nainstalovat a užívat tyto Podpùrné programy pouze k podpoøe užívání Základního programu Držitelem licence v souladu s touto Smlouvou. Výraz"k podpoøe užívání Držitelem licence" by mìlzahrnovat pouze nezbytnéužívání nebo užívání, které jinak pøímo souvisí s licencovaným užívánímslužby Základního programu nebo jiného Podpùrného programu. Podpùrné programy nesmí být užívány k žádnému jinému úèelu. K Podpùrnému programu mohou být pøipojeny licenèní podmínky. Tyto podmínky (pokud existují) platí pro užívání tohoto Podpùrného programu Držitelem licence. V pøípadì rozporu podmínek mají pøednost podmínky uvedené v tomto dokumentu Licenèní informace pøed podmínkami Podpùrného programu. Držitellicence musí získat dostateèný poèet oprávnìní k Programu jako celku kpokrytí instalace a používání všech Podpùrných programù ze stranyDržitele licence, pokudnejsou poskytnuta samostatná oprávnìní v dokumentu Licenèní informace. Jestliže byl napø. tento Program licencován dle jednotek PVU (Processor Value Unit) a Držitel licence instaloval Základní program nebo Podpùrný program na poèítaèi se 100 jednotkami PVU (fyzickém nebo virtuálním) a jiný Podpùrný program na druhém poèítaèi se 100 jednotkami PVU, mìl by Držitel licence získat oprávnìní na 200 jednotek PVU k Programu.
 
-S Programem jsou licencovány následující Podpùrné programy:
-IBM WebSphere Liberty 17
+Podpùrné programy:
+IBM WebSphere Liberty 18
 
 Omezení užívání - pouze pro vývojáøe
 
@@ -34,10 +38,6 @@ Komponenty ve vzorovém kódu a Vzorové materiály
 
 Program mùže obsahovat nìkteré komponenty ve formì zdrojového kódu ("Komponenty ve zdrojovém kódu") a jiné materiály oznaèované jako Vzorové materiály. Držitel licence smí kopírovat a mìnit Komponenty ve zdrojovém kódu a Vzorové materiály pouze pro interní užívání a pouze pod podmínkou, že toto užívání bude v souladu s omezeními licenèních oprávnìní stanovenými touto Smlouvou. Držitel licence však nesmí mìnit ani odstraòovat žádné informace nebo výhrady týkající se autorských práv obsažené v Komponentách ve zdrojovém kódu nebo ve Vzorových materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDØENÉ VÝSLOVNÌ ÈI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VÈETNÌ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TØETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚÈEL.
 
-Zakázané užívání
-
-Držitel licence nesmí používat ani nesmí zmocnit další osoby používat Program samotný nebo ve spojení s jinými službami a produkty na podporu kterékoliv z následujících vysoce rizikových èinností: návrh, konstrukce, øízení nebo údržba jaderných zaøízení, systémy hromadné pøepravy, systémy øízení letecké dopravy, systémy øízení automobilù, zbrojní systémy nebo systémy letecké navigace èi komunikace, nebo jakékoliv jiné èinnosti, pøi které by mohlo selhání programu zpùsobit vznik závažného rizika smrti nebo vážného úrazu.
-
 Omezení vývozu a dovozu
 
 Tento Program mùže obsahovat funkci šifrování. Pøevod Programu na uživatele nebo jeho užívání ze strany uživatelù mohou být zakázány nebo mohou podléhat vývozním nebo dovozním zákonùm, naøízením èi smìrnicím, vèetnì vývozních naøízení Spojených státù amerických. Držitel licence nese veškerou odpovìdnost za dodržování všech pøíslušných zákonù, naøízení a smìrnic týkajících se vývozu, dovozu nebo užívání tohoto Programu, vèetnì - nikoliv však pouze - omezení vývozu a zpìtného vývozu platných ve Spojených státech amerických. Vývozní klasifikaci tohoto Programu získáte na webových stránkách: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Data a služby tøetích stran
 
 Program mùže obsahovat odkazy na datové služby, databáze, webové služby, software tøetích stran nebo na jiný obsah od tøetích stran (spoleèné oznaèení "obsah") nebo mùže být užíván pro pøístup k tomuto obsahu. Pøístup k tomuto obsahu je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDØENÉ VÝSLOVNÌ ÈI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VÈETNÌ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TØETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚÈEL. Pøíslušné tøetí strany mohou pøístup kdykoliv ukonèit na základì svého výluèného uvážení. Držitel licence mùže být povinen s tøetími stranami uzavøít samostatné smlouvy o pøístupu nebo užívání tohoto obsahu. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky tìchto samostatných smluv.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Mezinárodní licenèní smlouva pro programy bez záruky
