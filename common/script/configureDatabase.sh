@@ -60,12 +60,16 @@ then
 			  ;;
 	esac
 else
-	if [ "$defaultDatabase" == "h2" ]; then
-		echo "Use H2 as database by default"
-		cp /config/datasource-h2.xml /config/datasource.xml
+	if [ -d "/config/customdatasource" ]; then
+		echo "Use Custom datasource"
 	else
-		echo "Use PostgreSQL as database by default"
-		cp /config/datasource-postgres.xml /config/datasource.xml
+		if [ "$defaultDatabase" == "h2" ]; then
+			echo "Use H2 as database by default"
+			cp /config/datasource-h2.xml /config/datasource.xml
+		else
+			echo "Use PostgreSQL as database by default"
+			cp /config/datasource-postgres.xml /config/datasource.xml
+		fi
 	fi
 fi
 # End - Configuration for the database

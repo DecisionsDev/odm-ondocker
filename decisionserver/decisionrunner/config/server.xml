@@ -9,6 +9,9 @@
 	<!-- datasource config -->
 	<include optional="true" location="./datasource.xml"/>
 
+	<!-- datasource config -->
+	<include optional="true" location="./customdatasource/datasource-ds.xml"/>
+	
 	<!-- include web security config -->
 	<include optional="true" location="./auth/webSecurity.xml"/>
 

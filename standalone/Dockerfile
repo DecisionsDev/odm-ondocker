@@ -15,7 +15,7 @@ COPY ${ODMDOCKERDIR}/common/features $SCRIPT
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
-RUN mkdir -p /config/dbdata /config/resources
+RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 #COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
 
 # Begin - Configuration for the database
@@ -57,7 +57,9 @@ RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/Deci
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.0.tar.gz /db810
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
-RUN $SCRIPT/loadFeatures.sh $SCRIPT
+RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+chmod -R 777 $APPS && \
+chmod -R 777 /upload /db810 /config/dbdata
 
 
 
@@ -83,22 +85,20 @@ COPY ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.k
 COPY ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
 COPY ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
 COPY ${ODMDOCKERDIR}/standalone/config /config
-COPY --from=builder /config/dbdata /config
 
+COPY --from=builder --chown=1001:0 /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
 
 # Sample DB
-COPY --from=builder /upload/* /upload/
-
+COPY --from=builder --chown=1001:0 /upload/* /upload/
 
 # Welcome page
 COPY --from=builder /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder /config/resources/postgres*  /config/resources
 COPY --from=builder /config/resources/h2*  /config/resources
-COPY --from=builder /config/dbdata /config
 COPY --from=builder $APPS $APPS
 COPY --from=builder $SCRIPT $SCRIPT
-VOLUME ["/config/dbdata/"]
+# VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]

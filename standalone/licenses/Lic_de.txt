@@ -3,9 +3,13 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (Z125-5589-05) zur Anwendung.
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
+
+Untersagte Verwendungen
+
+Der Lizenznehmer darf das Programm allein oder in Kombination mit anderen Services oder Produkten nicht zur Unterstützung risikoreicher Aktivitäten (wie Entwurf, Konstruktion, Steuerung oder Wartung von Nuklearanlagen, Massentransportsystemen, Luftverkehrskontrollsystemen, Fahrzeugsteuerungssystemen, Waffensystemen oder für die Luftfahrzeugnavigation oder Luftfahrzeugkommunikation) oder für andere Aktivitäten verwenden, bei denen ein Versagen des Programms zum Tod oder zu ernsthaften Verletzungen führen kann, oder Dritten die Berechtigung zu einer solchen Verwendung erteilen.
 
 Installationsimage mit mehreren Produkten
 
@@ -13,10 +17,10 @@ Das Programm wird als Teil eines Installationsimage bereitgestellt, das mehrere 
 
 Unterstützungsprogramme
 
-Das Programm wird als Multiproduktpaket lizenziert und enthält die nachfolgend aufgeführten Unterstützungsprogramme. Der Lizenznehmer darf die Unterstützungsprogramme unter dieser Vereinbarung und im Rahmen der Berechtigungsnachweise (Proofs of Entitlement = PoEs) für das Programm nur zur Unterstützung des Hauptprogramms installieren und nutzen (sofern an anderer Stelle in dieser Lizenzinformation keine weitergehenden Rechte erteilt werden). Der Ausdruck "nur zur Unterstützung" umfasst nur die erforderliche Nutzung oder diejenige Nutzung, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms oder gebündelten Programms steht. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Der Lizenznehmer ist nicht berechtigt, die Unterstützungsprogramme ohne das Hauptprogramm zu übertragen oder weiterzuvertreiben. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, denen die Nutzung des betreffenden Unterstützungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Wenn das Recht des Lizenznehmers zur Nutzung des Programms abläuft oder erlischt, muss er die Nutzung der Unterstützungsprogramme einstellen und alle Kopien der Unterstützungsprogramme vernichten oder unverzüglich bei der Stelle zurückgeben, von der er das Programm bezogen hat. Hat der Lizenznehmer die Unterstützungsprogramme heruntergeladen, sollte er sich an die Stelle wenden, von der er das Programm bezogen hat. Um die Unterstützungsprogramme für eine Nutzung ohne die obigen Beschränkungen zu lizenzieren, sollte sich der Lizenznehmer bitte an seinen IBM Vertriebsbeauftragten oder an die Stelle wenden, von der er das Programm bezogen hat, um die entsprechende Lizenz zu erwerben.
+Der Lizenznehmer ist zur Installation und Nutzung der nachstehend aufgeführten Unterstützungsprogramme berechtigt. Der Lizenznehmer darf diese Unterstützungsprogramme nur zur Unterstützung der Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur Unterstützung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms stehen. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, denen die Nutzung des betreffenden Unterstützungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen für das Programm als Ganzes erwerben, um die Installation und Nutzung aller Unterstützungsprogramme abzudecken, außer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm würde auf PVU-Basis (Prozessor-Value-Units) lizenziert und der Lizenznehmer würde das Hauptprogramm oder ein Unterstützungsprogramm auf einer 100-PVU-Maschine (physisch oder virtuell) und ein anderes Unterstützungsprogramm auf einer zweiten 100-PVU-Maschine installieren, dann müsste er 200 PVU-Berechtigungen für das Programm erwerben.
 
-Diese Liste enthält die Unterstützungsprogramme, die mit dem Programm lizenziert werden:
-IBM WebSphere Liberty 17
+Unterstützungsprogramme:
+IBM WebSphere Liberty 18
 
 Beschränkung auf Entwickler
 
@@ -34,10 +38,6 @@ Quellenkomponenten und Mustermaterialien
 
 Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Mustermaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Mustermaterialien nur für den internen Gebrauch kopieren und ändern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Mustermaterialien enthaltenen Copyrightvermerke oder Hinweise weder ändert noch löscht. IBM stellt die Quellenkomponenten und Mustermaterialien ohne eine Verpflichtung zur Unterstützung, ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck.
 
-Untersagte Verwendungen
-
-Der Lizenznehmer darf das Programm allein oder in Kombination mit anderen Services oder Produkten nicht zur Unterstützung risikoreicher Aktivitäten (wie Entwurf, Konstruktion, Steuerung oder Wartung von Nuklearanlagen, Massentransportsystemen, Luftverkehrskontrollsystemen, Fahrzeugsteuerungssystemen, Waffensystemen oder für die Luftfahrzeugnavigation oder Luftfahrzeugkommunikation) oder für andere Aktivitäten verwenden, bei denen ein Versagen des Programms zum Tod oder zu ernsthaften Verletzungen führen kann, oder Dritten die Berechtigung zu einer solchen Verwendung erteilen.
-
 Export- und Importbeschränkungen
 
 Dieses Programm kann Verschlüsselungstechnologie enthalten. Die Übertragung des Programms an andere Benutzer oder deren Verwendung des Programms ist möglicherweise untersagt oder unterliegt den Gesetzen, Verordnungen oder Bestimmungen für den Export oder Import, einschließlich der Export Administration Regulations (Exportkontrollbestimmungen) der Vereinigten Staaten. Der Lizenznehmer übernimmt die gesamte Verantwortung für die Einhaltung aller anwendbaren Gesetze, Verordnungen und Bestimmungen hinsichtlich des Exports, Imports oder der Verwendung dieses Programms, einschließlich der US-Beschränkungen, die für Exporte und Reexporte gelten. Die Exportklassifizierung dieses Programms kann über die folgende Adresse festgestellt werden: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Daten und Services von Drittanbietern
 
 Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff und die Nutzung dieser Inhalte abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung

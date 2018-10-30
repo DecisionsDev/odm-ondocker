@@ -3,9 +3,13 @@ LÝSANS BÝLGÝLERÝ
 Aþaðýda listelenen programlar, daha önce Müþteri ve IBM tarafýndan kabul edilen Program lisansý koþullarýna ek olarak aþaðýdaki Lisans Bilgilerinin kayýt ve koþullarý kapsamýnda lisanslanýr. Müþteri, Programa iliþkin yürürlükte olan lisans koþullarýný daha önce kabul etmemiþse, Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi (Z125-5589-05) geçerli olur.
 
 Program Adý (Program Numarasý):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Aþaðýdaki standart koþullar, Lisans Alan Tarafýn Programý kullanýmý için geçerlidir.
+
+Yasaklanmýþ Kullanýmlar
+
+Lisans Alan Taraf, aþaðýda belirtilen yüksek riskli etkinliklerin herhangi birini desteklemek amacýyla, bu Programý veya Programýn tek baþýna veya diðer hizmet veya ürünlerle birleþtirilmiþ olarak kullanamaz veya diðer taraflara bu Programý tek baþýna veya diðer hizmet veya ürünlerle birleþtirilmiþ olarak kullanma yetkisi veremez: nükleer tesislerin, toplu ulaþým sistemlerinin, hava trafik kontrolü sistemlerinin, otomotiv kontrol sistemlerinin, silah sistemlerinin veya uçuþ seferlerinin veya hava trafik kontrolünün veya Programda bir hata çýkmasýndan dolayý doðrudan ölüme ya da ciddi bedensel yaralanmalara sebep olabilecek diðer herhangi bir etkinliðin tasarýmý, inþasý, denetlenmesi veya bakýmý.
 
 Birden Çok Ürün Ýçeren Kurulum Görüntüsü
 
@@ -13,10 +17,10 @@ Bu Program, birden çok ürün içeren kurulum görüntüsünün bir parçasý olarak saðla
 
 Destekleyici Programlar
 
-Bu Program birden çok ürünün bulunduðu bir paket olarak lisanslanýr ve aþaðýda belirtilen Destekleyici Programlarý içerir. Lisans Alan Tarafa, bu tür Destekleyici Programlarý, Lisans Alan Tarafýn Asýl Programý (Principal Program) (iþbu Lisans Bilgileri Belgesinin baþka herhangi bir yerinde daha geniþ yetkiler saðlanmadýðý sürece) yalnýzca bu Sözleþme kapsamýnda ve bu Programa iliþkin Yetki Belgesinin (POE) sýnýrlarý içinde kullanýmýný desteklemek üzere kurmasý ve kullanmasý için yetki verilir. "Lisans Alan Tarafýn .....kullanýmýný desteklemek üzere" ifadesi, Asýl Programýn veya diðer bir Destekleyici Programýn veya Paketlenmiþ Programýn lisanslý kullanýmý için gerekli olan veya bu kullanýma baþka bir þekilde doðrudan iliþkili olan bu tür kullanýmlarý içerir. Destekleyici Programlar, baþka hiçbir amaçla kullanýlamaz. Lisans Alan Tarafýn, Destekleyici Programlarý Asýl Programdan ayrý olarak devretme ya da yeniden pazarlama yetkisi yoktur. Bir Destekleyici Programla birlikte lisans koþullarý ve eðer varsa, Lisans Alan Tarafýn bu Destekleyici Programý kullanýmý için geçerli olan koþullar da gönderilebilir. Asýl Programýn koþullarýyla Destekleyici Programýn koþularý arasýnda bir çeliþki olmasý durumundan iþbu Lisans Bilgileri belgesinin koþullarý, Destekleyici Programýn koþullarýný hükümsüz kýlarak onlarýn yerine geçer. Lisans Alan Tarafýn bu Programý kullaným hakký sona erdiðinde ya da sonlandýrýldýðýnda, Destekleyici Programlarýn tüm kopyalarýný kullanmaya son vermesi, bunlarý yok etmesi veya derhal Programý edindiði üçüncü kiþiye iade etmesi gerekir. Lisans Alan Taraf, Destekleyici Programlarý yüklediyse, bu Programý edindiði tarafla baðlantýya geçmelidir. Lisans Alan Taraf, Destekleyici Programlarý, yukarýda belirtilen sýnýrlarý aþacak þekilde kullanmak amacýyla lisanslamak isterse, uygun lisansý edinmek için IBM Satýþ Temsilcisiyle veya bunlarý edindiði tarafla görüþmelidir.
+Lisans Alan Taraf, aþaðýda belirtilen Destekleyici Programlarý kurabilir ve kullanabilir. Lisans Alan Tarafa, söz konusu Destekleyici Programlarý yalnýzca bu Sözleþme kapsamýndaki Asýl Programýn Lisans Alan Tarafça kullanýmýný desteklemek amacýyla kurmasý ve kullanmasý için yetki verilir. "Lisans Alan Tarafça kullanýmýný desteklemek amacýyla" ifadesi, yalnýzca Asýl Programýn veya diðer bir Destekleyici Programýn lisanslý kullanýmý için gerekli olan veya Asýl Programýn veya diðer bir Destekleyici Programýn lisanslý kullanýmýyla baþka bir þekilde doðrudan iliþkili olan kullanýmlarý kapsar. Destekleyici Programlar, baþka hiçbir amaçla kullanýlamaz. Bir Destekleyici Programla birlikte lisans koþullarý ve eðer varsa, Lisans Alan Tarafýn bu Destekleyici Programý kullanýmý için geçerli olan koþullar da gönderilebilir. Asýl Programýn koþullarýyla Destekleyici Programýn koþullarý arasýnda bir çeliþki olmasý durumunda iþbu Lisans Bilgileri belgesinin koþullarý, Destekleyici Programýn koþullarýný hükümsüz kýlarak onlarýn yerine geçer. Lisans Alan Taraf, iþbu Lisans Bilgileri belgesinde ayrý yetkiler saðlanmadýðý sürece, Destekleyici Programlarýn tümünün Lisans Alan Tarafça kurulumunu ve kullanýmýný kapsayacak þekilde Programýn bütününe iliþkin yeterli sayýda yetki edinmelidir. Örneðin, bu Program bir Ýþlemci Deðer Birimi (PVU) esasýnda lisanslandýysa ve Lisans Alan Taraf, Asýl Programý veya bir Destekleyici Programý 100 Ýþlemci Deðer Birimi (fiziksel veya sanal) olan bir makinede ve baþka bir Destekleyici Programý ikinci bir 100 Ýþlemci Deðer Birimi olan makinede kuracaksa, Lisans Alan Tarafýn Program için 200 Ýþlemci Deðer Birimi yetkisi edinmesi gerekecektir.
 
-Bu Programlarla birlikte lisanslanan Destekleyici Programlar aþaðýda belirtilmiþtir:
-IBM WebSphere Liberty 17
+Destekleyici Programlar:
+IBM WebSphere Liberty 18
 
 Geliþtirici Sýnýrlamasý
 
@@ -34,10 +38,6 @@ Kaynak Bileþenler ve Örnek Malzemeler
 
 Bu Program, kaynak kodu biçimindeki bazý bileþenleri ("Kaynak Bileþenler") ve Örnek Malzemeler olarak tanýmlanan diðer malzemeleri içerebilir. Lisans Alan Taraf, Kaynak Bileþenleri ve Örnek Malzemeleri ancak Kaynak Bileþenleri ve Örnek Malzemeleri kullanýmýnýn bu Sözleþme kapsamýndaki lisans haklarý tarafýndan çizilen sýnýrlar içinde kalmasý ve ancak Kaynak Bileþenlerde ya da Örnek Malzemelerde içerilen hiçbir telif hakký bilgisini veya bildirimini deðiþtirmemek veya silmemek koþuluyla dahili olarak kullanmak amacýyla kopyalayabilir ve kullanabilir. IBM, Kaynak Bileþenleri ve Örnek Malzemeleri, destek yükümlülüðü olmaksýzýn ve MÜLKÝYETE, HAK ÝHLALÝ YAPILMAYACAÐINA VEYA MÜDAHALE EDÝLMEYECEÐÝNE DAÝR GARANTÝLER ÝLE TÝCARÝLÝÐE VE BELÝRLÝ BÝR AMACA UYGUNLUÐA DAÝR ZIMNÝ GARANTÝLER VE KOÞULLAR DA DAHÝL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNÝ HÝÇBÝR GARANTÝ VERMEKSÝZÝN "OLDUÐU GÝBÝ" ESASIYLA SAÐLAR.
 
-Yasaklanmýþ Kullanýmlar
-
-Lisans Alan Taraf, aþaðýda belirtilen yüksek riskli etkinliklerin herhangi birini desteklemek amacýyla, bu Programý veya Programýn tek baþýna veya diðer hizmet veya ürünlerle birleþtirilmiþ olarak kullanamaz veya diðer taraflara bu Programý tek baþýna veya diðer hizmet veya ürünlerle birleþtirilmiþ olarak kullanma yetkisi veremez: nükleer tesislerin, toplu ulaþým sistemlerinin, hava trafik kontrolü sistemlerinin, otomotiv kontrol sistemlerinin, silah sistemlerinin veya uçuþ seferlerinin veya hava trafik kontrolünün veya Programda bir hata çýkmasýndan dolayý doðrudan ölüme ya da ciddi bedensel yaralanmalara sebep olabilecek diðer herhangi bir etkinliðin tasarýmý, inþasý, denetlenmesi veya bakýmý.
-
 Ýhracat ve Ýthalat Sýnýrlamalarý
 
 Bu Program þifreleme içerebilir. Bu Programýn kullanýcýlara devredilmesi veya kullanýcýlar tarafýndan kullanýmý yasaklanabilir veya A.B.D. Ýhracat Yönetimi Düzenlemeleri de dahil olmak üzere ithalat ya da ihracat yasalarýna, düzenlemelerine veya ilkelerine tabi olabilir. Lisans Alan Taraf, A.B.D'deki ihracat veya yeniden ihracat sýnýrlamalarý da dahil olmak, ancak tümü bunlarla sýnýrlý olmamak üzere bu Programýn ihracatýna, ithalatýna veya kullanýmýna iliþkin tüm geçerli yasa, düzenleme ve ilkelere uygun davranmaktan tümüyle kendisinin sorumlu olduðunu kabul eder. Bu Programýn ihracat sýnýflandýrmasýný edinmek için aþaðýdaki URL adresini ziyaret edin: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Bu Program þifreleme içerebilir. Bu Programýn kullanýcýlara devredilmesi veya ku
 
 Bu Program, üçüncü kiþi veri hizmetlerine, Web hizmetlerine, yazýlýmlara ya da diðer üçüncü kiþi içeriðine (tümü "içerik" olarak anýlýr) eriþmek üzere kullanýlan ya da kullanýlabilen baðlantýlar içerebilir. Bu içeriðe eriþim, MÜLKÝYETE, HAK ÝHLALÝ YAPILMAYACAÐINA VEYA MÜDAHALE EDÝLMEYECEÐÝNE DAÝR GARANTÝLER ÝLE TÝCARÝLÝÐE VE BELÝRLÝ BÝR AMACA UYGUNLUÐA DAÝR ZIMNÝ GARANTÝLER VE KOÞULLAR DA DAHÝL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNÝ HÝÇBÝR GARANTÝ VERÝLMEKSÝZÝN "OLDUÐU GÝBÝ" ESASIYLA SAÐLANIR. Bu eriþim, ilgili üçüncü kiþiler tarafýndan yalnýzca kendi kararlarýna baðlý olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafýn bu içeriðe eriþmesi veya bu içeriði kullanmasý için üçüncü kiþilerle ayrý sözleþmeler yapmasý gerekebilir. IBM, ayrýca yapýlacak bu tür sözleþmelerin bir tarafý deðildir ve bu lisansýn açýk bir koþulu olarak Lisans Alan Taraf ayrýca yapýlan bu tür sözleþmelerin koþullarýna uygun davranmayý kabul eder.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi
