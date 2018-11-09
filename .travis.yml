@@ -32,4 +32,6 @@ script:
 - "./test/suite.sh"
 
 notifications:
-  slack: ibm-cloud:XUBNKS1bHtsnLL8CicZkUu1u
+  slack:
+    rooms:
+      - secure: "bhYqi6pHRYrmorQfG2qEBkyhvLcGNK27shJkzxsZEFfA8iUVlBTPMYimfLzpJElUX1k/cQHOSrXfJqdFwlUxlYDXnDC1OmfrRMQIG9Qbx+Kr3e35U/pZxvPzCUz0RE5HIdr8N+YHJFjQhaOcmu1roLZM7D2Te/n+Cb6F09R04ESYCiEd4BK/oaxNygo87oUQX9bFAsThbGoRsDHUYxUJ5B6SopOGEFaKaeV4B79DJ/br/4SBAFk8WHD1wXW4See0WF3i2BaxiJ4QqZnfO9NQV77LjgXdZdezOJvwUrHFwKPXhd/C8Ut0w2bu6lVph4FxrxeaA/8CWxlu+8rvDe1X2C3xjTtpfI9POj8SBItRfdqjYdTAJfCG/N8tBVOy7gowIDoay+mDhq5ellBtzz4Bm7D/2FYpMBer4K4g1cBZDNcy6/EzJp23ydzQfuSa9e+S5PqEldooFkLIw1IJ/5JvoB6PAjxl1O1QWdvqM3FivCsxhORrSReG+uQlHe5Z8j6BE1ABY8izK+kbXZQSh2tLOYlX3T0JNrg36YUe+7H9icFUsgps82zF6mvSKCzGeXFUA7MaQCYEH7A2Ti/cEOAKmINmeALqt6qE7nIZS1ogWFk6qj390mo6bmrbcP8mqKkg16AeEBp9DtGrpBfaZrZMcxl4dpM4arXVqtBGInh/SKM="
