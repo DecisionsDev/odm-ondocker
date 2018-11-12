@@ -28,6 +28,9 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
+	
+-	**Samples and tutorials**: 
+	[Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
 
 # Overview
 
@@ -46,7 +49,7 @@ $ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 ibmcom/odm
 ```
 You must accept the license before you launch the image. The license is available at the bottom of this page.
 
-When the server is started, you can display a welcome page that lists all the ODM applications by accessing the URL http://localhost:9060. You can also directly access the individual applications through the following URLs:
+When the server is started, you can use the URL http://localhost:9060 to display a welcome page with links to the ODM components. To access the individual components directly, use the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
