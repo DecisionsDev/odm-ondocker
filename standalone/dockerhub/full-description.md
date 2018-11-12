@@ -28,6 +28,9 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
+	
+-	**Samples and tutorials**: 
+	[Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
 
 # Overview
 
