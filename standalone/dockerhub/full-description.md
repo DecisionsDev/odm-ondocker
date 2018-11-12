@@ -8,7 +8,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
+  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
@@ -27,11 +27,11 @@ This repository is the home directory of IBM Operational Decision Manager for De
 -	**Rule Designer development environment for ODM developers**:  
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-rule-designer)
 
-	Use [Eclipse v4.4.2](http://www.eclipse.org/downloads/packages/release/luna/sr2). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.9.2/p2
+	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.9.2/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
 
 
   # Usage
