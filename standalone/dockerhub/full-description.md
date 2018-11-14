@@ -29,8 +29,17 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
 	
--	**Samples and tutorials**: 
-	[Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
+-	**Samples and tutorials**:
+
+	TBD[Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
+	
+	[Getting started with decision modeling](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
+	
+	[Debugging a decision service in Rule Designer](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.cloud.tutorials/tut_cloud_rd_debug_kctopics/odm_cloud_debug_tut.html)
+	
+	[Loan Validation sample files](https://github.com/ODMDev/odm-on-cloud-debug)
+	
+	[Miniloan sample files](https://github.com/ODMDev/odm-on-cloud-getting-started)
 
 # Overview
 
