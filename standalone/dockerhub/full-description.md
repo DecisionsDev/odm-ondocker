@@ -52,13 +52,20 @@ This image contains IBM Operational Decision Manager with all the components in 
 It allows you to evaluate the product.
 
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
+You must accept the license before you launch the image. The license is available at the bottom of this page.
 
 ```console
 $ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 ibmcom/odm
 ```
-You must accept the license before you launch the image. The license is available at the bottom of this page.
 
-When the server is started, you can display a welcome page that lists all the ODM applications by accessing the URL http://localhost:9060. You can also directly access the individual applications through the following URLs:
+Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, you are recommended to store the Decision Center and the Decision Server databases outside the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the command:
+ 
+ ```console
+  docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  ibmcom/odm:8.10.0.0
+```
+ When you first run this command, it creates the .db files in your local directory. The following times, it reads and updates these files.
+
+When the server is started, use the URL http://localhost:9060 to display a welcome page that lists all the ODM components. You can also directly access the individual components through the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
