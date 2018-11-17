@@ -29,17 +29,20 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
 	
--	**Samples and tutorials**:
+-	**Samples**:
 
-	TBD[Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
+	??[Loan Validation](https://github.com/ODMDev/odm-on-cloud-debug)
 	
-	[Getting started with decision modeling](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
+	[Miniloan](https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted)
 	
-	[Debugging a decision service in Rule Designer](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.cloud.tutorials/tut_cloud_rd_debug_kctopics/odm_cloud_debug_tut.html)
+-	**Tutorials**:
+
+	[Getting started with ODM for Developers Docker image](https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted)
 	
-	[Loan Validation sample files](https://github.com/ODMDev/odm-on-cloud-debug)
+	[Getting started with business rules](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html)
 	
-	[Miniloan sample files](https://github.com/ODMDev/odm-on-cloud-getting-started)
+	[Getting started with decision modeling](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
+
 
 # Overview
 
