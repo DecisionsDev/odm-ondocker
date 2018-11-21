@@ -29,6 +29,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
 	
+
 -	**Sample projects**:
 
 	Two deployed decision services are ready to be used in Decision Center and in the Decision Server console:
