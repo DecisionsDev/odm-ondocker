@@ -29,19 +29,21 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
 	
--	**Samples**:
+-	**Sample projects**:
 
-	??[Loan Validation](https://github.com/ODMDev/odm-on-cloud-debug)
+	Two deployed decision services are ready to be used in Decision Center and in the Decision Server console:
+	- Loan Validation
+	- Shipment Pricing 
 	
-	[Miniloan](https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted)
+	You can download them from https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted by clicking 'Clone or download' and then 'Download ZIP'.
 	
 -	**Tutorials**:
 
 	[Getting started with ODM for Developers Docker image](https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted)
 	
-	[Getting started with business rules](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dserver.rules.tutorials/tut_gs_topics/odm_dserver_rules_gs.html)
+	[Creating a decision service in Rule Designer](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html)
 	
-	[Getting started with decision modeling](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
+	[Getting started with decision modeling in the Business console](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
 
 
 # Overview
