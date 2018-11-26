@@ -49,15 +49,11 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 >	- [Getting started with ODM for Developers Docker image](https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted)
 	
->	- [Creating a decision service in Rule Designer](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html)
-	
->	  For this tutorial, you need knowledge of Java and the Eclipse workspaces, perspectives, and views.
+>	- [Creating a decision service in Rule Designer](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html). For this tutorial, you need some knowledge of Java and the Eclipse workspaces, perspectives, and views. The following instructions supersede the prerequisites in the tutorial documentation:
 	  
->	  The following instructions supersede the prerequisites in the tutorial documentation:
-	  
->	  1. Get Rule Designer from the Eclipse marketplace, as described on this page.
+	  1. Get Rule Designer from the Eclipse marketplace, as described on this page.
 	  2. Download the Miniloan sample project from the https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted GitHub repository by clicking 'Clone or download' and then 'Download ZIP'.
-          3. Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
+	  3. Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
           4. Decision Server console and Decision Center Business console: Use the URLs and the users/passwords given in the table below on this page.  
 	
 >	- [Getting started with decision modeling in the Business console](http://engtest01w.fr.eurolabs.ibm.com:9190/support/knowledgecenter/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html)
@@ -95,8 +91,7 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 |:-----:|:-----:|:-----:|:-----:|
 | [Decision Server console](http://localhost:9060/res) | <http://localhost:9060/res> |odmAdmin|odmAdmin|
 | [Decision Server Runtime](http://localhost:9060/DecisionService) |<http://localhost:9060/DecisionService> |odmAdmin|odmAdmin|
-| [Decision Center Business console]( http://localhost:9060/decisioncenter
-) |  <http://localhost:9060/decisioncenter> |odmAdmin|odmAdmin|
+| [Decision Center Business console]( http://localhost:9060/decisioncenter)) |  <http://localhost:9060/decisioncenter> |odmAdmin|odmAdmin|
 | [Decision Center Enterprise console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |odmAdmin|odmAdmin|
 | [Decision Runner]( http://localhost:9060/DecisionRunner) |  <http://localhost:9060/DecisionRunner> |odmAdmin|odmAdmin|
 
