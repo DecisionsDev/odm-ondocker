@@ -42,7 +42,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
         You can download the Shipment Pricing.zip from https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted/ 
 	
-	To import these zip files in the Decision Center Business console, open the Business console, click the Library tab, then click ![Image shows the import decision service button](../icon_import.jpg), and navigate to the appropriate zip file.
+	To import these zip files in the Decision Center Business console, open the Business console, click the Library tab, then click the import decision service icon, and navigate to the appropriate zip file.
 
 	
 -	**Tutorials**:
