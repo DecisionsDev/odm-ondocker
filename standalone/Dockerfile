@@ -76,15 +76,15 @@ ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
 
-COPY $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-COPY ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
-COPY ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
-COPY ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
-COPY ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml
-COPY ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
-COPY ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
-COPY ${ODMDOCKERDIR}/standalone/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
 
 COPY --from=builder --chown=1001:0 /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
@@ -93,11 +93,11 @@ ENV CONNECTION_POOL_SIZE 20
 COPY --from=builder --chown=1001:0 /upload/* /upload/
 
 # Welcome page
-COPY --from=builder /welcomepage/target/welcomepage.war $APPS
-COPY --from=builder /config/resources/postgres*  /config/resources
-COPY --from=builder /config/resources/h2*  /config/resources
-COPY --from=builder $APPS $APPS
-COPY --from=builder $SCRIPT $SCRIPT
+COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
+COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
+COPY --from=builder --chown=1001:0 /config/resources/h2*  /config/resources
+COPY --from=builder --chown=1001:0 $APPS $APPS
+COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
