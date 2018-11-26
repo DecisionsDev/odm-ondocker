@@ -3,9 +3,13 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (Z125-5589-05) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
+
+Penggunaan yang Dilarang
+
+Pemegang Lisensi tidak dapat menggunakan atau memberikan kepada pihak lainnya hak untuk menggunakan Program, sendiri atau digabungkan dengan produk atau layanan lainnya, dalam mendukung salah satu aktivitas berisiko tinggi berikut ini: perancangan, pembuatan, pengendalian, atau pemeliharaan fasilitas-fasilitas nuklir, sistem transportasi massal, sistem pengendali lalu lintas udara, sistem pengendalian otomotif, sistem persenjataan, atau navigasi atau komunikasi pesawat terbang, atau setiap aktivitas lainnya di mana kegagalan program dapat menimbulkan ancaman jasmani berupa kematian atau cedera pribadi yang serius.
 
 Gambar Pemasangan Multi-Produk
 
@@ -13,10 +17,10 @@ Program ini disediakan sebagai bagian dari gambar pemasangan multiproduk. Pemega
 
 Program Pendukung
 
-Program diberi lisensi sebagai sebuah paket multiproduk dan termasuk Program-program Pendukung yang diidentifikasi di bawah ini. Pemegang Lisensi berhak untuk memasang dan menggunakan Program-program Pendukung tersebut hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini dan dalam batas-batas Bukti Kepemilikan untuk Program (kecuali apabila hak-hak yang lebih luas ditetapkan di suatu tempat dalam dokumen Informasi Lisensi ini). Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan, atau jika tidak, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung atau Bundel Program lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Pemegang Lisensi tidak berhak untuk mentransfer atau memasarkan kembali Program-program Pendukung secara terpisah dari Program Utama. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pada saat hak Pemegang Lisensi untuk menggunakan Program habis waktunya atau berakhir, Pemegang Lisensi harus berhenti menggunakan, memusnahkan atau segera mengembalikan semua salinan dari Program-program Pendukung kepada pihak yang darinya Pemegang Lisensi memperoleh Program. Apabila Pemegang Lisensi telah mengunduh Program-program Pendukung, Pemegang Lisensi sebaiknya menghubungi pihak yang darinya Pemegang Lisensi memperoleh Program. Apabila Pemegang Lisensi ingin memberi lisensi untuk Program-program Pendukung untuk digunakan melampaui batas-batas yang tercantum di atas, hubungi Perwakilan Penjualan IBM atau pihak yang darinya Pemegang Lisensi memperoleh Program untuk mendapatkan lisensi yang sesuai.
+Pemegang Lisensi berhak untuk memasang dan menggunakan Program Pendukung, yang diidentifikasikan di bawah ini. Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung tersebut hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini. Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan atau dengan cara lain, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pemegang Lisensi harus memperoleh kepemilikan yang memadai atas Program, secara keseluruhan, untuk mencakup pemasangan dan penggunaan Pemegang Lisensi atas semua Program Pendukung, kecuali apabila kepemilikan yang terpisah diberikan di dalam dokumen Informasi Lisensi. Misalnya, jika Program ini dilisensikan pada basis Unit Nilai Prosesor (Processor Value Unit - "PVU") dan Pemegang Lisensi.
 
-Berikut ini adalah Program-program Pendukung yang diberi lisensi bersama dengan Program:
-IBM WebSphere Liberty 17
+Program Pendukung:
+IBM WebSphere Liberty 18
 
 Batasan untuk Pengembang
 
@@ -34,10 +38,6 @@ Komponen Sumber dan Material Contoh
 
 Program dapat mencakup beberapa komponen dalam bentuk kode sumber ("Komponen Sumber") dan beberapa material lain yang dikenal sebagai Material Contoh. Pemegang Lisensi dapat menyalin dan memodifikasi Komponen-komponen Sumber dan Material Contoh untuk penggunaan internal hanya dengan ketentuan bahwa penggunaan tersebut dalam batas-batas hak lisensi berdasarkan Perjanjian ini, akan tetapi dengan ketentuan bahwa Pemegang Lisensi tidak dapat mengubah atau menghapus setiap informasi atau pemberitahuan tentang hak cipta yang terdapat dalam Komponen-komponen Sumber atau Material Contoh.  IBM memberikan Komponen-komponen Sumber dan Material Sampel tanpa adanya kewajiban dukungan dan "APA ADANYA", TANPA GARANSI APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK GARANSI KEPEMILIKAN, JAMINAN TIDAK ADANYA PELANGGARAN ATAU CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU.
 
-Penggunaan yang Dilarang
-
-Pemegang Lisensi tidak dapat menggunakan atau memberikan kepada pihak lainnya hak untuk menggunakan Program, sendiri atau digabungkan dengan produk atau layanan lainnya, dalam mendukung salah satu aktivitas berisiko tinggi berikut ini: perancangan, pembuatan, pengendalian, atau pemeliharaan fasilitas-fasilitas nuklir, sistem transportasi massal, sistem pengendali lalu lintas udara, sistem pengendalian otomotif, sistem persenjataan, atau navigasi atau komunikasi pesawat terbang, atau setiap aktivitas lainnya di mana kegagalan program dapat menimbulkan ancaman jasmani berupa kematian atau cedera pribadi yang serius.
-
 Pembatasan Ekspor dan Impor
 
 Program ini dapat berisi kriptografi. Transfer ke, atau penggunaan oleh, para pengguna Program dapat dilarang atau tunduk kepada undang-undang, peraturan atau kebijakan ekspor atau impor, termasuk undang-undang, peraturan atau kebijakan ekspor dan impor Peraturan Administrasi Ekspor Amerika Serikat (United States Export Administration Regulations). Pemegang Lisensi menerima semua tanggung jawab untuk mematuhi semua undang-undang, peraturan, dan kebijakan yang berlaku terkait dengan ekspor, impor atau penggunaan Program ini, termasuk tetapi tidak terbatas pada, pembatasan-pembatasan tentang ekspor dan ekspor ulang di A.S. Untuk mendapatkan klasifikasi ekspor dari Program ini, lihat: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Data dan Layanan Pihak Ketiga
 
 Program dapat berisi tautan-tautan ke atau yang digunakan untuk mengakses layanan, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "konten"). Akses ke konten ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KEMAMPUAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan konten tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Garansi

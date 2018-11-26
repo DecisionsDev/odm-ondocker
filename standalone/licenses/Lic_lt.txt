@@ -3,9 +3,13 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal ðias Licencijos informacijos sàlygas, kurios papildo Programos licencijos sàlygas, dël kuriø susitarë Klientas ir IBM. Jei Klientas anksèiau nëra sutikæs su Programai taikomomis licencijos sàlygomis, taikoma Programø kurioms neteikiama garantija tarptautinë licencinë sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Ðios standartinës sàlygos taikomos Licenciato Programos naudojimui.
+
+Draudþiamas naudojimas
+
+Licenciatas negali naudoti arba suteikti kitiems teisës naudoti Programos atskirai ar kartu su kitomis paslaugomis ar produktais bet kuriai ið ðiø labai rizikingø veiklø palaikyti: branduoliniø objektø, masinio keleiviø veþimo sistemø, oro eismo kontrolës sistemø, automobiliø kontrolës sistemø, ginkluotës sistemø, orlaiviø navigacijos ar ryðiø kûrimas, konstravimas, valdymas arba prieþiûra arba bet kuri kita veikla, kur programos gedimas gali kelti mirties arba rimto suþalojimo pavojø.
 
 Keliø produktø diegimo atvaizdas
 
@@ -13,10 +17,10 @@ Programa pateikiama kaip keliø produktø diegimo atvaizdo dalis. Licenciatas turi
 
 Pagalbinës programos
 
-Programa yra licencijuojama kaip keliø produktø paketas ir apima toliau nurodytas Pagalbines programas. Licenciatas ágaliotas diegti ir naudoti tokias Pagalbines programas tik Licenciato Pagrindinës programos naudojimui palaikyti pagal ðià Sutartá, kaip nurodyta Programos Teisiø suteikimo dokumente (nebent ðiame Licencijos informacijos dokumente yra suteiktos platesnës teisës). Frazë „palaikyti Licenciato naudojimà“ apima tik tà naudojimà, kuris reikalingas ar kitaip tiesiogiai susijæs su Pagrindinës ar kitos Pagalbinës arba Paketinës Programos licencijuotu naudojimu. Pagalbiniø programø negalima naudoti jokiam kitam tikslui. Licenciatas nëra ágaliotas perduoti arba perparduoti Pagalbiniø programø atskirai nuo Pagrindinës Programos. Pagalbinë programa gali bûti pateikiama su licencijos sàlygomis ir ðios sàlygos, jei tokiø yra, taikomos Pagalbinæ programà naudojanèiam Licencijos turëtojui. Ávykus ginèui ðiame Licencijos informacijos dokumente pateiktos sàlygos pakeièia Pagalbinës programos sàlygas. Kai Licenciato teisë naudoti Programà baigiasi arba nutraukiama, Licenciatas privalo nutraukti naudojimà, sunaikinti arba nedelsdamas gràþinti visas Pagalbiniø Programø kopijas ðaliai, ið kurios Licenciatas ásigijo Programà. Jeigu Licenciatas Pagalbines Programas atsisiuntë, jis turi susisiekti su ðalimi, ið kurios Licenciatas ásigijo Programà. Jei Licenciatas nori licencijuoti Pagalbines programas naudoti ilgiau, nei nurodyta anksèiau, norëdami gauti atitinkamà licencijà, kreipkitës á IBM pardavimo atstovà arba ðalá, ið kurios Licenciatas ásigijo Programà.
+Licenciatas turi teisæ diegti ir naudoti toliau nurodytas Pagalbines programas. Licenciatas ágaliotas diegti ir naudoti Pagalbines programas tik Licenciato Pagrindinës programos naudojimui palaikyti pagal ðià Sutartá. Frazë „palaikyti Licenciato naudojimà“ apima tik tà naudojimà, kuris reikalingas ar kitaip tiesiogiai susijæs su Pagrindinës ar kitos Pagalbinës Programos licencijuotu naudojimu. Pagalbiniø programø negalima naudoti jokiam kitam tikslui. Pagalbinë programa gali bûti pateikiama su licencijos sàlygomis ir ðios sàlygos, jei tokiø yra, taikomos Pagalbinæ programà naudojanèiam Licencijos turëtojui. Ávykus ginèui ðiame Licencijos informacijos dokumente pateiktos sàlygos pakeièia Pagalbinës programos sàlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisiø, kad jø pakaktø visø Licenciato Pagalbiniø programø diegimui ir naudojimui padengti, nebent ðiuo Licencijos informacijos dokumentu suteikiama papildomø teisiø. Pavyzdþiui, jei ði Programa buvo licencijuota PVV (Procesoriaus vertës vienetø) pagrindu, ir Licenciatas turëtø ádiegti Pagrindinæ programà arba Pagalbinæ programà 100 PVV árenginyje (fiziniame arba virtualiame), o antrame 100 PVV árenginyje – kità Pagalbinæ programà, Licenciatui reikës ásigyti 200 Programos PVV teisiø.
 
-Toliau iðvardytos kartu su Programa licencijuotos Pagalbinës programos:
-IBM WebSphere Liberty 17
+Pagalbinës programos:
+IBM WebSphere Liberty 18
 
 Kûrëjo ribojimas
 
@@ -34,10 +38,6 @@ Licenciatas pripaþásta ir sutinka, kad IBM gali naudoti slapukus ir sekimo techn
 
 Á Programà gali bûti átraukti keli komponentai iðeitinio kodo forma („Ðaltinio komponentai“) ir kita medþiaga, apibrëþta kaip Pavyzdinë medþiaga. Licenciatas gali kopijuoti ir modifikuoti Ðaltinio komponentus ir Pavyzdinæ medþiagà tik naudoti viduje, jei toks naudojimas nepaþeidþia ðios Sutarties licencijos teisiø ir jei Licenciatas nekeièia ar nenaikina jokios Ðaltinio komponentuose ir Pavyzdinëje medþiagoje esanèios autoriaus teisiø informacijos ar praneðimø. IBM pateikia Ðaltinio komponentus ir Pavyzdinæ medþiagà be palaikymo ásipareigojimo ir TOKIÀ, KOKIA YRA, NESUTEIKIANT JOKIØ AIÐKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS.
 
-Draudþiamas naudojimas
-
-Licenciatas negali naudoti arba suteikti kitiems teisës naudoti Programos atskirai ar kartu su kitomis paslaugomis ar produktais bet kuriai ið ðiø labai rizikingø veiklø palaikyti: branduoliniø objektø, masinio keleiviø veþimo sistemø, oro eismo kontrolës sistemø, automobiliø kontrolës sistemø, ginkluotës sistemø, orlaiviø navigacijos ar ryðiø kûrimas, konstravimas, valdymas arba prieþiûra arba bet kuri kita veikla, kur programos gedimas gali kelti mirties arba rimto suþalojimo pavojø.
-
 Eksporto ir importo apribojimai
 
 Ðioje Programoje gali bûti ðifravimø. Vartotojams Programà perduoti arba jà naudoti gali bûti draudþiama arba gali bûti taikomi eksporto ar importo ástatymai, taisyklës arba strategijos, áskaitant Jungtiniø Amerikos Valstijø eksporto valdymo reglamentà. Licenciatas prisiima visà atsakomybæ uþ visø taikomø ástatymø, taisykliø ir strategijø, susijusiø su ðios Programos eksportu, importu arba naudojimu, áskaitant, bet neapsiribojant, JAV eksporto arba pakartotinio eksporto apribojimus, laikymàsi. Norëdami gauti ðios Programos eksporto kategorijà, þr: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Treèiosios ðalies duomenys ir paslaugos
 
 Programoje gali bûti saitø arba jà galima naudoti prieigai prie treèiosios ðalies duomenø paslaugø, duomenø baziø, þiniatinklio paslaugø, programinës árangos arba kito treèiosios ðalies turinio (bendrai – „turinys“). Prieiga prie ðio turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIØ AIÐKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS. Atitinkama treèioji ðalis iðskirtinai savo nuoþiûra prieigà gali bet kada nutraukti. Licenciatui gali tekti sudaryti su treèiosiomis ðalimis atskiras sutartis dël prieigos prie tokio turinio arba jo naudojimo. IBM nëra tokiø atskirø sutarèiø ðalis ir, kaip aiðkiai nurodyta ðios licencijos sàlygose, Licenciatas sutinka laikytis tokiø atskirø sutarèiø sàlygø.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Programø kurioms neteikiama garantija tarptautinë licencinë sutartis

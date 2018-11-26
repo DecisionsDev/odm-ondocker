@@ -3,9 +3,13 @@ INFORMACJE LICENCYJNE
 Programy wymienione poniøej sπ licencjonowane na podstawie przedstawionych poniøej warunkÛw Informacji licencyjnych, ktÛre stanowiπ uzupe≥nienie warunkÛw licencji na Program uzgodnionych uprzednio miÍdzy Klientem a IBM. Jeúli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie majπ warunki licencji MiÍdzynarodowa Umowa Licencyjna na Programy nieobjÍte Gwarancjπ (Z125-5589-05).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Poniøsze standardowe warunki majπ zastosowanie do uøywania Programu przez LicencjobiorcÍ.
+
+Niedozwolone uøywanie
+
+Licencjobiorca nie moøe uøywaÊ ani upowaøniaÊ innych do uøywania Programu, czy to samodzielnie czy w po≥πczeniu z innymi us≥ugami lub produktami, do obs≥ugi nastÍpujπcych sytuacji wysokiego ryzyka: projektowania, konstruowania lub konserwacji urzπdzeÒ nuklearnych, systemÛw komunikacji publicznej, systemÛw kontroli lotÛw, systemÛw sterowania dla przemys≥u motoryzacyjnego, systemÛw uzbrojenia bπdü systemÛw nawigacyjnych bπdü systemÛw ≥πcznoúci stosowanych w statkach powietrznych ani teø do sterowania takimi urzπdzeniami lub systemami, jak rÛwnieø do wykonywania jakichkolwiek innych dzia≥aÒ, w przypadku ktÛrych awaria Programu mog≥aby spowodowaÊ powaøne zagroøenie øycia lub ryzyko powaønego uszkodzenia cia≥a.
 
 Obraz instalacyjny obejmujπcy wiele produktÛw
 
@@ -13,10 +17,10 @@ Program jest dostarczany jako czÍúÊ obrazu instalacyjnego obejmujπcego wiele pro
 
 Programy Wspierajπce
 
-Program jest licencjonowany w postaci pakietu wieloproduktowego, zawierajπcego Programy Wspierajπce okreúlone poniøej. Licencjobiorca jest upowaøniony do zainstalowania i uøywania takich ProgramÛw Wspierajπcych jedynie w celu umoøliwienia Licencjobiorcy uøywania Programu G≥Ûwnego na mocy niniejszej Umowy i w zakresie ograniczeÒ nak≥adanych przez dokumenty Proof of Entitlement dla Programu (chyba øe w innej czÍúci niniejszego dokumentu "Informacje Licencyjne" oferowane sπ szersze uprawnienia). Fraza "w celu umoøliwienia Licencjobiorcy uøywania" obejmuje jedynie te zastosowania, ktÛre sπ niezbÍdne do licencjonowanego uøywania Programu G≥Ûwnego lub innego Programu Wspierajπcego lub Programu Pakietowego albo bezpoúrednio zwiπzane z takim licencjonowanym uøywaniem. ProgramÛw Wspierajπcych nie moøna wykorzystywaÊ do jakichkolwiek innych celÛw. Licencjobiorca nie jest upowaøniony do przenoszenia ani odsprzedaøy ProgramÛw Wspierajπcych oddzielnie od Programu G≥Ûwnego. Do Programu Wspierajπcego mogπ byÊ do≥πczone warunki licencji. W takim przypadku warunki te majπ zastosowanie do uøywania takiego Programu Wspierajπcego przez LicencjobiorcÍ. W przypadku sprzecznoúci miÍdzy warunkami niniejszych Informacji licencyjnych a warunkami licencji Programu Wspierajπcego znaczenie rozstrzygajπce majπ warunki niniejszych Informacji licencyjnych. Kiedy prawo Licencjobiorcy do korzystania z Programu wygaúnie lub zostanie mu wypowiedziane, Licencjobiorca musi zaprzestaÊ korzystania z ProgramÛw Wspierajπcych oraz zniszczyÊ lub niezw≥ocznie zwrÛciÊ wszystkie ich egzemplarze do strony, od ktÛrej Licencjobiorca naby≥ Program. Jeúli Licencjobiorca pobra≥ Programy Wspierajπce, powinien skontaktowaÊ siÍ ze stronπ, od ktÛrej naby≥ Program. Jeúli Licencjobiorca zamierza licencjonowaÊ Programy Wspierajπce w celu uøywania nieobjÍtego ograniczeniami wyszczegÛlnionymi powyøej, powinien skontaktowaÊ siÍ z przedstawicielem handlowym IBM lub z podmiotem, od ktÛrego naby≥ Program, w celu uzyskania odpowiedniej licencji.
+Licencjobiorca jest upowaøniony do zainstalowania i uøywania ProgramÛw Wspierajπcych wskazanych poniøej. Licencjobiorca jest upowaøniony do zainstalowania i uøywania takich ProgramÛw Wspierajπcych jedynie w celu umoøliwienia Licencjobiorcy uøywania Programu G≥Ûwnego na mocy niniejszej Umowy. Fraza "w celu umoøliwienia Licencjobiorcy uøywania" obejmuje jedynie te zastosowania, ktÛre sπ niezbÍdne do licencjonowanego uøywania Programu G≥Ûwnego lub innego Programu Wspierajπcego albo bezpoúrednio zwiπzane z takim licencjonowanym uøywaniem. ProgramÛw Wspierajπcych nie moøna wykorzystywaÊ do jakichkolwiek innych celÛw. Do Programu Wspierajπcego mogπ byÊ do≥πczone warunki licencji. W takim przypadku warunki te majπ zastosowanie do uøywania takiego Programu Wspierajπcego przez LicencjobiorcÍ. W przypadku sprzecznoúci miÍdzy warunkami niniejszych Informacji licencyjnych a warunkami licencji Programu Wspierajπcego znaczenie rozstrzygajπce majπ warunki niniejszych Informacji licencyjnych. Licencjobiorca musi uzyskaÊ uprawnienia do Programu (jako ca≥oúci) w liczbie odpowiadajπcej instalacjom i uøywaniu przez LicencjobiorcÍ wszystkich ProgramÛw Wspierajπcych, chyba øe w niniejszym dokumencie "Informacje licencyjne" okreúlono odrÍbne uprawnienia. Na przyk≥ad jeúli niniejszy Program jest licencjonowany wed≥ug Procesorowych Jednostek Wartoúci (PVU), a Licencjobiorca bÍdzie chcia≥ zainstalowaÊ Program G≥Ûwny lub Program Wspierajπcy na maszynie (fizycznej lub wirtualnej) ze 100 jednostkami PVU oraz kolejny Program Wspierajπcy na drugiej maszynie ze 100 jednostkami PVU, to Licencjobiorca musi uzyskaÊ 200 uprawnieÒ PVU do Programu.
 
-Poniøej wymieniono Programy Wspierajπce licencjonowane z Programem:
-IBM WebSphere Liberty 17
+Programy Wspierajπce:
+IBM WebSphere Liberty 18
 
 Ograniczenie dotyczπce produktÛw dla programistÛw
 
@@ -34,10 +38,6 @@ Komponenty èrÛd≥owe i Materia≥y Przyk≥adowe
 
 Program moøe zawieraÊ komponenty w postaci kodu ürÛd≥owego (zwane dalej "Komponentami èrÛd≥owymi") oraz inne materia≥y okreúlone jako Materia≥y Przyk≥adowe. Licencjobiorca moøe kopiowaÊ i modyfikowaÊ Komponenty èrÛd≥owe i Materia≥y Przyk≥adowe jedynie na uøytek wewnÍtrzny, pod warunkiem, øe uøytek taki mieúci siÍ w granicach praw licencyjnych na mocy niniejszej Umowy, zaú Licencjobiorca nie bÍdzie zmieniaÊ ani usuwaÊ øadnych informacji czy uwag o prawach autorskich zawartych w Komponentach èrÛd≥owych lub Materia≥ach Przyk≥adowych. IBM dostarcza Komponenty èrÛd≥owe i Materia≥y Przyk≥adowe bez zobowiπzania do wsparcia, W STANIE, W JAKIM SI  ZNAJDUJ• ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (R KOJMI  R”WNIEØ WY£•CZA SI ), WYRAèNYCH LUB DOMNIEMANYCH, A W SZCZEG”LNOåCI GWARANCJI PRAWA W£ASNOåCI, NIENARUSZANIA PRAW OS”B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNK”W PRZYDATNOåCI HANDLOWEJ I PRZYDATNOåCI DO OKREåLONEGO CELU.
 
-Niedozwolone uøywanie
-
-Licencjobiorca nie moøe uøywaÊ ani upowaøniaÊ innych do uøywania Programu, czy to samodzielnie czy w po≥πczeniu z innymi us≥ugami lub produktami, do obs≥ugi nastÍpujπcych sytuacji wysokiego ryzyka: projektowania, konstruowania lub konserwacji urzπdzeÒ nuklearnych, systemÛw komunikacji publicznej, systemÛw kontroli lotÛw, systemÛw sterowania dla przemys≥u motoryzacyjnego, systemÛw uzbrojenia bπdü systemÛw nawigacyjnych bπdü systemÛw ≥πcznoúci stosowanych w statkach powietrznych ani teø do sterowania takimi urzπdzeniami lub systemami, jak rÛwnieø do wykonywania jakichkolwiek innych dzia≥aÒ, w przypadku ktÛrych awaria Programu mog≥aby spowodowaÊ powaøne zagroøenie øycia lub ryzyko powaønego uszkodzenia cia≥a.
-
 Ograniczenia eksportowe i importowe
 
 Program ten moøe zawieraÊ technologiÍ kryptograficznπ. Korzystanie z Programu przez uøytkownikÛw w rÛønych krajach, jak rÛwnieø przenoszenie Programu na uøytkownikÛw w tym samym kraju lub w rÛønych krajach moøe byÊ zabronione lub podlegaÊ specjalnym prawom i przepisom eksportowym lub importowym lub polityce rzπdu w kraju Licencjobiorcy, w tym prawom i przepisom eksportowym i importowym obowiπzujπcym w Stanach Zjednoczonych. Licencjobiorca przyjmuje na siebie ca≥π odpowiedzialnoúÊ za przestrzeganie wszystkich obowiπzujπcych praw i przepisÛw w zakresie eksportu, importu i uøywania tego Programu, a w szczegÛlnoúci ograniczeÒ w zakresie eksportu lub ponownego eksportu obowiπzujπcych w Stanach Zjednoczonych. KlasyfikacjÍ eksportowπ tego Programu znaleüÊ moøna pod adresem: https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Dane i us≥ugi osÛb trzecich
 
 Program moøe zawieraÊ odsy≥acze lub umoøliwiaÊ dostÍp do us≥ug transmisji danych, baz danych, us≥ug WWW, oprogramowania bπdü innej zawartoúci osÛb trzecich (zwanych dalej ≥πcznie "zawartoúciπ"). ZawartoúÊ taka jest udostÍpniana W STANIE, W JAKIM SI  ZNAJDUJE ("AS-IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (R KOJMI  R”WNIEØ WY£•CZA SI ), WYRAèNYCH LUB DOMNIEMANYCH, A W SZCZEG”LNOåCI GWARANCJI PRAWA W£ASNOåCI, NIENARUSZANIA PRAW OS”B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNK”W PRZYDATNOåCI HANDLOWEJ I PRZYDATNOåCI DO OKREåLONEGO CELU. Ponadto odpowiednie osoby trzecie mogπ w kaødej chwili zaprzestaÊ udostÍpniania zawartoúci wed≥ug w≥asnego uznania. Moøe byÊ rÛwnieø wymagane zawarcie przez LicencjobiorcÍ oddzielnych umÛw z osobami trzecimi w celu uzyskania dostÍpu do takiej zawartoúci lub jej uøywania. IBM nie jest stronπ øadnych takich oddzielnych umÛw, a zobowiπzanie Licencjobiorcy do przestrzegania warunkÛw takich umÛw jest wyraünym warunkiem udzielenia niniejszej licencji.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 MiÍdzynarodowa Umowa Licencyjna na Programy nieobjÍte Gwarancjπ

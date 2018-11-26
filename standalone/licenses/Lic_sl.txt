@@ -3,9 +3,13 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih doloèb in pogojev licenène informacije, ki veljajo poleg pogojev licence za program, s katerimi naroènik in IBM predhodno soglašata. Èe naroènik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenèna pogodba za programe brez garancije (Z125-5589-05).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.9.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
+
+Prepovedana uporaba
+
+Imetnik licence ne sme uporabljati in ne sme pooblašèati tretjih oseb za uporabo programa, ne glede na to, ali gre za samostojno uporabo tega programa ali uporabo tega programa skupaj z drugimi storitvami ali produkti, ki bi podpirala katerokoli od naslednjih visoko tveganih dejavnosti: naèrtovanje, izgradnja, nadzor ali vzdrževanje jedrskih objektov, sistemov množiènega prevoza, sistemov za nadzor zraènega prometa, avtomobilskih nadzornih sistemov, oborožitvenih sistemov ali sistemov za letalsko navigacijo ali komunikacije ali druge dejavnosti, v katerih lahko odpoved programa poveèa tveganje za materialno grožnjo ali smrt ali resno osebno poškodbo.
 
 Slika namestitve veè izdelkov
 
@@ -13,10 +17,10 @@ Program je ponujen kot del paketa namestitve veè izdelkov. Imetnik licence lahko
 
 Podporni programi
 
-Program je licenciran kot paket, sestavljen iz veè izdelkov, in vkljuèuje podporne programe, doloèene spodaj. Imetnik licence lahko namesti in uporablja takšne podporne programe samo v podporo svoji uporabi glavnega programa na podlagi te pogodbe in znotraj obsega potrdila o upravièenosti za program (razen èe niso kjerkoli v tem dokumentu s podatki o licenciranju ponujene pravice v veèjem obsegu). Besedna zveza "v podporo svoji uporabi" vkljuèuje samo tiste vrste uporabe, ki so potrebne ali kako drugaèe neposredno povezane z licenèno uporabo glavnega programa ali drugega podpornega ali paketnega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Imetnik licence ne sme prenesti ali znova tržiti podpornih programov loèeno od glavnega programa. Podpornemu programu so lahko priložena licenèna doloèila, ki (èe obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij doloèbe iz teh licenènih informacij prevladajo nad doloèbami podpornega programa. Ko pravica imetnika licence za uporabo programa ugasne ali preneha, mora prenehati z uporabo, unièiti ali nemudoma vrniti vse kopije podpornih programov pogodbeni stranki, pri kateri je pridobil program. Èe je imetnik licence prenesel podporne programe, se mora obrniti na stranko, pri kateri je pridobil program. Èe želi imetnik licence licencirati podporne programe za kakršnokoli uporabo, ki presega zgornje omejitve, naj se za pridobitev ustrezne licence obrne na IBM-ovega prodajnega predstavnika ali na stranko, pri kateri je pridobil program.
+Imetnik licence lahko namesti in uporablja podporne programe, navedene spodaj. Imetnik licence lahko namesti in uporablja takšne podporne programe samo za podporo pri uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vkljuèuje samo uporabo, ki je potrebna ali kako drugaèe neposredno povezana z licenèno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko priložena licenèna doloèila, ki (èe obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij doloèbe iz teh licenènih informacij prevladajo nad doloèbami podpornega programa. Imetnik licence mora pridobiti zadostno število pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen èe so v tem dokumentu z informacijami o licenci zagotovljena loèena pooblastila. Èe je bil ta program na primer licenciran na podlagi PVU-ja (enota vrednosti procesorja) in želi imetnik licence namestiti glavni ali podporni program na napravo (fizièno ali navidezno) za 100 PVU-jev, drug podporni program pa na drugo napravo za 100 PVU-jev, mora pridobiti 200 pooblastil PVU za program.
 
-Sledijo podporni programi, ki so licencirani s programom:
-IBM WebSphere Liberty 17
+Podporni programi:
+IBM WebSphere Liberty 18
 
 Omejitev razvijalca
 
@@ -34,10 +38,6 @@ Izvorne komponente in vzorèno gradivo
 
 Program lahko vkljuèuje nekatere komponente v obliki izvorne kode ("izvorne komponente") in drugo gradivo, imenovano "vzorèno gradivo". Imetnik licence lahko kopira in spreminja izvorne komponente ter vzorèno gradivo za notranjo uporabo samo v primeru, da je takšna uporaba v okviru licenènih pravic, doloèenih v tej pogodbi, vendar imetnik licence ne sme spreminjati ali brisati kakršnihkoli informacij o avtorstvu ali obvestil v izvornih komponentah ali vzorènem gradivu. IBM ponuja izvorne komponente in vzorèno gradivo brez obveznosti za podporo in "TAKŠNO, KAKRŠNO JE", BREZ GARANCIJ KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNE ALI NAKAZANE, KAR VKLJUÈUJE TUDI GARANCIJO ZA NASLOV, NEKRŠENJE ALI NEOVIRANJE IN ZAKONSKE GARANCIJE IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOÈEN NAMEN.
 
-Prepovedana uporaba
-
-Imetnik licence ne sme uporabljati in ne sme pooblašèati tretjih oseb za uporabo programa, ne glede na to, ali gre za samostojno uporabo tega programa ali uporabo tega programa skupaj z drugimi storitvami ali produkti, ki bi podpirala katerokoli od naslednjih visoko tveganih dejavnosti: naèrtovanje, izgradnja, nadzor ali vzdrževanje jedrskih objektov, sistemov množiènega prevoza, sistemov za nadzor zraènega prometa, avtomobilskih nadzornih sistemov, oborožitvenih sistemov ali sistemov za letalsko navigacijo ali komunikacije ali druge dejavnosti, v katerih lahko odpoved programa poveèa tveganje za materialno grožnjo ali smrt ali resno osebno poškodbo.
-
 Izvozne in uvozne omejitve
 
 Ta program lahko vsebuje kodirano pisavo. Prenos ali uporaba programa sta lahko prepovedana ali pa sta predmet izvoznih ali uvoznih zakonov, predpisov ali naèel, vkljuèno z izvoznimi predpisi ameriške administracije. Imetnik licence prevzema vso odgovornost za podrejanje vsem ustreznim zakonom, predpisom in naèelom v zvezi z izvažanjem, uvažanjem ali uporabo tega programa, kar vkljuèuje tudi (vendar ni omejeno na) omejitve izvažanja ali vnoviènega izvažanja Združenih držav Amerike. Za pridobitev izvozne klasifikacije za ta program pojdite na spletno stran https://www.ibm.com/products/exporting/.
@@ -46,9 +46,9 @@ Podatki in storitve tretjih oseb
 
 Program lahko vsebuje povezave do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme tretje osebe ali druge vsebine tretje osebe ali pa se uporablja za dostop do njih (skupaj "vsebina"). Dostop do te vsebine je zagotovljen "TAKŠEN, KAKRŠEN JE", BREZ KAKRŠNIH KOLI GARANCIJ, IZRECNIH ALI NAKAZANIH, VKLJUÈNO Z GARANCIJO ZA NASLOV, NEKRŠITVE ALI NEOVIRANJE IN NAKAZANE GARANCIJE IN POGOJE, KI SE NANAŠAJO NA PRIMERNOST ZA PRODAJO IN USTREZNOST ZA DOLOÈEN NAMEN. Dostop lahko tretja oseba kadar koli prekine, kar je prepušèeno izkljuèno njeni presoji. Imetnik licence bo morda moral skleniti loèene pogodbe s tretjimi osebami za dostop do takšne vsebine ali njeno uporabo. IBM ni pogodbena stranka kakršnim koli loèenim pogodbam in imetnik licence se pod jasnim pogojem te licence strinja, da bo ravnal v skladu z doloèbami takšnih loèenih pogodb.
 
-L/N:  L-ASAY-AT7LP7
-D/N:  L-ASAY-AT7LP7
-P/N:  L-ASAY-AT7LP7
+L/N:  L-ASAY-B2XBPT
+D/N:  L-ASAY-B2XBPT
+P/N:  L-ASAY-B2XBPT
 
 
 Mednarodna licenèna pogodba za programe brez garancije
