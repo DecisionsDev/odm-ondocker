@@ -32,17 +32,16 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 -	**Sample projects**:
 
-	Two decision services can be directly used in Decision Center:
+	Two decision services can be directly used in Decision Center when you set the SAMPLE option to true; see the Usage section on this page:
 	- Loan Validation Service
 	
 	This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.
-        You can download the Loan Validation Service.zip from https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted/ 
+	
 	- Shipment Pricing
 	
 	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
-        You can download the Shipment Pricing.zip from https://github.ibm.com/ibm-odm/odm-for-dev-gettingstarted/ 
-	
-	To import these zip files in the Decision Center Business console, open the Business console, click the Library tab, then click the import decision service icon (arrow pointing up), and navigate to the appropriate zip file.
+        	
+	You can explore the decision artifacts, tests and simulations of these projects in the Business console.
 
 	
 -	**Tutorials**:
@@ -71,15 +70,16 @@ It allows you to evaluate the product.
 
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 You must accept the license before you launch the image. The license is available at the bottom of this page.
+To install with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory:
 
 ```console
-$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 ibmcom/odm
+$ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true ibmcom/odm:8.10.0.0
 ```
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, you are recommended to store the Decision Center and the Decision Server databases outside the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the command:
  
  ```console
-  docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  ibmcom/odm:8.10.0.0
+  docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  ibmcom/odm:8.10.0.0
 ```
  When you first run this command, it creates the .db files in your local directory. The following times, it reads and updates these files.
 
