@@ -1,13 +1,13 @@
 #!/bin/bash
 
-set -e 
+set -e
 
-if [ ! -f initialized.flag ] ; then
+if [ ! -f /var/lib/postgresql/initialized.flag ] ; then
 	if [ "$SAMPLE" = "true" ] ; then
 		mkdir -p "$PGDATA"
 		cp -R /upload/* "$PGDATA"
 	fi;
-	touch initialized.flag
+	touch /var/lib/postgresql/initialized.flag
 fi;
 
 exec "docker-entrypoint.sh" "$@"
