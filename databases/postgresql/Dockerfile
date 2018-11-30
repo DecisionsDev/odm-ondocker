@@ -13,7 +13,7 @@ ARG ODMDOCKERDIR
 ARG ODMDBVERSION
 
 ADD $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.tar.gz /upload
-COPY --from=builder /usr/local/bin/rundb.sh  /usr/local/bin/
+COPY --from=builder --chown=999:999 /usr/local/bin/rundb.sh  /usr/local/bin/
 
 ENTRYPOINT ["/usr/local/bin/rundb.sh"]
 

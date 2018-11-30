@@ -59,24 +59,24 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 
-COPY $ODMDOCKERDIR/decisioncenter/config /config
-COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
-COPY $ODMDOCKERDIR/common/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
 
-COPY $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
-COPY $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 
-COPY $ODMDOCKERDIR/common/drivers /config/resources
+COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 
 # Welcome page
-COPY --from=builder /welcomepage/target/welcomepage.war $APPS
+COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 # Copy Artifact
-COPY --from=builder $APPS $APPS
-COPY --from=builder /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
-COPY --from=builder /config/resources/postgres*  /config/resources
-COPY --from=builder $SCRIPT $SCRIPT
-COPY --from=builder /wlp-embeddable/wlp  /opt/ibm/wlp
+COPY --from=builder --chown=1001:0 $APPS $APPS
+COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
+COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
+COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
+COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 EXPOSE 9060 9453
 
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]
