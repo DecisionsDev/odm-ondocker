@@ -46,12 +46,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 -	**Tutorials**:
 
-	- [Getting started with ODM for Developers Docker image](https://github.com/ibm-odm/odm-for-dev-gettingstarted)
+	- [Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
 
 	- [Creating a decision service in Rule Designer](https://www.ibm.com/support/knowledgecenter/en/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html). For this tutorial, you need some knowledge of Java and the Eclipse workspaces, perspectives, and views. The following instructions supersede the prerequisites given in the tutorial documentation:
 
 	    - Get Rule Designer from the Eclipse marketplace, as indicated at the beginning of this page.
-	    - Download the Miniloan sample project from the https://github.com/ibm-odm/odm-for-dev-gettingstarted GitHub repository by clicking 'Clone or download' and then 'Download ZIP'.
+	    - Download the Miniloan sample project from the https://github.com/ODMDev/odm-for-dev-getting-started GitHub repository by clicking 'Clone or download' and then 'Download ZIP'.
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
