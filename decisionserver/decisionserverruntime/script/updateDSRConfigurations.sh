@@ -15,7 +15,7 @@ sed -i 's|<config-property-value>FINE</config-property-value>|<config-property-v
 
 if [ -n $CONNECTION_POOL_SIZE ]; then
 	echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE"
-	sed -i '\#<config-property-name>DefaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
+	sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
 else
 	echo "The environment variable CONNECTION_POOL_SIZE is not configured."
 	exit 1
