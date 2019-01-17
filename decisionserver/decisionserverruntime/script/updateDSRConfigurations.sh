@@ -20,3 +20,8 @@ else
 	echo "The environment variable CONNECTION_POOL_SIZE is not configured."
 	exit 1
 fi
+
+if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
+	echo "Enable BAI Emitter Plugin"
+	perl -i -p0e "s/({pluginClass=HTDS[^}]*)/\1},{pluginClass=ODMEmitterForBAI/gm" ra.xml;
+fi
