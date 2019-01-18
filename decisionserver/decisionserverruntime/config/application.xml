@@ -7,10 +7,10 @@
 			</security-role>
 		</application-bnd>
 		<classloader>
-    <commonLibrary>
-      <folder dir="/config/baiemitterconfig" id="odmbaidir"  />
-    </commonLibrary>
-  </classloader>
+    	<commonLibrary>
+      	<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
+    	</commonLibrary>
+  	</classloader>
 	</application>
 
 </server>
