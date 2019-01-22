@@ -25,7 +25,8 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 RUN apk add --no-cache zip bash perl ca-certificates wget
 
-RUN mkdir work;cd work;zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/jrules-cdi-api.jar /executionserver/lib/javax.inject-1.jar
+RUN mkdir work;cd work && \
+	if [ -f /executionserver/lib/jrules-cdi-api.jar ]; then zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-api.jar /executionserver/lib/javax.inject-1.jar; else zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar; fi
 
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 RUN chmod -R a+x $SCRIPT && \
