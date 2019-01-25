@@ -1,5 +1,5 @@
 
-This tutorial explains how to start an Operational Decision Manager docker cluster topology for development, using Docker Compose. It applies to Operational Decision Management Standard V8.9.0.1 and to earlier versions up to v8.8.x.
+This tutorial explains how to start an Operational Decision Manager docker cluster topology for development, using Docker Compose. 
 
 
 ![Flow](images/ClusterFig01.png)

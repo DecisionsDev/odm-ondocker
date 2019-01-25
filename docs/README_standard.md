@@ -1,5 +1,5 @@
 
-This tutorial explains how to start an IBM Operational Decision Manager unclustered docker topology for development, using Docker Compose. It applies to Operational Decision Manager Standard V8.9.0.1 and to earlier versions up to v8.8.x.
+This tutorial explains how to start an IBM Operational Decision Manager unclustered docker topology for development, using Docker Compose.
 
 
 ![Flow](images/Fig1.png)
