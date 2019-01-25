@@ -23,6 +23,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - ODMDBVERSION=$ODMDBVERSION
+        - FROMLIBERTY=$FROMLIBERTY
     environment:
       - DB_TYPE=postgres
       # DB_TYPE can be set to "postgres" or "h2". If it is set to "h2" or not set, the H2 embedded database is used.
@@ -31,6 +32,8 @@ services:
       - DB_USER=odmusr
       - DB_PASSWORD=odmpwd
       - DB_SERVER_NAME=dbserver
+      - LICENSE=$LICENSE
+
       # DB_PORT_NUMBER can be used to override the default port number that is 5432 for PostgreSQL.
     ports:
       - 9080:9060
