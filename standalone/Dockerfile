@@ -100,5 +100,5 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
-ENTRYPOINT ["/opt/ibm/docker/docker-server"]
+ENTRYPOINT ["/script/runserver.sh"]
 CMD ["/script/runserver.sh"]
