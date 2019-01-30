@@ -1,5 +1,5 @@
 
-This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. It applies to Operational Decision Manager Standard V8.9.0.x and to earlier versions up to V8.8.x.
+This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. 
 
 
 

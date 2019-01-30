@@ -15,8 +15,5 @@ echo "running disableDiagnosticWarning.sh"
 
 if [ -d "$APPS/res.war" ]; then
   resDir=$APPS/res.war
-else
-  resDir=$APPS/res
+  $SCRIPT/changeParamValue.sh onDocker false true $resDir/WEB-INF/web.xml
 fi
-
-$SCRIPT/changeParamValue.sh onDocker false true $resDir/WEB-INF/web.xml

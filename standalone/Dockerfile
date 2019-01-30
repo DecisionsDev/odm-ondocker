@@ -80,7 +80,6 @@ COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverruntime/config/application.xml /config/decisionserverruntime_application.xml
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
@@ -101,5 +100,5 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # VOLUME ["/config/dbdata/"]
 EXPOSE 9060 9453
 
-ENTRYPOINT ["/opt/ibm/docker/docker-server"]
+ENTRYPOINT ["/script/runserver.sh"]
 CMD ["/script/runserver.sh"]

@@ -18,6 +18,12 @@ if [ ! -f /config/initialized.flag ] ; then
 	cd  $APPS/DecisionService.war/WEB-INF/classes;
 	sed -i 's|<config-property-value>FINE</config-property-value>|<config-property-value>WARNING</config-property-value>|g' ra.xml;
 	sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
+
+	if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
+		echo "Enable BAI Emitter Plugin"
+		perl -i -p0e "s/({pluginClass=HTDS[^}]*)/\1},{pluginClass=ODMEmitterForBAI/gm" ra.xml;
+	fi
+
 	touch /config/initialized.flag
 fi;
 
