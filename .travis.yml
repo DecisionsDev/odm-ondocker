@@ -4,7 +4,9 @@ cache:
   - "$HOME/.cache"
 sudo: required
 services:
-- docker
+  - docker
+os:
+  - linux
 env:
   matrix:
   - DOCKER_COMPOSE_VERSION=1.21.1
