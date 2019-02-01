@@ -9,7 +9,6 @@
     <packaging>war</packaging>
 
     <properties>
-        <odm.installation.path>C:/Users/IBM_ADMIN/IBM/ODM8101</odm.installation.path>
         <loan.validation.server.path>${odm.installation.path}/executionserver/samples/rulesetexecution/loan-server
         </loan.validation.server.path>
     </properties>
