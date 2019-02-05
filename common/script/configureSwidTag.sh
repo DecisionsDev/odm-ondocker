@@ -1,38 +1,28 @@
+#!/bin/bash
+
+function removeSwidTag () {
+        local swidtagToRemove=$1
+        if [ -f $swidtagToRemove ]; then
+                echo "remove $swidtagToRemove"
+                rm $swidtagToRemove
+        fi
+}
+
 if [ -n "$KubeVersion" ]; then
-        if [ "$KubeVersion" = "DBAMC" ]; then
-                echo "DBAMC configuration : remove all ODM Swidtag"
-                swidtagToRemove=ibm.com_IBM_ODM_*.swidtag
-        else
+        if [[ $KubeVersion =~ "icp" ]]; then
                 echo "ODM configuration : remove all DBAMC Swidtag"
                 swidtagToRemove=ibm.com_IBM_Digital_Business_Automation_for_Multicloud*.swidtag
+        else
+                echo "DBAMC configuration : remove all ODM Swidtag"
+                swidtagToRemove=ibm.com_IBM_ODM_*.swidtag
         fi
 
-        if [ -f /config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove
-        fi
-        if [ -f /config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove
-        fi
-        if [ -f /config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove
-        fi
+        removeSwidTag /config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag /config/apps/decisionmodel.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag /config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag /config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove
 
-        if [ -f /config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove
-        fi
-
-        if [ -f /config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove
-        fi
-
-        if [ -f /config/apps/res.war/META-INF/swidtag/$swidtagToRemove ]; then
-                echo "remove /config/apps/res.war/META-INF/swidtag/$swidtagToRemove"
-                rm /config/apps/res.war/META-INF/swidtag/$swidtagToRemove
-        fi
-
+        removeSwidTag /config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag /config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag /config/apps/res.war/META-INF/swidtag/$swidtagToRemove
 fi
