@@ -11,7 +11,12 @@ COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
 COPY ${ODMDOCKERDIR}/common/script $SCRIPT
 COPY ${ODMDOCKERDIR}/common/features $SCRIPT
+COPY ./executionserver/ /executionserver
 
+# Loan Server Sample presence flag
+RUN if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then touch /use_loan_server; fi    
+
+# Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
@@ -25,6 +30,14 @@ RUN wget -nv http://central.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.19
 # End - Configuration for the database
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
+
+# Sample
+COPY ${ODMDOCKERDIR}/standalone/samples/ /samples/build/
+
+RUN if [ -f /use_loan_server ]; then \
+    cd /samples/build; mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server  clean package && \
+    cp /samples/build/loan-server/target/odm-loan-server-1.0.war $APPS && \
+    $SCRIPT/extractApp.sh odm-loan-server-1.0.war; fi
 
 # Decision Center
 COPY ./teamserver/applicationservers/WLP*/teamserver.war $APPS

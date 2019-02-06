@@ -14,6 +14,9 @@
 	<!-- welcomepage -->
 	<include optional="true" location="./welcomepage_application.xml"/>
 
+	<!-- Loan Server -->
+	<include optional="true" location="./loan-server_application.xml"/>
+
 	<!-- Decision Center -->
 	<include optional="true" location="./decisioncenter_application.xml"/>
 
