@@ -19,6 +19,9 @@ RUN if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then touch 
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
+RUN if [ -f /use_loan_server ]; then \
+    sed -i  's/\"loan-server-hidden\"/\"\"/g' /welcomepage/src/main/webapp/index.jsp; fi
+    
 RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 #COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
