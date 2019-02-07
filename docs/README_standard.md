@@ -16,17 +16,17 @@ To create Operational Decision Manager docker images, install one of the followi
 
 Go to the Operational Decision Manager installation directory and locate the required WAR files in the directories listed below:
 
-*installation_directory/executionserver/applicationservers/WLP855/res.war*
+_installation_directory/executionserver/applicationservers/WLP*/res.war_
 
-*installation_directory/executionserver/applicationservers/WLP855/DecisionService.war*
+_installation_directory/executionserver/applicationservers/WLP*/DecisionService.war_
 
-*installation_directory/teamserver/applicationservers/WLP855/teamserver.war*
+_installation_directory/teamserver/applicationservers/WLP*/teamserver.war_
 
-*installation_directory/teamserver/applicationservers/WLP855/decisioncenter.war*
+_installation_directory/teamserver/applicationservers/WLP*/decisioncenter.war_
 
-*installation_directory/teamserver/applicationservers/WLP855/decisionmodel.war* (starting from ODM vnext)
+_installation_directory/teamserver/applicationservers/WLP*/decisionmodel.war_ (starting from ODM vnext)
 
-*installation_directory/executionserver/applicationservers/WLP855/DecisionRunner.war*
+_installation_directory/executionserver/applicationservers/WLP*/DecisionRunner.war_
 
 ### Clone the odm-ondocker code
 
