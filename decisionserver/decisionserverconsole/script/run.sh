@@ -12,4 +12,6 @@ $SCRIPT/updateDSRConfigurations.sh
 
 $SCRIPT/enableMetering.sh
 
+$SCRIPT/configureSwidTag.sh
+
 /opt/ibm/wlp/bin/server run defaultServer
