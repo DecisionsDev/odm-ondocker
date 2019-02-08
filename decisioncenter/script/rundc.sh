@@ -12,6 +12,8 @@ $SCRIPT/updateDatasource.sh
 
 $SCRIPT/addDCApplications.sh
 
+$SCRIPT/configureSwidTag.sh
+
 $SCRIPT/jvmOptions.sh
 
 /opt/ibm/wlp/bin/server run defaultServer

@@ -80,5 +80,4 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 EXPOSE 9060 9453
 
-ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/script/rundc.sh"]

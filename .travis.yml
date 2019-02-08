@@ -4,7 +4,9 @@ cache:
   - "$HOME/.cache"
 sudo: required
 services:
-- docker
+  - docker
+os:
+  - linux
 env:
   matrix:
   - DOCKER_COMPOSE_VERSION=1.21.1
@@ -27,8 +29,7 @@ script:
 - "./build.sh"
 - sudo service postgresql stop
 - while sudo lsof -Pi :5432 -sTCP:LISTEN -t; do sleep 1; done
-- export LICENSE=accept
-- docker-compose up -d
+- sudo docker-compose up -d
 - "./test/suite.sh"
 notifications:
   slack:

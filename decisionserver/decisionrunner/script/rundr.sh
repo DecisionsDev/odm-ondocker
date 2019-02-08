@@ -8,4 +8,6 @@ $SCRIPT/configureDatabase.sh
 
 $SCRIPT/updateDatasource.sh
 
+$SCRIPT/configureSwidTag.sh
+
 /opt/ibm/wlp/bin/server run defaultServer
