@@ -220,13 +220,10 @@
     <article>
         <img src="images/ibm-white-logo-small.png">
         <p id="footer-copy">
-            Licensed Materials &#8212 Property of IBM &copy Copyright IBM Corp.
-            1997, 2018. All Rights Reserved. IBM, and the IBM logo are
-            trademarks or registered trademarks of International Business
-            Machines Corp., registered in many jurisdictions worldwide. Other
-            product and service names might be trademarks of IBM or other
-            companies. A current list of IBM trademarks is available on the Web
-            at <span class="underline">Copyright and trademark information.</span>
+            Licensed under Apache License 2.0. License information for the products installed within the image is as follows:
+    <a href="https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt">IBM Operational Decision Manager for Developers</a>.
+Note: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
+           </span>
         </p>
     </article>
 </footer>
