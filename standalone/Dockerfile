@@ -20,7 +20,7 @@ RUN if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then touch 
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN if [ -f /use_loan_server ]; then \
-    sed -i  's/\"loan-server-hidden\"/\"\"/g' /welcomepage/src/main/webapp/index.jsp; fi
+    sed -i  's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; fi
     
 RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
@@ -38,7 +38,9 @@ RUN chmod -R a+x $SCRIPT && mkdir $APPS
 COPY ${ODMDOCKERDIR}/standalone/samples/ /samples/build/
 
 RUN if [ -f /use_loan_server ]; then \
-    cd /samples/build; mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server  clean package && \
+    sed -i  's/localhost:9090/localhost:9060/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html && \
+    sed -i  's/test_deployment/LoanValidationDS/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html && \    
+    cd /samples/build; mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server  clean package   | grep -v 'Download.*' && \
     cp /samples/build/loan-server/target/odm-loan-server-1.0.war $APPS && \
     $SCRIPT/extractApp.sh odm-loan-server-1.0.war; fi
 

@@ -206,8 +206,11 @@
               <li><a href="/res" target="_blank">Decision Server Console</a></li>
               <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
               <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
-              <li class="loan-server-hidden"><a href="/loan-server" target="_blank">Loan Server</a></li>
-            </ul>
+             </ul>
+            <h2 class="secondary loan-server-hidden">Sample</h2>
+            <ul>
+               <li class=" loan-server-hidden"><a href="/loan-server" target="_blank">Loan Server</a></li>
+            </ul>           
           </div>
 
           <div class="presentation-content right">
