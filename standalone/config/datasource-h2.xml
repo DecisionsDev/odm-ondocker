@@ -21,7 +21,7 @@
 				minPoolSize="10"
 				connectionTimout="10s"
 				agedTimeout="30m"/>
-	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;LOCK_TIMEOUT=40000"
+	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;LOCK_TIMEOUT=40000;auto_server=true"
 					user="rts"
 					password="rts"/>
 	</dataSource>
