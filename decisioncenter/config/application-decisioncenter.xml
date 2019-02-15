@@ -1,6 +1,10 @@
 	<!-- Decision Center -->
 	<application id="decisioncenter" location="${server.config.dir}/apps/decisioncenter.war" name="decisioncenter">
-		<classloader delegation="parentLast" />
+		<classloader delegation="parentLast">
+                        <privateLibrary>
+                                <fileset dir="/config/customlib" includes="*.jar" scanInterval="5s" id="customlibdir"/>
+                        </privateLibrary>
+                </classloader>
 		<application-bnd>
 			<security-role name="rtsAdministrator">
 				<group name="rtsAdministrators" />
