@@ -1,0 +1,65 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ibm.odm.ondocker</groupId>
+        <artifactId>odm-standalone-samples</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <name>odm-standalone-samples/miniloan-xom</name>
+    <groupId>com.ibm.odm.ondocker</groupId>
+    <artifactId>miniloan-xom</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <xom.path>${odm.installation.path}/studio/tutorials/decisionservice/answer/loan-validation-xom</xom.path>
+    </properties>
+
+
+    <build>
+        <plugins>
+            <!-- Cleanup src directory if exists -->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>src</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                        <fileset>
+                            <directory>lib</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <!-- Copy xom source code from ODM installation directory -->
+                    <execution>
+                        <id>copy-xom-sources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/src/main/java</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${xom.path}/src</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
