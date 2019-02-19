@@ -42,6 +42,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
 
 	You can explore the decision artifacts, tests and simulations of these projects in the Business console.
+	
+	- Loan-Server Web Application
+
+	This sample application uses rules from the Loan Validation Service to process loans.
+
+	You can use the application to test the Loan Validation Service with parameters entered by you.
 
 
 -	**Tutorials**:
@@ -92,6 +98,7 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 | [Decision Center Business console]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter> |odmAdmin|odmAdmin|
 | [Decision Center Enterprise console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |odmAdmin|odmAdmin|
 | [Decision Runner]( http://localhost:9060/DecisionRunner) |  <http://localhost:9060/DecisionRunner> |odmAdmin|odmAdmin|
+| [Sample application]( http://localhost:9060/loan-server) |  <http://localhost:9060/loan-server> | | |
 
 
   # License
