@@ -39,6 +39,15 @@ else
         cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
+if [ -n "$RELEASE_NAME" ]
+then
+  echo "Prefix cookie names with $RELEASE_NAME"
+        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+else
+  echo "Prefix cookie names with $(hostname -f)"
+        sed -i 's|RELEASE_NAME|'$(hostname -f)'|g' /config/httpSession.xml
+fi
+
 $SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh h2
