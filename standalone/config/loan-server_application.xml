@@ -1,0 +1,5 @@
+<server>
+	<!-- Loan Server -->
+	<application type="war" id="loan-server" name="loan-server" context-root="/loan-server" location="${server.config.dir}/apps/odm-loan-server-1.0.war">
+    </application>
+</server>
