@@ -1,6 +1,10 @@
 	<!-- Team server -->
 	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
-		<classloader delegation="parentLast" />
+		<classloader delegation="parentLast">
+                        <privateLibrary>
+                                <fileset dir="/config/customlib" includes="*.jar" scanInterval="5s" id="customlibdir"/>
+                        </privateLibrary>
+                </classloader>
 		<application-bnd>
 			<security-role name="rtsAdministrator">
 				<group name="rtsAdministrators" />

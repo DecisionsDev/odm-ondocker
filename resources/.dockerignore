@@ -1,4 +1,5 @@
 **
+!executionserver/samples/rulesetexecution/loan-server/*
 !executionserver/applicationservers/WLP/res.war
 !executionserver/applicationservers/WLP/DecisionService.war
 !executionserver/applicationservers/WLP/DecisionRunner.war
