@@ -36,3 +36,13 @@ else
   echo "Update decision server console port to default 9080 in web.xml"
         sed -i 's|decisionserverconsole-port|'9080'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
 fi
+
+if [ -n "$RELEASE_NAME" ]
+then
+  echo "Prefix decision server console cookie names with $RELEASE_NAME"
+        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+else
+  echo "Prefix decision server console cookie names with $(hostname -f)"
+        sed -i 's|RELEASE_NAME|'$(hostname -f)'|g' /config/httpSession.xml
+fi
+

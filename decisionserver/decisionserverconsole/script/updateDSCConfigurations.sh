@@ -9,3 +9,13 @@ if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
 	echo "Enable BAI Emitter Plugin"
 	perl -i -p0e "s/({pluginClass=HTDS[^}]*)/\1},{pluginClass=ODMEmitterForBAI/gm" ra.xml;
 fi
+
+if [ -n "$RELEASE_NAME" ]
+then
+  echo "Prefix decision server console cookie names with $RELEASE_NAME"
+        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+else
+  echo "Prefix decision server console cookie names with $(hostname -f)"
+        sed -i 's|RELEASE_NAME|'$(hostname -f)'|g' /config/httpSession.xml
+fi
+

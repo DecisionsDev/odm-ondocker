@@ -85,3 +85,13 @@ then
 else
   sed -i 's|group-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
+
+if [ -n "$RELEASE_NAME" ]
+then
+  echo "Prefix decision center cookie names with $RELEASE_NAME"
+        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+else
+  echo "Prefix decision center cookie names with $(hostname -f)"
+        sed -i 's|RELEASE_NAME|'$(hostname -f)'|g' /config/httpSession.xml
+fi
+
