@@ -3,7 +3,7 @@ LÝSANS BÝLGÝLERÝ
 Aþaðýda listelenen programlar, daha önce Müþteri ve IBM tarafýndan kabul edilen Program lisansý koþullarýna ek olarak aþaðýdaki Lisans Bilgilerinin kayýt ve koþullarý kapsamýnda lisanslanýr. Müþteri, Programa iliþkin yürürlükte olan lisans koþullarýný daha önce kabul etmemiþse, Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi (Z125-5589-05) geçerli olur.
 
 Program Adý (Program Numarasý):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Aþaðýdaki standart koþullar, Lisans Alan Tarafýn Programý kullanýmý için geçerlidir.
 
@@ -46,9 +46,9 @@ Bu Program þifreleme içerebilir. Bu Programýn kullanýcýlara devredilmesi veya ku
 
 Bu Program, üçüncü kiþi veri hizmetlerine, Web hizmetlerine, yazýlýmlara ya da diðer üçüncü kiþi içeriðine (tümü "içerik" olarak anýlýr) eriþmek üzere kullanýlan ya da kullanýlabilen baðlantýlar içerebilir. Bu içeriðe eriþim, MÜLKÝYETE, HAK ÝHLALÝ YAPILMAYACAÐINA VEYA MÜDAHALE EDÝLMEYECEÐÝNE DAÝR GARANTÝLER ÝLE TÝCARÝLÝÐE VE BELÝRLÝ BÝR AMACA UYGUNLUÐA DAÝR ZIMNÝ GARANTÝLER VE KOÞULLAR DA DAHÝL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNÝ HÝÇBÝR GARANTÝ VERÝLMEKSÝZÝN "OLDUÐU GÝBÝ" ESASIYLA SAÐLANIR. Bu eriþim, ilgili üçüncü kiþiler tarafýndan yalnýzca kendi kararlarýna baðlý olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafýn bu içeriðe eriþmesi veya bu içeriði kullanmasý için üçüncü kiþilerle ayrý sözleþmeler yapmasý gerekebilir. IBM, ayrýca yapýlacak bu tür sözleþmelerin bir tarafý deðildir ve bu lisansýn açýk bir koþulu olarak Lisans Alan Taraf ayrýca yapýlan bu tür sözleþmelerin koþullarýna uygun davranmayý kabul eder.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi

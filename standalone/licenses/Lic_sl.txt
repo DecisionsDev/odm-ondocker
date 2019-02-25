@@ -3,7 +3,7 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih doloèb in pogojev licenène informacije, ki veljajo poleg pogojev licence za program, s katerimi naroènik in IBM predhodno soglašata. Èe naroènik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenèna pogodba za programe brez garancije (Z125-5589-05).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
@@ -46,9 +46,9 @@ Podatki in storitve tretjih oseb
 
 Program lahko vsebuje povezave do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme tretje osebe ali druge vsebine tretje osebe ali pa se uporablja za dostop do njih (skupaj "vsebina"). Dostop do te vsebine je zagotovljen "TAKŠEN, KAKRŠEN JE", BREZ KAKRŠNIH KOLI GARANCIJ, IZRECNIH ALI NAKAZANIH, VKLJUÈNO Z GARANCIJO ZA NASLOV, NEKRŠITVE ALI NEOVIRANJE IN NAKAZANE GARANCIJE IN POGOJE, KI SE NANAŠAJO NA PRIMERNOST ZA PRODAJO IN USTREZNOST ZA DOLOÈEN NAMEN. Dostop lahko tretja oseba kadar koli prekine, kar je prepušèeno izkljuèno njeni presoji. Imetnik licence bo morda moral skleniti loèene pogodbe s tretjimi osebami za dostop do takšne vsebine ali njeno uporabo. IBM ni pogodbena stranka kakršnim koli loèenim pogodbam in imetnik licence se pod jasnim pogojem te licence strinja, da bo ravnal v skladu z doloèbami takšnih loèenih pogodb.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Mednarodna licenèna pogodba za programe brez garancije
