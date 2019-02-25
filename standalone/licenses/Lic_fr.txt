@@ -3,7 +3,7 @@ INFORMATIONS SUR LA LICENCE
 Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation des Logiciels non garantis (Z125-5589-05) s'appliquent.
 
 Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
@@ -46,9 +46,9 @@ Données et Services Tiers
 
 Le Logiciel peut contenir des liens permettant d'accéder, ou peut être utilisé pour accéder, à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu"). L'accès à ce Contenu est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÈRE DE VALEUR MARCHANDE ET D'APTITUDE À UNE UTILISATION PARTICULIÈRE. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Conditions Internationales d'Utilisation des Logiciels non garantis

@@ -3,7 +3,7 @@ LICENÈNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základì následujících podmínek uvedených v dokumentu Licenèní informace, které doplòují licenèní podmínky pro Program, s nimiž døíve Zákazník a IBM vyjádøili souhlas Pokud Zákazník døíve nevyjádøil souhlas s úèinnými licenèními podmínkami pro Program, uplatní se licence Mezinárodní licenèní smlouva pro programy bez záruky (Z125-5589-05).
 
 Název Programu (Èíslo Programu):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
 
@@ -46,9 +46,9 @@ Data a služby tøetích stran
 
 Program mùže obsahovat odkazy na datové služby, databáze, webové služby, software tøetích stran nebo na jiný obsah od tøetích stran (spoleèné oznaèení "obsah") nebo mùže být užíván pro pøístup k tomuto obsahu. Pøístup k tomuto obsahu je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDØENÉ VÝSLOVNÌ ÈI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VÈETNÌ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TØETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚÈEL. Pøíslušné tøetí strany mohou pøístup kdykoliv ukonèit na základì svého výluèného uvážení. Držitel licence mùže být povinen s tøetími stranami uzavøít samostatné smlouvy o pøístupu nebo užívání tohoto obsahu. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky tìchto samostatných smluv.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Mezinárodní licenèní smlouva pro programy bez záruky

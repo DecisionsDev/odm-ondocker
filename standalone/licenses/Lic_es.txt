@@ -3,7 +3,7 @@ INFORMACIÓN SOBRE LICENCIA
 Los Programas que se enumeran a continuación se licencian bajo los siguientes términos y condiciones de Licencia, además de los términos de licencia del Programa acordados previamente entre el Cliente e IBM. Si el Cliente no ha aceptado con anterioridad los términos de la licencia aplicables al Programa, se aplicará Acuerdo Internacional de Licencia para Programas sin Garantía (Z125-5589-05).
 
 Nombre de Programa (Número de Programa):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Los términos estándar siguientes se aplican al uso por parte del Licenciatario del Programa.
 
@@ -46,9 +46,9 @@ Datos y servicios de terceros
 
 El Programa puede contener enlaces, o bien se puede utilizar para acceder a servicios de datos, bases de datos, servicios web, software u otro contenido de terceros (conjuntamente, "contenido"). El acceso a este contenido se proporciona "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI IMPLÍCITA NI EXPLÍCITA, INCLUIDAS LA GARANTÍA DE TÍTULO, LA GARANTÍA DE NO INFRACCIÓN DE DERECHOS DE TERCEROS O LIBRE DE INTERFERENCIAS Y LAS GARANTÍAS Y CONDICIONES IMPLÍCITAS DE COMERCIALIZACIÓN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA. Los terceros correspondientes podrán terminar el acceso a su entera discreción en cualquier momento. Es posible que sea necesario que el Licenciatario celebre acuerdos independientes con el tercero referente al acceso o al uso del contenido en cuestión. IBM no es parte de dichos acuerdos independientes y, como condición expresa de la presente licencia, el Licenciatario acepta cumplir los términos de dichos acuerdos independientes.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Acuerdo Internacional de Licencia para Programas sin Garantía

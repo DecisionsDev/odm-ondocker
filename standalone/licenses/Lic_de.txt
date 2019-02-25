@@ -3,7 +3,7 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (Z125-5589-05) zur Anwendung.
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
 
@@ -46,9 +46,9 @@ Daten und Services von Drittanbietern
 
 Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff und die Nutzung dieser Inhalte abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung

@@ -3,7 +3,7 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal ðias Licencijos informacijos sàlygas, kurios papildo Programos licencijos sàlygas, dël kuriø susitarë Klientas ir IBM. Jei Klientas anksèiau nëra sutikæs su Programai taikomomis licencijos sàlygomis, taikoma Programø kurioms neteikiama garantija tarptautinë licencinë sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Ðios standartinës sàlygos taikomos Licenciato Programos naudojimui.
 
@@ -46,9 +46,9 @@ Treèiosios ðalies duomenys ir paslaugos
 
 Programoje gali bûti saitø arba jà galima naudoti prieigai prie treèiosios ðalies duomenø paslaugø, duomenø baziø, þiniatinklio paslaugø, programinës árangos arba kito treèiosios ðalies turinio (bendrai – „turinys“). Prieiga prie ðio turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIØ AIÐKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS. Atitinkama treèioji ðalis iðskirtinai savo nuoþiûra prieigà gali bet kada nutraukti. Licenciatui gali tekti sudaryti su treèiosiomis ðalimis atskiras sutartis dël prieigos prie tokio turinio arba jo naudojimo. IBM nëra tokiø atskirø sutarèiø ðalis ir, kaip aiðkiai nurodyta ðios licencijos sàlygose, Licenciatas sutinka laikytis tokiø atskirø sutarèiø sàlygø.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 Programø kurioms neteikiama garantija tarptautinë licencinë sutartis

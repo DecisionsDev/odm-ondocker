@@ -3,7 +3,7 @@ INFORMACJE LICENCYJNE
 Programy wymienione poniøej sπ licencjonowane na podstawie przedstawionych poniøej warunkÛw Informacji licencyjnych, ktÛre stanowiπ uzupe≥nienie warunkÛw licencji na Program uzgodnionych uprzednio miÍdzy Klientem a IBM. Jeúli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie majπ warunki licencji MiÍdzynarodowa Umowa Licencyjna na Programy nieobjÍte Gwarancjπ (Z125-5589-05).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V8.10.0 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
 
 Poniøsze standardowe warunki majπ zastosowanie do uøywania Programu przez LicencjobiorcÍ.
 
@@ -46,9 +46,9 @@ Dane i us≥ugi osÛb trzecich
 
 Program moøe zawieraÊ odsy≥acze lub umoøliwiaÊ dostÍp do us≥ug transmisji danych, baz danych, us≥ug WWW, oprogramowania bπdü innej zawartoúci osÛb trzecich (zwanych dalej ≥πcznie "zawartoúciπ"). ZawartoúÊ taka jest udostÍpniana W STANIE, W JAKIM SI  ZNAJDUJE ("AS-IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (R KOJMI  R”WNIEØ WY£•CZA SI ), WYRAèNYCH LUB DOMNIEMANYCH, A W SZCZEG”LNOåCI GWARANCJI PRAWA W£ASNOåCI, NIENARUSZANIA PRAW OS”B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNK”W PRZYDATNOåCI HANDLOWEJ I PRZYDATNOåCI DO OKREåLONEGO CELU. Ponadto odpowiednie osoby trzecie mogπ w kaødej chwili zaprzestaÊ udostÍpniania zawartoúci wed≥ug w≥asnego uznania. Moøe byÊ rÛwnieø wymagane zawarcie przez LicencjobiorcÍ oddzielnych umÛw z osobami trzecimi w celu uzyskania dostÍpu do takiej zawartoúci lub jej uøywania. IBM nie jest stronπ øadnych takich oddzielnych umÛw, a zobowiπzanie Licencjobiorcy do przestrzegania warunkÛw takich umÛw jest wyraünym warunkiem udzielenia niniejszej licencji.
 
-L/N:  L-ASAY-B2XBPT
-D/N:  L-ASAY-B2XBPT
-P/N:  L-ASAY-B2XBPT
+L/N:  L-ASAY-B8FH7Y
+D/N:  L-ASAY-B8FH7Y
+P/N:  L-ASAY-B8FH7Y
 
 
 MiÍdzynarodowa Umowa Licencyjna na Programy nieobjÍte Gwarancjπ
