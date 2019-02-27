@@ -39,7 +39,6 @@ COPY ${ODMDOCKERDIR}/standalone/samples/ /samples/build/
 
 RUN if [ -f /use_loan_server ]; then \
     sed -i  's/localhost:9090/localhost:9060/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html && \
-    sed -i  's/test_deployment/LoanValidationDS/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html && \    
     cd /samples/build; mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server  clean package   | grep -v 'Download.*' && \
     cp /samples/build/loan-server/target/odm-loan-server-1.0.war $APPS && \
     $SCRIPT/extractApp.sh odm-loan-server-1.0.war; fi
@@ -72,7 +71,7 @@ COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 # Sample DB
-ADD ${ODMDOCKERDIR}/standalone/data-8.10.0.tar.gz /db810
+ADD ${ODMDOCKERDIR}/standalone/data-8.10.1.tar.gz /db810/
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
 RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
