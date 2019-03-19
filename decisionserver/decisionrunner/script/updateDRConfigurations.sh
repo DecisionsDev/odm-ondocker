@@ -8,8 +8,7 @@ if [ ! -f /config/initialized.flag ] ; then
 	sed -i 's|<config-property-value>FINE</config-property-value>|<config-property-value>WARNING</config-property-value>|g' ra.xml;
 	sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
     sed -i 's|{pluginClass=ilog.rules.res.decisionservice.plugin.IlrWsdlGeneratorPlugin}|{pluginClass=ilog.rules.res.decisionservice.plugin.IlrWsdlGeneratorPlugin},{pluginClass=Metering}|g' ra.xml;
-    perl -i -p0e 's/(<param-name>RES_URL<\/param-name>.*?)(<param-value\/>)/\1<param-value><\/param-value>/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-    perl -i -p0e 's/(<param-name>RES_URL<\/param-name>.*?<param-value>)(.*?)(<\/param-value>)/\1protocol:\/\/odm-decisionserverconsole:decisionserverconsole-port\/res\3/s' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+    sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-port\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
 	touch /config/initialized.flag
 fi;
 

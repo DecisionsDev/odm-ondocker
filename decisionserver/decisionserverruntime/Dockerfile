@@ -18,7 +18,7 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
 RUN echo "Use the liberty image : $FROMLIBERTY" && chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 # Install missing require package in the alpine builder image
-RUN apk add --no-cache bash perl ca-certificates wget
+RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
 
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS

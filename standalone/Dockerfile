@@ -5,7 +5,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 ENV THIRDPARTY /thirdpartylib
-RUN apk add --no-cache  perl ca-certificates wget
+RUN apk add --no-cache ca-certificates wget
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
 COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT

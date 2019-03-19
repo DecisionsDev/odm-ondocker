@@ -13,4 +13,4 @@ then
   oldValue=".*?"
 fi
 
-perl -i -p0e "s/(<param-name>$paramName<\/param-name>\s*<param-value>)($oldValue)(<\/param-value>)/\1$newValue\3/s" $file
+sed -i '/<param-name>'$paramName'<\/param-name>/{n;s/'$oldValue'/'$newValue'/;}' $file
