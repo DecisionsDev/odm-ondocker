@@ -21,7 +21,7 @@ if [ ! -f /config/initialized.flag ] ; then
 
 	if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
 		echo "Enable BAI Emitter Plugin"
-		perl -i -p0e "s/({pluginClass=HTDS[^}]*)/\1},{pluginClass=ODMEmitterForBAI/gm" ra.xml;
+		sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml;
 	fi
 
 	touch /config/initialized.flag
