@@ -44,8 +44,8 @@ then
   echo "Prefix cookie names with $RELEASE_NAME"
         sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
 else
-  echo "Prefix cookie names with $(hostname -f)"
-        sed -i 's|RELEASE_NAME|'$(hostname -f)'|g' /config/httpSession.xml
+  echo "Prefix cookie names with $HOSTNAME"
+        sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
 $SCRIPT/enableMetering.sh
