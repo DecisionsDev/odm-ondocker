@@ -8,7 +8,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
+  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
@@ -25,9 +25,9 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 17 on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8100-rule-designer)
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8101-rule-designer)
 
-	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.0/p2
+	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.1/p2
 
 
 -	**Sample projects**:
@@ -42,7 +42,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
 
 	You can explore the decision artifacts, tests and simulations of these projects in the Business console.
-	
+
 	- Loan-Server Web Application
 
 	This sample application uses rules from the Loan Validation Service to process loans.
@@ -61,12 +61,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
+	- [Getting started with decision modeling in the Business console](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
 
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.0/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
 
 
   # Usage
