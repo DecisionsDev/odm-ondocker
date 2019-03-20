@@ -54,7 +54,7 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
     mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file . \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
+RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 
 COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
