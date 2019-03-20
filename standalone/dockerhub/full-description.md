@@ -22,7 +22,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
         https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
 
 -	**Supported Docker versions**:  
-	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to 17 on a best-effort basis)
+	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8101-rule-designer)
