@@ -41,6 +41,21 @@ ARG DECISIONSERVERCONSOLE_NAME
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+LABEL name="Decision Server Runtime"
+LABEL io.k8s.display-name="Decision Server Runtime"
+LABEL description="Decision Service Runtime allow to expose a decision service as \
+ a web service with REST/JSON endpoints"
+
+
+LABEL summary="Decision Service Runtime rest api."
+LABEL io.k8s.description="Decision Service Runtime rest api."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+
+
+
 ENV APP_NAME DecisionServerRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script

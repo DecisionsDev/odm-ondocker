@@ -54,6 +54,20 @@ ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+LABEL name="Decision Center"
+LABEL io.k8s.display-name="Decision Center"
+LABEL description="Decision Center is Web-application where business users can author, model, and manage decisions\
+ that are directly based on organizational knowledge and best practices, with limited or no dependence on the \
+ IT department."
+
+
+LABEL summary="Decision Center is Web-application to manage and author decisions."
+LABEL io.k8s.description="Decision Center is Web-application to manage and author decisions."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+
 ENV LANG C.UTF-8
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR

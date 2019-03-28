@@ -36,6 +36,17 @@ ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+LABEL name="Decision Runner"
+LABEL io.k8s.display-name="Decision Runner"
+LABEL description="Decision Runner allow to run tests and simulations against rules."
+LABEL summary="Decision Runner allow to run tests and simulations against rules."
+LABEL io.k8s.description="Decision Runner allow to run tests and simulations against rules."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+
+
 ENV APP_NAME DecisionRunner
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV CONNECTION_POOL_SIZE 60

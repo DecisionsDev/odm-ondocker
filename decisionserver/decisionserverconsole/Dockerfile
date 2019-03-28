@@ -39,6 +39,15 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+LABEL name="Decision Server Console"
+LABEL description="The Decision Server console provides a web-based graphical interface that you use for \
+ managing and monitoring RuleApps, ruleset archives, Java™ XOMs and libraries, and decision services."
+LABEL vendor="IBM"
+LABEL summary="Web-based graphical interface to manage the Decision Server artifacts."
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+LABEL io.k8s.description="Web-based graphical interface to manage the Decision Server artifacts."
+LABEL io.k8s.display-name="Decision Server Console"
 
 ENV APP_NAME DecisionServerConsole
 ENV ODMDOCKERDIR $ODMDOCKERDIR
