@@ -3,9 +3,9 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 # Quick reference
 
--	**Video**:
-[![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
+Click the image to view a short video (5 mins) on how to get started with IBM ODM for Developers.
 
+[![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
 
 -	**Where to get help**:
   * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
@@ -71,8 +71,11 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
   # Usage
 
-This image contains IBM Operational Decision Manager with all the components in a single image.
-It allows you to evaluate the product.
+The ODM for Developers docker image contains all of the IBM Operational Decision Manager components, so that you can evaluate the product.
+
+> **Note**: On some operating systems like Mac OS X, you might need to increase the memory allocated to docker to be able to run the image. Allocate at least 4 GigaBytes (GB) to your docker daemon to be able to use all of the features in the docker image.
+
+> On Mac OS X, click Docker > Preferences > Advanced, and set the memory to 4 GB. You must restart docker to apply the change.
 
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 You must accept the license before you launch the image. The license is available at the bottom of this page.
