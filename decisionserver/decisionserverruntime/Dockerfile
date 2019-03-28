@@ -43,12 +43,12 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 
 LABEL name="Decision Server Runtime"
 LABEL io.k8s.display-name="Decision Server Runtime"
-LABEL description="Decision Service Runtime allow to expose a decision service as \
- a web service with REST/JSON endpoints"
+LABEL description="The Decision Service Runtime exposes a decision service as \
+ a web service with REST/JSON endpoints."
 
 
-LABEL summary="Decision Service Runtime rest api."
-LABEL io.k8s.description="Decision Service Runtime rest api."
+LABEL summary="The Decision Server Runtime REST API."
+LABEL io.k8s.description="The Decision Server Runtime REST API."
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}

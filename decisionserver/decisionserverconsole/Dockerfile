@@ -40,13 +40,13 @@ ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 LABEL name="Decision Server Console"
-LABEL description="The Decision Server console provides a web-based graphical interface that you use for \
- managing and monitoring RuleApps, ruleset archives, Java™ XOMs and libraries, and decision services."
+LABEL description="The Decision Server console provides a web-based graphical user interface to \
+ manage and monitor RuleApps, ruleset archives, JavaPrr XOMs and libraries, and decision services."
 LABEL vendor="IBM"
-LABEL summary="Web-based graphical interface to manage the Decision Server artifacts."
+LABEL summary="A web-based graphical user interface to manage Decision Server artifacts."
 LABEL version=${ODMVERSION}
 LABEL io.openshift.tags="odm,dba,dbamc"
-LABEL io.k8s.description="Web-based graphical interface to manage the Decision Server artifacts."
+LABEL io.k8s.description="A web-based graphical user interface to manage Decision Server artifacts."
 LABEL io.k8s.display-name="Decision Server Console"
 
 ENV APP_NAME DecisionServerConsole
@@ -64,7 +64,9 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 
-
+# License
+COPY --chown=1001:0 $ODMDOCKERDIR/licenses /license
+COPY --chown=1001:0 $ODMDOCKERDIR/licenses /licenses
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS

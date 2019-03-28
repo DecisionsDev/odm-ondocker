@@ -14,7 +14,7 @@ ARG ODMDBVERSION
 
 LABEL name="DBServer"
 LABEL io.k8s.display-name="DBServer"
-LABEL description="Database server to store decisions artifacts."
+LABEL description="The Database server stores decision service artifacts."
 
 
 LABEL summary="Database server to store decisions artifacts."

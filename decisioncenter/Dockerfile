@@ -56,13 +56,12 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 
 LABEL name="Decision Center"
 LABEL io.k8s.display-name="Decision Center"
-LABEL description="Decision Center is Web-application where business users can author, model, and manage decisions\
- that are directly based on organizational knowledge and best practices, with limited or no dependence on the \
- IT department."
+LABEL description="Decision Center is a web application where business users author, model, and manage decisions\
+ with limited or no dependence on the IT department."
 
 
-LABEL summary="Decision Center is Web-application to manage and author decisions."
-LABEL io.k8s.description="Decision Center is Web-application to manage and author decisions."
+LABEL summary="Decision Center is a web application to manage and author decisions."
+LABEL io.k8s.description="Decision Center is a web application to manage and author decisions."
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}

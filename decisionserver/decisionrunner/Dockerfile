@@ -38,9 +38,9 @@ MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <l
 
 LABEL name="Decision Runner"
 LABEL io.k8s.display-name="Decision Runner"
-LABEL description="Decision Runner allow to run tests and simulations against rules."
-LABEL summary="Decision Runner allow to run tests and simulations against rules."
-LABEL io.k8s.description="Decision Runner allow to run tests and simulations against rules."
+LABEL description="The Decision Runner runs tests and simulations against rules."
+LABEL summary="The Decision Runner runs tests and simulations against rules."
+LABEL io.k8s.description="The Decision Runner runs tests and simulations against rules."
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
