@@ -10,6 +10,7 @@ COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
+COPY $ODMDOCKERDIR/licenses /licenses
 
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
@@ -30,7 +31,7 @@ RUN $SCRIPT/extractApp.sh res.war && $SCRIPT/extractApp.sh DecisionService.war
 RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-INF/web.xml && \
 		$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
-RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
 
@@ -64,15 +65,15 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 
-# License
-COPY --chown=1001:0 $ODMDOCKERDIR/licenses /license
-COPY --chown=1001:0 $ODMDOCKERDIR/licenses /licenses
+
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+# License
+COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9080 9443 1883
 
 CMD ["/script/run.sh"]
