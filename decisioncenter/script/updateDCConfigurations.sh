@@ -95,3 +95,18 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
+if [ -s "/config/customlib/web.xml" ]
+then
+  echo "Update web.xml for Decision Center customization" 
+  PATTERN="<?-- Add your custom servlets here if needed -->"
+  CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
+  REPLACE=$(cat /config/customlib/web.xml)
+  outputvar="${CONTENT//$PATTERN/$REPLACE}"
+  echo $outputvar > /config/apps/decisioncenter.war/WEB-INF/web.xml
+fi
+
+if [ -s "/config/customlib/js" ]
+then
+  echo "Update javascript for Decision Center customization"
+  cp -r /config/customlib/js/* /config/apps/decisioncenter.war/js
+fi
