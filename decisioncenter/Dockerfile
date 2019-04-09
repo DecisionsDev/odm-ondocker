@@ -3,6 +3,9 @@ FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV THIRDPARTY /thirdpartylib
+# Setup the variable
+ENV SCRIPT /script
+ENV APPS /config/apps
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
@@ -11,9 +14,7 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
 RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 
-# Setup the variable
-ENV SCRIPT /script
-ENV APPS /config/apps
+
 
 # Copy working files
 COPY ./teamserver/lib/* /teamserver/lib/
@@ -23,6 +24,7 @@ COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
+COPY $ODMDOCKERDIR/licenses /licenses
 RUN apk add --no-cache zip bash ca-certificates wget
 
 RUN mkdir work;cd work && \
@@ -44,7 +46,7 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
-RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
 
@@ -53,6 +55,19 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+
+LABEL name="Decision Center"
+LABEL io.k8s.display-name="Decision Center"
+LABEL description="Decision Center is a web application where business users author, model, and manage decisions\
+ with limited or no dependence on the IT department."
+
+
+LABEL summary="Decision Center is a web application to manage and author decisions."
+LABEL io.k8s.description="Decision Center is a web application to manage and author decisions."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
 
 ENV LANG C.UTF-8
 ENV APP_NAME DecisionCenter
@@ -72,12 +87,16 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
+
+
 # Copy Artifact
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+# License
+COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9060 9453
 
 CMD ["/script/rundc.sh"]

@@ -13,6 +13,7 @@ COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
+COPY $ODMDOCKERDIR/licenses /licenses
 
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
@@ -31,7 +32,7 @@ RUN chmod -R a+x $SCRIPT && \
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
-RUN $SCRIPT/extractApp.sh DecisionService.war && \
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
 chmod -R 777 $APPS
 
 FROM ${FROMLIBERTY}
@@ -40,6 +41,21 @@ ARG ODMVERSION
 ARG DECISIONSERVERCONSOLE_NAME
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+
+LABEL name="Decision Server Runtime"
+LABEL io.k8s.display-name="Decision Server Runtime"
+LABEL description="The Decision Service Runtime exposes a decision service as \
+ a web service with REST/JSON endpoints."
+
+
+LABEL summary="The Decision Server Runtime REST API."
+LABEL io.k8s.description="The Decision Server Runtime REST API."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+
+
 
 ENV APP_NAME DecisionServerRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -55,14 +71,14 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/se
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
-
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
-
+# License
+COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9080 9443
 
 CMD ["/script/runds.sh"]

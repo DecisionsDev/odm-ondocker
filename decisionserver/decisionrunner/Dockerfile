@@ -10,6 +10,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionrunner/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
+COPY $ODMDOCKERDIR/licenses /licenses
 # Use production liberty if needed
 COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
 RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
@@ -27,7 +28,7 @@ RUN chmod -R a+x $SCRIPT && \
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
-RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
 FROM ${FROMLIBERTY}
@@ -35,6 +36,17 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+
+LABEL name="Decision Runner"
+LABEL io.k8s.display-name="Decision Runner"
+LABEL description="The Decision Runner runs tests and simulations against rules."
+LABEL summary="The Decision Runner runs tests and simulations against rules."
+LABEL io.k8s.description="The Decision Runner runs tests and simulations against rules."
+
+LABEL vendor="IBM"
+LABEL version=${ODMVERSION}
+LABEL io.openshift.tags="odm,dba,dbamc"
+
 
 ENV APP_NAME DecisionRunner
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -57,6 +69,8 @@ COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+# License
+COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9080 9443
 
 CMD ["/script/rundr.sh"]
