@@ -70,6 +70,7 @@ LABEL version=${ODMVERSION}
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
 ENV APP_NAME DecisionCenter
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
