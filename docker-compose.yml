@@ -8,6 +8,7 @@ services:
         args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
+        - FROMPOSTGRES=$FROMPOSTGRES
     user: "999:999"
     ports:
     - 5432:5432
