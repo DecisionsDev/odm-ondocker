@@ -60,4 +60,6 @@ $SCRIPT/configureTlsSecurity.sh
 
 $SCRIPT/addDCApplications.sh /config/decisioncenter_application.xml
 
+. $SCRIPT/setUTF8Locale.sh
+
 /opt/ibm/wlp/bin/server run defaultServer
