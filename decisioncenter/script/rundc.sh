@@ -16,4 +16,6 @@ $SCRIPT/configureSwidTag.sh
 
 $SCRIPT/jvmOptions.sh
 
+. $SCRIPT/setUTF8Locale.sh
+
 /opt/ibm/wlp/bin/server run defaultServer
