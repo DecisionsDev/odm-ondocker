@@ -16,6 +16,8 @@ $SCRIPT/configureSwidTag.sh
 
 $SCRIPT/jvmOptions.sh
 
+$SCRIPT/setTimeZone.sh
+
 . $SCRIPT/setUTF8Locale.sh
 
 /opt/ibm/wlp/bin/server run defaultServer
