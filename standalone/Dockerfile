@@ -100,6 +100,7 @@ COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 
 COPY --from=builder --chown=1001:0 /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
