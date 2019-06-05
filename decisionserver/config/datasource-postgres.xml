@@ -2,7 +2,7 @@
 
   <!-- decision server datasource -->
   <dataSource id="resdatasource"
-     jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" type="javax.sql.ConnectionPoolDataSource">
+     jndiName="jdbc/resdatasource" jdbcDriverRef="postgresql-driver" validationTimeout="0" type="javax.sql.ConnectionPoolDataSource">
         <!--
         <properties
           databaseName='${cloud.services.mydb.connection.name}'
@@ -12,10 +12,10 @@
           serverName='${cloud.services.mydb.connection.host}'/>
         -->
         <connectionManager
-          maxPoolSize="25"
-          minPoolSize="10"
-          connectionTimout="10s"
-          agedTimeout="30m" />
+    			maxPoolSize="25"
+    			minPoolSize="10"
+    			connectionTimout="10s"
+    			agedTimeout="30m" />
         <properties
           databaseName="odmdb"
           user="odmusr"
