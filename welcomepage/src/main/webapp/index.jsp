@@ -207,10 +207,16 @@
               <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
               <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
              </ul>
+<%
+if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
+%>
             <h2 class="secondary loan-server-hidden">Sample</h2>
             <ul>
-               <li class=" loan-server-hidden"><a href="/loan-server" target="_blank">Loan Server</a></li>
-            </ul>           
+             <li class=" loan-server-hidden"><a href="/loan-server" target="_blank">Loan Server</a></li>
+            </ul>
+<%
+}
+%>
           </div>
 
           <div class="presentation-content right">
