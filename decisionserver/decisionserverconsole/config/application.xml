@@ -1,6 +1,6 @@
 <server>
 	<!-- Decision Server Console -->
-	<application type="war" id="res" name="res" location="${server.config.dir}/apps/res.war">
+	<application type="war" autoStart="true" id="res" name="res" location="${server.config.dir}/apps/res.war">
 		<application-bnd>
 			<security-role name="resAdministrators">
 				<group name="resAdministrators" />

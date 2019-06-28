@@ -25,9 +25,9 @@ Click the image to view a short video (5 mins) on how to get started with IBM OD
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8101-rule-designer)
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8102-rule-designer)
 
-	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.1/p2
+	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.2/p2
 
 
 -	**Sample projects**:
@@ -96,12 +96,12 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
-| [Decision Server console](http://localhost:9060/res) | <http://localhost:9060/res> |odmAdmin|odmAdmin|
-| [Decision Server Runtime](http://localhost:9060/DecisionService) |<http://localhost:9060/DecisionService> |odmAdmin|odmAdmin|
-| [Decision Center Business console]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter> |odmAdmin|odmAdmin|
-| [Decision Center Enterprise console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |odmAdmin|odmAdmin|
-| [Decision Runner]( http://localhost:9060/DecisionRunner) |  <http://localhost:9060/DecisionRunner> |odmAdmin|odmAdmin|
-| [Sample application]( http://localhost:9060/loan-server) |  <http://localhost:9060/loan-server> | | |
+| [Decision Server console](http://localhost:9060/res) | http://localhost:9060/res |odmAdmin|odmAdmin|
+| [Decision Server Runtime](http://localhost:9060/DecisionService) | http://localhost:9060/DecisionService |odmAdmin|odmAdmin|
+| [Decision Center Business console]( http://localhost:9060/decisioncenter) | http://localhost:9060/decisioncenter |odmAdmin|odmAdmin|
+| [Decision Center Enterprise console]( http://localhost:9060/teamserver) | http://localhost:9060/teamserver |odmAdmin|odmAdmin|
+| [Decision Runner]( http://localhost:9060/DecisionRunner) | http://localhost:9060/DecisionRunner |odmAdmin|odmAdmin|
+| [Sample application]( http://localhost:9060/loan-server) | http://localhost:9060/loan-server  | | |
 
 
   # License
