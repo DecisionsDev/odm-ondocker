@@ -91,7 +91,7 @@
     ul{
       display: block;
       list-style-type: none;
-      margin: 18px 0 0 0;
+      margin: 0 0 18px 0;
       padding: 0;
       position: relative;
       text-indent: 0;
