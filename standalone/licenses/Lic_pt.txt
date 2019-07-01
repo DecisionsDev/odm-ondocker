@@ -3,13 +3,13 @@ INFORMAÇÕES DA LICENÇA
 Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições da seguinte Informação sobre a Licença a seguir, além dos termos de licença do Programa acordados anteriormente pelo Cliente e pela IBM. Se o Cliente não tiver acordado anteriormente com os termos de licença em vigor para o Programa, o Contrato de Licença Internacional para Programas Não Garantidos (Z125-5589-05) será aplicável.
 
 Nome do Programa (Número do Programa):
-IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
 
 Os termos padrão a seguir se aplicam o uso do Programa pelo Licenciado.
 
 Usos Proibidos
 
-O Licenciado não pode usar ou autorizar terceiros a usarem o Programa de maneira independente ou em combinação com outros serviços ou produtos, em apoio a qualquer das seguintes atividades de alto risco: design, construção, controle ou manutenção de instalações nucleares, sistemas de transporte público, sistemas de controle de tráfego aéreo, sistemas de controle automotivo, sistemas de armas, navegação ou comunicação de aeronaves ou qualquer outra atividade em que a falha do programa possa causar uma ameaça de morte ou ferimento grave.
+O Licenciado não poderá usar/utilizar ou autorizar outros a usar/utilizar o Programa se a falha do Programa puder resultar em morte, lesões corporais ou danos à propriedade ou ao meio ambiente.
 
 Imagem de Instalação de Multiproduto
 
@@ -20,7 +20,7 @@ Programas de Apoio
 O Licenciado está autorizado a instalar e usar/utilizar os Programas de Apoio identificados abaixo. O Licenciado está autorizado a instalar e usar/utilizar tais Programas de Apoio apenas para suportar o/a usar/utilizar do Programa Principal pelo Licenciado sob/ao abrigo desse Contrato/Acordo. A frase "para suportar o/a uso/utilização pelo Licenciado" incluiria apenas usos/utilizações necessários/necessárias, ou de outra forma diretamente relacionados/relacionadas, a um/uma uso/utilização licenciado/licenciada do Programa Principal ou de outro Programa de Apoio. Os Programas de Apoio não podem ser usados para qualquer outro propósito/fim. Um Programa de Apoio pode ser acompanhado pelos termos de licença, e tais termos, se houver algum, se aplicam ao uso desse Programa de Apoio pelo Licenciado. Em caso de conflito, os termos presentes neste documento de Informação sobre a Licença suplantam os termos do Programa de Apoio. O Licenciado deve obter/adquirir titularidades suficientes para o Programa, como um todo, para cobrir a instalação e o/a uso/utilização pelo Licenciado de todos os Programas de Apoio, a menos que titularidades distintas sejam fornecidas nesse documento de Informações sobre a Licença. Por exemplo, se esse Programa fosse licenciado em uma base de PVU (Processor Value Unit) e o Licenciado instalasse o Programa Principal ou um Programa de Apoio em uma máquina de 100 PVU (física ou virtual) e outro Programa de Apoio em uma segunda máquina de 100 PVU, ele seria obrigado a obter/adquirir titularidades de 200 PVU para o Programa.
 
 Programas de Apoio:
-IBM WebSphere Liberty 18
+IBM WebSphere Liberty 19
 
 Limitação de Desenvolvedor
 
@@ -38,6 +38,20 @@ Componentes Fonte e Materiais de Amostra
 
 O Programa pode incluir alguns componentes na forma de código-fonte ("Componentes Fonte") e outros materiais identificados como Materiais de Amostra. O Licenciado pode copiar e modificar Componentes Fonte e Materiais de Amostra apenas para uso interno, contanto que tal uso esteja dentro dos limites dos direitos de licença sob este/ao abrigo deste Contrato/Acordo, desde que, no entanto, esse Licenciado não possa alterar ou excluir quaisquer informações de direitos autorais/de autor ou avisos contidos nos Componentes Fonte ou nos Materiais de Amostra. A IBM fornece os Componentes Fonte e Materiais de Amostra sem obrigação de suporte e "NO ESTADO EM QUE SE ENCONTRAM (""AS IS"")", SEM NENHUM TIPO DE GARANTIA, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM PROPÓSITO/FIM ESPECÍFICO.
 
+Technology Preview Code
+
+O Technology Preview Code (TPC) pode ser incluído ou distribuído com o Programa ou com atualizações/actualizações para ele, mas não é parte do Programa. O TPC é licenciado sob os/ao abrigo dos mesmos termos que o Programa, salvo conforme previsto abaixo. O TPC será identificado como tal no Arquivo/Ficheiro de Avisos (ou num Arquivo/Ficheiro de Avisos atualizado/actualizado que acompanha as atualizações/actualizações). Alguns ou todos do TPC não podem ser disponibilizados de maneira geral pela IBM como ou num produto. O Licenciado tem permissão para usar o TPC apenas para uso interno com propósitos/fins de avaliação e não para uso num ambiente de produção. O Arquivo/Ficheiro de Avisos pode limitar este uso de avaliação a um período de avaliação. Se for este o caso, ao final deste período de avaliação, o Licenciado deve deixar de usar e desinstalar o TPC. A IBM fornece o TPC "NO ESTADO EM QUE SE ENCONTRA (""AS IS"")", SEM GARANTIA DE QUALQUER ESPÉCIE, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO/INCLUSIVE, SEM LIMITAÇÃO, A GARANTIA DE TÍTULO, DE NÃO VIOLAÇÃO OU DE NÃO INTERFERÊNCIA E QUAISQUER GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM DETERMINADO PROPÓSITO/FIM.
+
+O Licenciado não pode transferir o TPC para um terceiro, exceto/excepto como uma transferência que acompanha o Programa. O TPC pode conter um dispositivo de desativação/desactivação que impedirá que ele seja usado após o período de avaliação terminar. O Licenciado não alterará o dispositivo desativação/desactivação ou o TPC. O Licenciado deverá tomar precauções para evitar qualquer perda de dados que possa ocorrer quando o TPC deixar de ser usado.
+
+O Licenciado atribui à IBM todos os direitos, títulos e interesses (incluindo a propriedade de direitos autorais) em qualquer dado, sugestão ou material escrito que 1) esteja relacionado ao Código de Visualização de Tecnologia e 2) o Licenciado forneça à IBM. Mediante pedido da IBM, o Licenciado assinará documentos adicionais necessários para a cessão de tais direitos. Além dos termos acima, o Licenciado concede à IBM direitos e licenças não exclusivos, irrevogáveis, irrestritos, mundiais e remunerados para: a) incluir em qualquer produto ou serviço qualquer ideia, know-how, conceito, técnica, invenção, descoberta ou melhoria, seja ou não patenteável, que o Licenciado forneça à IBM relacionado ao Código de Visualização de Tecnologia b) usar, fabricar e comercializar qualquer produto ou serviço e c) permitir que outros façam qualquer um dos itens acima.
+
+O Licenciado concorda em tratar o seguinte como "Informações Confidenciais da IBM", independentemente de possuir marcas restritivas que indiquem a sua natureza confidencial ou tenham sido identificadas como Informações Confidenciais da IBM antes da divulgação: (a) o Código de Visualização de Tecnologia, (b) qualquer informação fornecida ao Licenciado pela IBM em relação ao Código de Visualização de Tecnologia, incluindo, mas não limitado a, materiais relacionados, tais como especificações, planos, tendências, estratégias, referências, características de desempenho, comparações e outras avaliações do Código de Visualização de Tecnologia, (c) qualquer informação relacionada ao acesso do Licenciado ao Código de Visualização de Tecnologia, incluindo, mas não limitado a, senhas ou outros códigos de acesso e (d) todos os dados, feedbacks, sugestões e/ou materiais escritos que o Licenciado forneça à IBM relacionados ao Código de Visualização de Tecnologia. O Licenciado está autorizado a utilizar a Informação Confidencial da IBM com o propósito/fim para o qual foi divulgada ou de outra forma em proveito da IBM. Não obstante quaisquer outros termos deste Contrato/Acordo, o Licenciado concorda em não comunicar, publicar, disseminar ou de qualquer outra forma, discutir com ou divulgar para qualquer terceiro a Informação Confidencial da IBM (incluindo, mas não se limitando aos artigos, documentos ou materiais escritos pertencentes à Informação Confidencial da IBM) antes que a IBM torne tal Informação Confidencial da IBM publicamente disponível sem uma obrigação de não divulgação. Não obstante o acima exposto, o Licenciado não tem obrigação de confidencialidade para o Código de Visualização de Tecnologia identificado no Arquivo de Notificações como não confidencial.
+
+O Licenciado concorda em utilizar o mesmo cuidado e discrição para evitar a divulgação das Informações Confidenciais IBM que o Licenciado utilizar com suas próprias informações semelhantes que não deseja divulgar, mas em circunstância alguma, tal grau de cuidado deverá ser menor do que o cuidado razoável. As obrigações do Licenciado em relação às Informações Confidenciais IBM continuarão por um período de dois anos a partir da recepção das Informações Confidenciais IBM do Licenciado. O Licenciado concorda em não divulgar à IBM quaisquer informações que sejam consideradas confidenciais ou proprietárias do Licenciado ou de qualquer terceiro, exceto/excepto sob um/ao abrigo de um contrato/acordo confidencial assinado, separado e por escrito.
+
+Não obstante a existência de qualquer acordo/contrato de confidencialidade ou qualquer outro acordo/contrato que o Licenciado possa ter com a IBM em relação às informações confidenciais, os parágrafos anteriores regularão o tratamento das Informações Confidenciais IBM.
+
 Restrições de Importação e Exportação
 
 Este Programa pode conter criptografia/encriptação. A transferência para ou o uso pelos usuários/utilizadores do Programa podem ser proibidos ou estarem sujeitos às leis de exportação ou importação, regulamentos ou políticas, incluindo/inclusive aqueles Regulamentos de Administração de Exportação dos Estados Unidos. O Licenciado assume toda a responsabilidade de conformidade com todas as leis, regulamentos e políticas aplicáveis relativas à exportação, importação ou uso deste Programa, incluindo/inclusive mas não limitado a, restrições dos Estados Unidos da América sobre exportações ou reexportações. Para obter a classificação de exportação deste Programa, consulte: https://www.ibm.com/products/exporting/.
@@ -46,9 +60,9 @@ Dados e Serviços de Terceiros
 
 O Programa pode conter links para ou ser usado para acessar/aceder a serviços de dados de terceiros, banco de dados/base de dados, serviços da Web, software ou outro conteúdo de terceiro (todos, "conteúdo"). O acesso a esse conteúdo é fornecido NO ESTADO EM QUE SE ENCONTRA ("AS IS"), SEM GARANTIA DE QUALQUER TIPO, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM PROPÓSITO/FIM ESPECÍFICO. O acesso pode ser rescindido/posto termo pelos terceiros interessados, a seu exclusivo critério e a qualquer momento. Pode ser requerido que o Licenciado celebre contratos/acordos separados com os terceiros para acessar/aceder a ou usar tal conteúdo. A IBM não é uma parte em tais contratos/acordos separados e, como uma condição expressa desta licença, o Licenciado concorda em cumprir com os termos desses contratos/acordos separados.
 
-L/N:  L-ASAY-B8FH7Y
-D/N:  L-ASAY-B8FH7Y
-P/N:  L-ASAY-B8FH7Y
+L/N:  L-ASAY-BAPDVT
+D/N:  L-ASAY-BAPDVT
+P/N:  L-ASAY-BAPDVT
 
 
 Contrato de Licença Internacional para Programas Não Garantidos

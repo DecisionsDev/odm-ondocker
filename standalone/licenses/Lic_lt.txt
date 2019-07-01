@@ -3,13 +3,13 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal ðias Licencijos informacijos sàlygas, kurios papildo Programos licencijos sàlygas, dël kuriø susitarë Klientas ir IBM. Jei Klientas anksèiau nëra sutikæs su Programai taikomomis licencijos sàlygomis, taikoma Programø kurioms neteikiama garantija tarptautinë licencinë sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
 
 Ðios standartinës sàlygos taikomos Licenciato Programos naudojimui.
 
 Draudþiamas naudojimas
 
-Licenciatas negali naudoti arba suteikti kitiems teisës naudoti Programos atskirai ar kartu su kitomis paslaugomis ar produktais bet kuriai ið ðiø labai rizikingø veiklø palaikyti: branduoliniø objektø, masinio keleiviø veþimo sistemø, oro eismo kontrolës sistemø, automobiliø kontrolës sistemø, ginkluotës sistemø, orlaiviø navigacijos ar ryðiø kûrimas, konstravimas, valdymas arba prieþiûra arba bet kuri kita veikla, kur programos gedimas gali kelti mirties arba rimto suþalojimo pavojø.
+Licenciatas negali naudoti ar autorizuoti nauodoti Programà, jei jos gedimas gali sukelti mirtá, kûno suþalojimø, nuosavybës ar aplinkos paþeidimà.
 
 Keliø produktø diegimo atvaizdas
 
@@ -20,7 +20,7 @@ Pagalbinës programos
 Licenciatas turi teisæ diegti ir naudoti toliau nurodytas Pagalbines programas. Licenciatas ágaliotas diegti ir naudoti Pagalbines programas tik Licenciato Pagrindinës programos naudojimui palaikyti pagal ðià Sutartá. Frazë „palaikyti Licenciato naudojimà“ apima tik tà naudojimà, kuris reikalingas ar kitaip tiesiogiai susijæs su Pagrindinës ar kitos Pagalbinës Programos licencijuotu naudojimu. Pagalbiniø programø negalima naudoti jokiam kitam tikslui. Pagalbinë programa gali bûti pateikiama su licencijos sàlygomis ir ðios sàlygos, jei tokiø yra, taikomos Pagalbinæ programà naudojanèiam Licencijos turëtojui. Ávykus ginèui ðiame Licencijos informacijos dokumente pateiktos sàlygos pakeièia Pagalbinës programos sàlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisiø, kad jø pakaktø visø Licenciato Pagalbiniø programø diegimui ir naudojimui padengti, nebent ðiuo Licencijos informacijos dokumentu suteikiama papildomø teisiø. Pavyzdþiui, jei ði Programa buvo licencijuota PVV (Procesoriaus vertës vienetø) pagrindu, ir Licenciatas turëtø ádiegti Pagrindinæ programà arba Pagalbinæ programà 100 PVV árenginyje (fiziniame arba virtualiame), o antrame 100 PVV árenginyje – kità Pagalbinæ programà, Licenciatui reikës ásigyti 200 Programos PVV teisiø.
 
 Pagalbinës programos:
-IBM WebSphere Liberty 18
+IBM WebSphere Liberty 19
 
 Kûrëjo ribojimas
 
@@ -38,6 +38,20 @@ Licenciatas pripaþásta ir sutinka, kad IBM gali naudoti slapukus ir sekimo techn
 
 Á Programà gali bûti átraukti keli komponentai iðeitinio kodo forma („Ðaltinio komponentai“) ir kita medþiaga, apibrëþta kaip Pavyzdinë medþiaga. Licenciatas gali kopijuoti ir modifikuoti Ðaltinio komponentus ir Pavyzdinæ medþiagà tik naudoti viduje, jei toks naudojimas nepaþeidþia ðios Sutarties licencijos teisiø ir jei Licenciatas nekeièia ar nenaikina jokios Ðaltinio komponentuose ir Pavyzdinëje medþiagoje esanèios autoriaus teisiø informacijos ar praneðimø. IBM pateikia Ðaltinio komponentus ir Pavyzdinæ medþiagà be palaikymo ásipareigojimo ir TOKIÀ, KOKIA YRA, NESUTEIKIANT JOKIØ AIÐKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS.
 
+Technologijos perþiûros kodas
+
+Technologijos perþiûros kodas (TPK) gali bûti átrauktas á Programà ar jos naujinimus arba platinamas su jais, bet jis nëra Programos dalis. TPK licencijuojamas pagal tas paèias sàlygas kaip ir Programa, iðskyrus toliau nurodytus atvejus. TPK bus nustatytas Pastabø faile (arba atnaujintame Pastabø faile prie naujinimø). IBM negali padaryti dalies arba viso TPK visiems pasiekiamo kaip produkto arba produkte. Licenciatui leidþiama naudoti TPK tik vidinio vertinimo tikslais, bet ne naudoti gamybos aplinkoje. Pastabø faile gali bûti nurodytas ðio vertinimo naudojimo vertinimo laikotarpis. Jei taip, pasibaigus tokiam vertinimo laikotarpiui Licenciatas privalo nebenaudoti TPK ir paðalinti jo ádiegtá. IBM pateikia TPK be palaikymo ásipareigojimo ir TOKÁ, KOKS YRA, NESUTEIKDAMA JOKIOS APIBRËÞTOS AR NUMANOMOS GARANTIJOS, ÁSKAITANT, BET NEAPSIRIBOJANT, PAVADINIMO, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS.
+
+Licenciatas negali perduoti TPK kitai ðaliai, iðskyrus kai jis perduodamas kartu su Programa. TPK gali bûti iðjungimo árenginys, kuris apsaugos já nuo naudojimo, pasibaigus vertinimo laikotarpiui. Licenciatas nelies ðio iðjungimo árenginio ir nekeis TPK. Licenciatas turi imtis atsargumo priemoniø, kad neprarastø duomenø tada, kai TPK nebebus galima naudoti.
+
+Licenciatas perduoda IBM visas visø duomenø, pasiûlymø arba raðytinës medþiagos, 1) susijusios su Technologijos perþiûros kodu ir 2) Licenciato perduodamos IBM, teises, áskaitant nuosavybës teisæ ir bet kokias kitas turtines teises (taip pat autoriaus teises). IBM praðymu Licenciatas turi pasiraðyti papildomus dokumentus, reikalingus tokioms teisëms suteikti. Be to, kas iðdëstyta anksèiau, Licenciatas suteikia IBM neiðskirtinæ, neatðaukiamà, neribotà, pasaulinæ bei apmokëtà teisæ ir licencijà a) panaudoti kokiam nors produktui ar paslaugai patentuotinà ar nepatentuotinà idëjà, praktinæ patirtá, koncepcijà, technikà, iðradimà, atradimà ar patobulinimà, kuriuos Licenciatas pateikia IBM ir kurie yra susijæ su Technologijos perþiûros kodu, b) naudoti, gaminti bei reklamuoti tokius produktus ar paslaugas ir c) suteikti teisæ kitiems daryti tai, kas buvo paminëta.
+
+Licenciatas sutinka laikyti toliau pateiktà informacijà „IBM konfidencialia informacija“, neatsiþvelgdamas á tai, ar yra konfidencialumà nurodanèiø apribojimo þymëjimø ir ar ji buvo nurodyta kaip IBM konfidenciali informacija prieð paskelbiant: (a) Technologijos perþiûros kodà, (b) bet kokià informacijà, kurià IBM pateikia Licenciatui, susijusià su Technologijos perþiûros kodu, áskaitant,  bet neapsiribojant, su Technologijos perþiûros kodu susijusià medþiagà, pavyzdþiui, specifikacijas, planus, kryptis, strategijas, gaires, veikimo charakteristikas, palyginimus ir kitus Technologijos perþiûros kodo vertinimus, (c) bet kokià su Licenciato prieiga prie Technologijos perþiûros kodo susijusià informacijà, áskaitant, bet neapsiribojant, slaptaþodþius arba kitus prieigos kodus, ir (d) visus duomenis, atsiliepimus, pasiûlymus ir (arba) raðytinæ medþiagà, susijusià su Technologijos perþiûros kodu, kurià Licenciatas pateikia IBM. Licenciatas yra ágaliotas naudoti IBM konfidencialià informacijà tam tikslui, kuriam ji  buvo pateikta, arba kitam tikslui IBM naudai. Nepaisant kitø ðios Sutarties sàlygø, Licenciatas sutinka neperduoti, neskelbti, neplatinti arba kitaip neaptarinëti su treèiàja ðalimi ir jai neatskleisti IBM konfidencialios informacijos (áskaitant, bet neapsiribojant, straipsnius, spaudinius arba kità raðytinæ medþiagà, susijusià su IBM konfidencialia informacija) prieð IBM nurodant, kad tokia IBM konfidenciali informacija yra vieðai pasiekiama be ásipareigojimo neatskleisti. Nepaisant to, kas nurodyta anksèiau, Licenciatas neturi konfidencialumo ásipareigojimo, susijusio su Technologijos perþiûros kodu, kuris Pastabø faile nurodytas kaip nekonfidencialus.
+
+Licenciatas sutinka bûti toks pat atsargus ir diskretiðkas, kad neatskleistø IBM konfidencialios informacijos, kaip kad elgiasi su panaðia savo informacija, kurios Licenciatas nenori atskleisti, taèiau jokiu atveju negali bûti maþiau atsargus, nei dera. Licenciato ásipareigojimai, susijæ su IBM konfidencialia informacija, galios dvejus metus nuo Licenciato IBM konfidencialios informacijos gavimo. Licenciatas sutinka neatskleisti IBM jokios konfidencialia arba Licenciato ar treèiosios ðalies nuosavybe laikomos informacijos, iðskyrus jei pasiraðoma atskira raðytinë konfidenciali sutartis.
+
+Nepaisant konfidencialumo arba kitokios sutarties, kurià Licenciatas gali turëti su IBM dël konfidencialios informacijos, IBM konfidenciali informacija tvarkoma remiantis anksèiau pateiktose pastraipose esanèiais nurodymais.
+
 Eksporto ir importo apribojimai
 
 Ðioje Programoje gali bûti ðifravimø. Vartotojams Programà perduoti arba jà naudoti gali bûti draudþiama arba gali bûti taikomi eksporto ar importo ástatymai, taisyklës arba strategijos, áskaitant Jungtiniø Amerikos Valstijø eksporto valdymo reglamentà. Licenciatas prisiima visà atsakomybæ uþ visø taikomø ástatymø, taisykliø ir strategijø, susijusiø su ðios Programos eksportu, importu arba naudojimu, áskaitant, bet neapsiribojant, JAV eksporto arba pakartotinio eksporto apribojimus, laikymàsi. Norëdami gauti ðios Programos eksporto kategorijà, þr: https://www.ibm.com/products/exporting/.
@@ -46,9 +60,9 @@ Treèiosios ðalies duomenys ir paslaugos
 
 Programoje gali bûti saitø arba jà galima naudoti prieigai prie treèiosios ðalies duomenø paslaugø, duomenø baziø, þiniatinklio paslaugø, programinës árangos arba kito treèiosios ðalies turinio (bendrai – „turinys“). Prieiga prie ðio turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIØ AIÐKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAÞEIDÞIAMUMO AR NEÁSIKIÐIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS. Atitinkama treèioji ðalis iðskirtinai savo nuoþiûra prieigà gali bet kada nutraukti. Licenciatui gali tekti sudaryti su treèiosiomis ðalimis atskiras sutartis dël prieigos prie tokio turinio arba jo naudojimo. IBM nëra tokiø atskirø sutarèiø ðalis ir, kaip aiðkiai nurodyta ðios licencijos sàlygose, Licenciatas sutinka laikytis tokiø atskirø sutarèiø sàlygø.
 
-L/N:  L-ASAY-B8FH7Y
-D/N:  L-ASAY-B8FH7Y
-P/N:  L-ASAY-B8FH7Y
+L/N:  L-ASAY-BAPDVT
+D/N:  L-ASAY-BAPDVT
+P/N:  L-ASAY-BAPDVT
 
 
 Programø kurioms neteikiama garantija tarptautinë licencinë sutartis
