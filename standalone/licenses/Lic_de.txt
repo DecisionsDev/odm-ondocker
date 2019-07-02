@@ -3,13 +3,13 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (Z125-5589-05) zur Anwendung.
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
 
-Untersagte Verwendungen
+Untersagte Nutzungen
 
-Der Lizenznehmer darf das Programm allein oder in Kombination mit anderen Services oder Produkten nicht zur Unterstützung risikoreicher Aktivitäten (wie Entwurf, Konstruktion, Steuerung oder Wartung von Nuklearanlagen, Massentransportsystemen, Luftverkehrskontrollsystemen, Fahrzeugsteuerungssystemen, Waffensystemen oder für die Luftfahrzeugnavigation oder Luftfahrzeugkommunikation) oder für andere Aktivitäten verwenden, bei denen ein Versagen des Programms zum Tod oder zu ernsthaften Verletzungen führen kann, oder Dritten die Berechtigung zu einer solchen Verwendung erteilen.
+Der Lizenznehmer darf das Programm nicht nutzen oder Dritten die Berechtigung zur Nutzung des Programms erteilen, wenn ein Versagen des Programms zu Todesfällen, Personenschäden, Sach- oder Umweltschäden führen kann.
 
 Installationsimage mit mehreren Produkten
 
@@ -20,7 +20,7 @@ Unterstützungsprogramme
 Der Lizenznehmer ist zur Installation und Nutzung der nachstehend aufgeführten Unterstützungsprogramme berechtigt. Der Lizenznehmer darf diese Unterstützungsprogramme nur zur Unterstützung der Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur Unterstützung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms stehen. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, denen die Nutzung des betreffenden Unterstützungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen für das Programm als Ganzes erwerben, um die Installation und Nutzung aller Unterstützungsprogramme abzudecken, außer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm würde auf PVU-Basis (Prozessor-Value-Units) lizenziert und der Lizenznehmer würde das Hauptprogramm oder ein Unterstützungsprogramm auf einer 100-PVU-Maschine (physisch oder virtuell) und ein anderes Unterstützungsprogramm auf einer zweiten 100-PVU-Maschine installieren, dann müsste er 200 PVU-Berechtigungen für das Programm erwerben.
 
 Unterstützungsprogramme:
-IBM WebSphere Liberty 18
+IBM WebSphere Liberty 19
 
 Beschränkung auf Entwickler
 
@@ -38,6 +38,20 @@ Quellenkomponenten und Mustermaterialien
 
 Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Mustermaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Mustermaterialien nur für den internen Gebrauch kopieren und ändern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Mustermaterialien enthaltenen Copyrightvermerke oder Hinweise weder ändert noch löscht. IBM stellt die Quellenkomponenten und Mustermaterialien ohne eine Verpflichtung zur Unterstützung, ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck.
 
+Technology Preview Code
+
+Technology Preview Code (TPC, Code für Technologievorschau) kann in das Programm oder in Programmupdates integriert sein oder damit verteilt werden, ist aber nicht Bestandteil des Programms. Der TPC wird auf Basis derselben Bedingungen lizenziert wie das Programm, sofern nachstehend nicht anders angegeben. Hinweise auf den TPC sind in der Notices-Datei zu finden (oder in einer aktualisierten Notices-Datei, die den Updates beigepackt ist). Möglicherweise werden Teile des TPC oder der gesamte TPC von IBM nie als Produkt allgemein zur Verfügung gestellt. Der TPC darf nur intern für Bewertungszwecke und nicht in einer Produktionsumgebung verwendet werden. In der Notices-Datei kann ein Bewertungszeitraum angegeben sein. Ist dies der Fall, muss der Lizenznehmer die Nutzung des TPC bei Ablauf des Bewertungszeitraums einstellen und den TPC deinstallieren. IBM stellt den TPC ohne eine Verpflichtung zur Unterstützung, im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
+
+Der Lizenznehmer darf den TPC nicht an Dritte übertragen, außer in Verbindung mit der Übertragung des Programms. Der TPC kann eine Inaktivierungseinheit enthalten, die verhindert, dass er nach Ablauf des Bewertungszeitraums weiter verwendet werden kann. Es ist dem Lizenznehmer nicht gestattet, die Inaktivierungseinheit oder den TPC zu manipulieren. Der Lizenznehmer sollte entsprechende Vorkehrungsmaßnahmen treffen, um Datenverluste für den Fall zu vermeiden, dass der TPC nicht mehr ausgeführt werden kann.
+
+Der Lizenznehmer überlässt IBM alle Rechte (inklusive aller infrage kommenden Nutzungs- und Verwertungsrechte) und Rechtsansprüche auf alle Daten, Vorschläge und schriftlichen Materialien, die sich 1) auf den Technology Preview Code beziehen und 2) die der Lizenznehmer IBM zur Verfügung stellt. Auf Anforderung von IBM wird der Lizenznehmer zusätzliche Dokumente zur Absicherung dieser Rechte unterzeichnen. Darüber hinaus erteilt der Lizenznehmer IBM eine nicht ausschließliche, unwiderrufliche, nicht eingeschränkte, weltweite und abgegoltene Lizenz, a) das Know-how sowie die Ideen, Konzepte, Verfahren, Erfindungen, Entdeckungen und Verbesserungen (ob patentierbar oder nicht), die der Lizenznehmer IBM zur Verfügung stellt und die sich auf den Technology Preview Code beziehen, in ein beliebiges Produkt oder einen beliebigen Service zu integrieren; b) ein solches Produkt oder einen solchen Service zu nutzen, zu produzieren und zu vermarkten; und c) anderen dieselben Rechte zu gewähren.
+
+Der Lizenznehmer erklärt sich damit einverstanden, die folgenden Informationen als "IBM vertraulich" zu behandeln, unabhängig davon, ob sie entsprechende Kennzeichnungen enthalten, die auf den vertraulichen Inhalt hindeuten, oder vor der Offenlegung als IBM vertraulich ausgewiesen wurden: a) den Technology Preview Code, (b) alle Informationen, die dem Lizenznehmer von IBM für den Technology Preview Code zur Verfügung gestellt wurden, einschließlich des Referenzmaterials wie z. B. Spezifikationen, Pläne, Trends, Strategien, Benchmarks, Leistungsmerkmale, Vergleichsdaten und andere Bewertungen des Technology Preview Codes, (c) alle Informationen, die sich auf den Zugriff des Lizenznehmers auf den Technology Preview Code beziehen, einschließlich Kennwörtern und Zugriffscodes, und (d) sämtliche Daten, Feedbacks, Vorschläge und/oder schriftliche Unterlagen, die der Lizenznehmer IBM in Bezug auf den Technology Preview Code zur Verfügung stellt. Der Lizenznehmer ist berechtigt, die vertraulichen Informationen von IBM zu dem Zweck zu verwenden, für den sie freigegeben wurden, oder anderweitig zum Vorteil von IBM einzusetzen. Ungeachtet anderer Bedingungen in dieser Vereinbarung sichert der Lizenznehmer zu, die vertraulichen Informationen von IBM (wie beispielsweise Artikel, Beiträge oder andere schriftliche Unterlagen, die sich auf die vertraulichen Informationen von IBM beziehen) weder zu veröffentlichen, offenzulegen, zu verbreiten, an Dritte weiterzugeben noch anderweitig mit Dritten zu erörtern, bevor IBM diese Informationen allgemein ohne Geheimhaltungsverpflichtung zur Verfügung stellt. Ungeachtet der vorstehenden Ausführungen hat der Lizenznehmer keine Geheimhaltungsverpflichtung in Bezug auf Technology Preview Code, der in der Notices-Datei als nicht vertraulich angegeben ist.
+
+Der Lizenznehmer erklärt sich damit einverstanden, zum Schutz der vertraulichen Informationen von IBM vor einer Offenlegung dieselbe Sorgfalt und Verschwiegenheit aufzuwenden wie für seine eigenen vertraulichen Informationen, deren Offenlegung er nicht wünscht, und in jedem Fall mit der gebotenen Sorgfalt vorgehen. Die Verpflichtungen des Lizenznehmers hinsichtlich der vertraulichen Informationen von IBM bestehen für die Dauer von zwei Jahren ab dem Zeitpunkt des Erhalts dieser Informationen. Der Lizenznehmer willigt ein, Informationen, die er oder Dritte als vertraulich oder proprietär einstufen, nur im Rahmen einer unterzeichneten, separaten, schriftlichen Vertraulichkeitsvereinbarung an IBM weiterzugeben.
+
+Ungeachtet dessen, ob eine Vertraulichkeitsvereinbarung oder eine andere Form der Vereinbarung über vertrauliche Informationen zwischen dem Lizenznehmer und IBM besteht, unterliegt die Behandlung vertraulicher Informationen den Regelungen der vorangehenden Abschnitte.
+
 Export- und Importbeschränkungen
 
 Dieses Programm kann Verschlüsselungstechnologie enthalten. Die Übertragung des Programms an andere Benutzer oder deren Verwendung des Programms ist möglicherweise untersagt oder unterliegt den Gesetzen, Verordnungen oder Bestimmungen für den Export oder Import, einschließlich der Export Administration Regulations (Exportkontrollbestimmungen) der Vereinigten Staaten. Der Lizenznehmer übernimmt die gesamte Verantwortung für die Einhaltung aller anwendbaren Gesetze, Verordnungen und Bestimmungen hinsichtlich des Exports, Imports oder der Verwendung dieses Programms, einschließlich der US-Beschränkungen, die für Exporte und Reexporte gelten. Die Exportklassifizierung dieses Programms kann über die folgende Adresse festgestellt werden: https://www.ibm.com/products/exporting/.
@@ -46,9 +60,9 @@ Daten und Services von Drittanbietern
 
 Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff und die Nutzung dieser Inhalte abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
-L/N:  L-ASAY-B8FH7Y
-D/N:  L-ASAY-B8FH7Y
-P/N:  L-ASAY-B8FH7Y
+L/N:  L-ASAY-BAPDVT
+D/N:  L-ASAY-BAPDVT
+P/N:  L-ASAY-BAPDVT
 
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung

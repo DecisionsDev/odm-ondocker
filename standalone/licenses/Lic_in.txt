@@ -3,13 +3,13 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (Z125-5589-05) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
 Penggunaan yang Dilarang
 
-Pemegang Lisensi tidak dapat menggunakan atau memberikan kepada pihak lainnya hak untuk menggunakan Program, sendiri atau digabungkan dengan produk atau layanan lainnya, dalam mendukung salah satu aktivitas berisiko tinggi berikut ini: perancangan, pembuatan, pengendalian, atau pemeliharaan fasilitas-fasilitas nuklir, sistem transportasi massal, sistem pengendali lalu lintas udara, sistem pengendalian otomotif, sistem persenjataan, atau navigasi atau komunikasi pesawat terbang, atau setiap aktivitas lainnya di mana kegagalan program dapat menimbulkan ancaman jasmani berupa kematian atau cedera pribadi yang serius.
+Pemegang Lisensi tidak dapat menggunakan atau memberi wewenang kepada pihak lain untuk menggunakan Program apabila kegagalan Program dapat menyebabkan kematian, cedera fisik, atau kerusakan properti atau lingkungan.
 
 Gambar Pemasangan Multi-Produk
 
@@ -20,7 +20,7 @@ Program Pendukung
 Pemegang Lisensi berhak untuk memasang dan menggunakan Program Pendukung, yang diidentifikasikan di bawah ini. Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung tersebut hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini. Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan atau dengan cara lain, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pemegang Lisensi harus memperoleh kepemilikan yang memadai atas Program, secara keseluruhan, untuk mencakup pemasangan dan penggunaan Pemegang Lisensi atas semua Program Pendukung, kecuali apabila kepemilikan yang terpisah diberikan di dalam dokumen Informasi Lisensi. Misalnya, jika Program ini dilisensikan pada basis Unit Nilai Prosesor (Processor Value Unit - "PVU") dan Pemegang Lisensi.
 
 Program Pendukung:
-IBM WebSphere Liberty 18
+IBM WebSphere Liberty 19
 
 Batasan untuk Pengembang
 
@@ -38,6 +38,20 @@ Komponen Sumber dan Material Contoh
 
 Program dapat mencakup beberapa komponen dalam bentuk kode sumber ("Komponen Sumber") dan beberapa material lain yang dikenal sebagai Material Contoh. Pemegang Lisensi dapat menyalin dan memodifikasi Komponen-komponen Sumber dan Material Contoh untuk penggunaan internal hanya dengan ketentuan bahwa penggunaan tersebut dalam batas-batas hak lisensi berdasarkan Perjanjian ini, akan tetapi dengan ketentuan bahwa Pemegang Lisensi tidak dapat mengubah atau menghapus setiap informasi atau pemberitahuan tentang hak cipta yang terdapat dalam Komponen-komponen Sumber atau Material Contoh.  IBM memberikan Komponen-komponen Sumber dan Material Sampel tanpa adanya kewajiban dukungan dan "APA ADANYA", TANPA GARANSI APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK GARANSI KEPEMILIKAN, JAMINAN TIDAK ADANYA PELANGGARAN ATAU CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU.
 
+Kode Tinjauan Teknologi (Technology Preview Code)
+
+Kode Tinjauan Teknologi (Technology Preview Code - "TPC") dapat dimasukkan atau didistribusikan dengan Program atau pembaruannya tetapi bukan bagian dari Program. TPC diberi lisensi menurut persyaratan-persyaratan yang sama dengan Program, kecuali sebagaimana dijelaskan berikut ini. TPC akan diidentifikasi sebagaimana tersebut dalam the File Pemberitahuan (atau di dalam File Pemberitahuan yang diperbarui yang menyertai pembaruan). Beberapa atau semua TPC pada umumnya tidak dapat disediakan oleh IBM atau di dalam sebuah produk. Pemegang lisensi diizinkan untuk menggunakan TPC hanya untuk penggunaan internal untuk keperluan evaluasi dan bukan untuk digunakan di dalam lingkungan produksi File Pemberitahuan dapat membatasi penggunaan evaluasi untuk periode evaluasi. Jika demikian, pada akhir periode evaluasi tersebut Pemegang Lisensi harus berhenti menggunakan dan menghapus TPC. IBM memberikan TPC tanpa adanya kewajiban dukungan dan "APA ADANYA", TANPA GARANSI APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK, TIDAK TERBATAS PADA, GARANSI KEPEMILIKAN, JAMINAN TIDAK ADANYA PELANGGARAN ATAU CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU.
+
+Pemegang Lisensi diharapkan untuk tidak mentransfer TPC ke pihak lainnya kecuali transfer yang menyertai Program. TPC dapat berisi alat yang menonaktifkan yang akan membuatnya tidak dapat digunakan setelah periode evaluasi berakhir. Pemegang Lisensi tidak akan merusak alat yang menonaktifkan atau TPC ini. Pemegang Lisensi harus melakukan tindakan pencegahan untuk mencegah kehilangan data apa pun yang mungkin terjadi pada saat TPC tidak dapat digunakan lagi.
+
+Pemegang Lisensi memberikan kepada IBM semua hak, kepemilikan, dan kepentingan (termasuk kepemilikan hak cipta) di dalam data, saran, atau materi tertulis apa pun yang 1) terkait dengan Kode Tinjauan Teknologi dan 2) diberikan oleh Pemegang Lisensi kepada IBM. Atas permintaan IBM, Pemegang Lisensi akan menandatangani dokumen tambahan yang diperlukan untuk memberikan hak tersebut. Sebagai tambahan atas ketentuan-ketentuan sebelumnya, Pemegang Lisensi memberikan kepada IBM hak dan lisensi yang tidak eksklusif, tidak dapat dibatalkan, tidak dibatasi, berlaku di seluruh dunia, dan telah dibayar untuk a) memasukkan di dalam produk atau layanan apa pun: segala ide, pengetahuan praktis, konsep, teknik, ciptaan, penemuan atau perbaikan, yang dapat atau tidak dapat diberi hak paten, yang diberikan oleh Pemegang Lisensi kepada IBM terkait dengan Kode Tinjauan Teknologi b) menggunakan, memproduksi, dan memasarkan setiap produk atau layanan tersebut, dan c) memungkinkan pihak lain untuk melakukan hal-hal yang disebutkan sebelumnya.
+
+Pemegang Lisensi setuju untuk memperlakukan hal-hal berikut ini sebagai "Informasi Rahasia IBM" terlepas dari apakah informasi tersebut memuat tanda yang membatasi, yang menunjukkan sifat rahasia dari informasi tersebut atau telah diidentifikasi sebagai Informasi Rahasia IBM sebelum diungkapkan: (a) Kode Tinjauan Teknologi, (b) setiap informasi yang diberikan kepada Pemegang Lisensi oleh IBM terkait dengan Kode Tinjauan Teknologi termasuk, tetapi tidak terbatas pada, materi yang berkaitan, seperti spesifikasi, rencana, tren, strategi, tolok ukur, karakteristik kinerja, perbandingan, dan penilaian lainnya dari Kode Tinjauan Teknologi, (c) setiap informasi yang berkaitan dengan akses Pemegang Lisensi ke Kode Tinjauan Teknologi termasuk, tetapi tidak terbatas pada, kata sandi atau kode akses lainnya, dan (d) semua data, umpan balik, saran, dan/atau materi tertulis yang diberikan oleh Pemegang Lisensi kepada IBM yang berkaitan dengan Kode Tinjauan Teknologi. Penerima Lisensi berhak untuk menggunakan Informasi Rahasia IBM untuk tujuan yang untuknya informasi tersebut diungkapkan atau dengan cara lain, untuk manfaat IBM. Meskipun terdapat syarat-syarat lainnya dalam Perjanjian ini, Penerima Lisensi setuju untuk tidak mengomunikasikan, mempublikasikan, mensosialisasikan atau dengan cara lain, mendiskusikan dengan atau mengungkapkan kepada pihak ketiga Informasi Rahasia IBM (termasuk tetapi tidak terbatas pada artikel,tulisan atau materi tertulis lainnya yang berkaitan dengan Informasi Rahasia IBM) sebelum IBM menyediakan Informasi Rahasia IBM tersebut kepada publik tanpa kewajiban tentang tidak adanya pengungkapann. Terlepas dari ketentuan-ketentuan di atas, Pemegang Lisensi tidak memiliki kewajiban kerahasiaan atas Kode Tinjauan Teknologi yang diidentifikasi dalam File Pemberitahuan sebagai bukan rahasia.
+
+Pemegang Lisensi setuju untuk menggunakan kehati-hatian dan kebijaksanaan yang sama untuk menghindari pengungkapan Informasi Rahasia IBM sebagaimana yang digunakan oleh Pemegang Lisensi dengan informasi Pemegang Lisensi yang serupa miliknya sendiri yang tidak ingin diungkapkan oleh Pemegang Lisensi, namun dalam kondisi apa pun, tingkat kehati-hatian tersebut tidak akan kurang dari kehati-hatian yang wajar. Kewajiban Penerima Lisensi yang terkait dengan Informasi Rahasia IBM akan berlangsung selama periode dua tahun sejak Penerima Lisensi menerima Informasi Rahasia IBM. Pemegang Lisensi setuju untuk tidak mengungkapkan kepada IBM setiap informasi yang dianggap rahasia atau milik Pemegang Lisensi atau pihak ketiga kecuali berdasarkan perjanjian rahasia tertulis yang dibuat secara terpisah dan ditandatangani.
+
+Meskipun terdapat perjanjian kerahasiaan atau perjanjian lainnya yang dapat dimiliki oleh Penerima Lisensi dengan IBM yang berkaitan dengan informasi rahasia, ayat-ayat sebelumnya akan mengatur perlakuan atas Informasi Rahasia IBM.
+
 Pembatasan Ekspor dan Impor
 
 Program ini dapat berisi kriptografi. Transfer ke, atau penggunaan oleh, para pengguna Program dapat dilarang atau tunduk kepada undang-undang, peraturan atau kebijakan ekspor atau impor, termasuk undang-undang, peraturan atau kebijakan ekspor dan impor Peraturan Administrasi Ekspor Amerika Serikat (United States Export Administration Regulations). Pemegang Lisensi menerima semua tanggung jawab untuk mematuhi semua undang-undang, peraturan, dan kebijakan yang berlaku terkait dengan ekspor, impor atau penggunaan Program ini, termasuk tetapi tidak terbatas pada, pembatasan-pembatasan tentang ekspor dan ekspor ulang di A.S. Untuk mendapatkan klasifikasi ekspor dari Program ini, lihat: https://www.ibm.com/products/exporting/.
@@ -46,9 +60,9 @@ Data dan Layanan Pihak Ketiga
 
 Program dapat berisi tautan-tautan ke atau yang digunakan untuk mengakses layanan, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "konten"). Akses ke konten ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KEMAMPUAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan konten tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
-L/N:  L-ASAY-B8FH7Y
-D/N:  L-ASAY-B8FH7Y
-P/N:  L-ASAY-B8FH7Y
+L/N:  L-ASAY-BAPDVT
+D/N:  L-ASAY-BAPDVT
+P/N:  L-ASAY-BAPDVT
 
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Garansi
