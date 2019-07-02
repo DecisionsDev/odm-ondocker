@@ -13,6 +13,7 @@
 				isolationLevel="TRANSACTION_READ_COMMITTED"
 				jndiName="jdbc/ilogDataSource"
 				statementCacheSize="150"
+        validationTimeout="0"
 				jdbcDriverRef="postgresql-driver"
 				type="javax.sql.ConnectionPoolDataSource">
         <connectionManager

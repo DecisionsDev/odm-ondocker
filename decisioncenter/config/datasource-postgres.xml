@@ -1,11 +1,12 @@
 <server>
 
   <!-- decision center datasource -->
-  <dataSource id="dcdatasource" 
+  <dataSource id="dcdatasource"
 			isolationLevel="TRANSACTION_READ_COMMITTED"
 			jndiName="jdbc/ilogDataSource"
 			statementCacheSize="150"
 			jdbcDriverRef="postgresql-driver"
+      validationTimeout="0"
 			type="javax.sql.ConnectionPoolDataSource">
 		<connectionManager
 			maxPoolSize="25"
@@ -25,13 +26,13 @@
           user="odmusr"
           password="odmpwd"
           portNumber="5432"
-          serverName="dbserver" /> 
+          serverName="dbserver" />
   </dataSource>
 
   <jdbcDriver id="postgresql-driver"
             javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"
             javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
-            
+
             libraryRef="postgresql-library"/>
 
   <library id="postgresql-library">
