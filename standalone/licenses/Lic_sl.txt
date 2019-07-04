@@ -3,13 +3,13 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih doloèb in pogojev licenène informacije, ki veljajo poleg pogojev licence za program, s katerimi naroènik in IBM predhodno soglašata. Èe naroènik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenèna pogodba za programe brez garancije (Z125-5589-05).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.10.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
 Prepovedana uporaba
 
-Imetnik licence ne sme uporabljati in ne sme pooblašèati tretjih oseb za uporabo programa, ne glede na to, ali gre za samostojno uporabo tega programa ali uporabo tega programa skupaj z drugimi storitvami ali produkti, ki bi podpirala katerokoli od naslednjih visoko tveganih dejavnosti: naèrtovanje, izgradnja, nadzor ali vzdrževanje jedrskih objektov, sistemov množiènega prevoza, sistemov za nadzor zraènega prometa, avtomobilskih nadzornih sistemov, oborožitvenih sistemov ali sistemov za letalsko navigacijo ali komunikacije ali druge dejavnosti, v katerih lahko odpoved programa poveèa tveganje za materialno grožnjo ali smrt ali resno osebno poškodbo.
+Imetnik licence ne sme uporabljati programa ali za njegovo uporabo pooblastiti drugih uporabnikov, èe lahko napaka programa povzroèi smrt, telesne poškodbe ali škodo na lastnini ali v okolju.
 
 Slika namestitve veè izdelkov
 
@@ -20,7 +20,7 @@ Podporni programi
 Imetnik licence lahko namesti in uporablja podporne programe, navedene spodaj. Imetnik licence lahko namesti in uporablja takšne podporne programe samo za podporo pri uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vkljuèuje samo uporabo, ki je potrebna ali kako drugaèe neposredno povezana z licenèno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko priložena licenèna doloèila, ki (èe obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij doloèbe iz teh licenènih informacij prevladajo nad doloèbami podpornega programa. Imetnik licence mora pridobiti zadostno število pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen èe so v tem dokumentu z informacijami o licenci zagotovljena loèena pooblastila. Èe je bil ta program na primer licenciran na podlagi PVU-ja (enota vrednosti procesorja) in želi imetnik licence namestiti glavni ali podporni program na napravo (fizièno ali navidezno) za 100 PVU-jev, drug podporni program pa na drugo napravo za 100 PVU-jev, mora pridobiti 200 pooblastil PVU za program.
 
 Podporni programi:
-IBM WebSphere Liberty 18
+IBM WebSphere Liberty 19
 
 Omejitev razvijalca
 
@@ -38,6 +38,20 @@ Izvorne komponente in vzorèno gradivo
 
 Program lahko vkljuèuje nekatere komponente v obliki izvorne kode ("izvorne komponente") in drugo gradivo, imenovano "vzorèno gradivo". Imetnik licence lahko kopira in spreminja izvorne komponente ter vzorèno gradivo za notranjo uporabo samo v primeru, da je takšna uporaba v okviru licenènih pravic, doloèenih v tej pogodbi, vendar imetnik licence ne sme spreminjati ali brisati kakršnihkoli informacij o avtorstvu ali obvestil v izvornih komponentah ali vzorènem gradivu. IBM ponuja izvorne komponente in vzorèno gradivo brez obveznosti za podporo in "TAKŠNO, KAKRŠNO JE", BREZ GARANCIJ KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNE ALI NAKAZANE, KAR VKLJUÈUJE TUDI GARANCIJO ZA NASLOV, NEKRŠENJE ALI NEOVIRANJE IN ZAKONSKE GARANCIJE IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOÈEN NAMEN.
 
+Koda za predogled tehnologije
+
+Koda za predogled tehnologije (TPC) je lahko vkljuèena ali distribuirana s programom ali posodobitvami zanj, vendar ni del programa. Licencirana je na podlagi enakih pogojev kot program, razen kot je doloèeno spodaj. Koda za predogled tehnologije bo doloèena kot takšna v datoteki z obvestili (ali v posodobljeni datoteki z obvestili, ki spremlja posodobitve). IBM lahko ne bo nudil dela kode za predogled tehnologije ali celotne kode za splošno uporabo ali v izdelku. Imetnik licence lahko uporablja kodo za predogled tehnologije samo za namene notranjega vrednotenja, ne pa tudi za uporabo v produkcijskem okolju. Datoteka z opombami lahko omeji to uporabo za vrednotenje na obdobje vrednotenja. V tem primeru mora imetnik licence ob koncu takšnega obdobja vrednotenja prenehati uporabljati kodo za predogled tehnologije in jo odstraniti. IBM nudi kodo za predogled tehnologije brez obveze za nudenje podpore in "TAKŠNO, KAKRŠNA JE", BREZ GARANCIJ KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNE ALI NAKAZANE, KAR BREZ OMEJITVE VKLJUÈUJE TUDI GARANCIJO NASLOVA, NEKRŠENJA ALI NEOVIRANJA, IN KATEREKOLI NAKAZANE GARANCIJE IN POGOJE TRŽNOSTI IN UPORABNOSTI ZA DOLOÈEN NAMEN.
+
+Imetnik licence lahko prenese kodo za predogled tehnologije na drugo stranko samo kot del prenosa, ki spremlja program. Koda za predogled tehnologije lahko vsebuje napravo za onemogoèenje, ki bo prepreèila njeno uporabo ob zakljuèku obdobja vrednotenja. Imetnik licence ne bo poskušal brez pooblastila spreminjati takšne naprave za onemogoèenje ali kode za predogled tehnologije. Imetnik licence naj poskrbi za varnostne ukrepe, s katerimi bo prepreèil izgubo podatkov, do katere lahko pride, èe kode za predogled tehnologije ni veè mogoèe uporabljati.
+
+Imetnik licence IBM-u dodeli vse pravice, pravni naslov in interes (vkljuèno z lastništvom avtorskih pravic) do vseh podatkov, predlogov ali pisnih gradiv, ki 1) so povezani s kodo za predogled tehnologije in 2) jih imetnik licence zagotovi IBM-u. Na IBM-ovo zahtevo imetnik licence podpiše dodatne dokumente, potrebne za dodelitev takšnih pravic. Poleg navedenega imetnik licence IBM-u dodeli neizkljuèno, nepreklicno, neomejeno, svetovno in plaèano pravico ter licenco, na podlagi katere lahko a) v kateri koli produkt ali storitev vkljuèi katero koli idejo, znanje, koncept, tehniko, izum, odkritje ali izboljšavo, ne glede na to, ali jo je mogoèe patentirati ali ne, pri èemer takšen produkt ali storitev imetnik licence zagotovi IBM-u v povezavi s kodo za predogled tehnologije, b) uporablja, izdela in trži katerikoli takšen produkt ali storitev in c) dovoli drugim, da izvedejo kar koli od zgoraj navedenega.
+
+Imetnik licence soglaša, da bo kot "IBM-ove zaupne informacije" obravnaval naslednje, ne glede na to, ali vsebujejo restriktivne oznaèbe, ki oznaèujejo njihovo zaupnost, ali so bile pred razkritjem identificirane kot IBM-ove zaupne informacije: (a) kodo za predogled tehnologije, (b) vse informacije, ki jih imetniku licence zagotovi IBM v zvezi s kodo za predogled tehnologije, kar med drugim brez omejitev vkljuèuje tudi sorodna gradiva, kot so specifikacije, naèrti, trendi, strategije, primerjalni preskusi, znaèilnosti zmogljivosti, primerjave in druge ocene kode za predogled tehnologije, (c) vse informacije v zvezi z dostopom imetnika licence do kode za predogled tehnologije, kar med drugim brez omejitev vkljuèuje tudi gesla ali druge kode za dostop in (d) vse podatke, povratne informacije, predloge in/ali pisno gradivo, ki ga imetnik licence zagotovi IBM-u v zvezi s kodo za predogled tehnologije. Imetnik licence ima pooblastilo za uporabo IBM-ovih zaupnih informacij za namen, za katerega so bile razkrite, ali sicer za namen, ki koristi IBM-u. Ne glede na druge pogoje te pogodbe imetnik licence soglaša, da IBM-ovih zaupnih informacij (kar vkljuèuje tudi (vendar ni omejeno na) èlanke, listine ali drugo pisno gradivo, ki se nanaša na IBM-ove zaupne informacije) ne bo posredoval, objavil, razširil ali kako drugaèe razpravljal o njih ali jih razkril nobeni tretji osebi, dokler ne bo IBM takšnih svojih zaupnih informacij omogoèil za javno uporabo brez obveznosti varovanja zaupnosti. Ne glede na zgornje navedbe imetnik licence nima obveznosti glede zaupnosti v zvezi s kodo za predogled tehnologije, ki je v datoteki z opombami identificirana kot nezaupna.
+
+Imetnik licence soglaša, da bo prepreèeval razkritje IBM-ovih zaupnih informacij z enako skrbnostjo in preudarnostjo, kot pri lastnih podobnih informacijah, ki jih imetnik licence ne želi razkriti, vendar z razumno skrbnostjo. Obveznosti imetnika licence v povezavi z IBM-ovimi zaupnimi informacijami veljajo še dve leti od datuma, ko prejme imetnik licence IBM-ove zaupne informacije. Imetnik licence soglaša, da IBM-u ne bo razkril nobenih informacij, ki so obravnavane kot zaupne ali lastniški podatki imetnika licence ali kakšne druge tretje osebe, razen èe zanje ne sklene loèene pisne pogodbe o varovanju zaupnosti.
+
+Ne glede na obstoj kakršnekoli pogodbe o varovanju zaupnosti ali kakšne druge pogodbe, ki jo lahko sklene imetnik licence z IBM-om v zvezi z zaupnimi informacijami, veljajo za obravnavanje IBM-ovih zaupnih informacijami doloèbe, navedene v prejšnjih odstavkih.
+
 Izvozne in uvozne omejitve
 
 Ta program lahko vsebuje kodirano pisavo. Prenos ali uporaba programa sta lahko prepovedana ali pa sta predmet izvoznih ali uvoznih zakonov, predpisov ali naèel, vkljuèno z izvoznimi predpisi ameriške administracije. Imetnik licence prevzema vso odgovornost za podrejanje vsem ustreznim zakonom, predpisom in naèelom v zvezi z izvažanjem, uvažanjem ali uporabo tega programa, kar vkljuèuje tudi (vendar ni omejeno na) omejitve izvažanja ali vnoviènega izvažanja Združenih držav Amerike. Za pridobitev izvozne klasifikacije za ta program pojdite na spletno stran https://www.ibm.com/products/exporting/.
@@ -46,9 +60,9 @@ Podatki in storitve tretjih oseb
 
 Program lahko vsebuje povezave do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme tretje osebe ali druge vsebine tretje osebe ali pa se uporablja za dostop do njih (skupaj "vsebina"). Dostop do te vsebine je zagotovljen "TAKŠEN, KAKRŠEN JE", BREZ KAKRŠNIH KOLI GARANCIJ, IZRECNIH ALI NAKAZANIH, VKLJUÈNO Z GARANCIJO ZA NASLOV, NEKRŠITVE ALI NEOVIRANJE IN NAKAZANE GARANCIJE IN POGOJE, KI SE NANAŠAJO NA PRIMERNOST ZA PRODAJO IN USTREZNOST ZA DOLOÈEN NAMEN. Dostop lahko tretja oseba kadar koli prekine, kar je prepušèeno izkljuèno njeni presoji. Imetnik licence bo morda moral skleniti loèene pogodbe s tretjimi osebami za dostop do takšne vsebine ali njeno uporabo. IBM ni pogodbena stranka kakršnim koli loèenim pogodbam in imetnik licence se pod jasnim pogojem te licence strinja, da bo ravnal v skladu z doloèbami takšnih loèenih pogodb.
 
-L/N:  L-ASAY-B8FH7Y
-D/N:  L-ASAY-B8FH7Y
-P/N:  L-ASAY-B8FH7Y
+L/N:  L-ASAY-BAPDVT
+D/N:  L-ASAY-BAPDVT
+P/N:  L-ASAY-BAPDVT
 
 
 Mednarodna licenèna pogodba za programe brez garancije
