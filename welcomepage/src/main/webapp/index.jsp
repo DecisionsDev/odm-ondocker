@@ -230,7 +230,7 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
       <article>
         <h2>Additional Resources</h2>
         <ul>
-          <li><a href="https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.2/com.ibm.odm.icp/kc_welcome_odm_icp.html" target="_blank">ODM Documentation</a></li>
+          <li><a href="https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/welcome/kc_welcome_odmV.html" target="_blank">ODM Documentation</a></li>
           <li><a href="https://developer.ibm.com/odm/" target="_blank">ODMDev Community</a></li>
           <li><a href="https://developer.ibm.com/answers/topics/ibmodm.html" target="_blank">ODMDev Forum</a></li>
         </ul>
