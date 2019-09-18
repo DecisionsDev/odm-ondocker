@@ -1,0 +1,92 @@
+<server description="ODM server">
+
+<!-- tlsSecurity.xml has been commented to avoid collision between ODM and UMS SSL keys : A merge must be done -->
+
+<sslDefault sslRef="tls12" />
+<ssl id="tls12" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore" serverKeyAlias="localhost" sslProtocol="TLSv1.2" />
+<keyStore id="defaultUMSKeyStore" password="changeit" location="/config/resources/security/odmkeystore.jks"/>
+<keyStore id="defaultUMSTrustStore" password="changeit" location="/config/resources/security/odmtruststore.jks"/>
+
+<!-- This is the truststore for all the outbound traffic -->
+<!-- Commented for now, as we still use self signed certificates -->
+<ssl id="odmOutboudTraffic" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore">
+   <outboundConnection host="odmdev09r.fr.eurolabs.ibm.com" port="9448"/>
+</ssl>
+
+
+  <variable name="ServerHost" value="https://odmdev09r.fr.eurolabs.ibm.com:9665"/>
+
+
+  <!-- Need to be changed according to the host. This URL must also be recorded into the UMS client redirect list
+   See umsclient-update.sh in https://ibm.ent.box.com/notes/489391886443 
+   redirect uri : "https://vtt-odm101.fr.eurolabs.ibm.com:9643/oidcclient/redirect/odm"	-->
+  <variable name="RedirectHost" value="https://vtt-odm101.fr.eurolabs.ibm.com:9643"/>
+
+  <!-- Open ID Connect -->
+  <!-- Client with inbound propagation set to supported -->
+  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
+		       clientId="umsclient4odm" clientSecret="umssecret4odm"
+		       signatureAlgorithm="RS256" inboundPropagation="supported"
+		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/ums/jwk"
+		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
+                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
+                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
+		       redirectToRPHostAndPort="${RedirectHost}"/>
+
+  <!-- Client with inbound propagation set to required -->
+  <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
+		       clientId="umsclient4odm" clientSecret="umssecret4odm"
+		       signatureAlgorithm="RS256" inboundPropagation="required"
+		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/ums/jwk"
+		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
+                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
+                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
+		       redirectToRPHostAndPort="${RedirectHost}"/>
+
+    <!--
+       Configuration for HTDS:
+           All the request URLs for HTDS should be handled by the browserAuthFilter filter
+           (that is the filter associated with the inbound propagation set to supported),
+           otherwise the integration of HTDS in the RES Console does not work.
+           => No request url for HTDS should be listed in the apiAuthFilter filter.
+           And no request url for HTDS should be listed in the browserAuthFilter filter since 
+           this filter is implemented with the notContain match type.
+
+       Configuration for the RES Console:
+          The request URL /res/api should be handled by the browserAuthFilter filter
+          (that is the filter associated with the inbound propagation set to supported),
+          otherwise the REST tool in the RES Console does not work (test interface in REST 
+          API tab).
+          => /res/api should not be listed in the apiAuthFilter filter.
+          And /res/api should not be listed in the browserAuthFilter filter since 
+          this filter is implemented with the notContain match type.
+   -->
+    <authFilter id="browserAuthFilter">
+        <!-- RES console -->
+        <requestUrl id="xx" matchType="notContain" urlPattern="/res/auth"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/res/repositoryService"/>
+        <!-- Enterprise console -->
+        <requestUrl id="xx" matchType="notContain" urlPattern="/teamserver/rts-sync"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/teamserver/remoting"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/teamserver/servlet/SessionServlet"/>
+        <!-- Business console -->
+        <requestUrl id="xx" matchType="notContain" urlPattern="/decisioncenter/rts-sync"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/decisioncenter/remoting"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/decisioncenter/servlet/SessionServlet"/>
+        <!-- Decision Center API -->
+     <!--   <requestUrl id="xx" matchType="notContain" urlPattern="/decisioncenter-api/" /> -->
+        <!-- Decision Runner -->
+        <requestUrl id="xx" matchType="notContain" urlPattern="/DecisionRunner/api"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/DecisionRunner/apiauth"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/DecisionRunner/serverinfo"/>
+        <!-- SSP (DVS) -->
+        <requestUrl id="xx" matchType="notContain" urlPattern="/testing/sspService"/>
+        <requestUrl id="xx" matchType="notContain" urlPattern="/testing/serverinfo"/>
+    </authFilter>
+    <!-- Note: The apiAuthFilter should be complementary to the browserAuthFilter -->
+    <authFilter id="apiAuthFilter">
+        <requestUrl id="xx" matchType="contains" urlPattern="/res/auth|/res/repositoryService|/teamserver/rts-sync|/teamserver/remoting|/teamserver/servlet/SessionServlet|/decisioncenter/rts-sync|/decisioncenter/remoting|/decisioncenter/servlet/SessionServlet|/decisioncenter-api|/DecisionRunner/api|/DecisionRunner/apiauth|/DecisionRunner/serverinfo|/testing/sspService|/testing/serverinfo"/>
+    </authFilter>
+</server>

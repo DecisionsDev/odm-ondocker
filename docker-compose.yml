@@ -101,3 +101,9 @@ services:
     ports:
     - 9060:9060
     - 9643:9453
+    volumes:
+    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/application.xml:/config/application.xml
+    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
+    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks

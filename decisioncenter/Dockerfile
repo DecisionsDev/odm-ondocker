@@ -74,6 +74,8 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 
+RUN installUtility install openidconnectclient-1.0
+
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
