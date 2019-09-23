@@ -1,5 +1,14 @@
 <server>
-	<httpSession cookieName="JSESSIONID_DS_RELEASE_NAME" useContextRootAsCookiePath="true" invalidateOnUnauthorizedSessionRequestException="true" invalidationTimeout="8h" />
-        <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
-        <webAppSecurity includePathInWASReqURL="true" ssoCookieName="LTPATOKEN2_DS_RELEASE_NAME" />
+	<httpSession cookieName="JSESSIONID_DS_RELEASE_NAME"
+		useContextRootAsCookiePath="true"
+		invalidateOnUnauthorizedSessionRequestException="true"
+		invalidationTimeout="8h"
+		cookieSecure="true"
+		cookieHttpOnly="true"/>
+  <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
+  <webAppSecurity includePathInWASReqURL="true"
+		ssoCookieName="LTPATOKEN2_DS_RELEASE_NAME"
+		ssoRequiresSSL="true"
+		httpOnlyCookies="true"
+		logoutOnHttpSessionExpire="true" />
 </server>
