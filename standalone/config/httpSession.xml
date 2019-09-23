@@ -1,5 +1,17 @@
 <server>
-	<httpSession logoutOnHttpSessionExpire="true" allowLogoutPageRedirectToAnyHost="true"  singleSignonEnabled="false"  cookieName="odmdev_RELEASE_NAME" invalidateOnUnauthorizedSessionRequestException="true" invalidationTimeout="8h" />
-        <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
-        <webAppSecurity includePathInWASReqURL="true" ssoCookieName="LTAPTOKEN2_RELEASE_NAME" />
+	<httpSession logoutOnHttpSessionExpire="true"
+		allowLogoutPageRedirectToAnyHost="true"
+		singleSignonEnabled="false"
+		cookieName="odmdev_RELEASE_NAME"
+		invalidateOnUnauthorizedSessionRequestException="true"
+		invalidationTimeout="8h"
+		cookieSecure="true"
+		cookieHttpOnly="true"
+	  useContextRootAsCookiePath="true" />
+  <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
+  <webAppSecurity includePathInWASReqURL="true"
+		ssoCookieName="LTAPTOKEN2_RELEASE_NAME"
+		ssoRequiresSSL="true"
+		httpOnlyCookies="true"
+		logoutOnHttpSessionExpire="true" />
 </server>
