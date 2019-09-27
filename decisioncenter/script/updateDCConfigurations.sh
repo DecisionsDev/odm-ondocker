@@ -17,7 +17,7 @@ if [ -n "DC_SERVER_CONFIG" ]
 then
   echo "DC_SERVER_CONFIG set to $DC_SERVER_CONFIG"
 else
-  echo "DC_SERVER_CONFIG not set. Use old way Decision Center server configuration" 	
+  echo "DC_SERVER_CONFIG not set. Use old way Decision Center server configuration"
 	DC_SERVER_CONFIG="/config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
 fi
 
@@ -51,6 +51,15 @@ else
         sed -i 's|protocol|'http'|g' $DC_SERVER_CONFIG
 fi
 
+if [ -n "$ENABLE_TLS" ]
+then
+ echo "Use httpSession settings for HTTPS"
+ cp /config/httpSessionHttps.xml $APPS/decisioncenter.war/WEB-INF/classes/config/httpSession.xml
+else
+ echo "Use httpSession settings for HTTP"
+ cp /config/httpSessionHttp.xml $APPS/decisioncenter.war/WEB-INF/classes/config/httpSession.xml
+fi
+
 if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
 then
   echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in $DC_SERVER_CONFIG"
@@ -68,7 +77,7 @@ else
         sed -i 's|decisionrunner-port|'9080'|g' $DC_SERVER_CONFIG
 fi
 
-if [ -s "/config/auth/ldap-configurations.xml" ] 
+if [ -s "/config/auth/ldap-configurations.xml" ]
 then
   echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
   sed -i 's|ldap-sync-mode|'users'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
@@ -79,7 +88,7 @@ else
   sed -i 's|ldap-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
-if [ -s "/config/auth/group-security-configurations.xml" ] 
+if [ -s "/config/auth/group-security-configurations.xml" ]
 then
   sed -i 's|group-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/group-security-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 else
@@ -97,7 +106,7 @@ fi
 
 if [ -s "/config/customlib/web.xml" ]
 then
-  echo "Update web.xml for Decision Center customization" 
+  echo "Update web.xml for Decision Center customization"
   PATTERN="<?-- Add your custom servlets here if needed -->"
   CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
   REPLACE=$(cat /config/customlib/web.xml)
