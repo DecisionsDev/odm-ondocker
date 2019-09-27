@@ -20,7 +20,7 @@
   <!-- Need to be changed according to the host. This URL must also be recorded into the UMS client redirect list
    See umsclient-update.sh in https://ibm.ent.box.com/notes/489391886443 
    redirect uri : "https://vtt-odm101.fr.eurolabs.ibm.com:9643/oidcclient/redirect/odm"	-->
-  <variable name="RedirectHost" value="https://vtt-odm101.fr.eurolabs.ibm.com:9643"/>
+ <!-- <variable name="RedirectHost" value="https://localhost:9643"/> -->
 
   <!-- Open ID Connect -->
   <!-- Client with inbound propagation set to supported -->
@@ -32,7 +32,7 @@
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
                        tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
                        validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
-		       redirectToRPHostAndPort="${RedirectHost}"/>
+            	       redirectToRPHostAndPort="${RedirectHost}"/>
 
   <!-- Client with inbound propagation set to required -->
   <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
@@ -43,7 +43,7 @@
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
                        tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
                        validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
-		       redirectToRPHostAndPort="${RedirectHost}"/>
+            	       redirectToRPHostAndPort="${RedirectHost}"/>
 
     <!--
        Configuration for HTDS:

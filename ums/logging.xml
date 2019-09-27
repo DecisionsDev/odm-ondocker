@@ -1,0 +1,4 @@
+<server>
+  <!-- Enable features -->
+      <logging traceFileName="trace.log" traceFormat="BASIC" traceSpecification="*=info"/>
+</server>

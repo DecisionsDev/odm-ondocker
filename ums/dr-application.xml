@@ -1,0 +1,15 @@
+<server>
+	<!-- Decision Runner -->
+	<application type="war" id="DecisionRunner" name="DecisionRunner" context-root="/DecisionRunner" location="${server.config.dir}/apps/DecisionRunner.war">
+       <application-bnd>
+		<security-role name="resAdministrators">
+			<group name="resAdministrators" />
+			<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+		</security-role>
+		<security-role name="resDeployers">
+			<group name="resDeployers" />
+			<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+		</security-role>
+    </application-bnd>
+ </application>
+</server>

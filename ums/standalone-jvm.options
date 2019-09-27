@@ -1,0 +1,6 @@
+-Dcom.ibm.rules.decisioncenter.referer-whitelist-patterns=https://odmdev09r.fr.eurolabs.ibm.com:9665/.*
+-Dcom.ibm.odm.res.console.csrfFilter.allowedDomains=fr.eurolabs.ibm.com
+-Dcom.ibm.rules.authentication.scheme=oidc
+# For Francelab UMS server
+-Dcom.ibm.rules.authentication.oidcconfig=OdmOidcProviders.json:ums
+-Dilog.rules.res.AUTHORIZATION_CONFIGURATION=type=openid,logoutUrl=https://odmdev09r.fr.eurolabs.ibm.com:9665/oidc/endpoint/ums/logout

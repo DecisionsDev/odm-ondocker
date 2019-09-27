@@ -64,6 +64,8 @@ ENV APPS /config/apps
 ENV CONNECTION_POOL_SIZE 60
 ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
+RUN installUtility install openidconnectclient-1.0
+
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config

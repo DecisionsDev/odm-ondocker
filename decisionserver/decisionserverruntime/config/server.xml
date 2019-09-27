@@ -15,6 +15,9 @@
 	<!-- include web security config -->
 	<include optional="true" location="./auth/webSecurity.xml"/>
 
+       <!-- include web security config -->
+        <include optional="true" location="./auth/ums.xml"/>
+
 	<!-- welcomepage -->
 	<include optional="true" location="./welcomepage_application.xml"/>
 
@@ -22,7 +25,7 @@
 	<include optional="true" location="./application.xml"/>
 
 	<!-- include tls/https config -->
-        <include optional="true" location="./tlsSecurity.xml"/>
+     <!--   <include optional="true" location="./tlsSecurity.xml"/> -->
 
         <!-- include logging config -->
         <include optional="true" location="./logging/logging.xml"/>

@@ -3,9 +3,9 @@
 echo "Update Decision Server Runtime configurations"
 
 
-echo "Enable basic authentication"
-cd $APPS/DecisionService.war/WEB-INF;
-sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
+#echo "Enable basic authentication"
+#cd $APPS/DecisionService.war/WEB-INF;
+#sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
 
 cd  $APPS/DecisionService.war/WEB-INF/classes;

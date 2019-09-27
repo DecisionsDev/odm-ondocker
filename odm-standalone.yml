@@ -17,8 +17,9 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
     user: "1001:0"
     environment:
-    - SAMPLE=true
+    - SAMPLE=false
     - LICENSE=accept
+    - RedirectHost=https://localhost:9453
     ports:
     - 9080:9060
     - 9453:9453
@@ -26,3 +27,16 @@ services:
     # current directory in the Preference menu -> File Sharing menu.
     #    volumes:
     #    - ./h2data:/config/dbdata/
+    volumes:
+    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
+    - ${PWD}/standalone/config/featureManager.xml:/config/featureManager.xml
+#    - ${PWD}/ums/logging.xml:/config/logging/logging.xml
+    - ${PWD}/ums/standalone-jvm.options:/config/jvm.options
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/dc-application.xml:/config/decisioncenter_application.xml
+    - ${PWD}/ums/dr-application.xml:/config/decisionrunner_application.xml
+    - ${PWD}/ums/dsc-application.xml:/config/decisionserverconsole_application.xml
+    - ${PWD}/ums/dsr-application.xml:/config/decisionserverruntime_application.xml
+    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
+    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks
+    - ${PWD}/ums/OdmOidcProviders.json:/config/apps/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json

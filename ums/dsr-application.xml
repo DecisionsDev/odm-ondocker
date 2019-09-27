@@ -1,0 +1,17 @@
+<server>
+	<!-- Decision Server Runtime -->
+	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
+		<application-bnd>
+			<security-role name="resExecutors">
+				<group name="resExecutors" />
+				<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+			</security-role>
+		</application-bnd>
+		<classloader>
+    	<commonLibrary>
+      	<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
+    	</commonLibrary>
+  	</classloader>
+	</application>
+
+</server>
