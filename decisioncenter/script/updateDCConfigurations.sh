@@ -54,10 +54,10 @@ fi
 if [ -n "$ENABLE_TLS" ]
 then
  echo "Use httpSession settings for HTTPS"
- cp /config/httpSessionHttps.xml $APPS/decisioncenter.war/WEB-INF/classes/config/httpSession.xml
+ cp /config/httpSessionHttps.xml /config/httpSession.xml
 else
  echo "Use httpSession settings for HTTP"
- cp /config/httpSessionHttp.xml $APPS/decisioncenter.war/WEB-INF/classes/config/httpSession.xml
+ cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
 
 if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
