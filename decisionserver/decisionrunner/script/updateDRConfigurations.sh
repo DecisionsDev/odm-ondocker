@@ -27,6 +27,15 @@ else
         sed -i 's|protocol|'http'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
 fi
 
+if [ -n "$ENABLE_TLS" ]
+then
+ echo "Use httpSession settings for HTTPS"
+ cp /config/httpSessionHttps.xml /config/httpSession.xml
+else
+ echo "Use httpSession settings for HTTP"
+ cp /config/httpSessionHttp.xml /config/httpSession.xml
+fi
+
 if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
 then
   echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in web.xml"
@@ -44,4 +53,3 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
-
