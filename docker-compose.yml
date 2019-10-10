@@ -101,3 +101,9 @@ services:
     ports:
     - 9060:9060
     - 9643:9453
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+        reservations:
+          cpus: "2"
