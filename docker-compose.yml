@@ -105,5 +105,3 @@ services:
       resources:
         limits:
           cpus: "4"
-        reservations:
-          cpus: "2"
