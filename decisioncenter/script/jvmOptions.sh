@@ -16,3 +16,11 @@ else
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'changeme'|g' /config/jvm.options
 fi
 # End - Configuration for the TLS security
+
+
+# Temporary config by waiting possible config in new-decisioncenter-configuration.properties
+if [ -n "$PROVIDER" ]
+then
+	echo "OAuth config : set provider to $PROVIDER"
+	sed -i 's|PROVIDER|'$PROVIDER'|g' /config/jvm.options
+fi

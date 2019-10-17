@@ -3,16 +3,19 @@
 	<application type="war" autoStart="true" id="res" name="res" location="${server.config.dir}/apps/res.war">
 		<application-bnd>
 			<security-role name="resAdministrators">
-				<group name="resAdministrators" />
-				<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<!-- <group name="resAdministrators" /> -->
+				<group name="group_odmAdmin" access-id="o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<group name="group_resAdministrators" access-id="o=defaultWIMFileBasedRealm/resAdministrators"/>
 			</security-role>
 			<security-role name="resDeployers">
-				<group name="resDeployers" />
-				<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<!-- <group name="resDeployers" /> -->
+				<group name="group_odmAdmin" access-id="o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<group name="group_resDeployers" access-id="o=defaultWIMFileBasedRealm/resDeployers"/>
 			</security-role>
 			<security-role name="resMonitors">
-				<group name="resMonitors" />
-				<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<!-- <group name="resMonitors" /> -->
+				<group name="group_odmAdmin" access-id="o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<group name="group_resMonitors" access-id="o=defaultWIMFileBasedRealm/resMonitors"/>
 			</security-role>
 		</application-bnd>
 	</application>
@@ -21,8 +24,9 @@
 	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
 		<application-bnd>
 			<security-role name="resExecutors">
-				<group name="resExecutors" />
-				<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<!-- <group name="resExecutors" /> -->
+				<group name="group_odmAdmin" access-id="o=defaultWIMFileBasedRealm/it-secu-support"/>
+				<group name="group_resExecutors" access-id="o=defaultWIMFileBasedRealm/resAdministrators"/>
 			</security-role>
 		</application-bnd>
 		<classloader>

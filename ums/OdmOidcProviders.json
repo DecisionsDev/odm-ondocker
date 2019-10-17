@@ -1,28 +1,6 @@
 {
   "providers": [
     {
-	"name": "frlab",
-	"grantType": "password",
-	"authorizationURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/authorize",
-	"tokenURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/token",
-	"introspectionURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/introspect",
-	"scope": "general",
-	"clientId": "odmclient",
-	"clientSecret": "odmsecret",
-	"redirectURI": "http://127.0.0.1:9081/oidcCallback",
-	"callbackPort": 9081
-    },
-    {
-	"name": "frlabcc",
-	"grantType": "client_credentials",
-	"authorizationURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/authorize",
-	"tokenURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/token",
-	"introspectionURL": "https://odmdev09r.fr.eurolabs.ibm.com:9448/oidc/endpoint/ssoserver/introspect",
-	"scope": "general",
-	"clientId": "odmfidclient",
-	"clientSecret": "odmfidsecret"
-    },
-    {
 	"name": "ums",
 	"grantType": "password",
 	"authorizationURL": "https://odmdev09r.fr.eurolabs.ibm.com:9665/oidc/endpoint/ums/authorize",
@@ -30,18 +8,6 @@
 	"introspectionURL": "https://odmdev09r.fr.eurolabs.ibm.com:9665/oidc/endpoint/ums/introspect",
 	"clientId": "umsclient4odm",
 	"clientSecret": "umssecret4odm",
-	"tokenFormat": "NON-JWT",
-	"redirectURI": "https://localhost:9643/oidcCallback",
-	"callbackPort": 9643
-    },
-    {
-	"name": "IBMid-preprod",
-	"grantType": "password",
-	"authorizationURL": "https://prepiam.toronto.ca.ibm.com/idaas/oidc/endpoint/default/authorize",
-	"tokenURL": "https://prepiam.toronto.ca.ibm.com/idaas/oidc/endpoint/default/token",
-	"introspectionURL": "https://prepiam.toronto.ca.ibm.com/idaas/oidc/endpoint/default/introspect",
-	"clientId": "MWRmYjAyYTktMGRjYy00",
-	"clientSecret": "ZjNmZjU0NGQtMTVkZS00",
 	"tokenFormat": "NON-JWT"
     }
   ]

@@ -1,17 +1,15 @@
 <server description="ODM server">
 
 <!-- tlsSecurity.xml has been commented to avoid collision between ODM and UMS SSL keys : A merge must be done -->
-
+<!--
 <sslDefault sslRef="tls12" />
-<ssl id="tls12" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore" serverKeyAlias="localhost" sslProtocol="TLSv1.2" />
-<keyStore id="defaultUMSKeyStore" password="changeit" location="/config/resources/security/odmkeystore.jks"/>
-<keyStore id="defaultUMSTrustStore" password="changeit" location="/config/resources/security/odmtruststore.jks"/>
+<ssl id="tls12" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore" sslProtocol="TLSv1.2" />
+<keyStore id="defaultUMSKeyStore" password="changeme" location="/config/resources/security/odmkeystore.jks"/>
+<keyStore id="defaultUMSTrustStore" password="changeme" location="/config/resources/security/odmtruststore.jks"/>-->
 
-<!-- This is the truststore for all the outbound traffic -->
-<!-- Commented for now, as we still use self signed certificates -->
-<ssl id="odmOutboudTraffic" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore">
-   <outboundConnection host="odmdev09r.fr.eurolabs.ibm.com" port="9448"/>
-</ssl>
+<!-- <ssl id="odmOutboudTraffic" keyStoreRef="defaultUMSKeyStore" trustStoreRef="defaultUMSTrustStore">
+  <outboundConnection host="odmdev09r.fr.eurolabs.ibm.com" port="9448"/>
+</ssl> -->
 
 
   <variable name="ServerHost" value="https://odmdev09r.fr.eurolabs.ibm.com:9665"/>
@@ -31,8 +29,8 @@
 		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
                        tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
-                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
-            	       redirectToRPHostAndPort="${RedirectHost}"/>
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
+            <!--	       redirectToRPHostAndPort="${RedirectHost}"/> -->
 
   <!-- Client with inbound propagation set to required -->
   <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
@@ -42,8 +40,8 @@
 		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
                        tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
-                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"
-            	       redirectToRPHostAndPort="${RedirectHost}"/>
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
+            <!--	       redirectToRPHostAndPort="${RedirectHost}"/> -->
 
     <!--
        Configuration for HTDS:

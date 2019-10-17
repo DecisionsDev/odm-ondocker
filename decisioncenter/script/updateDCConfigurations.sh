@@ -5,12 +5,48 @@ echo "Update Decision Center configurations"
 FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
 echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
 
+FIND_OAUTH_SERVER_UTIL_CLASS="$($SCRIPT/findOAuthServerUtilClass.sh)"
+echo "FIND_OAUTH_SERVER_UTIL_CLASS set to $FIND_OAUTH_SERVER_UTIL_CLASS"
+
 if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
 then
   echo "ServerExt class found then set DC_SERVER_CONFIG to /config/server-configurations.json"
   DC_SERVER_CONFIG="/config/server-configurations.json"
 else
   echo "ServerExt class not found. Use old way Decision Center server configuration"
+fi
+
+if [ "$FIND_OAUTH_SERVER_UTIL_CLASS" == "matches" ]
+then
+  echo "OAuthServerUtil class found replace /config/server-configurations.json by /config/new-server-configurations.json"
+  mv /config/new-server-configurations.json /config/server-configurations.json
+else
+  echo "OAuthServerUtil class not found"
+fi
+
+if [ -n "$OPENID_SERVER_URL" ]
+then
+  echo "OAuth config : change BASIC_AUTH to OAUTH in $DC_SERVER_CONFIG"
+  mv /config/oidc-jvm.options /config/jvm.options
+  sed -i 's|BASIC_AUTH|'OAUTH'|g' $DC_SERVER_CONFIG
+  if [ -n "$PROVIDER" ]
+  then
+     echo "OAuth config : set provider to $PROVIDER"
+     sed -i 's|PROVIDER|'$PROVIDER'|g' $DC_SERVER_CONFIG
+#     sed -i 's|PROVIDER|'$PROVIDER'|g' /config/new-decisioncenter-configuration.properties
+  else
+     sed -i 's|"PROVIDER"|'null'|g' $DC_SERVER_CONFIG
+  fi
+#  echo "OAuth config : set AUTH_SCHEME to oidc in /config/new-decisioncenter-configuration.properties"
+  echo "OAuth config : set OPENID_SERVER_URL to $OPENID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
+  sed -i 's|OPENID_SERVER_URL|'$OPENID_SERVER_URL'|g' /config/new-decisioncenter-configuration.properties 
+else
+  echo "BASIC_AUTH config : remove entry with OPEN_ID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
+  sed -i '/OPENID_SERVER_URL/d' /config/new-decisioncenter-configuration.properties
+#  echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
+#  sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
+#  echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
+#  sed -i '/OdmOidcProviders/d' /config/new-decisioncenter-configuration.properties
 fi
 
 if [ -n "DC_SERVER_CONFIG" ]
@@ -28,6 +64,16 @@ then
 else
   echo "Use old decisioncenter-configuration.properties definition"
 	cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
+if [ -s "/config/OdmOidcProviders.json" ]
+then
+  echo "Copy OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
+        cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
+        cp /config/OdmOidcProviders.json $APPS/teamserver.war/WEB-INF/classes/OdmOidcProviders.json
+        cp /config/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
+else
+  echo "No provided /config/OdmOidcProviders.json"
 fi
 
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]

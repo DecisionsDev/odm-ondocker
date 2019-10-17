@@ -41,18 +41,9 @@ services:
     - 9080:9080
     - 1883:1883
     - 9843:9443
-    environment:
-#    - RedirectHost=https://9.145.151.103:9843
-     - RedirectHost=https://9.145.84.100:9843
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
-    - ${PWD}/ums/logging.xml:/config/logging/logging.xml
+    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dsc-application.xml:/config/application.xml
-    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
-    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks
-    - ${PWD}/decisionserver/decisionserverconsole/config/server.xml:/config/server.xml
-#    - ${PWD}/ums/web.xml:/config/apps/res.war/WEB-INF/web.xml
-#    - ${PWD}/ums/web.xml:/config/apps/DecisionService.war/WEB-INF/web.xml
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -72,15 +63,9 @@ services:
     ports:
     - 9070:9080
     - 9743:9443
-    environment:
-#    - RedirectHost=https://9.145.151.103:9743
-     - RedirectHost=https://9.145.84.100:9743
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
-#    - ${PWD}/ums/logging.xml:/config/logging/logging.xml
+    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dr-application.xml:/config/application.xml
-    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
-    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -103,15 +88,9 @@ services:
     ports:
     - 9090:9080
     - 9943:9443
-    environment:
-#    - RedirectHost=https://9.145.151.103:9943
-    - RedirectHost=https://9.145.84.100:9943
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
- #   - ${PWD}/ums/logging.xml:/config/logging/logging.xml
+    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dsr-application.xml:/config/application.xml
-    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
-    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -131,15 +110,12 @@ services:
     - 9060:9060
     - 9643:9453
     environment:
-#    - RedirectHost=https://9.145.151.103:9643
-    - RedirectHost=https://9.145.84.100:9643
+    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - PROVIDER=ums
+    - ENABLE_TLS=true
+    - DECISIONSERVERCONSOLE_PORT=9443
+    - DECISIONRUNNER_PORT=9443
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/ums.xml
-#    - ${PWD}/ums/logging.xml:/config/logging/logging.xml
-    - ${PWD}/ums/dc-jvm.options:/config/jvm.options
-    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dc-application.xml:/config/application.xml
-    - ${PWD}/ums/odmkeystore.jks:/config/resources/security/odmkeystore.jks
-    - ${PWD}/ums/odmtruststore.jks:/config/resources/security/odmtruststore.jks
-#    - ${PWD}/ums/OdmOidcProviders.json:/config/resources/security/OdmOidcProviders.json
-    - ${PWD}/ums/OdmOidcProviders.json:/config/apps/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
+    - ${PWD}/ums/OdmOidcProviders.json:/config/OdmOidcProviders.json
