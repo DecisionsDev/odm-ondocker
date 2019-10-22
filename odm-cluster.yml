@@ -88,6 +88,8 @@ services:
     - dbserver
     depends_on:
     - dbserver
+    environment:
+    - JVM_ARGS="-Xmx14000m"
     ports:
     - 9060:9060
     - 9453:9453
