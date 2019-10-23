@@ -48,16 +48,10 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
-RUN ls -la /wlp-embeddable/
-RUN ls -la /wlp-embeddable/wlp
 
 FROM ${FROMLIBERTY} AS oidc-liberty-builder
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
-#RUN installUtility download openidconnectclient-1.0 --location=/tmp
 RUN installUtility install openidconnectclient-1.0
-RUN ls -la /opt/ibm/wlp/lib/
-RUN ls -la /opt/ibm/wlp/lib/features
-
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -84,11 +78,6 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
-#RUN installUtility install openidconnectclient-1.0
-#COPY --from=oidc-liberty-builder /opt/ibm/wlp/lib /opt/ibm/wlp/lib
-#COPY --from=oidc-liberty-builder /opt/ibm/wlp/lib/features/*.mf /opt/ibm/wlp/lib/features/
-#COPY --from=oidc-liberty-builder /opt/ibm/wlp/lib/features/checksums/*.cs /opt/ibm/wlp/lib/features/checksums/
-#COPY --from=oidc-liberty-builder /opt/ibm/wlp/lib/features/l10n/*.properties /opt/ibm/wlp/lib/features/l10n/
 
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
@@ -111,7 +100,6 @@ COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-#COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses

@@ -19,8 +19,8 @@ fi
 
 
 # Temporary config by waiting possible config in new-decisioncenter-configuration.properties
-if [ -n "$PROVIDER" ]
-then
-	echo "OAuth config : set provider to $PROVIDER"
-	sed -i 's|PROVIDER|'$PROVIDER'|g' /config/jvm.options
-fi
+#if [ -n "$PROVIDER" ]
+#then
+#	echo "OAuth config : set provider to $PROVIDER"
+#	sed -i 's|PROVIDER|'$PROVIDER'|g' /config/jvm.options
+#fi

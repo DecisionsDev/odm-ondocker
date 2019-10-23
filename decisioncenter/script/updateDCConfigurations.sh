@@ -27,26 +27,26 @@ fi
 if [ -n "$OPENID_SERVER_URL" ]
 then
   echo "OAuth config : change BASIC_AUTH to OAUTH in $DC_SERVER_CONFIG"
-  mv /config/oidc-jvm.options /config/jvm.options
+#  mv /config/oidc-jvm.options /config/jvm.options
   sed -i 's|BASIC_AUTH|'OAUTH'|g' $DC_SERVER_CONFIG
   if [ -n "$PROVIDER" ]
   then
      echo "OAuth config : set provider to $PROVIDER"
      sed -i 's|PROVIDER|'$PROVIDER'|g' $DC_SERVER_CONFIG
-#     sed -i 's|PROVIDER|'$PROVIDER'|g' /config/new-decisioncenter-configuration.properties
+     sed -i 's|PROVIDER|'$PROVIDER'|g' /config/new-decisioncenter-configuration.properties
   else
      sed -i 's|"PROVIDER"|'null'|g' $DC_SERVER_CONFIG
   fi
-#  echo "OAuth config : set AUTH_SCHEME to oidc in /config/new-decisioncenter-configuration.properties"
+  echo "OAuth config : set AUTH_SCHEME to oidc in /config/new-decisioncenter-configuration.properties"
   echo "OAuth config : set OPENID_SERVER_URL to $OPENID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i 's|OPENID_SERVER_URL|'$OPENID_SERVER_URL'|g' /config/new-decisioncenter-configuration.properties 
 else
   echo "BASIC_AUTH config : remove entry with OPEN_ID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i '/OPENID_SERVER_URL/d' /config/new-decisioncenter-configuration.properties
-#  echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
-#  sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
-#  echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
-#  sed -i '/OdmOidcProviders/d' /config/new-decisioncenter-configuration.properties
+  echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
+  sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
+  echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
+  sed -i '/OdmOidcProviders/d' /config/new-decisioncenter-configuration.properties
 fi
 
 if [ -n "DC_SERVER_CONFIG" ]
