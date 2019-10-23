@@ -110,6 +110,7 @@ services:
     - 9060:9060
     - 9643:9453
     environment:
+    - JVM_ARGS="-Xmx14000m"
     - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
     - PROVIDER=ums
     - ENABLE_TLS=true
