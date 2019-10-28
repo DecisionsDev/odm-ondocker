@@ -8,9 +8,6 @@
 		<application-bnd>
 			<security-role name="rtsAdministrator">
 				<group name="rtsAdministrators" />
-				<user name="mat" access-id="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/>
-	      			<!-- Group grant using basic registry federated in UMS -->
-              			<group name="administrators2" access-id="group:o=defaultWIMFileBasedRealm/it-secu-support"/>	
 			</security-role>
 			<security-role name="rtsInstaller">
 				<group name="rtsInstallers" />
