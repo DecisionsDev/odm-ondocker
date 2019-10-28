@@ -1,0 +1,4 @@
+OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+PROVIDER=ums
+UMS_LOGOUT_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665/oidc/endpoint/ums/logout
+CSRF_FILTER_ALLOWED_DOMAINS=fr.eurolabs.ibm.com

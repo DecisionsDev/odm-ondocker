@@ -118,12 +118,13 @@ services:
     - 9643:9453
     environment:
     - JVM_ARGS="-Xmx14000m"
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-    - PROVIDER=ums
+#    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+#    - PROVIDER=ums
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     - DECISIONRUNNER_PORT=9443
     volumes:
+    - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
     - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dc-application.xml:/config/application.xml
     - ${PWD}/ums/OdmOidcProviders.json:/config/OdmOidcProviders.json

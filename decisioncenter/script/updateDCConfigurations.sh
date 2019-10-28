@@ -24,8 +24,13 @@ else
   echo "OAuthServerUtil class not found"
 fi
 
-if [ -n "$OPENID_SERVER_URL" ]
+#if [ -n "$OPENID_SERVER_URL" ]
+if [ -s "/config/openIdParameters.txt" ]
 then
+  OPENID_SERVER_URL=$(grep OPENID_SERVER_URL /config/openIdParameters.txt | sed "s/OPENID_SERVER_URL=//g")
+  echo "OPENID_SERVER_URL: $OPENID_SERVER_URL"
+  PROVIDER=$(grep PROVIDER /config/openIdParameters.txt | sed "s/PROVIDER=//g")
+  echo "PROVIDER: $PROVIDER"
   echo "OAuth config : change BASIC_AUTH to OAUTH in $DC_SERVER_CONFIG"
 #  mv /config/oidc-jvm.options /config/jvm.options
   sed -i 's|BASIC_AUTH|'OAUTH'|g' $DC_SERVER_CONFIG

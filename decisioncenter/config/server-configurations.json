@@ -5,7 +5,6 @@
     "url": "protocol://odm-decisionserverconsole:decisionserverconsole-port/res",
     "loginServer": "odmAdmin",
     "loginPassword": "odmAdmin",
-    "builtIn": "false",
     "description": "Use this server to deploy decision services that you want to execute.",
     "groups": [
       "*"
@@ -17,7 +16,6 @@
     "url": "protocol://odm-decisionrunner:decisionrunner-port/DecisionRunner",
     "loginServer": "odmAdmin",
     "loginPassword": "odmAdmin",
-    "builtIn": "false",
     "description": "Use this server to run tests and simulations for decision services.",
     "groups": [
       "*"
