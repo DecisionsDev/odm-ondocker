@@ -44,7 +44,8 @@ services:
     environment:
     - ENABLE_TLS=true
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dsc-application.xml:/config/application.xml
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -69,7 +70,8 @@ services:
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dr-application.xml:/config/application.xml
 
   odm-decisionserverruntime:
@@ -96,7 +98,8 @@ services:
     environment:
     - ENABLE_TLS=true
     volumes:
-    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dsr-application.xml:/config/application.xml
 
   odm-decisioncenter:
@@ -125,6 +128,6 @@ services:
     - DECISIONRUNNER_PORT=9443
     volumes:
     - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
-    - ${PWD}/ums/ums.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/dc-application.xml:/config/application.xml
     - ${PWD}/ums/OdmOidcProviders.json:/config/OdmOidcProviders.json

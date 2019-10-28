@@ -52,6 +52,8 @@ else
   sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
   echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
   sed -i '/OdmOidcProviders/d' /config/new-decisioncenter-configuration.properties
+  echo "BASIC_AUTH config : remove authFilters from server.xml"
+  sed -i '/authFilters/d' /config/server.xml
 fi
 
 if [ -n "DC_SERVER_CONFIG" ]

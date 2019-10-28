@@ -15,6 +15,9 @@
 	<!-- include web security config -->
 	<include optional="true" location="./auth/webSecurity.xml"/>
 
+        <!-- include auth filters -->
+        <include optional="true" location="./auth/authFilters.xml"/>
+
 	<!-- welcomepage -->
 	<include optional="true" location="./welcomepage_application.xml"/>
 
