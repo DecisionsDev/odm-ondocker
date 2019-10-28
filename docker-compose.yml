@@ -129,5 +129,4 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/dc-application.xml:/config/application.xml
     - ${PWD}/ums/OdmOidcProviders.json:/config/OdmOidcProviders.json

@@ -22,4 +22,16 @@
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
                        tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
                        validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
+
+  <!-- Grant access to the group rtsAdministrator -->
+  <variable name="umsGroupAdministrator" value="o=defaultWIMFileBasedRealm/rtsAdministrator"/>
+  <variable name="odm.rtsAdministrator.group1" value="group:${umsGroupAdministrator}"/>
+
+  <!-- Grant access to the group rtsConfigManager -->
+  <variable name="umsGroupConfigManager" value="o=defaultWIMFileBasedRealm/rtsConfigManager"/>
+  <variable name="odm.rtsConfigManager.group1" value="group:${umsGroupConfigManager}"/>
+
+  <!-- Grant access to the group rtsInstaller -->
+  <variable name="umsGroupInstaller" value="o=defaultWIMFileBasedRealm/rtsInstaller"/>
+  <variable name="odm.rtsInstaller.group1" value="group:${umsGroupInstaller}"/>
 </server>
