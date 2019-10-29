@@ -1,369 +1,369 @@
 LIZENZINFORMATION
 
-Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (Z125-5589-05) zur Anwendung.
+FÃ¼r die Lizenzierung der nachstehend aufgelisteten Programme gelten zusÃ¤tzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den fÃ¼r das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung (Z125-5589-05) zur Anwendung.
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
 
-Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
+Die folgenden Standardbedingungen gelten fÃ¼r die Programmnutzung durch den Lizenznehmer.
 
 Untersagte Nutzungen
 
-Der Lizenznehmer darf das Programm nicht nutzen oder Dritten die Berechtigung zur Nutzung des Programms erteilen, wenn ein Versagen des Programms zu Todesfällen, Personenschäden, Sach- oder Umweltschäden führen kann.
+Der Lizenznehmer darf das Programm nicht nutzen oder Dritten die Berechtigung zur Nutzung des Programms erteilen, wenn ein Versagen des Programms zu TodesfÃ¤llen, PersonenschÃ¤den, Sach- oder UmweltschÃ¤den fÃ¼hren kann.
 
 Installationsimage mit mehreren Produkten
 
-Das Programm wird als Teil eines Installationsimage bereitgestellt, das mehrere Produkte enthält. Der Lizenznehmer ist nur zur Installation und Nutzung des Programms (und seiner gebündelten Programme oder Unterstützungsprogramme, sofern vorhanden) berechtigt, für das er eine gültige Berechtigung erworben hat, und darf die darüber hinaus im Image enthaltene Software nicht installieren oder nutzen, außer wenn er separate Berechtigungen für die jeweilige Software erworben hat.
+Das Programm wird als Teil eines Installationsimage bereitgestellt, das mehrere Produkte enthÃ¤lt. Der Lizenznehmer ist nur zur Installation und Nutzung des Programms (und seiner gebÃ¼ndelten Programme oder UnterstÃ¼tzungsprogramme, sofern vorhanden) berechtigt, fÃ¼r das er eine gÃ¼ltige Berechtigung erworben hat, und darf die darÃ¼ber hinaus im Image enthaltene Software nicht installieren oder nutzen, auÃŸer wenn er separate Berechtigungen fÃ¼r die jeweilige Software erworben hat.
 
-Unterstützungsprogramme
+UnterstÃ¼tzungsprogramme
 
-Der Lizenznehmer ist zur Installation und Nutzung der nachstehend aufgeführten Unterstützungsprogramme berechtigt. Der Lizenznehmer darf diese Unterstützungsprogramme nur zur Unterstützung der Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur Unterstützung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms stehen. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, denen die Nutzung des betreffenden Unterstützungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen für das Programm als Ganzes erwerben, um die Installation und Nutzung aller Unterstützungsprogramme abzudecken, außer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm würde auf PVU-Basis (Prozessor-Value-Units) lizenziert und der Lizenznehmer würde das Hauptprogramm oder ein Unterstützungsprogramm auf einer 100-PVU-Maschine (physisch oder virtuell) und ein anderes Unterstützungsprogramm auf einer zweiten 100-PVU-Maschine installieren, dann müsste er 200 PVU-Berechtigungen für das Programm erwerben.
+Der Lizenznehmer ist zur Installation und Nutzung der nachstehend aufgefÃ¼hrten UnterstÃ¼tzungsprogramme berechtigt. Der Lizenznehmer darf diese UnterstÃ¼tzungsprogramme nur zur UnterstÃ¼tzung der Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur UnterstÃ¼tzung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen UnterstÃ¼tzungsprogramms stehen. Die UnterstÃ¼tzungsprogramme dÃ¼rfen nicht fÃ¼r andere Zwecke verwendet werden. Einem UnterstÃ¼tzungsprogramm kÃ¶nnen Lizenzbedingungen beigefÃ¼gt sein, denen die Nutzung des betreffenden UnterstÃ¼tzungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des UnterstÃ¼tzungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen fÃ¼r das Programm als Ganzes erwerben, um die Installation und Nutzung aller UnterstÃ¼tzungsprogramme abzudecken, auÃŸer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm wÃ¼rde auf PVU-Basis (Prozessor-Value-Units) lizenziert und der Lizenznehmer wÃ¼rde das Hauptprogramm oder ein UnterstÃ¼tzungsprogramm auf einer 100-PVU-Maschine (physisch oder virtuell) und ein anderes UnterstÃ¼tzungsprogramm auf einer zweiten 100-PVU-Maschine installieren, dann mÃ¼sste er 200 PVU-Berechtigungen fÃ¼r das Programm erwerben.
 
-Unterstützungsprogramme:
+UnterstÃ¼tzungsprogramme:
 IBM WebSphere Liberty 19
 
-Beschränkung auf Entwickler
+BeschrÃ¤nkung auf Entwickler
 
-Wenn das Programm als "Developer"-Version ausgewiesen ist, darf es nur für interne Entwicklungszwecke und Komponententests auf einer Entwicklermaschine eingesetzt werden. Eine Entwicklermaschine ist eine physische oder virtuelle Desktopumgebung, in der ein primäres Betriebssystem und das Programm ausgeführt werden, die beide für maximal einen angegebenen Entwickler zugänglich und nutzbar sind. Der Lizenznehmer ist nicht berechtigt, das Programm zur Verarbeitung oder Simulation von Produktionsworkloads oder zum Testen der Skalierbarkeit von Code, Anwendungen oder Systemen zu nutzen. Der Lizenznehmer ist nicht berechtigt, irgendwelche Bestandteile des Programms für andere Zwecke zu nutzen, ohne die entsprechenden Produktionsberechtigungen zu erwerben.
+Wenn das Programm als "Developer"-Version ausgewiesen ist, darf es nur fÃ¼r interne Entwicklungszwecke und Komponententests auf einer Entwicklermaschine eingesetzt werden. Eine Entwicklermaschine ist eine physische oder virtuelle Desktopumgebung, in der ein primÃ¤res Betriebssystem und das Programm ausgefÃ¼hrt werden, die beide fÃ¼r maximal einen angegebenen Entwickler zugÃ¤nglich und nutzbar sind. Der Lizenznehmer ist nicht berechtigt, das Programm zur Verarbeitung oder Simulation von Produktionsworkloads oder zum Testen der Skalierbarkeit von Code, Anwendungen oder Systemen zu nutzen. Der Lizenznehmer ist nicht berechtigt, irgendwelche Bestandteile des Programms fÃ¼r andere Zwecke zu nutzen, ohne die entsprechenden Produktionsberechtigungen zu erwerben.
 
 Entwicklungstool
 
-Dieses Programm wurde zur Unterstützung bei der Entwicklung von Softwareanwendungen oder Systemen konzipiert. Der Lizenznehmer ist allein verantwortlich für die Anwendungen und Systeme, die er unter Einsatz des Programms entwickelt, und trägt das gesamte Risiko und die Verantwortung dafür.
+Dieses Programm wurde zur UnterstÃ¼tzung bei der Entwicklung von Softwareanwendungen oder Systemen konzipiert. Der Lizenznehmer ist allein verantwortlich fÃ¼r die Anwendungen und Systeme, die er unter Einsatz des Programms entwickelt, und trÃ¤gt das gesamte Risiko und die Verantwortung dafÃ¼r.
 
 Datenschutz
 
-Der Lizenznehmer bestätigt und erklärt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Übereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
+Der Lizenznehmer bestÃ¤tigt und erklÃ¤rt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Ãœbereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
 
 Quellenkomponenten und Mustermaterialien
 
-Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Mustermaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Mustermaterialien nur für den internen Gebrauch kopieren und ändern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Mustermaterialien enthaltenen Copyrightvermerke oder Hinweise weder ändert noch löscht. IBM stellt die Quellenkomponenten und Mustermaterialien ohne eine Verpflichtung zur Unterstützung, ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck.
+Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Mustermaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Mustermaterialien nur fÃ¼r den internen Gebrauch kopieren und Ã¤ndern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Mustermaterialien enthaltenen Copyrightvermerke oder Hinweise weder Ã¤ndert noch lÃ¶scht. IBM stellt die Quellenkomponenten und Mustermaterialien ohne eine Verpflichtung zur UnterstÃ¼tzung, ohne Wartung (auf "as-is"-Basis) und ohne jegliche GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) zur VerfÃ¼gung, insbesondere ohne GewÃ¤hrleistung fÃ¼r RechtsmÃ¤ngel, fÃ¼r die Freiheit von Rechten Dritter, fÃ¼r das Recht auf NichtbeeintrÃ¤chtigung, fÃ¼r die HandelsÃ¼blichkeit und fÃ¼r die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck.
 
 Technology Preview Code
 
-Technology Preview Code (TPC, Code für Technologievorschau) kann in das Programm oder in Programmupdates integriert sein oder damit verteilt werden, ist aber nicht Bestandteil des Programms. Der TPC wird auf Basis derselben Bedingungen lizenziert wie das Programm, sofern nachstehend nicht anders angegeben. Hinweise auf den TPC sind in der Notices-Datei zu finden (oder in einer aktualisierten Notices-Datei, die den Updates beigepackt ist). Möglicherweise werden Teile des TPC oder der gesamte TPC von IBM nie als Produkt allgemein zur Verfügung gestellt. Der TPC darf nur intern für Bewertungszwecke und nicht in einer Produktionsumgebung verwendet werden. In der Notices-Datei kann ein Bewertungszeitraum angegeben sein. Ist dies der Fall, muss der Lizenznehmer die Nutzung des TPC bei Ablauf des Bewertungszeitraums einstellen und den TPC deinstallieren. IBM stellt den TPC ohne eine Verpflichtung zur Unterstützung, im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
+Technology Preview Code (TPC, Code fÃ¼r Technologievorschau) kann in das Programm oder in Programmupdates integriert sein oder damit verteilt werden, ist aber nicht Bestandteil des Programms. Der TPC wird auf Basis derselben Bedingungen lizenziert wie das Programm, sofern nachstehend nicht anders angegeben. Hinweise auf den TPC sind in der Notices-Datei zu finden (oder in einer aktualisierten Notices-Datei, die den Updates beigepackt ist). MÃ¶glicherweise werden Teile des TPC oder der gesamte TPC von IBM nie als Produkt allgemein zur VerfÃ¼gung gestellt. Der TPC darf nur intern fÃ¼r Bewertungszwecke und nicht in einer Produktionsumgebung verwendet werden. In der Notices-Datei kann ein Bewertungszeitraum angegeben sein. Ist dies der Fall, muss der Lizenznehmer die Nutzung des TPC bei Ablauf des Bewertungszeitraums einstellen und den TPC deinstallieren. IBM stellt den TPC ohne eine Verpflichtung zur UnterstÃ¼tzung, im gegenwÃ¤rtigen Zustand (auf "as-is"-Basis) und ohne jegliche GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) zur VerfÃ¼gung, insbesondere ohne GewÃ¤hrleistung fÃ¼r RechtsmÃ¤ngel, die Freiheit von Rechten Dritter, das Recht auf NichtbeeintrÃ¤chtigung, die HandelsÃ¼blichkeit und die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck.
 
-Der Lizenznehmer darf den TPC nicht an Dritte übertragen, außer in Verbindung mit der Übertragung des Programms. Der TPC kann eine Inaktivierungseinheit enthalten, die verhindert, dass er nach Ablauf des Bewertungszeitraums weiter verwendet werden kann. Es ist dem Lizenznehmer nicht gestattet, die Inaktivierungseinheit oder den TPC zu manipulieren. Der Lizenznehmer sollte entsprechende Vorkehrungsmaßnahmen treffen, um Datenverluste für den Fall zu vermeiden, dass der TPC nicht mehr ausgeführt werden kann.
+Der Lizenznehmer darf den TPC nicht an Dritte Ã¼bertragen, auÃŸer in Verbindung mit der Ãœbertragung des Programms. Der TPC kann eine Inaktivierungseinheit enthalten, die verhindert, dass er nach Ablauf des Bewertungszeitraums weiter verwendet werden kann. Es ist dem Lizenznehmer nicht gestattet, die Inaktivierungseinheit oder den TPC zu manipulieren. Der Lizenznehmer sollte entsprechende VorkehrungsmaÃŸnahmen treffen, um Datenverluste fÃ¼r den Fall zu vermeiden, dass der TPC nicht mehr ausgefÃ¼hrt werden kann.
 
-Der Lizenznehmer überlässt IBM alle Rechte (inklusive aller infrage kommenden Nutzungs- und Verwertungsrechte) und Rechtsansprüche auf alle Daten, Vorschläge und schriftlichen Materialien, die sich 1) auf den Technology Preview Code beziehen und 2) die der Lizenznehmer IBM zur Verfügung stellt. Auf Anforderung von IBM wird der Lizenznehmer zusätzliche Dokumente zur Absicherung dieser Rechte unterzeichnen. Darüber hinaus erteilt der Lizenznehmer IBM eine nicht ausschließliche, unwiderrufliche, nicht eingeschränkte, weltweite und abgegoltene Lizenz, a) das Know-how sowie die Ideen, Konzepte, Verfahren, Erfindungen, Entdeckungen und Verbesserungen (ob patentierbar oder nicht), die der Lizenznehmer IBM zur Verfügung stellt und die sich auf den Technology Preview Code beziehen, in ein beliebiges Produkt oder einen beliebigen Service zu integrieren; b) ein solches Produkt oder einen solchen Service zu nutzen, zu produzieren und zu vermarkten; und c) anderen dieselben Rechte zu gewähren.
+Der Lizenznehmer Ã¼berlÃ¤sst IBM alle Rechte (inklusive aller infrage kommenden Nutzungs- und Verwertungsrechte) und RechtsansprÃ¼che auf alle Daten, VorschlÃ¤ge und schriftlichen Materialien, die sich 1) auf den Technology Preview Code beziehen und 2) die der Lizenznehmer IBM zur VerfÃ¼gung stellt. Auf Anforderung von IBM wird der Lizenznehmer zusÃ¤tzliche Dokumente zur Absicherung dieser Rechte unterzeichnen. DarÃ¼ber hinaus erteilt der Lizenznehmer IBM eine nicht ausschlieÃŸliche, unwiderrufliche, nicht eingeschrÃ¤nkte, weltweite und abgegoltene Lizenz, a) das Know-how sowie die Ideen, Konzepte, Verfahren, Erfindungen, Entdeckungen und Verbesserungen (ob patentierbar oder nicht), die der Lizenznehmer IBM zur VerfÃ¼gung stellt und die sich auf den Technology Preview Code beziehen, in ein beliebiges Produkt oder einen beliebigen Service zu integrieren; b) ein solches Produkt oder einen solchen Service zu nutzen, zu produzieren und zu vermarkten; und c) anderen dieselben Rechte zu gewÃ¤hren.
 
-Der Lizenznehmer erklärt sich damit einverstanden, die folgenden Informationen als "IBM vertraulich" zu behandeln, unabhängig davon, ob sie entsprechende Kennzeichnungen enthalten, die auf den vertraulichen Inhalt hindeuten, oder vor der Offenlegung als IBM vertraulich ausgewiesen wurden: a) den Technology Preview Code, (b) alle Informationen, die dem Lizenznehmer von IBM für den Technology Preview Code zur Verfügung gestellt wurden, einschließlich des Referenzmaterials wie z. B. Spezifikationen, Pläne, Trends, Strategien, Benchmarks, Leistungsmerkmale, Vergleichsdaten und andere Bewertungen des Technology Preview Codes, (c) alle Informationen, die sich auf den Zugriff des Lizenznehmers auf den Technology Preview Code beziehen, einschließlich Kennwörtern und Zugriffscodes, und (d) sämtliche Daten, Feedbacks, Vorschläge und/oder schriftliche Unterlagen, die der Lizenznehmer IBM in Bezug auf den Technology Preview Code zur Verfügung stellt. Der Lizenznehmer ist berechtigt, die vertraulichen Informationen von IBM zu dem Zweck zu verwenden, für den sie freigegeben wurden, oder anderweitig zum Vorteil von IBM einzusetzen. Ungeachtet anderer Bedingungen in dieser Vereinbarung sichert der Lizenznehmer zu, die vertraulichen Informationen von IBM (wie beispielsweise Artikel, Beiträge oder andere schriftliche Unterlagen, die sich auf die vertraulichen Informationen von IBM beziehen) weder zu veröffentlichen, offenzulegen, zu verbreiten, an Dritte weiterzugeben noch anderweitig mit Dritten zu erörtern, bevor IBM diese Informationen allgemein ohne Geheimhaltungsverpflichtung zur Verfügung stellt. Ungeachtet der vorstehenden Ausführungen hat der Lizenznehmer keine Geheimhaltungsverpflichtung in Bezug auf Technology Preview Code, der in der Notices-Datei als nicht vertraulich angegeben ist.
+Der Lizenznehmer erklÃ¤rt sich damit einverstanden, die folgenden Informationen als "IBM vertraulich" zu behandeln, unabhÃ¤ngig davon, ob sie entsprechende Kennzeichnungen enthalten, die auf den vertraulichen Inhalt hindeuten, oder vor der Offenlegung als IBM vertraulich ausgewiesen wurden: a) den Technology Preview Code, (b) alle Informationen, die dem Lizenznehmer von IBM fÃ¼r den Technology Preview Code zur VerfÃ¼gung gestellt wurden, einschlieÃŸlich des Referenzmaterials wie z. B. Spezifikationen, PlÃ¤ne, Trends, Strategien, Benchmarks, Leistungsmerkmale, Vergleichsdaten und andere Bewertungen des Technology Preview Codes, (c) alle Informationen, die sich auf den Zugriff des Lizenznehmers auf den Technology Preview Code beziehen, einschlieÃŸlich KennwÃ¶rtern und Zugriffscodes, und (d) sÃ¤mtliche Daten, Feedbacks, VorschlÃ¤ge und/oder schriftliche Unterlagen, die der Lizenznehmer IBM in Bezug auf den Technology Preview Code zur VerfÃ¼gung stellt. Der Lizenznehmer ist berechtigt, die vertraulichen Informationen von IBM zu dem Zweck zu verwenden, fÃ¼r den sie freigegeben wurden, oder anderweitig zum Vorteil von IBM einzusetzen. Ungeachtet anderer Bedingungen in dieser Vereinbarung sichert der Lizenznehmer zu, die vertraulichen Informationen von IBM (wie beispielsweise Artikel, BeitrÃ¤ge oder andere schriftliche Unterlagen, die sich auf die vertraulichen Informationen von IBM beziehen) weder zu verÃ¶ffentlichen, offenzulegen, zu verbreiten, an Dritte weiterzugeben noch anderweitig mit Dritten zu erÃ¶rtern, bevor IBM diese Informationen allgemein ohne Geheimhaltungsverpflichtung zur VerfÃ¼gung stellt. Ungeachtet der vorstehenden AusfÃ¼hrungen hat der Lizenznehmer keine Geheimhaltungsverpflichtung in Bezug auf Technology Preview Code, der in der Notices-Datei als nicht vertraulich angegeben ist.
 
-Der Lizenznehmer erklärt sich damit einverstanden, zum Schutz der vertraulichen Informationen von IBM vor einer Offenlegung dieselbe Sorgfalt und Verschwiegenheit aufzuwenden wie für seine eigenen vertraulichen Informationen, deren Offenlegung er nicht wünscht, und in jedem Fall mit der gebotenen Sorgfalt vorgehen. Die Verpflichtungen des Lizenznehmers hinsichtlich der vertraulichen Informationen von IBM bestehen für die Dauer von zwei Jahren ab dem Zeitpunkt des Erhalts dieser Informationen. Der Lizenznehmer willigt ein, Informationen, die er oder Dritte als vertraulich oder proprietär einstufen, nur im Rahmen einer unterzeichneten, separaten, schriftlichen Vertraulichkeitsvereinbarung an IBM weiterzugeben.
+Der Lizenznehmer erklÃ¤rt sich damit einverstanden, zum Schutz der vertraulichen Informationen von IBM vor einer Offenlegung dieselbe Sorgfalt und Verschwiegenheit aufzuwenden wie fÃ¼r seine eigenen vertraulichen Informationen, deren Offenlegung er nicht wÃ¼nscht, und in jedem Fall mit der gebotenen Sorgfalt vorgehen. Die Verpflichtungen des Lizenznehmers hinsichtlich der vertraulichen Informationen von IBM bestehen fÃ¼r die Dauer von zwei Jahren ab dem Zeitpunkt des Erhalts dieser Informationen. Der Lizenznehmer willigt ein, Informationen, die er oder Dritte als vertraulich oder proprietÃ¤r einstufen, nur im Rahmen einer unterzeichneten, separaten, schriftlichen Vertraulichkeitsvereinbarung an IBM weiterzugeben.
 
-Ungeachtet dessen, ob eine Vertraulichkeitsvereinbarung oder eine andere Form der Vereinbarung über vertrauliche Informationen zwischen dem Lizenznehmer und IBM besteht, unterliegt die Behandlung vertraulicher Informationen den Regelungen der vorangehenden Abschnitte.
+Ungeachtet dessen, ob eine Vertraulichkeitsvereinbarung oder eine andere Form der Vereinbarung Ã¼ber vertrauliche Informationen zwischen dem Lizenznehmer und IBM besteht, unterliegt die Behandlung vertraulicher Informationen den Regelungen der vorangehenden Abschnitte.
 
-Export- und Importbeschränkungen
+Export- und ImportbeschrÃ¤nkungen
 
-Dieses Programm kann Verschlüsselungstechnologie enthalten. Die Übertragung des Programms an andere Benutzer oder deren Verwendung des Programms ist möglicherweise untersagt oder unterliegt den Gesetzen, Verordnungen oder Bestimmungen für den Export oder Import, einschließlich der Export Administration Regulations (Exportkontrollbestimmungen) der Vereinigten Staaten. Der Lizenznehmer übernimmt die gesamte Verantwortung für die Einhaltung aller anwendbaren Gesetze, Verordnungen und Bestimmungen hinsichtlich des Exports, Imports oder der Verwendung dieses Programms, einschließlich der US-Beschränkungen, die für Exporte und Reexporte gelten. Die Exportklassifizierung dieses Programms kann über die folgende Adresse festgestellt werden: https://www.ibm.com/products/exporting/.
+Dieses Programm kann VerschlÃ¼sselungstechnologie enthalten. Die Ãœbertragung des Programms an andere Benutzer oder deren Verwendung des Programms ist mÃ¶glicherweise untersagt oder unterliegt den Gesetzen, Verordnungen oder Bestimmungen fÃ¼r den Export oder Import, einschlieÃŸlich der Export Administration Regulations (Exportkontrollbestimmungen) der Vereinigten Staaten. Der Lizenznehmer Ã¼bernimmt die gesamte Verantwortung fÃ¼r die Einhaltung aller anwendbaren Gesetze, Verordnungen und Bestimmungen hinsichtlich des Exports, Imports oder der Verwendung dieses Programms, einschlieÃŸlich der US-BeschrÃ¤nkungen, die fÃ¼r Exporte und Reexporte gelten. Die Exportklassifizierung dieses Programms kann Ã¼ber die folgende Adresse festgestellt werden: https://www.ibm.com/products/exporting/.
 
 Daten und Services von Drittanbietern
 
-Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff und die Nutzung dieser Inhalte abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
+Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) zur VerfÃ¼gung gestellt, insbesondere ohne GewÃ¤hrleistung fÃ¼r RechtsmÃ¤ngel, fÃ¼r die Freiheit von Rechten Dritter, fÃ¼r das Recht auf NichtbeeintrÃ¤chtigung, fÃ¼r die HandelsÃ¼blichkeit und fÃ¼r die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern Ã¼ber den Zugriff und die Nutzung dieser Inhalte abschlieÃŸen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklÃ¤rt sich aufgrund der ausdrÃ¼cklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
-L/N:  L-ASAY-BAPDVT
-D/N:  L-ASAY-BAPDVT
-P/N:  L-ASAY-BAPDVT
+L/N:  L-ASAY-BFHF34
+D/N:  L-ASAY-BFHF34
+P/N:  L-ASAY-BFHF34
 
 
-Internationale Nutzungsbedingungen für Programme ohne Gewährleistung
+Internationale Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung
 
 Teil 1 - Allgemeine Bedingungen
 
-Durch Herunterladen, Installieren oder Kopieren des Programms, die Zustimmung zur Vereinbarung per Mausklick, den Zugriff auf das Programm oder eine anderweitige Nutzung des Programms erklärt sich der Lizenznehmer mit den Bedingungen dieser Vereinbarung einverstanden. Wenn Sie diese Bedingungen im Namen des Lizenznehmers akzeptieren, gewährleisten und bestätigen Sie damit, dass Sie berechtigt sind, den Lizenznehmer zur Einhaltung dieser Bedingungen zu verpflichten. Wenn Sie mit diesen Bedingungen nicht einverstanden sind,
+Durch Herunterladen, Installieren oder Kopieren des Programms, die Zustimmung zur Vereinbarung per Mausklick, den Zugriff auf das Programm oder eine anderweitige Nutzung des Programms erklÃ¤rt sich der Lizenznehmer mit den Bedingungen dieser Vereinbarung einverstanden. Wenn Sie diese Bedingungen im Namen des Lizenznehmers akzeptieren, gewÃ¤hrleisten und bestÃ¤tigen Sie damit, dass Sie berechtigt sind, den Lizenznehmer zur Einhaltung dieser Bedingungen zu verpflichten. Wenn Sie mit diesen Bedingungen nicht einverstanden sind,
 
-* dürfen Sie das Programm nicht herunterladen, installieren, kopieren, die Vereinbarung per Mausklick akzeptieren, auf das Programm zugreifen oder das Programm nutzen und
+* dÃ¼rfen Sie das Programm nicht herunterladen, installieren, kopieren, die Vereinbarung per Mausklick akzeptieren, auf das Programm zugreifen oder das Programm nutzen und
 
-* müssen Sie die unbenutzten Datenträger und die Dokumentation unverzüglich bei der Stelle, von der Sie das Programm bezogen haben, gegen Rückerstattung des gezahlten Betrags zurückgeben. Wurde das Programm heruntergeladen, müssen alle Kopien des Programms vernichtet werden.
+* mÃ¼ssen Sie die unbenutzten DatentrÃ¤ger und die Dokumentation unverzÃ¼glich bei der Stelle, von der Sie das Programm bezogen haben, gegen RÃ¼ckerstattung des gezahlten Betrags zurÃ¼ckgeben. Wurde das Programm heruntergeladen, mÃ¼ssen alle Kopien des Programms vernichtet werden.
 
 1. Begriffsbestimmungen
 
-"Berechtigte Nutzung" - die Nutzungsstufe, die festlegt, in welchem Umfang der Lizenznehmer zur Ausführung des Programms berechtigt ist. Die Nutzungsstufe kann anhand der Anzahl der Benutzer, der Millionen Serviceeinheiten pro Stunde (Millions of Service Units = "MSUs"), der Prozessor-Value-Units ("PVUs") oder einer anderen von IBM angegebenen Nutzungsstufe ermittelt werden.
+"Berechtigte Nutzung" - die Nutzungsstufe, die festlegt, in welchem Umfang der Lizenznehmer zur AusfÃ¼hrung des Programms berechtigt ist. Die Nutzungsstufe kann anhand der Anzahl der Benutzer, der Millionen Serviceeinheiten pro Stunde (Millions of Service Units = "MSUs"), der Prozessor-Value-Units ("PVUs") oder einer anderen von IBM angegebenen Nutzungsstufe ermittelt werden.
 
 "IBM" - International Business Machines Corporation oder deren verbundene Unternehmen.
 
-"Lizenzinformation" ("LI") - ein Dokument, das Informationen und zusätzliche programmspezifische Bedingungen enthält. Die Lizenzinformation eines Programms kann unter www.ibm.com/software/sla abgerufen werden. Darüber hinaus kann sie im Verzeichnis des Programms zur Verfügung gestellt oder über einen entsprechenden Systembefehl abgerufen werden oder ist dem Programm als Broschüre beigelegt.
+"Lizenzinformation" ("LI") - ein Dokument, das Informationen und zusÃ¤tzliche programmspezifische Bedingungen enthÃ¤lt. Die Lizenzinformation eines Programms kann unter www.ibm.com/software/sla abgerufen werden. DarÃ¼ber hinaus kann sie im Verzeichnis des Programms zur VerfÃ¼gung gestellt oder Ã¼ber einen entsprechenden Systembefehl abgerufen werden oder ist dem Programm als BroschÃ¼re beigelegt.
 
-"Programm" - umfasst das Originalprogramm sowie vollständige oder Teilkopien hiervon und kann aus 1) maschinenlesbaren Instruktionen und Daten, 2) Komponenten, Dateien und Modulen, 3) audiovisuellen Inhalten (z. B. Abbildungen, Texte, Aufzeichnungen oder Bilder) und 4) zugehörigem Lizenzmaterial (z. B. Schlüssel und Dokumentation) bestehen.
+"Programm" - umfasst das Originalprogramm sowie vollstÃ¤ndige oder Teilkopien hiervon und kann aus 1) maschinenlesbaren Instruktionen und Daten, 2) Komponenten, Dateien und Modulen, 3) audiovisuellen Inhalten (z. B. Abbildungen, Texte, Aufzeichnungen oder Bilder) und 4) zugehÃ¶rigem Lizenzmaterial (z. B. SchlÃ¼ssel und Dokumentation) bestehen.
 
 2. Struktur dieser Vereinbarung
 
-Diese Vereinbarung besteht aus Teil 1 - Allgemeine Bedingungen, Teil 2 - Länderspezifische Bedingungen (sofern vorhanden) und den Lizenzinformationen und stellt die vollständige Vereinbarung zwischen dem Lizenznehmer und IBM zur Nutzung des Programms dar. Sie ersetzt alle zuvor getroffenen mündlichen oder schriftlichen Absprachen zwischen dem Lizenznehmer und IBM in Bezug auf die Nutzung des Programms durch den Lizenznehmer. Die Bedingungen von Teil 2 können diejenigen in Teil 1 ersetzen oder ergänzen. Im Falle eines Widerspruchs haben die Lizenzinformationen Vorrang vor Teil 1 und Teil 2 dieser Vereinbarung.
+Diese Vereinbarung besteht aus Teil 1 - Allgemeine Bedingungen, Teil 2 - LÃ¤nderspezifische Bedingungen (sofern vorhanden) und den Lizenzinformationen und stellt die vollstÃ¤ndige Vereinbarung zwischen dem Lizenznehmer und IBM zur Nutzung des Programms dar. Sie ersetzt alle zuvor getroffenen mÃ¼ndlichen oder schriftlichen Absprachen zwischen dem Lizenznehmer und IBM in Bezug auf die Nutzung des Programms durch den Lizenznehmer. Die Bedingungen von Teil 2 kÃ¶nnen diejenigen in Teil 1 ersetzen oder ergÃ¤nzen. Im Falle eines Widerspruchs haben die Lizenzinformationen Vorrang vor Teil 1 und Teil 2 dieser Vereinbarung.
 
 3. Lizenz
 
-Das Programm ist Eigentum von IBM oder eines IBM Lieferanten und wird urheberrechtlich geschützt und lizenziert, jedoch nicht verkauft.
+Das Programm ist Eigentum von IBM oder eines IBM Lieferanten und wird urheberrechtlich geschÃ¼tzt und lizenziert, jedoch nicht verkauft.
 
-IBM erteilt dem Lizenznehmer eine nicht ausschließliche Lizenz, 1) das Programm bis zu der auf der Rechnung angegebenen berechtigten Nutzung zu verwenden, 2) Kopien des Programms zur Unterstützung der berechtigten Nutzung zu erstellen und zu installieren und 3) eine Sicherungskopie zu erstellen, sofern
+IBM erteilt dem Lizenznehmer eine nicht ausschlieÃŸliche Lizenz, 1) das Programm bis zu der auf der Rechnung angegebenen berechtigten Nutzung zu verwenden, 2) Kopien des Programms zur UnterstÃ¼tzung der berechtigten Nutzung zu erstellen und zu installieren und 3) eine Sicherungskopie zu erstellen, sofern
 
-a. der Lizenznehmer das Programm rechtmäßig bezogen hat und die Bedingungen dieser Vereinbarung einhält;
+a. der Lizenznehmer das Programm rechtmÃ¤ÃŸig bezogen hat und die Bedingungen dieser Vereinbarung einhÃ¤lt;
 
-b. die Sicherungskopie erst ausgeführt wird, wenn das gesicherte Programm nicht mehr ausführbar ist;
+b. die Sicherungskopie erst ausgefÃ¼hrt wird, wenn das gesicherte Programm nicht mehr ausfÃ¼hrbar ist;
 
 c. der Lizenznehmer auf jeder Kopie oder Teilkopie des Programms alle Copyrightvermerke und sonstigen Eigentumshinweise anbringt;
 
-d. der Lizenznehmer sicherstellt, dass jeder Benutzer (unabhängig davon, ob der Zugriff lokal oder von einem fernen System aus erfolgt) das Programm 1) nur für Geschäftszwecke des Lizenznehmers nutzt und 2) die Bedingungen dieser Vereinbarung einhält;
+d. der Lizenznehmer sicherstellt, dass jeder Benutzer (unabhÃ¤ngig davon, ob der Zugriff lokal oder von einem fernen System aus erfolgt) das Programm 1) nur fÃ¼r GeschÃ¤ftszwecke des Lizenznehmers nutzt und 2) die Bedingungen dieser Vereinbarung einhÃ¤lt;
 
-e. der Lizenznehmer sich verpflichtet, 1) das Programm nicht abweichend von den Bedingungen dieser Vereinbarung zu nutzen, zu kopieren, zu ändern oder weiterzugeben; 2) das Programm nicht rückumzuwandeln (reverse assemble, reverse compile) oder in anderer Weise zu übersetzen, soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgeschrieben ist; 3) die Komponenten, Dateien, Module, audiovisuellen Inhalte und das zugehörige Lizenzmaterial des Programms nicht ohne das Programm zu nutzen; oder 4) das Programm nicht in Unterlizenz zu vergeben, zu vermieten oder zu verleasen; und,
+e. der Lizenznehmer sich verpflichtet, 1) das Programm nicht abweichend von den Bedingungen dieser Vereinbarung zu nutzen, zu kopieren, zu Ã¤ndern oder weiterzugeben; 2) das Programm nicht rÃ¼ckumzuwandeln (reverse assemble, reverse compile) oder in anderer Weise zu Ã¼bersetzen, soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgeschrieben ist; 3) die Komponenten, Dateien, Module, audiovisuellen Inhalte und das zugehÃ¶rige Lizenzmaterial des Programms nicht ohne das Programm zu nutzen; oder 4) das Programm nicht in Unterlizenz zu vergeben, zu vermieten oder zu verleasen; und,
 
-f. wenn der Lizenznehmer dieses Programm als Unterstützungsprogramm erhält, dieses Programm nur zur Unterstützung des Hauptprogramms und unter Einhaltung sämtlicher Einschränkungen in der Lizenz für das Hauptprogramm zu nutzen, oder wenn der Lizenznehmer dieses Programm als Hauptprogramm erhält, alle Unterstützungsprogramme nur zur Unterstützung dieses Programms und unter Einhaltung sämtlicher Einschränkungen in dieser Vereinbarung zu nutzen. In diesem Abschnitt bezeichnet ein "Unterstützungsprogramm" ein Programm, das Teil eines anderen IBM Programms ("Hauptprogramm") ist und in der Lizenzinformation des Hauptprogramms als Unterstützungsprogramm aufgeführt wird. (Um eine separate Lizenz für das Unterstützungsprogramm ohne diese Einschränkungen zu erwerben, sollte sich der Lizenznehmer an die Stelle wenden, von der er das Unterstützungsprogramm bezogen hat.)
+f. wenn der Lizenznehmer dieses Programm als UnterstÃ¼tzungsprogramm erhÃ¤lt, dieses Programm nur zur UnterstÃ¼tzung des Hauptprogramms und unter Einhaltung sÃ¤mtlicher EinschrÃ¤nkungen in der Lizenz fÃ¼r das Hauptprogramm zu nutzen, oder wenn der Lizenznehmer dieses Programm als Hauptprogramm erhÃ¤lt, alle UnterstÃ¼tzungsprogramme nur zur UnterstÃ¼tzung dieses Programms und unter Einhaltung sÃ¤mtlicher EinschrÃ¤nkungen in dieser Vereinbarung zu nutzen. In diesem Abschnitt bezeichnet ein "UnterstÃ¼tzungsprogramm" ein Programm, das Teil eines anderen IBM Programms ("Hauptprogramm") ist und in der Lizenzinformation des Hauptprogramms als UnterstÃ¼tzungsprogramm aufgefÃ¼hrt wird. (Um eine separate Lizenz fÃ¼r das UnterstÃ¼tzungsprogramm ohne diese EinschrÃ¤nkungen zu erwerben, sollte sich der Lizenznehmer an die Stelle wenden, von der er das UnterstÃ¼tzungsprogramm bezogen hat.)
 
-Diese Lizenz gilt für jede Kopie des Programms, die der Lizenznehmer erstellt.
+Diese Lizenz gilt fÃ¼r jede Kopie des Programms, die der Lizenznehmer erstellt.
 
 3.1 Trade-ups, Updates, Fixes und Patches
 
 3.1.1 Trade-ups
 
-Wird das Programm durch ein Trade-up-Programm ersetzt, dann erlischt die Lizenz des ersetzten Programms unverzüglich.
+Wird das Programm durch ein Trade-up-Programm ersetzt, dann erlischt die Lizenz des ersetzten Programms unverzÃ¼glich.
 
 3.1.2 Updates, Fixes und Patches
 
-Wenn der Lizenznehmer Updates, Fixes oder Patches für ein Programm erhält, dann akzeptiert er alle zusätzlichen oder abweichenden Bedingungen, die in der Lizenzinformation für die Updates, Fixes oder Patches aufgeführt sind. Werden keine zusätzlichen oder abweichenden Bedingungen bereitgestellt, unterliegen die Updates, Fixes oder Patches ausschließlich dieser Vereinbarung. Wird das Programm durch ein Update ersetzt, erklärt sich der Lizenznehmer damit einverstanden, die Nutzung des ersetzten Programms unverzüglich einzustellen.
+Wenn der Lizenznehmer Updates, Fixes oder Patches fÃ¼r ein Programm erhÃ¤lt, dann akzeptiert er alle zusÃ¤tzlichen oder abweichenden Bedingungen, die in der Lizenzinformation fÃ¼r die Updates, Fixes oder Patches aufgefÃ¼hrt sind. Werden keine zusÃ¤tzlichen oder abweichenden Bedingungen bereitgestellt, unterliegen die Updates, Fixes oder Patches ausschlieÃŸlich dieser Vereinbarung. Wird das Programm durch ein Update ersetzt, erklÃ¤rt sich der Lizenznehmer damit einverstanden, die Nutzung des ersetzten Programms unverzÃ¼glich einzustellen.
 
 3.2 Lizenzen mit fester Laufzeit
 
-Wenn IBM das Programm für eine feste Laufzeit lizenziert, dann erlischt die Lizenz des Lizenznehmers mit dem Ablauf der festen Laufzeit, sofern der Lizenznehmer und IBM die Lizenz nicht in beidseitigem Einverständnis verlängern.
+Wenn IBM das Programm fÃ¼r eine feste Laufzeit lizenziert, dann erlischt die Lizenz des Lizenznehmers mit dem Ablauf der festen Laufzeit, sofern der Lizenznehmer und IBM die Lizenz nicht in beidseitigem EinverstÃ¤ndnis verlÃ¤ngern.
 
-3.3 Laufzeit und Kündigung
+3.3 Laufzeit und KÃ¼ndigung
 
-Diese Vereinbarung bleibt bis zur Kündigung wirksam.
+Diese Vereinbarung bleibt bis zur KÃ¼ndigung wirksam.
 
-IBM kann die Lizenz des Lizenznehmers kündigen, wenn der Lizenznehmer die Bedingungen dieser Vereinbarung nicht erfüllt.
+IBM kann die Lizenz des Lizenznehmers kÃ¼ndigen, wenn der Lizenznehmer die Bedingungen dieser Vereinbarung nicht erfÃ¼llt.
 
-Wird die Lizenz von einer der Vertragsparteien aus irgendeinem Grund gekündigt, erklärt sich der Lizenznehmer damit einverstanden, die Nutzung des Programms unverzüglich einzustellen und alle Programmkopien zu vernichten. Bedingungen, die sich ihrer Natur nach auf die Zeit nach einer Beendigung dieser Vereinbarung erstrecken, bleiben bis zu ihrer Erfüllung in Kraft und gelten auch für eventuelle Rechtsnachfolger und Zessionare.
+Wird die Lizenz von einer der Vertragsparteien aus irgendeinem Grund gekÃ¼ndigt, erklÃ¤rt sich der Lizenznehmer damit einverstanden, die Nutzung des Programms unverzÃ¼glich einzustellen und alle Programmkopien zu vernichten. Bedingungen, die sich ihrer Natur nach auf die Zeit nach einer Beendigung dieser Vereinbarung erstrecken, bleiben bis zu ihrer ErfÃ¼llung in Kraft und gelten auch fÃ¼r eventuelle Rechtsnachfolger und Zessionare.
 
-4. Gebühren
+4. GebÃ¼hren
 
-Die Gebühren (sofern Gebühren anfallen) basieren auf der erworbenen berechtigten Nutzung, die auf der Rechnung angegeben ist. IBM gewährt keine Gutschriften oder Rückerstattungen für bereits fällige oder gezahlte Gebühren, mit Ausnahme anderslautender Bestimmungen in dieser Vereinbarung.
+Die GebÃ¼hren (sofern GebÃ¼hren anfallen) basieren auf der erworbenen berechtigten Nutzung, die auf der Rechnung angegeben ist. IBM gewÃ¤hrt keine Gutschriften oder RÃ¼ckerstattungen fÃ¼r bereits fÃ¤llige oder gezahlte GebÃ¼hren, mit Ausnahme anderslautender Bestimmungen in dieser Vereinbarung.
 
-Wenn der Lizenznehmer die berechtigte Nutzung erhöhen will, wird er IBM oder einen autorisierten IBM Reseller vorab benachrichtigen und die anfallenden Gebühren bezahlen.
+Wenn der Lizenznehmer die berechtigte Nutzung erhÃ¶hen will, wird er IBM oder einen autorisierten IBM Reseller vorab benachrichtigen und die anfallenden GebÃ¼hren bezahlen.
 
 5. Steuern
 
-Der Lizenznehmer trägt die mit dem Programm verbundenen und von IBM angegebenen Steuern, Abgaben und Gebühren (mit Ausnahme solcher auf den Ertrag von IBM) oder weist eine entsprechende Befreiung nach. Ab dem Datum, an dem der Lizenznehmer das Programm erhält, ist er für alle das Programm betreffenden Vermögenssteuern verantwortlich. Wenn durch den Import oder den Export des Programms, die Übertragung, den Zugriff auf das Programm oder die Nutzung des Programms außerhalb des Landes, in dem der ursprüngliche Lizenznehmer die Lizenz erhalten hat, Zölle, Steuern, Abgaben oder Gebühren auf das Programm erhoben werden, trägt der Lizenznehmer alle entsprechenden Steuern, Abgaben oder Gebühren und wird den in Rechnung gestellten Betrag bezahlen.
+Der Lizenznehmer trÃ¤gt die mit dem Programm verbundenen und von IBM angegebenen Steuern, Abgaben und GebÃ¼hren (mit Ausnahme solcher auf den Ertrag von IBM) oder weist eine entsprechende Befreiung nach. Ab dem Datum, an dem der Lizenznehmer das Programm erhÃ¤lt, ist er fÃ¼r alle das Programm betreffenden VermÃ¶genssteuern verantwortlich. Wenn durch den Import oder den Export des Programms, die Ãœbertragung, den Zugriff auf das Programm oder die Nutzung des Programms auÃŸerhalb des Landes, in dem der ursprÃ¼ngliche Lizenznehmer die Lizenz erhalten hat, ZÃ¶lle, Steuern, Abgaben oder GebÃ¼hren auf das Programm erhoben werden, trÃ¤gt der Lizenznehmer alle entsprechenden Steuern, Abgaben oder GebÃ¼hren und wird den in Rechnung gestellten Betrag bezahlen.
 
-6. Geld-zurück-Garantie
+6. Geld-zurÃ¼ck-Garantie
 
-Falls der Lizenznehmer aus irgendeinem Grund mit dem Programm nicht zufrieden ist und wenn er der ursprüngliche Lizenznehmer des Programms ist, kann er die Lizenz kündigen und sich den für das Programm gezahlten Betrag zurückerstatten lassen, sofern er das Programm innerhalb von 30 Tagen nach dem Rechnungsdatum an die Stelle zurückgibt, von der er das Programm bezogen hat. Wenn es sich um eine Lizenz mit fester Laufzeit handelt, die verlängert werden kann, kann der Lizenznehmer nur dann eine Rückerstattung anfordern, wenn er das Programm in den ersten 30 Tagen der Erstlaufzeit zurückgibt. Wenn der Lizenznehmer das Programm heruntergeladen hat, erhält er von der Stelle, von der er das Programm bezogen hat, weitere Anweisungen zur Erstattung des gezahlten Betrags.
+Falls der Lizenznehmer aus irgendeinem Grund mit dem Programm nicht zufrieden ist und wenn er der ursprÃ¼ngliche Lizenznehmer des Programms ist, kann er die Lizenz kÃ¼ndigen und sich den fÃ¼r das Programm gezahlten Betrag zurÃ¼ckerstatten lassen, sofern er das Programm innerhalb von 30 Tagen nach dem Rechnungsdatum an die Stelle zurÃ¼ckgibt, von der er das Programm bezogen hat. Wenn es sich um eine Lizenz mit fester Laufzeit handelt, die verlÃ¤ngert werden kann, kann der Lizenznehmer nur dann eine RÃ¼ckerstattung anfordern, wenn er das Programm in den ersten 30 Tagen der Erstlaufzeit zurÃ¼ckgibt. Wenn der Lizenznehmer das Programm heruntergeladen hat, erhÃ¤lt er von der Stelle, von der er das Programm bezogen hat, weitere Anweisungen zur Erstattung des gezahlten Betrags.
 
-7. Programmübertragung
+7. ProgrammÃ¼bertragung
 
-Der Lizenznehmer darf das Programm und alle Lizenzrechte und -pflichten nur an Dritte übertragen, wenn diese sich mit den Bedingungen dieser Vereinbarung einverstanden erklären. Wird die Lizenz von einer der Vertragsparteien aus irgendeinem Grund gekündigt, ist es dem Lizenznehmer untersagt, das Programm an Dritte weiterzugeben. Es ist dem Lizenznehmer nicht gestattet, einen Teil 1) des Programms oder 2) der berechtigten Nutzung des Programms zu übertragen. Wird das Programm übertragen, muss der Lizenznehmer auch eine Hardcopy dieser Vereinbarung einschließlich der Lizenzinformation beifügen. Die Lizenz des Lizenznehmers erlischt mit der Übertragung.
+Der Lizenznehmer darf das Programm und alle Lizenzrechte und -pflichten nur an Dritte Ã¼bertragen, wenn diese sich mit den Bedingungen dieser Vereinbarung einverstanden erklÃ¤ren. Wird die Lizenz von einer der Vertragsparteien aus irgendeinem Grund gekÃ¼ndigt, ist es dem Lizenznehmer untersagt, das Programm an Dritte weiterzugeben. Es ist dem Lizenznehmer nicht gestattet, einen Teil 1) des Programms oder 2) der berechtigten Nutzung des Programms zu Ã¼bertragen. Wird das Programm Ã¼bertragen, muss der Lizenznehmer auch eine Hardcopy dieser Vereinbarung einschlieÃŸlich der Lizenzinformation beifÃ¼gen. Die Lizenz des Lizenznehmers erlischt mit der Ãœbertragung.
 
-8. Gewährleistungsausschluss
+8. GewÃ¤hrleistungsausschluss
 
-Vorbehaltlich einer gesetzlichen Gewährleistung, die nicht ausgeschlossen werden kann, übernimmt IBM keine Gewährleistung (ausdrücklich oder stillschweigend) hinsichtlich des Programms oder der Unterstützung (sofern vorgesehen), einschließlich, aber nicht begrenzt auf die zufriedenstellende Qualität, Handelsüblichkeit, Verwendungsfähigkeit für einen bestimmten Zweck, Eigentumsrecht und die Freiheit von Rechten Dritter.
+Vorbehaltlich einer gesetzlichen GewÃ¤hrleistung, die nicht ausgeschlossen werden kann, Ã¼bernimmt IBM keine GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) hinsichtlich des Programms oder der UnterstÃ¼tzung (sofern vorgesehen), einschlieÃŸlich, aber nicht begrenzt auf die zufriedenstellende QualitÃ¤t, HandelsÃ¼blichkeit, VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck, Eigentumsrecht und die Freiheit von Rechten Dritter.
 
-Nach der Rechtsordnung bzw. Gerichtsbarkeit einiger Länder ist der Ausschluss oder die Begrenzung von ausdrücklichen und/oder stillschweigenden Zusicherungen/Gewährleistungen nicht erlaubt, sodass obige Einschränkungen und Ausschlüsse für den Lizenznehmer möglicherweise nicht anwendbar sind. In diesem Fall sind derartige Gewährleistungen auf die gesetzliche Mindestgewährleistungsdauer begrenzt. Nach Ablauf des Gewährleistungszeitraums wird keinerlei Gewährleistung mehr erbracht. Nach der Rechtsordnung bzw. Gerichtsbarkeit einiger Länder ist der Ausschluss oder die Begrenzung von ausdrücklichen und/oder stillschweigenden Zusicherungen/Gewährleistungen nicht erlaubt, sodass obige Einschränkungen und Ausschlüsse für den Lizenznehmer möglicherweise nicht anwendbar sind. Der Lizenznehmer kann gegebenenfalls weitere Rechte geltend machen, die abhängig vom jeweiligen Land und der jeweiligen Rechtsordnung bzw. Gerichtsbarkeit unterschiedlich sein können.
+Nach der Rechtsordnung bzw. Gerichtsbarkeit einiger LÃ¤nder ist der Ausschluss oder die Begrenzung von ausdrÃ¼cklichen und/oder stillschweigenden Zusicherungen/GewÃ¤hrleistungen nicht erlaubt, sodass obige EinschrÃ¤nkungen und AusschlÃ¼sse fÃ¼r den Lizenznehmer mÃ¶glicherweise nicht anwendbar sind. In diesem Fall sind derartige GewÃ¤hrleistungen auf die gesetzliche MindestgewÃ¤hrleistungsdauer begrenzt. Nach Ablauf des GewÃ¤hrleistungszeitraums wird keinerlei GewÃ¤hrleistung mehr erbracht. Nach der Rechtsordnung bzw. Gerichtsbarkeit einiger LÃ¤nder ist der Ausschluss oder die Begrenzung von ausdrÃ¼cklichen und/oder stillschweigenden Zusicherungen/GewÃ¤hrleistungen nicht erlaubt, sodass obige EinschrÃ¤nkungen und AusschlÃ¼sse fÃ¼r den Lizenznehmer mÃ¶glicherweise nicht anwendbar sind. Der Lizenznehmer kann gegebenenfalls weitere Rechte geltend machen, die abhÃ¤ngig vom jeweiligen Land und der jeweiligen Rechtsordnung bzw. Gerichtsbarkeit unterschiedlich sein kÃ¶nnen.
 
-Die Gewährleistungsausschlüsse und sonstigen Ausschlüsse in diesem Abschnitt 8 gelten auch für die Programmentwickler und Lieferanten von IBM.
+Die GewÃ¤hrleistungsausschlÃ¼sse und sonstigen AusschlÃ¼sse in diesem Abschnitt 8 gelten auch fÃ¼r die Programmentwickler und Lieferanten von IBM.
 
-Für Nicht-IBM Programme können die Hersteller, Lieferanten und Herausgeber ihre eigenen Gewährleistungen mitliefern.
+FÃ¼r Nicht-IBM Programme kÃ¶nnen die Hersteller, Lieferanten und Herausgeber ihre eigenen GewÃ¤hrleistungen mitliefern.
 
-IBM leistet nur Unterstützung, wenn dies ausdrücklich angegeben ist. Falls IBM Unterstützung leistet, unterliegt diese den Gewährleistungsausschlüssen und sonstigen Ausschlüssen in diesem Abschnitt 8.
+IBM leistet nur UnterstÃ¼tzung, wenn dies ausdrÃ¼cklich angegeben ist. Falls IBM UnterstÃ¼tzung leistet, unterliegt diese den GewÃ¤hrleistungsausschlÃ¼ssen und sonstigen AusschlÃ¼ssen in diesem Abschnitt 8.
 
 9. Daten und Datenbanken des Lizenznehmers
 
-Um den Lizenznehmer bei der Eingrenzung eines Problems mit dem Programm zu unterstützen, kann IBM den Lizenznehmer auffordern, 1) IBM Fernzugriff auf sein System zu gestatten oder 2) Informationen oder Systemdaten an IBM zu senden. IBM ist jedoch nicht zur Erbringung solcher Unterstützungsleistungen verpflichtet, es sei denn, IBM und der Lizenznehmer treffen eine separate schriftliche Vereinbarung, in der IBM sich bereit erklärt, Unterstützung für den Lizenznehmer in einem Umfang zu leisten, der die Verpflichtungen von IBM unter dieser Vereinbarung überschreitet. In jedem Fall wird IBM die Informationen über Fehler und Probleme zur Verbesserung der IBM Produkte und Services nutzen und Unterstützung durch die Bereitstellung entsprechender Unterstützungsangebote leisten. Zu diesem Zweck kann IBM andere IBM Organisationen und Subunternehmer (auch in Ländern außerhalb des Landes, in welchem der Lizenznehmer seinen Sitz hat) beauftragen, und der Lizenznehmer wird IBM dies gestatten.
+Um den Lizenznehmer bei der Eingrenzung eines Problems mit dem Programm zu unterstÃ¼tzen, kann IBM den Lizenznehmer auffordern, 1) IBM Fernzugriff auf sein System zu gestatten oder 2) Informationen oder Systemdaten an IBM zu senden. IBM ist jedoch nicht zur Erbringung solcher UnterstÃ¼tzungsleistungen verpflichtet, es sei denn, IBM und der Lizenznehmer treffen eine separate schriftliche Vereinbarung, in der IBM sich bereit erklÃ¤rt, UnterstÃ¼tzung fÃ¼r den Lizenznehmer in einem Umfang zu leisten, der die Verpflichtungen von IBM unter dieser Vereinbarung Ã¼berschreitet. In jedem Fall wird IBM die Informationen Ã¼ber Fehler und Probleme zur Verbesserung der IBM Produkte und Services nutzen und UnterstÃ¼tzung durch die Bereitstellung entsprechender UnterstÃ¼tzungsangebote leisten. Zu diesem Zweck kann IBM andere IBM Organisationen und Subunternehmer (auch in LÃ¤ndern auÃŸerhalb des Landes, in welchem der Lizenznehmer seinen Sitz hat) beauftragen, und der Lizenznehmer wird IBM dies gestatten.
 
-Der Lizenznehmer bleibt verantwortlich für 1) alle Daten und den Inhalt der Datenbanken, die er IBM zur Verfügung stellt, 2) die Auswahl und Implementierung von Prozeduren und Kontrollmechanismen im Hinblick auf Datenzugriff, -sicherheit, -verschlüsselung, -nutzung und -übertragung (einschließlich aller personenbezogenen Daten) und 3) die Sicherung und Wiederherstellung der Datenbanken und der gespeicherten Daten. Der Lizenznehmer wird IBM keine personenbezogenen Informationen, weder als Daten noch in anderer Form, senden oder Zugriff darauf erteilen und muss für alle angemessenen Kosten und sonstigen Ausgaben aufkommen, die IBM im Zusammenhang mit solchen Informationen entstehen, die versehentlich an IBM weitergegeben wurden oder deren Verlust oder Offenlegung durch IBM verursacht wurde, einschließlich der Aufwendungen, die sich aus den Ansprüchen Dritter ergeben.
+Der Lizenznehmer bleibt verantwortlich fÃ¼r 1) alle Daten und den Inhalt der Datenbanken, die er IBM zur VerfÃ¼gung stellt, 2) die Auswahl und Implementierung von Prozeduren und Kontrollmechanismen im Hinblick auf Datenzugriff, -sicherheit, -verschlÃ¼sselung, -nutzung und -Ã¼bertragung (einschlieÃŸlich aller personenbezogenen Daten) und 3) die Sicherung und Wiederherstellung der Datenbanken und der gespeicherten Daten. Der Lizenznehmer wird IBM keine personenbezogenen Informationen, weder als Daten noch in anderer Form, senden oder Zugriff darauf erteilen und muss fÃ¼r alle angemessenen Kosten und sonstigen Ausgaben aufkommen, die IBM im Zusammenhang mit solchen Informationen entstehen, die versehentlich an IBM weitergegeben wurden oder deren Verlust oder Offenlegung durch IBM verursacht wurde, einschlieÃŸlich der Aufwendungen, die sich aus den AnsprÃ¼chen Dritter ergeben.
 
 10. Haftungsbegrenzung
 
-Die Beschränkungen und Ausschlüsse in Abschnitt 10 gelten, soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgesehen ist.
+Die BeschrÃ¤nkungen und AusschlÃ¼sse in Abschnitt 10 gelten, soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgesehen ist.
 
-10.1 Fälle, in denen IBM haftbar gemacht werden kann
+10.1 FÃ¤lle, in denen IBM haftbar gemacht werden kann
 
-Soweit IBM dem Lizenznehmer gegenüber schadenersatzpflichtig ist, hat er Anspruch auf Entschädigung durch IBM. Unabhängig vom Rechtsgrund, auf dem der an IBM gerichtete Schadensersatzanspruch des Lizenznehmers beruht (einschließlich Vertragsverletzung, Fahrlässigkeit, unrichtiger Angaben oder anderer Ansprüche aus dem Vertrag oder aufgrund unerlaubter Handlungen), ist die Gesamthaftung von IBM für sämtliche Ansprüche in Bezug auf ein einzelnes Programm oder andere Ansprüche, die aus dieser Vereinbarung entstehen, begrenzt auf 1) Personenschäden (einschließlich Tod) und Schäden an Immobilien und beweglichen Sachen und 2) bei anderen direkten Schäden auf maximal die Gebühren (maximal zwölf Monatsgebühren, wenn die Gebühren für das Programm nach einer festen Laufzeit berechnet werden), die der Lizenznehmer für das Programm entrichtet hat, das die Grundlage des Rechtsanspruches ist.
+Soweit IBM dem Lizenznehmer gegenÃ¼ber schadenersatzpflichtig ist, hat er Anspruch auf EntschÃ¤digung durch IBM. UnabhÃ¤ngig vom Rechtsgrund, auf dem der an IBM gerichtete Schadensersatzanspruch des Lizenznehmers beruht (einschlieÃŸlich Vertragsverletzung, FahrlÃ¤ssigkeit, unrichtiger Angaben oder anderer AnsprÃ¼che aus dem Vertrag oder aufgrund unerlaubter Handlungen), ist die Gesamthaftung von IBM fÃ¼r sÃ¤mtliche AnsprÃ¼che in Bezug auf ein einzelnes Programm oder andere AnsprÃ¼che, die aus dieser Vereinbarung entstehen, begrenzt auf 1) PersonenschÃ¤den (einschlieÃŸlich Tod) und SchÃ¤den an Immobilien und beweglichen Sachen und 2) bei anderen direkten SchÃ¤den auf maximal die GebÃ¼hren (maximal zwÃ¶lf MonatsgebÃ¼hren, wenn die GebÃ¼hren fÃ¼r das Programm nach einer festen Laufzeit berechnet werden), die der Lizenznehmer fÃ¼r das Programm entrichtet hat, das die Grundlage des Rechtsanspruches ist.
 
-Diese Haftungsbegrenzung gilt auch für alle Programmentwickler und Lieferanten von IBM. Dies ist der maximale Betrag, für den IBM und diese gemeinsam haftbar gemacht werden können.
+Diese Haftungsbegrenzung gilt auch fÃ¼r alle Programmentwickler und Lieferanten von IBM. Dies ist der maximale Betrag, fÃ¼r den IBM und diese gemeinsam haftbar gemacht werden kÃ¶nnen.
 
-10.2 Fälle, in denen IBM nicht haftbar ist
+10.2 FÃ¤lle, in denen IBM nicht haftbar ist
 
-Auf keinen Fall sind IBM oder die Programmentwickler und Lieferanten von IBM in folgenden Fällen haftbar, auch wenn sie auf die Möglichkeit solcher Schäden hingewiesen wurden:
+Auf keinen Fall sind IBM oder die Programmentwickler und Lieferanten von IBM in folgenden FÃ¤llen haftbar, auch wenn sie auf die MÃ¶glichkeit solcher SchÃ¤den hingewiesen wurden:
 
-a. Verlust oder Beschädigung von Daten;
+a. Verlust oder BeschÃ¤digung von Daten;
 
-b. unmittelbare oder mittelbare Schäden oder sonstige wirtschaftliche Folgeschäden; oder
+b. unmittelbare oder mittelbare SchÃ¤den oder sonstige wirtschaftliche FolgeschÃ¤den; oder
 
-c. entgangene Gewinne, Geschäftsabschlüsse, Umsätze, Schädigung des guten Namens oder Verlust erwarteter Einsparungen.
+c. entgangene Gewinne, GeschÃ¤ftsabschlÃ¼sse, UmsÃ¤tze, SchÃ¤digung des guten Namens oder Verlust erwarteter Einsparungen.
 
-11. Einsichts- und Prüfungsrecht
+11. Einsichts- und PrÃ¼fungsrecht
 
-In diesem Abschnitt 11 bezeichnet "Nutzungsbedingungen" 1) diese Vereinbarung sowie alle anwendbaren Anlagen und Auftragsdokumente, die von IBM bereitgestellt werden, und 2) IBM Softwarerichtlinien, die auf der IBM Software Policy Website (www.ibm.com/softwarepolicies) zu finden sind, einschließlich der Richtlinien, die sich auf Sicherungen, das Sub-Capacity-Preismodell und die Migration beziehen.
+In diesem Abschnitt 11 bezeichnet "Nutzungsbedingungen" 1) diese Vereinbarung sowie alle anwendbaren Anlagen und Auftragsdokumente, die von IBM bereitgestellt werden, und 2) IBM Softwarerichtlinien, die auf der IBM Software Policy Website (www.ibm.com/softwarepolicies) zu finden sind, einschlieÃŸlich der Richtlinien, die sich auf Sicherungen, das Sub-Capacity-Preismodell und die Migration beziehen.
 
-Die Rechte und Verpflichtungen im Rahmen dieses Abschnitts 11 bleiben während der Lizenzlaufzeit und danach für weitere zwei Jahre in Kraft.
+Die Rechte und Verpflichtungen im Rahmen dieses Abschnitts 11 bleiben wÃ¤hrend der Lizenzlaufzeit und danach fÃ¼r weitere zwei Jahre in Kraft.
 
-11.1 Prüfungsprozess
+11.1 PrÃ¼fungsprozess
 
-Der Lizenznehmer verpflichtet sich, korrekte schriftliche Aufzeichnungen, Ausgaben von Systemtools und sonstige Systemdaten zu erstellen, aufzubewahren und IBM sowie den beauftragten Prüfern bereitzustellen, um gegenüber IBM prüffähige Nachweise dafür zu erbringen, dass die Nutzung der Programme in Übereinstimmung mit den Nutzungsbedingungen erfolgt, einschließlich der angewandten IBM Lizenz- und Preisbedingungen. Der Lizenznehmer ist dafür verantwortlich, 1) sicherzustellen, dass die berechtigte Nutzung nicht überschritten wird und 2) die Nutzungsbedingungen eingehalten werden.
+Der Lizenznehmer verpflichtet sich, korrekte schriftliche Aufzeichnungen, Ausgaben von Systemtools und sonstige Systemdaten zu erstellen, aufzubewahren und IBM sowie den beauftragten PrÃ¼fern bereitzustellen, um gegenÃ¼ber IBM prÃ¼ffÃ¤hige Nachweise dafÃ¼r zu erbringen, dass die Nutzung der Programme in Ãœbereinstimmung mit den Nutzungsbedingungen erfolgt, einschlieÃŸlich der angewandten IBM Lizenz- und Preisbedingungen. Der Lizenznehmer ist dafÃ¼r verantwortlich, 1) sicherzustellen, dass die berechtigte Nutzung nicht Ã¼berschritten wird und 2) die Nutzungsbedingungen eingehalten werden.
 
-Nach angemessener Vorankündigung ist IBM dazu berechtigt, die Einhaltung der Nutzungsbedingungen an allen Standorten des Lizenznehmers und für alle Umgebungen, an denen der Lizenznehmer die den Nutzungsbedingungen unterliegenden Programme (zu irgendeinem Zweck) nutzt, zu überprüfen. Die Prüfung findet während der üblichen Geschäftszeiten in den Räumlichkeiten des Lizenznehmers statt. IBM wird sich bemühen, den Geschäftsbetrieb des Lizenznehmers dabei so wenig wie möglich zu beeinträchtigen. IBM ist berechtigt, die Prüfung durch einen unabhängigen Prüfer durchführen zu lassen, soweit dieser durch eine schriftliche Vertraulichkeitsvereinbarung zur Geheimhaltung verpflichtet ist.
+Nach angemessener VorankÃ¼ndigung ist IBM dazu berechtigt, die Einhaltung der Nutzungsbedingungen an allen Standorten des Lizenznehmers und fÃ¼r alle Umgebungen, an denen der Lizenznehmer die den Nutzungsbedingungen unterliegenden Programme (zu irgendeinem Zweck) nutzt, zu Ã¼berprÃ¼fen. Die PrÃ¼fung findet wÃ¤hrend der Ã¼blichen GeschÃ¤ftszeiten in den RÃ¤umlichkeiten des Lizenznehmers statt. IBM wird sich bemÃ¼hen, den GeschÃ¤ftsbetrieb des Lizenznehmers dabei so wenig wie mÃ¶glich zu beeintrÃ¤chtigen. IBM ist berechtigt, die PrÃ¼fung durch einen unabhÃ¤ngigen PrÃ¼fer durchfÃ¼hren zu lassen, soweit dieser durch eine schriftliche Vertraulichkeitsvereinbarung zur Geheimhaltung verpflichtet ist.
 
-11.2 Prüfergebnis
+11.2 PrÃ¼fergebnis
 
-IBM wird den Lizenznehmer schriftlich benachrichtigen, sofern eine solche Überprüfung ergibt, dass der Lizenznehmer die berechtigte Nutzung eines Programms überschritten hat oder der Lizenznehmer die ihm aus dieser Vereinbarung obliegenden Verpflichtungen nicht einhält. Der Lizenznehmer erklärt sich dazu bereit, die in einer Rechnung von IBM aufgeführten Gebühren für 1) die Nutzungsüberschreitung, 2) die Unterstützung während der Nutzungsüberschreitung entweder für die Dauer der Nutzungsüberschreitung oder für zwei Jahre, je nachdem, welcher Zeitraum kürzer ist, und 3) alle anfallenden zusätzlichen Gebühren und anderen Verbindlichkeiten, die sich aufgrund der Prüfung ergeben, unverzüglich direkt an IBM zu entrichten.
+IBM wird den Lizenznehmer schriftlich benachrichtigen, sofern eine solche ÃœberprÃ¼fung ergibt, dass der Lizenznehmer die berechtigte Nutzung eines Programms Ã¼berschritten hat oder der Lizenznehmer die ihm aus dieser Vereinbarung obliegenden Verpflichtungen nicht einhÃ¤lt. Der Lizenznehmer erklÃ¤rt sich dazu bereit, die in einer Rechnung von IBM aufgefÃ¼hrten GebÃ¼hren fÃ¼r 1) die NutzungsÃ¼berschreitung, 2) die UnterstÃ¼tzung wÃ¤hrend der NutzungsÃ¼berschreitung entweder fÃ¼r die Dauer der NutzungsÃ¼berschreitung oder fÃ¼r zwei Jahre, je nachdem, welcher Zeitraum kÃ¼rzer ist, und 3) alle anfallenden zusÃ¤tzlichen GebÃ¼hren und anderen Verbindlichkeiten, die sich aufgrund der PrÃ¼fung ergeben, unverzÃ¼glich direkt an IBM zu entrichten.
 
 12. Hinweise von Drittherstellern
 
-Das Programm kann Drittherstellercode enthalten, für den IBM und nicht der Dritthersteller dem Lizenznehmer eine Lizenz unter dieser Vereinbarung erteilt. Falls Hinweise auf den Drittherstellercode ("Third Party Notices") mitgeliefert werden, geschieht dies nur zu Informationszwecken. Diese Hinweise können in den NOTICES-Dateien des Programms enthalten sein. Informationen über den Erhalt des Quellcodes für einen bestimmten Drittherstellercode befinden sich in den Third Party Notices. Kennzeichnet IBM Drittherstellercode in den Third Party Notices als "Modifiable Third Party Code" (Drittherstellercode, der geändert werden kann), so erteilt IBM dem Lizenznehmer damit die Berechtigung, 1) den Modifiable Third Party Code zu verändern und 2) die Programmmodule rückzuentwickeln, die eine direkte Schnittstelle zu dem Modifiable Third Party Code darstellen, sofern dies ausschließlich zu dem Zweck erfolgt, die Änderungen des Lizenznehmers am Drittherstellercode per Debugging zu testen. Die Service- und Unterstützungsverpflichtungen von IBM (sofern verfügbar) beziehen sich nur auf das unveränderte Programm.
+Das Programm kann Drittherstellercode enthalten, fÃ¼r den IBM und nicht der Dritthersteller dem Lizenznehmer eine Lizenz unter dieser Vereinbarung erteilt. Falls Hinweise auf den Drittherstellercode ("Third Party Notices") mitgeliefert werden, geschieht dies nur zu Informationszwecken. Diese Hinweise kÃ¶nnen in den NOTICES-Dateien des Programms enthalten sein. Informationen Ã¼ber den Erhalt des Quellcodes fÃ¼r einen bestimmten Drittherstellercode befinden sich in den Third Party Notices. Kennzeichnet IBM Drittherstellercode in den Third Party Notices als "Modifiable Third Party Code" (Drittherstellercode, der geÃ¤ndert werden kann), so erteilt IBM dem Lizenznehmer damit die Berechtigung, 1) den Modifiable Third Party Code zu verÃ¤ndern und 2) die Programmmodule rÃ¼ckzuentwickeln, die eine direkte Schnittstelle zu dem Modifiable Third Party Code darstellen, sofern dies ausschlieÃŸlich zu dem Zweck erfolgt, die Ã„nderungen des Lizenznehmers am Drittherstellercode per Debugging zu testen. Die Service- und UnterstÃ¼tzungsverpflichtungen von IBM (sofern verfÃ¼gbar) beziehen sich nur auf das unverÃ¤nderte Programm.
 
 13. Allgemeines
 
 a. Gesetzlich unabdingbare Verbraucherschutzrechte haben Vorrang vor den Bedingungen dieser Vereinbarung.
 
-b. Werden die Programme auf Datenträgern an den Lizenznehmer geliefert, geht - sofern nicht zwischen den Parteien etwas Abweichendes schriftlich vereinbart wurde - die Gefahr auf den Lizenznehmer über, sobald IBM den Datenträger an den von IBM bestimmten Spediteur/Frachtführer oder die sonst zur Ausführung der Auslieferung bestimmte Person oder Anstalt ausgeliefert hat.
+b. Werden die Programme auf DatentrÃ¤gern an den Lizenznehmer geliefert, geht - sofern nicht zwischen den Parteien etwas Abweichendes schriftlich vereinbart wurde - die Gefahr auf den Lizenznehmer Ã¼ber, sobald IBM den DatentrÃ¤ger an den von IBM bestimmten Spediteur/FrachtfÃ¼hrer oder die sonst zur AusfÃ¼hrung der Auslieferung bestimmte Person oder Anstalt ausgeliefert hat.
 
-c. Falls eine der Bedingungen dieser Vereinbarung im Rahmen des geltenden Rechts ungültig oder undurchführbar ist, sind die übrigen Bedingungen dieser Vereinbarung davon nicht betroffen und gelten weiterhin in vollem Umfang.
+c. Falls eine der Bedingungen dieser Vereinbarung im Rahmen des geltenden Rechts ungÃ¼ltig oder undurchfÃ¼hrbar ist, sind die Ã¼brigen Bedingungen dieser Vereinbarung davon nicht betroffen und gelten weiterhin in vollem Umfang.
 
-d. Der Lizenznehmer verpflichtet sich zur Einhaltung aller anwendbaren Export- und Importgesetze und -bestimmungen, einschließlich der US-Embargo- und -Sanktionsbestimmungen sowie des Exportverbots für bestimmte Verwendungszwecke oder an bestimmte Personen.
+d. Der Lizenznehmer verpflichtet sich zur Einhaltung aller anwendbaren Export- und Importgesetze und -bestimmungen, einschlieÃŸlich der US-Embargo- und -Sanktionsbestimmungen sowie des Exportverbots fÃ¼r bestimmte Verwendungszwecke oder an bestimmte Personen.
 
-e. Der Lizenznehmer ist damit einverstanden, dass International Business Machines Corporation und deren verbundene Unternehmen (sowie deren Rechtsnachfolger und Zessionare, Vertragspartner und IBM Business Partner) die Kontaktinformationen des Lizenznehmers in allen Ländern, in denen sie geschäftlich tätig sind, in Verbindung mit IBM Produkten und Services oder zur Förderung der Geschäftsbeziehung zwischen IBM und dem Lizenznehmer speichern und nutzen dürfen.
+e. Der Lizenznehmer ist damit einverstanden, dass International Business Machines Corporation und deren verbundene Unternehmen (sowie deren Rechtsnachfolger und Zessionare, Vertragspartner und IBM Business Partner) die Kontaktinformationen des Lizenznehmers in allen LÃ¤ndern, in denen sie geschÃ¤ftlich tÃ¤tig sind, in Verbindung mit IBM Produkten und Services oder zur FÃ¶rderung der GeschÃ¤ftsbeziehung zwischen IBM und dem Lizenznehmer speichern und nutzen dÃ¼rfen.
 
-f. Jede Vertragspartei wird der anderen Partei ausreichend Gelegenheit geben, ihren vertraglichen Verpflichtungen nachzukommen, bevor sie rechtliche Schritte wegen Nichterfüllung von Vertragsbedingungen unternimmt. Die Vertragsparteien werden versuchen, alle Streitfälle, Meinungsverschiedenheiten oder Ansprüche zwischen den Parteien in Bezug auf diese Vereinbarung einvernehmlich beizulegen.
+f. Jede Vertragspartei wird der anderen Partei ausreichend Gelegenheit geben, ihren vertraglichen Verpflichtungen nachzukommen, bevor sie rechtliche Schritte wegen NichterfÃ¼llung von Vertragsbedingungen unternimmt. Die Vertragsparteien werden versuchen, alle StreitfÃ¤lle, Meinungsverschiedenheiten oder AnsprÃ¼che zwischen den Parteien in Bezug auf diese Vereinbarung einvernehmlich beizulegen.
 
-g. Soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgesehen ist, stimmen beide Vertragsparteien überein, 1) im Rahmen dieser Vereinbarung keine Klage später als zwei Jahre nach Auftreten des Klagegegenstands einzureichen, und 2) dass nach Ablauf dieser Frist alle Ansprüche und alle damit in Zusammenhang stehenden Rechte verjähren.
+g. Soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgesehen ist, stimmen beide Vertragsparteien Ã¼berein, 1) im Rahmen dieser Vereinbarung keine Klage spÃ¤ter als zwei Jahre nach Auftreten des Klagegegenstands einzureichen, und 2) dass nach Ablauf dieser Frist alle AnsprÃ¼che und alle damit in Zusammenhang stehenden Rechte verjÃ¤hren.
 
-h. Weder der Lizenznehmer noch IBM sind für die Nichterfüllung von vertraglichen Verpflichtungen aus Gründen haftbar, die von den Vertragsparteien nicht beeinflusst werden können.
+h. Weder der Lizenznehmer noch IBM sind fÃ¼r die NichterfÃ¼llung von vertraglichen Verpflichtungen aus GrÃ¼nden haftbar, die von den Vertragsparteien nicht beeinflusst werden kÃ¶nnen.
 
-i. Aus dieser Vereinbarung ergibt sich kein Recht auf Klage oder Klagegegenstand für Dritte, und IBM ist nicht haftbar für Ansprüche Dritter gegen den Lizenznehmer, die nicht oben in Unterabschnitt 10.1 (Fälle, in denen IBM haftbar gemacht werden kann) für Personenschäden (einschließlich Tod) und Schäden an Immobilien und beweglichen Sachen aufgeführt sind, für die IBM nach den gesetzlichen Bestimmungen haftbar ist.
+i. Aus dieser Vereinbarung ergibt sich kein Recht auf Klage oder Klagegegenstand fÃ¼r Dritte, und IBM ist nicht haftbar fÃ¼r AnsprÃ¼che Dritter gegen den Lizenznehmer, die nicht oben in Unterabschnitt 10.1 (FÃ¤lle, in denen IBM haftbar gemacht werden kann) fÃ¼r PersonenschÃ¤den (einschlieÃŸlich Tod) und SchÃ¤den an Immobilien und beweglichen Sachen aufgefÃ¼hrt sind, fÃ¼r die IBM nach den gesetzlichen Bestimmungen haftbar ist.
 
-j. Durch Anerkennung dieser Vereinbarung stimmen beide Vertragsparteien darin überein, sich nicht auf irgendwelche Darstellungen zu verlassen, die nicht auf dieser Vereinbarung beruhen, einschließlich 1) der Angaben zu Leistung oder Funktion des Programms; und 2) der Erfahrungen oder Empfehlungen Dritter; oder 3) der Ergebnisse oder Einsparungen, die der Lizenznehmer eventuell erzielen kann.
+j. Durch Anerkennung dieser Vereinbarung stimmen beide Vertragsparteien darin Ã¼berein, sich nicht auf irgendwelche Darstellungen zu verlassen, die nicht auf dieser Vereinbarung beruhen, einschlieÃŸlich 1) der Angaben zu Leistung oder Funktion des Programms; und 2) der Erfahrungen oder Empfehlungen Dritter; oder 3) der Ergebnisse oder Einsparungen, die der Lizenznehmer eventuell erzielen kann.
 
-k. IBM hat mit bestimmten Partnern ("IBM Business Partner" genannt) Vereinbarungen zur Vermarktung und Unterstützung bestimmter Programme geschlossen. IBM Business Partner sind eigenständig und von IBM unabhängig. IBM ist weder für die Geschäftstätigung der IBM Business Partner noch für deren Aussagen oder Verpflichtungen gegenüber dem Lizenznehmer verantwortlich.
+k. IBM hat mit bestimmten Partnern ("IBM Business Partner" genannt) Vereinbarungen zur Vermarktung und UnterstÃ¼tzung bestimmter Programme geschlossen. IBM Business Partner sind eigenstÃ¤ndig und von IBM unabhÃ¤ngig. IBM ist weder fÃ¼r die GeschÃ¤ftstÃ¤tigung der IBM Business Partner noch fÃ¼r deren Aussagen oder Verpflichtungen gegenÃ¼ber dem Lizenznehmer verantwortlich.
 
-l. Die Lizenzbedingungen und Freistellungsregelungen in anderen (Rahmen-)Vereinbarungen zwischen dem Lizenznehmer und IBM (z. B. den Allgemeinen Geschäftsbedingungen von IBM) gelten nicht für Programmlizenzen, die unter dieser Vereinbarung erteilt werden.
+l. Die Lizenzbedingungen und Freistellungsregelungen in anderen (Rahmen-)Vereinbarungen zwischen dem Lizenznehmer und IBM (z. B. den Allgemeinen GeschÃ¤ftsbedingungen von IBM) gelten nicht fÃ¼r Programmlizenzen, die unter dieser Vereinbarung erteilt werden.
 
-m. Beide Vertragsparteien stimmen darin überein, dass alle ausgetauschten Informationen nicht vertraulich sind. Falls eine der Vertragsparteien den Austausch vertraulicher Informationen als erforderlich ansieht, geschieht dies im Rahmen einer unterzeichneten Vertraulichkeitsvereinbarung.
+m. Beide Vertragsparteien stimmen darin Ã¼berein, dass alle ausgetauschten Informationen nicht vertraulich sind. Falls eine der Vertragsparteien den Austausch vertraulicher Informationen als erforderlich ansieht, geschieht dies im Rahmen einer unterzeichneten Vertraulichkeitsvereinbarung.
 
 14. Geltungsbereich und geltendes Recht
 
 14.1 Geltendes Recht
 
-Beide Vertragsparteien sind damit einverstanden, dass die Gesetze des Landes zur Anwendung kommen, in dem der Lizenznehmer die Programmlizenz erworben hat, um die Rechte, Pflichten und Verpflichtungen des Lizenznehmers und von IBM, die sich aus dem Inhalt dieser Vereinbarung ergeben oder in irgendeiner Weise damit in Zusammenhang stehen, zu regeln, zu interpretieren und durchzuführen, ungeachtet unterschiedlicher Rechtsgrundlagen.
+Beide Vertragsparteien sind damit einverstanden, dass die Gesetze des Landes zur Anwendung kommen, in dem der Lizenznehmer die Programmlizenz erworben hat, um die Rechte, Pflichten und Verpflichtungen des Lizenznehmers und von IBM, die sich aus dem Inhalt dieser Vereinbarung ergeben oder in irgendeiner Weise damit in Zusammenhang stehen, zu regeln, zu interpretieren und durchzufÃ¼hren, ungeachtet unterschiedlicher Rechtsgrundlagen.
 
-Die Vertragskonvention der Vereinten Nationen für den internationalen Warenverkauf kommt nicht zur Anwendung.
+Die Vertragskonvention der Vereinten Nationen fÃ¼r den internationalen Warenverkauf kommt nicht zur Anwendung.
 
 14.2 Rechtsprechung
 
 Alle Rechte, Pflichten und Verpflichtungen unterliegen der Rechtsprechung des Landes, in dem der Lizenznehmer die Programmlizenz erworben hat.
 
-Teil 2 - Länderspezifische Bedingungen
+Teil 2 - LÃ¤nderspezifische Bedingungen
 
-Für Lizenzen, die in den unten aufgeführten Ländern erteilt werden, ersetzen oder ergänzen die nachfolgenden länderspezifischen Regelungen die betreffenden Bedingungen für die jeweiligen Länder in Teil 1. Alle Bedingungen in Teil 1, die von diesen Änderungen oder Ergänzungen nicht betroffen sind, bleiben unverändert und behalten ihre Gültigkeit. Teil 2 ist wie folgt aufgebaut:
+FÃ¼r Lizenzen, die in den unten aufgefÃ¼hrten LÃ¤ndern erteilt werden, ersetzen oder ergÃ¤nzen die nachfolgenden lÃ¤nderspezifischen Regelungen die betreffenden Bedingungen fÃ¼r die jeweiligen LÃ¤nder in Teil 1. Alle Bedingungen in Teil 1, die von diesen Ã„nderungen oder ErgÃ¤nzungen nicht betroffen sind, bleiben unverÃ¤ndert und behalten ihre GÃ¼ltigkeit. Teil 2 ist wie folgt aufgebaut:
 
-* Landesspezifische Ergänzung zu Teil 1, Abschnitt 14 (Geltendes Recht und Rechtsprechung); und
+* Landesspezifische ErgÃ¤nzung zu Teil 1, Abschnitt 14 (Geltendes Recht und Rechtsprechung); und
 
-* Ergänzungen zu anderen Bedingungen dieser Vereinbarung, die für die EMEA-Länder (Europa, Naher/Mittlerer Osten und Afrika) gelten
+* ErgÃ¤nzungen zu anderen Bedingungen dieser Vereinbarung, die fÃ¼r die EMEA-LÃ¤nder (Europa, Naher/Mittlerer Osten und Afrika) gelten
 
-Landesspezifische Ergänzung zu Teil 1, Abschnitt 14 (Geltendes Recht und Rechtsprechung)
+Landesspezifische ErgÃ¤nzung zu Teil 1, Abschnitt 14 (Geltendes Recht und Rechtsprechung)
 
 14.2 Rechtsprechung
 
-Der folgende Absatz bezieht sich auf die Rechtsprechung und ersetzt Unterabschnitt 14.2 (Rechtsprechung) für Österreich:
+Der folgende Absatz bezieht sich auf die Rechtsprechung und ersetzt Unterabschnitt 14.2 (Rechtsprechung) fÃ¼r Ã–sterreich:
 
-Alle Rechte, Pflichten und Verpflichtungen unterliegen der Rechtsprechung des Landes, in dem der Lizenznehmer die Programmlizenz erworben hat, mit Ausnahme der unten aufgeführten Länder, in denen sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben oder damit in Zusammenhang stehen, einschließlich etwaiger Schnellverfahren, ausschließlich in die Zuständigkeit der folgenden Gerichte fallen:
+Alle Rechte, Pflichten und Verpflichtungen unterliegen der Rechtsprechung des Landes, in dem der Lizenznehmer die Programmlizenz erworben hat, mit Ausnahme der unten aufgefÃ¼hrten LÃ¤nder, in denen sÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben oder damit in Zusammenhang stehen, einschlieÃŸlich etwaiger Schnellverfahren, ausschlieÃŸlich in die ZustÃ¤ndigkeit der folgenden Gerichte fallen:
 
-des zuständigen Gerichts in Wien, Österreich (Innenstadt)
+des zustÃ¤ndigen Gerichts in Wien, Ã–sterreich (Innenstadt)
 
-ERGÄNZUNGEN FÜR DIE EMEA-LÄNDER
+ERGÃ„NZUNGEN FÃœR DIE EMEA-LÃ„NDER
 
-MITGLIEDSSTAATEN DER EUROPÄISCHEN UNION
+MITGLIEDSSTAATEN DER EUROPÃ„ISCHEN UNION
 
-8. Gewährleistungsausschluss
+8. GewÃ¤hrleistungsausschluss
 
-Der folgende Text wird Abschnitt 8 (Gewährleistungsausschluss) hinzugefügt:
+Der folgende Text wird Abschnitt 8 (GewÃ¤hrleistungsausschluss) hinzugefÃ¼gt:
 
-In der Europäischen Union ("EU") sind für Verbraucher unter den geltenden nationalen rechtlichen Bestimmungen Rechte für den Verkauf von Verbrauchsgütern definiert. Diese Rechte sind von den Bestimmungen in Abschnitt 8 (Gewährleistungsausschluss) nicht betroffen.
+In der EuropÃ¤ischen Union ("EU") sind fÃ¼r Verbraucher unter den geltenden nationalen rechtlichen Bestimmungen Rechte fÃ¼r den Verkauf von VerbrauchsgÃ¼tern definiert. Diese Rechte sind von den Bestimmungen in Abschnitt 8 (GewÃ¤hrleistungsausschluss) nicht betroffen.
 
-EU-MITGLIEDSSTAATEN UND DIE UNTEN AUFGEFÜHRTEN LÄNDER
+EU-MITGLIEDSSTAATEN UND DIE UNTEN AUFGEFÃœHRTEN LÃ„NDER
 
-Liechtenstein, die Schweiz und alle anderen europäischen Länder, die nationale Datenschutzbestimmungen nach dem EU-Modell per Gesetz eingeführt haben.
+Liechtenstein, die Schweiz und alle anderen europÃ¤ischen LÃ¤nder, die nationale Datenschutzbestimmungen nach dem EU-Modell per Gesetz eingefÃ¼hrt haben.
 
 13. Allgemeines
 
 Der folgende Text ersetzt Abschnitt 13.e:
 
-(1) Begriffsbestimmungen - Für die Zwecke von Abschnitt 13.e kommen die folgenden zusätzlichen Begriffsbestimmungen zur Anwendung:
+(1) Begriffsbestimmungen - FÃ¼r die Zwecke von Abschnitt 13.e kommen die folgenden zusÃ¤tzlichen Begriffsbestimmungen zur Anwendung:
 
-(a) Kontaktinformationen - geschäftsbezogene Kontaktinformationen, die IBM vom Lizenznehmer zugänglich gemacht werden, dazu gehören u. a. Namen, Berufsbezeichnungen, Geschäftsadressen, Telefonnummern und E-Mail-Adressen von Mitarbeitern und Vertragspartnern des Lizenznehmers. In Österreich, Italien und der Schweiz umfassen die Kontaktinformationen ferner Angaben über den Lizenznehmer und seine Vertragspartner als juristische Personen (z. B. Umsatzdaten des Lizenznehmers und andere transaktionsorientierte Informationen).
+(a) Kontaktinformationen - geschÃ¤ftsbezogene Kontaktinformationen, die IBM vom Lizenznehmer zugÃ¤nglich gemacht werden, dazu gehÃ¶ren u. a. Namen, Berufsbezeichnungen, GeschÃ¤ftsadressen, Telefonnummern und E-Mail-Adressen von Mitarbeitern und Vertragspartnern des Lizenznehmers. In Ã–sterreich, Italien und der Schweiz umfassen die Kontaktinformationen ferner Angaben Ã¼ber den Lizenznehmer und seine Vertragspartner als juristische Personen (z. B. Umsatzdaten des Lizenznehmers und andere transaktionsorientierte Informationen).
 
 (b) Kontaktperson - Mitarbeiter und Vertragspartner des Lizenznehmers, auf die sich die Kontaktinformationen beziehen.
 
-(c) Datenschutzbehörde - die Behörde, die vom jeweiligen Land gemäß den Vorschriften zum Datenschutz und zur elektronischen Kommunikation eingerichtet wurde, oder bei Nicht-EU-Ländern die Behörde, die für die Überwachung des Datenschutzes bei personenbezogenen Daten im jeweiligen Land verantwortlich ist, oder eine zuständige Nachfolgebehörde (in Bezug auf eine der genannten Behörden).
+(c) DatenschutzbehÃ¶rde - die BehÃ¶rde, die vom jeweiligen Land gemÃ¤ÃŸ den Vorschriften zum Datenschutz und zur elektronischen Kommunikation eingerichtet wurde, oder bei Nicht-EU-LÃ¤ndern die BehÃ¶rde, die fÃ¼r die Ãœberwachung des Datenschutzes bei personenbezogenen Daten im jeweiligen Land verantwortlich ist, oder eine zustÃ¤ndige NachfolgebehÃ¶rde (in Bezug auf eine der genannten BehÃ¶rden).
 
-(d) Vorschriften zum Datenschutz und zur elektronischen Kommunikation - (i) die geltenden nationalen Gesetze und Verordnungen, die die Anforderungen der EU-Richtlinie 95/46/EC (zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr) und der EU-Richtlinie 2002/58/EC (über die Verarbeitung personenbezogener Daten und den Schutz der Privatsphäre in der elektronischen Kommunikation) umsetzen; oder (ii) in Nicht-EU-Ländern, die Gesetze und/oder Verordnungen, die in den betreffenden Ländern zum Schutz personenbezogener Daten und zur Regulierung der elektronischen Kommunikation unter Einbeziehung personenbezogener Daten erlassen wurden, einschließlich aller Ersatzgesetze oder Gesetzesänderungen (in Bezug auf die zuvor erwähnten Gesetze und Verordnungen).
+(d) Vorschriften zum Datenschutz und zur elektronischen Kommunikation - (i) die geltenden nationalen Gesetze und Verordnungen, die die Anforderungen der EU-Richtlinie 95/46/EC (zum Schutz natÃ¼rlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr) und der EU-Richtlinie 2002/58/EC (Ã¼ber die Verarbeitung personenbezogener Daten und den Schutz der PrivatsphÃ¤re in der elektronischen Kommunikation) umsetzen; oder (ii) in Nicht-EU-LÃ¤ndern, die Gesetze und/oder Verordnungen, die in den betreffenden LÃ¤ndern zum Schutz personenbezogener Daten und zur Regulierung der elektronischen Kommunikation unter Einbeziehung personenbezogener Daten erlassen wurden, einschlieÃŸlich aller Ersatzgesetze oder GesetzesÃ¤nderungen (in Bezug auf die zuvor erwÃ¤hnten Gesetze und Verordnungen).
 
 (e) IBM Unternehmen - International Business Machines Corporation mit Sitz in Armonk, New York (USA), deren verbundene Unternehmen und IBM Business Partner sowie deren Subunternehmer.
 
 (2) Der Lizenznehmer willigt ein, dass IBM
 
-(a) Kontaktinformationen zum Zwecke der Durchführung und Förderung der Geschäftsbeziehung, einschließlich der Bereitstellung von Unterstützungsleistungen, und zur Vermarktung der Produkte und Services der IBM Unternehmen (der "Verwendungszweck") zwischen Lizenznehmer und den IBM Unternehmen verarbeitet und nutzt; und
+(a) Kontaktinformationen zum Zwecke der DurchfÃ¼hrung und FÃ¶rderung der GeschÃ¤ftsbeziehung, einschlieÃŸlich der Bereitstellung von UnterstÃ¼tzungsleistungen, und zur Vermarktung der Produkte und Services der IBM Unternehmen (der "Verwendungszweck") zwischen Lizenznehmer und den IBM Unternehmen verarbeitet und nutzt; und
 
-(b) Kontaktinformationen im Rahmen des Verwendungszwecks den IBM Unternehmen zugänglich macht und die Kontaktinformationen durch diese verarbeitet und genutzt werden können.
+(b) Kontaktinformationen im Rahmen des Verwendungszwecks den IBM Unternehmen zugÃ¤nglich macht und die Kontaktinformationen durch diese verarbeitet und genutzt werden kÃ¶nnen.
 
-(3) IBM wird in diesem Zusammenhang sämtliche Kontaktinformationen im Rahmen der anwendbaren Vorschriften zum Datenschutz und zur elektronischen Kommunikation und nur im Rahmen des Verwendungszwecks verarbeiten und nutzen.
+(3) IBM wird in diesem Zusammenhang sÃ¤mtliche Kontaktinformationen im Rahmen der anwendbaren Vorschriften zum Datenschutz und zur elektronischen Kommunikation und nur im Rahmen des Verwendungszwecks verarbeiten und nutzen.
 
-(4) Sofern aufgrund der Vorschriften zum Datenschutz und zur elektronischen Kommunikation erforderlich, sichert der Lizenznehmer zu, die vorherige Zustimmung der Kontaktperson eingeholt zu haben bzw. einzuholen und diese entsprechend informiert zu haben bzw. zu informieren. Damit stellt der Lizenznehmer sicher, dass die IBM Unternehmen die Kontaktinformationen im Rahmen des Verwendungszwecks verarbeiten und nutzen und mit den Kontaktpersonen, z. B. auch per E-Mail, Kontakt aufnehmen können.
+(4) Sofern aufgrund der Vorschriften zum Datenschutz und zur elektronischen Kommunikation erforderlich, sichert der Lizenznehmer zu, die vorherige Zustimmung der Kontaktperson eingeholt zu haben bzw. einzuholen und diese entsprechend informiert zu haben bzw. zu informieren. Damit stellt der Lizenznehmer sicher, dass die IBM Unternehmen die Kontaktinformationen im Rahmen des Verwendungszwecks verarbeiten und nutzen und mit den Kontaktpersonen, z. B. auch per E-Mail, Kontakt aufnehmen kÃ¶nnen.
 
-(5) Der Lizenznehmer stimmt der Übermittlung von Kontaktinformationen in Länder außerhalb des Europäischen Wirtschaftsraums (EWR) unter der Maßgabe zu, dass eine solche Übermittlung nur im Rahmen einer von der zuständigen Datenschutzbehörde freigegebenen vertraglichen Vereinbarung erfolgt.
+(5) Der Lizenznehmer stimmt der Ãœbermittlung von Kontaktinformationen in LÃ¤nder auÃŸerhalb des EuropÃ¤ischen Wirtschaftsraums (EWR) unter der MaÃŸgabe zu, dass eine solche Ãœbermittlung nur im Rahmen einer von der zustÃ¤ndigen DatenschutzbehÃ¶rde freigegebenen vertraglichen Vereinbarung erfolgt.
 
-ÖSTERREICH
+Ã–STERREICH
 
-8. Gewährleistungsausschluss
+8. GewÃ¤hrleistungsausschluss
 
-In Österreich (und Deutschland) wird Abschnitt 8 (Gewährleistungsausschluss), einschließlich der Überschrift, vollständig durch die folgenden Regelungen ersetzt, wenn der Lizenznehmer eine Gebühr für das Programm bezahlt hat.
+In Ã–sterreich (und Deutschland) wird Abschnitt 8 (GewÃ¤hrleistungsausschluss), einschlieÃŸlich der Ãœberschrift, vollstÃ¤ndig durch die folgenden Regelungen ersetzt, wenn der Lizenznehmer eine GebÃ¼hr fÃ¼r das Programm bezahlt hat.
 
-8. Gewährleistung und Ausschlüsse
+8. GewÃ¤hrleistung und AusschlÃ¼sse
 
-Der Gewährleistungszeitraum beträgt zwölf Monate ab dem Datum der Lieferung. Für Kunden mit laufenden Verfahren wegen Verstößen gegen die Gewährleistungsbestimmungen gilt mindestens die gesetzliche Verjährungsfrist.
+Der GewÃ¤hrleistungszeitraum betrÃ¤gt zwÃ¶lf Monate ab dem Datum der Lieferung. FÃ¼r Kunden mit laufenden Verfahren wegen VerstÃ¶ÃŸen gegen die GewÃ¤hrleistungsbestimmungen gilt mindestens die gesetzliche VerjÃ¤hrungsfrist.
 
-Die Gewährleistung für ein IBM Programm umfasst die Funktionalität des Programms bei normalem Gebrauch und die Übereinstimmung des Programms mit den geltenden Spezifikationen.
+Die GewÃ¤hrleistung fÃ¼r ein IBM Programm umfasst die FunktionalitÃ¤t des Programms bei normalem Gebrauch und die Ãœbereinstimmung des Programms mit den geltenden Spezifikationen.
 
-IBM gewährleistet, dass das Programm bei Nutzung in der angegebenen Betriebsumgebung den Spezifikationen entspricht. IBM gewährleistet keinen ununterbrochenen oder fehlerfreien Betrieb des Programms oder die Korrektur aller Programmfehler. Für die Ergebnisse der Nutzung des Programms ist der Lizenznehmer selbst verantwortlich.
+IBM gewÃ¤hrleistet, dass das Programm bei Nutzung in der angegebenen Betriebsumgebung den Spezifikationen entspricht. IBM gewÃ¤hrleistet keinen ununterbrochenen oder fehlerfreien Betrieb des Programms oder die Korrektur aller Programmfehler. FÃ¼r die Ergebnisse der Nutzung des Programms ist der Lizenznehmer selbst verantwortlich.
 
-Die Gewährleistung gilt nur für den unveränderten Teil des Programms.
+Die GewÃ¤hrleistung gilt nur fÃ¼r den unverÃ¤nderten Teil des Programms.
 
-Wenn das Programm innerhalb des Gewährleistungszeitraums nicht wie zugesichert funktioniert und das Problem mithilfe der bereitgestellten Informationen nicht behoben werden kann, ist der Lizenznehmer berechtigt, das Programm bei der Stelle zurückzugeben, von der er das Programm bezogen hat, und sich den gezahlten Betrag zurückerstatten zu lassen. Wenn der Lizenznehmer das Programm heruntergeladen hat, kann er sich an die Stelle wenden, von der er das Programm bezogen hat, um die Rückerstattung zu erhalten.
+Wenn das Programm innerhalb des GewÃ¤hrleistungszeitraums nicht wie zugesichert funktioniert und das Problem mithilfe der bereitgestellten Informationen nicht behoben werden kann, ist der Lizenznehmer berechtigt, das Programm bei der Stelle zurÃ¼ckzugeben, von der er das Programm bezogen hat, und sich den gezahlten Betrag zurÃ¼ckerstatten zu lassen. Wenn der Lizenznehmer das Programm heruntergeladen hat, kann er sich an die Stelle wenden, von der er das Programm bezogen hat, um die RÃ¼ckerstattung zu erhalten.
 
-Vorbehaltlich anderslautender gesetzlicher Bestimmungen ist dies die einzige Verpflichtung von IBM gegenüber dem Lizenznehmer.
+Vorbehaltlich anderslautender gesetzlicher Bestimmungen ist dies die einzige Verpflichtung von IBM gegenÃ¼ber dem Lizenznehmer.
 
 10. Haftungsbegrenzung
 
-Der folgende Text wird hinzugefügt:
+Der folgende Text wird hinzugefÃ¼gt:
 
-Die folgenden Beschränkungen und Ausschlüsse in Bezug auf die Haftung von IBM entfallen bei Schäden, die durch grobe Fahrlässigkeit oder Vorsatz verursacht werden.
+Die folgenden BeschrÃ¤nkungen und AusschlÃ¼sse in Bezug auf die Haftung von IBM entfallen bei SchÃ¤den, die durch grobe FahrlÃ¤ssigkeit oder Vorsatz verursacht werden.
 
-10.1 Fälle, in denen IBM haftbar gemacht werden kann
+10.1 FÃ¤lle, in denen IBM haftbar gemacht werden kann
 
 Der folgende Text ersetzt den ersten Satz im ersten Absatz:
 
-Soweit IBM gegenüber dem Lizenznehmer aufgrund der Verpflichtungen aus dieser Vereinbarung schadenersatzpflichtig ist, hat er Anspruch auf Entschädigung durch IBM.
+Soweit IBM gegenÃ¼ber dem Lizenznehmer aufgrund der Verpflichtungen aus dieser Vereinbarung schadenersatzpflichtig ist, hat er Anspruch auf EntschÃ¤digung durch IBM.
 
-Im zweiten Satz des ersten Absatzes wird der in Klammern stehende Ausdruck vollständig gelöscht:
+Im zweiten Satz des ersten Absatzes wird der in Klammern stehende Ausdruck vollstÃ¤ndig gelÃ¶scht:
 
-"(einschließlich Vertragsverletzung, Fahrlässigkeit, unrichtiger Angaben oder anderer Ansprüche aus dem Vertrag oder aufgrund unerlaubter Handlungen)"
+"(einschlieÃŸlich Vertragsverletzung, FahrlÃ¤ssigkeit, unrichtiger Angaben oder anderer AnsprÃ¼che aus dem Vertrag oder aufgrund unerlaubter Handlungen)"
 
-10.2 Fälle, in denen IBM nicht haftbar ist
+10.2 FÃ¤lle, in denen IBM nicht haftbar ist
 
 Der folgende Text ersetzt Abschnitt 10.2b:
 
-b. mittelbare Schäden oder Folgeschäden; oder
+b. mittelbare SchÃ¤den oder FolgeschÃ¤den; oder
 
 DEUTSCHLAND
 
-8. Gewährleistungsausschluss
+8. GewÃ¤hrleistungsausschluss
 
-Für Abschnitt 8 (Gewährleistungsausschluss) gelten dieselben Änderungen wie für ÖSTERREICH.
+FÃ¼r Abschnitt 8 (GewÃ¤hrleistungsausschluss) gelten dieselben Ã„nderungen wie fÃ¼r Ã–STERREICH.
 
 10. Haftungsbegrenzung
 
-Abschnitt 10 (Haftungsbegrenzung) wird durch den folgenden Text vollständig ersetzt:
+Abschnitt 10 (Haftungsbegrenzung) wird durch den folgenden Text vollstÃ¤ndig ersetzt:
 
-a. IBM haftet für 1) Schäden, die durch Verletzung einer mit dem Abschluss des Vertrags übernommenen Garantie entstanden sind; 2) für Schäden bei Verletzungen von Leben, Körper oder Gesundheit; sowie 3) für Schäden, die IBM vorsätzlich oder grob fahrlässig verursacht hat, unbeschränkt.
+a. IBM haftet fÃ¼r 1) SchÃ¤den, die durch Verletzung einer mit dem Abschluss des Vertrags Ã¼bernommenen Garantie entstanden sind; 2) fÃ¼r SchÃ¤den bei Verletzungen von Leben, KÃ¶rper oder Gesundheit; sowie 3) fÃ¼r SchÃ¤den, die IBM vorsÃ¤tzlich oder grob fahrlÃ¤ssig verursacht hat, unbeschrÃ¤nkt.
 
-b. Bei leicht fahrlässiger Schadensverursachung haftet IBM, gleich aus welchem Rechtsgrund (einschließlich Ansprüchen aus Vertragsverletzung sowie unerlaubter Handlung), pro Schadensfall bis zu einem Höchstbetrag von EUR 500.000 (fünfhunderttausend Euro) oder bis zur Höhe des Preises (maximal zwölf Monatsgebühren, wenn die Gebühren für das Programm nach einer festen Laufzeit berechnet werden) für das schadensverursachende Programm. Dies umfasst auch den Ersatz vergeblicher Aufwendungen. Mehrere Pflichtverletzungen, die zusammen im Wesentlichen denselben Schaden verursachen oder zu ihm beitragen, werden als eine Pflichtverletzung behandelt.
+b. Bei leicht fahrlÃ¤ssiger Schadensverursachung haftet IBM, gleich aus welchem Rechtsgrund (einschlieÃŸlich AnsprÃ¼chen aus Vertragsverletzung sowie unerlaubter Handlung), pro Schadensfall bis zu einem HÃ¶chstbetrag von EUR 500.000 (fÃ¼nfhunderttausend Euro) oder bis zur HÃ¶he des Preises (maximal zwÃ¶lf MonatsgebÃ¼hren, wenn die GebÃ¼hren fÃ¼r das Programm nach einer festen Laufzeit berechnet werden) fÃ¼r das schadensverursachende Programm. Dies umfasst auch den Ersatz vergeblicher Aufwendungen. Mehrere Pflichtverletzungen, die zusammen im Wesentlichen denselben Schaden verursachen oder zu ihm beitragen, werden als eine Pflichtverletzung behandelt.
 
-c. IBM haftet bei leicht fahrlässigem Verhalten nicht für mittelbare Schäden oder Folgeschäden, selbst wenn IBM über die Möglichkeit solcher Schäden informiert wurde. Dies umfasst auch den Ersatz vergeblicher Aufwendungen, sofern es sich hierbei um mittelbare oder Folgeschäden handelt.
+c. IBM haftet bei leicht fahrlÃ¤ssigem Verhalten nicht fÃ¼r mittelbare SchÃ¤den oder FolgeschÃ¤den, selbst wenn IBM Ã¼ber die MÃ¶glichkeit solcher SchÃ¤den informiert wurde. Dies umfasst auch den Ersatz vergeblicher Aufwendungen, sofern es sich hierbei um mittelbare oder FolgeschÃ¤den handelt.
 
 d. Im Falle des Verzugs erstattet IBM dem Lizenznehmer den durch den Verzug nachweislich entstandenen Schaden im Rahmen der Abschnitte 10.a und 10.b.
 
@@ -371,11 +371,11 @@ d. Im Falle des Verzugs erstattet IBM dem Lizenznehmer den durch den Verzug nach
 
 Der folgende Text ersetzt die Bedingungen in Abschnitt 13.g:
 
-g. Alle Ansprüche aus dieser Vereinbarung unterliegen einer dreijährigen Verjährungsfrist, soweit in Abschnitt 8 (Gewährleistungsausschluss) dieser Vereinbarung nicht abweichend geregelt.
+g. Alle AnsprÃ¼che aus dieser Vereinbarung unterliegen einer dreijÃ¤hrigen VerjÃ¤hrungsfrist, soweit in Abschnitt 8 (GewÃ¤hrleistungsausschluss) dieser Vereinbarung nicht abweichend geregelt.
 
 Der folgende Text ersetzt die Bedingungen in Abschnitt 13.i:
 
-i. Aus dieser Vereinbarung ergibt sich kein Recht auf Klage oder Klagegegenstand für Dritte, und IBM ist nicht haftbar für Ansprüche Dritter gegen den Lizenznehmer, die nicht in Abschnitt 10 (Haftungsbegrenzung) für i) Personenschäden (einschließlich Tod) oder ii) Schäden an Immobilien und beweglichen Sachen aufgeführt sind, für die IBM (in beiden Fällen) nach den gesetzlichen Bestimmungen haftbar ist.
+i. Aus dieser Vereinbarung ergibt sich kein Recht auf Klage oder Klagegegenstand fÃ¼r Dritte, und IBM ist nicht haftbar fÃ¼r AnsprÃ¼che Dritter gegen den Lizenznehmer, die nicht in Abschnitt 10 (Haftungsbegrenzung) fÃ¼r i) PersonenschÃ¤den (einschlieÃŸlich Tod) oder ii) SchÃ¤den an Immobilien und beweglichen Sachen aufgefÃ¼hrt sind, fÃ¼r die IBM (in beiden FÃ¤llen) nach den gesetzlichen Bestimmungen haftbar ist.
 
 Z125-5589-05 (07/2011)
 

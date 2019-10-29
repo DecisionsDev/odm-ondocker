@@ -1,315 +1,315 @@
 INFORMACJE LICENCYJNE
 
-Programy wymienione poni¿ej s¹ licencjonowane na podstawie przedstawionych poni¿ej warunków Informacji licencyjnych, które stanowi¹ uzupe³nienie warunków licencji na Program uzgodnionych uprzednio miêdzy Klientem a IBM. Jeœli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie maj¹ warunki licencji Miêdzynarodowa Umowa Licencyjna na Programy nieobjête Gwarancj¹ (Z125-5589-05).
+Programy wymienione poniÅ¼ej sÄ… licencjonowane na podstawie przedstawionych poniÅ¼ej warunkÃ³w Informacji licencyjnych, ktÃ³re stanowiÄ… uzupeÅ‚nienie warunkÃ³w licencji na Program uzgodnionych uprzednio miÄ™dzy Klientem a IBM. JeÅ›li Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie majÄ… warunki licencji MiÄ™dzynarodowa Umowa Licencyjna na Programy nieobjÄ™te GwarancjÄ… (Z125-5589-05).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
 
-Poni¿sze standardowe warunki maj¹ zastosowanie do u¿ywania Programu przez Licencjobiorcê.
+PoniÅ¼sze standardowe warunki majÄ… zastosowanie do uÅ¼ywania Programu przez LicencjobiorcÄ™.
 
-Niedozwolone u¿ywanie
+Niedozwolone uÅ¼ywanie
 
-Licencjobiorca nie mo¿e u¿ywaæ ani upowa¿niaæ kogokolwiek do u¿ywania Programu w przypadku, gdy jego awaria mog³aby doprowadziæ do œmierci, uszczerbku na zdrowiu, szkody w mieniu albo szkody w œrodowisku naturalnym.
+Licencjobiorca nie moÅ¼e uÅ¼ywaÄ‡ ani upowaÅ¼niaÄ‡ kogokolwiek do uÅ¼ywania Programu w przypadku, gdy jego awaria mogÅ‚aby doprowadziÄ‡ do Å›mierci, uszczerbku na zdrowiu, szkody w mieniu albo szkody w Å›rodowisku naturalnym.
 
-Obraz instalacyjny obejmuj¹cy wiele produktów
+Obraz instalacyjny obejmujÄ…cy wiele produktÃ³w
 
-Program jest dostarczany jako czêœæ obrazu instalacyjnego obejmuj¹cego wiele produktów. Licencjobiorca jest upowa¿niony do zainstalowania i u¿ywania tylko Programu (wraz z ewentualnymi Programami Pakietowymi lub Programami Wspieraj¹cymi), do którego uzyska³ uprawnienia, nie mo¿e natomiast instalowaæ ani u¿ywaæ innego oprogramowania zawartego w obrazie, chyba ¿e naby³ odrêbne uprawnienia do takiego oprogramowania.
+Program jest dostarczany jako czÄ™Å›Ä‡ obrazu instalacyjnego obejmujÄ…cego wiele produktÃ³w. Licencjobiorca jest upowaÅ¼niony do zainstalowania i uÅ¼ywania tylko Programu (wraz z ewentualnymi Programami Pakietowymi lub Programami WspierajÄ…cymi), do ktÃ³rego uzyskaÅ‚ uprawnienia, nie moÅ¼e natomiast instalowaÄ‡ ani uÅ¼ywaÄ‡ innego oprogramowania zawartego w obrazie, chyba Å¼e nabyÅ‚ odrÄ™bne uprawnienia do takiego oprogramowania.
 
-Programy Wspieraj¹ce
+Programy WspierajÄ…ce
 
-Licencjobiorca jest upowa¿niony do zainstalowania i u¿ywania Programów Wspieraj¹cych wskazanych poni¿ej. Licencjobiorca jest upowa¿niony do zainstalowania i u¿ywania takich Programów Wspieraj¹cych jedynie w celu umo¿liwienia Licencjobiorcy u¿ywania Programu G³ównego na mocy niniejszej Umowy. Fraza "w celu umo¿liwienia Licencjobiorcy u¿ywania" obejmuje jedynie te zastosowania, które s¹ niezbêdne do licencjonowanego u¿ywania Programu G³ównego lub innego Programu Wspieraj¹cego albo bezpoœrednio zwi¹zane z takim licencjonowanym u¿ywaniem. Programów Wspieraj¹cych nie mo¿na wykorzystywaæ do jakichkolwiek innych celów. Do Programu Wspieraj¹cego mog¹ byæ do³¹czone warunki licencji. W takim przypadku warunki te maj¹ zastosowanie do u¿ywania takiego Programu Wspieraj¹cego przez Licencjobiorcê. W przypadku sprzecznoœci miêdzy warunkami niniejszych Informacji licencyjnych a warunkami licencji Programu Wspieraj¹cego znaczenie rozstrzygaj¹ce maj¹ warunki niniejszych Informacji licencyjnych. Licencjobiorca musi uzyskaæ uprawnienia do Programu (jako ca³oœci) w liczbie odpowiadaj¹cej instalacjom i u¿ywaniu przez Licencjobiorcê wszystkich Programów Wspieraj¹cych, chyba ¿e w niniejszym dokumencie "Informacje licencyjne" okreœlono odrêbne uprawnienia. Na przyk³ad jeœli niniejszy Program jest licencjonowany wed³ug Procesorowych Jednostek Wartoœci (PVU), a Licencjobiorca bêdzie chcia³ zainstalowaæ Program G³ówny lub Program Wspieraj¹cy na maszynie (fizycznej lub wirtualnej) ze 100 jednostkami PVU oraz kolejny Program Wspieraj¹cy na drugiej maszynie ze 100 jednostkami PVU, to Licencjobiorca musi uzyskaæ 200 uprawnieñ PVU do Programu.
+Licencjobiorca jest upowaÅ¼niony do zainstalowania i uÅ¼ywania ProgramÃ³w WspierajÄ…cych wskazanych poniÅ¼ej. Licencjobiorca jest upowaÅ¼niony do zainstalowania i uÅ¼ywania takich ProgramÃ³w WspierajÄ…cych jedynie w celu umoÅ¼liwienia Licencjobiorcy uÅ¼ywania Programu GÅ‚Ã³wnego na mocy niniejszej Umowy. Fraza "w celu umoÅ¼liwienia Licencjobiorcy uÅ¼ywania" obejmuje jedynie te zastosowania, ktÃ³re sÄ… niezbÄ™dne do licencjonowanego uÅ¼ywania Programu GÅ‚Ã³wnego lub innego Programu WspierajÄ…cego albo bezpoÅ›rednio zwiÄ…zane z takim licencjonowanym uÅ¼ywaniem. ProgramÃ³w WspierajÄ…cych nie moÅ¼na wykorzystywaÄ‡ do jakichkolwiek innych celÃ³w. Do Programu WspierajÄ…cego mogÄ… byÄ‡ doÅ‚Ä…czone warunki licencji. W takim przypadku warunki te majÄ… zastosowanie do uÅ¼ywania takiego Programu WspierajÄ…cego przez LicencjobiorcÄ™. W przypadku sprzecznoÅ›ci miÄ™dzy warunkami niniejszych Informacji licencyjnych a warunkami licencji Programu WspierajÄ…cego znaczenie rozstrzygajÄ…ce majÄ… warunki niniejszych Informacji licencyjnych. Licencjobiorca musi uzyskaÄ‡ uprawnienia do Programu (jako caÅ‚oÅ›ci) w liczbie odpowiadajÄ…cej instalacjom i uÅ¼ywaniu przez LicencjobiorcÄ™ wszystkich ProgramÃ³w WspierajÄ…cych, chyba Å¼e w niniejszym dokumencie "Informacje licencyjne" okreÅ›lono odrÄ™bne uprawnienia. Na przykÅ‚ad jeÅ›li niniejszy Program jest licencjonowany wedÅ‚ug Procesorowych Jednostek WartoÅ›ci (PVU), a Licencjobiorca bÄ™dzie chciaÅ‚ zainstalowaÄ‡ Program GÅ‚Ã³wny lub Program WspierajÄ…cy na maszynie (fizycznej lub wirtualnej) ze 100 jednostkami PVU oraz kolejny Program WspierajÄ…cy na drugiej maszynie ze 100 jednostkami PVU, to Licencjobiorca musi uzyskaÄ‡ 200 uprawnieÅ„ PVU do Programu.
 
-Programy Wspieraj¹ce:
+Programy WspierajÄ…ce:
 IBM WebSphere Liberty 19
 
-Ograniczenie dotycz¹ce produktów dla programistów
+Ograniczenie dotyczÄ…ce produktÃ³w dla programistÃ³w
 
-Jeœli Program jest oznaczony jako przeznaczony dla "Programistów", to mo¿e zostaæ zainstalowany na maszynie programisty jedynie do wewnêtrznych celów Licencjobiorcy zwi¹zanych z programowaniem lub testami jednostkowymi. "Maszyna programisty" to fizyczne lub wirtualne œrodowisko pulpitu, w którym uruchamiane s¹ g³ówny system operacyjny oraz Program, przy czym zarówno g³ówny system operacyjny, jak i Program mog¹ byæ u¿ywane przez maksymalnie jednego okreœlonego programistê. Licencjobiorca nie jest upowa¿niony do u¿ywania Programu w celu przetwarzania i symulowania obci¹¿eñ produkcyjnych ani do testowania skalowalnoœci dowolnego kodu, aplikacji czy systemu. Licencjobiorca nie jest upowa¿niony do u¿ywania jakiejkolwiek czêœci Programu do ¿adnych innych celów, chyba ¿e nabêdzie odpowiednie upowa¿nienie do u¿ywania do celów produkcyjnych.
+JeÅ›li Program jest oznaczony jako przeznaczony dla "ProgramistÃ³w", to moÅ¼e zostaÄ‡ zainstalowany na maszynie programisty jedynie do wewnÄ™trznych celÃ³w Licencjobiorcy zwiÄ…zanych z programowaniem lub testami jednostkowymi. "Maszyna programisty" to fizyczne lub wirtualne Å›rodowisko pulpitu, w ktÃ³rym uruchamiane sÄ… gÅ‚Ã³wny system operacyjny oraz Program, przy czym zarÃ³wno gÅ‚Ã³wny system operacyjny, jak i Program mogÄ… byÄ‡ uÅ¼ywane przez maksymalnie jednego okreÅ›lonego programistÄ™. Licencjobiorca nie jest upowaÅ¼niony do uÅ¼ywania Programu w celu przetwarzania i symulowania obciÄ…Å¼eÅ„ produkcyjnych ani do testowania skalowalnoÅ›ci dowolnego kodu, aplikacji czy systemu. Licencjobiorca nie jest upowaÅ¼niony do uÅ¼ywania jakiejkolwiek czÄ™Å›ci Programu do Å¼adnych innych celÃ³w, chyba Å¼e nabÄ™dzie odpowiednie upowaÅ¼nienie do uÅ¼ywania do celÃ³w produkcyjnych.
 
-Narzêdzie programistyczne
+NarzÄ™dzie programistyczne
 
-Ten Program zosta³ zaprojektowany z myœl¹ o udzielaniu pomocy w projektowaniu oprogramowania i systemów. Licencjobiorca ponosi wy³¹czn¹ odpowiedzialnoœæ za aplikacje i systemy stworzone przy u¿yciu Programu oraz przyjmuje na siebie wszelkie ryzyko i odpowiedzialnoœæ z nimi zwi¹zane.
+Ten Program zostaÅ‚ zaprojektowany z myÅ›lÄ… o udzielaniu pomocy w projektowaniu oprogramowania i systemÃ³w. Licencjobiorca ponosi wyÅ‚Ä…cznÄ… odpowiedzialnoÅ›Ä‡ za aplikacje i systemy stworzone przy uÅ¼yciu Programu oraz przyjmuje na siebie wszelkie ryzyko i odpowiedzialnoÅ›Ä‡ z nimi zwiÄ…zane.
 
-Ochrona prywatnoœci
+Ochrona prywatnoÅ›ci
 
-Licencjobiorca potwierdza i zgadza siê na u¿ywanie przez IBM informacji cookie i technik œledzenia w celu gromadzenia danych osobowych w zwi¹zku ze zbieraniem danych statystycznych dotycz¹cych u¿ywania produktów oraz informacji maj¹cych na celu usprawnianie obs³ugi u¿ytkowników i/lub dostosowywanie interakcji z u¿ytkownikami w sposób zgodny ze Strategi¹ Ochrony Prywatnoœci Online IBM dostêpn¹ pod adresem http://www.ibm.com/privacy/.
+Licencjobiorca potwierdza i zgadza siÄ™ na uÅ¼ywanie przez IBM informacji cookie i technik Å›ledzenia w celu gromadzenia danych osobowych w zwiÄ…zku ze zbieraniem danych statystycznych dotyczÄ…cych uÅ¼ywania produktÃ³w oraz informacji majÄ…cych na celu usprawnianie obsÅ‚ugi uÅ¼ytkownikÃ³w i/lub dostosowywanie interakcji z uÅ¼ytkownikami w sposÃ³b zgodny ze StrategiÄ… Ochrony PrywatnoÅ›ci Online IBM dostÄ™pnÄ… pod adresem http://www.ibm.com/privacy/.
 
-Komponenty ród³owe i Materia³y Przyk³adowe
+Komponenty Å¹rÃ³dÅ‚owe i MateriaÅ‚y PrzykÅ‚adowe
 
-Program mo¿e zawieraæ komponenty w postaci kodu Ÿród³owego (zwane dalej "Komponentami ród³owymi") oraz inne materia³y okreœlone jako Materia³y Przyk³adowe. Licencjobiorca mo¿e kopiowaæ i modyfikowaæ Komponenty ród³owe i Materia³y Przyk³adowe jedynie na u¿ytek wewnêtrzny, pod warunkiem, ¿e u¿ytek taki mieœci siê w granicach praw licencyjnych na mocy niniejszej Umowy, zaœ Licencjobiorca nie bêdzie zmieniaæ ani usuwaæ ¿adnych informacji czy uwag o prawach autorskich zawartych w Komponentach ród³owych lub Materia³ach Przyk³adowych. IBM dostarcza Komponenty ród³owe i Materia³y Przyk³adowe bez zobowi¹zania do wsparcia, W STANIE, W JAKIM SIÊ ZNAJDUJ¥ ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÊKOJMIÊ RÓWNIE¯ WY£¥CZA SIÊ), WYRANYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŒCI GWARANCJI PRAWA W£ASNOŒCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÓW PRZYDATNOŒCI HANDLOWEJ I PRZYDATNOŒCI DO OKREŒLONEGO CELU.
+Program moÅ¼e zawieraÄ‡ komponenty w postaci kodu ÅºrÃ³dÅ‚owego (zwane dalej "Komponentami Å¹rÃ³dÅ‚owymi") oraz inne materiaÅ‚y okreÅ›lone jako MateriaÅ‚y PrzykÅ‚adowe. Licencjobiorca moÅ¼e kopiowaÄ‡ i modyfikowaÄ‡ Komponenty Å¹rÃ³dÅ‚owe i MateriaÅ‚y PrzykÅ‚adowe jedynie na uÅ¼ytek wewnÄ™trzny, pod warunkiem, Å¼e uÅ¼ytek taki mieÅ›ci siÄ™ w granicach praw licencyjnych na mocy niniejszej Umowy, zaÅ› Licencjobiorca nie bÄ™dzie zmieniaÄ‡ ani usuwaÄ‡ Å¼adnych informacji czy uwag o prawach autorskich zawartych w Komponentach Å¹rÃ³dÅ‚owych lub MateriaÅ‚ach PrzykÅ‚adowych. IBM dostarcza Komponenty Å¹rÃ³dÅ‚owe i MateriaÅ‚y PrzykÅ‚adowe bez zobowiÄ…zania do wsparcia, W STANIE, W JAKIM SIÄ˜ ZNAJDUJÄ„ ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÄ˜KOJMIÄ˜ RÃ“WNIEÅ» WYÅÄ„CZA SIÄ˜), WYRAÅ¹NYCH LUB DOMNIEMANYCH, A W SZCZEGÃ“LNOÅšCI GWARANCJI PRAWA WÅASNOÅšCI, NIENARUSZANIA PRAW OSÃ“B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÃ“W PRZYDATNOÅšCI HANDLOWEJ I PRZYDATNOÅšCI DO OKREÅšLONEGO CELU.
 
-Kod Wstêpny do Oceny Technicznej
+Kod WstÄ™pny do Oceny Technicznej
 
-Wraz z Programem lub jego aktualizacjami mo¿e byæ udostêpniany lub dystrybuowany Kod Wstêpny do Oceny Technicznej ("KWOT"), który nie jest czêœci¹ Programu. Z wyj¹tkiem sytuacji przedstawionych poni¿ej KWOT jest licencjonowany na takich samych warunkach jak Program. KWOT zostanie oznaczony jako taki w pliku z uwagami (lub w jego uaktualnionej wersji do³¹czonej do aktualizacji). Niektóre lub wszystkie elementy KWOT mog¹ nie byæ udostêpniane przez IBM ogó³owi odbiorców w formie lub w ramach produktu. Licencjobiorca jest upowa¿niony do korzystania z KWOT wy³¹cznie do celów wewnêtrznych zwi¹zanych z próbnym u¿ywaniem, nie mo¿e natomiast korzystaæ z niego w œrodowisku produkcyjnym. W pliku z uwagami mo¿e równie¿ zostaæ wskazany konkretny okres próbnego u¿ywania. W takim przypadku po up³ywie powy¿szego okresu próbnego u¿ywania Licencjobiorca ma obowi¹zek zaprzestaæ korzystania z KWOT i odinstalowaæ go. IBM udostêpnia KWOT bez zobowi¹zania do udzielania wsparcia i W STANIE, W JAKIM SIÊ ZNAJDUJE ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÊKOJMIÊ RÓWNIE¯ WY£¥CZA SIÊ), WYRANYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŒCI GWARANCJI PRAWA W£ASNOŒCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI I WARUNKÓW PRZYDATNOŒCI HANDLOWEJ I PRZYDATNOŒCI DO OKREŒLONEGO CELU.
+Wraz z Programem lub jego aktualizacjami moÅ¼e byÄ‡ udostÄ™pniany lub dystrybuowany Kod WstÄ™pny do Oceny Technicznej ("KWOT"), ktÃ³ry nie jest czÄ™Å›ciÄ… Programu. Z wyjÄ…tkiem sytuacji przedstawionych poniÅ¼ej KWOT jest licencjonowany na takich samych warunkach jak Program. KWOT zostanie oznaczony jako taki w pliku z uwagami (lub w jego uaktualnionej wersji doÅ‚Ä…czonej do aktualizacji). NiektÃ³re lub wszystkie elementy KWOT mogÄ… nie byÄ‡ udostÄ™pniane przez IBM ogÃ³Å‚owi odbiorcÃ³w w formie lub w ramach produktu. Licencjobiorca jest upowaÅ¼niony do korzystania z KWOT wyÅ‚Ä…cznie do celÃ³w wewnÄ™trznych zwiÄ…zanych z prÃ³bnym uÅ¼ywaniem, nie moÅ¼e natomiast korzystaÄ‡ z niego w Å›rodowisku produkcyjnym. W pliku z uwagami moÅ¼e rÃ³wnieÅ¼ zostaÄ‡ wskazany konkretny okres prÃ³bnego uÅ¼ywania. W takim przypadku po upÅ‚ywie powyÅ¼szego okresu prÃ³bnego uÅ¼ywania Licencjobiorca ma obowiÄ…zek zaprzestaÄ‡ korzystania z KWOT i odinstalowaÄ‡ go. IBM udostÄ™pnia KWOT bez zobowiÄ…zania do udzielania wsparcia i W STANIE, W JAKIM SIÄ˜ ZNAJDUJE ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÄ˜KOJMIÄ˜ RÃ“WNIEÅ» WYÅÄ„CZA SIÄ˜), WYRAÅ¹NYCH LUB DOMNIEMANYCH, A W SZCZEGÃ“LNOÅšCI GWARANCJI PRAWA WÅASNOÅšCI, NIENARUSZANIA PRAW OSÃ“B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI I WARUNKÃ“W PRZYDATNOÅšCI HANDLOWEJ I PRZYDATNOÅšCI DO OKREÅšLONEGO CELU.
 
-Licencjobiorca mo¿e przekazaæ KWOT innemu podmiotowi wy³¹cznie razem z Programem. Ponadto KWOT mo¿e zawieraæ mechanizm blokuj¹cy, który uniemo¿liwi korzystanie z niego po zakoñczeniu okresu próbnego u¿ywania. Licencjobiorca zobowi¹zuje siê nie ingerowaæ w powy¿szy mechanizm blokuj¹cy ani w KWOT. W zwi¹zku z powy¿szym Licencjobiorca powinien zachowaæ odpowiednie œrodki ostro¿noœci, aby unikn¹æ ewentualnej utraty danych w momencie utraty mo¿liwoœci korzystania z KWOT.
+Licencjobiorca moÅ¼e przekazaÄ‡ KWOT innemu podmiotowi wyÅ‚Ä…cznie razem z Programem. Ponadto KWOT moÅ¼e zawieraÄ‡ mechanizm blokujÄ…cy, ktÃ³ry uniemoÅ¼liwi korzystanie z niego po zakoÅ„czeniu okresu prÃ³bnego uÅ¼ywania. Licencjobiorca zobowiÄ…zuje siÄ™ nie ingerowaÄ‡ w powyÅ¼szy mechanizm blokujÄ…cy ani w KWOT. W zwiÄ…zku z powyÅ¼szym Licencjobiorca powinien zachowaÄ‡ odpowiednie Å›rodki ostroÅ¼noÅ›ci, aby uniknÄ…Ä‡ ewentualnej utraty danych w momencie utraty moÅ¼liwoÅ›ci korzystania z KWOT.
 
-Licencjobiorca przenosi na IBM wszelkie posiadane uprawnienia i prawa (w tym prawa autorskie) do wszelkich danych, sugestii oraz materia³ów drukowanych, 1) które odnosz¹ siê do Kodu Wstêpnego do Oceny Technicznej oraz 2) które Licencjobiorca dostarcza IBM. Na ¿¹danie IBM Licencjobiorca podpisze dodatkowe dokumenty, niezbêdne do dokonania cesji takich praw. Poza powy¿szym Licencjobiorca udziela IBM niewy³¹cznej, nieodwo³alnej, nieograniczonej, ogólnoœwiatowej i op³aconej z góry licencji na a) w³¹czanie do dowolnego produktu lub us³ugi jakichkolwiek pomys³ów, know-how, koncepcji, technik, wynalazków, odkryæ lub ulepszeñ, które Licencjobiorca dostarcza IBM w odniesieniu do Kodu Wstêpnego do Oceny Technicznej, bez wzglêdu na to, czy mog¹ one zostaæ opatentowane, b) u¿ywanie, produkowanie i wprowadzanie na rynek dowolnego takiego produktu lub us³ugi oraz c) zezwalanie osobom trzecim na wykonywanie wymienionych wy¿ej czynnoœci.
+Licencjobiorca przenosi na IBM wszelkie posiadane uprawnienia i prawa (w tym prawa autorskie) do wszelkich danych, sugestii oraz materiaÅ‚Ã³w drukowanych, 1) ktÃ³re odnoszÄ… siÄ™ do Kodu WstÄ™pnego do Oceny Technicznej oraz 2) ktÃ³re Licencjobiorca dostarcza IBM. Na Å¼Ä…danie IBM Licencjobiorca podpisze dodatkowe dokumenty, niezbÄ™dne do dokonania cesji takich praw. Poza powyÅ¼szym Licencjobiorca udziela IBM niewyÅ‚Ä…cznej, nieodwoÅ‚alnej, nieograniczonej, ogÃ³lnoÅ›wiatowej i opÅ‚aconej z gÃ³ry licencji na a) wÅ‚Ä…czanie do dowolnego produktu lub usÅ‚ugi jakichkolwiek pomysÅ‚Ã³w, know-how, koncepcji, technik, wynalazkÃ³w, odkryÄ‡ lub ulepszeÅ„, ktÃ³re Licencjobiorca dostarcza IBM w odniesieniu do Kodu WstÄ™pnego do Oceny Technicznej, bez wzglÄ™du na to, czy mogÄ… one zostaÄ‡ opatentowane, b) uÅ¼ywanie, produkowanie i wprowadzanie na rynek dowolnego takiego produktu lub usÅ‚ugi oraz c) zezwalanie osobom trzecim na wykonywanie wymienionych wyÅ¼ej czynnoÅ›ci.
 
-Licencjobiorca zobowi¹zuje siê traktowaæ poni¿sze elementy jako "Informacje Poufne IBM", bez wzglêdu na to, czy zawieraj¹ one zastrze¿enia wskazuj¹ce na ich poufnoœæ, czy te¿ przed ujawnieniem zosta³y okreœlone jako Informacje Poufne IBM: (a) Kod Wstêpny do Oceny Technicznej, (b) wszelkie informacje dostarczone Licencjobiorcy przez IBM w zwi¹zku z Kodem Wstêpnym do Oceny Technicznej, a w szczególnoœci zwi¹zane z nim materia³y, takie jak specyfikacje, plany, kierunki rozwoju, strategie, testy porównawcze, charakterystyka wydajnoœci, porównania i inne oceny Kodu Wstêpnego do Oceny Technicznej, (c) wszelkie informacje zwi¹zane z dostêpem Licencjobiorcy do Kodu Wstêpnego do Oceny Technicznej, a w szczególnoœci has³a i kody dostêpu oraz (d) wszelkie dane, opinie, sugestie i/lub materia³y w formie pisemnej, dostarczone przez Licencjobiorcê do IBM w zwi¹zku z Kodem Wstêpnym do Oceny Technicznej. Licencjobiorca jest upowa¿niony do u¿ywania Informacji Poufnych IBM w celu, w którym zosta³y one ujawnione, lub w inny sposób przynosz¹cy korzyœci IBM. Bez wzglêdu na jakiekolwiek inne warunki niniejszej Umowy, Licencjobiorca zobowi¹zuje siê nie przekazywaæ, nie publikowaæ i nie ujawniaæ osobom trzecim Informacji Poufnych IBM ani ich nie omawiaæ z osobami trzecimi, zanim IBM publicznie ujawni takie Informacje Poufne IBM bez zobowi¹zania do zachowania ich w poufnoœci. Zastrze¿enie to dotyczy w szczególnoœci artyku³ów, opracowañ i innych materia³ów w formie pisemnej odnosz¹cych siê do Informacji Poufnych IBM. Ponadto bez wzglêdu na powy¿sze postanowienia Licencjobiorca nie jest zobowi¹zany do zachowania poufnoœci Kodu Wstêpnego do Oceny Technicznej, który zosta³ oznaczony w pliku z uwagami jako niepoufny.
+Licencjobiorca zobowiÄ…zuje siÄ™ traktowaÄ‡ poniÅ¼sze elementy jako "Informacje Poufne IBM", bez wzglÄ™du na to, czy zawierajÄ… one zastrzeÅ¼enia wskazujÄ…ce na ich poufnoÅ›Ä‡, czy teÅ¼ przed ujawnieniem zostaÅ‚y okreÅ›lone jako Informacje Poufne IBM: (a) Kod WstÄ™pny do Oceny Technicznej, (b) wszelkie informacje dostarczone Licencjobiorcy przez IBM w zwiÄ…zku z Kodem WstÄ™pnym do Oceny Technicznej, a w szczegÃ³lnoÅ›ci zwiÄ…zane z nim materiaÅ‚y, takie jak specyfikacje, plany, kierunki rozwoju, strategie, testy porÃ³wnawcze, charakterystyka wydajnoÅ›ci, porÃ³wnania i inne oceny Kodu WstÄ™pnego do Oceny Technicznej, (c) wszelkie informacje zwiÄ…zane z dostÄ™pem Licencjobiorcy do Kodu WstÄ™pnego do Oceny Technicznej, a w szczegÃ³lnoÅ›ci hasÅ‚a i kody dostÄ™pu oraz (d) wszelkie dane, opinie, sugestie i/lub materiaÅ‚y w formie pisemnej, dostarczone przez LicencjobiorcÄ™ do IBM w zwiÄ…zku z Kodem WstÄ™pnym do Oceny Technicznej. Licencjobiorca jest upowaÅ¼niony do uÅ¼ywania Informacji Poufnych IBM w celu, w ktÃ³rym zostaÅ‚y one ujawnione, lub w inny sposÃ³b przynoszÄ…cy korzyÅ›ci IBM. Bez wzglÄ™du na jakiekolwiek inne warunki niniejszej Umowy, Licencjobiorca zobowiÄ…zuje siÄ™ nie przekazywaÄ‡, nie publikowaÄ‡ i nie ujawniaÄ‡ osobom trzecim Informacji Poufnych IBM ani ich nie omawiaÄ‡ z osobami trzecimi, zanim IBM publicznie ujawni takie Informacje Poufne IBM bez zobowiÄ…zania do zachowania ich w poufnoÅ›ci. ZastrzeÅ¼enie to dotyczy w szczegÃ³lnoÅ›ci artykuÅ‚Ã³w, opracowaÅ„ i innych materiaÅ‚Ã³w w formie pisemnej odnoszÄ…cych siÄ™ do Informacji Poufnych IBM. Ponadto bez wzglÄ™du na powyÅ¼sze postanowienia Licencjobiorca nie jest zobowiÄ…zany do zachowania poufnoÅ›ci Kodu WstÄ™pnego do Oceny Technicznej, ktÃ³ry zostaÅ‚ oznaczony w pliku z uwagami jako niepoufny.
 
-Aby unikn¹æ ujawnienia Informacji Poufnych IBM, Licencjobiorca zobowi¹zuje siê postêpowaæ z t¹ sam¹ starannoœci¹ i dyskrecj¹, z jak¹ postêpuje w stosunku do w³asnych informacji o podobnym charakterze, których nie zamierza ujawniaæ, i w ka¿dym przypadku wykazywaæ starannoœæ nie mniejsz¹ ni¿ nale¿yta. Zobowi¹zania Licencjobiorcy w zakresie Informacji Poufnych IBM bêd¹ pozostawaæ w mocy przez okres dwóch lat od daty otrzymania przez Licencjobiorcê Informacji Poufnych IBM. Licencjobiorca zobowi¹zuje siê nie ujawniaæ IBM jakichkolwiek informacji uwa¿anych za poufne lub prawnie zastrze¿onych przez Licencjobiorcê lub osoby trzecie, z wyj¹tkiem sytuacji, kiedy takie ujawnienie zostanie uregulowane na piœmie w oddzielnej umowie o poufnoœci podpisanej przez obie Strony.
+Aby uniknÄ…Ä‡ ujawnienia Informacji Poufnych IBM, Licencjobiorca zobowiÄ…zuje siÄ™ postÄ™powaÄ‡ z tÄ… samÄ… starannoÅ›ciÄ… i dyskrecjÄ…, z jakÄ… postÄ™puje w stosunku do wÅ‚asnych informacji o podobnym charakterze, ktÃ³rych nie zamierza ujawniaÄ‡, i w kaÅ¼dym przypadku wykazywaÄ‡ starannoÅ›Ä‡ nie mniejszÄ… niÅ¼ naleÅ¼yta. ZobowiÄ…zania Licencjobiorcy w zakresie Informacji Poufnych IBM bÄ™dÄ… pozostawaÄ‡ w mocy przez okres dwÃ³ch lat od daty otrzymania przez LicencjobiorcÄ™ Informacji Poufnych IBM. Licencjobiorca zobowiÄ…zuje siÄ™ nie ujawniaÄ‡ IBM jakichkolwiek informacji uwaÅ¼anych za poufne lub prawnie zastrzeÅ¼onych przez LicencjobiorcÄ™ lub osoby trzecie, z wyjÄ…tkiem sytuacji, kiedy takie ujawnienie zostanie uregulowane na piÅ›mie w oddzielnej umowie o poufnoÅ›ci podpisanej przez obie Strony.
 
-Bez wzglêdu na umowê o zachowaniu poufnoœci czy jak¹kolwiek inn¹ umowê, któr¹ Licencjobiorca móg³ zawrzeæ z IBM w zakresie informacji poufnych, Informacje Poufne IBM podlegaj¹ warunkom okreœlonym w poprzednich akapitach.
+Bez wzglÄ™du na umowÄ™ o zachowaniu poufnoÅ›ci czy jakÄ…kolwiek innÄ… umowÄ™, ktÃ³rÄ… Licencjobiorca mÃ³gÅ‚ zawrzeÄ‡ z IBM w zakresie informacji poufnych, Informacje Poufne IBM podlegajÄ… warunkom okreÅ›lonym w poprzednich akapitach.
 
 Ograniczenia eksportowe i importowe
 
-Program ten mo¿e zawieraæ technologiê kryptograficzn¹. Korzystanie z Programu przez u¿ytkowników w ró¿nych krajach, jak równie¿ przenoszenie Programu na u¿ytkowników w tym samym kraju lub w ró¿nych krajach mo¿e byæ zabronione lub podlegaæ specjalnym prawom i przepisom eksportowym lub importowym lub polityce rz¹du w kraju Licencjobiorcy, w tym prawom i przepisom eksportowym i importowym obowi¹zuj¹cym w Stanach Zjednoczonych. Licencjobiorca przyjmuje na siebie ca³¹ odpowiedzialnoœæ za przestrzeganie wszystkich obowi¹zuj¹cych praw i przepisów w zakresie eksportu, importu i u¿ywania tego Programu, a w szczególnoœci ograniczeñ w zakresie eksportu lub ponownego eksportu obowi¹zuj¹cych w Stanach Zjednoczonych. Klasyfikacjê eksportow¹ tego Programu znaleŸæ mo¿na pod adresem: https://www.ibm.com/products/exporting/.
+Program ten moÅ¼e zawieraÄ‡ technologiÄ™ kryptograficznÄ…. Korzystanie z Programu przez uÅ¼ytkownikÃ³w w rÃ³Å¼nych krajach, jak rÃ³wnieÅ¼ przenoszenie Programu na uÅ¼ytkownikÃ³w w tym samym kraju lub w rÃ³Å¼nych krajach moÅ¼e byÄ‡ zabronione lub podlegaÄ‡ specjalnym prawom i przepisom eksportowym lub importowym lub polityce rzÄ…du w kraju Licencjobiorcy, w tym prawom i przepisom eksportowym i importowym obowiÄ…zujÄ…cym w Stanach Zjednoczonych. Licencjobiorca przyjmuje na siebie caÅ‚Ä… odpowiedzialnoÅ›Ä‡ za przestrzeganie wszystkich obowiÄ…zujÄ…cych praw i przepisÃ³w w zakresie eksportu, importu i uÅ¼ywania tego Programu, a w szczegÃ³lnoÅ›ci ograniczeÅ„ w zakresie eksportu lub ponownego eksportu obowiÄ…zujÄ…cych w Stanach Zjednoczonych. KlasyfikacjÄ™ eksportowÄ… tego Programu znaleÅºÄ‡ moÅ¼na pod adresem: https://www.ibm.com/products/exporting/.
 
-Dane i us³ugi osób trzecich
+Dane i usÅ‚ugi osÃ³b trzecich
 
-Program mo¿e zawieraæ odsy³acze lub umo¿liwiaæ dostêp do us³ug transmisji danych, baz danych, us³ug WWW, oprogramowania b¹dŸ innej zawartoœci osób trzecich (zwanych dalej ³¹cznie "zawartoœci¹"). Zawartoœæ taka jest udostêpniana W STANIE, W JAKIM SIÊ ZNAJDUJE ("AS-IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÊKOJMIÊ RÓWNIE¯ WY£¥CZA SIÊ), WYRANYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŒCI GWARANCJI PRAWA W£ASNOŒCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÓW PRZYDATNOŒCI HANDLOWEJ I PRZYDATNOŒCI DO OKREŒLONEGO CELU. Ponadto odpowiednie osoby trzecie mog¹ w ka¿dej chwili zaprzestaæ udostêpniania zawartoœci wed³ug w³asnego uznania. Mo¿e byæ równie¿ wymagane zawarcie przez Licencjobiorcê oddzielnych umów z osobami trzecimi w celu uzyskania dostêpu do takiej zawartoœci lub jej u¿ywania. IBM nie jest stron¹ ¿adnych takich oddzielnych umów, a zobowi¹zanie Licencjobiorcy do przestrzegania warunków takich umów jest wyraŸnym warunkiem udzielenia niniejszej licencji.
+Program moÅ¼e zawieraÄ‡ odsyÅ‚acze lub umoÅ¼liwiaÄ‡ dostÄ™p do usÅ‚ug transmisji danych, baz danych, usÅ‚ug WWW, oprogramowania bÄ…dÅº innej zawartoÅ›ci osÃ³b trzecich (zwanych dalej Å‚Ä…cznie "zawartoÅ›ciÄ…"). ZawartoÅ›Ä‡ taka jest udostÄ™pniana W STANIE, W JAKIM SIÄ˜ ZNAJDUJE ("AS-IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RÄ˜KOJMIÄ˜ RÃ“WNIEÅ» WYÅÄ„CZA SIÄ˜), WYRAÅ¹NYCH LUB DOMNIEMANYCH, A W SZCZEGÃ“LNOÅšCI GWARANCJI PRAWA WÅASNOÅšCI, NIENARUSZANIA PRAW OSÃ“B TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÃ“W PRZYDATNOÅšCI HANDLOWEJ I PRZYDATNOÅšCI DO OKREÅšLONEGO CELU. Ponadto odpowiednie osoby trzecie mogÄ… w kaÅ¼dej chwili zaprzestaÄ‡ udostÄ™pniania zawartoÅ›ci wedÅ‚ug wÅ‚asnego uznania. MoÅ¼e byÄ‡ rÃ³wnieÅ¼ wymagane zawarcie przez LicencjobiorcÄ™ oddzielnych umÃ³w z osobami trzecimi w celu uzyskania dostÄ™pu do takiej zawartoÅ›ci lub jej uÅ¼ywania. IBM nie jest stronÄ… Å¼adnych takich oddzielnych umÃ³w, a zobowiÄ…zanie Licencjobiorcy do przestrzegania warunkÃ³w takich umÃ³w jest wyraÅºnym warunkiem udzielenia niniejszej licencji.
 
-L/N:  L-ASAY-BAPDVT
-D/N:  L-ASAY-BAPDVT
-P/N:  L-ASAY-BAPDVT
+L/N:  L-ASAY-BFHF34
+D/N:  L-ASAY-BFHF34
+P/N:  L-ASAY-BFHF34
 
 
-Miêdzynarodowa Umowa Licencyjna na Programy nieobjête Gwarancj¹
+MiÄ™dzynarodowa Umowa Licencyjna na Programy nieobjÄ™te GwarancjÄ…
 
-Czêœæ 1 - Warunki ogólne
+CzÄ™Å›Ä‡ 1 - Warunki ogÃ³lne
 
-POBIERANIE, INSTALOWANIE, KOPIOWANIE, OTWIERANIE, KLIKANIE PRZYCISKU "AKCEPTUJÊ" ORAZ U¯YWANIE PROGRAMU W JAKIKOLWIEK INNY SPOSÓB OZNACZA AKCEPTACJÊ WARUNKÓW NINIEJSZEJ UMOWY. ZAAKCEPTOWANIE PRZEZ U¯YTKOWNIKA NINIEJSZYCH WARUNKÓW W IMIENIU LICENCJOBIORCY OZNACZA, ¯E U¯YTKOWNIK GWARANTUJE POSIADANIE PE£NYCH UPRAWNIEÑ DO PODPORZ¥DKOWANIA LICENCJOBIORCY NINIEJSZYM WARUNKOM. JEŒLI U¯YTKOWNIK NIE WYRA¯A ZGODY NA NINIEJSZE WARUNKI,
+POBIERANIE, INSTALOWANIE, KOPIOWANIE, OTWIERANIE, KLIKANIE PRZYCISKU "AKCEPTUJÄ˜" ORAZ UÅ»YWANIE PROGRAMU W JAKIKOLWIEK INNY SPOSÃ“B OZNACZA AKCEPTACJÄ˜ WARUNKÃ“W NINIEJSZEJ UMOWY. ZAAKCEPTOWANIE PRZEZ UÅ»YTKOWNIKA NINIEJSZYCH WARUNKÃ“W W IMIENIU LICENCJOBIORCY OZNACZA, Å»E UÅ»YTKOWNIK GWARANTUJE POSIADANIE PEÅNYCH UPRAWNIEÅƒ DO PODPORZÄ„DKOWANIA LICENCJOBIORCY NINIEJSZYM WARUNKOM. JEÅšLI UÅ»YTKOWNIK NIE WYRAÅ»A ZGODY NA NINIEJSZE WARUNKI,
 
-* NIE BÊDZIE POBIERAÆ, INSTALOWAÆ, KOPIOWAÆ, OTWIERAÆ, KLIKAÆ PRZYCISKU "AKCEPTUJÊ" ANI U¯YWAÆ PROGRAMU W INNY SPOSÓB; ORAZ
+* NIE BÄ˜DZIE POBIERAÄ†, INSTALOWAÄ†, KOPIOWAÄ†, OTWIERAÄ†, KLIKAÄ† PRZYCISKU "AKCEPTUJÄ˜" ANI UÅ»YWAÄ† PROGRAMU W INNY SPOSÃ“B; ORAZ
 
-* NATYCHMIAST ZWRÓCI NIEWYKORZYSTANE NOŒNIKI ORAZ DOKUMENTACJÊ PODMIOTOWI, OD KTÓREGO NABY£ PROGRAM, ABY UZYSKAÆ ZWROT EWENTUALNEJ ZAP£ACONEJ KWOTY. JEŒLI PROGRAM ZOSTA£ POBRANY, NALE¯Y ZNISZCZYÆ WSZELKIE JEGO KOPIE.
+* NATYCHMIAST ZWRÃ“CI NIEWYKORZYSTANE NOÅšNIKI ORAZ DOKUMENTACJÄ˜ PODMIOTOWI, OD KTÃ“REGO NABYÅ PROGRAM, ABY UZYSKAÄ† ZWROT EWENTUALNEJ ZAPÅACONEJ KWOTY. JEÅšLI PROGRAM ZOSTAÅ POBRANY, NALEÅ»Y ZNISZCZYÄ† WSZELKIE JEGO KOPIE.
 
 1. Definicje
 
-"Autoryzowane U¿ywanie" - okreœla poziom upowa¿nienia Licencjobiorcy do wykonywania lub uruchamiania Programu. Poziom ten mo¿e byæ mierzony liczb¹ u¿ytkowników, liczb¹ milionów jednostek serwisowych (millions of service units - MSU), liczb¹ procesorowych jednostek wartoœci (Processor Value Units - PVU) lub w inny sposób okreœlony przez IBM.
+"Autoryzowane UÅ¼ywanie" - okreÅ›la poziom upowaÅ¼nienia Licencjobiorcy do wykonywania lub uruchamiania Programu. Poziom ten moÅ¼e byÄ‡ mierzony liczbÄ… uÅ¼ytkownikÃ³w, liczbÄ… milionÃ³w jednostek serwisowych (millions of service units - MSU), liczbÄ… procesorowych jednostek wartoÅ›ci (Processor Value Units - PVU) lub w inny sposÃ³b okreÅ›lony przez IBM.
 
-"IBM" - oznacza International Business Machines Corporation lub jedno z przedsiêbiorstw podporz¹dkowanych IBM Corp.
+"IBM" - oznacza International Business Machines Corporation lub jedno z przedsiÄ™biorstw podporzÄ…dkowanych IBM Corp.
 
-"Informacje Licencyjne" ("LI") - oznaczaj¹ dokument zawieraj¹cy informacje i inne warunki dodatkowe na temat Programu. Dokument "Informacje Licencyjne" dla Programu jest dostêpny pod adresem: www.ibm.com/software/sla. Informacje Licencyjne mo¿na te¿ znaleŸæ w katalogu Programu, u¿ywaj¹c komend systemowych. Dokument ten mo¿e te¿ byæ zawarty w Programie.
+"Informacje Licencyjne" ("LI") - oznaczajÄ… dokument zawierajÄ…cy informacje i inne warunki dodatkowe na temat Programu. Dokument "Informacje Licencyjne" dla Programu jest dostÄ™pny pod adresem: www.ibm.com/software/sla. Informacje Licencyjne moÅ¼na teÅ¼ znaleÅºÄ‡ w katalogu Programu, uÅ¼ywajÄ…c komend systemowych. Dokument ten moÅ¼e teÅ¼ byÄ‡ zawarty w Programie.
 
-"Program" - oznacza orygina³ oraz pe³ne lub czêœciowe kopie: 1) instrukcji i danych w formie zapisu maszynowego, 2) komponentów, plików i modu³ów, 3) zapisów audiowizualnych (takich jak obrazy, tekst, nagrania lub ilustracje), 4) odnosz¹cych siê do Programu materia³ów licencjonowanych (takich jak klucze i dokumentacja).
+"Program" - oznacza oryginaÅ‚ oraz peÅ‚ne lub czÄ™Å›ciowe kopie: 1) instrukcji i danych w formie zapisu maszynowego, 2) komponentÃ³w, plikÃ³w i moduÅ‚Ã³w, 3) zapisÃ³w audiowizualnych (takich jak obrazy, tekst, nagrania lub ilustracje), 4) odnoszÄ…cych siÄ™ do Programu materiaÅ‚Ã³w licencjonowanych (takich jak klucze i dokumentacja).
 
 2. Struktura Umowy
 
-Niniejsza Umowa zawiera Czêœæ 1 - Warunki ogólne, Czêœæ 2 - Warunki specyficzne dla poszczególnych krajów (o ile maj¹ zastosowanie) oraz Informacje Licencyjne, które razem tworz¹ kompletn¹ umowê miêdzy Licencjobiorc¹ i IBM dotycz¹c¹ u¿ywania Programu. Umowa ta zastêpuje wszelkie wczeœniejsze ustne lub pisemne ustalenia dokonane miêdzy Licencjobiorc¹ i IBM w zakresie u¿ywania Programu. W przypadku jakiejkolwiek sprzecznoœci, warunki dokumentu "Informacje Licencyjne" maj¹ znaczenie rozstrzygaj¹ce nad warunkami obu Czêœci.
+Niniejsza Umowa zawiera CzÄ™Å›Ä‡ 1 - Warunki ogÃ³lne, CzÄ™Å›Ä‡ 2 - Warunki specyficzne dla poszczegÃ³lnych krajÃ³w (o ile majÄ… zastosowanie) oraz Informacje Licencyjne, ktÃ³re razem tworzÄ… kompletnÄ… umowÄ™ miÄ™dzy LicencjobiorcÄ… i IBM dotyczÄ…cÄ… uÅ¼ywania Programu. Umowa ta zastÄ™puje wszelkie wczeÅ›niejsze ustne lub pisemne ustalenia dokonane miÄ™dzy LicencjobiorcÄ… i IBM w zakresie uÅ¼ywania Programu. W przypadku jakiejkolwiek sprzecznoÅ›ci, warunki dokumentu "Informacje Licencyjne" majÄ… znaczenie rozstrzygajÄ…ce nad warunkami obu CzÄ™Å›ci.
 
 3. Udzielenie licencji
 
-Program ten jest w³asnoœci¹ IBM lub dostawcy IBM. Program ten jest chroniony prawem autorskim i stanowi przedmiot umowy licencyjnej, a nie umowy sprzeda¿y.
+Program ten jest wÅ‚asnoÅ›ciÄ… IBM lub dostawcy IBM. Program ten jest chroniony prawem autorskim i stanowi przedmiot umowy licencyjnej, a nie umowy sprzedaÅ¼y.
 
-IBM udziela Licencjobiorcy niewy³¹cznej licencji na 1) u¿ywanie Programu do poziomu Autoryzowanego U¿ywania okreœlonego na fakturze, 2) wykonywanie i instalowanie kopii na potrzeby takiego Autoryzowanego U¿ywania oraz 3) wykonywanie kopii zapasowych, pod warunkiem ¿e
+IBM udziela Licencjobiorcy niewyÅ‚Ä…cznej licencji na 1) uÅ¼ywanie Programu do poziomu Autoryzowanego UÅ¼ywania okreÅ›lonego na fakturze, 2) wykonywanie i instalowanie kopii na potrzeby takiego Autoryzowanego UÅ¼ywania oraz 3) wykonywanie kopii zapasowych, pod warunkiem Å¼e
 
-a. Licencjobiorca naby³ Program legalnie i przestrzega warunków niniejszej Umowy;
+a. Licencjobiorca nabyÅ‚ Program legalnie i przestrzega warunkÃ³w niniejszej Umowy;
 
-b. taka kopia zapasowa nie bêdzie u¿ywana dopóki Program, z którego zosta³a zrobiona, bêdzie dzia³aæ;
+b. taka kopia zapasowa nie bÄ™dzie uÅ¼ywana dopÃ³ki Program, z ktÃ³rego zostaÅ‚a zrobiona, bÄ™dzie dziaÅ‚aÄ‡;
 
-c. Licencjobiorca powieli wszelkie uwagi dotycz¹ce praw autorskich oraz wszelkie informacje o prawach w³asnoœci na ka¿dej pe³nej lub czêœciowej kopii Programu;
+c. Licencjobiorca powieli wszelkie uwagi dotyczÄ…ce praw autorskich oraz wszelkie informacje o prawach wÅ‚asnoÅ›ci na kaÅ¼dej peÅ‚nej lub czÄ™Å›ciowej kopii Programu;
 
-d. Licencjobiorca zapewni, ¿e jakakolwiek osoba korzystaj¹ca z Programu (lokalnie lub zdalnie) 1) dokonuje tego jedynie w imieniu Licencjobiorcy oraz 2) przestrzega warunków niniejszej Umowy;
+d. Licencjobiorca zapewni, Å¼e jakakolwiek osoba korzystajÄ…ca z Programu (lokalnie lub zdalnie) 1) dokonuje tego jedynie w imieniu Licencjobiorcy oraz 2) przestrzega warunkÃ³w niniejszej Umowy;
 
-e. Licencjobiorca nie bêdzie 1) u¿ywaæ, kopiowaæ, modyfikowaæ ani dystrybuowaæ Programu z wyj¹tkiem sytuacji wyraŸnie wskazanych w niniejszej Umowie; 2) deasemblowaæ, dekompilowaæ Programu i dokonywaæ jego translacji w inny sposób ani odtwarzaæ kodu Ÿród³owego, z wyj¹tkiem sytuacji dozwolonych przez bezwzglêdnie obowi¹zuj¹ce przepisy prawa, bez mo¿liwoœci wy³¹czenia go w drodze umowy; 3) u¿ywaæ jakichkolwiek komponentów Programu, jego plików, modu³ów, treœci audiowizualnych ani zwi¹zanych z nim materia³ów licencjonowanych niezale¿nie od Programu; 4) udzielaæ dalszych licencji na Program, wypo¿yczaæ go ani wydzier¿awiaæ; oraz
+e. Licencjobiorca nie bÄ™dzie 1) uÅ¼ywaÄ‡, kopiowaÄ‡, modyfikowaÄ‡ ani dystrybuowaÄ‡ Programu z wyjÄ…tkiem sytuacji wyraÅºnie wskazanych w niniejszej Umowie; 2) deasemblowaÄ‡, dekompilowaÄ‡ Programu i dokonywaÄ‡ jego translacji w inny sposÃ³b ani odtwarzaÄ‡ kodu ÅºrÃ³dÅ‚owego, z wyjÄ…tkiem sytuacji dozwolonych przez bezwzglÄ™dnie obowiÄ…zujÄ…ce przepisy prawa, bez moÅ¼liwoÅ›ci wyÅ‚Ä…czenia go w drodze umowy; 3) uÅ¼ywaÄ‡ jakichkolwiek komponentÃ³w Programu, jego plikÃ³w, moduÅ‚Ã³w, treÅ›ci audiowizualnych ani zwiÄ…zanych z nim materiaÅ‚Ã³w licencjonowanych niezaleÅ¼nie od Programu; 4) udzielaÄ‡ dalszych licencji na Program, wypoÅ¼yczaÄ‡ go ani wydzierÅ¼awiaÄ‡; oraz
 
-f. jeœli Licencjobiorca nabywa niniejszy Progam jako Progam Dodatkowy, to bêdzie go u¿ywaæ jedynie do obs³ugi Programu G³ównego, zgodnie z ograniczeniami okreœlonymi w licencji na Program G³ówny lub, jeœli Licencjobiorca nabywa Program jako Program G³ówny, to bêdzie u¿ywaæ wszystkich Programów Dodatkowych jedynie w celu obs³ugi tego Programu, zgodnie z ograniczeniami okreœlonymi w niniejszej Umowie. Na potrzeby punktu "f" przyjmuje siê, ¿e "Program Dodatkowy" oznacza Program stanowi¹cy czêœæ innego Programu IBM ("Program G³ówny"), okreœlany jako Program Dodatkowy w Informacjach Licencyjnych dla Programu G³ównego. (W celu nabycia oddzielnej licencji na u¿ywanie Programu Dodatkowego bez ograniczeñ, Licencjobiorca powinien skontaktowaæ siê z podmiotem, od którego naby³ Program Dodatkowy).
+f. jeÅ›li Licencjobiorca nabywa niniejszy Progam jako Progam Dodatkowy, to bÄ™dzie go uÅ¼ywaÄ‡ jedynie do obsÅ‚ugi Programu GÅ‚Ã³wnego, zgodnie z ograniczeniami okreÅ›lonymi w licencji na Program GÅ‚Ã³wny lub, jeÅ›li Licencjobiorca nabywa Program jako Program GÅ‚Ã³wny, to bÄ™dzie uÅ¼ywaÄ‡ wszystkich ProgramÃ³w Dodatkowych jedynie w celu obsÅ‚ugi tego Programu, zgodnie z ograniczeniami okreÅ›lonymi w niniejszej Umowie. Na potrzeby punktu "f" przyjmuje siÄ™, Å¼e "Program Dodatkowy" oznacza Program stanowiÄ…cy czÄ™Å›Ä‡ innego Programu IBM ("Program GÅ‚Ã³wny"), okreÅ›lany jako Program Dodatkowy w Informacjach Licencyjnych dla Programu GÅ‚Ã³wnego. (W celu nabycia oddzielnej licencji na uÅ¼ywanie Programu Dodatkowego bez ograniczeÅ„, Licencjobiorca powinien skontaktowaÄ‡ siÄ™ z podmiotem, od ktÃ³rego nabyÅ‚ Program Dodatkowy).
 
-Niniejsza licencja ma zastosowanie do ka¿dej kopii Programu wykonanej przez Licencjobiorcê.
+Niniejsza licencja ma zastosowanie do kaÅ¼dej kopii Programu wykonanej przez LicencjobiorcÄ™.
 
 3.1 Nowsze wersje Programu, aktualizacje i poprawki
 
 3.1.1 Nowsze wersje Programu
 
-Jeœli Program zostanie zast¹piony Programem nowszej wersji, licencja na zastêpowany Program wygasa ze skutkiem natychmiastowym.
+JeÅ›li Program zostanie zastÄ…piony Programem nowszej wersji, licencja na zastÄ™powany Program wygasa ze skutkiem natychmiastowym.
 
 3.1.2 Aktualizacje i poprawki
 
-Otrzymanie przez Licencjobiorcê aktualizacji lub poprawek do Programu oznacza, ¿e Licencjobiorca akceptuje wszelkie dodatkowe lub odmienne warunki maj¹ce zastosowanie do takich aktualizacji i poprawek, okreœlone w Informacjach Licencyjnych dla Programu. W przypadku braku dodatkowych lub odmiennych warunków, aktualizacje i poprawki podlegaj¹ wy³¹cznie postanowieniom niniejszej Umowy. Jeœli Program zostanie zast¹piony aktualizacj¹, Licencjobiorca wyra¿a zgodê na natychmiastowe zaprzestanie korzystania z zastêpowanej wersji Programu.
+Otrzymanie przez LicencjobiorcÄ™ aktualizacji lub poprawek do Programu oznacza, Å¼e Licencjobiorca akceptuje wszelkie dodatkowe lub odmienne warunki majÄ…ce zastosowanie do takich aktualizacji i poprawek, okreÅ›lone w Informacjach Licencyjnych dla Programu. W przypadku braku dodatkowych lub odmiennych warunkÃ³w, aktualizacje i poprawki podlegajÄ… wyÅ‚Ä…cznie postanowieniom niniejszej Umowy. JeÅ›li Program zostanie zastÄ…piony aktualizacjÄ…, Licencjobiorca wyraÅ¼a zgodÄ™ na natychmiastowe zaprzestanie korzystania z zastÄ™powanej wersji Programu.
 
 3.2 Licencje czasowe
 
-Jeœli IBM licencjonuje Program na wyznaczony termin, to licencja udzielona Licencjobiorcy koñczy siê wraz z koñcem wyznaczonego terminu, chyba ¿e Licencjobiorca i IBM wyra¿¹ zgodê na jej odnowienie.
+JeÅ›li IBM licencjonuje Program na wyznaczony termin, to licencja udzielona Licencjobiorcy koÅ„czy siÄ™ wraz z koÅ„cem wyznaczonego terminu, chyba Å¼e Licencjobiorca i IBM wyraÅ¼Ä… zgodÄ™ na jej odnowienie.
 
-3.3 Czas trwania i rozwi¹zanie
+3.3 Czas trwania i rozwiÄ…zanie
 
-Niniejsza Umowa obowi¹zuje do momentu jej rozwi¹zania.
+Niniejsza Umowa obowiÄ…zuje do momentu jej rozwiÄ…zania.
 
-IBM mo¿e rozwi¹zaæ licencjê udzielon¹ Licencjobiorcy, jeœli Licencjobiorca nie bêdzie przestrzegaæ warunków niniejszej Umowy.
+IBM moÅ¼e rozwiÄ…zaÄ‡ licencjÄ™ udzielonÄ… Licencjobiorcy, jeÅ›li Licencjobiorca nie bÄ™dzie przestrzegaÄ‡ warunkÃ³w niniejszej Umowy.
 
-Jeœli licencja zostanie rozwi¹zana przez któr¹kolwiek ze Stron z dowolnej przyczyny, Licencjobiorca wyra¿a zgodê na natychmiastowe zaprzestanie u¿ywania Programu oraz zniszczenie wszelkich posiadanych jego kopii. Wszelkie postanowienia niniejszej Umowy, które ze wzglêdu na swój charakter pozostaj¹ w mocy po jej rozwi¹zaniu, bêd¹ mieæ zastosowanie do momentu ich wype³nienia i obowi¹zywaæ bêd¹ nastêpców prawnych i cesjonariuszy obu Stron.
+JeÅ›li licencja zostanie rozwiÄ…zana przez ktÃ³rÄ…kolwiek ze Stron z dowolnej przyczyny, Licencjobiorca wyraÅ¼a zgodÄ™ na natychmiastowe zaprzestanie uÅ¼ywania Programu oraz zniszczenie wszelkich posiadanych jego kopii. Wszelkie postanowienia niniejszej Umowy, ktÃ³re ze wzglÄ™du na swÃ³j charakter pozostajÄ… w mocy po jej rozwiÄ…zaniu, bÄ™dÄ… mieÄ‡ zastosowanie do momentu ich wypeÅ‚nienia i obowiÄ…zywaÄ‡ bÄ™dÄ… nastÄ™pcÃ³w prawnych i cesjonariuszy obu Stron.
 
-4. Op³aty
+4. OpÅ‚aty
 
-Ewentualne op³aty s¹ naliczane na podstawie nabytego poziomu Autoryzowanego U¿ywania, okreœlonego na fakturze. IBM nie zwraca wczeœniej wniesionych lub nale¿nych op³at ani nie uwzglêdnia ich w rozliczeniach, chyba ¿e niniejsza Umowa stanowi inaczej.
+Ewentualne opÅ‚aty sÄ… naliczane na podstawie nabytego poziomu Autoryzowanego UÅ¼ywania, okreÅ›lonego na fakturze. IBM nie zwraca wczeÅ›niej wniesionych lub naleÅ¼nych opÅ‚at ani nie uwzglÄ™dnia ich w rozliczeniach, chyba Å¼e niniejsza Umowa stanowi inaczej.
 
-Jeœli Licencjobiorca zamierza podwy¿szyæ poziom Autoryzowanego U¿ywania, musi on powiadomiæ z wyprzedzeniem IBM lub autoryzowanego reselera IBM i wnieœæ odpowiednie op³aty.
+JeÅ›li Licencjobiorca zamierza podwyÅ¼szyÄ‡ poziom Autoryzowanego UÅ¼ywania, musi on powiadomiÄ‡ z wyprzedzeniem IBM lub autoryzowanego reselera IBM i wnieÅ›Ä‡ odpowiednie opÅ‚aty.
 
 5. Podatki
 
-Jeœli odpowiednie w³adze na³o¿¹ na Program op³atê skarbow¹, podatek, op³atê egzekucyjn¹ lub prowizjê, z wy³¹czeniem op³at wynikaj¹cych z dochodu netto IBM, Licencjobiorca zgadza siê uiœciæ tak¹ op³atê w kwocie okreœlonej na fakturze lub dostarczyæ dokumentacjê stwierdzaj¹c¹ prawo do zwolnienia z tej op³aty. Od daty nabycia Programu Licencjobiorca ponosi odpowiedzialnoœæ z tytu³u nale¿nego podatku poœredniego. Jeœli odpowiednie w³adze na³o¿¹ op³atê skarbow¹, podatek, op³atê egzekucyjn¹ lub prowizjê w zwi¹zku z importem lub eksportem, transferem, uzyskaniem dostêpu b¹dŸ korzystaniem z Programu poza krajem, w którym zosta³a udzielona licencja pierwotnemu Licencjobiorcy, to Licencjobiorca przyjmuje na siebie odpowiedzialnoœæ za wszelkie na³o¿one op³aty oraz za ich uiszczenie.
+JeÅ›li odpowiednie wÅ‚adze naÅ‚oÅ¼Ä… na Program opÅ‚atÄ™ skarbowÄ…, podatek, opÅ‚atÄ™ egzekucyjnÄ… lub prowizjÄ™, z wyÅ‚Ä…czeniem opÅ‚at wynikajÄ…cych z dochodu netto IBM, Licencjobiorca zgadza siÄ™ uiÅ›ciÄ‡ takÄ… opÅ‚atÄ™ w kwocie okreÅ›lonej na fakturze lub dostarczyÄ‡ dokumentacjÄ™ stwierdzajÄ…cÄ… prawo do zwolnienia z tej opÅ‚aty. Od daty nabycia Programu Licencjobiorca ponosi odpowiedzialnoÅ›Ä‡ z tytuÅ‚u naleÅ¼nego podatku poÅ›redniego. JeÅ›li odpowiednie wÅ‚adze naÅ‚oÅ¼Ä… opÅ‚atÄ™ skarbowÄ…, podatek, opÅ‚atÄ™ egzekucyjnÄ… lub prowizjÄ™ w zwiÄ…zku z importem lub eksportem, transferem, uzyskaniem dostÄ™pu bÄ…dÅº korzystaniem z Programu poza krajem, w ktÃ³rym zostaÅ‚a udzielona licencja pierwotnemu Licencjobiorcy, to Licencjobiorca przyjmuje na siebie odpowiedzialnoÅ›Ä‡ za wszelkie naÅ‚oÅ¼one opÅ‚aty oraz za ich uiszczenie.
 
-6. Gwarancja zwrotu pieniêdzy
+6. Gwarancja zwrotu pieniÄ™dzy
 
-Jeœli z jakiegokolwiek powodu Licencjobiorca nie jest zadowolony z Programu, a jest pierwotnym Licencjobiorc¹, to mo¿e rozwi¹zaæ licencjê i uzyskaæ zwrot kwoty zap³aconej za Program (o ile p³atnoœæ taka mia³a miejsce) pod warunkiem zwrotu Programu do podmiotu, od którego go naby³, w ci¹gu 30 dni od daty faktury. Jeœli licencja jest licencj¹ czasow¹ podlegaj¹c¹ odnowieniu, to Licencjobiorca mo¿e otrzymaæ zwrot kwoty pod warunkiem, ¿e Program zostanie zwrócony w ci¹gu pierwszych 30 dni pocz¹tkowego okresu obowi¹zywania. W przypadku pobrania Programu drog¹ elektroniczn¹ Licencjobiorca powinien skontaktowaæ siê z podmiotem, od którego naby³ Program, aby dowiedzieæ siê, w jaki sposób uzyskaæ zwrot kwoty.
+JeÅ›li z jakiegokolwiek powodu Licencjobiorca nie jest zadowolony z Programu, a jest pierwotnym LicencjobiorcÄ…, to moÅ¼e rozwiÄ…zaÄ‡ licencjÄ™ i uzyskaÄ‡ zwrot kwoty zapÅ‚aconej za Program (o ile pÅ‚atnoÅ›Ä‡ taka miaÅ‚a miejsce) pod warunkiem zwrotu Programu do podmiotu, od ktÃ³rego go nabyÅ‚, w ciÄ…gu 30 dni od daty faktury. JeÅ›li licencja jest licencjÄ… czasowÄ… podlegajÄ…cÄ… odnowieniu, to Licencjobiorca moÅ¼e otrzymaÄ‡ zwrot kwoty pod warunkiem, Å¼e Program zostanie zwrÃ³cony w ciÄ…gu pierwszych 30 dni poczÄ…tkowego okresu obowiÄ…zywania. W przypadku pobrania Programu drogÄ… elektronicznÄ… Licencjobiorca powinien skontaktowaÄ‡ siÄ™ z podmiotem, od ktÃ³rego nabyÅ‚ Program, aby dowiedzieÄ‡ siÄ™, w jaki sposÃ³b uzyskaÄ‡ zwrot kwoty.
 
 7. Przeniesienie Programu
 
-Licencjobiorca mo¿e przenieœæ Program oraz wszelkie przys³uguj¹ce mu prawa i obowi¹zki licencyjne na osobê trzeci¹, o ile osoba taka zaakceptuje warunki niniejszej Umowy. Jeœli licencja zostanie rozwi¹zana przez któr¹kolwiek ze Stron z dowolnej przyczyny, to Licencjobiorca nie ma prawa do przeniesienia Programu na osobê trzeci¹. Licencjobiorca nie mo¿e przenosiæ czêœci 1) Programu ani 2) praw do Autoryzowanego U¿ywania Programu. Wraz z przeniesieniem Programu Licencjobiorca jest zobowi¹zany do przeniesienia egzemplarza niniejszej Umowy w postaci wydruku, ³¹cznie z dokumentem "Informacje Licencyjne". Licencja Licencjobiorcy wygasa natychmiast po dokonaniu takiego przeniesienia.
+Licencjobiorca moÅ¼e przenieÅ›Ä‡ Program oraz wszelkie przysÅ‚ugujÄ…ce mu prawa i obowiÄ…zki licencyjne na osobÄ™ trzeciÄ…, o ile osoba taka zaakceptuje warunki niniejszej Umowy. JeÅ›li licencja zostanie rozwiÄ…zana przez ktÃ³rÄ…kolwiek ze Stron z dowolnej przyczyny, to Licencjobiorca nie ma prawa do przeniesienia Programu na osobÄ™ trzeciÄ…. Licencjobiorca nie moÅ¼e przenosiÄ‡ czÄ™Å›ci 1) Programu ani 2) praw do Autoryzowanego UÅ¼ywania Programu. Wraz z przeniesieniem Programu Licencjobiorca jest zobowiÄ…zany do przeniesienia egzemplarza niniejszej Umowy w postaci wydruku, Å‚Ä…cznie z dokumentem "Informacje Licencyjne". Licencja Licencjobiorcy wygasa natychmiast po dokonaniu takiego przeniesienia.
 
 8. Brak gwarancji
 
-Z ZASTRZE¯ENIEM BEZWZGLÊDNIE OBOWI¥ZUJ¥CYCH WARUNKÓW, KTÓRYCH NIE MO¯NA WYKLUCZYÆ, IBM NIE UDZIELA JAKICHKOLWIEK GWARANCJI (W TYM TAK¯E RÊKOJMI) ORAZ NIE USTALA WARUNKÓW, ZARÓWNO WYRANYCH JAK I DOMNIEMANYCH, DLA PROGRAMU I EWENTUALNEGO WSPARCIA, A W SZCZEGÓLNOŒCI DOMNIEMANYCH GWARANCJI LUB WARUNKÓW PRZYDATNOŒCI HANDLOWEJ, PRZYDATNOŒCI DO OKREŒLONEGO CELU, ZADOWALAJ¥CEJ JAKOŒCI, PRAWA W£ASNOŒCI ORAZ GWARANCJI LUB WARUNKÓW NIENARUSZANIA PRAW OSÓB TRZECICH.
+Z ZASTRZEÅ»ENIEM BEZWZGLÄ˜DNIE OBOWIÄ„ZUJÄ„CYCH WARUNKÃ“W, KTÃ“RYCH NIE MOÅ»NA WYKLUCZYÄ†, IBM NIE UDZIELA JAKICHKOLWIEK GWARANCJI (W TYM TAKÅ»E RÄ˜KOJMI) ORAZ NIE USTALA WARUNKÃ“W, ZARÃ“WNO WYRAÅ¹NYCH JAK I DOMNIEMANYCH, DLA PROGRAMU I EWENTUALNEGO WSPARCIA, A W SZCZEGÃ“LNOÅšCI DOMNIEMANYCH GWARANCJI LUB WARUNKÃ“W PRZYDATNOÅšCI HANDLOWEJ, PRZYDATNOÅšCI DO OKREÅšLONEGO CELU, ZADOWALAJÄ„CEJ JAKOÅšCI, PRAWA WÅASNOÅšCI ORAZ GWARANCJI LUB WARUNKÃ“W NIENARUSZANIA PRAW OSÃ“B TRZECICH.
 
-USTAWODAWSTWA NIEKTÓRYCH KRAJÓW NIE DOPUSZCZAJ¥ WY£¥CZENIA WYRANYCH LUB DOMNIEMANYCH GWARANCJI. W ZWI¥ZKU Z TYM POWY¯SZE WY£¥CZENIE MO¯E NIE MIEÆ ZASTOSOWANIA DO LICENCJOBIORCY. W TAKIM PRZYPADKU CZAS TRWANIA TAKICH GWARANCJI JEST OGRANICZONY DO MINIMALNEGO OKRESU WYMAGANEGO PRZEZ PRAWO. PO TYM OKRESIE NIE BÊD¥ OBOWI¥ZYWAÆ ¯ADNE GWARANCJE. USTAWODAWSTWA NIEKTÓRYCH KRAJÓW NIE DOPUSZCZAJ¥ OGRANICZENIA CZASU TRWANIA GWARANCJI DOMNIEMANYCH, W ZWI¥ZKU Z TYM POWY¯SZE OGRANICZENIE MO¯E NIE MIEÆ ZASTOSOWANIA DO LICENCJOBIORCY. LICENCJOBIORCY MOG¥ PRZYS£UGIWAÆ INNE PRAWA, W ZALE¯NOŒCI OD OBOWI¥ZUJ¥CEGO W DANYM KRAJU USTAWODAWSTWA.
+USTAWODAWSTWA NIEKTÃ“RYCH KRAJÃ“W NIE DOPUSZCZAJÄ„ WYÅÄ„CZENIA WYRAÅ¹NYCH LUB DOMNIEMANYCH GWARANCJI. W ZWIÄ„ZKU Z TYM POWYÅ»SZE WYÅÄ„CZENIE MOÅ»E NIE MIEÄ† ZASTOSOWANIA DO LICENCJOBIORCY. W TAKIM PRZYPADKU CZAS TRWANIA TAKICH GWARANCJI JEST OGRANICZONY DO MINIMALNEGO OKRESU WYMAGANEGO PRZEZ PRAWO. PO TYM OKRESIE NIE BÄ˜DÄ„ OBOWIÄ„ZYWAÄ† Å»ADNE GWARANCJE. USTAWODAWSTWA NIEKTÃ“RYCH KRAJÃ“W NIE DOPUSZCZAJÄ„ OGRANICZENIA CZASU TRWANIA GWARANCJI DOMNIEMANYCH, W ZWIÄ„ZKU Z TYM POWYÅ»SZE OGRANICZENIE MOÅ»E NIE MIEÄ† ZASTOSOWANIA DO LICENCJOBIORCY. LICENCJOBIORCY MOGÄ„ PRZYSÅUGIWAÄ† INNE PRAWA, W ZALEÅ»NOÅšCI OD OBOWIÄ„ZUJÄ„CEGO W DANYM KRAJU USTAWODAWSTWA.
 
-ZASTRZE¯ENIA I WYKLUCZENIA ZAWARTE W PARAGRAFIE 8 OBOWI¥ZUJ¥ RÓWNIE¯ PROGRAMISTÓW I DOSTAWCÓW IBM.
+ZASTRZEÅ»ENIA I WYKLUCZENIA ZAWARTE W PARAGRAFIE 8 OBOWIÄ„ZUJÄ„ RÃ“WNIEÅ» PROGRAMISTÃ“W I DOSTAWCÃ“W IBM.
 
-PRODUCENCI, DOSTAWCY I WYDAWCY PROGRAMÓW INNYCH NI¯ PROGRAMY IBM MOG¥ DOSTARCZAÆ SWOJE W£ASNE GWARANCJE.
+PRODUCENCI, DOSTAWCY I WYDAWCY PROGRAMÃ“W INNYCH NIÅ» PROGRAMY IBM MOGÄ„ DOSTARCZAÄ† SWOJE WÅASNE GWARANCJE.
 
-IBM NIE ŒWIADCZY ¯ADNYCH US£UG WSPARCIA, CHYBA ¯E IBM OKREŒLI INACZEJ. W TAKIM PRZYPADKU WSZELKIE US£UGI WSPARCIA ŒWIADCZONE PRZEZ IBM PODLEGAJ¥ ZASTRZE¯ENIOM I WY£¥CZENIOM NINIEJSZEGO PARAGRAFU 8.
+IBM NIE ÅšWIADCZY Å»ADNYCH USÅUG WSPARCIA, CHYBA Å»E IBM OKREÅšLI INACZEJ. W TAKIM PRZYPADKU WSZELKIE USÅUGI WSPARCIA ÅšWIADCZONE PRZEZ IBM PODLEGAJÄ„ ZASTRZEÅ»ENIOM I WYÅÄ„CZENIOM NINIEJSZEGO PARAGRAFU 8.
 
 9. Dane i bazy danych Licencjobiorcy
 
-W celu udzielenia Licencjobiorcy pomocy przy okreœleniu przyczyny problemu z Programem, IBM mo¿e za¿¹daæ, aby Licencjobiorca 1) zezwoli³ IBM na zdalny dostêp do swoich systemów lub 2) przes³a³ do IBM informacje na temat swoich systemów lub dane systemowe. Jednak¿e IBM nie jest zobowi¹zany do zapewnienia takiej pomocy, chyba ¿e IBM i Licencjobiorca podpisz¹ oddzieln¹ umowê, w ramach której IBM wyrazi zgodê na œwiadczenie na rzecz Licencjobiorcy tego rodzaju wsparcia w zakresie przekraczaj¹cym zobowi¹zania IBM okreœlone niniejsz¹ Umow¹. W ka¿dym przypadku IBM wykorzystuje informacje o b³êdach i problemach w celu udoskonalania swych produktów i us³ug oraz udzielania pomocy przy ich dostarczaniu w ramach powi¹zanych z nimi ofert wsparcia. Przy realizacji tych celów IBM mo¿e korzystaæ z pomocy oddzia³ów IBM i podwykonawców IBM (znajduj¹cych siê nie tylko w kraju lokalizacji Licencjobiorcy, ale i poza nim), a Licencjobiorca upowa¿nia IBM do takiego dzia³ania.
+W celu udzielenia Licencjobiorcy pomocy przy okreÅ›leniu przyczyny problemu z Programem, IBM moÅ¼e zaÅ¼Ä…daÄ‡, aby Licencjobiorca 1) zezwoliÅ‚ IBM na zdalny dostÄ™p do swoich systemÃ³w lub 2) przesÅ‚aÅ‚ do IBM informacje na temat swoich systemÃ³w lub dane systemowe. JednakÅ¼e IBM nie jest zobowiÄ…zany do zapewnienia takiej pomocy, chyba Å¼e IBM i Licencjobiorca podpiszÄ… oddzielnÄ… umowÄ™, w ramach ktÃ³rej IBM wyrazi zgodÄ™ na Å›wiadczenie na rzecz Licencjobiorcy tego rodzaju wsparcia w zakresie przekraczajÄ…cym zobowiÄ…zania IBM okreÅ›lone niniejszÄ… UmowÄ…. W kaÅ¼dym przypadku IBM wykorzystuje informacje o bÅ‚Ä™dach i problemach w celu udoskonalania swych produktÃ³w i usÅ‚ug oraz udzielania pomocy przy ich dostarczaniu w ramach powiÄ…zanych z nimi ofert wsparcia. Przy realizacji tych celÃ³w IBM moÅ¼e korzystaÄ‡ z pomocy oddziaÅ‚Ã³w IBM i podwykonawcÃ³w IBM (znajdujÄ…cych siÄ™ nie tylko w kraju lokalizacji Licencjobiorcy, ale i poza nim), a Licencjobiorca upowaÅ¼nia IBM do takiego dziaÅ‚ania.
 
-Licencjobiorca pozostaje odpowiedzialny za 1) wszelkie dane i zawartoœæ bazy danych, które udostêpnia IBM, 2) wybór i implementacjê procedur oraz mechanizmów kontrolnych dotycz¹cych dostêpu do danych, ich bezpieczeñstwa, szyfrowania, u¿ywania i transmisji (w tym wszelkich danych identyfikuj¹cych osobê fizyczn¹) oraz 3) tworzenie i odtwarzanie kopii zapasowych ka¿dej bazy danych i wszelkich gromadzonych danych. Licencjobiorca nie bêdzie wysy³aæ ani udostêpniaæ IBM jakichkolwiek informacji identyfikuj¹cych osobê fizyczn¹ (w postaci danych lub jakiejkolwiek innej) i bêdzie odpowiedzialny za uregulowanie uzasadnionych kosztów i innych obci¹¿eñ, które mo¿e ponieœæ IBM w zwi¹zku z omy³kowym udostêpnieniem takich informacji IBM b¹dŸ za utratê lub ujawnienie takich informacji przez IBM, w tym informacji wynikaj¹cych z roszczeñ osób trzecich.
+Licencjobiorca pozostaje odpowiedzialny za 1) wszelkie dane i zawartoÅ›Ä‡ bazy danych, ktÃ³re udostÄ™pnia IBM, 2) wybÃ³r i implementacjÄ™ procedur oraz mechanizmÃ³w kontrolnych dotyczÄ…cych dostÄ™pu do danych, ich bezpieczeÅ„stwa, szyfrowania, uÅ¼ywania i transmisji (w tym wszelkich danych identyfikujÄ…cych osobÄ™ fizycznÄ…) oraz 3) tworzenie i odtwarzanie kopii zapasowych kaÅ¼dej bazy danych i wszelkich gromadzonych danych. Licencjobiorca nie bÄ™dzie wysyÅ‚aÄ‡ ani udostÄ™pniaÄ‡ IBM jakichkolwiek informacji identyfikujÄ…cych osobÄ™ fizycznÄ… (w postaci danych lub jakiejkolwiek innej) i bÄ™dzie odpowiedzialny za uregulowanie uzasadnionych kosztÃ³w i innych obciÄ…Å¼eÅ„, ktÃ³re moÅ¼e ponieÅ›Ä‡ IBM w zwiÄ…zku z omyÅ‚kowym udostÄ™pnieniem takich informacji IBM bÄ…dÅº za utratÄ™ lub ujawnienie takich informacji przez IBM, w tym informacji wynikajÄ…cych z roszczeÅ„ osÃ³b trzecich.
 
-10. Ograniczenie odpowiedzialnoœci
+10. Ograniczenie odpowiedzialnoÅ›ci
 
-Ograniczenia i zastrze¿enia paragrafu 10 (Ograniczenie odpowiedzialnoœci) maj¹ zastosowanie w pe³nym zakresie i nie s¹ zakazane przepisami obowi¹zuj¹cego prawa, bez mo¿liwoœci wy³¹czenia takiego prawa w ramach umowy.
+Ograniczenia i zastrzeÅ¼enia paragrafu 10 (Ograniczenie odpowiedzialnoÅ›ci) majÄ… zastosowanie w peÅ‚nym zakresie i nie sÄ… zakazane przepisami obowiÄ…zujÄ…cego prawa, bez moÅ¼liwoÅ›ci wyÅ‚Ä…czenia takiego prawa w ramach umowy.
 
-10.1 Sytuacje, w których IBM mo¿e ponosiæ odpowiedzialnoœæ
+10.1 Sytuacje, w ktÃ³rych IBM moÅ¼e ponosiÄ‡ odpowiedzialnoÅ›Ä‡
 
-W przypadku wyst¹pienia okreœlonych okolicznoœci, za które odpowiedzialnoœæ ponosi IBM, a w wyniku których Licencjobiorca dozna³ szkody, Licencjobiorca bêdzie uprawniony do uzyskania od IBM odszkodowania. Bez wzglêdu na podstawê, na jakiej Licencjobiorca jest uprawniony do domagania siê odszkodowania od IBM (w³¹czywszy w to naruszenie istotnych postanowieñ niniejszej Umowy, niedbalstwo, wprowadzenie w b³¹d lub inne roszczenia z tytu³u odpowiedzialnoœci kontraktowej lub deliktowej), ca³kowita odpowiedzialnoœæ IBM z tytu³u wszelkich zsumowanych roszczeñ wynikaj¹cych z lub odnosz¹cych siê do ka¿dego Programu b¹dŸ wynikaj¹cych z niniejszej Umowy nie przekroczy kwoty: 1) odpowiedzialnoœci za uszczerbek na zdrowiu (³¹cznie ze œmierci¹) oraz za szkody wyrz¹dzone w nieruchomoœciach lub maj¹tku ruchomym, 2) w przypadku innych rzeczywistych szkód bezpoœrednich - wysokoœci op³at (jeœli Program podlega op³atom czasowym - wysokoœci op³at za dwanaœcie miesiêcy) uiszczanych przez Licencjobiorcê za Program bêd¹cy przedmiotem roszczenia.
+W przypadku wystÄ…pienia okreÅ›lonych okolicznoÅ›ci, za ktÃ³re odpowiedzialnoÅ›Ä‡ ponosi IBM, a w wyniku ktÃ³rych Licencjobiorca doznaÅ‚ szkody, Licencjobiorca bÄ™dzie uprawniony do uzyskania od IBM odszkodowania. Bez wzglÄ™du na podstawÄ™, na jakiej Licencjobiorca jest uprawniony do domagania siÄ™ odszkodowania od IBM (wÅ‚Ä…czywszy w to naruszenie istotnych postanowieÅ„ niniejszej Umowy, niedbalstwo, wprowadzenie w bÅ‚Ä…d lub inne roszczenia z tytuÅ‚u odpowiedzialnoÅ›ci kontraktowej lub deliktowej), caÅ‚kowita odpowiedzialnoÅ›Ä‡ IBM z tytuÅ‚u wszelkich zsumowanych roszczeÅ„ wynikajÄ…cych z lub odnoszÄ…cych siÄ™ do kaÅ¼dego Programu bÄ…dÅº wynikajÄ…cych z niniejszej Umowy nie przekroczy kwoty: 1) odpowiedzialnoÅ›ci za uszczerbek na zdrowiu (Å‚Ä…cznie ze Å›mierciÄ…) oraz za szkody wyrzÄ…dzone w nieruchomoÅ›ciach lub majÄ…tku ruchomym, 2) w przypadku innych rzeczywistych szkÃ³d bezpoÅ›rednich - wysokoÅ›ci opÅ‚at (jeÅ›li Program podlega opÅ‚atom czasowym - wysokoÅ›ci opÅ‚at za dwanaÅ›cie miesiÄ™cy) uiszczanych przez LicencjobiorcÄ™ za Program bÄ™dÄ…cy przedmiotem roszczenia.
 
-Ograniczenie to ma równie¿ zastosowanie do programistów i dostawców Programów IBM. Wskazany powy¿ej zakres odpowiedzialnoœci stanowi ca³oœæ odpowiedzialnoœci ponoszonej ³¹cznie przez IBM oraz programistów i dostawców Programów IBM.
+Ograniczenie to ma rÃ³wnieÅ¼ zastosowanie do programistÃ³w i dostawcÃ³w ProgramÃ³w IBM. Wskazany powyÅ¼ej zakres odpowiedzialnoÅ›ci stanowi caÅ‚oÅ›Ä‡ odpowiedzialnoÅ›ci ponoszonej Å‚Ä…cznie przez IBM oraz programistÃ³w i dostawcÃ³w ProgramÃ³w IBM.
 
-10.2 Sytuacje, w których IBM nie ponosi odpowiedzialnoœci
+10.2 Sytuacje, w ktÃ³rych IBM nie ponosi odpowiedzialnoÅ›ci
 
-W ¯ADNYCH OKOLICZNOŒCIACH IBM, ANI TE¯ PROGRAMIŒCI CZY DOSTAWCY PROGRAMÓW IBM, NIE PONOSZ¥ ODPOWIEDZIALNOŒCI ZA NASTÊPUJ¥CE SZKODY, NAWET JEŒLI ZOSTALI POINFORMOWANI O MO¯LIWOŒCI ICH WYST¥PIENIA:
+W Å»ADNYCH OKOLICZNOÅšCIACH IBM, ANI TEÅ» PROGRAMIÅšCI CZY DOSTAWCY PROGRAMÃ“W IBM, NIE PONOSZÄ„ ODPOWIEDZIALNOÅšCI ZA NASTÄ˜PUJÄ„CE SZKODY, NAWET JEÅšLI ZOSTALI POINFORMOWANI O MOÅ»LIWOÅšCI ICH WYSTÄ„PIENIA:
 
-a. UTRATÊ LUB USZKODZENIE DANYCH;
+a. UTRATÄ˜ LUB USZKODZENIE DANYCH;
 
-b. SZKODY NADZWYCZAJNE, UBOCZNE, WYNIKAJ¥CE Z NARUSZENIA DÓBR OSOBISTYCH, POŒREDNIE ORAZ SZKODY, KTÓRYCH NIE MO¯NA BY£O PRZEWIDZIEÆ PRZY ZAWIERANIU UMOWY, ANI TE¯
+b. SZKODY NADZWYCZAJNE, UBOCZNE, WYNIKAJÄ„CE Z NARUSZENIA DÃ“BR OSOBISTYCH, POÅšREDNIE ORAZ SZKODY, KTÃ“RYCH NIE MOÅ»NA BYÅO PRZEWIDZIEÄ† PRZY ZAWIERANIU UMOWY, ANI TEÅ»
 
-c. UTRACONE ZYSKI, KONTAKTY HANDLOWE, PRZYCHODY, REPUTACJÊ (GOODWILL) ANI PRZEWIDYWANE OSZCZÊDNOŒCI.
+c. UTRACONE ZYSKI, KONTAKTY HANDLOWE, PRZYCHODY, REPUTACJÄ˜ (GOODWILL) ANI PRZEWIDYWANE OSZCZÄ˜DNOÅšCI.
 
-11. Weryfikacja zgodnoœci
+11. Weryfikacja zgodnoÅ›ci
 
-Na potrzeby niniejszego paragrafu 11 (Weryfikacja zgodnoœci), przyjmuje siê, ¿e termin "Warunki ILAN dla Programu" oznacza 1) niniejsz¹ Umowê oraz odpowiednie poprawki i dokumenty transakcyjne dostarczone przez IBM, a tak¿e 2) strategie IBM dotycz¹ce oprogramowania, dostêpne w serwisie WWW IBM Software Policy (www.ibm.com/softwarepolicies), a w szczególnoœci strategie dotycz¹ce tworzenia kopii zapasowych, okreœlania cen przy ograniczonej mocy obliczeniowej oraz migracji.
+Na potrzeby niniejszego paragrafu 11 (Weryfikacja zgodnoÅ›ci), przyjmuje siÄ™, Å¼e termin "Warunki ILAN dla Programu" oznacza 1) niniejszÄ… UmowÄ™ oraz odpowiednie poprawki i dokumenty transakcyjne dostarczone przez IBM, a takÅ¼e 2) strategie IBM dotyczÄ…ce oprogramowania, dostÄ™pne w serwisie WWW IBM Software Policy (www.ibm.com/softwarepolicies), a w szczegÃ³lnoÅ›ci strategie dotyczÄ…ce tworzenia kopii zapasowych, okreÅ›lania cen przy ograniczonej mocy obliczeniowej oraz migracji.
 
-Prawa i obowi¹zki przedstawione w niniejszym paragrafie 11 obowi¹zuj¹ w okresie licencjonowania Programu na rzecz Licencjobiorcy oraz dwa lata po tym okresie.
+Prawa i obowiÄ…zki przedstawione w niniejszym paragrafie 11 obowiÄ…zujÄ… w okresie licencjonowania Programu na rzecz Licencjobiorcy oraz dwa lata po tym okresie.
 
 11.1 Proces weryfikacji
 
-Licencjobiorca zgadza siê tworzyæ, przechowywaæ oraz dostarczaæ IBM i rewidentom IBM dok³adn¹ pisemn¹ dokumentacjê, dane wyjœciowe narzêdzi systemowych oraz inne informacje systemowe wystarczaj¹ce do zapewnienia mo¿liwoœci weryfikacji, ¿e korzystanie przez Licencjobiorcê ze wszystkich Programów odbywa siê zgodnie z Warunkami ILAN dla Programu, a w szczególnoœci ze wszystkimi obowi¹zuj¹cymi warunkami IBM w zakresie licencjonowania i cen. Licencjobiorca jest odpowiedzialny za 1) zapewnienie, ¿e nie zosta³ przekroczony poziom Autoryzowanego U¿ywania oraz 2) przestrzeganie zgodnoœci z Warunkami ILAN dla Programu.
+Licencjobiorca zgadza siÄ™ tworzyÄ‡, przechowywaÄ‡ oraz dostarczaÄ‡ IBM i rewidentom IBM dokÅ‚adnÄ… pisemnÄ… dokumentacjÄ™, dane wyjÅ›ciowe narzÄ™dzi systemowych oraz inne informacje systemowe wystarczajÄ…ce do zapewnienia moÅ¼liwoÅ›ci weryfikacji, Å¼e korzystanie przez LicencjobiorcÄ™ ze wszystkich ProgramÃ³w odbywa siÄ™ zgodnie z Warunkami ILAN dla Programu, a w szczegÃ³lnoÅ›ci ze wszystkimi obowiÄ…zujÄ…cymi warunkami IBM w zakresie licencjonowania i cen. Licencjobiorca jest odpowiedzialny za 1) zapewnienie, Å¼e nie zostaÅ‚ przekroczony poziom Autoryzowanego UÅ¼ywania oraz 2) przestrzeganie zgodnoÅ›ci z Warunkami ILAN dla Programu.
 
-IBM mo¿e zweryfikowaæ, informuj¹c o takim zamiarze z odpowiednim wyprzedzeniem, czy Licencjobiorca przestrzega Warunków ILAN dla Programu we wszystkich oœrodkach i œrodowiskach, gdzie Licencjobiorca u¿ywa Programów do jakichkolwiek celów zgodnie z Warunkami ILAN dla Programu. Weryfikacja taka mo¿e byæ przeprowadzana na terenie Licencjobiorcy, w normalnych godzinach pracy i bêdzie realizowana w sposób w minimalnym stopniu zak³ócaj¹cy tê pracê. IBM mo¿e przy takiej weryfikacji skorzystaæ z us³ug niezale¿nego rewidenta, pod warunkiem, ¿e zosta³a z nim podpisana umowa o zachowaniu poufnoœci.
+IBM moÅ¼e zweryfikowaÄ‡, informujÄ…c o takim zamiarze z odpowiednim wyprzedzeniem, czy Licencjobiorca przestrzega WarunkÃ³w ILAN dla Programu we wszystkich oÅ›rodkach i Å›rodowiskach, gdzie Licencjobiorca uÅ¼ywa ProgramÃ³w do jakichkolwiek celÃ³w zgodnie z Warunkami ILAN dla Programu. Weryfikacja taka moÅ¼e byÄ‡ przeprowadzana na terenie Licencjobiorcy, w normalnych godzinach pracy i bÄ™dzie realizowana w sposÃ³b w minimalnym stopniu zakÅ‚Ã³cajÄ…cy tÄ™ pracÄ™. IBM moÅ¼e przy takiej weryfikacji skorzystaÄ‡ z usÅ‚ug niezaleÅ¼nego rewidenta, pod warunkiem, Å¼e zostaÅ‚a z nim podpisana umowa o zachowaniu poufnoÅ›ci.
 
 11.2 Postanowienia
 
-IBM poinformuje Licencjobiorcê na piœmie, jeœli weryfikacja wyka¿e, ¿e Licencjobiorca przekroczy³ poziom Autoryzowanego U¿ywania lub w inny sposób naruszy³ Warunki ILAN dla Programu. Licencjobiorca wyra¿a zgodê na natychmiastowe i bezpoœrednie uiszczenie na rzecz IBM op³at wyszczególnionych przez IBM na fakturze z tytu³u: 1) u¿ywania niezgodnego z Warunkami, 2) œwiadczenia wsparcia w czasie takiego u¿ywania lub przez okres dwóch lat, w zale¿noœci od tego, który z tych okresów by³ krótszy oraz 3) dodatkowych op³at i innych zobowi¹zañ okreœlonych w trakcie przeprowadzonej weryfikacji.
+IBM poinformuje LicencjobiorcÄ™ na piÅ›mie, jeÅ›li weryfikacja wykaÅ¼e, Å¼e Licencjobiorca przekroczyÅ‚ poziom Autoryzowanego UÅ¼ywania lub w inny sposÃ³b naruszyÅ‚ Warunki ILAN dla Programu. Licencjobiorca wyraÅ¼a zgodÄ™ na natychmiastowe i bezpoÅ›rednie uiszczenie na rzecz IBM opÅ‚at wyszczegÃ³lnionych przez IBM na fakturze z tytuÅ‚u: 1) uÅ¼ywania niezgodnego z Warunkami, 2) Å›wiadczenia wsparcia w czasie takiego uÅ¼ywania lub przez okres dwÃ³ch lat, w zaleÅ¼noÅ›ci od tego, ktÃ³ry z tych okresÃ³w byÅ‚ krÃ³tszy oraz 3) dodatkowych opÅ‚at i innych zobowiÄ…zaÅ„ okreÅ›lonych w trakcie przeprowadzonej weryfikacji.
 
-12. Uwagi osób trzecich
+12. Uwagi osÃ³b trzecich
 
-Program mo¿e zawieraæ kod osób trzecich, który bêdzie licencjonowany na rzecz Licencjobiorcy w ramach niniejszej Umowy przez IBM, a nie przez osobê trzeci¹. Ewentualne Uwagi na temat kodu osób trzecich (Uwagi Osób Trzecich) s¹ do³¹czane jedynie w celu powiadomienia Licencjobiorcy. Uwagi te mo¿na znaleŸæ w pliku NOTICES do³¹czonym do Programu. Informacje na temat uzyskania kodu Ÿród³owego dla konkretnego kodu osób trzecich mo¿na znaleŸæ w Uwagach Osób Trzecich. Jeœli w Uwagach Osób Trzecich IBM okreœli kod osób trzecich jako "Modyfikowany Kod Osób Trzecich", to IBM upowa¿ni Licencjobiorcê do 1) modyfikacji Modyfikowanego Kodu Osób Trzecich oraz 2) odtwarzania kodu Ÿród³owego modu³ów Programu, które s¹ bezpoœrednio wykorzystywane przez Modyfikowany Kod Osób Trzecich pod warunkiem, ¿e czynnoœæ ta zostanie podjêta jedynie w celu debugowania modyfikacji Licencjobiorcy na potrzeby takiego kodu osób trzecich. Ewentualne zobowi¹zania IBM w zakresie us³ug i wsparcia dotycz¹ jedynie Programu niezmodyfikowanego.
+Program moÅ¼e zawieraÄ‡ kod osÃ³b trzecich, ktÃ³ry bÄ™dzie licencjonowany na rzecz Licencjobiorcy w ramach niniejszej Umowy przez IBM, a nie przez osobÄ™ trzeciÄ…. Ewentualne Uwagi na temat kodu osÃ³b trzecich (Uwagi OsÃ³b Trzecich) sÄ… doÅ‚Ä…czane jedynie w celu powiadomienia Licencjobiorcy. Uwagi te moÅ¼na znaleÅºÄ‡ w pliku NOTICES doÅ‚Ä…czonym do Programu. Informacje na temat uzyskania kodu ÅºrÃ³dÅ‚owego dla konkretnego kodu osÃ³b trzecich moÅ¼na znaleÅºÄ‡ w Uwagach OsÃ³b Trzecich. JeÅ›li w Uwagach OsÃ³b Trzecich IBM okreÅ›li kod osÃ³b trzecich jako "Modyfikowany Kod OsÃ³b Trzecich", to IBM upowaÅ¼ni LicencjobiorcÄ™ do 1) modyfikacji Modyfikowanego Kodu OsÃ³b Trzecich oraz 2) odtwarzania kodu ÅºrÃ³dÅ‚owego moduÅ‚Ã³w Programu, ktÃ³re sÄ… bezpoÅ›rednio wykorzystywane przez Modyfikowany Kod OsÃ³b Trzecich pod warunkiem, Å¼e czynnoÅ›Ä‡ ta zostanie podjÄ™ta jedynie w celu debugowania modyfikacji Licencjobiorcy na potrzeby takiego kodu osÃ³b trzecich. Ewentualne zobowiÄ…zania IBM w zakresie usÅ‚ug i wsparcia dotyczÄ… jedynie Programu niezmodyfikowanego.
 
-13. Postanowienia ogólne
+13. Postanowienia ogÃ³lne
 
-a. Postanowienia zawarte w niniejszej Umowie pozostaj¹ bez wp³ywu na uprawnienia przys³uguj¹ce konsumentom na podstawie bezwzglêdnie obowi¹zuj¹cych przepisów prawa.
+a. Postanowienia zawarte w niniejszej Umowie pozostajÄ… bez wpÅ‚ywu na uprawnienia przysÅ‚ugujÄ…ce konsumentom na podstawie bezwzglÄ™dnie obowiÄ…zujÄ…cych przepisÃ³w prawa.
 
-b. W przypadku Programów, które IBM dostarcza Licencjobiorcy w formie materialnej, IBM wype³nia swe obowi¹zki w zakresie wysy³ki i dostawy z chwil¹ dostarczenia takich Programów do wyznaczonego przez siebie przewoŸnika, chyba ¿e Licencjobiorca uzgodni³ z IBM na piœmie inny tryb postêpowania.
+b. W przypadku ProgramÃ³w, ktÃ³re IBM dostarcza Licencjobiorcy w formie materialnej, IBM wypeÅ‚nia swe obowiÄ…zki w zakresie wysyÅ‚ki i dostawy z chwilÄ… dostarczenia takich ProgramÃ³w do wyznaczonego przez siebie przewoÅºnika, chyba Å¼e Licencjobiorca uzgodniÅ‚ z IBM na piÅ›mie inny tryb postÄ™powania.
 
-c. W przypadku niewa¿noœci lub niewykonalnoœci któregokolwiek z postanowieñ niniejszej Umowy, pozosta³e postanowienia niniejszej Umowy zachowuj¹ pe³n¹ moc prawn¹ i skutecznoœæ.
+c. W przypadku niewaÅ¼noÅ›ci lub niewykonalnoÅ›ci ktÃ³regokolwiek z postanowieÅ„ niniejszej Umowy, pozostaÅ‚e postanowienia niniejszej Umowy zachowujÄ… peÅ‚nÄ… moc prawnÄ… i skutecznoÅ›Ä‡.
 
-d. Licencjobiorca wyra¿a zgodê na przestrzeganie wszelkich obowi¹zuj¹cych praw i przepisów w zakresie eksportu i importu, w tym przepisów Stanów Zjednoczonych dotycz¹cych embarga i sankcji oraz zakazu eksportu do lub na rzecz okreœlonych u¿ytkowników koñcowych.
+d. Licencjobiorca wyraÅ¼a zgodÄ™ na przestrzeganie wszelkich obowiÄ…zujÄ…cych praw i przepisÃ³w w zakresie eksportu i importu, w tym przepisÃ³w StanÃ³w Zjednoczonych dotyczÄ…cych embarga i sankcji oraz zakazu eksportu do lub na rzecz okreÅ›lonych uÅ¼ytkownikÃ³w koÅ„cowych.
 
-e. Licencjobiorca upowa¿nia International Business Machines Corporation oraz przedsiêbiorstwa podporz¹dkowane IBM Corp. (ich nastêpców prawnych i cesjonariuszy, wykonawców i Partnerów Handlowych IBM) do przechowywania i u¿ywania biznesowych informacji kontaktowych Licencjobiorcy, bez wzglêdu na miejsce prowadzonej dzia³alnoœci, w zwi¹zku z produktami i us³ugami IBM lub w celu utrzymania kontaktów handlowych miêdzy Stronami.
+e. Licencjobiorca upowaÅ¼nia International Business Machines Corporation oraz przedsiÄ™biorstwa podporzÄ…dkowane IBM Corp. (ich nastÄ™pcÃ³w prawnych i cesjonariuszy, wykonawcÃ³w i PartnerÃ³w Handlowych IBM) do przechowywania i uÅ¼ywania biznesowych informacji kontaktowych Licencjobiorcy, bez wzglÄ™du na miejsce prowadzonej dziaÅ‚alnoÅ›ci, w zwiÄ…zku z produktami i usÅ‚ugami IBM lub w celu utrzymania kontaktÃ³w handlowych miÄ™dzy Stronami.
 
-f. Ka¿da ze Stron stworzy drugiej Stronie rozs¹dne mo¿liwoœci wype³nienia zobowi¹zañ, zanim zarzuci drugiej Stronie ich niewype³nienie w ramach niniejszej Umowy. Strony podejm¹ w dobrej wierze próbê rozstrzygniêcia sporów, nieporozumieñ lub roszczeñ powsta³ych miêdzy nimi w zwi¹zku z Umow¹.
+f. KaÅ¼da ze Stron stworzy drugiej Stronie rozsÄ…dne moÅ¼liwoÅ›ci wypeÅ‚nienia zobowiÄ…zaÅ„, zanim zarzuci drugiej Stronie ich niewypeÅ‚nienie w ramach niniejszej Umowy. Strony podejmÄ… w dobrej wierze prÃ³bÄ™ rozstrzygniÄ™cia sporÃ³w, nieporozumieÅ„ lub roszczeÅ„ powstaÅ‚ych miÄ™dzy nimi w zwiÄ…zku z UmowÄ….
 
-g. O ile obowi¹zuj¹ce prawo nie stanowi inaczej, bez mo¿liwoœci wy³¹czenia takiego prawa w ramach umowy: 1) ¿adna ze Stron nie podejmie dzia³añ prawnych, w jakiejkolwiek formie, zwi¹zanych z roszczeniem wynikaj¹cym z niniejszej Umowy lub pozostaj¹cym z ni¹ w zwi¹zku po okresie dwóch lat od czasu pojawienia siê przyczyny podjêcia takich dzia³añ; oraz 2) po wygaœniêciu takiego okresu, wszelkie roszczenia przedawniaj¹ siê i prawa z nimi zwi¹zane wygasaj¹.
+g. O ile obowiÄ…zujÄ…ce prawo nie stanowi inaczej, bez moÅ¼liwoÅ›ci wyÅ‚Ä…czenia takiego prawa w ramach umowy: 1) Å¼adna ze Stron nie podejmie dziaÅ‚aÅ„ prawnych, w jakiejkolwiek formie, zwiÄ…zanych z roszczeniem wynikajÄ…cym z niniejszej Umowy lub pozostajÄ…cym z niÄ… w zwiÄ…zku po okresie dwÃ³ch lat od czasu pojawienia siÄ™ przyczyny podjÄ™cia takich dziaÅ‚aÅ„; oraz 2) po wygaÅ›niÄ™ciu takiego okresu, wszelkie roszczenia przedawniajÄ… siÄ™ i prawa z nimi zwiÄ…zane wygasajÄ….
 
-h. Ani Licencjobiorca, ani IBM nie odpowiadaj¹ za niedope³nienie jakichkolwiek obowi¹zków, jeœli przyczyny takiego niedope³nienia le¿a³y poza ich kontrol¹.
+h. Ani Licencjobiorca, ani IBM nie odpowiadajÄ… za niedopeÅ‚nienie jakichkolwiek obowiÄ…zkÃ³w, jeÅ›li przyczyny takiego niedopeÅ‚nienia leÅ¼aÅ‚y poza ich kontrolÄ….
 
-i. Niniejsza Umowa nie daje osobom trzecim jakichkolwiek praw ani te¿ podstawy do roszczeñ, a IBM nie ponosi odpowiedzialnoœci za jakiekolwiek roszczenie osób trzecich wobec Licencjobiorcy, z wyj¹tkiem zakresu przewidzianego w paragrafie 10.1 (Sytuacje, w których IBM mo¿e nie ponosiæ odpowiedzialnoœci) powy¿ej, w czêœci dotycz¹cej uszczerbku na zdrowiu (³¹cznie ze œmierci¹) lub szkód wyrz¹dzonych w nieruchomoœciach lub w maj¹tku ruchomym, za które IBM ponosi odpowiedzialnoœæ prawn¹ wobec osób trzecich.
+i. Niniejsza Umowa nie daje osobom trzecim jakichkolwiek praw ani teÅ¼ podstawy do roszczeÅ„, a IBM nie ponosi odpowiedzialnoÅ›ci za jakiekolwiek roszczenie osÃ³b trzecich wobec Licencjobiorcy, z wyjÄ…tkiem zakresu przewidzianego w paragrafie 10.1 (Sytuacje, w ktÃ³rych IBM moÅ¼e nie ponosiÄ‡ odpowiedzialnoÅ›ci) powyÅ¼ej, w czÄ™Å›ci dotyczÄ…cej uszczerbku na zdrowiu (Å‚Ä…cznie ze Å›mierciÄ…) lub szkÃ³d wyrzÄ…dzonych w nieruchomoÅ›ciach lub w majÄ…tku ruchomym, za ktÃ³re IBM ponosi odpowiedzialnoÅ›Ä‡ prawnÄ… wobec osÃ³b trzecich.
 
-j. Przystêpuj¹c do niniejszej Umowy ¿adna ze Stron nie korzysta z ¿adnych ustaleñ, które nie zosta³y okreœlone w Umowie, a w szczególnoœci z ¿adnych ustaleñ w zakresie: 1) wydajnoœci lub dzia³ania Programu; 2) doœwiadczeñ czy rekomendacji osób trzecich lub 3) wyników lub oszczêdnoœci, jakie mo¿e osi¹gn¹æ Licencjobiorca.
+j. PrzystÄ™pujÄ…c do niniejszej Umowy Å¼adna ze Stron nie korzysta z Å¼adnych ustaleÅ„, ktÃ³re nie zostaÅ‚y okreÅ›lone w Umowie, a w szczegÃ³lnoÅ›ci z Å¼adnych ustaleÅ„ w zakresie: 1) wydajnoÅ›ci lub dziaÅ‚ania Programu; 2) doÅ›wiadczeÅ„ czy rekomendacji osÃ³b trzecich lub 3) wynikÃ³w lub oszczÄ™dnoÅ›ci, jakie moÅ¼e osiÄ…gnÄ…Ä‡ Licencjobiorca.
 
-k. IBM podpisa³ umowy z konkretnymi organizacjami (zwanymi "Partnerami Handlowymi IBM") w celu promocji i sprzeda¿y okreœlonych Programów oraz udzielania dla nich wsparcia. Partnerzy Handlowi IBM dzia³aj¹ oddzielnie i niezale¿nie od IBM. IBM nie ponosi odpowiedzialnoœci za dzia³ania lub oœwiadczenia Partnerów Handlowych IBM ani za ich zobowi¹zania wobec Licencjobiorcy.
+k. IBM podpisaÅ‚ umowy z konkretnymi organizacjami (zwanymi "Partnerami Handlowymi IBM") w celu promocji i sprzedaÅ¼y okreÅ›lonych ProgramÃ³w oraz udzielania dla nich wsparcia. Partnerzy Handlowi IBM dziaÅ‚ajÄ… oddzielnie i niezaleÅ¼nie od IBM. IBM nie ponosi odpowiedzialnoÅ›ci za dziaÅ‚ania lub oÅ›wiadczenia PartnerÃ³w Handlowych IBM ani za ich zobowiÄ…zania wobec Licencjobiorcy.
 
-l. Warunki licencji oraz warunki dotycz¹ce zabezpieczenia i ochrony w³asnoœci intelektualnej okreœlone w innych umowach Licencjobiorcy z IBM (na przyk³ad w Umowie IBM z Klientem) nie maj¹ zastosowania do licencji na Program udzielonych na mocy niniejszej Umowy.
+l. Warunki licencji oraz warunki dotyczÄ…ce zabezpieczenia i ochrony wÅ‚asnoÅ›ci intelektualnej okreÅ›lone w innych umowach Licencjobiorcy z IBM (na przykÅ‚ad w Umowie IBM z Klientem) nie majÄ… zastosowania do licencji na Program udzielonych na mocy niniejszej Umowy.
 
-m. Strony zgodnie ustalaj¹, ¿e wszelkie wymieniane informacje s¹ niepoufne. Jeœli którakolwiek ze Stron ¿¹da wymiany informacji poufnych, wymiana taka bêdzie mieæ miejsce na warunkach podpisanej umowy o zachowaniu poufnoœci;
+m. Strony zgodnie ustalajÄ…, Å¼e wszelkie wymieniane informacje sÄ… niepoufne. JeÅ›li ktÃ³rakolwiek ze Stron Å¼Ä…da wymiany informacji poufnych, wymiana taka bÄ™dzie mieÄ‡ miejsce na warunkach podpisanej umowy o zachowaniu poufnoÅ›ci;
 
-14. Zasiêg geograficzny i obowi¹zuj¹ce ustawodawstwo
+14. ZasiÄ™g geograficzny i obowiÄ…zujÄ…ce ustawodawstwo
 
-14.1 Obowi¹zuj¹ce ustawodawstwo
+14.1 ObowiÄ…zujÄ…ce ustawodawstwo
 
-Obie Strony przyjmuj¹ jako obowi¹zuj¹ce prawo kraju, w którym licencja na Program zosta³a nabyta, oraz wyra¿aj¹ zgodê na stosowanie takiego prawa przy interpretowaniu oraz egzekwowaniu wszelkich praw, obowi¹zków i zobowi¹zañ Stron, wynikaj¹cych z niniejszej Umowy lub maj¹cych w jakikolwiek sposób z ni¹ zwi¹zek, bez odwo³ywania siê do zasad kolizji przepisów prawnych.
+Obie Strony przyjmujÄ… jako obowiÄ…zujÄ…ce prawo kraju, w ktÃ³rym licencja na Program zostaÅ‚a nabyta, oraz wyraÅ¼ajÄ… zgodÄ™ na stosowanie takiego prawa przy interpretowaniu oraz egzekwowaniu wszelkich praw, obowiÄ…zkÃ³w i zobowiÄ…zaÅ„ Stron, wynikajÄ…cych z niniejszej Umowy lub majÄ…cych w jakikolwiek sposÃ³b z niÄ… zwiÄ…zek, bez odwoÅ‚ywania siÄ™ do zasad kolizji przepisÃ³w prawnych.
 
-Konwencja ONZ dotycz¹ca umów o Miêdzynarodowej Sprzeda¿y Towarów (United Nations Convention on Contracts for the International Sale of Goods) nie ma zastosowania.
+Konwencja ONZ dotyczÄ…ca umÃ³w o MiÄ™dzynarodowej SprzedaÅ¼y TowarÃ³w (United Nations Convention on Contracts for the International Sale of Goods) nie ma zastosowania.
 
 14.2 Jurysdykcja
 
-Wszelkie prawa, obowi¹zki i zobowi¹zania podlegaj¹ w³aœciwym s¹dom kraju nabycia licencji na Program przez Licencjobiorcê.
+Wszelkie prawa, obowiÄ…zki i zobowiÄ…zania podlegajÄ… wÅ‚aÅ›ciwym sÄ…dom kraju nabycia licencji na Program przez LicencjobiorcÄ™.
 
-Czêœæ 2 - Warunki specyficzne dla poszczególnych krajów
+CzÄ™Å›Ä‡ 2 - Warunki specyficzne dla poszczegÃ³lnych krajÃ³w
 
-W przypadku licencji udzielanych na terenie Polski, poni¿sze warunki zastêpuj¹ lub modyfikuj¹ warunki okreœlone w Czêœci 1. Wszystkie warunki Czêœci 1, których nie dotyczy niniejsza poprawka, nie ulegaj¹ zmianom i pozostaj¹ w mocy. W sk³ad Czêœci 2 wchodz¹:
+W przypadku licencji udzielanych na terenie Polski, poniÅ¼sze warunki zastÄ™pujÄ… lub modyfikujÄ… warunki okreÅ›lone w CzÄ™Å›ci 1. Wszystkie warunki CzÄ™Å›ci 1, ktÃ³rych nie dotyczy niniejsza poprawka, nie ulegajÄ… zmianom i pozostajÄ… w mocy. W skÅ‚ad CzÄ™Å›ci 2 wchodzÄ…:
 
-* Zmiany krajowe do Czêœci 1, paragraf 14 (Obowi¹zuj¹ce ustawodawstwo i jurysdykcja) oraz
+* Zmiany krajowe do CzÄ™Å›ci 1, paragraf 14 (ObowiÄ…zujÄ…ce ustawodawstwo i jurysdykcja) oraz
 
-* Zmiany krajowe do innych warunków Umowy dotycz¹ce Europy, Bliskiego Wschodu i Afryki.
+* Zmiany krajowe do innych warunkÃ³w Umowy dotyczÄ…ce Europy, Bliskiego Wschodu i Afryki.
 
-Zmiany krajowe do Czêœci 1, paragraf 14 (Obowi¹zuj¹ce ustawodawstwo i jurysdykcja)
+Zmiany krajowe do CzÄ™Å›ci 1, paragraf 14 (ObowiÄ…zujÄ…ce ustawodawstwo i jurysdykcja)
 
-14.1 Obowi¹zuj¹ce ustawodawstwo
+14.1 ObowiÄ…zujÄ…ce ustawodawstwo
 
-Fraza "prawo kraju, w którym licencja na Program zosta³a nabyta" w pierwszym akapicie paragrafu 14.1 (Obowi¹zuj¹ce ustawodawstwo) zostaje w przypadku Polski zast¹piona nastêpuj¹cym tekstem:
+Fraza "prawo kraju, w ktÃ³rym licencja na Program zostaÅ‚a nabyta" w pierwszym akapicie paragrafu 14.1 (ObowiÄ…zujÄ…ce ustawodawstwo) zostaje w przypadku Polski zastÄ…piona nastÄ™pujÄ…cym tekstem:
 
 prawo Austrii.
 
-14.3 Arbitra¿
+14.3 ArbitraÅ¼
 
-Nastêpuj¹cy akapit maj¹cy zastosowanie w Polsce zostaje dodany jako nowy do paragrafu 14.3 (Arbitra¿). Postanowienia paragrafu 14.3 maj¹ znaczenie rozstrzygaj¹ce nad postanowieniami paragrafu 14.2 (Jurysdykcja) w zakresie, w jakim zezwala na to obowi¹zuj¹ce ustawodawstwo i zasady proceduralne:
+NastÄ™pujÄ…cy akapit majÄ…cy zastosowanie w Polsce zostaje dodany jako nowy do paragrafu 14.3 (ArbitraÅ¼). Postanowienia paragrafu 14.3 majÄ… znaczenie rozstrzygajÄ…ce nad postanowieniami paragrafu 14.2 (Jurysdykcja) w zakresie, w jakim zezwala na to obowiÄ…zujÄ…ce ustawodawstwo i zasady proceduralne:
 
-Wszelkie kwestie sporne wynikaj¹ce z niniejszej Umowy lub zwi¹zane z jej naruszeniem, wypowiedzeniem lub niewa¿noœci¹ bêd¹ rozstrzygane w sposób ostateczny zgodnie z Zasadami Postêpowania Arbitra¿owego i Ugodowego Miêdzynarodowego Centrum Arbitra¿u przy Federalnej Izbie Gospodarczej (Rules of Arbitration and Conciliation of the International Arbitral Center of the Federal Economic Chamber) w Wiedniu (Vienna Rules), przez trzech arbitrów, powo³anych zgodnie ze wspomnianymi zasadami. Arbitra¿ bêdzie mia³ miejsce w Wiedniu, w Austrii. Jêzykiem obowi¹zuj¹cym podczas postêpowania bêdzie jêzyk angielski. Orzeczenia arbitrów bêd¹ ostateczne i wi¹¿¹ce dla obu Stron. Oznacza to, ¿e zgodnie z artyku³em 598(2) Austriackiego Kodeksu Postêpowania Cywilnego (Austrian Code of Civil Procedure), Strony rezygnuj¹ ze stosowania artyku³u 595(1) punkt 7 tego Kodeksu. Tym niemniej powy¿sze warunki w ¿adnym stopniu nie ograniczaj¹ prawa IBM do wszczêcia postêpowania przed dowolnym w³aœciwym s¹dem w kraju instalacji.
+Wszelkie kwestie sporne wynikajÄ…ce z niniejszej Umowy lub zwiÄ…zane z jej naruszeniem, wypowiedzeniem lub niewaÅ¼noÅ›ciÄ… bÄ™dÄ… rozstrzygane w sposÃ³b ostateczny zgodnie z Zasadami PostÄ™powania ArbitraÅ¼owego i Ugodowego MiÄ™dzynarodowego Centrum ArbitraÅ¼u przy Federalnej Izbie Gospodarczej (Rules of Arbitration and Conciliation of the International Arbitral Center of the Federal Economic Chamber) w Wiedniu (Vienna Rules), przez trzech arbitrÃ³w, powoÅ‚anych zgodnie ze wspomnianymi zasadami. ArbitraÅ¼ bÄ™dzie miaÅ‚ miejsce w Wiedniu, w Austrii. JÄ™zykiem obowiÄ…zujÄ…cym podczas postÄ™powania bÄ™dzie jÄ™zyk angielski. Orzeczenia arbitrÃ³w bÄ™dÄ… ostateczne i wiÄ…Å¼Ä…ce dla obu Stron. Oznacza to, Å¼e zgodnie z artykuÅ‚em 598(2) Austriackiego Kodeksu PostÄ™powania Cywilnego (Austrian Code of Civil Procedure), Strony rezygnujÄ… ze stosowania artykuÅ‚u 595(1) punkt 7 tego Kodeksu. Tym niemniej powyÅ¼sze warunki w Å¼adnym stopniu nie ograniczajÄ… prawa IBM do wszczÄ™cia postÄ™powania przed dowolnym wÅ‚aÅ›ciwym sÄ…dem w kraju instalacji.
 
-ZMIANY KRAJOWE DOTYCZ¥CE EUROPY, BLISKIEGO WSCHODU I AFRYKI
+ZMIANY KRAJOWE DOTYCZÄ„CE EUROPY, BLISKIEGO WSCHODU I AFRYKI
 
-KRAJE CZ£ONKOWSKIE UNII EUROPEJSKIEJ
+KRAJE CZÅONKOWSKIE UNII EUROPEJSKIEJ
 
 8. Brak gwarancji
 
-Nastêpuj¹cy tekst zosta³ dodany do paragrafu 8 (Brak gwarancji):
+NastÄ™pujÄ…cy tekst zostaÅ‚ dodany do paragrafu 8 (Brak gwarancji):
 
-W krajach Unii Europejskiej ("UE") klientom przys³uguj¹ prawa wynikaj¹ce z obowi¹zuj¹cego ustawodawstwa krajowego, któremu podlega sprzeda¿ artyku³ów konsumpcyjnych. Postanowienia zawarte w paragrafie 8 (Brak gwarancji) pozostaj¹ bez wp³ywu na te prawa.
+W krajach Unii Europejskiej ("UE") klientom przysÅ‚ugujÄ… prawa wynikajÄ…ce z obowiÄ…zujÄ…cego ustawodawstwa krajowego, ktÃ³remu podlega sprzedaÅ¼ artykuÅ‚Ã³w konsumpcyjnych. Postanowienia zawarte w paragrafie 8 (Brak gwarancji) pozostajÄ… bez wpÅ‚ywu na te prawa.
 
-KRAJE CZ£ONKOWSKIE UNII EUROPEJSKIEJ I KRAJE WYSZCZEGÓLNIONE PONI¯EJ
+KRAJE CZÅONKOWSKIE UNII EUROPEJSKIEJ I KRAJE WYSZCZEGÃ“LNIONE PONIÅ»EJ
 
-Ka¿dy kraj europejski, który uchwali³ lokalne akty prawne dotycz¹ce ochrony danych zbli¿one do modelu obowi¹zuj¹cego w Unii Europejskiej.
+KaÅ¼dy kraj europejski, ktÃ³ry uchwaliÅ‚ lokalne akty prawne dotyczÄ…ce ochrony danych zbliÅ¼one do modelu obowiÄ…zujÄ…cego w Unii Europejskiej.
 
-13. Postanowienia ogólne
+13. Postanowienia ogÃ³lne
 
-Nastêpuj¹cy tekst zastêpuje punkt 13.e:
+NastÄ™pujÄ…cy tekst zastÄ™puje punkt 13.e:
 
-(1) Definicje - Do punktu 13.e maj¹ zastosowanie nastêpuj¹ce definicje dodatkowe:
+(1) Definicje - Do punktu 13.e majÄ… zastosowanie nastÄ™pujÄ…ce definicje dodatkowe:
 
-(a) Biznesowe Informacje Kontaktowe - oznaczaj¹ informacje maj¹ce zwi¹zek z dzia³alnoœci¹ gospodarcz¹, ujawnione IBM przez Licencjobiorcê, w tym imiona i nazwiska, stanowiska, adresy s³u¿bowe, numery telefonów oraz adresy e-mail pracowników i wykonawców Licencjobiorcy. W przypadku Austrii, W³och i Szwajcarii Biznesowe Informacje Kontaktowe obejmuj¹ równie¿ informacje o Licencjobiorcy oraz jego wykonawcach posiadaj¹cych osobowoœæ prawn¹ (na przyk³ad dane na temat przychodów Licencjobiorcy i inne informacje o transakcjach).
+(a) Biznesowe Informacje Kontaktowe - oznaczajÄ… informacje majÄ…ce zwiÄ…zek z dziaÅ‚alnoÅ›ciÄ… gospodarczÄ…, ujawnione IBM przez LicencjobiorcÄ™, w tym imiona i nazwiska, stanowiska, adresy sÅ‚uÅ¼bowe, numery telefonÃ³w oraz adresy e-mail pracownikÃ³w i wykonawcÃ³w Licencjobiorcy. W przypadku Austrii, WÅ‚och i Szwajcarii Biznesowe Informacje Kontaktowe obejmujÄ… rÃ³wnieÅ¼ informacje o Licencjobiorcy oraz jego wykonawcach posiadajÄ…cych osobowoÅ›Ä‡ prawnÄ… (na przykÅ‚ad dane na temat przychodÃ³w Licencjobiorcy i inne informacje o transakcjach).
 
-(b) Biznesowy Personel Kontaktowy - oznacza pracowników i wykonawców Licencjobiorcy, do których odnosz¹ siê Biznesowe Informacje Kontaktowe.
+(b) Biznesowy Personel Kontaktowy - oznacza pracownikÃ³w i wykonawcÃ³w Licencjobiorcy, do ktÃ³rych odnoszÄ… siÄ™ Biznesowe Informacje Kontaktowe.
 
-(c) Urz¹d Ochrony Danych - oznacza organ powo³any zgodnie z Ustawodawstwem o ochronie danych i ³¹cznoœci elektronicznej w okreœlonym kraju lub w przypadku krajów spoza Unii Europejskiej, organ odpowiedzialny za nadzór nad ochron¹ danych osobowych w takim kraju b¹dŸ (w obu powy¿szych przypadkach) ka¿dy nastêpca prawny takiego organu powo³any w odpowiedni sposób.
+(c) UrzÄ…d Ochrony Danych - oznacza organ powoÅ‚any zgodnie z Ustawodawstwem o ochronie danych i Å‚Ä…cznoÅ›ci elektronicznej w okreÅ›lonym kraju lub w przypadku krajÃ³w spoza Unii Europejskiej, organ odpowiedzialny za nadzÃ³r nad ochronÄ… danych osobowych w takim kraju bÄ…dÅº (w obu powyÅ¼szych przypadkach) kaÅ¼dy nastÄ™pca prawny takiego organu powoÅ‚any w odpowiedni sposÃ³b.
 
-(d) Ustawodawstwo o ochronie danych i ³¹cznoœci elektronicznej - oznacza (i) obowi¹zuj¹ce prawo i przepisy krajowe wdra¿aj¹ce wymagania dyrektywy Unii Europejskiej 95/46/WE (w sprawie ochrony osób fizycznych w zakresie przetwarzania danych osobowych i swobodnego przep³ywu tych danych) oraz dyrektywy 2002/58/WE (dotycz¹cej przetwarzania danych osobowych i ochrony prywatnoœci w sektorze ³¹cznoœci elektronicznej); lub (ii) w przypadku krajów spoza Unii Europejskiej, prawa i przepisy obowi¹zuj¹ce w takich krajach i odnosz¹ce siê do ochrony danych osobowych i przepisów o ³¹cznoœci elektronicznej z wykorzystaniem danych osobowych, w tym (w obu powy¿szych przypadkach) ich ustawowe nowe wersje i modyfikacje.
+(d) Ustawodawstwo o ochronie danych i Å‚Ä…cznoÅ›ci elektronicznej - oznacza (i) obowiÄ…zujÄ…ce prawo i przepisy krajowe wdraÅ¼ajÄ…ce wymagania dyrektywy Unii Europejskiej 95/46/WE (w sprawie ochrony osÃ³b fizycznych w zakresie przetwarzania danych osobowych i swobodnego przepÅ‚ywu tych danych) oraz dyrektywy 2002/58/WE (dotyczÄ…cej przetwarzania danych osobowych i ochrony prywatnoÅ›ci w sektorze Å‚Ä…cznoÅ›ci elektronicznej); lub (ii) w przypadku krajÃ³w spoza Unii Europejskiej, prawa i przepisy obowiÄ…zujÄ…ce w takich krajach i odnoszÄ…ce siÄ™ do ochrony danych osobowych i przepisÃ³w o Å‚Ä…cznoÅ›ci elektronicznej z wykorzystaniem danych osobowych, w tym (w obu powyÅ¼szych przypadkach) ich ustawowe nowe wersje i modyfikacje.
 
-(e) Grupa IBM - oznacza International Business Machines Corporation z siedzib¹ w Armonk, Nowy Jork, USA, przedsiêbiorstwa podporz¹dkowane International Business Machines Corporation oraz ich odpowiednich Partnerów Handlowych i podwykonawców.
+(e) Grupa IBM - oznacza International Business Machines Corporation z siedzibÄ… w Armonk, Nowy Jork, USA, przedsiÄ™biorstwa podporzÄ…dkowane International Business Machines Corporation oraz ich odpowiednich PartnerÃ³w Handlowych i podwykonawcÃ³w.
 
-(2) Licencjobiorca upowa¿nia IBM do:
+(2) Licencjobiorca upowaÅ¼nia IBM do:
 
-(a) przetwarzania i u¿ywania Biznesowych Informacji Kontaktowych w ramach Grupy IBM w celu obs³ugi Licencjobiorcy, w tym w celu œwiadczenia us³ug wsparcia oraz rozszerzania relacji handlowych miêdzy Licencjobiorc¹ i Grup¹ IBM, a w szczególnoœci nawi¹zywania kontaktów z Biznesowym Personelem Kontaktowym (za poœrednictwem poczty e-mail lub w inny sposób) oraz sprzeda¿y produktów i us³ug Grupy IBM (zwanym dalej "Okreœlonym Celem"); oraz
+(a) przetwarzania i uÅ¼ywania Biznesowych Informacji Kontaktowych w ramach Grupy IBM w celu obsÅ‚ugi Licencjobiorcy, w tym w celu Å›wiadczenia usÅ‚ug wsparcia oraz rozszerzania relacji handlowych miÄ™dzy LicencjobiorcÄ… i GrupÄ… IBM, a w szczegÃ³lnoÅ›ci nawiÄ…zywania kontaktÃ³w z Biznesowym Personelem Kontaktowym (za poÅ›rednictwem poczty e-mail lub w inny sposÃ³b) oraz sprzedaÅ¼y produktÃ³w i usÅ‚ug Grupy IBM (zwanym dalej "OkreÅ›lonym Celem"); oraz
 
-(b) ujawniania Biznesowych Informacji Kontaktowych innym cz³onkom Grupy IBM jedynie na potrzeby realizacji Okreœlonego Celu.
+(b) ujawniania Biznesowych Informacji Kontaktowych innym czÅ‚onkom Grupy IBM jedynie na potrzeby realizacji OkreÅ›lonego Celu.
 
-(3) IBM wyra¿a zgodê na przetwarzanie Biznesowych Informacji Kontaktowych zgodnie z Ustawodawstwem o ochronie danych i ³¹cznoœci elektronicznej.
+(3) IBM wyraÅ¼a zgodÄ™ na przetwarzanie Biznesowych Informacji Kontaktowych zgodnie z Ustawodawstwem o ochronie danych i Å‚Ä…cznoÅ›ci elektronicznej.
 
-(4) Licencjobiorca oœwiadcza, ¿e w zakresie wymaganym Ustawodawstwem o ochronie danych i ³¹cznoœci elektronicznej (a) uzyska³ (lub uzyska) zgodê Biznesowego Personelu Kontaktowego na przetwarzanie i u¿ywanie przez Grupê IBM Biznesowych Informacji Kontaktowych do realizacji Okreœlonego Celu, oraz ¿e przygotowa³ (lub przygotuje) powiadomienie dla Biznesowego Personelu Kontaktowego w tej sprawie.
+(4) Licencjobiorca oÅ›wiadcza, Å¼e w zakresie wymaganym Ustawodawstwem o ochronie danych i Å‚Ä…cznoÅ›ci elektronicznej (a) uzyskaÅ‚ (lub uzyska) zgodÄ™ Biznesowego Personelu Kontaktowego na przetwarzanie i uÅ¼ywanie przez GrupÄ™ IBM Biznesowych Informacji Kontaktowych do realizacji OkreÅ›lonego Celu, oraz Å¼e przygotowaÅ‚ (lub przygotuje) powiadomienie dla Biznesowego Personelu Kontaktowego w tej sprawie.
 
-(5) Licencjobiorca upowa¿nia IBM do przesy³ania Biznesowych Informacji Kontaktowych poza Europejsk¹ Strefê Ekonomiczn¹ pod warunkiem, ¿e bêdzie to realizowane na warunkach zatwierdzonych przez Urz¹d Ochrony Danych lub zgodnie z Ustawodawstwem o ochronie danych i ³¹cznoœci elektronicznej.
+(5) Licencjobiorca upowaÅ¼nia IBM do przesyÅ‚ania Biznesowych Informacji Kontaktowych poza EuropejskÄ… StrefÄ™ EkonomicznÄ… pod warunkiem, Å¼e bÄ™dzie to realizowane na warunkach zatwierdzonych przez UrzÄ…d Ochrony Danych lub zgodnie z Ustawodawstwem o ochronie danych i Å‚Ä…cznoÅ›ci elektronicznej.
 
 Z125-5589-05 (07/2011)
 
