@@ -45,3 +45,12 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
+if [ -s "/config/openIdParameters.txt" ]
+then
+echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+  sed -i 's|group name="resAdministrators"|group name="${odm.resAdministrators.group1}"|g' /config/application.xml
+  sed -i 's|group name="resDeployers"|group name="${odm.resDeployers.group1}"|g' /config/application.xml
+  sed -i 's|group name="resMonitors"|group name="${odm.resMonitors.group1}"|g' /config/application.xml
+  sed -i 's|group name="resExecutors"|group name="${odm.resExecutors.group1}"|g' /config/application.xml
+fi
+

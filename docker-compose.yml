@@ -32,7 +32,6 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
-#    user: "1001:0"
     links:
     - dbserver
     depends_on:
@@ -46,7 +45,6 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/dsc-application.xml:/config/application.xml
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -56,7 +54,6 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
-    user: "1001:0"
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -72,7 +69,6 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/dr-application.xml:/config/application.xml
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -83,7 +79,6 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
-    user: "1001:0"
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -100,7 +95,6 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.txt:/config/openIdParameters.txt
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/dsr-application.xml:/config/application.xml
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -111,7 +105,6 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
-    user: "1001:0"
     links:
     - dbserver
     depends_on:
@@ -121,8 +114,6 @@ services:
     - 9643:9453
     environment:
     - JVM_ARGS="-Xmx14000m"
-#    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-#    - PROVIDER=ums
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     - DECISIONRUNNER_PORT=9443

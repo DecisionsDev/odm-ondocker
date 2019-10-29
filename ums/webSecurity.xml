@@ -24,14 +24,30 @@
                        validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
 
   <!-- Grant access to the group rtsAdministrator -->
-  <variable name="umsGroupAdministrator" value="o=defaultWIMFileBasedRealm/rtsAdministrator"/>
-  <variable name="odm.rtsAdministrator.group1" value="group:${umsGroupAdministrator}"/>
+  <variable name="umsGroupRtsAdministrator" value="o=defaultWIMFileBasedRealm/rtsAdministrator"/>
+  <variable name="odm.rtsAdministrator.group1" value="group:${umsGroupRtsAdministrator}"/>
 
   <!-- Grant access to the group rtsConfigManager -->
-  <variable name="umsGroupConfigManager" value="o=defaultWIMFileBasedRealm/rtsConfigManager"/>
-  <variable name="odm.rtsConfigManager.group1" value="group:${umsGroupConfigManager}"/>
+  <variable name="umsGroupRtsConfigManager" value="o=defaultWIMFileBasedRealm/rtsConfigManager"/>
+  <variable name="odm.rtsConfigManager.group1" value="group:${umsGroupRtsConfigManager}"/>
 
   <!-- Grant access to the group rtsInstaller -->
-  <variable name="umsGroupInstaller" value="o=defaultWIMFileBasedRealm/rtsInstaller"/>
-  <variable name="odm.rtsInstaller.group1" value="group:${umsGroupInstaller}"/>
+  <variable name="umsGroupRtsInstaller" value="o=defaultWIMFileBasedRealm/rtsInstaller"/>
+  <variable name="odm.rtsInstaller.group1" value="group:${umsGroupRtsInstaller}"/>
+
+  <!-- Grant access to the group resAdministrator -->
+  <variable name="umsGroupResAdministrators" value="o=defaultWIMFileBasedRealm/resAdministrators"/>
+  <variable name="odm.resAdministrators.group1" value="group:${umsGroupResAdministrators}"/>
+
+  <!-- Grant access to the group resDeployers -->
+  <variable name="umsGroupResDeployers" value="o=defaultWIMFileBasedRealm/resDeployers"/>
+  <variable name="odm.resDeployers.group1" value="group:${umsGroupResDeployers}"/>
+
+  <!-- Grant access to the group resMonitors -->
+  <variable name="umsGroupResMonitors" value="o=defaultWIMFileBasedRealm/resMonitors"/>
+  <variable name="odm.resMonitors.group1" value="group:${umsGroupResMonitors}"/>
+
+  <!-- Grant access to the group resExecutors -->
+  <variable name="umsGroupResExecutors" value="o=defaultWIMFileBasedRealm/resExecutors"/>
+  <variable name="odm.resExecutors.group1" value="group:${umsGroupResExecutors}"/>
 </server>
