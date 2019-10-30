@@ -1,6 +1,6 @@
-				<user access-id="${odm.resDeployers.user1}"/>
-				<user access-id="${odm.resDeployers.user2}"/>
-				<user access-id="${odm.resDeployers.user3}"/>
-				<group access-id="${odm.resDeployers.group1}"/>
-				<group access-id="${odm.resDeployers.group2}"/>
-				<group access-id="${odm.resDeployers.group3}"/>
+				<user name="resDepUser1" access-id="${odm.resDeployers.user1}"/>
+				<user name="resDepUser2" access-id="${odm.resDeployers.user2}"/>
+				<user name="resDepUser3" access-id="${odm.resDeployers.user3}"/>
+				<group name="resDepGroup1" access-id="${odm.resDeployers.group1}"/>
+				<group name="resDepGroup2" access-id="${odm.resDeployers.group2}"/>
+				<group name="resDepGroup3" access-id="${odm.resDeployers.group3}"/>
