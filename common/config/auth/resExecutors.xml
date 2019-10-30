@@ -1,0 +1,6 @@
+				<user access-id="${odm.resExecutors.user1}"/>
+				<user access-id="${odm.resExecutors.user2}"/>
+				<user access-id="${odm.resExecutors.user3}"/>
+				<group access-id="${odm.resExecutors.group1}"/>
+				<group access-id="${odm.resExecutors.group2}"/>
+				<group access-id="${odm.resExecutors.group3}"/>

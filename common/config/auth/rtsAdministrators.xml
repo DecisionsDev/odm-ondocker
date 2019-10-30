@@ -1,0 +1,6 @@
+				<user access-id="${odm.rtsAdministrators.user1}"/>
+				<user access-id="${odm.rtsAministrators.user2}"/>
+				<user access-id="${odm.rtsAdministrators.user3}"/>
+				<group access-id="${odm.rtsAdministrators.group1}"/>
+				<group access-id="${odm.rtsAdministrators.group2}"/>
+				<group access-id="${odm.rtsAdministrators.group3}"/>

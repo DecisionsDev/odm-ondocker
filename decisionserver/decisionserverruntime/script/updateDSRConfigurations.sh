@@ -3,10 +3,25 @@
 echo "Update Decision Server Runtime configurations"
 
 
-#echo "Enable basic authentication"
-#cd $APPS/DecisionService.war/WEB-INF;
-#sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
+echo "Enable basic authentication"
+cd $APPS/DecisionService.war/WEB-INF;
+sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
+if [ -s "/config/openIdParameters.txt" ]
+then
+	echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+  	sed -i $'/<group name="resExecutors"/{e cat /config/auth/resExecutors.xml\n}' /config/application.xml
+  	sed -i '/<group name="resExecutors"/d' /config/application.xml
+
+	echo "Enable UMS authentication"
+	UMS_LOGOUT_URL=$(grep UMS_LOGOUT_URL /config/openIdParameters.txt | sed "s/UMS_LOGOUT_URL=//g")
+  	echo "UMS_LOGOUT_URL: $UMS_LOGOUT_URL"
+        UMS_ALLOWED_DOMAINS=$(grep UMS_ALLOWED_DOMAINS /config/openIdParameters.txt | sed "s/UMS_ALLOWED_DOMAINS=//g")
+        echo "UMS_ALLOWED_DOMAINS: $UMS_ALLOWED_DOMAINS"
+	sed -i 's|UMS_LOGOUT_URL|'$UMS_LOGOUT_URL'|g' /config/oAuth.xml
+	sed -i 's|UMS_ALLOWED_DOMAINS|'$UMS_ALLOWED_DOMAINS'|g' /config/oAuth.xml
+	sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/DecisionService.war/WEB-INF/web.xml
+fi
 
 cd  $APPS/DecisionService.war/WEB-INF/classes;
 echo "Set XU log level to WARNING"
@@ -38,13 +53,4 @@ then
 else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
-fi
-
-if [ -s "/config/openIdParameters.txt" ]
-then
-echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-  sed -i 's|group name="resAdministrators"|group name="${odm.resAdministrators.group1}"|g' /config/application.xml
-  sed -i 's|group name="resDeployers"|group name="${odm.resDeployers.group1}"|g' /config/application.xml
-  sed -i 's|group name="resMonitors"|group name="${odm.resMonitors.group1}"|g' /config/application.xml
-  sed -i 's|group name="resExecutors"|group name="${odm.resExecutors.group1}"|g' /config/application.xml
 fi

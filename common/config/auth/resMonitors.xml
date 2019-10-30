@@ -1,0 +1,6 @@
+				<user access-id="${odm.resMonitors.user1}"/>
+				<user access-id="${odm.resMonitors.user2}"/>
+				<user access-id="${odm.resMonitors.user3}"/>
+				<group access-id="${odm.resMonitors.group1}"/>
+				<group access-id="${odm.resMonitors.group2}"/>
+				<group access-id="${odm.resMonitors.group3}"/>

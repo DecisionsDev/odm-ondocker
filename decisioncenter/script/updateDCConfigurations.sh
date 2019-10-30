@@ -44,9 +44,12 @@ then
   echo "OAuth config : set OPENID_SERVER_URL to $OPENID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i 's|OPENID_SERVER_URL|'$OPENID_SERVER_URL'|g' /config/new-decisioncenter-configuration.properties 
   echo "replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
-  sed -i 's|group name="rtsAdministrators"|group name="${odm.rtsAdministrator.group1}"|g' /config/application.xml
-  sed -i 's|group name="rtsConfigManagers"|group name="${odm.rtsConfigManager.group1}"|g' /config/application.xml
-  sed -i 's|group name="rtsInstallers"|group name="${odm.rtsInstaller.group1}"|g' /config/application.xml
+  sed -i $'/<group name="rtsAdministrators"/{e cat /config/auth/rtsAdministrators.xml\n}' /config/application.xml
+  sed -i '/<group name="rtsAdministrators"/d' /config/application.xml
+  sed -i $'/<group name="rtsInstallers"/{e cat /config/auth/rtsInstallers.xml\n}' /config/application.xml
+  sed -i '/<group name="rtsInstallers"/d' /config/application.xml
+  sed -i $'/<group name="rtsConfigManagers"/{e cat /config/auth/rtsConfigManagers.xml\n}' /config/application.xml
+  sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
 else
   echo "BASIC_AUTH config : remove entry with OPEN_ID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i '/OPENID_SERVER_URL/d' /config/new-decisioncenter-configuration.properties
