@@ -24,11 +24,11 @@ else
   echo "OAuthServerUtil class not found"
 fi
 
-if [ -s "/config/openIdParameters.txt" ]
+if [ -s "/config/auth/openIdParameters.txt" ]
 then
-  OPENID_SERVER_URL=$(grep OPENID_SERVER_URL /config/openIdParameters.txt | sed "s/OPENID_SERVER_URL=//g")
+  OPENID_SERVER_URL=$(grep OPENID_SERVER_URL /config/auth/openIdParameters.txt | sed "s/OPENID_SERVER_URL=//g")
   echo "OPENID_SERVER_URL: $OPENID_SERVER_URL"
-  PROVIDER=$(grep PROVIDER /config/openIdParameters.txt | sed "s/PROVIDER=//g")
+  PROVIDER=$(grep PROVIDER /config/auth/openIdParameters.txt | sed "s/PROVIDER=//g")
   echo "PROVIDER: $PROVIDER"
   echo "OAuth config : change BASIC_AUTH to OAUTH in $DC_SERVER_CONFIG"
   sed -i 's|BASIC_AUTH|'OAUTH'|g' $DC_SERVER_CONFIG
@@ -51,6 +51,7 @@ then
   sed -i $'/<group name="rtsConfigManagers"/{e cat /config/auth/rtsConfigManagers.xml\n}' /config/application.xml
   sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
 else
+  echo "No provided /config/auth/openIdParameters.txt"
   echo "BASIC_AUTH config : remove entry with OPEN_ID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i '/OPENID_SERVER_URL/d' /config/new-decisioncenter-configuration.properties
   echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
@@ -78,14 +79,14 @@ else
 	cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
-if [ -s "/config/OdmOidcProviders.json" ]
+if [ -s "/config/auth/OdmOidcProviders.json" ]
 then
   echo "Copy OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
-        cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
-        cp /config/OdmOidcProviders.json $APPS/teamserver.war/WEB-INF/classes/OdmOidcProviders.json
-        cp /config/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
+        cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
+        cp /config/auth/OdmOidcProviders.json $APPS/teamserver.war/WEB-INF/classes/OdmOidcProviders.json
+        cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
 else
-  echo "No provided /config/OdmOidcProviders.json"
+  echo "No provided /config/auth/OdmOidcProviders.json"
 fi
 
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]

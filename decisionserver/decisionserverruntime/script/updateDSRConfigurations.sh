@@ -7,20 +7,22 @@ echo "Enable basic authentication"
 cd $APPS/DecisionService.war/WEB-INF;
 sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
-if [ -s "/config/openIdParameters.txt" ]
+if [ -s "/config/auth/openIdParameters.txt" ]
 then
 	echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
   	sed -i $'/<group name="resExecutors"/{e cat /config/auth/resExecutors.xml\n}' /config/application.xml
   	sed -i '/<group name="resExecutors"/d' /config/application.xml
 
 	echo "Enable UMS authentication"
-	UMS_LOGOUT_URL=$(grep UMS_LOGOUT_URL /config/openIdParameters.txt | sed "s/UMS_LOGOUT_URL=//g")
+	UMS_LOGOUT_URL=$(grep UMS_LOGOUT_URL /config/auth/openIdParameters.txt | sed "s/UMS_LOGOUT_URL=//g")
   	echo "UMS_LOGOUT_URL: $UMS_LOGOUT_URL"
-        UMS_ALLOWED_DOMAINS=$(grep UMS_ALLOWED_DOMAINS /config/openIdParameters.txt | sed "s/UMS_ALLOWED_DOMAINS=//g")
+        UMS_ALLOWED_DOMAINS=$(grep UMS_ALLOWED_DOMAINS /config/auth/openIdParameters.txt | sed "s/UMS_ALLOWED_DOMAINS=//g")
         echo "UMS_ALLOWED_DOMAINS: $UMS_ALLOWED_DOMAINS"
 	sed -i 's|UMS_LOGOUT_URL|'$UMS_LOGOUT_URL'|g' /config/oAuth.xml
 	sed -i 's|UMS_ALLOWED_DOMAINS|'$UMS_ALLOWED_DOMAINS'|g' /config/oAuth.xml
 	sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/DecisionService.war/WEB-INF/web.xml
+else
+  echo "No provided /config/auth/openIdParameters.txt"
 fi
 
 cd  $APPS/DecisionService.war/WEB-INF/classes;

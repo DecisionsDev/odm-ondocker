@@ -24,9 +24,9 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
-if [ -s "/config/openIdParameters.txt" ]
+if [ -s "/config/auth/openIdParameters.txt" ]
 then
-echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+  echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
   sed -i $'/<group name="resAdministrators"/{e cat /config/auth/resAdministrators.xml\n}' /config/application.xml
   sed -i '/<group name="resAdministrators"/d' /config/application.xml
   sed -i $'/<group name="resDeployers"/{e cat /config/auth/resDeployers.xml\n}' /config/application.xml
@@ -35,4 +35,6 @@ echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors grou
   sed -i '/<group name="resMonitors"/d' /config/application.xml
   sed -i $'/<group name="resExecutors"/{e cat /config/auth/resExecutors.xml\n}' /config/application.xml
   sed -i '/<group name="resExecutors"/d' /config/application.xml
+else
+  echo "No provided /config/auth/openIdParameters.txt"
 fi
