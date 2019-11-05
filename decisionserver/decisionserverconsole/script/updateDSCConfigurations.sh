@@ -41,7 +41,7 @@ then
   echo "UMS_LOGOUT_URL: $UMS_LOGOUT_URL"
   UMS_ALLOWED_DOMAINS=$(grep UMS_ALLOWED_DOMAINS /config/auth/openIdParameters.txt | sed "s/UMS_ALLOWED_DOMAINS=//g")
   echo "UMS_ALLOWED_DOMAINS: $UMS_ALLOWED_DOMAINS"
-  sed -i 's|UMS_LOGOUT_URL|'$UMS_LOGOUT_URL'|g' /config/oAuth.xml
+  sed -i 's|type=local|'type=openid,logoutUrl=$UMS_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
   sed -i 's|UMS_ALLOWED_DOMAINS|'$UMS_ALLOWED_DOMAINS'|g' /config/oAuth.xml
   sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
