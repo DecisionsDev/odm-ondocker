@@ -1,0 +1,6 @@
+				<user name="resAdmUser1" access-id="${odm.resAdministrators.user1}"/>
+				<user name="resAdmUser2" access-id="${odm.resAministrators.user2}"/>
+				<user name="resAdmUser3" access-id="${odm.resAdministrators.user3}"/>
+				<group name="resAdmGroup1" access-id="${odm.resAdministrators.group1}"/>
+				<group name="resAdmGroup2" access-id="${odm.resAdministrators.group2}"/>
+				<group name="resAdmGroup3" access-id="${odm.resAdministrators.group3}"/>

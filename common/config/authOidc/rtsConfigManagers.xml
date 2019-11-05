@@ -1,0 +1,6 @@
+				<user name="rtsCfgUser1" access-id="${odm.rtsConfigManagers.user1}"/>
+				<user name="rtsCfgUser2" access-id="${odm.rtsConfigManagers.user2}"/>
+				<user name="rtsCfgUser3" access-id="${odm.rtsConfigManagers.user3}"/>
+				<group name="rtsCfgGroup1" access-id="${odm.rtsConfigManagers.group1}"/>
+				<group name="rtsCfgGroup2" access-id="${odm.rtsConfigManagers.group2}"/>
+				<group name="rtsCfgGroup3" access-id="${odm.rtsConfigManagers.group3}"/>

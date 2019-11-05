@@ -1,0 +1,6 @@
+				<user name="rtsInstUser1" access-id="${odm.rtsInstallers.user1}"/>
+				<user name="rtsInstUser2" access-id="${odm.rtsInstallers.user2}"/>
+				<user name="rtsInstUser3" access-id="${odm.rtsInstallers.user3}"/>
+				<group name="rtsInstGroup1" access-id="${odm.rtsInstallers.group1}"/>
+				<group name="rtsInstGroup2" access-id="${odm.rtsInstallers.group2}"/>
+				<group name="rtsInstGroup3" access-id="${odm.rtsInstallers.group3}"/>
