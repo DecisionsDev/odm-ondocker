@@ -10,7 +10,7 @@ sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 if [ -s "/config/auth/openIdParameters.txt" ]
 then
 	echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-  	sed -i $'/<group name="resExecutors"/{e cat /config/auth/resExecutors.xml\n}' /config/application.xml
+  	sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
   	sed -i '/<group name="resExecutors"/d' /config/application.xml
 
 	echo "Enable UMS authentication"

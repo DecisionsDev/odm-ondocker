@@ -1,6 +1,0 @@
-				<user name="resExeUser1" access-id="${odm.resExecutors.user1}"/>
-				<user name="resExeUser2" access-id="${odm.resExecutors.user2}"/>
-				<user name="resExeUser3" access-id="${odm.resExecutors.user3}"/>
-				<group name="resExeGroup1" access-id="${odm.resExecutors.group1}"/>
-				<group name="resExeGroup2" access-id="${odm.resExecutors.group2}"/>
-				<group name="resExeGroup3" access-id="${odm.resExecutors.group3}"/>
