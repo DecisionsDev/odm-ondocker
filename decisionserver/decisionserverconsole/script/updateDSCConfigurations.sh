@@ -24,7 +24,7 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
-if [ -s "/config/auth/openIdParameters.txt" ]
+if [ -s "/config/auth/openIdParameters.properties" ]
 then
   echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
   sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
@@ -36,18 +36,18 @@ then
   sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
   sed -i '/<group name="resExecutors"/d' /config/application.xml
 
-  echo "Enable UMS authentication"
-  UMS_ALLOWED_DOMAINS=$(grep UMS_ALLOWED_DOMAINS /config/auth/openIdParameters.txt | sed "s/UMS_ALLOWED_DOMAINS=//g")
-  echo "UMS_ALLOWED_DOMAINS: $UMS_ALLOWED_DOMAINS"
-  UMS_LOGOUT_URL=$(grep UMS_LOGOUT_URL /config/auth/openIdParameters.txt | sed "s/UMS_LOGOUT_URL=//g")
-  if [ -n "$UMS_LOGOUT_URL" ]; then
-  	echo "UMS_LOGOUT_URL: $UMS_LOGOUT_URL"
-	sed -i 's|type=local|'type=openid,logoutUrl=$UMS_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+  echo "Enable OpenId authentication"
+  OPENID_ALLOWED_DOMAINS=$(grep OPENID_ALLOWED_DOMAINS /config/auth/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
+  echo "OPENID_ALLOWED_DOMAINS: $OPENID_ALLOWED_DOMAINS"
+  OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/auth/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+  if [ -n "$OPENID_LOGOUT_URL" ]; then
+  	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
+	sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
   else
 	sed -i 's|type=local|'type=openid'|g' $APPS/res.war/WEB-INF/web.xml
   fi
-  sed -i 's|UMS_ALLOWED_DOMAINS|'$UMS_ALLOWED_DOMAINS'|g' /config/oAuth.xml
+  sed -i 's|OPENID_ALLOWED_DOMAINS|'$OPENID_ALLOWED_DOMAINS'|g' /config/oAuth.xml
   sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
-  echo "No provided /config/auth/openIdParameters.txt"
+  echo "No provided /config/auth/openIdParameters.properties"
 fi

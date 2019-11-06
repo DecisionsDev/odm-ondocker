@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+	"name": "OPENID_PROVIDER",
+	"grantType": "password",
+	"authorizationURL": "OPENID_AUTHORIZATION_URL",
+	"tokenURL": "OPENID_TOKEN_URL",
+	"introspectionURL": "OPENID_INTROSPECTION_URL",
+	"clientId": "OPENID_CLIENT_ID",
+	"clientSecret": "OPENID_CLIENT_SECRET",
+	"tokenFormat": "OPENID_TOKEN_FORMAT"
+    }
+  ]
+}

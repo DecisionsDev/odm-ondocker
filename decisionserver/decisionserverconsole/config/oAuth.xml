@@ -1,5 +1,5 @@
         <context-param>
                 <description/>
                 <param-name>com.ibm.odm.res.console.csrfFilter.allowedDomains</param-name>
-                <param-value>UMS_ALLOWED_DOMAINS</param-value>
+                <param-value>OPENID_ALLOWED_DOMAINS</param-value>
         </context-param>
