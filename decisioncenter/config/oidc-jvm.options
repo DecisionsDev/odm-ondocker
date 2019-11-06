@@ -1,7 +1,0 @@
--Djavax.net.ssl.trustStore=/config/security/truststore.jks
--Djavax.net.ssl.trustStorePassword=__TRUSTSTORE_PASSWORD__
--Duser.language=en
--Duser.country=US
--Dcom.ibm.rules.authentication.scheme=oidc
--Dcom.ibm.rules.authentication.oidcconfig=OdmOidcProviders.json:PROVIDER
--Dcom.ibm.rules.decisioncenter.referer-whitelist-patterns=https://odmdev09r.fr.eurolabs.ibm.com:9665/.*
