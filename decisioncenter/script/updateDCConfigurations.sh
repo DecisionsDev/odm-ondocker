@@ -28,7 +28,7 @@ if [ -s "/config/auth/openIdParameters.properties" ]
 then
   OPENID_SERVER_URL=$(grep OPENID_SERVER_URL /config/auth/openIdParameters.properties | sed "s/OPENID_SERVER_URL=//g")
   echo "OPENID_SERVER_URL: $OPENID_SERVER_URL"
-  OPENID_PROVIDER=$(grep OPENID_PROVIDER /config/auth/openIdParameters.properties | sed "s/PROVIDER=//g")
+  OPENID_PROVIDER=$(grep OPENID_PROVIDER /config/auth/openIdParameters.properties | sed "s/OPENID_PROVIDER=//g")
   echo "OPENID_PROVIDER: $OPENID_PROVIDER"
   echo "OAuth config : change BASIC_AUTH to OAUTH in $DC_SERVER_CONFIG"
   sed -i 's|BASIC_AUTH|'OAUTH'|g' $DC_SERVER_CONFIG
@@ -44,23 +44,23 @@ then
      echo "OAuth config : set authorization URL to $OPENID_AUTHORIZATION_URL"
      sed -i 's|OPENID_AUTHORIZATION_URL|'$OPENID_AUTHORIZATION_URL'|g' /config/OdmOidcProviders.json
      
-     OPENID_TOKEN_URL=$(grep OPENID_TOKEN_URL /config/auth/openIdParameters.properties | sed "s/s/OPENID_TOKEN_URL=//g")
+     OPENID_TOKEN_URL=$(grep OPENID_TOKEN_URL /config/auth/openIdParameters.properties | sed "s/OPENID_TOKEN_URL=//g")
      echo "OAuth config : set token URL to $OPENID_TOKEN_URL"
      sed -i 's|OPENID_TOKEN_URL|'$OPENID_TOKEN_URL'|g' /config/OdmOidcProviders.json
 
-     OPENID_INTROSPECTION_URL=$(grep OPENID_INTROSPECTION_URL /config/auth/openIdParameters.properties | sed "s/s/OPENID_INTROSPECTION_URL=//g")
+     OPENID_INTROSPECTION_URL=$(grep OPENID_INTROSPECTION_URL /config/auth/openIdParameters.properties | sed "s/OPENID_INTROSPECTION_URL=//g")
      echo "OAuth config : set introspection URL to $OPENID_INTROSPECTION_URL"
      sed -i 's|OPENID_INTROSPECTION_URL|'$OPENID_INTROSPECTION_URL'|g' /config/OdmOidcProviders.json
 
-     OPENID_CLIENT_ID=$(grep OPENID_CLIENT_ID /config/auth/openIdParameters.properties | sed "s/s/OPENID_CLIENT_ID=//g")
+     OPENID_CLIENT_ID=$(grep OPENID_CLIENT_ID /config/auth/openIdParameters.properties | sed "s/OPENID_CLIENT_ID=//g")
      echo "OAuth config : set client ID to $OPENID_CLIENT_ID"
      sed -i 's|OPENID_CLIENT_ID|'$OPENID_CLIENT_ID'|g' /config/OdmOidcProviders.json
 
-     OPENID_CLIENT_SECRET=$(grep OPENID_CLIENT_SECRET /config/auth/openIdParameters.properties | sed "s/s/OPENID_CLIENT_SECRET=//g")
+     OPENID_CLIENT_SECRET=$(grep OPENID_CLIENT_SECRET /config/auth/openIdParameters.properties | sed "s/OPENID_CLIENT_SECRET=//g")
      echo "OAuth config : set client Secret to $OPENID_CLIENT_SECRET"
      sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProviders.json
 
-     OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/auth/openIdParameters.properties | sed "s/s/OPENID_TOKEN_FORMAT=//g")
+     OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/auth/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
      echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
      sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
      
