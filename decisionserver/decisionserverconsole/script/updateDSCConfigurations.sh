@@ -50,4 +50,12 @@ then
   sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
   echo "No provided /config/auth/openIdParameters.properties"
+
+if [ -n "$ENABLE_TLS" ]
+then
+ echo "Use httpSession settings for HTTPS"
+ cp /config/httpSessionHttps.xml /config/httpSession.xml
+else
+ echo "Use httpSession settings for HTTP"
+ cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi

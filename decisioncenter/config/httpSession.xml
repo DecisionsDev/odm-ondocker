@@ -1,5 +1,0 @@
-<server>
-	<httpSession cookieName="JSESSIONID_DC_RELEASE_NAME" useContextRootAsCookiePath="true" invalidateOnUnauthorizedSessionRequestException="true" invalidationTimeout="8h" />
-        <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
-        <webAppSecurity includePathInWASReqURL="true" ssoCookieName="LTPATOKEN2_DC_RELEASE_NAME" />
-</server>

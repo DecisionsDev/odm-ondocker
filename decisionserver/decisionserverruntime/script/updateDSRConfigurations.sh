@@ -47,3 +47,12 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
+
+if [ -n "$ENABLE_TLS" ]
+then
+ echo "Use httpSession settings for HTTPS"
+ cp /config/httpSessionHttps.xml /config/httpSession.xml
+else
+ echo "Use httpSession settings for HTTP"
+ cp /config/httpSessionHttp.xml /config/httpSession.xml
+fi
