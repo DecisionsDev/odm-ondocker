@@ -50,6 +50,7 @@ then
   sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
   echo "No provided /config/auth/openIdParameters.properties"
+fi
 
 if [ -n "$ENABLE_TLS" ]
 then
