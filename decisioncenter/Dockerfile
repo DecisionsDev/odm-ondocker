@@ -49,6 +49,9 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
+FROM ${FROMLIBERTY} AS oidc-liberty-builder
+COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+RUN installUtility install openidconnectclient-1.0
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -74,6 +77,8 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 
+COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
+
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -95,7 +100,7 @@ COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9060 9453

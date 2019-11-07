@@ -7,6 +7,14 @@ echo "Enable basic authentication"
 cd $APPS/DecisionService.war/WEB-INF;
 sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
+if [ -s "/config/auth/openIdParameters.properties" ]
+then
+	echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+  	sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+  	sed -i '/<group name="resExecutors"/d' /config/application.xml
+else
+  echo "No provided /config/auth/openIdParameters.properties"
+fi
 
 cd  $APPS/DecisionService.war/WEB-INF/classes;
 echo "Set XU log level to WARNING"

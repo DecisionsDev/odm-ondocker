@@ -15,6 +15,9 @@
 	<!-- include web security config -->
 	<include optional="true" location="./auth/webSecurity.xml"/>
 
+        <!-- include auth filters -->
+        <include optional="true" location="./authOidc/authFilters.xml"/>
+
 	<!-- welcomepage -->
 	<include optional="true" location="./welcomepage_application.xml"/>
 
@@ -24,8 +27,8 @@
 	<!-- include tls/https config -->
   	<include optional="true" location="./tlsSecurity.xml"/>
 
-       <!-- include logging config -->
-        <include optional="true" location="./logging/logging.xml"/>
+    <!-- include logging config -->
+    <include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />

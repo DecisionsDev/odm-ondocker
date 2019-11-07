@@ -35,6 +35,10 @@ COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
 chmod -R 777 $APPS
 
+FROM ${FROMLIBERTY} AS oidc-liberty-builder
+COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+RUN installUtility install openidconnectclient-1.0
+
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
@@ -64,6 +68,8 @@ ENV APPS /config/apps
 ENV CONNECTION_POOL_SIZE 60
 ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
+COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
+
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -78,7 +84,6 @@ COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9080 9443

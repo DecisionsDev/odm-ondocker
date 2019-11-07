@@ -16,3 +16,4 @@ else
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'changeme'|g' /config/jvm.options
 fi
 # End - Configuration for the TLS security
+

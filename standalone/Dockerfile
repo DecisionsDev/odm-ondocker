@@ -92,6 +92,8 @@ ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
 
+RUN installUtility install openidconnectclient-1.0
+
 COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml

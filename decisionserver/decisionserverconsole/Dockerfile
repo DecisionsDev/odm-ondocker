@@ -34,6 +34,9 @@ RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
+FROM ${FROMLIBERTY} AS oidc-liberty-builder
+COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
+RUN installUtility install openidconnectclient-1.0
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -56,6 +59,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 ENV CONNECTION_POOL_SIZE 20
 
+COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
@@ -72,7 +76,6 @@ COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 EXPOSE 9080 9443 1883
