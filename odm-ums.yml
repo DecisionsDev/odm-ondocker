@@ -45,6 +45,9 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
+
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -69,6 +72,8 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -95,6 +100,8 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -122,6 +129,8 @@ services:
     volumes:
     - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
     deploy:
       resources:
         limits:
