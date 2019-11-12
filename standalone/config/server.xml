@@ -38,7 +38,7 @@
 	<!-- include logging config -->
         <include optional="true" location="./logging/logging.xml"/>
 
-
+	
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 

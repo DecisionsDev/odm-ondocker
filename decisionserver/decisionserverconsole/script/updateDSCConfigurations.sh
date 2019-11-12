@@ -15,13 +15,32 @@ if [ -f "/config/baiemitterconfig/krb5.conf" ]; then
 	echo "-Djava.security.krb5.conf=/config/baiemitterconfig/krb5.conf" >> /config/jvm.options
 fi
 
-if [ -n "$RELEASE_NAME" ]
+if [ -s "/config/auth/openIdParameters.properties" ]
 then
-  echo "Prefix decision server console cookie names with $RELEASE_NAME"
-        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+  echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+  sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+  sed -i '/<group name="resAdministrators"/d' /config/application.xml
+  sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+  sed -i '/<group name="rtsDeployers"/d' /config/application.xml
+  sed -i $'/<group name="resMonitors"/{e cat /config/authOidc/resMonitors.xml\n}' /config/application.xml
+  sed -i '/<group name="resMonitors"/d' /config/application.xml
+  sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+  sed -i '/<group name="resExecutors"/d' /config/application.xml
+
+  echo "Enable OpenId authentication"
+  OPENID_ALLOWED_DOMAINS=$(grep OPENID_ALLOWED_DOMAINS /config/auth/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
+  echo "OPENID_ALLOWED_DOMAINS: $OPENID_ALLOWED_DOMAINS"
+  OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/auth/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+  if [ -n "$OPENID_LOGOUT_URL" ]; then
+  	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
+	sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+  else
+	sed -i 's|type=local|'type=openid'|g' $APPS/res.war/WEB-INF/web.xml
+  fi
+  sed -i 's|OPENID_ALLOWED_DOMAINS|'$OPENID_ALLOWED_DOMAINS'|g' /config/oAuth.xml
+  sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
-  echo "Prefix decision server console cookie names with $HOSTNAME"
-        sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
+  echo "No provided /config/auth/openIdParameters.properties"
 fi
 
 if [ -n "$ENABLE_TLS" ]
@@ -31,4 +50,13 @@ then
 else
  echo "Use httpSession settings for HTTP"
  cp /config/httpSessionHttp.xml /config/httpSession.xml
+fi
+
+if [ -n "$RELEASE_NAME" ]
+then
+  echo "Prefix decision server console cookie names with $RELEASE_NAME"
+        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+else
+  echo "Prefix decision server console cookie names with $HOSTNAME"
+        sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi

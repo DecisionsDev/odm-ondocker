@@ -1,5 +1,7 @@
 #!/bin/bash
 
+$SCRIPT/addDCApplications.sh
+
 $SCRIPT/updateDCConfigurations.sh
 
 $SCRIPT/updatePersistenceLocale.sh
@@ -9,8 +11,6 @@ $SCRIPT/configureTlsSecurity.sh
 $SCRIPT/configureDatabase.sh
 
 $SCRIPT/updateDatasource.sh
-
-$SCRIPT/addDCApplications.sh
 
 $SCRIPT/configureSwidTag.sh
 
