@@ -1,4 +1,5 @@
 ARG FROMLIBERTY
+ARG FROMLIBERTYBUILD
 FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -49,7 +50,7 @@ RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
-FROM ${FROMLIBERTY} AS oidc-liberty-builder
+FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 RUN installUtility install openidconnectclient-1.0
 

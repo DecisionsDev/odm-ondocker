@@ -32,6 +32,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver
     depends_on:
@@ -57,6 +58,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -84,6 +86,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -112,6 +115,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver
     depends_on:
