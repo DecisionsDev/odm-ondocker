@@ -11,11 +11,6 @@ COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
-# Use production liberty if needed
-COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
-RUN chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
-
-
 
 # Copy working files
 COPY ./teamserver/lib/* /teamserver/lib/
@@ -51,7 +46,6 @@ RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
-COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 RUN installUtility install openidconnectclient-1.0
 
 FROM ${FROMLIBERTY}

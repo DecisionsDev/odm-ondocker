@@ -7,8 +7,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 RUN mkdir -p $SCRIPT && \
-		mkdir -p /config/resources && \
-		mkdir -p /wlp-embeddable/
+		mkdir -p /config/resources
 
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
@@ -16,9 +15,6 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/licenses /licenses
 
-# Use production liberty if needed
-COPY $ODMDOCKERDIR/resources/* /wlp-embeddable/
-RUN echo "Use the liberty image : $FROMLIBERTY" && chmod a+x $SCRIPT/fixWLPForProduction.sh && sync && $SCRIPT/fixWLPForProduction.sh
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
@@ -37,7 +33,6 @@ RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
 chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
-COPY --from=builder --chown=1001:0 /wlp-embeddable/wlp  /opt/ibm/wlp
 RUN installUtility install openidconnectclient-1.0
 
 FROM ${FROMLIBERTY}
