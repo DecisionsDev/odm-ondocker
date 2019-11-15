@@ -1,6 +1,7 @@
 FROM alpine:3.6 AS builder
 ARG ODMDOCKERDIR
 ARG ODMDBVERSION
+
 COPY $ODMDOCKERDIR/databases/postgresql/script/rundb.sh /usr/local/bin
 COPY $ODMDOCKERDIR/licenses /licenses
 # Manage License
@@ -14,7 +15,7 @@ MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user
 
 ARG ODMDOCKERDIR
 ARG ODMDBVERSION
-
+ARG ODMVERSION
 LABEL name="DBServer"
 LABEL io.k8s.display-name="DBServer"
 LABEL description="The Database server stores decision service artifacts."
