@@ -71,12 +71,13 @@ COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN $SCRIPT/extractApp.sh DecisionRunner.war
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 # Sample DB
+ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
 RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS && \
-chmod -R 777 /upload /db810 /config/dbdata
+chmod -R 777 /upload /db810 /db8103 /config/dbdata
 
 
 
