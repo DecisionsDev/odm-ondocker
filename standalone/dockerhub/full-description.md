@@ -25,9 +25,9 @@ Click the image to view a short video (5 mins) on how to get started with IBM OD
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8102-rule-designer)
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8103-rule-designer)
 
-	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.2/p2
+	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.3/p2
 
 
 -	**Sample projects**:

@@ -46,6 +46,8 @@ LABEL io.k8s.description="The Decision Runner runs tests and simulations against
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
+LABEL ProductVersion=${ODMVERSION}
+LABEL ProductID="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 

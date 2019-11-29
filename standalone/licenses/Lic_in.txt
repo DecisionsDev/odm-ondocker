@@ -3,7 +3,7 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (Z125-5589-05) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.10.2 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
@@ -60,9 +60,9 @@ Data dan Layanan Pihak Ketiga
 
 Program dapat berisi tautan-tautan ke atau yang digunakan untuk mengakses layanan, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "konten"). Akses ke konten ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KEMAMPUAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan konten tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
-L/N:  L-ASAY-BAPDVT
-D/N:  L-ASAY-BAPDVT
-P/N:  L-ASAY-BAPDVT
+L/N:  L-ASAY-BFHF34
+D/N:  L-ASAY-BFHF34
+P/N:  L-ASAY-BFHF34
 
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Garansi
