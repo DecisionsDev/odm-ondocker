@@ -12,8 +12,8 @@ fi
 
 if [ -s "/shared/tls/keystore/jks/server.jks" ]
 then
-	echo "replace /config/security/trustore.jks by /shared/tls/truststore/jks/trust.jks and default keystore password"
-	cp /shared/tls/truststore/jks/trust.jks /config/security/truststore.jks
+	echo "replace /config/security/trustore.jks by /shared/tls/truststore/jks/trusts.jks and default keystore password"
+	cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
 fi
 
