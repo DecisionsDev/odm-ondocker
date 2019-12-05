@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEFAULT_KEYSTORE_PASSWORD=changeme
-export DEFAULT_TRUSTSTORE_PASSWORD=changeme
+DEFAULT_KEYSTORE_PASSWORD=changeme
+DEFAULT_TRUSTSTORE_PASSWORD=changeme
 
 if [ -s "/shared/tls/keystore/jks/server.jks" ]
 then
