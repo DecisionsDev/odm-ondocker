@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   dbserver:
     image: postgres:9.5.10
@@ -32,7 +32,8 @@ services:
       - DB_USER=odmusr
       - DB_PASSWORD=odmpwd
       - DB_SERVER_NAME=dbserver
-      - LICENSE=$LICENSE
+      - LICENSE=accept
+      - JVM_ARGS="-Xmx14000m"
 
       # DB_PORT_NUMBER can be used to override the default port number that is 5432 for PostgreSQL.
     ports:
