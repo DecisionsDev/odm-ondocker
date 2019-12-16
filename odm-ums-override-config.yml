@@ -51,6 +51,8 @@ services:
     - OPENID_CLIENT_SECRET=umssecret4odm
     - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
+    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
+    - ${PWD}/ums/openIdWebSecurity.xml:/config/auth/openIdWebSecurity.xml
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -85,6 +87,8 @@ services:
     - OPENID_CLIENT_SECRET=umssecret4odm
     - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
+    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
+    - ${PWD}/ums/openIdWebSecurity.xml:/config/auth/openIdWebSecurity.xml
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -120,6 +124,8 @@ services:
     - OPENID_CLIENT_SECRET=umssecret4odm
     - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
+    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
+    - ${PWD}/ums/openIdWebSecurity.xml:/config/auth/openIdWebSecurity.xml
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -156,6 +162,8 @@ services:
     - OPENID_CLIENT_SECRET=umssecret4odm
     - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
+    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
+    - ${PWD}/ums/openIdWebSecurity.xml:/config/auth/openIdWebSecurity.xml
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
