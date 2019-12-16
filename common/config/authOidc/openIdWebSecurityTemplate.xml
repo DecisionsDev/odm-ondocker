@@ -1,0 +1,25 @@
+<server>
+
+  <variable name="ServerHost" value="https://__OPENID_HOST__:__OPENID_PORT__"/>
+
+  <!-- Open ID Connect -->
+  <!-- Client with inbound propagation set to supported -->
+  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
+		       clientId="__OPENID_CLIENT_ID__" clientSecret="__OPENID_CLIENT_SECRET__"
+		       signatureAlgorithm="RS256" inboundPropagation="supported"
+		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/jwk"
+		       issuerIdentifier="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__"
+                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/authorize"
+                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/token"
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/introspect"/>
+
+  <!-- Client with inbound propagation set to required -->
+  <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
+		       clientId="__OPENID_CLIENT_ID__" clientSecret="__OPENID_CLIENT_SECRET__"
+		       signatureAlgorithm="RS256" inboundPropagation="required"
+		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/jwk"
+		       issuerIdentifier="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__"
+                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/authorize"
+                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/token"
+                       validationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/introspect"/>
+</server>

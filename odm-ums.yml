@@ -43,8 +43,14 @@ services:
     - 9843:9443
     environment:
     - ENABLE_TLS=true
+    - OPENID_CONFIG=true
+    - OPENID_HOST=odmdev09r.fr.eurolabs.ibm.com
+    - OPENID_PORT=9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -71,8 +77,14 @@ services:
     environment:
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
+    - OPENID_CONFIG=true
+    - OPENID_HOST=odmdev09r.fr.eurolabs.ibm.com
+    - OPENID_PORT=9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -100,8 +112,14 @@ services:
     - 9943:9443
     environment:
     - ENABLE_TLS=true
+    - OPENID_CONFIG=true
+    - OPENID_HOST=odmdev09r.fr.eurolabs.ibm.com
+    - OPENID_PORT=9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
@@ -130,8 +148,15 @@ services:
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     - DECISIONRUNNER_PORT=9443
+    - OPENID_CONFIG=true
+    - OPENID_HOST=odmdev09r.fr.eurolabs.ibm.com
+    - OPENID_PORT=9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/openIdParameters.properties:/config/auth/openIdParameters.properties
+ #   - ${PWD}/ums/openIdWebSecurity.xml:/config/auth/openIdWebSecurity.xml
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
     - ${PWD}/ums/truststore.jks:/config/security/truststore.jks

@@ -1,28 +1,4 @@
 <server>
-
-  <variable name="ServerHost" value="https://odmdev09r.fr.eurolabs.ibm.com:9665"/>
-
-  <!-- Open ID Connect -->
-  <!-- Client with inbound propagation set to supported -->
-  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
-		       clientId="umsclient4odm" clientSecret="umssecret4odm"
-		       signatureAlgorithm="RS256" inboundPropagation="supported"
-		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/ums/jwk"
-		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
-                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
-                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
-                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
-
-  <!-- Client with inbound propagation set to required -->
-  <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
-		       clientId="umsclient4odm" clientSecret="umssecret4odm"
-		       signatureAlgorithm="RS256" inboundPropagation="required"
-		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/ums/jwk"
-		       issuerIdentifier="${ServerHost}/oidc/endpoint/ums"
-                       authorizationEndpointUrl="${ServerHost}/oidc/endpoint/ums/authorize"
-                       tokenEndpointUrl="${ServerHost}/oidc/endpoint/ums/token"
-                       validationEndpointUrl="${ServerHost}/oidc/endpoint/ums/introspect"/>
-
   <variable name="umsITSecuSupport" value="o=defaultWIMFileBasedRealm/it-secu-support"/>
 
   <!-- Grant access to the group rtsAdministrator -->
