@@ -15,33 +15,39 @@ if [ -f "/config/baiemitterconfig/krb5.conf" ]; then
 	echo "-Djava.security.krb5.conf=/config/baiemitterconfig/krb5.conf" >> /config/jvm.options
 fi
 
-if [ "$OPENID_CONFIG" == "true" ]
+if [ -n "$OPENID_CONFIG" ]
 then
-  if [ ! -f "/config/auth/openIdParameters.properties" ]
+  if [ -s "/config/auth/openIdParameters.properties" ]
   then
-    echo "copy template to /config/auth/openIdParameters.properties"
-    mv /config/authOidc/openIdParametersTemplate.properties /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/auth/openIdParameters.properties
-    sed -i 's|__OPENID_ALLOWED_DOMAINS__|'$OPENID_ALLOWED_DOMAINS'|g' /config/auth/openIdParameters.properties
+    echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
+    cp /config/auth/openIdParameters.properties /config/authOidc/openIdParameters.properties
+  else
+    echo "copy template to /config/authOidc/openIdParameters.properties"
+    mv /config/authOidc/openIdParametersTemplate.properties /config/authOidc/openIdParameters.properties
+    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/authOidc/openIdParameters.properties
+    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/authOidc/openIdParameters.properties
+    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdParameters.properties
+    sed -i 's|__OPENID_ALLOWED_DOMAINS__|'$OPENID_ALLOWED_DOMAINS'|g' /config/authOidc/openIdParameters.properties
   fi
+  sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdParameters.properties
+  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
 
-if [ ! -f "/config/auth/openIdWebSecurity.xml" ]
+if [ -s "/config/auth/openIdWebSecurity.xml" ]
   then
-    echo "copy template to /config/auth/openIdWebSecurity.xml"
-    mv /config/authOidc/openIdWebSecurityTemplate.xml /config/auth/openIdWebSecurity.xml
-    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/auth/openIdWebSecurity.xml
-    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/auth/openIdWebSecurity.xml
-    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/auth/openIdWebSecurity.xml
-    sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/auth/openIdWebSecurity.xml
-    sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/auth/openIdWebSecurity.xml
+    echo "copy provided /config/auth/openIdWebSecurity.xml to /config/authOidc/openIdWebSecurity.xml"
+    cp /config/auth/openIdWebSecurity.xml /config/authOidc/openIdWebSecurity.xml
+  else
+    echo "copy template to /config/authOidc/openIdWebSecurity.xml"
+    mv /config/authOidc/openIdWebSecurityTemplate.xml /config/authOidc/openIdWebSecurity.xml
+    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/authOidc/openIdWebSecurity.xml
+    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/authOidc/openIdWebSecurity.xml
+    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdWebSecurity.xml
   fi
+  sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdWebSecurity.xml
+  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdWebSecurity.xml
 fi
 
-if [ -s "/config/auth/openIdParameters.properties" ]
+if [ -s "/config/authOidc/openIdParameters.properties" ]
 then
   echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
   sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
@@ -54,9 +60,9 @@ then
   sed -i '/<group name="resExecutors"/d' /config/application.xml
 
   echo "Enable OpenId authentication"
-  OPENID_ALLOWED_DOMAINS=$(grep OPENID_ALLOWED_DOMAINS /config/auth/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
+  OPENID_ALLOWED_DOMAINS=$(grep OPENID_ALLOWED_DOMAINS /config/authOidc/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
   echo "OPENID_ALLOWED_DOMAINS: $OPENID_ALLOWED_DOMAINS"
-  OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/auth/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+  OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
   if [ -n "$OPENID_LOGOUT_URL" ]; then
   	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
 	sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
@@ -66,7 +72,7 @@ then
   sed -i 's|OPENID_ALLOWED_DOMAINS|'$OPENID_ALLOWED_DOMAINS'|g' /config/oAuth.xml
   sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
 else
-  echo "No provided /config/auth/openIdParameters.properties"
+  echo "No provided /config/authOidc/openIdParameters.properties"
   echo "BASIC_AUTH config : remove authFilters from server.xml"
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"

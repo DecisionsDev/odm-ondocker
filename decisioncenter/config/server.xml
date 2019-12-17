@@ -16,7 +16,7 @@
 	<include optional="true" location="./auth/webSecurity.xml"/>
 
         <!-- include OIDC web security config -->
-        <include optional="true" location="./auth/openIdWebSecurity.xml"/>
+        <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
 
         <!-- include auth filters -->
         <include optional="true" location="./authOidc/authFilters.xml"/>
