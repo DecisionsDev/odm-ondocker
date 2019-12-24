@@ -70,13 +70,15 @@ if [ -f "/config/xu-configuration.properties" ]; then
 	file="/config/xu-configuration.properties"
 	while IFS='=' read -r key value
 	do
-    echo "Set property ${key} to ${value} in the ra.xml file"
-    xmllint --shell ra.xml << EOF
+    if [ -n "$key" ]; then
+      echo "Set property $key to $value in the ra.xml file"
+      xmllint --shell ra-copy.xml << EOF
 setns x=http://java.sun.com/xml/ns/j2ee
 cd x:connector/x:resourceadapter/x:outbound-resourceadapter/x:connection-definition/x:config-property[x:config-property-name='${key}']/x:config-property-value
-set ${value}
+set $value
 save
 EOF
+    fi
   done < "$file"
 else
   echo "No XU configuration file provided"
