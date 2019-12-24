@@ -72,7 +72,7 @@ if [ -f "/config/xu-configuration.properties" ]; then
 	do
     if [ -n "$key" ]; then
       echo "Set property $key to $value in the ra.xml file"
-      xmllint --shell ra-copy.xml << EOF
+      xmllint --shell ra-copy.xml >/dev/null 2>&1 << EOF
 setns x=http://java.sun.com/xml/ns/j2ee
 cd x:connector/x:resourceadapter/x:outbound-resourceadapter/x:connection-definition/x:config-property[x:config-property-name='${key}']/x:config-property-value
 set $value
