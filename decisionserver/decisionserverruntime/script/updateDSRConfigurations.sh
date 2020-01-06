@@ -65,6 +65,21 @@ else
 	exit 1
 fi
 
+function updateXuPropertyInRaXml() {
+	result="$(xmllint --shell ra.xml 2>&1 >/dev/null << EOF
+setns x=http://java.sun.com/xml/ns/j2ee
+cd x:connector/x:resourceadapter/x:outbound-resourceadapter/x:connection-definition/x:config-property[x:config-property-name='$1']/x:config-property-value
+set $value
+save
+EOF
+)"
+	if [[ "$result" != *"error"* ]]; then
+		echo "Setting property $key to $value in the ra.xml file"
+	else
+		echo "Unable to set property $key in the ra.xml file"
+	fi
+}
+
 if [ -f "/config/xu-configuration.properties" ]; then
 	echo "Configure XU properties"
 	file="/config/xu-configuration.properties"
@@ -72,13 +87,7 @@ if [ -f "/config/xu-configuration.properties" ]; then
 	do
     # Check if non blank or commented line
     if [ -n "$key" ] && [[ "$key" != "#"* ]]; then
-      echo "Set property $key to $value in the ra.xml file"
-      xmllint --shell ra.xml >/dev/null 2>&1 << EOF
-setns x=http://java.sun.com/xml/ns/j2ee
-cd x:connector/x:resourceadapter/x:outbound-resourceadapter/x:connection-definition/x:config-property[x:config-property-name='${key}']/x:config-property-value
-set $value
-save
-EOF
+      updateXuPropertyInRaXml "$key" "$value"
     fi
   done < "$file"
 else
