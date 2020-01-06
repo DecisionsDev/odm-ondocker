@@ -70,7 +70,8 @@ if [ -f "/config/xu-configuration.properties" ]; then
 	file="/config/xu-configuration.properties"
 	while IFS='=' read -r key value
 	do
-    if [ -n "$key" ]; then
+    # Check if non blank or commented line
+    if [ -n "$key" ] && [[ "$key" != "#"* ]]; then
       echo "Set property $key to $value in the ra.xml file"
       xmllint --shell ra-copy.xml >/dev/null 2>&1 << EOF
 setns x=http://java.sun.com/xml/ns/j2ee
