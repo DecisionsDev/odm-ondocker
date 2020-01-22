@@ -89,7 +89,7 @@ if [ -f "/config/xu-configuration.properties" ]; then
     if [ -n "$key" ] && [[ "$key" != "#"* ]]; then
       updateXuPropertyInRaXml "$key" "$value"
     fi
-  done < "$file"
+  done < <(grep . "$file")
 else
   echo "No XU configuration file provided"
 fi
