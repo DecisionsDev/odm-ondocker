@@ -10,7 +10,7 @@ then
         DEFAULT_KEYSTORE_PASSWORD=changeit
 fi
 
-if [ -s "/shared/tls/keystore/jks/trusts.jks" ]
+if [ -s "/shared/tls/truststore/jks/trusts.jks" ]
 then
         echo "DC JVM Options : replace /config/security/trustore.jks by /shared/tls/truststore/jks/trusts.jks and default keystore password"
         cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
