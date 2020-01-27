@@ -3,18 +3,21 @@
 DEFAULT_KEYSTORE_PASSWORD=changeme
 DEFAULT_TRUSTSTORE_PASSWORD=changeme
 
-if [ -s "/shared/tls/keystore/jks/server.jks" ]
+if [ -f "/shared/tls/keystore/jks/server.jks" ]
 then
 	echo "replace /config/security/keystore.jks by /shared/tls/keystore/jks/server.jks and default keystore password"
 	cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
 	DEFAULT_KEYSTORE_PASSWORD=changeit
 fi
 
-if [ -s "/shared/tls/truststore/jks/trusts.jks" ]
+if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
 then
 	echo "replace /config/security/trustore.jks by /shared/tls/truststore/jks/trusts.jks and default keystore password"
 	cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
+else
+        echo "no file /shared/tls/truststore/jks/trusts.jks"
+        ls -la /shared/tls/truststore/jks
 fi
 
 # Begin - Configuration for the TLS security
