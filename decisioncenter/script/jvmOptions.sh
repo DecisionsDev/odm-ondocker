@@ -37,3 +37,10 @@ else
 fi
 # End - Configuration for the TLS security
 
+if [ -f "/config/security/ldap.jks" ]
+then
+	echo "import /config/security/ldap.jks in trustore"
+	keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+else
+	echo "no /config/security/ldap.jks file"
+fi
