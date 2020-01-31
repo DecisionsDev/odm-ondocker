@@ -8,6 +8,12 @@ then
         echo "DC JVM Options : replace /config/security/keystore.jks by /shared/tls/keystore/jks/server.jks and default keystore password"
         cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
+
+	if [ -n "$ROOTCA_KEYTSTORE_PASSWORD" ]
+        then
+                echo "change default keystore password with provided Root CA keystore password"
+                DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYTSTORE_PASSWORD
+        fi
 fi
 
 if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
@@ -39,8 +45,14 @@ fi
 
 if [ -f "/config/security/ldap.jks" ]
 then
-	echo "import /config/security/ldap.jks in trustore"
-	keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+        if [ -n "$LDAP_TRUSTSTORE_PASSWORD" ]
+        then
+                echo "import /config/security/ldap.jks in trustore using provided LDAP truststore password"
+                keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -nopromptelse
+        else
+                echo "import /config/security/ldap.jks in trustore using default LDAP truststore password"
+                keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass changeit -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -nopromptelse
+        fi
 else
 	echo "no /config/security/ldap.jks file"
 fi
