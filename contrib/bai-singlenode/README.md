@@ -20,7 +20,6 @@ TODO: Verify the naming of BAI Single node.
     - ./runODMToBAI.sh
     -> Wait a couple of minutes .....
    [TODO] Modify the runODMTOBAI.sh to perfom change in the ruleset property.
-
   7. Play with the Integration
       - Open a web browser
       - Open the kibana dashboard. http://localhost:8105/ [TODO] Verify the url
