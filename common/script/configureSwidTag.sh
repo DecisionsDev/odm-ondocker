@@ -9,7 +9,7 @@ function removeSwidTag () {
 }
 
 if [ -n "$KubeVersion" ]; then
-        if [[ $KubeVersion =~ "icp" ]]; then
+        if [[ $KubeVersion =~ "icp" ]] || [[ $KubeVersion =~ "ODM on K8s" ]]; then
                 echo "ODM configuration : remove all DBAMC Swidtag"
                 swidtagToRemove=ibm.com_IBM_Cloud_Pak_for_Automation*.swidtag
         else
