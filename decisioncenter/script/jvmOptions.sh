@@ -21,6 +21,12 @@ then
         echo "DC JVM Options : replace /config/security/trustore.jks by /shared/tls/truststore/jks/trusts.jks and default keystore password"
         cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
         DEFAULT_TRUSTSTORE_PASSWORD=changeit
+
+       if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ]
+        then
+                echo "change default truststore password with provided Root CA truststore password"
+                DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
+        fi
 else
         echo "no file /shared/tls/truststore/jks/trusts.jks"
         ls -la /shared/tls/truststore/jks
