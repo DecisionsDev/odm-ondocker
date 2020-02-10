@@ -9,10 +9,10 @@ then
         cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
 
-	if [ -n "$ROOTCA_KEYTSTORE_PASSWORD" ]
+	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ]
         then
                 echo "change default keystore password with provided Root CA keystore password"
-                DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYTSTORE_PASSWORD
+                DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
         fi
 fi
 
