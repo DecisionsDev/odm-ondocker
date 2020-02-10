@@ -1,6 +1,6 @@
 <server>
 
-  <variable name="ServerHost" value="https://__OPENID_HOST__:__OPENID_PORT__"/>
+  <variable name="ServerHost" value="__OPENID_SERVER_URL__"/>
 
   <!-- Open ID Connect -->
   <!-- Client with inbound propagation set to supported -->
