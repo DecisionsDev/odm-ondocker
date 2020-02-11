@@ -10,7 +10,8 @@ The goal of this integration is to easily run ODM and emit events to BAI single 
   3. Create a directory <BAI_DIR>/odm
   4. Copy the directory <ODM_DIR>/contrib/bai-singlenode/* to <BAI_DIR>/odm
     - You should see this layout
-    [TODO] Put a screenshot of the finder of BAI_DIR
+    [TODO] create imlages directory and put a screenshot of the finder of BAI_DIR
+    ![Flow](images/BAI_DIR.png "Finder showing BAI_DIR")
   5. Run BAI
       - cd <BAI_DIR>/bin
       - ./bai-start --acceptLicense --init
