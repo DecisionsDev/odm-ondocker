@@ -54,11 +54,20 @@ then
         if [ -n "$LDAP_TRUSTSTORE_PASSWORD" ]
         then
                 echo "import /config/security/ldap.jks in trustore using provided LDAP truststore password"
-                keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
         else
                 echo "import /config/security/ldap.jks in trustore using default LDAP truststore password"
-                keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass changeit -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+                LDAP_TRUSTSTORE_PASSWORD=changeit
         fi
+
+	i=0
+        mapfile -t trust_list < <(keytool -list -v -keystore /config/security/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
+        for trust_file in "${trust_list[@]}"
+        do
+        keytool -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/security/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
+	((i=i+1))
+        done
+        keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+
 else
 	echo "no /config/security/ldap.jks file"
 fi
