@@ -6,5 +6,5 @@ then
   return 0
 fi
 
-classOAuthServerUtilFind=$(find $APPS -name '*teamserver-model*.jar' | xargs grep com.ibm.rules.decisioncenter.model.oauth.OAuthServerUtil)
+classOAuthServerUtilFind=$(grep com.ibm.rules.decisioncenter.model.oauth.OAuthServerUtil $APPS/**/WEB-INF/lib/*teamserver-model*.jar)
 echo ${classOAuthServerUtilFind##* }

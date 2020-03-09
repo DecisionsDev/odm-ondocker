@@ -6,5 +6,5 @@ then
   return 0
 fi
 
-classServerExtFind=$(find $APPS -name '*teamserver-model*.jar' | xargs grep com.ibm.rules.decisioncenter.model.ServerExt)
+classServerExtFind=$(grep com.ibm.rules.decisioncenter.model.ServerExt $APPS/**/WEB-INF/lib/*teamserver-model*.jar)
 echo ${classServerExtFind##* }
