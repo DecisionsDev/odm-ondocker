@@ -4,7 +4,7 @@
 
   <!-- Open ID Connect -->
   <!-- Client with inbound propagation set to supported -->
-  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
+  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid" accessTokenInLtpaCookie="true"
 		       clientId="__OPENID_CLIENT_ID__" clientSecret="__OPENID_CLIENT_SECRET__"
 		       signatureAlgorithm="RS256" inboundPropagation="supported"
 		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/jwk"
