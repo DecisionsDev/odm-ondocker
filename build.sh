@@ -15,11 +15,11 @@ else
     echo "ODM distribution: Loading from cache..."
     echo "ODM distribution: Loading finished..."
 fi
-docker run -v $PWD/wlp:/tmp/wlp  ibmcom/websphere-liberty:20.0.0.3-kernel-java8-ibmjava-ubi  /bin/sh -c "mkdir -p /tmp/wlp ;\
+docker run -v $PWD/wlp:/opt/wlp  ibmcom/websphere-liberty:20.0.0.3-kernel-java8-ibmjava-ubi  /bin/sh -c "mkdir -p /opt/wlp ;\
  installUtility download openidconnectclient-1.0 collectiveMember-1.0 sessionCache-1.0 ldapRegistry-3.0 localConnector-1.0 \
   microProfile-1.0 microProfile-1.2 microProfile-1.3 microProfile-1.4 monitor-1.0 restConnector-1.0 \
   requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0 webCache-1.0 \
-  webProfile-7.0 webProfile-7.0 --location=/tmp/wlp"
+  webProfile-7.0 webProfile-7.0 --location=/opt/wlp"
 echo "unzip odm distribution..."
 unzip -q $HOME/.cache/$ODM_FILE_NAME
 
