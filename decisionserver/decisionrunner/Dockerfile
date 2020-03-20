@@ -35,7 +35,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN ls -la /opt/wlppackage && mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
 
 
 FROM ${FROMLIBERTY}
