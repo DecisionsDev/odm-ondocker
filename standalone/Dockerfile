@@ -79,6 +79,13 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS && \
 chmod -R 777 /upload /db810 /db8103 /config/dbdata
 
+FROM ${FROMLIBERTY} AS liberty-builder
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+USER root
+ENV SCRIPT /script
+COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
+RUN ls -la /opt/wlppackage && mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
 
 
 FROM ${FROMLIBERTY}
@@ -92,6 +99,9 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdm
 ENV SCRIPT /script
 ENV APPS /config/apps
+
+# Install require Liberty features
+COPY --from=liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
 COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
