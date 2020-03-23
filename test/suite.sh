@@ -30,11 +30,10 @@ wait_for_url () {
 check_for_docker_url () {
     dockerimg=$1
     dockerurl=$2
-
     echo "Test $dockerurl availability in $dockerimg image."
 
     docker exec -u 0:0 -ti $dockerimg bash -c " \
-        microdnf install iputils && \
+        yum install -y iputils
         ping -q -c5 $dockerurl > /dev/null && \
         if [ $? -eq 0 ] ; then \
             echo \"OK: $dockerimg\"; \
@@ -42,6 +41,7 @@ check_for_docker_url () {
             echo \"KO: $dockerimg\" \
             exit 1; \
         fi"
+    echo $?
     if [ $? -ne 0 ]; then
         ret=1
     fi

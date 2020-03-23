@@ -46,7 +46,13 @@ RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
-RUN installUtility install openidconnectclient-1.0
+ARG ODMDOCKERDIR
+ENV ODMDOCKERDIR $ODMDOCKERDIR
+USER root
+ENV SCRIPT /script
+COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
