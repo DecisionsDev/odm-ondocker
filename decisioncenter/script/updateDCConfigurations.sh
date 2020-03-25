@@ -128,6 +128,17 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+
+  if [ -n "$DC_ROLE_GROUP_MAPPING" ]
+  then
+    echo "DC_ROLE_GROUP_MAPPING set then replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
+    sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
+    sed -i '/<group name="rtsAdministrators"/d' /config/application.xml
+    sed -i $'/<group name="rtsInstallers"/{e cat /config/authOidc/rtsInstallers.xml\n}' /config/application.xml
+    sed -i '/<group name="rtsInstallers"/d' /config/application.xml
+    sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml\n}' /config/application.xml
+    sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
+  fi
 fi
 
 if [ -n "$DC_SERVER_CONFIG" ]

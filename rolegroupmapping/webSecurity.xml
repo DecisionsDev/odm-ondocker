@@ -1,0 +1,72 @@
+<server>
+
+  <!-- ODM Administrator definition -->
+    <basicRegistry id="basic" realm="basicRealm">
+      <user name="odmAdmin" password="odmAdmin" />
+      <user name="rtsAdmin" password="rtsAdmin" />
+      <user name="rtsConfig" password="rtsConfig" />
+      <user name="resAdmin" password="resAdmin" />
+      <group name="basicRtsAdministrators">
+        <member name="odmAdmin" />
+        <member name="rtsAdmin" />
+      </group>
+      <group name="basicRtsConfigManagers">
+        <member name="odmAdmin"/>
+        <member name="rtsAdmin"/>
+        <member name="rtsConfig"/>
+      </group>
+      <group name="basicResAdministrators">
+        <member name="odmAdmin" />
+        <member name="resAdmin" />
+      </group>
+      <group name="basicResDeployers">
+        <member name="odmAdmin" />
+        <member name="resAdmin" />
+      </group>
+      <group name="basicResMonitors">
+        <member name="odmAdmin" />
+        <member name="resAdmin" />
+      </group>
+      <group name="basicResExecutors">
+        <member name="odmAdmin" />
+        <member name="resAdmin" />
+      </group>
+    </basicRegistry>
+
+    <ldapRegistry baseDN="ou=bluepages,o=ibm.com" host="bluepages.ibm.com" id="LDAPRegistry" ignoreCase="true" ldapType="Custom" port="389" realm="ldapRealm" recursiveSearch="true">
+      <customFilters
+        groupFilter="(&amp;(cn=FRLAB~SrvOdmVttAdmin)(objectclass=groupOfUniqueNames))"
+        userFilter="(&amp;(emailAddress=%v)(objectclass=person))"
+        groupIdMap="*:cn"
+        groupMemberIdMap="groupOfUniqueNames:uniqueMember"
+        userIdMap="*:emailAddress"/>
+	</ldapRegistry>
+
+  <!-- Grant access to the group rtsAdministrator -->
+  <variable name="odm.rtsAdministrators.group1" value="group:basicRealm/basicRtsAdministrators"/>
+  <variable name="odm.rtsAdministrators.user1" value="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/>
+
+  <!-- Grant access to the group rtsConfigManager -->
+  <variable name="odm.rtsConfigManagers.group1" value="group:basicRealm/basicRtsConfigManagers"/>
+  <variable name="odm.rtsConfigManagers.user1" value="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/>
+
+  <!-- Grant access to the group resAdministrator -->
+  <variable name="odm.resAdministrators.group1" value="group:basicRealm/basicResAdministrators"/>
+<!--  <variable name="odm.resAdministrators.user1" value="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/> -->
+<!--  <variable name="odm.resAdministrators.group2" value="group:ldapRealm/cn=MatTestBearFullAccess,ou=memberlist,ou=ibmgroups,ou=bluepages,o=ibm.com"/> -->
+  <variable name="odm.resAdministrators.group2" value="group:ldapRealm/cn=MatTestBearFullAccess,ou=bluepages,o=ibm.com"/>
+<!--  <variable name="odm.resAdministrators.group2" value="group:ldapRealm/MatTestBearFullAccess"/> -->
+<!--  <variable name="odm.resAdministrators.group2" value="cn=MatTestBearFullAccess,ou=bluepages,o=ibm.com"/> -->
+<!--  <variable name="odm.resAdministrators.group2" value="MatTestBearFullAccess"/> -->
+<!--  <variable name="odm.resAdministrators.group2" value="ldapRealm/MatTestBearFullAccess"/> -->
+<!--  <variable name="odm.resAdministrators.group2" value="group:ldapRealm/cn=MatTestBearFullAccess,c=fr,ou=bluepages,o=ibm.com"/> -->
+
+  <!-- Grant access to the group resDeployers -->
+  <variable name="odm.resDeployers.group1" value="group:basicRealm/basicResDeployers"/>
+
+  <!-- Grant access to the group resMonitors -->
+  <variable name="odm.resMonitors.group1" value="group:basicRealm/basicResMonitors"/>
+
+  <!-- Grant access to the group resExecutors -->
+  <variable name="odm.resExecutors.group1" value="group:basicRealm/basicResExecutors"/>
+</server>

@@ -50,6 +50,13 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+
+  if [ -n "$DSR_ROLE_GROUP_MAPPING" ]
+  then
+    echo "DSR_ROLE_GROUP_MAPPING set then replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+    sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+    sed -i '/<group name="resExecutors"/d' /config/application.xml
+  fi
 fi
 
 cd  $APPS/DecisionService.war/WEB-INF/classes;

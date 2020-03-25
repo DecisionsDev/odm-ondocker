@@ -99,4 +99,13 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+
+  if [ -n "$DR_ROLE_GROUP_MAPPING" ]
+  then
+    echo "DR_ROLE_GROUP_MAPPING set then replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
+    sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+    sed -i '/<group name="resAdministrators"/d' /config/application.xml
+    sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+    sed -i '/<group name="rtsDeployers"/d' /config/application.xml
+  fi
 fi
