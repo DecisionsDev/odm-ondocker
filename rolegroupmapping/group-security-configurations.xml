@@ -1,0 +1,17 @@
+<dc-usermanagement>
+	<role name="rtsAdministrator"/>
+	<role name="rtsConfigManager"/>
+	<role name="rtsInstaller"/>
+	<role name="rtsUser"/>
+
+	<group name="basicRtsAdministrators" roles="rtsAdministrator"/>
+	<group name="basicRtsConfigManagers" roles="rtsConfigManager"/>
+	<group name="basicRtsInstallers" roles="rtsInstaller"/>
+	<group name="rtsUsers" roles="rtsUser"/>
+	
+        <user name="odmAdmin" groups="basicRtsAdministrators, basicRtsInstallers, basicRtsConfigManagers, rtsUsers"/>
+	<user name="rtsAdmin" groups="basicRtsAdministrators, basicRtsInstallers, basicRtsConfigManagers, rtsUsers"/>
+	<user name="rtsConfig" groups="basicRtsConfigManagers, rtsUsers"/>
+	<user name="rtsUser1" groups="rtsUsers"/>
+	<user name="rtsUser2" groups="rtsUsers"/>
+</dc-usermanagement>

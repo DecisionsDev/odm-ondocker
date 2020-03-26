@@ -2,17 +2,28 @@
 
   <!-- ODM Administrator definition -->
     <basicRegistry id="basicRegistry">
-      <user name="odmAdmin" password="odmAdmin" />
-      <user name="rtsAdmin" password="rtsAdmin" />
-      <user name="rtsConfig" password="rtsConfig" />
-      <user name="resAdmin" password="resAdmin" />
+	<!-- ODM super user -->
+	<user name="odmAdmin" password="odmAdmin"/>
+	<!-- Users for Decision Center -->
+	<user name="rtsAdmin" password="rtsAdmin"/>
+	<user name="rtsConfig" password="rtsConfig"/>
+	<user name="rtsUser1" password="rtsUser1"/>
+	<user name="rtsUser2" password="rtsUser2"/>
+	<!-- Users for Decision Server -->
+	<user name="resAdmin" password="resAdmin"/>
+	<user name="resDeployer" password="resDeployer"/>
+	<user name="resMonitor" password="resMonitor"/>
+	<user name="resExecutor" password="resExecutor" />
+	<!-- Groups for Decision Center -->
       <group name="basicRtsAdministrators">
         <member name="odmAdmin" />
         <member name="rtsAdmin" />
       </group>
+      <group name="basicRtsInstallers">
+        <member name="odmAdmin" />
+        <member name="rtsAdmin" />
+      </group>
       <group name="basicRtsConfigManagers">
-        <member name="odmAdmin"/>
-        <member name="rtsAdmin"/>
         <member name="rtsConfig"/>
       </group>
       <group name="basicResAdministrators">
@@ -20,16 +31,17 @@
         <member name="resAdmin" />
       </group>
       <group name="basicResDeployers">
-        <member name="odmAdmin" />
-        <member name="resAdmin" />
+        <member name="resDeployer" />
       </group>
       <group name="basicResMonitors">
-        <member name="odmAdmin" />
-        <member name="resAdmin" />
+        <member name="resMonitor" />
       </group>
       <group name="basicResExecutors">
-        <member name="odmAdmin" />
-        <member name="resAdmin" />
+	<member name="odmAdmin" />
+	<member name="resAdmin" />
+	<member name="resDeployer" />
+	<member name="resMonitor" />
+	<member name="resExecutor" />
       </group>
     </basicRegistry>
 
@@ -56,28 +68,32 @@
         </primaryRealm>
     </federatedRepository>
 
-  <!-- Grant access to the group rtsAdministrator -->
+  <!-- Grant access to the role rtsAdministrator for the groups basicRtsAdministrators in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.rtsAdministrators.group1" value="group:o=defaultWIMFileBasedRealm/basicRtsAdministrators"/>
  <!-- <variable name="odm.rtsAdministrators.user1" value="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/> -->
   <variable name="odm.rtsAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 
-  <!-- Grant access to the group rtsConfigManager -->
+  <!-- Grant access to the role rtsInstaller for the groups basicRtsInstallers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
+  <variable name="odm.rtsInstallers.group1" value="group:basicRealm/basicRtsInstallers"/>
+  <variable name="odm.rtsInstallers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+
+  <!-- Grant access to the role rtsConfigManager for the groups basicRtsConfigManagers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.rtsConfigManagers.group1" value="group:basicRealm/basicRtsConfigManagers"/>
   <variable name="odm.rtsConfigManagers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 
-  <!-- Grant access to the group resAdministrator -->
+  <!-- Grant access to the role resAdministrator for the groups basicResAdministrators in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resAdministrators.group1" value="group:o=defaultWIMFileBasedRealm/basicResAdministrators"/>
   <variable name="odm.resAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 
-  <!-- Grant access to the group resDeployers -->
+  <!-- Grant access to the role resDeployers for the groups basicResDeployers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resDeployers.group1" value="group:o=defaultWIMFileBasedRealm/basicResDeployers"/>
   <variable name="odm.resDeployers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 
-  <!-- Grant access to the group resMonitors -->
+  <!-- Grant access to the role resMonitors for the groups basicResMonitors in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resMonitors.group1" value="group:o=defaultWIMFileBasedRealm/basicResMonitors"/>
   <variable name="odm.resMonitors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 
-  <!-- Grant access to the group resExecutors -->
+  <!-- Grant access to the role resExecutors for the groups basicResExecutors in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resExecutors.group1" value="group:o=defaultWIMFileBasedRealm/basicResExecutors"/>
   <variable name="odm.resExecutors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
 </server>
