@@ -16,8 +16,7 @@ then
   else
     echo "copy template to /config/authOidc/openIdParameters.properties"
     mv /config/authOidc/openIdParametersTemplate.properties /config/authOidc/openIdParameters.properties
-    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/authOidc/openIdParameters.properties
-    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/authOidc/openIdParameters.properties
+    sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdParameters.properties
     sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdParameters.properties
     sed -i 's|__OPENID_ALLOWED_DOMAINS__|'$OPENID_ALLOWED_DOMAINS'|g' /config/authOidc/openIdParameters.properties
   fi
@@ -31,8 +30,7 @@ if [ -s "/config/auth/openIdWebSecurity.xml" ]
   else
     echo "copy template to /config/authOidc/openIdWebSecurity.xml"
     mv /config/authOidc/openIdWebSecurityTemplate.xml /config/authOidc/openIdWebSecurity.xml
-    sed -i 's|__OPENID_HOST__|'$OPENID_HOST'|g' /config/authOidc/openIdWebSecurity.xml
-    sed -i 's|__OPENID_PORT__|'$OPENID_PORT'|g' /config/authOidc/openIdWebSecurity.xml
+    sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdWebSecurity.xml
     sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdWebSecurity.xml
   fi
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdWebSecurity.xml
