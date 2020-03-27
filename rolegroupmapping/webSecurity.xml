@@ -45,7 +45,7 @@
       </group>
     </basicRegistry>
 
-    <ldapRegistry baseDN="o=ibm.com" host="bluepages.ibm.com" id="LDAPRegistry" ignoreCase="true" ldapType="IBM Tivoli Directory Server" port="389" recursiveSearch="true">
+    <ldapRegistry baseDN="o=ibm.com" host="bluepages.ibm.com" sslEnabled="true" sslRef="odmDefaultSSLConfig" id="LDAPRegistry" ignoreCase="true" ldapType="IBM Tivoli Directory Server" port="636" recursiveSearch="true">
        <ldapEntityType name="PersonAccount">
             <objectClass>ibmPerson</objectClass>
             <searchBase>ou=bluepages,o=ibm.com</searchBase>
@@ -65,6 +65,7 @@
         <primaryRealm name="o=defaultWIMFileBasedRealm">
 		<participatingBaseEntry name="o=BasicRegistry"/>
                 <participatingBaseEntry name="o=ibm.com"/>
+       		<userDisplayNameMapping inputProperty="principalName" outputProperty="mail"/>
         </primaryRealm>
     </federatedRepository>
 
