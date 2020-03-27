@@ -1,0 +1,19 @@
+<dc-usermanagement>
+	<ldapConnections>
+		<ldapConnection name="Bluepages">
+			<ldapUrl>ldaps://bluepages.ibm.com</ldapUrl>
+			<searchConnectionDN></searchConnectionDN>
+			<searchConnectionPassword></searchConnectionPassword>
+			<groupSearchBase>ou=memberlist,ou=ibmgroups,o=ibm.com</groupSearchBase>
+			<groupSearchFilter>(cn=*Bear*)</groupSearchFilter>
+			<groupNameAttribute>cn</groupNameAttribute>
+			<groupMemberAttribute>uniquemember</groupMemberAttribute>
+			<userIdAttribute>uid</userIdAttribute>
+			<userNameAttribute>cn</userNameAttribute>
+			<userMailAttribute>emailaddress</userMailAttribute>
+			<ldapProperties>
+				<ldapPropertyName/>
+			</ldapProperties>
+		</ldapConnection>
+	</ldapConnections>
+</dc-usermanagement>
