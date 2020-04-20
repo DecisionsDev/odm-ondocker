@@ -3,7 +3,7 @@ LICENČNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základě následujících podmínek uvedených v dokumentu Licenční informace, které doplňují licenční podmínky pro Program, s nimiž dříve Zákazník a IBM vyjádřili souhlas Pokud Zákazník dříve nevyjádřil souhlas s účinnými licenčními podmínkami pro Program, uplatní se licence Mezinárodní licenční smlouva pro programy bez záruky (Z125-5589-05).
 
 Název Programu (Číslo Programu):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
 
@@ -20,7 +20,7 @@ Podpůrné programy
 Držitel licence je oprávněn nainstalovat a užívat Podpůrné programy identifikované níže. Držitel licence je oprávněn nainstalovat a užívat tyto Podpůrné programy pouze k podpoře užívání Základního programu Držitelem licence v souladu s touto Smlouvou. Výraz"k podpoře užívání Držitelem licence" by mělzahrnovat pouze nezbytnéužívání nebo užívání, které jinak přímo souvisí s licencovaným užívánímslužby Základního programu nebo jiného Podpůrného programu. Podpůrné programy nesmí být užívány k žádnému jinému účelu. K Podpůrnému programu mohou být připojeny licenční podmínky. Tyto podmínky (pokud existují) platí pro užívání tohoto Podpůrného programu Držitelem licence. V případě rozporu podmínek mají přednost podmínky uvedené v tomto dokumentu Licenční informace před podmínkami Podpůrného programu. Držitellicence musí získat dostatečný počet oprávnění k Programu jako celku kpokrytí instalace a používání všech Podpůrných programů ze stranyDržitele licence, pokudnejsou poskytnuta samostatná oprávnění v dokumentu Licenční informace. Jestliže byl např. tento Program licencován dle jednotek PVU (Processor Value Unit) a Držitel licence instaloval Základní program nebo Podpůrný program na počítači se 100 jednotkami PVU (fyzickém nebo virtuálním) a jiný Podpůrný program na druhém počítači se 100 jednotkami PVU, měl by Držitel licence získat oprávnění na 200 jednotek PVU k Programu.
 
 Podpůrné programy:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Omezení užívání - pouze pro vývojáře
 
@@ -36,7 +36,7 @@ Držitel licence potvrzuje a souhlasí s tím, že IBM může užívat soubory c
 
 Komponenty ve vzorovém kódu a Vzorové materiály
 
-Program může obsahovat některé komponenty ve formě zdrojového kódu ("Komponenty ve zdrojovém kódu") a jiné materiály označované jako Vzorové materiály. Držitel licence smí kopírovat a měnit Komponenty ve zdrojovém kódu a Vzorové materiály pouze pro interní užívání a pouze pod podmínkou, že toto užívání bude v souladu s omezeními licenčních oprávnění stanovenými touto Smlouvou. Držitel licence však nesmí měnit ani odstraňovat žádné informace nebo výhrady týkající se autorských práv obsažené v Komponentách ve zdrojovém kódu nebo ve Vzorových materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL.
+Program může obsahovat některé komponenty ve formě zdrojového kódu ("Komponenty ve zdrojovém kódu") a jiné materiály označované jako Vzorové materiály. Držitel licence smí kopírovat a upravovat Zdrojové komponenty a Vzorové materiály pouze pro interní účely, za předpokladu, že toto užívání splňuje limity licenčních práv podle této Smlouvy, avšak pod podmínkou, že Držitel licence nesmí pozměňovat ani odstraňovat žádné informace o autorských právech nebo výhrady autorských práv, které jsou uvedeny ve Zdrojových komponentách či Vzorových materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL.
 
 Kód TPC (Technology Preview Code)
 
@@ -60,9 +60,9 @@ Data a služby třetích stran
 
 Program může obsahovat odkazy na datové služby, databáze, webové služby, software třetích stran nebo na jiný obsah od třetích stran (společné označení "obsah") nebo může být užíván pro přístup k tomuto obsahu. Přístup k tomuto obsahu je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu nebo užívání tohoto obsahu. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Mezinárodní licenční smlouva pro programy bez záruky

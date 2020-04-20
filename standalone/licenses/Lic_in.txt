@@ -3,7 +3,7 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (Z125-5589-05) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
@@ -20,7 +20,7 @@ Program Pendukung
 Pemegang Lisensi berhak untuk memasang dan menggunakan Program Pendukung, yang diidentifikasikan di bawah ini. Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung tersebut hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini. Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan atau dengan cara lain, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pemegang Lisensi harus memperoleh kepemilikan yang memadai atas Program, secara keseluruhan, untuk mencakup pemasangan dan penggunaan Pemegang Lisensi atas semua Program Pendukung, kecuali apabila kepemilikan yang terpisah diberikan di dalam dokumen Informasi Lisensi. Misalnya, jika Program ini dilisensikan pada basis Unit Nilai Prosesor (Processor Value Unit - "PVU") dan Pemegang Lisensi.
 
 Program Pendukung:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Batasan untuk Pengembang
 
@@ -36,7 +36,7 @@ Pemegang Lisensi menyatakan dan setuju bahwa IBM dapat menggunakan cookie dan te
 
 Komponen Sumber dan Material Contoh
 
-Program dapat mencakup beberapa komponen dalam bentuk kode sumber ("Komponen Sumber") dan beberapa material lain yang dikenal sebagai Material Contoh. Pemegang Lisensi dapat menyalin dan memodifikasi Komponen-komponen Sumber dan Material Contoh untuk penggunaan internal hanya dengan ketentuan bahwa penggunaan tersebut dalam batas-batas hak lisensi berdasarkan Perjanjian ini, akan tetapi dengan ketentuan bahwa Pemegang Lisensi tidak dapat mengubah atau menghapus setiap informasi atau pemberitahuan tentang hak cipta yang terdapat dalam Komponen-komponen Sumber atau Material Contoh.  IBM memberikan Komponen-komponen Sumber dan Material Sampel tanpa adanya kewajiban dukungan dan "APA ADANYA", TANPA GARANSI APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK GARANSI KEPEMILIKAN, JAMINAN TIDAK ADANYA PELANGGARAN ATAU CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU.
+Program dapat mencakup beberapa komponen dalam bentuk kode sumber ("Komponen Sumber") dan beberapa material lain yang dikenal sebagai Material Contoh. Pemegang Lisensi dapat menyalin dan memodifikasi Komponen Sumber dan Material Contoh untuk penggunaan internal saja dengan ketentuan bahwa penggunaan tersebut dalam batas-batas hak lisensi berdasarkan Perjanjian ini; dengan ketentuan bahwa, Pemegang Lisensi tidak boleh mengubah atau menghapus informasi hak cipta atau pemberitahuan apa pun yang terdapat dalam Komponen Sumber atau Material Contoh. IBM memberikan Komponen-komponen Sumber dan Material Contoh tanpa adanya kewajiban dukungan dan "SEBAGAIMANA ADANYA", TANPA GARANSI APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK GARANSI KEPEMILIKAN, JAMINAN TIDAK ADANYA PELANGGARAN ATAU CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU.
 
 Kode Tinjauan Teknologi (Technology Preview Code)
 
@@ -60,9 +60,9 @@ Data dan Layanan Pihak Ketiga
 
 Program dapat berisi tautan-tautan ke atau yang digunakan untuk mengakses layanan, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "konten"). Akses ke konten ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA CAMPUR TANGAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KEMAMPUAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan konten tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Garansi

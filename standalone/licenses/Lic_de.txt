@@ -3,7 +3,7 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommt Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (Z125-5589-05) zur Anwendung.
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
 
@@ -20,7 +20,7 @@ Unterstützungsprogramme
 Der Lizenznehmer ist zur Installation und Nutzung der nachstehend aufgeführten Unterstützungsprogramme berechtigt. Der Lizenznehmer darf diese Unterstützungsprogramme nur zur Unterstützung der Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur Unterstützung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms stehen. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, denen die Nutzung des betreffenden Unterstützungsprogramms durch den Lizenznehmer unterliegt. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen für das Programm als Ganzes erwerben, um die Installation und Nutzung aller Unterstützungsprogramme abzudecken, außer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm würde auf PVU-Basis (Prozessor-Value-Units) lizenziert und der Lizenznehmer würde das Hauptprogramm oder ein Unterstützungsprogramm auf einer 100-PVU-Maschine (physisch oder virtuell) und ein anderes Unterstützungsprogramm auf einer zweiten 100-PVU-Maschine installieren, dann müsste er 200 PVU-Berechtigungen für das Programm erwerben.
 
 Unterstützungsprogramme:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Beschränkung auf Entwickler
 
@@ -34,9 +34,9 @@ Datenschutz
 
 Der Lizenznehmer bestätigt und erklärt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Übereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
 
-Quellenkomponenten und Mustermaterialien
+Quellenkomponenten und Beispielmaterialien
 
-Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Mustermaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Mustermaterialien nur für den internen Gebrauch kopieren und ändern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Mustermaterialien enthaltenen Copyrightvermerke oder Hinweise weder ändert noch löscht. IBM stellt die Quellenkomponenten und Mustermaterialien ohne eine Verpflichtung zur Unterstützung, ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck.
+Das Programm kann einige Komponenten in Form von Quellcode ("Quellenkomponenten") und sonstige Materialien, die als Beispielmaterialien gekennzeichnet sind, enthalten. Der Lizenznehmer darf die Quellenkomponenten und Beispielmaterialien nur für den internen Gebrauch kopieren und ändern, sofern eine solche Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung erfolgt und der Lizenznehmer die in den Quellenkomponenten oder Beispielmaterialien enthaltenen Copyrightvermerke oder Hinweise weder ändert noch löscht. IBM stellt die Quellenkomponenten und Beispielmaterialien ohne eine Verpflichtung zur Unterstützung, im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck.
 
 Technology Preview Code
 
@@ -60,9 +60,9 @@ Daten und Services von Drittanbietern
 
 Das Programm kann Links auf oder zum Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (im Folgenden als "Inhalte" bezeichnet) enthalten. Der Zugriff auf diese Inhalte wird ohne Wartung (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung für Rechtsmängel, für die Freiheit von Rechten Dritter, für das Recht auf Nichtbeeinträchtigung, für die Handelsüblichkeit und für die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff und die Nutzung dieser Inhalte abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung

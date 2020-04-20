@@ -3,7 +3,7 @@ LİSANS BİLGİLERİ
 Aşağıda listelenen programlar, daha önce Müşteri ve IBM tarafından kabul edilen Program lisansı koşullarına ek olarak aşağıdaki Lisans Bilgilerinin kayıt ve koşulları kapsamında lisanslanır. Müşteri, Programa ilişkin yürürlükte olan lisans koşullarını daha önce kabul etmemişse, Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi (Z125-5589-05) geçerli olur.
 
 Program Adı (Program Numarası):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Aşağıdaki standart koşullar, Lisans Alan Tarafın Programı kullanımı için geçerlidir.
 
@@ -20,7 +20,7 @@ Destekleyici Programlar
 Lisans Alan Taraf, aşağıda belirtilen Destekleyici Programları kurabilir ve kullanabilir. Lisans Alan Tarafa, söz konusu Destekleyici Programları yalnızca bu Sözleşme kapsamındaki Asıl Programın Lisans Alan Tarafça kullanımını desteklemek amacıyla kurması ve kullanması için yetki verilir. "Lisans Alan Tarafça kullanımını desteklemek amacıyla" ifadesi, yalnızca Asıl Programın veya diğer bir Destekleyici Programın lisanslı kullanımı için gerekli olan veya Asıl Programın veya diğer bir Destekleyici Programın lisanslı kullanımıyla başka bir şekilde doğrudan ilişkili olan kullanımları kapsar. Destekleyici Programlar, başka hiçbir amaçla kullanılamaz. Bir Destekleyici Programla birlikte lisans koşulları ve eğer varsa, Lisans Alan Tarafın bu Destekleyici Programı kullanımı için geçerli olan koşullar da gönderilebilir. Asıl Programın koşullarıyla Destekleyici Programın koşulları arasında bir çelişki olması durumunda işbu Lisans Bilgileri belgesinin koşulları, Destekleyici Programın koşullarını hükümsüz kılarak onların yerine geçer. Lisans Alan Taraf, işbu Lisans Bilgileri belgesinde ayrı yetkiler sağlanmadığı sürece, Destekleyici Programların tümünün Lisans Alan Tarafça kurulumunu ve kullanımını kapsayacak şekilde Programın bütününe ilişkin yeterli sayıda yetki edinmelidir. Örneğin, bu Program bir İşlemci Değer Birimi (PVU) esasında lisanslandıysa ve Lisans Alan Taraf, Asıl Programı veya bir Destekleyici Programı 100 İşlemci Değer Birimi (fiziksel veya sanal) olan bir makinede ve başka bir Destekleyici Programı ikinci bir 100 İşlemci Değer Birimi olan makinede kuracaksa, Lisans Alan Tarafın Program için 200 İşlemci Değer Birimi yetkisi edinmesi gerekecektir.
 
 Destekleyici Programlar:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Geliştirici Sınırlaması
 
@@ -36,7 +36,7 @@ Lisans Alan Taraf, kullanıcı deneyiminin geliştirilmesine yardımcı olmak ve
 
 Kaynak Bileşenler ve Örnek Malzemeler
 
-Bu Program, kaynak kodu biçimindeki bazı bileşenleri ("Kaynak Bileşenler") ve Örnek Malzemeler olarak tanımlanan diğer malzemeleri içerebilir. Lisans Alan Taraf, Kaynak Bileşenleri ve Örnek Malzemeleri ancak Kaynak Bileşenleri ve Örnek Malzemeleri kullanımının bu Sözleşme kapsamındaki lisans hakları tarafından çizilen sınırlar içinde kalması ve ancak Kaynak Bileşenlerde ya da Örnek Malzemelerde içerilen hiçbir telif hakkı bilgisini veya bildirimini değiştirmemek veya silmemek koşuluyla dahili olarak kullanmak amacıyla kopyalayabilir ve kullanabilir. IBM, Kaynak Bileşenleri ve Örnek Malzemeleri, destek yükümlülüğü olmaksızın ve MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE TİCARİLİĞE VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DA DAHİL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERMEKSİZİN "OLDUĞU GİBİ" ESASIYLA SAĞLAR.
+Bu Program, kaynak kodu biçimindeki bazı bileşenleri ("Kaynak Bileşenler") ve Örnek Malzemeler olarak tanımlanan diğer malzemeleri içerebilir. Lisans Alan Taraf, Kaynak Bileşenleri ve Örnek Malzemeleri ancak Kaynak Bileşenleri ve Örnek Malzemeleri kullanımının bu Sözleşme kapsamındaki lisans hakları tarafından çizilen sınırlar içinde kalması ve ancak Kaynak Bileşenlerde ya da Örnek Malzemelerde içerilen hiçbir telif hakkı bilgisini veya bildirimini değiştirmemek veya silmemek koşuluyla dahili olarak kullanmak amacıyla kopyalayabilir ve kullanabilir. IBM, Kaynak Bileşenleri ve Örnek Malzemeleri, destek yükümlülüğü olmaksızın ve MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DA DAHİL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERMEKSİZİN "OLDUĞU GİBİ" ESASIYLA SAĞLAR.
 
 Teknoloji Önizleme Kodu
 
@@ -60,9 +60,9 @@ Bu Program şifreleme içerebilir. Bu Programın kullanıcılara devredilmesi ve
 
 Bu Program, üçüncü kişi veri hizmetlerine, Web hizmetlerine, yazılımlara ya da diğer üçüncü kişi içeriğine (tümü "içerik" olarak anılır) erişmek üzere kullanılan ya da kullanılabilen bağlantılar içerebilir. Bu içeriğe erişim, MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE TİCARİLİĞE VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DA DAHİL OLMAK, ANCAK TÜMÜ BUNLARLA SINIRLI OLMAMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEKSİZİN "OLDUĞU GİBİ" ESASIYLA SAĞLANIR. Bu erişim, ilgili üçüncü kişiler tarafından yalnızca kendi kararlarına bağlı olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafın bu içeriğe erişmesi veya bu içeriği kullanması için üçüncü kişilerle ayrı sözleşmeler yapması gerekebilir. IBM, ayrıca yapılacak bu tür sözleşmelerin bir tarafı değildir ve bu lisansın açık bir koşulu olarak Lisans Alan Taraf ayrıca yapılan bu tür sözleşmelerin koşullarına uygun davranmayı kabul eder.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi

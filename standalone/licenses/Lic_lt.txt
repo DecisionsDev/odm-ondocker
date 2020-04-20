@@ -3,7 +3,7 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų kurioms neteikiama garantija tarptautinė licencinė sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
 
@@ -20,7 +20,7 @@ Pagalbinės programos
 Licenciatas turi teisę diegti ir naudoti toliau nurodytas Pagalbines programas. Licenciatas įgaliotas diegti ir naudoti Pagalbines programas tik Licenciato Pagrindinės programos naudojimui palaikyti pagal šią Sutartį. Frazė „palaikyti Licenciato naudojimą“ apima tik tą naudojimą, kuris reikalingas ar kitaip tiesiogiai susijęs su Pagrindinės ar kitos Pagalbinės Programos licencijuotu naudojimu. Pagalbinių programų negalima naudoti jokiam kitam tikslui. Pagalbinė programa gali būti pateikiama su licencijos sąlygomis ir šios sąlygos, jei tokių yra, taikomos Pagalbinę programą naudojančiam Licencijos turėtojui. Įvykus ginčui šiame Licencijos informacijos dokumente pateiktos sąlygos pakeičia Pagalbinės programos sąlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisių, kad jų pakaktų visų Licenciato Pagalbinių programų diegimui ir naudojimui padengti, nebent šiuo Licencijos informacijos dokumentu suteikiama papildomų teisių. Pavyzdžiui, jei ši Programa buvo licencijuota PVV (Procesoriaus vertės vienetų) pagrindu, ir Licenciatas turėtų įdiegti Pagrindinę programą arba Pagalbinę programą 100 PVV įrenginyje (fiziniame arba virtualiame), o antrame 100 PVV įrenginyje – kitą Pagalbinę programą, Licenciatui reikės įsigyti 200 Programos PVV teisių.
 
 Pagalbinės programos:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Kūrėjo ribojimas
 
@@ -60,9 +60,9 @@ Trečiosios šalies duomenys ir paslaugos
 
 Programoje gali būti saitų arba ją galima naudoti prieigai prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „turinys“). Prieiga prie šio turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Licenciatui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Programų kurioms neteikiama garantija tarptautinė licencinė sutartis
