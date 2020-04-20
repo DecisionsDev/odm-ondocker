@@ -3,7 +3,7 @@ INFORMAÇÕES DA LICENÇA
 Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições da seguinte Informação sobre a Licença a seguir, além dos termos de licença do Programa acordados anteriormente pelo Cliente e pela IBM. Se o Cliente não tiver acordado anteriormente com os termos de licença em vigor para o Programa, o Contrato de Licença Internacional para Programas Não Garantidos (Z125-5589-05) será aplicável.
 
 Nome do Programa (Número do Programa):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Os termos padrão a seguir se aplicam o uso do Programa pelo Licenciado.
 
@@ -20,7 +20,7 @@ Programas de Apoio
 O Licenciado está autorizado a instalar e usar/utilizar os Programas de Apoio identificados abaixo. O Licenciado está autorizado a instalar e usar/utilizar tais Programas de Apoio apenas para suportar o/a usar/utilizar do Programa Principal pelo Licenciado sob/ao abrigo desse Contrato/Acordo. A frase "para suportar o/a uso/utilização pelo Licenciado" incluiria apenas usos/utilizações necessários/necessárias, ou de outra forma diretamente relacionados/relacionadas, a um/uma uso/utilização licenciado/licenciada do Programa Principal ou de outro Programa de Apoio. Os Programas de Apoio não podem ser usados para qualquer outro propósito/fim. Um Programa de Apoio pode ser acompanhado pelos termos de licença, e tais termos, se houver algum, se aplicam ao uso desse Programa de Apoio pelo Licenciado. Em caso de conflito, os termos presentes neste documento de Informação sobre a Licença suplantam os termos do Programa de Apoio. O Licenciado deve obter/adquirir titularidades suficientes para o Programa, como um todo, para cobrir a instalação e o/a uso/utilização pelo Licenciado de todos os Programas de Apoio, a menos que titularidades distintas sejam fornecidas nesse documento de Informações sobre a Licença. Por exemplo, se esse Programa fosse licenciado em uma base de PVU (Processor Value Unit) e o Licenciado instalasse o Programa Principal ou um Programa de Apoio em uma máquina de 100 PVU (física ou virtual) e outro Programa de Apoio em uma segunda máquina de 100 PVU, ele seria obrigado a obter/adquirir titularidades de 200 PVU para o Programa.
 
 Programas de Apoio:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Limitação de Desenvolvedor
 
@@ -36,7 +36,7 @@ O Licenciado reconhece e concorda que a IBM pode usar/utilizar cookie e tecnolog
 
 Componentes Fonte e Materiais de Amostra
 
-O Programa pode incluir alguns componentes na forma de código-fonte ("Componentes Fonte") e outros materiais identificados como Materiais de Amostra. O Licenciado pode copiar e modificar Componentes Fonte e Materiais de Amostra apenas para uso interno, contanto que tal uso esteja dentro dos limites dos direitos de licença sob este/ao abrigo deste Contrato/Acordo, desde que, no entanto, esse Licenciado não possa alterar ou excluir quaisquer informações de direitos autorais/de autor ou avisos contidos nos Componentes Fonte ou nos Materiais de Amostra. A IBM fornece os Componentes Fonte e Materiais de Amostra sem obrigação de suporte e "NO ESTADO EM QUE SE ENCONTRAM (""AS IS"")", SEM NENHUM TIPO DE GARANTIA, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM PROPÓSITO/FIM ESPECÍFICO.
+O Programa pode incluir alguns componentes na forma de código-fonte ("Componentes Fonte") e outros materiais identificados como Materiais de Amostra. O Licenciado pode copiar e modificar os componentes de origem e os materiais de amostra para uso interno somente para o uso dentro dos limites dos direitos de licença sob este Contrato; desde que, no entanto, o Licenciado não possa mudar ou excluir nenhuma informação ou aviso de direitos autorais contido nos componentes de origem ou nos materiais de amostra. A IBM fornece os Componentes Fonte e Materiais de Amostra sem obrigação de suporte e "NO ESTADO EM QUE SE ENCONTRAM (""AS IS"")", SEM NENHUM TIPO DE GARANTIA, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM PROPÓSITO/FIM ESPECÍFICO.
 
 Technology Preview Code
 
@@ -60,9 +60,9 @@ Dados e Serviços de Terceiros
 
 O Programa pode conter links para ou ser usado para acessar/aceder a serviços de dados de terceiros, banco de dados/base de dados, serviços da Web, software ou outro conteúdo de terceiro (todos, "conteúdo"). O acesso a esse conteúdo é fornecido NO ESTADO EM QUE SE ENCONTRA ("AS IS"), SEM GARANTIA DE QUALQUER TIPO, SEJA EXPRESSA OU IMPLÍCITA, INCLUINDO A GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E AS GARANTIAS IMPLÍCITAS E CONDIÇÕES DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM PROPÓSITO/FIM ESPECÍFICO. O acesso pode ser rescindido/posto termo pelos terceiros interessados, a seu exclusivo critério e a qualquer momento. Pode ser requerido que o Licenciado celebre contratos/acordos separados com os terceiros para acessar/aceder a ou usar tal conteúdo. A IBM não é uma parte em tais contratos/acordos separados e, como uma condição expressa desta licença, o Licenciado concorda em cumprir com os termos desses contratos/acordos separados.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Contrato de Licença Internacional para Programas Não Garantidos

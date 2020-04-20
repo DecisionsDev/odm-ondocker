@@ -3,7 +3,7 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih določb in pogojev licenčne informacije, ki veljajo poleg pogojev licence za program, s katerimi naročnik in IBM predhodno soglašata. Če naročnik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenčna pogodba za programe brez garancije (Z125-5589-05).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
@@ -20,7 +20,7 @@ Podporni programi
 Imetnik licence lahko namesti in uporablja podporne programe, navedene spodaj. Imetnik licence lahko namesti in uporablja takšne podporne programe samo za podporo pri uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vključuje samo uporabo, ki je potrebna ali kako drugače neposredno povezana z licenčno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko priložena licenčna določila, ki (če obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij določbe iz teh licenčnih informacij prevladajo nad določbami podpornega programa. Imetnik licence mora pridobiti zadostno število pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen če so v tem dokumentu z informacijami o licenci zagotovljena ločena pooblastila. Če je bil ta program na primer licenciran na podlagi PVU-ja (enota vrednosti procesorja) in želi imetnik licence namestiti glavni ali podporni program na napravo (fizično ali navidezno) za 100 PVU-jev, drug podporni program pa na drugo napravo za 100 PVU-jev, mora pridobiti 200 pooblastil PVU za program.
 
 Podporni programi:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Omejitev razvijalca
 
@@ -36,7 +36,7 @@ Imetnik licence soglaša, da lahko IBM uporablja tehnologije piškotkov in slede
 
 Izvorne komponente in vzorčno gradivo
 
-Program lahko vključuje nekatere komponente v obliki izvorne kode ("izvorne komponente") in drugo gradivo, imenovano "vzorčno gradivo". Imetnik licence lahko kopira in spreminja izvorne komponente ter vzorčno gradivo za notranjo uporabo samo v primeru, da je takšna uporaba v okviru licenčnih pravic, določenih v tej pogodbi, vendar imetnik licence ne sme spreminjati ali brisati kakršnihkoli informacij o avtorstvu ali obvestil v izvornih komponentah ali vzorčnem gradivu. IBM ponuja izvorne komponente in vzorčno gradivo brez obveznosti za podporo in "TAKŠNO, KAKRŠNO JE", BREZ GARANCIJ KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNE ALI NAKAZANE, KAR VKLJUČUJE TUDI GARANCIJO ZA NASLOV, NEKRŠENJE ALI NEOVIRANJE IN ZAKONSKE GARANCIJE IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOČEN NAMEN.
+Program lahko vključuje nekatere komponente v obliki izvorne kode ("izvorne komponente") in drugo gradivo, imenovano "vzorčno gradivo". Imetnik licence lahko izvorne komponente in vzorčno gradivo kopira ter spreminja samo za notranjo uporabo in pod pogojem, da je takšna uporaba znotraj omejitev licenčnih pravic, ki izhajajo iz te pogodbe, vendar pod pogojem, da ne sme spremeniti ali izbrisati nobenih informacij ali obvestil o avtorskih pravicah, vsebovanih v izvornih komponentah ali vzorčnem gradivu. IBM ponuja izvorne komponente in vzorčno gradivo brez obveznosti za podporo in "TAKŠNO, KAKRŠNO JE", BREZ GARANCIJ KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNE ALI NAKAZANE, KAR VKLJUČUJE TUDI GARANCIJO ZA NASLOV, NEKRŠENJE ALI NEOVIRANJE IN ZAKONSKE GARANCIJE IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOČEN NAMEN.
 
 Koda za predogled tehnologije
 
@@ -60,9 +60,9 @@ Podatki in storitve tretjih oseb
 
 Program lahko vsebuje povezave do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme tretje osebe ali druge vsebine tretje osebe ali pa se uporablja za dostop do njih (skupaj "vsebina"). Dostop do te vsebine je zagotovljen "TAKŠEN, KAKRŠEN JE", BREZ KAKRŠNIH KOLI GARANCIJ, IZRECNIH ALI NAKAZANIH, VKLJUČNO Z GARANCIJO ZA NASLOV, NEKRŠITVE ALI NEOVIRANJE IN NAKAZANE GARANCIJE IN POGOJE, KI SE NANAŠAJO NA PRIMERNOST ZA PRODAJO IN USTREZNOST ZA DOLOČEN NAMEN. Dostop lahko tretja oseba kadar koli prekine, kar je prepuščeno izključno njeni presoji. Imetnik licence bo morda moral skleniti ločene pogodbe s tretjimi osebami za dostop do takšne vsebine ali njeno uporabo. IBM ni pogodbena stranka kakršnim koli ločenim pogodbam in imetnik licence se pod jasnim pogojem te licence strinja, da bo ravnal v skladu z določbami takšnih ločenih pogodb.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Mednarodna licenčna pogodba za programe brez garancije
