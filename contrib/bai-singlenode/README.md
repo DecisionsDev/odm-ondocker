@@ -72,6 +72,7 @@ If the script fails you can set the properties manually in the RES console, see 
   - Open http://localhost:9080/loan-server/ 
     - Click "Validate Loan" button multiple times
     - Go back to the dashboard. The loan events should be displayed in the dashboard
+    >In the loan)server sample, the Trace output option on the Execution Details tab is not compatible with BAI event emission. Do not use this option with rulesets for which you have enabled emission.
 
 ## TODO
 
