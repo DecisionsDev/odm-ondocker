@@ -63,8 +63,8 @@ $ cd <BAI_DIR>/odm && ./odm-bai-start
 
 Configure the ruleset property of the sample to emit events:
 ```Shell
-    - cd <BAI_DIR>/odm
-    - ./set-loan-server-props
+$ cd <BAI_DIR>/odm
+$ ./set-loan-server-props
 ```
 
 If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dserver.rules.res.console/topics/con_rescons_rs_prop_bai.html.
