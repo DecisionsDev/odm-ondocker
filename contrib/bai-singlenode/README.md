@@ -65,19 +65,22 @@ If the script fails you can set the properties manually in the RES console, see 
 # Play with the integration
 ## Scenario
   - Open a web browser
-  - Open the BAI kibana dashboard. http://localhost:5601/ 
+  - Open the BAI kibana dashboard. http://localhost:5601/
     - Login with your credential
     - Go to Dashboards and select the Decision Dashboard
     - The dashboard should be empty
-  - Open http://localhost:9080/loan-server/ 
+  - Open http://localhost:9080/loan-server/
     - Click "Validate Loan" button multiple times
+![Sample web App](./images/loan-server.png "Sample Decision Loan Server")
+
     - Go back to the dashboard. The loan events should be displayed in the dashboard
+![Dashboard for Business Automation](./images/loan-server.png "Business Automation Dashboard")
+
     >In the loan)server sample, the Trace output option on the Execution Details tab is not compatible with BAI event emission. Do not use this option with rulesets for which you have enabled emission.
 
 ## TODO
 
-| Description | Comments | 
+| Description | Comments |
 --- | ---
 | Loop until ODM is ready | |
-| Once loop is done set properties if needed | | 
-
+| Once loop is done set properties if needed | |
