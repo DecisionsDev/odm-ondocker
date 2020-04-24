@@ -74,7 +74,8 @@ If the script fails you can set the properties manually in the RES console, see 
     - Go back to the dashboard. The loan events should be displayed in the dashboard
 
 ## TODO
-| Description | 
----
-| Loop until ODM is ready |
-| Once loop is done set properties if needed |
+
+| Description | Comments | 
+--- | ---
+| Loop until ODM is ready | |
+| Once loop is done set properties if needed | | 
