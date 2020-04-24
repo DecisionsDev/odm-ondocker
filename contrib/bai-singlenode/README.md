@@ -57,7 +57,7 @@ $ ./bai-start --acceptLicense --init
 
 ## Start ODM
 ```Shell
-$ cd <BAI_DIR>/odm && ./odm-bai-start
+$ cd <BAI_DIR>/odm && ./odm-bai-start.sh
 -> Wait a couple of minutes .....
 ```
 
