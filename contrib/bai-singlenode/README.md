@@ -11,9 +11,16 @@ The goal of this integration is to easily run ODM and emit events to BAI for ser
 
 # Preparing the installation
   * Install and deploy BAI for server (formerly known as BAI single node). To do this you need to download the .tgz archive from PPA.
-
-  For full details of installation process see https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_19.0.x/com.ibm.dba.install/bai_sn_topics/tsk_bai_single_node_deploy.html.
+     * Download the archive from Passport Advantage (PPA).
+     * Extract the files.
+```Shell
+$ tar -xzvf <bai_sn_install_dir>/bai-single-node-$VERSION.tgz
+``` 
+>  For full details of installation process see https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_19.0.x/com.ibm.dba.install/bai_sn_topics/tsk_bai_single_node_deploy.html.
   >The BAI installation directory is referred to as BAI_DIR.
+  
+  
+  
   * Git clone this repository, or download an odm-ondocker release. The git clone directory is referred to as ODM_DIR.
 
 ```Shell
