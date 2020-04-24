@@ -38,7 +38,7 @@ $ git clone https://github.com/ODMDev/odm-ondocker
   * Copy the directory <ODM_DIR>/contrib/bai-singlenode/* to <BAI_DIR>/odm
   ```Shell
   Ex:
-  $ cp ~/odm-ondocker/contrib/bai-singlenode/*  bai-for-server-20.0.1/odm
+  $ cp -R ~/odm-ondocker/contrib/bai-singlenode/*  bai-for-server-20.0.1/odm
   ```
 
  You should see this layout
