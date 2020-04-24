@@ -32,6 +32,7 @@ This documentations applies to Operational Decision Management Standard V8.10.x 
 - [ODM Standalone Docker image](docs/README_standalone.md): Explain how to build one docker image that contain all the ODM Components. (For Development purpose)
 - [ODM Standard Docker topology](docs/README_standard.md): Explain how to build and instanciate one docker image per ODM Components. (For Pre-Production purpose)
 - [ODM Clustered Docker topology](docs/README_cluster.md): Explain how to build and instanciate one docker image per ODM Components with possibility to scale the number of container. (For Production purpose)
+- [ODM integration with Business Automation Intelligence](contrib/bai-singlenode/README.md): Explain how to demonstrate ODM with BAI for Server with minimal effort.
 
 # References
 - [DevWorks article : Deploy an IBM Operational Decision Manager topology with Docker Compose ](https://www.ibm.com/developerworks/library/mw-1612-grateau-trs/1612-grateau.html)
