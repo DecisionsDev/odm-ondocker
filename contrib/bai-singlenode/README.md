@@ -69,7 +69,7 @@ If the script fails you can set the properties manually in the RES console, see 
     - Login with your credential
     - Go to Dashboards and select the Decision Dashboard
     - The dashboard should be empty
-  - Open http://localhost:9060/sample-web [TODO] Verify the cpe_url
+  - Open http://localhost:9080/loan-server/ 
     - Click "Validate Loan" button multiple times
     - Go back to the dashboard. The loan events should be displayed in the dashboard
 
@@ -79,3 +79,4 @@ If the script fails you can set the properties manually in the RES console, see 
 --- | ---
 | Loop until ODM is ready | |
 | Once loop is done set properties if needed | | 
+
