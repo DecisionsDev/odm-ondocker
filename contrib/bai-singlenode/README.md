@@ -26,12 +26,13 @@ The goal of this integration is to easily run ODM and emit events to BAI single 
       - cd <BAI_DIR>/odm
       - ./setEmitterProps
       - If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dserver.rules.res.console/topics/con_rescons_rs_prop_bai.html.
+      - Remember you must set the emission properties to true for each ruleset for which you want to emit events.
   8. Play with the integration
       - Open a web browser
-      - Open the BAI kibana dashboard. http://localhost:6105/ [TODO] Verify the url
+      - Open the BAI kibana dashboard. http://localhost:5601/
         - Login with your credential
         - Go to Dashboards and select the Decision Dashboard
         - The dashboard should be empty
       - Open http://localhost:9060/sample-web [TODO] Verify the cpe_url
         - Click "Validate Loan" button multiple times
-      - Go back to the dashboard. The loan events should be displayed in the dashboard
+      - Go back to the Kibana dashboard. The loan events should be displayed in the dashboard
