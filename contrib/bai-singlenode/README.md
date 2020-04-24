@@ -71,12 +71,16 @@ If the script fails you can set the properties manually in the RES console, see 
     - The dashboard should be empty
   - Open http://localhost:9080/loan-server/
     - Click "Validate Loan" button multiple times
+    - Go back to the dashboard. The loan events should be displayed in the dashboard
+
+
 ![Sample web App](./images/loan-server.png "Sample Decision Loan Server")
 
-    - Go back to the dashboard. The loan events should be displayed in the dashboard
-![Dashboard for Business Automation](./images/loan-server.png "Business Automation Dashboard")
 
-    >In the loan)server sample, the Trace output option on the Execution Details tab is not compatible with BAI event emission. Do not use this option with rulesets for which you have enabled emission.
+![Dashboard for Business Automation](./images/decision-dashboard.png "Business Automation Dashboard")
+
+## Known limitations
+ * In the loan server sample, the Trace output option on the Execution Details tab is not compatible with BAI event emission. Do not use this option with rulesets for which you have enabled emission.
 
 ## TODO
 
