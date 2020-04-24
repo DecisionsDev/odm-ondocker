@@ -65,7 +65,7 @@ If the script fails you can set the properties manually in the RES console, see 
 # Play with the integration
 ## Scenario
   - Open a web browser
-  - Open the BAI kibana dashboard. http://localhost:8105/ [TODO] Verify the url
+  - Open the BAI kibana dashboard. http://localhost:5601/ 
     - Login with your credential
     - Go to Dashboards and select the Decision Dashboard
     - The dashboard should be empty
