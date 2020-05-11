@@ -102,6 +102,6 @@ You can check the container status with the following command:
 
 For support and debugging purposes, the Decision Center container is embedding DBDump in the same liberty configuration. So, the authentication access is sharing the same registry. You can access it with a user having the rtsAdministrators role as for example ODMAdmin user.
 
-If http://<host>:<port>/decisioncenter is the URL to access the Decision Center service, you can access DBDump at the following URL : http://<host>:<port>/decisioncenter-dbdump/
+If ```http://<host>:<port>/decisioncenter``` is the URL to access the Decision Center service, you can access DBDump at the following URL : ```http://<host>:<port>/decisioncenter-dbdump```
 
 DBDump usage is following the same usage than explained at https://www.ibm.com/support/pages/decision-center-database-export-utility
