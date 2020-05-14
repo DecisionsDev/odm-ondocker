@@ -126,6 +126,7 @@ COPY --from=builder --chown=1001:0 /config/resources/h2*  /config/resources
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # VOLUME ["/config/dbdata/"]
+USER 1001
 EXPOSE 9060 9453
 
 ENTRYPOINT ["/script/runserver.sh"]
