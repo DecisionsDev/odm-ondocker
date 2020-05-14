@@ -83,6 +83,7 @@ COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resource
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
+USER 1001
 EXPOSE 9080 9443
 
 CMD ["/script/rundr.sh"]
