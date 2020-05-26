@@ -4,26 +4,18 @@ services:
   # ODMVERSION : The Operational Decision Management version
   # ODMDOCKERDIR : The Directory where this
   odm-standalone:
-    image: $REPOSITORY/odm:$ODMVERSION
+    image: ibmcom/odm:8.10
     mem_limit: 4G
     memswap_limit: 4G
-    build:
-      context: ../
-      dockerfile: ./$ODMDOCKERDIR/standalone/Dockerfile
-      args:
-        - ODMDOCKERDIR=$ODMDOCKERDIR
-        - ODMVERSION=$ODMVERSION
-        - ODMDBVERSION=$ODMDBVERSION
-        - FROMLIBERTY=$FROMLIBERTY
-        - FROMLIBERTYBUILD=$FROMLIBERTY
     user: "1001:0"
     environment:
-    - SAMPLE=false
+    - SAMPLE=true
     - LICENSE=accept
     ports:
     - 9080:9060
     - 9453:9453
     # Uncomment this line to persist your data. Note that on OSX you need to share this
     # current directory in the Preference menu -> File Sharing menu.
-    #   volumes:
-    #   - ./h2data:/config/dbdata/
+    volumes:
+    - ./kafka_client_odm.properties:/config/baiemitterconfig/plugin-configuration.properties
+    - ../certs/kafka/truststore.p12:/config/truststore.p12

@@ -42,10 +42,12 @@ services:
     - 1883:1883
     - 9843:9443
     environment:
-    - ENABLE_TLS=true
     - DSC_ROLE_GROUP_MAPPING=true
+#    - KEYSTORE_PASSWORD=changeit
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
+#    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
+#    - ${PWD}/rolegroupmapping/truststore.jks:/config/security/truststore.jks
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -67,10 +69,12 @@ services:
     - 9070:9080
     - 9743:9443
     environment:
-    - ENABLE_TLS=true
     - DR_ROLE_GROUP_MAPPING=true
+#    - KEYSTORE_PASSWORD=changeit
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
+#    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
+#    - ${PWD}/rolegroupmapping/truststore.jks:/config/security/truststore.jks
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -94,10 +98,12 @@ services:
     - 9090:9080
     - 9943:9443
     environment:
-    - ENABLE_TLS=true
     - DSR_ROLE_GROUP_MAPPING=true
+#    - KEYSTORE_PASSWORD=changeit
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
+#    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
+#    - ${PWD}/rolegroupmapping/truststore.jks:/config/security/truststore.jks
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -118,7 +124,12 @@ services:
     - 9643:9453
     environment:
     - JVM_ARGS="-Xmx14000m"
-    - ENABLE_TLS=true
     - DC_ROLE_GROUP_MAPPING=true
+#    - KEYSTORE_PASSWORD=changeit
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/rolegroupmapping/group-security-configurations.xml:/config/auth/group-security-configurations.xml
+    - ${PWD}/rolegroupmapping/ldap-configurations.xml:/config/auth/ldap-configurations.xml
+#    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
+#    - ${PWD}/rolegroupmapping/truststore.jks:/config/security/truststore.jks
+

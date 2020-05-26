@@ -1,4 +1,5 @@
 ARG FROMLIBERTY
+ARG FROMLIBERTYBUILD
 FROM maven:3.5.2-jdk-8-alpine AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
@@ -79,7 +80,7 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS && \
 chmod -R 777 /upload /db810 /db8103 /config/dbdata
 
-FROM ${FROMLIBERTY} AS liberty-builder
+FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 USER root
