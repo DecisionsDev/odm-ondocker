@@ -1,0 +1,30 @@
+<server>
+	<!-- Web application security -->
+	<basicRegistry id="basic" realm="customRealm">
+		<!-- ODM super user -->
+		<user name="mat" password="mat"/>
+		<!-- Users for Decision Server -->
+		<user name="resAdmin" password="resAdmin"/>
+		<user name="resDeployer" password="resDeployer"/>
+		<user name="resMonitor" password="resMonitor"/>
+		<user name="resExecutor" password="resExecutor" />
+		<!-- Groups for Decision Server -->
+		<group name="resAdministrators">
+			<member name="mat" />
+			<member name="resAdmin" />
+		</group>
+		<group name="resDeployers">
+			<member name="resDeployer" />
+		</group>
+		<group name="resMonitors">
+			<member name="resMonitor" />
+		</group>
+		<group name="resExecutors">
+			<member name="mat" />
+			<member name="resAdmin" />
+			<member name="resDeployer" />
+			<member name="resMonitor" />
+			<member name="resExecutor" />
+		</group>
+	</basicRegistry>
+</server>

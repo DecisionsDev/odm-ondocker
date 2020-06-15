@@ -1,0 +1,38 @@
+<server>
+  <variable name="umsITSecuSupport" value="o=defaultWIMFileBasedRealm/it-secu-support"/>
+
+  <!-- Grant access to the group rtsAdministrator -->
+  <variable name="umsRtsAdministrators" value="o=defaultWIMFileBasedRealm/rtsAdministrator"/>
+  <variable name="odm.rtsAdministrators.group1" value="group:${umsRtsAdministrators}"/>
+  <variable name="odm.rtsAdministrators.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group rtsConfigManager -->
+  <variable name="umsRtsConfigManagers" value="o=defaultWIMFileBasedRealm/rtsConfigManager"/>
+  <variable name="odm.rtsConfigManagers.group1" value="group:${umsRtsConfigManagers}"/>
+  <variable name="odm.rtsConfigManagers.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group rtsInstaller -->
+  <variable name="umsRtsInstallers" value="o=defaultWIMFileBasedRealm/rtsInstaller"/>
+  <variable name="odm.rtsInstallers.group1" value="group:${umsRtsInstallers}"/>
+  <variable name="odm.rtsInstallers.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group resAdministrator -->
+  <variable name="umsResAdministrators" value="o=defaultWIMFileBasedRealm/resAdministrators"/>
+  <variable name="odm.resAdministrators.group1" value="group:${umsResAdministrators}"/>
+  <variable name="odm.resAdministrators.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group resDeployers -->
+  <variable name="umsResDeployers" value="o=defaultWIMFileBasedRealm/resDeployers"/>
+  <variable name="odm.resDeployers.group1" value="group:${umsResDeployers}"/>
+  <variable name="odm.resDeployers.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group resMonitors -->
+  <variable name="umsResMonitors" value="o=defaultWIMFileBasedRealm/resMonitors"/>
+  <variable name="odm.resMonitors.group1" value="group:${umsResMonitors}"/>
+  <variable name="odm.resMonitors.group2" value="group:${umsITSecuSupport}"/>
+
+  <!-- Grant access to the group resExecutors -->
+  <variable name="umsResExecutors" value="o=defaultWIMFileBasedRealm/resAdministrators"/>
+  <variable name="odm.resExecutors.group1" value="group:${umsResExecutors}"/>
+  <variable name="odm.resExecutors.group2" value="group:${umsITSecuSupport}"/>
+</server>

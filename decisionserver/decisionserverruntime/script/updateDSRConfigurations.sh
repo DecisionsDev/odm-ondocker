@@ -7,6 +7,15 @@ echo "Enable basic authentication"
 cd $APPS/DecisionService.war/WEB-INF;
 sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
+if [ -s "/config/auth/runtimeWebSecurity.xml" ]
+then
+   echo "/config/auth/runtimeWebSecurity.xml found then replace oidc auth by basic auth on decision server runtime"
+   sed -i 's|webSecurity|'runtimeWebSecurity'|g' /config/server.xml
+   unset OPENID_CONFIG
+   echo "OPENID_CONFIG : $OPENID_CONFIG"
+fi
+
+
 if [ -n "$OPENID_CONFIG" ]
 then
   if [ -s "/config/auth/openIdParameters.properties" ]
