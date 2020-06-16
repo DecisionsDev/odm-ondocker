@@ -3,7 +3,7 @@ INFORMATIONS SUR LA LICENCE
 Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation des Logiciels non garantis (Z125-5589-05) s'appliquent.
 
 Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
@@ -20,7 +20,7 @@ Logiciels Auxiliaires
 Le Détenteur de la Licence est autorisé à installer et utiliser les Logiciels Auxiliaires identifiés ci-dessous. Le Détenteur de la licence est autorisé à installer et à utiliser lesdits Logiciels Auxiliaires, uniquement dans le cadre de son utilisation autorisée du Logiciel Principal au titre du présent Contrat. L'expression "dans le cadre de son utilisation" inclut uniquement les tâches liées directement ou nécessaires à l'utilisation autorisée du Logiciel Principal ou d'un Logiciel Auxiliaire. Les Logiciels Auxiliaires ne peuvent être utilisés à d'autres fins. Un Logiciel Auxiliaire peut inclure des dispositions de licence, et le cas échéant, celles-ci s'appliquent à l'utilisation de ce Logiciel Auxiliaire par le Détenteur de la Licence. En cas de contradiction entre les dispositions, celles du présent Document d'Informations sur la Licence prévalent sur celles du Logiciel Auxiliaire. Le Détenteur de la Licence doit se procurer un nombre suffisant d'Autorisations d'Utilisation du Logiciel, dans son ensemble, pour couvrir l'installation et l'utilisation par le Détenteur de la Licence de tous les Logiciels Auxiliaires, sauf si des Autorisations d'Utilisation distinctes sont fournies dans le présent Document d'Informations sur la licence. Par exemple, si le présent Logiciel a été concédé sous licence par Unités de Valeur par Coeur Processeur ("PVU") et si le Détenteur de la Licence doit installer le Logiciel Principal ou un Logiciel Auxiliaire sur une machine (physique ou virtuelle) avec 100 PVU et un autre Logiciel Auxiliaire sur une deuxième machine avec 100 PVU, Le Détenteur de la Licence devra se procurer 200 Autorisations d'Utilisation de type PVU pour le Logiciel.
 
 Logiciels Auxiliaires :
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Restrictions relatives aux développeurs
 
@@ -36,7 +36,7 @@ Le Détenteur de la Licence reconnaît et accepte qu'IBM puisse utiliser des coo
 
 Composants Source, Échantillons et Exemples
 
-Le Logiciel peut contenir des composants inclus sous la forme de code source ("Composants Source") ainsi que d'autres éléments appelés Échantillons et Exemples. Le Détenteur de la Licence est autorisé à copier et modifier les Composants Source ainsi que les Échantillons et Exemples à des fins internes, sous réserve que ladite utilisation reste dans les limites des droits de licence concédés au titre du présent Contrat et ce, à condition que le Détenteur de la Licence ne modifie ni ne supprime les mentions de droits d'auteur ou les Fichiers Notices contenus dans les Composants Source ou les Échantillons et Exemples. IBM fournit les Composants Source ainsi que les Échantillons et Exemples sans obligation de support. Ces Composants Source, Échantillons et Exemples sont fournis "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÈRE DE VALEUR MARCHANDE ET D'APTITUDE À UNE UTILISATION PARTICULIÈRE.
+Le Logiciel peut contenir des composants inclus sous la forme de code source ("Composants Source") ainsi que d'autres éléments appelés Échantillons et Exemples. Le Détenteur de la Licence est autorisé à copier et modifier les Composants Source ainsi que les Échantillons et Exemples à des fins internes, sous réserve que ladite utilisation reste dans les limites des droits de licence concédés au titre du présent Contrat ; et ce, à condition que le Détenteur de la Licence ne modifie ni ne supprime les mentions de droits d'auteur ou les Fichiers Notices contenus dans les Composants Source ou les Échantillons et Exemples. IBM fournit les Composants Source ainsi que les Échantillons et Exemples sans obligation de support. Ces Composants Source, Échantillons et Exemples sont fournis "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÈRE DE VALEUR MARCHANDE ET D'APTITUDE À UNE UTILISATION PARTICULIÈRE.
 
 Code d'Aperçu Technique
 
@@ -60,9 +60,9 @@ Données et Services Tiers
 
 Le Logiciel peut contenir des liens permettant d'accéder, ou peut être utilisé pour accéder, à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu"). L'accès à ce Contenu est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÈRE DE VALEUR MARCHANDE ET D'APTITUDE À UNE UTILISATION PARTICULIÈRE. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Conditions Internationales d'Utilisation des Logiciels non garantis

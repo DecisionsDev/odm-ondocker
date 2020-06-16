@@ -3,7 +3,7 @@ INFORMAZIONI RELATIVE ALLA LICENZA
 I Programmi elencati di seguito sono concessi in licenza in base alle seguenti clausole e condizioni License Information in aggiunta alle clausole della licenza del Programma precedentemente accettate dal Cliente e IBM. Se il Cliente non ha accettato precedentemente le clausole della licenza in vigore per il Programma, si applica Accordo Internazionale di Licenza per Programmi senza Garanzia (Z125-5589-05).
 
 Nome Programma (Numero Programma):
-IBM Operational Decision Manager for Developers V8.10.3 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
 
 Le seguenti clausole standard si applicano all'utilizzo del Programma da parte del licenziatario.
 
@@ -20,7 +20,7 @@ Programmi di Supporto
 Il licenziatario può installare e utilizzare i Programmi di Supporto indicati di seguito. Il licenziatario è autorizzato a installare e utilizzare tali Programmi di Supporto solo per supportare l'utilizzo da parte del licenziatario stesso del Programma Principale regolamentato dal presente Accordo. La frase "per supportare l'utilizzo da parte del licenziatario stesso" dovrebbe riferirsi solo agli utilizzi necessari o in altro modo direttamente correlati a un utilizzo secondo licenza del Programma Principale o di un altro Programma di Supporto. I Programmi di Supporto non possono essere utilizzati per altri scopi. Un Programma di Supporto può essere accompagnato da clausole di licenza e tali clausole, se esistenti, si applicano all'utilizzo di quel Programma di Supporto da parte del licenziatario. In caso di conflitto, le clausole di questo documento di Informazioni sulla licenza prevarranno sulle clausole del Programma di Supporto. Il licenziatario dovrà ottenere un numero di titolarità per il Programma sufficienti, nel suo insieme, per coprire l'installazione e l'utilizzo, da parte sua, di tutti i Programmi di Supporto, a meno che non vengano fornite titolarità separate nel presente documento di Informazioni sulla licenza. Ad esempio, se questo Programma venisse concesso in licenza sulla base di PVU (Processor Value Unit) e il licenziatario dovesse installare il Programma Principale o un Programma di Supporto su una macchina da 100 PVU (fisica o virtuale) e un altro Programma di Supporto su una seconda macchina da 100 PVU, dovrebbe ottenere titolarità di 200 PVU per il Programma.
 
 Programmi di Supporto:
-IBM WebSphere Liberty 19
+IBM WebSphere Liberty 20
 
 Limitazione dello Sviluppatore
 
@@ -36,7 +36,7 @@ Il licenziatario è a conoscenza e accetta che IBM può utilizzare cookie e tecn
 
 Componenti Sorgente e Materiali di Esempio
 
-Il Programma può includere alcune componenti in formato di codice sorgente ("Componenti Sorgente") e altri materiali identificati come Materiali di esempio. Il licenziatario può copiare e modificare le Componenti Sorgente e i Materiali di Esempio per uso interno solo a condizione che tale uso sia nei limiti dei diritti di licenza previsti in base al presente Accordo, a condizione tuttavia che il licenziatario non possa alterare o eliminare alcuna informazione sul copyright o avviso contenuto nelle Componenti Sorgente e nei Materiali di Esempio. IBM fornisce le Componenti Sorgente e i Materiali di Esempio senza obbligo di supporto e "NELLO STATO IN CUI SI TROVANO," SENZA GARANZIE, ESPRESSE O IMPLICITE, INCLUSE GARANZIE DI TITOLARITA', FUNZIONAMENTO ININTERROTTO O INTERFERENZA E LE GARANZIE E LE CONDIZIONI IMPLICITE DI COMMERCIABILITA' E IDONEITA' PER UNO SCOPO PARTICOLARE.
+Il Programma può includere alcune componenti in formato di codice sorgente ("Componenti Sorgente") e altri materiali identificati come Materiali di esempio. Il licenziatario può copiare e modificare le Componenti Sorgente e i Materiali di Esempio per uso interno solo a condizione che tale uso sia nei limiti dei diritti di licenza previsti in base al presente Accordo; a condizione tuttavia che il licenziatario non possa alterare o eliminare alcuna informazione sul copyright o avviso contenuto nelle Componenti Sorgente e nei Materiali di Esempio. IBM fornisce le Componenti Sorgente e i Materiali di Esempio senza obbligo di supporto e "NELLO STATO IN CUI SI TROVANO," SENZA GARANZIE, ESPRESSE O IMPLICITE, INCLUSE GARANZIE DI TITOLARITÀ', FUNZIONAMENTO ININTERROTTO O INTERFERENZA E LE GARANZIE E LE CONDIZIONI IMPLICITE DI COMMERCIABILITÀ' E IDONEITÀ' PER UNO SCOPO PARTICOLARE.
 
 Technology Preview Code
 
@@ -60,9 +60,9 @@ Dati e Servizi di Terze Parti
 
 Il Programma può contenere collegamenti a o essere in grado di accedere a servizi e dati di terze parti, a database, servizi web, software, o altro contenuto di terze parti (nell'insieme, "contenuto"). L'accesso a questo contenuto è fornito "NELLO STATO IN CUI SI TROVA", SENZA GARANZIE, ESPRESSE O IMPLICITE, INCLUSE GARANZIE DI TITOLARITA', FUNZIONAMENTO ININTERROTTO O INTERFERENZA E LE GARANZIE E LE CONDIZIONI IMPLICITE DI COMMERCIABILITA' E IDONEITA' PER UNO SCOPO PARTICOLARE. L'accesso può essere terminato dalle terze parti pertinenti in qualsiasi momento e a loro unica discrezione. Può venire richiesto al licenziatario di stipulare accordi a parte con le terze parti per accedere o utilizzare tale contenuto. IBM non è una parte di nessuno di tali accordi a parte e come espressa condizione della presente licenza, il licenziatario accetta di rispettare le clausole di tali accordo a parte.
 
-L/N:  L-ASAY-BFHF34
-D/N:  L-ASAY-BFHF34
-P/N:  L-ASAY-BFHF34
+L/N:  L-ASAY-BLSFTQ
+D/N:  L-ASAY-BLSFTQ
+P/N:  L-ASAY-BLSFTQ
 
 
 Accordo Internazionale di Licenza per Programmi senza Garanzia

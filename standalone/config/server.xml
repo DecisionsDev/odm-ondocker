@@ -17,11 +17,11 @@
 	<!-- Loan Server -->
 	<include optional="true" location="./loan-server_application.xml"/>
 
-	<!-- Decision Center -->
-	<include optional="true" location="./decisioncenter_application.xml"/>
-
 	<!-- Decision Server console -->
 	<include optional="true" location="./decisionserverconsole_application.xml"/>
+	
+	<!-- Decision Center -->
+	<include optional="true" location="./decisioncenter_application.xml"/>
 
 	<!-- Decision Server Runtime -->
 	<include optional="true" location="./decisionserverruntime_application.xml"/>
@@ -38,7 +38,7 @@
 	<!-- include logging config -->
         <include optional="true" location="./logging/logging.xml"/>
 
-	
+
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
