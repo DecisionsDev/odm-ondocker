@@ -13,7 +13,7 @@ IBM Operational Decision Manager on Docker.
         <img src="https://a.slack-edge.com/436da/marketing/img/meta/favicon-32.png">
   </a>
 </p>
-
+ 
 
 #  Deploy IBM Operational Decision Manager  on Docker from Dev to Production
 
