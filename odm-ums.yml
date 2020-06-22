@@ -3,23 +3,24 @@ services:
   dbserver:
     image: $REPOSITORY/dbserver:$ODMVERSION
     build:
-        context: ../
-        dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
-        args:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
+      args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
         - FROMPOSTGRES=$FROMPOSTGRES
     user: "999:999"
     ports:
-    - 5432:5432
+      - 5432:5432
     environment:
       - POSTGRES_USER=odmusr
       - POSTGRES_PASSWORD=odmpwd
       - POSTGRES_DB=odmdb
       - PGDATA=/var/lib/postgresql/data
       - SAMPLE=false
-# Uncomment this line to persist your data. Note that on OSX you need to share this
-# current directory in the Preference menu -> File Sharing menu.
+# Uncomment this line to persist your data.
+# Note that on OSX you need to share this current directory
+# in the Preference menu -> File Sharing menu.
 #    volumes:
 #      - ./pgdata:/pgdata
 
@@ -34,25 +35,25 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
-    - dbserver
+      - dbserver
     depends_on:
-    - dbserver
+      - dbserver
     ports:
-    - 9080:9080
-    - 1883:1883
-    - 9843:9443
+      - 9080:9080
+      - 1883:1883
+      - 9843:9443
     environment:
-    - ENABLE_TLS=true
-    - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-    - OPENID_PROVIDER=ums
-    - OPENID_CLIENT_ID=umsclient4odm
-    - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+      - ENABLE_TLS=true
+      - OPENID_CONFIG=true
+      - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+      - OPENID_PROVIDER=ums
+      - OPENID_CLIENT_ID=umsclient4odm
+      - OPENID_CLIENT_SECRET=umssecret4odm
+      - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
-    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
+      - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+      - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+      - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -65,27 +66,27 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
-    - dbserver
-    - odm-decisionserverconsole
+      - dbserver
+      - odm-decisionserverconsole
     depends_on:
-    - dbserver
-    - odm-decisionserverconsole
+      - dbserver
+      - odm-decisionserverconsole
     ports:
-    - 9070:9080
-    - 9743:9443
+      - 9070:9080
+      - 9743:9443
     environment:
-    - ENABLE_TLS=true
-    - DECISIONSERVERCONSOLE_PORT=9443
-    - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-    - OPENID_PROVIDER=ums
-    - OPENID_CLIENT_ID=umsclient4odm
-    - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+      - ENABLE_TLS=true
+      - DECISIONSERVERCONSOLE_PORT=9443
+      - OPENID_CONFIG=true
+      - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+      - OPENID_PROVIDER=ums
+      - OPENID_CLIENT_ID=umsclient4odm
+      - OPENID_CLIENT_SECRET=umssecret4odm
+      - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
-    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
+      - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+      - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+      - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -97,29 +98,28 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+      - dbserver
+      - odm-decisionserverconsole
+    depends_on:
+      - dbserver
+      - odm-decisionserverconsole
+    ports:
+      - 9090:9080
+      - 9943:9443
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
-    links:
-    - dbserver
-    - odm-decisionserverconsole
-    depends_on:
-    - dbserver
-    - odm-decisionserverconsole
-    ports:
-    - 9090:9080
-    - 9943:9443
-    environment:
-    - ENABLE_TLS=true
-    - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-    - OPENID_PROVIDER=ums
-    - OPENID_CLIENT_ID=umsclient4odm
-    - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+      - ENABLE_TLS=true
+      - OPENID_CONFIG=true
+      - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+      - OPENID_PROVIDER=ums
+      - OPENID_CLIENT_ID=umsclient4odm
+      - OPENID_CLIENT_SECRET=umssecret4odm
+      - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
-    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
+      - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+      - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+      - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -132,29 +132,27 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
-    - dbserver
+      - dbserver
     depends_on:
-    - dbserver
-    environment:
-    - JVM_ARGS="-Xmx14000m"
+      - dbserver
     ports:
-    - 9060:9060
-    - 9643:9453
+      - 9060:9060
+      - 9643:9453
     environment:
-    - JVM_ARGS="-Xmx14000m"
-    - ENABLE_TLS=true
-    - DECISIONSERVERCONSOLE_PORT=9443
-    - DECISIONRUNNER_PORT=9443
-    - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
-    - OPENID_PROVIDER=ums
-    - OPENID_CLIENT_ID=umsclient4odm
-    - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+      - JVM_ARGS="-Xmx14000m"
+      - ENABLE_TLS=true
+      - DECISIONSERVERCONSOLE_PORT=9443
+      - DECISIONRUNNER_PORT=9443
+      - OPENID_CONFIG=true
+      - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+      - OPENID_PROVIDER=ums
+      - OPENID_CLIENT_ID=umsclient4odm
+      - OPENID_CLIENT_SECRET=umssecret4odm
+      - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
     volumes:
-    - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
-    - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
-    - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
+      - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
+      - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
+      - ${PWD}/ums/truststore.jks:/config/security/truststore.jks
     deploy:
       resources:
         limits:
