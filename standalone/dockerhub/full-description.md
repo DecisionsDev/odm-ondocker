@@ -1,75 +1,75 @@
+# Official IBM Operational Decision Manager for Developers image
 
 This repository is the home directory of IBM Operational Decision Manager for Developers.
 
-# Quick reference
+## Quick reference
 
 Click the image to view a short video (5 mins) on how to get started with IBM ODM for Developers.
 
 [![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
 
--	**Where to get help**:
+* **Where to get help**:
+
   * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
--	**Where to file issues**:  
-  https://github.com/ODMDev/odm-ondocker/issues
+* **Where to file issues**: [ODM github repository](https://github.com/ODMDev/odm-ondocker/issues)
 
--	**Maintained by**:  IBM ODM Team.
+* **Maintained by**: IBM ODM Team.
 
--	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
+* **Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
  `amd64`, `ppc64le`, `s390x`
--	**Source of this description**:
-        https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
+* **Source of this description**: [markdown source file](https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub)
 
--	**Supported Docker versions**:  
-	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
+* **Supported Docker versions**: [latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
--	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8104-rule-designer)
+* **Rule Designer development environment for ODM developers**:
 
-	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.4/p2
+  Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8104-rule-designer)
 
+  Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a) and add the [odm update site url](https://github.com/ODMDev/ruledesigner/tree/8.10.4/p2).
 
--	**Sample projects**:
+* **Sample projects**:
 
-	Two decision services can be directly used in Decision Center when you set the SAMPLE option to true as described in the Usage section below:
-	- Loan Validation Service
+  Two decision services can be directly used in Decision Center when you set the SAMPLE option to true as described in the Usage section below:
 
-	This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.
+  * Loan Validation Service
 
-	- Shipment Pricing
+      This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.
 
-	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
+  * Shipment Pricing
 
-	You can explore the decision artifacts, tests and simulations of these projects in the Business console.
+      This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
 
-	- Loan-Server Web Application
+      You can explore the decision artifacts, tests and simulations of these projects in the Business console.
 
-	This sample application uses rules from the Loan Validation Service to process loans.
+  * Loan-Server Web Application
 
-	You can use the application to test the Loan Validation Service with parameters entered by you.
+      This sample application uses rules from the Loan Validation Service to process loans.
 
-
--	**Tutorials**:
-
-	- [Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
-
-	- [Creating a decision service in Rule Designer](https://www.ibm.com/support/knowledgecenter/en/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html). For this tutorial, you need some knowledge of Java and the Eclipse workspaces, perspectives, and views. The following instructions supersede the prerequisites given in the tutorial documentation:
-
-	    - Get Rule Designer from the Eclipse marketplace, as indicated at the beginning of this page.
-	    - Download the Miniloan sample project from the https://github.com/ODMDev/odm-for-dev-getting-started GitHub repository by clicking 'Clone or download' and then 'Download ZIP'.
-	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
-	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
-
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
+      You can use the application to test the Loan Validation Service with parameters entered by you.
 
 
-# Overview
+* **Tutorials**:
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
+  * [Getting started with ODM for Developers Docker image](https://github.com/ODMDev/odm-for-dev-getting-started)
+
+  * [Creating a decision service in Rule Designer](https://www.ibm.com/support/knowledgecenter/en/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html). For this tutorial, you need some knowledge of Java and the Eclipse workspaces, perspectives, and views. The following instructions supersede the prerequisites given in the tutorial documentation:
+
+    * Get Rule Designer from the Eclipse marketplace, as indicated at the beginning of this page.
+    * Download the Miniloan sample project from the [odm-for-dev-getting-started GitHub repository](https://github.com/ODMDev/odm-for-dev-getting-started) by clicking 'Clone or download' and then 'Download ZIP'.
+    * Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
+    * For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.
+
+  * [Getting started with decision modeling in the Business console](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
 
 
-  # Usage
+## Overview
+
+The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
+
+
+## Usage
 
 The ODM for Developers docker image contains all of the IBM Operational Decision Manager components, so that you can evaluate the product.
 
@@ -104,11 +104,11 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 | [Sample application]( http://localhost:9060/loan-server) | http://localhost:9060/loan-server  | | |
 
 
-  # License
+## License
 
-  The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+The Docker files and associated scripts are licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-  License information for the products installed within the image is as follows:
-  -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt)
+License information for the products installed within the image is as follows:
+- [IBM Operational Decision Manager for Developers](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt)
 
 **Note**: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.

@@ -1,5 +1,6 @@
+# Standalone Tutorial
 
-This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. 
+This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container.
 
 
 
@@ -12,7 +13,7 @@ This tutorial explains how to build and start a docker image that includes all t
 Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
 ### Install Operational Decision Manager
-To create the Operational Decision Manager docker image, install one of the following components:         
+To create the Operational Decision Manager docker image, install one of the following components:
 * Decision Center, with the WebSphere Liberty Profile option,
 * Decision Server Rules, with the WebSphere Liberty Profile option.
 
@@ -32,34 +33,36 @@ _installation_directory/executionserver/applicationservers/WLP*/DecisionRunner.w
 
 ### Clone the odm-ondocker code
 
-From the ODM installation directory, enter ```git clone https://github.com/ODMDev/odm-ondocker.git```.
+From the ODM installation directory, enter `git clone https://github.com/ODMDev/odm-ondocker.git`.
 
 ### Copy .dockerignore file
 
 Copy the odm-ondocker/resources/.dockerignore file into the ODM installation directory.
 
-```cp odm-ondocker/resources/.dockerignore ./```
+```bash
+cp odm-ondocker/resources/.dockerignore ./
+```
 
 When the copy is complete, the content of your repository should be similar to this:
 
 ![Flow](images/Fig2.png)
 ### Verify that Docker Engine and Docker Compose are running
 
-Open a command prompt and run the following two commands:    	
+Open a command prompt and run the following two commands:
 
-  ```
-    > docker -–version
-    Docker version 1.12.3
-    > docker-compose version
-    docker-compose version 1.8.1
-  ```
+```bash
+$ docker -version
+Docker version 1.12.3
+$ docker-compose version
+docker-compose version 1.8.1
+```
 
 Now you are ready to build and run the docker images.
 
 ## Building and running the docker image
-Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:    	
+Open a command prompt in the directory **installation_directory/odm-ondocker** and run the following command:
 
-```
+```bash
 docker-compose -f odm-standalone.yml up
 ```
 
@@ -87,6 +90,6 @@ You can access the application with these URLs:
 ## Verifying the docker images
 
 You can check the container status with the following command:
-```
+```bash
  docker-compose ps
 ```
