@@ -74,7 +74,6 @@ The image in this repository contains IBM Operational Decision Manager for Devel
 The ODM for Developers docker image contains all of the IBM Operational Decision Manager components, so that you can evaluate the product.
 
 > **Note**: On some operating systems like Mac OS X, you might need to increase the memory allocated to docker to be able to run the image. Allocate at least 4 GigaBytes (GB) to your docker daemon to be able to use all of the features in the docker image.
-
 > On Mac OS X, click Docker > Preferences > Advanced, and set the memory to 4 GB. You must restart docker to apply the change.
 
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
@@ -92,16 +91,16 @@ docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -
 ```
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
 
-When the server is started, use the URL http://localhost:9060 to display a welcome page that lists all the ODM components. You can also directly access the individual components through the following URLs:
+When the server is started, use the URL `http://localhost:9060` to display a welcome page that lists all the ODM components. You can also directly access the individual components through the following URLs:
 
 |Component|URL|Username|Password|
 |:-----:|:-----:|:-----:|:-----:|
-| [Decision Server console](http://localhost:9060/res) | http://localhost:9060/res |odmAdmin|odmAdmin|
-| [Decision Server Runtime](http://localhost:9060/DecisionService) | http://localhost:9060/DecisionService |odmAdmin|odmAdmin|
-| [Decision Center Business console]( http://localhost:9060/decisioncenter) | http://localhost:9060/decisioncenter |odmAdmin|odmAdmin|
-| [Decision Center Enterprise console]( http://localhost:9060/teamserver) | http://localhost:9060/teamserver |odmAdmin|odmAdmin|
-| [Decision Runner]( http://localhost:9060/DecisionRunner) | http://localhost:9060/DecisionRunner |odmAdmin|odmAdmin|
-| [Sample application]( http://localhost:9060/loan-server) | http://localhost:9060/loan-server  | | |
+| [Decision Server console](http://localhost:9060/res) | `http://localhost:9060/res` |odmAdmin|odmAdmin|
+| [Decision Server Runtime](http://localhost:9060/DecisionService) | `http://localhost:9060/DecisionService` |odmAdmin|odmAdmin|
+| [Decision Center Business console]( http://localhost:9060/decisioncenter) | `http://localhost:9060/decisioncenter` |odmAdmin|odmAdmin|
+| [Decision Center Enterprise console]( http://localhost:9060/teamserver) | `http://localhost:9060/teamserver` |odmAdmin|odmAdmin|
+| [Decision Runner]( http://localhost:9060/DecisionRunner) | `http://localhost:9060/DecisionRunner` |odmAdmin|odmAdmin|
+| [Sample application]( http://localhost:9060/loan-server) | `http://localhost:9060/loan-server`  | | |
 
 
 ## License

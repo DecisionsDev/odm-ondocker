@@ -68,11 +68,11 @@ If the script fails you can set the properties manually in the RES console, see 
 ## Play with the integration
 ### Scenario
 - Open a web browser
-- Open the BAI kibana dashboard. http://localhost:5601/
+- Open the BAI kibana dashboard at `http://localhost:5601/`
   - Login with your credential
   - Go to Dashboards and select the Decision Dashboard
   - The dashboard should be empty
-- Open http://localhost:9080/loan-server/
+- Open `http://localhost:9080/loan-server/`
   - Click "Validate Loan" button multiple times
   - Go back to the dashboard. The loan events should be displayed in the dashboard
 

@@ -114,8 +114,8 @@ You can check the container status with the following command:
 
 To check the clustered Decision Server topology, complete the following steps:
 
-* Open the Rule Execution Server console at http://localhost:9080/res with these username and password: resAdmin / resAdmin.
-* Open the REST Test form at http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native.
+* Open the Rule Execution Server console at `http://localhost:9080/res` with these username and password: resAdmin / resAdmin.
+* Open the REST Test form at `http://localhost/DecisionService/run.jsp?path=/miniloan/1.0/miniloan/1.0&trace=false&type=WADL&kind=native`.
 * Click the Execute Request button twice.
 * Click the Server Info tab.
   You should see  execution units.
