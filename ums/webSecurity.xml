@@ -1,4 +1,11 @@
 <server>
+<basicRegistry id="basic" realm="basic">
+<user name="mat" password="mat"/>
+<group name="resExecutors">
+        <member name="mat" />
+</group>
+</basicRegistry>
+
   <variable name="umsITSecuSupport" value="o=defaultWIMFileBasedRealm/it-secu-support"/>
 
   <!-- Grant access to the group rtsAdministrator -->
@@ -35,4 +42,5 @@
   <variable name="umsResExecutors" value="o=defaultWIMFileBasedRealm/resAdministrators"/>
   <variable name="odm.resExecutors.group1" value="group:${umsResExecutors}"/>
   <variable name="odm.resExecutors.group2" value="group:${umsITSecuSupport}"/>
+  <variable name="odm.resExecutors.group3" value="group:basic/resExecutors"/>
 </server>
