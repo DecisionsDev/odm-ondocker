@@ -1,0 +1,159 @@
+version: '3'
+services:
+  dbserver:
+    image: $REPOSITORY/dbserver:$ODMVERSION
+    build:
+        context: ../
+        dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
+        args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMDBVERSION=$ODMDBVERSION
+        - FROMPOSTGRES=$FROMPOSTGRES
+    user: "999:999"
+    ports:
+    - 5432:5432
+    environment:
+      - POSTGRES_USER=odmusr
+      - POSTGRES_PASSWORD=odmpwd
+      - POSTGRES_DB=odmdb
+      - PGDATA=/var/lib/postgresql/data
+      - SAMPLE=false
+# Uncomment this line to persist your data. Note that on OSX you need to share this
+# current directory in the Preference menu -> File Sharing menu.
+#    volumes:
+#      - ./pgdata:/pgdata
+
+  odm-decisionserverconsole:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    ports:
+    - 9080:9080
+    - 1883:1883
+    - 9843:9443
+    environment:
+    - ENABLE_TLS=true
+    - OPENID_CONFIG=true
+    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    volumes:
+    - ${PWD}/oidc-with-basicauthonruntime/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/oidc-with-basicauthonruntime/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/oidc-with-basicauthonruntime/truststore.jks:/config/security/truststore.jks
+
+  odm-decisionrunner:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    - odm-decisionserverconsole
+    depends_on:
+    - dbserver
+    - odm-decisionserverconsole
+    ports:
+    - 9070:9080
+    - 9743:9443
+    environment:
+    - ENABLE_TLS=true
+    - DECISIONSERVERCONSOLE_PORT=9443
+    - OPENID_CONFIG=true
+    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    volumes:
+    - ${PWD}/oidc-with-basicauthonruntime/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/oidc-with-basicauthonruntime/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/oidc-with-basicauthonruntime/truststore.jks:/config/security/truststore.jks
+
+  odm-decisionserverruntime:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    environment:
+      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
+    links:
+    - dbserver
+    - odm-decisionserverconsole
+    depends_on:
+    - dbserver
+    - odm-decisionserverconsole
+    ports:
+    - 9090:9080
+    - 9943:9443
+    environment:
+    - ENABLE_TLS=true
+    - DECISIONSERVERCONSOLE_PORT=9443
+    - OPENID_CONFIG=true
+    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    volumes:
+    - ${PWD}/oidc-with-basicauthonruntime/runtimeWebSecurity.xml:/config/auth/runtimeWebSecurity.xml
+    - ${PWD}/oidc-with-basicauthonruntime/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/oidc-with-basicauthonruntime/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/oidc-with-basicauthonruntime/truststore.jks:/config/security/truststore.jks
+
+  odm-decisioncenter:
+    image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    environment:
+    - JVM_ARGS="-Xmx14000m"
+    ports:
+    - 9060:9060
+    - 9643:9453
+    environment:
+    - JVM_ARGS="-Xmx14000m"
+    - ENABLE_TLS=true
+    - DECISIONSERVERCONSOLE_PORT=9443
+    - DECISIONRUNNER_PORT=9443
+    - OPENID_CONFIG=true
+    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_PROVIDER=ums
+    - OPENID_CLIENT_ID=umsclient4odm
+    - OPENID_CLIENT_SECRET=umssecret4odm
+    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    volumes:
+    - ${PWD}/oidc-with-basicauthonruntime/webSecurity.xml:/config/auth/webSecurity.xml
+    - ${PWD}/oidc-with-basicauthonruntime/keystore.jks:/config/security/keystore.jks
+    - ${PWD}/oidc-with-basicauthonruntime/truststore.jks:/config/security/truststore.jks
