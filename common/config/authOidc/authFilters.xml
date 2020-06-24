@@ -23,6 +23,7 @@
           so that Swagger remains handled by "browserAuthFilter"
    -->
     <authFilter id="browserAuthFilter">
+	<requestHeader id="allowBasicAuth" matchType="notContain" name="Authorization" value="Basic" />
         <!-- RES console -->
         <requestUrl id="res1" matchType="notContain" urlPattern="/res/auth"/>
         <requestUrl id="res2" matchType="notContain" urlPattern="/res/repositoryService"/>
@@ -46,6 +47,7 @@
     </authFilter>
     <!-- Note: The apiAuthFilter should be complementary to the browserAuthFilter -->
     <authFilter id="apiAuthFilter">
+	<requestHeader id="allowBasicAuth" matchType="notContain" name="Authorization" value="Basic" />
         <requestUrl id="apiurl" matchType="contains" urlPattern=
                 "/res/auth|/res/repositoryService|/teamserver/rts-sync|/teamserver/remoting|/teamserver/servlet/SessionServlet|/decisioncenter/rts-sync|/decisioncenter/remoting|/decisioncenter/servlet/SessionServlet|/decisioncenter-api/v1|/DecisionRunner/api|/DecisionRunner/apiauth|/DecisionRunner/serverinfo|/testing/sspService|/testing/serverinfo"/>
     </authFilter>
