@@ -45,7 +45,6 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 ARG DECISIONSERVERCONSOLE_NAME
 LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
 LABEL name="Decision Server Runtime"
 LABEL io.k8s.display-name="Decision Server Runtime"

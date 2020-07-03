@@ -6,7 +6,6 @@ LABEL maintainer="Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_sourc
 LABEL ProductID="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
 LABEL ProductVersion=$ODMVERSION
-MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV APP_NAME StandaloneOdmOnTomcat
