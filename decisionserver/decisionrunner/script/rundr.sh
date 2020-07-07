@@ -1,15 +1,15 @@
 #!/bin/bash
 
-$SCRIPT/updateDRConfigurations.sh
+"$SCRIPT"/updateDRConfigurations.sh
 
-$SCRIPT/configureTlsSecurity.sh
+"$SCRIPT"/configureTlsSecurity.sh
 
-$SCRIPT/configureDatabase.sh
+"$SCRIPT"/configureDatabase.sh
 
-$SCRIPT/updateDatasource.sh
+"$SCRIPT"/updateDatasource.sh
 
-$SCRIPT/configureSwidTag.sh
+"$SCRIPT"/configureSwidTag.sh
 
-$SCRIPT/setTimeZone.sh
+"$SCRIPT"/setTimeZone.sh
 
 /opt/ibm/wlp/bin/server run defaultServer
