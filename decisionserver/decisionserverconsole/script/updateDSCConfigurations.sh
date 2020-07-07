@@ -2,7 +2,7 @@
 
 if [ -n "$DECISION_SERVICE_URL" ]; then
 	echo "Update DECISION_SERVICE_URL to $DECISION_SERVICE_URL in Decision Server Console."
-	sed -i 's|/DecisionService|'$DECISION_SERVICE_URL'|g' $APPS/res.war/WEB-INF/web.xml
+	sed -i "s|/DecisionService|$DECISION_SERVICE_URL|g" "$APPS"/res.war/WEB-INF/web.xml
 fi
 
 if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
@@ -24,12 +24,12 @@ then
   else
     echo "copy template to /config/authOidc/openIdParameters.properties"
     mv /config/authOidc/openIdParametersTemplate.properties /config/authOidc/openIdParameters.properties
-    sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdParameters.properties
-    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdParameters.properties
-    sed -i 's|__OPENID_ALLOWED_DOMAINS__|'$OPENID_ALLOWED_DOMAINS'|g' /config/authOidc/openIdParameters.properties
+    sed -i "s|__OPENID_SERVER_URL__|$OPENID_SERVER_URL|g" /config/authOidc/openIdParameters.properties
+    sed -i "s|__OPENID_PROVIDER__|$OPENID_PROVIDER|g" /config/authOidc/openIdParameters.properties
+    sed -i "s|__OPENID_ALLOWED_DOMAINS__|$OPENID_ALLOWED_DOMAINS|g" /config/authOidc/openIdParameters.properties
   fi
-  sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdParameters.properties
-  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
+  sed -i "s|__OPENID_CLIENT_ID__|$OPENID_CLIENT_ID|g" /config/authOidc/openIdParameters.properties
+  sed -i "s|__OPENID_CLIENT_SECRET__|$OPENID_CLIENT_SECRET|g" /config/authOidc/openIdParameters.properties
 
 if [ -s "/config/auth/openIdWebSecurity.xml" ]
   then
@@ -38,11 +38,11 @@ if [ -s "/config/auth/openIdWebSecurity.xml" ]
   else
     echo "copy template to /config/authOidc/openIdWebSecurity.xml"
     mv /config/authOidc/openIdWebSecurityTemplate.xml /config/authOidc/openIdWebSecurity.xml
-    sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdWebSecurity.xml
-    sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdWebSecurity.xml
+    sed -i "s|__OPENID_SERVER_URL__|$OPENID_SERVER_URL|g" /config/authOidc/openIdWebSecurity.xml
+    sed -i "s|__OPENID_PROVIDER__|$OPENID_PROVIDER|g" /config/authOidc/openIdWebSecurity.xml
   fi
-  sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdWebSecurity.xml
-  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdWebSecurity.xml
+  sed -i "s|__OPENID_CLIENT_ID__|$OPENID_CLIENT_ID|g" /config/authOidc/openIdWebSecurity.xml
+  sed -i "s|__OPENID_CLIENT_SECRET__|$OPENID_CLIENT_SECRET|g" /config/authOidc/openIdWebSecurity.xml
 fi
 
 if [ -s "/config/authOidc/openIdParameters.properties" ]
@@ -63,12 +63,12 @@ then
   OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
   if [ -n "$OPENID_LOGOUT_URL" ]; then
   	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
-	sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+	sed -i "s|type=local|type=openid,logoutUrl=$OPENID_LOGOUT_URL|g" "$APPS"/res.war/WEB-INF/web.xml
   else
-	sed -i 's|type=local|'type=openid'|g' $APPS/res.war/WEB-INF/web.xml
+	sed -i "s|type=local|type=openid|g" "$APPS"/res.war/WEB-INF/web.xml
   fi
-  sed -i 's|OPENID_ALLOWED_DOMAINS|'$OPENID_ALLOWED_DOMAINS'|g' /config/oAuth.xml
-  sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' $APPS/res.war/WEB-INF/web.xml
+  sed -i "s|OPENID_ALLOWED_DOMAINS|$OPENID_ALLOWED_DOMAINS|g" /config/oAuth.xml
+  sed -i $'/<\/web-app>/{e cat /config/oAuth.xml\n}' "$APPS"/res.war/WEB-INF/web.xml
 else
   echo "No provided /config/authOidc/openIdParameters.properties"
   echo "BASIC_AUTH config : remove authFilters from server.xml"
@@ -102,8 +102,8 @@ fi
 if [ -n "$RELEASE_NAME" ]
 then
   echo "Prefix decision server console cookie names with $RELEASE_NAME"
-        sed -i 's|RELEASE_NAME|'$RELEASE_NAME'|g' /config/httpSession.xml
+        sed -i "s|RELEASE_NAME|$RELEASE_NAME|g" /config/httpSession.xml
 else
   echo "Prefix decision server console cookie names with $HOSTNAME"
-        sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
+        sed -i "s|RELEASE_NAME|$HOSTNAME|g" /config/httpSession.xml
 fi
