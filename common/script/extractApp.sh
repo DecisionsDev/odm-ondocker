@@ -23,8 +23,8 @@ fi
 
 echo "Extracting $appFile to $APPS/$targetDir..."
 
-cd $APPS
+cd "$APPS" || exit
 mkdir extract
-unzip -q $appFile -d extract
-rm -rf $appFile
-mv extract $targetDir
+unzip -q "$appFile" -d extract
+rm -rf "$appFile"
+mv extract "$targetDir"

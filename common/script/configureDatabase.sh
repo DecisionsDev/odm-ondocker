@@ -6,7 +6,7 @@ defaultDatabase=$1
 if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
-	wget -nv $DB_DRIVER_URL
+	wget -nv "$DB_DRIVER_URL"
   case $DB_DRIVER_URL in
 		*derby* )
 			 	rm /config/resources/derby*
