@@ -10,6 +10,7 @@ function compareVersion () {
         return 0
     fi
     local IFS=.
+    # shellcheck disable=SC2206
     local i ver1=($1) ver2=($2)
 
     for ((i=${#ver1[@]}; i<${#ver2[@]}; i++))
@@ -73,6 +74,7 @@ function loadFeatures() {
     while IFS='=' read -r key value
     do
       local version=$key
+      # shellcheck disable=SC2206
       local features=(${value//,/ })
 
       # compare the current version with the feature version

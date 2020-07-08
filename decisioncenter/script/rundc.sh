@@ -18,6 +18,8 @@
 
 "$SCRIPT"/setTimeZone.sh
 
+# shellcheck source=decisioncenter/script/setUTF8Locale.sh
+# shellcheck disable=SC1091
 . "$SCRIPT"/setUTF8Locale.sh
 
 /opt/ibm/wlp/bin/server run defaultServer

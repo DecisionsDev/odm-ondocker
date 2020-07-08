@@ -25,6 +25,7 @@ cp -R odm-ondocker install
 cd install/odm-ondocker
 cp resources/.dockerignore ../
 # Optimizing the build to download webprofile package.
+# shellcheck disable=SC1091
 source .env
 
 docker run --user 'root' -v "$PWD"/wlp:/opt/wlp  "$FROMLIBERTY"  /bin/sh -c "mkdir -p /opt/wlp ;\

@@ -8,6 +8,8 @@ HOME_DIR=$(cd "${SDIR}"/.. && pwd)
 CERT_DIR="${HOME_DIR}/certs/kafka/"
 ENV_FILE="${HOME_DIR}/.env"
 
+# shellcheck source=.env
+# shellcheck disable=SC1091
 source "${ENV_FILE}"
 TRUSTOREPWD=$(cat "${CERT_DIR}"/store-password.txt)
 TMPFILE="/tmp/tmp.properties"
