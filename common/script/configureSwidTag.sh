@@ -20,6 +20,7 @@ function removeAllSwidTag () {
         removeSwidTag "/config/apps/res.war/META-INF/swidtag/$swidtagToRemove"
 }
 
+# shellcheck disable=SC2154
 if [ -n "$KubeVersion" ]; then
         if [[ $KubeVersion =~ "icp" ]] || [[ $KubeVersion =~ "ODM on K8s" ]]; then
                 echo "ODM configuration : remove all DBAMC Swidtag"

@@ -32,7 +32,7 @@ function compareVersion () {
             return 2
         fi
     done
-    return -1
+    return 255
 }
 
 # execute the feature script
