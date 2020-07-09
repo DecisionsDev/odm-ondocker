@@ -10,6 +10,8 @@ PACKAGELIST="openidconnectclient-1.0 collectiveMember-1.0 sessionCache-1.0 ldapR
 if [ ! -d $ROOTFEATUREDIR/features ]; then
   mkdir -p $ROOTFEATUREDIR
   echo "Downloading features list : $PACKAGELIST"
-  installUtility download  $PACKAGELIST --location=$ROOTFEATUREDIR;
+  # shellcheck disable=SC2086
+  installUtility download $PACKAGELIST --location=$ROOTFEATUREDIR;
 fi
+# shellcheck disable=SC2086
 installUtility install $PACKAGELIST --from=$ROOTFEATUREDIR

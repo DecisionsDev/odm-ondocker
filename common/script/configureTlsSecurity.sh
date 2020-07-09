@@ -8,7 +8,7 @@ then
 	echo "replace /config/security/keystore.jks by /shared/tls/keystore/jks/server.jks and default keystore password"
 	cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
-	
+
 	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ]
         then
 		echo "change default keystore password with provided Root CA keystore password"
@@ -36,16 +36,16 @@ fi
 echo "Configure the TLS keystore password"
 if [ -n "$KEYSTORE_PASSWORD" ]
 then
-	sed -i 's|__KEYSTORE_PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+	sed -i "s|__KEYSTORE_PASSWORD__|$KEYSTORE_PASSWORD|g" /config/tlsSecurity.xml
 else
-	sed -i 's|__KEYSTORE_PASSWORD__|'$DEFAULT_KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+	sed -i "s|__KEYSTORE_PASSWORD__|$DEFAULT_KEYSTORE_PASSWORD|g" /config/tlsSecurity.xml
 fi
 echo "Configure the TLS truststore password"
 if [ -n "$TRUSTSTORE_PASSWORD" ]
 then
-	sed -i 's|__TRUSTSTORE_PASSWORD__|'$TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+	sed -i "s|__TRUSTSTORE_PASSWORD__|$TRUSTSTORE_PASSWORD|g" /config/tlsSecurity.xml
 else
-	sed -i 's|__TRUSTSTORE_PASSWORD__|'$DEFAULT_TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+	sed -i "s|__TRUSTSTORE_PASSWORD__|$DEFAULT_TRUSTSTORE_PASSWORD|g" /config/tlsSecurity.xml
 fi
 # End - Configuration for the TLS security
 
@@ -63,10 +63,10 @@ then
         mapfile -t trust_list < <(keytool -list -v -keystore /config/security/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
         for trust_file in "${trust_list[@]}"
         do
-        keytool -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/security/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
+        keytool -changealias -alias "${trust_file}" -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/security/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
         ((i=i+1))
         done
-        keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+        keytool -importkeystore -srckeystore /config/security/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass "$DEFAULT_TRUSTSTORE_PASSWORD"
 
 else
         echo "no /config/security/ldap.jks file"

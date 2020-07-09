@@ -2,7 +2,7 @@
 
 applicationXml=$1
 
-if [ ! ${applicationXml} ]; then
+if [ ! "${applicationXml}" ]; then
   applicationXml="/config/application.xml"
 fi
 

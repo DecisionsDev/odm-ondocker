@@ -5,11 +5,12 @@
 # return 1 if $1 is greater than $2
 # return 2 if $1 is less than $2
 function compareVersion () {
-    if [[ $1 == $2 ]]
+    if [[ $1 == "$2" ]]
     then
         return 0
     fi
     local IFS=.
+    # shellcheck disable=SC2206
     local i ver1=($1) ver2=($2)
 
     for ((i=${#ver1[@]}; i<${#ver2[@]}; i++))
@@ -31,7 +32,7 @@ function compareVersion () {
             return 2
         fi
     done
-    return -1
+    return 255
 }
 
 # execute the feature script
@@ -73,10 +74,11 @@ function loadFeatures() {
     while IFS='=' read -r key value
     do
       local version=$key
+      # shellcheck disable=SC2206
       local features=(${value//,/ })
 
       # compare the current version with the feature version
-      compareVersion $currentVersion $version
+      compareVersion "$currentVersion" "$version"
 
       # if the feature version is less or equal to the current version, load the features
       if [ $? -le 1 ]
@@ -86,7 +88,7 @@ function loadFeatures() {
         local feature
         for feature in "${features[@]}"
         do
-          runFeatureScript $featureDir $feature
+          runFeatureScript "$featureDir" "$feature"
         done
       fi
 
@@ -104,5 +106,6 @@ then
 fi
 
 # $1 feature directory
-export odmVersion=$($SCRIPT/extractODMVersion.sh)
-loadFeatures $1 $odmVersion
+odmVersion=$("$SCRIPT"/extractODMVersion.sh)
+export odmVersion
+loadFeatures "$1" "$odmVersion"

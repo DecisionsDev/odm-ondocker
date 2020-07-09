@@ -13,7 +13,8 @@ wait_for_url () {
     fi
 
     i=0
-    until $(curl $auth --connect-timeout 180 --output /dev/null --silent --head --fail $1); do
+    curl_cmd=$(curl "$auth" --connect-timeout 180 --output /dev/null --silent --head --fail "$1")
+    until $curl_cmd; do
         i=$((i+1))
         if [ $i -gt 10 ]; then
             printf "X\n"
@@ -32,7 +33,7 @@ check_for_docker_url () {
     dockerurl=$2
     echo "Test $dockerurl availability in $dockerimg image."
 
-    docker exec -u 0:0 -ti $dockerimg bash -c " \
+    if ! docker exec -u 0:0 -ti "$dockerimg" bash -c " \
         yum install -y iputils
         ping -q -c5 $dockerurl > /dev/null && \
         if [ $? -eq 0 ] ; then \
@@ -40,9 +41,8 @@ check_for_docker_url () {
         else \
             echo \"KO: $dockerimg\" \
             exit 1; \
-        fi"
-    echo $?
-    if [ $? -ne 0 ]; then
+        fi";
+    then 
         ret=1
     fi
 }

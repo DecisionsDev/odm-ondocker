@@ -6,5 +6,5 @@ then
   return 0
 fi
 
-classServerExtFind=$(grep com.ibm.rules.decisioncenter.model.ServerExt $APPS/**/WEB-INF/lib/*teamserver-model*.jar)
-echo ${classServerExtFind##* }
+classServerExtFind=$(grep com.ibm.rules.decisioncenter.model.ServerExt "$APPS"/**/WEB-INF/lib/*teamserver-model*.jar)
+echo "${classServerExtFind##* }"

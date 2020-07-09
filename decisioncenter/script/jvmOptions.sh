@@ -32,15 +32,15 @@ fi
 echo "DC JVM Options : Configure the TLS keystore password"
 if [ -n "$KEYSTORE_PASSWORD" ]
 then
-	sed -i 's|__KEYSTORE_PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/jvm.options
+	sed -i "s|__KEYSTORE_PASSWORD__|$KEYSTORE_PASSWORD|g" /config/jvm.options
 else
-	sed -i 's|__KEYSTORE_PASSWORD__|'$DEFAULT_KEYSTORE_PASSWORD'|g' /config/jvm.options
+	sed -i "s|__KEYSTORE_PASSWORD__|$DEFAULT_KEYSTORE_PASSWORD|g" /config/jvm.options
 fi
 echo "DC JVM Options : Configure the TLS truststore password"
 if [ -n "$TRUSTSTORE_PASSWORD" ]
 then
-	sed -i 's|__TRUSTSTORE_PASSWORD__|'$TRUSTSTORE_PASSWORD'|g' /config/jvm.options
+	sed -i "s|__TRUSTSTORE_PASSWORD__|$TRUSTSTORE_PASSWORD|g" /config/jvm.options
 else
-	sed -i 's|__TRUSTSTORE_PASSWORD__|'$DEFAULT_TRUSTSTORE_PASSWORD'|g' /config/jvm.options
+	sed -i "s|__TRUSTSTORE_PASSWORD__|$DEFAULT_TRUSTSTORE_PASSWORD|g" /config/jvm.options
 fi
 # End - Configuration for the TLS security

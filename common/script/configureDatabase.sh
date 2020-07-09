@@ -6,7 +6,7 @@ defaultDatabase=$1
 if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
-	wget -nv $DB_DRIVER_URL
+	wget -nv "$DB_DRIVER_URL"
   case $DB_DRIVER_URL in
 		*derby* )
 			 	rm /config/resources/derby*
@@ -39,10 +39,12 @@ then
 	echo "Use DB_TYPE: $DB_TYPE"
 	case $DB_TYPE in
 		*derby* )
+				# shellcheck disable=SC2144
 				if [ ! -f /config/resources/derby* ]; then  /script/installDerby.sh; fi
 			  cp /config/datasource-derby.xml /config/datasource.xml
 			  ;;
 		*mysql* )
+				# shellcheck disable=SC2144
 				if [ ! -f /config/resources/mysql* ]; then /script/installMySQL.sh; fi
 			  cp /config/datasource-mysql.xml /config/datasource.xml
 			  ;;

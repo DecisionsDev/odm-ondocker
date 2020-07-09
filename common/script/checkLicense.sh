@@ -28,7 +28,7 @@ elif [ "$LICENSE" = "view" ]; then
     *) licenseFile="${licenseFileBaseName}_en.txt" ;;
   esac
 
-  cat $APPS/$licenseFile
+  cat "$APPS"/$licenseFile
 
   echo -e "Set environment variable LICENSE=accept to indicate acceptance of license terms and conditions. Ex: docker run -e LICENSE=accept ..."
   exit 1

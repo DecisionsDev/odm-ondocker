@@ -1,5 +1,5 @@
 #!/bin/bash
-#http://localhost:9080/res 
+#http://localhost:9080/res
 #http://localhost:9080/loan-server/
 
 RESURL="localhost:9080/res"
@@ -26,27 +26,25 @@ PROPERTY=$2
 
 # build call for main body of curl statement
 MYCALL=${RESURL}${APIVER}${RULESETPATH}${PROPERTY}
-echo "setting" $MYCALL
+echo "setting $MYCALL"
 
-response=$(curl --silent --write-out "\n%{http_code}\n" POST -H "Content-Type: text/plain" -k ${MYCALL} -u odmAdmin:odmAdmin -d "true")
+response=$(curl --silent --write-out "\n%{http_code}\n" POST -H "Content-Type: text/plain" -k "${MYCALL}" -u odmAdmin:odmAdmin -d "true")
 status_code=$(echo "$response" | sed -n '$p')
-html=$(echo "$response" | sed '$d')
 echo "$status_code"
 
 if [ "$status_code" != "200" ]
   then
  #POST was not good: most probably because property already exists, so let's try a DELETE and go again.
  echo "Property may already exist. So, trying to delete and set again..."
- curl -X DELETE ${MYCALL} -u odmAdmin:odmAdmin -d ""
+ curl -X DELETE "${MYCALL}" -u odmAdmin:odmAdmin -d ""
  #try posting again
- a_response=$(curl --silent --write-out "\n%{http_code}\n" POST -H "Content-Type: text/plain" -k $MYCALL -u odmAdmin:odmAdmin -d "true")
+ a_response=$(curl --silent --write-out "\n%{http_code}\n" POST -H "Content-Type: text/plain" -k "${MYCALL}" -u odmAdmin:odmAdmin -d "true")
    a_status_code=$(echo "$a_response" | sed -n '$p')
-   a_html=$(echo "$a_response" | sed '$d')
 # echo "$a_status_code"
  if [ "$a_status_code" != "200" ]
    then
-    # Trying again did not work ! 
-        echo "Unable to set ruleset property " $MYCALL" -- "$a_response" -- please set the emitter properties manually in the res console (https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.dserver.rules.res.console/topics/con_rescons_ruleset_prop.html)"  
+    # Trying again did not work !
+        echo "Unable to set ruleset property $MYCALL -- $a_response -- please set the emitter properties manually in the res console (https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.dserver.rules.res.console/topics/con_rescons_ruleset_prop.html)"
  fi
 fi
 }

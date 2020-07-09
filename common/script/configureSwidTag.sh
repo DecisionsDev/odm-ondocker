@@ -2,24 +2,25 @@
 
 function removeSwidTag () {
         local swidtagToRemove=$1
-        if [ -f $swidtagToRemove ]; then
+        if [ -f "$swidtagToRemove" ]; then
                 echo "remove $swidtagToRemove"
-                rm $swidtagToRemove
+                rm "$swidtagToRemove"
         fi
 }
 
 function removeAllSwidTag () {
 	local swidtagToRemove=$1
-        removeSwidTag /config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove
-        removeSwidTag /config/apps/decisionmodel.war/META-INF/swidtag/$swidtagToRemove
-        removeSwidTag /config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove
-        removeSwidTag /config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag "/config/apps/decisioncenter.war/META-INF/swidtag/$swidtagToRemove"
+        removeSwidTag "/config/apps/decisionmodel.war/META-INF/swidtag/$swidtagToRemove"
+        removeSwidTag "/config/apps/decisioncenter-api.war/META-INF/swidtag/$swidtagToRemove"
+        removeSwidTag "/config/apps/teamserver.war/META-INF/swidtag/$swidtagToRemove"
 
-        removeSwidTag /config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove
-        removeSwidTag /config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove
-        removeSwidTag /config/apps/res.war/META-INF/swidtag/$swidtagToRemove
+        removeSwidTag "/config/apps/DecisionRunner.war/META-INF/swidtag/$swidtagToRemove"
+        removeSwidTag "/config/apps/DecisionService.war/META-INF/swidtag/$swidtagToRemove"
+        removeSwidTag "/config/apps/res.war/META-INF/swidtag/$swidtagToRemove"
 }
 
+# shellcheck disable=SC2154
 if [ -n "$KubeVersion" ]; then
         if [[ $KubeVersion =~ "icp" ]] || [[ $KubeVersion =~ "ODM on K8s" ]]; then
                 echo "ODM configuration : remove all DBAMC Swidtag"
@@ -38,7 +39,7 @@ if [ -n "$KubeVersion" ]; then
 			echo "DEPLOY_FOR_PRODUCTION not set then DBAMC production configuration : remove DBAMC non production Swidtag"
         		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
                 fi
-		
+
                 echo "DBAMC configuration : remove all ODM Swidtag"
 		removeAllSwidTag ibm.com_IBM_ODM_*.swidtag
         fi

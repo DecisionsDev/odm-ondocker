@@ -8,9 +8,9 @@ file=$4
 echo "Change the value of parameter $paramName from $oldValue to $newValue in $file"
 
 # . matches any value
-if [ $oldValue = "." ]
+if [ "$oldValue" = "." ]
 then
   oldValue=".*?"
 fi
 
-sed -i '/<param-name>'$paramName'<\/param-name>/{n;s/'$oldValue'/'$newValue'/;}' $file
+sed -i "/<param-name>$paramName<\/param-name>/{n;s/$oldValue/$newValue/;}" "$file"
