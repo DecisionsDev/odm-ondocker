@@ -87,9 +87,9 @@ fi
 if [ -s "/config/authOidc/openIdParameters.properties" ]
 then
   echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-  sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+  sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml.template\n}' /config/application.xml
   sed -i '/<group name="resAdministrators"/d' /config/application.xml
-  sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+  sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml.template\n}' /config/application.xml
   sed -i '/<group name="rtsDeployers"/d' /config/application.xml
 else
   echo "No provided /config/authOidc/openIdParameters.properties"
@@ -101,9 +101,9 @@ else
   if [ -n "$DR_ROLE_GROUP_MAPPING" ]
   then
     echo "DR_ROLE_GROUP_MAPPING set then replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-    sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+    sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml.template\n}' /config/application.xml
     sed -i '/<group name="resAdministrators"/d' /config/application.xml
-    sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+    sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml.template\n}' /config/application.xml
     sed -i '/<group name="rtsDeployers"/d' /config/application.xml
   fi
 fi

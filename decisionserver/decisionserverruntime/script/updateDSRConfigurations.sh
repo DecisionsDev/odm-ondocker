@@ -5,7 +5,7 @@ echo "Update Decision Server Runtime configurations"
 
 echo "Enable basic authentication"
 cd "$APPS"/DecisionService.war/WEB-INF || exit;
-sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
+sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml.template\n}' web.xml
 
 if [ -n "$OPENID_CONFIG" ]
 then
@@ -40,7 +40,7 @@ fi
 if [ -s "/config/authOidc/openIdParameters.properties" ]
 then
 	echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-  	sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+  	sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml.template\n}' /config/application.xml
   	sed -i '/<group name="resExecutors"/d' /config/application.xml
 else
   echo "No provided /config/authOidc/openIdParameters.properties"
@@ -52,7 +52,7 @@ else
   if [ -n "$DSR_ROLE_GROUP_MAPPING" ]
   then
     echo "DSR_ROLE_GROUP_MAPPING set then replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-    sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+    sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml.template\n}' /config/application.xml
     sed -i '/<group name="resExecutors"/d' /config/application.xml
   fi
 fi

@@ -105,11 +105,11 @@ then
   echo "OAuth config : set OPENID_SERVER_URL to $OPENID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
   sed -i "s|OPENID_SERVER_URL|$OPENID_SERVER_URL|g" /config/new-decisioncenter-configuration.properties
   echo "replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
-  sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
+  sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml.template\n}' /config/application.xml
   sed -i '/<group name="rtsAdministrators"/d' /config/application.xml
-  sed -i $'/<group name="rtsInstallers"/{e cat /config/authOidc/rtsInstallers.xml\n}' /config/application.xml
+  sed -i $'/<group name="rtsInstallers"/{e cat /config/authOidc/rtsInstallers.xml.template\n}' /config/application.xml
   sed -i '/<group name="rtsInstallers"/d' /config/application.xml
-  sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml\n}' /config/application.xml
+  sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml.template\n}' /config/application.xml
   sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
 
 else
@@ -130,11 +130,11 @@ else
   if [ -n "$DC_ROLE_GROUP_MAPPING" ]
   then
     echo "DC_ROLE_GROUP_MAPPING set then replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
-    sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
+    sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml.template\n}' /config/application.xml
     sed -i '/<group name="rtsAdministrators"/d' /config/application.xml
-    sed -i $'/<group name="rtsInstallers"/{e cat /config/authOidc/rtsInstallers.xml\n}' /config/application.xml
+    sed -i $'/<group name="rtsInstallers"/{e cat /config/authOidc/rtsInstallers.xml.template\n}' /config/application.xml
     sed -i '/<group name="rtsInstallers"/d' /config/application.xml
-    sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml\n}' /config/application.xml
+    sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml.template\n}' /config/application.xml
     sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
   fi
 fi

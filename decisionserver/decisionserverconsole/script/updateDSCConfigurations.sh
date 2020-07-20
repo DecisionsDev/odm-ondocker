@@ -48,13 +48,13 @@ fi
 if [ -s "/config/authOidc/openIdParameters.properties" ]
 then
   echo "replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-  sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+  sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml.template\n}' /config/application.xml
   sed -i '/<group name="resAdministrators"/d' /config/application.xml
-  sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+  sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml.template\n}' /config/application.xml
   sed -i '/<group name="resDeployers"/d' /config/application.xml
-  sed -i $'/<group name="resMonitors"/{e cat /config/authOidc/resMonitors.xml\n}' /config/application.xml
+  sed -i $'/<group name="resMonitors"/{e cat /config/authOidc/resMonitors.xml.template\n}' /config/application.xml
   sed -i '/<group name="resMonitors"/d' /config/application.xml
-  sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+  sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml.template\n}' /config/application.xml
   sed -i '/<group name="resExecutors"/d' /config/application.xml
 
   echo "Enable OpenId authentication"
@@ -79,13 +79,13 @@ else
   if [ -n "$DSC_ROLE_GROUP_MAPPING" ]
   then
     echo "DSC_ROLE_GROUP_MAPPING set then replace resAdministators/resConfigManagers/resInstallers/resExecutors group in /config/application.xml"
-    sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml\n}' /config/application.xml
+    sed -i $'/<group name="resAdministrators"/{e cat /config/authOidc/resAdministrators.xml.template\n}' /config/application.xml
     sed -i '/<group name="resAdministrators"/d' /config/application.xml
-    sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml\n}' /config/application.xml
+    sed -i $'/<group name="resDeployers"/{e cat /config/authOidc/resDeployers.xml.template\n}' /config/application.xml
     sed -i '/<group name="resDeployers"/d' /config/application.xml
-    sed -i $'/<group name="resMonitors"/{e cat /config/authOidc/resMonitors.xml\n}' /config/application.xml
+    sed -i $'/<group name="resMonitors"/{e cat /config/authOidc/resMonitors.xml.template\n}' /config/application.xml
     sed -i '/<group name="resMonitors"/d' /config/application.xml
-    sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml\n}' /config/application.xml
+    sed -i $'/<group name="resExecutors"/{e cat /config/authOidc/resExecutors.xml.template\n}' /config/application.xml
     sed -i '/<group name="resExecutors"/d' /config/application.xml
   fi
 fi
