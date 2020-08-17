@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. $SCRIPT/initVariables.sh
+
 $SCRIPT/updateDSCConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh

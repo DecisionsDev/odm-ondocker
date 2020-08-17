@@ -1,5 +1,5 @@
 	<!-- Team server -->
-	<application id="teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
+	<application id="teamserver" context-root="${ODM_CONTEXT_ROOT}/teamserver" location="${server.config.dir}/apps/teamserver.war" name="teamserver">
 		<classloader delegation="parentLast">
                         <privateLibrary>
                                 <fileset dir="/config/customlib" includes="*.jar" scanInterval="5s" id="customlibdir"/>

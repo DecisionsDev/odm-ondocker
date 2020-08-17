@@ -1,5 +1,5 @@
        <!-- Decision Center DBDump -->
-       <application id="decisioncenter-dbdump" location="${server.config.dir}/apps/teamserver-dbdump.war" name="decisioncenter-dbdump">
+       <application id="decisioncenter-dbdump" context-root="${ODM_CONTEXT_ROOT}/decisioncenter-dbdump" location="${server.config.dir}/apps/teamserver-dbdump.war" name="decisioncenter-dbdump">
                 <classloader delegation="parentLast" />
                 <application-bnd>
                         <security-role name="rtsAdministrator">

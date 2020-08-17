@@ -1,6 +1,6 @@
 <server>
 	<!-- Decision Server Console -->
-	<application type="war" autoStart="true" id="res" name="res" location="${server.config.dir}/apps/res.war">
+	<application type="war" context-root="${ODM_CONTEXT_ROOT}/res" autoStart="true" id="res" name="res" location="${server.config.dir}/apps/res.war">
 		<application-bnd>
 			<security-role name="resAdministrators">
 				<group name="resAdministrators" />
@@ -15,7 +15,7 @@
 	</application>
 
 	<!-- Decision Server Runtime -->
-	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
+	<application type="war" context-root="${ODM_CONTEXT_ROOT}/DecisionService" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
 		<application-bnd>
 			<security-role name="resExecutors">
 				<group name="resExecutors" />

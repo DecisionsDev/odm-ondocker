@@ -42,6 +42,10 @@ services:
     - 9080:9080
     - 1883:1883
     - 9843:9443
+    environment:
+    - COM_IBM_ODM_RES_CONSOLE_PAGE_TITLE="test bla bla"
+    - COM_IBM_ODM_RES_CONSOLE_DESCRIPTION="test blo blo"
+
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -72,8 +76,8 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
-    environment:
-      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
+#    environment:
+#      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -99,11 +103,13 @@ services:
     depends_on:
     - dbserver
     environment:
+    - LIBERTY_SERVERS=/opt/ibm/wlp/usr/servers
     - JVM_ARGS="-Xmx14000m"
+    - DC_HTTP_PORT=-1
+    - DC_HTTPS_PORT=9443
+#    - ODM_CONTEXT_ROOT=/dev/odm
     ports:
     - 9060:9060
-    - 9643:9453
-    deploy:
-      resources:
-        limits:
-          cpus: "4"
+    - 9643:9443
+    volumes:
+    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/decisioncenter/config/new-decisioncenter-configuration.properties:/config/new-decisioncenter-configuration.properties

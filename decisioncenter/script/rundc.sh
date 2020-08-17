@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. $SCRIPT/initVariables.sh
+
 $SCRIPT/addDCApplications.sh
 
 $SCRIPT/updateDCConfigurations.sh
