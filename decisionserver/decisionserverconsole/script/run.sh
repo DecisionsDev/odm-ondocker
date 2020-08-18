@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $SCRIPT/initVariables.sh
+. $SCRIPT/initVariables.sh 9080 9443
 
 $SCRIPT/updateDSCConfigurations.sh
 
