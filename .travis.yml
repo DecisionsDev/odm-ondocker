@@ -22,7 +22,7 @@ before_install:
 - docker --version
 - docker-compose version
 script:
-- docker run -e RUN_LOCAL=true -e DISABLE_ERRORS=true -v $PWD:/tmp/lint github/super-linter
+- docker run -e RUN_LOCAL=true -v $PWD:/tmp/lint github/super-linter
 - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml'
   --exclude-dir='licenses' --exclude=index.jsp --exclude=error.jsp --exclude-dir='dockerhub'
   ."
