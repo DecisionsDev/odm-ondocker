@@ -42,6 +42,7 @@ services:
     - 9080:9080
     - 1883:1883
     - 9843:9443
+
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
     build:
@@ -103,7 +104,3 @@ services:
     ports:
     - 9060:9060
     - 9643:9453
-    deploy:
-      resources:
-        limits:
-          cpus: "4"

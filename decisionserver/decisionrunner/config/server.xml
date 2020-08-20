@@ -31,7 +31,7 @@
     <include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
-  	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9080" httpsPort="9443" />
+  	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" />
 
 	<!-- include tls/https config -->
     <include optional="true" location="./tlsSecurity.xml"/>

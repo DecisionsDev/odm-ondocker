@@ -1,8 +1,12 @@
 #!/bin/bash
 
+. $SCRIPT/initVariables.sh 9080 9443
+
 $SCRIPT/updateDRConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
+
+$SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh
 

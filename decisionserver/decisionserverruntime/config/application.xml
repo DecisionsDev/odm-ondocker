@@ -1,15 +1,18 @@
 <server>
 	<!-- Decision Server Runtime -->
-	<application type="war" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
+	<application type="war" context-root="${ODM_CONTEXT_ROOT}/DecisionService" autoStart="true" id="DecisionService" name="DecisionService" location="${server.config.dir}/apps/DecisionService.war">
 		<application-bnd>
 			<security-role name="resExecutors">
 				<group name="resExecutors" />
 			</security-role>
 		</application-bnd>
-		<classloader>
-    	<commonLibrary>
-      	<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
-    	</commonLibrary>
+	<classloader>
+    		<commonLibrary>
+      			<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
+    		</commonLibrary>
+                <commonLibrary>
+                        <folder dir="/config/extension" id="extensiondir"  />
+                </commonLibrary>
   	</classloader>
 	</application>
 

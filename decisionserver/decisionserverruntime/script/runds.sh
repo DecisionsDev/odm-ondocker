@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. $SCRIPT/initVariables.sh 9080 9443
+
 $SCRIPT/updateDSRConfigurations.sh
 
 $SCRIPT/configureTcpipNotification.sh

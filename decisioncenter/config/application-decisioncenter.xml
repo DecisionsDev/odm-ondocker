@@ -1,5 +1,5 @@
 	<!-- Decision Center -->
-	<application id="decisioncenter" location="${server.config.dir}/apps/decisioncenter.war" name="decisioncenter">
+	<application id="decisioncenter" context-root="${ODM_CONTEXT_ROOT}/decisioncenter" location="${server.config.dir}/apps/decisioncenter.war" name="decisioncenter">
 		<classloader delegation="parentLast">
                         <privateLibrary>
                                 <fileset dir="/config/customlib" includes="*.jar" scanInterval="5s" id="customlibdir"/>
