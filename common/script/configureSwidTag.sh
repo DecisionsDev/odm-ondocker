@@ -21,25 +21,35 @@ function removeAllSwidTag () {
 }
 
 if [ -n "$KubeVersion" ]; then
-        if [[ $KubeVersion =~ "icp" ]] || [[ $KubeVersion =~ "ODM on K8s" ]]; then
-                echo "ODM configuration : remove all DBAMC Swidtag"
-		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto-*.swidtag
-		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
-        else
-		if [ -n "$DEPLOY_FOR_PRODUCTION" ]; then
-        		if [[ "$DEPLOY_FOR_PRODUCTION" == "TRUE" ]]; then
-                		echo "DEPLOY_FOR_PRODUCTION is true then DBAMC production configuration : remove DBAMC non production Swidtag"
-                		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
-        		else
-                		echo "DEPLOY_FOR_PRODUCTION is false then DBAMC non production configuration : remove DBAMC production Swidtag"
-                		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto-*.swidtag
-        		fi
-		else
-			echo "DEPLOY_FOR_PRODUCTION not set then DBAMC production configuration : remove DBAMC non production Swidtag"
-        		removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
-                fi
-		
-                echo "DBAMC configuration : remove all ODM Swidtag"
-		removeAllSwidTag ibm.com_IBM_ODM_*.swidtag
-        fi
+  if [[ $KubeVersion =~ "icp" ]] || [[ $KubeVersion =~ "ODM on K8s" ]]; then
+    if [ -n "$DEPLOY_FOR_PRODUCTION" ]; then
+    	if [[ "$DEPLOY_FOR_PRODUCTION" == "TRUE" ]]; then
+        echo "DEPLOY_FOR_PRODUCTION is true then ODM production configuration : remove ODM non production Swidtag"
+        removeAllSwidTag ibm.com_IBM_ODM_Server_for_Non-Production-*.swidtag
+    	else
+        echo "DEPLOY_FOR_PRODUCTION is false then ODM non production configuration : remove ODM production Swidtag"
+        removeAllSwidTag ibm.com_IBM_ODM_Server-*.swidtag
+    	fi
+    else
+      echo "DEPLOY_FOR_PRODUCTION not set then ODM production configuration : remove ODM non production Swidtag"
+    	removeAllSwidTag ibm.com_IBM_ODM_Server_for_Non-Production-*.swidtag
+    fi
+    echo "ODM configuration : remove all DBAMC Swidtag"
+    removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto*.swidtag
+  else
+    if [ -n "$DEPLOY_FOR_PRODUCTION" ]; then
+    	if [[ "$DEPLOY_FOR_PRODUCTION" == "TRUE" ]]; then
+        echo "DEPLOY_FOR_PRODUCTION is true then DBAMC production configuration : remove DBAMC non production Swidtag"
+        removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
+    	else
+        echo "DEPLOY_FOR_PRODUCTION is false then DBAMC non production configuration : remove DBAMC production Swidtag"
+        removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto-*.swidtag
+    	fi
+    else
+      echo "DEPLOY_FOR_PRODUCTION not set then DBAMC production configuration : remove DBAMC non production Swidtag"
+    	removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod-*.swidtag
+    fi
+    echo "DBAMC configuration : remove all ODM Swidtag"
+    removeAllSwidTag ibm.com_IBM_ODM_Server*.swidtag
+  fi
 fi
