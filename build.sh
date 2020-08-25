@@ -26,7 +26,8 @@ cd install/odm-ondocker
 cp resources/.dockerignore ../
 # Optimizing the build to download webprofile package.
 source .env
-
+echo "Using this properties from .env file."
+cat .env 
 docker run --user 'root' -v $PWD/wlp:/opt/wlp  $FROMLIBERTY  /bin/sh -c "mkdir -p /opt/wlp ;\
  installUtility download openidconnectclient-1.0 collectiveMember-1.0 sessionCache-1.0 ldapRegistry-3.0 localConnector-1.0 \
   microProfile-1.0 microProfile-1.2 microProfile-1.3 microProfile-1.4 monitor-1.0 restConnector-1.0 \
