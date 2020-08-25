@@ -41,7 +41,7 @@ LABEL ProductID="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 
-
+RUN echo "POSTGRESQL ID : ${POSTGRESUID}:${POSTGRESUID}"
 COPY --from=builder --chown=${POSTGRESUID}:${POSTGRESUID} /upload /upload
 
 COPY --from=builder --chown=${POSTGRESUID}:${POSTGRESUID} /usr/local/bin/rundb.sh  /usr/local/bin/
