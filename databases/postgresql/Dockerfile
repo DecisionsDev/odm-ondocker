@@ -42,9 +42,9 @@ LABEL io.openshift.tags="odm,dba,dbamc"
 
 
 RUN echo "POSTGRESQL ID : ${POSTGRESUID}:${POSTGRESUID}"
-COPY --from=builder --chown=${POSTGRESUID}:${POSTGRESUID} /upload /upload
+COPY --from=builder --chown=${POSTGRESUID} /upload /upload
 
-COPY --from=builder --chown=${POSTGRESUID}:${POSTGRESUID} /usr/local/bin/rundb.sh  /usr/local/bin/
+COPY --from=builder --chown=${POSTGRESUID} /usr/local/bin/rundb.sh  /usr/local/bin/
 # License
 COPY --from=builder  --chown=${POSTGRESUID}:0 /licenses /licenses
 USER ${POSTGRESUID}
