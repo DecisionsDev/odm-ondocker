@@ -101,10 +101,6 @@ services:
     - dbserver
     environment:
     - JVM_ARGS="-Xmx14000m"
-    - KubeVersion="DBAMC"
-    - DEPLOY_FOR_PRODUCTION="TRUE"
     ports:
     - 9060:9060
     - 9643:9453
-    volumes:
-    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/common/script/configureSwidTag.sh:/script/configureSwidTag.sh
