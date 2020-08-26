@@ -6,7 +6,7 @@ $SCRIPT/updateDRConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
 
-$SCRIPT/enableMetering.sh
+$SCRIPT/enableDRMetering.sh
 
 $SCRIPT/configureDatabase.sh
 
