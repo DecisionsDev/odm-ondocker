@@ -14,7 +14,7 @@ fi
 if [ ! -f $INITFLAG ] ; then
 	if [ "${SAMPLE}" = "true" ] ; then
 		echo "$(date) - Restore ODM sample database"
-        pg_restore -Fc -d odmdb /upload/data-8.10.5.dump
+        pg_restore -Fc -d odmdb /upload/data-8.10.next.dump
         echo "$(date) - Database restored successfully"
 	fi;
 	touch $INITFLAG

@@ -4,8 +4,12 @@ cache:
   directories:
   - "$HOME/.cache"
 sudo: required
-services:
-  - docker
+#services:
+#  - docker
+addons:
+  apt:
+    packages:
+      - docker-ce
 os:
   - linux
 env:
