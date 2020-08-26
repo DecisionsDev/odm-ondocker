@@ -11,11 +11,11 @@ RUN echo "Using this ID to build the Postgresql image : ${POSTGRESUID} ${FROMPOS
 COPY $ODMDOCKERDIR/databases/postgresql/script/rundb.sh /usr/local/bin
 COPY $ODMDOCKERDIR/licenses /licenses
 # Manage License
-
+COPY $ODMDOCKERDIR/databases/postgresql/script/restore.sh /tmp
 RUN rm -rf /licenses/.gitignore || true
-RUN chmod a+x /usr/local/bin/rundb.sh
+RUN chmod a+x /usr/local/bin/rundb.sh /tmp/restore.sh
 
-ADD $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.tar.gz /upload
+COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/
 
 FROM ${FROMPOSTGRES}
 
@@ -45,7 +45,10 @@ RUN echo "POSTGRESQL ID : ${POSTGRESUID}:${POSTGRESUID}"
 COPY --from=builder --chown=${POSTGRESUID} /upload /upload
 
 COPY --from=builder --chown=${POSTGRESUID} /usr/local/bin/rundb.sh  /usr/local/bin/
+COPY --from=builder --chown=${POSTGRESUID} /tmp/restore.sh  /opt/app-root/src/postgresql-start/restore.sh
+COPY --from=builder --chown=${POSTGRESUID} /tmp/restore.sh  /docker-entrypoint-initdb.d/restore.sh
 # License
+COPY --from=builder  --chown=${POSTGRESUID}:0 /licenses /licenses
 COPY --from=builder  --chown=${POSTGRESUID}:0 /licenses /licenses
 USER ${POSTGRESUID}
 ENTRYPOINT ["/usr/local/bin/rundb.sh"]
