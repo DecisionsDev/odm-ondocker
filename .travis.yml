@@ -1,15 +1,12 @@
 language: generic
-
+dist: focal
 cache:
   directories:
   - "$HOME/.cache"
 sudo: required
 #services:
 #  - docker
-addons:
-  apt:
-    packages:
-      - docker-ce
+
 os:
   - linux
 env:
@@ -19,6 +16,12 @@ env:
     secure: MR+cKxC7Big1DcXqbimRt4BLdUyIz7Bh8/gxtjmpJ+vr046jVec1mlnQyRtPAAAlS8W1OZrEuY9YzYl4Gq5s7dieEk/ERUwuQeUTXkg3jzFdC05JbcYWhDlsjLbZuLjVamH2wcXnf3VpJDZ/lqM1Tn2wTGkn5cqT8UdLC3qRDgRyKCT8mnKoIEkw2Bx8YyRZ2FR2xg8UjDXRnNf5El0jJCnK5d82YumOeMYN7PUBRkyypv/obluE1dcZ1gbFdj3ln7s752+Rjmh0R3+GvV67pApv0HlS6ceDETp+ynh2tDFCuLJtevJTfwTW2KOST9Mo53vuBSFpi+Ts8Yb08rYpK6eg4zbje3NSLsLPoKLlHSQSAWsuzrBGk4KlnjdzcUmB+RgDbRFrz3Vo+vhQfG+4qdmX4mNIE9/OP4s6BaLagt6iYmJDlXj7rOky9EbttxXYUJaw5wtkBafYG4bJjVaqJk0KJRrYIArTRTibKcH9U+hrJeLbepHMLtEAP930I7S+TAPQ70Zi0lnJrvAf/Cm7mT9Js+Uah3hijkrOu1NjHe2d8jF8kNmhHbIckhvNwkXqLbd58ypjDBVABGIHHUtmX3mVCrfkCyCFVJqCzPw1ZzlLWZ4qi90WhsAnGL0ySI3sp3vqVdZ3gqFs7QzIMPtLXUOgDji62W3qZopgK2NdWkI=
 before_install:
 - mkdir -p $HOME/.cache
+
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+- sudo apt-get update
+- sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+
 - sudo rm /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
   -s`-`uname -m` > docker-compose
