@@ -41,15 +41,15 @@ LABEL ProductID="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 
-COPY --from=builder --chown=${POSTGRESUID} /upload /upload
+COPY --from=builder --chown=999:999 /upload /upload
 
-COPY --from=builder --chown=${POSTGRESUID} /usr/local/bin/rundb.sh  /usr/local/bin/
-COPY --from=builder --chown=${POSTGRESUID} /tmp/restore.sh  /opt/app-root/src/postgresql-start/restore.sh
-COPY --from=builder --chown=${POSTGRESUID} /tmp/restore.sh  /docker-entrypoint-initdb.d/restore.sh
+COPY --from=builder --chown=999:999 /usr/local/bin/rundb.sh  /usr/local/bin/
+COPY --from=builder --chown=999:999 /tmp/restore.sh  /opt/app-root/src/postgresql-start/restore.sh
+COPY --from=builder --chown=999:999 /tmp/restore.sh  /docker-entrypoint-initdb.d/restore.sh
 # License
-COPY --from=builder  --chown=${POSTGRESUID}:0 /licenses /licenses
-COPY --from=builder  --chown=${POSTGRESUID}:0 /licenses /licenses
-USER ${POSTGRESUID}
+COPY --from=builder  --chown=999:0 /licenses /licenses
+COPY --from=builder  --chown=999:0 /licenses /licenses
+USER 999
 ENTRYPOINT ["/usr/local/bin/rundb.sh"]
 
 CMD ["postgres"]
