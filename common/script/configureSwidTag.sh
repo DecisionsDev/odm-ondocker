@@ -40,7 +40,7 @@ then
     fi
     echo "ODM configuration : remove all DBAMC Swidtag"
     removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto*.swidtag
-    removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto*.swidtag
+    removeAllSwidTag ibm.com_Operational_Decision_Manager_Containers_-_CP4Auto_-_Non_Prod*.swidtag
   else
     if [ -n "$DEPLOY_FOR_PRODUCTION" ]
     then
@@ -58,6 +58,6 @@ then
     fi
     echo "DBAMC configuration : remove all ODM Swidtag"
     removeAllSwidTag ibm.com_IBM_ODM_Server*.swidtag
-    removeAllSwidTag ibm.com_IBM_ODM_Server*.swidtag
+    removeAllSwidTag ibm.com_IBM_ODM_Server_for_Non-Production*.swidtag
   fi
 fi
