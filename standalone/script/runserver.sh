@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+. $SCRIPT/initVariables.sh 9060 9453
+
 $SCRIPT/checkLicense.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then
