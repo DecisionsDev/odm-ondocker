@@ -22,6 +22,7 @@
           password="odmpwd"
           portNumber="5432"
           tcpKeepAlive="true"
+          sslMode="prefer"
           serverName="dbserver" />
   </dataSource>
 
