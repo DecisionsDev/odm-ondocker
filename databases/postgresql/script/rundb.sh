@@ -2,12 +2,9 @@
 
 set -e
 
-if [ ! -f /var/lib/postgresql/initialized.flag ] ; then
-	if [ "$SAMPLE" = "true" ] ; then
-		mkdir -p "$PGDATA"
-		cp -R /upload/* "$PGDATA"
-	fi;
-	touch /var/lib/postgresql/initialized.flag
-fi;
+if type "run-postgresql" >& /dev/null ; then  
+	exec "run-postgresql"  
+else 
+	exec "docker-entrypoint.sh" "$@"
+fi
 
-exec "docker-entrypoint.sh" "$@"
