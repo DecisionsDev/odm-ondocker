@@ -1,11 +1,11 @@
 #!/bin/sh
 
-
+set +u
 
 [ -z ${PGDATA} ] && PGDATA=/var/lib/pgsql/data/userdata
 
 # Depending on the postgresql implementation the directory to write is not the same.
-if [ -d /var/lib/pgsql ]; then 
+if [ -d /var/lib/pgsql ]; then
 	INITFLAG=/var/lib/pgsql/initialized.flag
 else
 	INITFLAG=/var/lib/postgresql/initialized.flag
