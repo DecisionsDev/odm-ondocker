@@ -20,7 +20,8 @@
 		user="odmusr"
 		password="odmpwd"
 		serverName="dbserver" 
-		portNumber="50000"/>
+		portNumber="50000"
+		sslConnection="false"/>
   </dataSource>
 
 </server>
