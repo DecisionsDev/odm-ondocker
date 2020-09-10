@@ -36,13 +36,8 @@ then
 	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
 fi
 
-if [ -n "$DB_SSL_ENABLED" ]
+if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
 then
-       if [ -n "$DB_SSL_PASSWORD" ]
-       then
-       		sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_PASSWORD'"|g' /config/datasource.xml
-       else
-       		sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="changeme"|g' /config/datasource.xml
-       fi
+       sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
 fi
 # End - Update values for the datasource if required
