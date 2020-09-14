@@ -2,6 +2,11 @@
 
 . $SCRIPT/initVariables.sh 9060 9453
 
+if [ -s "$SCRIPT/customStart.sh" ]
+then
+	$SCRIPT/customStart.sh
+fi
+
 $SCRIPT/addDCApplications.sh
 
 $SCRIPT/updateDCConfigurations.sh
@@ -21,5 +26,10 @@ $SCRIPT/jvmOptions.sh
 $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh
+
+if [ -s "$SCRIPT/customEnd.sh" ] 
+then
+	$SCRIPT/customEnd.sh
+fi
 
 /opt/ibm/wlp/bin/server run defaultServer
