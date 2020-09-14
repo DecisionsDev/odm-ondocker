@@ -3,7 +3,7 @@
 		useContextRootAsCookiePath="true"
 		invalidateOnUnauthorizedSessionRequestException="true"
 		invalidationTimeout="8h"/>
-  <ltpa expiration="8h" keysFileName="config/resources/security/ltpa.keys"/>
+  <ltpa expiration="8h" keysFileName="/config/resources/security/ltpa.keys"/>
   <webAppSecurity includePathInWASReqURL="true"
 		ssoCookieName="LTPATOKEN2_DS_RELEASE_NAME" />
 </server>
