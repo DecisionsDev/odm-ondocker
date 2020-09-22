@@ -1,0 +1,31 @@
+<server>
+
+  <!-- decision center datasource -->
+  <dataSource id="dcdatasource"
+			isolationLevel="TRANSACTION_READ_COMMITTED"
+			jndiName="jdbc/mssqlserver"
+			statementCacheSize="150"
+			jdbcDriverRef="sqlserver-driver"
+      			validationTimeout="0"
+			type="javax.sql.ConnectionPoolDataSource">
+		<connectionManager
+			maxPoolSize="25"
+			minPoolSize="10"
+			connectionTimout="10s"
+			agedTimeout="30m" />
+        <properties.microsoft.sqlserver
+          databaseName="odmdb"
+          user="odmusr"
+          password="odmpwd"
+          portNumber="1433"
+          serverName="dbserver" />
+  </dataSource>
+
+  <jdbcDriver id="sqlserver-driver"
+            libraryRef="sqlserver-library"/>
+
+  <library id="sqlserver-library">
+	    <fileset id="sqlserver-fileset"  dir="${server.config.dir}/resources" />
+  </library>
+
+</server>
