@@ -203,6 +203,18 @@ else
         sed -i 's|decisionrunner-port|'9080'|g' $DC_SERVER_CONFIG
 fi
 
+if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+then
+  echo "Update decision server console context root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in $DC_SERVER_CONFIG"
+        sed -i 's|/res|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT/res'|g' $DC_SERVER_CONFIG
+fi
+
+if [ -n "$DECISIONRUNNER_CONTEXT_ROOT" ]
+then
+  echo "Update decision runner context root to $DECISIONRUNNER_CONTEXT_ROOT in $DC_SERVER_CONFIG"
+        sed -i 's|/DecisionRunner|'$DECISIONRUNNER_CONTEXT_ROOT/DecisionRunner'|g' $DC_SERVER_CONFIG
+fi
+
 if [ -s "/config/auth/ldap-configurations.xml" ]
 then
   echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
@@ -219,6 +231,11 @@ then
   sed -i 's|group-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/group-security-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 else
   sed -i 's|group-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
+if [ -n "$ODM_CONTEXT_ROOT" ]
+then
+  sed -i 's|/decisionmodel|'$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
 if [ -n "$RELEASE_NAME" ]
