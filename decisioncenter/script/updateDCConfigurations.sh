@@ -235,7 +235,9 @@ fi
 
 if [ -n "$ODM_CONTEXT_ROOT" ]
 then
-  sed -i 's|/decisionmodel|'$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|http://localhost:9060/decisionmodel|'http://localhost:9060$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|http://localhost:9060/teamserver|'http://localhost:9060$ODM_CONTEXT_ROOT/teamserver'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|http://localhost:9060/decisioncenter-api|'http://localhost:9060$ODM_CONTEXT_ROOT/decisioncenter-api'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
 if [ -n "$RELEASE_NAME" ]
