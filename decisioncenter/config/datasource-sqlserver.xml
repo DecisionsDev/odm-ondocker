@@ -8,7 +8,7 @@
   <jdbcDriver id="MSJDBCDriver" libraryRef="MSJDBCLib"/>
   <dataSource id="dcdatasource"
 			isolationLevel="TRANSACTION_READ_COMMITTED"
-			jndiName="jdbc/mssqlserver"
+			jndiName="jdbc/ilogDataSource"
 			statementCacheSize="150"
 			jdbcDriverRef="MSJDBCDriver"
       validationTimeout="0"

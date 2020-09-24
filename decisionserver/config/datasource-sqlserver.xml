@@ -7,6 +7,11 @@
 
   <jdbcDriver id="MSJDBCDriver" libraryRef="MSJDBCLib"/>
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MSJDBCDriver">
+    <connectionManager
+			maxPoolSize="25"
+			minPoolSize="10"
+			connectionTimout="10s"
+			agedTimeout="30m" />
     <properties.microsoft.sqlserver databaseName="odmdb"
                                     user="odmusr"
                                     password="odmpwd"
