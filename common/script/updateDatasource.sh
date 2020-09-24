@@ -18,6 +18,8 @@ then
 	sed -i 's|1527|'$DB_PORT_NUMBER'|g' /config/datasource.xml
 	# Update port in case of MySQL
 	sed -i 's|3306|'$DB_PORT_NUMBER'|g' /config/datasource.xml
+	# Update port in case of SQL server
+	sed -i 's|1433|'$DB_PORT_NUMBER'|g' /config/datasource.xml
 fi
 
 if [ -n "$DB_NAME" ]
