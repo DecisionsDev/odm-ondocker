@@ -1,12 +1,17 @@
 <server>
 
   <!-- decision center datasource -->
+  <library id="MSJDBCLib">
+    <fileset id="msql-fileset"  dir="${server.config.dir}/resources" includes="mssql*.jar"/>
+  </library>
+
+  <jdbcDriver id="MSJDBCDriver" libraryRef="MSJDBCLib"/>
   <dataSource id="dcdatasource"
 			isolationLevel="TRANSACTION_READ_COMMITTED"
 			jndiName="jdbc/mssqlserver"
 			statementCacheSize="150"
-			jdbcDriverRef="sqlserver-driver"
-      			validationTimeout="0"
+			jdbcDriverRef="MSJDBCDriver"
+      validationTimeout="0"
 			type="javax.sql.ConnectionPoolDataSource">
 		<connectionManager
 			maxPoolSize="25"
@@ -20,12 +25,5 @@
           portNumber="1433"
           serverName="dbserver" />
   </dataSource>
-
-  <jdbcDriver id="sqlserver-driver"
-            libraryRef="sqlserver-library"/>
-
-  <library id="sqlserver-library">
-	    <fileset id="sqlserver-fileset"  dir="${server.config.dir}/resources" />
-  </library>
 
 </server>
