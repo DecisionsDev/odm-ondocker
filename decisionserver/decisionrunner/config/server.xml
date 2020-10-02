@@ -39,4 +39,5 @@
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
+        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/DecisionRunner/openid"/>
 </server>

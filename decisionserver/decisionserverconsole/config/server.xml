@@ -27,6 +27,8 @@
 	<!-- include application declaration -->
 	<include optional="true" location="./application.xml"/>
 
+        
+
 	<!-- include tls/https config -->
     <include optional="true" location="./tlsSecurity.xml"/>
 
@@ -37,5 +39,7 @@
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" />
 
 	<webContainer deferServletLoad="false" />
+
+        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/res/openid"/>
 
 </server>
