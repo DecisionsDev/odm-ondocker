@@ -82,15 +82,12 @@ ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
-
-
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 
-RUN chmod -R 777 /config
 
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
