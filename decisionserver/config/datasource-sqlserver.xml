@@ -16,6 +16,8 @@
                                     user="odmusr"
                                     password="odmpwd"
                                     serverName="dbserver"
+                                    encrypt="false"
+                                    trustServerCertificate="true"
                                     portNumber="1433"/>
   </dataSource>
 
