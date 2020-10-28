@@ -30,12 +30,16 @@ fi
 
 if [ -n "$DB_USER" ]
 then
-	sed -i 's|odmusr|'$DB_USER'|g' /config/datasource.xml
+	# Escape special caracters for sed s command
+	DB_USER_ESCAPED=$(sed -e 's/[&\\/|]/\\&/g' <<<"$DB_USER")
+	sed -i 's|odmusr|'$DB_USER_ESCAPED'|g' /config/datasource.xml
 fi
 
 if [ -n "$DB_PASSWORD" ]
 then
-	sed -i 's|odmpwd|'$DB_PASSWORD'|g' /config/datasource.xml
+	# Escape special caracters for sed s command
+	DB_PASSWORD_ESCAPED=$(sed -e 's/[&\\/|]/\\&/g' <<<"$DB_PASSWORD")
+	sed -i 's|odmpwd|'$DB_PASSWORD_ESCAPED'|g' /config/datasource.xml
 fi
 
 if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
