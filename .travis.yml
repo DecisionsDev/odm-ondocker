@@ -31,7 +31,7 @@ before_install:
 - docker-compose version
 script:
 - sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml'
-  --exclude-dir='licenses' --exclude=index.jsp --exclude=error.jsp --exclude-dir='dockerhub'
+  --exclude-dir='licenses' --exclude=index.jsp --exclude-dir=.git --exclude=error.jsp --exclude-dir='dockerhub'
   ."
 - chmod +x build.sh
 - "./build.sh"
