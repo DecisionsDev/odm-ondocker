@@ -88,6 +88,17 @@ ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
 RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
 
+COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
+
+RUN chmod -R 777 /config
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -103,16 +114,6 @@ ENV APPS /config/apps
 
 # Install require Liberty features
 COPY --from=liberty-builder /opt/ibm/wlp /opt/ibm/wlp
-
-COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
-COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 
 COPY --from=builder --chown=1001:0 /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
