@@ -1,18 +1,24 @@
 #!/bin/bash
 set -e
 
-. $SCRIPT/initVariables.sh 9060 9453
+. ${SCRIPT}/initVariables.sh 9060 9453
 
-$SCRIPT/checkLicense.sh
+${SCRIPT}/checkLicense.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then
-    # if $SAMPLE not exist, or set to true
-	if  [ "$SAMPLE" = "true" ] ; then
-		if [ ! -d "/config/dbdata/" ]; then
-				mkdir /config/dbdata
-		fi;
+	if [ "$SAMPLE" = "true" ] ; then
+		engineJarFile=$(ls ${APPS}/*/WEB-INF/lib/*engine*.jar | sed -n 1p)
+		odmVersion=$(java -cp ${engineJarFile} ilog.rules.tools.IlrVersion | sed -ne "s/Decision Server \(.*\)/\1/p")
+		[ -d /config/dbdata ] || mkdir -p /config/dbdata
 		cp -R /upload/* /config/dbdata/
-	fi;
+		if [[ "${odmVersion}" =~ "8.10.5" ]]; then
+			cd /config/dbdata
+	    java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./resdb" -user res -password res -script /upload/resdb*.zip -options compression zip
+	    java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./rtsdb" -user rts -password rts -script /upload/rtsdb*.zip -options compression zip
+		else
+			cp -R /upload/* /config/dbdata/
+		fi
+	fi
 	touch /config/initializeddb.flag
 fi;
 
