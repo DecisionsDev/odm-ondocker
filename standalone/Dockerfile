@@ -73,7 +73,7 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
-COPY resdb-8.10.5.zip rtsdb-8.10.5.zip /db8105/
+COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
