@@ -15,7 +15,12 @@ COPY ./executionserver/ /executionserver/
 RUN set -ex; \
     if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
       touch /use_loan_server; \
-      sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
+      if [ -f /welcomepage/src/main/webapp/index.html ]; then \
+        sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.html; \
+      fi; \
+      if [ -f /welcomepage/src/main/webapp/index.jsp ]; then \
+        sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
+      fi; \  
     fi
 
 # Welcome page
