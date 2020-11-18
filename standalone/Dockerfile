@@ -87,6 +87,7 @@ ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR ${ODMDOCKERDIR}
 USER root
 ENV SCRIPT /script
+ENV APPS /config/apps
 COPY ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/wlp* /opt/wlppackage/
 RUN set -ex; \
     mkdir ${SCRIPT}; \
