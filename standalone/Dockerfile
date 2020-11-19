@@ -10,21 +10,19 @@ RUN apk add --no-cache ca-certificates
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/common/features ${SCRIPT}/
 COPY ./executionserver/ /executionserver/
+# Welcome page
+COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 # Loan Server Sample presence flag
 RUN set -ex; \
     if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
       touch /use_loan_server; \
-      if [ -f /welcomepage/src/main/webapp/index.html ]; then \
-        sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.html; \
-      fi; \
       if [ -f /welcomepage/src/main/webapp/index.jsp ]; then \
         sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
       fi; \  
     fi
 
-# Welcome page
-COPY $ODMDOCKERDIR/welcomepage /welcomepage
+
 
 RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
