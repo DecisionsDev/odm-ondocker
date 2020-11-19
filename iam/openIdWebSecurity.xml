@@ -8,7 +8,10 @@
 			authorizationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/authorize"
 			tokenEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/token"
 			jwkEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/oidc/endpoint/OP/jwk"
+                        realmIdentifier="customRealm"
+			realmName="customRealm"
 			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP"
+                        groupIdentifier="groups"
 			validationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/introspect"/>
 
 
@@ -20,5 +23,8 @@
                         tokenEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/token"
                         jwkEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/oidc/endpoint/OP/jwk"
 			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP"
+                        realmIdentifier="customRealm"
+                        realmName="customRealm"
+                        groupIdentifier="groups"
 			validationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/introspect"/>
 </server>

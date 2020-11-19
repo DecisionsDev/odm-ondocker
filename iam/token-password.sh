@@ -5,7 +5,7 @@
 token_url=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/identitytoken
 
 client_id=iamclient4odm
-client_secret=iamsecretodm
+client_secret=iamsecret4odm
 username=mathias.mouly@fr.ibm.com
 password=XXXX
 

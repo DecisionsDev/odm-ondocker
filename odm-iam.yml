@@ -114,6 +114,7 @@ services:
     - 9943:9443
     environment:
     - ENABLE_TLS=true
+    - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     - OPENID_CONFIG=true
     - OPENID_SERVER_URL=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com
     - OPENID_PROVIDER=ums
