@@ -7,11 +7,13 @@
 </basicRegistry>
 
   <!-- Assign permissions to individual users in Bluepage -->
-  <variable name="user1" value="user:customRealm/082443706"/>
-  <variable name="odm.resAdministrators.user1" value="${user1}"/>
-  <variable name="odm.resDeployers.user1" value="${user1}"/>
-  <variable name="odm.resExecutors.user1" value="${user1}"/>
-  <variable name="odm.resMonitors.user1" value="${user1}"/>
-  <variable name="odm.rtsAdministrators.user1" value="${user1}"/>
-  <variable name="odm.rtsConfigManagers.user1" value="${user1}"/>
+<!--  <variable name="group1" value="group:customRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
+<!--  <variable name="group1" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
+  <variable name="group1" value="group:customRealm/MatTestBear"/>
+  <variable name="odm.resAdministrators.group1" value="${group1}"/>
+  <variable name="odm.resDeployers.group1" value="${group1}"/>
+  <variable name="odm.resExecutors.group1" value="${group1}"/>
+  <variable name="odm.resMonitors.group1" value="${group1}"/>
+  <variable name="odm.rtsAdministrators.group1" value="${group1}"/>
+  <variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
 </server>
