@@ -93,6 +93,10 @@ then
      OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
      echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
      sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
+
+     OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+     echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
+     sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
      
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
