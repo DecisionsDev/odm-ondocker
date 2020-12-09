@@ -39,6 +39,16 @@ USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
 RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
+
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
+RUN chmod -R 777 /config
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -65,21 +75,12 @@ ENV CONNECTION_POOL_SIZE 20
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
-COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
-COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
-
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
-
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
+
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001

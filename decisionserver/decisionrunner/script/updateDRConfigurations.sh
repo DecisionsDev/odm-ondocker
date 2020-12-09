@@ -6,11 +6,26 @@ if [ ! -f /config/initialized.flag ] ; then
 	cd  /config/apps/DecisionRunner.war/WEB-INF/classes;
 	sed -i 's/protocol=jmx/protocol=tcpip,tcpip.port='1883',tcpip.host='odm-decisionserverconsole',tcpip.retryInterval=1000/' ra.xml;
 	sed -i 's|<config-property-value>FINE</config-property-value>|<config-property-value>WARNING</config-property-value>|g' ra.xml;
-	sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
-    sed -i 's|{pluginClass=ilog.rules.res.decisionservice.plugin.IlrWsdlGeneratorPlugin}|{pluginClass=ilog.rules.res.decisionservice.plugin.IlrWsdlGeneratorPlugin},{pluginClass=Metering}|g' ra.xml;
-    sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-port\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+        if [ -n "$CONNECTION_POOL_TIMEOUT" ]
+        then
+		echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE and XU connection pool timeout to $CONNECTION_POOL_TIMEOUT"
+		sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value>.*|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout='$CONNECTION_POOL_TIMEOUT'</config-property-value>|' ra.xml;
+        else
+		echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE and XU connection pool timeout to default value 3000"
+                sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value>.*|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
+	fi
+        sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+        if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+        then
+		echo "Configure decisionserverconsole-context-root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
+		sed -i 's|decisionserverconsole-context-root|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	else
+		echo "No DECISIONSERVERCONSOLE_CONTEXT_ROOT set"
+                sed -i 's|decisionserverconsole-context-root|''|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	fi
 	touch /config/initialized.flag
 fi;
+
 
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]
 then
@@ -97,6 +112,8 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+  echo "BASIC_AUTH config : remove oidcClientWebapp from server.xml"
+  sed -i '/oidcClientWebapp/d' /config/server.xml
 
   if [ -n "$DR_ROLE_GROUP_MAPPING" ]
   then

@@ -52,7 +52,18 @@ USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
 RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
+COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
 
+COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
+
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
+
+COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
+RUN chmod -R 777 /config
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -80,17 +91,7 @@ ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
-COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
 
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
-
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
-
-COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
@@ -101,6 +102,7 @@ COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
+
 
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses

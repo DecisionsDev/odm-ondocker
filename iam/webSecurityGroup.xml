@@ -1,0 +1,19 @@
+<server>
+<basicRegistry id="basic" realm="basic">
+<user name="mat" password="mat"/>
+<group name="resExecutors">
+        <member name="mat" />
+</group>
+</basicRegistry>
+
+  <!-- Assign permissions to individual users in Bluepage -->
+<!--  <variable name="group1" value="group:customRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
+  <variable name="group1" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+<!--  <variable name="group1" value="group:customRealm/FRLAB~SrvOdmVttAdmin"/> -->
+  <variable name="odm.resAdministrators.group1" value="${group1}"/>
+  <variable name="odm.resDeployers.group1" value="${group1}"/>
+  <variable name="odm.resExecutors.group1" value="${group1}"/>
+  <variable name="odm.resMonitors.group1" value="${group1}"/>
+  <variable name="odm.rtsAdministrators.group1" value="${group1}"/>
+  <variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
+</server>

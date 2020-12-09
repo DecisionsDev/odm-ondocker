@@ -3,9 +3,13 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų kurioms neteikiama garantija tarptautinė licencinė sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
+
+Riboto naudojimo teisė
+
+Licenciatas neturi teisės naudoti Programos komercinėms IT paslaugoms teikti jokiai trečiajai šaliai, taip pat teikti komercinę išteklių nuomą ar laiko paskirstymą, teikti antrinę Programos licenciją ar ją nuomoti, jei tai nėra aiškiai nurodyta taikomose sutartyse, pagal kurias Licenciatas įgyja teisę naudoti Programą.
 
 Draudžiamas naudojimas
 
@@ -17,18 +21,22 @@ Programa pateikiama kaip kelių produktų diegimo atvaizdo dalis. Licenciatas tu
 
 Pagalbinės programos
 
-Licenciatas turi teisę diegti ir naudoti toliau nurodytas Pagalbines programas. Licenciatas įgaliotas diegti ir naudoti Pagalbines programas tik Licenciato Pagrindinės programos naudojimui palaikyti pagal šią Sutartį. Frazė „palaikyti Licenciato naudojimą“ apima tik tą naudojimą, kuris reikalingas ar kitaip tiesiogiai susijęs su Pagrindinės ar kitos Pagalbinės Programos licencijuotu naudojimu. Pagalbinių programų negalima naudoti jokiam kitam tikslui. Pagalbinė programa gali būti pateikiama su licencijos sąlygomis ir šios sąlygos, jei tokių yra, taikomos Pagalbinę programą naudojančiam Licencijos turėtojui. Įvykus ginčui šiame Licencijos informacijos dokumente pateiktos sąlygos pakeičia Pagalbinės programos sąlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisių, kad jų pakaktų visų Licenciato Pagalbinių programų diegimui ir naudojimui padengti, nebent šiuo Licencijos informacijos dokumentu suteikiama papildomų teisių. Pavyzdžiui, jei ši Programa buvo licencijuota PVV (Procesoriaus vertės vienetų) pagrindu, ir Licenciatas turėtų įdiegti Pagrindinę programą arba Pagalbinę programą 100 PVV įrenginyje (fiziniame arba virtualiame), o antrame 100 PVV įrenginyje – kitą Pagalbinę programą, Licenciatui reikės įsigyti 200 Programos PVV teisių.
+Licenciatas įgaliotas diegti ir naudoti toliau nurodytas Pagalbines programas tik Licenciato Pagrindinės programos naudojimui palaikyti pagal šią Sutartį. Frazė „palaikyti Licenciato naudojimą“ apima tik tą naudojimą, kuris reikalingas ar kitaip tiesiogiai susijęs su Pagrindinės ar kitos Pagalbinės Programos licencijuotu naudojimu. Pagalbinių programų negalima naudoti jokiam kitam tikslui. Pagalbinė programa gali būti pateikiama su licencijos sąlygomis ir šios sąlygos, jei tokių yra, taikomos Pagalbinę programą naudojančiam Licencijos turėtojui. Įvykus ginčui šiame Licencijos informacijos dokumente pateiktos sąlygos pakeičia Pagalbinės programos sąlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisių, kad jų pakaktų visų Licenciato Pagalbinių programų diegimui ir naudojimui padengti, nebent šiuo Licencijos informacijos dokumentu suteikiama papildomų teisių. Pavyzdžiui, jei ši Programa buvo licencijuota VPC (Virtualiojo procesoriaus branduolio) pagrindu, ir Licenciatas turėtų įdiegti Pagrindinę programą arba Pagalbinę programą 10 VPC įrenginyje, o antrame 10 VPC įrenginyje – kitą Pagalbinę programą, Licenciatui reikės įsigyti 20 Programos VPC teisių.
 
 Pagalbinės programos:
 IBM WebSphere Liberty 20
 
-Kūrėjo ribojimas
+Kūrėjo apribojimas
 
-Jei Programa pažymėta kaip skirta „Kūrėjams“, Programą kūrėjo kompiuteryje galima diegti tik kaip Licenciato vidinio kūrimo ir įrenginių testavimo paskirties dalį. Kūrėjo kompiuteris – tai fizinė arba kompiuterio virtualioji aplinka, kurioje veikia pagrindinė operacinė sistema ir Programa, prie kurių prieigą turi ir kurias naudoja ne daugiau nei vienas nurodytas kūrėjas. Licenciatas neturi teisės naudoti Programos gamybos darbo krūviams apdoroti, gamybos darbo krūviams modeliuoti arba bet kurio kodo, taikomosios programos arba sistemos pritaikomumui tikrinti. Licenciatas neturi teisės naudoti bet kurios Programos dalies bet kokiais kitais tikslais, jei nėra įsigijęs atitinkamų gamybos teisių.
+Jei Programa pažymėta kaip skirta „Kūrėjams“, Licenciatas gali naudoti Programą tik kaip Licenciato vidinio kūrimo ir įrenginių testavimo paskirties dalį. Kūrėjo kompiuteris – tai fizinė arba kompiuterio virtualioji aplinka, kurioje veikia pagrindinė operacinė sistema ir Programa, prie kurių prieigą turi ir kurias naudoja ne daugiau nei vienas nurodytas kūrėjas.
 
-Kūrimo įrankis
+Atskirai licencijuojamas kodas
 
-Ši Programa skirta padėti kurti programinės įrangos taikomąsias programas ir sistemas. Licenciatas išskirtinai atsako už taikomąsias programas ir sistemas, kurias sukūrė naudodamas šią Programą, ir prisiima visą su tuo susijusią riziką ir atsakomybę.
+Kiekvienas iš komponentų, išvardytų faile NON_IBM_LICENSE, laikomas „Atskirai licencijuojamu kodu“, kuris yra licencijuojamas Licenciatui remiantis taikomomis trečiosios šalies licencijos sutarties (-čių) sąlygomis, kurios išdėstytos kartu su Programa pateikiamame faile (-uose) NON_IBM_LICENSE, o ne šia Sutartimi. Būsimuose Programos naujinimuose arba taisymuose gali būti papildomų Atskirai licencijuotų kodų. Tokie papildomi Atskirai licencijuoti kodai ir susijusios licencijos išvardijami taikomame NON_IBM_LICENSE faile, kuris pateikiamas su Programos naujinimu arba taisymu. 
+
+Pastaba: nepaisant jokių trečiosios šalies sutarties, šios Sutarties ar kitos sutarties, kurią Licenciatas gali sudaryti su IBM, sąlygų, susijusių su Atskirai licencijuojamu kodu:
+(a) IBM pateikia jį Licenciatui NETAIKYDAMA JOKIŲ GARANTIJŲ IR PANEIGIA BET KOKIAS, VISAS APIBRĖŽTAS IR NUMANOMAS GARANTIJAS IR SĄLYGAS, ĮSKAITANT, BET NEAPSIRIBOJANT, NUOSAVYBĖS, NEPAŽEIDŽIAMUMO AR NESIKIŠIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS BEI SĄLYGAS;
+(b) IBM neatsako už jokius tiesioginius, netiesioginius, atsitiktinius, ypatingus, pavyzdinius, baudžiamuosius ar priežastinius nuostolius, įskaitant, bet neapsiribojant, prarastus duomenis, prarastas santaupas ir prarastą pelną.
 
 Privatumas
 
@@ -36,33 +44,15 @@ Licenciatas pripažįsta ir sutinka, kad IBM gali naudoti slapukus ir sekimo tec
 
 Šaltinio komponentai ir pavyzdinė medžiaga
 
-Į Programą gali būti įtraukti keli komponentai išeitinio kodo forma („Šaltinio komponentai“) ir kita medžiaga, apibrėžta kaip Pavyzdinė medžiaga. Licenciatas gali kopijuoti ir modifikuoti Šaltinio komponentus ir Pavyzdinę medžiagą tik naudoti viduje, jei toks naudojimas nepažeidžia šios Sutarties licencijos teisių ir jei Licenciatas nekeičia ar nenaikina jokios Šaltinio komponentuose ir Pavyzdinėje medžiagoje esančios autoriaus teisių informacijos ar pranešimų. IBM pateikia Šaltinio komponentus ir Pavyzdinę medžiagą be palaikymo įsipareigojimo ir TOKIĄ, KOKIA YRA, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS.
-
-Technologijos peržiūros kodas
-
-Technologijos peržiūros kodas (TPK) gali būti įtrauktas į Programą ar jos naujinimus arba platinamas su jais, bet jis nėra Programos dalis. TPK licencijuojamas pagal tas pačias sąlygas kaip ir Programa, išskyrus toliau nurodytus atvejus. TPK bus nustatytas Pastabų faile (arba atnaujintame Pastabų faile prie naujinimų). IBM negali padaryti dalies arba viso TPK visiems pasiekiamo kaip produkto arba produkte. Licenciatui leidžiama naudoti TPK tik vidinio vertinimo tikslais, bet ne naudoti gamybos aplinkoje. Pastabų faile gali būti nurodytas šio vertinimo naudojimo vertinimo laikotarpis. Jei taip, pasibaigus tokiam vertinimo laikotarpiui Licenciatas privalo nebenaudoti TPK ir pašalinti jo įdiegtį. IBM pateikia TPK be palaikymo įsipareigojimo ir TOKĮ, KOKS YRA, NESUTEIKDAMA JOKIOS APIBRĖŽTOS AR NUMANOMOS GARANTIJOS, ĮSKAITANT, BET NEAPSIRIBOJANT, PAVADINIMO, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS.
-
-Licenciatas negali perduoti TPK kitai šaliai, išskyrus kai jis perduodamas kartu su Programa. TPK gali būti išjungimo įrenginys, kuris apsaugos jį nuo naudojimo, pasibaigus vertinimo laikotarpiui. Licenciatas nelies šio išjungimo įrenginio ir nekeis TPK. Licenciatas turi imtis atsargumo priemonių, kad neprarastų duomenų tada, kai TPK nebebus galima naudoti.
-
-Licenciatas perduoda IBM visas visų duomenų, pasiūlymų arba rašytinės medžiagos, 1) susijusios su Technologijos peržiūros kodu ir 2) Licenciato perduodamos IBM, teises, įskaitant nuosavybės teisę ir bet kokias kitas turtines teises (taip pat autoriaus teises). IBM prašymu Licenciatas turi pasirašyti papildomus dokumentus, reikalingus tokioms teisėms suteikti. Be to, kas išdėstyta anksčiau, Licenciatas suteikia IBM neišskirtinę, neatšaukiamą, neribotą, pasaulinę bei apmokėtą teisę ir licenciją a) panaudoti kokiam nors produktui ar paslaugai patentuotiną ar nepatentuotiną idėją, praktinę patirtį, koncepciją, techniką, išradimą, atradimą ar patobulinimą, kuriuos Licenciatas pateikia IBM ir kurie yra susiję su Technologijos peržiūros kodu, b) naudoti, gaminti bei reklamuoti tokius produktus ar paslaugas ir c) suteikti teisę kitiems daryti tai, kas buvo paminėta.
-
-Licenciatas sutinka laikyti toliau pateiktą informaciją „IBM konfidencialia informacija“, neatsižvelgdamas į tai, ar yra konfidencialumą nurodančių apribojimo žymėjimų ir ar ji buvo nurodyta kaip IBM konfidenciali informacija prieš paskelbiant: (a) Technologijos peržiūros kodą, (b) bet kokią informaciją, kurią IBM pateikia Licenciatui, susijusią su Technologijos peržiūros kodu, įskaitant,  bet neapsiribojant, su Technologijos peržiūros kodu susijusią medžiagą, pavyzdžiui, specifikacijas, planus, kryptis, strategijas, gaires, veikimo charakteristikas, palyginimus ir kitus Technologijos peržiūros kodo vertinimus, (c) bet kokią su Licenciato prieiga prie Technologijos peržiūros kodo susijusią informaciją, įskaitant, bet neapsiribojant, slaptažodžius arba kitus prieigos kodus, ir (d) visus duomenis, atsiliepimus, pasiūlymus ir (arba) rašytinę medžiagą, susijusią su Technologijos peržiūros kodu, kurią Licenciatas pateikia IBM. Licenciatas yra įgaliotas naudoti IBM konfidencialią informaciją tam tikslui, kuriam ji  buvo pateikta, arba kitam tikslui IBM naudai. Nepaisant kitų šios Sutarties sąlygų, Licenciatas sutinka neperduoti, neskelbti, neplatinti arba kitaip neaptarinėti su trečiąja šalimi ir jai neatskleisti IBM konfidencialios informacijos (įskaitant, bet neapsiribojant, straipsnius, spaudinius arba kitą rašytinę medžiagą, susijusią su IBM konfidencialia informacija) prieš IBM nurodant, kad tokia IBM konfidenciali informacija yra viešai pasiekiama be įsipareigojimo neatskleisti. Nepaisant to, kas nurodyta anksčiau, Licenciatas neturi konfidencialumo įsipareigojimo, susijusio su Technologijos peržiūros kodu, kuris Pastabų faile nurodytas kaip nekonfidencialus.
-
-Licenciatas sutinka būti toks pat atsargus ir diskretiškas, kad neatskleistų IBM konfidencialios informacijos, kaip kad elgiasi su panašia savo informacija, kurios Licenciatas nenori atskleisti, tačiau jokiu atveju negali būti mažiau atsargus, nei dera. Licenciato įsipareigojimai, susiję su IBM konfidencialia informacija, galios dvejus metus nuo Licenciato IBM konfidencialios informacijos gavimo. Licenciatas sutinka neatskleisti IBM jokios konfidencialia arba Licenciato ar trečiosios šalies nuosavybe laikomos informacijos, išskyrus jei pasirašoma atskira rašytinė konfidenciali sutartis.
-
-Nepaisant konfidencialumo arba kitokios sutarties, kurią Licenciatas gali turėti su IBM dėl konfidencialios informacijos, IBM konfidenciali informacija tvarkoma remiantis anksčiau pateiktose pastraipose esančiais nurodymais.
-
-Eksporto ir importo apribojimai
-
-Šioje Programoje gali būti šifravimų. Vartotojams Programą perduoti arba ją naudoti gali būti draudžiama arba gali būti taikomi eksporto ar importo įstatymai, taisyklės arba strategijos, įskaitant Jungtinių Amerikos Valstijų eksporto valdymo reglamentą. Licenciatas prisiima visą atsakomybę už visų taikomų įstatymų, taisyklių ir strategijų, susijusių su šios Programos eksportu, importu arba naudojimu, įskaitant, bet neapsiribojant, JAV eksporto arba pakartotinio eksporto apribojimus, laikymąsi. Norėdami gauti šios Programos eksporto kategoriją, žr: https://www.ibm.com/products/exporting/.
+Į Programą yra įtrauktų komponentų išeitinio kodo forma („Šaltinio komponentai“) arba kita medžiaga, apibrėžta kaip Pavyzdinė medžiaga, arba abu šie elementai. Licenciatas gali kopijuoti ir modifikuoti Šaltinio komponentus ir Pavyzdinę medžiagą tik naudoti viduje, nepažeisdamas šios Sutarties licencijos teisių; tačiau Licenciatas negali keisti ar naikinti jokios Šaltinio komponentuose ir Pavyzdinėje medžiagoje esančios autoriaus teisių informacijos ar pranešimų. IBM pateikia Šaltinio komponentus ir Pavyzdinę medžiagą be palaikymo įsipareigojimo ir TOKIĄ, KOKIA YRA, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS.
 
 Trečiosios šalies duomenys ir paslaugos
 
-Programoje gali būti saitų arba ją galima naudoti prieigai prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „turinys“). Prieiga prie šio turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Licenciatui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
+Programa suteikia prieigą prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „Trečiosios šalies turinys“). Prieiga prie šio Trečiosios šalies turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Klientui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio Trečiosios šalies turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
-L/N:  L-ASAY-BLSFTQ
-D/N:  L-ASAY-BLSFTQ
-P/N:  L-ASAY-BLSFTQ
+L/N:  L-ASAY-BSNHUT
+D/N:  L-ASAY-BSNHUT
+P/N:  L-ASAY-BSNHUT
 
 
 Programų kurioms neteikiama garantija tarptautinė licencinė sutartis

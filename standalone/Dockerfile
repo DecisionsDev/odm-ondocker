@@ -6,88 +6,108 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 ENV THIRDPARTY /thirdpartylib
-RUN apk add --no-cache ca-certificates wget
+RUN apk add --no-cache ca-certificates
 
-COPY ${ODMDOCKERDIR}/decisioncenter/script $SCRIPT
-COPY ${ODMDOCKERDIR}/standalone/script $SCRIPT
-COPY ${ODMDOCKERDIR}/common/script $SCRIPT
-COPY ${ODMDOCKERDIR}/common/features $SCRIPT
-COPY ./executionserver/ /executionserver
-
-# Loan Server Sample presence flag
-RUN if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then touch /use_loan_server; fi
-
+COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/common/features ${SCRIPT}/
+COPY ./executionserver/ /executionserver/
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
-RUN if [ -f /use_loan_server ]; then \
-    sed -i  's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; fi
+# Loan Server Sample presence flag
+RUN set -ex; \
+    if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
+      touch /use_loan_server; \
+      if [ -f /welcomepage/src/main/webapp/index.jsp ]; then \
+        sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
+      fi; \  
+    fi
 
-RUN cd /welcomepage; mvn clean install  | grep -v 'Download.*'
+
+
+RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
-#COPY ${ODMDOCKERDIR}/decisioncenter/config/application.xml /config/decisionrunner_application.xml
 
-# Begin - Configuration for the database
 # Install the driver for H2 and for PostgreSQL
-RUN wget -nv https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources && \
-    wget -nv https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources
-# End - Configuration for the database
+RUN curl -LOR https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources/ && \
+    curl -LOR https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
 # Sample
 COPY ${ODMDOCKERDIR}/standalone/samples/ /samples/build/
 
-RUN if [ -f /use_loan_server ]; then \
-    sed -i  's/localhost:9090/localhost:9060/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html && \
-    cd /samples/build; mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server  clean package   | grep -v 'Download.*' && \
-    cp /samples/build/loan-server/target/odm-loan-server-1.0.war $APPS && \
-    $SCRIPT/extractApp.sh odm-loan-server-1.0.war; fi
+RUN set -ex; \
+    if [ -f /use_loan_server ]; then \
+      sed -i  's/localhost:9090/localhost:9060/g' /executionserver/samples/rulesetexecution/loan-server/src/main/webapp/index.html; \
+      cd /samples/build; \
+      mvn -Dxom.path=/samples/build/loan-validation-xom -Dloan.validation.server.path=/executionserver/samples/rulesetexecution/loan-server clean package | grep -v 'Download.*'; \
+      cp /samples/build/loan-server/target/odm-loan-server-1.0.war $APPS; \
+      $SCRIPT/extractApp.sh odm-loan-server-1.0.war; \
+    fi
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP*/teamserver.war $APPS
-COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/teamserver.war ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 
-RUN $SCRIPT/extractApp.sh decisioncenter.war && \
-    $SCRIPT/extractApp.sh decisionmodel.war && \
-    $SCRIPT/extractApp.sh teamserver.war && \
-    $SCRIPT/extractApp.sh decisioncenter-api.war && \
-    mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
+RUN set -ex; \
+    ${SCRIPT}/extractApp.sh decisioncenter.war; \
+    ${SCRIPT}/extractApp.sh decisionmodel.war; \
+    ${SCRIPT}/extractApp.sh teamserver.war; \
+    ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
+    mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
 
-RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
+RUN ${SCRIPT}/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties ${APPS}/decisioncenter.war/WEB-INF/web.xml
 
-COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml $APPS/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
+COPY ${ODMDOCKERDIR}/standalone/config/group-security-configurations.xml ${APPS}/decisioncenter.war/WEB-INF/classes/config/group-security-configurations.xml
 
 # Decision Server Console
-COPY ./executionserver/applicationservers/WLP*/res.war $APPS
-RUN $SCRIPT/extractApp.sh res.war
-RUN $SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/WLP*/res.war ${APPS}
+RUN set -ex; \
+    ${SCRIPT}/extractApp.sh res.war; \
+    ${SCRIPT}/changeParamValue.sh autoCreateSchema false true ${APPS}/res.war/WEB-INF/web.xml
 
 # Decision Server Runtime
-COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
-RUN $SCRIPT/extractApp.sh DecisionService.war
+COPY ./executionserver/applicationservers/WLP*/DecisionService.war ${APPS}
+RUN ${SCRIPT}/extractApp.sh DecisionService.war
 
 # Decision Runner
-COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
-RUN $SCRIPT/extractApp.sh DecisionRunner.war
-RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
+COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war ${APPS}
+RUN set -ex; \
+    ${SCRIPT}/extractApp.sh DecisionRunner.war; \
+    ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
+
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
 ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
-RUN $SCRIPT/loadFeatures.sh $SCRIPT && \
-chmod -R 777 $APPS && \
-chmod -R 777 /upload /db810 /db8103 /config/dbdata
+RUN set -ex; \
+    ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
+    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR
-ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV ODMDOCKERDIR ${ODMDOCKERDIR}
 USER root
 ENV SCRIPT /script
-COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+ENV APPS /config/apps
+COPY ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/wlp* /opt/wlppackage/
+RUN set -ex; \
+    mkdir ${SCRIPT}; \
+    mv /opt/wlppackage/*.sh ${SCRIPT}; \
+    $SCRIPT/installFeatures.sh
 
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
+
+RUN chmod -R 777 /config
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -104,16 +124,6 @@ ENV APPS /config/apps
 # Install require Liberty features
 COPY --from=liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 
-COPY --chown=1001:0 $ODMDOCKERDIR/standalone/licenses $APPS/licenses
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
-COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
-COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
-
 COPY --from=builder --chown=1001:0 /config/dbdata /config
 ENV CONNECTION_POOL_SIZE 20
 
@@ -124,8 +134,8 @@ COPY --from=builder --chown=1001:0 /upload/* /upload/
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 /config/resources/h2*  /config/resources
-COPY --from=builder --chown=1001:0 $APPS $APPS
-COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
+COPY --from=builder --chown=1001:0 ${APPS} ${APPS}
+COPY --from=builder --chown=1001:0 ${SCRIPT} ${SCRIPT}
 # VOLUME ["/config/dbdata/"]
 USER 1001
 EXPOSE 9060 9453

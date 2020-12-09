@@ -24,7 +24,7 @@ done
 type jq >& /dev/null || (echo "jq must be installed!" && exit 1)
 
 echo -n "$(date) - ### Upload Loan Validation Service to DC:  "
-curl_result=$(curl --silent --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Loan_Validation_Service_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
+curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Loan_Validation_Service_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
 if [[ $? != 0 ]]; then
   echo "Could not connect to ${DC_URL};  please check that DC is up and running."
   exit 1
@@ -45,7 +45,7 @@ if [[ "${decisionServiceId}" == "null" ]]; then
 fi
 
 echo -n "$(date) - ### Upload Shipment Pricing to DC:  "
-curl_result=$(curl --silent --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Shipment_Pricing_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
+curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Shipment_Pricing_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
 if [[ $? != 0 ]]; then
   echo "Could not connect to ${DC_URL};  please check that DC is up and running."
   exit 1
@@ -61,7 +61,7 @@ if [[ "${status}" == "BAD_REQUEST" ]]; then
 fi
 
 echo -n "$(date) - ### Get elements Ids from DC:  "
-elements=$(curl --silent "${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments" --user ${DC_USER}:${DC_USER})
+elements=$(curl --silent --insecure "${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments" --user ${DC_USER}:${DC_USER})
 if [[ $? != 0 ]]; then
   echo "Could not connect to ${DC_URL};  please check that DC is up and running."
   exit 1
@@ -73,7 +73,7 @@ elementsIds=$(echo ${elements} | jq -r '.elements | map(.id) | .[]')
 for elementId in ${elementsIds[@]}; do
   ruleapp_name=$(echo ${elements} | jq -r ".elements[] | select(.id == \"${elementId}\").name")
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
-  curl_result=$(curl --silent --request POST "${DC_URL}/decisioncenter-api/v1/deployments/${elementId}/deploy" --user ${DC_USER}:${DC_USER})
+  curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/deployments/${elementId}/deploy" --user ${DC_USER}:${DC_USER})
   echo $curl_result | jq -r '.status'
 done
 

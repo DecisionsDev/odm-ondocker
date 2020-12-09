@@ -3,9 +3,13 @@ LICENČNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základě následujících podmínek uvedených v dokumentu Licenční informace, které doplňují licenční podmínky pro Program, s nimiž dříve Zákazník a IBM vyjádřili souhlas Pokud Zákazník dříve nevyjádřil souhlas s účinnými licenčními podmínkami pro Program, uplatní se licence Mezinárodní licenční smlouva pro programy bez záruky (Z125-5589-05).
 
 Název Programu (Číslo Programu):
-IBM Operational Decision Manager for Developers V8.10.4 (5725-B69)
+IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
+
+Omezená uživatelská práva
+
+Držitel licence není oprávněn používat Program k poskytování komerčních služeb IT jakékoli třetí straně, k poskytování komerčního hostování nebo sdílení času nebo k udělování sublicencí, pronájmu nebo pronájmu Programu, pokud to není výslovně stanoveno v příslušných smlouvách, na jejichž základě Držitel licence získává oprávnění k použití Programu.
 
 Zakázané užívání
 
@@ -17,52 +21,38 @@ Program je dodáván jako součást multiproduktového instalačního obrazu. Dr
 
 Podpůrné programy
 
-Držitel licence je oprávněn nainstalovat a užívat Podpůrné programy identifikované níže. Držitel licence je oprávněn nainstalovat a užívat tyto Podpůrné programy pouze k podpoře užívání Základního programu Držitelem licence v souladu s touto Smlouvou. Výraz"k podpoře užívání Držitelem licence" by mělzahrnovat pouze nezbytnéužívání nebo užívání, které jinak přímo souvisí s licencovaným užívánímslužby Základního programu nebo jiného Podpůrného programu. Podpůrné programy nesmí být užívány k žádnému jinému účelu. K Podpůrnému programu mohou být připojeny licenční podmínky. Tyto podmínky (pokud existují) platí pro užívání tohoto Podpůrného programu Držitelem licence. V případě rozporu podmínek mají přednost podmínky uvedené v tomto dokumentu Licenční informace před podmínkami Podpůrného programu. Držitellicence musí získat dostatečný počet oprávnění k Programu jako celku kpokrytí instalace a používání všech Podpůrných programů ze stranyDržitele licence, pokudnejsou poskytnuta samostatná oprávnění v dokumentu Licenční informace. Jestliže byl např. tento Program licencován dle jednotek PVU (Processor Value Unit) a Držitel licence instaloval Základní program nebo Podpůrný program na počítači se 100 jednotkami PVU (fyzickém nebo virtuálním) a jiný Podpůrný program na druhém počítači se 100 jednotkami PVU, měl by Držitel licence získat oprávnění na 200 jednotek PVU k Programu.
+Držitel licence je oprávněn nainstalovat a užívat Podpůrné programy určené níže pouze k podpoře užívání Základního programu Držitelem licence v souladu s touto Smlouvou. Výraz "k podpoře užívání Držitelem licence" by zahrnoval pouze nezbytné užívání nebo užívání, které jinak přímo souvisí s licencovaným užíváním Základního programu nebo jiného Podpůrného programu. Podpůrné programy nesmí být užívány k žádnému jinému účelu. K Podpůrnému programu mohou být připojeny licenční podmínky. Tyto podmínky (pokud existují) platí pro užívání tohoto Podpůrného programu Držitelem licence. V případě rozporu podmínek mají přednost podmínky uvedené v tomto dokumentu Licenční informace před podmínkami Podpůrného programu. Držitel licence musí získat dostatečný počet oprávnění k Programu jako celku k pokrytí instalace a používání všech Podpůrných programů ze strany Držitele licence, pokud nejsou v tomto dokumentu Licenční informace poskytnuta samostatná oprávnění. Jestliže byl např. tento Program licencován dle VPC (Virtuální jádro procesoru) a Držitel licence měl instalovat Základní program nebo Podpůrný program na počítači s 10 VPC a jiný Podpůrný program na druhém počítači s 10 VPC, musel by Držitel licence získat oprávnění na 20 VPC k Programu.
 
 Podpůrné programy:
 IBM WebSphere Liberty 20
 
-Omezení užívání - pouze pro vývojáře
+Omezení pro vývojáře
 
-Je-li v názvu Programu uveden výraz "For Developers", může být Program implementován pouze v rámci interního vývoje a testování jednotek Držitele licence na stroji vývojáře. Stroj vývojáře je prostředí fyzického nebo virtuálního počítače, na němž je provozován primární operační systém a Program, přičemž jak tento operační systém, tak i Program jsou dostupné a užívané nejvýše jedním určeným vývojářem. Držitel licence není oprávněn užívat Program ke zpracování pracovních zátěží, simulování produktivních pracovních zátěží nebo k testování rozšiřitelnosti jakéhokoliv kódu, aplikace nebo systému. Držitel licence není oprávněn užívat žádnou část Programu k jakýmkoliv jiným účelům, ledaže by si zakoupil příslušná oprávnění k užívání v produktivním prostředí.
+Je-li v názvu Programu uveden výraz "Pro vývojáře", může Držitel licence používat Program pouze v rámci interního vývoje a testování jednotek Držitele licence na stroji vývojáře. Stroj Vývojáře je prostředí fyzického nebo virtuálního počítače, na němž je spuštěn primární operační systém a Program, přičemž jak tento operační systém, tak i Program jsou dostupné nejvýše jednomu určenému Vývojáři a užívané nejvýše jedním určeným Vývojářem.
 
-Development Tool
+Samostatně licencovaný kód
 
-Účelem tohoto Programu je podpora vývoje softwarových aplikací a systémů. Držitel licence nese výhradní odpovědnost za aplikace a systémy, které Držitel licence vyvine s využitím tohoto Programu; Držitel licence přebírá veškerá rizika a odpovědnost za takové aplikace a systémy.
+Všechny komponenty uvedené v souboru NON_IBM_LICENSE jsou považovány za "Samostatně licencovaný kód" licencovaný Držiteli licence na základě podmínek platné licenční smlouvy (platných licenčních smluv) třetích osob, jak je uvedeno v souboru (souborech) NON_IBM_LICENSE připojeném (připojených) k Programu, nikoli ve Smlouvě. Budoucí aktualizace Programu nebo sady oprav k Programu mohou obsahovat dodatečný Samostatně licencovaný kód. Takový dodatečný Samostatně licencovaný kód a související licence jsou uvedeny v použitelném souboru "NON_IBM_LICENSE" připojeném k aktualizaci Programu nebo sadě oprav k Programu. 
+
+Poznámka: Bez ohledu na odlišné podmínky licenční smlouvy třetích osob, této Smlouvy nebo jakékoliv jiné smlouvy, kterou má Držitel licence s IBM případně uzavřenou, související se Samostatně licencovaným kódem:
+(a) IBM jej poskytuje Držiteli licence BEZ ZÁRUK JAKÉHOKOLIV DRUHU A ODMÍTÁ JAKÉKOLI A VŠECHNY VÝSLOVNĚ VYJÁDŘENÉ NEBO Z OKOLNOSTÍ VYPLÝVAJÍCÍ ZÁRUKY A PODMÍNKY, VČETNĚ - NIKOLI VŠAK POUZE - ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ PRÁV TŘETÍCH OSOB A Z OKOLNOSTÍ VYPLÝVAJÍCÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL;
+(b) IBM nenese odpovědnost za žádné přímé, nepřímé, nahodilé, zvláštní, exemplární škody ani za sankční náhrady škody nebo za následné škody včetně - nikoliv však pouze - ztráty dat, ztráty úspor a ušlého zisku.
 
 Soukromí
 
 Držitel licence potvrzuje a souhlasí s tím, že IBM může užívat soubory cookie a sledovací technologie pro účely shromažďování osobních informací v rámci sběru statistických dat týkajících se užívání produktů a informací, jejichž cílem je napomáhat zlepšení uživatelských zkušeností, a/nebo pro účely přizpůsobení interakce s uživateli, a to v souladu s Online Prohlášením IBM o ochraně soukromí, které je dostupné na adrese http://www.ibm.com/privacy/.
 
-Komponenty ve vzorovém kódu a Vzorové materiály
+Komponenty ve zdrojovém kódu a Vzorové materiály
 
-Program může obsahovat některé komponenty ve formě zdrojového kódu ("Komponenty ve zdrojovém kódu") a jiné materiály označované jako Vzorové materiály. Držitel licence smí kopírovat a upravovat Zdrojové komponenty a Vzorové materiály pouze pro interní účely, za předpokladu, že toto užívání splňuje limity licenčních práv podle této Smlouvy, avšak pod podmínkou, že Držitel licence nesmí pozměňovat ani odstraňovat žádné informace o autorských právech nebo výhrady autorských práv, které jsou uvedeny ve Zdrojových komponentách či Vzorových materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL.
+Program obsahuje komponenty ve formě zdrojového kódu ("Komponenty ve zdrojovém kódu"), nebo jiné materiály označované jako Vzorové materiály, nebo obojí. Držitel licence smí kopírovat a upravovat Zdrojové komponenty a Vzorové materiály pouze pro interní účely, za předpokladu, že toto užívání splňuje limity licenčních práv podle této Smlouvy, avšak pod podmínkou, že Držitel licence nesmí pozměňovat ani odstraňovat žádné informace o autorských právech nebo právech k duševnímu vlastnictví, které jsou uvedeny ve Zdrojových komponentách či Vzorových materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH OSOB A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL.
 
-Kód TPC (Technology Preview Code)
+Data a služby třetí osoby
 
-Kód TPC může být zahrnut do Programu nebo distribuován s Programem nebo jeho aktualizacemi, není však jeho součástí. Kód TPC je licencován na základě stejných podmínek jako Program, s níže uvedenými výjimkami. Kód TPC bude identifikován jako takový v souboru "Notices" (nebo v některém aktualizovaném souboru Notices připojeném k aktualizacím). IBM nemusí některý nebo všechny kódy TPC učinit obecně dostupnými jako produkt. Držitel licence je oprávněn používat kód TPC výhradně pro účely interního hodnocení, a nikoli pro užívání v produktivním prostředí. Soubor Notices File může toto užívání pro účely hodnocení omezovat na určité období hodnocení. Je-li tomu tak, pak je Držitel licence povinen přestat po uplynutí období hodnocení Kód TPC používat a je povinen jej odinstalovat. IBM poskytuje kód TPC bez závazku podpory a "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ VČETNĚ - NIKOLIV VŠAK POUZE - ZÁRUKY VLASTNICKÉHO NÁROKU, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL.
+Program poskytuje přístup k datovým službám třetích osob, databázím, webovým službám, softwaru nebo jinému obsahu od třetích osob (společně dále "Obsah třetích osob"). Přístup k Obsahu třetí osoby je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLI DRUHU, VÝSLOVNĚ VYJÁDŘENÉ NEBO KONKLUDENTNÍ, VČETNĚ ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ NEBO NEZASAHOVÁNÍ DO PRÁV TŘETÍCH OSOB A KONKLUDENTNÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu k Obsahu třetích osob nebo užívání tohoto Obsahu třetích osob. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
 
-Držitel licence nesmí převádět kód TPC na jinou stranu, s výjimkou případů, kdy se jedná o převod současně s Programem. Kód TPC může obsahovat blokovací zařízení, které zabrání jeho používání po uplynutí období hodnocení. Držitel licence nesmí toto blokovací zařízení porušit, ani jiným způsobem změnit kód TPC. Držitel licence je povinen učinit taková opatření, aby se vyhnul ztrátě dat, ke které může dojít, když TPC nemůže být nadále používán.
-
-Držitel licence postupuje IBM veškerá oprávnění, práva a právní nároky (včetně vlastnictví autorských práv) k jakýmkoliv datům, návrhům nebo písemným materiálům a podíly na nich, 1) které se vztahují ke kódu TPC a 2) které Držitel licence poskytne IBM. Na žádost IBM Držitel licence podepíše dodatečné dokumenty nezbytné k postoupení takových práv. Držitel licence kromě výše uvedeného uděluje IBM nevýhradní, neodvolatelnou, neomezenou, celosvětovou a vyplacenou licenci a právo a) zahrnout do libovolného produktu nebo služby jakýkoliv nápad, know-how, koncepci, techniku, vynález, objev nebo zlepšovací návrh, patentovatelné či nepatentovatelné, které Držitel licence poskytne IBM ve spojení s kódem TPC, b) užívat, vyrábět a prodávat jakýkoliv takový produkt nebo službu a c) umožnit jiným subjektům takovouto činnost.
-
-Držitel licence se zavazuje, že následující položky bude považovat za "Důvěrné informace IBM", a to bez ohledu na to, zda obsahují omezující označení udávající jejich důvěrnou povahu nebo zda před sdělením byly identifikovány jako Důvěrné informace IBM: (a) kód TPC, (b) jakékoli informace poskytnuté Držiteli licence společností IBM v souvislosti s kódem TPC, včetně - nikoli však pouze - materiálů souvisejících s kódem TPC, například specifikací, plánů, trendů, strategií, srovnávacích testů, charakteristik výkonu, srovnání a jiných hodnocení kódu TPC, (c) jakékoli informace týkající se přístupu Držitele licence ke kódu TPC, včetně - nikoli však pouze - hesel nebo jiných přístupových kódů, a (d) všechna data, zpětnou vazbu, návrhy anebo písemné materiály, které Držitel licence poskytne IBM v souvislosti s kódem TPC. Držitel licence je oprávněn používat Důvěrné informace IBM pouze k účelům, pro které byly zpřístupněny, případně i jinak, avšak v takovém případě výhradně ve prospěch IBM. Bez ohledu na jakékoliv další podmínky tyto Smlouvy se Držitel licence zavazuje, že nebude sdělovat, zveřejňovat, šířit nebo jiným způsobem diskutovat či předávat jakékoliv třetí straně Důvěrné informace IBM (zejména články, listiny nebo jiné písemné materiály vztahující se k Důvěrným informacím IBM) předtím, než IBM učiní takové důvěrné informace IBM veřejně přístupnými bez závazku mlčenlivosti. Aniž by tím bylo dotčeno výše uvedené, Držitel licence nemá povinnosti zachování důvěrnosti ke kódům TPC označeným ve spise poznámek jako nedůvěrné.
-
-Držitel licence se zavazuje, že vynaloží stejné úsilí a rozvahu, jako vynakládá v případě svých vlastních informací obdobného charakteru, které si nepřeje sdělit, aby zabránil sdělení Důvěrných informací IBM, přičemž toto úsilí bude alespoň přiměřené. Závazek Držitele licence, pokud jde o zachování mlčenlivosti o Důvěrných informacích IBM, trvá po dobu dvou let od okamžiku, kdy tyto informace obdržel. Držitel licence se zavazuje, že nezpřístupní IBM žádné informace, které mohou být Držitelem licence nebo třetí stranou považovány za důvěrné nebo vlastnické, ledaže tak bude učiněno na základě samostatné podepsané písemné smlouvy o zachování důvěrnosti.
-
-Bez ohledu na existenci jakékoliv smlouvy o ochraně důvěrných informací nebo jiné smlouvy, kterou může Držitel licence uzavřít s IBM o ochraně důvěrných informací, se na nakládání s Důvěrnými informacemi IBM vztahují předchozí odstavce.
-
-Omezení vývozu a dovozu
-
-Tento Program může obsahovat funkci šifrování. Převod Programu na uživatele nebo jeho užívání ze strany uživatelů mohou být zakázány nebo mohou podléhat vývozním nebo dovozním zákonům, nařízením či směrnicím, včetně vývozních nařízení Spojených států amerických. Držitel licence nese veškerou odpovědnost za dodržování všech příslušných zákonů, nařízení a směrnic týkajících se vývozu, dovozu nebo užívání tohoto Programu, včetně - nikoliv však pouze - omezení vývozu a zpětného vývozu platných ve Spojených státech amerických. Vývozní klasifikaci tohoto Programu získáte na webových stránkách: https://www.ibm.com/products/exporting/.
-
-Data a služby třetích stran
-
-Program může obsahovat odkazy na datové služby, databáze, webové služby, software třetích stran nebo na jiný obsah od třetích stran (společné označení "obsah") nebo může být užíván pro přístup k tomuto obsahu. Přístup k tomuto obsahu je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ, VČETNĚ ZÁRUKY VLASTNICTVÍ, NEPORUŠENÍ PRÁV TŘETÍCH STRAN A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu nebo užívání tohoto obsahu. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
-
-L/N:  L-ASAY-BLSFTQ
-D/N:  L-ASAY-BLSFTQ
-P/N:  L-ASAY-BLSFTQ
+L/N:  L-ASAY-BSNHUT
+D/N:  L-ASAY-BSNHUT
+P/N:  L-ASAY-BSNHUT
 
 
 Mezinárodní licenční smlouva pro programy bez záruky

@@ -25,7 +25,6 @@ then
         fi
 else
         echo "no file /shared/tls/truststore/jks/trusts.jks"
-        ls -la /shared/tls/truststore/jks
 fi
 
 # Begin - Configuration for the TLS security

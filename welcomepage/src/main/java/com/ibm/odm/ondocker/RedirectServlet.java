@@ -57,7 +57,13 @@ public class RedirectServlet extends HttpServlet {
               this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
         }
         else if (redirect_url != null) {
-            String url = generateUrl(request, redirect_url);
+	    String contextRoot = System.getenv("ODM_CONTEXT_ROOT");
+	    String url;
+            if ( contextRoot != null){
+	    	url = generateUrl(request, contextRoot + redirect_url);
+	    } else {
+		url = generateUrl(request, redirect_url);
+	    }
             response.sendRedirect(url);
         }
     }
