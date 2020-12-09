@@ -8,7 +8,8 @@
 	"introspectionURL": "OPENID_INTROSPECTION_URL",
 	"clientId": "OPENID_CLIENT_ID",
 	"clientSecret": "OPENID_CLIENT_SECRET",
-	"tokenFormat": "OPENID_TOKEN_FORMAT"
+	"tokenFormat": "OPENID_TOKEN_FORMAT",
+        "logoutURL": "OPENID_LOGOUT_URL"
     }
   ]
 }

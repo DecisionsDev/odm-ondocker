@@ -57,6 +57,8 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+  echo "BASIC_AUTH config : remove oidcClientWebapp from server.xml"
+  sed -i '/oidcClientWebapp/d' /config/server.xml
 
   if [ -n "$DSR_ROLE_GROUP_MAPPING" ]
   then
@@ -72,8 +74,14 @@ sed -i 's|<config-property-value>FINE</config-property-value>|<config-property-v
 
 
 if [ -n $CONNECTION_POOL_SIZE ]; then
-	echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE"
-	sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
+        if [ -n "$CONNECTION_POOL_TIMEOUT" ]
+        then
+                echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE and XU connection pool timeout to $CONNECTION_POOL_TIMEOUT"
+                sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout='$CONNECTION_POOL_TIMEOUT'</config-property-value>|' ra.xml;
+        else
+		echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE"
+		sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value/>|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
+	fi
 else
 	echo "The environment variable CONNECTION_POOL_SIZE is not configured."
 	exit 1

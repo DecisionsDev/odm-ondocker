@@ -75,6 +75,8 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+  echo "BASIC_AUTH config : remove oidcClientWebapp from server.xml"
+  sed -i '/oidcClientWebapp/d' /config/server.xml
 
   if [ -n "$DSC_ROLE_GROUP_MAPPING" ]
   then

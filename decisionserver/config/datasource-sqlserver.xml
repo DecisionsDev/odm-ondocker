@@ -1,0 +1,24 @@
+<server>
+
+  <!-- decision server datasource -->
+  <library id="MSJDBCLib">
+    <fileset id="msql-fileset"  dir="${server.config.dir}/resources" includes="mssql*.jar"/>
+  </library>
+
+  <jdbcDriver id="MSJDBCDriver" libraryRef="MSJDBCLib"/>
+  <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MSJDBCDriver">
+    <connectionManager
+			maxPoolSize="25"
+			minPoolSize="10"
+			connectionTimout="10s"
+			agedTimeout="30m" />
+    <properties.microsoft.sqlserver databaseName="odmdb"
+                                    user="odmusr"
+                                    password="odmpwd"
+                                    serverName="dbserver"
+                                    encrypt="false"
+                                    trustServerCertificate="true"
+                                    portNumber="1433"/>
+  </dataSource>
+
+</server>

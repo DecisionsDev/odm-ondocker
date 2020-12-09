@@ -8,6 +8,9 @@ services:
         args:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
+        - FROMPOSTGRES=$FROMPOSTGRES
+        - POSTGRESUID=$POSTGRESUID
+    user: "$POSTGRESUID:$POSTGRESUID"
     ports:
     - 5432:5432
     environment:
@@ -16,6 +19,7 @@ services:
       - POSTGRES_DB=odmdb
       - PGDATA=/pgdata
       - SAMPLE=true
+      - PGDATA=/var/lib/postgresql/data
 # Uncomment this line to persist your data. Note that on OSX you need to share this
 # current directory in the Preference menu -> File Sharing menu.
 #    volumes:

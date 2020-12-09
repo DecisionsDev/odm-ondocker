@@ -40,4 +40,5 @@
 
 	<webAppSecurity useAuthenticationDataForUnprotectedResource="false" />
 
+        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/DecisionService/openid"/>
 </server>

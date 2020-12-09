@@ -93,6 +93,10 @@ then
      OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
      echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
      sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
+
+     OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+     echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
+     sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
      
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
@@ -126,6 +130,8 @@ else
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
   sed -i '/openIdWebSecurity/d' /config/server.xml
+  echo "BASIC_AUTH config : remove oidcClientWebapp from server.xml"
+  sed -i '/oidcClientWebapp/d' /config/server.xml
 
   if [ -n "$DC_ROLE_GROUP_MAPPING" ]
   then
@@ -203,6 +209,18 @@ else
         sed -i 's|decisionrunner-port|'9080'|g' $DC_SERVER_CONFIG
 fi
 
+if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+then
+  echo "Update decision server console context root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in $DC_SERVER_CONFIG"
+        sed -i 's|/res|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT/res'|g' $DC_SERVER_CONFIG
+fi
+
+if [ -n "$DECISIONRUNNER_CONTEXT_ROOT" ]
+then
+  echo "Update decision runner context root to $DECISIONRUNNER_CONTEXT_ROOT in $DC_SERVER_CONFIG"
+        sed -i 's|/DecisionRunner|'$DECISIONRUNNER_CONTEXT_ROOT/DecisionRunner'|g' $DC_SERVER_CONFIG
+fi
+
 if [ -s "/config/auth/ldap-configurations.xml" ]
 then
   echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
@@ -219,6 +237,13 @@ then
   sed -i 's|group-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/group-security-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 else
   sed -i 's|group-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
+if [ -n "$ODM_CONTEXT_ROOT" ]
+then
+  sed -i 's|http://localhost:9060/decisionmodel|'http://localhost:9060$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|http://localhost:9060/teamserver|'http://localhost:9060$ODM_CONTEXT_ROOT/teamserver'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  sed -i 's|http://localhost:9060/decisioncenter-api|'http://localhost:9060$ODM_CONTEXT_ROOT/decisioncenter-api'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
 if [ -n "$RELEASE_NAME" ]

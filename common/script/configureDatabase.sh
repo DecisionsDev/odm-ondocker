@@ -33,6 +33,11 @@ then
 				mv h2* /config/resources
 				cp /config/datasource-h2.xml /config/datasource.xml
 				;;
+		*mssql* )
+				rm /config/resources/mssql*
+				mv mssql* /config/resources
+				cp /config/datasource-sqlserver.xml /config/datasource.xml
+				;;
 	esac
 elif [ -n "$DB_TYPE" ]
 then
@@ -57,6 +62,10 @@ then
 		# For h2, we do not have to install the driver here since it is installed by default at build time (only for the standalone topology)
 		*h2* )
 				cp /config/datasource-h2.xml /config/datasource.xml
+			  ;;
+		# For SQL server, we do not have to install the driver here since it is installed by default at build time
+		*sqlserver* )
+				cp /config/datasource-sqlserver.xml /config/datasource.xml
 			  ;;
 	esac
 else

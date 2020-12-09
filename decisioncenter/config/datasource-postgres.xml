@@ -26,6 +26,7 @@
           user="odmusr"
           password="odmpwd"
           portNumber="5432"
+          sslMode="prefer"
           serverName="dbserver" />
   </dataSource>
 

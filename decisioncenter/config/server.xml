@@ -42,5 +42,6 @@
 
 	<applicationMonitor updateTrigger="mbean" />
 
+        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/decisioncenter/openid"/>
 
 </server>
