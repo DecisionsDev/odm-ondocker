@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export admin_username=oauthadmin
-export admin_password=WscBdFZrQNABICXwqzAjsnrPqnqGmUP1
+export admin_password=1k1KE0U3qOfeNVnR9kajp22zQud0Byat 
 export registration_url=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idauth/oidc/endpoint/OP/registration
 export OIDC_CLIENT_ID=iamclient4odm
 
