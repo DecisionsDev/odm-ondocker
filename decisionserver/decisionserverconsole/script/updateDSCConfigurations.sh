@@ -6,8 +6,18 @@ if [ -n "$DECISION_SERVICE_URL" ]; then
 fi
 
 if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
-	echo "Enable BAI Emitter Plugin"
+        echo "Enable BAI Emitter Plugin"
         sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml
+        if [ -f "/config/pluginconfig/plugin-configuration.properties" ]; then
+                echo "concat BAI Emitter and Metering plugins"
+                sed -i $'/### End of metering properties ###/{e cat /config/baiemitterconfig/plugin-configuration.properties\n}' /config/pluginconfig/plugin-configuration.properties
+        else
+                echo "create plugin directory /config/pluginconfig"
+                mkdir /config/pluginconfig
+                cp /config/baiemitterconfig/plugin-configuration.properties /config/pluginconfig/plugin-configuration.properties
+        fi
+else
+        echo "no provided /config/baiemitterconfig/plugin-configuration.properties"
 fi
 
 if [ -f "/config/baiemitterconfig/krb5.conf" ]; then
