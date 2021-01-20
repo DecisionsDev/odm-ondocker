@@ -70,3 +70,26 @@ then
 else
         echo "no /config/ldap/ldap.jks file"
 fi
+
+# This part allow to import a list of PEM certificate in the JVM
+ echo "Importing trusted certificates $dir"
+CERTDIR="/config/security/trusted-cert-volume/"
+TMPTRUSTORE="/config/security/trusted-cert-volume/truststore.jks"
+if [ -d $CERTDIR ]; then 
+    cd $CERTDIR
+    for dir in *; do
+        echo "Importing trusted certificates $dir"
+        if [ -d $dir ]; then 
+           if [ -f $dir/tls.crt ]; then
+                if [ -f $TMPTRUSTORE ]; then
+                        rm $TMPTRUSTORE
+                fi 
+                keytool -import -v -trustcacerts -alias 0trust_$dir -file $dir/tls.crt -keystore $TMPTRUSTORE -storepass password -noprompt 
+                keytool -importkeystore -srckeystore $TMPTRUSTORE -destkeystore /config/security/truststore.jks -srcstorepass password -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+           else
+                echo "Couldn't find certificate $dir/tls.crt skipping this certificate "
+           fi
+        fi 
+    done
+    echo "done"
+fi
