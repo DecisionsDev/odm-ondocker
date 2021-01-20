@@ -86,8 +86,7 @@ if [ -d $CERTDIR ]; then
                 fi 
                 # Don't know if we need to delete the Alias. If don't delete it there is an error 
                 keytool -delete -alias 0trust_$dir -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore /config/security/truststore.jks > /dev/null
-                keytool -import -v -trustcacerts -alias 0trust_$dir -file $dir/tls.crt -keystore $TMPTRUSTORE -storepass password -noprompt 
-                keytool -importkeystore -srckeystore $TMPTRUSTORE -destkeystore /config/security/truststore.jks -srcstorepass password -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+                keytool -import -v -trustcacerts -alias 0trust_$dir -file $dir/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt 
            else
                 echo "Couldn't find certificate $dir/tls.crt skipping this certificate "
            fi
