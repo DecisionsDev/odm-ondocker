@@ -74,16 +74,12 @@ fi
 # This part allow to import a list of PEM certificate in the JVM
  echo "Importing trusted certificates $dir"
 CERTDIR="/config/security/trusted-cert-volume/"
-TMPTRUSTORE="/config/security/trusted-cert-volume/truststore.jks"
 if [ -d $CERTDIR ]; then 
     cd $CERTDIR
     for dir in *; do
         echo "Importing trusted certificates $dir"
         if [ -d $dir ]; then 
            if [ -f $dir/tls.crt ]; then
-                if [ -f $TMPTRUSTORE ]; then
-                        rm $TMPTRUSTORE
-                fi 
                 # Don't know if we need to delete the Alias. If don't delete it there is an error 
                 keytool -delete -alias 0trust_$dir -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore /config/security/truststore.jks > /dev/null
                 keytool -import -v -trustcacerts -alias 0trust_$dir -file $dir/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt 
