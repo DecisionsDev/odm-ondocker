@@ -10,7 +10,7 @@ if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
         sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml
         if [ -f "/config/pluginconfig/plugin-configuration.properties" ]; then
                 echo "concat BAI Emitter and Metering plugins"
-                sed -i $'/### End of metering properties ###/{e cat /config/baiemitterconfig/plugin-configuration.properties\n}' /config/pluginconfig/plugin-configuration.properties
+                cat /config/baiemitterconfig/plugin-configuration.properties >> /config/pluginconfig/plugin-configuration.properties
         else
                 echo "create plugin directory /config/pluginconfig"
                 mkdir /config/pluginconfig
