@@ -45,7 +45,7 @@ services:
     - 9843:9443
     environment:
     - COM_IBM_RULES_METERING_ENABLE=TRUE
-    - METERING_SERVER_URL=https://9.171.75.90:9999
+    - METERING_SERVER_URL=https://9.171.56.36:9999
 #    volumes:
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/plugin-configuration.properties:/config/baiemitterconfig/plugin-configuration.properties
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/truststore.jks:/config/baiemitterconfig/truststore.jks
@@ -72,7 +72,7 @@ services:
     - 9743:9443
     environment:
     - COM_IBM_RULES_METERING_ENABLE=TRUE
-    - METERING_SERVER_URL=https://9.171.75.90:9999
+    - METERING_SERVER_URL=https://9.171.56.36:9999
 #    volumes:
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/plugin-configuration.properties:/config/baiemitterconfig/plugin-configuration.properties
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/truststore.jks:/config/baiemitterconfig/truststore.jks
@@ -100,7 +100,7 @@ services:
     environment:
     - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     - COM_IBM_RULES_METERING_ENABLE=TRUE
-    - METERING_SERVER_URL=https://9.171.75.90:9999
+    - METERING_SERVER_URL=https://9.171.56.36:9999
 #    volumes:
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/plugin-configuration.properties:/config/baiemitterconfig/plugin-configuration.properties
 #    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/truststore.jks:/config/baiemitterconfig/truststore.jks
@@ -127,4 +127,4 @@ services:
     - 9643:9453
     environment:
     - COM_IBM_RULES_METERING_ENABLE=TRUE
-    - METERING_SERVER_URL=https://9.171.75.90:9999
+    - METERING_SERVER_URL=https://9.171.56.36:9999
