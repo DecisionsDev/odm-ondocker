@@ -7,6 +7,8 @@ then
         $SCRIPT/customStart.sh
 fi
 
+$SCRIPT/enableMetering.sh
+
 $SCRIPT/updateDSCConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
@@ -16,8 +18,6 @@ $SCRIPT/configureDatabase.sh
 $SCRIPT/updateDatasource.sh
 
 $SCRIPT/updateDSRConfigurations.sh
-
-$SCRIPT/enableMetering.sh
 
 $SCRIPT/configureSwidTag.sh
 
