@@ -7,13 +7,13 @@ then
         $SCRIPT/customStart.sh
 fi
 
+SCRIPT/enableMetering.sh
+
 $SCRIPT/updateDSRConfigurations.sh
 
 $SCRIPT/configureTcpipNotification.sh
 
 $SCRIPT/configureTlsSecurity.sh
-
-$SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh
 
