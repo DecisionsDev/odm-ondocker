@@ -8,7 +8,7 @@ fi
 if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
         echo "Enable BAI Emitter Plugin"
         sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml
-else
+fi
 
 if [ -f "/config/baiemitterconfig/krb5.conf" ]; then
 	echo "Configure Kerberos authentication"
