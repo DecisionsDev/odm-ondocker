@@ -5,6 +5,8 @@ set -e
 
 ${SCRIPT}/checkLicense.sh
 
+$SCRIPT/enableMetering.sh
+
 if [ ! -f /config/initializeddb.flag ] ; then
 	if [ "$SAMPLE" = "true" ] ; then
 		engineJarFile=$(ls ${APPS}/*/WEB-INF/lib/*engine*.jar | sed -n 1p)
@@ -30,6 +32,14 @@ if [ ! -f /config/initialized.flag ] ; then
 	if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
 		echo "Enable BAI Emitter Plugin"
 		sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml;
+		if [ -f "/config/pluginconfig/plugin-configuration.properties" ]; then
+                	echo "concat BAI Emitter and Metering plugins"
+                	cat /config/baiemitterconfig/plugin-configuration.properties >> /config/pluginconfig/plugin-configuration.properties
+        	else
+                	echo "create plugin directory /config/pluginconfig"
+                	mkdir /config/pluginconfig
+                	cp /config/baiemitterconfig/plugin-configuration.properties /config/pluginconfig/plugin-configuration.properties
+        	fi
 	fi
 
 	touch /config/initialized.flag
@@ -55,8 +65,6 @@ else
   echo "Prefix cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
-
-$SCRIPT/enableMetering.sh
 
 $SCRIPT/configureDatabase.sh h2
 
