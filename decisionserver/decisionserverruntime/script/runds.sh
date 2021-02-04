@@ -7,7 +7,7 @@ then
         $SCRIPT/customStart.sh
 fi
 
-SCRIPT/enableMetering.sh
+$SCRIPT/enableMetering.sh
 
 $SCRIPT/updateDSRConfigurations.sh
 
