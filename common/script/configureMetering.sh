@@ -6,6 +6,7 @@ then
 elif [ -n "$METERING_SERVER_URL" ]
 then
 	echo "Configure metering using /config/metering-template.properties template"
+	echo "Set METERING_SERVER_URL with $METERING_SERVER_URL"
 	sed -i 's|METERING_SERVER_URL|'$METERING_SERVER_URL'|g' /config/metering-template.properties
 	if [ -n "$RELEASE_NAME" ]
 	then
