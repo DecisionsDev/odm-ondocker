@@ -248,6 +248,7 @@ then
          	cat /config/pluginconfig/plugin-configuration.properties >> $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
         elif [ -n "$METERING_SERVER_URL" ]
         then
+		echo "Set METERING_SERVER_URL with $METERING_SERVER_URL"
                 sed -i 's|METERING_SERVER_URL|'$METERING_SERVER_URL'|g' /config/metering-template.properties
                 if [ -n "$RELEASE_NAME" ]
                 then
