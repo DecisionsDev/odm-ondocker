@@ -119,9 +119,9 @@ then
   	read -ra ADDR <<< "${ALLOWED_DOMAINS_LIST}"
   	declare -i j=1
   	for i in "${ADDR[@]}"; do
-  	DC_REFERER_LIST=${DC_REFERER_LIST}https:\/\/$i\/\*
+  	DC_REFERER_LIST=${DC_REFERER_LIST}"https://"$i"/*"
     	  if ((j < "${#ADDR[@]}")); then
-      	    DC_REFERER_LIST=${DC_REFERER_LIST}","
+      	    DC_REFERER_LIST=${DC_REFERER_LIST}"__COMMA__"
       	    j=j+1
     	fi
   	done
@@ -129,6 +129,8 @@ then
 
   echo "OAuth config : set DC_REFERER_LIST to $DC_REFERER_LIST in /config/new-decisioncenter-configuration.properties"
   sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/new-decisioncenter-configuration.properties
+  # Issue with DC_REFERER_LIST when built with a comma
+  sed -i 's/__COMMA__/,/' /config/new-decisioncenter-configuration.properties
 
   echo "replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
   sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
