@@ -106,8 +106,32 @@ then
      sed -i 's|"OPENID_PROVIDER"|'null'|g' $DC_SERVER_CONFIG
   fi
   echo "OAuth config : set AUTH_SCHEME to oidc in /config/new-decisioncenter-configuration.properties"
-  echo "OAuth config : set OPENID_SERVER_URL to $OPENID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
-  sed -i 's|OPENID_SERVER_URL|'$OPENID_SERVER_URL'|g' /config/new-decisioncenter-configuration.properties 
+
+
+  if [ -n "$DC_REFERER_LIST" ]
+  then
+	echo "OAuth config : provided DC_REFERER_LIST"
+  else
+	echo "OAuth config : build DC_REFERER_LIST"
+  	IFS=','
+  	DC_REFERER_LIST=""
+  	ALLOWED_DOMAINS_LIST=$(grep OPENID_ALLOWED_DOMAINS /config/authOidc/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
+  	read -ra ADDR <<< "${ALLOWED_DOMAINS_LIST}"
+  	declare -i j=1
+  	for i in "${ADDR[@]}"; do
+  	DC_REFERER_LIST=${DC_REFERER_LIST}"https://"$i"/*"
+    	  if ((j < "${#ADDR[@]}")); then
+      	    DC_REFERER_LIST=${DC_REFERER_LIST}"__COMMA__"
+      	    j=j+1
+    	fi
+  	done
+  fi
+
+  echo "OAuth config : set DC_REFERER_LIST to $DC_REFERER_LIST in /config/new-decisioncenter-configuration.properties"
+  sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/new-decisioncenter-configuration.properties
+  # Issue with DC_REFERER_LIST when built with a comma
+  sed -i 's/__COMMA__/,/g' /config/new-decisioncenter-configuration.properties
+
   echo "replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
   sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
   sed -i '/<group name="rtsAdministrators"/d' /config/application.xml
@@ -120,8 +144,16 @@ else
   echo "No provided /config/authOidc/openIdParameters.properties"
   echo "BASIC_AUTH config : set provider to null in $DC_SERVER_CONFIG"
   sed -i 's|"OPENID_PROVIDER"|'null'|g' $DC_SERVER_CONFIG
-  echo "BASIC_AUTH config : remove entry with OPEN_ID_SERVER_URL in /config/new-decisioncenter-configuration.properties"
-  sed -i '/OPENID_SERVER_URL/d' /config/new-decisioncenter-configuration.properties
+
+  if [ -n "$DC_REFERER_LIST" ]
+  then
+        echo "BASIC_AUTH config : provided DC_REFERER_LIST"
+	sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/new-decisioncenter-configuration.properties
+  else
+  	echo "BASIC_AUTH config : remove entry with DC_REFERER_LIST in /config/new-decisioncenter-configuration.properties"
+  	sed -i '/DC_REFERER_LIST/d' /config/new-decisioncenter-configuration.properties
+  fi
+
   echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
   sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
   echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
@@ -237,6 +269,39 @@ then
   sed -i 's|group-file|'\/opt\/ibm\/wlp\/usr\/servers\/defaultServer\/auth\/group-security-configurations.xml'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 else
   sed -i 's|group-file|''|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
+if [ -n "$COM_IBM_RULES_METERING_ENABLE" ]
+then
+        echo "enable rules metering"
+        if [ -s "/config/pluginconfig/plugin-configuration.properties" ]
+        then
+        	echo "Configure metering using /config/pluginconfig/plugin-configuration.properties provided config"
+         	cat /config/pluginconfig/plugin-configuration.properties >> $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+        elif [ -n "$METERING_SERVER_URL" ]
+        then
+		echo "Set METERING_SERVER_URL with $METERING_SERVER_URL"
+                sed -i 's|METERING_SERVER_URL|'$METERING_SERVER_URL'|g' /config/metering-template.properties
+                if [ -n "$RELEASE_NAME" ]
+                then
+                        echo "Set METERING_INSTANCE_ID with $RELEASE_NAME"
+                        sed -i 's|METERING_INSTANCE_ID|'$RELEASE_NAME'|g' /config/metering-template.properties
+                else
+                        echo "Set METERING_INSTANCE_ID with $HOSTNAME"
+                        sed -i 's|METERING_INSTANCE_ID|'$HOSTNAME'|g' /config/metering-template.properties
+                fi
+
+                if [ -n "$METERING_SEND_PERIOD" ]
+                then
+                	echo "Set METERING_SEND_PERIOD with $METERING_SEND_PERIOD milliseconds"
+                        sed -i 's|METERING_SEND_PERIOD|'$METERING_SEND_PERIOD'|g' /config/metering-template.properties
+                else
+                        echo "Set METERING_SEND_PERIOD with 900000 milliseconds"
+                        sed -i 's|METERING_SEND_PERIOD|900000|g' /config/metering-template.properties
+                fi
+
+                cat /config/metering-template.properties >> $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+        fi
 fi
 
 if [ -n "$ODM_CONTEXT_ROOT" ]

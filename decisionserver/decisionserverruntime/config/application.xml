@@ -8,7 +8,7 @@
 		</application-bnd>
 	<classloader>
     		<commonLibrary>
-      			<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
+      			<folder dir="/config/pluginconfig" id="plugindir"  />
     		</commonLibrary>
                 <commonLibrary>
                         <folder dir="/config/extension" id="extensiondir"  />

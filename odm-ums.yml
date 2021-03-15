@@ -48,7 +48,7 @@ services:
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -81,7 +81,7 @@ services:
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -115,7 +115,7 @@ services:
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -150,7 +150,7 @@ services:
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
