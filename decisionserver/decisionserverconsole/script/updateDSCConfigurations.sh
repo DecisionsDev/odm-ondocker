@@ -6,7 +6,7 @@ if [ -n "$DECISION_SERVICE_URL" ]; then
 fi
 
 if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
-	echo "Enable BAI Emitter Plugin"
+        echo "Enable BAI Emitter Plugin"
         sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml
 fi
 

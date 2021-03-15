@@ -23,7 +23,7 @@
 		</application-bnd>
 		<classloader>
 			<commonLibrary>
-				<folder dir="/config/baiemitterconfig" id="odmbaidir"  />
+				<folder dir="/config/pluginconfig" id="plugindir"  />
 			</commonLibrary>
 		</classloader>
 	</application>

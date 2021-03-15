@@ -47,7 +47,8 @@
     </authFilter>
     <!-- Note: The apiAuthFilter should be complementary to the browserAuthFilter -->
     <authFilter id="apiAuthFilter">
-	<requestHeader id="allowBasicAuth" matchType="notContain" name="Authorization" value="Basic" />
+	<!-- This line is to support OIDC and BA by detecting the header -->
+	<requestHeader id="allowBasicAuth" matchType="contains" name="Authorization" value="Bearer" />
         <requestUrl id="apiurl" matchType="contains" urlPattern=
                 "/res/auth|/res/repositoryService|/teamserver/rts-sync|/teamserver/remoting|/teamserver/servlet/SessionServlet|/decisioncenter/rts-sync|/decisioncenter/remoting|/decisioncenter/servlet/SessionServlet|/decisioncenter-api/v1|/DecisionRunner/api|/DecisionRunner/apiauth|/DecisionRunner/serverinfo|/testing/sspService|/testing/serverinfo"/>
     </authFilter>

@@ -25,5 +25,6 @@ services:
     - 9453:9453
     # Uncomment this line to persist your data. Note that on OSX you need to share this
     # current directory in the Preference menu -> File Sharing menu.
-    #   volumes:
+    volumes:
     #   - ./h2data:/config/dbdata/
+    - ./plugin-configuration.properties:/config/baiemitterconfig/plugin-configuration.properties

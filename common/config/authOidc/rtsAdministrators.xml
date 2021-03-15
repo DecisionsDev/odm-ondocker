@@ -1,5 +1,5 @@
 				<user name="rtsAdmUser1" access-id="${odm.rtsAdministrators.user1}"/>
-				<user name="rtsAdmUser2" access-id="${odm.rtsAministrators.user2}"/>
+				<user name="rtsAdmUser2" access-id="${odm.rtsAdministrators.user2}"/>
 				<user name="rtsAdmUser3" access-id="${odm.rtsAdministrators.user3}"/>
 				<group name="rtsAdmGroup1" access-id="${odm.rtsAdministrators.group1}"/>
 				<group name="rtsAdmGroup2" access-id="${odm.rtsAdministrators.group2}"/>
