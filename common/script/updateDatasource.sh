@@ -10,16 +10,7 @@ fi
 if [ -n "$DB_PORT_NUMBER" ]
 then
 	echo "Set database port number to $DB_PORT_NUMBER"
-	# Update port in case of PostgreSQL
-	sed -i 's|5432|'$DB_PORT_NUMBER'|g' /config/datasource.xml
-	# Update port in case of DB2
-	sed -i 's|50000|'$DB_PORT_NUMBER'|g' /config/datasource.xml
-	# Update port in case of Derby
-	sed -i 's|1527|'$DB_PORT_NUMBER'|g' /config/datasource.xml
-	# Update port in case of MySQL
-	sed -i 's|3306|'$DB_PORT_NUMBER'|g' /config/datasource.xml
-	# Update port in case of SQL server
-	sed -i 's|1433|'$DB_PORT_NUMBER'|g' /config/datasource.xml
+	sed -i 's|DB_PORT_NUMBER|'$DB_PORT_NUMBER'|g' /config/datasource.xml
 fi
 
 if [ -n "$DB_NAME" ]

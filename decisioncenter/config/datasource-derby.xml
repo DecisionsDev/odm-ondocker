@@ -18,7 +18,7 @@
 			agedTimeout="30m"/>
 		<properties.derby.client databaseName="odmdb"
 								serverName="dbserver"
-								portNumber="1527"
+								portNumber="DB_PORT_NUMBER"
 								createDatabase="create"
 								user="odmusr"
 								password="odmpwd" />
