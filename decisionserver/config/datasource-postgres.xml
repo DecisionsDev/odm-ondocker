@@ -20,7 +20,7 @@
           databaseName="odmdb"
           user="odmusr"
           password="odmpwd"
-          portNumber="5432"
+          portNumber="DB_PORT_NUMBER"
           tcpKeepAlive="true"
           sslMode="prefer"
           serverName="dbserver" />
