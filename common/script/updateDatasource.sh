@@ -11,6 +11,27 @@ if [ -n "$DB_PORT_NUMBER" ]
 then
 	echo "Set database port number to $DB_PORT_NUMBER"
 	sed -i 's|DB_PORT_NUMBER|'$DB_PORT_NUMBER'|g' /config/datasource.xml
+else
+	if [ -n "$DB_TYPE" ]
+	then
+		case $DB_TYPE in
+			*derby* )
+				sed -i 's|DB_PORT_NUMBER|1527|g' /config/datasource.xml
+			  	;;
+			*mysql* )
+				sed -i 's|DB_PORT_NUMBER|3306|g' /config/datasource.xml
+			  	;;
+			*db2* )
+				sed -i 's|DB_PORT_NUMBER|50000|g' /config/datasource.xml
+				;;
+			*postgres* )
+				sed -i 's|DB_PORT_NUMBER|5432|g' /config/datasource.xml
+			  	;;
+			*sqlserver* )
+				sed -i 's|DB_PORT_NUMBER|1433|g' /config/datasource.xml
+			  	;;
+		esac
+	fi
 fi
 
 if [ -n "$DB_NAME" ]
