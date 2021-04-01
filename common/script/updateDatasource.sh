@@ -12,6 +12,7 @@ then
 	echo "Set database port number to $DB_PORT_NUMBER"
 	sed -i 's|DB_PORT_NUMBER|'$DB_PORT_NUMBER'|g' /config/datasource.xml
 else
+	echo "No provided DB_PORT_NUMBER, set default database port according to $DB_TYPE"
 	if [ -n "$DB_TYPE" ]
 	then
 		case $DB_TYPE in
