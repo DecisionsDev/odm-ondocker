@@ -12,9 +12,9 @@ then
 	echo "Set database port number to $DB_PORT_NUMBER"
 	sed -i 's|DB_PORT_NUMBER|'$DB_PORT_NUMBER'|g' /config/datasource.xml
 else
-	echo "No provided DB_PORT_NUMBER, set default database port according to $DB_TYPE"
 	if [ -n "$DB_TYPE" ]
 	then
+	echo "No provided DB_PORT_NUMBER, set default database port according to $DB_TYPE"
 		case $DB_TYPE in
 			*derby* )
 				sed -i 's|DB_PORT_NUMBER|1527|g' /config/datasource.xml
@@ -32,6 +32,9 @@ else
 				sed -i 's|DB_PORT_NUMBER|1433|g' /config/datasource.xml
 			  	;;
 		esac
+	else
+		echo "Set DB_PORT_NUMBER to 5432 as using PostgreSQL by default"
+		sed -i 's|DB_PORT_NUMBER|5432|g' /config/datasource.xml
 	fi
 fi
 
