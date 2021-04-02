@@ -6,6 +6,6 @@
   <jdbcDriver id="DerbyJdbcDriver" libraryRef="DerbyLib" />
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="DerbyJdbcDriver">
     <properties.derby.client databaseName="odmdb" serverName="dbserver"
-          portNumber="1527" createDatabase="create" user="odmusr" password="odmpwd" />
+          portNumber="DB_PORT_NUMBER" createDatabase="create" user="odmusr" password="odmpwd" />
   </dataSource>
 </server>

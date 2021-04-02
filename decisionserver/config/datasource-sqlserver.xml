@@ -18,7 +18,7 @@
                                     serverName="dbserver"
                                     encrypt="false"
                                     trustServerCertificate="true"
-                                    portNumber="1433"/>
+                                    portNumber="DB_PORT_NUMBER"/>
   </dataSource>
 
 </server>
