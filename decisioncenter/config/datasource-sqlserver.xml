@@ -22,7 +22,7 @@
           databaseName="odmdb"
           user="odmusr"
           password="odmpwd"
-          portNumber="1433"
+          portNumber="DB_PORT_NUMBER"
           encrypt="false"
           trustServerCertificate="true"
           serverName="dbserver" />
