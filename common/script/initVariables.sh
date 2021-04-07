@@ -20,3 +20,10 @@ then
   echo "ODM_CONTEXT_ROOT unset : set blank"
   export ODM_CONTEXT_ROOT=""
 fi
+
+if [ -s "$SCRIPT/container.env" ]
+then
+    set -o allexport
+    source $SCRIPT/container.env
+    set +o allexport
+fi
