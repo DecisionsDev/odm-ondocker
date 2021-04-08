@@ -21,9 +21,9 @@ then
   export ODM_CONTEXT_ROOT=""
 fi
 
-if [ -s "$SCRIPT/container.env" ]
+if [ -s "$SCRIPT/init/container.env" ]
 then
     set -o allexport
-    source $SCRIPT/container.env
+    source $SCRIPT/init/container.env
     set +o allexport
 fi
