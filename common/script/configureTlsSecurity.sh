@@ -76,17 +76,15 @@ fi
 CERTDIR="/config/security/trusted-cert-volume/"
 if [ -d $CERTDIR ]; then 
     cd $CERTDIR
-    for dir in *; do
-        echo "Importing trusted certificates $dir"
-        if [ -d $dir ]; then 
-           if [ -f $dir/tls.crt ]; then
-                # Don't know if we need to delete the Alias. If don't delete it there is an error 
-                keytool -delete -alias 0trust_$dir -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore /config/security/truststore.jks > /dev/null
-                keytool -import -v -trustcacerts -alias 0trust_$dir -file $dir/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt 
-           else
-                echo "Couldn't find certificate $dir/tls.crt skipping this certificate "
-           fi
-        fi 
+    TRUSTSTORE=/config/security/truststore.jks
+    i=0
+    for file in $(find . -name "*.crt")
+    do
+        echo "Importing trusted certificates $file"
+        i=$((i+1))
+        ALIASNAME="trust_$i_$file"
+        keytool -delete -alias 0$ALIASNAME -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore $TRUSTSTORE > /dev/null
+        keytool -import -v -trustcacerts -alias 0$ALIASNAME -file $file -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt 
     done
     echo "done"
 fi
