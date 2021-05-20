@@ -1,6 +1,12 @@
 				<user name="rtsAdmUser1" access-id="${odm.rtsAdministrators.user1}"/>
 				<user name="rtsAdmUser2" access-id="${odm.rtsAdministrators.user2}"/>
 				<user name="rtsAdmUser3" access-id="${odm.rtsAdministrators.user3}"/>
+				<user name="rtsAdmUser4" access-id="${odm.rtsAdministrators.user4}"/>
+                                <user name="rtsAdmUser5" access-id="${odm.rtsAdministrators.user5}"/>
+                                <user name="rtsAdmUser6" access-id="${odm.rtsAdministrators.user6}"/>
 				<group name="rtsAdmGroup1" access-id="${odm.rtsAdministrators.group1}"/>
 				<group name="rtsAdmGroup2" access-id="${odm.rtsAdministrators.group2}"/>
 				<group name="rtsAdmGroup3" access-id="${odm.rtsAdministrators.group3}"/>
+				<group name="rtsAdmGroup4" access-id="${odm.rtsAdministrators.group4}"/>
+                                <group name="rtsAdmGroup5" access-id="${odm.rtsAdministrators.group5}"/>
+                                <group name="rtsAdmGroup6" access-id="${odm.rtsAdministrators.group6}"/>
