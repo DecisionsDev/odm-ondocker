@@ -1,6 +1,12 @@
 				<user name="resAdmUser1" access-id="${odm.resAdministrators.user1}"/>
 				<user name="resAdmUser2" access-id="${odm.resAdministrators.user2}"/>
 				<user name="resAdmUser3" access-id="${odm.resAdministrators.user3}"/>
+				<user name="resAdmUser4" access-id="${odm.resAdministrators.user4}"/>
+                                <user name="resAdmUser5" access-id="${odm.resAdministrators.user5}"/>
+                                <user name="resAdmUser6" access-id="${odm.resAdministrators.user6}"/>
 				<group name="resAdmGroup1" access-id="${odm.resAdministrators.group1}"/>
 				<group name="resAdmGroup2" access-id="${odm.resAdministrators.group2}"/>
 				<group name="resAdmGroup3" access-id="${odm.resAdministrators.group3}"/>
+				<group name="resAdmGroup4" access-id="${odm.resAdministrators.group4}"/>
+                                <group name="resAdmGroup5" access-id="${odm.resAdministrators.group5}"/>
+                                <group name="resAdmGroup6" access-id="${odm.resAdministrators.group6}"/>

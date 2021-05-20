@@ -1,6 +1,12 @@
 				<user name="resMonUser1" access-id="${odm.resMonitors.user1}"/>
 				<user name="resMonUser2" access-id="${odm.resMonitors.user2}"/>
 				<user name="resMonUser3" access-id="${odm.resMonitors.user3}"/>
+				<user name="resMonUser4" access-id="${odm.resMonitors.user4}"/>
+                                <user name="resMonUser5" access-id="${odm.resMonitors.user5}"/>
+                                <user name="resMonUser6" access-id="${odm.resMonitors.user6}"/>
 				<group name="resMonGroup1" access-id="${odm.resMonitors.group1}"/>
 				<group name="resMonGroup2" access-id="${odm.resMonitors.group2}"/>
 				<group name="resMonGroup3" access-id="${odm.resMonitors.group3}"/>
+				<group name="resMonGroup4" access-id="${odm.resMonitors.group4}"/>
+                                <group name="resMonGroup5" access-id="${odm.resMonitors.group5}"/>
+                                <group name="resMonGroup6" access-id="${odm.resMonitors.group6}"/>
