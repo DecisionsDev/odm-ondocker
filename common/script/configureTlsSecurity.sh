@@ -94,3 +94,9 @@ then
         echo "Importing IBM Public certificate"
         keytool -import -v -trustcacerts -alias IBM-PUBLIC -file /config/resources/ibm-public.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 fi
+
+if [ -f "/config/resources/ibm-docs.crt" ]
+then
+        echo "Importing IBM Docs certificate"
+        keytool -import -v -trustcacerts -alias IBM-DOCS -file /config/resources/ibm-docs.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+fi
