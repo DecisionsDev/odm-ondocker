@@ -88,3 +88,9 @@ if [ -d $CERTDIR ]; then
     done
     echo "done"
 fi
+
+if [ -f "/config/resources/ibm-public.crt" ]
+then
+        echo "Importing IBM Public certificate"
+        keytool -import -v -trustcacerts -alias IBM-PUBLIC -file /config/resources/ibm-public.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+fi
