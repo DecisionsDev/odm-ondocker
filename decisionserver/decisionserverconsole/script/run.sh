@@ -17,6 +17,8 @@ $SCRIPT/configureDatabase.sh
 
 $SCRIPT/updateDatasource.sh
 
+$SCRIPT/updateDSRConfigurations.sh
+
 $SCRIPT/configureSwidTag.sh
 
 $SCRIPT/setTimeZone.sh
