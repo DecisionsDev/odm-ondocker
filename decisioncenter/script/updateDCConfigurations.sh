@@ -253,6 +253,12 @@ then
         sed -i 's|/DecisionRunner|'$DECISIONRUNNER_CONTEXT_ROOT/DecisionRunner'|g' $DC_SERVER_CONFIG
 fi
 
+if [ -n "$DEMO" ]
+then
+  echo "Update flag to allow update of existing server definition in $DC_SERVER_CONFIG"
+        sed -i 's|false|true|g' $DC_SERVER_CONFIG
+fi
+
 if [ -s "/config/auth/ldap-configurations.xml" ]
 then
   echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"

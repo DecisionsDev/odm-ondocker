@@ -25,9 +25,14 @@ $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh
 
-if [ -s "$SCRIPT/customEnd.sh" ] 
+if [ -s "$SCRIPT/customEnd.sh" ]
 then
-	$SCRIPT/customEnd.sh
+        $SCRIPT/customEnd.sh
+fi
+
+if [ -n "$DEMO" ]
+then
+	$SCRIPT/updateDemoServers.sh &
 fi
 
 /opt/ibm/wlp/bin/server run defaultServer
