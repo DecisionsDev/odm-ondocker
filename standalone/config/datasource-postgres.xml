@@ -25,7 +25,7 @@
           	databaseName="odmdb"
           	user="odmusr"
           	password="odmpwd"
-          	portNumber="5432"
+          	portNumber="DB_PORT_NUMBER"
           	serverName="dbserver" />
   </dataSource>
 
@@ -35,7 +35,7 @@
          	databaseName="odmdb"
           	user="odmusr"
           	password="odmpwd"
-          	portNumber="5432"
+          	portNumber="DB_PORT_NUMBER"
           	serverName="dbserver" />
   	</dataSource>
 

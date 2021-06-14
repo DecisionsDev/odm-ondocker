@@ -3,10 +3,6 @@ This repository is the home directory of IBM Operational Decision Manager for De
 
 # Quick reference
 
-Click the image to view a short video (5 mins) on how to get started with IBM ODM for Developers.
-
-[![ODM overview](http://img.youtube.com/vi/ccdFtyy34x8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=ccdFtyy34x8)
-
 -	**Where to get help**:
   * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)

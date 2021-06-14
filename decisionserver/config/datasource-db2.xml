@@ -7,7 +7,7 @@
   
   <jdbcDriver id="DB2Driver" libraryRef="DB2Lib"/>
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="DB2Driver">
-    <properties.db2.jcc databaseName="odmdb" user="odmusr" password="odmpwd" serverName="dbserver" portNumber="50000" sslConnection="false"/>
+    <properties.db2.jcc databaseName="odmdb" user="odmusr" password="odmpwd" serverName="dbserver" portNumber="DB_PORT_NUMBER" sslConnection="false"/>
   </dataSource>
 
 </server>
