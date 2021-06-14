@@ -61,6 +61,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDr
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
+COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resources/ibm-public.crt
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config

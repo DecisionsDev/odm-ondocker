@@ -1,6 +1,12 @@
 				<user name="rtsCfgUser1" access-id="${odm.rtsConfigManagers.user1}"/>
 				<user name="rtsCfgUser2" access-id="${odm.rtsConfigManagers.user2}"/>
 				<user name="rtsCfgUser3" access-id="${odm.rtsConfigManagers.user3}"/>
+				<user name="rtsCfgUser4" access-id="${odm.rtsConfigManagers.user4}"/>
+                                <user name="rtsCfgUser5" access-id="${odm.rtsConfigManagers.user5}"/>
+                                <user name="rtsCfgUser6" access-id="${odm.rtsConfigManagers.user6}"/>
 				<group name="rtsCfgGroup1" access-id="${odm.rtsConfigManagers.group1}"/>
 				<group name="rtsCfgGroup2" access-id="${odm.rtsConfigManagers.group2}"/>
 				<group name="rtsCfgGroup3" access-id="${odm.rtsConfigManagers.group3}"/>
+				<group name="rtsCfgGroup4" access-id="${odm.rtsConfigManagers.group4}"/>
+                                <group name="rtsCfgGroup5" access-id="${odm.rtsConfigManagers.group5}"/>
+                                <group name="rtsCfgGroup6" access-id="${odm.rtsConfigManagers.group6}"/>
