@@ -33,12 +33,10 @@ RUN chmod -R a+x $SCRIPT && \
 
 # Decision Center
 RUN mkdir -p $APPS
-COPY ./teamserver/applicationservers/WLP*/teamserver*.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisionmodel.war && \
-    $SCRIPT/extractApp.sh teamserver.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
