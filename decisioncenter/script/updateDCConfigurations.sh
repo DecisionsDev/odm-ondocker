@@ -224,6 +224,12 @@ else
  cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
 
+if [ -n "$DISABLE_USE_AUTHENTICATION_DATA" ]
+then
+ echo "Set useAuthenticationDataForUnprotectedResource to false on /config/httpSession.xml"
+ sed -i 's|useAuthenticationDataForUnprotectedResource="true"|useAuthenticationDataForUnprotectedResource="false"|' /config/httpSession.xml
+fi
+
 if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
 then
   echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in $DC_SERVER_CONFIG"
