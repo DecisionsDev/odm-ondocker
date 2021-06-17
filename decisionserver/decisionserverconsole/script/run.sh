@@ -28,4 +28,3 @@ then
         $SCRIPT/customEnd.sh
 fi
 
-/opt/ibm/wlp/bin/server run defaultServer
