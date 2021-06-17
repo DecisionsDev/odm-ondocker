@@ -94,4 +94,4 @@ COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9080 9443
 
-CMD ["/script/runds.sh"]
+RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh

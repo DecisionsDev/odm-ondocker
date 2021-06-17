@@ -110,4 +110,4 @@ COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9060 9453
 
-CMD ["/script/rundc.sh"]
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
