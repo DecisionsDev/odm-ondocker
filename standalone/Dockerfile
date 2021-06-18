@@ -46,12 +46,11 @@ RUN set -ex; \
     fi
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP*/teamserver.war ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
+COPY ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 
 RUN set -ex; \
     ${SCRIPT}/extractApp.sh decisioncenter.war; \
     ${SCRIPT}/extractApp.sh decisionmodel.war; \
-    ${SCRIPT}/extractApp.sh teamserver.war; \
     ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
     mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
 
