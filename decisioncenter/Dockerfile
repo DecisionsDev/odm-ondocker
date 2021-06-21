@@ -63,6 +63,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -89,7 +90,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
-
+COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
 
 
 # Welcome page
@@ -107,5 +108,3 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9060 9453
-
-RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
