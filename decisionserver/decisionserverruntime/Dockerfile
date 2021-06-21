@@ -48,6 +48,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/securit
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 RUN chmod -R 777 /config
+RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -81,6 +82,7 @@ ENV CONNECTION_POOL_SIZE 60
 ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
+COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
 
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
@@ -93,5 +95,3 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9080 9443
-
-RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh
