@@ -21,6 +21,8 @@ $SCRIPT/updateDatasource.sh
 
 $SCRIPT/configureSwidTag.sh
 
+$SCRIPT/enableFips.sh
+
 $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh
