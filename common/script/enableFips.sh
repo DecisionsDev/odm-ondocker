@@ -6,6 +6,5 @@ then
   then
 	echo "Enable FIPS"
 	cp  /config/jvm/enablefips-jvm.options /config/configDropins/overrides/jvm.options
-	cp /config/jvm/enablefips-java.security /opt/ibm/java/jre/lib/security/java.security
   fi
 fi
