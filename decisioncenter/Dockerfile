@@ -103,10 +103,6 @@ COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/de
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 
-# Enable FIPS
-USER root
-RUN fips-mode-setup --enable
-
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
