@@ -100,7 +100,6 @@ then
      
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
-     cp /config/OdmOidcProviders.json $APPS/teamserver.war/WEB-INF/classes/OdmOidcProviders.json
      cp /config/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
   else
      sed -i 's|"OPENID_PROVIDER"|'null'|g' $DC_SERVER_CONFIG
@@ -224,6 +223,12 @@ else
  cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
 
+if [ -n "$DISABLE_USE_AUTHENTICATION_DATA" ]
+then
+ echo "Set useAuthenticationDataForUnprotectedResource to false on /config/httpSession.xml"
+ sed -i 's|useAuthenticationDataForUnprotectedResource="true"|useAuthenticationDataForUnprotectedResource="false"|' /config/httpSession.xml
+fi
+
 if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
 then
   echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in $DC_SERVER_CONFIG"
@@ -313,7 +318,6 @@ fi
 if [ -n "$ODM_CONTEXT_ROOT" ]
 then
   sed -i 's|http://localhost:9060/decisionmodel|'http://localhost:9060$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-  sed -i 's|http://localhost:9060/teamserver|'http://localhost:9060$ODM_CONTEXT_ROOT/teamserver'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
   sed -i 's|http://localhost:9060/decisioncenter-api|'http://localhost:9060$ODM_CONTEXT_ROOT/decisioncenter-api'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 

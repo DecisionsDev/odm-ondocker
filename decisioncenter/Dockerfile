@@ -33,12 +33,10 @@ RUN chmod -R a+x $SCRIPT && \
 
 # Decision Center
 RUN mkdir -p $APPS
-COPY ./teamserver/applicationservers/WLP*/teamserver*.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisionmodel.war && \
-    $SCRIPT/extractApp.sh teamserver.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
@@ -65,6 +63,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -91,7 +90,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
-
+COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
 
 
 # Welcome page
@@ -109,5 +108,3 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9060 9453
-
-CMD ["/script/rundc.sh"]
