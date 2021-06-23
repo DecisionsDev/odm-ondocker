@@ -37,4 +37,3 @@ then
 	$SCRIPT/updateDemoServers.sh &
 fi
 
-/opt/ibm/wlp/bin/server run defaultServer
