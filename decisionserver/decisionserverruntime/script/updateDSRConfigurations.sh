@@ -151,3 +151,39 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
+
+function updateContextParamPropertyInWebXml() {
+  if grep -q "<param-name>$1</param-name>" $APPS/DecisionService.war/WEB-INF/web.xml; then
+    echo "Setting parameter $1 to $2 in the web.xml file"
+	  result="$(xmllint --shell $APPS/DecisionService.war/WEB-INF/web.xml 2>&1 >/dev/null << EOF
+setns x=http://java.sun.com/xml/ns/j2ee
+cd x:web-app/x:context-param[x:param-name='$1']/x:param-value
+set $2
+save
+EOF
+)"
+	else
+    echo "Adding context-param $1 with value $2 in the web.xml file"
+    sed -i '/<\/web-app>/i\
+	<context-param>\
+		<param-name>'$1'</param-name>\
+		<param-value>'$2'</param-value>\
+	</context-param>
+    ' $APPS/DecisionService.war/WEB-INF/web.xml
+
+	fi
+}
+
+if [ -f "/config/web-configuration.properties" ]; then
+	echo "Configure context-param properties in web.xml"
+	file="/config/web-configuration.properties"
+	while IFS='=' read -r key value
+	do
+    # Check if non blank or commented line
+    if [ -n "$key" ] && [[ "$key" != "#"* ]]; then
+      updateContextParamPropertyInWebXml "$key" "$value"
+    fi
+  done < <(grep . "$file")
+else
+  echo "No web.xml configuration file provided"
+fi
