@@ -9,6 +9,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
         - ODMVERSION=$ODMVERSION
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMPOSTGRES=$FROMPOSTGRES
         - POSTGRESUID=$POSTGRESUID
     user: "$POSTGRESUID:$POSTGRESUID"
@@ -34,6 +35,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver
@@ -43,6 +45,9 @@ services:
     - 9080:9080
     - 1883:1883
     - 9843:9443
+    volumes:
+    - ./custom.sh:/script/customStart.sh
+    - ./container.env:/script/container.env
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -53,6 +58,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver
@@ -74,6 +80,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -85,6 +92,10 @@ services:
     ports:
     - 9090:9080
     - 9943:9443
+    volumes:
+      - ./common/script/configureTlsSecurity.sh:/script/configureTlsSecurity.sh
+      - ./certdir/:/config/security/trusted-cert-volume/
+
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -95,6 +106,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
     links:
     - dbserver

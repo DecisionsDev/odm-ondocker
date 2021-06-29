@@ -1,7 +1,6 @@
+# Standalone topology
 
-This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. 
-
-
+This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container.
 
 ![Flow](images/StandaloneFig01.png)
 
@@ -12,7 +11,8 @@ This tutorial explains how to build and start a docker image that includes all t
 Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
 ### Install Operational Decision Manager
-To create the Operational Decision Manager docker image, install one of the following components:         
+
+To create the Operational Decision Manager docker image, install one of the following components:    
 * Decision Center, with the WebSphere Liberty Profile option,
 * Decision Server Rules, with the WebSphere Liberty Profile option.
 
