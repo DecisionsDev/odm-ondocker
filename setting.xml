@@ -1,0 +1,94 @@
+<settings>
+<!-- Uncomment this if you don't want the default USER_HOME/.m2/repository
+  <localRepository>/Path/to/an/existing/folder</localRepository>
+-->
+  <profiles>
+    <profile>
+      <properties>
+        <odm.home></odm.home>
+      </properties>
+      <repositories>
+        <repository>
+          <id>jrules-snapshot</id>
+          <name>JRules snapshot repo</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/jrules-snapshot</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+        </repository>
+        <repository>
+          <id>jrules-release</id>
+          <name>JRules release repo</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/jrules-release</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>proxy</id>
+          <name>Maestro Project Server</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/proxy</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>proxy</id>
+          <name>Maestro Project Server</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/proxy</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+      <pluginRepository>
+          <id>jrules-release</id>
+          <name>JRules release repo</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/jrules-release</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>jrules-snapshot</id>
+          <name>JRules snapshot repo</name>
+          <url>http://jules2.francelab.fr.ibm.com:8081/nexus/content/repositories/jrules-snapshot</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>defaultrepos</id>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>defaultrepos</activeProfile>
+  </activeProfiles>
+
+  <servers>
+    <server>
+      <id>jrules-snapshot</id>
+      <username>grateau</username>
+      <password>Docker4Moi?</password>
+    </server>
+    <server>
+      <id>jrules-release</id>
+     <username>grateau</username>
+      <password>Docker4Moi?</password>
+    </server>
+    <server>
+      <id>proxy</id>
+     <!--  <username>vttuser</username>
+      <password>2be|!2be</password> -->
+      <username>grateau</username>
+      <password>Docker4Moi?</password>
+    </server>
+        <server>
+      <id>odm-snapshot</id>
+      <username>grateau</username>
+      <password>Docker4Moi?</password>
+    </server>
+  </servers>
+</settings>

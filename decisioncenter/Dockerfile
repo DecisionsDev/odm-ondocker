@@ -10,6 +10,8 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
+RUN mkdir /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
