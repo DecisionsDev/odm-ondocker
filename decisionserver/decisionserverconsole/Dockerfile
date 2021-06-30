@@ -13,12 +13,12 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
-RUN mkdir /root/.m2
+RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build Welcome page
-RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
+RUN cd /welcomepage; mvn -B clean install  && mkdir -p $APPS
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP*/res.war $APPS
