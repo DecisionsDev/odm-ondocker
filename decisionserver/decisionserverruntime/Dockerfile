@@ -19,7 +19,8 @@ COPY $ODMDOCKERDIR/licenses /licenses
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
-
+RUN mkdir /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 
 RUN chmod -R a+x $SCRIPT && \
