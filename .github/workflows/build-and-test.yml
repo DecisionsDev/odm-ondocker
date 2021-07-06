@@ -20,6 +20,8 @@ jobs:
       # - run: sh -c "! egrep -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude=.travis.yml --exclude-dir=licenses --exclude=index.jsp --exclude-dir=.git --exclude-dir=.github --exclude=error.jsp --exclude-dir=dockerhub ."
       - run: bash build.sh
         env:
+          ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
           ODM_URL: ${{ secrets.ODM_URL }}
       - run: sudo docker-compose up -d
       - run: sh test/suite.sh
