@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV THIRDPARTY /thirdpartylib
@@ -9,6 +10,8 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
