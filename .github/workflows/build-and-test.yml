@@ -1,7 +1,7 @@
 name: Build and test
 on: [push]
 env:
-  - DOCKER_COMPOSE_VERSION: 1.29.2
+  DOCKER_COMPOSE_VERSION: 1.29.2
 jobs:
   Build-And-Test:
     runs-on: ubuntu-latest
