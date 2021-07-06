@@ -13,7 +13,7 @@ jobs:
       - name: Log into Docker
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
       - name: Get docker-compose
-        run: curl --insecure --location --output /usr/local/bin/docker-compose --retry 5 --retry-delay 10 https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
+        run: sudo curl --insecure --location --output /usr/local/bin/docker-compose --retry 5 --retry-delay 10 https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
       - run: docker-compose --version
       - run: docker info
       - run: echo "This job's status is ${{ job.status }}."
