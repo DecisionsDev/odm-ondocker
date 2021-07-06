@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
@@ -23,7 +24,8 @@ RUN set -ex; \
     fi
 
 
-
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 

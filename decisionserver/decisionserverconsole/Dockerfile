@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
@@ -12,14 +13,16 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverconsole/script $SCRIPT
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
-
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build Welcome page
-RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
+RUN cd /welcomepage; mvn -B clean install  && mkdir -p $APPS
 
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP*/res.war $APPS
+
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
 RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi

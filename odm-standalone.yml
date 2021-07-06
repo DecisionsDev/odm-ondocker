@@ -16,6 +16,7 @@ services:
         - ODMDBVERSION=$ODMDBVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     user: "1001:0"
     environment:
     - SAMPLE=false

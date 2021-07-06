@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
@@ -15,6 +16,8 @@ COPY $ODMDOCKERDIR/licenses /licenses
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 # Decision Runner
 COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS

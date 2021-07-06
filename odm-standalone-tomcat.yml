@@ -12,6 +12,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMVERSION=$ODMVERSION
         - ODMDBVERSION=$ODMDBVERSION
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     environment:
     - SAMPLE=true
     ports:
