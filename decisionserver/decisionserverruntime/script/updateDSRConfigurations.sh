@@ -187,3 +187,16 @@ if [ -f "/config/web-configuration.properties" ]; then
 else
   echo "No web.xml configuration file provided"
 fi
+
+if [ -n "$ENABLE_TLS_AUTH" ] && [ "$ENABLE_TLS_AUTH" = true ]; then
+	echo "Configure HTTPS Client Authentication in web.xml"
+    result="$(xmllint --shell $APPS/DecisionService.war/WEB-INF/web.xml 2>&1 >/dev/null << EOF
+setns x=http://java.sun.com/xml/ns/j2ee
+cd x:web-app/x:login-config/x:auth-method
+set CLIENT-CERT
+save
+EOF
+)"
+else
+  echo "Use default HTTP Basic Authentication in web.xml"
+fi
