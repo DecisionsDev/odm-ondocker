@@ -16,7 +16,10 @@ jobs:
         run: sudo curl --insecure --location --output /usr/local/bin/docker-compose --retry 5 --retry-delay 10 https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
       - run: docker-compose --version
       - run: docker info
-      - run: echo "This job's status is ${{ job.status }}."
+      - run: sh -c "! egrep  -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude='.travis.yml' --exclude-dir='licenses' --exclude=index.jsp --exclude-dir=.git --exclude=error.jsp --exclude-dir='dockerhub' ."
+      - run: bash build.sh
+      - run: sudo docker-compose up -d
+      - run: sh test/suite.sh
       - name: Report Status
         if: always()
         uses: ravsamhq/notify-slack-action@master
