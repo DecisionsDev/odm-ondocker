@@ -23,9 +23,6 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
 RUN apk add --no-cache zip bash ca-certificates wget
 
-RUN mkdir work;cd work && \
-	if [ -f /executionserver/lib/jrules-cdi-api.jar ]; then zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-api.jar /executionserver/lib/javax.inject-1.jar; else zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar; fi
-
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 RUN chmod -R a+x $SCRIPT && \
     sync && \
@@ -99,7 +96,6 @@ COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 
 # Copy Artifact
 COPY --from=builder --chown=1001:0 $APPS $APPS
-COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 
