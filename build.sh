@@ -9,6 +9,7 @@ mkdir ${HOME}/.cache
 
 echo "ODM distribution: Starting download..."
 ODM_ZIP_URL=${ODM_URL}/${ODM_VERSION}/icp-docker-compose-build-images-${ODM_VERSION}.zip
+echo ${ODM_ZIP_URL}
 curl ${ODM_ZIP_URL} -u "${ARTIFACTORY_USER}:${ARTIFACTORY_PASSWORD}" -o ${HOME}/.cache/${ODM_FILE_NAME}
 echo "ODM distribution: download finished..."
 
