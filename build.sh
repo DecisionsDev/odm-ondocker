@@ -32,13 +32,13 @@ docker run --user 'root' -v $PWD/wlp:/opt/wlp  $FROMLIBERTY  /bin/sh -c "mkdir -
 
 
 echo "build ODM standard docker images..."
-docker-compose build
+docker-compose -f docker-compose.yml build --remove-orphans --force-recreate
 
 echo "build ODM standalone docker image..."
-docker-compose -f odm-standalone.yml build
+docker-compose -f odm-standalone.yml build --remove-orphans --force-recreate
 
 # echo "build ODM standalone tomcat8 docker image..."
 # docker-compose -f odm-standalone-tomcat.yml build
 
 echo "build ODM cluster docker images..."
-docker-compose -f odm-cluster.yml build
+docker-compose -f odm-cluster.yml build --remove-orphans --force-recreate
