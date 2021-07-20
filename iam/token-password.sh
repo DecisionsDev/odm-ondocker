@@ -6,10 +6,8 @@ token_url=https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/identit
 
 export client_secret=ibm-odm-vtt-odm-oidc-client-id-secret-value
 export client_id=ibm-odm-vtt-odm-oidc-client-id
-#username=odmAdmin
-#password=odmAdmin
-username=mathias.mouly@fr.ibm.com
-password=%Tigrou03Tigrou03
+username=odmAdmin
+password=odmAdmin
 
 scope=openid
 
