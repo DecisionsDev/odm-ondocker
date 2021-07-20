@@ -95,7 +95,6 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 | [Decision Server console](http://localhost:9060/res) | http://localhost:9060/res |odmAdmin|odmAdmin|
 | [Decision Server Runtime](http://localhost:9060/DecisionService) | http://localhost:9060/DecisionService |odmAdmin|odmAdmin|
 | [Decision Center Business console]( http://localhost:9060/decisioncenter) | http://localhost:9060/decisioncenter |odmAdmin|odmAdmin|
-| [Decision Center Enterprise console]( http://localhost:9060/teamserver) | http://localhost:9060/teamserver |odmAdmin|odmAdmin|
 | [Decision Runner]( http://localhost:9060/DecisionRunner) | http://localhost:9060/DecisionRunner |odmAdmin|odmAdmin|
 | [Sample application]( http://localhost:9060/loan-server) | http://localhost:9060/loan-server  | | |
 
