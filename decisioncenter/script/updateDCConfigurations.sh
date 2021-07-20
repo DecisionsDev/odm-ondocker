@@ -345,3 +345,10 @@ then
   echo "Update javascript for Decision Center customization"
   cp -r /config/customlib/js/* /config/apps/decisioncenter.war/js
 fi
+
+if [ -s "/config/auth/server-configurations.json" ]
+then
+  echo "Update decisioncenter-configuration.properties with provided /config/auth/server-configurations.json"
+  cp /config/auth/server-configurations.json /config/server-configurations.json
+fi
+
