@@ -12,4 +12,4 @@ echo "***************"
 
 echo "***************"
 
-curl -u ${admin_username}:${admin_password} --request GET  ${registration_url}/${OIDC_CLIENT_ID} --insecure
+curl -u ${admin_username}:${admin_password} --request DELETE  ${registration_url}/${OIDC_CLIENT_ID} --insecure
