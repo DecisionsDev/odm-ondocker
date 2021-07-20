@@ -1,18 +1,19 @@
 #!/bin/sh
 
 ***REMOVED***
-export admin_password=1k1KE0U3qOfeNVnR9kajp22zQud0Byat
-export registration_url=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idauth/oidc/endpoint/OP/registration
-export client_name=iamclient4odm
-export client_secret=iamsecret4odm
+***REMOVED***
+export registration_url=https://cp-console.apps.9.20.212.178.nip.io//idauth/oidc/endpoint/OP/registration
+export client_name=icp4aodm-prod-odm-oidc-client-id
+export client_secret=icp4aodm-prod-odm-oidc-client-id-secret-value
+export client_id=icp4aodm-prod-odm-oidc-client-id
 
 # Note: the functional_user_id and functional_user_groupIds are the functional user
 # and groups for client_crendetials. This works from 19.0.0.4.
 
-curl -k -s -X PUT \
+curl -k -s -X POST \
      -H "Content-Type:application/json" \
      -u "${admin_username}:${admin_password}" \
-     -d @- "${registration_url}/${client_name}" <<+++
+     -d @- "${registration_url}" <<+++
 {
  "client_id": "${client_id}",
  "client_secret": "${client_secret}",
@@ -38,7 +39,7 @@ curl -k -s -X PUT \
  "hash_len":0,
  "preauthorized_scope": "openid",
  "introspect_tokens": true,
- "redirect_uris": ["https://localhost:9643/decisioncenter/openid/redirect/odm","https://localhost:9743/DecisionRunner/openid/redirect/odm","https://localhost:9843/res/openid/redirect/odm","https://localhost:9943/DecisionService/openid/redirect/odm","https://localhost:9444/oidcclient/redirect/odm","http://127.0.0.1:9081/oidcCallback","http://127.0.0.1:19081/oidcCallback","http://127.0.0.1:29081/oidcCallback","http://127.0.0.1:39081/oidcCallback","https://localhost/tokenreceiver"]
+ "redirect_uris": ["https://localhost:9643/odm/decisioncenter/openid/redirect/odm","https://localhost:9643/decisioncenter/openid/redirect/odm","https://localhost:9743/DecisionRunner/openid/redirect/odm","https://localhost:9843/res/openid/redirect/odm","https://localhost:9943/DecisionService/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/decisioncenter/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/res/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/DecisionRunner/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/DecisionService/openid/redirect/odm","http://127.0.0.1:9081/oidcCallback","http://127.0.0.1:19081/oidcCallback","http://127.0.0.1:29081/oidcCallback","http://127.0.0.1:39081/oidcCallback","https://localhost/tokenreceiver"]
 }
 +++
 echo
