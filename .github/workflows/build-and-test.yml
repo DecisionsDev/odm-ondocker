@@ -1,0 +1,37 @@
+name: Build and test
+on: [push]
+env:
+  DOCKER_COMPOSE_VERSION: 1.29.2
+  ODM_FILE_NAME: odm-for-docker.zip
+  ODM_VERSION: 8.10.5.0
+jobs:
+  Build-And-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Log into Docker
+        run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
+      - run: sudo apt update
+      - run: sudo apt full-upgrade
+      - name: Get docker-compose
+        run: sudo curl --insecure --location --output /usr/local/bin/docker-compose --retry 5 --retry-delay 10 https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
+      - run: docker-compose --version
+      - run: docker info
+      # - run: sh -c "! egrep -ri '(LICENSE[D]?).*(IBM)' --exclude='*.tar.gz' --exclude=.travis.yml --exclude-dir=licenses --exclude=index.jsp --exclude-dir=.git --exclude-dir=.github --exclude=error.jsp --exclude-dir=dockerhub ."
+      - run: bash build.sh
+        env:
+          ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+          ODM_URL: ${{ secrets.ODM_URL }}
+      - run: sudo docker-compose up -d
+      - run: sh test/suite.sh
+      - name: Report Status
+        if: always()
+        uses: ravsamhq/notify-slack-action@master
+        with:
+          status: ${{ job.status }}
+          # notify_when: 'failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
