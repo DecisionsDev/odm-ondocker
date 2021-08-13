@@ -33,6 +33,7 @@ RUN chmod -R a+x $SCRIPT && \
 
 # Decision Center
 RUN mkdir -p $APPS
+COPY ./teamserver/applicationservers/WLP*/teamserver-dbdump.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
