@@ -10,7 +10,8 @@ services:
         - ODMDBVERSION=$ODMDBVERSION
         - FROMPOSTGRES=$FROMPOSTGRES
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
-    user: "999:999"
+        - POSTGRESUID=$POSTGRESUID
+    user: "$POSTGRESUID:$POSTGRESUID"
     ports:
     - 5432:5432
     environment:
