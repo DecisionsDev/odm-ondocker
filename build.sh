@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 echo "start building odm-ondocker..."
 echo "current build directory:"
 pwd
