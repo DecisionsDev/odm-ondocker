@@ -37,9 +37,19 @@ then
 	DR_PORT=$DECISIONRUNNER_PORT
 fi
 
+if [ -n "$ODM_CONTEXT_ROOT" ]
+then
+DSE_URL=$PROTOCOL"://"$DSC_HOST":"$DSC_PORT"/"$ODM_CONTEXT_ROOT"/res"
+else
 DSE_URL=$PROTOCOL"://"$DSC_HOST":"$DSC_PORT"/res"
+fi
 
+if [ -n "$ODM_CONTEXT_ROOT" ]
+then
+DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT"/"$ODM_CONTEXT_ROOT"/DecisionRunner"
+else
 DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT"/DecisionRunner"
+fi
 
 retry=0
 while [[ ("$(curl -X POST "http://localhost:9060/decisioncenter-api/v1/servers/d8cb5830-14aa-45e0-89e2-8837f4d91021" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DSE_URL\"}" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do 
