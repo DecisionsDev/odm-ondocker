@@ -1,0 +1,7 @@
+{
+  "__DecisionID__": "string",
+  "DomainSample": {
+    "astr": "string",
+    "bstr": "string"
+  }
+}
