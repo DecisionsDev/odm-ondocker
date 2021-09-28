@@ -1,0 +1,12 @@
+<server>
+
+        <variable name="group1" value="group:http://9.171.10.88:8080/auth/realms/master/odmAdmin"/>
+
+	<variable name="odm.rtsAdministrators.group1" value="${group1}"/>
+	<variable name="odm.rtsInstallers.group1" value="${group1}"/>
+	<variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
+        <variable name="odm.resAdministrators.group1" value="${group1}"/>
+        <variable name="odm.resDeployers.group1" value="${group1}"/>
+        <variable name="odm.resMonitors.group1" value="${group1}"/>
+        <variable name="odm.resExecutors.group1" value="${group1}"/>
+</server>
