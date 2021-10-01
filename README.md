@@ -40,7 +40,7 @@ This documentations applies to Operational Decision Management Standard V8.10.x 
 
 # Issues and contributions
 
-For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/lgrateau/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://developer.ibm.com/odm/home/connect/) through the ODMDev community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/lgrateau/odm-ondocker/blob/master/CONTRIBUTING.md).
+For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://developer.ibm.com/odm/home/connect/) through the ODMDev community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
 
 
 
