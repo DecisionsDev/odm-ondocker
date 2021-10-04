@@ -28,8 +28,8 @@ RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
 # Install the driver for H2 and for PostgreSQL
-RUN curl -LOR https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources/ && \
-    curl -LOR https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
+RUN curl -LORs https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources/ && \
+    curl -LORk https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
