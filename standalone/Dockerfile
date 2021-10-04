@@ -29,7 +29,7 @@ RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /co
 
 # Install the driver for H2 and for PostgreSQL
 RUN curl -LOR https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196.jar && mv h2* /config/resources/ && \
-    curl -LOR https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
+    curl -LORs https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
