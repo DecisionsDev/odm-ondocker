@@ -1,4 +1,5 @@
 #!/bin/bash
+# Using -Xshareclasses:none jvm option in keytool commands to avoid jvm errors in logs on z/os
 
 DEFAULT_KEYSTORE_PASSWORD=changeme
 DEFAULT_TRUSTSTORE_PASSWORD=changeme
@@ -8,7 +9,7 @@ then
 	echo "replace /config/security/keystore.jks by /shared/tls/keystore/jks/server.jks and default keystore password"
 	cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
-	
+
 	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ]
         then
 		echo "change default keystore password with provided Root CA keystore password"
@@ -59,13 +60,13 @@ then
         fi
 
         i=0
-        mapfile -t trust_list < <(keytool -list -v -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
+        mapfile -t trust_list < <(keytool -J"-Xshareclasses:none" -list -v -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
         for trust_file in "${trust_list[@]}"
         do
-        keytool -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
+        keytool -J"-Xshareclasses:none" -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
         ((i=i+1))
         done
-        keytool -importkeystore -srckeystore /config/ldap/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+        keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/ldap/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
 
 else
         echo "no /config/ldap/ldap.jks file"
@@ -74,7 +75,7 @@ fi
 # This part allow to import a list of PEM certificate in the JVM
  echo "Importing trusted certificates $dir"
 CERTDIR="/config/security/trusted-cert-volume/"
-if [ -d $CERTDIR ]; then 
+if [ -d $CERTDIR ]; then
     cd $CERTDIR
     TRUSTSTORE=/config/security/truststore.jks
     i=0
@@ -83,8 +84,8 @@ if [ -d $CERTDIR ]; then
         echo "Importing trusted certificates $file"
         i=$((i+1))
         ALIASNAME="trust_$i_$file"
-        keytool -delete -alias 0$ALIASNAME -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore $TRUSTSTORE > /dev/null
-        keytool -import -v -trustcacerts -alias 0$ALIASNAME -file $file -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt 
+        keytool -J"-Xshareclasses:none" -delete -alias 0$ALIASNAME -storepass $DEFAULT_TRUSTSTORE_PASSWORD -keystore $TRUSTSTORE > /dev/null
+        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias 0$ALIASNAME -file $file -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
     done
     echo "done"
 fi
@@ -92,11 +93,11 @@ fi
 if [ -f "/config/resources/ibm-public.crt" ]
 then
         echo "Importing IBM Public certificate"
-        keytool -import -v -trustcacerts -alias IBM-PUBLIC -file /config/resources/ibm-public.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias IBM-PUBLIC -file /config/resources/ibm-public.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 fi
 
 if [ -f "/config/resources/ibm-docs.crt" ]
 then
         echo "Importing IBM Docs certificate"
-        keytool -import -v -trustcacerts -alias IBM-DOCS -file /config/resources/ibm-docs.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias IBM-DOCS -file /config/resources/ibm-docs.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 fi
