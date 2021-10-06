@@ -36,6 +36,20 @@ then
     sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdParameters.properties
     sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdParameters.properties
     sed -i 's|__OPENID_ALLOWED_DOMAINS__|'$OPENID_ALLOWED_DOMAINS'|g' /config/authOidc/openIdParameters.properties
+
+    if [ -n "$OPENID_TOKEN_FORMAT" ]
+    then
+      sed -i 's|__OPENID_TOKEN_FORMAT__|'$OPENID_TOKEN_FORMAT'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/OPENID_TOKEN_FORMAT/d'  /config/authOidc/openIdParameters.properties
+    fi
+
+    if [ -n "$OPENID_GRANT_TYPE" ]
+    then
+      sed -i 's|__OPENID_GRANT_TYPE__|'$OPENID_GRANT_TYPE'|g' /config/authOidc/openIdParameters.properties 
+    else
+      sed -i '/OPENID_GRANT_TYPE/d' /config/authOidc/openIdParameters.properties
+    fi
   fi
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdParameters.properties
   sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
@@ -91,13 +105,29 @@ then
      sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProviders.json
 
      OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
-     echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
-     sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_TOKEN_FORMAT" ]
+     then
+	echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
+	sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_TOKEN_FORMAT"
+        sed -i '/tokenFormat/d' /config/OdmOidcProviders.json 
+     fi
 
      OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
      echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
      sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
      
+     OPENID_GRANT_TYPE=$(grep OPENID_GRANT_TYPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_GRANT_TYPE=//g")
+     if [ -n "$OPENID_GRANT_TYPE" ]
+     then
+	echo "OAuth config : set grantType to $OPENID_GRANT_TYPE"
+     	sed -i 's|OPENID_GRANT_TYPE|'$OPENID_GRANT_TYPE'|g' /config/OdmOidcProviders.json
+     else
+	echo "OAuth config : no provided OPENID_GRANT_TYPE then set default grantType to client_credentials "
+	sed -i 's|OPENID_GRANT_TYPE|client_credentials|g' /config/OdmOidcProviders.json
+     fi
+
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
      cp /config/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
