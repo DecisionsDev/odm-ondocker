@@ -27,6 +27,8 @@ $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh
 
+$SCRIPT/generateRDFiles.sh
+
 if [ -s "$SCRIPT/customEnd.sh" ]
 then
         $SCRIPT/customEnd.sh
