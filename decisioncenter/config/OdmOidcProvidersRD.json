@@ -1,0 +1,13 @@
+{
+  "providers": [
+	{
+        "name": "OPENID_PROVIDER",
+	"authorizationURL": "OPENID_AUTHORIZATION_URL",
+        "tokenURL": "OPENID_TOKEN_URL",
+	"clientId": "OPENID_CLIENT_ID",
+        "clientSecret": "OPENID_CLIENT_SECRET",
+	"callbackPort": "9081",
+        "callbackHttps": true
+    }
+  ]
+}
