@@ -39,14 +39,14 @@ fi
 
 if [ -n "$ODM_CONTEXT_ROOT" ]
 then
-DSE_URL=$PROTOCOL"://"$DSC_HOST":"$DSC_PORT"/"$ODM_CONTEXT_ROOT"/res"
+DSE_URL=$PROTOCOL"://"$DSC_HOST":"$DSC_PORT""$ODM_CONTEXT_ROOT"/res"
 else
 DSE_URL=$PROTOCOL"://"$DSC_HOST":"$DSC_PORT"/res"
 fi
 
 if [ -n "$ODM_CONTEXT_ROOT" ]
 then
-DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT"/"$ODM_CONTEXT_ROOT"/DecisionRunner"
+DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT""$ODM_CONTEXT_ROOT"/DecisionRunner"
 else
 DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT"/DecisionRunner"
 fi
