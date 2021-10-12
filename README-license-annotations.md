@@ -67,5 +67,27 @@ spec:
 Decision Center Production example:
 
 ```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-odm-decisioncenter
+  ...
+spec:
+  ...
+  template:
+    metadata:
+      ...
+      annotations:
+        productName: "IBM Operational Decision Manager"
+        productID: "b1a07d4dc0364452aa6206bb6584061d"
+        productVersion: "8.11.0"
+        productMetric: "PROCESSOR_VALUE_UNIT"
+        productChargedContainers: my-odm-decisioncenter
+    spec:
+      ...
 
+      containers:
+      - name: my-odm-decisioncenter
+        image: ibmcom/odm-decisioncenter:8.11.0-amd64
+        ...
 ```
