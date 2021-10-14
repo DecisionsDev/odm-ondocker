@@ -64,13 +64,13 @@ spec:
 
 ## Example
 
-Decision Center Production example:
+Decision Server Runtime Production example:
 
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-odm-decisioncenter
+  name: my-odm-decisionserverruntime
   ...
 spec:
   ...
@@ -82,12 +82,12 @@ spec:
         productID: "b1a07d4dc0364452aa6206bb6584061d"
         productVersion: "8.11.0"
         productMetric: "PROCESSOR_VALUE_UNIT"
-        productChargedContainers: my-odm-decisioncenter
+        productChargedContainers: my-odm-decisionserverruntime
     spec:
       ...
 
       containers:
-      - name: my-odm-decisioncenter
-        image: ibmcom/odm-decisioncenter:8.11.0-amd64
+      - name: my-odm-decisionserverruntime
+        image: ibmcom/odm-decisionserverruntime:8.11.0-amd64
         ...
 ```
