@@ -1,10 +1,10 @@
-# Add IBM License Metering annotations
+# Add IBM License Metering annotations to custom ODM containers 
 
 License annotations let you track usage based on the limits defined on the container, rather than on the underlying machine. You configure your clients to deploy the container with specific annotations that the IBM® License Service then uses to track usage.
 
-The IBM License Service needs to be installed on the Kubernetes cluster where the IBM ODM container is deployed to track usage. Further information regarding the supported environments and installation instructions can be found on the [ibm-licensing-operator](https://www.ibm.com/links?url=https%3A%2F%2Fgithub.com%2FIBM%2Fibm-licensing-operator) page on GitHub.
+The IBM License Service needs to be installed on the Kubernetes cluster where the IBM ODM containers (predefined or custom) are deployed to track usage. Further information regarding the supported environments and installation instructions can be found on the [ibm-licensing-operator](https://www.ibm.com/links?url=https%3A%2F%2Fgithub.com%2FIBM%2Fibm-licensing-operator) page on GitHub.
 
-The IBM License Service processes pod annotations to track licenses. Therefore product teams should use specific metering annotations in the `spec.template.metadata.annotations` section of their Kubernetes pod template.
+The IBM License Service processes pod annotations to track licenses. Therefore product teams should use specific metering annotations in the `spec.template.metadata.annotations` section of their Kubernetes pod template for custom ODM containers, similarly to what is provided for the predefined ODM containers 
 
 Based on your deployment type, use the following annotations:
 - [IBM ODM on K8S (Production)](#ibm-odm-on-k8s-production)
@@ -41,7 +41,7 @@ Based on your deployment type, use the following annotations:
         annotations:
           productName: "IBM Operational Decision Manager - Non Prod"
           productID: "e32af5770e06427faae142993c691048"
-          productVersion: "8.110"
+          productVersion: "8.11.0"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
