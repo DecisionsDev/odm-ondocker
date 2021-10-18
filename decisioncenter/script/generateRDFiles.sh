@@ -12,7 +12,7 @@ then
      
   OPENID_TOKEN_URL=$(grep OPENID_TOKEN_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_URL=//g")
 
-  if [ "$OPENID_TOKEN_URL" =~ "ums-sso-service" ]
+  if [[ "$OPENID_TOKEN_URL" =~ "ums-sso-service" ]]
   then
     echo "RuleDesigner Config : replace URL internal service token URL endpoint by external URL"
     OPENID_TOKEN_URL=$OPENID_SERVER_URL/oidc/endpoint/ums/token
