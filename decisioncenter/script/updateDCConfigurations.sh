@@ -169,6 +169,13 @@ then
   sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml\n}' /config/application.xml
   sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
 
+  if [ -n "$DISABLE_ALL_AUTHENTICATED_RTSUSER" ]
+  then
+    echo "replace ALL_AUTHENTICATED_USERS by rtsUsers group  in /config/application.xml"
+    sed -i $'/<special-subject type=/{e cat /config/authOidc/rtsUsers.xml\n}' /config/application.xml
+    sed -i '/<special-subject type=/d' /config/application.xml
+  fi
+
 else
   echo "No provided /config/authOidc/openIdParameters.properties"
   echo "BASIC_AUTH config : set provider to null in $DC_SERVER_CONFIG"
@@ -203,6 +210,13 @@ else
     sed -i '/<group name="rtsInstallers"/d' /config/application.xml
     sed -i $'/<group name="rtsConfigManagers"/{e cat /config/authOidc/rtsConfigManagers.xml\n}' /config/application.xml
     sed -i '/<group name="rtsConfigManagers"/d' /config/application.xml
+
+    if [ -n "$DISABLE_ALL_AUTHENTICATED_RTSUSER" ]
+    then
+      echo "replace ALL_AUTHENTICATED_USERS by rtsUsers group  in /config/application.xml"
+      sed -i $'/<special-subject type=/{e cat /config/authOidc/rtsUsers.xml\n}' /config/application.xml
+      sed -i '/<special-subject type=/d' /config/application.xml
+    fi
   fi
 fi
 
