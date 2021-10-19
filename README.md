@@ -13,7 +13,7 @@ IBM Operational Decision Manager on Docker.
         <img src="https://a.slack-edge.com/436da/marketing/img/meta/favicon-32.png">
   </a>
 </p>
- 
+
 
 #  Deploy IBM Operational Decision Manager  on Docker from Dev to Production
 
@@ -42,7 +42,9 @@ This documentations applies to Operational Decision Management Standard V8.10.x 
 
 For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://developer.ibm.com/odm/home/connect/) through the ODMDev community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
 
+# License tracking with IBM License Service
 
+Refer to the [Add IBM License Metering annotations](README-license-annotations.md) page to enable license tracking in IBM License Service.
 
 # License
 [Apache 2.0](LICENSE)
