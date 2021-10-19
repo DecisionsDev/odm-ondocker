@@ -27,7 +27,7 @@ Based on your deployment type, use the following annotations:
         annotations:
           productName: "IBM Operational Decision Manager"
           productID: "b1a07d4dc0364452aa6206bb6584061d"
-          productVersion: "8.11.0"
+          productVersion: "8.10.5.1"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -41,7 +41,7 @@ Based on your deployment type, use the following annotations:
         annotations:
           productName: "IBM Operational Decision Manager - Non Prod"
           productID: "e32af5770e06427faae142993c691048"
-          productVersion: "8.11.0"
+          productVersion: "8.10.5.1"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -57,7 +57,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager - Non Prod"
         productID: "e32af5770e06427faae142993c691048"
-        productVersion: "8.11.0"
+        productVersion: "8.10.5.1"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: <containername>
 ```
@@ -80,7 +80,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager"
         productID: "b1a07d4dc0364452aa6206bb6584061d"
-        productVersion: "8.11.0"
+        productVersion: "8.10.5.1"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: my-odm-decisionserverruntime
     spec:
@@ -88,6 +88,6 @@ spec:
 
       containers:
       - name: my-odm-decisionserverruntime
-        image: my-repo/my-odm-decisionserverruntime:8.11.0-amd64
+        image: my-repo/my-odm-decisionserverruntime:8.10.5.1-amd64
         ...
 ```
