@@ -3,13 +3,15 @@ INFORMAZIONI RELATIVE ALLA LICENZA
 I Programmi elencati di seguito sono concessi in licenza in base alle seguenti clausole e condizioni License Information in aggiunta alle clausole della licenza del Programma precedentemente accettate dal Cliente e IBM. Se il Cliente non ha accettato precedentemente le clausole della licenza in vigore per il Programma, si applica Accordo Internazionale di Licenza per Programmi senza Garanzia (Z125-5589-05).
 
 Nome Programma (Numero Programma):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Le seguenti clausole standard si applicano all'utilizzo del Programma da parte del licenziatario.
 
 Diritto di utilizzo limitato
 
-Il licenziatario non può utilizzare il Programma per fornire servizi IT commerciali a terze parti, fornire hosting o timesharing commerciali o sublicenziare, noleggiare o concedere in leasing il Programma, se non espressamente stabilito negli accordi applicabili, in base ai quali il licenziatario ottiene autorizzazioni all'utilizzo del Programma.
+Ad eccezione dei Programmi in bundle, tutto il software IBM fornito al licenziatario con il Programma può essere utilizzato solo per supportare l'utilizzo da parte del licenziatario stesso del Programma Principale regolamentato dal presente documento di Informazioni relative alla Licenza, il che significa che tale utilizzo deve essere direttamente correlato a un uso autorizzato del Programma Principale.
+
+Il licenziatario non può utilizzare il Programma per fornire servizi IT commerciali a terze parti, fornire timesharing o hosting commerciali, o sublicenziare, noleggiare o concedere in leasing il Programma.
 
 Usi Vietati
 
@@ -24,7 +26,7 @@ Programmi di Supporto
 Il licenziatario è autorizzato ad installare e utilizzare i Programmi di Supporto indicati di seguito solo per supportare l'utilizzo da parte del licenziatario stesso del Programma Principale regolamentato dal presente Accordo. La frase "per supportare l'utilizzo da parte del licenziatario stesso" dovrebbe riferirsi solo agli utilizzi necessari o in altro modo direttamente correlati a un utilizzo secondo licenza del Programma Principale o di un altro Programma di Supporto. I Programmi di Supporto non possono essere utilizzati per altri scopi. Un Programma di Supporto può essere accompagnato da clausole di licenza e tali clausole, se esistenti, si applicano all'utilizzo di quel Programma di Supporto da parte del licenziatario. In caso di conflitto, le clausole di questo documento di Informazioni sulla licenza prevarranno sulle clausole del Programma di Supporto. Il licenziatario dovrà ottenere un numero di titolarità per il Programma sufficienti, nel suo insieme, per coprire l'installazione e l'utilizzo, da parte sua, di tutti i Programmi di Supporto, a meno che non vengano fornite titolarità separate nel presente documento di Informazioni sulla licenza. Ad esempio, se questo Programma fosse concesso in licenza in base alla metrica VPC (Virtual Processor Core) e il licenziatario dovesse installare il Programma Principale o un Programma di Supporto su una macchina da 10 VPC e un altro Programma di Supporto su una seconda macchina da 10 VPC, il licenziatario sarebbe tenuto ad ottenere titolarità pari a 20 VPC per il Programma.
 
 Programmi di Supporto:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Limitazione per lo sviluppatore
 
@@ -50,9 +52,9 @@ Servizi e dati di terze parti
 
 Il Programma consente l'accesso a servizi dati, database, servizi web, software o altri contenuti di terze parti (complessivamente, "Contenuto di terza parte"). L'accesso a questo Contenuto di terza parte è fornito "NELLO STATO IN CUI SI TROVA", SENZA GARANZIE, ESPRESSE O IMPLICITE, INCLUSE GARANZIE DI TITOLARITÀ', FUNZIONAMENTO ININTERROTTO O INTERFERENZA E LE GARANZIE E LE CONDIZIONI IMPLICITE DI COMMERCIABILITÀ E IDONEITÀ PER UNO SCOPO PARTICOLARE. L'accesso può essere terminato dalle terze parti pertinenti in qualsiasi momento e a loro unica discrezione. Al licenziatario può essere richiesto di stipulare accordi separati con le terze parti in relazione alla disponibilità o all'uso di tale Contenuto di terza parte. IBM non è una parte di nessuno di tali accordi a parte e come espressa condizione della presente licenza, il licenziatario accetta di rispettare le clausole di tali accordo a parte.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Accordo Internazionale di Licenza per Programmi senza Garanzia

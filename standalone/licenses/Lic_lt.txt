@@ -3,13 +3,15 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų kurioms neteikiama garantija tarptautinė licencinė sutartis (Z125-5589-05).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
 
 Riboto naudojimo teisė
 
-Licenciatas neturi teisės naudoti Programos komercinėms IT paslaugoms teikti jokiai trečiajai šaliai, taip pat teikti komercinę išteklių nuomą ar laiko paskirstymą, teikti antrinę Programos licenciją ar ją nuomoti, jei tai nėra aiškiai nurodyta taikomose sutartyse, pagal kurias Licenciatas įgyja teisę naudoti Programą.
+Išskyrus Sugrupuotas programas, Visa Licenciatui su Programa pateikta IBM programinė įranga gali būti naudojama tik Licenciato Pagrindinės programos naudojimui palaikyti pagal šį Licencijos informacijos dokumentą. Tai reiškia, kad toks naudojimas turi būti tiesiogiai susijęs su Pagrindinės programos licencijuotu naudojimu.
+
+Licenciatas neturi teisės naudoti Programos komercinėms IT paslaugoms teikti jokiai trečiajai šaliai, taip pat teikti komercinę išteklių nuomą ar laiko paskirstymą, teikti antrinę Programos licenciją ar ją nuomoti.
 
 Draudžiamas naudojimas
 
@@ -24,7 +26,7 @@ Pagalbinės programos
 Licenciatas įgaliotas diegti ir naudoti toliau nurodytas Pagalbines programas tik Licenciato Pagrindinės programos naudojimui palaikyti pagal šią Sutartį. Frazė „palaikyti Licenciato naudojimą“ apima tik tą naudojimą, kuris reikalingas ar kitaip tiesiogiai susijęs su Pagrindinės ar kitos Pagalbinės Programos licencijuotu naudojimu. Pagalbinių programų negalima naudoti jokiam kitam tikslui. Pagalbinė programa gali būti pateikiama su licencijos sąlygomis ir šios sąlygos, jei tokių yra, taikomos Pagalbinę programą naudojančiam Licencijos turėtojui. Įvykus ginčui šiame Licencijos informacijos dokumente pateiktos sąlygos pakeičia Pagalbinės programos sąlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisių, kad jų pakaktų visų Licenciato Pagalbinių programų diegimui ir naudojimui padengti, nebent šiuo Licencijos informacijos dokumentu suteikiama papildomų teisių. Pavyzdžiui, jei ši Programa buvo licencijuota VPC (Virtualiojo procesoriaus branduolio) pagrindu, ir Licenciatas turėtų įdiegti Pagrindinę programą arba Pagalbinę programą 10 VPC įrenginyje, o antrame 10 VPC įrenginyje – kitą Pagalbinę programą, Licenciatui reikės įsigyti 20 Programos VPC teisių.
 
 Pagalbinės programos:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Kūrėjo apribojimas
 
@@ -50,9 +52,9 @@ Trečiosios šalies duomenys ir paslaugos
 
 Programa suteikia prieigą prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „Trečiosios šalies turinys“). Prieiga prie šio Trečiosios šalies turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Klientui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio Trečiosios šalies turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Programų kurioms neteikiama garantija tarptautinė licencinė sutartis
