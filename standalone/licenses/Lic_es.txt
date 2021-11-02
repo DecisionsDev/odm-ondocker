@@ -3,13 +3,15 @@ INFORMACIÓN SOBRE LICENCIA
 Los Programas que se enumeran a continuación se licencian bajo los siguientes términos y condiciones de Licencia, además de los términos de licencia del Programa acordados previamente entre el Cliente e IBM. Si el Cliente no ha aceptado con anterioridad los términos de la licencia aplicables al Programa, se aplicará Acuerdo Internacional de Licencia para Programas sin Garantía (Z125-5589-05).
 
 Nombre de Programa (Número de Programa):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Los términos estándar siguientes se aplican al uso por parte del Licenciatario del Programa.
 
 Derecho de uso limitado
 
-El Licenciatario no está autorizado a utilizar el Programa para prestar servicios de TI comerciales a terceros o para prestar servicios comerciales de alojamiento web u ofrecer el uso del Programa en régimen de multipropiedad, ni a otorgar licencias a terceros, alquilar o arrendar el Programa, salvo que así se estableciera explícitamente en los acuerdos aplicables en virtud de los cuales el Licenciatario obtiene las necesarias autorizaciones para utilizar el Programa.
+A excepción de los Programas Empaquetados, cualquier software de IBM proporcionado al Licenciatario con el Programa podrá utilizarse únicamente para dar soporte al uso del Programa Principal por parte del Licenciatario en virtud de este documento de Información de Licencia, lo que significa que dicho uso debe estar directamente relacionado con un uso bajo licencia del Programa Principal.
+
+El Licenciatario no tiene autorización para utilizar el Programa con el fin de prestar servicios comerciales de TI a terceros, proporcionar servicios de alojamiento comercial o uso temporal compartido ni sublicenciar, alquilar o arrendar el Programa.
 
 Usos prohibidos
 
@@ -24,7 +26,7 @@ Programas de Soporte
 El Licenciatario está autorizado para instalar y utilizar los Programas de Soporte identificados a continuación solo para dar soporte al uso por parte del Licenciatario del Programa Principal bajo el presente Acuerdo. La frase "para ofrecer soporte al uso por parte del Licenciatario" incluiría únicamente los usos necesarios o de otro modo relacionados directamente con un uso bajo licencia del Programa Principal u otro Programa de Soporte. Los Programas de Soporte no pueden utilizarse con ninguna otra finalidad. Un Programa de Soporte puede ir acompañado de términos de licencia y, dichos términos, de haberlos, se aplicarán al uso del Programa de Soporte por parte del Licenciatario. En el supuesto de que se produjera un conflicto, los términos de este documento de Licencia prevalecerán sobre los términos del Programa de Soporte. El Licenciatario debe obtener suficientes autorizaciones para el Programa, en su totalidad, a fin de dar cobertura a la instalación y uso del Licenciatario de cada uno de los Programas de Soporte, a menos que se proporcionen titularidades separadas en el presente documento de Información de la Licencia.Por ejemplo, si la licencia de este Programa está basada en VPC (Núcleo de Procesador Virtual) y el Licenciatario instala el Programa Principal o un Programa de Soporte en una máquina de 10 VPC y otro Programa de Soporte en una segunda máquina de 10 VPC, el Licenciatario deberá obtener autorizaciones por 20 VPC para el Programa.
 
 Programas de Soporte:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Limitación del Desarrollador
 
@@ -50,9 +52,9 @@ Servicios y Datos de Terceros
 
 El Programa proporciona acceso a servicios de datos, bases de datos, servicios web, software u otro contenido de terceros (conjuntamente, "Contenido de Terceros"). El acceso a este Contenido de Terceros se proporciona "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI IMPLÍCITA NI EXPLÍCITA, INCLUIDAS LA GARANTÍA DE TÍTULO, LA GARANTÍA DE NO VULNERACIÓN DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANTÍAS Y CONDICIONES IMPLÍCITAS DE COMERCIALIZACIÓN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA. Los terceros correspondientes podrán interrumpir el acceso a su entera discreción y en cualquier momento. Es posible que sea necesario que el Licenciatario celebre acuerdos independientes con el tercero relativos al acceso o al uso del Contenido de Terceros en cuestión. IBM no es parte de dichos acuerdos independientes y, como condición expresa de la presente licencia, el Licenciatario acepta cumplir los términos de dichos acuerdos independientes.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Acuerdo Internacional de Licencia para Programas sin Garantía

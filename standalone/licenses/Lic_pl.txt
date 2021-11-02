@@ -3,13 +3,15 @@ INFORMACJE LICENCYJNE
 Programy wymienione poniżej są licencjonowane na podstawie przedstawionych poniżej warunków Informacji licencyjnych, które stanowią uzupełnienie warunków licencji na Program uzgodnionych uprzednio między Klientem a IBM. Jeśli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie mają warunki licencji Międzynarodowa Umowa Licencyjna na Programy nieobjęte Gwarancją (Z125-5589-05).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Poniższe standardowe warunki mają zastosowanie do używania Programu przez Licencjobiorcę.
 
 Ograniczone prawo do używania
 
-Licencjobiorca nie jest upoważniony do używania Programu do świadczenia osobom trzecim komercyjnych usług informatycznych, usług serwerowych ani usług podziału czasu, jak również nie jest upoważniony do udzielania dalszych licencji na Program oraz wypożyczania i wydzierżawiania Programu, chyba że stosowne umowy, na mocy których Licencjobiorca jest upoważniony do używania Programu, wyraźnie stanowią inaczej.
+Z wyjątkiem Programów Pakietowych wszystkie programy IBM udostępnione Licencjodawcy wraz z Programem mogą być używane jedynie w celu umożliwienia Licencjobiorcy używania Programu Głównego w ramach niniejszego dokumentu "Informacje licencyjne", co oznacza, że takie używanie musi być bezpośrednio związane z licencjonowanym używaniem Programu Głównego.
+
+Licencjobiorca nie jest uprawniony do używania Programu w celu świadczenia osobom trzecim komercyjnych usług informatycznych, usług serwerowych ani usług podziału czasu, jak również nie jest upoważniony do udzielania dalszych licencji na Program oraz wypożyczania i wydzierżawiania Programu.
 
 Niedozwolone używanie
 
@@ -24,7 +26,7 @@ Programy Wspierające
 Licencjobiorca jest upoważniony do zainstalowania i używania Programów Wspierających wskazanych poniżej jedynie w celu umożliwienia Licencjobiorcy używania Programu Głównego w ramach niniejszej Umowy. Fraza "w celu umożliwienia Licencjobiorcy używania" obejmuje jedynie te zastosowania, które są niezbędne do licencjonowanego używania Programu Głównego lub innego Programu Wspierającego albo bezpośrednio związane z takim licencjonowanym używaniem. Programów Wspierających nie można wykorzystywać do jakichkolwiek innych celów. Do Programu Wspierającego mogą być dołączone warunki licencji. W takim przypadku warunki te mają zastosowanie do używania takiego Programu Wspierającego przez Licencjobiorcę. W przypadku sprzeczności między warunkami niniejszych Informacji licencyjnych a warunkami licencji Programu Wspierającego znaczenie rozstrzygające mają warunki niniejszych Informacji licencyjnych. Licencjobiorca musi uzyskać uprawnienia do Programu (jako całości) w liczbie odpowiadającej instalacjom i używaniu przez Licencjobiorcę wszystkich Programów Wspierających, chyba że w niniejszym dokumencie "Informacje licencyjne" określono odrębne uprawnienia. Na przykład jeśli niniejszy Program jest licencjonowany według Wirtualnych Rdzeni Procesora, a Licencjobiorca będzie chciał zainstalować Program Główny lub Program Wspierający na maszynie z 10 Wirtualnymi Rdzeniami Procesora oraz kolejny Program Wspierający na drugiej maszynie z 10 Wirtualnymi Rdzeniami Procesora, to Licencjobiorca musi uzyskać 20 uprawnień dla Wirtualnych Rdzeni Procesora do Programu.
 
 Programy Wspierające:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Ograniczenie dotyczące programistów
 
@@ -50,9 +52,9 @@ Dane i usługi osób trzecich
 
 Program zapewnia dostęp do usług transmisji danych, baz danych, usług WWW, oprogramowania bądź innej zawartości osób trzecich (zwanych dalej łącznie "Zawartością Osób Trzecich"). Zawartość taka jest udostępniana W STANIE, W JAKIM SIĘ ZNAJDUJE ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RĘKOJMIĘ RÓWNIEŻ WYŁĄCZA SIĘ), WYRAŹNYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŚCI GWARANCJI PRAWA WŁASNOŚCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÓW PRZYDATNOŚCI HANDLOWEJ I PRZYDATNOŚCI DO OKREŚLONEGO CELU. Ponadto odpowiednie osoby trzecie mogą w każdej chwili zaprzestać udostępniania zawartości według własnego uznania. Może być również wymagane zawarcie przez Licencjobiorcę oddzielnych umów z osobami trzecimi w celu uzyskania dostępu do Zawartości Osób Trzecich lub jej używania. IBM nie jest stroną żadnych takich oddzielnych umów, a zobowiązanie Licencjobiorcy do przestrzegania warunków takich umów jest wyraźnym warunkiem udzielenia niniejszej licencji.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Międzynarodowa Umowa Licencyjna na Programy nieobjęte Gwarancją
