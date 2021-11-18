@@ -47,11 +47,11 @@ services:
     environment:
     - ENABLE_TLS=true
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -81,11 +81,11 @@ services:
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -116,11 +116,11 @@ services:
     environment:
     - ENABLE_TLS=true
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -152,11 +152,11 @@ services:
     - DECISIONSERVERCONSOLE_PORT=9443
     - DECISIONRUNNER_PORT=9443
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
