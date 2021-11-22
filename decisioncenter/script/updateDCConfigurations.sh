@@ -403,3 +403,8 @@ then
   cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
 fi
 
+if [ -s "/config/auth/decisioncenter-configuration.properties" ]
+then
+  echo "Decision Center Custom Configuration with provided /config/auth/decisioncenter-configuration.properties"
+  cp /config/auth/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
