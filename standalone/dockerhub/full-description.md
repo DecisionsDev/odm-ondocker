@@ -31,7 +31,7 @@ docker pull icr.io/odm-k8s/odm
 -	**Rule Designer development environment for ODM developers**:  
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-811-rule-designer)
 
-	Use [Eclipse v4.16](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://github.com/ODMDev/ruledesigner/tree/8.11.0/p2
+	Use [Eclipse v4.16](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
 
 
 -	**Sample projects**:
