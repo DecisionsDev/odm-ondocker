@@ -69,7 +69,7 @@ fi
 if [ -n "$USERS_PASSWORD" ]
 then
   echo "Set password for defaut users"
-				sed -i 's|password="odmAdmin"|'password="$USERS_PASSWORD"'|g' /config/webSecurity.xml
+				sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/webSecurity.xml
 fi
 
 $SCRIPT/configureDatabase.sh h2
