@@ -66,6 +66,12 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
+if [ -n "$USERS_PASSWORD" ]
+then
+  echo "Set password for defaut users"
+				sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/webSecurity.xml
+fi
+
 $SCRIPT/configureDatabase.sh h2
 
 $SCRIPT/updateDatasource.sh
