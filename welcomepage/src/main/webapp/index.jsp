@@ -135,7 +135,7 @@
       padding: 50px 0 55px 0;
     }
     #resources ul li{
-      width: 180px;
+      width: 300px;
     }
     #resources ul li:hover{
       cursor: pointer;
@@ -219,7 +219,7 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
           </div>
 
           <div class="presentation-content right">
-            <iframe src="https://www.youtube.com/embed/ccdFtyy34x8?rel=0&amp;showinfo=0&amp;" gesture="media" allow="autoplay; encrypted-media" allowfullscreen="true" class="media--iframe" frameborder="0" width="560" height="315"></iframe>
+            <iframe src="https://www.youtube.com/embed/pTW7mYmqOGc?rel=0&amp;showinfo=0&amp;" gesture="media" allow="autoplay; encrypted-media" allowfullscreen="true" class="media--iframe" frameborder="0" width="560" height="315"></iframe>
           </div>
         </div>
       </article>
@@ -230,8 +230,8 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
         <h2>Additional Resources</h2>
         <ul>
           <li><a href="https://www.ibm.com/docs/en/odm/8.11.0" target="_blank">ODM Documentation</a></li>
-          <li><a href="https://www.ibm.com/community/automation/digital-business-automation/business-rules-management/" target="_blank">ODMDev Community</a></li>
-          <li><a href="https://developer.ibm.com/answers/topics/ibmodm.html" target="_blank">ODMDev Forum</a></li>
+          <li><a href="https://www.ibm.com/community/automation/digital-business-automation/business-rules-management/" target="_blank">IBM Business Automation Community</a></li>
+          <li><a href="https://github.com/ODMDev/odm-ondocker/issues" target="_blank">To report an issue</a></li>
         </ul>
       </article>
     </section>
