@@ -202,7 +202,6 @@
             <h2 class="secondary">Developer Edition</h2>
             <ul>
               <li><a href="/decisioncenter" target="_blank">Decision Center Business Console</a></li>
-              <li><a href="/teamserver" target="_blank">Decision Center Enterprise Console</a></li>
               <li><a href="/res" target="_blank">Decision Server Console</a></li>
               <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
               <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
