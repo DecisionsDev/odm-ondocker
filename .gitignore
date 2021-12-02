@@ -1,5 +1,6 @@
 /target
 /.idea
+/wlp
 .jazzignore
 ds-ei-distrib-bundles.iml
 pom-local.xml
