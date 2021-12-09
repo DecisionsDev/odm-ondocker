@@ -12,7 +12,7 @@ docker pull icr.io/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
@@ -29,7 +29,8 @@ docker pull icr.io/odm-k8s/odm
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-811-rule-designer)
+
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81100-rule-designer)
 
 	Use [Eclipse v4.16](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
 
