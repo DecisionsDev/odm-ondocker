@@ -15,12 +15,12 @@ The goal of this integration is to easily run ODM and emit events to BAI for ser
      * Extract the files.
 ```Shell
 $ tar -xzvf <bai_sn_install_dir>/bai-single-node-$VERSION.tgz
-``` 
+```
 >  For full details of installation process see https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_19.0.x/com.ibm.dba.install/bai_sn_topics/tsk_bai_single_node_deploy.html.
   >The BAI installation directory is referred to as BAI_DIR.
-  
-  
-  
+
+
+
   * Git clone this repository, or download an odm-ondocker release. The git clone directory is referred to as ODM_DIR.
 
 ```Shell
@@ -67,7 +67,7 @@ $ cd <BAI_DIR>/odm
 $ ./set-loan-server-props
 ```
 
-If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dserver.rules.res.console/topics/con_rescons_rs_prop_bai.html.
+If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/docs/en/odm/8.11.0?topic=properties-built-in-ruleset-odm-event-emitter.
 
 # Play with the integration
 ## Scenario
