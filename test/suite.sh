@@ -51,7 +51,6 @@ check_for_docker_url () {
 wait_for_url http://localhost:9070/DecisionRunner
 wait_for_url http://localhost:9090/DecisionService resExecutor resExecutor
 wait_for_url http://localhost:9060/decisioncenter
-wait_for_url http://localhost:9060/teamserver
 wait_for_url http://localhost:9080/res
 wait_for_url http://localhost:9080/DecisionService resExecutor resExecutor
 

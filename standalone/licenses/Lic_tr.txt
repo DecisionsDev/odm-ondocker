@@ -3,13 +3,15 @@ LİSANS BİLGİLERİ
 Aşağıda listelenen programlar, daha önce Müşteri ve IBM tarafından kabul edilen Program lisansı koşullarına ek olarak aşağıdaki Lisans Bilgilerinin kayıt ve koşulları kapsamında lisanslanır. Müşteri, Programa ilişkin yürürlükte olan lisans koşullarını daha önce kabul etmemişse, Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi (Z125-5589-05) geçerli olur.
 
 Program Adı (Program Numarası):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Aşağıdaki standart koşullar, Lisans Alan Tarafın Programı kullanımı için geçerlidir.
 
 Sınırlı kullanım hakkı
 
-Lisans Alan Tarafın bu Programı kullanmak üzere edindiği yetkilerin tabi olduğu geçerli sözleşmelerde açıkça belirtilmediği sürece, Lisans Alan Tarafa bu Programı herhangi bir üçüncü kişiye ticari BT hizmetleri sağlamak, ticari barındırma ya da zaman paylaşımı sunmak ya da alt lisans vermek, kiralamak ya da finansal olarak kiralamak üzere kullanma yetkisi verilmez.
+Paketlenmiş Programlar hariç olmak üzere Lisans Alan Tarafa Programla birlikte sağlanan tüm IBM yazılımları, yalnızca Lisans Alan Tarafın Asıl Programı bu Lisans Bilgileri belgesi kapsamındaki kullanımını desteklemek amacıyla kullanılabilir. Bu tür bir kullanımın Asıl programın lisanslı kullanımıyla doğrudan ilgili olması gerekir.
+
+Lisans Alan Taraf, bu Programı herhangi bir üçüncü kişiye ticari BT hizmetleri sağlamak, ticari barındırma ya da zaman paylaşımı sunmak ya da alt lisans vermek, kiralamak ya da finansal olarak kiralamak üzere kullanmaya yetkili değildir.
 
 Yasaklanmış Kullanımlar
 
@@ -24,7 +26,7 @@ Destekleyici Programlar
 Lisans Alan Tarafa, aşağıda tanımlanan Destekleyici Programları yalnızca bu Sözleşme kapsamındaki Asıl Programın Lisans Alan Tarafça kullanımını desteklemek amacıyla kurması ve kullanması için yetki verilir. "Lisans Alan Tarafça kullanımını desteklemek amacıyla" ifadesi, yalnızca Asıl Programın veya diğer bir Destekleyici Programın lisanslı kullanımı için gerekli olan veya Asıl Programın veya diğer bir Destekleyici Programın lisanslı kullanımıyla başka bir şekilde doğrudan ilişkili olan kullanımları kapsar. Destekleyici Programlar, başka hiçbir amaçla kullanılamaz. Bir Destekleyici Programla birlikte lisans koşulları ve eğer varsa, Lisans Alan Tarafın bu Destekleyici Programı kullanımı için geçerli olan koşullar da gönderilebilir. Asıl Programın koşullarıyla Destekleyici Programın koşulları arasında bir çelişki olması durumunda işbu Lisans Bilgileri belgesinin koşulları, Destekleyici Programın koşullarını hükümsüz kılarak onların yerine geçer. Lisans Alan Taraf, işbu Lisans Bilgileri belgesinde ayrı yetkiler sağlanmadığı sürece, Destekleyici Programların tümünün Lisans Alan Tarafça kurulumunu ve kullanımını kapsayacak şekilde Programın bütününe ilişkin yeterli sayıda yetki edinmelidir. Örneğin, bu Program bir Sanal İşlemci Çekirdeği (VPC) esasına göre lisanslandıysa ve Lisans Alan Taraf, Asıl Programı veya bir Destekleyici Programı 10 VPC olan bir makinede ve başka bir Destekleyici Programı ikinci bir 10 VPC olan makinede kuracaksa, Lisans Alan Tarafın Program için 20 VPC yetkisi edinmesi gerekecektir.
 
 Destekleyici Programlar:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Geliştirici Sınırlaması
 
@@ -50,9 +52,9 @@ Program, kaynak kodu biçiminde bileşenler ("Kaynak Bileşenler") ve/veya Örne
 
 Program, üçüncü kişi veri hizmetlerine, veritabanlarına, Web hizmetlerine, yazılımlarına ya da diğer üçüncü kişi içeriğine (tümü "Üçüncü Kişi İçeriği") erişim sağlar. Bu Üçüncü Kişi İçeriğine erişim, MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DAHİL OLMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEKSİZİN "OLDUĞU GİBİ" esasıyla sağlanır. Bu erişim, ilgili üçüncü kişiler tarafından yalnızca kendi kararlarına bağlı olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafın bu Üçüncü Kişi İçeriğine erişmesi veya bu içeriği kullanması için üçüncü kişilerle ayrı sözleşmeler yapması gerekebilir. IBM, ayrıca yapılacak bu tür sözleşmelerin bir tarafı değildir ve bu lisansın açık bir koşulu olarak Lisans Alan Taraf ayrıca yapılan bu tür sözleşmelerin koşullarına uygun davranmayı kabul eder.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi

@@ -21,9 +21,13 @@ $SCRIPT/updateDatasource.sh
 
 $SCRIPT/configureSwidTag.sh
 
+$SCRIPT/enableFips.sh
+
 $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh
+
+$SCRIPT/generateRDFiles.sh
 
 if [ -s "$SCRIPT/customEnd.sh" ]
 then
@@ -35,4 +39,3 @@ then
 	$SCRIPT/updateDemoServers.sh &
 fi
 
-/opt/ibm/wlp/bin/server run defaultServer

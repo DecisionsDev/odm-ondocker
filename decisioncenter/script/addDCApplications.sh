@@ -21,7 +21,6 @@ echo "<server>" >> ${applicationXml}
 
 addApplication decisioncenter
 addApplication decisionmodel
-addApplication teamserver
 addApplication decisioncenter-api
 addApplication teamserver-dbdump
 

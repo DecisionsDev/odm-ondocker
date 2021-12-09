@@ -12,14 +12,8 @@
 	<!-- datasource config -->
 	<include optional="true" location="./customdatasource/datasource-ds.xml"/>
 
-	<!-- include web security config -->
-	<include optional="true" location="./auth/webSecurity.xml"/>
-
-        <!-- include OIDC web security config -->
-        <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
-
-        <!-- include auth filters -->
-        <include optional="true" location="./authOidc/authFilters.xml"/>
+        <!-- include tls/https config -->
+        <include optional="true" location="./tlsSecurity.xml"/>
 
 	<!-- welcomepage -->
 	<include optional="true" location="./welcomepage_application.xml"/>
@@ -27,11 +21,17 @@
 	<!-- include application declaration -->
 	<include optional="true" location="./application.xml"/>
 
-	<!-- include tls/https config -->
-    <include optional="true" location="./tlsSecurity.xml"/>
+        <!-- include web security config -->
+        <include optional="true" location="./auth/webSecurity.xml"/>
 
-    <!-- include logging config -->
-    <include optional="true" location="./logging/logging.xml"/>
+        <!-- include OIDC web security config -->
+        <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
+
+        <!-- include auth filters -->
+        <include optional="true" location="./authOidc/authFilters.xml"/>
+
+    	<!-- include logging config -->
+    	<include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" />

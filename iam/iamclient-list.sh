@@ -1,9 +1,9 @@
 #!/bin/sh
 
 export admin_username=oauthadmin
-export admin_password=1k1KE0U3qOfeNVnR9kajp22zQud0Byat 
-export registration_url=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idauth/oidc/endpoint/OP/registration
-export OIDC_CLIENT_ID=iamclient4odm
+export admin_password=fVcsk0mHoNWCoqQUszWnpNNKXCYQxbdc
+export registration_url=https://cp-console.apps.9.20.212.178.nip.io/idauth/oidc/endpoint/OP/registration
+export OIDC_CLIENT_ID=icp4aodm-prod-odm-oidc-client-id
 
 #curl -k -s -X GET -u ${admin_username}:${admin_password} ${registration_url}
 echo "***************"

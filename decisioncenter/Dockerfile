@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV THIRDPARTY /thirdpartylib
@@ -9,6 +10,8 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
@@ -23,9 +26,6 @@ COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
 RUN apk add --no-cache zip bash ca-certificates wget
 
-RUN mkdir work;cd work && \
-	if [ -f /executionserver/lib/jrules-cdi-api.jar ]; then zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-api.jar /executionserver/lib/javax.inject-1.jar; else zip -r decision-center-client-api.zip /teamserver/lib /executionserver/lib/javax.batch-api-ibm-1.0-patch5407.jar /executionserver/lib/jrules-cdi-core.jar /executionserver/lib/javax.inject-1.jar; fi
-
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 RUN chmod -R a+x $SCRIPT && \
     sync && \
@@ -33,12 +33,11 @@ RUN chmod -R a+x $SCRIPT && \
 
 # Decision Center
 RUN mkdir -p $APPS
-COPY ./teamserver/applicationservers/WLP*/teamserver*.war $APPS/
+COPY ./teamserver/applicationservers/WLP*/teamserver-dbdump.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisionmodel.war && \
-    $SCRIPT/extractApp.sh teamserver.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
@@ -65,6 +64,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -91,7 +91,7 @@ ENV SCRIPT /script
 ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
-
+COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
 
 
 # Welcome page
@@ -100,14 +100,10 @@ COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 
 # Copy Artifact
 COPY --from=builder --chown=1001:0 $APPS $APPS
-COPY --from=builder --chown=1001:0 /work/decision-center-client-api.zip $APPS/decisioncenter.war/assets/decision-center-client-api.zip
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-
 
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9060 9453
-
-CMD ["/script/rundc.sh"]

@@ -43,4 +43,14 @@
   <variable name="odm.resExecutors.group1" value="group:${umsResExecutors}"/>
   <variable name="odm.resExecutors.group2" value="group:${umsITSecuSupport}"/>
   <variable name="odm.resExecutors.group3" value="group:basic/resExecutors"/>
+
+  <!-- Grant access to the user OPENID_CLIENT_ID for client_credentials flow -->
+  <variable name="odm.resAdministrators.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.resDeployers.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.resExecutors.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.resMonitors.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.rtsAdministrators.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.rtsInstallers.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+  <variable name="odm.rtsConfigManagers.user1" value="user:o=defaultWIMFileBasedRealm/umsclient4odm"/>
+
 </server>

@@ -20,8 +20,6 @@ _installation_directory/executionserver/applicationservers/WLP*/res.war_
 
 _installation_directory/executionserver/applicationservers/WLP*/DecisionService.war_
 
-_installation_directory/teamserver/applicationservers/WLP*/teamserver.war_
-
 _installation_directory/teamserver/applicationservers/WLP*/decisioncenter.war_
 
 _installation_directory/teamserver/applicationservers/WLP*/decisionmodel.war_ (starting from ODM vnext)
@@ -84,7 +82,6 @@ You can access the application with this URLs:
 | [Decision Server Console](http://localhost:9080/res) | <http://localhost:9080/res> |resAdmin|resAdmin|
 | [Decision Server Runtime](http://localhost:9090/DecisionService) |<http://localhost:9090/DecisionService> |N/A|N/A|
 | [Decision Center Business Console]( http://localhost:9060/decisioncenter) |  <http://localhost:9060/decisioncenter> |rtsAdmin|rtsAdmin|
-| [Decision Center Enterprise Console]( http://localhost:9060/teamserver) |  <http://localhost:9060/teamserver> |rtsAdmin|rtsAdmin|
 | [Decision Runner]( http://localhost:9070/DecisionRunner) |  <http://localhost:9070/DecisionRunner> |resDeployer|resDeployer|
 
 
