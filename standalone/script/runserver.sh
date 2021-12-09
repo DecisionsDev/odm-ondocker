@@ -13,7 +13,7 @@ if [ ! -f /config/initializeddb.flag ] ; then
 		odmVersion=$(java -cp ${engineJarFile} ilog.rules.tools.IlrVersion | sed -ne "s/Decision Server \(.*\)/\1/p")
 		[ -d /config/dbdata ] || mkdir -p /config/dbdata
 		cp -R /upload/* /config/dbdata/
-		if [[ "${odmVersion}" =~ "8.10.5" ]]; then
+		if [[ "${odmVersion}" =~ "8.10.5" || "${odmVersion}" =~ "8.11" ]]; then
 			cd /config/dbdata
 			java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./resdb" -user res -password res -script /upload/resdb*.zip -options compression zip
 			java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./rtsdb" -user rts -password rts -script /upload/rtsdb*.zip -options compression zip
@@ -64,6 +64,12 @@ then
 else
   echo "Prefix cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
+fi
+
+if [ -n "$USERS_PASSWORD" ]
+then
+  echo "Set password for defaut users"
+				sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/webSecurity.xml
 fi
 
 $SCRIPT/configureDatabase.sh h2

@@ -19,6 +19,8 @@ $SCRIPT/updateDatasource.sh
 
 $SCRIPT/configureSwidTag.sh
 
+$SCRIPT/enableFips.sh
+
 $SCRIPT/setTimeZone.sh
 
 if [ -s "$SCRIPT/customEnd.sh" ]
@@ -26,4 +28,3 @@ then
         $SCRIPT/customEnd.sh
 fi
 
-/opt/ibm/wlp/bin/server run defaultServer

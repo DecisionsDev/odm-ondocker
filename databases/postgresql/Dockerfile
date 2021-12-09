@@ -1,8 +1,8 @@
 ARG FROMPOSTGRES
 ARG POSTGRESUID
+ARG FROMDOCKERBUILD
 
-
-FROM alpine:3.6 AS builder
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ARG ODMDBVERSION
 
@@ -16,7 +16,7 @@ RUN rm -rf /licenses/.gitignore || true
 RUN chmod a+x /usr/local/bin/rundb.sh /tmp/restore.sh
 
 COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/
-
+COPY $ODMDOCKERDIR/databases/postgresql/*.sql /upload/
 FROM ${FROMPOSTGRES}
 
 LABEL maintainer="Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"

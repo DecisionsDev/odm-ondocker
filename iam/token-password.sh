@@ -2,12 +2,12 @@
 
 # https://www.ibm.com/support/knowledgecenter/SSHKN6/iam/3.x.x/apis/oidc_auth_apis.html#get2
 
-token_url=https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/identitytoken
+token_url=https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/identitytoken
 
-client_id=iamclient4odm
-client_secret=iamsecret4odm
-username=mathias.mouly@fr.ibm.com
-password=XXXX
+export client_secret=ibm-odm-vtt-odm-oidc-client-id-secret-value
+export client_id=ibm-odm-vtt-odm-oidc-client-id
+username=odmAdmin
+password=odmAdmin
 
 scope=openid
 

@@ -1,30 +1,25 @@
 <server>
-
-  <!-- Open ID Connect -->
-  <!-- Client with inbound propagation set to supported -->
   <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
-			clientId="iamclient4odm" clientSecret="iamsecret4odm"
+			clientId="ibm-odm-vtt-odm-oidc-client-id" clientSecret="ibm-odm-vtt-odm-oidc-client-id-secret-value"
 			signatureAlgorithm="RS256" inboundPropagation="supported"
-			authorizationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/authorize"
-			tokenEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/token"
-			jwkEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/jwk"
+			authorizationEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/authorize"
+			tokenEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/token"
+			jwkEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/jwk"
                         realmIdentifier="customRealm"
 			realmName="customRealm"
-			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP,https://mycluster.icp:9443/oidc/token"
+			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP"
                         groupIdentifier="groups"
-			validationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/introspect"/>
+			validationEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/introspect"/>
 
-
-  <!-- Client with inbound propagation set to required -->
   <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
-			clientId="iamclient4odm" clientSecret="iamsecret4odm"
+			clientId="ibm-odm-vtt-odm-oidc-client-id" clientSecret="ibm-odm-vtt-odm-oidc-client-id-secret-value"
 			signatureAlgorithm="RS256" inboundPropagation="required"
-			authorizationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/authorize"
-                        tokenEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/token"
-                        jwkEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/jwk"
-			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP,https://mycluster.icp:9443/oidc/token"
+			authorizationEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/authorize"
+                        tokenEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/token"
+                        jwkEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/jwk"
+			issuerIdentifier="https://127.0.0.1:443/idauth/oidc/endpoint/OP"
                         realmIdentifier="customRealm"
                         realmName="customRealm"
                         groupIdentifier="groups"
-			validationEndpointUrl="https://cp-console.apps.ocp461dba.cp.fyre.ibm.com/idprovider/v1/auth/introspect"/>
+			validationEndpointUrl="https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/introspect"/>
 </server>

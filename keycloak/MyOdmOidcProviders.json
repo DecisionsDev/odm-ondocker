@@ -1,0 +1,20 @@
+{
+  "providers": [
+    {
+	"name": "keycloack",
+	"grantType": "password",
+	"authorizationURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/auth",
+	"tokenURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/token",
+	"introspectionURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/token/introspect",
+	"clientId": "odm",
+	"clientSecret": "3d72a3c7-82b2-461e-b7d0-e974854d68ce",
+	"tokenFormat": "JWT",
+        "logoutURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/logout"
+    },
+    {
+        "name": "mykeycloack",
+        "grantType": "client_credentials",
+        "authorizationURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/auth"
+    }
+  ]
+}

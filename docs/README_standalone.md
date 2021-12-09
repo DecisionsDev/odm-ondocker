@@ -1,7 +1,6 @@
+# Standalone topology
 
-This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container. 
-
-
+This tutorial explains how to build and start a docker image that includes all the IBM Operational Decision Manager components in one container.
 
 ![Flow](images/StandaloneFig01.png)
 
@@ -12,7 +11,8 @@ This tutorial explains how to build and start a docker image that includes all t
 Before you proceed, install [Docker and Docker Compose](https://docs.docker.com/compose/#installation-and-set-up).
 
 ### Install Operational Decision Manager
-To create the Operational Decision Manager docker image, install one of the following components:         
+
+To create the Operational Decision Manager docker image, install one of the following components:    
 * Decision Center, with the WebSphere Liberty Profile option,
 * Decision Server Rules, with the WebSphere Liberty Profile option.
 
@@ -21,8 +21,6 @@ Go to the Operational Decision Manager installation directory and locate the req
 _installation_directory/executionserver/applicationservers/WLP*/res.war_
 
 _installation_directory/executionserver/applicationservers/WLP*/DecisionService.war_
-
-_installation_directory/teamserver/applicationservers/WLP*/teamserver.war_
 
 _installation_directory/teamserver/applicationservers/WLP*/decisioncenter.war_
 
@@ -81,7 +79,6 @@ You can access the application with these URLs:
 | [Decision Server Console](http://localhost:9080/res) | <http://localhost:9080/res> |resAdmin|resAdmin|
 | [Decision Server Runtime](http://localhost:9080/DecisionService) |<http://localhost:9080/DecisionService> |N/A|N/A|
 | [Decision Center Business Console]( http://localhost:9080/decisioncenter) |  <http://localhost:9080/decisioncenter> |rtsAdmin|rtsAdmin|
-| [Decision Center Enterprise Console]( http://localhost:9080/teamserver) |  <http://localhost:9080/teamserver> |rtsAdmin|rtsAdmin|
 | [Decision Runner]( http://localhost:9080/DecisionRunner) |  <http://localhost:9080/DecisionRunner> |resDeployer|resDeployer|
 
 ## Verifying the docker images

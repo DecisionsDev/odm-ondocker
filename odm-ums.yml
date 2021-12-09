@@ -9,7 +9,9 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
         - FROMPOSTGRES=$FROMPOSTGRES
-    user: "999:999"
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - POSTGRESUID=$POSTGRESUID
+    user: "$POSTGRESUID:$POSTGRESUID"
     ports:
     - 5432:5432
     environment:
@@ -33,6 +35,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD        
     links:
     - dbserver
     depends_on:
@@ -44,11 +47,11 @@ services:
     environment:
     - ENABLE_TLS=true
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -64,6 +67,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -77,11 +81,11 @@ services:
     - ENABLE_TLS=true
     - DECISIONSERVERCONSOLE_PORT=9443
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -97,6 +101,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -111,11 +116,11 @@ services:
     environment:
     - ENABLE_TLS=true
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks
@@ -131,6 +136,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD        
     links:
     - dbserver
     depends_on:
@@ -146,11 +152,11 @@ services:
     - DECISIONSERVERCONSOLE_PORT=9443
     - DECISIONRUNNER_PORT=9443
     - OPENID_CONFIG=true
-    - OPENID_SERVER_URL=https://odmdev09r.fr.eurolabs.ibm.com:9665
+    - OPENID_SERVER_URL=https://odm-ums1.fyre.ibm.com:9665
     - OPENID_PROVIDER=ums
     - OPENID_CLIENT_ID=umsclient4odm
     - OPENID_CLIENT_SECRET=umssecret4odm
-    - OPENID_ALLOWED_DOMAINS=odmdev09r.fr.eurolabs.ibm.com:9665,fr.eurolabs.ibm.com
+    - OPENID_ALLOWED_DOMAINS=odm-ums1.fyre.ibm.com:9665,odm-ums1.fyre.ibm.com
     volumes:
     - ${PWD}/ums/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/ums/keystore.jks:/config/security/keystore.jks

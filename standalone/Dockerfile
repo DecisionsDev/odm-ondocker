@@ -1,6 +1,7 @@
 ARG FROMLIBERTY
 ARG FROMLIBERTYBUILD
-FROM maven:3.5.2-jdk-8-alpine AS builder
+ARG FROMDOCKERBUILD
+FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
@@ -23,7 +24,8 @@ RUN set -ex; \
     fi
 
 
-
+RUN mkdir -p /root/.m2
+COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
@@ -46,12 +48,11 @@ RUN set -ex; \
     fi
 
 # Decision Center
-COPY ./teamserver/applicationservers/WLP*/teamserver.war ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
+COPY ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 
 RUN set -ex; \
     ${SCRIPT}/extractApp.sh decisioncenter.war; \
     ${SCRIPT}/extractApp.sh decisionmodel.war; \
-    ${SCRIPT}/extractApp.sh teamserver.war; \
     ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
     mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
 
@@ -76,6 +77,7 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.zip /db811/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
 ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
@@ -83,7 +85,7 @@ ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
 RUN set -ex; \
     ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
-    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /config/dbdata
+    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /db811 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR

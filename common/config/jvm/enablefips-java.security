@@ -1,0 +1,11 @@
+security.provider.1=com.ibm.crypto.fips.provider.IBMJCEFIPS
+security.provider.2=com.ibm.jsse2.IBMJSSEProvider2
+security.provider.3=com.ibm.crypto.provider.IBMJCE
+security.provider.4=com.ibm.security.jgss.IBMJGSSProvider
+security.provider.5=com.ibm.security.cert.IBMCertPath
+security.provider.6=com.ibm.security.sasl.IBMSASL
+security.provider.7=com.ibm.xml.crypto.IBMXMLCryptoProvider
+security.provider.8=com.ibm.xml.enc.IBMXMLEncProvider
+security.provider.9=org.apache.harmony.security.provider.PolicyProvider
+security.provider.10=com.ibm.security.jgss.mech.spnego.IBMSPNEGO
+jdk.tls.disabledAlgorithms=SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, \ EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC, RSAPSS, RSASSA-PSS5

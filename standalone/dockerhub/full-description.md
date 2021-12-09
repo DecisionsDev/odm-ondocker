@@ -1,10 +1,18 @@
 
 This repository is the home directory of IBM Operational Decision Manager for Developers.
 
+# New: IBM Container Registry
+
+IBM® is now hosting product images on the IBM Container Registry, *icr.io*. You can obtain the IBM Operational Decision Manager for Developers image without authenticating by using this IBM-controlled source: *icr.io/odm-k8s*.
+
+```console
+docker pull icr.io/odm-k8s/odm
+```
+
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision)
   * [ODM Developer Center community](https://developer.ibm.com/odm/)
 
 -	**Where to file issues**:  
@@ -21,9 +29,10 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	[latest release](https://github.com/docker/docker-ce/releases/latest) (down to version 17, on a best-effort basis)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81051-rule-designer)
 
-	Use [Eclipse v4.7.3](http://www.eclipse.org/downloads/packages/release/oxygen/3a). The update site is https://github.com/ODMDev/ruledesigner/tree/8.10.5.1/p2
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81100-rule-designer)
+
+	Use [Eclipse v4.16](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
 
 
 -	**Sample projects**:
@@ -57,12 +66,12 @@ This repository is the home directory of IBM Operational Decision Manager for De
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.tutorials/tutorials_topics/odm_dc_mod_int.html). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
+	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.0?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
 
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/tpc_dmov_intro_intro.html) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision) site.
 
 
   # Usage
@@ -78,13 +87,13 @@ You must accept the license before you launch the image. The license is availabl
 To install the product with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory. Use the following docker command to run the image:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true ibmcom/odm:8.10
+docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/odm-k8s/odm:8.11
 ```
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
  ```console
-docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  ibmcom/odm:8.10
+docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/odm-k8s/odm:8.11
 ```
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
 
@@ -95,7 +104,6 @@ When the server is started, use the URL http://localhost:9060 to display a welco
 | [Decision Server console](http://localhost:9060/res) | http://localhost:9060/res |odmAdmin|odmAdmin|
 | [Decision Server Runtime](http://localhost:9060/DecisionService) | http://localhost:9060/DecisionService |odmAdmin|odmAdmin|
 | [Decision Center Business console]( http://localhost:9060/decisioncenter) | http://localhost:9060/decisioncenter |odmAdmin|odmAdmin|
-| [Decision Center Enterprise console]( http://localhost:9060/teamserver) | http://localhost:9060/teamserver |odmAdmin|odmAdmin|
 | [Decision Runner]( http://localhost:9060/DecisionRunner) | http://localhost:9060/DecisionRunner |odmAdmin|odmAdmin|
 | [Sample application]( http://localhost:9060/loan-server) | http://localhost:9060/loan-server  | | |
 

@@ -3,13 +3,15 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih določb in pogojev licenčne informacije, ki veljajo poleg pogojev licence za program, s katerimi naročnik in IBM predhodno soglašata. Če naročnik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenčna pogodba za programe brez garancije (Z125-5589-05).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.10.5 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
 Omejena pravica do uporabe
 
-Imetnik licence nima pooblastila za uporabo programa za zagotavljanje komercialnih storitev informacijske tehnologije za tretje osebe, nudenje komercialnega gostovanja ali dodeljevanja časa tretjim osebam ali podlicenciranje programa oziroma njegovo dajanje v najem ali zakup, razen če je to izrecno navedeno v ustreznih pogodbah, na podlagi katerih pridobi imetnik licence pooblastila za uporabo programa.
+Z izjemo paketnih programov lahko imetnik licence uporablja vso IBM-ovo programsko opremo, ki je zagotovljena s programom, samo za podporo pri uporabi glavnega programa na podlagi tega dokumenta z informacijami o licenciranju, kar pomeni, da mora biti takšna uporaba neposredno povezana z licencirano uporabo glavnega programa.
+
+Imetnik licence ne sme uporabljati programa za nudenje komercialnih storitev informacijske tehnologije nobeni tretji osebi, za nudenje komercialnega gostovanja ali dodeljevanja časa oziroma za podlicenciranje programa ali njegovo dajanje v najem ali zakup.
 
 Prepovedana uporaba
 
@@ -24,7 +26,7 @@ Podporni programi
 Imetnik licence lahko namesti in uporablja spodaj navedene podporne programe samo za podporo svoji uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vključuje samo uporabo, ki je potrebna ali kako drugače neposredno povezana z licenčno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko priložena licenčna določila, ki (če obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij določbe iz teh licenčnih informacij prevladajo nad določbami podpornega programa. Imetnik licence mora pridobiti zadostno število pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen če so v tem dokumentu z informacijami o licenci zagotovljena ločena pooblastila. Če je ta program na primer licenciran na podlagi navideznega procesorskega jedra (VPC-ja) in želi imetnik licence namestiti glavni ali podporni program na računalnik z 10 VPC-ji in drug podporni program na drug računalnik z 10 VPC-ji, mora pridobiti 20 pooblastil VPC za program.
 
 Podporni programi:
-IBM WebSphere Liberty 20
+IBM WebSphere Liberty 21
 
 Omejitve za razvijalce
 
@@ -50,9 +52,9 @@ Podatki in storitve drugih ponudnikov
 
 Program omogoča dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAKŠEN, KOT JE", BREZ JAMSTEV KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TRŽNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepuščeno izključno njeni presoji. Imetnik licence bo morda moral skleniti ločene pogodbe z drugimi ponudniki, ki mu bodo omogočale dostop do takšne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakršnekoli ločene pogodbe in imetnik licence kot izrecni pogoj te licence soglaša, da bo ravnal v skladu z določbami takšnih ločenih pogodb.
 
-L/N:  L-ASAY-BSNHUT
-D/N:  L-ASAY-BSNHUT
-P/N:  L-ASAY-BSNHUT
+L/N:  L-ASAY-C55H6F
+D/N:  L-ASAY-C55H6F
+P/N:  L-ASAY-C55H6F
 
 
 Mednarodna licenčna pogodba za programe brez garancije

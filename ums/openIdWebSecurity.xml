@@ -1,6 +1,6 @@
 <server>
 
-  <variable name="ServerHost" value="https://odmdev09r.fr.eurolabs.ibm.com:9665"/>
+  <variable name="ServerHost" value="https://odm-ums1.fyre.ibm.com:9665"/>
 
   <!-- Open ID Connect -->
   <!-- Client with inbound propagation set to supported -->

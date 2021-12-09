@@ -2,7 +2,7 @@
   "providers": [
     {
 	"name": "OPENID_PROVIDER",
-	"grantType": "password",
+	"grantType": "OPENID_GRANT_TYPE",
 	"authorizationURL": "OPENID_AUTHORIZATION_URL",
 	"tokenURL": "OPENID_TOKEN_URL",
 	"introspectionURL": "OPENID_INTROSPECTION_URL",

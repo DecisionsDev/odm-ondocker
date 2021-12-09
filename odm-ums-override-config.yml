@@ -9,6 +9,7 @@ services:
         - ODMDOCKERDIR=$ODMDOCKERDIR
         - ODMDBVERSION=$ODMDBVERSION
         - FROMPOSTGRES=$FROMPOSTGRES
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     user: "999:999"
     ports:
     - 5432:5432
@@ -33,6 +34,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     links:
     - dbserver
     depends_on:
@@ -67,6 +69,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -103,6 +106,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD        
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -140,6 +144,7 @@ services:
         - ODMVERSION=$ODMVERSION
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD        
     links:
     - dbserver
     depends_on:
