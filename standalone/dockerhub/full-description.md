@@ -13,7 +13,7 @@ docker pull icr.io/odm-k8s/odm
 
 -	**Where to get help**:
   * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision)
-  * [ODM Developer Center community](https://developer.ibm.com/odm/)
+  * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
   https://github.com/ODMDev/odm-ondocker/issues
@@ -32,7 +32,7 @@ docker pull icr.io/odm-k8s/odm
 
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81100-rule-designer)
 
-	Use [Eclipse v4.16](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
+	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
 
 
 -	**Sample projects**:
