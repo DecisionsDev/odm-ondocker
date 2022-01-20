@@ -5,6 +5,7 @@
     "url": "http://localhost:9060/res",
     "loginServer": "odmAdmin",
     "loginPassword": "odmAdmin",
+    "builtIn": "false",
     "description": "Use this server to deploy decision services that you want to execute.",
     "groups": [
       "*"
@@ -16,6 +17,7 @@
     "url": "http://localhost:9060/DecisionRunner",
     "loginServer": "odmAdmin",
     "loginPassword": "odmAdmin",
+    "builtIn": "false",
     "description": "Use this server to run tests and simulations for decision services.",
     "groups": [
       "*"
