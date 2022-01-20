@@ -69,7 +69,8 @@ fi
 if [ -n "$USERS_PASSWORD" ]
 then
   echo "Set password for defaut users"
-				sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/webSecurity.xml
+  sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/webSecurity.xml
+  sed -i 's|"loginPassword": ".*"|'\"loginPassword\":\"$USERS_PASSWORD\"'|g' /config/server-configurations.json
 fi
 
 $SCRIPT/configureDatabase.sh h2
