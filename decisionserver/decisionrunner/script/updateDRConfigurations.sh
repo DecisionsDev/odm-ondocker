@@ -14,15 +14,21 @@ if [ ! -f /config/initialized.flag ] ; then
 		echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE and XU connection pool timeout to default value 3000"
                 sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value>.*|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
 	fi
-        sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-        if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+        if [ -n "$RES_URL" ]
         then
-		echo "Configure decisionserverconsole-context-root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
-		sed -i 's|decisionserverconsole-context-root|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-	else
-		echo "No DECISIONSERVERCONSOLE_CONTEXT_ROOT set"
-                sed -i 's|decisionserverconsole-context-root|''|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-	fi
+                echo "Configure RES_URL with provided $RES_URL"
+                sed -i 's|RES_URL|'$RES_URL'|' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+        else
+                sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+                if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+                then
+		     echo "Configure decisionserverconsole-context-root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
+		     sed -i 's|decisionserverconsole-context-root|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	        else
+		     echo "No DECISIONSERVERCONSOLE_CONTEXT_ROOT set"
+                     sed -i 's|decisionserverconsole-context-root|''|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	        fi
+        fi
 	touch /config/initialized.flag
 fi;
 
