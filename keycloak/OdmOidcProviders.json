@@ -1,15 +1,22 @@
 {
   "providers": [
     {
-	"name": "keycloack",
-	"grantType": "password",
-	"authorizationURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/auth",
-	"tokenURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/token",
-	"introspectionURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/token/introspect",
-	"clientId": "odm",
-	"clientSecret": "3d72a3c7-82b2-461e-b7d0-e974854d68ce",
-	"tokenFormat": "JWT",
-        "logoutURL": "http://9.171.21.112:8080/auth/realms/master/protocol/openid-connect/logout"
+        "name": "keycloack",
+        "grantType": "client_credentials",
+        "authorizationURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/auth",
+        "tokenURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/token",
+        "introspectionURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/token/introspect",
+        "clientId": "odm",
+        "clientSecret": "vU8bLJ9iumYjEvr0EmqsHQLmoFSqoU4F"
+    },
+    {
+        "name": "keycloack_pwd",
+        "grantType": "password",
+        "authorizationURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/auth",
+        "tokenURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/token",
+        "introspectionURL": "https://mycompany.com:8443/auth/realms/master/protocol/openid-connect/token/introspect",
+        "clientId": "odm",
+        "clientSecret": "vU8bLJ9iumYjEvr0EmqsHQLmoFSqoU4F"
     }
   ]
 }

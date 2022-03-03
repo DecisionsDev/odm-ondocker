@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-source env-okta-trial.sh
+source env-keycloak-trial.sh
 
 curl -k -u "${client_id}:${client_secret}" \
      -d "token_type_hint=access_token&token=$1" \
