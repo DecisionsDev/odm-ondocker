@@ -85,24 +85,54 @@ then
      sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' /config/OdmOidcProviders.json
 
      OPENID_AUTHORIZATION_URL=$(grep OPENID_AUTHORIZATION_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_AUTHORIZATION_URL=//g")
-     echo "OAuth config : set authorization URL to $OPENID_AUTHORIZATION_URL"
-     sed -i 's|OPENID_AUTHORIZATION_URL|'$OPENID_AUTHORIZATION_URL'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_AUTHORIZATION_URL" ]
+     then
+     	echo "OAuth config : set authorization URL to $OPENID_AUTHORIZATION_URL"
+     	sed -i 's|OPENID_AUTHORIZATION_URL|'$OPENID_AUTHORIZATION_URL'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_AUTHORIZATION_URL"
+        sed -i '/authorizationURL/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_TOKEN_URL=$(grep OPENID_TOKEN_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_URL=//g")
-     echo "OAuth config : set token URL to $OPENID_TOKEN_URL"
-     sed -i 's|OPENID_TOKEN_URL|'$OPENID_TOKEN_URL'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_TOKEN_URL" ]
+     then
+     	echo "OAuth config : set token URL to $OPENID_TOKEN_URL"
+     	sed -i 's|OPENID_TOKEN_URL|'$OPENID_TOKEN_URL'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_TOKEN_URL"
+        sed -i '/tokenURL/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_INTROSPECTION_URL=$(grep OPENID_INTROSPECTION_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_INTROSPECTION_URL=//g")
-     echo "OAuth config : set introspection URL to $OPENID_INTROSPECTION_URL"
-     sed -i 's|OPENID_INTROSPECTION_URL|'$OPENID_INTROSPECTION_URL'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_INTROSPECTION_URL" ]
+     then
+     	echo "OAuth config : set introspection URL to $OPENID_INTROSPECTION_URL"
+     	sed -i 's|OPENID_INTROSPECTION_URL|'$OPENID_INTROSPECTION_URL'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_INTROSPECTION_URL"
+        sed -i '/introspectionURL/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_CLIENT_ID=$(grep OPENID_CLIENT_ID /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_ID=//g")
-     echo "OAuth config : set client ID to $OPENID_CLIENT_ID"
-     sed -i 's|OPENID_CLIENT_ID|'$OPENID_CLIENT_ID'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_CLIENT_ID" ]
+     then
+     	echo "OAuth config : set client ID to $OPENID_CLIENT_ID"
+     	sed -i 's|OPENID_CLIENT_ID|'$OPENID_CLIENT_ID'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_CLIENT_ID"
+        sed -i '/clientId/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_CLIENT_SECRET=$(grep OPENID_CLIENT_SECRET /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_SECRET=//g")
-     echo "OAuth config : set client Secret to $OPENID_CLIENT_SECRET"
-     sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_CLIENT_SECRET" ]
+     then
+     	echo "OAuth config : set client Secret to $OPENID_CLIENT_SECRET"
+     	sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_CLIENT_SECRET"
+        sed -i '/clientSecret/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
      if [ -n "$OPENID_TOKEN_FORMAT" ]
@@ -115,8 +145,14 @@ then
      fi
 
      OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
-     echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
-     sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
+     if [ -n "$OPENID_LOGOUT_URL" ]
+     then
+     	echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
+     	sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_LOGOUT_URL"
+        sed -i '/logoutURL/d' /config/OdmOidcProviders.json
+     fi
 
      OPENID_GRANT_TYPE=$(grep OPENID_GRANT_TYPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_GRANT_TYPE=//g")
      if [ -n "$OPENID_GRANT_TYPE" ]

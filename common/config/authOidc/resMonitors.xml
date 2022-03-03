@@ -10,3 +10,4 @@
 				<group name="resMonGroup4" access-id="${odm.resMonitors.group4}"/>
                                 <group name="resMonGroup5" access-id="${odm.resMonitors.group5}"/>
                                 <group name="resMonGroup6" access-id="${odm.resMonitors.group6}"/>
+				<group name="resMonGroupZen" access-id="${odm.resMonitors.groupZen}"/>
