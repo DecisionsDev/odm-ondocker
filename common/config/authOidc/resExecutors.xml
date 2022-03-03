@@ -10,3 +10,4 @@
 				<group name="resExeGroup4" access-id="${odm.resExecutors.group4}"/>
                                 <group name="resExeGroup5" access-id="${odm.resExecutors.group5}"/>
                                 <group name="resExeGroup6" access-id="${odm.resExecutors.group6}"/>
+				<group name="resExeGroupZen" access-id="${odm.resExecutors.groupZen}"/>
