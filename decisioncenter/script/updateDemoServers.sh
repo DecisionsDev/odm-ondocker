@@ -48,7 +48,7 @@ DR_URL=$PROTOCOL"://"$DR_HOST":"$DR_PORT"/DecisionRunner"
 CURL_URL=http://localhost:9060
 fi
 
-ZEN_ENABLED=$(grep ZenApiKey /config/auth/OdmOidcProviders.json)
+ZEN_ENABLED=$(grep ZenApiKey /config/OdmOidcProviders.json)
 echo "ZEN_ENABLED= $ZEN_ENABLED"
 
 if [[ -n $OPENID_CONFIG && -z $ZEN_ENABLED ]]
