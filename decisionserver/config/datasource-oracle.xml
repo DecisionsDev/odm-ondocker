@@ -1,0 +1,16 @@
+<server>
+    <!-- decision server datasource -->
+    <library id="OracleLib">
+            <fileset dir="${server.config.dir}/resources"/>
+    </library>
+
+    <dataSource jndiName="jdbc/resdatasource">
+            <jdbcDriver libraryRef="OracleLib"/>
+            <properties.oracle driverType="thin"
+                               databaseName="odmdb"
+                               serverName="dbserver"
+                               portNumber="DB_PORT_NUMBER"
+                               user="odmusr"
+                               password="odmpwd"/>
+    </dataSource>
+</server>
