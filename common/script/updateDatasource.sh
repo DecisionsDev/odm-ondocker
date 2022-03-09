@@ -31,6 +31,9 @@ else
 			*sqlserver* )
 				sed -i 's|DB_PORT_NUMBER|1433|g' /config/datasource.xml
 			  	;;
+			*oracle* )
+				sed -i 's|DB_PORT_NUMBER|1521|g' /config/datasource.xml
+				;;
 		esac
 	else
 		echo "Set DB_PORT_NUMBER to 5432 as using PostgreSQL by default"
