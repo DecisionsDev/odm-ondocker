@@ -109,3 +109,10 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
+
+if [ -z $(grep ZenApiKey /config/OdmOidcProviders.json) ]
+then
+  echo "Update $APPS/res.war/WEB-INF/web.xml according to Zen context"
+  sed -i $'/<\/web-app>/{e cat /config/resAuthFilter.xml\n}' $APPS/res.war/WEB-INF/web.xml
+  sed -i '/<url-pattern>\/auth/d' $APPS/res.war/WEB-INF/web.xml
+fi
