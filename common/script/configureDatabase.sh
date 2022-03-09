@@ -38,6 +38,11 @@ then
 				mv mssql* /config/resources
 				cp /config/datasource-sqlserver.xml /config/datasource.xml
 				;;
+		*oracle* )
+				rm /config/resources/oracle*
+				mv oracle* /config/resources
+				cp /config/datasource-oracle.xml /config/datasource.xml
+				;;
 	esac
 elif [ -n "$DB_TYPE" ]
 then
@@ -67,6 +72,10 @@ then
 		*sqlserver* )
 				cp /config/datasource-sqlserver.xml /config/datasource.xml
 			  ;;
+		# For Oracle, we do not have to install the driver here since it is supposed to be provided through the drivers folder at build time
+		*oracle* )
+				cp /config/datasource-oracle.xml /config/datasource.xml
+				;;
 	esac
 else
 	if [ -d "/config/customdatasource" ]; then
