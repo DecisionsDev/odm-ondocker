@@ -10,6 +10,7 @@ Based on your deployment type, use the following annotations:
 - [IBM ODM on Kubernetes (Production)](#ibm-odm-on-kubernetes-production)
 - [IBM ODM on Kubernetes (Non-Production)](#ibm-odm-on-kubernetes-non-production)
 
+The annotations below are defined for ODM version 8.11.0, but you can also use them for ODM v8.10.5.1 by replacing **productVersion** value with "8.10.5.1".
 
 ## Guidance
 
