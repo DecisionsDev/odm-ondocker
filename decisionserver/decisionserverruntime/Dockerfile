@@ -15,7 +15,7 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/licenses /licenses
-
+COPY $ODMDOCKERDIR/resources/translation /translation-work
 # Install missing require package in the alpine builder image
 RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
@@ -23,7 +23,10 @@ RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*' && mkdir -p $APPS
 
-RUN chmod -R a+x $SCRIPT && \
+RUN chmod -R a+x $SCRIPT && mkdir /translation && \
+    if [ -f /translation-work/import*.sh ]; then chmod -R 777 /translation-work /translation && \
+    tar cvzf /translation/odm-roles-g11n.tgz /translation-work/g11n/* && \
+    cp /translation-work/*.sh /translation/ ; fi && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
@@ -85,10 +88,12 @@ ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
-
+# Translation Script
+COPY --from=builder --chown=1001:0 /translation /translation
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
+COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 
