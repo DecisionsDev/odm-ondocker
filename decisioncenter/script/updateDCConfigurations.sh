@@ -439,7 +439,12 @@ if [ -f "/config/web-configuration.properties" ]; then
 	do
     # Check if non blank or commented line
     if [ -n "$key" ] && [[ "$key" != "#"* ]]; then
-      updateContextParamPropertyInWebXml "$key" "$value"
+      if [[ "$key" != "maxUploadSize" ]]; then
+      	updateContextParamPropertyInWebXml "$key" "$value"
+      else
+      	echo "replace $key by $value in /config/apps/decisioncenter.war/WEB-INF/spring/applicationContext.xml"
+     	sed -i 's/property.*name=\"maxUploadSize\".*value=\".*\"/property name=\"maxUploadSize\" value=\"'$value'\"/' /config/apps/decisioncenter.war/WEB-INF/spring/applicationContext.xml
+      fi
     fi
   done < <(grep . "$file")
 else
