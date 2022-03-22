@@ -7,7 +7,7 @@ if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
   case $DB_TYPE in
-    *postgres* )-
+    *postgres* )
 				rm /config/resources/postgres*
 				;;
 		*db2* )
