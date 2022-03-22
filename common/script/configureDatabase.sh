@@ -6,45 +6,27 @@ defaultDatabase=$1
 if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
-	wget -nv $DB_DRIVER_URL
-  case $DB_DRIVER_URL in
-		*derby* )
-			 	rm /config/resources/derby*
-			 	mv derby* /config/resources
-			 	cp /config/datasource-derby.xml /config/datasource.xml
-			 	;;
-    *mysql* )
-				rm /config/resources/mysql*
-				mv mysql* /config/resources
-				cp /config/datasource-mysql.xml /config/datasource.xml
-				;;
-    *postgres* )
+  case $DB_TYPE in
+    *postgres* )-
 				rm /config/resources/postgres*
-				mv postgres* /config/resources
-				cp /config/datasource-postgres.xml /config/datasource.xml
 				;;
 		*db2* )
 				rm /config/resources/db2*
-				mv db2* /config/resources
-				cp /config/datasource-db2.xml /config/datasource.xml
 				;;
-		*h2* )
-				rm /config/resources/h2*
-				mv h2* /config/resources
-				cp /config/datasource-h2.xml /config/datasource.xml
-				;;
-		*mssql* )
+		*sqlserver* )
 				rm /config/resources/mssql*
-				mv mssql* /config/resources
-				cp /config/datasource-sqlserver.xml /config/datasource.xml
 				;;
 		*oracle* )
-				rm /config/resources/oracle*
-				mv oracle* /config/resources
-				cp /config/datasource-oracle.xml /config/datasource.xml
+				rm /config/resources/ojdbc*
 				;;
 	esac
-elif [ -n "$DB_TYPE" ]
+	(cd /config/resources && curl -O -k -s $DB_DRIVER_URL)
+	if [ -f /config/resources/*.zip ]; then
+		unzip -q /config/resources/*.zip -d /config/resources
+	fi
+fi
+
+if [ -n "$DB_TYPE" ]
 then
 	echo "Use DB_TYPE: $DB_TYPE"
 	case $DB_TYPE in
