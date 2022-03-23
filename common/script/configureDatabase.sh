@@ -7,6 +7,7 @@ if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
   case $DB_TYPE in
+		# Remove default driver files
     *postgres* )
 				rm /config/resources/postgres*
 				;;
@@ -20,7 +21,16 @@ then
 				rm /config/resources/ojdbc*
 				;;
 	esac
-	(cd /config/resources && curl -O -k -s $DB_DRIVER_URL)
+
+	# Download drivers from each urls
+	IFS=','
+	read -a driver_urls <<< "$DB_DRIVER_URL"
+	for url in "${driver_urls[@]}";
+	do
+	  (cd /config/resources && curl -O -k -s $url)
+	done
+
+	# Unzip drivers if necessary
 	if [ -f /config/resources/*.zip ]; then
 		unzip -q /config/resources/*.zip -d /config/resources
 	fi
