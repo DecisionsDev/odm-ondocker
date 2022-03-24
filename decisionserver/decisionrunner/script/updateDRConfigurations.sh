@@ -17,7 +17,8 @@ if [ ! -f /config/initialized.flag ] ; then
         if [ -n "$RES_URL" ]
         then
                 echo "Configure RES_URL with provided $RES_URL"
-                sed -i 's|RES_URL|'$RES_URL'|' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+		sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>res-url-to-replace<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+		sed -i 's|res-url-to-replace|'$RES_URL'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
         else
                 sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
                 if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
