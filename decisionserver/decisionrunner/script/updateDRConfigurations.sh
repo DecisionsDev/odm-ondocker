@@ -37,16 +37,23 @@ fi;
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]
 then
 	sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/classes/ra.xml;
-	sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	if [ ! -n "$RES_URL" ]
+        then
+           echo "Configure DECISIONSERVERCONSOLE_NAME to $DECISIONSERVERCONSOLE_NAME in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
+	   sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	fi
 fi
 
-if [ -n "$ENABLE_TLS" ]
-then
- echo "Update decision server protocol to https in web.xml"
-        sed -i 's|protocol|'https'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
-else
- echo "Update decision server protocol to http in web.xml"
-        sed -i 's|protocol|'http'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+if [ ! -n "$RES_URL" ]
+        then
+	if [ -n "$ENABLE_TLS" ]
+	then
+ 	echo "Update decision server protocol to https in web.xml"
+	        sed -i 's|protocol|'https'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	else
+	 echo "Update decision server protocol to http in web.xml"
+	        sed -i 's|protocol|'http'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	fi
 fi
 
 if [ -n "$ENABLE_TLS" ]
@@ -58,13 +65,16 @@ else
  cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
 
-if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
-then
-  echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in web.xml"
-        sed -i 's|decisionserverconsole-port|'$DECISIONSERVERCONSOLE_PORT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
-else
-  echo "Update decision server console port to default 9080 in web.xml"
-        sed -i 's|decisionserverconsole-port|'9080'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+if [ ! -n "$RES_URL" ]
+        then
+	if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
+	then
+  	echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in web.xml"
+	        sed -i 's|decisionserverconsole-port|'$DECISIONSERVERCONSOLE_PORT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	else
+		echo "Update decision server console port to default 9080 in web.xml"
+	        sed -i 's|decisionserverconsole-port|'9080'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	fi
 fi
 
 if [ -n "$RELEASE_NAME" ]
