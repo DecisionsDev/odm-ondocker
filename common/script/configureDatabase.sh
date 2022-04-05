@@ -6,21 +6,6 @@ defaultDatabase=$1
 if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
-  case $DB_TYPE in
-		# Remove default driver files
-    *postgres* )
-				rm /config/resources/postgres*
-				;;
-		*db2* )
-				rm /config/resources/db2*
-				;;
-		*sqlserver* )
-				rm /config/resources/mssql*
-				;;
-		*oracle* )
-				rm /config/resources/ojdbc*
-				;;
-	esac
 
 	# Download drivers from each urls
 	IFS=','
@@ -32,8 +17,37 @@ then
 
 	# Unzip drivers if necessary
 	if [ -f /config/resources/*.zip ]; then
-		unzip -q /config/resources/*.zip -d /config/resources
+		unzip -q /config/resources/*.zip
 	fi
+
+	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
+	for arch in "/config/resources"/*.tar*
+	do
+	  tar -xaf $arch
+	done
+
+	# Replace default driver files
+	for custom_driver_path in "/config/resources/jdbc"/*
+	do
+		case $custom_driver_path in
+			*postgres* )
+					rm /config/resources/postgres*
+					mv /config/resources/jdbc/postgres/* /config/resources
+					;;
+			*db2* )
+					rm /config/resources/db2*
+					mv /config/resources/jdbc/db2/* /config/resources
+					;;
+			*sqlserver* )
+					rm /config/resources/mssql*
+					mv /config/resources/jdbc/sqlserver/* /config/resources
+					;;
+			*oracle* )
+					rm /config/resources/ojdbc*
+					mv /config/resources/jdbc/oracle/* /config/resources
+					;;
+		esac
+	done
 fi
 
 if [ -n "$DB_TYPE" ]
