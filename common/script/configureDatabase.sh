@@ -17,14 +17,16 @@ then
 
 	# Unzip drivers if necessary
 	if [ -f /config/resources/*.zip ]; then
-		unzip -q /config/resources/*.zip
+		(cd /config/resources && unzip -q *.zip)
 	fi
 
 	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
-	for arch in "/config/resources"/*.tar*
-	do
-	  tar -xaf $arch
-	done
+	if [ -f /config/resources/*.tar* ]; then
+		for arch in "/config/resources"/*.tar*
+		do
+		  tar -xaf $arch
+		done
+	fi
 
 	# Replace default driver files
 	for custom_driver_path in "/config/resources/jdbc"/*
