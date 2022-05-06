@@ -33,10 +33,24 @@ else
 fi
 
 # Begin - Configuration for the TLS security
+
+if [ -f "/config/security/volume/keystore.jks" ]
+then
+        echo "replace /config/security/keystore.jks by /config/security/volume/keystore.jks"
+        cp /config/security/volume/keystore.jks /config/security/keystore.jks
+fi
+
+if [ -f "/config/security/volume/truststore.jks" ]
+then
+        echo "replace /config/security/truststore.jks by /config/security/volume/truststore.jks"
+        cp /config/security/volume/truststore.jks /config/security/truststore.jks
+fi
+
 echo "Configure the TLS keystore password"
 if [ -n "$KEYSTORE_PASSWORD" ]
 then
 	sed -i 's|__KEYSTORE_PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+        DEFAULT_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
 else
 	sed -i 's|__KEYSTORE_PASSWORD__|'$DEFAULT_KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
 fi
@@ -44,8 +58,19 @@ echo "Configure the TLS truststore password"
 if [ -n "$TRUSTSTORE_PASSWORD" ]
 then
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'$TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+        DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
 else
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'$DEFAULT_TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
+fi
+
+if [[ (-f "/config/security/volume/tls.crt") && (-f "/config/security/volume/tls.key")]]
+then
+        echo "generating /config/security/keystore.jks and truststore.jks using provided /config/security/volume/tls.key and tls.crt"
+        openssl pkcs12 -export -inkey /config/security/volume/tls.key -in /config/security/volume/tls.crt -name "certificate" -out /config/security/mycert.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+        rm /config/security/keystore.jks
+        keytool -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+        rm /config/security/truststore.jks
+        keytool -import -v -trustcacerts -alias ODM -file /config/security/volume/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -storetype jks -noprompt
 fi
 # End - Configuration for the TLS security
 
