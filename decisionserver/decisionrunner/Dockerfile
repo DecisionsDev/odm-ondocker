@@ -47,7 +47,8 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
-
+# https://www.ibm.com/support/pages/apar/IJ39517 Workaround 
+RUN sed -i 's|security.provider.2=com.ibm.crypto.plus.provider.IBMJCEPlus|security.provider.2=com.ibm.crypto.provider.IBMJCE|' /opt/ibm/java/jre/lib/security/java.security && sed -i 's|security.provider.3=com.ibm.crypto.provider.IBMJCE|security.provider.3=com.ibm.crypto.plus.provider.IBMJCEPlus|' /opt/ibm/java/jre/lib/security/java.security
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 RUN chmod -R 777 /config
 RUN sed -i 's|# Pass on to the real server run|. /script/rundr.sh|' /opt/ibm/helpers/runtime/docker-server.sh
@@ -79,13 +80,13 @@ ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
-
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 COPY --from=builder --chown=1001:0 $APPS $APPS
 COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resources
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
-
+# https://www.ibm.com/support/pages/apar/IJ39517 Workaround 
+COPY --from=oidc-liberty-builder  /opt/ibm/java/jre/lib/security/java.security  /opt/ibm/java/jre/lib/security/java.security
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
