@@ -10,3 +10,4 @@
 				<group name="rtsInstGroup4" access-id="${odm.rtsInstallers.group4}"/>
                                 <group name="rtsInstGroup5" access-id="${odm.rtsInstallers.group5}"/>
                                 <group name="rtsInstGroup6" access-id="${odm.rtsInstallers.group6}"/>
+				<group name="rtsInstGroupZen" access-id="${odm.rtsInstallers.groupZen}"/>

@@ -120,8 +120,9 @@ if [ -f "/config/baiemitterconfig/plugin-configuration.properties" ]; then
 	echo "Enable BAI Emitter Plugin"
         sed -i 's/{pluginClass=HTDS}/&,{pluginClass=ODMEmitterForBAI}/' ra.xml;
         if [ -f "/config/pluginconfig/plugin-configuration.properties" ]; then
-                echo "concat BAI Emitter and Metering plugins"
-                cat /config/baiemitterconfig/plugin-configuration.properties >> /config/pluginconfig/plugin-configuration.properties
+                echo "copy BAIEmmiter config to /config/extension"
+		mkdir /config/extension
+                cp /config/baiemitterconfig/plugin-configuration.properties /config/extension/plugin-configuration.properties
         else
                 echo "create plugin directory /config/pluginconfig"
                 mkdir /config/pluginconfig

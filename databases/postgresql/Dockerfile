@@ -15,7 +15,7 @@ COPY $ODMDOCKERDIR/databases/postgresql/script/restore.sh /tmp
 RUN rm -rf /licenses/.gitignore || true
 RUN chmod a+x /usr/local/bin/rundb.sh /tmp/restore.sh
 
-COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/
+COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/data.dump
 COPY $ODMDOCKERDIR/databases/postgresql/*.sql /upload/
 FROM ${FROMPOSTGRES}
 

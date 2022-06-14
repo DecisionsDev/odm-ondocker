@@ -1,0 +1,22 @@
+<server>
+    <!-- decision center datasource -->
+    <library id="OracleLib">
+            <fileset dir="${server.config.dir}/resources"/>
+    </library>
+
+    <dataSource jndiName="jdbc/ilogDataSource"
+                isolationLevel="TRANSACTION_READ_COMMITTED"
+                statementCacheSize="150">
+            <connectionManager maxPoolSize="25"
+                               minPoolSize="10"
+                               connectionTimout="10s"
+                               agedTimeout="30m"/>
+            <jdbcDriver libraryRef="OracleLib"/>
+            <properties.oracle driverType="thin"
+                               databaseName="odmdb"
+                               serverName="dbserver"
+                               portNumber="DB_PORT_NUMBER"
+                               user="odmusr"
+                               password="odmpwd"/>
+    </dataSource>
+</server>
