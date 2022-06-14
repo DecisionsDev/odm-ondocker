@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 #!/bin/sh
 
 source env-okta-trial.sh
+=======
+#!/bin/bash
+
+source env-keycloak-trial.sh
+>>>>>>> vnext-release
 
 curl -k -u "${client_id}:${client_secret}" \
      -d "token_type_hint=access_token&token=$1" \

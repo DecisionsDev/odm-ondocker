@@ -6,40 +6,53 @@ defaultDatabase=$1
 if [ -n "$DB_DRIVER_URL" ]
 then
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
-	wget -nv $DB_DRIVER_URL
-  case $DB_DRIVER_URL in
-		*derby* )
-			 	rm /config/resources/derby*
-			 	mv derby* /config/resources
-			 	cp /config/datasource-derby.xml /config/datasource.xml
-			 	;;
-    *mysql* )
-				rm /config/resources/mysql*
-				mv mysql* /config/resources
-				cp /config/datasource-mysql.xml /config/datasource.xml
-				;;
-    *postgres* )
-				rm /config/resources/postgres*
-				mv postgres* /config/resources
-				cp /config/datasource-postgres.xml /config/datasource.xml
-				;;
-		*db2* )
-				rm /config/resources/db2*
-				mv db2* /config/resources
-				cp /config/datasource-db2.xml /config/datasource.xml
-				;;
-		*h2* )
-				rm /config/resources/h2*
-				mv h2* /config/resources
-				cp /config/datasource-h2.xml /config/datasource.xml
-				;;
-		*mssql* )
-				rm /config/resources/mssql*
-				mv mssql* /config/resources
-				cp /config/datasource-sqlserver.xml /config/datasource.xml
-				;;
-	esac
-elif [ -n "$DB_TYPE" ]
+
+	# Download drivers from each urls
+	IFS=','
+	read -a driver_urls <<< "$DB_DRIVER_URL"
+	for url in "${driver_urls[@]}";
+	do
+	  (cd /config/resources && curl -O -k -s $url)
+	done
+
+	# Unzip drivers if necessary
+	if [ -f /config/resources/*.zip ]; then
+		(cd /config/resources && unzip -q *.zip)
+	fi
+
+	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
+	if [ -f /config/resources/*.tar* ]; then
+		for arch in "/config/resources"/*.tar*
+		do
+		  tar -xaf $arch
+		done
+	fi
+
+	# Replace default driver files
+	for custom_driver_path in "/config/resources/jdbc"/*
+	do
+		case $custom_driver_path in
+			*postgres* )
+					rm /config/resources/postgres*
+					mv /config/resources/jdbc/postgres/* /config/resources
+					;;
+			*db2* )
+					rm /config/resources/db2*
+					mv /config/resources/jdbc/db2/* /config/resources
+					;;
+			*sqlserver* )
+					rm /config/resources/mssql*
+					mv /config/resources/jdbc/sqlserver/* /config/resources
+					;;
+			*oracle* )
+					rm /config/resources/ojdbc*
+					mv /config/resources/jdbc/oracle/* /config/resources
+					;;
+		esac
+	done
+fi
+
+if [ -n "$DB_TYPE" ]
 then
 	echo "Use DB_TYPE: $DB_TYPE"
 	case $DB_TYPE in
@@ -67,6 +80,10 @@ then
 		*sqlserver* )
 				cp /config/datasource-sqlserver.xml /config/datasource.xml
 			  ;;
+		# For Oracle, we do not have to install the driver here since it is supposed to be provided through the drivers folder at build time
+		*oracle* )
+				cp /config/datasource-oracle.xml /config/datasource.xml
+				;;
 	esac
 else
 	if [ -d "/config/customdatasource" ]; then

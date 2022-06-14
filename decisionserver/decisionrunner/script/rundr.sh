@@ -7,6 +7,12 @@ then
         $SCRIPT/customStart.sh
 fi
 
+if [ -n "$USERS_PASSWORD" ]
+then
+  echo "Set password for defaut users"
+  sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/auth/webSecurity.xml
+fi
+
 $SCRIPT/updateDRConfigurations.sh
 
 $SCRIPT/configureTlsSecurity.sh
@@ -27,4 +33,3 @@ if [ -s "$SCRIPT/customEnd.sh" ]
 then
         $SCRIPT/customEnd.sh
 fi
-

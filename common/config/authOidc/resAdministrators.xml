@@ -10,3 +10,4 @@
 				<group name="resAdmGroup4" access-id="${odm.resAdministrators.group4}"/>
                                 <group name="resAdmGroup5" access-id="${odm.resAdministrators.group5}"/>
                                 <group name="resAdmGroup6" access-id="${odm.resAdministrators.group6}"/>
+				<group name="resAdmGroupZen" access-id="${odm.resAdministrators.groupZen}"/>

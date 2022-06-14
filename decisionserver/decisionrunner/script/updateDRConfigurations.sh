@@ -14,15 +14,22 @@ if [ ! -f /config/initialized.flag ] ; then
 		echo "Configure XU connection pool size to $CONNECTION_POOL_SIZE and XU connection pool timeout to default value 3000"
                 sed -i '\#<config-property-name>[D|d]efaultConnectionManagerProperties#,\#<config-property-value/># s|<config-property-value>.*|<config-property-value>pool.maxSize='$CONNECTION_POOL_SIZE',pool.waitTimeout=3000</config-property-value>|' ra.xml;
 	fi
-        sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-        if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+        if [ -n "$RES_URL" ]
         then
-		echo "Configure decisionserverconsole-context-root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
-		sed -i 's|decisionserverconsole-context-root|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-	else
-		echo "No DECISIONSERVERCONSOLE_CONTEXT_ROOT set"
-                sed -i 's|decisionserverconsole-context-root|''|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
-	fi
+                echo "Configure RES_URL with provided $RES_URL"
+		sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>res-url-to-replace<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+		sed -i 's|res-url-to-replace|'$RES_URL'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+        else
+                sed -i '/<param-name>RES_URL<\/param-name>/{n;s/<param-value\/>/<param-value>protocol:\/\/odm-decisionserverconsole:decisionserverconsole-portdecisionserverconsole-context-root\/res<\/param-value>/;}' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+                if [ -n "$DECISIONSERVERCONSOLE_CONTEXT_ROOT" ]
+                then
+		     echo "Configure decisionserverconsole-context-root to $DECISIONSERVERCONSOLE_CONTEXT_ROOT in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
+		     sed -i 's|decisionserverconsole-context-root|'$DECISIONSERVERCONSOLE_CONTEXT_ROOT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	        else
+		     echo "No DECISIONSERVERCONSOLE_CONTEXT_ROOT set"
+                     sed -i 's|decisionserverconsole-context-root|''|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	        fi
+        fi
 	touch /config/initialized.flag
 fi;
 
@@ -30,16 +37,23 @@ fi;
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]
 then
 	sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/classes/ra.xml;
-	sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	if [ ! -n "$RES_URL" ]
+        then
+           echo "Configure DECISIONSERVERCONSOLE_NAME to $DECISIONSERVERCONSOLE_NAME in /config/apps/DecisionRunner.war/WEB-INF/web.xml"
+	   sed -i 's|odm-decisionserverconsole|'$DECISIONSERVERCONSOLE_NAME'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml;
+	fi
 fi
 
-if [ -n "$ENABLE_TLS" ]
-then
- echo "Update decision server protocol to https in web.xml"
-        sed -i 's|protocol|'https'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
-else
- echo "Update decision server protocol to http in web.xml"
-        sed -i 's|protocol|'http'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+if [ ! -n "$RES_URL" ]
+        then
+	if [ -n "$ENABLE_TLS" ]
+	then
+ 	echo "Update decision server protocol to https in web.xml"
+	        sed -i 's|protocol|'https'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	else
+	 echo "Update decision server protocol to http in web.xml"
+	        sed -i 's|protocol|'http'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	fi
 fi
 
 if [ -n "$ENABLE_TLS" ]
@@ -51,13 +65,16 @@ else
  cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
 
-if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
-then
-  echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in web.xml"
-        sed -i 's|decisionserverconsole-port|'$DECISIONSERVERCONSOLE_PORT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
-else
-  echo "Update decision server console port to default 9080 in web.xml"
-        sed -i 's|decisionserverconsole-port|'9080'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+if [ ! -n "$RES_URL" ]
+        then
+	if [ -n "$DECISIONSERVERCONSOLE_PORT" ]
+	then
+  	echo "Update decision server console port to $DECISIONSERVERCONSOLE_PORT in web.xml"
+	        sed -i 's|decisionserverconsole-port|'$DECISIONSERVERCONSOLE_PORT'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	else
+		echo "Update decision server console port to default 9080 in web.xml"
+	        sed -i 's|decisionserverconsole-port|'9080'|g' /config/apps/DecisionRunner.war/WEB-INF/web.xml
+	fi
 fi
 
 if [ -n "$RELEASE_NAME" ]

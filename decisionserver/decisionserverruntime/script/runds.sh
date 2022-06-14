@@ -7,6 +7,12 @@ then
         $SCRIPT/customStart.sh
 fi
 
+if [ -n "$USERS_PASSWORD" ]
+then
+  echo "Set password for defaut users"
+  sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/auth/webSecurity.xml
+fi
+
 $SCRIPT/enableMetering.sh
 
 $SCRIPT/updateDSRConfigurations.sh
@@ -29,4 +35,3 @@ if [ -s "$SCRIPT/customEnd.sh" ]
 then
         $SCRIPT/customEnd.sh
 fi
-

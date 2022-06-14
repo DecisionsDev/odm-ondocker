@@ -10,3 +10,4 @@
 				<group name="rtsCfgGroup4" access-id="${odm.rtsConfigManagers.group4}"/>
                                 <group name="rtsCfgGroup5" access-id="${odm.rtsConfigManagers.group5}"/>
                                 <group name="rtsCfgGroup6" access-id="${odm.rtsConfigManagers.group6}"/>
+				<group name="rtsCfgGroupZen" access-id="${odm.rtsConfigManagers.groupZen}"/>

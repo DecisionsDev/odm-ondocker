@@ -10,3 +10,4 @@
 				<group name="resDepGroup4" access-id="${odm.resDeployers.group4}"/>
                                 <group name="resDepGroup5" access-id="${odm.resDeployers.group5}"/>
                                 <group name="resDepGroup6" access-id="${odm.resDeployers.group6}"/>
+				<group name="resDepGroupZen" access-id="${odm.resDeployers.groupZen}"/>

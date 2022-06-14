@@ -10,3 +10,4 @@
 				<group name="rtsUserGroup4" access-id="${odm.rtsUsers.group4}"/>
                                 <group name="rtsUserGroup5" access-id="${odm.rtsUsers.group5}"/>
                                 <group name="rtsUserGroup6" access-id="${odm.rtsUsers.group6}"/>
+				<group name="rtsUserGroupZen" access-id="${odm.rtsUsers.groupZen}"/>
