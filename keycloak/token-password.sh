@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-#!/bin/sh
-
-source env-okta-trial.sh
-=======
 #!/bin/bash
 
 source env-keycloak-trial.sh
->>>>>>> vnext-release
 
 scope=openid
 
