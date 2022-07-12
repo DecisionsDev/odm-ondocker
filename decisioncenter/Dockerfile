@@ -16,8 +16,6 @@ RUN cd /welcomepage; mvn -B clean install | grep -v 'Download.*'
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 
 # Copy working files
-COPY ./teamserver/lib/* /teamserver/lib/
-COPY ./executionserver/lib/* /executionserver/lib/
 COPY $ODMDOCKERDIR/decisioncenter/config /config
 COPY $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY $ODMDOCKERDIR/common/script $SCRIPT
