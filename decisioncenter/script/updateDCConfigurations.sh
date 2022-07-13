@@ -284,7 +284,6 @@ then
 	sed -i 's|odm-decisionrunner|'$DECISIONRUNNER_NAME'|g' $DC_SERVER_CONFIG
 fi
 
-
 if [ -n "$ENABLE_TLS" ]
 then
  echo "Update decision server and runner protocol to https in $DC_SERVER_CONFIG"
@@ -342,6 +341,14 @@ if [ -n "$DEMO" ]
 then
   echo "Update flag to allow update of existing server definition in $DC_SERVER_CONFIG"
         sed -i 's|false|true|g' $DC_SERVER_CONFIG
+fi
+
+if [ -n "$DECISION_MODEL_DISABLED" ]
+then
+  echo "Update decision model enabled to $DECISION_MODEL_DISABLED in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  sed -i 's|DECISION_MODEL_DISABLED|'$DECISION_MODEL_DISABLED'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  echo "Remove decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  sed -i '/decisionmodel/d' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 
 if [ -s "/config/auth/ldap-configurations.xml" ]
