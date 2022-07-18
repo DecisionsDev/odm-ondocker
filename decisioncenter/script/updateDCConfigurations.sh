@@ -347,8 +347,12 @@ if [ -n "$DECISION_MODEL_DISABLED" ]
 then
   echo "Update decision model enabled to $DECISION_MODEL_DISABLED in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
   sed -i 's|DECISION_MODEL_DISABLED|'$DECISION_MODEL_DISABLED'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-  echo "Remove decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
-  sed -i '/decisionmodel/d' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  if [[ "$DECISION_MODEL_DISABLED" == "true" ]]; then
+  	echo "Remove decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  	sed -i '/decisionmodel/d' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  else
+	echo "Keep decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  fi
 fi
 
 if [ -s "/config/auth/ldap-configurations.xml" ]
