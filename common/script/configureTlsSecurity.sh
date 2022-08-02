@@ -47,16 +47,20 @@ then
 fi
 
 echo "Configure the TLS keystore password"
-if [ -n "$KEYSTORE_PASSWORD" ]
+if [ -n "$KEYSTORE_PASSWORD" ] || [ -f /config/secrets/security-config/keystore_password ]
 then
+	# Set env var if secrets are passed using mounted volumes
+	KEYSTORE_PASSWORD=$(cat /config/secrets/security-config/keystore_password) && [ -f /config/secrets/security-config/keystore_password ]
 	sed -i 's|__KEYSTORE_PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
         DEFAULT_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
 else
 	sed -i 's|__KEYSTORE_PASSWORD__|'$DEFAULT_KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
 fi
 echo "Configure the TLS truststore password"
-if [ -n "$TRUSTSTORE_PASSWORD" ]
+if [ -n "$TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/security-config/truststore_password ]
 then
+	# Set env var if secrets are passed using mounted volumes
+	TRUSTSTORE_PASSWORD=$(cat /config/secrets/security-config/truststore_password) && [ -f /config/secrets/security-config/truststore_password ]
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'$TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
         DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
 else
