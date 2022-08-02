@@ -47,15 +47,19 @@ then
 	sed -i 's|odmdb|'$DB_NAME'|g' /config/datasource.xml
 fi
 
-if [ -n "$DB_USER" ]
+if [ -n "$DB_USER" ] || [ -f /config/secrets/db-config/db-user ]
 then
+	# Set env var if secrets are passed using mounted volumes
+	[ -f /config/secrets/db-config/db-user ] && export DB_USER=$(cat /config/secrets/db-config/db-user)
 	# Escape special caracters for sed s command
 	DB_USER_ESCAPED=$(sed -e 's/[&\\/|]/\\&/g' <<<"$DB_USER")
 	sed -i 's|odmusr|'$DB_USER_ESCAPED'|g' /config/datasource.xml
 fi
 
-if [ -n "$DB_PASSWORD" ]
+if [ -n "$DB_PASSWORD" ] || [ -f /config/secrets/db-config/db-password ]
 then
+	# Set env var if secrets are passed using mounted volumes
+	[ -f /config/secrets/db-config/db-password ] && export DB_PASSWORD=$(cat /config/secrets/db-config/db-password)
 	# Escape special caracters for sed s command
 	DB_PASSWORD_ESCAPED=$(sed -e 's/[&\\/|]/\\&/g' <<<"$DB_PASSWORD")
 	sed -i 's|odmpwd|'$DB_PASSWORD_ESCAPED'|g' /config/datasource.xml
