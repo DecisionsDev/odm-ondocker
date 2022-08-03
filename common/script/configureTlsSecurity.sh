@@ -11,7 +11,7 @@ then
         DEFAULT_KEYSTORE_PASSWORD=changeit
 
 	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslKeystorePassword ]
-  then
+	then
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/secrets/dba-env-context/sslKeystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/sslKeystorePassword)
 		echo "change default keystore password with provided Root CA keystore password"
@@ -25,13 +25,13 @@ then
 	cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
 
-  if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslTruststorePassword ]
-  then
+	if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslTruststorePassword ]
+	then
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/secrets/dba-env-context/sslTruststorePassword ] && export ROOTCA_TRUSTSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/sslTruststorePassword)
 		echo "change default truststore password with provided Root CA truststore password"
-    DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
-  fi
+		DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
+	fi
 else
         echo "no file /shared/tls/truststore/jks/trusts.jks"
 fi
