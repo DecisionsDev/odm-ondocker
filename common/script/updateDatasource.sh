@@ -65,8 +65,10 @@ then
 	sed -i 's|odmpwd|'$DB_PASSWORD_ESCAPED'|g' /config/datasource.xml
 fi
 
-if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
+if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ] || [ -f /config/customdatasource/truststore_password ]
 then
-       sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+	# Set env var if secrets are passed using mounted volumes
+	[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
+	sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
 fi
 # End - Update values for the datasource if required
