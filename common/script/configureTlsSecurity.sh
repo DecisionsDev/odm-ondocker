@@ -10,8 +10,10 @@ then
 	cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
 
-	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ]
-        then
+	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslKeystorePassword ]
+  then
+		# Set env var if secrets are passed using mounted volumes
+		[ -f /config/secrets/dba-env-context/sslKeystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/sslKeystorePassword)
 		echo "change default keystore password with provided Root CA keystore password"
 		DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 	fi
@@ -23,11 +25,13 @@ then
 	cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
 
-        if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ]
-        then
-                echo "change default truststore password with provided Root CA truststore password"
-                DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
-        fi
+  if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslTruststorePassword ]
+  then
+		# Set env var if secrets are passed using mounted volumes
+		[ -f /config/secrets/dba-env-context/sslTruststorePassword ] && export ROOTCA_TRUSTSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/sslTruststorePassword)
+		echo "change default truststore password with provided Root CA truststore password"
+    DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
+  fi
 else
         echo "no file /shared/tls/truststore/jks/trusts.jks"
 fi
@@ -80,25 +84,27 @@ fi
 
 if [ -f "/config/ldap/ldap.jks" ]
 then
-        if [ -n "$LDAP_TRUSTSTORE_PASSWORD" ]
-        then
-                echo "import /config/ldap/ldap.jks in trustore using provided LDAP truststore password"
-        else
-                echo "import /config/ldap/ldap.jks in trustore using default LDAP truststore password"
-                LDAP_TRUSTSTORE_PASSWORD=changeit
-        fi
+  if [ -n "$LDAP_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/ldapSslTruststorePassword ]
+  then
+		# Set env var if secrets are passed using mounted volumes
+		[ -f /config/secrets/dba-env-context/ldapSslTruststorePassword ] && export LDAP_TRUSTSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/ldapSslTruststorePassword)
+		echo "import /config/ldap/ldap.jks in trustore using provided LDAP truststore password"
+  else
+    echo "import /config/ldap/ldap.jks in trustore using default LDAP truststore password"
+    LDAP_TRUSTSTORE_PASSWORD=changeit
+  fi
 
-        i=0
-        mapfile -t trust_list < <(keytool -J"-Xshareclasses:none" -list -v -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
-        for trust_file in "${trust_list[@]}"
-        do
-        keytool -J"-Xshareclasses:none" -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
-        ((i=i+1))
-        done
-        keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/ldap/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
+  i=0
+  mapfile -t trust_list < <(keytool -J"-Xshareclasses:none" -list -v -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
+  for trust_file in "${trust_list[@]}"
+  do
+  keytool -J"-Xshareclasses:none" -changealias -alias ${trust_file} -destalias "LDAP_ALIAS_FOR_ODM_"$i -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD
+  ((i=i+1))
+  done
+  keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/ldap/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
 
 else
-        echo "no /config/ldap/ldap.jks file"
+  echo "no /config/ldap/ldap.jks file"
 fi
 
 # This part allow to import a list of PEM certificate in the JVM
