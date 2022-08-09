@@ -102,7 +102,7 @@ RUN set -ex; \
 
 COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
-COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application.xml /config/decisionrunner_application.xml
+COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application_standalone.xml /config/decisionrunner_application.xml
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/ltpa.keys /config/resources/security/ltpa.keys
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/security/keystore.jks
