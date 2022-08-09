@@ -30,3 +30,9 @@ if [ ! -f $INITFLAG ] ; then
 	fi;
 	touch $INITFLAG
 fi;
+
+if [ -s "/etc/postgresql/pg_hba.conf" ]
+  then
+        echo "copy all .conf files to ${PGDATA}"
+        cp /etc/postgresql/*.conf ${PGDATA}
+fi

@@ -1,0 +1,138 @@
+version: '3'
+services:
+  dbserver:
+    image: $REPOSITORY/dbserver:$ODMVERSION
+    build:
+        context: ../
+        dockerfile: ./${ODMDOCKERDIR}/databases/postgresql/Dockerfile
+        args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMDBVERSION=$ODMDBVERSION
+        - ODMVERSION=$ODMVERSION
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMPOSTGRES=$FROMPOSTGRES
+        - POSTGRESUID=$POSTGRESUID
+    user: "$POSTGRESUID:$POSTGRESUID"
+    ports:
+    - 5432:5432
+    environment:
+      - POSTGRES_USER=odmusr
+      - POSTGRES_PASSWORD=odmpwd
+      - POSTGRES_DB=odmdb
+      - PGDATA=/var/lib/postgresql/data
+#      - SAMPLE=true
+# Uncomment this line to persist your data. Note that on OSX you need to share this
+# current directory in the Preference menu -> File Sharing menu.
+    volumes:
+      - $PWD/databases/postgresql/config/ssl/odmroot.crt:/var/lib/postgresql/.postgresql/ca.crt
+      - $PWD/databases/postgresql/config/ssl/odm.crt:/var/lib/postgresql/.postgresql/server.crt
+      - $PWD/databases/postgresql/config/ssl/odm.key:/var/lib/postgresql/.postgresql/server.key
+      - $PWD/databases/postgresql/config/ssl/pg_ident.conf:/etc/postgresql/pg_ident.conf
+      - $PWD/databases/postgresql/config/ssl/pg_hba.conf:/etc/postgresql/pg_hba.conf
+      - $PWD/databases/postgresql/config/ssl/postgresql.conf:/etc/postgresql/postgresql.conf
+#      - $PWD/pgdata:/var/lib/postgresql/data
+
+  odm-decisionserverconsole:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    ports:
+    - 9080:9080
+    - 1883:1883
+    - 9843:9443
+    volumes:
+    - $PWD/databases/postgresql/config/ssl/datasource-ds.xml:/config/customdatasource/datasource-ds.xml
+    - $PWD/databases/postgresql/config/ssl/odmroot.crt:/config/customdatasource/odmroot.crt
+    - $PWD/databases/postgresql/config/ssl/odmcrt.der:/config/customdatasource/odmcrt.der
+    - $PWD/databases/postgresql/config/ssl/odmkey.pk8:/config/customdatasource/odmkey.pk8
+
+  odm-decisionrunner:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    - odm-decisionserverconsole
+    depends_on:
+    - dbserver
+    - odm-decisionserverconsole
+    ports:
+    - 9070:9080
+    - 9743:9443
+    volumes:
+    - $PWD/databases/postgresql/config/ssl/datasource-ds.xml:/config/customdatasource/datasource-ds.xml
+    - $PWD/databases/postgresql/config/ssl/odmroot.crt:/config/customdatasource/odmroot.crt
+    - $PWD/databases/postgresql/config/ssl/odmcrt.der:/config/customdatasource/odmcrt.der
+    - $PWD/databases/postgresql/config/ssl/odmkey.pk8:/config/customdatasource/odmkey.pk8
+
+  odm-decisionserverruntime:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+    environment:
+      - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
+    links:
+    - dbserver
+    - odm-decisionserverconsole
+    depends_on:
+    - dbserver
+    - odm-decisionserverconsole
+    ports:
+    - 9090:9080
+    - 9943:9443
+    volumes:
+    - $PWD/databases/postgresql/config/ssl/datasource-ds.xml:/config/customdatasource/datasource-ds.xml
+    - $PWD/databases/postgresql/config/ssl/odmroot.crt:/config/customdatasource/odmroot.crt
+    - $PWD/databases/postgresql/config/ssl/odmcrt.der:/config/customdatasource/odmcrt.der
+    - $PWD/databases/postgresql/config/ssl/odmkey.pk8:/config/customdatasource/odmkey.pk8
+
+  odm-decisioncenter:
+    image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - dbserver
+    depends_on:
+    - dbserver
+    environment:
+    - JVM_ARGS="-Xmx14000m"
+    ports:
+    - 9060:9060
+    - 9643:9453
+    volumes:
+    - $PWD/databases/postgresql/config/ssl/datasource-dc.xml:/config/customdatasource/datasource-dc.xml
+    - $PWD/databases/postgresql/config/ssl/odmroot.crt:/config/customdatasource/odmroot.crt
+    - $PWD/databases/postgresql/config/ssl/odmcrt.der:/config/customdatasource/odmcrt.der
+    - $PWD/databases/postgresql/config/ssl/odmkey.pk8:/config/customdatasource/odmkey.pk8
