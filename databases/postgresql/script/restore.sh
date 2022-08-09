@@ -3,8 +3,6 @@
 set +u
 
 [ -z ${PGDATA} ] && PGDATA=/var/lib/pgsql/data/userdata
-[ -f /run/secrets/postgres-config/db-user ] && export POSTGRES_USER=$(cat /run/secrets/postgres-config/db-user)
-[ -f /run/secrets/postgres-config/db-password ] && export POSTGRES_PASSWORD=$(cat /run/secrets/postgres-config/db-password)
 
 # Depending on the postgresql implementation the directory to write is not the same.
 if [ -d /var/lib/pgsql ]; then
