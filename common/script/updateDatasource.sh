@@ -63,12 +63,46 @@ then
 	# Escape special caracters for sed s command
 	DB_PASSWORD_ESCAPED=$(sed -e 's/[&\\/|]/\\&/g' <<<"$DB_PASSWORD")
 	sed -i 's|odmpwd|'$DB_PASSWORD_ESCAPED'|g' /config/datasource.xml
+else
+        case $DB_TYPE in
+                *postgres* )
+        	if [ -n "$DB_SSL_MODE" ]
+        	then       
+			echo "postgres ssl: remove password from /config/datasource.xml"
+			sed -i '/odmpwd/d' /config/datasource.xml
+		fi
+                ;;
+        esac
 fi
 
 if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ] || [ -f /config/customdatasource/truststore_password ]
 then
-	# Set env var if secrets are passed using mounted volumes
-	[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
-	sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+        case $DB_TYPE in
+                *db2* )
+		# Set env var if secrets are passed using mounted volumes
+		[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
+		sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+		;;
+	esac
+fi
+
+if [ -n "$DB_SSL_MODE" ]
+then
+        case $DB_TYPE in
+                *postgres* )
+
+		echo "postgres ssl : generating /config/security/tls.der and key.pk8 using provided /config/customdatasource/tls.key and tls.crt"
+		openssl x509 -in  /config/customdatasource/tls.crt -inform pem -outform der -out /config/security/tls.der
+		openssl pkcs8 -topk8 -in /config/customdatasource/tls.key -inform pem -outform der -out /config/security/key.pk8 -nocrypt
+
+		if [[ "$DB_SSL_MODE" == "require" ]];
+        	then
+			sed -i 's|sslMode="prefer"|sslMode="require" ssl="true" sslCert="/config/security/tls.der" sslKey="/config/security/key.pk8"|g' /config/datasource.xml
+		elif [[ "$DB_SSL_MODE" =~ "verify" ]];
+		then		
+			sed -i 's|sslMode="prefer"|sslMode="'$DB_SSL_MODE'" ssl="true" sslCert="/config/security/tls.der" sslKey="/config/security/key.pk8" sslRootCert="/config/customdatasource/ca.crt"|g' /config/datasource.xml
+		fi
+                ;;
+        esac
 fi
 # End - Update values for the datasource if required
