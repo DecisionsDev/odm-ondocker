@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # Begin - Update values for the datasource if required
+if [ -n "$DB_SSL_MODE" ] || [ -f /config/customdatasource/sslmode ]
+then
+        [ -f /config/customdatasource/sslmode ] && export DB_SSL_MODE=$(cat /config/customdatasource/sslmode)
+fi
+
 if [ -n "$DB_SERVER_NAME" ]
 then
 	echo "Set database server name to $DB_SERVER_NAME"
