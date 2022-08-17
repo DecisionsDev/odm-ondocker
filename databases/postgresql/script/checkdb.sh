@@ -3,6 +3,8 @@
 [ -n "$PGUSER_FILE" ] && export PGUSER=$(cat $PGUSER_FILE)
 [ -n "$PGPASSWORD_FILE" ] && export PGPASSWORD=$(cat $PGPASSWORD_FILE)
 
+CHECK_DB_SERVER=2
+
 until [ $CHECK_DB_SERVER -eq 0 ]
 do
   echo "Test connection to $PGHOST on port 5432 state $CHECK_DB_SERVER"
