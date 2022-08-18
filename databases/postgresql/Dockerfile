@@ -8,12 +8,12 @@ ARG ODMDBVERSION
 
 RUN echo "Using this ID to build the Postgresql image : ${POSTGRESUID} ${FROMPOSTGRES}"
 
-COPY $ODMDOCKERDIR/databases/postgresql/script/rundb.sh /usr/local/bin
+COPY $ODMDOCKERDIR/databases/postgresql/script/ /usr/local/bin
 COPY $ODMDOCKERDIR/licenses /licenses
 # Manage License
 COPY $ODMDOCKERDIR/databases/postgresql/script/restore.sh /tmp
 RUN rm -rf /licenses/.gitignore || true
-RUN chmod a+x /usr/local/bin/rundb.sh /tmp/restore.sh
+RUN chmod a+x /usr/local/bin/*.sh /tmp/restore.sh
 
 COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/data.dump
 COPY $ODMDOCKERDIR/databases/postgresql/*.sql /upload/
@@ -43,7 +43,7 @@ LABEL io.openshift.tags="odm,dba,dbamc"
 
 COPY --from=builder --chown=999:999 /upload /upload
 
-COPY --from=builder --chown=999:999 /usr/local/bin/rundb.sh  /usr/local/bin/
+COPY --from=builder --chown=999:999 /usr/local/bin/*db.sh  /usr/local/bin/
 COPY --from=builder --chown=999:999 /tmp/restore.sh  /opt/app-root/src/postgresql-start/restore.sh
 COPY --from=builder --chown=999:999 /tmp/restore.sh  /docker-entrypoint-initdb.d/restore.sh
 # License
