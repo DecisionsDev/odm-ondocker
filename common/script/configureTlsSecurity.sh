@@ -76,9 +76,9 @@ then
         echo "generating /config/security/keystore.jks and truststore.jks using provided /config/security/volume/tls.key and tls.crt"
         openssl pkcs12 -export -inkey /config/security/volume/tls.key -in /config/security/volume/tls.crt -name "certificate" -out /config/security/mycert.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/keystore.jks
-        keytool -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+        keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/truststore.jks
-        keytool -import -v -trustcacerts -alias ODM -file /config/security/volume/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -storetype jks -noprompt
+        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias ODM -file /config/security/volume/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -storetype jks -noprompt
 fi
 # End - Configuration for the TLS security
 
