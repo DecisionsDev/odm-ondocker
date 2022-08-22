@@ -13,7 +13,7 @@ COPY $ODMDOCKERDIR/licenses /licenses
 # Manage License
 COPY $ODMDOCKERDIR/databases/postgresql/script/restore.sh /tmp
 RUN rm -rf /licenses/.gitignore || true
-RUN chmod a+x /usr/local/bin/*.sh /tmp/restore.sh
+RUN chmod 755 /usr/local/bin/*.sh /tmp/restore.sh
 
 COPY $ODMDOCKERDIR/databases/postgresql/data-${ODMDBVERSION}.dump /upload/data.dump
 COPY $ODMDOCKERDIR/databases/postgresql/*.sql /upload/
