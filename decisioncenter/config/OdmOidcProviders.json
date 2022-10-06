@@ -9,7 +9,8 @@
 	"clientId": "OPENID_CLIENT_ID",
 	"clientSecret": "OPENID_CLIENT_SECRET",
 	"tokenFormat": "OPENID_TOKEN_FORMAT",
-        "logoutURL": "OPENID_LOGOUT_URL"
+        "logoutURL": "OPENID_LOGOUT_URL",
+        "logoutTokenParam": "OPENID_LOGOUT_TOKEN_PARAM"
     }
   ]
 }
