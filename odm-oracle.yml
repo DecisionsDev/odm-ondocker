@@ -30,14 +30,14 @@ services:
     - 9843:9443
     environment:
     - DB_TYPE=oracle
-    - DB_SERVER_NAME=oracle
-    - DB_PORT_NUMBER=1521
-    - DB_NAME=ORCLCDB
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
     - DB_USER=system
     - DB_PASSWORD=Oradoc_db1
-#    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
-    volumes:
-    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
 
   odm-decisionrunner:
     image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
@@ -61,13 +61,14 @@ services:
     - 9743:9443
     environment:
     - DB_TYPE=oracle
-    - DB_SERVER_NAME=oracle
-    - DB_PORT_NUMBER=1521
-    - DB_NAME=ORCLCDB
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
     - DB_USER=system
     - DB_PASSWORD=Oradoc_db1
-    volumes:
-    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
 
   odm-decisionserverruntime:
     image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
@@ -82,11 +83,12 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
     environment:
     - DB_TYPE=oracle
-    - DB_SERVER_NAME=oracle
-    - DB_PORT_NUMBER=1521
-    - DB_NAME=ORCLCDB
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
     - DB_USER=system
     - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
     - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
     - oracle
@@ -97,8 +99,8 @@ services:
     ports:
     - 9090:9080
     - 9943:9443
-    volumes:
-    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
 
   odm-decisioncenter:
     image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
@@ -113,11 +115,12 @@ services:
         - FROMLIBERTYBUILD=$FROMLIBERTY
     environment:
     - DB_TYPE=oracle
-    - DB_SERVER_NAME=oracle
-    - DB_PORT_NUMBER=1521
-    - DB_NAME=ORCLCDB
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
     - DB_USER=system
     - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
     - JVM_ARGS="-Xmx14000m"
     ports:
     - 9060:9060
@@ -126,5 +129,5 @@ services:
     - oracle
     depends_on:
     - oracle
-    volumes:
-    - /Users/mathiasmouly/ODMonDocker/odm-ondocker/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
