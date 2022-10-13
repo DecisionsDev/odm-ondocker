@@ -1,5 +1,5 @@
 # IBM-ODM-Docker
-IBM Operational Decision Manager on Docker...
+IBM Operational Decision Manager on Docker
 
 
 [![Build Status](https://travis-ci.org/ODMDev/odm-ondocker.svg?branch=master)](https://travis-ci.org/ODMDev/odm-ondocker)
