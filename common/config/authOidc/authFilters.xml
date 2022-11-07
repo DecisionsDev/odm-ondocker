@@ -9,15 +9,6 @@
            And no request url for HTDS should be listed in the browserAuthFilter filter since 
            this filter is implemented with the notContain match type.
 
-       Configuration for the RES Console:
-          The request URL /res/api should be handled by the browserAuthFilter filter
-          (that is the filter associated with the inbound propagation set to supported),
-          otherwise the REST tool in the RES Console does not work (test interface in REST 
-          API tab).
-          => /res/api should not be listed in the apiAuthFilter filter.
-          And /res/api should not be listed in the browserAuthFilter filter since 
-          this filter is implemented with the notContain match type.
-
        Configuration for the decisioncenter-api:
           /decisioncenter-api/v1/" is the path for the Decision Center API, the "v1" is required
           so that Swagger remains handled by "browserAuthFilter"
@@ -27,6 +18,7 @@
         <!-- RES console -->
         <requestUrl id="res1" matchType="notContain" urlPattern="/res/auth"/>
         <requestUrl id="res2" matchType="notContain" urlPattern="/res/repositoryService"/>
+	<requestUrl id="res3" matchType="notContain" urlPattern="/res/api"/>
         <!-- Enterprise console -->
         <requestUrl id="ec1" matchType="notContain" urlPattern="/teamserver/rts-sync"/>
         <requestUrl id="ec2" matchType="notContain" urlPattern="/teamserver/remoting"/>
@@ -50,6 +42,6 @@
 	<!-- This line is to support OIDC and BA by detecting the header -->
 	<requestHeader id="allowBasicAuth" matchType="contains" name="Authorization" value="Bearer" />
         <requestUrl id="apiurl" matchType="contains" urlPattern=
-                "/res/auth|/res/repositoryService|/teamserver/rts-sync|/teamserver/remoting|/teamserver/servlet/SessionServlet|/decisioncenter/rts-sync|/decisioncenter/remoting|/decisioncenter/servlet/SessionServlet|/decisioncenter-api/v1|/DecisionRunner/api|/DecisionRunner/apiauth|/DecisionRunner/serverinfo|/testing/sspService|/testing/serverinfo"/>
+                "/res/api|/res/auth|/res/repositoryService|/teamserver/rts-sync|/teamserver/remoting|/teamserver/servlet/SessionServlet|/decisioncenter/rts-sync|/decisioncenter/remoting|/decisioncenter/servlet/SessionServlet|/decisioncenter-api/v1|/DecisionRunner/api|/DecisionRunner/apiauth|/DecisionRunner/serverinfo|/testing/sspService|/testing/serverinfo"/>
     </authFilter>
 </server>
