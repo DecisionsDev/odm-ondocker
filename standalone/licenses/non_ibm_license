@@ -1,6 +1,6 @@
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM Operational Decision Manager for Developers V8.11.0.1
+IBM Operational Decision Manager for Developers V8.11.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -20,20 +20,10 @@ shipped with, the Program as Licensee installed it.
 
 The following are Separately Licensed Code:
 
-famfamfam-silk-icons
-GuardedBy.java
-JCIP-ANNOTATIONS
-ThreadSafe.java
-application.js
-
-
-
-
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 NON-IBM-LICENSE INFORMATION FOR EXCLUDED COMPONENTS 
 
-ODM on Prem
+IBM Operational Decision Manager 8.11.1
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -83,3 +73,8 @@ END OF NON-IBM-LICENSE INFORMATION
 END OF NON-IBM-LICENSE INFORMATION FILE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS
