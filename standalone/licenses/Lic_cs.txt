@@ -1,290 +1,541 @@
-LICENÄŒNÃ INFORMACE
+LICENÈNÍ INFORMACE
 
-NÃ­Å¾e uvedenÃ© Programy jsou licencovÃ¡ny na zÃ¡kladÄ› nÃ¡sledujÃ­cÃ­ch podmÃ­nek uvedenÃ½ch v dokumentu LicenÄnÃ­ informace, kterÃ© doplÅˆujÃ­ licenÄnÃ­ podmÃ­nky pro Program, s nimiÅ¾ dÅ™Ã­ve ZÃ¡kaznÃ­k a IBM vyjÃ¡dÅ™ili souhlas Pokud ZÃ¡kaznÃ­k dÅ™Ã­ve nevyjÃ¡dÅ™il souhlas s ÃºÄinnÃ½mi licenÄnÃ­mi podmÃ­nkami pro Program, uplatnÃ­ se licence MezinÃ¡rodnÃ­ licenÄnÃ­ smlouva pro programy bez zÃ¡ruky (Z125-5589-05).
+Ní¾e uvedené Programy jsou licencovány na základì následujících podmínek uvedenıch v dokumentu Licenèní informace, které doplòují licenèní podmínky pro Program, s nimi¾ døíve Zákazník a IBM vyjádøili souhlas Pokud Zákazník døíve nevyjádøil souhlas s úèinnımi licenèními podmínkami pro Program, uplatní se licence Mezinárodní licenèní smlouva pro programy bez záruky (i125-5589-06).
 
-NÃ¡zev Programu (ÄŒÃ­slo Programu):
-IBM Operational Decision Manager for Developers V8.11 (5725-B69)
+Název Programu (Èíslo Programu):
+IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
 
-Na pouÅ¾Ã­vÃ¡nÃ­ Programu DrÅ¾itelem licence se vztahujÃ­ nÃ¡sledujÃ­cÃ­ standardnÃ­ podmÃ­nky.
+Na pou¾ívání Programu Dr¾itelem licence se vztahují následující standardní podmínky.
 
-OmezenÃ¡ uÅ¾ivatelskÃ¡ prÃ¡va
+Multiproduktovı instalaèní obraz
 
-S vÃ½jimkou ProgramÅ¯ v balÃ­ku lze veÅ¡kerÃ½ software IBM poskytnutÃ½ DrÅ¾iteli licence s Programem pouÅ¾Ã­t pouze k podpoÅ™e uÅ¾Ã­vÃ¡nÃ­ ZÃ¡kladnÃ­ho programu DrÅ¾itelem licence v souladu s dokumentem LicenÄnÃ­ informace, coÅ¾ znamenÃ¡, Å¾e takovÃ© pouÅ¾itÃ­ musÃ­ pÅ™Ã­mo souviset s licencovanÃ½m pouÅ¾itÃ­m ZÃ¡kladnÃ­ho programu.
+Program je dodáván jako souèást multiproduktového instalaèního obrazu. Dr¾itel licence je oprávnìn nainstalovat a pou¾ívat pouze Program (a pøípadné Podpùrné programy èi Programy v balíku), pro kterı získal platné oprávnìní, a nesmí nainstalovat ani pou¾ívat jinı software zahrnutı v instalaèním obrazu, pokud Dr¾itel licence nezískal samostatné oprávnìní pro tento jinı software.
 
-DrÅ¾itel licence nenÃ­ oprÃ¡vnÄ›n pouÅ¾Ã­vat Program k poskytovÃ¡nÃ­ komerÄnÃ­ch sluÅ¾eb IT jakÃ©koli tÅ™etÃ­ stranÄ›, k poskytovÃ¡nÃ­ komerÄnÃ­ho hostovÃ¡nÃ­ nebo sdÃ­lenÃ­ Äasu nebo k udÄ›lovÃ¡nÃ­ sublicencÃ­, pronÃ¡jmu nebo pronÃ¡jmu Programu.
+Podpùrné programy
 
-ZakÃ¡zanÃ© uÅ¾Ã­vÃ¡nÃ­
+Dr¾itel licence je oprávnìn nainstalovat a u¾ívat Podpùrné programy urèené ní¾e pouze k podpoøe u¾ívání Základního programu Dr¾itelem licence v souladu s touto Smlouvou. Vıraz "k podpoøe u¾ívání Dr¾itelem licence" by zahrnoval pouze nezbytné u¾ívání nebo u¾ívání, které jinak pøímo souvisí s licencovanım u¾íváním Základního programu nebo jiného Podpùrného programu. Podpùrné programy nesmí bıt u¾ívány k ¾ádnému jinému úèelu. K Podpùrnému programu mohou bıt pøipojeny licenèní podmínky. Tyto podmínky (pokud existují) platí pro u¾ívání tohoto Podpùrného programu Dr¾itelem licence. V pøípadì rozporu podmínek mají pøednost podmínky uvedené v tomto dokumentu Licenèní informace pøed podmínkami Podpùrného programu. Dr¾itel licence musí získat dostateènı poèet oprávnìní k Programu jako celku k pokrytí instalace a pou¾ívání v¹ech Podpùrnıch programù ze strany Dr¾itele licence, pokud nejsou v tomto dokumentu Licenèní informace poskytnuta samostatná oprávnìní. Jestli¾e byl napø. tento Program licencován dle VPC (Virtuální jádro procesoru) a Dr¾itel licence mìl instalovat Základní program nebo Podpùrnı program na poèítaèi s 10 VPC a jinı Podpùrnı program na druhém poèítaèi s 10 VPC, musel by Dr¾itel licence získat oprávnìní na 20 VPC k Programu.
 
-DrÅ¾itel licence nesmÃ­ pouÅ¾Ã­vat nebo autorizovat ostatnÃ­ pro pouÅ¾itÃ­ Programu, pokud by selhÃ¡nÃ­ Programu mohlo zpÅ¯sobit smrt, Å¡kodu na zdravÃ­ nebo Å¡kody na majetku Äi Å¾ivotnÃ­m prostÅ™edÃ­.
+Podpùrné programy:
+IBM WebSphere Liberty 22
 
-MultiproduktovÃ½ instalaÄnÃ­ obraz
+Omezení pro vıvojáøe
 
-Program je dodÃ¡vÃ¡n jako souÄÃ¡st multiproduktovÃ©ho instalaÄnÃ­ho obrazu. DrÅ¾itel licence je oprÃ¡vnÄ›n nainstalovat a pouÅ¾Ã­vat pouze Program (a pÅ™Ã­padnÃ© PodpÅ¯rnÃ© programy Äi Programy v balÃ­ku), pro kterÃ½ zÃ­skal platnÃ© oprÃ¡vnÄ›nÃ­, a nesmÃ­ nainstalovat ani pouÅ¾Ã­vat jinÃ½ software zahrnutÃ½ v instalaÄnÃ­m obrazu, pokud DrÅ¾itel licence nezÃ­skal samostatnÃ© oprÃ¡vnÄ›nÃ­ pro tento jinÃ½ software.
+Je-li v názvu Programu uveden vıraz "Pro vıvojáøe", mù¾e Dr¾itel licence pou¾ívat Program pouze v rámci interního vıvoje a testování jednotek Dr¾itele licence na stroji vıvojáøe. Stroj Vıvojáøe je prostøedí fyzického nebo virtuálního poèítaèe, na nìm¾ je spu¹tìn primární operaèní systém a Program, pøièem¾ jak tento operaèní systém, tak i Program jsou dostupné nejvı¹e jednomu urèenému Vıvojáøi a u¾ívané nejvı¹e jedním urèenım Vıvojáøem.
 
-PodpÅ¯rnÃ© programy
+Upravitelnı kód tøetí strany
 
-DrÅ¾itel licence je oprÃ¡vnÄ›n nainstalovat a uÅ¾Ã­vat PodpÅ¯rnÃ© programy urÄenÃ© nÃ­Å¾e pouze k podpoÅ™e uÅ¾Ã­vÃ¡nÃ­ ZÃ¡kladnÃ­ho programu DrÅ¾itelem licence v souladu s touto Smlouvou. VÃ½raz "k podpoÅ™e uÅ¾Ã­vÃ¡nÃ­ DrÅ¾itelem licence" by zahrnoval pouze nezbytnÃ© uÅ¾Ã­vÃ¡nÃ­ nebo uÅ¾Ã­vÃ¡nÃ­, kterÃ© jinak pÅ™Ã­mo souvisÃ­ s licencovanÃ½m uÅ¾Ã­vÃ¡nÃ­m ZÃ¡kladnÃ­ho programu nebo jinÃ©ho PodpÅ¯rnÃ©ho programu. PodpÅ¯rnÃ© programy nesmÃ­ bÃ½t uÅ¾Ã­vÃ¡ny k Å¾Ã¡dnÃ©mu jinÃ©mu ÃºÄelu. K PodpÅ¯rnÃ©mu programu mohou bÃ½t pÅ™ipojeny licenÄnÃ­ podmÃ­nky. Tyto podmÃ­nky (pokud existujÃ­) platÃ­ pro uÅ¾Ã­vÃ¡nÃ­ tohoto PodpÅ¯rnÃ©ho programu DrÅ¾itelem licence. V pÅ™Ã­padÄ› rozporu podmÃ­nek majÃ­ pÅ™ednost podmÃ­nky uvedenÃ© v tomto dokumentu LicenÄnÃ­ informace pÅ™ed podmÃ­nkami PodpÅ¯rnÃ©ho programu. DrÅ¾itel licence musÃ­ zÃ­skat dostateÄnÃ½ poÄet oprÃ¡vnÄ›nÃ­ k Programu jako celku k pokrytÃ­ instalace a pouÅ¾Ã­vÃ¡nÃ­ vÅ¡ech PodpÅ¯rnÃ½ch programÅ¯ ze strany DrÅ¾itele licence, pokud nejsou v tomto dokumentu LicenÄnÃ­ informace poskytnuta samostatnÃ¡ oprÃ¡vnÄ›nÃ­. JestliÅ¾e byl napÅ™. tento Program licencovÃ¡n dle VPC (VirtuÃ¡lnÃ­ jÃ¡dro procesoru) a DrÅ¾itel licence mÄ›l instalovat ZÃ¡kladnÃ­ program nebo PodpÅ¯rnÃ½ program na poÄÃ­taÄi s 10 VPC a jinÃ½ PodpÅ¯rnÃ½ program na druhÃ©m poÄÃ­taÄi s 10 VPC, musel by DrÅ¾itel licence zÃ­skat oprÃ¡vnÄ›nÃ­ na 20 VPC k Programu.
+V pøípadném rozsahu, v jakém IBM v souboru OZNÁMENÍ oznaèí kód tøetí strany jako "Upravitelnı kód tøetí strany", IBM opravòuje Dr¾itele licence, aby 1) upravil Upravitelnı kód tøetí strany a 2) zpìtnì analyzoval moduly Programu, které jsou pøímo spojeny s Upravitelnım kódem tøetí strany, ov¹em za pøedpokladu, ¾e k tomu dochází pouze pro úèely ladìní zmìn Dr¾itele licence takového kódu tøetí strany. Pøípadné povinnosti servisu a podpory IBM se vztahují pouze na nezmìnìnı Program.
 
-PodpÅ¯rnÃ© programy:
-IBM WebSphere Liberty 21
+Samostatnì licencovanı kód
 
-OmezenÃ­ pro vÃ½vojÃ¡Å™e
+V¹echny komponenty uvedené v souboru NON_IBM_LICENSE jsou pova¾ovány za "Samostatnì licencovanı kód" licencovanı Dr¾iteli licence na základì podmínek platné licenèní smlouvy (platnıch licenèních smluv) tøetích osob, jak je uvedeno v souboru (souborech) NON_IBM_LICENSE pøipojeném (pøipojenıch) k Programu, nikoli ve Smlouvì. Budoucí aktualizace Programu nebo sady oprav k Programu mohou obsahovat dodateènı Samostatnì licencovanı kód. Takovı dodateènı Samostatnì licencovanı kód a související licence jsou uvedeny v pou¾itelném souboru "NON_IBM_LICENSE" pøipojeném k aktualizaci Programu nebo sadì oprav k Programu. 
 
-Je-li v nÃ¡zvu Programu uveden vÃ½raz "Pro vÃ½vojÃ¡Å™e", mÅ¯Å¾e DrÅ¾itel licence pouÅ¾Ã­vat Program pouze v rÃ¡mci internÃ­ho vÃ½voje a testovÃ¡nÃ­ jednotek DrÅ¾itele licence na stroji vÃ½vojÃ¡Å™e. Stroj VÃ½vojÃ¡Å™e je prostÅ™edÃ­ fyzickÃ©ho nebo virtuÃ¡lnÃ­ho poÄÃ­taÄe, na nÄ›mÅ¾ je spuÅ¡tÄ›n primÃ¡rnÃ­ operaÄnÃ­ systÃ©m a Program, pÅ™iÄemÅ¾ jak tento operaÄnÃ­ systÃ©m, tak i Program jsou dostupnÃ© nejvÃ½Å¡e jednomu urÄenÃ©mu VÃ½vojÃ¡Å™i a uÅ¾Ã­vanÃ© nejvÃ½Å¡e jednÃ­m urÄenÃ½m VÃ½vojÃ¡Å™em.
+Poznámka: Bez ohledu na odli¹né podmínky licenèní smlouvy tøetích osob, této Smlouvy nebo jakékoliv jiné smlouvy, kterou má Dr¾itel licence s IBM pøípadnì uzavøenou, související se Samostatnì licencovanım kódem:
+(a) IBM jej poskytuje Dr¾iteli licence BEZ ZÁRUK JAKÉHOKOLIV DRUHU A ODMÍTÁ JAKÉKOLI A V©ECHNY VİSLOVNÌ VYJÁDØENÉ NEBO Z OKOLNOSTÍ VYPLİVAJÍCÍ ZÁRUKY A PODMÍNKY, VÈETNÌ - NIKOLI V©AK POUZE - ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORU©ENÍ PRÁV TØETÍCH OSOB A Z OKOLNOSTÍ VYPLİVAJÍCÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URÈITİ ÚÈEL;
+(b) IBM nenese odpovìdnost za ¾ádné pøímé, nepøímé, nahodilé, zvlá¹tní, exemplární ¹kody ani za sankèní náhrady ¹kody nebo za následné ¹kody vèetnì - nikoliv v¹ak pouze - ztráty dat, ztráty úspor a u¹lého zisku.
 
-SamostatnÄ› licencovanÃ½ kÃ³d
+Soukromí
 
-VÅ¡echny komponenty uvedenÃ© v souboru NON_IBM_LICENSE jsou povaÅ¾ovÃ¡ny za "SamostatnÄ› licencovanÃ½ kÃ³d" licencovanÃ½ DrÅ¾iteli licence na zÃ¡kladÄ› podmÃ­nek platnÃ© licenÄnÃ­ smlouvy (platnÃ½ch licenÄnÃ­ch smluv) tÅ™etÃ­ch osob, jak je uvedeno v souboru (souborech) NON_IBM_LICENSE pÅ™ipojenÃ©m (pÅ™ipojenÃ½ch) k Programu, nikoli ve SmlouvÄ›. BudoucÃ­ aktualizace Programu nebo sady oprav k Programu mohou obsahovat dodateÄnÃ½ SamostatnÄ› licencovanÃ½ kÃ³d. TakovÃ½ dodateÄnÃ½ SamostatnÄ› licencovanÃ½ kÃ³d a souvisejÃ­cÃ­ licence jsou uvedeny v pouÅ¾itelnÃ©m souboru "NON_IBM_LICENSE" pÅ™ipojenÃ©m k aktualizaci Programu nebo sadÄ› oprav k Programu. 
+Dr¾itel licence potvrzuje a souhlasí s tím, ¾e IBM mù¾e u¾ívat soubory cookie a sledovací technologie pro úèely shroma¾ïování osobních informací v rámci sbìru statistickıch dat tıkajících se u¾ívání produktù a informací, jejich¾ cílem je napomáhat zlep¹ení u¾ivatelskıch zku¹eností, a/nebo pro úèely pøizpùsobení interakce s u¾ivateli, a to v souladu s Online Prohlá¹ením IBM o ochranì soukromí, které je dostupné na adrese http://www.ibm.com/privacy/.
 
-PoznÃ¡mka: Bez ohledu na odliÅ¡nÃ© podmÃ­nky licenÄnÃ­ smlouvy tÅ™etÃ­ch osob, tÃ©to Smlouvy nebo jakÃ©koliv jinÃ© smlouvy, kterou mÃ¡ DrÅ¾itel licence s IBM pÅ™Ã­padnÄ› uzavÅ™enou, souvisejÃ­cÃ­ se SamostatnÄ› licencovanÃ½m kÃ³dem:
-(a) IBM jej poskytuje DrÅ¾iteli licence BEZ ZÃRUK JAKÃ‰HOKOLIV DRUHU A ODMÃTÃ JAKÃ‰KOLI A VÅ ECHNY VÃSLOVNÄš VYJÃDÅ˜ENÃ‰ NEBO Z OKOLNOSTÃ VYPLÃVAJÃCÃ ZÃRUKY A PODMÃNKY, VÄŒETNÄš - NIKOLI VÅ AK POUZE - ZÃRUKY VLASTNICKÃ‰HO PRÃVA, NEPORUÅ ENÃ PRÃV TÅ˜ETÃCH OSOB A Z OKOLNOSTÃ VYPLÃVAJÃCÃCH ZÃRUK A PODMÃNEK PRODEJNOSTI NEBO VHODNOSTI PRO URÄŒITÃ ÃšÄŒEL;
-(b) IBM nenese odpovÄ›dnost za Å¾Ã¡dnÃ© pÅ™Ã­mÃ©, nepÅ™Ã­mÃ©, nahodilÃ©, zvlÃ¡Å¡tnÃ­, exemplÃ¡rnÃ­ Å¡kody ani za sankÄnÃ­ nÃ¡hrady Å¡kody nebo za nÃ¡slednÃ© Å¡kody vÄetnÄ› - nikoliv vÅ¡ak pouze - ztrÃ¡ty dat, ztrÃ¡ty Ãºspor a uÅ¡lÃ©ho zisku.
+Komponenty ve zdrojovém kódu a Vzorové materiály
 
-SoukromÃ­
+Program obsahuje komponenty ve formì zdrojového kódu ("Komponenty ve zdrojovém kódu"), nebo jiné materiály oznaèované jako Vzorové materiály, nebo obojí. Dr¾itel licence smí kopírovat a upravovat Zdrojové komponenty a Vzorové materiály pouze pro interní úèely, za pøedpokladu, ¾e toto u¾ívání splòuje limity licenèních práv podle této Smlouvy, av¹ak pod podmínkou, ¾e Dr¾itel licence nesmí pozmìòovat ani odstraòovat ¾ádné informace o autorskıch právech nebo právech k du¹evnímu vlastnictví, které jsou uvedeny ve Zdrojovıch komponentách èi Vzorovıch materiálech. IBM poskytuje tyto Komponenty ve zdrojovém kódu a Vzorové materiály bez závazku podpory a "JAK JSOU", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, VYJÁDØENÉ VİSLOVNÌ ÈI VYPLİVAJÍCÍ Z OKOLNOSTÍ, VÈETNÌ ZÁRUKY VLASTNICTVÍ, NEPORU©ENÍ PRÁV TØETÍCH OSOB A ZÁRUK A PODMÍNEK PRODEJNOSTI A VHODNOSTI PRO DANİ ÚÈEL.
 
-DrÅ¾itel licence potvrzuje a souhlasÃ­ s tÃ­m, Å¾e IBM mÅ¯Å¾e uÅ¾Ã­vat soubory cookie a sledovacÃ­ technologie pro ÃºÄely shromaÅ¾ÄovÃ¡nÃ­ osobnÃ­ch informacÃ­ v rÃ¡mci sbÄ›ru statistickÃ½ch dat tÃ½kajÃ­cÃ­ch se uÅ¾Ã­vÃ¡nÃ­ produktÅ¯ a informacÃ­, jejichÅ¾ cÃ­lem je napomÃ¡hat zlepÅ¡enÃ­ uÅ¾ivatelskÃ½ch zkuÅ¡enostÃ­, a/nebo pro ÃºÄely pÅ™izpÅ¯sobenÃ­ interakce s uÅ¾ivateli, a to v souladu s Online ProhlÃ¡Å¡enÃ­m IBM o ochranÄ› soukromÃ­, kterÃ© je dostupnÃ© na adrese http://www.ibm.com/privacy/.
+Data a slu¾by tøetí osoby
 
-Komponenty ve zdrojovÃ©m kÃ³du a VzorovÃ© materiÃ¡ly
+Program poskytuje pøístup k datovım slu¾bám tøetích osob, databázím, webovım slu¾bám, softwaru nebo jinému obsahu od tøetích osob (spoleènì dále "Obsah tøetích osob"). Pøístup k Obsahu tøetí osoby je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLI DRUHU, VİSLOVNÌ VYJÁDØENÉ NEBO KONKLUDENTNÍ, VÈETNÌ ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORU©ENÍ NEBO NEZASAHOVÁNÍ DO PRÁV TØETÍCH OSOB A KONKLUDENTNÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URÈITİ ÚÈEL. Pøíslu¹né tøetí strany mohou pøístup kdykoliv ukonèit na základì svého vıluèného uvá¾ení. Dr¾itel licence mù¾e bıt povinen s tøetími stranami uzavøít samostatné smlouvy o pøístupu k Obsahu tøetích osob nebo u¾ívání tohoto Obsahu tøetích osob. IBM není smluvní stranou ¾ádnıch takovıch samostatnıch smluv. Vıslovnou podmínkou této licence je to, ¾e se Dr¾itel licence zavazuje dodr¾ovat podmínky tìchto samostatnıch smluv.
 
-Program obsahuje komponenty ve formÄ› zdrojovÃ©ho kÃ³du ("Komponenty ve zdrojovÃ©m kÃ³du"), nebo jinÃ© materiÃ¡ly oznaÄovanÃ© jako VzorovÃ© materiÃ¡ly, nebo obojÃ­. DrÅ¾itel licence smÃ­ kopÃ­rovat a upravovat ZdrojovÃ© komponenty a VzorovÃ© materiÃ¡ly pouze pro internÃ­ ÃºÄely, za pÅ™edpokladu, Å¾e toto uÅ¾Ã­vÃ¡nÃ­ splÅˆuje limity licenÄnÃ­ch prÃ¡v podle tÃ©to Smlouvy, avÅ¡ak pod podmÃ­nkou, Å¾e DrÅ¾itel licence nesmÃ­ pozmÄ›Åˆovat ani odstraÅˆovat Å¾Ã¡dnÃ© informace o autorskÃ½ch prÃ¡vech nebo prÃ¡vech k duÅ¡evnÃ­mu vlastnictvÃ­, kterÃ© jsou uvedeny ve ZdrojovÃ½ch komponentÃ¡ch Äi VzorovÃ½ch materiÃ¡lech. IBM poskytuje tyto Komponenty ve zdrojovÃ©m kÃ³du a VzorovÃ© materiÃ¡ly bez zÃ¡vazku podpory a "JAK JSOU", BEZ ZÃRUKY JAKÃ‰HOKOLIV DRUHU, VYJÃDÅ˜ENÃ‰ VÃSLOVNÄš ÄŒI VYPLÃVAJÃCÃ Z OKOLNOSTÃ, VÄŒETNÄš ZÃRUKY VLASTNICTVÃ, NEPORUÅ ENÃ PRÃV TÅ˜ETÃCH OSOB A ZÃRUK A PODMÃNEK PRODEJNOSTI A VHODNOSTI PRO DANÃ ÃšÄŒEL.
 
-Data a sluÅ¾by tÅ™etÃ­ osoby
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS
 
-Program poskytuje pÅ™Ã­stup k datovÃ½m sluÅ¾bÃ¡m tÅ™etÃ­ch osob, databÃ¡zÃ­m, webovÃ½m sluÅ¾bÃ¡m, softwaru nebo jinÃ©mu obsahu od tÅ™etÃ­ch osob (spoleÄnÄ› dÃ¡le "Obsah tÅ™etÃ­ch osob"). PÅ™Ã­stup k Obsahu tÅ™etÃ­ osoby je poskytovÃ¡n "JAK JE", BEZ ZÃRUKY JAKÃ‰HOKOLI DRUHU, VÃSLOVNÄš VYJÃDÅ˜ENÃ‰ NEBO KONKLUDENTNÃ, VÄŒETNÄš ZÃRUKY VLASTNICKÃ‰HO PRÃVA, NEPORUÅ ENÃ NEBO NEZASAHOVÃNÃ DO PRÃV TÅ˜ETÃCH OSOB A KONKLUDENTNÃCH ZÃRUK A PODMÃNEK PRODEJNOSTI NEBO VHODNOSTI PRO URÄŒITÃ ÃšÄŒEL. PÅ™Ã­sluÅ¡nÃ© tÅ™etÃ­ strany mohou pÅ™Ã­stup kdykoliv ukonÄit na zÃ¡kladÄ› svÃ©ho vÃ½luÄnÃ©ho uvÃ¡Å¾enÃ­. DrÅ¾itel licence mÅ¯Å¾e bÃ½t povinen s tÅ™etÃ­mi stranami uzavÅ™Ã­t samostatnÃ© smlouvy o pÅ™Ã­stupu k Obsahu tÅ™etÃ­ch osob nebo uÅ¾Ã­vÃ¡nÃ­ tohoto Obsahu tÅ™etÃ­ch osob. IBM nenÃ­ smluvnÃ­ stranou Å¾Ã¡dnÃ½ch takovÃ½ch samostatnÃ½ch smluv. VÃ½slovnou podmÃ­nkou tÃ©to licence je to, Å¾e se DrÅ¾itel licence zavazuje dodrÅ¾ovat podmÃ­nky tÄ›chto samostatnÃ½ch smluv.
+Mezinárodní licenèní smlouva pro Programy bez záruky
 
-L/N:  L-ASAY-C55H6F
-D/N:  L-ASAY-C55H6F
-P/N:  L-ASAY-C55H6F
+Èást 1 - Obecná ustanovení
 
+STA®ENÍM, INSTALACÍ, KOPÍROVÁNÍM, PØÍSTUPEM K PROGRAMU, KLEPNUTÍM NA TLAÈÍTKO "SOUHLASÍM" NEBO JINİM POU®ITÍM PROGRAMU VYJADØUJE DR®ITEL LICENCE SVÙJ SOUHLAS S PODMÍNKAMI TÉTO SMLOUVY. JESTLI®E S TÌMITO PODMÍNKAMI SOUHLASÍTE JMÉNEM DR®ITELE LICENCE, PROHLA©UJETE, ®E JSTE PLNÌ OPRÁVNÌNI ZAVÁZAT DR®ITELE LICENCE TÌMITO PODMÍNKAMI.
 
-MezinÃ¡rodnÃ­ licenÄnÃ­ smlouva pro programy bez zÃ¡ruky
+POKUD NESOUHLASÍTE S TÌMITO PODMÍNKAMI NEBO NEMÁTE OPRÁVNÌNÍ: i) PROGRAM NESTAHUJTE, NEINSTALUJTE, NEKOPÍRUJTE, NEPØISTUPUJTE K NÌMU A NEKLEPEJTE NA TLAÈÍTKO "SOUHLASÍM" ANI PROGRAM NEPOU®ÍVEJTE; A ii) NEPRODLENÌ VRA«TE NEPOU®ITÁ MÉDIA, DOKUMENTACI A DOKUMENTY O OPRÁVNÌNÍ STRANÌ, OD KTERÉ JSTE JE ZÍSKALI, OPROTI VRÁCENÍ ZAPLACENÉ ÈÁSTKY. POKUD BYL PROGRAM STA®EN, ZNIÈTE VE©KERÉ KOPIE PROGRAMU.
 
-ÄŒÃ¡st 1 - ObecnÃ¡ ustanovenÃ­
+Tato Mezinárodní licenèní smlouva pro Programy bez záruky (ILAN) a pøíslu¹né Transakèní dokumenty (dále spoleènì jen "Smlouva") pøedstavují úplnou dohodu mezi Dr¾itelem licence a spoleèností IBM ohlednì pou¾ívání Programu. Povinné podmínky pøíslu¹ného státu zahrnuté v èásti 2 této smlouvy ILAN nahrazují nebo upravují podmínky èásti 1.
 
-STAÅ½ENÃM, INSTALACÃ, ZKOPÃROVÃNÃM, PÅ˜ÃSTUPEM K PROGRAMU NEBO KLEPNUTÃM NA TLAÄŒÃTKO "SOUHLASÃM" NEBO JINÃM POUÅ½ITÃM PROGRAMU VYJADÅ˜UJE DRÅ½ITEL LICENCE SVÅ®J SOUHLAS S TOUTO SMLOUVOU. JESTLIÅ½E TYTO PODMÃNKY AKCEPTUJETE JMÃ‰NEM DRÅ½ITELE LICENCE, PROHLAÅ UJETE A ZARUÄŒUJETE, Å½E JSTE ZMOCNÄšNI VÃZAT DRÅ½ITELE LICENCE TÄšMITO PODMÃNKAMI. JESTLIÅ½E S TÄšMITO PODMÃNKAMI NESOUHLASÃTE:
+Transakèní dokumenty (TD) uvádìjí popis, informace a podmínky tıkající se Programu a jeho oprávnìného pou¾ití. K pøíkladùm Transakèních dokumentù pro Program patøí licenèní informace (LI), specifikace licencovaného programu (LPS), cenová nabídka, dokument o oprávnìní (PoE) nebo faktura. V rozsahu pøípadného rozporu budou mít podmínky Transakèního dokumentu pøednost pøed smlouvou ILAN.
 
-* NESTAHUJTE, NEINSTALUJTE, NEKOPÃRUJTE PROGRAM, NEPÅ˜ISTUPUJTE K PROGRAMU, NEPOUÅ½ÃVEJTE TLAÄŒÃTKO "SOUHLASÃM", ANI PROGRAM NEPOUÅ½ÃVEJTE; A
+1. Licence k Programu
 
-* NEPRODLENÄš VRAÅ¤TE NEPOUÅ½ITÃ‰ NOSIÄŒE A DOKUMENTACI STRANÄš, OD KTERÃ‰ JSTE JE ZÃSKALI, A BUDE VÃM VRÃCENA ÄŒÃSTKA, KTEROU JSTE ZA NÄš UHRADILI (JE-LI TO RELEVANTNÃ). POKUD BYL PROGRAM STAÅ½EN, VEÅ KERÃ‰ JEHO KOPIE ZNIÄŒTE.
+a. Program pøedstavuje spustitelnı poèítaèovı program se znaèkou IBM a jeho související materiály a zahrnuje celé i èásteèné kopie. Podrobnosti o programu jsou popsány v Transakèním dokumentu dostupném na adrese http://www.ibm.com/software/sla (pro programy Passport Advantage) nebo http://www.ibm.com/support/knowledgecenter (pro ostatní Programy IBM), v adresáøi ovládání systému Programu nebo jinde dle specifikací spoleènosti IBM. Zásady IBM pro software (napø. pro zálohování, doèasné pou¾ití a schválené cloudové prostøedí IBM) dostupné na adrese http://www.ibm.com/softwarepolicies se vztahují na pou¾ívání Programù Dr¾itelem licence.
 
-1. Definice
+b. Kopie Programù jsou chránìny autorskım právem a licencovány.
 
-"OprÃ¡vnÄ›nÃ© uÅ¾Ã­vÃ¡nÃ­" - stanovenÃ¡ ÃºroveÅˆ oprÃ¡vnÄ›nÃ­ DrÅ¾itele licence provÃ¡dÄ›t nebo spouÅ¡tÄ›t Program. Tuto ÃºroveÅˆ lze mÄ›Å™it na zÃ¡kladÄ› poÄtu uÅ¾ivatelÅ¯, miliÃ³nÅ¯ servisnÃ­ch jednotek ("jednotky MSU"), jednotek Processor Value Units ("jednotky PVU") nebo na zÃ¡kladÄ› jinÃ© ÃºrovnÄ› uÅ¾Ã­vÃ¡nÃ­, kterou stanovÃ­ IBM.
+c. Dr¾iteli licence je udílena nevıhradní licence:
 
-"IBM" - spoleÄnost International Business Machines Corporation nebo nÄ›kterÃ¡ z jejÃ­ch dceÅ™inÃ½ch spoleÄnostÃ­.
+(1) k pou¾ívání v¹ech kopií Programu v souladu s podmínkami Smlouvy a pøípadnì a¾ do poètu licenèních oprávnìní zakoupenıch Dr¾itelem licence ("Oprávnìné u¾ívání");
 
-"LicenÄnÃ­ informace" ("LI") - dokument uvÃ¡dÄ›jÃ­cÃ­ informace a jakÃ©koli dodateÄnÃ© podmÃ­nky specifickÃ© pro Program. Dokument LicenÄnÃ­ informace k programu je k dispozici na adrese www.ibm.com/software/sla. LicenÄnÃ­ informace lze rovnÄ›Å¾ nalÃ©zt v adresÃ¡Å™i s Programem - prostÅ™ednictvÃ­m systÃ©movÃ©ho pÅ™Ã­kazu - nebo ve formÄ› pÅ™Ã­ruÄky, kterou obdrÅ¾Ã­te s Programem.
+(2) k vytváøení a instalaci kopií na podporu takového Oprávnìného u¾ívání; a
 
-"Program" - nÃ­Å¾e uvedenÃ© komponenty, vÄetnÄ› originÃ¡lu a vÅ¡ech ÃºplnÃ½ch nebo dÃ­lÄÃ­ch kopiÃ­: 1) strojovÄ› ÄitelnÃ© instrukce a data, 2) komponenty, soubory a moduly, 3) audiovizuÃ¡lnÃ­ obsah (jako jsou obrazy, text, nahrÃ¡vky nebo obrÃ¡zky) a 4) souvisejÃ­cÃ­ licenÄnÃ­ materiÃ¡ly (jako jsou licenÄnÃ­ klÃ­Äe a dokumentace).
+(3) k vytváøení zálo¾ní kopie.
 
-2. Struktura smlouvy
+d. Programy mohou bıt vyu¾ívány Dr¾itelem licence, jeho zamìstnanci a smluvními partnery. Dr¾itel licence není oprávnìn Program pronajímat ani poskytnout na leasing ani poskytovat komerèní slu¾by IT, hostování nebo èasového sdílení jakékoliv tøetí osobì. Dal¹í práva lze získat za dodateèné poplatky nebo na základì jinıch podmínek.
 
-Tato smlouva zahrnuje ÄŒÃ¡st 1 - ObecnÃ¡ ustanovenÃ­, ÄŒÃ¡st 2 - PodmÃ­nky specifickÃ© pro zemi (jsou-li nÄ›jakÃ¡) a dokument LicenÄnÃ­ informace a pÅ™edstavuje Ãºplnou dohodu mezi DrÅ¾itelem licence a IBM ve vztahu k uÅ¾Ã­vÃ¡nÃ­ Programu. Nahrazuje veÅ¡kerÃ¡ pÅ™edchozÃ­ ÃºstnÃ­ nebo pÃ­semnÃ¡ ujednÃ¡nÃ­ mezi DrÅ¾itelem licence a IBM ohlednÄ› jeho uÅ¾Ã­vÃ¡nÃ­ Programu. PodmÃ­nky ÄŒÃ¡sti 2 mohou nahrazovat nebo upravovat podmÃ­nky ÄŒÃ¡sti 1. V mÃ­Å™e, v nÃ­Å¾ se vyskytne rozpor podmÃ­nek, majÃ­ podmÃ­nky dokumentu LicenÄnÃ­ informace pÅ™ednost pÅ™ed podmÃ­nkami obou ÄŒÃ¡stÃ­.
+e. Licence udìlená k Programu je podmínìna tím, ¾e Dr¾itel licence:
 
-3. UdÄ›lenÃ­ licence
+(1) bude reprodukovat oznámení o autorskıch právech a dal¹í znaèky ve v¹ech kopiích;
 
-Program je vlastnictvÃ­m IBM nebo dodavatele IBM, je chrÃ¡nÄ›n autorskÃ½mi prÃ¡vy a je k nÄ›mu poskytovÃ¡no prÃ¡vo uÅ¾Ã­vÃ¡nÃ­, nenÃ­ prodÃ¡vÃ¡n.
+(2) zajistí, aby v¹ichni, kdo pou¾ívají Program: i) tak èinili pouze jménem Dr¾itele licence v rámci Oprávnìného u¾ívání Dr¾itele licence a ii) dodr¾ovali tuto Smlouvu;
 
-IBM udÄ›luje DrÅ¾iteli licence nevÃ½hradnÃ­ licenci na 1) uÅ¾Ã­vÃ¡nÃ­ Programu aÅ¾ do ÃºrovnÄ› OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­ uvedenÃ© na faktuÅ™e, 2) vytvoÅ™enÃ­ a instalaci kopiÃ­ na podporu takovÃ©ho OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­, a 3) vytvoÅ™enÃ­ zÃ¡loÅ¾nÃ­ kopie, to vÅ¡e za pÅ™edpokladu, Å¾e:
+(3) nebude provádìt zpìtné sestavení, kompilaci, pøeklad nebo zpìtnou analızu Programu, s vıjimkou pøípadù vıslovnì povolenıch právními pøedpisy bez mo¾nosti smluvního vzdání se takového práva; a
 
-a. DrÅ¾itel licence zÃ­skal Program zÃ¡konnÃ½m zpÅ¯sobem a dodrÅ¾uje podmÃ­nky tÃ©to Smlouvy;
+(4) nebude pou¾ívat ¾ádnı z prvkù Programu nebo související licenèní materiály oddìlenì od Programu.
 
-b. zÃ¡loÅ¾nÃ­ kopie nenÃ­ spouÅ¡tÄ›na, ledaÅ¾e nelze spustit zÃ¡lohovanÃ½ Program;
+f. Pokud Transakèní dokument pro Program ("Hlavní program") uvádí, ¾e souèástí Hlavního programu je "Podpùrnı program", Dr¾itel licence smí pou¾ívat takovı Podpùrnı program v souladu s ve¹kerımi licenèními omezeními Hlavního programu a pouze na podporu Hlavního programu.
 
-c. DrÅ¾itel licence uvÃ¡dÃ­ vÅ¡echna upozornÄ›nÃ­ o autorskÃ½ch prÃ¡vech a dalÅ¡Ã­ vÃ½hrady vlastnickÃ½ch prÃ¡v na kaÅ¾dÃ© kopii nebo dÃ­lÄÃ­ kopii Programu;
+g. Tato licence se vztahuje na v¹echny kopie Programu, které Dr¾itel licence vytvoøí.
 
-d. DrÅ¾itel licence zajistÃ­, aby kaÅ¾dÃ¡ osoba (s lokÃ¡lnÃ­m nebo vzdÃ¡lenÃ½m pÅ™Ã­stupem) pouÅ¾Ã­vajÃ­cÃ­ Program 1) tak Äinila pouze jmÃ©nem DrÅ¾itele licence, a 2) tak Äinila v souladu s podmÃ­nkami tÃ©to Smlouvy;
+h. Na aktualizace, opravy èi doèasná øe¹ení Programu se vztahují podmínky upravující Program, pokud nebudou v aktualizovaném Transakèním dokumentu uvedeny nové podmínky. Dr¾itel licence takové nové podmínky akceptuje instalací aktualizace, opravy nebo doèasného øe¹ení. Pokud bude Program nahrazen aktualizací, Dr¾itel licence souhlasí, ¾e neprodlenì pøestane pou¾ívat nahrazenı Program.
 
-e. DrÅ¾itel licence nesmÃ­ 1) pouÅ¾Ã­vat, kopÃ­rovat, upravovat nebo distribuovat Program jinak, neÅ¾ je vÃ½slovnÄ› dovoleno touto Smlouvou; 2) zpÄ›tnÄ› sestavovat, zpÄ›tnÄ› kompilovat Äi jakkoliv pÅ™eklÃ¡dat Program, nenÃ­-li to vÃ½slovnÄ› dovoleno zÃ¡konem bez moÅ¾nosti toto povolenÃ­ smluvnÄ› vylouÄit; 3) uÅ¾Ã­vat kterÃ©koli komponenty, soubory, moduly, audiovizuÃ¡lnÃ­ obsah nebo souvisejÃ­cÃ­ licenÄnÃ­ materiÃ¡ly nezÃ¡visle na Programu; nebo 4) Program sublicencovat, pronajÃ­mat Äi poskytovat formou leasingu; a
+i. Pokud nebude Dr¾itel licence s Programem z jakéhokoliv dùvodu spokojen, Dr¾itel licence je oprávnìn licenci vypovìdìt vrácením Programu a dokumentu o oprávnìní spoleènosti IBM nebo oprávnìnému obchodnímu partnerovi IBM do 30 dní od pùvodního data nákupu takového Programu oproti vrácení uhrazené èástky. V pøípadì stahovanıch Programù se obracejte na osobu, od které Dr¾itel licence Program zakoupil a která vám poskytne pokyny pro vrácení penìz.
 
-f. jestliÅ¾e DrÅ¾itel licence zÃ­skÃ¡ tento Program jako PodpÅ¯rnÃ½ program, bude jej pouÅ¾Ã­vat pouze na podporu ZÃ¡kladnÃ­ho programu a v souladu s veÅ¡kerÃ½mi omezenÃ­mi uvedenÃ½mi v licenci na ZÃ¡kladnÃ­ program, nebo - jestliÅ¾e DrÅ¾itel licence zÃ­skÃ¡ tento program jako ZÃ¡kladnÃ­ program - bude pouÅ¾Ã­vat vÅ¡echny PodpÅ¯rnÃ© programy pouze na podporu tohoto Programu a v souladu s veÅ¡kerÃ½mi omezenÃ­mi stanovenÃ½mi v tÃ©to SmlouvÄ›. Pro ÃºÄely tohoto bodu "f" znamenÃ¡ "PodpÅ¯rnÃ½ program" program, kterÃ½ je souÄÃ¡stÃ­ jinÃ©ho programu IBM ("ZÃ¡kladnÃ­ program") a je v LicenÄnÃ­ch informacÃ­ch k ZÃ¡kladnÃ­mu programu jako PodpÅ¯rnÃ½ program uveden. (Chce-li DrÅ¾itel licence zÃ­skat samostatnou licenci na neomezenÃ© uÅ¾Ã­vÃ¡nÃ­ PodpÅ¯rnÃ©ho programu, musÃ­ se obrÃ¡tit na subjekt, od nÄ›hoÅ¾ PodpÅ¯rnÃ½ program zakoupil.)
+2. Záruky
 
-Tato licence se vztahuje na kaÅ¾dou kopii Programu, kterou DrÅ¾itel licence vytvoÅ™Ã­.
+a. IBM nezaruèuje nepøeru¹ovanı èi bezchybnı provoz Programu IBM, ani nezaruèuje, ¾e opraví ve¹keré chyby nebo ¾e zabrání naru¹ení tøetími osobami. Tyto záruky jsou vıhradními zárukami poskytovanımi IBM a nahrazují ve¹keré jiné záruky, vèetnì konkludentních záruk nebo podmínek uspokojivé kvality, prodejnosti, neporu¹ení práv tøetích osob a vhodnosti pro urèitı úèel. Záruky IBM se neuplatní v pøípadì, ¾e do¹lo k neoprávnìnému pou¾ití, úpravì, po¹kození nezpùsobenému IBM nebo nedodr¾ení písemnıch pokynù poskytnutıch spoleèností IBM. Programy od jinıch subjektù, ne¾ je IBM, se poskytují JAK STOJÍ A LE®Í, bez záruk jakéhokoli druhu. Tøetí strany mohou Dr¾iteli licence poskytnout své vlastní záruky.
 
-3.1 PÅ™echody typu Trade-up, aktualizace a opravy
+b. Dodateèná podpora mù¾e bıt k dispozici bìhem záruèní lhùty, nebo po jejím uplynutí na základì samostatné smlouvy.
 
-3.1.1 PÅ™echody typu Trade-up
+3. Poplatky, danì, platba a ovìøení
 
-V pÅ™Ã­padÄ› nahrazenÃ­ Programu programem typu Trade-up platnost licence nahrazenÃ©ho Programu okamÅ¾itÄ› konÄÃ­.
+a. Právo Dr¾itele licence na pou¾ívání Programu je podmínìno tím, ¾e Dr¾itel licence uhradí pøípadné pøíslu¹né poplatky uvedené ve smlouvì, na jejím¾ základì Dr¾itel licence licenèní oprávnìní zakoupil. Dr¾itel licence je povinen zakoupit dodateèná licenèní oprávnìní pøed jakımkoliv navı¹ením vyu¾ití ze strany Dr¾itele licence.
 
-3.1.2 Aktualizace, opravy a zÃ¡platy
+b. Dr¾itel licence souhlasí, ¾e uhradí ve¹keré pøíslu¹né poplatky za zakoupená oprávnìní a ve¹keré poplatky za pou¾ívání nad rámec oprávnìní. Poplatky nezahrnují ¾ádné celní ani jiné poplatky, danì a podobné odvody vymìøované jakımkoliv orgánem v dùsledku zakoupení oprávnìní Dr¾itelem licence a tyto èástky budou fakturovány navíc vedle takovıch poplatkù. Èástky jsou splatné po obdr¾ení faktury od spoleènost IBM a musí bıt uhrazeny do 30 dnù od data vystavení faktury na úèet uvedenı spoleèností IBM a v pøípadì pozdní platby mù¾e bıt úètován poplatek z prodlení. Dr¾itel licence je povinen øádné zakoupit dodateèná licenèní oprávnìní pøed navı¹ením vyu¾ití ze strany Dr¾itele licence. IBM neposkytuje dobropisy ani nevrací èástky poplatkù ji¾ splatné nebo uhrazené, s vıjimkou pøípadù stanovenıch jinde v této smlouvì ILAN, pøíslu¹ném Transakèním dokumentu nebo podmínkách smlouvy, v souladu s ní¾ Dr¾itel licence licenèní oprávnìní zakoupil.
 
-Pokud DrÅ¾itel licence obdrÅ¾Ã­ aktualizaci nebo opravu k Programu, akceptuje veÅ¡kerÃ© dodateÄnÃ© nebo odliÅ¡nÃ© podmÃ­nky, kterÃ© jsou uvedeny v LicenÄnÃ­ch informacÃ­ch pro tuto aktualizaci nebo opravu. Nejsou-li k aktualizaci Äi opravÄ› dodateÄnÃ© nebo odliÅ¡nÃ© podmÃ­nky pÅ™ipojeny, pak se takovÃ¡ aktualizace Äi oprava Å™Ã­dÃ­ vÃ½luÄnÄ› podmÃ­nkami tÃ©to Smlouvy. DrÅ¾itel licence se zavazuje, Å¾e v pÅ™Ã­padÄ› nahrazenÃ­ Programu aktualizacÃ­ pÅ™estane pÅ¯vodnÃ­ Program okamÅ¾itÄ› pouÅ¾Ã­vat.
+c. Na základì získanıch oprávnìní se Dr¾itel licence zavazuje, ¾e: i) jakoukoli srá¾kovou daò uhradí pøímo pøíslu¹nému orgánu veøejné moci v pøípadech, kdy to vy¾adují právní pøedpisy; ii) dodá spoleènosti IBM potvrzení o zaplacení této danì; iii) zaplatí spoleènosti IBM pouze èistı vınos po zdanìní; a iv) bude v plném rozsahu spolupracovat s IBM pøi hledání mo¾ností, pokud jde o osvobození od tìchto daní nebo o jejich sní¾ení, a bez zbyteèného prodlení vyplní a podá ve¹keré relevantní dokumenty.
 
-3.2 Licence na dobu urÄitou
+d. Pokud Dr¾itel licence doveze, vyveze a pøevede Program èi pøistupuje k Programu nebo ho pou¾ívá pøes hranice, zavazuje se Dr¾itel licence, ¾e ponese odpovìdnost za úhradu a uhradí orgánùm ve¹kerá cla, poplatky, danì nebo podobné odvody vymìøené tìmito orgány. To vyluèuje danì vycházející z èistého pøíjmu spoleènosti IBM.
 
-Licencuje-li IBM Program na dobu urÄitou, pak licenÄnÃ­ oprÃ¡vnÄ›nÃ­ DrÅ¾itele licence konÄÃ­ ke konci takovÃ© doby urÄitÃ©, ledaÅ¾e se DrÅ¾itel licence a IBM dohodli na prodlouÅ¾enÃ­ licence.
+3.1 Ovìøení poskytnutí licence
 
-3.3 TrvÃ¡nÃ­ a ukonÄenÃ­ Smlouvy
+a. Dr¾itel licence, pro v¹echny Programy na v¹ech webech a pro v¹echna prostøedí, vytvoøí, uchová a ka¾dı rok poskytne IBM na vy¾ádání s 30denním pøedstihem: i) zprávu, ve formátu po¾adovaném spoleèností IBM, s vyu¾itím záznamù, vıstupù systémovıch nástrojù a dal¹ích informací systému; a ii) prùvodní dokumentaci (dále spoleènì jen "Data o nasazení").
 
-Tato Smlouva je ÃºÄinnÃ¡ aÅ¾ do jejÃ­ho ukonÄenÃ­.
+b. Na základì oznámení zaslaného s rozumnım pøedstihem mohou spoleènost IBM nebo její nezávislí auditoøi ovìøit dodr¾ování této Smlouvy Dr¾itelem licence, na v¹ech webech a pro v¹echna prostøedí, v nich¾ Dr¾itel licence Programy pou¾ívá (k libovolnım úèelùm). Ovìøení probìhne zpùsobem, kterı bude minimalizovat naru¹ení podnikání Dr¾itele licence, a mù¾e bıt provádìno v prostorách Dr¾itele licence bìhem bì¾né pracovní doby. Spoleènost IBM bude mít s nezávislım auditorem uzavøenou písemnou smlouvu o zachování dùvìrnosti. Dr¾itel licence se zavazuje, ¾e kromì Dat o nasazení dle popisu vı¹e poskytne spoleènosti IBM a jejím auditorùm na po¾ádání dodateèné pøesné informace a Data o nasazení.
 
-IBM je oprÃ¡vnÄ›na ukonÄit licenci DrÅ¾itele licence, jestliÅ¾e tento nedodrÅ¾uje podmÃ­nky tÃ©to Smlouvy.
+c. Dr¾itel licence neprodlenì objedná a uhradí poplatky dle aktuálních sazeb spoleènosti IBM související s: i) jakımikoliv nasazeními nad rámec oprávnìní uvedenıch v jakékoliv vıroèní zprávì nebo ovìøení; ii) pøíslu¹nou registrací &amp;amp; a slu¾bami podpory (S&amp;S) pro taková nasazení navíc za dobu pou¾ívání takového nadmìrného vyu¾ití, nebo za dobu dvou let, podle toho, které z tìchto období je krat¹í; a iii) ve¹kerımi dodateènımi poplatky a dal¹ími závazky stanovenımi v dùsledku takového ovìøení, vèetnì napøíklad daní, cel a regulaèních poplatkù.
 
-UkonÄÃ­-li kterÃ¡koli ze stran licenci z jakÃ©hokoli dÅ¯vodu, DrÅ¾itel licence je povinen okamÅ¾itÄ› pÅ™estat pouÅ¾Ã­vat a zniÄit vÅ¡echny kopie Programu, kterÃ© mÃ¡ ve svÃ©m drÅ¾enÃ­. PodmÃ­nky tÃ©to Smlouvy, jeÅ¾ svou povahou pÅ™esahujÃ­ dobu jejÃ­ platnosti, zÅ¯stÃ¡vajÃ­ plnÄ› v platnosti a jsou ÃºÄinnÃ© aÅ¾ do okamÅ¾iku jejich splnÄ›nÃ­ a platÃ­ i pro pÅ™Ã­padnÃ© prÃ¡vnÃ­ nÃ¡stupce a postupnÃ­ky smluvnÃ­ch stran.
+4. Odpovìdnost a ochrana práv du¹evního vlastnictví
 
-4. Cena
+a. Celková odpovìdnost spoleènosti IBM za ve¹keré nároky související s touto Smlouvou nepøekroèí èástku jakıchkoliv skuteènıch pøímıch ¹kod vzniklıch Dr¾iteli licence a¾ do limitu vy¹¹í z následujících èástek: i) 10 000,- USD (nebo ekvivalent v místní mìnì); nebo ii) èástka uhrazená (v pøípadì opakujících se poplatkù a¾ do vı¹e poplatkù za 12 mìsícù) za oprávnìní k Programu, kterı je pøedmìtem nároku, a to bez ohledu na základ nároku. IBM nenese odpovìdnost za zvlá¹tní, nahodilé, exemplární a nepøímé ¹kody nebo následné ekonomické ¹kody ani za u¹lı zisk, ztrátu obchodních pøíle¾itostí, hodnoty, vınosù, dobrého jména nebo pøedpokládanıch úspor. Tato omezení platí spoleènì pro IBM, její pøidru¾ené spoleènosti, smluvní partnery a dodavatele.
 
-Poplatky (jsou-li nÄ›jakÃ©) jsou zaloÅ¾eny na Ãºrovni OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­, kterÃ¡ je uvedena na faktuÅ™e. IBM nevracÃ­ ani jinak nerefunduje jiÅ¾ splatnÃ© nebo zaplacenÃ© ÄÃ¡stky, s vÃ½jimkou pÅ™Ã­padÅ¯, kterÃ© jsou specifikovÃ¡ny jinde v tÃ©to smlouvÄ›.
+b. Vı¹e uvedené omezení se nevztahuje na následující èástky: náhradu újmy, její¾ vı¹e nemù¾e bıt podle pøíslu¹nıch právních pøedpisù omezena.
 
-PÅ™eje-li si DrÅ¾itel licence ÃºroveÅˆ OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­ zvÃ½Å¡it, je povinen o tÃ©to skuteÄnosti pÅ™edem informovat IBM nebo oprÃ¡vnÄ›nÃ©ho prodejce IBM a uhradit veÅ¡kerÃ© pÅ™Ã­sluÅ¡nÃ© poplatky.
+c. Spoleènost IBM nenese odpovìdnost za nároky vycházející z produktù jinıch subjektù ne¾ IBM, polo¾ek, které nedodala spoleènost IBM, ani za jakékoliv poru¹ení právních pøedpisù nebo práv tøetích osob zpùsobené Obsahem èi jakımikoliv materiály, návrhy, specifikacemi Dr¾itele licence. Obsah zahrnuje ve¹kerá data, software a informace, které Dr¾itel licence nebo jeho oprávnìní u¾ivatelé poskytují, ve vztahu k nim¾ udìlují souhlas s pøístupem nebo je vkládají do Programu.
 
-5. DanÄ›
+5. Ukonèení Smlouvy
 
-Bude-li na Program nÄ›kterÃ½m ÃºÅ™adem uvaleno clo, daÅˆ Äi poplatek, vyjma tÄ›ch, kterÃ© jsou zaloÅ¾eny na ÄistÃ©m pÅ™Ã­jmu IBM, pak se DrÅ¾itel licence zavazuje tuto ÄÃ¡stku uhradit ve vÃ½Å¡i uvedenÃ© na faktuÅ™e, pokud nepÅ™edloÅ¾Ã­ potvrzenÃ­ prokazujÃ­cÃ­ jeho osvobozenÃ­ od takovÃ© povinnosti. Od data obdrÅ¾enÃ­ Programu je DrÅ¾itel licence odpovÄ›dnÃ½ za Ãºhradu veÅ¡kerÃ½ch pÅ™Ã­padnÃ½ch majetkovÃ½ch danÃ­. JestliÅ¾e nÄ›kterÃ½ orgÃ¡n k tomu oprÃ¡vnÄ›nÃ½ uvalÃ­ clo, daÅˆ Äi poplatek na import nebo export, pÅ™enos, pÅ™Ã­stup nebo uÅ¾Ã­vÃ¡nÃ­ Programu mimo zemi, v nÃ­Å¾ byla pÅ¯vodnÃ­mu DrÅ¾iteli licence udÄ›lena licence, pak je DrÅ¾itel licence povinen uhradit jakoukoli takto uvalenou ÄÃ¡stku.
+a. Spoleènost IBM je oprávnìna vypovìdìt licenci Dr¾itele licence na pou¾ívání Programu, pokud Dr¾itel licence nedodr¾í smlouvu ILAN, Transakèní dokumenty nebo smlouvy o koupi, jako je smlouva International Passport Advantage Agreement (IPAA). Po ukonèení licence k Programu Dr¾itel licence neprodlenì znièí ve¹keré kopie Programu. Podmínky, je¾ svou povahou trvají i po jejím ukonèení, jsou úèinné a¾ do okam¾iku svého splnìní a platí i pro pøípadné právní nástupce a postupníky.
 
-6. ZÃ¡ruka vrÃ¡cenÃ­ penÄ›z
+6. Rozhodné právo a geografickı rozsah
 
-NenÃ­-li DrÅ¾itel licence z jakÃ©hokoli dÅ¯vodu spokojen s Programem a je pÅ¯vodnÃ­m DrÅ¾itelem licence, je oprÃ¡vnÄ›n ukonÄit licenci a mÃ¡ nÃ¡rok na refundaci ÄÃ¡stky, kterou za Program zaplatil (pokud nÄ›jakou ÄÃ¡stku zaplatil), avÅ¡ak za pÅ™edpokladu, Å¾e DrÅ¾itel licence vrÃ¡tÃ­ Program stranÄ›, od kterÃ© jej zÃ­skal, bÄ›hem 30 dnÃ­ od data faktury. JednÃ¡-li se o licenci na dobu urÄitou, kterÃ¡ podlÃ©hÃ¡ prodlouÅ¾enÃ­, mÃ¡ DrÅ¾itel licence nÃ¡rok na refundaci pouze v pÅ™Ã­padÄ›, Å¾e Program vrÃ¡tÃ­ bÄ›hem prvnÃ­ch 30 dnÃ­ pÅ¯vodnÃ­ho obdobÃ­. Pokud DrÅ¾itel licence Program stÃ¡hnul, mÄ›l by poÅ¾Ã¡dat subjekt, od kterÃ©ho jej zÃ­skal, o pokyny, jak dosÃ¡hnout vrÃ¡cenÃ­ penÄ›z.
+a. Obì smluvní strany souhlasí s uplatnìním práva zemì, kde dojde k plnìní transakce licenèního oprávnìní, s vylouèením uplatnìní ustanovení kolizních norem. Práva a povinnosti jednotlivıch smluvních stran jsou platné pouze v zemi realizace transakce zakoupení licenèních oprávnìní nebo, pokud s tím souhlasí spoleènost IBM, v zemi, kde je Program umístìn do produktivního pou¾ití, pøièem¾ v¹echny licence jsou platné dle specifikací udìlení.
 
-7. PÅ™evod programu
+b. Ka¾dá ze smluvních stran je rovnì¾ povinna dodr¾ovat: i) právní pøedpisy a naøízení vztahujících se na její podnikání a Obsah; a ii) právní pøedpisy o dovozu, vıvozu a ekonomickıch sankcích, vèetnì re¾imu kontroly USA a v¹ech pøíslu¹nıch jurisdikcí pro obchod s vojenskım materiálem, které zakazují nebo omezují dovoz, vıvoz, zpìtnı vıvoz nebo pøevod produktù, technologií, slu¾eb èi dat, pøímo nebo nepøímo, do nìkterıch zemí, nìkterım koncovım u¾ivatelùm èi pro nìkterá koncová pou¾ití.
 
-DrÅ¾itel licence je oprÃ¡vnÄ›n pÅ™evÃ©st Program a veÅ¡kerÃ¡ licenÄnÃ­ prÃ¡va a povinnosti DrÅ¾itele licence na jinou smluvnÃ­ stranu za pÅ™edpokladu, Å¾e tato strana akceptuje podmÃ­nky tÃ©to Smlouvy. V pÅ™Ã­padÄ› ukonÄenÃ­ licence kteroukoli smluvnÃ­ stranou bez ohledu na dÅ¯vod nesmÃ­ DrÅ¾itel licence Program na jinou smluvnÃ­ stranu pÅ™evÃ©st. DrÅ¾itel licence nenÃ­ oprÃ¡vnÄ›n pÅ™evÃ¡dÄ›t ÄÃ¡st 1) Programu; nebo 2) OprÃ¡vnÄ›nÃ© uÅ¾Ã­vÃ¡nÃ­ programu. V pÅ™Ã­padÄ› pÅ™evodu Programu musÃ­ DrÅ¾itel licence pÅ™evÃ©st rovnÄ›Å¾ tiÅ¡tÄ›nou verzi tÃ©to Smlouvy, vÄetnÄ› dokumentu LicenÄnÃ­ informace. LicenÄnÃ­ oprÃ¡vnÄ›nÃ­ DrÅ¾itele licence okamÅ¾itÄ› po pÅ™evodu konÄÃ­.
+c. Bude-li kterékoli z ustanovení této Smlouvy pro Program neplatné nebo nevymahatelné, zbıvající ustanovení zùstávají plnì platná a úèinná. Zákonná práva spotøebitelù, která nemohou bıt smluvnì omezena nebo vylouèena, nejsou ¾ádnım ustanovením této Smlouvy dotèena. Úmluva OSN o smlouvách o mezinárodní koupi zbo¾í se pro transakce podle této Smlouvy neuplatní.
 
-8. VylouÄenÃ­ zÃ¡ruky
+7. Obecné
 
-V SOULADU S VEÅ KERÃMI ZÃKONNÃMI ZÃRUKAMI, KTERÃ‰ NELZE VYLOUÄŒIT, NEPOSKYTUJE IBM Å½ÃDNÃ‰ ZÃRUKY ÄŒI PODMÃNKY, VYJÃDÅ˜ENÃ‰ VÃSLOVNÄš NEBO VYPLÃVAJÃCÃ Z OKOLNOSTÃ, POKUD JDE O PROGRAM NEBO PODPORU (JE-LI NÄšJAKÃ POSKYTOVÃNA), VÄŒETNÄš - A TO ZEJMÃ‰NA - VEÅ KERÃCH ZÃRUK ÄŒI PODMÃNEK PRODEJNOSTI, USPOKOJIVÃ‰ KVALITY, VHODNOSTI PRO URÄŒITÃ ÃšÄŒEL A VLASTNICKÃ‰HO NÃROKU, A JAKÃ‰KOLI ZÃRUKY ÄŒI PODMÃNKY NEPORUÅ ENÃ PRÃV TÅ˜ETÃCH STRAN.
+a. IBM je nezávislı smluvní partner, nevystupuje jako zástupce Dr¾itele licence, není partnerem v rámci spoleèného podniku s Dr¾itelem licence, ani jeho partnerem èi zmocnìncem. Nezavazuje se k plnìní jakıchkoli regulaèních závazkù Dr¾itele licence ani nepøebírá ¾ádnou odpovìdnost za obchodní èinnost nebo operace Dr¾itele licence. Zákazník nese odpovìdnost za u¾ívání Programù IBM a Programù jinıch subjektù, ne¾ je IBM. Spoleènost IBM vystupuje pouze jako poskytovatel informaèní technologie. Pokyny IBM, doporuèené pou¾ití nebo návody èi vyu¾ití Programu nepøedstavují jakékoliv lékaøské, klinické, právní, úèetní ani jiné licencované odborné poradenství. Dr¾itel licence by mìl získat své vlastní odborné poradenství.
 
-NÄšKTERÃ‰ STÃTY NEBO JURISDIKCE NEPÅ˜IPOUÅ TÄšJÃ VYLOUÄŒENÃ ZÃRUK VYJÃDÅ˜ENÃCH VÃSLOVNÄš NEBO VYPLÃVAJÃCÃCH Z OKOLNOSTÃ, A PROTO SE VÃÅ E UVEDENÃ‰ ZÃRUKY NEMUSÃ NA DRÅ½ITELE LICENCE VZTAHOVAT. V TAKOVÃ‰M PÅ˜ÃPADÄš JSOU TAKOVÃ‰ ZÃRUKY ÄŒASOVÄš OMEZENY POUZE NA MINIMÃLNÃ DOBU POÅ½ADOVANOU ZÃKONEM. PO UKONÄŒENÃ TÃ‰TO DOBY IBM NEPOSKYTUJE Å½ÃDNÃ‰ DALÅ Ã ZÃRUKY. NÄšKTERÃ‰ STÃTY NEBO JURISDIKCE NEPÅ˜IPOUÅ TÄšJÃ OMEZENÃ DOBY TRVÃNÃ IMPLICITNÃ ZÃRUKY, A PROTO SE VÃÅ E UVEDENÃ‰ OMEZENÃ NA DRÅ½ITELE LICENCE NEMUSÃ VZTAHOVAT. DRÅ½ITEL LICENCE MÅ®Å½E MÃT I DALÅ Ã PRÃVA, KTERÃ SE LIÅ Ã STÃT OD STÃTU NEBO JURISDIKCE OD JURISDIKCE.
+b. V pøípadì Programù, které spoleènost IBM poskytuje Dr¾iteli licence v hmotné formì, spoleènost IBM splní své povinnosti expedice a dodání dodáním takovıch programù povìøenému pøepravci IBM, pokud nebude mezi Dr¾itelem licence a spoleèností IBM písemnì dohodnuto jinak.
 
-VYLOUÄŒENÃ ZÃRUKY UVEDENÃ V TOMTO ODDÃLU 8 SE VZTAHUJÃ ROVNÄšÅ½ NA VEÅ KERÃ‰ VÃVOJÃÅ˜E A DODAVATELE IBM.
+c. Dr¾itel licence nesmí pou¾ívat Program, pokud by selhání Programu mohlo zpùsobit smrt, vá¾nou újmu na zdraví nebo ¹kody na majetku èi ¾ivotním prostøedí.
 
-VÃROBCI, DODAVATELÃ‰ NEBO DISTRIBUTOÅ˜I PROGRAMÅ® OD JINÃCH DODAVATELÅ® MOHOU POSKYTOVAT SVÃ‰ VLASTNÃ ZÃRUKY.
+d. IBM, její pøidru¾ené spoleènosti a smluvní partneøi spoleènosti IBM i jejích pøidru¾enıch spoleèností vy¾adují pou¾ívání obchodních kontaktních informací, stejnì jako urèitıch informací o vyu¾ití úètu. Tyto informace nepøedstavují Obsah. Obchodní kontaktní informace se pou¾ívají pro komunikaci a øízení obchodních jednání s Dr¾itelem licence. K pøíkladùm obchodních kontaktních informací patøí jméno, obchodní telefon, adresa, e-mail, ID u¾ivatele a informace o daòové registraci. Informace o vyu¾ití úètu jsou nezbytné pro aktivaci, poskytování, øízení, podporu, správu a zlep¹ování Programù. K pøíkladùm informací o vyu¾ití úètu patøí nahlá¹ení chyby a digitální informace shromá¾dìné s vyu¾itím sledovacích technologií, jako jsou soubory cookies a webové majáky, bìhem pou¾ívání Programù. Prohlá¹ení o ochranì osobních údajù IBM na adrese http://www.ibm.com/privacy upravuje dal¹í podrobnosti tıkající se toho, jak IBM shroma¾ïuje, pou¾ívá a zpracovává obchodní kontaktní informace a informace o vyu¾ití úètu. V pøípadì, ¾e Dr¾itel licence poskytuje spoleènosti IBM informace a pro takové zpracování se vy¾aduje oznámení fyzickım osobám nebo jejich souhlas, Dr¾itel licence bude tyto fyzické osoby informovat a získá jejich souhlas.
 
-NESTANOVÃ-LI IBM VÃSLOVNÄš JINAK, PAK IBM NEPOSKYTUJE PODPORU Å½ÃDNÃ‰HO DRUHU. V TAKOVÃ‰M PÅ˜ÃPADÄš SE NA JAKOUKOLI PODPORU POSKYTOVANOU SPOLEÄŒNOSTÃ IBM VZTAHUJÃ VYLOUÄŒENÃ ZÃRUKY UVEDENÃ V TOMTO ODDÃLU 8.
+e. Obchodní partneøi IBM, kteøí pou¾ívají nebo zpøístupòují Programy, jsou nezávislí na IBM a jednostrannì si urèují své ceny a podmínky. IBM neodpovídá za jejich jednání, opomenutí, prohlá¹ení nebo nabídky.
 
-9. Data a databÃ¡ze DrÅ¾itele licence
+f. Spoleènost IBM mù¾e nabízet i Programy jinıch subjektù, ne¾ je IBM, nebo mù¾e Program IBM umo¾òovat pøístup k Programùm jinıch subjektù, ne¾ je IBM, co¾ mù¾e vy¾adovat akceptaci podmínek tøetí osoby identifikovanıch v Transakèním dokumentu nebo pøedlo¾enıch Dr¾iteli licence. Odkazy na Programy jinıch subjektù, ne¾ je IBM, nebo jejich pou¾ívání pøedstavuje souhlas Dr¾itele licence s takovımi podmínkami. Spoleènost IBM není smluvní stranou takovıch smluv s tøetími osobami a nenese odpovìdnost za takové Programy jinıch dodavatelù ne¾ IBM.
 
-IBM mÅ¯Å¾e s cÃ­lem pomoci DrÅ¾iteli licence s urÄenÃ­m problÃ©mu s Programem poÅ¾adovat, aby DrÅ¾itel licence 1) umoÅ¾nil IBM vzdÃ¡lenÃ½ pÅ™Ã­stup k systÃ©mu DrÅ¾itele licence, nebo 2) aby zaslal IBM pÅ™Ã­sluÅ¡nÃ© Ãºdaje nebo systÃ©movÃ¡ data. IBM vÅ¡ak nenÃ­ povinna poskytnout takovou asistenci, pokud IBM a DrÅ¾itel licence neuzavÅ™eli samostatnou pÃ­semnou dohodu, na jejÃ­mÅ¾ zÃ¡kladÄ› se IBM zavazuje, Å¾e bude DrÅ¾iteli licence poskytovat tento typ podpory, kterÃ½ pÅ™esahuje povinnosti IBM vyplÃ½vajÃ­cÃ­ z tÃ©to Smlouvy. IBM za vÅ¡ech okolnostÃ­ pouÅ¾Ã­vÃ¡ informace o chybÃ¡ch a problÃ©mech ke zdokonalovÃ¡nÃ­ jejÃ­ch produktÅ¯ a sluÅ¾eb a poskytuje klientÅ¯m asistenci prostÅ™ednictvÃ­m souvisejÃ­cÃ­ch nabÃ­dek podpory. K tomuto ÃºÄelu mÅ¯Å¾e IBM vyuÅ¾Ã­t sluÅ¾eb subjektÅ¯ a dodavatelÅ¯ IBM (vÄetnÄ› subjektÅ¯ a dodavatelÅ¯ z jednÃ© nebo vÃ­ce jinÃ½ch zemÃ­, neÅ¾ je zemÄ›, v nÃ­Å¾ mÃ¡ sÃ­dlo DrÅ¾itel licence) a DrÅ¾itel licence opravÅˆuje IBM k takovÃ©mu vyuÅ¾itÃ­ sluÅ¾eb subjektÅ¯ a dodavatelÅ¯ IBM.
+g. Licence udìlené k Programùm jsou poskytovány newyorskou obchodní spoleèností International Business Machines Corporation ("IBM Corporation"). Spoleènost IBM, od ní¾ Dr¾itel licence zakoupí oprávnìní ("IBM") vystupuje jako distributor a dodává Programy a nese odpovìdnost za vymáhání podmínek této Smlouvy. Pokud jsou oprávnìní zakoupena od obchodního partnera IBM, spoleènost IBM pro zemi koupì ponese odpovìdnost za vymáhání podmínek této Smlouvy. Dr¾iteli licence nevzniká vùèi IBM Corporation ¾ádné právo ani ¾alobní dùvod. Dr¾itel licence se vzdává ve¹kerıch nárokù a ¾alobních dùvodù vùèi spoleènosti IBM Corporation a zavazuje se, ¾e bude vùèi IBM uplatòovat jen práva a prostøedky nápravy v souvislosti s Programy.
 
-DrÅ¾itel licence zÅ¯stÃ¡vÃ¡ odpovÄ›dnÃ½ za 1) veÅ¡kerÃ¡ data a obsah jakÃ©koli databÃ¡ze, kterou pro IBM zpÅ™Ã­stupnÃ­, 2) vÃ½bÄ›r a implementaci postupÅ¯ a kontrol tÃ½kajÃ­cÃ­ch se pÅ™Ã­stupu, zabezpeÄenÃ­, Å¡ifrovÃ¡nÃ­, uÅ¾Ã­vÃ¡nÃ­ a pÅ™enosu dat (vÄetnÄ› veÅ¡kerÃ½ch osobnÃ­ch ÃºdajÅ¯), a 3) zÃ¡lohovÃ¡nÃ­ a obnovu jakÃ©koli databÃ¡ze a veÅ¡kerÃ½ch uloÅ¾enÃ½ch dat. DrÅ¾itel licence nesmÃ­ odeslat IBM Å¾Ã¡dnÃ© osobnÃ­ Ãºdaje nebo poskytnout IBM pÅ™Ã­stup k Å¾Ã¡dnÃ½m osobnÃ­m ÃºdajÅ¯m, aÅ¥ uÅ¾ ve formÄ› dat nebo v nÄ›jakÃ© jinÃ© formÄ›, a nese odpovÄ›dnost za veÅ¡kerÃ© pÅ™imÄ›Å™enÃ© nÃ¡klady nebo jinÃ© vÃ½daje, kterÃ© mohou IBM vzniknout v souvislosti s neoprÃ¡vnÄ›nÃ½m poskytnutÃ­m takovÃ½ch informacÃ­ IBM nebo v souvislosti se ztrÃ¡tou Äi zpÅ™Ã­stupnÄ›nÃ­m informacÃ­ ze strany IBM, vÄetnÄ› tÄ›ch zaloÅ¾enÃ½ch na nÃ¡rocÃ­ch tÅ™etÃ­ch stran.
+h. Dr¾itel licence není oprávnìn poskytnout podlicenci, postoupit nebo pøevést licenci k jakémukoliv Programu (s vıjimkou rozsahu, v jakém postoupení nebo pøevod nelze zákonnım zpùsobem omezit, nebo dle vıslovnıch povolení uvedenıch v Transakèním dokumentu nebo jinak schválenıch spoleèností IBM). IBM je oprávnìna postoupit svá práva a povinnosti v souladu s touto Smlouvou v souvislosti s prodejem èásti podniku IBM, která zahrnuje Program. IBM smí sdílet tuto Smlouvu a související dokumenty v souvislosti s jakımkoliv postoupením.
 
-10. OmezenÃ­ odpovÄ›dnosti
+i. Ve¹kerá sdìlení na základì Smlouvy musí mít písemnou formu a musí bıt zaslána na adresu místa podnikání uvedenou ve Smlouvì Dr¾itele licence, leda¾e by smluvní strana písemnì urèila jinou adresu. Smluvní strany souhlasí s pou¾íváním elektronickıch prostøedkù a faxovıch pøenosù pro úèely komunikace, jako by se jednalo o podepsané písemné dokumenty. Jakákoli reprodukce Smlouvy provedená spolehlivım prostøedkem se pova¾uje za originál. Smlouva nahrazuje jakékoli obchodní jednání, rozhovory nebo prohlá¹ení mezi smluvními stranami.
 
-OmezenÃ­ odpovÄ›dnosti a vylouÄenÃ­ zÃ¡ruky v tomto oddÃ­le 10 (OmezenÃ­ odpovÄ›dnosti) se aplikuje v plnÃ©m rozsahu, pokud nenÃ­ zakÃ¡zÃ¡no ze zÃ¡kona, bez moÅ¾nosti smluvnÃ­ho zÅ™eknutÃ­ se.
+j. Smlouva neudìluje ¾ádná práva ani nezakládá ¾ádné ¾alobní dùvody ve prospìch tøetích osob. ®ádná ze smluvních stran nepodá ¾alobu vyplıvající z této Smlouvy nebo v souvislosti s ní po uplynutí více ne¾ dvou let poté, co nastal dùvod ¾aloby. ®ádná ze smluvních stran nenese odpovìdnost za nesplnìní pøípadnıch nepenì¾itıch závazkù, pokud k takovému nesplnìní do¹lo nezávisle na její vùli. Ka¾dá ze smluvních stran poskytne druhé stranì pøimìøenou mo¾nost nápravy pøed tím, ne¾ vùèi druhé stranì vznese nároky související s neplnìním jejích povinností.
 
-10.1 PoloÅ¾ky, za kterÃ© IBM nese odpovÄ›dnost
+k. IBM smí vyu¾ívat personál a zdroje v místech po celém svìtì, vèetnì nezávislıch smluvních partnerù, k poskytování podpory pro dodávku Programù a poskytování podpory pro Program. Pou¾ívání programù Dr¾itelem licence mù¾e vést k pøenosu Obsahu, vèetnì osobnì identifikovatelnıch informací, pøes hranice zemì, aby mohla bıt poskytována podpora pro program v souladu s popisem v pøíruèce podpory pro software IBM.
 
-Mohou nastat okolnosti, kdy mÃ¡ DrÅ¾itel licence z dÅ¯vodu neplnÄ›nÃ­ zÃ¡vazku na stranÄ› IBM nebo jinÃ© odpovÄ›dnosti nÃ¡rok na nÃ¡hradu Å¡kody od IBM. Bez ohledu na pÅ™Ã­Äinu vzniku nÃ¡roku DrÅ¾itele licence na nÃ¡hradu Å¡kody od IBM (vÄetnÄ› podstatnÃ©ho poruÅ¡enÃ­, nedbalosti, pÅ™ivedenÃ­ v omyl nebo jinÃ©ho poruÅ¡enÃ­ zÃ¡vazkovÃ©ho Äi mimozÃ¡vazkovÃ©ho vztahu), odpovÃ­dÃ¡ IBM pouze za nÃ¡roky vzniklÃ© na zÃ¡kladÄ› kaÅ¾dÃ©ho Programu nebo ve spojenÃ­ s nÃ­m nebo za nÃ¡roky jinak vzniklÃ© na zÃ¡kladÄ› tÃ©to Smlouvy, a tato odpovÄ›dnost nesmÃ­ pÅ™esÃ¡hnout ÄÃ¡stku jakÃ½chkoli 1) Å¡kod na zdravÃ­ (vÄetnÄ› smrti) a Å¡kod na nemovitÃ©m a osobnÃ­m hmotnÃ©m majetku, a 2) jinÃ½ch skuteÄnÃ½ch pÅ™Ã­mÃ½ch Å¡kod, aÅ¾ do vÃ½Å¡e poplatkÅ¯, kterÃ© DrÅ¾itel licence zaplatil za Program, kterÃ½ je pÅ™edmÄ›tem nÃ¡roku (pokud je Program licencovÃ¡n na dobu urÄitou, pak do vÃ½Å¡e dvanÃ¡cti mÄ›sÃ­ÄnÃ­ch poplatkÅ¯).
+Oddíl 2 - Podmínky vy¾adované urèitım státem
 
-Toto omezenÃ­ se vztahuje rovnÄ›Å¾ i na vÅ¡echny vÃ½vojÃ¡Å™e a dodavatele ProgramÅ¯ IBM. JednÃ¡ se o maximum, za kterÃ© IBM a jejÃ­ vÃ½vojÃ¡Å™i a dodavatelÃ© ProgramÅ¯ spoleÄnÄ› odpovÃ­dajÃ­.
+Pokud se jedná o licence zakoupené v ní¾e uvedenıch zemích, následující podmínky nahrazují nebo upravují podmínky této ILAN, na které se odkazuje. Podmínky, které nejsou upraveny tìmito dodatky, zùstávají beze zmìny a v úèinnosti.
 
-10.2 PoloÅ¾ky, za kterÃ© IBM nenese odpovÄ›dnost
+1. SEVERNÍ A JI®NÍ AMERIKA
 
-VYJMA PÅ˜ÃPADÅ®, KDY JE TO VÃSLOVNÄš POÅ½ADOVÃNO PRÃVNÃMI PÅ˜EDPISY BEZ MOÅ½NOSTI VZDÃNÃ SE PRÃVA SMLUVNÄš, NEBUDOU IBM, JEJÃ SUBDODAVATELÃ‰ ANI VÃVOJÃÅ˜I PROGRAMÅ® ZA Å½ÃDNÃCH OKOLNOSTÃ ODPOVÄšDNI ZA NÃSLEDUJÃCÃ, A TO V PÅ˜ÃPADÄš, Å½E BY IBM BYLA NA TAKOVOU MOÅ½NOST UPOZORNÄšNA:
+Oddíl 3. Poplatky, danì, platba a ovìøení
 
-a. ZA ZTRÃTU DAT NEBO Å KODU NA DATECH;
+Nahraïte první a druhou vìtu odstavce b následujícím znìním:
 
-b. ZA ZVLÃÅ TNÃ, NAHODILÃ‰ NEBO NEPÅ˜ÃMÃ‰ Å KODY ÄŒI ZA NÃSLEDNÃ‰ HOSPODÃÅ˜SKÃ‰ Å KODY; NEBO
+V Brazílii: Dr¾itel licence se zavazuje, ¾e uhradí ve¹keré pøíslu¹né poplatky za zakoupená oprávnìní a ve¹keré poplatky za pou¾ívání nad rámec povolení èi jakákoliv cla èi jiné poplatky, danì a podobné odvody, které jsou vymìøeny jakımikoliv orgány na základì zakoupení oprávnìní Dr¾itelem licence.
 
-c. ZA UÅ LÃ ZISK, ZTRÃTU OBCHODNÃCH PÅ˜ÃLEÅ½ITOSTÃ, UÅ LÃ‰ PÅ˜ÃJMY, ÃšJMU ZPÅ®SOBENOU POÅ KOZENÃM DOBRÃ‰HO JMÃ‰NA NEBO ZA NEDOSAÅ½ENÃ‰ PÅ˜EDPOKLÃDANÃ‰ ÃšSPORY.
+V odstavci b:
 
-11. Kontrola dodrÅ¾ovÃ¡nÃ­ podmÃ­nek
+V Mexiku: Ve tøetí vìtì vyma¾te slova "na úèet stanovenı spoleèností IBM".
 
-Pro ÃºÄely tohoto oddÃ­lu 11 (Kontrola dodrÅ¾ovÃ¡nÃ­ podmÃ­nek), znamenajÃ­ "PodmÃ­nky ILAN" 1) tuto Smlouvu a pÅ™Ã­sluÅ¡nÃ© dodatky a transakÄnÃ­ dokumenty poskytnutÃ© IBM, a 2) softwarovÃ© postupy IBM, kterÃ© jsou k dispozici na webovÃ½ch strÃ¡nkÃ¡ch IBM Software Policy (www.ibm.com/softwarepolicies) vÄetnÄ› - a to zejmÃ©na - postupÅ¯ tÃ½kajÃ­cÃ­ch se zÃ¡lohovÃ¡nÃ­, cen pro neÃºplnÃ½ server a migrace.
+V Mexiku: Doplòte následující novou vìtu za tøetí vìtu:
 
-PrÃ¡va a povinnosti uvedenÃ¡ dÃ¡le v tomto oddÃ­lu 11 zÅ¯stÃ¡vajÃ­ v platnosti po dobu trvÃ¡nÃ­ licence a dva roky potÃ©.
+Platby budou uhrazeny prostøednictvím elektronického pøevodu finanèních prostøedkù na úèet stanovenı spoleèností IBM nebo v domicilu IBM na adrese Alfonso Napoles Gandara 3111, Santa Fe Pe~na Blanca, Alvaro Obregon, Mexico, smìrovací èíslo 01210.
 
-11.1 Proces ovÄ›Å™ovÃ¡nÃ­
+Na konec odstavce c doplòte následující vìtu:
 
-DrÅ¾itel licence souhlasÃ­, Å¾e vytvoÅ™Ã­, bude uchovÃ¡vat a poskytne IBM a jejÃ­m auditorÅ¯m pÅ™esnÃ© pÃ­semnÃ© zÃ¡znamy, vÃ½stupy systÃ©movÃ½ch nÃ¡strojÅ¯ a dalÅ¡Ã­ systÃ©movÃ© informace, kterÃ© budou dostateÄnÃ© k ovÄ›Å™enÃ­, Å¾e DrÅ¾itel licence uÅ¾Ã­vÃ¡ vÅ¡echny Programy v souladu s podmÃ­nkami smlouvy ILAN, vÄetnÄ› vÅ¡ech pÅ™Ã­sluÅ¡nÃ½ch podmÃ­nek IBM tÃ½kajÃ­cÃ­ch se licencovÃ¡nÃ­ a cen. DrÅ¾itel licence nese odpovÄ›dnost za 1) zajiÅ¡tÄ›nÃ­, Å¾e nepÅ™ekroÄÃ­ svou ÃºroveÅˆ OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­, a 2) bude jednat v souladu s podmÃ­nkami smlouvy ILAN.
+V Kanadì: V pøípadì, ¾e jsou danì vymìøovány podle lokalit, které mají pøínos z Programu, má Dr¾itel licence prùbì¾nou povinnost informovat IBM o tìchto lokalitách, pokud se li¹í od místa podnikání Dr¾itele licence uvedeného v pøíslu¹né Pøíloze nebo Transakèním dokumentu.
 
-IBM je na zÃ¡kladÄ› oznÃ¡menÃ­ zaslanÃ©ho v pÅ™imÄ›Å™enÃ© dlouhÃ© lhÅ¯tÄ› pÅ™edem oprÃ¡vnÄ›na ovÄ›Å™it si, zda DrÅ¾itel licence dodrÅ¾uje podmÃ­nky smlouvy ILAN na vÅ¡ech pracoviÅ¡tÃ­ch a pro vÅ¡echna prostÅ™edÃ­, v nichÅ¾ pouÅ¾Ã­vÃ¡ Programy (k jakÃ©mukoli ÃºÄelu) v souladu s podmÃ­nkami smlouvy ILAN. TakovÃ© ovÄ›Å™enÃ­ bude provedeno zpÅ¯sobem, jenÅ¾ bude minimalizovat ruÅ¡enÃ­ obchodnÃ­ Äinnosti DrÅ¾itele licence a smÃ­ bÃ½t provedeno v prostorÃ¡ch DrÅ¾itele licence bÄ›hem Å™Ã¡dnÃ© pracovnÃ­ doby. IBM je oprÃ¡vnÄ›na vyuÅ¾Ã­t k takovÃ© kontrole sluÅ¾eb nezÃ¡vislÃ©ho auditora, a to za pÅ™edpokladu, Å¾e IBM s tÃ­mto auditorem uzavÅ™e pÃ­semnou smlouvu o ochranÄ› dÅ¯vÄ›rnÃ½ch informacÃ­.
+Na konec odstavce c doplòte následující vìtu:
 
-11.2 RozhodnutÃ­
+Ve Spojenıch státech americkıch: Smluvní strany souhlasí, ¾e na Dr¾itele licence nepøechází ¾ádnı hmotnı osobní majetek (napø. média nebo publikace), pokud: i) IBM dodává Programy Dr¾iteli licence elektronicky; nebo ii) pokud Dr¾itel licence uplatòuje vıjimku z danì z prodeje èi danì z u¾ívání pro Programy, které IBM dodává Dr¾iteli licence elektronicky. V pøípadì, ¾e jsou danì vymìøovány podle lokalit, které mají pøínos z Programu, má Dr¾itel licence prùbì¾nou povinnost informovat IBM o tìchto lokalitách, pokud se li¹í od místa podnikání Dr¾itele licence uvedeného v pøíslu¹né Pøíloze nebo Transakèním dokumentu.
 
-IBM bude DrÅ¾itele pÃ­semnÄ› informovat, jestliÅ¾e bude v rÃ¡mci kontroly dodrÅ¾ovÃ¡nÃ­ podmÃ­nek zjiÅ¡tÄ›no, Å¾e DrÅ¾itel licence uÅ¾Ã­vÃ¡ Program v rozsahu pÅ™esahujÃ­cÃ­m ÃºroveÅˆ jeho OprÃ¡vnÄ›nÃ©ho uÅ¾Ã­vÃ¡nÃ­ nebo jinÃ½m zpÅ¯sobem nedodrÅ¾uje podmÃ­nky smlouvy ILAN. DrÅ¾itel licence se zavazuje, Å¾e neprodlenÄ› uhradÃ­ pÅ™Ã­mo IBM poplatky, kterÃ© IBM uvede na faktuÅ™e za 1) jakÃ©koli takovÃ© nadmÄ›rnÃ© uÅ¾Ã­vÃ¡nÃ­, 2) podporu pro takovÃ© nadmÄ›rnÃ© uÅ¾Ã­vÃ¡nÃ­ za dobu trvÃ¡nÃ­ takovÃ©ho nadmÄ›rnÃ©ho uÅ¾Ã­vÃ¡nÃ­ nebo za dva roky (podle toho, kterÃ© obdobÃ­ je kratÅ¡Ã­), a 3) jakÃ©koli dodateÄnÃ© poplatky nebo jinÃ© ÄÃ¡stky, kterÃ© budou stanoveny na zÃ¡kladÄ› vÃ½sledkÅ¯ takovÃ© kontroly.
+Oddíl 4. Odpovìdnost a ochrana práv du¹evního vlastnictví
 
-12. PoznÃ¡mky tÅ™etÃ­ch stran
+Následující omezení odpovìdnosti vlo¾te na konec odstavce a:
 
-Program mÅ¯Å¾e zahrnovat kÃ³d tÅ™etÃ­ch stran, ke kterÃ©mu DrÅ¾iteli licence poskytuje licenci na zÃ¡kladÄ› tÃ©to Smlouvy IBM, nikoli tÅ™etÃ­ strana. Jsou-li uvedeny jakÃ©koli poznÃ¡mky vztahujÃ­cÃ­ se ke kÃ³du tÅ™etÃ­ch stran ("PoznÃ¡mky tÅ™etÃ­ch stran"), jsou uvedeny pouze pro informaci DrÅ¾itele licence. Tyto poznÃ¡mky mohou bÃ½t uvedeny v souboru(ech) NOTICES k Programu. Informace o zpÅ¯sobu zÃ­skÃ¡nÃ­ zdrojovÃ©ho kÃ³du pro urÄitÃ½ kÃ³d tÅ™etÃ­ch stran najdete v PoznÃ¡mkÃ¡ch tÅ™etÃ­ch stran. JestliÅ¾e IBM v PoznÃ¡mkÃ¡ch tÅ™etÃ­ch stran oznaÄÃ­ kÃ³d tÅ™etÃ­ch stran za "KÃ³d tÅ™etÃ­ch stran s moÅ¾nostÃ­ modifikace", pak IBM opravÅˆuje DrÅ¾itele licence k 1) modifikaci KÃ³du tÅ™etÃ­ch stran s moÅ¾nostÃ­ modifikace a 2) ke zpÄ›tnÃ© kompilaci ProgramovÃ½ch modulÅ¯, kterÃ© majÃ­ pÅ™Ã­mÃ© rozhranÃ­ ke KÃ³du tÅ™etÃ­ch stran s moÅ¾nostÃ­ modifikace, za pÅ™edpokladu, Å¾e tyto Äinnosti budou slouÅ¾it vÃ½hradnÄ› k ladÄ›nÃ­ modifikacÃ­ provÃ¡dÄ›nÃ½ch DrÅ¾itelem licence u takovÃ©ho KÃ³du tÅ™etÃ­ch stran. ZÃ¡vazek IBM tÃ½kajÃ­cÃ­ se servisu a podpory (je-li nÄ›jakÃ½) se vztahuje pouze na nemodifikovanÃ½ Program.
+V Peru: V souladu s ustanovením § 1328 peruánského obèanského zákoníku se tato omezení a vylouèení neuplatní v pøípadì úmyslného protiprávního jednání ("dolo") nebo hrubé nedbalosti ("culpa inexcusable").
 
-13. VÅ¡eobecnÃ¡ ustanovenÃ­
+Oddíl 6. Rozhodné právo a geografickı rozsah
 
-a. Touto Smlouvou nejsou dotÄena zÃ¡konnÃ¡ prÃ¡va spotÅ™ebitelÅ¯, jichÅ¾ se nenÃ­ moÅ¾no smluvnÄ› zÅ™Ã­ci nebo jeÅ¾ nemohou bÃ½t smluvnÄ› omezena.
+V odstavci a nahraïte první vìtu pouze tímto znìním:
 
-b. NenÃ­-li mezi DrÅ¾itelem licence a IBM pÃ­semnÄ› dohodnuto jinak, splnÃ­ IBM u ProgramÅ¯, kterÃ© dodÃ¡vÃ¡ DrÅ¾iteli licence v hmotnÃ© podobÄ›, svÅ¯j zÃ¡vazek odeslat a dodat pÅ™edmÄ›tnÃ© Programy jejich pÅ™edÃ¡nÃ­m pÅ™epravci urÄenÃ©mu IBM.
+V Argentinì: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Argentinské republiky, a to bez ohledu na kolizní normy. Ve¹kerá øízení tıkající se práv, povinností a závazkù vyplıvajících z této Smlouvy budou vedena u Obecného obchodního soudu mìsta "Ciudad Autónoma de Buenos Aires".
 
-c. V pÅ™Ã­padÄ›, Å¾e by nÄ›kterÃ© ustanovenÃ­ tÃ©to Smlouvy bylo povaÅ¾ovÃ¡no za neplatnÃ© nebo nevymahatelnÃ©, zÅ¯stanou zbÃ½vajÃ­cÃ­ ustanovenÃ­ tÃ©to Smlouvy v plnÃ© platnosti a ÃºÄinnosti.
+V Chile: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Chile, a to bez ohledu na kolizní normy. Ve¹keré spory, vıklad nebo poru¹ení související s touto Smlouvou, které Smluvní strany nedoká¾ou vyøe¹it, budou pøedlo¾eny obecnım soudùm mìsta a obvodu Santiago.
 
-d. KaÅ¾dÃ¡ ze smluvnÃ­ch stran bude postupovat v souladu s pÅ™Ã­sluÅ¡nÃ½mi vÃ½voznÃ­mi a dovoznÃ­mi prÃ¡vnÃ­mi pÅ™edpisy, vÄetnÄ› prÃ¡vnÃ­ch pÅ™edpisÅ¯ SpojenÃ½ch stÃ¡tÅ¯ americkÃ½ch, kterÃ© zakazujÃ­ Äi omezujÃ­ vÃ½voz pro ÃºÄely urÄitÃ©ho pouÅ¾itÃ­ Äi pro urÄitÃ© koncovÃ© uÅ¾ivatele. DrÅ¾itel licence se zavazuje, Å¾e bude postupovat v souladu s pÅ™Ã­sluÅ¡nÃ½mi vÃ½voznÃ­mi a dovoznÃ­mi prÃ¡vnÃ­mi pÅ™edpisy, vÄetnÄ› prÃ¡vnÃ­ch pÅ™edpisÅ¯ SpojenÃ½ch stÃ¡tÅ¯ americkÃ½ch, kterÃ© zakazujÃ­ Äi omezujÃ­ vÃ½voz pro ÃºÄely urÄitÃ©ho pouÅ¾itÃ­ Äi pro urÄitÃ© koncovÃ© uÅ¾ivatele.
+V Kolumbii: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Kolumbijské republiky, a to bez ohledu na kolizní normy. Ve¹kerá práva, povinnosti a závazky budou øe¹eny soudci Kolumbijské republiky.
 
-e. DrÅ¾itel licence souhlasÃ­ s tÃ­m, Å¾e umoÅ¾nÃ­ spoleÄnosti International Business Machines Corporation a jejÃ­m dceÅ™inÃ½m spoleÄnostem (vÄetnÄ› jejich prÃ¡vnÃ­ch nÃ¡stupcÅ¯, postupnÃ­kÅ¯, subdodavatelÅ¯ a obchodnÃ­ch partnerÅ¯) uklÃ¡dat a uÅ¾Ã­vat jeho kontaktnÃ­ informace vÅ¡ude, kde tito uskuteÄÅˆujÃ­ svou obchodnÃ­ Äinnost souvisejÃ­cÃ­ s produkty a sluÅ¾bami IBM, nebo v rÃ¡mci podpory obchodnÃ­ho vztahu mezi IBM a drÅ¾itelem Licence.
+V Ekvádoru Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Ekvádorské republiky, a to bez ohledu na kolizní normy. Ve¹keré spory vyplıvající z této Smlouvy nebo v souvislosti s ní budou pøedlo¾eny soudcùm pro obèanskoprávní spory mìsta Quito k ústnímu zkrácenému øízení.
 
-f. KaÅ¾dÃ¡ ze smluvnÃ­ch stran poskytne druhÃ© stranÄ› pÅ™imÄ›Å™enÄ› moÅ¾nost nÃ¡pravy pÅ™edtÃ­m, neÅ¾ vÅ¯Äi druhÃ© stranÄ› vznese nÃ¡roky souvisejÃ­cÃ­ s neplnÄ›nÃ­m jejÃ­ch povinnostÃ­ z tÃ©to Smlouvy. SmluvnÃ­ strany se pokusÃ­ v dobrÃ© vÅ¯li vyÅ™eÅ¡it jakÃ©koli spory, neshody Äi nÃ¡roky vztahujÃ­cÃ­ se k tÃ©to SmlouvÄ›.
+Ve Venezuele: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Venezuely, a to bez ohledu na kolizní normy. Smluvní strany se zavazují, ¾e ve¹keré své spory související s touto Smlouvou pøedlo¾í soudùm metropolitní oblasti mìsta Caracas.
 
-g. NevyÅ¾adujÃ­-li pÅ™Ã­sluÅ¡nÃ© prÃ¡vnÃ­ pÅ™edpisy jinak, bez moÅ¾nosti smluvnÃ­ho zÅ™eknutÃ­ se nebo omezenÃ­: 1) Å¾Ã¡dnÃ¡ ze smluvnÃ­ch stran nezahÃ¡jÃ­ prÃ¡vnÃ­ Ãºkon (bez ohledu na jeho formu) ohlednÄ› jakÃ©hokoli nÃ¡roku vzniklÃ©ho na zÃ¡kladÄ› tÃ©to Smlouvy nebo ve spojenÃ­ s touto Smlouvou pozdÄ›ji neÅ¾ dva roky od data vzniku pÅ™Ã­Äiny takovÃ©ho prÃ¡vnÃ­ho Ãºkonu; a 2) veÅ¡kerÃ© takovÃ© nÃ¡roky a vÅ¡echna pÅ™Ã­sluÅ¡nÃ¡ prÃ¡va vztahujÃ­cÃ­ se k takovÃ½m nÃ¡rokÅ¯m se po vyprÅ¡enÃ­ takovÃ©ho ÄasovÃ©ho limitu povaÅ¾ujÃ­ za promlÄenÃ©.
+V Peru: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Peru, a to bez ohledu na kolizní normy. Ve¹keré rozpory, které pøípadnì vzniknou mezi smluvními stranami pøi plnìní, vıkladu nebo dodr¾ování této Smlouvy, které smluvní strany nedovedou vyøe¹it samy, budou pøedlo¾eny pøíslu¹nım soudcùm a soudùm soudního obvodu Cercado de Lima, které mají odpovídající pravomoc.
 
-h. Å½Ã¡dnÃ¡ ze smluvnÃ­ch stran nenese odpovÄ›dnost za nesplnÄ›nÃ­ jakÃ½chkoli zÃ¡vazkÅ¯, pokud k takovÃ©mu neplnÄ›nÃ­ doÅ¡lo z dÅ¯vodÅ¯ vzniklÃ½ch nezÃ¡visle na jejÃ­ vÅ¯li.
+V Uruguayi: Obì smluvní strany souhlasí s uplatnìním právních pøedpisù Uruguaye. Ve¹keré rozpory, které pøípadnì vzniknou mezi smluvními stranami pøi plnìní, vıkladu nebo dodr¾ování této Smlouvy, které smluvní strany nemohou vyøe¹it samy, budou pøedlo¾eny obecnım soudùm v Montevideu ("Tribunales Ordinarios de Montevideo").
 
-i. Tato Smlouva nezaklÃ¡dÃ¡ pro Å¾Ã¡dnou tÅ™etÃ­ stranu Å¾Ã¡dnÃ© prÃ¡vo nebo dÅ¯vod k Å¾alobÄ› a IBM nenese odpovÄ›dnost za Å¾Ã¡dnÃ© nÃ¡roky tÅ™etÃ­ch stran vznesenÃ© vÅ¯Äi DrÅ¾iteli licence, s vÃ½jimkou, jak uvÃ¡dÃ­ odstavec 10.1 (PoloÅ¾ky, za kterÃ© IBM nenese odpovÄ›dnost) vÃ½Å¡e, Å¡kody na zdravÃ­ (vÄetnÄ› smrti) nebo Å¡kody na nemovitÃ©m nebo hmotnÃ©m osobnÃ­m majetku, za kterÃ© je IBM vÅ¯Äi takovÃ© tÅ™etÃ­ stranÄ› prÃ¡vnÄ› odpovÄ›dnÃ¡.
+V odstavci a, pouze v první vìtì, nahraïte vıraz "zemì, kde je transakce pro licenèní oprávnìní realizována" textem:
 
-j. SmluvnÃ­ strany se dohodly, Å¾e se po uzavÅ™enÃ­ toto Smlouvy nebudou odvolÃ¡vat na Å¾Ã¡dnÃ© prohlÃ¡Å¡enÃ­, kterÃ© nenÃ­ v tÃ©to SmlouvÄ› uvedeno, vÄetnÄ› jakÃ©hokoli prohlÃ¡Å¡enÃ­, kterÃ© se tÃ½kÃ¡: 1) vÃ½konu Äi fungovÃ¡nÃ­ Programu; 2) zkuÅ¡enostÃ­ nebo doporuÄenÃ­ jinÃ½ch stran; nebo 3) jakÃ½chkoli vÃ½sledkÅ¯ Äi Ãºspor, kterÃ½ch mÅ¯Å¾e DrÅ¾itel licence dosÃ¡hnout.
+Spojené státy, Anguilla, Antigua a Barbuda, Aruba, Bahamy, Barbados, Bermudy, Bonaire, Britské Panenské ostrovy, Kajmanské ostrovy, Curacao, Dominika, Grenada, Guyana, Jamajka, Montserrat, Saba, Svatı Eustach, Svatı Kry¹tof a Nevis, Svatá Lucie, Svatı Martin, Svatı Vincenc a Grenadiny, Surinam, Tortola, Trinidad a Tobago, Turk a Caicos: Státu New York, USA.
 
-k. IBM uzavÅ™ela smlouvy s urÄitÃ½mi organizacemi (dÃ¡le jen "ObchodnÃ­ partneÅ™i IBM") za ÃºÄelem nabÃ­zenÃ­, zprostÅ™edkovÃ¡nÃ­ prodeje a podpory vybranÃ½ch ProgramÅ¯. ObchodnÃ­ partneÅ™i IBM zÅ¯stÃ¡vajÃ­ organizacemi nezÃ¡vislÃ½mi na IBM. IBM nenese odpovÄ›dnost za jednÃ¡nÃ­ nebo prohlÃ¡Å¡enÃ­ ObchodnÃ­ch partnerÅ¯ IBM, ani za jejich zÃ¡vazky vÅ¯Äi DrÅ¾iteli licence.
+V Kanadì: Provincie Ontario a federální zákony Kanady, které se zde uplatní.
 
-l. LicenÄnÃ­ podmÃ­nky a podmÃ­nky tÃ½kajÃ­cÃ­ se odÅ¡kodnÄ›nÃ­ ve vztahu k prÃ¡vu duÅ¡evnÃ­ho vlastnictvÃ­ uvedenÃ© v jinÃ½ch smlouvÃ¡ch, jeÅ¾ DrÅ¾itel licence uzavÅ™el s IBM (jako je napÅ™Ã­klad smlouva IBM Customer Agreement), se nevztahujÃ­ na licence na Program udÄ›lenÃ© na zÃ¡kladÄ› tÃ©to Smlouvy.
+V odstavci a, ve druhé vìtì, nahraïte vıraz "zemì, kde je transakce zakoupení licenèních oprávnìní realizována, nebo pokud s tím souhlasí IBM, zemì, kde je Program uveden do produktivního vyu¾ití" následujícím textem:
 
-m. ObÄ› smluvnÃ­ strany berou na vÄ›domÃ­, Å¾e veÅ¡kerÃ© vzÃ¡jemnÄ› sdÄ›lenÃ© informace nejsou dÅ¯vÄ›rnÃ©. VyÅ¾aduje-li nÄ›kterÃ¡ ze smluvnÃ­ch stran vÃ½mÄ›nu dÅ¯vÄ›rnÃ½ch informacÃ­, pak takovÃ¡ vÃ½mÄ›na musÃ­ probÄ›hnout na zÃ¡kladÄ› smlouvy o utajenÃ­ dÅ¯vÄ›rnÃ½ch informacÃ­;
+V Argentinì: Argentina
 
-14. GeografickÃ½ rozsah a rozhodnÃ© prÃ¡vo
+V Chile: Chile
 
-14.1 RozhodnÃ© prÃ¡vo
+V Kolumbii: Kolumbie
 
-SmluvnÃ­ strany souhlasÃ­ s pouÅ¾itÃ­m prÃ¡va zemÄ›, v nÃ­Å¾ DrÅ¾itel licence zakoupil licenci na Program, podle kterÃ©ho se budou Å™Ã­dit, vyklÃ¡dat a uplatÅˆovat veÅ¡kerÃ© prÃ¡va, povinnosti a zÃ¡vazky DrÅ¾itele licence a IBM z tÃ©to Smlouvy Äi vztahujÃ­cÃ­ se k jejÃ­mu pÅ™edmÄ›tu a to bez ohledu na rozpor prÃ¡vnÃ­ch zÃ¡sad.
+V Ekvádoru: Ekvádor
 
-Ãšmluva OSN o smlouvÃ¡ch o mezinÃ¡rodnÃ­ koupi zboÅ¾Ã­ se neaplikuje.
+V Mexiku: Mexiko
 
-14.2 Jurisdikce
+V Peru: Peru
 
-VÅ¡echna prÃ¡va, povinnosti a zÃ¡vazky budou podlÃ©hat rozhodnutÃ­m pÅ™Ã­sluÅ¡nÃ½ch soudÅ¯ zemÄ›, v nÃ­Å¾ DrÅ¾itel licence obdrÅ¾el licenci na Program.
+V Uruguay: Uruguay
 
-ÄŒÃ¡st 2 - PodmÃ­nky specifickÃ© pro zemi
+Ve Venezuele: Venezuela
 
-Pro licence udÄ›lenÃ© v ÄŒeskÃ© republice platÃ­, Å¾e nÃ­Å¾e uvedenÃ© podmÃ­nky nahrazujÃ­ nebo mÄ›nÃ­ podmÃ­nky uvedenÃ© v ÄŒÃ¡sti 1. VeÅ¡kerÃ© podmÃ­nky uvedenÃ© v ÄŒÃ¡sti 1, kterÃ© nejsou tÄ›mito dodatky dotÄeny, zÅ¯stÃ¡vajÃ­ v plnÃ© platnosti.
+Pøidejte následující vìty na konec odstavce b:
 
-DODATKY PRO ZEMÄš EVROPY, STÅ˜EDNÃHO VÃCHODU A AFRIKY (EMEA)
+V Brazílii: Ve¹keré spory vyplıvající z této Smlouvy nebo s ní související, vèetnì zkrácenıch øízení, budou pøedlo¾eny Soudu mìsta San Paolo, stát S~ao Paolo, Brazílie, kterı bude mít vıhradní pøíslu¹nost, a smluvní strany neodvolatelnì souhlasí s touto konkrétní soudní pøíslu¹ností a vzdávají se jakékoliv jiné bez ohledu na její právní základ.
 
-ÄŒLENSKÃ‰ STÃTY EVROPSKÃ‰ UNIE
+V Mexiku: Smluvní strany se zavazují, ¾e se podøídí vıhradní soudní pøíslu¹nosti soudù ve mìstì Mexico pro øe¹ení ve¹kerıch sporù vyplıvajících z této Smlouvy. Smluvní strany se vzdávají práva na jakoukoliv dal¹í soudní pøíslu¹nost, která se na nì pøípadnì vztahuje na základì jejich stávajících èi budoucích domicilù èi z jiného dùvodu.
 
-8. ZÃ¡ruka a vylouÄenÃ­ zÃ¡ruky
+Oddíl 7. Obecné
 
-NÃ­Å¾e uvedenÃ½ text se pÅ™idÃ¡vÃ¡ k oddÃ­lu 8 (ZÃ¡ruka a vylouÄenÃ­ zÃ¡ruky):
+V odstavci g:
 
-SpotÅ™ebitelÃ© z EvropskÃ© unie ("EU") majÃ­ zÃ¡konnÃ¡ prÃ¡va, kterÃ¡ vyplÃ½vajÃ­ z platnÃ© nÃ¡rodnÃ­ legislativy vztahujÃ­cÃ­ se na prodej spotÅ™ebnÃ­ho zboÅ¾Ã­. Tato prÃ¡va nejsou dotÄena ustanovenÃ­mi tohoto oddÃ­lu 8 (ZÃ¡ruka a vylouÄenÃ­ zÃ¡ruky).
+Ve Spojenıch státech americkıch: odstraòte poslední dvì vìty.
 
-ÄŒLENSKÃ‰ STÃTY EU A ZEMÄš UVEDENÃ‰ NÃÅ½E
+V odstavci i doplòte následující novou vìtu za první vìtu:
 
-JakÃ¡koliv evropskÃ¡ zemÄ›, v kterÃ© platÃ­ prÃ¡vnÃ­ pÅ™edpisy upravujÃ­cÃ­ ochranu osobnÃ­ch ÃºdajÅ¯ a ochranu soukromÃ­ podobnÄ› jako prÃ¡vnÃ­ pÅ™edpisy EU.
+V Mexiku: Ve¹keré zmìny adresy je tøeba oznámit 10 (deset) dní pøedem; v opaèném pøípadì budou mít oznámení uèinìná na poslední uvedenou adresu úplné právní úèinky.
 
-13. VÅ¡eobecnÃ¡ ustanovenÃ­
+V odstavci j:
 
-NÃ­Å¾e uvedenÃ½ text nahrazuje bod 13.e:
+V Brazílii: odstraòte celou druhou vìtu "®ádná smluvní strana nepodá ¾alobu vyplıvající z této Smlouvy nebo související s touto Smlouvou po uplynutí více ne¾ dvou let poté, co nastal dùvod ¾aloby."
 
-(1) Definice - Pro ÃºÄely tohoto bodu 13.e platÃ­ nÃ¡sledujÃ­cÃ­ dodateÄnÃ© definice:
+Doplòte k tomuto oddílu jako novı odstavec l:
 
-(a) Informace o obchodnÃ­ch kontaktech - kontaktnÃ­ informace vztahujÃ­cÃ­ se k obchodnÃ­m vztahÅ¯m, kterÃ© DrÅ¾itel licence zpÅ™Ã­stupnÃ­ IBM, vÄetnÄ› jmen, funkcÃ­, obchodnÃ­ch adres, telefonnÃ­ch ÄÃ­sel, e-mailovÃ½ch adres zamÄ›stnancÅ¯ a dodavatelÅ¯ DrÅ¾itele licence. Pro Rakousko, ItÃ¡lii a Å vÃ½carsko zahrnujÃ­ Informace o obchodnÃ­ch kontaktech rovnÄ›Å¾ Ãºdaje o DrÅ¾iteli licence a jeho dodavatelÃ­ch, kteÅ™Ã­ jsou prÃ¡vnickÃ½mi osobami (napÅ™Ã­klad Ãºdaje o pÅ™Ã­jmech DrÅ¾itele licence a dalÅ¡Ã­ informace tÃ½kajÃ­cÃ­ se transakcÃ­).
+V Kanadì: Obì strany souhlasí, ¾e tento dokument sepí¹í v anglickém jazyce. Les parties ont convenu de rédiger le présent document en langue anglaise.
 
-(b) ObchodnÃ­ kontakty - zamÄ›stnanci a dodavatelÃ© DrÅ¾itele licence, jichÅ¾ se tÃ½kajÃ­ Informace o obchodnÃ­ch kontaktech.
+2. ASIE A PACIFICKÁ OBLAST
 
-(c) ÃšÅ™ad na ochranu osobnÃ­ch ÃºdajÅ¯ - ÃºÅ™ad zÅ™Ã­zenÃ½ dle zÃ¡kona o ochranÄ› osobnÃ­ch ÃºdajÅ¯ a zÃ¡kona o elektronickÃ½ch komunikacÃ­ch pÅ™Ã­sluÅ¡nÃ© zemÄ› nebo (v zemÃ­ch, jeÅ¾ nejsou Äleny EU) ÃºÅ™ad odpovÄ›dnÃ½ za kontrolu ochrany osobnÃ­ch ÃºdajÅ¯ v tÃ©to zemi, nebo (pro kteroukoli z vÃ½Å¡e uvedenÃ½ch moÅ¾nostÃ­) Å™Ã¡dnÄ› jmenovanÃ½ prÃ¡vnÃ­ nÃ¡stupce takovÃ©ho ÃºÅ™adu.
+Oddíl 2. Záruky
 
-(d) PrÃ¡vnÃ­ pÅ™edpisy na ochranu osobnÃ­ch ÃºdajÅ¯ a o elektronickÃ½ch komunikacÃ­ch - i) pÅ™Ã­sluÅ¡nÃ© mÃ­stnÃ­ prÃ¡vnÃ­ pÅ™edpisy v platnÃ©m znÄ›nÃ­, kterÃ© implementujÃ­ poÅ¾adavky SmÄ›rnice EvropskÃ©ho parlamentu a Rady 95/46/ES (o ochranÄ› fyzickÃ½ch osob v souvislosti se zpracovÃ¡nÃ­m osobnÃ­ch ÃºdajÅ¯ a o volnÃ©m pohybu tÄ›chto ÃºdajÅ¯) a SmÄ›rnice EvropskÃ©ho parlamentu a Rady 2002/58/ES (o zpracovÃ¡nÃ­ osobnÃ­ch ÃºdajÅ¯ a ochranÄ› soukromÃ­ v odvÄ›tvÃ­ elektronickÃ½ch komunikacÃ­); nebo (ii) u zemÃ­, jeÅ¾ nejsou Äleny EU, prÃ¡vnÃ­ pÅ™edpisy schvÃ¡lenÃ© v pÅ™Ã­sluÅ¡nÃ© zemi a tÃ½kajÃ­cÃ­ se ochrany osobnÃ­ch ÃºdajÅ¯ a regulace elektronickÃ½ch komunikacÃ­, vÄetnÄ› (pro kteroukoli z vÃ½Å¡e uvedenÃ½ch moÅ¾nostÃ­) jakÃ©koli jejich zÃ¡konnÃ© nÃ¡hrady nebo zmÄ›ny.
+Na konec tohoto oddílu doplòte jako novı odstavec f:
 
-(e) Skupina IBM - International Business Machines Corporation, Armonk, New York, USA, jejÃ­ dceÅ™inÃ© spoleÄnosti a jejich pÅ™Ã­sluÅ¡nÃ­ ObchodnÃ­ partneÅ™i a subdodavatelÃ©.
+V Austrálii: Tyto záruèní podmínky se uplatní navíc vedle v¹ech pøípadnıch práv v souladu se Zákonem o obchodní soutì¾i a ochranì spotøebitele z roku 2010 a jsou omezeny pouze v rozsahu povoleném tímto zákonem.
 
-(2) DrÅ¾itel licence opravÅˆuje IBM:
+V Japonsku: Odpovìdnost spoleènosti IBM je omezena na tento odstavec a oddíl Odpovìdnost a ochrana práv k du¹evnímu vlastnictví a pøíslu¹né Pøílohy a Transakèní dokumenty jako vıhradní prostøedek nápravy Dr¾itele licence za nesplnìní záruk uvedenıch v tomto oddíle.
 
-(a) ke zpracovÃ¡nÃ­ a pouÅ¾Ã­vÃ¡nÃ­ InformacÃ­ o obchodnÃ­ch kontaktech v rÃ¡mci Skupiny IBM pro ÃºÄely poskytovÃ¡nÃ­ podpory DrÅ¾iteli licence, vÄetnÄ› poskytovÃ¡nÃ­ sluÅ¾eb, a pro ÃºÄely podporovÃ¡nÃ­ obchodnÃ­ch vztahÅ¯ mezi DrÅ¾itelem licence a Skupinou IBM, vÄetnÄ› komunikace s ObchodnÃ­mi kontakty (e-mailem nebo jinak) a marketingu produktÅ¯ a sluÅ¾eb Skupiny IBM ("UvedenÃ½ ÃºÄel"); a
+Na Novém Zélandu: Tyto záruky se uplatní navíc vedle v¹ech práv vyplıvajících ze Zákona o spotøebitelskıch zárukách z roku 1993 nebo jinıch právních pøedpisù a nelze je ze zákona omezit.
 
-(b) ke zpÅ™Ã­stupnÄ›nÃ­ InformacÃ­ o obchodnÃ­ch kontaktech ostatnÃ­m ÄlenÅ¯m Skupiny IBM, a to pouze v souvislosti s UvedenÃ½m ÃºÄelem.
+Oddíl 3. Poplatky, danì, platba a ovìøení
 
-(3) IBM se zavazuje zpracovÃ¡vat Informace o obchodnÃ­ch kontaktech v souladu s platnÃ½mi prÃ¡vnÃ­mi pÅ™edpisy na ochranu osobnÃ­ch ÃºdajÅ¯ a o elektronickÃ½ch komunikacÃ­ch a uÅ¾Ã­vat je pouze pro UvedenÃ½ ÃºÄel.
+V odstavci b nahraïte tøetí vìtu následujícími dvìma vìtami:
 
-(4) DrÅ¾itel licence prohlaÅ¡uje, Å¾e zÃ­skal (nebo zÃ­skÃ¡), a to v rozsahu, v jakÃ©m to poÅ¾adujÃ­ prÃ¡vnÃ­ pÅ™edpisy na ochranu osobnÃ­ch ÃºdajÅ¯ a o elektronickÃ½ch komunikacÃ­ch, pÅ™Ã­sluÅ¡nÃ© souhlasy od ObchodnÃ­ch kontaktÅ¯, kterÃ© patÅ™iÄnÄ› o tÃ©to skuteÄnosti informoval (nebo informuje), aby bylo SkupinÄ› IBM umoÅ¾nÄ›no zpracovÃ¡vat a uÅ¾Ã­vat Informace o obchodnÃ­ch kontaktech za ÃºÄelem komunikace s tÄ›mito kontakty, vÄetnÄ› komunikace emailem, a to v souladu s UvedenÃ½m ÃºÄelem.
+V Hongkongu, Indonésii, Koreji, Macau, Malajsii, na Filipínách, v Singapuru a Vietnamu: Èástky jsou splatné na základì doruèení faktury od spoleènosti IBM a jsou splatné do 30 dní od data vystavení faktury na úèet urèenı spoleèností IBM. Pokud platba nebude uhrazena do 30 dní od data vystavení faktury, spoleènost IBM bude oprávnìna úètovat úroky z prodlení z neuhrazené èástky vypoètené podle poètu dní, o které bude platba uhrazena pozdìji, ve vı¹i ni¾¹í z následujících èástek: i) 2 % za ka¾dé 30denní období nebo jeho èást; nebo ii) maximální èástka pøípustná v souladu s platnımi právními pøedpisy.
 
-(5) DrÅ¾itel licence opravÅˆuje IBM k pÅ™enÃ¡Å¡enÃ­ InformacÃ­ o obchodnÃ­ch kontaktech mimo oblast EvropskÃ©ho hospodÃ¡Å™skÃ©ho prostoru za pÅ™edpokladu, Å¾e takovÃ½ pÅ™enos bude probÃ­hat na zÃ¡kladÄ› smluvnÃ­ch podmÃ­nek schvÃ¡lenÃ½ch ÃšÅ™adem na ochranu osobnÃ­ch ÃºdajÅ¯, pÅ™Ã­padnÄ›, Å¾e takovÃ½ pÅ™enos bude jinak povolen prÃ¡vnÃ­mi pÅ™edpisy na ochranu osobnÃ­ch ÃºdajÅ¯ a o elektronickÃ½ch komunikacÃ­ch.
+V Thajsku: Èástky jsou splatné na základì doruèení faktury od spoleènosti IBM a jsou splatné do 30 dní od data vystavení faktury na úèet stanovenı spoleèností IBM. Pokud platba nebude uhrazena do 30 dní od data vystavení faktury, lze na neuhrazenou èástku uplatnit úroky z prodlení ve vı¹i 1,25 % mìsíènì vypoètené podle poètu dní, o které bude platba uhrazena pozdìji.
 
-Z125-5589-05 (07/2011)
+V první vìtì odstavce c odstraòte slovo "a" pøed bodem "(iv)" a doplòte støedník a následující novı bod "(v)":
 
+V Indii: ; a (v) vèas podat správná daòová pøiznání k Daním srá¾enım u zdroje (TDS). Pokud nebudou nìkteré danì, cla, odvody nebo poplatky (dále jen "Danì") vymìøeny na základì dokumentace o vıjimce poskytnuté Dr¾itelem licence a daòové orgány následnì rozhodnou, ¾e takové Danì mìly bıt vymìøeny, pak je Dr¾itel licence povinen takové Danì uhradit, a to vèetnì v¹ech úrokù, odvodù a/nebo penále k nim pøirostlıch.
+
+V první vìtì odstavce c odstraòte slovo "a" pøed bodem "(iv)" a nahraïte bod (iv) a pøidejte doplòte bod (v) následujícího znìní:
+
+V Singapuru, Malajsii, na Filipínách, v Thajsku, Indonésii a Vietnamu: (iv) plnì spolupracovat s IBM ve snaze o zpro¹tìní srá¾kové èi jiné danì nebo její sní¾ení, pro které Dr¾itel licence po¾aduje zpro¹tìní nebo sní¾ení; a v) neprodlenì dokonèit, podat a aktualizovat ve¹keré relevantní dokumenty pro jakékoliv takové zpro¹tìní, sní¾ení nebo vıjimku.
+
+Oddíl 4. Odpovìdnost a ochrana práv du¹evního vlastnictví
+
+V odstavci a doplòte na konce první vìty následující:
+
+V Austrálii: (napøíklad zda na základì smlouvy, v dùsledku pøeèinu, nedbalosti, v souladu se zákonem nebo jinak)
+
+V odstavci a ve druhé vìtì za slovo "zvlá¹tní" a pøed slovo "náhodné" doplòte následující:
+
+Na Filipínách: (vèetnì symbolické a exemplární náhrady ¹kody), morální,
+
+Pøidejte jako novı odstavec na konec odstavce a (a zajistìte pøíslu¹né pøeèíslování odstavcù):
+
+V Austrálii: Pokud se IBM dopustí poru¹ení záruky vyplıvající ze Zákona o ochranì hospodáøské soutì¾e a spotøebitele z roku 2010, je odpovìdnost IBM omezena na opravy nebo vımìnu zbo¾í nebo dodávku ekvivalentního zbo¾í nebo úhradu nákladù na vımìnu zbo¾í nebo zaji¹tìní opravy zbo¾í. V pøípadì, ¾e se záruka vztahuje k právu prodeje, neru¹ené dr¾by nebo bezvadnému titulu ke zbo¾í v souladu s pøílohou è. 2 Zákona o ochranì hospodáøské soutì¾e a spotøebitele , neuplatní se ¾ádná z tìchto omezení.
+
+Oddíl 5. Ukonèení
+
+Na konec èásti doplòte jako novı odstavec b:
+
+V Indonésii: Smluvní strany se vzdávají svého práva vyplıvajícího z § 1266 indonéského obèanského zákoníku v rozsahu, v jakém vy¾aduje rozhodnutí soudu o ukonèení smlouvy se vznikem vzájemnıch povinností.
+
+Oddíl 6. Rozhodné právo a geografickı rozsah
+
+V odstavci a, pouze v první vìtì, nahraïte vıraz "zemì, kde je transakce licenèních oprávnìní realizována" následujícím textem:
+
+V Kambod¾i, Laosu: stát New York, USA
+
+V Austrálii: stát nebo teritorium, kde transakce probìhla.
+
+V Hongkongu: Zvlá¹tní administrativní oblast Èínské lidové republiky Hongkong;
+
+V Macau: Zvlá¹tní administrativní oblast Èínské lidové republiky Hongkong;
+
+V Koreji: Korejská republika, kde má pøíslu¹nost soud Korejské republiky pro centrální obvod Soul
+
+V Tchaj-wanu: Tchaj-wan
+
+V Indii: Indie
+
+V odstavci b, v první vìtì, v bodì ii), za slovo "vèetnì" a pøed slovo "obrana", doplòte:
+
+V Japonsku: tìchto právních pøedpisù Japonska a
+
+V odstavci a, ve druhé vìtì, nahraïte vıraz "zemì, kde je transakce zakoupení licenèních oprávnìní realizována, nebo pokud s tím souhlasí IBM, zemì, kde je Program uveden do produktivního vyu¾ití" následujícím textem:
+
+V Hongkongu: Zvlá¹tní administrativní oblast Èínské lidové republiky Hongkong;
+
+V Macau: Zvlá¹tní správní oblast Èínské lidové republiky Macao;
+
+V Tchaj-wanu: Tchaj-wan
+
+Na konec èásti doplòte jako novı odstavec d:
+
+V Kambod¾i, Laosu, na Filipínách a Srí Lance: Spory budou s koneènou platností vyøe¹eny v rozhodèím øízení v Singapuru souladu s pravidly rozhodèího øízení Mezinárodního centra pro rozhodèí øízení v Singapuru ("Pravidla SIAC").
+
+V Indii: Spory budou s koneènou platností urovnány v souladu se Zákonem o rozhodèím a smírèím øízení z roku 1996 v aktuálnì platném znìní v anglickém jazyce a místem konání øízení bude Bangalore, Indie. Pokud je èástka sporu ni¾¹í ne¾ pìt crore (50 000 000) indickıch rupií èi je rovna této èástce, øízení povede jeden rozhodce, v opaèném pøípadì tøi rozhodci. V pøípadì vımìny rozhodce bude øízení pokraèovat od okam¾iku uvolnìní pozice.
+
+V Indonésii: Spory budou s koneènou platností vyøe¹eny v rozhodèím øízením v Jakartì, Indonésie, které je spravováno Indonéskou národní radou pro rozhodèí øízení zalo¾enou v roce 1977 ("Badan Arbitrase Nasional Indonesia" nebo "BANI") v souladu s øádem Indonéské národní rady pro rozhodèí øízení a rozhodèí nález bude koneènı a závaznı pro smluvní strany bez mo¾nosti odvolání, a bude mít písemnou formu a bude uvádìt skutková zji¹tìní a zákonné závìry.
+
+V Èínské lidové republice: Ka¾dá strana je oprávnìna pøedlo¾it spor Èínské komisi pro mezinárodní ekonomické a obchodní rozhodèí øízení v Pekingu, ÈLR, k rozhodèímu øízení. Smluvní strany souhlasí, ¾e pro øe¹ení ka¾dého sporu budou jmenováni tøi rozhodci.
+
+Ve Vietnamu:Spory budou s koneènou platností vyøe¹eny v souladu s pravidly rozhodèího øízení Mezinárodního centra pro rozhodèí øízení ve Vietnamu ("Pravidla VIAC"). Celé øízení a v¹echny pøedkládané dokumenty budou v anglickém jazyce.
+
+Oddíl 7. Obecné
+
+V odstavci j, ve druhé vìtì, nahraïte vıraz "dva roky" textem:
+
+V Indii: tøi roky
+
+Na konec tohoto oddílu doplòte následující odstavec l:
+
+V Indonésii: Tato smlouva je uzavøena v anglickém a indonéském jazyce. V rozsahu pøípustném platnımi právními pøedpisy bude mít anglická verze pøednost v pøípadì rozporu mezi tìmito dvìma verzemi.
+
+3. EVROPA, STØEDNÍ VİCHOD A AFRIKA
+
+Oddíl 3. Poplatky, danì, platba a ovìøení
+
+V odstavci b doplòte následující text na konec tøetí vìty:
+
+V Itálii: pokud to IBM po¾aduje v písemném oznámení Dr¾iteli licence.
+
+Na Ukrajinì: z dlu¾né èástky od následujícího dne po datu splatnosti do data skuteèné úhrady, poèítáno pomìrnì za ka¾dı den prodlení, s úrokovou sazbou, která se rovná dvojnásobku diskontní sazby stanovené Ukrajinskou národní bankou (NBU) bìhem období prodlení (odstavec 6 èlánku 232 ukrajinského obchodního zákoníku se neuplatní).
+
+V odstavci b nahraïte tøetí vìtu následující vìtou:
+
+Ve Francii: Èástky jsou splatné do 10 dní od data vystavení faktury na úèet stanovenı spoleèností IBM a uplatní se úroky z prodlení ve vı¹i aktuální sazby Evropské centrální banky plus 10 bodù kromì nákladù na vymáhání dluhu ve vı¹i ètyøicet (40) eur; pokud takové náklady pøekroèí ètyøicet eur, dodateèné od¹kodnìní v souladu s odùvodnìním po¾adované èástky).
+
+V Rusku: Èástky jsou splatné na základì doruèené faktury a jsou splatné do 30 dní od data vystavení faktury elektronickım pøevodem penì¾ních prostøedkù na úèet stanovenı spoleèností IBM. Mohou se uplatnit úroky z prodlení ve vı¹i 24 % roènì vypoèítané za ka¾dı den po uplynutí 30 dní.
+
+V odstavci b doplòte na konec poslední vìty následující text:
+
+V Litvì: nebo pokud zákon nestanoví jinak
+
+Na konec odstavce b doplòte následující text:
+
+V Itálii: V pøípadì neuhrazení platby nebo èásteèné platby a rovnì¾ po formálním postupu uplatnìní nároku nebo soudním øízení, které je spoleènost IBM oprávnìna zahájit odchylnì od ustanovení èlánku 4 zákonné vyhlá¹ky è. 231 ze dne 9. øíjna 2002 a v souladu s èlánkem 7 té¾e zákonné vyhlá¹ky, bude spoleènost IBM Dr¾itele licence o splatnıch poplatcích za prodlení s úhradou písemnì informovat doporuèenou listovní zásilkou s dodejkou.
+
+Oddíl 4. Odpovìdnost a ochrana práv du¹evního vlastnictví
+
+V odstavci a, v první vìtì, vlo¾te následující pøed slova "uhrazené èástky":
+
+V Belgii, Francii, Nìmecku, Itálii, Lucembursku, na Maltì, v Portugalsku a ve ©panìlsku: vy¹¹í ne¾ 500 000 EUR (pìt set tisíc eur) nebo
+
+V Irsku a ve Spojeném království: 125 % z
+
+V odstavci a, v první vìtì, nahraïte vıraz "pøímé ¹kody vzniklé Dr¾iteli licence" textem:
+
+Ve ©panìlsku: za dolo¾enou ¹kodu vzniklou Dr¾iteli licence v pøímém dùsledku neplnìní povinností IBM
+
+V odstavci a vlo¾te za první vìtu následující novou vìtu:
+
+Ve Slovensku: S odkazem na ustanovení § 379 obchodního zákoníku, zákona è. 513/1991 Sb., ve znìní pozdìj¹ích pøedpisù a ohlednì v¹ech podmínek souvisejících s uzavøením smlouvy obì smluvní strany uvádìjí, ¾e celkové pøedvídatelné ¹kody, které mohou vzniknout, nepøekroèí vı¹e uvedenou èástku a jedná se o maximální èástku, za ni¾ nese spoleènost IBM odpovìdnost.
+
+V odstavci a vlo¾te pøed druhou vìtu následující novou vìtu:
+
+V Rusku: IBM nenese odpovìdnost za u¹lı prospìch.
+
+V odstavci a, v druhé vìtì, odstraòte slovo:
+
+V Irsku a ve Spojeném království: ekonomické
+
+V odstavci a nahraïte druhou vìtu následujícím textem:
+
+Ve státech Belgie, Nizozemsko a Lucembursko: IBM nenese odpovìdnost za nepøímé èi následné ¹kody, u¹lı zisk, ztrátu podnikání, hodnoty, pøíjmu, goodwillu, ¹kody na povìsti nebo ztráty oèekávanıch úspor, jakékoliv nároky tøetích osob vùèi Zákazníkovi ani ztrátu (nebo po¹kození) dat.
+
+Ve Francii: IBM nenese odpovìdnost za ¹kody na povìsti, nepøímé ¹kody ani u¹lı zisk, ztrátu podnikání, hodnoty, pøíjmu, goodwillu èi oèekávanıch úspor.
+
+V Portugalsku: IBM nenese odpovìdnost za nepøímé ¹kody, vèetnì u¹lého zisku.
+
+Ve ©panìlsku: IBM nenese odpovìdnost za ¹kody na povìsti, u¹lı zisk, ztrátu podnikání, hodnoty, pøíjmu, goodwillu èi oèekávanıch úspor.
+
+Pøidejte následující text na konec odstavce a:
+
+Ve Francii: Podmínky Smlouvy vèetnì finanèních podmínek, byly stanoveny s pøihlédnutím k tomuto ustanovení, které tvoøí nedílnou souèást obecné ekonomie Smlouvy.
+
+V odstavci b nahraïte "¹kody, které nelze omezit v souladu s platnımi právními pøedpisy" následujícím textem:
+
+V Nìmecku: i) ¹kody za újmu na zdraví (vèetnì smrti); ii) ztráty nebo ¹kody zpùsobené poru¹ením záruky pøevzaté spoleèností IBM v souvislosti s jakoukoliv transakcí v souladu s touto Smlouvou a iii) zpùsobené úmyslnì nebo hrubou nedbalostí.
+
+Oddíl 6. Rozhodné právo a geografickı rozsah
+
+V odstavci a, pouze v první vìtì, nahraïte vıraz "zemì, kde je transakce pro licenèní oprávnìní realizována" textem:
+
+V Albánii, Arménii, Ázerbájd¾ánu, Bìlorusku, Bosnì a Hercegovinì, Bulharsku, Chorvatsku, Bıvalé jugoslávské republice Makedonie, Gruzii, Kazachstánu, Kyrgyzstánu, Moldavsku, Èerné Hoøe, Rumunsku, Rusku, Srbsku, Tad¾ikistánu, Turkmenistánu, na Ukrajinì a v Uzbekistánu: Rakousko
+
+V Estonsku, Litvì a Loty¹sku: Finsko
+
+Ve státech Al¾írsko, Andorra, Benin, Burkina Faso, Burundi, Kamerun, Kapverdy, Støedoafrická republika, Èad, Komory, Kongo, D¾ibuti, Demokratická republika Kongo, Rovníková Guinea, Francouzská Guyana, Francouzská Polynésie, Gabon, Guinea, Guinea Bissau, Pobøe¾í slonoviny, Libanon, Madagaskar, Mali, Mauritánie, Mauricius, Mayotte, Maroko, Nová Kaledonie, Niger, Réunion, Senegal, Seychely, Togo, Tunisko, Vanuatu a Wallis a Futuna: Francie
+
+Ve státech Angola, Bahrajn, Botswana, Egypt, Eritrea, Etiopie, Gambie, Ghana, Irák, Jordánsko, Keòa, Kuvajt, Libérie, Malawi, Malta, Mozambik, Nigérie, Omán, Pákistán, Katar, Rwanda, Svatı Tomá¹ a Princùv ostrov, Saúdská Arábie, Sierra Leone, Somálsko, Tanzanie, Uganda, Spojené arabské emiráty, Západní bøeh Jordánu / pásmo Gazy, Jemen, Zambie a Zimbabwe: Anglie
+
+V Lichten¹tejnsku: ©vıcarsko
+
+Ve státech Jihoafrická republika, Namibie, Lesotho a Svazijsko: Jihoafrická republika
+
+Ve Spojeném království: Anglie
+
+V odstavci a doplòte na konec první vìty:
+
+Ve Francii: Smluvní strany souhlasí, ¾e èlánky 1222 a 1223 francouzského obèanského zákoníku se neuplatní.
+
+Pøidejte následující text na konec odstavce a:
+
+Ve státech Albánie, Arménie, Ázerbájd¾án, Bìlorusko, Bosna a Hercegovina, Bulharsko, Chorvatsko, Bıvalá jugoslávská republika Makedonie, Gruzie, Kazachstán, Kosovo, Kyrgyzstán, Moldavsko, Èerná Hora, Rumunsko, Rusko, Srbsko, Tád¾ikistán, Turkmenistán, Ukrajina a Uzbekistán: Ve¹keré spory vyplıvající z této Smlouvy budou s koneènou platností vyøe¹eny Mezinárodním rozhodèím soudem Rakouské federální hospodáøské komory ve Vídni (Rozhodèí orgán) v souladu s øádem rozhodèího soudu (Vídeòská pravidla) ve Vídni, Rakousko, v anglickém jazyce a tøemi nestrannımi rozhodci, kteøí budou jmenováni v souladu s Vídeòskımi pravidly. Ka¾dá strana jmenuje jednoho rozhodce a tito rozhodci pak do 30 dní spoleènì jmenují nezávislého pøedsedu rozhodèího senátu; v opaèném pøípadì bude pøedseda rozhodèího senátu jmenován Rozhodèím orgánem v souladu s Vídeòskımi pravidly. Rozhodci nebudou mít pravomoc vydat soudní pøíkaz nebo pøiznat náhradu ¹kody vylouèené touto Smlouvou nebo pøesahující limity uvedené v této Smlouvì. ®ádné ustanovení této Smlouvy nebrání jakékoli smluvní stranì ve vyu¾ití soudního øízení pro úèely (1) pøedbì¾ného opatøení, které zabrání podstatné újmì nebo poru¹ení ustanovení o zachování dùvìrnosti nebo práv k du¹evnímu vlastnictví, nebo (2) urèení platnosti nebo vlastnictví autorskıch práv, patentu nebo ochranné známky vlastnìné nebo tvrzené smluvní stranou èi jejím Podnikem nebo (3) vymáhání dluhu, jeho¾ vı¹e nepøesahuje 500 000,00 USD.
+
+Ve státech, Estonsko, Loty¹sko, a Litva: Ve¹keré spory vyplıvající z této Smlouvy budou s koneènou platností vyøe¹eny Rozhodèím institutem Finské obchodní komory (Rozhodèí orgán) v souladu s øádem rozhodèího øízení Finské obchodní komory (Øád), v Helsinkách, Finsko, v anglickém jazyce a tøemi nestrannımi rozhodcù, kteøí budou jmenováni v souladu s tímto Øádem. Ka¾dá strana jmenuje jednoho rozhodce a tito rozhodci pak do 30 dní spoleènì jmenují nezávislého pøedsedu rozhodèího senátu; v opaèném pøípadì bude pøedseda rozhodèího senátu jmenován Rozhodèím orgánem v souladu s øádem. Rozhodci nebudou mít pravomoc vydat soudní pøíkaz nebo pøiznat náhradu ¹kody vylouèené touto Smlouvou nebo pøesahující limity uvedené v této Smlouvì. ®ádné ustanovení této Smlouvy nebrání jakékoli smluvní stranì ve vyu¾ití soudního øízení pro úèely (1) pøedbì¾ného opatøení, které zabrání podstatné újmì nebo poru¹ení ustanovení o zachování dùvìrnosti nebo práv k du¹evnímu vlastnictví, nebo (2) urèení platnosti nebo vlastnictví autorskıch práv, patentu nebo ochranné známky vlastnìné nebo tvrzené smluvní stranou èi jejím Podnikem nebo (3) vymáhání dluhu, jeho¾ vı¹e nepøesahuje 500 000,00 USD.
+
+Ve státech Afghánistán, Angola, Bahrajn, Botswana, Burundi, Kapverdy, D¾ibutsko, Egypt, Eritrea, Etiopie, Gambie, Ghana, Irák, Jordánsko, Keòa, Kuvajt, Libanon, Libérie, Libye, Madagaskar, Malawi, Mosambik, Nigérie, Omán, Pákistán, Palestinské území, Katar, Rwanda, Svatı Tomá¹ a Princùv ostrov, Saúdská Arábie, Seychely, Sierra Leone, Somálsko, Ji¾ní Súdán, Tanzanie, Uganda, Spojené arabské emiráty, Západní Sahara, Jemen, Zambie a Zimbabwe: Ve¹keré spory vyplıvající z této Smlouvy budou s koneènou platností øe¹eny Londınskım soudem pro mezinárodní rozhodèí øízení (LCIA, rozhodèí orgán) v souladu s øádem rozhodèího øízení LCIA (Øád), ve mìstì Londın, Spojené království, v anglickém jazyce a tøemi nestrannımi rozhodci, kteøí budou jmenováni v souladu s Øádem. Ka¾dá strana jmenuje jednoho rozhodce a tito rozhodci pak do 30 dní spoleènì jmenují nezávislého pøedsedu rozhodèího senátu; v opaèném pøípadì bude pøedseda rozhodèího senátu jmenován Rozhodèím orgánem v souladu s øádem. Rozhodci nebudou mít pravomoc vydat soudní pøíkaz nebo pøiznat náhradu ¹kody vylouèené touto Smlouvou nebo pøesahující limity uvedené v této Smlouvì. ®ádné ustanovení této Smlouvy nebrání jakékoli smluvní stranì ve vyu¾ití soudního øízení pro úèely (1) pøedbì¾ného opatøení, které zabrání podstatné újmì nebo poru¹ení ustanovení o zachování dùvìrnosti nebo práv k du¹evnímu vlastnictví, nebo (2) urèení platnosti nebo vlastnictví autorskıch práv, patentu nebo ochranné známky vlastnìné nebo tvrzené smluvní stranou èi jejím Podnikem nebo (3) vymáhání dluhu, jeho¾ vı¹e nepøesahuje 500 000,00 USD.
+
+Ve státech Al¾írsko, Benin, Burkina Faso, Kamerun, Støedoafrická republika, Èad, Kon¾ská republika, Demokratická republika Kongo, Rovníková Guinea, Francouzská Guyana, Francouzská Polynésie, Gabon, Guinea, Guinea-Bissau, Pobøe¾í slonoviny, Mali, Mauritánie, Mauricius, Maroko, Niger, Senegal, Togo a Tunisko: Ve¹keré spory vyplıvající z této Smlouvy budou s koneènou platností øe¹eny Mezinárodním rozhodèím soudem v Paøí¾i (Rozhodèí orgán) v souladu s jeho øádem rozhodèího øízení (Øád), v Paøí¾i, Francie, ve francouzském jazyce a tøemi nestrannımi rozhodci, kteøí budou jmenováni v souladu s Øádem. Ka¾dá strana jmenuje jednoho rozhodce a tito rozhodci pak do 30 dní spoleènì jmenují nezávislého pøedsedu rozhodèího senátu; v opaèném pøípadì bude pøedseda rozhodèího senátu jmenován Rozhodèím orgánem v souladu s øádem. Rozhodci nebudou mít pravomoc vydat soudní pøíkaz nebo pøiznat náhradu ¹kody vylouèené touto Smlouvou nebo pøesahující limity uvedené v této Smlouvì. ®ádné ustanovení této Smlouvy nebrání jakékoli smluvní stranì ve vyu¾ití soudního øízení pro úèely (1) pøedbì¾ného opatøení, které zabrání podstatné újmì nebo poru¹ení ustanovení o zachování dùvìrnosti nebo práv k du¹evnímu vlastnictví, nebo (2) urèení platnosti nebo vlastnictví autorskıch práv, patentu nebo ochranné známky vlastnìné nebo tvrzené smluvní stranou èi jejím Podnikem nebo (3) vymáhání dluhu, jeho¾ vı¹e nepøesahuje 250 000,00 USD.
+
+V Jihoafrické republice, Namibii, Lesothu a Swazijsku: Ve¹keré spory vyplıvající z této Smlouvy budou s koneènou platností vyøe¹eny Rozhodèí asociací Jihoafrické republiky (AFSA) (Rozhodèí orgán) v souladu s Øádem rozhodèího øízení AFSA (Øád), v Johannesburgu, Jihoafrická republika, v anglickém jazyce a tøemi nestrannımi rozhodci, kteøí budou jmenováni v souladu s Øádem. Ka¾dá strana jmenuje jednoho rozhodce a tito rozhodci pak do 30 dní spoleènì jmenují nezávislého pøedsedu rozhodèího senátu; v opaèném pøípadì bude pøedseda rozhodèího senátu jmenován Rozhodèím orgánem v souladu s øádem. Rozhodci nebudou mít pravomoc vydat soudní pøíkaz nebo pøiznat náhradu ¹kody vylouèené touto Smlouvou nebo pøesahující limity uvedené v této Smlouvì. ®ádné ustanovení této Smlouvy nebrání jakékoli smluvní stranì ve vyu¾ití soudního øízení pro úèely (1) pøedbì¾ného opatøení, které zabrání podstatné újmì nebo poru¹ení ustanovení o zachování dùvìrnosti nebo práv k du¹evnímu vlastnictví, nebo (2) urèení platnosti nebo vlastnictví autorskıch práv, patentu nebo ochranné známky vlastnìné nebo tvrzené smluvní stranou èi jejím Podnikem nebo (3) vymáhání dluhu, jeho¾ vı¹e nepøesahuje 250 000,00 USD.
+
+Ve státech, Andorra, Rakousko, Kypr, Francie, Nìmecko, Øecko, Izrael, Itálie, Portugalsko, ©panìlsko, ©vıcarsko a Turecko: V¹echny spory budou pøedlo¾eny pravomoci ní¾e uvedenıch soudù, které budu mít vıhradní pøíslu¹nost:
+
+V Andoøe: obchodní soud v Paøí¾i.
+
+V Rakousku: soud ve Vídni (Vnitøní mìsto), Rakousko.
+
+V Kypru: pøíslu¹nı soud v Nikósii.
+
+Ve Francii: obchodní soud v Paøí¾i.
+
+V Nìmecku: soudy ve Stuttgartu.
+
+V Øecku: pøíslu¹nı soud v Aténách.
+
+V Izraeli: soudy v Tel Avivu-Jaffì.
+
+V Itálii: soudy v Milánì.
+
+V Portugalsku: soudy v Lisabonu.
+
+V ©panìlsku: soudy v Madridu.
+
+Ve ©vıcarsku: obchodní soud kantonu Curych.
+
+V Turecku: centrální soudy v Istanbulu (Caglayan) a vıkonné pøedstavenstvo mìsta Istanbul (Execution Directorates), Turecká republika.
+
+V Nizozemsku: Smluvní strany se vzdávají svıch práv v souladu s Hlavou 7.1 ('Koop') a § 7:401 a 402 nizozemského obèanského zákoníku a svıch práv na domáhání se úplného èi èásteèného zru¹ení ('gehele of partiele ontbinding') této Smlouvy v souladu s ustanovením § 6:265 nizozemského obèanského zákoníku.
+
+Oddíl 7. Obecné
+
+V odstavci d vlo¾te následující na konec odstavce tento text:
+
+Ve ©panìlsku: IBM vyhoví ¾ádostem o pøístup, aktualizace nebo odstranìní kontaktních údajù, pokud budou doruèeny na následující adresu: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+
+V odstavci j pøidejte na konec odstavce:
+
+V Èeské republice: v souladu s ustanovením § 1801 Zákona è. 89/2012 Sb. ("Obèanskı zákoník") se na transakce podle této Smlouvy neuplatní ustanovení § 1799 a § 1800 Obèanského zákoníku, v platném znìní. Dr¾itel licence pøijímá riziko zmìny okolností v souladu s § 1765 Obèanského zákoníku.
+
+V odstavci j:
+
+V Bulharsku, Chorvatsku, Rusku, Srbsku a ve Slovinsku: odstraòte druhou vìtu, která zní: "®ádná ze stran nevznese ¾alobu proti druhé stranì vyplıvající z této Smlouvy nebo s ní související více ne¾ dva roky po vzniku ¾alobního dùvodu."
+
+V odstavci j doplòte na konec druhé vìty:
+
+V Litvì: pokud zákon nestanoví jinak
+
+V odstavci j nahraïte druhou vìtu následujícím textem:
+
+V Polsku: ®ádná ze stran nepodá ¾alobu vyplıvající z této Smlouvy nebo s ní související více ne¾ tøi roky po vzniku ¾alobního dùvodu s vıjimkou ¾alob v dùsledku nezaplacení, které budou podány nejpozdìji 2 roky od data splatnosti.
+
+V odstavci j, ve druhé vìtì, nahraïte slovo "dvì" slovem:
+
+V Loty¹sku a na Ukrajinì: tøi
+
+Na Slovensku: ètyøi
+
+V odstavci j doplòte na konec tøetí vìty, která zní: "®ádná ze stran nenese odpovìdnost za neplnìní svıch nepenì¾ních povinností v dùsledku pøíèin le¾ících mimo jejich rozumnou kontrolu":
+
+V Rusku: vèetnì - nikoli v¹ak pouze - zemìtøesení, povodní, po¾árù, vy¹¹í moci, stávek (s vıjimkou stávek zamìstnancù stran), váleènıch aktù, vojenskıch akcí, embarg, blokád, mezinárodních nebo vládních sankcí a jednání úøadù pøíslu¹né jurisdikce.
+
+V odstavci j, tøetí vìtì, upravte vìtu: "®ádná ze stran nenese odpovìdnost za neplnìní svıch nepenì¾ních povinností v dùsledku pøíèin le¾ících mimo jejich rozumnou kontrolu" následovnì:
+
+Na Ukrajinì: ®ádná ze stran nenese odpovìdnost za neplnìní svıch nepenì¾ních povinností v dùsledku pøíèin nebo regulaèních zmìn le¾ících mimo jejich kontrolu, vèetnì napøíklad po¾adavkù na dovoz, vıvoz nebo hospodáøskıch sankcí Spojenıch státù americkıch.
+
+Na konec odstavce doplòte tento text jako novı odstavec l:
+
+V Maïarsku: Uzavøením této Smlouvy Dr¾itel licence potvrzuje, ¾e byl dostateènì informován o v¹ech ustanoveních této Smlouvy a mìl mo¾nost tyto podmínky vyjednat. Následující ustanovení se mohou vıraznì odli¹ovat od ustanovení obecnì uplatòovanıch maïarskım právem a obì strany akceptují taková ustanovení podpisem Smlouvy: Licence k Programu; Záruky; Poplatky, Danì, Platba a ovìøení, Odpovìdnost a ochrana práv du¹evního vlastnictví; Ukonèení; Rozhodné právo a zemìpisnı rozsah a Obecná ustanovení.
+
+V Èeské republice: Dr¾itel licence vıslovnì akceptuje podmínky této Smlouvy, které zahrnují následující dùle¾ité komerèní podmínky: i) omezení a vylouèení odpovìdnosti za vady (Záruky); ii) omezení oprávnìní Dr¾itele licence na náhradu ¹kody (Odpovìdnost a ochrana práv du¹evního vlastnictví); iii) závazná povaha vıvozních a dovozních naøízení (Rozhodné právo a zemìpisnı rozsah); iv) krat¹í promlèecí lhùty (Obecná ustanovení); v) vylouèení uplatnìní ustanovení o adhezních smlouvách (Obecná ustanovení); a vi) akceptace rizik zmìny okolností (Obecná ustanovení).
+
+V Rumunsku: Dr¾itel licence vıslovnì akceptuje následující standardní ustanovení, která mohou bıt pova¾ována za "neobvyklá ustanovení" v souladu s ustanovením § 1203 rumunského obèanského zákoníku: èlánky 2, 4, 5 a 8j. Dr¾itel licence tímto potvrzuje, ¾e byl dostateènì informován o v¹ech ustanoveních této Smlouvy, vèetnì vı¹e uvedenıch èlánkù, ¾e je øádnì analyzoval a pochopil a mìl pøíle¾itost o podmínkách jednotlivıch èlánkù jednat.
+
+i125-5589-06 (10-2021)
 

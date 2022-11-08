@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Operational Decision Manager for Developers V8.11.0.1
+IBM Operational Decision Manager for Developers V8.11.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,8 +28,7 @@ limitation URLs or references to any third party websites.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 NOTICES AND INFORMATION FOR EXCLUDED COMPONENTS 
 
-ODM on Prem
-
+IBM Operational Decision Manager 8.11.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 TABLE OF CONTENTS
@@ -49,7 +48,7 @@ EPL V2
 ICU
 ISC  
 JDOM
-LGPL V2.1   *** !! Email address '<emailaddress>' needed !! ***
+LGPL V2.1   
 MIT  
 MPL V2.0  
 W3C
@@ -271,7 +270,76 @@ COMMONS-FILEUPLOAD:COMMONS-FILEUPLOAD, ORG.APIGUARDIAN:APIGUARDIAN-API,
 ORG.HIBERNATE.VALIDATOR:HIBERNATE-VALIDATOR,
 ORG.APACHE.MYFACES.TOMAHAWK:TOMAHAWK, ORG.APACHE.CALCITE:CALCITE-CORE,
 PLEXUS-CLASSWORLDS, COM.GOOGLE.INJECT.EXTENSIONS:GUICE-MULTIBINDINGS,
-ORG.APACHE.MYFACES.SHARED:MYFACES-SHARED-TOMAHAWK
+ORG.APACHE.MYFACES.SHARED:MYFACES-SHARED-TOMAHAWK, 
+COM.FASTERXML.JACKSON.DATATYPE:JACKSON-DATATYPE-JSR310,
+NET.MINIDEV:ACCESSORS-SMART, ORG.APACHE.LUCENE:LUCENE-CORE,
+ORG.SPRINGFRAMEWORK:SPRING-AOP, IO.NETTY:NETTY-TRANSPORT-CLASSES-EPOLL,
+COM.GOOGLE.CODE.FINDBUGS:JSR305,
+COM.FASTERXML.JACKSON.MODULE:JACKSON-MODULE-KOTLIN,
+ORG.APACHE.LUCENE:LUCENE-HIGHLIGHTER, COM.GOOGLE.GUAVA:GUAVA,
+COM.FASTERXML.JACKSON.JAXRS:JACKSON-JAXRS-JSON-PROVIDER,
+IO.NETTY:NETTY-RESOLVER, ORG.APACHE.LUCENE:LUCENE-QUERIES,
+ORG.SPRINGFRAMEWORK.SECURITY:SPRING-SECURITY-WEB,
+IO.SWAGGER.CORE.V3:SWAGGER-MODELS,
+COM.FASTERXML.JACKSON.JAXRS:JACKSON-JAXRS-BASE,
+ORG.SPRINGFRAMEWORK:SPRING-CORE, IO.SWAGGER.CORE.V3:SWAGGER-CORE,
+IO.NETTY:NETTY-BUFFER, ORG.APACHE.HTTPCOMPONENTS.CORE5:HTTPCORE5-H2,
+ORG.APACHE.LUCENE:LUCENE-BACKWARD-CODECS,
+ORG.APACHE.COMMONS:COMMONS-DBCP2,
+ORG.APACHE.CALCITE.AVATICA:AVATICA-CORE,
+BIZ.AQUTE.BND:BIZ.AQUTE.BND.ANNOTATION,
+COM.FASTERXML.JACKSON.DATATYPE:JACKSON-DATATYPE-JDK8,
+COM.GOOGLE.UZAYGEZEN:UZAYGEZEN-CORE, ORG.APACHE.LUCENE:LUCENE-MISC,
+ORG.APACHE.LUCENE:LUCENE-MEMORY, ORG.YAML:SNAKEYAML,
+ORG.EASYMOCK:EASYMOCK, IO.NETTY:NETTY-TCNATIVE,
+IO.NETTY:NETTY-TRANSPORT, ORG.APACHE.LUCENE:LUCENE-GROUPING,
+ORG.APACHE.ZOOKEEPER:ZOOKEEPER-JUTE, ORG.SPRINGFRAMEWORK:SPRING-WEBMVC,
+ORG.APACHE.CALCITE.AVATICA:AVATICA-METRICS,
+ORG.APACHE.COMMONS:COMMONS-POOL2,
+ORG.APACHE.HTTPCOMPONENTS.CLIENT5:HTTPCLIENT5,
+ORG.APACHE.LUCENE:LUCENE-ANALYZERS-KUROMOJI, ORG.APACHE.SOLR:SOLR-SOLRJ,
+ORG.SPRINGFRAMEWORK:SPRING-CONTEXT,
+ORG.APACHE.HTTPCOMPONENTS.CORE5:HTTPCORE5,
+COM.FASTERXML.JACKSON.DATAFORMAT:JACKSON-DATAFORMAT-YAML,
+ORG.APACHE.COMMONS:COMMONS-LANG3, ORG.SPRINGFRAMEWORK:SPRING-BEANS,
+COM.GOOGLE.CODE.GSON:GSON,
+ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT-STARTER-WEB,
+COM.FASTERXML.JACKSON.CORE:JACKSON-CORE, ORG.SPRINGFRAMEWORK:SPRING-JCL,
+ORG.SPRINGFRAMEWORK:SPRING-WEB, IO.NETTY:NETTY-HANDLER,
+ORG.APACHE.YETUS:AUDIENCE-ANNOTATIONS,
+ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT-STARTER-LOGGING, LOG4J:LOG4J,
+NET.MINIDEV:JSON-SMART, IO.PROJECTREACTOR:REACTOR-CORE,
+IO.NETTY:NETTY-TRANSPORT-NATIVE-EPOLL,
+ORG.APACHE.LUCENE:LUCENE-QUERYPARSER, ORG.LOCATIONTECH.PROJ4J:PROJ4J,
+ORG.SPRINGFRAMEWORK.SECURITY:SPRING-SECURITY-CORE,
+IO.NETTY:NETTY-CODEC-HTTP2, IO.NETTY:NETTY-CODEC-SOCKS,
+COM.JAYWAY.JSONPATH:JSON-PATH,
+IO.SMALLRYE.TESTING:SMALLRYE-TESTING-UTILITIES,
+ORG.SPRINGFRAMEWORK.SECURITY:SPRING-SECURITY-CONFIG,
+ORG.APACHE.LUCENE:LUCENE-JOIN, ORG.APACHE.LUCENE:LUCENE-SUGGEST,
+ORG.APACHE.LUCENE:LUCENE-SANDBOX, ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT,
+IO.NETTY:NETTY-CODEC, ORG.APACHE.CALCITE:CALCITE-LINQ4J,
+COM.FASTERXML.JACKSON.CORE:JACKSON-ANNOTATIONS,
+ORG.SPRINGFRAMEWORK:SPRING-WEBFLUX, COM.YAHOO.DATASKETCHES:MEMORY,
+COM.FASTERXML.JACKSON.MODULE:JACKSON-MODULE-JAXB-ANNOTATIONS,
+ORG.APACHE.LUCENE:LUCENE-ANALYZERS-PHONETIC,
+ORG.APACHE.LUCENE:LUCENE-ANALYZERS-COMMON, ORG.APACHE.SOLR:SOLR-CORE,
+ORG.APACHE.ZOOKEEPER:ZOOKEEPER,
+IO.NETTY:NETTY-TRANSPORT-NATIVE-UNIX-COMMON,
+ORG.SPRINGFRAMEWORK.SECURITY:SPRING-SECURITY-CRYPTO,
+ORG.SPRINGFRAMEWORK:SPRING-TX, ORG.SPRINGFRAMEWORK:SPRING-EXPRESSION,
+IO.NETTY:NETTY-COMMON, ORG.APACHE.LUCENE:LUCENE-EXPRESSIONS,
+COM.FASTERXML.JACKSON.MODULE:JACKSON-MODULE-PARAMETER-NAMES,
+ORG.APACHE.KAFKA:KAFKA-CLIENTS, IO.NETTY:NETTY-HANDLER-PROXY,
+ORG.APACHE.LUCENE:LUCENE-CODECS, IO.NETTY:NETTY-CODEC-HTTP, JSR305,
+ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT-STARTER,
+IO.SWAGGER.CORE.V3:SWAGGER-ANNOTATIONS,
+COM.FASTERXML.JACKSON.CORE:JACKSON-DATABIND,
+ORG.SPRINGFRAMEWORK:SPRING-CONTEXT-SUPPORT,
+ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT-STARTER-JSON,
+ORG.SPRINGFRAMEWORK.BOOT:SPRING-BOOT-AUTOCONFIGURE, ORG.RESTLET,
+COM.YAHOO.DATASKETCHES:SKETCHES-CORE,
+NET.HYDROMATIC:AGGDESIGNER-ALGORITHM, ORG.APACHE.CALCITE:CALCITE-CORE
 
 Apache License
 Version 2.0, January 2004
@@ -534,8 +602,8 @@ Michael Bostock), HAIRER (Copyright (c) 2004, Ernst Hairer), GRIDX
 Oren J. Maurice <oymaurice@hazorea.org.il>), TOASTER (Copyright (c)
 2004-2006, The Dojo Foundation), KUPU [Tomahawk] (Copyright (c)
 2003-2004, Kupu Contributors), ORG.ANTLR:ANTLR4-RUNTIME (Copyright (c)
-2013 Terence Parr Copyright (c) 2012 Sam Harwell), SCIPY (Copyright Ã‚Â©
-2001, 2002 Enthought, Inc.Copyright Ã‚Â© 2003-2013 SciPy Developers.), QS
+2013 Terence Parr Copyright (c) 2012 Sam Harwell), SCIPY (Copyright ©
+2001, 2002 Enthought, Inc.Copyright © 2003-2013 SciPy Developers.), QS
 (Copyright (c) 2014 Nathan LaFreniere and other
 [contributors](https://github.com/ljharb/qs/graphs/contributors)),
 DOM4J:DOM4J (Copyright 2001-2005 (C) MetaStuff Ltd. All Rights
@@ -560,7 +628,15 @@ HAMCREST [poi-ooxml-schemas] (Copyright (c) 2000-2006,
 www.hamcrest.org), PUREJAVACRC32C.JAVA (Copyright (c) 2004-2006 Intel
 Corporation), DOJO [Tomahawk] (Copyright (c) 2005-2018 The JS Foundation
 Copyright (C) 2003-2004 Lawrence E. Rosen. * parts Copyright (c) 2007
-Yahoo! Inc. 1991-2007 Unicode Inc.)
+Yahoo! Inc. 1991-2007 Unicode Inc.), 
+ORG.CODEHAUS.JANINO:JANINO (Copyright (c) 2001-2010 Arno Unkrig. All
+rights reserved.), DIJIT (Copyright (c) 2005-2018 The JS Foundation),
+DOJOX (Copyright (c) 2005-2015 The Dojo Foundation),
+ORG.CODEHAUS.JANINO:COMMONS-COMPILER (Copyright (c) 2016 Arno Unkrig.
+All rights reserved.), ORG.OW2.ASM:ASM (Copyright (c) 2000-2011 INRIA
+France Telecom), COM.SUN.XML.MESSAGING.SAAJ:SAAJ-IMPL (Copyright (c)
+2018 2021 Oracle and/or its affiliates. All rights reserved.), DOJO
+(Copyright (c) 2005-2018 The JS Foundation)
 
 
 Redistribution and use in source and binary forms, with or without 
@@ -748,7 +824,24 @@ JAVAX.ACTIVATION:JAVAX.ACTIVATION-API (https://mvnrepository.com/artifact/javax.
 ORG.GLASSFISH.JAXB:JAXB-RUNTIME
 (https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1-sources.jar),
 ORG.GLASSFISH.JAXB:JAXB-CORE
-(https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1-sources.jar)
+(https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1-sources.jar), 
+COM.SUN.XML.WS:POLICY
+(https://repo1.maven.org/maven2/com/sun/xml/ws/policy/4.0.0/policy-4.0.0-sources.jar),
+JAVAX.SERVLET:JSP-API
+(https://mvnrepository.com/artifact/javax.servlet/jsp-api/2.0),
+ORG.GLASSFISH.JAXB:TXW2
+(https://repo1.maven.org/maven2/org/glassfish/jaxb/txw2/2.3.0/txw2-2.3.0-sources.jar),
+JAVAX.SERVLET:SERVLET-API
+(https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar),
+COM.SUN.XML.BIND:JAXB-IMPL
+(https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0-sources.jar),
+TXW2 (https://mvnrepository.com/artifact/org.glassfish.jaxb/txw2/2.3.1),
+ORG.GLASSFISH.JAXB:JAXB-RUNTIME
+(https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.0/jaxb-runtime-2.3.0-sources.jar),
+COM.SUN.XML.BIND:JAXB-CORE
+(https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0-sources.jar),
+ORG.GLASSFISH.JAXB:JAXB-CORE
+(https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-core/2.3.0/jaxb-core-2.3.0-sources.jar)
 
 END OF COMMON DEVELOPMENT AND DISTRIBUTION V1 LICENSE NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -764,7 +857,11 @@ ORG.GLASSFISH:JAVAX.JSON
 STAX-EX
 (http://central.maven.org/maven2/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8-sources.jar),
 WEB-FACESCONFIG_1_0.DTD
-(https://repo1.maven.org/maven2/org/apache/myfaces/core/myfaces-impl/1.1.5/myfaces-impl-1.1.5-sources.jar)
+(https://repo1.maven.org/maven2/org/apache/myfaces/core/myfaces-impl/1.1.5/myfaces-impl-1.1.5-sources.jar), 
+ORG.GLASSFISH:JAVAX.JSON
+(https://repo1.maven.org/maven2/org/glassfish/javax.json/1.1.4/javax.json-1.1.4-sources.jar),
+JAVAX.XML.BIND:JAXB-API
+(https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0-sources.jar)
 
 END OF COMMON DEVELOPMENT AND DISTRIBUTION V1.1 LICENSE NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -779,7 +876,9 @@ CLASSCOMPLETIONVENDOR [groovy-all-minimal]
 (http://www.eclipse.org/legal/cpl-v10.html), JUNIT:JUNIT
 (https://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2-sources.jar),
 WSDL4J:WSDL4J
-(https://repo1.maven.org/maven2/wsdl4j/wsdl4j/1.6.2/wsdl4j-1.6.2-sources.jar)
+(https://repo1.maven.org/maven2/wsdl4j/wsdl4j/1.6.2/wsdl4j-1.6.2-sources.jar), 
+JUNIT:JUNIT
+(https://repo1.maven.org/maven2/junit/junit/4.1/junit-4.1-sources.jar)
 
 END OF COMMON PUBLIC LICENSE NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -823,7 +922,9 @@ COM.H2DATABASE:H2
 ORG.GLASSFISH:JAKARTA.EL
 (https://repo1.maven.org/maven2/org/glassfish/jakarta.el/4.0.2/jakarta.el-4.0.2-sources.jar),
 ORG.JGRAPHT:JGRAPHT-CORE
-(https://repo1.maven.org/maven2/org/jgrapht/jgrapht-core/0.9.2/jgrapht-core-0.9.2-sources.jar)
+(https://repo1.maven.org/maven2/org/jgrapht/jgrapht-core/0.9.2/jgrapht-core-0.9.2-sources.jar), 
+CH.QOS.LOGBACK:LOGBACK-CORE
+(https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.4/logback-core-1.4.4-sources.jar)
 
 END OF ECLIPSE PUBLIC LICENSE, VERSION 1 NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -836,7 +937,15 @@ indicated URL):
 
 ORG.JBOSS.SPEC.JAVAX.ANNOTATION:JBOSS-ANNOTATIONS-API_1.3_SPEC (Not
 Required), JUNIT TEST LIBRARY (JUNIT-4.*.JAR) & JACOCO (*JACOCO*)
-(https://repo1.maven.org/maven2/org/apache/poi/poi/4.0.1/poi-4.0.1-sources.jar)
+(https://repo1.maven.org/maven2/org/apache/poi/poi/4.0.1/poi-4.0.1-sources.jar), 
+ORG.LOCATIONTECH.JTS.IO:JTS-IO-COMMON
+(https://repo1.maven.org/maven2/org/locationtech/jts/io/jts-io-common/1.19.0/jts-io-common-1.19.0-sources.jar),
+ORG.JUNIT:JUNIT-BOM
+(https://mvnrepository.com/artifact/org.junit/junit-bom/5.7.1),
+ORG.JUNIT.JUPITER:JUNIT-JUPITER
+(https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1-sources.jar),
+ORG.LOCATIONTECH.JTS:JTS-CORE
+(https://repo1.maven.org/maven2/org/locationtech/jts/jts-core/1.19.0/jts-core-1.19.0-sources.jar)
 
 END OF ECLIPSE PUBLIC LICENSE, VERSION 2 NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -847,6 +956,7 @@ The Program includes some or all of the following that IBM obtained under
 the INTERNATIONAL COMPONENTS FOR UNICODE LICENSE.
 
 ipadic [ICU4J], ICU4J, ICU4J-CHARSET, ICU 1.8.1 [ICU4J], 
+COM.IBM.ICU:ICU4J-CHARSET, COM.IBM.ICU:ICU4J
 
 ICU License - ICU 1.8.1 and later 
 
@@ -915,7 +1025,7 @@ libraries.
    
    COPYRIGHT AND PERMISSION NOTICE 
    
-   Copyright Â© 1991-2014 Unicode, Inc. All rights reserved. Distributed 
+   Copyright � 1991-2014 Unicode, Inc. All rights reserved. Distributed 
    under the Terms of Use in http://www.unicode.org/copyright.html. 
    
    Permission is hereby granted, free of charge, to any person obtaining 
@@ -1239,7 +1349,7 @@ and contributors), HAR-SCHEMA (Copyright (c) 2015 Ahmad Nassri
 <ahmad@ahmadnassri.com>), SEMVER (Copyright (c) Isaac Z. Schlueter and
 Contributors), JSON-STRINGIFY-SAFE (Copyright (c) Isaac Z. Schlueter and
 Contributors), SETPROTOTYPEOF (Copyright (c) 2015 Wes Todd), INHERITS
-(Copyright (c) Isaac Z. Schlueter)
+(Copyright (c) Isaac Z. Schlueter), D3 (Copyright 2010-2021 Mike Bostock)
 
 ISC License
 
@@ -1785,11 +1895,11 @@ MIT LICENSE
 The Program includes some or all of the following that IBM obtained
 under the MIT License:
 
-NORMALIZE.CSS [swagger-ui] (Copyright Â© Nicolas Gallagher and Jonathan
+NORMALIZE.CSS [swagger-ui] (Copyright � Nicolas Gallagher and Jonathan
 Neal), LODASH (Copyright OpenJS Foundation and other contributors
 <https://openjsf.org/>Copyright and related rights for sample code are
 waived via CC0. Sample), FORM-DATA (Copyright (c) 2012 Felix
-Geisendâˆšâˆ‚rfer (felix@debuggable.com) and contributors), JSPRIM
+Geisendrfer (felix@debuggable.com) and contributors), JSPRIM
 (Copyright (c) 2012 Joyent Inc. All rights reserved.), VARY (Copyright
 (c) 2014-2017 Douglas Christopher Wilson),
 ORG.CODEHAUS.PLEXUS.COMPONENT.COMPOSITION (Copyright (c) 2004, The
@@ -1803,7 +1913,7 @@ Sweden AB. Licensed under the Apache License Version 2.0 (the), PARSEURL
 2014-2017 Douglas Christopher Wilson <doug@somethingdoug.com>),
 CONTENT-DISPOSITION (Copyright (c) 2014-2017 Douglas Christopher
 Wilson), LODASH.ISNUMBER (Copyright 2012-2016 The Dojo Foundation
-<http://dojofoundation.org/>), NORMALIZE [Bootstrap] (Copyright Â©
+<http://dojofoundation.org/>), NORMALIZE [Bootstrap] (Copyright �
 Nicolas Gallagher and Jonathan Neal), ASN1 (Copyright (c) 2011 Mark
 Cavage All rights reserved.), BODY-PARSER (Copyright (c) 2014 Jonathan
 Ong <me@jongleberry.com>Copyright (c) 2014-2015 Douglas Christopher
@@ -1955,11 +2065,18 @@ The Codehaus), CLASSGRAPH (Copyright (c) 2019 Luke Hutchison), GETPASS
 Watson <jed.watson@me.com>), EXPRESS-BEARER-TOKEN (Copyright (c) 2014
 Tyler Kellen), FAST-DEEP-EQUAL (Copyright (c) 2017 Evgeny Poberezkin),
 COOKIE-SIGNATURE (Copyright (c) 2012 LearnBoost
-&lt;tj@learnboost.com&gt;), AWS4 (Copyright 2013 Michael Hart
+<tj@learnboost.com>), AWS4 (Copyright 2013 Michael Hart
 (michael.hart.au@gmail.com)), FRESH (Copyright (c) 2012 TJ Holowaychuk
 <tj@vision-media.ca>Copyright (c) 2016-2017 Douglas Christopher Wilson
 <doug@somethingdoug.com>), DATEFORMAT (No Copyright), WEBSOCKETX.CLIENT
-[Netty] (Copyright (c) 2009 Carl BystrÅ¡m)
+[Netty] (Copyright (c) 2009 Carl Bystr�m), 
+TIPPY.JS (Copyright (c) 2017-present atomiks), DAGRE-D3 (Copyright (c)
+2013 Chris Pettitt), ORG.MOCKITO:MOCKITO-CORE (Copyright (c) 2007
+Mockito contributors), ORG.REACTIVESTREAMS:REACTIVE-STREAMS (No
+Copyright Found), ORG.CHECKERFRAMEWORK:CHECKER-QUAL (Copyright
+2004-present by the Checker Framework developers), EXPRESS (Copyright
+(c) 2009-2014 TJ Holowaychuk -Copyright (c) 2013-2014 Roman Shtylman
+-Copyright (c) 2014-2015 Douglas Christopher Wilson)
 
 Permission is hereby granted, free of charge, to any person obtaining a 
 copy of this software and associated documentation files (the 
@@ -2002,9 +2119,9 @@ under the W3C Software Notice and License:
 XPATHSTYLESHEETDOM3EXCEPTION.JAVA, XPATH [serializer],
 ORG.APACHE.XPATH.DOMAPI, XPATHSTYLESHEETDOM3EXCEPTION [serializer]
 
-W3CÂ® SOFTWARE NOTICE AND LICENSE
+W3C� SOFTWARE NOTICE AND LICENSE
 
-Copyright Â© 1994-2001 World Wide Web Consortium, (Massachusetts 
+Copyright � 1994-2001 World Wide Web Consortium, (Massachusetts 
 Institute of Technology, Institut National de Recherche en Informatique 
 et en Automatique, Keio University). All Rights Reserved. 
 http://www.w3.org/Consortium/Legal/ 
@@ -2029,7 +2146,7 @@ thereof, including modifications, that you make:
        terms and conditions. If none exist, a short notice of the
        following form (hypertext is preferred, text is permitted) should
        be used within the body of any redistributed or derivative code:
-       "Copyright Â© [$date-of-software] World Wide Web Consortium,
+       "Copyright � [$date-of-software] World Wide Web Consortium,
        (Massachusetts Institute of Technology, Institut National de
        Recherche en Informatique et en Automatique, Keio University).
        All Rights Reserved. http://www.w3.org/Consortium/Legal/"
@@ -2088,3 +2205,9 @@ END OF NOTICES AND INFORMATION
 
 END OF NOTICES AND INFORMATION FILE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS

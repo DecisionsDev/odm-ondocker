@@ -1,290 +1,541 @@
 PODATKI O LICENCIRANJU
 
-Spodaj navedeni programi so licencirani na podlagi naslednjih doloÄb in pogojev licenÄne informacije, ki veljajo poleg pogojev licence za program, s katerimi naroÄnik in IBM predhodno soglaÅ¡ata. ÄŒe naroÄnik predhodno ne soglaÅ¡a s pogoji, ki veljajo za program, velja Mednarodna licenÄna pogodba za programe brez garancije (Z125-5589-05).
+Spodaj navedeni programi so licencirani na podlagi naslednjih doloèb in pogojev licenène informacije, ki veljajo poleg pogojev licence za program, s katerimi naroènik in IBM predhodno sogla¹ata. Èe naroènik predhodno ne sogla¹a s pogoji, ki veljajo za program, velja Mednarodna licenèna pogodba za programe brez garancije (i125-5589-06).
 
-Ime programa (Å tevilka programa):
-IBM Operational Decision Manager for Developers V8.11 (5725-B69)
+Ime programa (©tevilka programa):
+IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
-Omejena pravica do uporabe
+Slika namestitve veè izdelkov
 
-Z izjemo paketnih programov lahko imetnik licence uporablja vso IBM-ovo programsko opremo, ki je zagotovljena s programom, samo za podporo pri uporabi glavnega programa na podlagi tega dokumenta z informacijami o licenciranju, kar pomeni, da mora biti takÅ¡na uporaba neposredno povezana z licencirano uporabo glavnega programa.
-
-Imetnik licence ne sme uporabljati programa za nudenje komercialnih storitev informacijske tehnologije nobeni tretji osebi, za nudenje komercialnega gostovanja ali dodeljevanja Äasa oziroma za podlicenciranje programa ali njegovo dajanje v najem ali zakup.
-
-Prepovedana uporaba
-
-Imetnik licence ne sme uporabljati programa ali za njegovo uporabo pooblastiti drugih uporabnikov, Äe lahko napaka programa povzroÄi smrt, telesne poÅ¡kodbe ali Å¡kodo na lastnini ali v okolju.
-
-Slika namestitve veÄ izdelkov
-
-Program je ponujen kot del paketa namestitve veÄ izdelkov. Imetnik licence lahko namesti in uporablja samo program (in njegove morebitne paketne ali podporne programe), za katerega pridobi veljavno pooblastilo ter ne sme namestiti ali uporabljati nobene druge programske opreme, vkljuÄene v sliko, razen Äe je imetnik licence pridobil loÄena pooblastila za to drugo programsko opremo.
+Program je ponujen kot del paketa namestitve veè izdelkov. Imetnik licence lahko namesti in uporablja samo program (in njegove morebitne paketne ali podporne programe), za katerega pridobi veljavno pooblastilo ter ne sme namestiti ali uporabljati nobene druge programske opreme, vkljuèene v sliko, razen èe je imetnik licence pridobil loèena pooblastila za to drugo programsko opremo.
 
 Podporni programi
 
-Imetnik licence lahko namesti in uporablja spodaj navedene podporne programe samo za podporo svoji uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vkljuÄuje samo uporabo, ki je potrebna ali kako drugaÄe neposredno povezana z licenÄno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko priloÅ¾ena licenÄna doloÄila, ki (Äe obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij doloÄbe iz teh licenÄnih informacij prevladajo nad doloÄbami podpornega programa. Imetnik licence mora pridobiti zadostno Å¡tevilo pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen Äe so v tem dokumentu z informacijami o licenci zagotovljena loÄena pooblastila. ÄŒe je ta program na primer licenciran na podlagi navideznega procesorskega jedra (VPC-ja) in Å¾eli imetnik licence namestiti glavni ali podporni program na raÄunalnik z 10 VPC-ji in drug podporni program na drug raÄunalnik z 10 VPC-ji, mora pridobiti 20 pooblastil VPC za program.
+Imetnik licence lahko namesti in uporablja spodaj navedene podporne programe samo za podporo svoji uporabi glavnega programa iz te pogodbe. Besedna zveza "v podporo svoji uporabi" vkljuèuje samo uporabo, ki je potrebna ali kako drugaèe neposredno povezana z licenèno uporabo glavnega ali drugega podpornega programa. Podpornih programov ni dovoljeno uporabljati za noben drug namen. Podpornemu programu so lahko prilo¾ena licenèna doloèila, ki (èe obstajajo) veljajo za uporabo podpornega programa s strani imetnika licence. V primeru neskladij doloèbe iz teh licenènih informacij prevladajo nad doloèbami podpornega programa. Imetnik licence mora pridobiti zadostno ¹tevilo pooblastil za program kot celoto, da pokrijejo namestitev in uporabo vseh podpornih programov, razen èe so v tem dokumentu z informacijami o licenci zagotovljena loèena pooblastila. Èe je ta program na primer licenciran na podlagi navideznega procesorskega jedra (VPC-ja) in ¾eli imetnik licence namestiti glavni ali podporni program na raèunalnik z 10 VPC-ji in drug podporni program na drug raèunalnik z 10 VPC-ji, mora pridobiti 20 pooblastil VPC za program.
 
 Podporni programi:
-IBM WebSphere Liberty 21
+IBM WebSphere Liberty 22
 
 Omejitve za razvijalce
 
-ÄŒe je program namenjen za "razvijalce", ga lahko imetnik licence uporablja samo kot del svojega notranjega okolja za razvijanje in preizkuÅ¡anje enot v napravi razvijalca. Naprava razvijalca je fiziÄno ali navidezno namizno okolje namizja, v katerem se izvajata osnovni operacijski sistem in program, do obeh pa ima dostop in ju uporablja le en doloÄen razvijalec.
+Èe je program namenjen za "razvijalce", ga lahko imetnik licence uporablja samo kot del svojega notranjega okolja za razvijanje in preizku¹anje enot v napravi razvijalca. Naprava razvijalca je fizièno ali navidezno namizno okolje namizja, v katerem se izvajata osnovni operacijski sistem in program, do obeh pa ima dostop in ju uporablja le en doloèen razvijalec.
 
-LoÄeno licencirana koda
+Spremenljiva koda drugega ponudnika
 
-Vsaka komponenta, navedena v datoteki NON_IBM_LICENSE, Å¡teje za "loÄeno licencirano kodo", ki je licencirana imetniku licence na podlagi pogojev ustreznih licenÄnih pogodb drugih ponudnikov, doloÄenih v datotekah NON_IBM_LICENSE, ki so priloÅ¾ene programu in ne tej pogodbi. Nadaljnje posodobitve ali popravki programa lahko vsebujejo dodatno loÄeno licencirano kodo. TakÅ¡na dodatna, loÄeno licencirana koda in povezane licence so navedeni v ustrezni datoteki NON_IBM_LICENSE, priloÅ¾eni posodobitvi ali popravku programa. 
+Èe v datoteki OBVESTILA IBM identificira kodo drugega ponudnika kot >>spremenljivo kodo drugega ponudnika<<, IBM pooblasti imetnika licence, da 1) spremeni spremenljivo kodo drugega ponudnika in 2) izvede obratni in¾eniring programskih modulov, ki se neposredno povezujejo s spremenljivo kodo drugega ponudnika, pod pogojem, da je samo za namen odpravljanja napak pri spremembah imetnika licence tak¹ne kode drugega ponudnika. IBM-ove obveznosti glede storitve in podpore, èe obstajajo, veljajo samo za nespremenjen program.
 
-Opomba: ne glede na katerekoli pogoje v licenÄni pogodbi drugega ponudnika velja za to pogodbo ali katerokoli drugo pogodbo, ki jo sklene imetnik licence z IBM-om glede loÄeno licencirane kode, naslednje:
-(a) IBM jo zagotovi imetniku licence BREZ VSAKRÅ NIH JAMSTEV IN ZAVRAÄŒA KATERAKOLI IN VSA IZRECNA TER ZAKONSKA JAMSTVA IN POGOJE, KAR MED DRUGIM VKLJUÄŒUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRÅ ENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST TER PRIMERNOST ZA DOLOÄŒEN NAMEN, VENDAR NI OMEJENO NANJE;
-(b) IBM ni odgovoren za nobeno neposredno, posredno, nakljuÄno, posebno, eksemplariÄno, kazensko ali poslediÄno Å¡kodo, kar vkljuÄuje tudi izgubo podatkov, prihrankov in dobiÄkov, vendar ni omejeno nanje.
+Loèeno licencirana koda
+
+Vsaka komponenta, navedena v datoteki NON_IBM_LICENSE, ¹teje za "loèeno licencirano kodo", ki je licencirana imetniku licence na podlagi pogojev ustreznih licenènih pogodb drugih ponudnikov, doloèenih v datotekah NON_IBM_LICENSE, ki so prilo¾ene programu in ne tej pogodbi. Nadaljnje posodobitve ali popravki programa lahko vsebujejo dodatno loèeno licencirano kodo. Tak¹na dodatna, loèeno licencirana koda in povezane licence so navedeni v ustrezni datoteki NON_IBM_LICENSE, prilo¾eni posodobitvi ali popravku programa. 
+
+Opomba: ne glede na katerekoli pogoje v licenèni pogodbi drugega ponudnika velja za to pogodbo ali katerokoli drugo pogodbo, ki jo sklene imetnik licence z IBM-om glede loèeno licencirane kode, naslednje:
+(a) IBM jo zagotovi imetniku licence BREZ VSAKR©NIH JAMSTEV IN ZAVRAÈA KATERAKOLI IN VSA IZRECNA TER ZAKONSKA JAMSTVA IN POGOJE, KAR MED DRUGIM VKLJUÈUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKR©ENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST TER PRIMERNOST ZA DOLOÈEN NAMEN, VENDAR NI OMEJENO NANJE;
+(b) IBM ni odgovoren za nobeno neposredno, posredno, nakljuèno, posebno, eksemplarièno, kazensko ali posledièno ¹kodo, kar vkljuèuje tudi izgubo podatkov, prihrankov in dobièkov, vendar ni omejeno nanje.
 
 Zasebnost
 
-Imetnik licence soglaÅ¡a, da lahko IBM uporablja tehnologije piÅ¡kotkov in sledenja za zbiranje osebnih podatkov pri zbiranju statistik in informacij o uporabi podatkov, ki so ustvarjene za izboljÅ¡anje uporabniÅ¡ke izkuÅ¡nje in/ali za oblikovanje interakcij z uporabniki v skladu z IBM-vim spletnim pravilnikom o zasebnosti, ki je na voljo na spletnem mestu http://www.ibm.com/privacy/.
+Imetnik licence sogla¹a, da lahko IBM uporablja tehnologije pi¹kotkov in sledenja za zbiranje osebnih podatkov pri zbiranju statistik in informacij o uporabi podatkov, ki so ustvarjene za izbolj¹anje uporabni¹ke izku¹nje in/ali za oblikovanje interakcij z uporabniki v skladu z IBM-vim spletnim pravilnikom o zasebnosti, ki je na voljo na spletnem mestu http://www.ibm.com/privacy/.
 
-Izvorne komponente in vzorÄno gradivo
+Izvorne komponente in vzorèno gradivo
 
-Program vkljuÄuje komponente v obliki izvorne kode ("izvorne komponente") ali drugo gradivo, ki je doloÄeno kot vzorÄno gradivo, ali oboje. Imetnik licence lahko prekopira in spremeni izvorne komponente ter vzorÄno gradivo za notranjo uporabo, vendar samo znotraj omejitev licenÄnih pravic, ki izhajajo iz te pogodbe, in pod pogojem, da ne spremeni ali izbriÅ¡e nobenih informacij o avtorskih pravicah ali obvestil, vsebovanih v izvornih komponentah ali vzorÄnem gradivu. IBM ponuja izvorne komponente in vzorÄno gradivo brez obveznosti za podporo in "TAKÅ NO, KAKRÅ NO JE", BREZ JAMSTEV KAKRÅ NEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUÄŒUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRÅ ENJA ALI NEOVIRANJA IN ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOÄŒEN NAMEN.
+Program vkljuèuje komponente v obliki izvorne kode ("izvorne komponente") ali drugo gradivo, ki je doloèeno kot vzorèno gradivo, ali oboje. Imetnik licence lahko prekopira in spremeni izvorne komponente ter vzorèno gradivo za notranjo uporabo, vendar samo znotraj omejitev licenènih pravic, ki izhajajo iz te pogodbe, in pod pogojem, da ne spremeni ali izbri¹e nobenih informacij o avtorskih pravicah ali obvestil, vsebovanih v izvornih komponentah ali vzorènem gradivu. IBM ponuja izvorne komponente in vzorèno gradivo brez obveznosti za podporo in "TAK©NO, KAKR©NO JE", BREZ JAMSTEV KAKR©NEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUÈUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKR©ENJA ALI NEOVIRANJA IN ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST IN PRIMERNOST ZA DOLOÈEN NAMEN.
 
 Podatki in storitve drugih ponudnikov
 
-Program omogoÄa dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAKÅ EN, KOT JE", BREZ JAMSTEV KAKRÅ NEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUÄŒUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRÅ ENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TRÅ½NOST TER PRIMERNOST ZA DOLOÄŒEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepuÅ¡Äeno izkljuÄno njeni presoji. Imetnik licence bo morda moral skleniti loÄene pogodbe z drugimi ponudniki, ki mu bodo omogoÄale dostop do takÅ¡ne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakrÅ¡nekoli loÄene pogodbe in imetnik licence kot izrecni pogoj te licence soglaÅ¡a, da bo ravnal v skladu z doloÄbami takÅ¡nih loÄenih pogodb.
+Program omogoèa dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAK©EN, KOT JE", BREZ JAMSTEV KAKR©NEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUÈUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKR©ENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TR®NOST TER PRIMERNOST ZA DOLOÈEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepu¹èeno izkljuèno njeni presoji. Imetnik licence bo morda moral skleniti loèene pogodbe z drugimi ponudniki, ki mu bodo omogoèale dostop do tak¹ne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakr¹nekoli loèene pogodbe in imetnik licence kot izrecni pogoj te licence sogla¹a, da bo ravnal v skladu z doloèbami tak¹nih loèenih pogodb.
 
-L/N:  L-ASAY-C55H6F
-D/N:  L-ASAY-C55H6F
-P/N:  L-ASAY-C55H6F
 
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS
 
-Mednarodna licenÄna pogodba za programe brez garancije
+Mednarodna licenèna pogodba za programe brez garancije
 
-1. del - sploÅ¡ne doloÄbe
+1. del - Splo¹ne doloèbe
 
-S TEM, KO IMETNIK LICENCE PRENESE, NAMESTI, PREKOPIRA, DOSTOPI DO, KLIKNE GUMB Â»SPREJMEMÂ« ALI KAKO DRUGAÄŒE UPORABI PROGRAM, SOGLAÅ A Z DOLOÄŒBAMI TE POGODBE. ÄŒE SPREJMETE TE DOLOÄŒBE V IMENU IMETNIKA LICENCE, ODGOVARJATE IN JAMÄŒITE, DA IMATE VSA POOBLASTILA ZA POVEZAVO IMETNIKA LICENCE S TEMI DOLOÄŒBAMI. ÄŒE S TEMI DOLOÄŒBAMI NE SOGLAÅ ATE,
+S TEM, KO IMETNIK LICENCE PRENESE, NAMESTI, PREKOPIRA PROGRAM, DOSTOPI DO NJEGA, KLIKNE GUMB >>SPREJMEM<< ALI KAKO DRUGAÈE UPORABI PROGRAM, SOGLA©A Z DOLOÈBAMI TE POGODBE. ÈE TE DOLOÈBE SPREJEMATE V IMENU IMETNIKA LICENCE, POTRJUJETE, DA IMATE VSA POOBLASTILA, DA IMETNIKA LICENCE ZAVE®ETE K TEM DOLOÈBAM.
 
-* PROGRAMA NE PRENESITE, NE NAMESTITE, NE PREKOPIRAJTE, NE DOSTOPITE DO NJEGA, NE KLIKNITE GUMBA Â»SPREJMEMÂ« ALI GA NE UPORABITE IN
+ÈE Z DOLOÈBAMI TE POGODBE NE SOGLA©ATE ALI NIMATE POOBLASTILA: i) NE PRENA©AJTE, NAME©ÈAJTE, KOPIRAJTE ALI UPORABLJAJTE PROGRAMA, NE DOSTOPAJTE DO NJEGA, NE KLIKNITE GUMBA "ACCEPT" IN NE UPORABLJAJTE PROGRAMA; IN ii) NEUPORABLJENE MEDIJE IN DOKUMENTACIJO TER DOKAZILO O UPRAVIÈENOSTI NEMUDOMA VRNITE OSEBI, OD KATERE STE JIH PRIDOBILI, ZA USTREZNO POVRAÈILO PLAÈANEGA ZNESKA. ÈE STE PROGRAM PRENESLI, UNIÈITE VSE NJEGOVE KOPIJE.
 
-* NEMUDOMA VRNITE NEUPORABLJEN MEDIJ IN DOKUMENTACIJO STRANKI, PRI KATERI STE JU PRIDOBILI IN ZAHTEVAJTE POVRAÄŒILO PLAÄŒANEGA ZNESKA. ÄŒE STE PROGRAM PRENESLI, UNIÄŒITE VSE NJEGOVE KOPIJE.
+Ta mednarodna licenèna pogodba za programe brez garancije (ILAN) in veljavni transakcijski dokumenti (skupaj "pogodba") predstavljajo celoten dogovor med imetnikom licence in IBM-om glede uporabe programa. Nacionalno zahtevane doloèbe 2. dela te mednarodne licenène pogodbe za programe brez garancije nadome¹èajo in spreminjajo doloèbe 1. dela.
 
-1. Definicije
+Transakcijski dokumenti (TD) vsebujejo opis, informacije in doloèbe v zvezi s programom in njegovo poobla¹èeno uporabo. Primeri transakcijskih dokumentov za programe vkljuèujejo licenène informacije (LI), specifikacije licenciranega programa (LPS), ponudbo, dokazilo o upravièenosti (PoE) ali raèun. V primeru morebitnega nasprotja transakcijski dokument prevlada nad mednarodno licenèno pogodbo za programe brez garancije.
 
-Â»PooblaÅ¡Äena uporabaÂ«- podana raven, s katero lahko imetnik licence uporablja ali izvaja program. Ta raven je lahko merjena s Å¡tevilom uporabnikov, z milijoni storitvenih enot (Â»MSU-jiÂ«), enotami vrednosti procesorja ("PVU-ji") ali drugimi ravnmi uporabe, ki jih poda IBM.
+1. Licenca za program
 
-Â»IBMÂ« - International Business Machines Corporation ali ena od njegovih podruÅ¾nic.
+a. Program je izvedljiv raèunalni¹ki program znamke IBM s povezanim gradivom in vkljuèuje celotne ter delne kopije. Podrobnosti o programu so opisane v transakcijskem dokumentu na naslovuhttp://www.ibm.com/software/sla (za programe Passport Advantage) ali http://www.ibm.com/support/knowledgecenter (za druge IBM-ove programe), v imeniku sistemskih ukazov programa, ali kot drugaèe doloèi IBM. IBM- ovi pravilniki o programski opremi (npr. varnostno kopiranje, zaèasna uporaba ali okolje v oblaku, ki ga odobri IBM) na naslovu http://www.ibm.com/softwarepolicies veljajo za uporabo programov s strani imetnika licence.
 
-Â»Podatki o licenciranjuÂ« (Â»LIÂ«) - dokument, ki podaja informacije in kakrÅ¡nekoli dodatne pogoje, specifiÄne za program. Podatki o licenciranju za program so na voljo na naslovu www.ibm.com/software/sla, najdete pa jih lahko tudi v imeniku programa, jih prikaÅ¾ete z vnosom sistemskega ukaza ali si jih ogledate v knjiÅ¾ici, ki je priloÅ¾ena programu.
+b. Kopije programov so avtorsko za¹èitene in licencirane.
 
-Â»ProgramÂ« - naslednje, vkljuÄno z izvirnikom in vsemi celotnimi ali delnimi kopijami: 1) strojno Äitljiva navodila in podatki, 2) komponente, datoteke in moduli, 3) avdiovizualna vsebina (kot so slike, besedilo, posnetki ali slike) in 4) s tem povezano licenÄno gradivo (kot so kljuÄi in dokumentacija).
+c. Imetniku licence je dodeljena neizkljuèna licenca za:
 
-2. Struktura pogodbe
+(1) uporabo vsake kopije programa v skladu z doloèbami pogodbe in, èe je ustrezno, najveè za toliko upravièenj licence, kot jih imetnik licence pridobi ("poobla¹èena uporaba");
 
-Ta pogodba vkljuÄuje 1. del - sploÅ¡ne doloÄbe, 2. del - pogoji, znaÄilni za posamezne drÅ¾ave (Äe obstajajo) in podatke o licenciranju, in predstavlja celotno pogodbo med imetnikom licence in IBM-om v zvezi z uporabo programa. Kot takÅ¡na nadomeÅ¡Äa vse predhodne ustne ali pisne komunikacije med imetnikom licence in IBM-om v zvezi z njegovo uporabo programa. DoloÄbe iz 2. dela lahko nadomestijo ali spremenijo tiste iz 1. dela. V primeru, da pride do navzkriÅ¾ja, imajo prednost pred obema deloma podatki o licenciranju.
+(2) ustvarjanje in name¹èanje kopij, ki podpirajo tako poobla¹èeno uporabo; ter
 
-3. Odobritev pogodbe
+(3) ustvarjanje varnostne kopije.
 
-Lastnik programa je IBM ali IBM-ov dobavitelj. Program se ne prodaja, paÄ pa se zanj podeljujejo avtorske pravice in licenca.
+d. Program lahko uporabljajo imetnik licence ter njegovi zaposleni in pogodbeniki. Imetnik licence programa ne sme dajati v najem/zakup ali zagotavljati komercialnih IT storitev, gostovanja ali dodeljevanja èasa nobeni tretji osebi. Dodatne pravice so lahko na voljo za dodatno plaèilo ali pod drugaènimi pogoji.
 
-IBM podeljuje imetniku licence neizkljuÄno licenco za 1) uporabo programa do pooblaÅ¡Äene ravni uporabe, ki je doloÄena na raÄunu, 2) izdelavo in namestitev kopij, ki so v podporo takÅ¡ni pooblaÅ¡Äeni uporabi, in 3) izdelavo varnostne kopije, vendar vse pod pogojem, da
+e. Imetnik licence mora v zvezi z dodeljeno licenco za program zagotoviti:
 
-a. je imetnik licence pridobil program na zakonit naÄin in zadovoljuje doloÄbe te pogodbe;
+(1) reproduciranje obvestil o avtorskih pravicah in drugih oznak na kateri koli kopiji;
 
-b. se varnostna kopija uporabi samo, Äe ni mogoÄe zagnati varnostno prekopiranega programa;
+(2) da vsi, ki uporabljajo program: i) to storijo samo v imenu imetnika licence v okviru poobla¹èene uporabe imetnika licence; in ii) so njihova dejanja skladna s to pogodbo;
 
-c. imetnik licence opremi vsako kopijo ali delno kopijo programa z vsemi obvestili in drugimi oznakami o avtorskih pravicah, ki dokazujejo lastniÅ¡tvo;
+(3) da ni povratnega zbiranja, povratnega prevajanja, prevajanja ali povratnega in¾eniringa programa, razen èe to izrecno dovoljuje zakon brez mo¾nosti pogodbene odpovedi pravici; in
 
-d. imetnik licence zagotovi, da vsak uporabnik, ki dostopi do programa (lokalno ali na daljavo) 1) to naredi samo v imenu imetnika licence in 2) pri tem upoÅ¡teva doloÄbe te pogodbe;
+(4) da ne uporabe katerih koli elementov programa ali povezanega licenènega gradiva loèeno od programa.
 
-e. imetnik licence program 1) uporablja, kopira, spreminja ali distribuira izkljuÄno v skladu z doloÄbami te pogodbe; 2) v programu ne uporabi vzvratnega prevajanja, vzvratnega inÅ¾enirstva ali ga kako drugaÄe prevede, razen kot izrecno dopuÅ¡Äa zakon brez moÅ¾nosti odpovedi pogodbe; 3) ne uporabi komponent, datotek, modulov, avdiovizualne vsebine ali s tem povezanega licenÄnega gradiva loÄeno od programa; ali 4) programa ne podlicencira, daje v najem ali v zakup; in
+f. Èe je v transakcijskem dokumentu za program ("glavni program") navedeno, da je "podporni program" vkljuèen v glavni program, lahko imetnik licence podporni program uporablja v skladu z vsemi omejitvami licence glavnega programa in samo za namene podpore glavnemu programu.
 
-f. Äe pridobi imetnik licence ta program kot podporni program, ga bo uporabljal izkljuÄno kot podporo glavnemu programu in je predmet vseh omejitev iz licence za glavni program; ali, Äe pridobi imetnik licence ta program kot glavni program, bo uporabil vse podporne programe samo kot podporo temu programu in zanj veljajo vse omejitve iz te pogodbe. Za namen te toÄke Â»fÂ« je Â»podporni programÂ« tisti program, ki je del drugega IBM-ovega programa (Â»glavni programÂ«) in je v podatkih o licenciranju glavnega programa doloÄen kot podporni program. (ÄŒe Å¾eli imetnik licence pridobiti loÄeno licenco za podporni program brez teh omejitev, se mora obrniti na stranko, pri kateri je pridobil podporni program.)
+g. Ta licenca se uporablja za vsako kopijo programa, ki jo ustvari imetnik licence.
 
-Ta licenca velja za vsako kopijo programa, ki jo izdela imetnik licence.
+h. Za posodobitev ali popravek programa veljajo doloèbe, ki urejajo uporabo programa, razen èe so v posodobljenem transakcijskem dokumentu nove doloèbe. Z namestitvijo posodobitve ali popravka imetnik licence sprejme take nove doloèbe. Èe program nadomesti posodobitev, imetnik licence sogla¹a, da bo nemudoma prenehal uporabljati nadome¹èeni program.
 
-3.1 Zamenjave, posodobitve in popravki
+i. Èe zaradi kakr¹nega koli razloga imetnik licence s programom ni zadovoljen, lahko prekine licenco tako, da IBM-u ali IBM-ovemu poslovnemu partnerju vrne program in dokazilo o upravièenosti v roku 30 dni od prvotnega datuma pridobitve tega programa proti povraèilu plaèanega zneska. Za navodila glede povraèila je za preneseni program kontaktna oseba tista, od katere je imetnik licence pridobil program.
 
-3.1.1 Zamenjave
+2. Jamstva
 
-ÄŒe zamenjate program s programom iz zamenjave, licenca za zamenjan program nemudoma preneha veljati.
+a. IBM ne jamèi, da bo IBM-ov program deloval brez motenj ali okvar, ali da bo IBM popravil vse napake ali prepreèil prekinitve pri tretjih osebah. Te garancije so edina jamstva, ki jih daje IBM in nadomestijo vsa druga jamstva, vkljuèno s predpostavljenimi jamstvi ali doloèili glede zadovoljive kakovosti, primernosti za prodajo, nekr¹itve in primernosti za doloèen namen. IBM-ova jamstva ne veljajo v primerih nepravilne uporabe, spreminjanja, po¹kodb, ki niso bile povzroèene s strani IBM-a, ali neupo¹tevanja navodil, podanih s strani IBM-a. Programi, ki niso IBM-ovi, so na voljo "kot so", brez vsakr¹nih jamstev. Tretje osebe lahko imetniku licence ponudijo svoja jamstva.
 
-3.1.2 Posodobitve in popravki
+b. Dodatna podpora v garancijskem obdobju ali po njem je morda na voljo z loèeno pogodbo.
 
-Ko pridobi imetnik licence posodobitev ali popravek, soglaÅ¡a z vsemi dodatnimi ali drugaÄnimi doloÄbami, ki veljajo za takÅ¡no posodobitev ali popravek, in so doloÄene v njunih podatkih o licenciranju. ÄŒe niso podane nobene dodatne ali drugaÄne doloÄbe, za posodobitev ali popravek velja izkljuÄno ta pogodba. ÄŒe imetnik licence zamenja program s posodobitvijo, soglaÅ¡a, da bo nemudoma prenehal uporabljati zamenjan program.
+3. Stro¹ki, davki, plaèilo in preverjanje
 
-3.2 Licence za doloÄeno dobo
+a. Pravica imetnika licence do uporabe programa je pogojena z imetnikovim plaèilom morebitnih ustreznih stro¹kov, kot je doloèeno v pogodbi, v skladu s katero je imetnik pridobil upravièenja licence. Pred poveèanjem njegove uporabe mora imetnik licence pridobiti dodatna licenèna upravièenja.
 
-ÄŒe dodeli IBM licenco za program za doloÄeno dobo, licenca imetnika licence preneha veljati ob koncu te dobe, razen v primeru, Äe se imetnik licence in IBM dogovorita, da jo bosta podaljÅ¡ala.
+b. Imetnik licence sogla¹a, da bo plaèal vse ustrezne stro¹ke za pridobljena upravièenja in vse stro¹ke za uporabo, ki presega pooblastila. Stro¹ki ne vkljuèujejo nobenih carin ali drugih dajatev, davkov in podobnih prispevkov, ki jih za pridobitev upravièenj imetnika licence predpisuje kateri koli oblastni organ in se zaraèunajo dodatno k tem stro¹kom. Zneski zapadejo v plaèilo po prejemu raèuna od IBM-a in jih je treba plaèati v roku 30 dni od datuma raèuna z nakazilom na raèun, ki ga doloèi IBM, pri èemer se lahko zaraèunajo nadomestilo zaradi zamude pri plaèilu. Pred poveèanjem uporabe mora imetnik licence pravilno pridobiti dodatna licenèna upravièenja. IBM ne daje dobropisov ali vraèil za ¾e zapadle ali plaèane stro¹ke, razen kot je doloèeno drugje v tej mednarodni licenèni pogodbi za programe brez garancije, veljavnem transakcijskem dokumentu ali doloèbah pogodbe, v skladu s katero je imetnik licence pridobil upravièenja licence.
 
-3.3 Doba in prenehanje veljavnosti
+c. Na podlagi pridobljenih upravièenj imetnik licence sogla¹a, da bo: i) plaèal davèni odtegljaj neposredno ustreznemu dr¾avnemu subjektu, èe to zahteva zakon; ii) IBM-u predlo¾il davèno potrdilo, ki bo dokazovalo tako plaèilo; iii) IBM-u plaèal samo neto izkupièek po obdavèitvi; in iv) v celoti sodeloval z IBM-om pri uveljavljanju oprostitve ali zni¾anja takih davkov ter nemudoma izpolnil in vlo¾il vse ustrezne dokumente.
 
-Ta pogodba ostane v veljavi, dokler se je ne odpove.
+d. Èe imetnik licence uvozi, izvozi ali prenese program, dostopa do njega ali ga uporablja v drugi dr¾avi, imetnik licence sogla¹a, da bo organom plaèal vse carine, dajatve, davke ali podobne prispevke, ki jih predpi¹ejo organi. Iz tega so izkljuèeni davki na IBM-ov neto prihodek.
 
-IBM lahko odpove licenco imetnika licence, Äe ta ne upoÅ¡teva doloÄb te pogodbe.
+3.1 Preverjanje licenciranja
 
-ÄŒe katerakoli stranka zaradi kakrÅ¡negakoli razloga odpove licenco, imetnik licence soglaÅ¡a, da bo nemudoma prenehal uporabljati vse kopije programa in jih bo uniÄil. Vse doloÄbe te pogodbe, ki zaradi svoje narave ostanejo v veljavi tudi po izteku te pogodbe, ostanejo v veljavi do svoje izpolnitve, in veljajo za ustrezne naslednike in pooblaÅ¡Äence obeh pogodbenih strank.
+a. Imetnik licence bo za vse programe na vseh mestih in za vsa okolja ustvaril, hranil ter na IBM-ovo zahtevo s 30-dnevnim predhodnim obvestilom vsako leto predlo¾il: i) poroèilo v obliki, ki jo zahteva IBM, z zapisi, izhodnimi podatki sistemskih orodij in drugimi sistemskimi informacijami; in ii) podporno dokumentacijo (skupaj "podatki o postavitvi").
 
-4. StroÅ¡ki
+b. IBM in njegovi neodvisni revizorji lahko na podlagi razumnega obvestila preverijo skladnost imetnika licence s to pogodbo na vseh mestih in za vsa okolja, v katerih imetnik licence uporablja programe (za katere koli namene). Preverjanje bo izvedeno na naèin, ki zmanj¹uje prekinitve poslovanja imetnika licence, in se lahko izvaja v prostorih imetnika licence v obièajnem delovnem èasu. IBM bo z neodvisnim revizorjem sklenil pisno pogodbo o zaupnosti. Poleg predlo¾itve zgoraj opisanih podatkov o namestitvi imetnik licence sogla¹a, da bo IBM-u in njegovim revizorjem na zahtevo predlo¾il dodatne toène informacije in podatke o namestitvi.
 
-StroÅ¡ki (Äe obstajajo) temeljijo na pridobljeni pooblaÅ¡Äeni uporabi, ki je doloÄena na raÄunu. IBM ne daje nobenih posojil ali povraÄil za Å¾e zapadle ali plaÄane bremenitve, razen Äe je to doloÄeno kje drugje v tej pogodbi.
+c. Imetnik licence bo nemudoma naroèil in plaèal stro¹ke po takrat veljavnih IBM-ovih cenah v zvezi s/z: i) katerimi koli postavitvami, ki presegajo pooblastila, navedena v katerem koli letnem poroèilu ali preverjanju; ii) veljavno naroènino in podpornimi storitvami (S&S) za take prese¾ne postavitve za kraj¹e obdobje take prese¾ne uporabe ali dve leti; ter iii) vsemi dodatnimi stro¹ki in drugimi obveznostmi, ki so posledica takega preverjanja, kar med drugim vkljuèuje davke, dajatve in regulativne pristojbine.
 
-ÄŒe Å¾eli imetnik licence poveÄati svojo pooblaÅ¡Äeno uporabo, mora o tem vnaprej obvestiti IBM ali pooblaÅ¡Äenega IBM-ovega prodajalca in plaÄati vse ustrezne bremenitve.
+4. Odgovornost in za¹èita intelektualne lastnine
 
-5. Davki
+a. IBM-ova celotna odgovornost za vse zahtevke, povezane s to pogodbo, ne bo presegla zneska dejanske neposredne ¹kode, ki jo utrpi imetnik licence, in je omejena na vi¹jega med tema zneskoma: i) 10.000,00 USD (ali enakovreden znesek v lokalni valuti); ali ii) vi¹ina plaèanih zneskov (pri ponavljajoèih se bremenitvah se upo¹tevajo stro¹ki do 12 mesecev) za upravièenja do programa, ki je predmet zahtevka, ne glede na podlago zahtevka. IBM ne prevzema odgovornosti za posebno, nakljuèno, eksemplarièno, posredno ali posledièno ekonomsko ¹kodo ali za izgubljeni dobièek, posel, vrednost, prihodek, dobro ime ali predvidene prihranke. Te omejitve veljajo skupaj za IBM, njegove povezane dru¾be, pogodbenike in dobavitelje.
 
-ÄŒe ustrezna sluÅ¾ba za program doloÄi takso, davek, pristojbino ali prispevek, kar ne vkljuÄuje tistih, ki temeljijo na IBM-ovem Äistem dohodku, imetnik licence soglaÅ¡a, da bo plaÄal ta znesek, podan na raÄunu, ali pa posredoval dokumente o oprostitvi. Imetnik licence je odgovoren za vse davke na osebno lastnino za program od datuma njegove pridobitve. ÄŒe ustrezna sluÅ¾ba doloÄi carinsko takso, davek, dajatev ali pristojbino za uvoz ali izvoz, prenos, dostop do ali uporabo programa izven drÅ¾ave, v kateri je bila zanj imetniku licence dodeljena licenca, se imetnik licence strinja, da je odgovoren za kakrÅ¡enkoli zaraÄunan znesek in ga bo tudi plaÄal.
+b. Naslednji zneski niso predmet zgornje omejitve: od¹kodnine, ki jih po veljavnem zakonu ni mogoèe omejiti.
 
-6. Garancija za vraÄilo denarja
+c. IBM ne nosi odgovornosti za zahtevke, ki temeljijo na izdelkih drugih ponudnikov, artiklih, ki jih ni zagotovil IBM, ali za kakr¹no koli kr¹itev zakonodaje ali pravic tretjih oseb, ki jo povzroèi vsebina, gradiva, naèrti ali specifikacije imetnika licence. Vsebino sestavljajo vsi podatki, programska oprema in informacije, ki jih imetnik licence ali njegovi poobla¹èeni uporabniki zagotovijo, do njih omogoèijo dostop ali vnesejo v program.
 
-ÄŒe imetnik licence iz kakrÅ¡negakoli vzroka ni zadovoljen s programom in je izvirni imetnik licence, lahko prekliÄe licenco in pridobi povraÄilo plaÄanega zneska (Äe obstaja) za program, pod pogojem, da imetnik licence vrne program stranki, pri kateri ga je pridobil, v roku 30 dni od datuma raÄuna. ÄŒe gre za licenco za doloÄeno obdobje, ki se lahko podaljÅ¡a, lahko pridobi imetnik licence povraÄilo samo, Äe vrne program v prvih 30 dneh zaÄetnega obdobja. ÄŒe je imetnik licence prenesel program, naj se za navodila o denarnem vraÄilu obrne na stranko, pri kateri ga je pridobil.
+5. Odpoved
 
-7. Prenos programa
+a. IBM lahko licenco za uporabo programa imetniku licence odpove, èe ta ne izpolnjuje doloèb mednarodne licenène pogodbe za programe brez garancije, transakcijskih dokumentov ali pogodb o pridobitvi, kot je mednarodna pogodba Passport Advantage (IPAA). Imetnik licence mora po odpovedi licence nemudoma unièiti vse kopije programa. Vse doloèbe, ki po svoji naravi veljajo tudi po odpovedi, ostanejo veljavne do izpolnitve ter se uporabljajo za naslednike in poobla¹èence.
 
-Imetnik licence lahko prenese program in vse njegove pravice in dolÅ¾nosti na drugo stranko samo, Äe ta stranka soglaÅ¡a z doloÄbami te pogodbe. ÄŒe katerakoli stran zaradi kakrÅ¡negakoli vzroka prekine licenco, imetnik licence ne sme prenesti programa na drugo stranko. Imetnik licence ne sme prenesti dela 1) programa ali 2) pooblaÅ¡Äene uporabe programa. ÄŒe imetnik licence prenese program, mora prenesti tudi natisnjeno kopijo te pogodbe, vkljuÄno s podatki o licenciranju. Licenca imetnika licence preneha veljati nemudoma po prenosu.
+6. Veljavna zakonodaja in geografski obseg
 
-8. Brez garancij
+a. Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni dr¾ave, v kateri se izvede prenos licenènih upravièenj, ne glede na kolizijska naèela. Pravice in obveznosti vsake stranke veljajo samo v dr¾avi pridobitve licenènih upravièenj, ali (èe se IBM s tem strinja) v dr¾avi, v kateri se program produktivno uporablja, razen èe so vse licence veljavne kot posebej dodeljene.
 
-V SKLADU S KATERIMIKOLI ZAKONITIMI GARANCIJAMI, KI JIH NI MOGOÄŒE IZKLJUÄŒITI, NE DAJE IBM NOBENIH GARANCIJ ALI POGOJEV, IZRECNIH ALI NAKAZANIH, V ZVEZI S PROGRAMOM ALI PODPORO, ÄŒE SPLOH, KAR VKLJUÄŒUJE TUDI (VENDAR NI OMEJENO NA) KAKRÅ NEKOLI NAKAZANE GARANCIJE ALI POGOJE TRÅ½NOSTI, ZADOVOLJIVE KAKOVOSTI, UPORABNOSTI ZA DOLOÄŒEN NAMEN IN PRAVNI NASLOV TER KAKRÅ NEKOLI GARANCIJE ALI POGOJE NEKRÅ ENJA.
+b. Poleg tega mora vsaka pogodbena stranka delovati v skladu z: i) zakoni in drugimi predpisi, ki se uporabljajo za njeno poslovanje in vsebino; ter ii) zakoni in predpisi o uvozu, izvozu in gospodarskih sankcijah, vkljuèno z re¾imom Zdru¾enih dr¾av Amerike o nadzoru trgovine iz razlogov obrambe, in vseh upo¹tevnih jurisdikcij, ki prepovedujejo ali omejujejo uvoz, izvoz, ponovni izvoz ali prenos izdelkov, tehnologije, storitev ali podatkov (neposredno ali posredno) nekaterim dr¾avam ali konènim uporabnikom oziroma za njih.
 
-NEKATERE DRÅ½AVE ALI JURISDIKCIJE NE DOVOLIJO IZKLJUÄŒITVE IZRECNIH ALI NAKAZANIH GARANCIJ, ZATO ZGORNJA OMEJITEV ZA VAS LAHKO NE VELJA. V TEM PRIMERU JE TRAJNOST TAKÅ NIH GARANCIJ OMEJENA NA MINIMALNO ZAKONSKO ZAHTEVANO OBDOBJE. PO IZTEKU TEGA ROKA NE VELJA VEÄŒ NOBENA GARANCIJA. NEKATERE DRÅ½AVE ALI JURISDIKCIJE NE DOVOLIJO OMEJITVE V TRAJANJU NAKAZANIH GARANCIJ, ZATO ZGORNJA OMEJITEV LAHKO NE VELJA ZA IMETNIKA LICENCE. IMETNIKU LICENCE LAHKO PRIPADAJO TUDI DRUGE PRAVICE, KI SE RAZLIKUJEJO OD DRÅ½AVE DO DRÅ½AVE IN OD JURISDIKCIJE DO JURISDIKCIJE.
+c. Èe je katera koli od doloèb te pogodbe za program neveljavna ali neizvr¹ljiva, preostale doloèbe ostanejo v celoti veljavne. Nobena doloèba te pogodbe ne vpliva na zakonske pravice potro¹nikov, ki se jim s pogodbo ni mogoèe odpovedati ali jih omejiti. Za transakcije na podlagi te pogodbe ne velja Konvencija Zdru¾enih Narodov o pogodbah o mednarodni prodaji blaga.
 
-IZKLJUÄŒITVE IN IZVZETJA IZ TEGA 8. RAZDELKA VELJAJO TUDI ZA VSE IBM-OVE RAZVIJALCE IN DOBAVITELJE PROGRAMOV.
+7. Splo¹no
 
-PROIZVAJALCI, DOBAVITELJI ALI ZALOÅ½NIKI PROGRAMOV, KI NISO IBM-OVI, LAHKO PODAJO SVOJE LASTNE GARANCIJE.
+a. IBM je neodvisni pogodbenik (ne zastopnik imetnika licence, skupni vlagatelj, partner ali fiduciar) in se ne zavezuje, da bo izpolnjeval katere koli zakonske obveznosti imetnika licence ali prevzel odgovornost za poslovanje ali delovanje imetnika licence. Imetnik licence je za svojo uporabo IBM-ovih programov in programov, ki niso IBM-ovi, odgovoren sam. IBM deluje izkljuèno kot ponudnik informacijske tehnologije. IBM-ova navodila, predlagana uporaba, smernice ali uporaba programa ne pomenijo zdravstvenega, kliniènega, pravnega, raèunovodskega ali drugega licenciranega strokovnega nasveta. Imetnik licence mora strokovni nasvet pridobiti sam.
 
-IBM NE NUDI PODPORE KAKRÅ NEKOLI VRSTE, RAZEN ÄŒE NE DOLOÄŒI DRUGAÄŒE. V TAKÅ NEM PRIMERU JE KAKRÅ NAKOLI PODPORA, KI JO NUDI IBM, PREDMET IZKLJUÄŒITEV IN IZVZETIJ IZ TEGA 8. RAZDELKA.
+b. Za programe, ki jih IBM imetniku licence zagotovi v opredmeteni obliki, IBM svoje obveznosti po¹iljanja in dostave izpolni ob dostavi takih programov IBM-ovemu imenovanemu prevozniku, razen èe se imetnik licence in IBM ne dogovorita drugaèe v pisni obliki.
 
-9. Podatki in baze podatkov imetnika licence
+c. Imetnik licence ne sme uporabljati programa, èe bi napaka programa lahko povzroèila smrt, resne telesne po¹kodbe ali materialno/okoljsko ¹kodo.
 
-Da bi imetniku licence pomagali pri osamitvi vzroka teÅ¾ave v programu, lahko IBM od njega zahteva, da 1) omogoÄi IBM-u oddaljen dostop do svojega sistema ali 2) IBM-u poÅ¡lje podatke o licenciranju ali sistemske podatke. Toda IBM ni obvezan nuditi takÅ¡ne podpore, razen Äe skleneta IBM in imetnik licence loÄeno pisno pogodbo, na podlagi katere IBM soglaÅ¡a, da bo nudil imetniku licence to vrsto podpore, ki presega obveznosti IBM-a iz te pogodbe. V vsakem primeru bo IBM uporabil informacije o napakah in teÅ¾avah za izboljÅ¡anje svojih izdelkov in storitev in kot pomoÄ pri nudenju s tem povezanih ponudb za podporo. V ta namen lahko IBM vkljuÄi IBM-ove pravne osebe in podpogodbenike (kar vkljuÄuje tudi tiste v eni ali veÄ drÅ¾avah, v katerih se ne nahaja imetnik licence), imetnik licence pa daje IBM-u v ta namen pooblastilo.
+d. IBM, njegove povezane dru¾be in podizvajalci zahtevajo uporabo poslovnih kontaktnih informacij in nekaterih informacij o uporabi raèuna. Te informacije niso vsebina. Poslovne kontaktne informacije se uporabljajo za namene komuniciranja in upravljanja poslov z imetnikom licence. Primeri poslovnih kontaktnih informacij vkljuèujejo ime, slu¾beni telefon, naslov, e-po¹tni naslov, ID uporabnika in podatke o davèni registraciji. Informacije o uporabi raèuna so zahtevane za omogoèanje, zagotavljanje, upravljanje, podporo, opravljanje skrbni¹tva in izbolj¹anje programov. Primeri informacij o uporabi raèuna vkljuèujejo prijavljene napake in digitalne informacije, zbrane med uporabo programov s pomoèjo tehnologij za sledenje, kot so pi¹kotki in spletni svetilniki. Dodatne podrobnosti o IBM-ovem zbiranju, uporabi in upravljanju poslovnih kontaktnih informacij oziroma informacij o uporabi raèuna so na voljo v IBM-ovi izjavi o zasebnosti na http://www.ibm.com/privacy. Èe imetnik licence IBM-u posreduje informacije in taka obdelava zahteva obve¹èanje ali soglasje posameznikov, mora imetnik licence o tem obvestiti posameznike in pridobiti soglasje.
 
-Imetnik licence ostaja odgovoren za 1) vse podatke in vsebino vseh baz podatkov, ki jih imetnik licence omogoÄi za IBM, 2) izbiro in uvedbo postopkov in nadzora v zvezi z dostopanjem, zaÅ¡Äito, Å¡ifriranjem, uporabljanjem in prenaÅ¡anjem podatkov (vkljuÄno z vsemi osebnimi podatki) in 3) varnostno kopiranje in obnavljanje vseh baz podatkov in shranjenih podatkov. Imetnik licence IBM-u ne bo poslal ali priskrbel dostopa do osebnih informacij, ki so lahko v podatkovni ali kakrÅ¡nikoli drugi obliki, in bo odgovoren za sprejemljive stroÅ¡ke in druge zneske, ki jih lahko naloÅ¾i IBM v zvezi s takÅ¡nimi informacijami, ki so po nesreÄi posredovane IBM-u, ali za izgubo ali razkritje takÅ¡nih informacij s strani IBM-a, vkljuÄno s tistimi, do katerih pride zaradi zahtevkov katerihkoli tretjih strani.
+e. IBM-ovi poslovni partnerji, ki uporabljajo ali dajo na voljo programe, so neodvisni od IBM-a ter enostransko doloèajo svoje cene in pogoje. IBM ni odgovoren za njihova dejanja, opustitve dejanj, izjave ali ponudbe.
 
-10. Omejitev odgovornosti
+f. IBM lahko ponudi programe, ki niso IBM-ovi, ali IBM-ov program lahko omogoèi dostop do programov, ki niso IBM-ovi, pri èemer bo morda treba sprejeti pogoje tretjih oseb, opredeljene v transakcijskem dokumentu ali predlo¾ene imetniku licence. Povezovanje do programov, ki niso IBM-ovi, ali njihova uporaba pomeni soglasje imetnika licence s takimi pogoji. IBM ni pogodbena stranka nobene pogodbe, sklenjene z drugimi ponudniki, in ni odgovoren za take programe drugih ponudnikov.
 
-Omejitve in izkljuÄitve iz tega razdelka 10 (Omejitev odgovornosti) veljajo v celoti, Äe jih ne prepoveduje veljaven zakon brez moÅ¾nosti pogodbene odpovedi.
+g. Dodelitev licenc za programe zagotavlja dru¾ba International Business Machines iz New Yorka ("dru¾ba IBM Corporation"). Podjetje IBM, od katerega imetnik licence pridobi upravièenja ("IBM"), deluje kot distributer in dostavlja programe ter je odgovorno za uveljavljanje doloèb te pogodbe. Èe so upravièenja pridobljena od IBM-ovega poslovnega partnerja, je za uveljavljanje doloèb te pogodbe odgovorno IBM-ovo podjetje v dr¾avi pridobitve. V korist imetnika licence zoper dru¾bo IBM Corporation ni podlage za nobeno pravico ali vzrok za to¾bo. Imetnik licence se odpoveduje vsem zahtevkom in vzrokom za to¾bo zoper dru¾bo IBM Corporation ter se strinja, da se bo za morebitne pravice in pravna sredstva v zvezi s programi obrnil izkljuèno na IBM.
 
-10.1 Primeri, za katere je IBM lahko odgovoren
+h. Imetnik licence ne sme izdati podlicence niti dodeliti ali prenesti licence za kateri koli program (razen v obsegu, v katerem dodelitev ali prenos ne smeta biti pravno omejena, ali kot je izrecno dovoljeno v transakcijskem dokumentu oziroma sicer dogovorjeno z IBM-om). IBM lahko svoje pravice in obveznosti po tej pogodbi prenese skupaj s prodajo dela IBM-ovega poslovanja, ki vkljuèuje program. IBM lahko razkrije to pogodbo in povezane dokumente skupaj s kakr¹nim koli prenosom.
 
-Zaradi napake IBM-a ali zaradi kakÅ¡ne druge obveznosti lahko pride do okoliÅ¡Äin, v katerih je imetnik licence od IBM-a upraviÄen terjati odÅ¡kodnino. Ne glede na osnovo, na kateri lahko imetnik licence od IBM terja odÅ¡kodnino (vkljuÄno z osnovno krÅ¡itvijo, malomarnostjo, napaÄno predstavitvijo dejstev ali kakÅ¡nim drugim pogodbenim ali kazenskim zahtevkom), IBM-ova celotna odgovornost za vse skupne zahtevke, vloÅ¾ene zaradi programa ali v povezavi z njim ali ki so kako drugaÄe vloÅ¾eni na osnovi te pogodbe, ne preseÅ¾e zneska 1) Å¡kode za telesne poÅ¡kodbe (vkljuÄno s smrtjo) in Å¡kode v nepremiÄninah in v osebnih premiÄninah in 2) druge dejanske neposredne Å¡kode do zneska (Äe je program predmet bremenitev za doloÄeno obdobje, veljajo 12-meseÄne bremenitve), ki ga je plaÄal imetnik licence za program, ki je predmet zahtevka.
+i. Vsa obvestila v skladu s pogodbo morajo biti v pisni obliki in poslana na slu¾beni naslov, naveden v pogodbi, razen èe pogodbena stranka pisno doloèi drug naslov. Pogodbeni stranki privolita v uporabo elektronskih sredstev in telefaksa, taka komunikacija pa ¹teje kot podpisano besedilo. Vsaka kopija te pogodbe, ki je izdelana z zanesljivimi sredstvi, se ¹teje kot izvirnik. Pogodba nadome¹èa vsakr¹en potek pogajanj, razprav ali predstavitev s strani pogodbenih strank.
 
-Ta omejitev velja tudi za vse IBM-ove razvijalce in dobavitelje programa, in predstavlja maksimum, za katerega so IBM in razvijalci in dobavitelji programa kolektivno odgovorni.
+j. Pogodba tretjim osebam ne daje podlage za nobeno pravico ali vzrok za to¾bo. Nobena od pogodbenih strank ne bo vlo¾ila to¾be, ki bi izhajala iz te pogodbe oziroma bila povezana z njo, po preteku dveh let od nastanka vzroka za to¾bo. Nobena od pogodbenih strank ne nosi odgovornosti za neizpolnjevanje svojih nedenarnih obveznosti zaradi vzrokov, nad katerimi nima nadzora. Vsaka od pogodbenih strank bo drugi dala na voljo smiselno prilo¾nost, da izpolni svoje obveznosti, preden vlo¾i zahtevek, da jih druga stranka ni izpolnila.
 
-10.2 Primeri, za katere IBM ni odgovoren
+k. IBM lahko za podporo pri dostavi programov in podpore zanje uporablja osebje oziroma vire na lokacijah po vsem svetu, vkljuèno z zunanjimi pogodbeniki. Uporaba programov s strani imetnika licence lahko pomeni prenos vsebine, vkljuèno s podatki, ki omogoèajo prepoznavanje posameznika, v druge dr¾ave za namene zagotavljanja podpore za programsko opremo, kot je opisano v IBM-ovem vodièu za podporo za programsko opremo.
 
-IBM IN NJEGOVI RAZVIJALCI ALI DOBAVITELJI PROGRAMA POD NOBENIMI POGOJI NE ODGOVARJAJO ZA NASLEDNJE PRIMERE, TUDI ÄŒE SO OBVEÅ ÄŒENI O MOÅ½NOSTI, DA DO NJIH PRIDE:
+2. del - Doloèila za posamezne dr¾ave
 
-a. IZGUBO ALI POÅ KODBO PODATKOV;
+Za licence, pridobljene v spodaj navedenih dr¾avah, doloèbe te mednarodne licenène pogodbe za programe brez garancije nadome¹èajo ali spreminjajo naslednje doloèbe. Doloèbe, ki jih te spremembe ne spreminjajo, ostanejo nespremenjene in v veljavi.
 
-b. POSEBNO, NAKLJUÄŒNO, KAZENSKO ALI POSLEDIÄŒNO Å KODO ALI KAKRÅ NOKOLI EKONOMSKO POSLEDIÄŒNO Å KODO; ALI
+1. AMERIKA
 
-c. IZGUBLJENE DOBIÄŒKE, POSLOVANJE, DOHODKE, DOBRO IME ALI PRIÄŒAKOVANE PRIHRANKE.
+3. razdelek: Stro¹ki, davki, plaèilo in preverjanje
 
-11. Preverjanje skladnosti
+Besedilo prvega in drugega stavka odstavka b se zamenja z naslednjim:
 
-Za namene tega 11. razdelka (Preverjanje skladnosti) pomenijo "doloÄbe programa ILAN" 1) to pogodbo in ustrezna dopolnila in transakcijske dokumente, ki jih poda IBM in 2) IBM-ova naÄela za programsko opremo, ki jih je mogoÄe najti na IBM-ovem spletnem mestu z naÄeli za programsko opremo (www.ibm.com/softwarepolicies), kar vkljuÄuje tudi (vendar ni omejeno na) naÄela, ki se nanaÅ¡ajo na izdelavo varnostnih kopij, doloÄanje cen za podkapaciteto in selitev.
+V Braziliji: Imetnik licence sogla¹a, da bo plaèal vse ustrezne stro¹ke za pridobljena upravièenja, vse stro¹ke za uporabo, ki presega pooblastila, ter vse carine ali druge dajatve, davke in podobne prispevke, ki jih za pridobitev upravièenj imetnika licence predpisuje kateri koli drug organ.
 
-Pravice in obveznosti iz tega razdelka 11 ostanejo v veljavi v obdobju, v katerem je program licenciran za imetnika licence in Å¡e dve leti zatem.
+V odstavku b:
 
-11.1 Postopek preverjanja
+V Mehiki: V tretjem stavku se besede "na raèun, ki ga doloèi IBM" izbri¹ejo.
 
-Imetnik licence soglaÅ¡a, da bo izdelal, hranil in posredoval IBM-u in njegovim revizorjem natanÄne pisne zapiske, izhodne podatke sistemskih orodij in druge sistemske informacije, ki zadostujejo za preverjanje, ali uporablja imetnik licence programe v skladu z doloÄbami programa ILAN, kar vkljuÄuje tudi (vendar ni omejeno na) vse IBM-ove ustrezne doloÄbe za licenciranje in doloÄanje cen. Imetnik licence mora 1) zagotoviti, da ne preseÅ¾e svoje pooblaÅ¡Äene uporabe in 2) da upoÅ¡teva doloÄbe programa ILAN.
+V Mehiki: Po tretjem stavku se doda naslednji novi stavek:
 
-Na osnovi predhodnega obvestila lahko IBM na vseh lokacijah in v vseh okoljih, v katerih imetnik licence (za kakrÅ¡enkoli namen) uporablja programe, preveri skladnost z doloÄbami programa ILAN. Pri takÅ¡nem preverjanju bomo poskuÅ¡ali Äim manj motiti poslovanje imetnika licence in ga lahko opravimo na lokaciji imetnika licence med obiÄajnimi poslovnimi urami. IBM lahko kot pomoÄ pri preverjanju vkljuÄi neodvisnega revizorja, pod pogojem, da je IBM z njim podpisal pogodbo o zaupnosti.
+Plaèila bodo izvedena z elektronskim nakazilom sredstev na raèun, ki ga doloèi IBM, ali na IBM-ovem naslovu Alfonso Napoles Gandara 3111, Santa Fe Pe~na Blanca, Alvaro Obregon, Mexico City, 01210 (po¹tna ¹tevilka).
 
-11.2 RazreÅ¡itev
+Na konec odstavka c se doda naslednji stavek:
 
-IBM bo imetnika licence v pisni obliki obvestil, Äe se pri takÅ¡nem preverjanju pokaÅ¾e, da je imetnik licence pri uporabi kateregakoli programa presegal svojo pooblaÅ¡Äeno uporabo ali kako drugaÄe ni upoÅ¡teval doloÄb programa ILAN. Imetnik licence soglaÅ¡a, da bo IBM-u nemudoma in neposredno plaÄal bremenitve, ki jih IBM poda na raÄunu za 1) takÅ¡no preseÅ¾eno uporabo, 2) podporo za takÅ¡no preseÅ¾eno uporabo za trajanje takÅ¡ne preseÅ¾ene uporabe ali za dve leti (kar je krajÅ¡e) in 3) vse dodatne stroÅ¡ke in druge obveznosti, ki so ugotovljene kot rezultat takÅ¡nega preverjanja.
+V Kanadi: Kadar davki temeljijo na lokacijah, ki prejmejo koristi od programa, mora imetnik licence IBM redno obve¹èati o teh lokacijah, èe se razlikujejo od slu¾benega naslova imetnika licence, navedenega v ustrezni prilogi ali transakcijskem dokumentu.
 
-12. Obvestila za druge proizvajalce
+Na konec odstavka c se doda naslednji stavek:
 
-Program lahko vkljuÄuje kodo drugega proizvajalca, za katero dodeli v tej pogodbi licenco IBM in ne drug proizvajalec. Opombe (Äe obstajajo) za kodo drugega proizvajalca ("Obvestila za druge proizvajalce") so vkljuÄena zgolj kot informacija za imetnika licence. Ta obvestila boste naÅ¡li v datoteki (datotekah) OPOMBE programa. Informacije o tem, kako pridobiti izvorno kodo za kodo doloÄenih drugih proizvajalcev, boste naÅ¡li v razdelku Obvestila za druge proizvajalce. ÄŒe IBM v razdelku Obvestila za druge proizvajalce identificira kodo drugega proizvajala kot Â»kodo drugega proizvajalca z moÅ¾nostjo spreminjanjaÂ«, daje IBM imetniku licence pooblastilo za 1) spreminjanje kode drugega proizvajalca z moÅ¾nostjo spreminjanja in 2) vzvratno inÅ¾enirstvo v modulih programa, ki so v neposrednem stiku s kodo drugega proizvajalca z moÅ¾nostjo spreminjanja, pod pogojem, da gre izkljuÄno za namen razhroÅ¡Äevanja (debugging) popravkov imetnika licence v takÅ¡ni kodi drugega proizvajalca. IBM-ove servisne in podporne obveznosti (Äe obstajajo) veljajo samo za nespremenjen program.
+V Zdru¾enih dr¾avah: Pogodbeni stranki se strinjata, da se nobena opredmetena osebna lastnina (npr. mediji ali publikacije) ne prenese imetniku licence, èe: i) IBM imetniku licence po¹lje programe v elektronski obliki; ali ii) imetnik licence zahteva oprostitev davka od prodaje ali uporabe programov, ki jih IBM imetniku licence dostavi v elektronski obliki. Kadar davki temeljijo na lokacijah, ki prejmejo koristi od programa, mora imetnik licence IBM redno obve¹èati o teh lokacijah, èe se razlikujejo od slu¾benega naslova imetnika licence, navedenega v ustrezni prilogi ali transakcijskem dokumentu.
 
-13. SploÅ¡no
+4. razdelek: Odgovornost in za¹èita intelektualne lastnine
 
-a. Noben del te pogodbe ne vpliva na nobene zakonite pravice potroÅ¡nikov, ki jih ni mogoÄe odpovedati ali omejiti s pogodbo.
+Na konec odstavka a se vstavi naslednja izjava o zavraèanju odgovornosti:
 
-b. Za programe, ki jih IBM posreduje imetniku licence v materialni obliki, bo IBM izpolnil svoje obveznosti glede dobave in dostave ob dostavi takÅ¡nih programov Å¡pediterju, ki ga imenuje IBM, razen Äe se IBM in imetnik licence v pisni obliki ne dogovorita drugaÄe.
+V Peruju: V skladu s èlenom 1328 perujskega civilnega zakonika te omejitve in izkljuèitve ne bodo veljale v primerih namerne kr¹itve ("dolo") ali hude malomarnosti ("culpa inexcusable").
 
-c. ÄŒe se za katero doloÄbo iz te pogodbe ugotovi, da ni veljavna ali da je ni mogoÄe uveljaviti, preostale doloÄbe iz te pogodbe ostanejo v polni veljavi.
+6. razdelek: Veljavna zakonodaja in geografski doseg
 
-d. Imetnik licence soglaÅ¡a, da bo upoÅ¡teval vse lokalne zakone in predpise v zvezi z izvaÅ¾anjem in uvaÅ¾anjem, vkljuÄno s predpisi in prepovedmi v povezavi z embargom in sankcijami o izvozu za doloÄene konÄne uporabe ali za doloÄene uporabnike.
+V odstavku a se besedilo prvega stavka zamenja samo z naslednjim:
 
-e. Imetnik licence pooblaÅ¡Äa druÅ¾bo International Business Machines Corporation in njene podruÅ¾nice (in njene naslednike in pooblaÅ¡Äence, pogodbenike in IBM-ove poslovne partnerje) za shranjevanje in uporabo poslovnih kontaktnih informacij imetnika licence tam, kjer poslujejo, v povezavi z IBM-ovimi izdelki in storitvami ali pri pospeÅ¡evanju IBM-ovega odnosa z imetnikom licence.
+V Argentini: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Republike Argentine, ne glede na kolizijska naèela. Morebitni postopki v zvezi s pravicami, dol¾nostmi in obveznostmi, ki izhajajo iz te pogodbe, bodo spro¾eni na splo¹nem trgovinskem sodi¹èu mesta "Ciudad Autónoma de Buenos Aires".
 
-f. Vsaka stran bo drugi strani omogoÄila sprejemljivo priloÅ¾nost za zadovoljitev doloÄb, preden bo zaÄela trditi, da druga ne zadovoljuje svojih obveznosti iz te pogodbe. Strani bosta poskusili v dobri veri razreÅ¡iti vse spore, nesoglasja ali druge zahteve med stranmi v povezavi s to pogodbo.
+V Èilu: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Èila, ne glede na kolizijska naèela. Vsi spori, interpretacije ali kr¹itve, povezane s to pogodbo, ki jih stranki ne moreta razre¹iti, se predajo pristojnosti rednih sodi¹è mesta in okro¾ja Santiago.
 
-g. Razen Äe drugaÄe ne zahteva lokalen zakon brez moÅ¾nosti pogodbene odpovedi ali omejitve: 1) nobena stranka ne bo sproÅ¾ila pravnega postopka, ne glede na njegovo obliko, za katerokoli zahtevo, nastalo v povezavo s to pogodbo, veÄ kot dve leti po nastanku vzroka za zahtevo; in 2) po izteku tega Äasovnega obdobja vsi takÅ¡ni zahtevki in druge ustrezne pravice, povezane z zahtevkom, zastarajo.
+V Kolumbiji: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Republike Kolumbije, ne glede na kolizijska naèela. Za vse pravice, dol¾nosti in obveznosti so pristojni sodniki Republike Kolumbije.
 
-h. Niti imetnik licence niti IBM nista odgovorna za neizpolnitev katerekoli obveznosti zaradi vzrokov, ki jih ni mogoÄe nadzorovati.
+V Ekvadorju: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Ekvadorja, ne glede na kolizijska naèela. Vsi spori, ki bi izhajali iz te pogodbe ali bili povezani z njo, bodo predlo¾eni civilnim sodnikom mesta Quito v skraj¹an ustni sodni postopek.
 
-i. Ta pogodba ne daje osnove za nobene pravice ali zahtevke katerihkoli tretjih strank, niti ni IBM odgovoren za nobene zahtevke tretjih strank proti imetniku licence, razen kot dovoljuje zgornji podrazdelek 10.1 (Primeri, za katere je IBM lahko odgovoren) za telesne poÅ¡kodbe (vkljuÄno s smrtjo) ali Å¡kodo na nepremiÄninah ali v osebnih premiÄninah, za katere je IBM zakonsko odgovoren tej tretji stranki.
+V Venezueli: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Venezuele, ne glede na kolizijska naèela. Pogodbeni stranki se strinjata, da bosta morebitne medsebojne spore, povezane s to pogodbo, predlo¾ili sodi¹èem na metropolitanskem obmoèju mesta Caracas.
 
-j. Ob sklepu te pogodbe se nobena stranka ne zanaÅ¡a na nobeno predstavitev, ki ni podana v tej pogodbi, kar vkljuÄuje tudi (vendar ni omejeno na) kakrÅ¡nokoli predstavitev, ki se nanaÅ¡a na: 1) zmogljivost ali delovanje programa; 2) izkuÅ¡nje ali priporoÄila drugih strank; ali 3) kakrÅ¡nekoli rezultate ali prihranke, ki jih lahko ustvari imetnik licence.
+V Peruju: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Peruja, ne glede na kolizijska naèela. Kakr¹na koli neskladja, ki bi nastala med pogodbenima strankama pri izvr¹evanju, interpretaciji ali glede skladnosti te pogodbe in jih ni mogoèe razre¹iti neposredno, bodo predlo¾ena pristojnim sodi¹èem v sodnem okro¾ju "Cercado de Lima".
 
-k. IBM je z doloÄenimi organizacijami (imenovanimi "IBM-ovi poslovni partnerji") podpisal pogodbe za promoviranje, trÅ¾enje in podpiranje doloÄenih programov. IBM-ovi poslovni partnerji so neodvisni in loÄeni od IBM-a. IBM ni odgovoren za dejanja ali izjave IBM-ovih poslovnih partnerjev ali za obveznosti, ki jih imajo do imetnika licence.
+V Urugvaju: Obe pogodbeni stranki se strinjata, da se uporabljajo zakoni Urugvaja. Kakr¹na koli neskladja, ki bi nastala med pogodbenima strankama pri izvr¹evanju, interpretaciji ali skladnosti te pogodbe in jih ni mogoèe razre¹iti neposredno, bodo predlo¾ena sodi¹èem v Montevideu ("Tribunales Ordinarios de Montevideo").
 
-l. DoloÄbe v zvezi z odÅ¡kodnino za licenco in intelektualno lastnino iz drugih pogodb, ki jih je imetnik licence podpisal z IBM-om (kot je na primer IBM-ova pogodba za stranke), ne veljajo za programske licence, dodeljene s to pogodbo.
+V samo prvem stavku odstavka a se besedilo "dr¾ava, v kateri se izvede prenos za upravièenja licence" zamenja z naslednjim:
 
-m. Obe stranki soglaÅ¡ata, da so vse izmenjane informacije nezaupne. ÄŒe katera od strank zahteva izmenjavo zaupnih informacij, bosta sklenili podpisano pogodbo o zaupnosti.
+V naslednjih dr¾avah: Zdru¾ene dr¾ave, Anvila, Antigva/Barbuda, Aruba, Bahami, Barbados, Bermuda, Bonaire, Britansko Devi¹ko otoèje, Kajmanski otoki, Curacao, Dominika, Grenada, Gvajana, Jamajka, Montserrat, Saba, Saint Eustatius, Saint Kitts in Nevis, Saint Lucia, Saint Maarten, Saint Vincent in Grenadine, Surinam, Tortola, Trinidad in Tobago ter Turk in Caicos: zvezna dr¾ava New York, Zdru¾ene dr¾ave.
 
-14. Geografsko podroÄje in zakonodaja
+V Kanadi: provinca Ontario in tam veljavni zvezni zakoni Kanade.
 
-14.1 Zakonodaja
+V drugem stavku odstavka a se besedilo "dr¾ava, v kateri se izvede prenos za upravièenja licence, oziroma, èe se IBM strinja, dr¾ava, v kateri je program dan v produkcijsko uporabo" zamenja z naslednjim:
 
-Obe pogodbeni stranki soglaÅ¡ata, da bodo zakoni drÅ¾ave, v kateri je imetnik licence pridobil licenco za program, uporabljeni za upravljanje, interpretiranje in uveljavljanje vseh ustreznih pravic, dolÅ¾nosti in obveznosti imetnika licence in IBM-a, nastalih na osnovi predmeta te pogodbe ali v povezavi z njim, ne glede na navzkriÅ¾je zakonskih naÄel.
+V Argentini: Argentine
 
-Konvencija ZdruÅ¾enih narodov v zvezi s pogodbami za mednarodno prodajo blaga ne velja.
+V Èilu: Èila
 
-14.2 Sodna pristojnost
+V Kolumbiji: Kolumbije
 
-Vse pravice, dolÅ¾nosti in obveznosti bodo obravnavala sodiÅ¡Äa v drÅ¾avi, v kateri imetnik licence pridobi licenco za program.
+V Ekvadorju: Ekvadorja
 
-2. del - pogoji, znaÄilni za posamezne drÅ¾ave
+V Mehiki: Mehike
 
-Za licence, ki so dodeljene v Sloveniji, naslednje doloÄbe nadomeÅ¡Äajo ali spremenijo omenjene doloÄbe iz 1. dela. Vse doloÄbe iz 1. dela, ki jih ti popravki ne spremenijo, ostanejo nespremenjene in v veljavi.
+V Peruju: Peruja
 
-DOPOLNILA ZA DRÅ½AVE V EVROPI, NA SREDNJEM VZHODU IN V AFRIKI (EMEA)
+V Urugvaju: Urugvaja
 
-DRÅ½AVE ÄŒLANICE EVROPSKE UNIJE
+V Venezueli: Venezuele
 
-8. Brez garancij
+Na konec odstavka b se dodajo naslednji stavki:
 
-8. razdelku (Brez garancij) je dodano naslednje:
+V Braziliji: Vsi spori, ki bi izhajali iz te pogodbe ali bi bili povezani z njo, vkljuèno s skraj¹animi sodnimi postopki, bodo predlo¾eni izkljuèni pristojnosti foruma mesta Sao Paulo v zvezni dr¾avi Sao Paulo v Braziliji, pogodbeni stranki pa se nepreklicno strinjata s to specifièno pristojnostjo in se odpovedujeta kateri koli drugi, ne glede na njene prednosti.
 
-V Evropski uniji ("EU") pripadajo strankam zakonske pravice, ki izhajajo iz ustrezne drÅ¾avne zakonodaje, ki ureja prodajo potroÅ¡niÅ¡kih dobrin. Predpisi iz tega 8. razdelka (Brez garancij) ne vplivajo na takÅ¡ne pravice.
+V Mehiki: Pogodbeni stranki se strinjata, da so za re¹evanje sporov, ki izhajajo iz te pogodbe, pristojna izkljuèno sodi¹èa v Mexico Cityju. Pogodbeni stranki se odpovedujeta kateri koli drugi jurisdikciji, ki bi lahko bila ustrezna glede na njun trenutni ali prihodnji domicil ali zaradi kakr¹nega koli drugega razloga.
 
-DRÅ½AVE ÄŒLANICE EU IN DRÅ½AVE, DOLOÄŒENE SPODAJ
+7. razdelek: Splo¹no
 
-Katerakoli evropska drÅ¾ava, ki je predpisala varstvo lokalnih podatkov ali zakonodajo o varstvu, podobno modelu iz EU.
+V odstavku g:
 
-13. SploÅ¡no
+V Zdru¾enih dr¾avah: izbri¹e se besedilo zadnjih dveh stavkov.
 
-Naslednje nadomeÅ¡Äa toÄko 13.e:
+V odstavku i se za prvi stavek doda naslednji nov stavek:
 
-(1) Definicije - Za namene toÄke 13.e veljajo naslednje dodatne definicije:
+V Mehiki: Vsako spremembo naslova je treba sporoèiti 10 (deset) dni vnaprej, sicer bo v polni pravni veljavi ostal zadnji sporoèeni naslov.
 
-(a) Poslovne kontaktne informacije - s podjetjem povezane kontaktne informacije, ki jih IBM-u razkrije imetnik licence, vkljuÄno z imeni, naslovi delovnih mest, poslovnimi naslovi, telefonskimi Å¡tevilkami in elektronskimi naslovi usluÅ¾bencev in pogodbenikov imetnika licence. Za Avstrijo, Italijo in Å vico vkljuÄujejo poslovne kontaktne informacije tudi informacije o imetniku licence in njegovih pogodbenikih kot pravnih osebah (kot so na primer podatki o dohodkih imetnika licence in druge transakcijske informacije).
+V odstavku j:
 
-(b) Kontaktno osebje podjetja - UsluÅ¾benci in pogodbeniki imetnika licence, s katerimi so povezane poslovne kontaktne informacije.
+V Braziliji: izbri¹e se celoten 2. stavek "Nobena od pogodbenih strank ne bo vlo¾ila to¾be, ki bi izhajala iz te pogodbe oziroma bila povezana z njo, po preteku dveh let od nastanka vzroka za to¾bo".
 
-(c) Urad za varstvo podatkov - urad, vzpostavljen na podlagi zakonodaje o varstvu podatkov in elektronskih komunikacijah v ustrezni drÅ¾avi, za drÅ¾ave, ki niso Älanice EU, pa urad, ki je odgovoren za nadzor varstva osebnih podatkov v tej drÅ¾avi ali (za karkoli od zgoraj omenjenega) katerikoli zakonito imenovan pravni naslednik.
+Dodajte kot nov odstavek 1 temu razdelku:
 
-(d) Zakonodaja o varstvu podatkov in elektronskih komunikacijah - (i) ustrezna lokalna zakonodaja in veljavni predpisi, ki uveljavljajo zahteve Smernice EU 95/46/EC (o zaÅ¡Äiti posameznikov glede obdelave osebnih podatkov in prostega pretoka takÅ¡nih podatkov) in Smernice EU 2002/58/EC (ki se nanaÅ¡a na obdelavo osebnih podatkov in varstvo zasebnosti v sektorju elektronskih komunikacij); ali (ii) za drÅ¾ave, ki niso Älanice EU, zakonodaja in/ali predpisi, ki veljajo v ustrezni drÅ¾avi, in se nanaÅ¡ajo na varstvo osebnih podatkov in reguliranje elektronskih komunikacij, ki vkljuÄujejo osebne podatke, kar vkljuÄuje tudi (za karkoli od zgoraj omenjenega) kakrÅ¡nokoli njihovo zakonito zamenjavo ali popravke.
+V Kanadi: Pogodbeni stranki se strinjata, da bo ta dokument zapisan v angle¹èini. Les parties ont convenu de rédiger le présent document en langue anglaise.
 
-(e) IBM-ova skupina - International Business Machines Corporation iz Armonka, New York, ZDA, njene podruÅ¾nice in njeni poslovni partnerji in podpogodbeniki.
+2. PACIFI©KI DEL AZIJE
 
-(2) Imetnik licence pooblaÅ¡Äa IBM za:
+2. razdelek: Jamstva
 
-(a) obdelavo in uporabo poslovnih kontaktnih informacij znotraj IBM-ove skupine, ki so v podporo imetniku licence, kar vkljuÄuje tudi nudenje podpornih storitev, in za namene pospeÅ¡evanja poslovnega odnosa med imetnikom licence in IBM-ovo skupino, kar vkljuÄuje tudi (vendar ni omejeno na) stik s kontaktnim osebjem podjetja (po elektronski poÅ¡ti ali kako drugaÄe) in trÅ¾enje izdelkov in storitev IBM-ove skupine ("doloÄen namen"); in
+Doda se na konec tega razdelka kot nov odstavek f:
 
-(b) razkritje poslovnih kontaktnih informacij drugim Älanom IBM-ove skupine, vendar samo za izvajanje doloÄenega namena.
+V Avstraliji: Te garancije veljajo poleg vseh pravic v okviru zakona o konkurenci in potro¹nikih iz leta 2010 in so omejene le do mere, kot to ta zakon dovoljuje.
 
-(3) IBM soglaÅ¡a, da bodo vse poslovne kontaktne informacije obdelane v skladu z zakonodajo o varstvu podatkov in elektronskih komunikacijah in bodo uporabljene izkljuÄno za "doloÄen namen".
+Na Japonskem: IBM-ova odgovornost je omejena na ta odstavek ter razdelek o odgovornosti in za¹èiti intelektualne lastnine ter veljavne priloge in transakcijske dokumente kot edino pravno sredstvo imetnika licence za neizpolnjevanje jamstev, opredeljenih v tem razdelku.
 
-(4) Do mere, ki jo zahteva zakonodaja za varstvo podatkov in elektronske komunikacije, imetnik licence izjavlja, da (a) je pridobil (ali bo pridobil) privolitve kontaktnega osebja podjetja (ali je izdal ali bo izdal obvestila zanje), potrebne, da bi IBM-ovi skupini omogoÄil obdelavo in uporabo poslovnih kontaktnih informacij za "doloÄen namen".
+Na Novi Zelandiji: Te garancije veljajo poleg vseh pravic v okviru zakona o garanciji za potro¹nike iz leta 1993 ali druge zakonodaje, ki jih ni mogoèe omejiti z zakonom.
 
-(5) Imetnik licence daje IBM-u pooblastilo za prenos poslovnih kontaktnih informacij izven evropskega ekonomskega prostora, pod pogojem, da prenos temelji na pogodbenih doloÄbah, ki jih odobri urad za varstvo podatkov, ali da je prenos kako drugaÄe dovoljen na podlagi zakonodaje o varstvu podatkov in elektronskih komunikacijah.
+3. razdelek: Stro¹ki, davki, plaèilo in preverjanje
 
-Z125-5589-05 (07/2011)
+V odstavku b se besedilo tretjega stavka zamenja z besedilom naslednjih dveh stavkov:
 
+V Hongkongu, Indoneziji, Koreji, Makau, Maleziji, Singapuru in Vietnamu ter na Filipinih: Zneski zapadejo v plaèilo po prejemu raèuna od IBM-a in jih je treba plaèati v roku 30 dni od datuma raèuna z nakazilom na raèun, ki ga doloèi IBM. Èe plaèilo ni prejeto v 30 dneh od datuma raèuna, lahko IBM za neporavnani znesek zaraèuna nadomestilo zaradi zamude pri plaèilu, izraèunano glede na ¹tevilo dni, ko je plaèilo zamujalo: i) 2 % za vsako 30-dnevno obdobje ali njegov del; ali ii) najveèji znesek, ki ga dovoljuje veljavni zakon (kar od tega je manj).
+
+Na Tajskem: Zneski zapadejo v plaèilo po prejemu raèuna od IBM-a in jih je treba plaèati v roku 30 dni od datuma raèuna z nakazilom na raèun, ki ga doloèi IBM. Èe plaèilo ni prejeto v 30 dneh od datuma raèuna, se lahko za neporavnani znesek zaraèuna nadomestilo zaradi zamude pri plaèilu po meseèni stopnji 1,25 %, izraèunano glede na ¹tevilo dni, ko je plaèilo zamujalo.
+
+V prvem stavku odstavka c se odstrani beseda "in" pred "(iv)" in dodata se podpièje ter naslednja nova postavka "(v)":
+
+V Indiji: ; in (v) pravoèasna vlo¾itev natanène napovedi za odbitke pri viru (TDS). Èe se na podlagi dokumentacije o oprostitvi, ki jo predlo¾i imetnik licence, ne zaraèuna davek, dajatev, prispevek ali pristojbina ("davki") in davèni organ naknadno presodi, da bi morali biti ti davki zaraèunani, mora imetnik licence poravnati te davke, vkljuèno z vsemi obrestmi, dajatvami in/ali kaznimi, ki se uporabljajo zanje.
+
+V prvem stavku odstavka c se odstrani beseda "in" pred "(iv)", zamenja se postavka (iv) in doda se nova postavka "(v)" z naslednjim:
+
+V Singapuru, Maleziji, na Filipinih, Tajskem, v Indoneziji in Vietnamu: (iv) v celoti sodeloval z IBM-om pri iskanju mo¾nosti davène oprostitve ali zni¾anja davènega odtegljaja oziroma drugih davkov tako, da imetnik licence zaprosi za oprostitev ali zni¾anje; in v) pravoèasno izpolnil, vlo¾il in posodabljal vse ustrezne dokumente za kakr¹no koli tak¹no oprostitev, zni¾anje ali izvzetje.
+
+4. razdelek: Odgovornost in za¹èita intelektualne lastnine
+
+V odstavku a se na konec prvega stavka doda naslednje:
+
+V Avstraliji: (na primer na podlagi pogodbe, ¹kodnega dejanja, malomarnosti, zakona ali kako drugaèe)
+
+V odstavku a, drugi stavek po besedi "posebna" in pred besedo "nakljuèna" se doda naslednje:
+
+Na Filipinih: (vkljuèno z nominalno in zgledno ¹kodo), moralno,
+
+Doda se kot nov odstavek po koncu odstavka a (zagotovi se ustrezna oznaèitev odstavkov):
+
+V Avstraliji: Kadar IBM kr¹i jamstvo, ki ga navaja Zakon o konkurenci in potro¹nikih iz leta 2010, je IBM-ova odgovornost omejena na popravilo/zamenjavo blaga ali dobavo enakovrednega blaga ali plaèilo stro¹kov zamenjave blaga ali popravilo blaga. Kadar se garancija navezuje na pravico do prodaje, mirno posest ali jasno upravièenost do blaga na podlagi priloge 2 Zakona o konkurenci in potro¹nikih, ne velja nobena od teh omejitev.
+
+5. razdelek: Odpoved
+
+Doda se kot nov odstavek b na konec razdelka:
+
+V Indoneziji: Pogodbeni stranki se odpovedujeta èlenu 1266 indonezijskega civilnega zakonika v obsegu, ki zahteva sodno odloèbo o odpovedi pogodbe, ki ustvarja medsebojne obveznosti.
+
+6. razdelek: Veljavna zakonodaja in geografski doseg
+
+V samo prvem stavku odstavka a se besedilo "dr¾ava, v kateri se izvede prenos za upravièenja licence" zamenja z naslednjim:
+
+V Kambod¾i, Laosu: zvezne dr¾ave New York v Zdru¾enih dr¾avah
+
+V Avstraliji: dr¾ave ali ozemlja, v katerem se izvede prenos
+
+V Hongkongu: posebnega upravnega obmoèja Hongkong Ljudske republike Kitajske
+
+V Makau: posebnega upravnega obmoèja Hongkong Ljudske republike Kitajske
+
+V Koreji: Republike Koreje, za katere je pristojno osrednje okro¾no sodi¹èe v Seulu v Republiki Koreji
+
+V Tajvanu: Tajvana
+
+V Indiji: Indije
+
+V prvem stavku odstavka b v postavki ii) se po besedi "vkljuèno z" in pred besedo "obrambne" doda:
+
+Na Japonskem: japonskih zakonov in
+
+V drugem stavku odstavka a se besedilo "dr¾ava, v kateri se izvede prenos za upravièenja licence, oziroma, èe se IBM strinja, dr¾ava, v kateri je program dan v produkcijsko uporabo" zamenja z naslednjim:
+
+V Hongkongu: posebnega upravnega obmoèja Hongkong Ljudske republike Kitajske
+
+V Makau: posebnega upravnega obmoèja Macao Ljudske republike Kitajske
+
+V Tajvanu: Tajvana
+
+Doda se na konec razdelka kot nov odstavek d:
+
+V Kambod¾i in Laosu ter na Filipinih in ©rilanki: Spori bodo dokonèno razre¹eni z arbitra¾o v Singapurju v okviru arbitra¾nih pravil singapurskega mednarodnega arbitra¾nega centra ("pravila SIAC").
+
+V Indiji: Spori bodo dokonèno razre¹eni v skladu z zakonom o arbitra¾i in pobotu iz leta 1996, ki bo takrat v veljavi, in sicer v angle¹èini in s sede¾em v Bangaloru v Indiji. Èe bo znesek v okviru spora manj¹i ali enak petdeset milijonov indijskih rupij, bo arbiter en, èe pa bo znesek vi¹ji, bodo arbitri trije. Èe bo arbiter zamenjan, se bodo sodni postopki nadaljevali od faze, ko se je mesto arbitra sprostilo.
+
+V Indoneziji: Spori bodo dokonèno razre¹eni z arbitra¾o v D¾akarti v Indoneziji, ki jo bo vodil indonezijski nacionalni arbitra¾ni odbor, ustanovljen leta 1977 ("Badan Arbitrase Nasional Indonesia" ali "BANI") v skladu s pravili indonezijskega nacionalnega arbitra¾nega odbora. Arbitra¾na odloèba bo dokonèna in zavezujoèa za pogodbeni stranki brez mo¾nosti prito¾be, izdana bo v pisni obliki in vsebovala bo ugotovitve o dejanskem stanju ter pravne zakljuèke.
+
+V Ljudski republiki Kitajski: Vsaka pogodbena stranka lahko spor predlo¾i v arbitra¾o kitajski komisiji za mednarodno gospodarsko in trgovinsko arbitra¾o v Pekingu (LRK). Pogodbeni stranki se strinjata, da bodo za razre¹itev spora pristojni trije arbitri.
+
+V Vietnamu: Spori bodo dokonèno razre¹eni z arbitra¾o v Vietnamu v okviru arbitra¾nih pravil vietnamskega mednarodnega arbitra¾nega centra ("pravila VIAC"). Vsi postopki bodo potekali in dokumenti bodo predlo¾eni v angle¹èini.
+
+7. razdelek: Splo¹no
+
+V drugem stavku odstavka j se besedilo "dve leti" zamenja z naslednjim:
+
+V Indiji: tri leta
+
+Na konec tega razdelka se doda naslednji nov odstavek 1:
+
+V Indoneziji: Ta pogodba je sestavljena v angle¹ki in indonezijski (Bahasa) razlièici. V primeru nasprotja med tema razlièicama bo v obsegu, ki ga dovoljuje veljavni zakon, prevladala angle¹ka razlièica.
+
+3. EVROPA, SREDNJI VZHOD IN AFRIKA
+
+3. razdelek: Stro¹ki, davki, plaèilo in preverjanje
+
+V odstavku b se na konec tretjega stavka doda naslednje:
+
+V Italiji: èe IBM to zahteva v pisnem sporoèilu imetniku licence.
+
+V Ukrajini: , na zapadli znesek od naslednjega dne po datumu zapadlosti do datuma dejanskega plaèila, porazdeljenega za vsak dan zamude, po obrestni meri dvojne diskontne stopnje, ki jo je doloèila Nacionalna banka Ukrajine (NBU) v obdobju zamude (odstavek 6 èlena 232 Trgovinskega zakonika Ukrajine se ne uporablja).
+
+V odstavku b se besedilo tretjega stavka zamenja z naslednjim:
+
+V Franciji: Zneski zapadejo v plaèilo v roku 10 dni od datuma raèuna ter se plaèajo na raèun, ki ga je doloèil IBM, nadomestilo zaradi zamude pri plaèilu pa se izraèuna po najnovej¹i stopnji Evropske centralne banke z dodatkom 10 toèk, poleg stro¹kov izterjave dolga v vi¹ini ¹tiridesetih (40) evrov, ali èe ti stro¹ki presegajo ¹tirideset evrov, dopolnilne od¹kodnine na podlagi utemeljitve zahtevanega zneska).
+
+V Rusiji: Zneski zapadejo v plaèilo po prejemu raèuna in jih je treba plaèati v roku 30 dni od datuma raèuna z elektronskim nakazilom sredstev na raèun, ki ga doloèi IBM. Zaraèuna se lahko nadomestilo zaradi zamude pri plaèilu po letni stopnji 24 %, izraèunano za vsak dan po 30-dnevnem obdobju.
+
+V odstavku b se na konec zadnjega stavka doda naslednje:
+
+V Litvi: , ali kot doloèa zakon
+
+Na konec odstavka b se doda naslednje:
+
+V Italiji: V primeru neplaèila ali delnega plaèila in tudi po uradnem postopku za banèno posojilo ali poskus, ki ga zaène IBM, v odstopanju od èlena 4 zakonske uredbe ¹t. 231 z dne 9. oktober 2002 in v skladu s èlenom 7 iste zakonske uredbe bo IBM v pisni obliki s po¹to s potrdilom o prejetju obvestil imetnika licence o zapadlih provizijah za prepozna plaèila.
+
+4. razdelek: Odgovornost in za¹èita intelektualne lastnine
+
+Pred besedami "plaèani zneski" v prvem stavku odstavka a se vstavi naslednje:
+
+V Belgiji, Franciji, Nemèiji, Italiji, Luksemburgu in ©paniji ter na Malti in Portugalskem: kar je veè od tega: 500.000 EUR (petsto tisoè evrov) ali
+
+Na Irskem in v Zdru¾enem kraljestvu: 125 % od
+
+V prvem stavku odstavka a se besedilo "neposredna ¹koda za imetnika licence" zamenja z naslednjim:
+
+V ©paniji: in dokazana ¹koda za imetnika licence kot neposredna posledica IBM-ovega privzetega
+
+Po prvem stavku odstavka a se vstavi naslednji novi stavek:
+
+Na Slova¹kem: S sklicem na § 379 trgovinskega zakonika, zakon ¹t. 513/1991 zb. kot je dopolnjen, in v zvezi z vsemi pogoji, povezanimi s sklepanjem pogodbe, obe pogodbeni stranki izjavljata, da skupna predvidljiva ¹koda, ki lahko nastane, ne bo presegala zgornjega zneska in predstavlja najvi¹ji znesek, do katerega je IBM odgovoren.
+
+Pred drugim stavkom odstavka a se vstavi naslednji novi stavek:
+
+V Rusiji: IBM ne prevzema odgovornosti za opu¹èene ugodnosti.
+
+V drugem stavku odstavka a se izbri¹e beseda:
+
+Na Irskem in v Zdru¾enem kraljestvu: gospodarski
+
+V odstavku a se drugi stavek zamenja z naslednjim:
+
+V Belgiji in Luksemburgu ter na Nizozemskem: IBM ne prevzema odgovornosti za posredno ali posledièno ¹kodo, izgubljeni dobièek, posel, vrednost, prihodek, dobro ime, o¹kodovan ugled ali predvidene prihranke, zahtevke tretjih oseb zoper imetnika licence in izgubo (ali po¹kodbe) podatkov.
+
+V Franciji: IBM ne prevzema odgovornosti za o¹kodovan ugled, posredno ¹kodo, izgubljeni dobièek, posel, vrednost, prihodek, dobro ime ali predvidene prihranke.
+
+Na Portugalskem: IBM ne prevzema odgovornosti za posredno ¹kodo, vkljuèno z izgubo dobièka.
+
+V ©paniji: IBM ne prevzema odgovornosti za o¹kodovan ugled, izgubljeni dobièek, posel, vrednost, prihodek, dobro ime ali predvidene prihranke.
+
+Na konec odstavka a se doda naslednje:
+
+V Franciji: Pogoji pogodbe, vkljuèno s finanènimi pogoji, so bili doloèeni ob upo¹tevanju te toèke, ki je sestavni del splo¹nega gospodarskega okvira pogodbe.
+
+V odstavku b se "¹kodo, ki je v skladu z veljavnim zakonom ni mogoèe omejiti" zamenja z naslednjim:
+
+V Nemèiji: i) od¹kodnina za telesne po¹kodbe (vkljuèno s smrtjo); ii) izguba ali ¹koda zaradi kr¹itve jamstva, ki ga je IBM prevzel v zvezi s katerim koli prenosom v skladu s to pogodbo; in iii) povzroèeno namerno ali iz hude malomarnosti.
+
+6. razdelek: Veljavna zakonodaja in geografski doseg
+
+Samo v prvem stavku odstavka a se besedilo "dr¾ava, v kateri se izvede prenos licenènih upravièenj" zamenja z naslednjim:
+
+V/na Albaniji, Armeniji, Azerbajd¾anu, Belorusiji, Bosni in Hercegovini, Bolgariji, Hrva¹kem, Nekdanji jugoslovanski republiki Makedoniji, Gruziji, Kazahstanu, Kirgiziji, Moldaviji, Èrni gori, Romuniji, Rusiji, Srbiji, Tad¾ikistanu, Turkmenistanu, Ukrajini in Uzbekistanu: Avstrije
+
+V Estoniji, Latviji in Litvi: Finske
+
+V/na Al¾iriji, Andori, Beninu, Burkini Faso, Burundiju, Kamerunu, Zelenortskih otokih, Srednjeafri¹ki republiki, Èadu, Komorih, Republiki Kongo, D¾ibutiju, Demokratièni republiki Kongo, Ekvatorialni Gvineji, Francoski Gvajani, Francoski Polineziji, Gabonu, Gvineji, Gvineji Bissau, Slonoko¹èeni obali, Libanonu, Madagaskarju, Maliju, Mavretaniji, Mauritiusu, Mayotteju, Maroku, Novi Kaledoniji, Nigru, Reunionu, Senegalu, Sej¹elih, Togu, Tuniziji, Vanuatuju ter Wallisu in Futuni: Francije
+
+V/na Angoli, Bahrajnu, Bocvani, Egiptu, Eritreji, Etiopiji, Gambiji, Gani, Iraku, Jordaniji, Keniji, Kuvajtu, Liberiji, Malaviju, Malti, Mozambiku, Nigeriji, Omanu, Pakistanu, Katarju, Ruandi, Sao Tomeju in Principeju, Saudovi Arabiji, Sierri Leone, Somaliji, Tanzaniji, Ugandi, Zdru¾enih arabskih emiratih, Zahodnem bregu/Gazi, Jemnu, Zambiji in Zimbabveju: Anglije.
+
+V Lihten¹tajnu: ©vice
+
+V Ju¾ni Afriki, Namibiji, Lesotu in Svaziju: Ju¾noafri¹ke republike
+
+V Zdru¾enem kraljestvu: Anglije
+
+V odstavku a se na konec prvega stavka doda naslednje:
+
+V Franciji: Pogodbeni stranki se strinjata, da se èlena 1222 in 1223 francoskega civilnega zakonika ne uporabljata.
+
+Na konec odstavka a se doda naslednje:
+
+V/na Albaniji, Armeniji, Azerbajd¾anu, Belorusiji, Bosni in Hercegovini, Bolgariji, Hrva¹kem, Nekdanji jugoslovanski republiki Makedoniji, Gruziji, Kazahstanu, Kosovu, Kirgiziji, Moldaviji, Èrni gori, Romuniji, Rusiji, Srbiji, Tad¾ikistanu, Turkmenistanu, Ukrajini in Uzbekistanu: Vse spore, ki bi izhajali iz te pogodbe, bo dokonèno razre¹ilo mednarodni arbitra¾ni center avstrijske zvezne gospodarske zbornice (razsodi¹èe) v okviru arbitra¾nih pravil tega arbitra¾nega centra (dunajska pravila) na Dunaju v Avstriji, pri èemer bo uradni jezik angle¹èina in v skladu z dunajskimi pravili bodo imenovani trije nepristranski arbitri. Vsaka pogodbena stranka bo imenovala po enega arbitra, ki bosta v 30 dneh skupaj doloèila neodvisnega predsednika, v nasprotnem primeru bo predsednika doloèil organ za arbitra¾o v skladu z dunajskimi pravili. Arbitri ne bodo imeli pooblastila, da bi lahko doloèili sodno prepoved ali od¹kodnino, ki jo ta pogodba izkljuèuje ali ki bi presegala omejitve iz te pogodbe. Nobena doloèba te pogodbe pogodbenima strankama ne prepreèuje spro¾itve sodnih postopkov za (1) zaèasno odredbo za namene prepreèitve premo¾enjske ¹kode ali kr¹itve doloèb o zaupnosti ali pravic intelektualne lastnine, (2) ugotavljanje veljavnosti ali lastni¹tva katere koli avtorske pravice, patenta ali blagovne znamke, ki je v lasti pogodbene stranke ali njenega podjetja oziroma jo ta uveljavlja, ali (3) izterjavo dolgov v zneskih, ni¾jih od 500.000,00 USD.
+
+V Estoniji, Latviji in Litvi: Vse spore, ki bi izhajali iz te pogodbe, bo dokonèno razre¹il in¹titut za arbitra¾e finske trgovinske zbornice (FAI) (razsodi¹èe) v skladu z arbitra¾nimi pravili finske trgovinske zbornice (pravila) v Helsinkih na Finskem, pri èemer bo uradni jezik angle¹èina in v skladu s temi pravili bodo imenovani trije nepristranski arbitri. Vsaka pogodbena stranka bo imenovala po enega arbitra, izbrana arbitra pa bosta v 30 dneh skupaj doloèila neodvisnega predsednika, v nasprotnem primeru bo predsednika doloèil organ za arbitra¾o v skladu s pravili. Arbitri ne bodo imeli pooblastila, da bi lahko doloèili sodno prepoved ali od¹kodnino, ki jo ta pogodba izkljuèuje ali ki bi presegala omejitve iz te pogodbe. Nobena doloèba te pogodbe pogodbenima strankama ne prepreèuje spro¾itve sodnih postopkov za (1) zaèasno odredbo za namene prepreèitve premo¾enjske ¹kode ali kr¹itve doloèb o zaupnosti ali pravic intelektualne lastnine, (2) ugotavljanje veljavnosti ali lastni¹tva katere koli avtorske pravice, patenta ali blagovne znamke, ki je v lasti pogodbene stranke ali njenega podjetja oziroma jo ta uveljavlja, ali (3) izterjavo dolgov v zneskih, ni¾jih od 500.000,00 USD.
+
+V/na Afganistanu, Angoli, Bahrajnu, Bocvani, Burundiju, Zelenortskih otokih, D¾ibutiju, Egiptu, Eritreji, Etiopiji, Gambiji, Gani, Iraku, Jordaniji, Keniji, Kuvajtu, Libanonu, Liberiji, Libiji, Madagaskarju, Malaviju, Mozambiku, Nigeriji, Omanu, Pakistanu, palestinskem ozemlju, Katarju, Ruandi, Sao Tomeju in Principeju, Saudovi Arabiji, Sej¹elih, Sierri Leone, Somaliji, Ju¾nem Sudanu, Tanzaniji, Ugandi, Zdru¾enih arabskih emiratih, Zahodni Sahari, Jemnu, Zambiji in Zimbabveju: Vse spore, ki bi izhajali iz te pogodbe, bo dokonèno razre¹ilo londonsko sodi¹èe za mednarodno arbitra¾o (LCIA) (razsodi¹èe) v okviru arbitra¾nih pravil LCIA (pravila) v Londonu v Zdru¾enem kraljestvu, pri èemer bo uradni jezik angle¹èina in v skladu s pravili bodo imenovani trije nepristranski arbitri. Vsaka pogodbena stranka bo imenovala po enega arbitra, izbrana arbitra pa bosta v 30 dneh skupaj doloèila neodvisnega predsednika, v nasprotnem primeru bo predsednika doloèil organ za arbitra¾o v skladu s pravili. Arbitri ne bodo imeli pooblastila, da bi lahko doloèili sodno prepoved ali od¹kodnino, ki jo ta pogodba izkljuèuje ali ki bi presegala omejitve iz te pogodbe. Nobena doloèba te pogodbe pogodbenima strankama ne prepreèuje spro¾itve sodnih postopkov za (1) zaèasno odredbo za namene prepreèitve premo¾enjske ¹kode ali kr¹itve doloèb o zaupnosti ali pravic intelektualne lastnine, (2) ugotavljanje veljavnosti ali lastni¹tva katere koli avtorske pravice, patenta ali blagovne znamke, ki je v lasti pogodbene stranke ali njenega podjetja oziroma jo ta uveljavlja, ali (3) izterjavo dolgov v zneskih, ni¾jih od 500.000,00 USD.
+
+V/na Al¾iriji, Beninu, Burkini Faso, Kamerunu, Srednjeafri¹ki republiki, Èadu, Republiki Kongo, Demokratièni republiki Kongo, Ekvatorialni Gvineji, Francoski Gvajani, Francoski Polineziji, Gabonu, Gvineji, Gvineji Bissau, Slonoko¹èeni obali, Maliju, Mavretaniji, Mauritiusu, Maroku, Nigru, Senegalu, Togu in Tuniziji: Vse spore, ki bi izhajali iz te pogodbe, bo dokonèno razre¹ilo mednarodno arbitra¾no sodi¹èe ICC v Parizu (razsodi¹èe) v okviru svojih arbitra¾nih pravil (pravila) v Parizu v Franciji, pri èemer bo uradni jezik franco¹èina in v skladu s pravili bodo imenovani trije nepristranski arbitri. Vsaka pogodbena stranka bo imenovala po enega arbitra, izbrana arbitra pa bosta v 30 dneh skupaj doloèila neodvisnega predsednika, v nasprotnem primeru bo predsednika doloèil organ za arbitra¾o v skladu s pravili. Arbitri ne bodo imeli pooblastila, da bi lahko doloèili sodno prepoved ali od¹kodnino, ki jo ta pogodba izkljuèuje ali ki bi presegala omejitve iz te pogodbe. Nobena doloèba te pogodbe pogodbenima strankama ne prepreèuje spro¾itve sodnih postopkov za (1) zaèasno odredbo za namene prepreèitve premo¾enjske ¹kode ali kr¹itve doloèb o zaupnosti ali pravic intelektualne lastnine, (2) ugotavljanje veljavnosti ali lastni¹tva katere koli avtorske pravice, patenta ali blagovne znamke, ki je v lasti pogodbene stranke ali njenega podjetja oziroma jo ta uveljavlja, ali (3) izterjavo dolgov v zneskih, ni¾jih od 250.000,00 USD.
+
+V Ju¾ni Afriki, Namibiji, Lesotu in Svaziju: Vse spore, ki bi izhajali iz te pogodbe, bo dokonèno razre¹ila ju¾noafri¹ka fundacija za arbitra¾e (AFSA) (razsodi¹èe) v okviru arbitra¾nih pravil AFSA (pravila) v Johannesburgu v Ju¾ni Afriki, pri èemer bo uradni jezik angle¹èina in v skladu s pravili bodo imenovani trije nepristranski arbitri. Vsaka pogodbena stranka bo imenovala po enega arbitra, izbrana arbitra pa bosta v 30 dneh skupaj doloèila neodvisnega predsednika, v nasprotnem primeru bo predsednika doloèil organ za arbitra¾o v skladu s pravili. Arbitri ne bodo imeli pooblastila, da bi lahko doloèili sodno prepoved ali od¹kodnino, ki jo ta pogodba izkljuèuje ali ki bi presegala omejitve iz te pogodbe. Nobena doloèba te pogodbe pogodbenima strankama ne prepreèuje spro¾itve sodnih postopkov za (1) zaèasno odredbo za namene prepreèitve premo¾enjske ¹kode ali kr¹itve doloèb o zaupnosti ali pravic intelektualne lastnine, (2) ugotavljanje veljavnosti ali lastni¹tva katere koli avtorske pravice, patenta ali blagovne znamke, ki je v lasti pogodbene stranke ali njenega podjetja oziroma jo ta uveljavlja, ali (3) izterjavo dolgov v zneskih, ni¾jih od 250.000,00 USD.
+
+V/na Andori, Avstriji, Cipru, Franciji, Nemèiji, Grèiji, Izraelu, Italiji, Portugalskem, ©paniji, ©vici in Turèiji: Vsi spori bodo obravnavani in bodo v izkljuèni pristojnosti naslednjega pristojnega sodi¹èa:
+
+V Andori: trgovinskega sodi¹èa v Parizu.
+
+V Avstriji: trgovinskega sodi¹èa na Dunaju v Avstriji (znotraj mesta).
+
+Na Cipru: pristojnega sodi¹èa v Nikoziji.
+
+V Franciji: trgovinskega sodi¹èa v Parizu.
+
+V Nemèiji: sodi¹è v Stuttgartu.
+
+V Grèiji: pristojnega sodi¹èa v Atenah.
+
+V Izraelu: sodi¹è v Tel Avivu (Jaffa).
+
+V Italiji: sodi¹è v Milanu.
+
+Na Portugalskem: sodi¹è v Lizboni.
+
+V ©paniji: sodi¹è v Madridu.
+
+V ©vici: trgovinskega sodi¹èa v kantonu Zurich.
+
+V Turèiji: centralna sodi¹èa (Caglayan) v Istanbulu in izvr¹ni direktorati v Istambulu v Republiki Turèiji.
+
+Na Nizozemskem: Pogodbeni stranki se odpovedujeta pravicam iz naslova 7.1 ("Koop") in toèk 7:401 oziroma 402 nizozemskega civilnega zakonika ter svojim pravicam do sklicevanja na popolno ali delno razpustitev ("gehele of partele ontbinding") te pogodbe v skladu z oddelkom 6:265 nizozemskega civilnega zakonika.
+
+7. razdelek: Splo¹no
+
+V odstavku d se na konec odstavka doda naslednje:
+
+V ©paniji: IBM bo upo¹teval zahteve za dostop do, posodobitev ali izbris kontaktnih informacij, èe bodo poslane na naslednji naslov: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+
+V odstavku j se na konec odstavka doda naslednje:
+
+Na Èe¹kem: V skladu z oddelkom 1801 zakona ¹t. 89/2012 Coll. (>>Civilni zakonik<<) 1799. in 1800. toèka Civilnega zakonika, skupaj z dopolnili, ne veljata za transakcije po tej pogodbi. Imetnik licence sprejema tveganje, da se bodo okoli¹èine spremenile v skladu s toèko 1765 Civilnega zakonika.
+
+V odstavku j:
+
+V Bolgariji, na Hrva¹kem, v Rusiji, Srbiji in Sloveniji: izbri¹e se 2. stavek, ki pravi: "Nobena od pogodbenih strank ne bo vlo¾ila to¾be, ki bi izhajala iz te pogodbe oziroma bila povezana z njo, po preteku dveh let od nastanka vzroka za to¾bo".
+
+V odstavku j se na konec drugega stavka doda naslednje:
+
+V Litvi: , razen kot doloèa zakon
+
+V odstavku j se drugi stavek zamenja z naslednjim:
+
+Na Poljskem: Nobena od pogodbenih strank ne bo vlo¾ila to¾be, ki bi izhajala iz te pogodbe oziroma bila povezana z njo, po preteku treh let od nastanka vzroka za to¾bo, razen v primeru to¾be zaradi neplaèila, ki bo vlo¾ena najveè dve leti po zapadlosti plaèila.
+
+V drugem stavku odstavka j se beseda "dve" zamenja z naslednjo:
+
+V Latviji in Ukrajini: tri
+
+Na Slova¹kem: ¹tiri
+
+V odstavku j se na konec tretjega stavka, ki pravi: "Nobena od pogodbenih strank ne nosi odgovornosti za neizpolnjevanje svojih nedenarnih obveznosti zaradi vzrokov, nad katerimi nima nadzora", doda naslednje:
+
+V Rusiji: , ki med drugim vkljuèujejo potrese, poplave, po¾are, vi¹jo silo, stavke (vkljuèno s stavkami uslu¾bencev pogodbenih strank), vojne, voja¹ke ukrepe, embarge, blokade, mednarodne ali vladne sankcije in ukrepe pristojnih organov.
+
+V tretjem stavku odstavka j se stavek "Nobena od pogodbenih strank ne nosi odgovornosti za neizpolnjevanje svojih nedenarnih obveznosti zaradi vzrokov, nad katerimi nima nadzora" spremeni, kot sledi:
+
+V Ukrajini: Nobena od pogodbenih strank ne nosi odgovornosti za neizpolnjevanje svojih nedenarnih obveznosti zaradi vzrokov ali regulatornih sprememb, nad katerimi nima nadzora, ki med drugim vkljuèujejo zahteve Zdru¾enih dr¾av glede uvoza, izvoza in gospodarskih sankcij.
+
+Na konec razdelka se kot nov odstavek 1 doda naslednje:
+
+Na Mad¾arskem: S sklenitvijo te pogodbe imetnik licence potrjuje, da je bil zadostno obve¹èen o vseh doloèbah te pogodbe in se je imel mo¾nost pogajati o teh pogojih. Naslednje doloèbe lahko znatno odstopajo od doloèb, ki se obièajno uporabljajo v mad¾arski zakonodaji, obe strani pa jih sprejmeta s podpisom pogodbe: Licenca za program; Jamstva; Stro¹ki, davki, plaèilo in preverjanje; Odgovornost in za¹èita intelektualne lastnine; Odpoved; Veljavna zakonodaja in geografski obseg; ter Splo¹no.
+
+Na Èe¹kem: Imetnik licence izrecno sprejema doloèbe te pogodbe, ki vkljuèujejo naslednje pomembne komercialne izraze: i) omejitev in zavraèanje odgovornosti za okvare (Garancije); ii) omejitev upravièenja imetnika licence do od¹kodnine (Odgovornost in za¹èita intelektualne lastnine); iii) zavezujoèa narava izvoznih in uvoznih predpisov (Veljavna zakonodaja in geografski doseg); iv) kraj¹a omejitvena obdobja (Splo¹no); v) izkljuèitev veljavnosti doloèb adhezijskih pogodb (Splo¹no); in vi) sprejemanje tveganja za spremembo okoli¹èin (Splo¹no).
+
+V Romuniji: Imetnik licence izrecno sprejema naslednje standardne toèke, ki se lahko v skladu z doloèbami èlena 1203 romunskega civilnega zakonika: toèke 2, 4, 5, 8j ¹tejejo za "neobièajne toèke". Imetnik licence potrjuje, da je bil zadostno obve¹èen o vseh doloèbah te pogodbe, vkljuèno z zgoraj omenjenimi toèkami, da je te doloèbe ustrezno analiziral in razumel ter da se je imel mo¾nost pogajati o pogojih vsake toèke.
+
+i125-5589-06 (10-2021)
 
