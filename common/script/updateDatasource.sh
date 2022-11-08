@@ -52,6 +52,38 @@ then
 	sed -i 's|odmdb|'$DB_NAME'|g' /config/datasource.xml
 fi
 
+if [ -n "$DB_URL" ]
+then
+       case $DB_TYPE in
+                *oracle* )
+                echo "Set database url to $DB_URL"
+                sed -i '/databaseName/d' /config/datasource.xml
+                sed -i '/serverName/d' /config/datasource.xml
+                sed -i '/portNumber/d' /config/datasource.xml
+                sed -i 's|DB_URL|'$DB_URL'|g' /config/datasource.xml
+
+                ORACLE_TRUSTSTORE_PASSWORD=changeme
+                if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
+                then
+                        ORACLE_TRUSTSTORE_PASSWORD=changeit
+                fi
+                if [ -n "$TRUSTSTORE_PASSWORD" ] || [ -f /config/security/volume/truststore_password ]
+                then
+                        ORACLE_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
+                fi
+                sed -i 's|ORACLE_TRUSTSTORE_PASSWORD|'$ORACLE_TRUSTSTORE_PASSWORD'|g' /config/datasource.xml
+                ;;
+        esac
+else
+        case $DB_TYPE in
+                *oracle* )
+                echo "No url"
+                sed -i '/DB_URL/d' /config/datasource.xml
+                sed -i '/connectionProperties/d' /config/datasource.xml
+                ;;
+        esac
+fi
+
 if [ -n "$DB_USER" ] || [ -f /config/secrets/db-config/db-user ]
 then
 	# Set env var if secrets are passed using mounted volumes

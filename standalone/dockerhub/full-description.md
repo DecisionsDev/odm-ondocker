@@ -11,7 +11,7 @@ docker pull icr.io/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -31,7 +31,7 @@ docker pull icr.io/odm-k8s/odm
 
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81100-rule-designer)
 
-	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0.1/p2
+	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.1.0/p2
 
 
 -	**Sample projects**:
@@ -65,12 +65,12 @@ docker pull icr.io/odm-k8s/odm
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.0?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
+	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.1?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
 
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision) site.
 
 
   # Usage

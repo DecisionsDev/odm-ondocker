@@ -1,15 +1,16 @@
 {
   "providers": [
     {
-	"name": "OPENID_PROVIDER",
 	"grantType": "OPENID_GRANT_TYPE",
 	"authorizationURL": "OPENID_AUTHORIZATION_URL",
 	"tokenURL": "OPENID_TOKEN_URL",
 	"introspectionURL": "OPENID_INTROSPECTION_URL",
+        "logoutTokenParam": "OPENID_LOGOUT_TOKEN_PARAM",
+        "tokenFormat": "OPENID_TOKEN_FORMAT",
+        "logoutURL": "OPENID_LOGOUT_URL",
 	"clientId": "OPENID_CLIENT_ID",
 	"clientSecret": "OPENID_CLIENT_SECRET",
-	"tokenFormat": "OPENID_TOKEN_FORMAT",
-        "logoutURL": "OPENID_LOGOUT_URL"
+	"name": "OPENID_PROVIDER"
     }
   ]
 }

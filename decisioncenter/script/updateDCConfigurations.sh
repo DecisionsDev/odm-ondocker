@@ -50,6 +50,13 @@ then
     else
       sed -i '/OPENID_GRANT_TYPE/d' /config/authOidc/openIdParameters.properties
     fi
+
+    if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]
+    then
+      sed -i 's|__OPENID_LOGOUT_TOKEN_PARAM__|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/OPENID_LOGOUT_TOKEN_PARAM/d'  /config/authOidc/openIdParameters.properties
+    fi
   fi
   # Set env var if secrets are passed using mounted volumes
   [ -f /config/secrets/oidc-config/clientId ] && export OPENID_CLIENT_ID=$(cat /config/secrets/oidc-config/clientId)
@@ -158,6 +165,16 @@ then
      else
         echo "OAuth config : no provided OPENID_LOGOUT_URL"
         sed -i '/logoutURL/d' /config/OdmOidcProviders.json
+     fi
+
+     OPENID_LOGOUT_TOKEN_PARAM=$(grep OPENID_LOGOUT_TOKEN_PARAM /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_TOKEN_PARAM=//g")
+     if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]
+     then
+        echo "OAuth config : set logout URL to $OPENID_LOGOUT_TOKEN_PARAM"
+        sed -i 's|OPENID_LOGOUT_TOKEN_PARAM|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_LOGOUT_TOKEN_PARAM"
+        sed -i '/logoutTokenParam/d' /config/OdmOidcProviders.json
      fi
 
      OPENID_GRANT_TYPE=$(grep OPENID_GRANT_TYPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_GRANT_TYPE=//g")
