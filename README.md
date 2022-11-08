@@ -1,5 +1,5 @@
 # IBM-ODM-Docker
-IBM Operational Decision Manager on Docker.
+IBM Operational Decision Manager on Docker
 
 
 [![Build Status](https://travis-ci.org/ODMDev/odm-ondocker.svg?branch=master)](https://travis-ci.org/ODMDev/odm-ondocker)
@@ -40,7 +40,7 @@ This documentations applies to Operational Decision Management Standard V8.11.x 
 
 # Issues and contributions
 
-For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://developer.ibm.com/odm/home/connect/) through the ODMDev community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
+For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022) through the ODM community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
 
 # License tracking with IBM License Service
 

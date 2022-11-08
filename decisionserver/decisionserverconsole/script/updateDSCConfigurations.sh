@@ -67,9 +67,15 @@ then
   OPENID_ALLOWED_DOMAINS=$(grep OPENID_ALLOWED_DOMAINS /config/authOidc/openIdParameters.properties | sed "s/OPENID_ALLOWED_DOMAINS=//g")
   echo "OPENID_ALLOWED_DOMAINS: $OPENID_ALLOWED_DOMAINS"
   OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
+  OPENID_LOGOUT_TOKEN_PARAM=$(grep OPENID_LOGOUT_TOKEN_PARAM /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_TOKEN_PARAM=//g")
   if [ -n "$OPENID_LOGOUT_URL" ]; then
   	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
-	sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+	if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]; then
+	        echo "OPENID_LOGOUT_TOKEN_PARAM: $OPENID_LOGOUT_TOKEN_PARAM"
+		sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL,logoutTokenParam=$OPENID_LOGOUT_TOKEN_PARAM'|g' $APPS/res.war/WEB-INF/web.xml
+	else
+		sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+	fi
   else
 	sed -i 's|type=local|'type=openid'|g' $APPS/res.war/WEB-INF/web.xml
   fi

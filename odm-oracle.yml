@@ -1,0 +1,133 @@
+version: '3'
+services:
+  oracle:
+    image: hyc-odm-docker.artifactory.swg-devops.com/oracle/database-enterprise:12.2.0.1
+    container_name: oracleDB
+    ports:
+      - '1521:1521'
+      - '5500:5500'
+    volumes:
+      - /tmp/oracle:/ORCL
+
+  odm-decisionserverconsole:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverconsole:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverconsole/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - oracle
+    depends_on:
+    - oracle
+    ports:
+    - 9080:9080
+    - 1883:1883
+    - 9843:9443
+    environment:
+    - DB_TYPE=oracle
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
+    - DB_USER=system
+    - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+
+  odm-decisionrunner:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionrunner:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionrunner/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    links:
+    - oracle
+    - odm-decisionserverconsole
+    depends_on:
+    - oracle
+    - odm-decisionserverconsole
+    ports:
+    - 9070:9080
+    - 9743:9443
+    environment:
+    - DB_TYPE=oracle
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
+    - DB_USER=system
+    - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+
+  odm-decisionserverruntime:
+    image: $REPOSITORY/$PREFIXIMAGE-decisionserverruntime:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisionserver/decisionserverruntime/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+    environment:
+    - DB_TYPE=oracle
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
+    - DB_USER=system
+    - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+    - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
+    links:
+    - oracle
+    - odm-decisionserverconsole
+    depends_on:
+    - oracle
+    - odm-decisionserverconsole
+    ports:
+    - 9090:9080
+    - 9943:9443
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
+
+  odm-decisioncenter:
+    image: $REPOSITORY/$PREFIXIMAGE-decisioncenter:$ODMVERSION
+    build:
+      context: ../
+      dockerfile: ./${ODMDOCKERDIR}/decisioncenter/Dockerfile
+      args:
+        - ODMDOCKERDIR=$ODMDOCKERDIR
+        - ODMVERSION=$ODMVERSION
+        - FROMLIBERTY=$FROMLIBERTY
+        - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - FROMLIBERTYBUILD=$FROMLIBERTY
+    environment:
+    - DB_TYPE=oracle
+#    - DB_SERVER_NAME=oracle
+#    - DB_PORT_NUMBER=1521
+#    - DB_NAME=ORCLCDB
+    - DB_USER=system
+    - DB_PASSWORD=Oradoc_db1
+    - DB_URL=jdbc:oracle:thin:@oracle:1521:ORCLCDB
+    - JVM_ARGS="-Xmx14000m"
+    ports:
+    - 9060:9060
+    - 9643:9453
+    links:
+    - oracle
+    depends_on:
+    - oracle
+#    volumes:
+#    - $PWD/common/drivers/ojdbc8-21.5.0.0.jar:/config/resources/ojdbc8-21.5.0.0.jar
