@@ -32,7 +32,7 @@ docker pull icr.io/odm-k8s/odm
 
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-81100-rule-designer)
 
-	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0/p2
+	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.0.1/p2
 
 
 -	**Sample projects**:
