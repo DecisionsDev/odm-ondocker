@@ -1,8 +1,9 @@
+
 This repository is the home directory of IBM Operational Decision Manager for Developers.
 
 # New: IBM Container Registry
 
-IBM® is now hosting product images on the IBM Container Registry, *icr.io*. You can obtain the IBM Operational Decision Manager for Developers image without authenticating by using this IBM-controlled source: *icr.io/odm-k8s*.
+IBM® is now hosting product images on the IBM Container Registry, *icr.io*. You can obtain the IBM Operational Decision Manager for Developers image without authenticating by using this IBM-controlled source: *icr.io/cpopen/odm-k8s/odm*.
 
 ```console
 docker pull icr.io/odm-k8s/odm
@@ -11,7 +12,7 @@ docker pull icr.io/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -65,12 +66,12 @@ docker pull icr.io/odm-k8s/odm
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as <InstallDir>/miniloanservice-projects. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.1?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
+	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.0?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
 
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.0?topic=manager-introducing-operational-decision) site.
 
 
   # Usage
@@ -86,7 +87,7 @@ You must accept the license before you launch the image. The license is availabl
 To install the product with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory. Use the following docker command to run the image:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/odm-k8s/odm:8.11
+docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.11
 ```
 > On some Docker version (Docker Engine 20.10.x) the memory management is different. You should run this command line:
 > docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -e JVM_ARGS='-Xmx3000m' -e SAMPLE=true icr.io/odm-k8s/odm:8.11
@@ -94,10 +95,10 @@ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reserv
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
  ```console
-docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/odm-k8s/odm:8.11
+docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:8.11
 ```
 > On some Docker version (Docker Engine 20.10.x) the memory management is different. You should run this command line:
-> docker run -e LICENSE=accept -e JVM_ARGS='-Xmx3000m'  -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/odm-k8s/odm:8.11 
+> docker run -e LICENSE=accept -e JVM_ARGS='-Xmx3000m'  -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:8.11 
 
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
 
