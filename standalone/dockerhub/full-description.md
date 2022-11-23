@@ -6,7 +6,7 @@ This repository is the home directory of IBM Operational Decision Manager for De
 IBM® is now hosting product images on the IBM Container Registry, *icr.io*. You can obtain the IBM Operational Decision Manager for Developers image without authenticating by using this IBM-controlled source: *icr.io/cpopen/odm-k8s/odm*.
 
 ```console
-docker pull icr.io/odm-k8s/odm
+docker pull icr.io/cpopen/odm-k8s/odm
 ```
 
 # Quick reference
@@ -90,7 +90,7 @@ To install the product with the sample projects, you need to specify the option 
 docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.11
 ```
 > On some Docker version (Docker Engine 20.10.x) the memory management is different. You should run this command line:
-> docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -e JVM_ARGS='-Xmx3000m' -e SAMPLE=true icr.io/odm-k8s/odm:8.11
+> docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -e JVM_ARGS='-Xmx3000m' -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.11
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
@@ -121,3 +121,5 @@ When the server is started, use the URL http://localhost:9060 to display a welco
   -	[IBM Operational Decision Manager for Developers ](https://raw.githubusercontent.com/ODMDev/odm-ondocker/master/standalone/licenses/Lic_en.txt)
 
 **Note**: The IBM Operational Decision Manager for Developers license does not permit further distribution and the terms restrict usage to a developer machine.
+
+
