@@ -1,8 +1,7 @@
 # IBM-ODM-Docker
 IBM Operational Decision Manager on Docker
 
-
-[![Build Status](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml)
+[![[Build Status](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml)
 [![GitHub release](https://img.shields.io/github/release/ODMDev/odm-ondocker.svg)](https://github.com/ODMDev/odm-ondocker/releases)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ODMDev/odm-ondocker/dev.svg)](https://github.com/ODMDev/odm-ondocker)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
