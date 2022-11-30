@@ -1,9 +1,11 @@
 # IBM-ODM-Docker
 IBM Operational Decision Manager on Docker
 
-[![[Build Status](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml)
-[![GitHub release](https://img.shields.io/github/release/ODMDev/odm-ondocker.svg)](https://github.com/ODMDev/odm-ondocker/releases)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ODMDev/odm-ondocker/dev.svg)](https://github.com/ODMDev/odm-ondocker)
+[![Build and test](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml/badge.svg?branch=vnext-release)](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/lgrateau/odm-ondocker)
+
+[![GitHub release](https://img.shields.io/github/release/DecisionsDev/odm-ondocker.svg)](https://github.com/DecisionsDev/odm-ondocker/releases)
+
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <p align="center">
   <a href="https://join.slack.com/t/odmdev/shared_invite/enQtMjU0NzIwMjM1MTg0LTQyYTMzNGQ4NzJkMDYxMDU5MDRmYTM4MjcxN2RiMzNmZWZmY2UzYzRhMjk0N2FmZjU2YzJlMTRmN2FhZDY4NmQ">
