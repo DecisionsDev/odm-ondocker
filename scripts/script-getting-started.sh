@@ -9,15 +9,29 @@
 DC_URL=https://test-odm-dc-route-default.apps.erbium.cp.fyre.ibm.com
 DC_USER=odmAdmin
 
+#===========================
+# Function to run curl request
+# - $1 request - ex: POST
+# - $2 url "${DC_URL}/decisioncenter-api/v1/decisionservices/import"
+# - $3 (Optional) zip file to import - ex: Loan_Validation_Service.zip
+function curlRequest {
+  if [[ ! -z $3 ]]; then
+    curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: multipart/form-data" --form "file=@$(dirname $0)/$3;type=application/zip" --user ${DC_USER}:${DC_USER})
+  else
+    curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --user ${DC_USER}:${DC_USER})
+  fi
+  if [[ $? != 0 ]]; then
+    echo "Could not connect to $2;  please check that the component is up and running."
+    exit 1
+  fi
+  echo $curl_result
+}
+
 # 1. Importing the decision service
 
 echo -n "$(date) - ### Upload Loan Validation Service to DC:  "
-curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Loan_Validation_Service.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
-
-if [[ $? != 0 ]]; then
-  echo "Could not connect to ${DC_URL};  please check that DC is up and running."
-  exit 1
-fi
+curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import Loan_Validation_Service.zip)
+# echo $curl_result
 
 status=$(echo ${curl_result} | jq -r '.status')
 if [[ "${status}" == "null" ]]; then
@@ -34,28 +48,19 @@ fi
 
 decisionServiceId=$(echo ${curl_result} | jq -r '.decisionService.id')
 if [[ "${decisionServiceId}" == "null" ]]; then
-  get_decisionserviceid_result=$(curl --silent --insecure --request GET "${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3ALoan%20Validation%20Service" --header "accept: */*" --user ${DC_USER}:${DC_USER})
+  get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3ALoan%20Validation%20Service)
   decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
 fi
 # echo $decisionServiceId
 
 echo -n "$(date) - ### Run test suite in DC:  "
 # Get Main Scoring test suite id
-get_testSuiteId_result=$(curl --silent --insecure --request GET "${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3AMain%20Scoring%20test%20suite" --header "accept: */*" --user ${DC_USER}:${DC_USER})
-if [[ $? != 0 ]]; then
-  echo "Could not connect to ${DC_URL};  please check that DC is up and running."
-  exit 1
-fi
-
+get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3AMain%20Scoring%20test%20suite)
 testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
 # echo ${get_testSuiteId_result}
 
 # Run Main Scoring test suite
-run_testSuite_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run" --header "accept: */*" --user ${DC_USER}:${DC_USER})
-if [[ $? != 0 ]]; then
-  echo "Could not connect to ${DC_URL};  please check that DC is up and running."
-  exit 1
-fi
+run_testSuite_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run)
 run_testSuite_status=$(echo ${run_testSuite_result} | jq -r '.status')
 echo $run_testSuite_status
 
@@ -63,15 +68,11 @@ testReportId=$(echo ${run_testSuite_result} | jq -r '.id')
 # testReportId=c95bcba7-8e35-4572-bae3-95087a646272
 
 echo -n "$(date) - ### Wait for test suite to be completed in DC:  "
-get_testReport_result=$(curl --silent --insecure --request GET "${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}" --header "accept: */*" --user ${DC_USER}:${DC_USER})
-if [[ $? != 0 ]]; then
-  echo "Could not connect to ${DC_URL};  please check that DC is up and running."
-  exit 1
-fi
+get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
 testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
 while [[ ${testReport_status} != "COMPLETED" ]]; do
   sleep 10
-  get_testReport_result=$(curl --silent --insecure --request GET "${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}" --header "accept: */*" --user ${DC_USER}:${DC_USER})
+  get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
 done
 echo $testReport_status
@@ -89,7 +90,7 @@ fi
 # 3. Generating and deploying the RuleApp
 
 echo -n "$(date) - ### Get elements Ids from DC:  "
-deployments=$(curl --silent --insecure --request GET "${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments" --header "accept: */*" --user ${DC_USER}:${DC_USER})
+deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments)
 # echo $deployments
 if [[ $? != 0 ]]; then
   echo "Could not connect to ${DC_URL};  please check that DC is up and running."
@@ -102,7 +103,7 @@ deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
 for deploymentId in ${deploymentsIds[@]}; do
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
-  curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy" --user ${DC_USER}:${DC_USER})
+  curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy)
   # echo $curl_result
   echo $curl_result | jq -r '.status'
 done
@@ -115,7 +116,7 @@ RES_URL=https://test-odm-ds-console-route-default.apps.erbium.cp.fyre.ibm.com/re
 for deploymentId in ${deploymentsIds[@]}; do
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
-  ruleapps_result=$(curl --silent --insecure --request GET "${RES_URL}/api/v1/ruleapps/${ruleapp_name}/1.0" --header "accept: application/json" --user ${DC_USER}:${DC_USER})
+  ruleapps_result=$(curlRequest GET ${RES_URL}/api/v1/ruleapps/${ruleapp_name}/1.0)
   # echo $ruleapps_result
   if [[ $? != 0 ]]; then
     echo "Could not connect to ${RES_URL};  please check that DC is up and running."
