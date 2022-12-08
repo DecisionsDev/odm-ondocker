@@ -1,16 +1,10 @@
 #!/bin/bash
 #
 # Automatically validate and ODM deployment
-
 # Parameters
 # * URL of the components : DC, RES , DSR
 # * Authentication mechanism : OpenID or BasicAuth
 # * Credential: (ClientID/ClientSecret or Username/Password)
-DC_URL=https://test-odm-dc-route-default.apps.erbium.cp.fyre.ibm.com
-RES_URL=https://test-odm-ds-console-route-default.apps.erbium.cp.fyre.ibm.com/res
-DC_USER=odmAdmin
-decisionServiceId="null"
-deploymentsIds=[]
 
 #===========================
 # Function to run curl request
@@ -137,7 +131,7 @@ function verifyRuleApp {
   deploymentsId=$1
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
-  ruleapps_result=$(curlRequest GET ${RES_URL}/api/v1/ruleapps/${ruleapp_name}/1.0)
+  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0)
   # echo $ruleapps_result
   if [[ $? != 0 ]]; then
     echo "Could not connect to ${RES_URL};  please check that DC is up and running."
@@ -148,21 +142,36 @@ function verifyRuleApp {
   echo -n "The RuleApp contains the following rulesets: $ruleapps_rulesets"
 }
 
-# 5. Executing the RuleApp in DSR
 
-# Importing the decision service
-importDecisionService Loan_Validation_Service.zip
-if [[ "${decisionServiceId}" == "null" ]]; then
-  setDecisionServiceId Loan%20Validation%20Service
-fi
-# Running Main Scoring test suite
-runTestSuite Main%20Scoring%20test%20suite
-# Generating and deploying the RuleApp
-getDeploymentIds
-for deploymentId in ${deploymentsIds[@]}; do
-  deployRuleApp $deploymentId
-done
-# Verifying the RuleApp is present in RES
-for deploymentId in ${deploymentsIds[@]}; do
-  verifyRuleApp $deploymentId
-done
+function main {
+  # Scenario:
+  # ------------------------------
+  # 1. Import the decision service
+  # 2. Run Main Scoring test suite
+  # 3. Generate and deploying the RuleApp
+  # 4. Verify the RuleApp is present in RES
+  # 5. Executing the RuleApp in DSR -> TODO
+
+  DC_URL=https://test-odm-dc-route-default.apps.erbium.cp.fyre.ibm.com
+  RES_URL=https://test-odm-ds-console-route-default.apps.erbium.cp.fyre.ibm.com/res
+  DC_USER=odmAdmin
+  decisionServiceId="null"
+  deploymentsIds=[]
+
+  importDecisionService Loan_Validation_Service.zip
+  if [[ "${decisionServiceId}" == "null" ]]; then
+    setDecisionServiceId Loan%20Validation%20Service
+  fi
+
+  runTestSuite Main%20Scoring%20test%20suite
+
+  getDeploymentIds
+  for deploymentId in ${deploymentsIds[@]}; do
+    deployRuleApp $deploymentId
+  done
+
+  for deploymentId in ${deploymentsIds[@]}; do
+    verifyRuleApp $deploymentId
+  done
+}
+main "$@"
