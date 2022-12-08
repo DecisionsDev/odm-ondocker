@@ -6,6 +6,58 @@
 # * Authentication mechanism : OpenID or BasicAuth
 # * Credential: (ClientID/ClientSecret or Username/Password)
 
+function print_usage {
+  me=`basename "$0"`
+  cat <<EOF
+
+Usage: $me -c <DC_URL> -r <RES_URL> [-h]
+
+The script validates an ODM deployment.
+
+Required options:
+    -c  # URL of the Decision Center instance to test.
+    -r  # URl of the Decision Server Console (RES) instance to test.
+
+Optional:
+    -h  # Displays this help page
+
+Example:
+    ${me} -c https://<DC_ROUTE> -r https://<RES_ROUTE>
+
+EOF
+  exit 0
+}
+
+function parse_args {
+  while getopts "h?c:r:" opt; do
+    case "$opt" in
+    h|\?)
+      print_usage
+      exit 0
+      ;;
+    c)  DC_URL=$OPTARG
+      ;;
+    t)  RES_URL=$OPTARG
+      ;;
+    :)  echo "Invalid option: -$OPTARG requires an argument"
+      print_usage
+      exit -1
+      ;;
+    esac
+  done
+  if [ -z $DC_URL ]; then
+    echo "Option -c is required"
+    print_usage
+    exit -1
+  fi
+
+  if [ -z $RES_URL ]; then
+    echo "Option -r is required"
+    print_usage
+    exit -1
+  fi
+}
+
 #===========================
 # Function to run curl request
 # - $1 request - ex: POST
@@ -152,11 +204,11 @@ function main {
   # 4. Verify the RuleApp is present in RES
   # 5. Executing the RuleApp in DSR -> TODO
 
-  DC_URL=https://test-odm-dc-route-default.apps.erbium.cp.fyre.ibm.com
-  RES_URL=https://test-odm-ds-console-route-default.apps.erbium.cp.fyre.ibm.com/res
   DC_USER=odmAdmin
   decisionServiceId="null"
   deploymentsIds=[]
+
+  parse_args "$@"
 
   importDecisionService Loan_Validation_Service.zip
   if [[ "${decisionServiceId}" == "null" ]]; then
@@ -171,6 +223,7 @@ function main {
   done
 
   for deploymentId in ${deploymentsIds[@]}; do
+    echo $deploymentId
     verifyRuleApp $deploymentId
   done
 }
