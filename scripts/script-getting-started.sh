@@ -191,9 +191,24 @@ function verifyRuleApp {
   fi
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
   echo "DONE"
-  echo -n "The RuleApp contains the following rulesets: $ruleapps_rulesets"
+  echo "The RuleApp contains the following rulesets:"
+  echo $ruleapps_rulesets
 }
 
+#===========================
+# Function to test Loan Validation in RES
+function testLoanValidation {
+  echo -n "$(date) - ### Test Loan Validation $1 in RES:  "
+  curl_result=$(curl --silent --insecure --request POST ${RES_URL}/DecisionService/rest/production_deployment/2.0/loan_validation_production/1.0 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/test.json" --user ${DC_USER}:${DC_USER})
+
+  error_message=$(echo ${curl_result} | jq -r '.message')
+  if [[ "${error_message}" == "null" ]]; then
+    echo "COMPLETED"
+  else
+    echo "ERROR"
+    echo ${curl_result} | jq -r '.details'
+  fi
+}
 
 function main {
   # Scenario:
@@ -202,7 +217,7 @@ function main {
   # 2. Run Main Scoring test suite
   # 3. Generate and deploying the RuleApp
   # 4. Verify the RuleApp is present in RES
-  # 5. Executing the RuleApp in DSR -> TODO
+  # 5. Executing the RuleApp in DSR
 
   DC_USER=odmAdmin
   decisionServiceId="null"
@@ -223,8 +238,10 @@ function main {
   done
 
   for deploymentId in ${deploymentsIds[@]}; do
-    echo $deploymentId
     verifyRuleApp $deploymentId
   done
+
+  testLoanValidation
+
 }
 main "$@"
