@@ -116,8 +116,9 @@ function importDecisionService {
 # - $1 Decision Service name
 function setDecisionServiceId {
   if [[ "${decisionServiceId}" == "null" ]]; then
-    echo -n "$(date) - ### Get Decision Service id to DC:  "
-    get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A$1)
+    decision_service_name=$1
+    echo -n "$(date) - ### Get ${decision_service_name} id to DC:  "
+    get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20})
     decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
     echo "DONE"
   fi
@@ -127,9 +128,10 @@ function setDecisionServiceId {
 # Function to run the Main Scoring Test Suite in Decision Center
 # - $1 test suite name
 function runTestSuite {
-  echo -n "$(date) - ### Run test suite in DC:  "
+  test_suite_name=$1
+  echo -n "$(date) - ### Run ${test_suite_name} in DC:  "
   # Get Main Scoring test suite id
-  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A$1)
+  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20})
   testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
 
   # Run Main Scoring test suite
@@ -138,7 +140,7 @@ function runTestSuite {
   echo $run_testSuite_status
   testReportId=$(echo ${run_testSuite_result} | jq -r '.id')
 
-  echo -n "$(date) - ### Wait for test suite to be completed in DC:  "
+  echo -n "$(date) - ### Wait for ${test_suite_name} to be completed in DC:  "
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   while [[ ${testReport_status} != "COMPLETED" ]]; do
@@ -230,10 +232,10 @@ function main {
 
   importDecisionService Loan_Validation_Service.zip
   if [[ "${decisionServiceId}" == "null" ]]; then
-    setDecisionServiceId Loan%20Validation%20Service
+    setDecisionServiceId "Loan Validation Service"
   fi
 
-  runTestSuite Main%20Scoring%20test%20suite
+  runTestSuite "Main Scoring test suite"
 
   getDeploymentIds
   for deploymentId in ${deploymentsIds[@]}; do
