@@ -80,10 +80,10 @@ function curlRequest {
 # Function to import a Decision Service in Decision Center
 # - $1 local zip file name
 function importDecisionService {
-  echo -n "$(date) - ### Upload Loan Validation Service to DC:  "
+  echo -n "$(date) - ### Upload Decision Service to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
-  # echo $curl_result
 
+  # Check status
   status=$(echo ${curl_result} | jq -r '.status')
   if [[ "${status}" == "null" ]]; then
     echo "COMPLETED"
@@ -93,6 +93,7 @@ function importDecisionService {
   if [[ "${status}" == "BAD_REQUEST" ]]; then
     echo ${curl_result} | jq -r '.reason'
   fi
+
   # Set decisionServiceId
   decisionServiceId=$(echo ${curl_result} | jq -r '.decisionService.id')
 }
@@ -117,15 +118,12 @@ function runTestSuite {
   # Get Main Scoring test suite id
   get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A$1)
   testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
-  # echo ${get_testSuiteId_result}
 
   # Run Main Scoring test suite
   run_testSuite_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run)
   run_testSuite_status=$(echo ${run_testSuite_result} | jq -r '.status')
   echo $run_testSuite_status
-
   testReportId=$(echo ${run_testSuite_result} | jq -r '.id')
-  # testReportId=c95bcba7-8e35-4572-bae3-95087a646272
 
   echo -n "$(date) - ### Wait for test suite to be completed in DC:  "
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
@@ -136,9 +134,9 @@ function runTestSuite {
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   done
   echo $testReport_status
-  # echo ${get_testReport_result}
+
+  # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
-  # echo $testReports_errors
   echo -n "$(date) - ### Test report status in DC:  "
   if [[ $testReports_errors != 0 ]]; then
     echo "FAILED"
@@ -151,15 +149,10 @@ function runTestSuite {
 #===========================
 # Function to get the deployments Ids in Decision Center
 function getDeploymentIds {
-  echo -n "$(date) - ### Get elements Ids from DC:  "
+  echo -n "$(date) - ### Get deployments Ids from DC:  "
   deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments)
-  # echo $deployments
-  if [[ $? != 0 ]]; then
-    echo "Could not connect to ${DC_URL};  please check that DC is up and running."
-    exit 1
-  fi
   echo "DONE"
-
+  # Set deployment ids
   deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
 }
 
@@ -171,9 +164,8 @@ function deployRuleApp {
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy)
-  # echo $curl_result
-  echo $curl_result | jq -r '.status'
 
+  echo $curl_result | jq -r '.status'
 }
 
 #===========================
@@ -184,11 +176,7 @@ function verifyRuleApp {
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
   ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0)
-  # echo $ruleapps_result
-  if [[ $? != 0 ]]; then
-    echo "Could not connect to ${RES_URL};  please check that DC is up and running."
-    exit 1
-  fi
+
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
   echo "DONE"
   echo "The RuleApp contains the following rulesets:"
@@ -198,8 +186,8 @@ function verifyRuleApp {
 #===========================
 # Function to test Loan Validation in RES
 function testLoanValidation {
-  echo -n "$(date) - ### Test Loan Validation $1 in RES:  "
-  curl_result=$(curl --silent --insecure --request POST ${RES_URL}/DecisionService/rest/production_deployment/2.0/loan_validation_production/1.0 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/test.json" --user ${DC_USER}:${DC_USER})
+  echo -n "$(date) - ### Test Loan Validation in RES:  "
+  curl_result=$(curl --silent --insecure --request POST ${RES_URL}/DecisionService/rest/production_deployment/1.0/loan_validation_production/1.0 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/test.json" --user ${DC_USER}:${DC_USER})
 
   error_message=$(echo ${curl_result} | jq -r '.message')
   if [[ "${error_message}" == "null" ]]; then
