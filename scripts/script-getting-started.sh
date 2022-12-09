@@ -62,10 +62,23 @@ function parse_args {
 # Function to run curl request
 # - $1 request - ex: POST
 # - $2 url "${DC_URL}/decisioncenter-api/v1/decisionservices/import"
-# - $3 (Optional) zip file to import - ex: Loan_Validation_Service.zip
+# - $3 (Optional) zip or json file to import - ex: Loan_Validation_Service.zip
 function curlRequest {
   if [[ ! -z $3 ]]; then
-    curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: multipart/form-data" --form "file=@$(dirname $0)/$3;type=application/zip" --user ${DC_USER}:${DC_USER})
+    filename=$3
+    extension="${filename##*.}"
+    case "$extension" in
+    zip)
+      curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: multipart/form-data" --form "file=@$(dirname $0)/${filename};type=application/zip" --user ${DC_USER}:${DC_USER})
+      ;;
+    json)
+      curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/${filename}" --user ${DC_USER}:${DC_USER})
+      ;;
+    :)
+      echo "Invalid file type: only json and zip are supported"
+      exit -1
+      ;;
+    esac
   else
     curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --user ${DC_USER}:${DC_USER})
   fi
@@ -185,9 +198,11 @@ function verifyRuleApp {
 
 #===========================
 # Function to test Loan Validation in RES
-function testLoanValidation {
-  echo -n "$(date) - ### Test Loan Validation in RES:  "
-  curl_result=$(curl --silent --insecure --request POST ${RES_URL}/DecisionService/rest/production_deployment/1.0/loan_validation_production/1.0 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/test.json" --user ${DC_USER}:${DC_USER})
+# - $1 path of the RuleSet to test
+# - $2 json file in local directory
+function testRuleSet {
+  echo -n "$(date) - ### Test RuleSet in RES:  "
+  curl_result=$(curlRequest POST ${RES_URL}/DecisionService/rest/$1 $2)
 
   error_message=$(echo ${curl_result} | jq -r '.message')
   if [[ "${error_message}" == "null" ]]; then
@@ -229,7 +244,7 @@ function main {
     verifyRuleApp $deploymentId
   done
 
-  testLoanValidation
+  testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json
 
 }
 main "$@"
