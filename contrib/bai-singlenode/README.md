@@ -67,7 +67,7 @@ $ cd <BAI_DIR>/odm
 $ ./set-loan-server-props
 ```
 
-If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/docs/en/odm/8.11.0?topic=properties-built-in-ruleset-odm-event-emitter.
+If the script fails you can set the properties manually in the RES console, see https://www.ibm.com/docs/en/odm/8.11.1?topic=properties-built-in-ruleset-odm-event-emitter.
 
 # Play with the integration
 ## Scenario
