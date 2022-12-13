@@ -15,7 +15,7 @@ if [ ! -f $INITFLAG ] ; then
 	if [ "${SAMPLE}" = "true" ] ; then
 		echo "$(date) - Restore ODM sample database "
  		pg_restore -Fc -d odmdb /upload/data.dump
-		 
+
         echo "$(date) - Database restored successfully"
 		echo ""
 		if [ -n "$ODM_CONTEXT_ROOT" ] ; then
@@ -25,8 +25,14 @@ if [ ! -f $INITFLAG ] ; then
 			psql -U $POSTGRES_USER -d $POSTGRES_DB -f /tmp/update-usersetting.sql
 			echo "Change committed."
 			echo "Verifying values:"
-			psql -U $POSTGRES_USER -d $POSTGRES_DB -f /upload/verify-usersetting.sql			
+			psql -U $POSTGRES_USER -d $POSTGRES_DB -f /upload/verify-usersetting.sql
 		fi;
 	fi;
 	touch $INITFLAG
 fi;
+
+if [ -s "/etc/postgresql/pg_hba.conf" ]
+  then
+        echo "copy all .conf files to ${PGDATA}"
+        cp /etc/postgresql/*.conf ${PGDATA}
+fi

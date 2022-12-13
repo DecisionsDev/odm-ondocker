@@ -7,10 +7,13 @@ The IBM License Service needs to be installed on the Kubernetes cluster where th
 The IBM License Service processes pod annotations to track licenses. Therefore product teams must use specific metering annotations in the `spec.template.metadata.annotations` section of their Kubernetes pod template for custom ODM containers, similarly to what is provided for the predefined ODM containers
 
 Based on your deployment type, use the following annotations:
-- [IBM ODM on Kubernetes (Production)](#ibm-odm-on-kubernetes-production)
-- [IBM ODM on Kubernetes (Non-Production)](#ibm-odm-on-kubernetes-non-production)
+- [Add IBM License Metering annotations to custom ODM containers](#add-ibm-license-metering-annotations-to-custom-odm-containers)
+  - [Guidance](#guidance)
+  - [IBM ODM on Kubernetes (Production)](#ibm-odm-on-kubernetes-production)
+  - [IBM ODM on Kubernetes (Non-Production)](#ibm-odm-on-kubernetes-non-production)
+  - [Example](#example)
 
-The annotations below are defined for ODM version 8.11.0, but you can also use them for ODM v8.10.5.1 by replacing **productVersion** value with "8.10.5.1".
+The annotations below are defined for ODM version 8.11.1, but you can also use them for ODM v8.10.5.1 by replacing **productVersion** value with "8.10.5.1".
 
 ## Guidance
 
@@ -28,7 +31,7 @@ The annotations below are defined for ODM version 8.11.0, but you can also use t
         annotations:
           productName: "IBM Operational Decision Manager"
           productID: "b1a07d4dc0364452aa6206bb6584061d"
-          productVersion: "8.11.0"
+          productVersion: "8.11.1"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -42,7 +45,7 @@ The annotations below are defined for ODM version 8.11.0, but you can also use t
         annotations:
           productName: "IBM Operational Decision Manager - Non Prod"
           productID: "e32af5770e06427faae142993c691048"
-          productVersion: "8.11.0"
+          productVersion: "8.11.1"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -58,7 +61,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager - Non Prod"
         productID: "e32af5770e06427faae142993c691048"
-        productVersion: "8.11.0"
+        productVersion: "8.11.1"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: <containername>
 ```
@@ -81,7 +84,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager"
         productID: "b1a07d4dc0364452aa6206bb6584061d"
-        productVersion: "8.11.0"
+        productVersion: "8.11.1"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: my-odm-decisionserverruntime
     spec:
@@ -89,6 +92,6 @@ spec:
 
       containers:
       - name: my-odm-decisionserverruntime
-        image: my-repo/my-odm-decisionserverruntime:8.11.0-amd64
+        image: my-repo/my-odm-decisionserverruntime:8.11.1-amd64
         ...
 ```

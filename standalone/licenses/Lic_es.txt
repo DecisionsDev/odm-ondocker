@@ -1,350 +1,541 @@
-INFORMACI√ìN SOBRE LICENCIA
+INFORMACI”N SOBRE LICENCIA
 
-Los Programas que se enumeran a continuaci√≥n se licencian bajo los siguientes t√©rminos y condiciones de Licencia, adem√°s de los t√©rminos de licencia del Programa acordados previamente entre el Cliente e IBM. Si el Cliente no ha aceptado con anterioridad los t√©rminos de la licencia aplicables al Programa, se aplicar√° Acuerdo Internacional de Licencia para Programas sin Garant√≠a (Z125-5589-05).
+Los Programas que se enumeran a continuaciÛn se licencian bajo los siguientes tÈrminos y condiciones de Licencia, adem·s de los tÈrminos de licencia del Programa acordados previamente entre el Cliente e IBM. Si el Cliente no ha aceptado con anterioridad los tÈrminos de la licencia aplicables al Programa, se aplicar· Acuerdo Internacional de Licencia para Programas sin GarantÌa (i125-5589-06).
 
-Nombre de Programa (N√∫mero de Programa):
-IBM Operational Decision Manager for Developers V8.11 (5725-B69)
+Nombre de Programa (N˙mero de Programa):
+IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
 
-Los t√©rminos est√°ndar siguientes se aplican al uso por parte del Licenciatario del Programa.
+Los tÈrminos est·ndar siguientes se aplican al uso por parte del Licenciatario del Programa.
 
-Derecho de uso limitado
+Imagen de instalaciÛn de varios productos
 
-A excepci√≥n de los Programas Empaquetados, cualquier software de IBM proporcionado al Licenciatario con el Programa podr√° utilizarse √∫nicamente para dar soporte al uso del Programa Principal por parte del Licenciatario en virtud de este documento de Informaci√≥n de Licencia, lo que significa que dicho uso debe estar directamente relacionado con un uso bajo licencia del Programa Principal.
-
-El Licenciatario no tiene autorizaci√≥n para utilizar el Programa con el fin de prestar servicios comerciales de TI a terceros, proporcionar servicios de alojamiento comercial o uso temporal compartido ni sublicenciar, alquilar o arrendar el Programa.
-
-Usos prohibidos
-
-El Licenciatario no puede utilizar ni autorizar a terceros para utilizar el Programa si un fallo del Programa puede producir la muerte, da√±os corporales o da√±os a la propiedad o al medio ambiente.
-
-Imagen de instalaci√≥n de varios productos
-
-El Programa se proporciona como parte de una imagen de instalaci√≥n de varios productos. El Licenciatario s√≥lo est√° autorizado para instalar y utilizar el Programa (y los Programas de Soporte correspondientes, de haberlos) si ha obtenido una autorizaci√≥n v√°lida y no podr√° instalar ni utilizar ninguno de los otros programas de software incluidos en la imagen a menos que adquiera autorizaciones por separado para el software en cuesti√≥n.
+El Programa se proporciona como parte de una imagen de instalaciÛn de varios productos. El Licenciatario sÛlo est· autorizado para instalar y utilizar el Programa (y los Programas de Soporte correspondientes, de haberlos) si ha obtenido una autorizaciÛn v·lida y no podr· instalar ni utilizar ninguno de los otros programas de software incluidos en la imagen a menos que adquiera autorizaciones por separado para el software en cuestiÛn.
 
 Programas de Soporte
 
-El Licenciatario est√° autorizado para instalar y utilizar los Programas de Soporte identificados a continuaci√≥n solo para dar soporte al uso por parte del Licenciatario del Programa Principal bajo el presente Acuerdo. La frase "para ofrecer soporte al uso por parte del Licenciatario" incluir√≠a √∫nicamente los usos necesarios o de otro modo relacionados directamente con un uso bajo licencia del Programa Principal u otro Programa de Soporte. Los Programas de Soporte no pueden utilizarse con ninguna otra finalidad. Un Programa de Soporte puede ir acompa√±ado de t√©rminos de licencia y, dichos t√©rminos, de haberlos, se aplicar√°n al uso del Programa de Soporte por parte del Licenciatario. En el supuesto de que se produjera un conflicto, los t√©rminos de este documento de Licencia prevalecer√°n sobre los t√©rminos del Programa de Soporte. El Licenciatario debe obtener suficientes autorizaciones para el Programa, en su totalidad, a fin de dar cobertura a la instalaci√≥n y uso del Licenciatario de cada uno de los Programas de Soporte, a menos que se proporcionen titularidades separadas en el presente documento de Informaci√≥n de la Licencia.Por ejemplo, si la licencia de este Programa est√° basada en VPC (N√∫cleo de Procesador Virtual) y el Licenciatario instala el Programa Principal o un Programa de Soporte en una m√°quina de 10 VPC y otro Programa de Soporte en una segunda m√°quina de 10 VPC, el Licenciatario deber√° obtener autorizaciones por 20 VPC para el Programa.
+El Licenciatario est· autorizado para instalar y utilizar los Programas de Soporte identificados a continuaciÛn solo para dar soporte al uso por parte del Licenciatario del Programa Principal bajo el presente Acuerdo. La frase "para ofrecer soporte al uso por parte del Licenciatario" incluirÌa ˙nicamente los usos necesarios o de otro modo relacionados directamente con un uso bajo licencia del Programa Principal u otro Programa de Soporte. Los Programas de Soporte no pueden utilizarse con ninguna otra finalidad. Un Programa de Soporte puede ir acompaÒado de tÈrminos de licencia y, dichos tÈrminos, de haberlos, se aplicar·n al uso del Programa de Soporte por parte del Licenciatario. En el supuesto de que se produjera un conflicto, los tÈrminos de este documento de Licencia prevalecer·n sobre los tÈrminos del Programa de Soporte. El Licenciatario debe obtener suficientes autorizaciones para el Programa, en su totalidad, a fin de dar cobertura a la instalaciÛn y uso del Licenciatario de cada uno de los Programas de Soporte, a menos que se proporcionen titularidades separadas en el presente documento de InformaciÛn de la Licencia.Por ejemplo, si la licencia de este Programa est· basada en VPC (N˙cleo de Procesador Virtual) y el Licenciatario instala el Programa Principal o un Programa de Soporte en una m·quina de 10 VPC y otro Programa de Soporte en una segunda m·quina de 10 VPC, el Licenciatario deber· obtener autorizaciones por 20 VPC para el Programa.
 
 Programas de Soporte:
-IBM WebSphere Liberty 21
+IBM WebSphere Liberty 22
 
-Limitaci√≥n del Desarrollador
+LimitaciÛn del Desarrollador
 
-Si el Programa se conoce como "Para Desarrolladores", el Licenciatario solo puede utilizar el Programa como parte del desarrollo interno y de las pruebas unitarias del Licenciatario en una m√°quina de desarrollo. Una m√°quina de desarrollo es un entorno de escritorio virtual o f√≠sico que ejecuta un sistema operativo principal y el Programa, siendo ambos accesibles y utilizables s√≥lo por un desarrollador especificado.
+Si el Programa se conoce como "Para Desarrolladores", el Licenciatario solo puede utilizar el Programa como parte del desarrollo interno y de las pruebas unitarias del Licenciatario en una m·quina de desarrollo. Una m·quina de desarrollo es un entorno de escritorio virtual o fÌsico que ejecuta un sistema operativo principal y el Programa, siendo ambos accesibles y utilizables sÛlo por un desarrollador especificado.
 
-C√≥digo con Licencia por Separado
+CÛdigo de terceros modificable
 
-El C√≥digo con Licencia por Separado de cada uno de los componentes listados en el archivo NON_IBM_LICENSE se licencia al Licenciatario de acuerdo con los t√©rminos que se establecen en el correspondiente acuerdo de licencia de terceros en el archivo NON_IBM_LICENSE que acompa√±a al Programa y no con arreglo al presente Acuerdo. Las futuras actualizaciones o correcciones del Programa pueden contener otros componentes del C√≥digo con Licencia por Separado. Dicho C√≥digo con Licencia por Separado adicional y sus correspondientes licencias se listar√°n en el archivo NON_IBM_LICENSE aplicable que acompa√±a a la actualizaci√≥n o a la correcci√≥n del Programa.
+Si en el archivo AVISOS IBM identifica cÛdigo de terceros como "CÛdigo de Terceros Modificable", IBM autoriza al Titular de la Licencia 1) modificar el CÛdigo de Terceros Modificable y a 2) realizar ingenierÌa inversa de los mÛdulos del Programa que interact˙an directamente con el CÛdigo de Terceros Modificable proporcionado que es solo para fines de depuraciÛn de las modificaciones del Titular de la Licencia de dicho cÛdigo de terceros. Las obligaciones de servicio y soporte de IBM, si existen, se aplican solo al Programa no modificado.
 
-Nota: Independientemente de los t√©rminos del acuerdo de licencia de terceros, del Acuerdo o de cualquier otro acuerdo que el Licenciatario pudiera tener con IBM, respecto al C√≥digo con Licencia por Separado:
-(a) IBM los proporciona al Licenciatario SIN GARANT√çA DE NING√öN TIPO Y NO OTORGA NINGUNA GARANT√çA NI CONDICI√ìN EXPL√çCITA O IMPL√çCITA INCLUIDAS, PERO SIN LIMITACIONES, LA GARANT√çA DE T√çTULO, DE NO INCUMPLIMIENTO O NO INTERFERENCIA Y LAS GARANT√çAS Y CONDICIONES IMPL√çCITAS DE COMERCIALIZACI√ìN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA;
-(b) IBM no es responsable de ning√∫n da√±o directo, indirecto, incidental, especial, ejemplar, punitivo ni consecuencial, incluidas sin limitarse a, la p√©rdida de datos, la p√©rdida de ahorros y la p√©rdida de beneficios.
+CÛdigo con Licencia por Separado
+
+El CÛdigo con Licencia por Separado de cada uno de los componentes listados en el archivo NON_IBM_LICENSE se licencia al Licenciatario de acuerdo con los tÈrminos que se establecen en el correspondiente acuerdo de licencia de terceros en el archivo NON_IBM_LICENSE que acompaÒa al Programa y no con arreglo al presente Acuerdo. Las futuras actualizaciones o correcciones del Programa pueden contener otros componentes del CÛdigo con Licencia por Separado. Dicho CÛdigo con Licencia por Separado adicional y sus correspondientes licencias se listar·n en el archivo NON_IBM_LICENSE aplicable que acompaÒa a la actualizaciÛn o a la correcciÛn del Programa.
+
+Nota: Independientemente de los tÈrminos del acuerdo de licencia de terceros, del Acuerdo o de cualquier otro acuerdo que el Licenciatario pudiera tener con IBM, respecto al CÛdigo con Licencia por Separado:
+(a) IBM los proporciona al Licenciatario SIN GARANTÕA DE NING⁄N TIPO Y NO OTORGA NINGUNA GARANTÕA NI CONDICI”N EXPLÕCITA O IMPLÕCITA INCLUIDAS, PERO SIN LIMITACIONES, LA GARANTÕA DE TÕTULO, DE NO INCUMPLIMIENTO O NO INTERFERENCIA Y LAS GARANTÕAS Y CONDICIONES IMPLÕCITAS DE COMERCIALIZACI”N E IDONEIDAD PARA UNA FINALIDAD DETERMINADA;
+(b) IBM no es responsable de ning˙n daÒo directo, indirecto, incidental, especial, ejemplar, punitivo ni consecuencial, incluidas sin limitarse a, la pÈrdida de datos, la pÈrdida de ahorros y la pÈrdida de beneficios.
 
 Privacidad
 
-El Licenciatario reconoce y acepta que IBM utilice cookies y tecnolog√≠as de rastreo para recopilar informaci√≥n personal al recabar estad√≠sticas de uso de producto e informaci√≥n dise√±ada para mejorar la experiencia del usuario y/o adecuar las interacciones con los usuarios seg√∫n la Declaraci√≥n de privacidad en l√≠nea de IBM en http://www.ibm.com/privacy/.
+El Licenciatario reconoce y acepta que IBM utilice cookies y tecnologÌas de rastreo para recopilar informaciÛn personal al recabar estadÌsticas de uso de producto e informaciÛn diseÒada para mejorar la experiencia del usuario y/o adecuar las interacciones con los usuarios seg˙n la DeclaraciÛn de privacidad en lÌnea de IBM en http://www.ibm.com/privacy/.
 
-Componentes en C√≥digo Fuente y Materiales de muestra
+Componentes en CÛdigo Fuente y Materiales de muestra
 
-El Programa incluye algunos componentes en formato de c√≥digo fuente ("Componentes en C√≥digo Fuente") y otros materiales identificados como Materiales de muestra, o ambos. El Licenciatario puede copiar y modificar los Componentes en C√≥digo Fuente y los Materiales de muestra √∫nicamente para uso interno, siempre que dicho uso est√© dentro de los l√≠mites de los derechos de licencia en virtud del presente Acuerdo, y siempre y cuando el Licenciatario no altere ni suprima ninguna informaci√≥n de copyright ni de avisos de los Componentes en C√≥digo Fuente ni de los Materiales de muestra. IBM proporciona los Componentes en C√≥digo Fuente y los Materiales de muestra sin ning√∫n tipo de obligaci√≥n de soporte y "TAL CUAL", SIN GARANT√çA DE NING√öN TIPO, NI IMPL√çCITA NI EXPL√çCITA, INCLUIDAS LA GARANT√çA DE T√çTULO, LA GARANT√çA DE NO VULNERACI√ìN DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANT√çAS Y CONDICIONES IMPL√çCITAS DE COMERCIALIZACI√ìN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA.
+El Programa incluye algunos componentes en formato de cÛdigo fuente ("Componentes en CÛdigo Fuente") y otros materiales identificados como Materiales de muestra, o ambos. El Licenciatario puede copiar y modificar los Componentes en CÛdigo Fuente y los Materiales de muestra ˙nicamente para uso interno, siempre que dicho uso estÈ dentro de los lÌmites de los derechos de licencia en virtud del presente Acuerdo, y siempre y cuando el Licenciatario no altere ni suprima ninguna informaciÛn de copyright ni de avisos de los Componentes en CÛdigo Fuente ni de los Materiales de muestra. IBM proporciona los Componentes en CÛdigo Fuente y los Materiales de muestra sin ning˙n tipo de obligaciÛn de soporte y "TAL CUAL", SIN GARANTÕA DE NING⁄N TIPO, NI IMPLÕCITA NI EXPLÕCITA, INCLUIDAS LA GARANTÕA DE TÕTULO, LA GARANTÕA DE NO VULNERACI”N DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANTÕAS Y CONDICIONES IMPLÕCITAS DE COMERCIALIZACI”N E IDONEIDAD PARA UNA FINALIDAD DETERMINADA.
 
 Servicios y Datos de Terceros
 
-El Programa proporciona acceso a servicios de datos, bases de datos, servicios web, software u otro contenido de terceros (conjuntamente, "Contenido de Terceros"). El acceso a este Contenido de Terceros se proporciona "TAL CUAL", SIN GARANT√çA DE NING√öN TIPO, NI IMPL√çCITA NI EXPL√çCITA, INCLUIDAS LA GARANT√çA DE T√çTULO, LA GARANT√çA DE NO VULNERACI√ìN DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANT√çAS Y CONDICIONES IMPL√çCITAS DE COMERCIALIZACI√ìN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA. Los terceros correspondientes podr√°n interrumpir el acceso a su entera discreci√≥n y en cualquier momento. Es posible que sea necesario que el Licenciatario celebre acuerdos independientes con el tercero relativos al acceso o al uso del Contenido de Terceros en cuesti√≥n. IBM no es parte de dichos acuerdos independientes y, como condici√≥n expresa de la presente licencia, el Licenciatario acepta cumplir los t√©rminos de dichos acuerdos independientes.
-
-L/N:  L-ASAY-C55H6F
-D/N:  L-ASAY-C55H6F
-P/N:  L-ASAY-C55H6F
+El Programa proporciona acceso a servicios de datos, bases de datos, servicios web, software u otro contenido de terceros (conjuntamente, "Contenido de Terceros"). El acceso a este Contenido de Terceros se proporciona "TAL CUAL", SIN GARANTÕA DE NING⁄N TIPO, NI IMPLÕCITA NI EXPLÕCITA, INCLUIDAS LA GARANTÕA DE TÕTULO, LA GARANTÕA DE NO VULNERACI”N DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANTÕAS Y CONDICIONES IMPLÕCITAS DE COMERCIALIZACI”N E IDONEIDAD PARA UNA FINALIDAD DETERMINADA. Los terceros correspondientes podr·n interrumpir el acceso a su entera discreciÛn y en cualquier momento. Es posible que sea necesario que el Licenciatario celebre acuerdos independientes con el tercero relativos al acceso o al uso del Contenido de Terceros en cuestiÛn. IBM no es parte de dichos acuerdos independientes y, como condiciÛn expresa de la presente licencia, el Licenciatario acepta cumplir los tÈrminos de dichos acuerdos independientes.
 
 
-Acuerdo Internacional de Licencia para Programas sin Garant√≠a
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS
+
+Acuerdo Internacional de Licencia para Programas sin GarantÌa
 
 Parte 1 - Condiciones Generales
 
-EL LICENCIATARIO ACEPTA LOS T√âRMINOS DE ESTE ACUERDO MEDIANTE LA DESCARGA, INSTALACI√ìN, COPIA, ACCESO, PULSANDO EL BOT√ìN "ACEPTAR" O MEDIANTE CUALQUIER TIPO DE UTILIZACI√ìN DEL PROGRAMA. SI EL CLIENTE ACEPTA ESTOS T√âRMINOS EN NOMBRE DEL LICENCIATARIO, EL CLIENTE DECLARA Y GARANTIZA QUE TIENE PLENA AUTORIDAD PARA OBLIGAR AL LICENCIATARIO A CUMPLIR DICHOS T√âRMINOS. SI NO ACEPTA ESTOS T√âRMINOS,
+EL LICENCIATARIO ACEPTA LOS T…RMINOS DE ESTE ACUERDO MEDIANTE LA DESCARGA, INSTALACI”N, COPIA, ACCESO, PULSANDO EL BOT”N "ACEPTAR" O MEDIANTE CUALQUIER TIPO DE UTILIZACI”N DEL PROGRAMA. SI ACEPTA ESTOS T…RMINOS EN NOMBRE DEL LICENCIATARIO, USTED, COMO REPRESENTANTE, DECLARA Y GARANTIZA QUE TIENE PLENA AUTORIDAD PARA OBLIGAR AL LICENCIATARIO A CUMPLIR DICHOS T…RMINOS.
 
-* DESCARGAR, INSTALAR, COPIAR, ACCEDER, PULSAR EL BOT√ìN "ACEPTAR" NI USAR EL PROGRAMA; Y DEBER√Å
+SI NO EST¡ DE ACUERDO CON ESTOS T…RMINOS O NO TIENE AUTORIDAD: i) NO DESCARGUE, INSTALE, COPIE, ACCEDA, HAGA CLIC EN EL BOT”N "ACEPTAR" NI USE EL PROGRAMA; Y ii) DEVUELVA INMEDIATAMENTE LOS SOPORTES, LA DOCUMENTACI”N Y LA PRUEBA DE TITULARIDAD A LA PARTE DE LA QUE SE OBTUVO PARA CONSEGUIR UN REEMBOLSO DEL IMPORTE PAGADO. SI EL PROGRAMA SE HA DESCARGADO, DESTRUYA TODAS LAS COPIAS DEL PROGRAMA.
 
-* DEVOLVER INMEDIATAMENTE LOS MEDIOS NO UTILIZADOS Y LA DOCUMENTACI√ìN A LA ENTIDAD A LA CUAL LOS ADQUIRI√ì PARA EL REEMBOLSO DEL IMPORTE PAGADO. SI EL PROGRAMA FUE DESCARGADO, DEBER√ÅN DESTRUIRSE TODAS LAS COPIAS DEL PROGRAMA.
+Este Acuerdo Internacional de Licencia para Programas Sin GarantÌa (ILAN) y los Documentos Transaccionales (DT) aplicables (en conjunto, el "Acuerdo") constituyen el Acuerdo completo entre el Licenciatario e IBM con respecto al uso de un Programa. Los tÈrminos especÌficos para cada paÌs incluidos en la parte 2 de este acuerdo AILPSG sustituyen o modifican los tÈrminos de la parte 1.
 
-1. Definiciones
+Los Documentos Transaccionales (DT) proporcionan la descripciÛn, informaciÛn y tÈrminos relacionados con el Programa y su uso autorizado. Algunos ejemplos de DT para Programas son la InformaciÛn sobre Licencia (LI), las especificaciones del programa bajo licencia (LPS), la oferta, el documento de titularidad (PoE) o la factura. En caso de conflicto, un DT prevalecer· sobre el ILAN.
 
-"Uso Autorizado" - es el nivel especificado para el cual el Licenciatario est√° autorizado para ejecutar o hacer funcionar el Programa. Dicho nivel puede medirse por el n√∫mero de usuarios, millones de unidades de servicio ("MSUs"), Unidades de Valor de Procesador (Processor Value Units o "PVUs"), u otro nivel de uso especificado por IBM.
+1. Licencia del Programa
 
-"IBM" - International Business Machines Corporation o una de sus subsidiarias.
+a. Un Programa es un programa inform·tico ejecutable con la marca IBM y su material relacionado e incluye copias completas y parciales. Los detalles del Programa se describen en un DT disponible en http://www.ibm.com/software/sla (para programas Passport Advantage) o http://www.ibm.com/support/knowledgecenter (para otros programas de IBM), en el directorio del Programa, mediante el uso de un mandato del sistema o de cualquier otro modo que haya especificado IBM. Las polÌticas de software de IBM (como, por ejemplo, copia de seguridad, uso temporal y entorno en la nube aprobado por IBM) disponibles en http://www.ibm.com/softwarepolicies aplican al uso de Programas por parte del Licenciatario.
 
-"Informaci√≥n sobre Licencia" ("LI") - es un documento que proporciona informaci√≥n y cualquier t√©rmino adicional espec√≠fico para un Programa. La LI del Programa est√° disponible en www.ibm.com/software/sla. Tambi√©n puede encontrar la LI en el directorio del Programa, mediante el uso de un mandato del sistema, o como un folleto informativo incluido en el Programa.
+b. Las copias de Programas tienen derechos de copyright y licencia.
 
-"Programa" - es lo siguiente, incluyendo el original y cualquier copia total o parcial de: 1) instrucciones y datos legibles por m√°quina, 2) componentes, archivos y m√≥dulos, 3) contenido audiovisual (como im√°genes, texto, grabaciones o dibujos), y 4) materiales bajo licencia relacionados (como claves y documentaci√≥n).
+c. Al Licenciatario se le otorga una licencia no exclusiva para:
 
-2. Estructura del Acuerdo
+(1) utilizar cada copia de un Programa, con arreglo a los tÈrminos del Acuerdo y si procede, hasta el n˙mero de derechos de titularidad que el Licenciatario adquiera ("Uso Autorizado");
 
-Este Acuerdo incluye la Parte 1 - Condiciones Generales, Parte 2 - Condiciones exclusivas para cada pa√≠s (si las hubiera) y la Informaci√≥n sobre Licencia que constituyen el acuerdo completo entre el Licenciatario e IBM en relaci√≥n al uso del Programa. Sustituye a cualquier comunicaci√≥n oral o escrita anterior entre las partes en relaci√≥n al uso del Programa por parte del Licenciatario. Los t√©rminos de la Parte 2 pueden sustituir o modificar los t√©rminos de la Parte 1. En el supuesto de cualquier conflicto, los t√©rminos de la LI prevalecen sobre los de ambas Partes.
+(2) realizar e instalar copias que respalden dicho Uso autorizado; y
 
-3. Licencia
+(3) realizar una copia de seguridad.
 
-El Programa es propiedad de IBM o de un distribuidor de IBM y est√° sujeto a derechos de autor y se otorga bajo licencia, no se vende.
+d. Los programas pueden ser utilizados por el Licenciatario, sus empleados y subcontratados. El Licenciatario no puede alquilar ni arrendar un Programa ni ofrecer servicios comerciales de TecnologÌas de la InformaciÛn, alojamiento o servicios de uso compartido a ning˙n tercero. Es posible que haya otros derechos disponibles para el Cliente sujetos al pago de tarifas adicionales o bajo tÈrminos distintos.
 
-IBM le concede al Licenciatario una licencia no exclusiva para 1) utilizar el Programa seg√∫n los t√©rminos establecidos en el Uso Autorizado especificado en la factura, 2) realizar e instalar copias que respalden dicho Uso Autorizado, y 3) realizar una copia de seguridad, todo ello siempre y cuando:
+e. La licencia otorgada para un Programa est· sujeta a las siguientes acciones por parte del Licenciatario:
 
-a. el Licenciatario haya obtenido el Programa de forma leg√≠tima y cumpla los t√©rminos de este Acuerdo;
+(1) debe reproducir los avisos de copyright y otras marcas en cualquier copia;
 
-b. la copia de seguridad no se ejecute a menos que el Programa del que se haya realizado la copia no pueda ejecutarse;
+(2) debe garantizar que cualquier persona que utilice el Programa: i) lo hace ˙nicamente en nombre del Licenciatario dentro del Uso Autorizado del Licenciatario y ii) cumple con los tÈrminos este Acuerdo;
 
-c. el Licenciatario reproduzca todas las notificaciones de copyright y otros distintivos de titularidad en cada copia, o copia parcial del Programa;
+(3) no puede desensamblar, descompilar, traducir ni realizar ingenierÌa inversa del Programa, excepto en la medida permitida expresamente por ley sin posibilidad de renuncia contractual; y
 
-d. el Licenciatario se asegure de que cualquier persona que utilice el Programa (tanto si accede localmente o de forma remota): 1) lo hace √∫nicamente en nombre del Licenciatario, y 2) cumple los t√©rminos de este Acuerdo;
+(4) no puede utilizar ninguno de los componentes del Programa o materiales bajo licencia relacionados, de forma separada de dicho Programa.
 
-e. el Licenciatario no podr√° 1) utilizar, copiar, modificar ni distribuir el Programa excepto del modo permitido expresamente en este Acuerdo; 2) desensamblar, descompilar, traducir de otro modo o realizar t√©cnicas de ingenier√≠a inversa en el Programa, excepto en la medida permitida expresamente por ley sin posibilidad de renuncia contractual; 3) utilizar cualquiera de los componentes, archivos, m√≥dulos, contenido audiovisual del Programa, o materiales bajo licencia relacionados, de forma separada de dicho Programa; o 4) sublicenciar, alquilar o arrendar el Programa; y
+f. Si el DT de un Programa ("Programa Principal") indica que se incluye un "Programa de Soporte" con el Programa Principal, el Licenciatario puede utilizar el Programa de Soporte con arreglo a las limitaciones de la licencia del Programa Principal y solo para dar soporte al Programa Principal.
 
-f. si el Licenciatario obtiene este Programa como un Programa de Soporte, el Licenciatario utilizar√° el Programa √∫nicamente como soporte del Programa Principal y sujeto a cualquier limitaci√≥n de la licencia del Programa Principal, o, si el Licenciatario obtiene este Programa como Programa Principal, el Licenciatario utilizar√° todos los Programas de Soporte √∫nicamente como soporte de este Programa y sujetos a cualquier limitaci√≥n establecida en este Acuerdo. A los efectos de este apartado "f," un "Programa de Soporte" es un Programa que forma parte de otro Programa de IBM ("Programa Principal") y se identifica como Programa de Soporte en la LI del Programa Principal. Para obtener una licencia independiente para un Programa de Soporte sin estas restricciones, el Licenciatario debe ponerse en contacto con la parte a la cual adquiri√≥ el Programa de Soporte.
+g. Esta licencia se aplica a cada copia del Programa que realice el Licenciatario.
 
-Esta licencia se aplica a cada copia del Programa que realice el Licenciatario.
+h. Una actualizaciÛn, correcciÛn o parche para un Programa queda sujeto a los tÈrminos que rigen el Programa a menos que se proporcionen nuevos tÈrminos en un DT actualizado. El Licenciatario acepta dichos nuevos tÈrminos al instalar la actualizaciÛn, la correcciÛn o el parche. Si un Programa es sustituido por una actualizaciÛn, el Licenciatario acepta interrumpir de inmediato el uso del Programa sustituido.
 
-3.1 Actualizaciones, Mejoras, Correcciones y Parches
+i. Si el Licenciatario no est· satisfecho con un Programa por alg˙n motivo, podr· rescindir la licencia devolviendo el Programa y la prueba de titularidad a IBM o al Business Partner autorizado de IBM en el plazo de los 30 dÌas posteriores a la fecha de adquisiciÛn original de dicho Programa para obtener un reembolso del importe pagado. En el caso de un Programa descargado, el Licenciatario debe ponerse en contacto con la parte a la cual adquiriÛ el Programa para obtener instrucciones sobre cÛmo obtener el reembolso.
 
-3.1.1 Actualizaciones
+2. GarantÌas
 
-Si se sustituye el Programa por una actualizaci√≥n, la licencia del Programa sustituido se rescindir√° inmediatamente.
+a. IBM no garantiza el funcionamiento ininterrumpido o libre de errores de un Programa de IBM, ni que IBM corrija todos los defectos o impida interrupciones de terceros. Estas garantÌas son las ˙nicas garantÌas de IBM, y reemplazan cualquier otra garantÌa, incluidas garantÌas o condiciones implÌcitas de calidad satisfactoria, de comercializaciÛn, de no infracciÛn de derechos de terceros y de adecuaciÛn para un fin concreto. Las garantÌas de IBM no se aplicar·n si ha habido un mal uso, modificaciÛn, daÒo no causado por IBM o incumplimiento de las instrucciones escritas facilitadas por IBM. Los Programas no-IBM de Terceros se proporcionan "tal cual", sin garantÌas de ninguna clase. Dichos Terceros podr·n ofrecer sus propias garantÌas al Licenciatario.
 
-3.1.2 Mejoras, Correcciones y Parches
+b. Podr· disponerse de soporte adicional durante o despuÈs del periodo de garantÌa con arreglo a un acuerdo independiente.
 
-En el caso en que el Licenciatario reciba una mejora, correcci√≥n o parche para un Programa, el Licenciatario acepta cualquier t√©rmino adicional o diferente que sea aplicable a dicha mejora, correcci√≥n o parche que est√© especificada en su LI. Si no se proporcionan t√©rminos adicionales o diferentes, la mejora, correcci√≥n o parche estar√° sujeto √∫nicamente a este Acuerdo. Si el Programa se sustituye por una mejora, el Licenciatario acuerda interrumpir inmediatamente el uso del Programa sustituido.
+3. Cargos, Impuestos, Pago y VerificaciÛn
 
-3.2 Licencias a Plazo Fijo
+a. El derecho del Licenciatario a usar un Programa est· supeditado al pago por su parte de los cargos aplicables seg˙n lo especificado en el acuerdo con arreglo al cual el Licenciatario adquiriÛ los derechos de titularidad de la licencia. El Licenciatario es responsable de adquirir derechos de licencia adicionales con car·cter previo a cualquier incremento de su uso.
 
-Si IBM otorga el Programa bajo licencia durante un plazo determinado, la licencia del Licenciatario terminar√° al final del plazo determinado, a menos que el Licenciatario e IBM acuerden su renovaci√≥n.
+b. El Licenciatario se compromete a pagar todos los cargos aplicables de los derechos adquiridos y cualquier cargo por uso en exceso sobre sus derechos de titularidad. Los cargos no incluyen aranceles u otros derechos de aduana, impuestos o grav·menes similares establecidos por cualquier autoridad que resulten de la adquisiciÛn por parte del Licenciatario y se facturar·n como suplemento a dichos cargos. Los importes ser·n debidos a la recepciÛn de la factura y pagaderos dentro de los treinta (30) dÌas siguientes a la fecha de la factura, a una cuenta que especifique IBM, y pueden aplicarse cargos por demora. El Licenciatario es responsable de adquirir debidamente los derechos de licencia adicionales previamente a cualquier aumento de su uso. IBM no concede crÈditos ni realiza reembolsos por cargos ya vencidos o pagados, excepto si asÌ se especifica en alg˙n otro lugar de este ILAN, el DT correspondiente, o en tÈrminos del acuerdo en virtud del cual el Licenciatario adquiriÛ los derechos de licencia.
 
-3.3 Vigencia y Terminaci√≥n
+c. En base a los derechos de titularidad adquiridos, el Licenciatario acuerda: i) pagar las retenciones fiscales ("withholding taxes") directamente a la entidad gubernamental correspondiente donde asÌ sea requerido por ley, ii) suministrar un certificado tributario a IBM para evidenciar dicho pago; iii) pagar a IBM ˙nicamente los importes netos despuÈs de impuestos, y iv) colaborar con IBM para tratar de obtener una exenciÛn o reducciÛn de tales impuestos y cumplimentar y registrar con prontitud todos los documentos pertinentes.
 
-Los t√©rminos de este Acuerdo son efectivos hasta su terminaci√≥n.
+d. Si el Licenciatario importa, exporta, transfiere, accede o utiliza un Programa de un paÌs a otro, el Licenciatario acepta ser responsable y pagar a las autoridades cualquier arancel, derecho de aduana, impuesto o gravamen similar que estimen las autoridades. Este excluye aquellos impuestos basados en los ingresos netos de IBM.
 
-IBM puede terminar la licencia del Licenciatario en caso que √©ste incumpla los t√©rminos de este Acuerdo.
+3.1 VerificaciÛn de licencias
 
-En el caso en que cualquiera de las partes termine la licencia por cualquier causa, el Licenciatario acuerda interrumpir el uso inmediatamente y destruir todas sus copias del Programa. Cualquier t√©rmino de este Acuerdo que por su car√°cter tenga una vigencia superior a la terminaci√≥n del Acuerdo permanecer√° en vigor hasta su cumplimiento y se aplicar√° a los sucesores y cesionarios respectivos de ambas partes.
+a. El Licenciatario, para todos los Programas en todos los sitios y para todos los entornos, crear·, retendr· y proporcionar· a IBM bajo peticiÛn con 30 dÌas de anticipaciÛn: i) un informe, en un formato solicitado por IBM utilizando registros, salida de herramientas del sistema y otra informaciÛn del sistema; y ii) documentaciÛn de soporte (colectivamente, "Datos de ImplementaciÛn").
 
-4. Cargos
+b. Con un aviso razonable, IBM y sus auditores independientes pueden verificar la conformidad del Licenciatario con este Acuerdo, en todos los sitios y para todos los entornos en los que el Licenciatario utiliza (para cualquier propÛsito) Programas. Dicha verificaciÛn se realizar· de manera que se minimice la interrupciÛn de la actividad del Licenciatario y podr· realizarse en las instalaciones del Licenciatario, durante su horario habitual de trabajo. IBM tendr· un acuerdo de confidencialidad escrito con el auditor independiente. Adem·s de ofrecer los Datos de Despliegue descritos anteriormente, el Licenciatario se compromete a proporcionar a IBM y a sus auditores informaciÛn precisa adicional y los Datos de Despliegue cuando se los soliciten.
 
-Los Cargos, si los hubiera, se basan en el Uso Autorizado obtenido, que se especifica en la factura. IBM no ofrece cr√©ditos o reembolsos para cargos ya devengados o pagados, a no ser que se especifique de otra manera en este Acuerdo.
+c. El Licenciatario solicitar· y pagar·, a la mayor brevedad posible, los cargos actuales de las tarifas de IBM entonces vigentes que estÈn asociados con: i) los despliegues que excedan los derechos de titularidad reflejados en o por cualquier informe anual o verificaciÛn, ii) los servicios de suscripciÛn y soporte (S&S) correspondientes por dicho uso en exceso durante el perÌodo en el que se ha realizado dicho uso en exceso o por dos aÒos, lo que sea menor, y iii) cualquier cargo adicional y cualquier otra responsabilidad que estÈ obligado a pagar como resultado de dicha verificaciÛn, lo que incluye, pero sin limitarse a, impuestos, aranceles y cuotas regulatorias.
 
-Si el Licenciatario desea aumentar su Uso Autorizado, el Licenciatario deber√° notificarlo con antelaci√≥n a IBM o a un distribuidor autorizado de IBM y pagar cualquier cargo aplicable.
+4. Responsabilidad y ProtecciÛn de la Propiedad Intelectual
 
-5. Impuestos
+a. La responsabilidad total de IBM por las reclamaciones relacionadas con este Acuerdo no superar· el importe de los consumos directos reales sufridos por el Licenciatario hasta el mayor de los siguientes importes: i) 10.000 USD (o equivalente en moneda local); o ii) los importes pagados (si son cargos recurrentes, los cargos de hasta 12 meses) por los derechos al Programa que es objeto de la reclamaciÛn, independientemente de la base de la reclamaciÛn. IBM no ser· responsable de ning˙n tipo de daÒo especial, accidental, ejemplar, indirecto o econÛmico consecuencial o lucro cesante, ni de la pÈrdida de beneficios, negocios, valor, ingresos, plusvalÌas o ahorros previstos. Estas limitaciones se aplican colectivamente a IBM, sus filiales, contratistas y proveedores.
 
-Si cualquier autoridad impone una tasa, impuesto, gravamen o cargo al Programa, con exclusi√≥n de aquellos impuestos relativos al beneficio neto empresarial de IBM, el Licenciatario acuerda pagar las cantidades correspondientes a dichos conceptos, tal y como se especifique en una factura, o presentar√° la documentaci√≥n justificante de estar exento de los mismos. El Licenciatario es responsable de cualquier impuesto que grave la propiedad del Programa desde la fecha en la que el Licenciatario obtuvo el Programa. Si cualquier autoridad impone una tasa, impuesto, gravamen o cargo por la importaci√≥n o exportaci√≥n, traspaso, acceso o uso del Programa fuera del pa√≠s en el que se otorg√≥ la licencia al Licenciatario, el Licenciatario acuerda ser responsable de, y pagar, cualquier cantidad impuesta.
+b. Los siguientes importes no est·n sujetos al lÌmite anterior: daÒos que no pueden limitarse seg˙n la ley aplicable.
 
-6. Garant√≠a de Devoluci√≥n
+c. IBM no tendr· responsabilidad alguna respecto a reclamaciones basadas en productos no-IBM, elementos no suministrados por IBM, o de cualquier infracciÛn de la legislaciÛn o de derechos de un tercero causada por el Contenido o cualquier material, diseÒo o especificaciÛn del Licenciatario. El Contenido incluye todos los datos, software e informaciÛn que el Cliente o sus usuarios autorizados proporcionen, autoricen el acceso a, o carguen en un Programa.
 
-Si el Licenciatario no est√° satisfecho con el Programa por cualquier motivo y es el Licenciatario original, el Licenciatario puede terminar la licencia y obtener el reembolso del importe que ha pagado por el Programa, si lo hubiera, siempre y cuando el Licenciatario devuelva el Programa a la parte a la cual adquiri√≥ el Programa dentro del plazo de 30 d√≠as siguientes a la fecha de la factura. Si la licencia es de plazo fijo y est√° sujeta a renovaci√≥n, el Licenciatario podr√° obtener un reembolso √∫nicamente si devuelve el Programa dentro de los primeros 30 d√≠as del plazo inicial. Si el Licenciatario descarg√≥ el Programa, el Licenciatario deber√° ponerse en contacto con la parte a la cual adquiri√≥ el Programa para recibir instrucciones sobre c√≥mo obtener el reembolso.
+5. TerminaciÛn
 
-7. Transferencia del Programa
+a. IBM puede terminar la licencia de uso de un Programa del Licenciatario si el Licenciatario no cumple con el ILAN, los DT o los acuerdos de adquisiciÛn, como el Acuerdo de IBM International Passport Advantage (IPAA). El Licenciatario destruir· a la mayor brevedad posible todas las copias del Programa cuando termine la licencia. Los tÈrminos que por su naturaleza se extiendan m·s all· de la finalizaciÛn del Acuerdo permanecer·n en vigor hasta su cumplimiento y se aplicar·n a los sucesores y cesionarios respectivos.
 
-El Licenciatario puede transferir el Programa y todos sus derechos de licencia y obligaciones a cualquier tercero √∫nicamente si dicha parte acepta los t√©rminos de este Acuerdo. Si cualquiera de las partes termina la licencia por cualquier motivo, se proh√≠be que el Licenciatario transfiera el Programa a un tercero. El Licenciatario no transferir√° una parte: 1) del Programa, o 2) del Uso Autorizado del Programa. Cuando el Licenciatario transfiere el Programa, deber√° transferir tambi√©n una copia impresa de este Acuerdo, incluyendo la LI. Despu√©s de la transferencia, se considera terminada la licencia del Licenciatario.
+6. LegislaciÛn Aplicable y Alcance Geogr·fico
 
-8. Sin garant√≠as
+a. Ambas partes aceptan la aplicaciÛn de las leyes del paÌs en el que se ha realizado la transacciÛn de los derechos de titularidad de la licencia, a pesar de cualquier posible conflicto de ley. Los derechos y obligaciones de cada parte son v·lidos ˙nicamente en el paÌs en el que se lleve a cabo la transacciÛn o, si asÌ lo acuerda IBM, en el paÌs en que el Programa se ponga en uso productivo, con excepciÛn de las licencias, que son v·lidas seg˙n se especifique al otorgarlas.
 
-SUJETO A CUALQUIER GARANT√çA ESTATUTARIA QUE NO PUDIERA EXCLUIRSE, IBM NO OFRECE NINGUNA GARANT√çA NI CONDICI√ìN, NI EXPL√çCITA NI IMPL√çCITA, EN RELACI√ìN CON EL PROGRAMA O EL SOPORTE, SI EXISTIERA, INCLUIDAS PERO SIN LIMITARSE A, LAS GARANT√çAS O CONDICIONES IMPL√çCITAS DE COMERCIALIZACI√ìN, CALIDAD SATISFACTORIA, IDONEIDAD PARA UNA FINALIDAD CONCRETA Y TITULARIDAD, Y CUALQUIER GARANT√çA O CONDICI√ìN DE NO INFRACCI√ìN DE LOS DERECHOS DE TERCEROS.
+b. Cada parte es responsable de cumplir con: i) la legislaciÛn y regulaciones que sean de aplicaciÛn a su negocio y Contenido, y ii) cualquier legislaciÛn y regulaciÛn en materia de importaciÛn, exportaciÛn y sanciones econÛmicas, incluyendo las de los Estados Unidos y las de cualquier jurisdicciÛn aplicable, que prohÌba o restrinja la exportaciÛn, la re-exportaciÛn o la transferencia de productos, tecnologÌa, servicios o datos, directa o indirectamente, a, o para, determinados paÌses, usos o usuarios finales.
 
-LA EXCLUSI√ìN DE GARANT√çAS EXPL√çCITAS O IMPL√çCITAS PUEDE NO ESTAR PERMITIDA POR ALGUNOS ESTADOS O JURISDICCIONES Y, POR TANTO, PUEDE QUE DICHA EXCLUSI√ìN NO SEA APLICABLE AL LICENCIATARIO. EN TAL CASO, LA DURACI√ìN DE DICHAS GARANT√çAS SE LIMITA AL PERIODO M√çNIMO QUE EXIJA LA LEGISLACI√ìN. NO SE APLICAR√Å NINGUNA GARANT√çA DESPU√âS DE ESE PER√çODO. ALGUNOS ESTADOS O JURISDICCIONES NO PERMITEN LIMITACIONES EN CUANTO A LA DURACI√ìN DE UNA GARANT√çA IMPL√çCITA, POR LO PUEDE QUE LA LIMITACI√ìN ANTERIOR NO SEA APLICABLE AL LICENCIATARIO. EL LICENCIATARIO PUEDE CONTAR CON OTROS DERECHOS QUE VAR√çAN SEG√öN EL ESTADO O LA JURISDICCI√ìN.
+c. Si cualquier estipulaciÛn de este Acuerdo para un Programa resultase no v·lida o no exigible, el resto de las estipulaciones permanecer·n en pleno vigor. Nada de lo contenido en este Acuerdo afectar· a los derechos estatutarios de los consumidores que no puedan ser cancelados o limitados contractualmente. La ConvenciÛn de las Naciones Unidas sobre los Contratos para la Venta Internacional de Bienes no es aplicable a las transacciones realizadas bajo este Contrato.
 
-LAS EXENCIONES DE RESPONSABILIDAD Y LAS EXCLUSIONES DE ESTA SECCI√ìN 8 TAMBI√âN SE APLICAN A CUALQUIER PROVEEDOR O DESARROLLADOR DE PROGRAMAS DE IBM.
+7. General
 
-LOS FABRICANTES, LOS PROVEEDORES Y LOS EDITORES DE PROGRAMAS NO IBM PUEDEN OFRECER SUS PROPIAS GARANT√çAS.
+a. IBM es un contratista independiente, y no un agente, socio o fideicomisario del Licenciatario ni es partÌcipe de una "joint venture" con Licenciatario, y no se compromete a cumplir con ninguna de las obligaciones normativas del Licenciatario, ni a asumir ninguna responsabilidad en relaciÛn con las operaciones o el negocio del Licenciatario. El Licenciatario es responsable del uso que haga de los Programas de IBM y los Programas no-IBM. IBM act˙a solo como proveedor de tecnologÌas de la informaciÛn. Cualquier instrucciÛn, uso sugerido u orientaciÛn proporcionado por IBM para un Programa no constituye asesoramiento profesional mÈdico, clÌnico, legal, contable u otro tipo de asesoramiento profesional. El Licenciatario debe obtener su propio asesoramiento de expertos.
 
-IBM NO OFRECE SOPORTE DE NING√öN TIPO, SALVO QUE IBM ESPECIFIQUE LO CONTRARIO. EN ESE CASO, CUALQUIER SOPORTE QUE OFREZCA IBM EST√Å SUJETO A LAS EXENCIONES DE RESPONSABILIDAD Y A LAS EXCLUSIONES DE ESTA SECCI√ìN 8.
+b. Para los Programas que IBM proporciona al Licenciatario de forma tangible, IBM cumplir· sus obligaciones de entrega y envÌo hasta la entrega de dichos Programas al transportista designado por IBM, a menos que el Licenciatario e IBM lo acuerden de otro modo por escrito.
 
-9. Datos y Bases de Datos del Licenciatario
+c. El Licenciatario no puede utilizar el Programa si un fallo del mismo puede causar la muerte, daÒos corporales graves a las personas fÌsicas, daÒos a la propiedad o al medio ambiente.
 
-Para ayudar al Licenciatario a aislar el origen de un problema con el Programa, IBM podr√° solicitar que el Licenciatario: 1) permita que IBM acceda de forma remota al sistema del Licenciatario, o 2) env√≠e informaci√≥n sobre el Licenciatario o datos del sistema a IBM. No obstante, IBM no est√° obligada a proporcionar dicha asistencia a menos que las Partes tengan un acuerdo, independiente y por escrito, mediante el cual IBM proporcione al Licenciatario dicho tipo de soporte que no est√° incluido en las obligaciones de IBM en este Acuerdo. En cualquier caso, IBM utilizar√° la informaci√≥n sobre errores y problemas para mejorar sus productos y servicios as√≠ como para prestar asistencia con su oferta de servicios de mantenimiento relacionados. Con esa finalidad, IBM podr√° utilizar a subcontratistas y Empresas IBM (incluyendo en uno o m√°s pa√≠ses distintos del pa√≠s en el que se encuentra el Licenciatario) y el Licenciatario autoriza a IBM para ello.
+d. IBM, sus filiales y los contratistas de ambos requieren el uso de la informaciÛn de contacto profesional y determinada informaciÛn sobre el uso de la cuenta. Esta informaciÛn no es Contenido. La informaciÛn comercial de contacto se utiliza para la comunicaciÛn y gestiÛn de los acuerdos comerciales con el Licenciatario. Ejemplos de informaciÛn comercial de contacto son el nombre, el telÈfono de empresa, la direcciÛn de correo electrÛnico, el ID de usuario y la informaciÛn de registro fiscal. La informaciÛn de Datos de la Cuenta es necesaria para habilitar, proporcionar, gestionar, administrar y mejorar los Programas, adem·s de para darles soporte. Entre la informaciÛn de Datos de la Cuenta, se incluye la informaciÛn digital recopilada utilizando tecnologÌas de rastreo, como "cookies" y "web beacons" durante el uso de los Programas. La PolÌtica de Privacidad de IBM disponible en http://www.ibm.com/privacy proporciona detalles adicionales en relaciÛn con la recopilaciÛn, el uso y el manejo, por parte de IBM, de la informaciÛn comercial de contacto y de uso de la cuenta. Si el Licenciatario proporciona informaciÛn a IBM y se requiere un aviso o el consentimiento por parte de determinadas personas para este tratamiento, ser· responsabilidad del Licenciatario notificarlo a estas personas y obtener su consentimiento.
 
-El Licenciatario permanecer√° responsable de: 1) los datos y contenidos de cualquier base de datos que el Licenciatario ponga a disposici√≥n de IBM, 2) la selecci√≥n y la implementaci√≥n de los procedimientos y controles relacionados con el acceso, seguridad, encriptaci√≥n, uso y transmisi√≥n de los datos (incluyendo cualquier dato personal que pueda identificarse), y 3) las copias de seguridad y la recuperaci√≥n de cualquier base de datos y de cualquier dato almacenado. El Licenciatario no enviar√° a IBM ni le permitir√° acceso a datos personales y permanecer√° responsable por cualquier coste razonable u otras cantidades que IBM tenga que hacer frente en relaci√≥n a cualquier informaci√≥n equivocadamente suministrada a IBM, o a la p√©rdida o revelaci√≥n de la misma por IBM, incluso las originadas de reclamaciones de terceros.
+e. Los Business Partners de IBM que utilicen o pongan a disposiciÛn Programas son independientes de IBM y determinan sus precios y condiciones unilateralmente. IBM no es responsable de las acciones, omisiones, declaraciones u ofertas de los Business Partners de IBM.
 
-10. Limitaci√≥n de Responsabilidad
+f. IBM puede ofrecer Programas no-IBM, o un Programa IBM puede habilitar acceso a Programas no-IBM, que pueden requerir aceptaciÛn de tÈrminos de un tercero identificados en un DT o presentadas al Licenciatario. Conectarse con, o el uso de, Programas no-IBM constituye la aceptaciÛn por parte del Licenciatario de dichos tÈrminos. IBM no es parte en estos acuerdos de terceros y no es responsable de dichos Programas no IBM.
 
-Las limitaciones y exclusiones de esta Cl√°usula 10 "Limitaci√≥n de Responsabilidad" se aplicar√°n en la medida en que no las proh√≠ba la legislaci√≥n aplicable sin la posibilidad de una renuncia contractual.
+g. Las licencias de los Programas las concede International Business Machines Corporation, con sede en Nueva York ("IBM Corporation"). La empresa IBM a la que el Licenciatario adquiere las licencias ("IBM") act˙a como distribuidora, entrega los Programas y es responsable de hacer cumplir las los tÈrminos de la licencia establecidos en este Acuerdo. Si los derechos de titularidad se adquieren a travÈs de un Business Partner de IBM, la empresa IBM del paÌs de adquisiciÛn ser· responsable de hacer cumplir las condiciones de este Acuerdo. No se crea ning˙n derecho ni causa de acciÛn en favor del Licenciatario frente a IBM Corporation. El Licenciatario renuncia a todas las reclamaciones y causas de demanda contra IBM Corporation y acepta que la ˙nica responsabilidad de IBM recae sobre los derechos y acciones en conexiÛn con los Programas.
 
-10.1 Aspectos por los que IBM Puede Ser Responsable
+h. El Licenciatario no podr· sublicenciar, asignar o transferir la licencia de ning˙n Programa (excepto en la medida en que la asignaciÛn o la transferencia pueda no estar legalmente restringida o seg˙n lo expresamente permitido en un DT o lo acordado de otra manera por IBM). IBM puede ceder sus derechos y obligaciones en virtud de este Acuerdo como consecuencia de la venta de la rama de actividad del negocio de IBM que incluya un Programa. IBM puede compartir este Acuerdo y los documentos relacionados conjuntamente con cualquier cesiÛn.
 
-Pueden surgir circunstancias en las cuales, debido a un incumplimiento de IBM de sus obligaciones contractuales u otra responsabilidad, el Licenciatario tuviera derecho a reclamar da√±os a IBM. Independientemente de las razones por las que el Licenciatario tenga derecho a reclamar da√±os a IBM (incluyendo un incumplimiento, negligencia, falsedad u otra reclamaci√≥n contractual o extracontractual), la responsabilidad de IBM por todas las reclamaciones que surjan de, en relaci√≥n con, cada Programa o que de otra manera surjan en relaci√≥n con este Acuerdo estar√° limitada √∫nicamente a: 1) los da√±os f√≠sicos a las personas (incluyendo la muerte) y da√±os a las propiedades, y 2) otros da√±os directos probados hasta el importe de los cargos (si el Programa est√° sujeto a cargos de plazo determinado, hasta el importe de los cargos de doce meses) que ha pagado el Licenciatario por el Programa que sea objeto de la reclamaci√≥n.
+i. Todas las notificaciones que correspondan en virtud de este Acuerdo deben ser realizadas por escrito y enviarse a la direcciÛn de negocio especificada en el contrato a travÈs del cual el Licenciatario adquiriÛ los derechos de titularidad de la licencia, a menos que una parte indique por escrito una direcciÛn diferente. Las partes aceptan que las comunicaciones efectuadas por medios electrÛnicos y fax ser·n consideradas documentos firmados. Cualquier reproducciÛn del presente Acuerdo realizado por medios fidedignos se considerar· un original. El Acuerdo prevalece sobre cualquier negociaciÛn en curso, discusiÛn o declaraciÛn entre las partes.
 
-Este l√≠mite se aplica tambi√©n a cualquier proveedor o desarrollador de Programas de IBM. Es la cantidad m√°xima por la que IBM y sus proveedores y desarrolladores de Programas ser√°n responsables colectivamente.
+j. Este Acuerdo no crear· derecho alguno o causa de demanda para ning˙n tercero. Ninguna de las partes interpondr· acciÛn legal alguna que traiga causa o estuviese relacionada con este Contrato, transcurridos m·s de dos aÒos desde que se produjo su causa. Ninguna de las partes es responsable de la falta de cumplimiento de sus obligaciones no monetarias por causas fuera de su propio control. Cada parte ofrecer· a la otra una oportunidad razonable de cumplir con sus obligaciones antes de reclamar su falta de cumplimiento.
 
-10.2 Aspectos por los que IBM No Es Responsable
+k. IBM puede utilizar personal y recursos en todo el mundo, asÌ como contratistas externos, para colaborar en la prestaciÛn de los Programas y el soporte de Programa. El uso de Programas por parte del Licenciatario puede provocar la transferencia de Contenido, incluida informaciÛn de identificaciÛn personal, m·s all· de las fronteras de un paÌs, para prestar el soporte de Programa seg˙n lo descrito en la GuÌa de Soporte de Software de IBM.
 
-BAJO NINGUNA CIRCUNSTANCIA, IBM, SUS DESARROLLADORES DE PROGRAMAS O PROVEEDORES SER√ÅN RESPONSABLES DE LOS SIGUIENTES CASOS, INCLUSO EN EL CASO DE QUE HUBIERAN SIDO ADVERTIDOS DE TAL POSIBILIDAD:
+Parte 2 - TÈrminos EspecÌficos para cada paÌs
 
-a. P√âRDIDAS DE, O DA√ëOS A, LOS DATOS;
+En el caso de licencias adquiridas en los paÌses especificados a continuaciÛn, los siguientes tÈrminos sustituyen o modifican las condiciones incluidas en este ILAN. Todos los tÈrminos que no sean modificados por estas enmiendas permanecer·n sin cambios y en vigor.
 
-b. DA√ëOS ESPECIALES, INCIDENTALES, PUNITIVOS, INDIRECTOS O CUALQUIER DA√ëO ECON√ìMICO CONSECUENCIAL; O
+1. AM…RICA
 
-c. P√âRDIDAS DE BENEFICIOS, NEGOCIO, INGRESOS, PLUSVAL√çAS O ECONOM√çAS PREVISTAS
+Apartado 3. Cargos, Impuestos, Pago y VerificaciÛn
 
-11. Verificaci√≥n
+Sustituya la primera y segunda oraciÛn del p·rrafo b por lo siguiente:
 
-A los efectos de esta Cl√°usula 11 "Verificaci√≥n", "T√©rminos del Programa ILAN" significa: 1) este Acuerdo as√≠ como los Anexos aplicables y los documentos transaccionales proporcionados por IBM, y 2) las pol√≠ticas de software de IBM que pueden encontrarse en el sitio web sobre Pol√≠ticas de Software de IBM (www.ibm.com/softwarepolicies), incluyendo pero sin limitarse a las pol√≠ticas relativas a las copias de seguridad, condiciones para los precios de subcapacidad y migraci√≥n.
+En Brasil: el Licenciatario se compromete a pagar todos los cargos aplicables por los derechos de titularidad adquiridos y los cargos de uso por encima de los derechos de titularidad, y los aranceles u otros derechos de aduana, impuestos o grav·menes similares que imponga cualquier autoridad como resultado de la adquisiciÛn de derechos de titularidad por parte del Licenciatario.
 
-Los derechos y obligaciones establecidos en esta Cl√°usula 11 permanecer√°n vigentes mientras el Licenciatario tenga una licencia en vigor para el Programa y durante los dos a√±os siguientes.
+En el p·rrafo b:
 
-11.1 Proceso de Verificaci√≥n
+En MÈxico: en la tercera oraciÛn, elimine las palabras "a una cuenta que especifique IBM".
 
-El Licenciatario acuerda crear, conservar y proporcionar a IBM y a sus auditores registros escritos precisos, salidas de las herramientas del sistema y otra informaci√≥n sobre el sistema suficiente para verificar que el uso de todos los Programas por parte del Licenciatario se realiza conforme a los T√©rminos del Programa ILAN, incluyendo, sin limitarse, todos los t√©rminos IBM sobre licencias y de calificaci√≥n de precios aplicables. El Licenciatario es responsable de: 1) asegurar que no excede su Uso Autorizado, y 2) actuar de conformidad con los T√©rminos del Programa ILAN.
+En MÈxico: Agregue la siguiente nueva oraciÛn tras la tercera:
 
-Previa notificaci√≥n con antelaci√≥n suficiente, IBM podr√° verificar el cumplimiento por parte del Licenciatario de los T√©rminos del Programa ILAN en todas las ubicaciones y para todos los entornos en los que el Licenciatario utilice, con cualquier finalidad, los Programas sujetos a los T√©rminos del Programa ILAN. Dicha verificaci√≥n se realizar√° de manera que se minimice la interferencia en la operativa de negocio del Licenciatario, en las instalaciones del Licenciatario, y durante su horario habitual de trabajo. IBM podr√° utilizar a un auditor independiente para ayudar en la verificaci√≥n, siempre que IBM tenga firmado, por escrito y con anterioridad, un acuerdo de confidencialidad con dicho auditor.
+Los pagos se realizar·n a travÈs de transferencia electrÛnica de fondos a una cuenta especificada por IBM o en la direcciÛn de IBM que se encuentra en Alfonso N·poles G·ndara 3111, Santa Fe PeÒa Blanca, ¡lvaro ObregÛn, Ciudad de MÈxico, cÛdigo postal 01210.
 
-11.2 Resoluci√≥n
+AÒada al final del p·rrafo c la siguiente oraciÛn:
 
-IBM notificar√° al Licenciatario, por escrito, si conforme a dicha verificaci√≥n el Licenciatario ha utilizado cualquier Programa sobrepasando su Uso Autorizado o no ha cumplido de otro modo con los T√©rminos del Programa ILAN. El Licenciatario acuerda pagar, a la mayor brevedad posible, directamente a IBM los cargos que IBM especifique en una factura por: 1) cualquier uso en exceso, 2) el soporte por dicho uso en exceso durante el periodo que se ha realizado dicho uso en exceso o por dos a√±os, lo que sea menor, y 3) cualquier cargo adicional y cualquier otra responsabilidad que el Cliente est√© obligado a pagar como resultado de dicha verificaci√≥n.
+En Canad·: allÌ donde los impuestos dependan de la ubicaciÛn o las ubicaciones que reciben el beneficio del Programa, el Licenciatario tiene la obligaciÛn continua de notificar a IBM dicha ubicaciÛn o dichas ubicaciones si son distintas a la direcciÛn profesional del Licenciatario que aparece en el DT correspondiente.
 
-12. Avisos de Terceros
+AÒada al final del p·rrafo c la siguiente oraciÛn:
 
-El Programa puede incluir c√≥digo de terceros que IBM, no el tercero, otorga bajo licencia al Licenciatario en virtud de este Acuerdo. Los avisos, si los hubiera, para el c√≥digo de terceros, ("Avisos de Terceros") se incluyen √∫nicamente para informaci√≥n del Licenciatario. Estos avisos pueden encontrarse en los archivos de avisos del Programa. Se puede encontrar informaci√≥n sobre c√≥mo obtener un c√≥digo fuente para determinados c√≥digos de terceros en los Avisos de Terceros. Si en los Avisos de Terceros, IBM identifica el c√≥digo de terceros como "C√≥digo de Terceros Modificable", IBM autoriza al Licenciatario a: 1) modificar el C√≥digo de Terceros Modificable, y 2) realizar t√©cnicas de ingenier√≠a inversa a los m√≥dulos del Programa que se conectan con el C√≥digo de Terceros Modificable, siempre y cuando su √∫nica finalidad sea depurar las modificaciones realizadas por el Licenciatario a dicho c√≥digo de terceros. Las obligaciones de servicio y soporte de IBM, si las hubiera, se aplican √∫nicamente al Programa sin modificar.
+En Estados Unidos: las partes acuerdan que ning˙n bien personal tangible (por ej., medios o publicaciones) se transferir·n al Licenciatario si: i) IBM ofrece los Programas electrÛnicamente al Licenciatario, o ii) el Licenciatario reclama una venta o exenciÛn fiscal de uso de Programas que IBM ofrece electrÛnicamente al Licenciatario. AllÌ donde los impuestos dependan de la ubicaciÛn o las ubicaciones que reciben el beneficio del Programa, el Licenciatario tiene la obligaciÛn continua de notificar a IBM dicha ubicaciÛn o dichas ubicaciones si son distintas a la direcciÛn profesional del Licenciatario que aparece en el Anexo o DT correspondiente.
 
-13. General
+Apartado 4. Responsabilidad y ProtecciÛn de la Propiedad Intelectual
 
-a. Nada de lo dispuesto en este Acuerdo afectar√° a los derechos de los consumidores establecidos por ley que no puedan ser cancelados o limitados por contrato.
+Inserte la siguiente exenciÛn de responsabilidad al final del p·rrafo a:
 
-b. En relaci√≥n con los Programas que IBM proporciona al Licenciatario de forma tangible, IBM cumple sus obligaciones de env√≠o y entrega en el momento en que se entreguen dichos Programas al transportista designado por IBM, salvo que las partes lo acuerden, por escrito, de otro modo.
+En Per˙: de acuerdo con el artÌculo 1328 del CÛdigo Civil peruano estas limitaciones y exclusiones no se aplicar·n en casos de "dolo" o "culpa inexcusable".
 
-c. Si cualquier disposici√≥n de este Acuerdo se declara inv√°lida o no exigible, las disposiciones restantes de este Acuerdo permanecer√°n en vigor.
+Apartado 6. LegislaciÛn Aplicable y Alcance Geogr·fico
 
-d. El Licenciatario acuerda cumplir todas las leyes y normas aplicables sobre exportaciones e importaciones, incluyendo las normativas sobre sanciones y embargo de EE.UU. y las prohibiciones de exportaciones para ciertos usos o a determinados usuarios finales.
+En el p·rrafo a, sustituya la primera oraciÛn solo por:
 
-e. El Licenciatario autoriza a International Business Machines Corporation y sus filiales (as√≠ como a sus sucesores y cesionarios, contratistas e IBM Business Partners) para almacenar y utilizar la informaci√≥n de contacto del Licenciatario, en cualquier lugar en el que desarrollen su actividad empresarial, en relaci√≥n a los productos y servicios de IBM, o como consecuencia de la relaci√≥n empresarial de IBM con el Licenciatario.
+En Argentina: ambas partes acuerdan que la legislaciÛn de la Rep˙blica de Argentina ser· la aplicable, a pesar de los principios de conflicto de leyes. Los procedimientos relacionados con los derechos, deberes y obligaciones derivados de este Contrato se presentar·n ante los tribunales de comercio ordinario de la "Ciudad AutÛnoma de Buenos Aires".
 
-f. Cada parte dar√° a la otra la oportunidad razonable de cumplir sus obligaciones en virtud del presente Acuerdo antes de reclamar a la otra por un incumplimiento de sus obligaciones contractuales. Las partes intentar√°n resolver de buena fe cualesquiera controversias, desacuerdos o reclamaciones relacionadas con este Acuerdo.
+En Chile: ambas partes acuerdan que la legislaciÛn de Chile ser· la aplicable, a pesar de los principios de conflicto de leyes. Los conflictos, interpretaciones o infracciones relacionados con este Acuerdo que las Partes no puedan resolver deber·n remitirse a la jurisdicciÛn de los Tribunales Ordinarios de la ciudad y el distrito de Santiago.
 
-g. Salvo que se establezca de otra manera en la legislaci√≥n aplicable, sin posibilidad de renuncia contractual o limitaci√≥n: 1) ninguna de las partes interpondr√° acci√≥n legal alguna, independientemente de la forma, relacionada con este Acuerdo transcurridos m√°s de dos a√±os desde que se produjo su causa; y 2) transcurrido dicho periodo de tiempo, cualquier acci√≥n legal que surgiera en relaci√≥n con el Acuerdo, as√≠ como todos los respectivos derechos relacionados con dicha acci√≥n, prescribir√°n.
+En Colombia: Ambas partes acuerdan que la legislaciÛn de la Rep˙blica de Colombia ser· la aplicable, sin tener en cuenta los principios de conflicto de leyes. Todos los derechos, responsabilidades y obligaciones se someten a los juzgados de la jurisdicciÛn ordinaria de Bogot·, Colombia.
 
-h. Ninguna de las partes ser√° responsable del incumplimiento de cualquier obligaci√≥n debido a causas fuera de control.
+En Ecuador: ambas partes acuerdan que la legislaciÛn de la Rep˙blica de Ecuador ser· la aplicable, a pesar de los principios de conflicto de leyes. Toda disputa que surja de este Acuerdo o estÈ relacionada con Èl deber· remitirse a los juzgados civiles de Quito y al procedimiento sumario verbal.
 
-i. Este Acuerdo no crear√° derecho alguno o causa de demanda para ning√∫n tercero, ni IBM ser√° responsable de las reclamaciones al Cliente de terceros, salvo por lo especificado en la Cl√°usula 10.1 "Aspectos por los que IBM Puede Ser Responsable" en relaci√≥n con da√±os a las personas (incluyendo muerte) y a las propiedades de las que IBM sea legalmente responsable frente a dichos terceros.
+En Venezuela: ambas partes acuerdan que la legislaciÛn de Venezuela ser· la aplicable, a pesar de los principios de conflicto de leyes. Las partes aceptan remitir cualquier conflicto existente entre ellas relacionado con este Acuerdo a los Tribunales del ¡rea Metropolitana de la ciudad de Caracas.
 
-j. Al aceptar los t√©rminos de este Acuerdo, ambas partes acuerdan que no se est√°n basando en ninguna manifestaci√≥n que no est√© incluida en este Acuerdo, incluyendo pero sin limitarse a cualquier manifestaci√≥n en relaci√≥n con: 1) el rendimiento o funcionamiento del Programa, 2) las experiencias o recomendaciones de otras partes; o 3) cualquier resultado o ahorro que el Licenciatario pudiera obtener.
+En Per˙: ambas partes acuerdan que la legislaciÛn de Per˙ ser· la aplicable, sin tener en cuenta los principios de conflicto de leyes. Toda discrepancia que pueda surgir entre las partes en la ejecuciÛn, interpretaciÛn o cumplimiento de este Acuerdo que las Partes no puedan resolver directamente deber· remitirse a la JurisdicciÛn y Competencia de los Juzgados y Tribunales del Distrito Judicial del "Cercado de Lima".
 
-k. IBM tiene firmados acuerdos con determinadas organizaciones (denominadas "IBM Business Partners") para promocionar, comercializar y dar soporte a ciertos Programas. Los IBM Business Partners permanecer√°n independientes y son distintos de IBM. IBM no se hace responsable de las acciones o declaraciones de los IBM Business Partners ni de las obligaciones que √©stos hayan contra√≠do con el Licenciatario.
+En Uruguay: ambas partes acuerdan que la legislaciÛn de Uruguay ser· la aplicable. Toda discrepancia que pueda surgir entre las partes en la ejecuciÛn, interpretaciÛn o cumplimiento de este Acuerdo que las Partes no puedan resolver directamente deber· remitirse a los Tribunales de Montevideo ("Tribunales Ordinarios de Montevideo").
 
-l. Los t√©rminos de indemnizaci√≥n de propiedad intelectual y de licencia de otros acuerdos del Licenciatario con IBM (como las Condiciones Generales de IBM) no son de aplicaci√≥n a las licencias de Programas concedidas en virtud de este Acuerdo.
+En el p·rrafo a, primera oraciÛn ˙nicamente, sustituya la oraciÛn "el paÌs en el que se ha realizado la transacciÛn de los derechos de titularidad de licencia" por:
 
-m. Ambas partes est√°n de acuerdo en que la informaci√≥n intercambiada no es confidencial. Si alguna de las partes requiriera un intercambio de informaci√≥n confidencial, dicho intercambio se realizar√≠a bajo un acuerdo de confidencialidad;
+En Estados Unidos, Anguilla, Antigua/Barbuda, Aruba, Bahamas, Barbados, Bermuda, Bonaire, Islas VÌrgenes Brit·nicas, Islas Caim·n, CuraÁao, Dominica, Granada, Guyana, Jamaica, Montserrat, Saba, Saint Eustatius, Saint Kitts y Nevis, Santa Lucia, San MartÌn, San Vicente y las Granadinas, Suriname, Tortola, Trinidad y Tobago, e Islas Turcas y Calcos: el Estado de Nueva York, Estados Unidos.
 
-14. √Åmbito Geogr√°fico y Legislaci√≥n Aplicable
+En Canad·: la Provincia de Ontario y las leyes federales de Canad· que se apliquen en dicha provincia.
 
-14.1 Legislaci√≥n Aplicable
+En el p·rrafo a, en la segunda oraciÛn, sustituya la oraciÛn, "el paÌs en el que se lleve a cabo la transacciÛn para adquirir derechos de titularidad de licencia o, si asÌ lo acuerda IBM, el paÌs en que el Programa se ponga en uso productivo" por:
 
-Ambas partes aceptan la aplicaci√≥n de las leyes del pa√≠s en el que el Licenciatario haya obtenido la licencia del Programa a fin de regir, interpretar y asegurar el cumplimiento de los derechos, deberes y obligaciones del Licenciatario y de IBM, respectivamente, que puedan surgir en virtud de, o que est√©n de cualquier manera relacionados con este Acuerdo, a pesar de cualquier posible conflicto de ley.
+En Argentina: Argentina
 
-No se aplican los t√©rminos de la Convenci√≥n de las Naciones Unidas sobre los Contratos de Compraventa Internacional de Bienes.
+En Chile: Chile
 
-14.2 Jurisdicci√≥n
+En Colombia: Colombia
 
-Todos los derechos, deberes y obligaciones est√°n sujetos a los tribunales del pa√≠s en el que el Licenciatario haya obtenido la licencia del Programa.
+En Ecuador: Ecuador
 
-Parte 2 - Condiciones Exclusivas para cada Pa√≠s
+En MÈxico: MÈxico
 
-Para las licencias otorgadas en los pa√≠ses especificados a continuaci√≥n, los siguientes t√©rminos sustituyen o modifican los t√©rminos incluidos en la Parte 1. Todos los t√©rminos de la Parte 1 que no sean modificados por estas enmiendas permanecer√°n sin cambios y en vigor. Esta Parte 2 se estructura del siguiente modo:
+En Per˙: Per˙
 
-* Enmiendas para varios pa√≠ses de la Parte 1, Cl√°usula 14 "Legislaci√≥n Aplicable y Jurisdicci√≥n";
+En Uruguay: Uruguay
 
-* Enmiendas de otros t√©rminos del Acuerdo para los pa√≠ses de Am√©rica y
+En Venezuela: Venezuela
 
-* Enmiendas de otros t√©rminos del Acuerdo para los pa√≠ses de Europa, Oriente Medio y √Åfrica.
+AÒada las siguientes oraciones al final del p·rrafo b:
 
-Enmiendas para varios pa√≠ses de la Parte 1, Cl√°usula 14 "Legislaci√≥n Aplicable y Jurisdicci√≥n"
+En Brasil: todas las disputas que surjan o estÈn relacionadas con este Acuerdo, incluyendo los procedimientos judiciales, se someter·n a la jurisdicciÛn exclusiva del Foro de la Ciudad de S„o Paulo, Estado de S„o Paulo, Brasil, y las partes aceptan de forma irrevocable con esta jurisdicciÛn especÌfica la renuncia a cualquier otra, independientemente de los privilegios relacionados con ella.
 
-14.1 Legislaci√≥n Aplicable
+En MÈxico: las Partes acuerdan someterse a la jurisdicciÛn exclusiva de los Tribunales de la Ciudad de MÈxico para resolver cualquier disputa que surja de este Acuerdo. Las Partes renuncian a cualquier otra jurisdicciÛn que pueda corresponderles por sus domicilios actuales o futuros, o por cualquier otro motivo.
 
-La frase "las leyes del pa√≠s en el que el Licenciatario haya obtenido la licencia del Programa" en el primer p√°rrafo de la Cl√°usula 14.1 "Legislaci√≥n Aplicable" se sustituye por las frases siguientes en los pa√≠ses que figuran a continuaci√≥n:
+Apartado 7. General
 
-AM√âRICA
+En el p·rrafo g:
 
-(1) En M√©xico: las leyes federales de la Rep√∫blica de M√©xico; y
+En Estados Unidos: elimine las 2 ˙ltimas oraciones.
 
-(2) en Venezuela: las leyes de la Rep√∫blica Bolivariana de Venezuela.
+En el p·rrafo i, aÒada la siguiente nueva oraciÛn tras la primera oraciÛn:
 
-14.2 Jurisdicci√≥n
+En MÈxico: cualquier cambio de direcciÛn debe notificarse con 10 (diez) dÌas de antelaciÛn; en caso contrario, las notificaciones realizadas en la ˙ltima direcciÛn indicada tendr·n plenos efectos legales.
 
-El siguiente p√°rrafo pertenece al apartado de jurisdicci√≥n y sustituye a la Cl√°usula 14.2 "Jurisdicci√≥n" tal y como se aplica a los pa√≠ses identificados a continuaci√≥n:
+En el p·rrafo j:
 
-Todos los derechos, deberes y obligaciones est√°n sometidos a los tribunales del pa√≠s en el que el Licenciatario haya obtenido la licencia del Programa excepto en los pa√≠ses identificados a continuaci√≥n, en los que todas las disputas que surjan o se relacionen con este Acuerdo, incluyendo los procedimientos sumarios, se presentar√°n ante y se someter√°n a la jurisdicci√≥n exclusiva de los siguientes tribunales competentes:
+En Brasil: elimine toda la segunda oraciÛn de "Ninguna de las partes interpondr· acciÛn legal alguna que traiga causa o estuviese relacionada con el Acuerdo, transcurridos m·s de dos aÒos desde que se produjo su causa".
 
-AM√âRICA
+AÒada como nuevo p·rrafo l a este apartado:
 
-(1) En Argentina: el Tribunal de Comercio Ordinario de la ciudad de Buenos Aires;
+En Canad·: ambas partes acuerdan redactar este documento en inglÈs. Les parties ont convenu de rÈdiger le prÈsent document en langue anglaise.
 
-(2) en Chile: el Juzgado de lo Civil de Santiago;
+2. ASIA PACÕFICO
 
-(3) en Ecuador: los jueces de lo civil de Quito para los procesos sumarios o ejecutivos (seg√∫n sea el caso);
+Apartado 2. GarantÌas
 
-(4) en M√©xico: los tribunales ubicados en Ciudad de M√©xico, Distrito Federal;
+AÒada al final de este apartado como p·rrafo nuevo f:
 
-(5) en Per√∫: en Per√∫: los jueces y tribunales del distrito judicial de Lima, Cercado;
+En Australia: estas garantÌas son adicionales a cualquier derecho bajo, y solo limitado en la medida permitida por, la Ley de Competencia y Consumo de 2010.
 
-(6) en Uruguay: los tribunales de la ciudad de Montevideo;
+En JapÛn: la responsabilidad de IBM est· limitada a este p·rrafo y al apartado Responsabilidad y ProtecciÛn de la Propiedad Intelectual, los Anexos y DT correspondientes como ˙nico recurso del Licenciatario en caso de incumplimiento de las garantÌas especificadas en este apartado.
 
-(7) en Venezuela: los tribunales del √°rea metropolitana de la ciudad de Caracas; y
+En Nueva Zelanda: las garantÌas son adicionales a cualquier derecho que pudiera tener el Cliente bajo la Ley de GarantÌas del Consumidor (Consumer Guarantee Act) de 1993 u otra legislaciÛn que no pueda ser excluida o limitada por ley.
 
-EUROPA, ORIENTE MEDIO Y √ÅFRICA
+Apartado 3. Cargos, Impuestos, Pago y VerificaciÛn
 
-(8) en Espa√±a: los tribunales de Madrid.
+En el p·rrafo b, sustituya la tercera oraciÛn por las siguientes dos frases:
 
-AP√âNDICES PARA PA√çSES AMERICANOS
+En Hong Kong, Indonesia, Corea, Macau, Malasia, Filipinas, Singapur y Vietnam: los importes facturados son debidos a la recepciÛn de la factura y pagaderos dentro de los 30 dÌas siguientes a la fecha de emisiÛn de la factura en una cuenta especificada por IBM. Si el pago no es recibido dentro de los 30 dÌas siguientes a la fecha de emisiÛn de la factura, IBM puede cobrar un recargo por demora en la cantidad pendiente de cobro, que se calcula en funciÛn del n˙mero de dÌas que se demora el pago, a elegir entre el menor de los siguientes: i) 2% por cada perÌodo de 30 dÌas o parte del mismo; o ii) la cantidad m·xima permisible conforme a la ley aplicable.
 
-PER√ö
+En Tailandia: los importes ser·n debidos a la recepciÛn de la factura y pagaderos dentro de los treinta (30) dÌas siguientes a la fecha de la factura, a una cuenta que especifique IBM. Si el pago no es recibido dentro de los 30 dÌas siguientes a la fecha de emisiÛn de la factura, se puede aplicar un recargo por demora en la cantidad pendiente de cobro, con un porcentaje de 1,25% al mes, que se calcula en funciÛn del n˙mero de dÌas que se demora el pago.
 
-10. Limitaci√≥n de Responsabilidad
+En la primera oraciÛn del p·rrafo c, elimine la palabra "y" antes de "(iv)", y aÒada un punto y coma y el siguiente nuevo elemento "(v)":
 
-Se a√±ade lo siguiente al final de la Cl√°usula 10 "Limitaci√≥n de Responsabilidad":
+En India: y (v) presente la declaraciÛn de IRPF adecuada a su debido tiempo. Si alguna tasa, impuesto, gravamen o canon ("Impuestos") no se cobra en virtud de la documentaciÛn de exenciÛn suministrada por el Licenciatario y la autoridad fiscal reglamenta posteriormente que dichos Impuestos deben cobrarse, entonces el Licenciatario ser· responsable de pagar dichos Impuestos, incluidos los intereses, grav·menes y/o las sanciones aplicables a los mismos.
 
-Salvo que la legislaci√≥n lo requiera expresamente sin posibilidad de renuncia contractual, el Licenciatario e IBM tienen la intenci√≥n de que la limitaci√≥n de responsabilidad expuesta en esta cl√°usula "Limitaci√≥n de Responsabilidad" se aplique a los da√±os causados por todo tipo de reclamaciones y causa de acci√≥n. En el caso que un tribunal competente declare no exigible cualquier limitaci√≥n o exclusi√≥n de responsabilidad de esta cl√°usula con respecto a una reclamaci√≥n o derecho de iniciar acciones legales concreto, las partes tienen la intenci√≥n de que se aplique a todas las dem√°s reclamaciones y derechos de iniciar acciones legales hasta el grado m√°ximo que permita la legislaci√≥n aplicable.
+En la primera oraciÛn del p·rrafo c, elimine la palabra "y" antes de "(iv)", y sustituya el elemento (iv) y aÒada el nuevo elemento (v):
 
-10.1 Aspectos por los que IBM Puede Ser Responsable
+En Singapur, Malasia, Filipinas, Tailandia, Indonesia, Vietnam: (iv) colabore plenamente con IBM para tratar de obtener una exenciÛn o reducciÛn de retenciÛn fiscal u otro impuesto que el Licenciatario solicite; y v) cumplimente, presente y mantenga actualizados, con prontitud, todos los documentos pertinentes de dicha exenciÛn o reducciÛn.
 
-Se a√±ade lo siguiente al final de la Cl√°usula 10.1:
+Apartado 4. Responsabilidad y ProtecciÛn de la Propiedad Intelectual
 
-De acuerdo con el Art√≠culo 1328 del C√≥digo Civil Peruano, las limitaciones y exclusiones especificadas en esta secci√≥n no se aplicar√°n a los da√±os causados por la mala conducta deliberada de IBM ("dolo") o negligencia ("culpa inexcusable").
+En el p·rrafo a, aÒada al final de la primera oraciÛn lo siguiente:
 
-ENMIENDAS PARA LOS PA√çSES DE EUROPA, ORIENTE MEDIO, √ÅFRICA (EMEA)
+En Australia: (por ejemplo, si se basa en contrato, agravio, negligencia, de conformidad con la ley o de otro modo)
 
-ESTADOS MIEMBROS DE LA UNI√ìN EUROPEA
+En el p·rrafo a, oraciÛn segunda tras la palabra "especial" y antes de la palabra "incidental", aÒada lo siguiente:
 
-8. Sin garant√≠as
+En Filipinas: (incluidos daÒos nominales y punitivos), moral,
 
-Se a√±ade lo siguiente a la Cl√°usula 8 (Sin garant√≠as):
+AÒada un nuevo p·rrafo tras el final del p·rrafo a (y aseg˙rese de que los p·rrafos se reordenan correctamente):
 
-En la Uni√≥n Europea ("EU"), los consumidores tienen derechos legales en virtud de la legislaci√≥n nacional aplicable que rija la venta de bienes de consumo. Tales derechos no se ven afectados por las disposiciones expuestas en esta Cl√°usula 8 (Sin garant√≠as).
+En Australia: cuando IBM incumple una garantÌa implÌcita de la Ley de Competencia y Consumo de 2010, la responsabilidad de IBM se limita a la reparaciÛn o sustituciÛn de los bienes o al suministro de bienes equivalentes. Cuando una garantÌa se relaciona con el derecho de venta, la libre posesiÛn o la titularidad legÌtima de un bien seg˙n el suplemento 2 de la Ley de Competencia y Consumo, ninguna de estas limitaciones se aplica.
 
-ESTADOS MIEMBROS DE LA UE Y LOS PA√çSES IDENTIFICADOS A CONTINUACI√ìN
+Apartado 5. TerminaciÛn
 
-Cualquier pa√≠s europeo que haya promulgado legislaci√≥n local relativa a privacidad de datos o donde haya una legislaci√≥n similar al modelo de la UE.
+AÒada al final del apartado como p·rrafo nuevo b:
 
-13. General
+En Indonesia: las partes renuncian al artÌculo 1266 del CÛdigo Civil indonesio en la medida en que requiere que un decreto judicial para la terminaciÛn de un acuerdo cree obligaciones mutuas.
 
-Lo siguiente sustituye a la Cl√°usula 13.e:
+Apartado 6. LegislaciÛn Aplicable y Alcance Geogr·fico
 
-(1) Definiciones - A los efectos de esta Cl√°usula 13.e, se aplicar√°n las siguientes definiciones adicionales:
+En el p·rrafo a, solo en la primera oraciÛn, sustituya la frase "el paÌs en el que se realice la transacciÛn de los derechos de titularidad de licencia" por:
 
-(a) Informaci√≥n Comercial de Contacto - se entender√° como los datos de contacto relacionados al negocio, revelados a IBM por el Licenciatario, incluyendo nombres, puestos de trabajo, direcci√≥n profesional, n√∫meros de tel√©fono y direcciones de correo electr√≥nico de los empleados y contratistas del Licenciatario. Para Austria, Italia y Suiza, la Informaci√≥n Comercial de Contacto incluye tambi√©n informaci√≥n sobre el Licenciatario y sus contratistas como entidades legales (por ejemplo, datos sobre los ingresos del Licenciatario y otra informaci√≥n transaccional)
+En Camboya, Laos: el Estado de Nueva York, Estados Unidos
 
-(b) Personal Comercial de Contacto - se entender√° como los empleados y contratistas del Licenciatario a los cuales se proporciona la Informaci√≥n Comercial de Contacto.
+En Australia: las leyes del Estado o del Territorio en el que se realiza la transacciÛn
 
-(c) Autoridad de Protecci√≥n de Datos - se entender√° como la autoridad establecida por la Legislaci√≥n de Protecci√≥n de Datos y Comunicaciones Electr√≥nicas en el pa√≠s aplicable o, para los pa√≠ses que no formen parte de la UE, la autoridad responsable de supervisar la protecci√≥n de los datos personales en dichos pa√≠ses o (para cualquiera de los anteriores) cualquier entidad debidamente designada para ello con posterioridad.
+En Hong Kong: la RegiÛn Administrativa Especial de Hong de la Rep˙blica Popular China
 
-(d) Legislaci√≥n de Protecci√≥n de Datos y Comunicaciones Electr√≥nicas - (i) la legislaci√≥n nacional espec√≠fica relacionada a la Directiva 46/95/CE, del Parlamento Europeo y del Consejo, de 24 de octubre de 1995, relativa a la protecci√≥n de las personas f√≠sicas en lo que respecta al tratamiento de datos personales y a la libre circulaci√≥n de estos datos, y Directiva 58/2002/CE, del Parlamento Europeo y del Consejo, de 12 de julio de 2002, relativa al tratamiento de los datos personales y a la protecci√≥n de la intimidad en el sector de las comunicaciones electr√≥nicas (Directiva sobre la privacidad y las comunicaciones electr√≥nicas); o (ii) para los pa√≠ses que no pertenezcan a la UE, significar√° la legislaci√≥n espec√≠fica relevante aplicable en el respectivo pa√≠s relacionada con el uso y protecci√≥n de datos de car√°cter personal y la intimidad en las comunicaciones electr√≥nicas, incluyendo (para cualquiera de los anteriores) cualquier normativa posterior que las sustituya o modifique.
+En Macau: la RegiÛn Administrativa Especial de Hong de la Rep˙blica Popular China
 
-(e) Grupo IBM - International Business Machines Corporation ubicada en Armonk, Nueva York, EE.UU., sus subsidiarias as√≠ como sus respectivos Business Partners y subcontratistas.
+En Corea: la Rep˙blica de Corea, y sometido al Tribunal del Distrito Central de Se˙l de la Rep˙blica de Corea
 
-(2) (2) El Licenciatario autoriza a IBM para:
+En Taiw·n: Taiw·n
 
-(a) procesar y utilizar la Informaci√≥n Comercial de Contacto dentro del Grupo IBM en beneficio del Licenciatario, incluyendo la prestaci√≥n de servicios de soporte y con el fin de gestionar la relaci√≥n empresarial entre el Licenciatario y el Grupo IBM, incluyendo, sin limitarse, a contactar con el Personal Comercial de Contacto (por correo electr√≥nico o por otra v√≠a) as√≠ como el marketing de productos y servicios del Grupo IBM (la "Finalidad Espec√≠fica"); y
+En India: India
 
-(b) (b) revelar la Informaci√≥n Comercial de Contacto a otros miembros del Grupo IBM √∫nicamente a los efectos de la Finalidad Espec√≠fica.
+En el p·rrafo b, en la primera oraciÛn, elemento ii), tras la palabra "incluidos" y antes de la palabra "defensa", aÒada:
 
-(3) (3) IBM acuerda que toda Informaci√≥n Comercial de Contacto se procesar√° de conformidad con la Legislaci√≥n de Protecci√≥n de Datos y Comunicaciones Electr√≥nicas y se utilizar√° √∫nicamente para la Finalidad Espec√≠fica.
+En JapÛn: las de las leyes de JapÛn y
 
-(4) (4) El Licenciatario declara que, antes de proporcionar a IBM la Informaci√≥n Comercial de Contacto, ha obtenido o deber√° obtener, cuando as√≠ lo requiera la Legislaci√≥n de Protecci√≥n de Datos y Comunicaciones Electr√≥nicas, el consentimiento del Personal Comercial de Contacto, asimismo confirma que ha enviado o enviar√° las notificaciones pertinentes a dicho Personal Comercial de Contacto, de manera que el Grupo IBM est√© facultado para procesar o usar la Informaci√≥n Comercial de Contacto para contactar con ellos para la Finalidad Especificada.
+En el p·rrafo a, en la segunda oraciÛn, sustituya la oraciÛn, "el paÌs en el que se lleve a cabo la transacciÛn para adquirir derechos de titularidad de licencia o, si asÌ lo acuerda IBM, el paÌs en que el Programa se ponga en uso productivo" por:
 
-(5) El Licenciatario consiente que IBM transfiera la Informaci√≥n Comercial de Contacto fuera del Espacio Econ√≥mico Europeo, siempre y cuando dicha transferencia se realice bajo los t√©rminos contractuales aprobados por la Autoridad de Protecci√≥n de Datos o por otra parte que la Legislaci√≥n de Protecci√≥n de Datos y Comunicaciones Electr√≥nicas permita la transferencia.
+En Hong Kong: la RegiÛn Administrativa Especial de Hong de la Rep˙blica Popular China
 
-Z125-5589-05 (07/2011)
+En Macau: la RegiÛn Administrativa Especial de Macau de la Rep˙blica Popular China
 
+En Taiw·n: Taiw·n
+
+AÒada al final del apartado como p·rrafo nuevo d:
+
+En Camboya, Laos, Filipinas y Sri Lanka: cualquier disputa se resolver· definitivamente mediante arbitraje en Singapur de acuerdo con las Reglas de Arbitraje del Centro de Arbitraje Internacional de Singapur ("Reglas SIAC").
+
+En India: Las disputas se resolver·n finalmente de conformidad con la Ley de Arbitraje y ConciliaciÛn de 1996 vigente en el momento concreto, en inglÈs, con sede en Bangalore, India. Deber· haber un ·rbitro si la cantidad en disputa es menor o igual a cinco crores de rupias indias y tres ·rbitros si la cantidad es mayor. Cuando se sustituya un ·rbitro, los procedimientos continuar·n desde la etapa en que se encontraban cuando se produjo la vacante.
+
+En Indonesia: los conflictos finalmente deber·n resolverse mediante arbitraje en Yakarta, Indonesia, que administra la Junta Nacional de Arbitraje de Indonesia establecida en el aÒo 1977 ("Badan Arbitrase Nasional Indonesia" o "BANI") en virtud de las normas de la Junta Nacional de Arbitraje de Indonesia. La decisiÛn de los ·rbitros ser· definitiva y vinculante para las partes sin apelaciÛn y la decisiÛn de los ·rbitros se har· por escrito y esclarecer· los hechos y las conclusiones de la ley.
+
+En la Rep˙blica Popular China: cada una de las partes tiene el derecho de someter la controversia a la ComisiÛn Internacional de Arbitraje EconÛmico y Comercial de China, en PekÌn, Rep˙blica Popular China, para el arbitraje. Las partes acuerdan que se utilizar·n tres ·rbitros para resolver cualquier conflicto.
+
+En Vietnam: las disputas se dirimir·n mediante arbitraje, que se celebrar· en Vietnam International de acuerdo con las Normas de Arbitraje del Centro de Arbitraje Internacional de Vietnam ("Normas VIAC"). Todos los procedimientos y documentos presentados ser·n en el idioma inglÈs.
+
+Apartado 7. General
+
+En el p·rrafo j, en la segunda oraciÛn, sustituya la oraciÛn "dos aÒos" por:
+
+En India: tres aÒos
+
+AÒada al final de este apartado el siguiente nuevo p·rrafo l:
+
+En Indonesia: este acuerdo se realiza en versiones en inglÈs y en bahasa. En la medida permitida por la ley aplicable, la versiÛn en inglÈs prevalecer· en caso de conflicto entre dichas versiones.
+
+3. EUROPA, ORIENTE MEDIO Y ¡FRICA
+
+Apartado 3. Cargos, Impuestos, Pago y VerificaciÛn
+
+En el p·rrafo b, aÒada lo siguiente al final de la tercera oraciÛn:
+
+En Italia: si IBM lo solicita por aviso escrito al Licenciatario.
+
+En Ucrania: , en el importe adeudado a partir del dÌa siguiente de la fecha de vencimiento hasta la fecha del pago real, con prorrateo para cada dÌa de retraso, a un Ìndice de interÈs del doble de la tasa de descuento determinada por el Banco Nacional de Ucrania (NBU) durante el perÌodo de retraso (el p·rrafo 6 del artÌculo 232 del CÛdigo Mercantil de Ucrania no se aplica).
+
+En el p·rrafo b, sustituya la tercera frase por lo siguiente:
+
+En Francia: los importes son debidos y pagaderos dentro de los 10 dÌas siguientes a la fecha de la factura, a una cuenta que especifique IBM, y los pagos por demora se aplican al tipo m·s reciente del Banco Central Europeo m·s 10 puntos, adem·s de los gastos por cobro de deuda de cuarenta (40) euros o, si estos gastos superan los cuarenta euros, una indemnizaciÛn suplementaria con arreglo al justificante del importe reclamado).
+
+En Rusia: los importes ser·n debidos a la recepciÛn de la factura y pagaderos dentro de los treinta (30) dÌas siguientes a la fecha de la factura, a una cuenta que especifique IBM. Pueden aplicarse recargos por los pagos con demora con una tarifa del 24% al aÒo, lo que se calcula a razÛn de dÌa pasado el lÌmite de los 30 dÌas.
+
+En el p·rrafo b, aÒada lo siguiente al final de la ˙ltima oraciÛn:
+
+En Lituania: o salvo lo dispuesto por la ley
+
+Al finalizar el p·rrafo b, aÒada lo siguiente:
+
+En Italia: en caso de impago o pago parcial, y tras seguir tambiÈn un procedimiento formal de reclamaciÛn de crÈdito que IBM puede iniciar, en derogaciÛn del artÌculo 4 del Decreto legislativo n.∫ 231 de fecha 9 de octubre de 2002, y en virtud del artÌculo 7 del mismo Decreto legislativo, IBM se lo notificar· al Licenciatario por escrito mediante correo con acuse de recibo registrado de los recargos por demora debidos.
+
+Apartado 4. Responsabilidad y ProtecciÛn de la Propiedad Intelectual
+
+En el p·rrafo a, en la primera oraciÛn inserte lo siguiente antes de las palabras "la cantidad pagada":
+
+En BÈlgica, Francia, Alemania, Italia, Luxemburgo, Malta, Portugal y EspaÒa: el importe mayor indicado, ya sea 500.000 § (quinientos mil euros) o
+
+En Irlanda y Reino Unido: 125% de
+
+En la primera oraciÛn del p·rrafo a, sustituya la oraciÛn "daÒos directos sufridos por el Licenciatario" por:
+
+En EspaÒa: y daÒos probados sufridos por el Licenciatario como consecuencia del incumplimiento de IBM
+
+En el p·rrafo a, inserte despuÈs de la primera oraciÛn, la siguiente nueva oraciÛn:
+
+En Eslovaquia: en referencia al ß 379 del CÛdigo de Comercio, Ley N.∫ 513/1991 Coll. seg˙n se haya modificado, y con respecto a todas las condiciones relacionadas con la celebraciÛn del acuerdo, ambas partes declaran que el daÒo total previsible, que puede acumularse, no exceder· la cantidad anterior, y es el m·ximo del cual IBM se responsabiliza.
+
+En el p·rrafo a, inserte antes de la segunda oraciÛn, la siguiente nueva oraciÛn:
+
+En Rusia: IBM no ser· responsable de los beneficios perdidos.
+
+En el p·rrafo a, en la segunda oraciÛn, elimine la palabra:
+
+En Irlanda y Reino Unido: econÛmico
+
+En el p·rrafo a, sustituya la segunda oraciÛn por:
+
+En BÈlgica, PaÌses Bajos y Luxemburgo: IBM no ser· responsable por daÒos indirectos o consecuenciales, ni de las pÈrdidas de negocio, ingresos o valor de la compaÒÌa, ni de la reducciÛn del fondo de comercio, ni del daÒo a la reputaciÛn o la pÈrdida de ahorros anticipados, ni de las reclamaciones de terceros contra el Licenciatario y pÈrdida de (o daÒos a) los datos.
+
+En Francia: IBM no ser· responsable de los daÒos a la reputaciÛn, daÒos indirectos o pÈrdidas de negocio, ingresos y/o valor de la compaÒÌa, o ahorros anticipados.
+
+En Portugal: IBM no ser· responsable de daÒos indirectos, incluida la pÈrdida de beneficios.
+
+En EspaÒa: IBM no ser· responsable del lucro cesante, ni de las pÈrdidas de beneficio, negocio, ingresos, fondo comercial o ahorros previstos.
+
+AÒada lo siguiente al final del p·rrafo a:
+
+En Francia: las condiciones del Acuerdo, incluidas las condiciones financieras, se establecieron teniendo en cuenta la presente cl·usula, que forma parte integral de la economÌa general del Acuerdo.
+
+En el p·rrafo b, sustituya "daÒos que, de conformidad con la legislaciÛn aplicable, no puedan ser limitados" por lo siguiente:
+
+En Alemania: i) daÒos fÌsicos a las personas (incluida la muerte); ii) pÈrdidas o daÒos causados por una infracciÛn de una garantÌa asumida por IBM en relaciÛn con cualquier transacciÛn en virtud del presente Acuerdo; y iii) causados intencionalmente o por negligencia grave.
+
+Apartado 6. LegislaciÛn Aplicable y Alcance Geogr·fico
+
+En el p·rrafo a, primera oraciÛn ˙nicamente, sustituya la frase "el paÌs en el que se realice la transacciÛn de los derechos de titularidad de licencia" por:
+
+En Albania, Armenia, Azerbaiy·n, Bielorrusia, Bosnia y Herzegovina, Bulgaria, Croacia, la Antigua Rep˙blica Yugoslava de Macedonia, Georgia, Kazajist·n, Kirguist·n, Moldavia, Montenegro, Rusia, Serbia, Tayikist·n, Turkmenist·n, Ucrania y Uzbekist·n: Austria
+
+En Estonia, Letonia y Lituania: Finlandia
+
+En Andorra, Argelia, BenÌn, Burkina Faso, Burundi, Cabo Verde, Camer˙n, Chad, Comores, Costa de Marfil, GabÛn, Guayana Francesa, Guinea, Guinea-Bissau, Guinea Ecuatorial, LÌbano, Madagascar, Mali, Marruecos, Mauricio, Mauritania, Mayotte, Nueva Caledonia, NÌger, Polinesia Francesa, Rep˙blica Centroafricana, Rep˙blica del Congo, Rep˙blica Democr·tica del Congo, ReuniÛn, Senegal, Seychelles, Togo, T˙nez, Vanuatu y Wallis y Futuna y Yibuti: Francia
+
+En Angola, Arabia SaudÌ, BarÈin, Botsuana, Cisjordania y Gaza, Egipto, Emiratos ¡rabes Unidos, Eritrea, EtiopÌa, Gambia, Ghana, Jordania, Kenia, Kuwait, Liberia, Malawi, Malta, Mozambique, Nigeria, Om·n, Pakist·n, Catar, Ruanda, Santo TomÈ y PrÌncipe, Sierra Leona, Somalia, Tanzania, Uganda, Yemen, Zambia y Zimbabue: Inglaterra
+
+En Liechtenstein: Suiza
+
+En Sud·frica, Namibia, Lesoto y Suazilandia: la Rep˙blica de Sud·frica
+
+En Reino Unido: Inglaterra
+
+En el p·rrafo a, aÒada lo siguiente al final de la primera oraciÛn:
+
+En Francia: las Partes acuerdan que los artÌculos 1222 y 1223 del CÛdigo Civil francÈs no son aplicables.
+
+AÒada lo siguiente al final del p·rrafo a:
+
+En Albania, Armenia, Azerbaiy·n, Bielorrusia, Bosnia y Herzegovina, Bulgaria, Croacia, Rep˙blica de Macedonia, Georgia, Kazajist·n, Kosovo, Kirguist·n, Moldavia, Montenegro, RumanÌa, Rusia, Serbia, Tayikist·n, Turkmenist·n, Ucrania y Uzbekist·n: todas las disputas que surjan de este Acuerdo se dirimir·n de acuerdo con las Normas de Arbitraje y ConciliaciÛn (Normas de Viena) del Centro Internacional de Arbitraje de la C·mara EconÛmica Federal de Viena, Austria (”rgano de Arbitraje), siendo el inglÈs la lengua oficial, por parte de tres ·rbitros imparciales designados de conformidad con las Normas de Viena. Cada parte designar· a un ·rbitro, que nombrar· conjuntamente un presidente independiente en el plazo de 30 dÌas o, de lo contrario, el presidente ser· nombrado por la Entidad de Arbitraje seg˙n las Reglas de Viena. Los ·rbitros no tendr·n autoridad para conceder medidas cautelares o indemnizaciones que excluyan o excedan los lÌmites de este Acuerdo. Ning˙n contenido de este Acuerdo impedir· que ninguna de las partes recurra a procedimientos judiciales para (1) medidas cautelares para evitar perjuicios materiales o una infracciÛn de las cl·usulas de confidencialidad o derechos de propiedad intelectual, o (2) determinar la validez o propiedad de cualquier copyright, patente o marca registrada propiedad o reclamada por una parte o su entidad corporativa, o (3) cobro de deudas en importes inferiores a 500.000 USD.
+
+En Estonia, Letonia y Lituania: todos los conflictos que surjan de este Acuerdo finalmente deber·n resolverse en el Instituto de Arbitraje de la C·mara de Comercio de Finlandia (FAI) (”rgano de Arbitraje) en virtud de las Normas de Arbitraje de la C·mara de Comercio de Finlandia (Normas) en Helsinki, Finlandia, en inglÈs como lengua oficial, por parte de tres ·rbitros designados de conformidad con las Normas. Cada parte designar· un ·rbitro, que nombrar· conjuntamente un presidente independiente dentro del plazo de 30 dÌas; de lo contrario, el presidente ser· designado por el ”rgano de Arbitraje de conformidad con las Normas. Los ·rbitros no tendr·n autoridad para conceder medidas cautelares o indemnizaciones que excluyan o excedan los lÌmites de este Acuerdo. Ning˙n contenido de este Acuerdo impedir· que ninguna de las partes recurra a procedimientos judiciales para (1) medidas cautelares para evitar perjuicios materiales o una infracciÛn de las cl·usulas de confidencialidad o derechos de propiedad intelectual, o (2) determinar la validez o propiedad de cualquier copyright, patente o marca registrada propiedad o reclamada por una parte o su entidad corporativa, o (3) cobro de deudas en importes inferiores a 500.000 USD.
+
+En Afganist·n, Angola, BahrÈin, Botsuana, Burundi, Cabo Verde, Yibuti, Egipto, Eritrea, EtiopÌa, Gambia, Ghana, Irak, Jordania, Kenia, Kuwait, LÌbano, Liberia, Libia, Madagascar, Malawi, Mozambique, Nigeria, Om·n, Pakist·n, Territorios Palestinos, Qatar, Ruanda, Santo TomÈ y PrÌncipe, Arabia SaudÌ, Seychelles, Sierra Leona, Somalia, Sud·n del Sur, Tanzania, Uganda, Emiratos ¡rabes Unidos, S·hara Occidental, Yemen, Zambia y Zimbabue: todos los conflictos que surjan de este Acuerdo finalmente deber·n resolverse en el Tribunal de Arbitraje Internacional de Londres (LCIA) (”rgano de Arbitraje) en virtud de las Normas de Arbitraje del LCIA (Normas) en Londres, Reino Unido, siendo el inglÈs la lengua oficial, por parte de tres ·rbitros imparciales designados de conformidad con las Normas. Cada parte designar· un ·rbitro, que nombrar· conjuntamente un presidente independiente dentro del plazo de 30 dÌas; de lo contrario, el presidente ser· designado por el ”rgano de Arbitraje de conformidad con las Normas. Los ·rbitros no tendr·n autoridad para conceder medidas cautelares o indemnizaciones que excluyan o excedan los lÌmites de este Acuerdo. Ning˙n contenido de este Acuerdo impedir· que ninguna de las partes recurra a procedimientos judiciales para (1) medidas cautelares para evitar perjuicios materiales o una infracciÛn de las cl·usulas de confidencialidad o derechos de propiedad intelectual, o (2) determinar la validez o propiedad de cualquier copyright, patente o marca registrada propiedad o reclamada por una parte o su entidad corporativa, o (3) cobro de deudas en importes inferiores a 500.000 USD.
+
+En Argelia, BenÌn, Burkina Faso, Camer˙n, Rep˙blica Centroafricana, Chad, Rep˙blica del Congo, Rep˙blica Democr·tica del Congo, Guinea Ecuatorial, Guayana Francesa, Polinesia Francesa, GabÛn, Guinea, Guinea-Bissau, Costa de Marfil, MalÌ, Mauritania, Mauricio, Marruecos, NÌger, Senegal, Togo y T˙nez: todas las disputas que surjan de este Acuerdo ser·n resueltas finalmente por la Corte Internacional de Arbitraje (ICC), en ParÌs (”rgano de Arbitraje), bajo sus normas de arbitraje (Normas), en ParÌs, Francia, con el francÈs como idioma oficial, por tres ·rbitros imparciales designados de conformidad con las Normas. Cada parte designar· un ·rbitro, que nombrar· conjuntamente un presidente independiente dentro del plazo de 30 dÌas; de lo contrario, el presidente ser· designado por el ”rgano de Arbitraje de conformidad con las Normas. Los ·rbitros no tendr·n autoridad para conceder medidas cautelares o indemnizaciones que excluyan o excedan los lÌmites de este Acuerdo. Ning˙n contenido de este Acuerdo impedir· que ninguna de las partes recurra a procedimientos judiciales para (1) medidas cautelares para evitar perjuicios materiales o una infracciÛn de las cl·usulas de confidencialidad o derechos de propiedad intelectual, o (2) determinar la validez o propiedad de cualquier copyright, patente o marca registrada propiedad o reclamada por una parte o su entidad corporativa, o (3) cobro de deudas en importes inferiores a 250.000 USD.
+
+En Sud·frica, Namibia, Lesotho y Swazilandia: todos los conflictos que surjan de este Acuerdo finalmente deber·n resolverse en la FundaciÛn de Arbitraje de Sud·frica (AFSA) (”rgano de Arbitraje), bajo las Normas de Arbitraje de la AFSA (Normas) en Johannesburgo, Sud·frica, en inglÈs como idioma oficial, por parte de tres ·rbitros imparciales designados en conformidad con estas Normas. Cada parte designar· un ·rbitro, que nombrar· conjuntamente un presidente independiente dentro del plazo de 30 dÌas; de lo contrario, el presidente ser· designado por el ”rgano de Arbitraje de conformidad con las Normas. Los ·rbitros no tendr·n autoridad para conceder medidas cautelares o indemnizaciones que excluyan o excedan los lÌmites de este Acuerdo. Ning˙n contenido de este Acuerdo impedir· que ninguna de las partes recurra a procedimientos judiciales para (1) medidas cautelares para evitar perjuicios materiales o una infracciÛn de las cl·usulas de confidencialidad o derechos de propiedad intelectual, o (2) determinar la validez o propiedad de cualquier copyright, patente o marca registrada propiedad o reclamada por una parte o su entidad corporativa, o (3) cobro de deudas en importes inferiores a 250.000 USD.
+
+En Andorra, Austria, Chipre, Francia, Alemania, Grecia, Israel, Italia, EspaÒa Portugal, Suiza y TurquÌa: todas las disputas se someter·n a la jurisdicciÛn exclusiva de los siguientes tribunales competentes:
+
+En Andorra: el Tribunal Comercial de ParÌs.
+
+En Austria: el Tribunal de Viena, Austria (Inner-City).
+
+En Chipre: el Tribunal competente de Nicosia.
+
+En Francia: el Tribunal Comercial de ParÌs.
+
+En Alemania: los Tribunales de Stuttgart.
+
+En Grecia: el Tribunal competente de Atenas.
+
+En Israel: los Tribunales de Tel Aviv Jaffa.
+
+En Italia: los Tribunales de Mil·n.
+
+En Portugal: los Tribunales de Lisboa.
+
+En EspaÒa: los Tribunales de Madrid.
+
+En Suiza: el Tribunal Mercantil del cantÛn de Z˙rich.
+
+En TurquÌa: los Tribunales Centrales (Caglayan) de Estambul y los Directorios Ejecutivos de Estambul, Rep˙blica de TurquÌa.
+
+En PaÌses Bajos: las Partes renuncian a sus derechos con arreglo al tÌtulo 7.1 ("Koop") y a la cl·usula 7:401 y 402 del CÛdigo Civil holandÈs, y a sus derechos a invocar la disoluciÛn total o parcial ("gehele of partiele ontbinding") de este Acuerdo en virtud del apartado 6:265 del CÛdigo Civil holandÈs.
+
+Apartado 7. General
+
+En el p·rrafo d, inserte lo siguiente al final del p·rrafo:
+
+En EspaÒa: IBM cumplir· con las solicitudes para acceder, actualizar o borrar la informaciÛn de contacto si se envÌan a la siguiente direcciÛn: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+
+En el p·rrafo j, aÒada al final del p·rrafo:
+
+En la Rep˙blica Checa: bajo el Apartado 1801 de la Ley 89/2012. (el "CÛdigo Civil"), Apartado 1799 y Apartado 1800 del CÛdigo Civil seg˙n lo enmendado, no se aplica a transacciones bajo este Acuerdo. El Licenciatario acepta el riesgo de un cambio de circunstancias seg˙n el Apartado 1765 del CÛdigo Civil.
+
+En el p·rrafo j:
+
+En Bulgaria, Croacia, Rusia, Serbia y Eslovenia: elimine la segunda oraciÛn que afirma: "Ninguna de las partes interpondr· acciÛn legal alguna que traiga causa o estuviese relacionada con ese Acuerdo, transcurridos m·s de dos aÒos desde que se produjo su causa".
+
+En el p·rrafo j, agregue al final de la segunda oraciÛn:
+
+En Lituania, o salvo lo dispuesto por la ley
+
+En el p·rrafo j, sustituya la segunda oraciÛn por:
+
+En Polonia: Ninguna de las partes interpondr· acciÛn legal alguna que traiga causa o estuviese relacionada con ese Acuerdo, transcurridos m·s de tres aÒos desde que se produjo su causa, salvo que se interponga una demanda de no pago no m·s de 2 aÒos despuÈs de que el pago sea debido.
+
+En el p·rrafo j, segunda oraciÛn, sustituya la palabra "dos" por:
+
+En Letonia y Ucrania: tres
+
+En Eslovaquia: cuatro
+
+En el p·rrafo j, aÒada al final de la tercera frase que afirma: "Ninguna de las partes es responsable de la falta de cumplimiento de sus obligaciones no monetarias por causas fuera de su propio control":
+
+En Rusia: incluidos, a tÌtulo enunciativo y no limitativo, terremotos, inundaciones, incendios, desastres naturales, huelgas (no se incluyen las huelgas de los empleados de las partes), actos de guerra, acciones militares, embargos, bloqueos, sanciones internacionales o gubernamentales y actos de las autoridades de la jurisdicciÛn aplicable.
+
+En el p·rrafo j, tercera oraciÛn, modifique la frase: "Ninguna de las partes es responsable de la falta de cumplimiento de sus obligaciones no monetarias por causas fuera de su propio control" de la siguiente forma:
+
+En Ucrania: ninguna de las partes es responsable de la falta de cumplimiento de sus obligaciones no monetarias por causas fuera de su propio control, lo que incluye, pero sin limitaciÛn, los requisitos de importaciÛn, exportaciÛn y sanciones econÛmicas de Estados Unidos.
+
+AÒada lo siguiente al final del apartado como nuevo p·rrafo l:
+
+En HungrÌa: mediante la firma de este Acuerdo, el Licenciatario confirma que el Licenciatario conocÌa suficientemente todas las provisiones de este Acuerdo y que tuvo la oportunidad de negociar las condiciones. Las siguientes disposiciones pueden desviarse significativamente de las disposiciones de aplicaciÛn general conforme a la ley de HungrÌa y ambas partes aceptan dichas provisiones mediante la firma del Acuerdo: Licencia de programa; GarantÌas, Cargos, Impuestos, Pago y VerificaciÛn; Responsabilidad y ProtecciÛn de la Propiedad Intelectual, TerminaciÛn; LegislaciÛn Aplicable y Alcance Geogr·fico y General.
+
+En Rep˙blica Checa: el Licenciatario acepta expresamente las condiciones de este acuerdo, que incluyen las siguientes condiciones comerciales importantes: i) limitaciÛn y declaraciÛn de limitaciÛn de responsabilidad por defectos (GarantÌas); ii) limitaciÛn de la titularidad del Licenciatario a daÒos (responsabilidad y ProtecciÛn de la Propiedad Intelectual); iii) naturaleza vinculante de las normativas de importaciÛn y exportaciÛn (LegislaciÛn Aplicable y Alcance Geogr·fico); iv) perÌodos de limitaciÛn m·s cortos (General); v) exclusiÛn de aplicabilidad de disposiciones en contratos de adhesiÛn (General); y vi) aceptaciÛn del riesgo de un cambio de circunstancias (General).
+
+En RumanÌa: el Licenciatario acepta expresamente las siguientes cl·usulas est·ndar que pueden considerarse "cl·usulas inusuales" de acuerdo con las disposiciones del artÌculo 1203 del CÛdigo Civil rumano: cl·usulas 2, 4, 5, 8j. El Licenciatario acepta por el presente documento que fue lo suficientemente informado de todas las disposiciones de este Acuerdo, incluidas las cl·usulas mencionadas anteriormente, que analizÛ y comprendiÛ correctamente dichas disposiciones y que tuvo la oportunidad de negociar las condiciones de cada cl·usula.
+
+i125-5589-06 (10-2021)
 

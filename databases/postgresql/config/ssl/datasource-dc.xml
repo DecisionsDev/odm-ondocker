@@ -1,0 +1,39 @@
+<server>
+
+  <!-- decision center datasource -->
+  <dataSource id="dcdatasource"
+                        isolationLevel="TRANSACTION_READ_COMMITTED"
+                        jndiName="jdbc/ilogDataSource"
+                        statementCacheSize="150"
+                        jdbcDriverRef="postgresql-driver"
+      validationTimeout="0"
+                        type="javax.sql.ConnectionPoolDataSource">
+                <connectionManager
+                        maxPoolSize="25"
+                        minPoolSize="10"
+                        connectionTimout="10s"
+                        agedTimeout="30m" />
+ 	<properties
+          databaseName="odmdb"
+          user="odmusr"
+          portNumber="5432"
+          tcpKeepAlive="true"
+          ssl="true"
+          sslCert="/config/customdatasource/odmcrt.der"
+          sslKey="/config/customdatasource/odmkey.pk8"
+          sslRootCert="/config/customdatasource/odmroot.crt"
+          sslMode="verify-ca"
+          serverName="dbserver" />
+  </dataSource>
+
+  <jdbcDriver id="postgresql-driver"
+            javax.sql.ConnectionPoolDataSource="org.postgresql.ds.PGConnectionPoolDataSource"
+            javax.sql.XADataSource="org.postgresql.xa.PGXADataSource"
+
+            libraryRef="postgresql-library"/>
+
+  <library id="postgresql-library">
+            <fileset id="postgresql-fileset"  dir="${server.config.dir}/resources" />
+  </library>
+
+</server>

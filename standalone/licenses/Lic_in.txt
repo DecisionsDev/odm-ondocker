@@ -1,21 +1,11 @@
 INFORMASI LISENSI
 
-Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (Z125-5589-05) akan berlaku.
+Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan (i125-5589-06) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.11 (5725-B69)
+IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
-
-Hak penggunaan terbatas
-
-Dengan pengecualian Program Bundel, semua perangkat lunak IBM yang disediakan kepada Pemegang Lisensi dengan Program hanya dapat digunakan untuk mendukung penggunaan Program Utama oleh Pemegang Lisensi berdasarkan dokumen Informasi Lisensi ini, yang berarti penggunaan tersebut harus berkaitan secara langsung dengan penggunaan Program Utama berlisensi.
-
-Pemegang Lisensi tidak berhak untuk menggunakan Program guna memberikan layanan TI komersial kepada pihak ketiga mana pun, memberikan hosting komersial atau berbagi waktu, atau mensublisensikan, menyewakan, atau menyewagunakan Program.
-
-Penggunaan yang Dilarang
-
-Pemegang Lisensi tidak dapat menggunakan atau memberi wewenang kepada pihak lain untuk menggunakan Program apabila kegagalan Program dapat menyebabkan kematian, cedera fisik, atau kerusakan properti atau lingkungan.
 
 Gambar Pemasangan Multi-Produk
 
@@ -26,11 +16,15 @@ Program Pendukung
 Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung yang diidentifikasi di bawah ini hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini. Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan atau dengan cara lain, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pemegang Lisensi harus memperoleh kepemilikan yang memadai atas Program, secara keseluruhan, untuk mencakup pemasangan dan penggunaan Pemegang Lisensi atas semua Program Pendukung, kecuali apabila kepemilikan yang terpisah diberikan di dalam dokumen Informasi Lisensi. Misalnya, jika Program ini dilisensikan pada basis Inti Prosesor Virtual (Virtual Processor Core - "VPC") dan Pemegang Lisensi memasang Program Utama atau Program Pendukung pada 10 mesin VPC dan Program Pendukung lainnya pada 10 mesin VPC kedua, Pemegang Lisensi akan diwajibkan memperoleh kepemilikan 20 VPC atas Program.
 
 Program Pendukung:
-IBM WebSphere Liberty 21
+IBM WebSphere Liberty 22
 
 Batasan Pengembang
 
 Apabila Program ditetapkan untuk "Para Pengembang", Pemegang Lisensi hanya dapat menggunakan Program sebagai bagian dari pengembangan internal Pemegang Lisensi dan pengujian unit pada mesin pengembang. Mesin pengembang adalah lingkungan desktop fisik atau virtual, yang menjalankan sistem operasi utama dan Program, yang keduanya dapat diakses dan digunakan oleh tidak lebih dari satu pengembang yang ditetapkan.
+
+Kode Pihak Ketiga yang Dapat Dimodifikasi
+
+Apabila dalam file PEMBERITAHUAN, jika ada, IBM mengidentifikasi kode pihak ketiga sebagai "Kode Pihak Ketiga yang Dapat Dimodifikasi", IBM memberikan wewenang kepada Penerima Lisensi untuk 1) memodifikasi Kode Pihak Ketiga yang Dapat Dimodifikasi dan 2) merekayasa balik modul Program yang berinteraksi secara langsung dengan Kode Pihak Ketiga yang Dapat Dimodifikasi dengan ketentuan bahwa hal ini hanya untuk tujuan debugging modifikasi Penerima Lisensi untuk kode pihak ketiga tersebut. Kewajiban dukungan dan layanan IBM, jika ada, hanya berlaku untuk Program yang belum dimodifikasi.
 
 Kode Berlisensi Terpisah
 
@@ -52,227 +46,500 @@ Data dan Layanan Pihak Ketiga
 
 Program menyediakan akses ke layanan data, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "Konten Pihak Ketiga"). Akses ke Konten Pihak Ketiga ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan Konten Pihak Ketiga tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
-L/N:  L-ASAY-C55H6F
-D/N:  L-ASAY-C55H6F
-P/N:  L-ASAY-C55H6F
 
+L/N: L-ASAY-CE4DNS
+D/N: L-ASAY-CE4DNS
+P/N: L-ASAY-CE4DNS
 
-Perjanjian Lisensi Internasional untuk Program Tanpa Garansi
+Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan
 
 Bagian 1 - Syarat-syarat Umum
 
-DENGAN MENGUNDUH, MEMASANG, MENYALIN, MENGAKSES, MENEKAN TOMBOL "TERIMA" ATAU DENGAN CARA LAIN MENGGUNAKAN PROGRAM, PEMEGANG LISENSI MENYETUJUI SYARAT-SYARAT PERJANJIAN INI. APABILA ANDA MENERIMA SYARAT-SYARAT INI ATAS NAMA PEMEGANG LISENSI, ANDA MENYATAKAN DAN MENJAMIN BAHWA ANDA MEMILIKI WEWENANG SEPENUHNYA UNTUK MENGIKAT PEMEGANG LISENSI DENGAN SYARAT-SYARAT INI. APABILA ANDA TIDAK MENYETUJUI SYARAT-SYARAT INI,
+DENGAN MENGUNDUH, MEMASANG, MENYALIN, MENGAKSES, MENGEKLIK TOMBOL "TERIMA", ATAU DENGAN CARA LAIN MENGGUNAKAN PROGRAM, PEMEGANG LISENSI SETUJU TERHADAP SYARAT-SYARAT PERJANJIAN INI. APABILA ANDA MENERIMA SYARAT-SYARAT INI ATAS NAMA PEMEGANG LISENSI, ANDA MENYATAKAN BAHWA ANDA MEMILIKI WEWENANG SEPENUHNYA UNTUK MENGIKAT PEMEGANG LISENSI DENGAN SYARAT-SYARAT INI.
 
-* JANGAN MENGUNDUH, MEMASANG, MENYALIN, MENGAKSES, MENEKAN TOMBOL "TERIMA" ATAU MENGGUNAKAN PROGRAM; DAN
+JIKA ANDA TIDAK SETUJU DENGAN SYARAT-SYARAT INI ATAU TIDAK MEMILIKI WEWENANG: i) JANGAN MENGUNDUH, MEMASANG, MENYALIN, MENGAKSES, MENGEKLIK TOMBOL "TERIMA", ATAU MENGGUNAKAN PROGRAM; DAN ii) SEGERA KEMBALIKAN MEDIA DAN DOKUMENTASI YANG TIDAK DIGUNAKAN, DAN BUKTI KEPEMILIKAN KEPADA PIHAK YANG MEMBERIKAN UNTUK MENDAPATKAN PENGEMBALIAN UANG SEBESAR JUMLAH YANG DIBAYARKAN. APABILA PROGRAM DIUNDUH, MUSNAHKAN SEMUA SALINAN PROGRAM TERSEBUT.
 
-* SEGERA MENGEMBALIKAN MEDIA DAN DOKUMENTASI YANG TIDAK TERPAKAI KEPADA PIHAK DARI MANA ANDA MENDAPATKANNYA UNTUK SUATU PENGEMBALIAN UANG ATAS JUMLAH YANG TELAH DIBAYARKAN. APABILA PROGRAM TELAH DIUNDUH, MUSNAHKAN SEMUA SALINAN PROGRAM.
+Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan (International License Agreement for Non-Warranted Programs - "ILAN") ini dan Dokumen Transaksi yang berlaku (bersama-sama disebut "Perjanjian") merupakan perjanjian lengkap antara Pemegang Lisensi dan IBM sehubungan dengan penggunaan Program. Syarat-syarat yang diperlukan negara yang termasuk dalam Bagian 2 ILAN ini menggantikan atau mengubah syarat-syarat Bagian 1.
 
-1. Definisi
+Dokumen Transaksi (Transaction Document - "TD") memberikan uraian, informasi, dan syarat-syarat terkait dengan Program dan penggunaannya yang sah. Contoh TD untuk Program termasuk informasi lisensi (license information - "LI"), spesifikasi program berlisensi (licensed program specifications - "LPS"), penawaran, bukti kepemilikan (proof of entitlement - "PoE"), atau faktur. Jika terjadi ketidaksesuaian, TD akan berlaku di atas ILAN.
 
-"Penggunaan yang Sah" - tingkat yang ditetapkan di mana Pemegang Lisensi berhak untuk melaksanakan atau menjalankan Program. Tingkat tersebut dapat diukur berdasarkan jumlah pengguna, jutaan unit layanan ("MSU"), Unit Nilai Prosesor ("PVU") atau tingkat penggunaan lainnya yang ditetapkan oleh IBM.
+1. Lisensi Program
 
-"IBM" - International Business Machines Corporation atau salah satu anak perusahaannya.
+a. Program adalah program komputer bermerek IBM yang dapat dijalankan dan materi terkaitnya serta termasuk sebagian dan seluruh salinan. Rincian Program diuraikan dalam TD yang tersedia di http://www.ibm.com/software/sla (untuk Program Passport Advantage) atau http://www.ibm.com/support/knowledgecenter (untuk Program IBM lainnya), dalam direktori perintah sistem Program, atau sebagaimana yang ditentukan oleh IBM. Kebijakan perangkat lunak IBM (seperti pencadangan, penggunaan sementara, dan lingkungan cloud yang disetujui IBM) yang tersedia di http://www.ibm.com/softwarepolicies berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
-"Informasi tentang Lisensi" ("IL") - dokumen yang memberikan informasi dan syarat-syarat tambahan yang dikhususkan untuk Program. IL Program tersedia di www.ibm.com/software/sla. IL juga dapat dilihat dalam direktori Program dengan menggunakan perintah sistem atau sebagai buklet yang dimasukkan bersama dengan Program.
+b. Salinan Program memiliki hak cipta dan berlisensi.
 
-"Program" - hal-hal berikut ini, termasuk asli dan seluruh atau sebagian salinan: 1) instruksi dan data yang dapat dibaca oleh mesin, 2) komponen, berkas, dan modul, 3) konten audio-visual (seperti gambar, teks, rekaman atau foto), dan 4) materi yang dilisensikan terkait (seperti kunci dan dokumentasi).
+c. Pemegang Lisensi diberikan lisensi non-eksklusif untuk:
 
-2. Susunan Perjanjian
+(1) menggunakan setiap salinan Program, dengan tunduk pada syarat-syarat Perjanjian, dan jika berlaku, hingga sejumlah kepemilikan lisensi yang diperoleh Pemegang Lisensi ("Penggunaan yang Sah");
 
-Perjanjian ini termasuk Bagian 1 - Syarat-syarat Umum, Bagian 2 - Syarat-syarat Khusus Tiap Negara (apabila ada) dan IL dan merupakan perjanjian yang lengkap antara Pemegang Lisensi dan IBM tentang penggunaan Program. Perjanjian ini menggantikan setiap komunikasi lisan atau tertulis sebelumnya antara Pemegang Lisensi dan IBM tentang penggunaan Program oleh Pemegang Lisensi. Syarat-syarat Bagian 2 dapat menggantikan atau memodifikasi syarat-syarat Bagian 1. Sepanjang terdapat ketidaksesuaian, IL berlaku atas kedua Bagian tersebut.
+(2) membuat dan memasang salinan untuk mendukung Penggunaan yang Sah tersebut; dan
 
-3. Pemberian Lisensi
+(3) membuat salinan cadangan.
 
-Program adalah milik IBM atau pemasok IBM serta diberi hak cipta dan lisensi, tetapi tidak dijual.
+d. Program dapat digunakan oleh Pemegang Lisensi, karyawan, dan kontraktornya. Pemegang Lisensi tidak boleh menyewakan atau menyewagunakan Program atau memberikan layanan TI, hosting, atau berbagi waktu (timesharing) komersial kepada pihak ketiga mana pun. Hak tambahan dapat tersedia dengan biaya tambahan atau berdasarkan syarat-syarat yang berbeda.
 
-IBM memberikan lisensi yang tidak eksklusif kepada Pemegang Lisensi untuk 1) menggunakan Program sampai dengan Penggunaan yang Sah sebagaimana ditetapkan dalam tagihan, 2) membuat dan memasang salinan-salinan untuk mendukung Penggunaan yang Sah tersebut, dan 3) membuat salinan cadangan, semua dengan ketentuan bahwa
+e. Lisensi yang diberikan untuk Program tunduk pada Pemegang Lisensi:
 
-a. Pemegang Lisensi telah mendapatkan Program secara sah dan mematuhi syarat-syarat Perjanjian ini;
+(1) memperbanyak pemberitahuan hak cipta dan tanda lainnya pada salinan apa pun;
 
-b. salinan cadangan tidak bekerja kecuali apabila Program yang dicadangkan tidak dapat bekerja;
+(2) memastikan siapa pun yang menggunakan Program: i) melakukan hal tersebut hanya atas nama Pemegang Lisensi dalam Penggunaan yang Sah oleh Pemegang Lisensi; dan ii) mematuhi Perjanjian ini;
 
-c. Pemegang Lisensi mereproduksi semua pemberitahuan tentang hak cipta dan keterangan kepemilikan lainnya dalam masing-masing salinan atau sebagian salinan Program;
+(3) tidak merakit balik, mengompilasi balik, menerjemahkan, atau merekayasa balik Program, kecuali sebagaimana yang secara tegas diizinkan oleh hukum tanpa kemungkinan pengabaian kontrak; dan
 
-d. Pemegang Lisensi memastikan bahwa setiap individu yang menggunakan Program (yang diakses dari jarak dekat atau jarak jauh) 1) melakukan hal tersebut hanya atas nama Pemegang Lisensi dan 2) mematuhi syarat-syarat Perjanjian ini;
+(4) tidak menggunakan salah satu elemen Program atau materi berlisensi terkait secara terpisah dari Program.
 
-e. Pemegang Lisensi tidak 1) menggunakan, menyalin, memodifikasi, atau mendistribusikan Program kecuali apabila diizinkan secara tegas dalam Perjanjian ini; 2) merakit kembali, menyusun kembali, dengan cara lain, menerjemahkan atau merekayasa kembali Program, kecuali apabila diizinkan secara tegas oleh undang-undang tanpa adanya kemungkinan pelepasan kontrak; 3) menggunakan setiap komponen, berkas, modul, konten audio-visual atau materi yang dilisensikan terkait yang terpisah dari Program tersebut; atau 4) mensublisensikan, menyewa atau menyewakan Program; dan
+f. Apabila TD untuk Program ("Program Utama") menyatakan bahwa "Program Pendukung" disertakan dengan Program Utama, Pemegang Lisensi dapat menggunakan Program Pendukung dengan tunduk pada batasan lisensi apa pun dari Program Utama dan hanya untuk mendukung Program Utama.
 
-f. apabila Pemegang Lisensi mendapatkan Program ini sebagai Program Pendukung, Pemegang Lisensi menggunakan Program ini hanya untuk mendukung Program Utama dan tunduk kepada setiap batasan dalam lisensi untuk Program Utama, atau, apabila Pemegang Lisensi mendapatkan Program ini sebagai Program Utama, Pemegang Lisensi menggunakan semua Program Pendukung hanya untuk mendukung Program ini dan tunduk kepada setiap batasan dalam Perjanjian ini. Untuk tujuan Butir "f" ini, "Program Pendukung" adalah Program yang merupakan bagian dari Program IBM lainnya ("Program Utama") dan diidentifikasi sebagai Program Pendukung dalam IL Program Utama. (Untuk mendapatkan lisensi terpisah untuk Program Pendukung tanpa pembatasan-pembatasan ini, Pemegang Lisensi sebaiknya menghubungi pihak yang darinya Pemegang Lisensi telah mendapatkan Program Pendukung.)
+g. Lisensi ini berlaku untuk setiap salinan Program yang dibuat oleh Pemegang Lisensi.
 
-Lisensi ini berlaku untuk masing-masing salinan Program yang dibuat oleh Pemegang Lisensi.
+h. Pembaruan, perbaikan, atau patch pada Program tunduk pada syarat-syarat yang mengatur Program, kecuali jika syarat-syarat baru diberikan dalam TD yang diperbarui. Pemegang Lisensi menerima syarat-syarat baru tersebut setelah pemasangan pembaruan, perbaikan, atau patch. Apabila Program digantikan dengan suatu pembaruan, Pemegang Lisensi setuju untuk segera menghentikan penggunaan Program yang diganti.
 
-3.1 Tukar Tambah, Pembaruan, Perbaikan, dan Tambahan
+i. Apabila Pemegang Lisensi merasa tidak puas dengan Program karena alasan apa pun, Pemegang Lisensi dapat mengakhiri lisensi dengan mengembalikan Program dan bukti kepemilikan kepada IBM atau Mitra Bisnis IBM yang sah dalam waktu 30 hari sejak tanggal akuisisi asli Program tersebut untuk mendapatkan pengembalian uang sebesar jumlah yang dibayarkan. Untuk Program yang diunduh, hubungi pihak tempat Pemegang Lisensi memperoleh Program guna mendapatkan instruksi pengembalian dana.
 
-3.1.1 Tukar Tambah
+2. Jaminan
 
-Apabila Program digantikan oleh Program tukar tambah, lisensi Program yang digantikan segera diakhiri.
+a. IBM tidak menjamin bahwa pengoperasian Program IBM tanpa gangguan atau bebas kesalahan atau bahwa IBM akan memperbaiki semua kecacatan atau mencegah gangguan pihak ketiga. Jaminan ini merupakan jaminan eksklusif dari IBM dan menggantikan semua jaminan lainnya, termasuk jaminan atau ketentuan yang tersirat atas kualitas yang memuaskan, kelayakan untuk diperjualbelikan, tidak adanya pelanggaran, dan kesesuaian untuk tujuan tertentu. Jaminan IBM tidak akan berlaku apabila terdapat kesalahan penggunaan, modifikasi, kerusakan yang tidak disebabkan oleh IBM, atau kegagalan mematuhi instruksi yang diberikan oleh IBM. Program Non-IBM diberikan sebagaimana adanya, tanpa jaminan apa pun. Pihak ketiga dapat memberikan jaminan mereka sendiri kepada Pemegang Lisensi.
 
-3.1.2 Pembaruan, Perbaikan, dan Tambahan
+b. Dukungan tambahan yang tersedia selama atau setelah periode jaminan mungkin tersedia berdasarkan perjanjian terpisah.
 
-Pada saat Pemegang Lisensi menerima pembaruan, perbaikan atau tambahan untuk Program, Pemegang Lisensi menerima syarat-syarat tambahan atau syarat-syarat yang berbeda yang berlaku untuk pembaruan, perbaikan atau tambahan tersebut yang ditetapkan dalam IL-nya. Apabila syarat-syarat tambahan atau syarat-syarat yang berbeda tidak diberikan, maka pembaruan, perbaikan atau tambahan tersebut semata-mata tunduk kepada Perjanjian ini. Apabila Program digantikan oleh pembaruan, Pemegang Lisensi setuju untuk segera berhenti menggunakan Program yang digantikan.
+3. Biaya, Pajak, Pembayaran, dan Verifikasi
 
-3.2 Lisensi Jangka Waktu Tertentu
+a. Hak Pemegang Lisensi untuk menggunakan Program bergantung pada Pemegang Lisensi yang membayar biaya yang berlaku, jika ada, sebagaimana yang ditetapkan dalam perjanjian di mana Pemegang Lisensi memperoleh kepemilikan lisensi tersebut. Pemegang Lisensi bertanggung jawab untuk memperoleh kepemilikan lisensi tambahan sebelum setiap peningkatan penggunaannya.
 
-Apabila IBM melisensikan Program selama jangka waktu tertentu, lisensi Pemegang Lisensi diakhiri pada akhir jangka waktu tertentu, kecuali apabila Pemegang Lisensi dan IBM sepakat untuk memperbarui lisensi Program tersebut.
+b. Pemegang Lisensi setuju untuk membayar semua biaya yang berlaku untuk kepemilikan yang diperoleh dan biaya apa pun untuk penggunaan yang melebihi otorisasi. Biaya tidak termasuk bea cukai atau bea lainnya, pajak, dan retribusi serupa yang dikenakan oleh otoritas mana pun yang dihasilkan dari akuisisi kepemilikan oleh Pemegang Lisensi dan akan ditagih sebagai tambahan atas biaya tersebut. Jumlah jatuh tempo setelah diterimanya tagihan dari IBM dan harus dibayarkan dalam waktu 30 hari sejak tanggal tagihan ke akun yang ditentukan oleh IBM dan biaya keterlambatan pembayaran mungkin berlaku. Pemegang Lisensi bertanggung jawab untuk memperoleh kepemilikan lisensi tambahan dengan benar terlebih dahulu untuk meningkatkan penggunaannya. IBM tidak memberikan kredit atau pengembalian uang untuk biaya yang telah jatuh tempo atau dibayarkan, kecuali sebagaimana yang ditetapkan di bagian lain dalam ILAN ini, TD yang berlaku, atau syarat-syarat perjanjian di mana Pemegang Lisensi memperoleh kepemilikan lisensi.
 
-3.3 Jangka Waktu dan Pengakhiran
+c. Berdasarkan kepemilikan yang diperoleh, Pemegang Lisensi setuju untuk: i) membayar setiap pemotongan pajak secara langsung kepada entitas pemerintah yang sesuai apabila diwajibkan oleh peraturan perundang-undangan; ii) menyediakan sertifikat pajak yang membuktikan pembayaran tersebut kepada IBM; iii) membayar IBM hanya dengan jumlah bersih setelah pajak; dan iv) bekerja sama sepenuhnya dengan IBM dalam meminta keringanan atau pengurangan pajak tersebut dan segera melengkapi dan mengajukan semua dokumen terkait.
 
-Perjanjian ini berlaku sampai perjanjian ini diakhiri.
+d. Apabila Pemegang Lisensi mengimpor, mengekspor, mentransfer, mengakses, atau menggunakan Program melampaui batas, Pemegang Lisensi setuju untuk bertanggung jawab dan membayar kepada otoritas atas setiap bea cukai, bea, pajak, atau retribusi lain yang dinilai oleh otoritas. Hal ini tidak termasuk pajak-pajak berdasarkan pendapatan bersih IBM.
 
-IBM dapat mengakhiri lisensi Pemegang Lisensi apabila Pemegang Lisensi tidak mematuhi syarat-syarat Perjanjian ini.
+3.1 Verifikasi Pemberian Lisensi
 
-Apabila lisensi diakhiri karena alasan apa pun oleh salah satu pihak, Pemegang Lisensi setuju untuk segera berhenti menggunakan dan memusnahkan semua salinan Program Pemegang Lisensi. Setiap syarat Perjanjian ini yang berdasarkan sifatnya melampaui pengakhiran Perjanjian ini tetap berlaku sampai syarat tersebut dipenuhi, dan berlaku untuk masing-masing penerus dan penerima pengalihan hak kedua belah pihak.
+a. Pemegang Lisensi akan, untuk semua Program di semua situs dan untuk semua lingkungan, membuat, menyimpan, dan setiap tahun memberikan kepada IBM berdasarkan permintaan dengan pemberitahuan 30 hari sebelumnya: i) laporan, dalam format yang diminta oleh IBM menggunakan catatan, output alat sistem, dan informasi sistem lainnya; dan ii) dokumentasi pendukung (secara bersama-sama disebut "Data Penyebaran").
 
-4. Biaya-biaya
+b. Atas pemberitahuan yang wajar, IBM dan auditor independennya dapat memverifikasi kepatuhan Pemegang Lisensi terhadap Perjanjian ini, di semua situs dan untuk semua lingkungan, di mana Pemegang Lisensi menggunakan Program (untuk tujuan apa pun). Verifikasi akan dilakukan dengan cara yang meminimalkan gangguan terhadap bisnis Pemegang Lisensi dan dapat dilakukan di lokasi Pemegang Lisensi, selama jam kerja normal. IBM akan memiliki perjanjian kerahasiaan tertulis dengan auditor independen. Selain memberikan Data Penyebaran yang diuraikan di atas, Pemegang Lisensi setuju untuk memberikan informasi akurat tambahan dan Data Penyebaran atas permintaan kepada IBM dan auditornya.
 
-Biaya-biaya, apabila ada, didasarkan pada Penggunaan yang Sah yang telah didapatkan, yang ditetapkan dalam tagihan. IBM tidak memberikan kredit atau pengembalian uang atas biaya-biaya yang telah jatuh tempo atau dibayar, kecuali apabila ditetapkan lain dalam Perjanjian ini.
+c. Pemegang Lisensi akan segera memesan dan membayar biaya dengan tarif IBM yang berlaku pada saat itu terkait dengan: i) setiap penyebaran yang melebihi otorisasi yang ditunjukkan pada atau berdasarkan verifikasi atau laporan tahunan; ii) layanan langganan & dukungan (subscription and support - "S&S") yang berlaku untuk penyebaran berlebih tersebut untuk yang kurang dari durasi penggunaan berlebih tersebut atau dua tahun; dan iii) setiap biaya tambahan dan tanggung jawab lain yang ditentukan sebagai hasil dari verifikasi tersebut, termasuk tetapi tidak terbatas pada pajak, bea, dan biaya peraturan.
 
-Apabila Pemegang Lisensi ingin meningkatkan Penggunaannya yang Sah, Pemegang Lisensi harus memberitahukan kepada IBM atau pengecer (reseller) IBM yang sah terlebih dahulu dan membayar setiap biaya yang berlaku.
+4. Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual
 
-5. Pajak
+a. Keseluruhan tanggung jawab IBM atas semua klaim terkait dengan Perjanjian ini tidak akan melebihi jumlah ganti rugi langsung aktual apa pun yang ditanggung oleh Pemegang Lisensi hingga lebih besar dari: i) USD10.000,00 (atau setara dalam mata uang lokal); atau ii) jumlah yang dibayarkan (jika biaya berulang, berlaku biaya hingga 12 bulan) untuk kepemilikan Program yang menjadi subjek klaim, terlepas dari dasar klaim tersebut. IBM tidak akan bertanggung jawab atas ganti rugi khusus, insidental, eksemplari, tidak langsung, atau konsekuensional ekonomis, atau hilangnya laba, bisnis, nilai, pendapatan, nama baik, atau penghematan yang diharapkan. Batasan ini berlaku secara kolektif untuk IBM, afiliasi, kontraktor, dan pemasoknya.
 
-Apabila suatu lembaga mengenakan bea, pajak, retribusi atau biaya terhadap Program, tidak termasuk bea, pajak, retribusi atau biaya yang didasarkan pada pendapatan bersih IBM, maka Pemegang Lisensi setuju untuk membayar jumlah tersebut, sebagaimana ditetapkan dalam tagihan atau dokumentasi tentang pembebasan pajak atas pasokan. Pemegang Lisensi bertanggung jawab atas setiap pajak properti pribadi untuk Program sejak tanggal Pemegang Lisensi mendapatkan Program tersebut. Apabila suatu lembaga mengenakan bea cukai, pajak, retribusi atau biaya untuk impor ke dalam atau ekspor, transfer, akses atau penggunaan Program ke luar negeri di mana Pemegang Lisensi awal mendapatkan lisensi, maka Pemegang Lisensi setuju bahwa pihaknya bertanggung jawab atas, dan akan membayar, setiap jumlah yang dikenakan.
+b. Jumlah berikut tidak tunduk pada batasan di atas: ganti rugi yang tidak dapat dibatasi menurut hukum yang berlaku.
 
-6. Jaminan Uang Kembali
+c. IBM tidak bertanggung jawab atas klaim berdasarkan produk non-IBM, item yang tidak diberikan oleh IBM, atau setiap pelanggaran hukum atau hak pihak ketiga yang disebabkan oleh Konten, atau materi, rancangan, spesifikasi Pemegang Lisensi apa pun. Konten berisi semua data, perangkat lunak, dan informasi yang disediakan, diakses secara sah, atau dimasukkan oleh Pemegang Lisensi atau penggunanya yang sah ke dalam Program.
 
-Apabila Pemegang Lisensi tidak puas dengan Program karena alasan apa pun dan merupakan Pemegang Lisensi awal, Pemegang Lisensi dapat mengakhiri lisensi dan mendapatkan pengembalian uang atas jumlah yang telah dibayar oleh Pemegang Lisensi, apabila ada, untuk Program, dengan ketentuan bahwa Pemegang Lisensi mengembalikan Program kepada pihak yang darinya Pemegang Lisensi telah mendapatkan Program tersebut dalam jangka waktu 30 hari sejak tanggal tagihan. Apabila lisensi adalah lisensi untuk jangka waktu tertentu yang tunduk kepada pembaruan, maka Pemegang Lisensi dapat mendapatkan pengembalian uang hanya apabila Program dikembalikan dalam jangka waktu 30 hari pertama sejak jangka waktu yang pertama. Apabila Pemegang Lisensi telah mengunduh Program, Pemegang Lisensi sebaiknya menghubungi pihak yang darinya Pemegang Lisensi telah mendapatkan Program tersebut untuk mendapatkan instruksi-instruksi tentang cara untuk mendapatkan pengembalian uang.
+5. Pengakhiran
 
-7. Transfer Program
+a. IBM dapat mengakhiri lisensi Pemegang Lisensi untuk menggunakan Program jika Pemegang Lisensi gagal mematuhi ILAN, TD, atau perjanjian akuisisi, seperti Perjanjian Passport Advantage Internasional (International Passport Advantage Agreement - "IPAA"). Pemegang Lisensi akan segera memusnahkan semua salinan Program setelah pengakhiran lisensi. Setiap syarat yang berdasarkan sifatnya melampaui pengakhiran tetap berlaku hingga syarat tersebut dipenuhi dan berlaku untuk para penerus dan penerima pengalihan.
 
-Pemegang Lisensi dapat mentransfer Program serta semua hak dan kewajiban lisensi Pemegang Lisensi kepada pihak lainnya hanya apabila pihak tersebut menyetujui syarat-syarat Perjanjian ini. Apabila lisensi diakhiri karena alasan apa pun oleh salah satu pihak, Pemegang Lisensi dilarang untuk mentransfer Program kepada pihak lainnya. Pemegang Lisensi tidak dapat mentransfer sebagian 1) Program atau 2) Penggunaan yang Sah atas Program. Pada saat Pemegang Lisensi mentransfer Program, Pemegang Lisensi juga harus mentransfer salinan kertas Perjanjian ini, termasuk IL. Segera setelah transfer dilakukan, lisensi Pemegang Lisensi berakhir.
+6. Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis
 
-8. Tidak Adanya Jaminan
+a. Kedua belah pihak menyetujui penerapan peraturan perundang-undangan negara di mana transaksi untuk kepemilikan lisensi dilaksanakan, tanpa memperhatikan pertentangan prinsip-prinsip hukum. Hak dan kewajiban masing-masing pihak hanya berlaku di negara tempat dilakukannya transaksi untuk memperoleh kepemilikan lisensi atau, jika IBM setuju, negara tempat Program ditempatkan dalam penggunaan yang produktif, kecuali semua lisensi berlaku sebagaimana yang diberikan secara spesifik.
 
-DENGAN TUNDUK KEPADA SETIAP JAMINAN YANG DIDASARKAN PADA UNDANG-UNDANG YANG TIDAK DAPAT DIKECUALIKAN, IBM TIDAK MEMBUAT JAMINAN ATAU KETENTUAN APA PUN, SECARA TEGAS ATAU TERSIRAT, TENTANG PROGRAM ATAU DUKUNGAN, APABILA ADA, TERMASUK, TETAPI TIDAK TERBATAS PADA, SETIAP JAMINAN ATAU KETENTUAN APA PUN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN, KUALITAS YANG MEMUASKAN, KESESUAIAN UNTUK TUJUAN TERTENTU, DAN HAK MILIK, SERTA SETIAP JAMINAN ATAU KETENTUAN TENTANG TIDAK ADANYA PELANGGARAN. 
+b. Masing-masing pihak juga bertanggung jawab untuk mematuhi: i) peraturan perundang-undangan dan regulasi yang berlaku untuk Konten dan bisnisnya; dan ii) peraturan perundang-undangan dan regulasi impor, ekspor, dan sanksi ekonomi, termasuk peraturan pengendalian perdagangan pertahanan (defense trade control) Amerika Serikat dan setiap yurisdiksi yang berlaku, yang membatasi atau melarang impor, ekspor, ekspor kembali, atau transfer produk, teknologi, layanan, atau data, secara langsung atau tidak langsung, kepada atau untuk negara tertentu, penggunaan akhir, atau pengguna akhir.
 
-BEBERAPA NEGARA ATAU YURISDIKSI TIDAK MEMPERBOLEHKAN PENGECUALIAN TENTANG JAMINAN SECARA TEGAS ATAU TERSIRAT. OLEH KARENA ITU, PENGECUALIAN DI ATAS MUNGKIN TIDAK BERLAKU UNTUK PEMEGANG LISENSI. DALAM HAL TERSEBUT, JAMINAN-JAMINAN TERSEBUT DIBATASI SELAMA PERIODE MINIMUM YANG DIWAJIBKAN OLEH UNDANG-UNDANG. TIDAK ADA JAMINAN APA PUN YANG BERLAKU SETELAH PERIODE TERSEBUT. BEBERAPA NEGARA ATAU YURISDIKSI TIDAK MEMPERBOLEHKAN BATASAN-BATASAN TENTANG BERAPA LAMA JAMINAN YANG TERSIRAT BERLAKU. OLEH KARENA ITU, BATASAN DI ATAS MUNGKIN TIDAK BERLAKU UNTUK PEMEGANG LISENSI. PEMEGANG LISENSI DAPAT MEMILIKI HAK LAINNYA YANG BERBEDA-BEDA ANTARA NEGARA YANG SATU DENGAN NEGARA YANG LAIN ATAU ANTARA YURISDIKSI YANG SATU DENGAN YURISDIKSI YANG LAIN. 
+c. Apabila terdapat ketentuan dari Perjanjian ini untuk Program, yang tidak berlaku atau tidak dapat diberlakukan, ketentuan lain yang tersisa tetap berlaku dan dapat diterapkan sepenuhnya. Tidak ada satu pun dalam Perjanjian ini yang memengaruhi hak-hak konsumen berdasarkan peraturan perundang-undangan yang tidak dapat dihapus atau dibatasi oleh kontrak. Konvensi PBB tentang Jual Beli Barang Internasional tidak berlaku untuk transaksi berdasarkan Perjanjian ini.
 
-SANGGAHAN-SANGGAHAN DAN PENGECUALIAN-PENGECUALIAN DALAM PASAL 8 INI JUGA BERLAKU UNTUK SETIAP PENGEMBANG DAN PEMASOK PROGRAM IBM. 
+7. Umum
 
-PARA PRODUSEN, PEMASOK ATAU PENERBIT PROGRAM NON-IBM DAPAT MEMBERIKAN GARANSI MEREKA SENDIRI.
+a. IBM adalah kontraktor independen, bukan agen Pemegang Lisensi, perusahaan modal ventura, mitra, atau fidusia, dan tidak berjanji untuk melaksanakan setiap kewajiban regulasi Pemegang Lisensi, atau memikul tanggung jawab apa pun untuk bisnis atau operasi Pemegang Lisensi. Pemegang Lisensi bertanggung jawab untuk penggunaannya atas Program IBM dan Program Non-IBM. IBM bertindak hanya sebagai penyedia teknologi informasi. Arahan IBM, anjuran penggunaan, atau panduan atau penggunaan program bukan merupakan nasihat medis, klinis, hukum, akuntansi, atau nasihat profesional berlisensi lainnya. Pemegang Lisensi harus memperoleh nasihat ahlinya sendiri.
 
-IBM TIDAK MEMBERIKAN DUKUNGAN DALAM BENTUK APA PUN, KECUALI APABILA IBM MENETAPKAN LAIN. DALAM HAL TERSEBUT, SETIAP DUKUNGAN YANG DIBERIKAN OLEH IBM TUNDUK KEPADA SANGGAHAN-SANGGAHAN DAN PENGECUALIAN-PENGECUALIAN DALAM PASAL 8 INI.
+b. Untuk Program yang diberikan IBM kepada Pemegang Lisensi dalam bentuk nyata, IBM memenuhi kewajiban pengiriman dan penyampaiannya pada saat penyampaian Program tersebut kepada operator yang ditunjuk IBM, kecuali jika disepakati lain secara tertulis oleh Pemegang Lisensi dan IBM.
 
-9. Data dan Basis Data Pemegang Lisensi
+c. Pemegang Lisensi tidak dapat menggunakan Program jika kegagalan Program dapat mengakibatkan kematian, cedera fisik serius, atau kerusakan properti atau lingkungan.
 
-Untuk membantu Pemegang Lisensi dalam mengisolasi penyebab permasalahan pada Program, IBM dapat meminta agar Pemegang Lisensi 1) memperbolehkan IBM untuk mengakses sistem Pemegang Lisensi dari jarak jauh atau 2) mengirimkan informasi atau data sistem Pemegang Lisensi kepada IBM. Akan tetapi, IBM tidak diwajibkan untuk memberikan asistensi tersebut kecuali apabila IBM dan Pemegang Lisensi mengadakan perjanjian tertulis secara terpisah yang atas dasarnya IBM setuju untuk memberikan kepada Pemegang Lisensi jenis dukungan tersebut, yang tidak termasuk dalam kewajiban-kewajiban IBM dalam Perjanjian ini. Dalam hal apa pun, IBM menggunakan informasi tentang kesalahan-kesalahan dan permasalahan-permasalahan untuk meningkatkan produk dan layanannya serta membantu pemberian tawaran-tawaran dukungan terkait yang dilakukannya. Untuk tujuan-tujuan ini, IBM dapat menggunakan badan-badan dan para subkontraktor IBM (termasuk dalam satu negara atau lebih selain negara di mana Pemegang Lisensi berada), dan Pemegang Lisensi memberikan wewenang kepada IBM untuk melakukan hal tersebut.
+d. IBM, afiliasinya, dan kontraktor masing-masing memerlukan penggunaan informasi kontak bisnis dan informasi penggunaan akun tertentu. Informasi ini bukanlah Konten. Informasi kontak bisnis digunakan untuk mengomunikasikan dan mengelola kesepakatan bisnis dengan Pemegang Lisensi. Contoh informasi kontak bisnis termasuk nama, nomor telepon bisnis, alamat, email, ID pengguna, dan informasi registrasi pajak. Informasi penggunaan akun diperlukan untuk mengaktifkan, menyediakan, mengelola, mendukung, mengatur, dan meningkatkan Program. Contoh informasi penggunaan akun termasuk kesalahan yang dilaporkan dan informasi digital yang dikumpulkan menggunakan teknologi pelacakan, seperti cookie dan web beacon selama penggunaan Program. Pernyataan Kerahasiaan IBM di http://www.ibm.com/privacy memberikan rincian tambahan sehubungan dengan informasi pengumpulan, penggunaan, dan penanganan kontak bisnis dan penggunaan akun IBM. Apabila Pemegang Lisensi memberikan informasi kepada IBM dan pemberitahuan kepada, atau persetujuan oleh, individu diperlukan untuk pemrosesan tersebut, Pemegang Lisensi akan memberi tahu individu dan memperoleh persetujuan.
 
-Pemegang Lisensi tetap bertanggung jawab atas 1) setiap data dan konten dari setiap basis data yang disediakan oleh Pemegang Lisensi untuk IBM, 2) pilihan dan pelaksanaan prosedur dan kendali yang terkait dengan akses, keamanan, enkripsi, penggunaan, dan transmisi data (termasuk setiap data yang dapat diidentifikasi secara pribadi), serta 3) cadangan dan pemulihan atas setiap basis data dan setiap data yang disimpan. Pemegang Lisensi tidak akan mengirimkan atau memberikan kepada IBM akses ke setiap informasi yang dapat diidentifikasi secara pribadi, dalam bentuk data atau bentuk apa pun lainnya, dan akan bertanggung jawab atas biaya-biaya dan jumlah-jumlah lainnya yang wajar yang mungkin ditanggung oleh IBM terkait dengan setiap informasi tersebut yang secara tidak sengaja diberikan kepada IBM atau kehilangan atau pengungkapan informasi tersebut oleh IBM, termasuk biaya-biaya dan jumlah-jumlah lainnya yang timbul dari tuntutan pihak ketiga.
+e. Mitra Bisnis IBM yang menggunakan atau menyediakan Program tidak bergantung pada IBM dan menentukan harga dan syarat-syarat mereka secara sepihak. IBM tidak bertanggung jawab atas tindakan, kelalaian, pernyataan, atau tawaran mereka.
 
-10. Batasan Kewajiban
+f. IBM dapat menawarkan Program Non-IBM, atau Program IBM dapat mengaktifkan akses ke Program Non-IBM, yang mungkin memerlukan penerimaan syarat-syarat pihak ketiga yang diidentifikasi dalam TD atau diberikan kepada Pemegang Lisensi. Penautan atau penggunaan Program Non-IBM merupakan perjanjian Pemegang Lisensi dengan syarat-syarat tersebut. IBM bukanlah pihak dalam perjanjian pihak ketiga tersebut dan tidak bertanggung jawab atas Program Non-IBM tersebut.
 
-Batasan-batasan dan pengecualian-pengecualian dalam Pasal 10 (Batasan Kewajiban) ini berlaku sepanjang batasan-batasan dan pengecualian-pengecualian tersebut tidak dilarang oleh undang-undang yang berlaku tanpa adanya kemungkinan pelepasan kontrak.
+g. Pemberian lisensi untuk Program diberikan oleh International Business Machines Corporation, sebuah perusahaan New York ("IBM Corporation"). Perusahaan IBM tempat Pemegang Lisensi memperoleh kepemilikan ("IBM") bertindak sebagai distributor dan menyampaikan Program serta bertanggung jawab untuk memberlakukan syarat-syarat Perjanjian ini. Apabila kepemilikan diperoleh dari Mitra Bisnis IBM, perusahaan IBM untuk negara akuisisi bertanggung jawab untuk memberlakukan syarat-syarat Perjanjian ini. Tidak ada hak atau penyebab gugatan yang dibuat untuk kepentingan Pemegang Lisensi terhadap IBM Corporation. Pemegang Lisensi mengesampingkan semua klaim dan penyebab gugatan terhadap IBM Corporation dan setuju untuk mengacu pada IBM untuk setiap hak dan ganti rugi apa pun sehubungan dengan Program.
 
-10.1 Hal-hal yang Mungkin Menjadi Tanggung Jawab IBM
+h. Pemegang Lisensi tidak dapat mensublisensikan, mengalihkan, atau mentransfer lisensi untuk Program apa pun (kecuali sejauh pengalihan atau transfer tidak dapat dibatasi secara hukum atau sebagaimana yang diizinkan secara tegas dalam TD atau sebagaimana yang disepakati lain oleh IBM). IBM dapat mengalihkan hak dan kewajibannya berdasarkan Perjanjian ini sehubungan dengan penjualan sebagian dari bisnis IBM yang mencakup Program. IBM dapat membagikan Perjanjian ini dan dokumen yang terkait bersama dengan pengalihan apa pun.
 
-Keadaan-keadaan dapat timbul apabila, karena wanprestasi dari pihak IBM atau kewajiban lainnya, Pemegang Lisensi berhak untuk mendapatkan ganti rugi dari IBM. Terlepas dari alasan Pemegang Lisensi untuk menuntut ganti rugi dari IBM (termasuk pelanggaran yang mendasar, kelalaian, pernyataan yang salah, atau kontrak lainnya atau tuntutan atas tindakan kejahatan), seluruh kewajiban IBM untuk semua tuntutan secara keseluruhan yang timbul dari atau terkait dengan masing-masing Program atau dengan cara lain, yang timbul berdasarkan Perjanjian ini tidak akan melampaui jumlah dari setiap 1) ganti rugi karena cedera badan (termasuk kematian) dan kerusakan terhadap properti yang bersifat tetap (real property) dan properti pribadi yang berwujud dan 2) ganti rugi aktual atas kerusakan langsung lainnya, sampai sebesar-besarnya biaya yang telah dibayarkan oleh Pemegang Lisensi untuk Program yang menjadi subjek tuntutan (apabila Program tunduk kepada biaya-biaya tetap dalam jangka waktu tertentu, sampai sebesar-besarnya biaya-biaya selama jangka waktu dua belas bulan).
+i. Semua pemberitahuan berdasarkan Perjanjian harus dibuat secara tertulis dan dikirimkan ke alamat bisnis yang ditentukan dalam perjanjian di mana Pemegang Lisensi memperoleh kepemilikan lisensi kecuali jika satu pihak menunjuk alamat yang berbeda secara tertulis. Para pihak menyetujui penggunaan sarana elektronik dan pengiriman faksimile untuk komunikasi sebagai dokumen yang telah ditandatangani. Setiap reproduksi Perjanjian yang dibuat dengan cara-cara yang dapat diandalkan akan dianggap sebagai dokumen asli. Perjanjian menggantikan setiap tindakan para pihak dalam melaksanakan transaksi sebelumnya (course of dealing), diskusi, atau pernyataan apa pun di antara para pihak.
 
-Batas ini juga berlaku untuk setiap pengembang dan pemasok Program IBM. Batas ini merupakan jumlah maksimum tanggung jawab IBM serta para pengembang dan pemasok Programnya secara bersama-sama.
+j. Tidak ada hak atau penyebab gugatan untuk pihak ketiga mana pun yang dibuat oleh Perjanjian. Tidak ada satu pun pihak yang akan mengambil tindakan hukum yang timbul atau yang berkaitan dengan Perjanjian ini dalam jangka waktu lebih dari dua tahun setelah timbulnya penyebab gugatan. Tidak ada satu pihak pun yang bertanggung jawab atas kegagalan dalam memenuhi kewajiban non-moneternya karena penyebab-penyebab di luar kendalinya. Masing-masing pihak akan memberikan kesempatan yang wajar kepada pihak lainnya untuk menyesuaikan sebelum pihaknya mengajukan klaim bahwa pihak lain tersebut belum memenuhi kewajibannya.
 
-10.2 Hal-hal yang Bukan Merupakan Tanggung Jawab IBM
+k. IBM dapat menggunakan personel dan sumber daya di lokasi di seluruh dunia, termasuk kontraktor pihak ketiga untuk mendukung penyampaian Program dan dukungan Program. Penggunaan Program oleh Pemegang Lisensi dapat mengakibatkan transfer Konten, termasuk informasi yang dapat diidentifikasi secara pribadi, di seluruh batas negara untuk memberikan dukungan sebagaimana yang diuraikan dalam Panduan Dukungan Perangkat Lunak IBM.
 
-DALAM SITUASI APA PUN JUGA, IBM, PARA PENGEMBANG ATAU PEMASOK PROGRAMNYA TIDAK BERTANGGUNG JAWAB ATAS SALAH SATU HAL BERIKUT INI, BAHKAN APABILA TELAH DIINFORMASIKAN BAHWA TERDAPAT KEMUNGKINAN TERJADI HAL-HAL BERIKUT INI:
+Bagian 2 - Syarat-syarat Wajib Negara
 
-a. KEHILANGAN ATAU KERUSAKAN DATA;
+Untuk lisensi yang diperoleh di negara-negara yang ditetapkan di bawah, syarat-syarat berikut menggantikan atau mengubah syarat-syarat yang dijadikan acuan dalam ILAN ini. Syarat-syarat yang tidak diubah oleh amendemen ini tetap tidak berubah dan tetap berlaku.
 
-b. KERUSAKAN / KERUGIAN KHUSUS, INSEDENTIL, CONTOH, ATAU KERUSAKAN / KERUGIAN TAK LANGSUNG, ATAU UNTUK SETIAP KERUSAKAN / KERUGIAN SEBAB-AKIBAT EKONOMIS; ATAU
+1. AMERIKA
 
-c. HILANGNYA LABA, BISNIS, PENDAPATAN, NAMA BAIK (GOODWILL), ATAU SIMPANAN YANG DIHARAPKAN.
+Pasal 3. Biaya, Pajak, Pembayaran, dan Verifikasi
 
-11. Verifikasi terhadap Kepatuhan
+Ganti kalimat pertama dan kedua dari ayat b dengan hal berikut:
 
-Untuk tujuan-tujuan Pasal 11 (Verifikasi terhadap Kepatuhan) ini, "Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi" ini berarti 1) Perjanjian ini serta perubahan-perubahan dan dokumen-dokumen transaksi yang berlaku yang diberikan oleh IBM, dan 2) kebijakan-kebijakan perangkat lunak IBM yang dapat dilihat di situs web Kebijakan Perangkat Lunak IBM (www.ibm.com/softwarepolicies), termasuk tetapi tidak terbatas pada kebijakan-kebijakan tersebut yang terkait dengan cadangan, penetapan harga subkapasitas, dan migrasi.
+Di Brasil: Pemegang Lisensi setuju untuk membayar semua biaya yang berlaku untuk kepemilikan yang diperoleh dan setiap biaya untuk penggunaan yang melebihi dari otorisasi, dan setiap bea cukai atau bea lain, pajak, dan retribusi serupa yang dikenakan oleh otoritas mana pun yang dihasilkan dari akuisisi kepemilikan Pemegang Lisensi.
 
-Hak-hak dan kewajiban-kewajiban yang tercantum dalam Pasal 11 ini tetap berlaku selama periode saat Program dilisensikan kepada Pemegang Lisensi dan selama dua tahun berikutnya.
+Pada ayat b:
 
-11.1 Proses Verifikasi
+Di Meksiko: Pada kalimat ketiga, hapus kata "ke akun yang ditentukan oleh IBM".
 
-Pemegang Lisensi setuju untuk menciptakan, menyimpan, dan memberikan kepada IBM dan para auditornya catatan-catatan tertulis yang akurat, keluaran (output) sistem, dan informasi sistem lainnya yang memadai untuk memberikan verifikasi yang dapat diaudit bahwa penggunaan semua Program oleh Pemegang Lisensi sesuai dengan Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi, termasuk, tetapi tidak terbatas pada, semua syarat pemberian lisensi dan kualifikasi penetapan harga yang berlaku dari IBM. Pemegang Lisensi bertanggung jawab untuk 1) memastikan bahwa pihaknya tidak melampaui Penggunaannya yang Sah dan 2) tetap sesuai dengan Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi.
+Di Meksiko: Tambahkan kalimat baru berikut setelah kalimat ketiga:
 
-Setelah adanya pemberitahuan yang wajar, IBM dapat memverifikasi kepatuhan Pemegang Lisensi terhadap Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi di semua lokasi dan untuk semua lingkungan di mana Pemegang Lisensi menggunakan (untuk tujuan apa pun) Program-program dengan tunduk kepada Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi. Verifikasi tersebut akan dilakukan dengan cara yang seminimal mungkin mengganggu bisnis Pemegang Lisensi, dan dapat dilakukan di tempat-tempat Pemegang Lisensi, selama jam-jam kerja normal. IBM dapat menggunakan auditor yang independen untuk membantu verifikasi tersebut, dengan ketentuan bahwa IBM memiliki perjanjian kerahasiaan tertulis yang ada pada auditor tersebut.
+Pembayaran akan dilakukan melalui transfer dana elektronik ke akun yang ditetapkan oleh IBM atau di domisili IBM yang berada di Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Kota Meksiko, Kode Pos 01210.
 
-11.2 Resolusi
+Tambahkan kalimat berikut di akhir ayat c:
 
-IBM akan memberitahukan kepada Pemegang Lisensi secara tertulis apabila verifikasi tersebut menunjukkan bahwa Pemegang Lisensi telah menggunakan Program dengan cara yang melampaui Penggunaannya yang Sah atau dengan cara lain, tidak sesuai dengan Syarat-syarat Perjanjian Lisensi Internasional untuk Program Tanpa Garansi. Pemegang Lisensi setuju untuk segera membayar kepada IBM secara langsung biaya-biaya yang ditetapkan oleh IBM dalam tagihan untuk 1) setiap kelebihan penggunaan tersebut, 2) dukungan untuk kelebihan penggunaan tersebut selama kurang dari jangka waktu kelebihan penggunaan tersebut atau dua tahun, dan 3) setiap biaya tambahan dan kewajiban lainnya yang ditentukan yang diakibatkan oleh verifikasi tersebut.
+Di Kanada: Apabila pajak didasarkan pada lokasi(-lokasi) yang menerima manfaat Program, Pemegang Lisensi memiliki kewajiban terus menerus untuk memberi tahu IBM tentang lokasi(-lokasi) tersebut jika berbeda dari alamat bisnis Pemegang Lisensi yang tercantum dalam Lampiran atau TD yang berlaku.
 
-12. Pemberitahuan Pihak Ketiga
+Tambahkan kalimat berikut di akhir ayat c:
 
-Program dapat termasuk kode pihak ketiga yang dilisensikan oleh IBM, bukan pihak ketiga, kepada Pemegang Lisensi berdasarkan Perjanjian ini. Pemberitahuan-pemberitahuan, apabila ada, untuk kode pihak ketiga ("Pemberitahuan Pihak Ketiga") dimasukkan hanya untuk informasi Pemegang Lisensi. Pemberitahuan-pemberitahuan ini dapat dilihat di dalam berkas(-berkas) PEMBERITAHUAN Program. Informasi tentang cara untuk mendapatkan sumber kode untuk kode pihak ketiga tertentu dapat dilihat di dalam Pemberitahuan Pihak Ketiga. Apabila di dalam Pemberitahuan Pihak Ketiga, IBM mengidentifikasi kode pihak ketiga sebagai "Kode Pihak Ketiga yang Dapat Dimodifikasi", IBM memberikan wewenang kepada Pemegang Lisensi untuk 1) memodifikasi Kode Pihak Ketiga yang Dapat Dimodifikasi dan 2) merekayasa kembali modul-modul Program yang terhubung secara langsung dengan Kode Pihak Ketiga yang Dapat Dimodifikasi dengan ketentuan bahwa modul-modul tersebut hanya untuk tujuan debug modifikasi-modifikasi Pemegang Lisensi atas kode pihak ketiga tersebut. Kewajiban-kewajiban layanan dan dukungan IBM, apabila ada, berlaku hanya untuk Program yang tidak dimodifikasi.
+Di Amerika Serikat: Para pihak setuju bahwa tidak ada properti pribadi yang berwujud (misalnya, media atau publikasi) yang akan ditransfer kepada Pemegang Lisensi jika: i) IBM menyampaikan Program secara elektronik kepada Pemegang Lisensi; atau ii) Pemegang Lisensi mengeklaim pembebasan pajak penjualan atau penggunaan untuk Program yang disampaikan secara elektronik oleh IBM kepada Pemegang Lisensi. Apabila pajak didasarkan pada lokasi(-lokasi) yang menerima manfaat Program, Pemegang Lisensi memiliki kewajiban terus-menerus untuk memberi tahu IBM tentang lokasi(-lokasi) tersebut jika berbeda dari alamat bisnis Pemegang Lisensi yang tercantum dalam Lampiran atau TD yang berlaku.
 
-13. Umum
+Pasal 4. Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual
 
-a. Tidak ada satu pun dalam Perjanjian ini yang mempengaruhi hak-hak konsumen yang didasarkan pada undang-undang yang tidak dapat dilepaskan atau dibatasi oleh kontrak.
+Masukkan sanggahan berikut di akhir ayat a:
 
-b. Untuk Program-program yang diberikan oleh IBM kepada Pemegang Lisensi dalam bentuk yang berwujud, IBM memenuhi kewajiban-kewajiban pengiriman dan penyerahannya setelah Program-program tersebut diserahkan kepada pengangkut yang ditunjuk oleh IBM, kecuali apabila disepakati lain secara tertulis oleh Pemegang Lisensi dan IBM.
+Di Peru: Sesuai dengan Pasal 1328 dalam Kitab Undang-Undang Hukum Perdata Peru, batasan ini dan pengecualian tidak akan berlaku dalam kasus kesalahan yang disengaja ("dolo") atau kelalaian berat ("culpa inexcusable").
 
-c. Apabila terdapat ketentuan Perjanjian ini yang dianggap tidak sah atau tidak dapat diberlakukan, ketentuan-ketentuan Perjanjian lainnya yang tersisa tetap berlaku sepenuhnya.
+Pasal 6. Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis
 
-d. Pemegang Lisensi setuju untuk mematuhi semua peraturan perundang-undangan ekspor dan impor yang berlaku, termasuk peraturan-peraturan tentang embargo dan sanksi serta larangan-larangan ekspor A. S. untuk penggunaan-penggunaan akhir tertentu atau untuk para pengguna tertentu.
+Pada ayat a, hanya ganti kalimat pertama dengan:
 
-e. Pemegang Lisensi memberikan wewenang kepada International Business Machines Corporation dan anak perusahaannya (dan para penerus, penerima pengalihan hak, kontraktor, dan Mitra Bisnis IBM mereka) untuk menyimpan dan menggunakan informasi kontak bisnis Pemegang Lisensi di mana pun mereka menjalankan bisnis, terkait dengan produk-produk dan layanan-layanan IBM, atau sebagai kelanjutan dari hubungan bisnis IBM dengan Pemegang Lisensi.
+Di Argentina: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Republik Argentina, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Setiap proses hukum mengenai hak, tugas, dan kewajiban yang timbul dari Perjanjian ini akan diajukan di Pengadilan Niaga Umum Kota "Ciudad Autónoma de Buenos Aires".
 
-f. Masing-masing pihak akan memberikan kesempatan yang wajar kepada pihak lainnya untuk mematuhi sebelum pihaknya mengajukan tuntutan bahwa pihak lainnya belum memenuhi kewajiban-kewajibannya berdasarkan Perjanjian ini. Para pihak akan berupaya dengan itikad baik untuk menyelesaikan semua sengketa, perselisihan atau tuntutan di antara para pihak yang terkait dengan Perjanjian ini.
+Di Chili: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Chili, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Setiap ketidaksesuaian, interpretasi, atau pelanggaran yang berkaitan dengan Perjanjian ini yang tidak dapat diselesaikan oleh para Pihak harus diajukan ke yurisdiksi Pengadilan Umum kota dan distrik Santiago.
 
-g. Kecuali apabila diwajibkan lain oleh undang-undang yang berlaku tanpa adanya kemungkinan pelepasan atau batasan kontrak: 1) tidak ada satu pihak pun yang akan mengambil tindakan hukum, tanpa memperhatikan bentuknya, untuk setiap tuntutan yang timbul dari atau terkait dengan Perjanjian ini dalam jangka waktu lebih dari dua tahun setelah timbulnya penyebab tuntutan; dan 2) setelah berakhirnya batas waktu tersebut, setiap tuntutan tersebut dan semua hak masing-masing yang terkait dengan tuntutan berakhir.
+Di Kolombia: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Republik Kolombia, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Semua hak, tugas, dan kewajiban tunduk pada pengadilan Republik Kolombia.
 
-h. Pemegang Lisensi atau IBM tidak bertanggung jawab atas kegagalan dalam memenuhi setiap kewajiban yang diakibatkan oleh penyebab-penyebab di luar kendalinya.
+Di Ekuador: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Republik Ekuador, tanpa memperhatikan pertentangan prinsip-prinsip hukum. Setiap sengketa yang timbul karena atau berkaitan dengan Perjanjian ini akan diajukan ke pengadilan sipil Quito dan ke proses persidangan verbal.
 
-i. Tidak ada hak atau dasar tuntutan untuk pihak ketiga yang diciptakan oleh Perjanjian ini, dan IBM tidak bertanggung jawab atas tuntutan-tuntutan pihak ketiga terhadap Pemegang Lisensi, kecuali apabila diizinkan dalam Subpasal 10.1 (Hal-hal yang Mungkin Menjadi Tanggung Jawab IBM) di atas karena cedera badan (termasuk kematian) atau kerusakan terhadap properti pribadi yang bersifat tetap atau berwujud yang merupakan tanggung jawab IBM secara hukum kepada pihak ketiga tersebut.
+Di Venezuela: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Venezuela, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Para pihak menyetujui untuk mengajukan setiap konflik yang berkaitan dengan Perjanjian ini yang ada di antara mereka ke Pengadilan Kawasan Metropolitan Kota Caracas.
 
-j. Dalam mengadakan Perjanjian ini, tidak ada satu pihak pun yang mendasarkan pada setiap pernyataan yang tidak ditetapkan dalam Perjanjian ini, termasuk tetapi tidak terbatas pada setiap pernyataan yang terkait dengan: 1) kinerja atau fungsi Program; 2) pengalaman-pengalaman atau rekomendasi-rekomendasi para pihak lainnya; atau 3) hasil atau simpanan apa pun yang dapat dicapai oleh Pemegang Lisensi.
+Di Peru: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Peru, tanpa memperhatikan pertentangan prinsip-prinsip hukum. Setiap diskrepansi yang dapat timbul di antara para pihak dalam pelaksanaan, interpretasi, atau kepatuhan terhadap Perjanjian ini yang tidak dapat diselesaikan secara langsung akan diajukan ke Yurisdiksi dan Hakim yang Berwenang serta Tribunal Distrik Yudisial 'Cercado de Lima'.
 
-k. IBM telah menandatangani perjanjian-perjanjian dengan perusahaan-perusahaan tertentu (disebut sebagai "Para Mitra Bisnis IBM") untuk mempromosikan, memasarkan, dan mendukung Program-program tertentu. Para Mitra Bisnis IBM tetap bersifat independen dan terpisah dari IBM. IBM tidak bertanggung jawab atas tindakan-tindakan atau pernyataan-pernyataan Para Mitra Bisnis IBM atau kewajiban-kewajiban yang mereka miliki terhadap Pemegang Lisensi.
+Di Uruguay: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Uruguay. Setiap diskrepansi yang dapat timbul di antara para pihak dalam pelaksanaan, interpretasi, atau kepatuhan terhadap Perjanjian ini yang tidak dapat diselesaikan secara langsung akan diajukan ke Pengadilan Montevideo ("Tribunales Ordinarios de Montevideo").
 
-l. Syarat-syarat lisensi dan pemberian ganti rugi atas kekayaan intelektual dari perjanjian-perjanjian Pemegang Lisensi lainnya dengan IBM (seperti Perjanjian Konsumen IBM) tidak berlaku untuk lisensi-lisensi Program yang diberikan berdasarkan Perjanjian ini.
+Pada ayat a, hanya kalimat pertama, ganti frasa "negara di mana transaksi untuk kepemilikan lisensi dilakukan" dengan:
 
-m. Kedua belah pihak sepakat bahwa semua informasi yang dipertukarkan tidak bersifat rahasia. Apabila salah satu mewajibkan pertukaran informasi rahasia, pertukaran informasi tersebut akan dilakukan berdasarkan perjanjian kerahasiaan yang ditandatangani;
+Di Amerika Serikat, Anguila, Antigua/Barbuda, Aruba, Bahama, Barbados, Bermuda, Bonaire, Kepulauan Virgin Britania Raya, Kepulauan Cayman, Curacao, Dominika, Grenada, Guyana, Jamaika, Montserrat, Saba, Saint Eustatius, Saint Kitts dan Nevis, Saint Lucia, Saint Maarten, Saint Vincent dan Grenadines, Suriname, Tortola, Trinidad dan Tobago, dan Turk dan Caicos: Negara Bagian New York, Amerika Serikat.
 
-14. Cakupan Geografis dan Undang-undang yang Mengatur
+Di Kanada: Provinsi Ontario dan peraturan perundang-undangan federal Kanada yang berlaku di dalamnya.
 
-14.1 Undang-undang yang Mengatur
+Pada ayat a, di kalimat kedua, ganti frasa "negara di mana transaksi untuk memperoleh kepemilikan lisensi dilakukan atau, apabila IBM menyetujui, negara di mana Program ditempatkan untuk penggunaan produktif" dengan:
 
-Kedua belah pihak sepakat bahwa pelaksanaan undang-undang negara di mana Pemegang Lisensi telah mendapatkan lisensi Program akan mengatur, menafsirkan, dan memberlakukan semua hak, tugas, dan kewajiban Pemegang Lisensi dan IBM yang timbul dari, atau yang dengan cara apa pun terkait dengan, pokok materi Perjanjian ini, dengan tidak memperhatikan ketidaksesuaian prinsip undang-undang.
+Di Argentina: Argentina
 
-Konvensi Perserikatan Bangsa-Bangsa tentang Kontrak Penjualan Barang Internasional (United Nations Convention on Contracts for the International Sale of Goods) tidak berlaku.
+Di Chili: Chili
 
-14.2 Yurisdiksi
+Di Kolombia: Kolombia
 
-Semua hak, tugas, dan kewajiban tunduk kepada pengadilan-pengadilan negara di mana Pemegang Lisensi telah mendapatkan lisensi Program.
+Di Ekuador: Ekuador
 
-Bagian 2 - Syarat-syarat Khusus Tiap Negara
+Di Meksiko: Meksiko
 
-Untuk lisensi-lisensi yang diberikan di Indonesia, syarat-syarat berikut ini menggantikan atau memodifikasi syarat-syarat yang dijadikan acuan dalam Bagian 1. Semua syarat dalam Bagian 1 yang tidak diubah oleh perubahan-perubahan ini tetap tidak berubah dan tetap berlaku. Bagian 2 ini disusun sebagai berikut:
+Di Peru: Peru
 
-* Perubahan negara terhadap Bagian 1, Pasal 14 (Undang-undang dan Yurisdiksi yang Mengatur); dan
+Di Uruguay: Uruguay
 
-* Perubahan negara Asia Pasifik terhadap syarat-syarat Perjanjian lainnya.
+Di Venezuela: Venezuela
 
-Perubahan negara terhadap Bagian 1, Pasal 14 (Undang-undang dan Yurisdiksi yang Mengatur)
+Tambahkan kalimat berikut di akhir ayat b:
 
-14.3 Arbitrase
+Di Brasil: Semua sengketa yang timbul karena atau berkaitan dengan Perjanjian ini, termasuk proses hukum singkat (summary proceedings), akan diajukan di hadapan dan tunduk pada yurisdiksi eksklusif pengadilan São Paulo (Forum of the City of São Paulo), Negara Bagian São Paulo, Brasil dan para pihak setuju dengan tidak dapat dibatalkan, dengan yurisdiksi spesifik ini yang melepaskan yurisdiksi mana pun lainnya, sekali pun dengan hak istimewa.
 
-Ayat-ayat berikut ini ditambahkan sebagai Subpasal 14.3 (Arbitrase) yang baru sebagaimana ayat-ayat tersebut berlaku untuk Indonesia. Ketentuan-ketentuan Subpasal 14.3 ini berlaku atas ketentuan-ketentuan Subpasal 14.2 (Yurisdiksi) sepanjang diizinkan oleh undang-undang dan peraturan tata tertib yang mengatur yang berlaku:
+Di Meksiko: Para Pihak setuju untuk mengajukan diri ke yurisdiksi eksklusif dari pengadilan Kota Meksiko untuk menyelesaikan setiap sengketa yang timbul dari Perjanjian ini. Para Pihak mengesampingkan yurisdiksi mana pun lainnya yang mungkin berhubungan dengan mereka karena domisili saat ini atau di masa mendatang, atau untuk alasan apa pun lainnya.
 
-Masing-masing pihak akan memberikan kesempatan yang wajar kepada pihak lainnya untuk mematuhi sebelum pihaknya mengajukan tuntutan bahwa pihak lainnya belum memenuhi kewajiban-kewajibannya berdasarkan Perjanjian ini. Para pihak akan berupaya dengan itikad baik untuk menyelesaikan semua sengketa, perselisihan atau tuntutan di antara para pihak yang terkait dengan Perjanjian ini. Kecuali diwajibkan lain oleh undang-undang yang berlaku tanpa adanya kemungkinan pelepasan atau batasan kontrak, i) tidak ada satu pihak pun yang akan mengambil tindakan hukum, tanpa memperhatikan bentuknya, yang timbul karena atau terkait dengan Perjanjian ini atau transaksi apa pun berdasarkan Perjanjian ini dalam jangka waktu lebih dari dua tahun setelah timbulnya dasar tuntutan; dan ii) setelah batas waktu tersebut, setiap tindakan hukum yang timbul karena Perjanjian ini atau transaksi apa pun berdasarkan Perjanjian ini dan semua hak masing-masing yang terkait dengan setiap tindakan tersebut berakhir.
+Pasal 7. Umum
 
-Sengketa-sengketa yang timbul karena atau terkait dengan Perjanjian ini pada akhirnya akan diselesaikan melalui arbitrase yang akan diadakan di Jakarta, Indonesia, sesuai dengan aturan-aturan Badan Arbitrase Nasional Indonesia ("BANI") yang berlaku pada saat itu. Putusan arbitrase akan bersifat final dan mengikat para pihak tanpa adanya banding dan akan dibuat secara tertulis serta mencantumkan temuan-temuan fakta dan kesimpulan-kesimpulan hukum.
+Pada ayat g:
 
-Arbiter akan berjumlah tiga orang, dengan masing-masing pihak dalam sengketa tersebut berhak menunjuk seorang arbiter. Kedua arbiter yang ditunjuk oleh para pihak akan menunjuk arbiter ketiga yang akan bertindak sebagai ketua untuk memimpin proses penyelesaian sengketa tersebut. Lowongan dalam jabatan ketua akan diisi oleh Ketua BANI. Lowongan-lowongan lainnya akan diisi oleh masing-masing pihak yang mencalonkan. Proses-proses hukum akan berlanjut dari tahap proses-proses hukum sebelumnya pada saat terdapat lowongan.
+Di Amerika Serikat: hapus 2 kalimat terakhir.
 
-Apabila salah satu pihak menolak atau dengan kata lain, tidak menunjuk arbiter dalam jangka waktu 30 hari sejak tanggal pada saat pihak lainnya menunjuk arbiternya, arbiter yang ditunjuknya pertama kali akan menjadi arbiter tunggal, dengan ketentuan bahwa arbiter tersebut ditunjuk dengan cara yang sah dan tepat.
+Pada ayat i, tambahkan kalimat baru berikut setelah kalimat pertama:
 
-Semua proses hukum akan dilaksanakan, termasuk semua dokumen yang disampaikan dalam proses hukum tersebut akan dibuat, dalam bahasa Inggris dan/atau Indonesia.
+Di Meksiko: Setiap perubahan alamat harus diberitahukan 10 (sepuluh) hari sebelumnya, jika tidak, pemberitahuan yang dilakukan pada alamat yang terakhir ditunjukkan akan memiliki dampak hukum penuh.
 
-PERUBAHAN-PERUBAHAN NEGARA ASIA PASIFIK
+Pada ayat j:
 
-INDONESIA
+Di Brasil: hapus seluruh kalimat kedua yang berbunyi, "Tidak satu pun pihak akan mengajukan tindakan hukum yang timbul karena atau berkaitan dengan Perjanjian lebih dari dua tahun setelah timbulnya penyebab gugatan tersebut".
 
-3.3 Jangka Waktu dan Pengakhiran
+Tambahkan sebagai ayat l baru ke pasal ini:
 
-Kalimat berikut ini ditambahkan ke ayat terakhir:
+Di Kanada: Kedua belah pihak setuju untuk menulis dokumen ini dalam bahasa Inggris. Les parties ont convenu de rédiger le présent document en langue anglaise.
 
-Kedua belah pihak melepaskan ketentuan Pasal 1266 Kitab Undang-undang Hukum Perdata, sepanjang ketentuan pasal tersebut mewajibkan keputusan pengadilan untuk mengakhiri perjanjian yang menciptakan kewajiban-kewajiban bersama.
+2. ASIA PASIFIK
 
-Z125-5589-05 (07/2011)
+Pasal 2. Jaminan
 
+Tambahkan di akhir pasal ini sebagai ayat f baru:
+
+Di Australia: Jaminan-jaminan ini merupakan tambahan atas setiap hak berdasarkan, dan hanya terbatas sejauh diizinkan oleh Competition and Consumer Act 2010.
+
+Di Jepang: Tanggung jawab IBM terbatas pada ayat ini dan pasal Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual, Lampiran, dan TD yang berlaku sebagai ganti rugi sepenuhnya oleh Pemegang Lisensi atas kegagalan untuk memenuhi jaminan yang ditetapkan dalam pasal ini.
+
+Di Selandia Baru: Jaminan-jaminan ini merupakan tambahan atas setiap hak berdasarkan Consumer Guarantee Act 1993 atau undang-undang lainnya yang tidak dapat dibatasi oleh hukum.
+
+Pasal 3. Biaya, Pajak, Pembayaran, dan Verifikasi
+
+Pada ayat b. ganti kalimat ketiga dengan 2 kalimat berikut:
+
+Di Hong Kong, Indonesia, Korea, Makau, Malaysia, Filipina, Singapura, dan Vietnam: Jumlah akan jatuh tempo setelah penerimaan tagihan dari IBM dan harus dibayar dalam waktu 30 hari sejak tanggal tagihan ke akun yang ditentukan oleh IBM. Apabila pembayaran tidak diterima dalam waktu 30 hari sejak tanggal tagihan, IBM dapat membebankan biaya keterlambatan pembayaran atas jumlah yang tertunggak, yang dihitung berdasarkan jumlah hari keterlambatan pembayaran diterima, dengan jumlah yang kurang dari: i) 2% untuk setiap 30 hari periode atau bagiannya; atau ii) jumlah maksimum yang diizinkan oleh hukum yang berlaku.
+
+Di Thailand: Jumlah akan jatuh tempo setelah penerimaan tagihan dari IBM dan harus dibayar dalam waktu 30 hari sejak tanggal tagihan ke akun yang ditentukan oleh IBM. Apabila pembayaran tidak diterima dalam waktu 30 hari sejak tanggal tagihan, biaya keterlambatan pembayaran dapat diberlakukan pada jumlah yang tertunggak, dengan suku bunga sebesar 1,25% per bulan, yang dihitung berdasarkan jumlah hari keterlambatan penerimaan pembayaran tersebut.
+
+Pada kalimat pertama ayat c, hapus kata "dan" sebelum "(iv)", dan tambahkan tanda titik koma dan item baru berikut "(v)":
+
+Di India: ; dan (v) file mengenai Pajak yang Dikurangi pada Sumber (Taxes Deducted at Source - "TDS") yang akurat dikembalikan secara tepat waktu. Apabila pajak, bea, retribusi, atau biaya apa pun ("Pajak") tidak dibebankan pada basis dokumentasi pembebasan yang diberikan oleh Pemegang Lisensi dan otoritas perpajakan selanjutnya mengatur bahwa Pajak tersebut harus dibebankan, maka Pemegang Lisensi akan bertanggung jawab untuk membayar Pajak tersebut, termasuk setiap bunga, retribusi, dan/atau denda yang berlaku.
+
+Pada kalimat pertama ayat c, hapus kata "dan" sebelum "(iv)", dan ganti item (iv) serta tambahkan item baru (v) dengan:
+
+Di Singapura, Malaysia, Filipina, Thailand, Indonesia, dan Vietnam: (iv) bekerja sama sepenuhnya dengan IBM dalam mengupayakan pengabaian atau pengurangan pemotongan pajak atau pajak lainnya yang pengabaian atau pengurangannya diminta oleh Pemegang Lisensi; dan (v) segera melengkapi, mengajukan, dan menyimpan semua dokumen yang relevan dan terkini untuk pengabaian, pengurangan, atau pemotongan tersebut.
+
+Pasal 4. Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual
+
+Pada ayat a, tambahkan hal berikut di akhir kalimat pertama:
+
+Di Australia: (misalnya, apakah berdasarkan kontrak, perbuatan melawan hukum, kelalaian, berdasarkan statuta atau sebaliknya)
+
+Pada ayat a, kalimat kedua setelah kata "khusus" dan sebelum kata "insidental", tambahkan hal berikut:
+
+Di Filipina: (termasuk ganti rugi eksemplari dan nominal), moral,
+
+Tambahkan sebagai ayat baru setelah akhir ayat a (dan pastikan ayat ditulis ulang dengan benar):
+
+Di Australia: Apabila IBM melanggar garansi yang tersirat dalam Undang-Undang Persaingan dan Konsumen (Competition and Consumer Act) 2010, tanggung jawab IBM terbatas pada perbaikan atau penggantian barang-barang atau pasokan barang-barang yang setara, atau pembayaran biaya penggantian barang-barang atau memperbaiki barang-barang tersebut. Apabila garansi berkaitan dengan hak untuk menjual, kepemilikan tanpa campur tangan pihak ketiga atau clear title atas barang berdasarkan skedul 2 daftar Competition and Consumer Act, tidak satu pun dari batasan ini berlaku.
+
+Pasal 5. Pengakhiran
+
+Tambahkan di bagian akhir pasal sebagai ayat b baru:
+
+Di Indonesia: Para pihak mengabaikan pasal 1266 Kitab Undang-Undang Hukum Perdata Indonesia sepanjang ketentuan pasal tersebut memerlukan penetapan pengadilan untuk pengakhiran perjanjian yang menciptakan kewajiban bersama.
+
+Pasal 6. Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis
+
+Pada ayat a, hanya di kalimat pertama, ganti frasa, "negara di mana transaksi untuk kepemilikan lisensi dilakukan" dengan:
+
+Di Kamboja, Laos: Negara Bagian New York, Amerika Serikat
+
+Di Australia: Negara Bagian atau Wilayah di mana transaksi dilakukan
+
+Di Hong Kong: Wilayah Administratif Khusus Hong Kong Republik Rakyat Tiongkok
+
+Di Makau: Wilayah Administratif Khusus Hong Kong Republik Rakyat Tiongkok
+
+Di Korea: Korea Selatan, dan tunduk pada Pengadilan Distrik Pusat Seoul, Korea Selatan
+
+Di Taiwan: Taiwan
+
+Di India: India
+
+Pada ayat b, di kalimat pertama, item ii), setelah kata "termasuk" dan sebelum kata "membela", tambahkan:
+
+Di Jepang: peraturan perundang-undangan Jepang dan
+
+Pada ayat a, di kalimat kedua, ganti frasa "negara di mana transaksi untuk memperoleh kepemilikan lisensi dilakukan atau, apabila IBM menyetujui, negara di mana Program ditempatkan untuk penggunaan produktif" dengan:
+
+Di Hong Kong: Wilayah Administratif Khusus Hong Kong Republik Rakyat Tiongkok
+
+Di Makau: Wilayah Administratif Khusus Makau Republik Rakyat Tiongkok
+
+Di Taiwan: Taiwan
+
+Tambahkan di akhir pasal sebagai ayat d baru:
+
+Di Kamboja, Laos, Filipina, dan Sri Lanka: Sengketa-sengketa akan diselesaikan secara final melalui arbitrase di Singapura berdasarkan Aturan Arbitrase dari Pusat Arbitrase Internasional Singapura (Arbitration Rules of the Singapore International Arbitration Center) ("Aturan SIAC").
+
+Di India: Sengketa-sengketa akan diselesaikan secara final sesuai dengan Undang-Undang Arbitrase dan Konsiliasi (Arbitration and Conciliation Act) 1996 yang saat itu berlaku, dalam bahasa Inggris, yang berlokasi di Bangalore, India. Di sana akan terdapat satu arbiter apabila jumlah dalam sengketa kurang dari atau sama dengan lima puluh juta Rupee India dan tiga arbiter apabila berjumlah lebih banyak. Apabila seorang arbiter diganti, proses hukum akan berlanjut dari tahap saat terdapat kekosongan.
+
+Di Indonesia: Sengketa-sengketa akan diselesaikan secara final melalui arbitrase di Jakarta, Indonesia, yang dilakukan oleh Badan Arbitrase Nasional Indonesia ("BANI") yang didirikan pada tahun 1977 sesuai dengan aturan Badan Arbitrase Nasional Indonesia Putusan arbitrase bersifat final dan mengikat para pihak tanpa banding dan harus secara tertulis serta memuat temuan fakta dan kesimpulan hukum.
+
+Di Republik Rakyat Tiongkok: Salah satu pihak memiliki hak untuk mengajukan sengketa ke Komisi Arbitrase Dagang dan Ekonomi Internasional Tiongkok (China International Economic and Trade Arbitration Commission) di Beijing, RRT, untuk melakukan arbitrase. Para pihak setuju tiga arbiter akan digunakan untuk menyelesaikan sengketa apa pun.
+
+Di Vietnam: Sengketa-sengketa akan diselesaikan secara final melalui arbitrase di Vietnam berdasarkan Aturan Arbitrase dari Pusat Arbitrase Internasional Vietnam (Vietnam International Arbitration Centre - "VIAC") ("Aturan VIAC"). Semua proses hukum dan dokumen yang disajikan akan diberikan dalam bahasa Inggris.
+
+Pasal 7. Umum
+
+Pada ayat j, di kalimat kedua, ganti frasa "dua tahun" dengan:
+
+Di India: tiga tahun
+
+Tambahkan ayat l baru berikut ke akhir pasal ini:
+
+Di Indonesia: Perjanjian ini dibuat dalam versi bahasa Inggris dan bahasa Indonesia. Sejauh diizinkan oleh hukum yang berlaku, versi bahasa Inggris dari Perjanjian ini yang akan berlaku apabila terdapat ketidaksesuaian di antara versi tersebut.
+
+3. EROPA, TIMUR TENGAH, DAN AFRIKA
+
+Pasal 3. Biaya, Pajak, Pembayaran, dan Verifikasi
+
+Pada ayat b, tambahkan hal berikut di akhir kalimat ketiga:
+
+Di Italia: jika IBM meminta dalam pemberitahuan secara tertulis kepada Pemegang Lisensi.
+
+Di Ukraina: , sebesar jumlah yang melampaui batas waktunya dari hari berikutnya setelah tanggal jatuh tempo hingga tanggal pembayaran aktual, dihitung prorata untuk setiap hari keterlambatan, dengan suku bunga sebesar dua kali lipat dari tarif diskon yang ditentukan oleh Bank Nasional Ukraina (National Bank of Ukraine - "NBU") selama periode keterlambatan (ayat 6 pasal 232 Kitab Undang-Undang Hukum Dagang Ukraina tidak berlaku).
+
+Pada ayat b, ganti kalimat ketiga dengan pernyataan berikut:
+
+Di Prancis: Jumlah akan jatuh tempo dan harus dibayar dalam waktu 10 hari sejak tanggal tagihan ke akun yang ditentukan oleh IBM dan biaya keterlambatan pembayaran akan berlaku setara dengan tarif Bank Sentral Eropa terbaru ditambah 10 poin, di samping biaya penagihan utang sebesar empat puluh (40) euro atau, jika biaya ini melebihi empat puluh euro, pemberian ganti rugi pelengkap yang tunduk pada justifikasi jumlah yang diklaim).
+
+Di Rusia: Jumlah akan jatuh tempo setelah penerimaan tagihan dan harus dibayar dalam waktu 30 hari sejak tanggal tagihan melalui transfer dana elektronik ke akun yang ditentukan oleh IBM. Biaya keterlambatan pembayaran dengan tarif sebesar 24% per tahun yang dihitung untuk setiap hari di luar 30 hari tersebut mungkin berlaku.
+
+Pada ayat b, tambahkan hal berikut di akhir kalimat terakhir:
+
+Di Lituania: , atau sebagaimana yang diberikan oleh hukum
+
+Di akhir ayat b, tambahkan hal berikut:
+
+Di Italia: Apabila tidak ada pembayaran atau pembayaran parsial, dan juga mematuhi prosedur klaim kredit formal atau percobaan yang dapat dimulai oleh IBM, dengan mengabaikan pasal 4 Dekret Legislatif no. 231 tertanggal 9 Oktober 2002, dan sesuai dengan pasal 7 Dekret Legislatif yang sama, IBM akan memberi tahu Pemegang Lisensi secara tertulis melalui surat tanda terima pengembalian yang terdaftar tentang biaya keterlambatan pembayaran yang jatuh tempo.
+
+Pasal 4. Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual
+
+Pada ayat a, di kalimat pertama, masukkan hal berikut sebelum kata "jumlah yang dibayarkan":
+
+Di Belgia, Prancis, Jerman, Italia, Luksemburg, Malta, Portugal, dan Spanyol: lebih besar dari ¤500.000 (lima ratus ribu euro) atau
+
+Di Irlandia dan Inggris Raya: 125% dari
+
+Pada ayat a, di kalimat pertama, ganti frasa "ganti rugi langsung yang ditanggung oleh Pemegang Lisensi" dengan:
+
+Di Spanyol: dan ganti rugi terbukti yang ditanggung oleh Pemegang Lisensi sebagai konsekuensi langsung dari wanprestasi IBM
+
+Pada ayat a, masukkan kalimat baru berikut ini setelah kalimat pertama:
+
+Di Slovakia: Mengacu pada § 379 Kitab Undang-Undang Hukum Dagang, Undang-Undang No. 513/1991 Coll. sebagaimana yang diubah dan mengenai semua ketentuan yang berkaitan dengan kesimpulan perjanjian, kedua belah pihak menyatakan bahwa total ganti rugi yang dapat diperkirakan, yang mungkin timbul, tidak akan melebihi jumlah di atas, dan jumlah ini merupakan jumlah maksimum yang menjadi tanggung jawab IBM.
+
+Pada ayat a, masukkan kalimat baru berikut sebelum kalimat kedua:
+
+Di Rusia: IBM tidak akan bertanggung jawab atas manfaat yang hilang.
+
+Pada ayat a, di kalimat kedua, hapus kata:
+
+Di Irlandia dan Inggris Raya: ekonomi
+
+Pada ayat a, ganti kalimat kedua dengan:
+
+Di Belgia, Belanda, dan Luksemburg: IBM tidak akan bertanggung jawab atas ganti rugi tidak langsung atau konsekuensional, hilangnya laba, bisnis, nilai, pendapatan, nama baik, rusaknya reputasi atau penghematan yang diharapkan, klaim pihak ketiga mana pun terhadap Pemegang Lisensi, serta hilangnya (atau kerusakan pada) data.
+
+Di Prancis: IBM tidak akan bertanggung jawab atas rusaknya reputasi, ganti rugi tidak langsung, atau hilangnya laba, bisnis, nilai, pendapatan, nama baik, atau penghematan yang diharapkan.
+
+Di Portugal: IBM tidak akan bertanggung jawab atas ganti rugi tidak langsung, termasuk hilangnya laba.
+
+Di Spanyol: IBM tidak akan bertanggung jawab atas rusaknya reputasi, hilangnya laba, bisnis, nilai, pendapatan, nama baik, atau penghematan yang diharapkan.
+
+Tambahkan hal berikut di akhir ayat a:
+
+Di Prancis: Syarat-syarat Perjanjian, termasuk syarat-syarat keuangan, ditetapkan dengan pertimbangan klausul saat ini, yang merupakan bagian integral dari ekonomi umum Perjanjian.
+
+Pada ayat b, ganti "ganti rugi yang tidak dapat dibatasi berdasarkan hukum yang berlaku" dengan hal berikut:
+
+Di Jerman: i) ganti rugi untuk cedera fisik (termasuk meninggal dunia); ii) kerugian atau kerusakan yang diakibatkan oleh pelanggaran garansi yang ditanggung oleh IBM sehubungan dengan transaksi apa pun berdasarkan Perjanjian ini; dan iii) yang disebabkan dengan sengaja atau karena kelalaian berat.
+
+Pasal 6. Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis
+
+Pada ayat a, hanya di kalimat pertama, ganti frasa "negara di mana transaksi untuk kepemilikan lisensi dilakukan" dengan:
+
+Di Albania, Armenia, Azerbaijan, Belarus, Bosnia-Herzegovina, Bulgaria, Kroasia, Republik Makedonia Bekas Yugoslavia, Georgia, Kazakstan, Kirgistan, Moldova, Montenegro, Romania, Rusia, Serbia, Tajikistan, Turkmenistan, Ukraina, dan Usbekistan: Austria
+
+Di Estonia, Latvia, dan Lituania: Finlandia
+
+Di Algeria, Andorra, Benin, Burkina Faso, Burundi, Kamerun, Tanjung Verde, Republik Afrika Tengah, Chad, Komoro, Republik Kongo, Djibouti, Republik Demokratik Kongo, Guinea Ekuator, Guyana Prancis, Polinesia Prancis, Gabon, Guinea, Guinea-Bissau, Pantai Gading, Lebanon, Madagaskar, Mali, Mauritania, Mauritius, Mayotte, Maroko, Kaledonia Baru, Niger, Reunion, Senegal, Seychelles, Togo, Tunisia, Vanuatu, serta Wallis dan Futuna: Prancis
+
+Di Angola, Bahrain, Botswana, Mesir, Eritrea, Ethiopia, Gambia, Ghana, Irak, Yordania, Kenya, Kuwait, Liberia, Malawi, Malta, Mozambik, Nigeria, Oman, Pakistan, Qatar, Rwanda, Sao Tome dan Principe, Arab Saudi, Sierra Leone, Somalia, Tanzania, Uganda, Uni Emirat Arab, Tepi Barat/Gaza, Yaman, Zambia, dan Zimbabwe: Inggris
+
+Di Liechtenstein: Swiss
+
+Di Afrika Selatan, Namibia, Lesotho, dan Swaziland: Republik Afrika Selatan
+
+Di Inggris Raya: Inggris
+
+Pada ayat a, tambahkan hal berikut di akhir kalimat pertama:
+
+Di Prancis: Para Pihak setuju bahwa pasal 1222 dan 1223 dari Kitab Undang-Undang Hukum Perdata Prancis tidak berlaku.
+
+Tambahkan hal berikut di akhir ayat a:
+
+Di Albania, Armenia, Azerbaijan, Belarus, Bosnia-Herzegovina, Bulgaria, Kroasia, Republik Makedonia Bekas Yugoslavia, Georgia, Kazakstan, Kosovo, Kirgistan, Moldova, Montenegro, Romania, Rusia, Serbia, Tajikistan, Turkmenistan, Ukraina, dan Usbekistan: Semua sengketa yang muncul akibat Perjanjian ini akan diselesaikan secara final oleh Pusat Arbitrase Internasional Dewan Ekonomi Federal Austria (International Arbitral Centre of the Austrian Federal Economic Chamber) (Badan Arbitrase), berdasarkan Aturan Arbitrase dari Pusat Arbitrase tersebut (Aturan Wina), di Wina, Austria, dengan bahasa Inggris sebagai bahasa resmi, dengan tiga arbiter yang tidak memihak yang ditunjuk sesuai dengan Aturan Wina. Setiap pihak akan menunjuk seorang arbiter yang akan bersama-sama mengangkat seorang ketua independen dalam waktu 30 hari atau jika tidak, ketua akan ditunjuk oleh Dewan Arbitrase berdasarkan Aturan Wina. Para arbiter tidak akan memiliki kewenangan untuk memberikan putusan sela (injunctive relief) atau ganti rugi (damage) yang dikecualikan oleh atau melebihi batas-batas yang terdapat dalam Perjanjian ini. Tidak ada satu pun dalam Perjanjian ini yang akan mencegah salah satu pihak untuk mengupayakan proses-proses hukum pengadilan untuk (1) pembebasan interim untuk mencegah prasangka material atau pelanggaran ketentuan kerahasiaan atau hak kekayaan intelektual, atau (2) menentukan validitas atau kepemilikan setiap hak cipta, paten, atau merek dagang yang dimiliki atau dinilai oleh suatu pihak atau Perusahaannya, atau (3) penagihan utang sejumlah di bawah USD 500.000,00.
+
+Di Estonia, Latvia, dan Lituania: Semua sengketa yang timbul akibat Perjanjian ini akan diselesaikan secara final oleh Institut Arbitrase dari Kamar Dagang Finlandia (Finland Chamber of Commerce - "FAI") (Badan Arbitrase), berdasarkan Aturan Arbitrase Kamar Dagang Finlandia (Aturan), di Helsinki, Finlandia, dengan bahasa Inggris sebagai bahasa resmi, dengan tiga arbiter yang tidak memihak yang ditunjuk sesuai dengan Aturan tersebut. Setiap pihak akan menunjuk seorang arbiter yang akan bersama-sama mengangkat seorang ketua independen dalam waktu 30 hari atau jika tidak, ketua akan ditunjuk oleh Dewan Arbitrase berdasarkan Aturan tersebut. Para arbiter tidak akan memiliki kewenangan untuk memberikan putusan sela (injunctive relief) atau ganti rugi (damage) yang dikecualikan oleh atau melebihi batas-batas yang terdapat dalam Perjanjian ini. Tidak ada satu pun dalam Perjanjian ini yang akan mencegah salah satu pihak untuk mengupayakan proses-proses hukum pengadilan untuk (1) pembebasan interim untuk mencegah prasangka material atau pelanggaran ketentuan kerahasiaan atau hak kekayaan intelektual, atau (2) menentukan validitas atau kepemilikan setiap hak cipta, paten, atau merek dagang yang dimiliki atau dinilai oleh suatu pihak atau Perusahaannya, atau (3) penagihan utang sejumlah di bawah USD 500.000,00.
+
+Di Afghanistan, Angola, Bahrain, Botswana, Burundi, Tanjung Verde, Djibouti, Mesir, Eritrea, Ethiopia, Gambia, Ghana, Irak, Yordania, Kenya, Kuwait, Lebanon, Liberia, Libya, Madagaskar, Malawi, Mozambik, Nigeria, Oman, Pakistan, Teritorial Palestina, Qatar, Rwanda, Sao Tome dan Principe, Arab Saudi, Seychelles, Sierra Leone, Somalia, Sudan Selatan, Tanzania, Uganda, Uni Emirat Arab, Sahara Barat, Yaman, Zambia, dan Zimbabwe: Semua sengketa yang timbul dari Perjanjian ini akan diselesaikan secara final melalui Pengadilan Arbitrase Internasional London (London Court of International Arbitration - "LCIA") (Dewan Arbitrase), berdasarkan Aturan Arbitrase LCIA di London, UK, dalam bahasa Inggris sebagai bahasa resmi, oleh tiga arbiter yang tidak memihak, yang ditunjuk sesuai dengan Aturan-Aturan ini. Setiap pihak akan menunjuk seorang arbiter yang akan bersama-sama mengangkat seorang ketua independen dalam waktu 30 hari atau jika tidak, ketua akan ditunjuk oleh Dewan Arbitrase berdasarkan Aturan tersebut. Para arbiter tidak akan memiliki kewenangan untuk memberikan putusan sela (injunctive relief) atau ganti rugi (damage) yang dikecualikan oleh atau melebihi batas-batas yang terdapat dalam Perjanjian ini. Tidak ada satu pun dalam Perjanjian ini yang akan mencegah salah satu pihak untuk mengupayakan proses-proses hukum pengadilan untuk (1) pembebasan interim untuk mencegah prasangka material atau pelanggaran ketentuan kerahasiaan atau hak kekayaan intelektual, atau (2) menentukan validitas atau kepemilikan setiap hak cipta, paten, atau merek dagang yang dimiliki atau dinilai oleh suatu pihak atau Perusahaannya, atau (3) penagihan utang sejumlah di bawah USD 500.000,00.
+
+Di Algeria, Benin, Burkina Faso, Kamerun, Republik Afrika Tengah, Chad, Republik Kongo, Republik Demokratik Kongo, Guinea Ekuator, Guyana Prancis, Polinesia Prancis, Gabon, Guinea, Guinea-Bissau, Pantai Gading, Mali, Mauritania, Mauritius, Maroko, Niger, Senegal, Togo, dan Tunisia: Semua sengketa yang timbul dari Perjanjian ini akan diselesaikan secara final melalui Pengadilan Arbitrase Internasional (International Court of Arbitration) ICC, di Paris (Dewan Arbitrase) berdasarkan aturan arbitrasenya (Aturan) di Paris, Prancis dalam bahasa Prancis sebagai bahasa resmi, oleh tiga arbiter yang tidak memihak, yang ditunjuk sesuai dengan Aturan-Aturan ini. Setiap pihak akan menunjuk seorang arbiter yang akan bersama-sama mengangkat seorang ketua independen dalam waktu 30 hari atau jika tidak, ketua akan ditunjuk oleh Dewan Arbitrase berdasarkan Aturan tersebut. Para arbiter tidak akan memiliki kewenangan untuk memberikan putusan sela (injunctive relief) atau ganti rugi (damage) yang dikecualikan oleh atau melebihi batas-batas yang terdapat dalam Perjanjian ini. Tidak ada satu pun dalam Perjanjian ini yang akan mencegah salah satu pihak untuk mengupayakan proses-proses hukum pengadilan untuk (1) pembebasan interim untuk mencegah prasangka material atau pelanggaran ketentuan kerahasiaan atau hak kekayaan intelektual, atau (2) menentukan validitas atau kepemilikan setiap hak cipta, paten, atau merek dagang yang dimiliki atau dinilai oleh suatu pihak atau Perusahaannya, atau (3) penagihan utang sejumlah di bawah USD 250.000,00.
+
+Di Afrika Selatan, Namibia, Lesotho, dan Swaziland: Semua sengketa yang timbul akibat Perjanjian ini akan diselesaikan secara final oleh Yayasan Arbitrase Afrika Selatan (Arbitration Foundation of Southern Africa - "AFSA") (Badan Arbitrase), berdasarkan Aturan Arbitrase AFSA (Aturan), di Johannesburg, Afrika Selatan, dengan bahasa Inggris sebagai bahasa resmi, dengan tiga arbiter yang tidak memihak yang ditunjuk sesuai dengan Aturan tersebut. Setiap pihak akan menunjuk seorang arbiter yang akan bersama-sama mengangkat seorang ketua independen dalam waktu 30 hari atau jika tidak, ketua akan ditunjuk oleh Dewan Arbitrase berdasarkan Aturan tersebut. Para arbiter tidak akan memiliki kewenangan untuk memberikan putusan sela (injunctive relief) atau ganti rugi (damage) yang dikecualikan oleh atau melebihi batas-batas yang terdapat dalam Perjanjian ini. Tidak ada satu pun dalam Perjanjian ini yang akan mencegah salah satu pihak untuk mengupayakan proses-proses hukum pengadilan untuk (1) pembebasan interim untuk mencegah prasangka material atau pelanggaran ketentuan kerahasiaan atau hak kekayaan intelektual, atau (2) menentukan validitas atau kepemilikan setiap hak cipta, paten, atau merek dagang yang dimiliki atau dinilai oleh suatu pihak atau Perusahaannya, atau (3) penagihan utang sejumlah di bawah USD 250.000,00.
+
+Di Andora, Austria, Siprus, Prancis, Jerman, Yunani, Israel, Italia, Portugal, Spanyol, Swiss, dan Turki: Semua sengketa akan diajukan ke hadapan dan tunduk pada yurisdiksi eksklusif dari pengadilan yurisdiksi yang berwenang berikut:
+
+Di Andora: Pengadilan Niaga Paris (Commercial Court of Paris).
+
+Di Austria: pengadilan Wina, Austria (Dalam Kota).
+
+Di Siprus: pengadilan yang berwenang di Nikosia.
+
+Di Prancis: Pengadilan Niaga Paris (Commercial Court of Paris).
+
+Di Jerman: pengadilan Stuttgart.
+
+Di Yunani: pengadilan yang berwenang di Athena.
+
+Di Israel: pengadilan Tel Aviv Jaffa.
+
+Di Italia: pengadilan Milan.
+
+Di Portugal: pengadilan Lisabon.
+
+Di Spanyol: pengadilan Madrid.
+
+Di Swiss: pengadilan niaga kanton Zurich.
+
+Di Turki: Pengadilan Pusat Istanbul (Caglayan) dan Direktorat Eksekusi Istanbul (Istanbul Central (Caglayan) Courts and Execution Directorates of Istanbul), Republik Turki.
+
+Di Belanda: Para Pihak mengesampingkan hak-hak mereka berdasarkan Hak Milik 7.1 ('Koop') dan klausul 7:401 dan 402 Kitab Undang-Undang Hukum Perdata Belanda, dan hak mereka untuk meminta disolusi sebagian atau sepenuhnya ('gehele of partiele ontbinding') atas Perjanjian ini berdasarkan pasal 6:265 Kitab Undang-Undang Hukum Perdata Belanda.
+
+Pasal 7. Umum
+
+Pada ayat d, masukkan hal berikut di akhir ayat:
+
+Di Spanyol: IBM akan mematuhi permintaan untuk mengakses, memperbarui, atau menghapus informasi kontak jika dikirimkan ke alamat berikut ini: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+
+Pada ayat j, tambahkan di akhir ayat:
+
+Di Republik Ceko: Sesuai dengan Pasal 1801 of Undang-Undang No. 89/2012 Coll. ("Hukum Perdata" (Civil Code)), Pasal 1799 dan Pasal 1800 pada Hukum Perdata sebagaimana yang diamendemen, tidak berlaku untuk transaksi berdasarkan Perjanjian ini. Pemegang Lisensi menerima risiko perubahan kondisi berdasarkan Pasal 1765 pada KUH Perdata.
+
+Pada ayat j:
+
+Di Bulgaria, Kroasia, Rusia, Serbia, dan Slovenia: hapus kalimat kedua yang berbunyi: "Tidak satu pun pihak akan mengajukan tindakan hukum yang timbul dari atau berkaitan dengan Perjanjian ini lebih dari dua tahun setelah timbulnya penyebab gugatan tersebut".
+
+Pada ayat j, tambahkan ke akhir kalimat kedua:
+
+Di Lituania: , kecuali sebagaimana yang diberikan oleh hukum
+
+Pada ayat j, ganti kalimat kedua dengan:
+
+Di Polandia: Tidak ada satu pun pihak yang akan mengajukan tindakan hukum yang timbul dari atau berkaitan dengan Perjanjian ini dalam jangka waktu lebih dari tiga tahun setelah timbulnya penyebab gugatan, kecuali untuk tindakan non-pembayaran yang akan diajukan dalam jangka waktu yang tidak lebih dari 2 tahun setelah pembayaran jatuh tempo.
+
+Pada ayat j, kalimat kedua, ganti kata "dua" dengan:
+
+Di Latvia dan Ukraina: tiga
+
+Di Slovakia: empat
+
+Pada ayat j, tambahkan ke akhir kalimat ketiga yang berbunyi: "Tidak ada satu pihak pun yang bertanggung jawab atas kegagalan dalam memenuhi kewajiban non-moneternya karena penyebab-penyebab di luar kendalinya":
+
+Di Rusia: , termasuk namun tidak terbatas pada gempa bumi, banjir, kebakaran, bencana alam, demo (termasuk demo karyawan para pihak), peperangan, tindakan militer, embargo, blokade, sanksi internasional atau pemerintah, dan putusan yurisdiksi yang berlaku.
+
+Pada ayat j, kalimat ketiga, ubah kalimat: "Tidak ada satu pihak pun yang bertanggung jawab atas kegagalan dalam memenuhi kewajiban non-moneternya karena penyebab-penyebab di luar kendalinya" sebagai berikut:
+
+Di Ukraina: Tidak ada satu pihak pun yang bertanggung jawab atas kegagalan dalam memenuhi kewajiban non-moneternya karena penyebab atau perubahan peraturan di luar kendalinya, termasuk namun tidak terbatas pada persyaratan sanksi impor, ekspor, dan ekonomi Amerika Serikat.
+
+Tambahkan hal berikut di akhir pasal sebagai ayat l baru:
+
+Di Hongaria: Dengan menandatangani Perjanjian ini, Pemegang Lisensi mengonfirmasi bahwa Pemegang Lisensi telah memperoleh informasi yang cukup tentang semua ketentuan Perjanjian ini dan berkesempatan untuk merundingkan syarat-syarat tersebut. Ketentuan berikut dapat menyimpang secara signifikan dari ketentuan yang secara umum diberlakukan oleh hukum di Hongaria dan kedua belah pihak menerima ketentuan tersebut dengan menandatangani Perjanjian: Lisensi Program; Jaminan; Biaya, Pajak, Pembayaran, dan Verifikasi; Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual; Pengakhiran; Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis; serta Umum.
+
+Di Republik Ceko: Pemegang Lisensi secara tegas menerima syarat-syarat perjanjian ini yang mencakup syarat-syarat komersial penting berikut: i) batasan dan sanggahan mengenai tanggung jawab untuk kecacatan (Jaminan); ii) batasan kepemilikan Pemegang Lisensi atas kerusakan (Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual); iii) sifat peraturan ekspor dan impor yang mengikat (Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis); iv) periode batasan yang lebih singkat (Umum); v) pengecualian penerapan ketentuan kontrak baku (Umum); dan vi) penerimaan risiko perubahan keadaan (Umum).
+
+Di Romania: Pemegang Lisensi secara tegas menerima, klausul standar berikut yang dapat dianggap sebagai "klausul tidak biasa" sesuai dengan ketentuan pasal 1203 Kitab Undang-Undang Hukum Perdata Romania: klausul 2, 4, 5, 8j. Dengan ini Pemegang Lisensi menyatakan bahwa pihaknya telah memperoleh informasi yang cukup mengenai semua ketentuan Perjanjian ini, termasuk klausul yang disebutkan di atas, pihaknya telah menganalisis dan memahami dengan baik ketentuan tersebut, dan berkesempatan merundingkan syarat-syarat dari setiap klausul.
+
+This document is made in the English and Indonesian languages. To the extent permitted by the prevailing law, the English language of this document will prevail in the case of any inconsistencies or differences of interpretation with the Indonesian language text of this document.
+
+Dokumen ini dibuat dalam bahasa Inggris dan bahasa Indonesia. Sepanjang diperbolehkan oleh hukum yang berlaku, dalam hal terdapat ketidaksesuaian atau perbedaan penafsiran dengan teks bahasa Indonesia dari dokumen ini, maka teks dalam bahasa Inggris yang akan berlaku.
+
+i125-5589-06 (10-2021)
 
