@@ -1,11 +1,9 @@
 # IBM-ODM-Docker
-IBM Operational Decision Manager on Docker.
+IBM Operational Decision Manager on Docker
 
+[![Build and test](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml/badge.svg?branch=vnext-release)](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/lgrateau/odm-ondocker)
 
-[![Build Status](https://travis-ci.org/ODMDev/odm-ondocker.svg?branch=master)](https://travis-ci.org/ODMDev/odm-ondocker)
-[![GitHub release](https://img.shields.io/github/release/ODMDev/odm-ondocker.svg)](https://github.com/ODMDev/odm-ondocker/releases)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ODMDev/odm-ondocker/dev.svg)](https://github.com/ODMDev/odm-ondocker)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub release](https://img.shields.io/github/release/DecisionsDev/odm-ondocker.svg)](https://github.com/DecisionsDev/odm-ondocker/releases) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <p align="center">
   <a href="https://join.slack.com/t/odmdev/shared_invite/enQtMjU0NzIwMjM1MTg0LTQyYTMzNGQ4NzJkMDYxMDU5MDRmYTM4MjcxN2RiMzNmZWZmY2UzYzRhMjk0N2FmZjU2YzJlMTRmN2FhZDY4NmQ">
         Follow us on slack
@@ -20,7 +18,7 @@ IBM Operational Decision Manager on Docker.
 This repository centralizes the material to deploy IBM Operational Decision Manager in Docker.
 It includes Docker files and Docker compose descriptors. Docker files are used to build images of ODM runtimes. And docker-compose descriptor can be used to group this build, push to your repository and run your topology from Development to production.
 
-[IBM ODM](https://www.ibm.com/docs/en/odm/8.11.0) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
+[IBM ODM](https://www.ibm.com/docs/en/odm/8.11.1) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
 
 
 ![Flow](docs/images/Architecture.png "Architecture")
@@ -40,7 +38,7 @@ This documentations applies to Operational Decision Management Standard V8.11.x 
 
 # Issues and contributions
 
-For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://developer.ibm.com/odm/home/connect/) through the ODMDev community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
+For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/ODMDev/odm-ondocker/issues). For more general issue relating to IBM Operational Decision Manager you can [get help](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022) through the ODM community or, if you have production licenses for Operational Decision Manager, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/ODMDev/odm-ondocker/blob/master/CONTRIBUTING.md).
 
 # License tracking with IBM License Service
 

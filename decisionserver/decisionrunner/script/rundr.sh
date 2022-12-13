@@ -25,8 +25,6 @@ $SCRIPT/updateDatasource.sh
 
 $SCRIPT/configureSwidTag.sh
 
-$SCRIPT/enableFips.sh
-
 $SCRIPT/setTimeZone.sh
 
 if [ -s "$SCRIPT/customEnd.sh" ]

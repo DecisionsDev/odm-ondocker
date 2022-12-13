@@ -45,6 +45,7 @@ if [[ "${decisionServiceId}" == "null" ]]; then
   decisionServiceId=4ea8ed3f-98a0-4b25-853c-6cc857215ae8
 fi
 
+
 # Get Decision Service https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Miniloan%20Service.zip?raw=1
 echo -n "$(date) - ### Upload Miniloan Service to DC:  "
 curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Miniloan_Service_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})

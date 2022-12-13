@@ -1,0 +1,21 @@
+<server>
+	<!-- Decision Runner -->
+	<application type="war" startAfterRef="res,decisioncenter"  id="DecisionRunner" name="DecisionRunner" context-root="${ODM_CONTEXT_ROOT}/DecisionRunner" location="${server.config.dir}/apps/DecisionRunner.war">
+	<application-bnd>
+		<security-role name="resAdministrators">
+			<group name="resAdministrators" />
+		</security-role>
+		<security-role name="resDeployers">
+			<group name="resDeployers" />
+		</security-role>
+	</application-bnd>
+	<classloader>
+		<commonLibrary>
+                        <folder dir="/config/pluginconfig" id="plugindir"  />
+                </commonLibrary>
+                <commonLibrary>
+                        <folder dir="/config/extension" id="extensiondir"  />
+                </commonLibrary>
+        </classloader>
+ </application>
+</server>

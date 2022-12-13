@@ -50,7 +50,17 @@ then
     else
       sed -i '/OPENID_GRANT_TYPE/d' /config/authOidc/openIdParameters.properties
     fi
+
+    if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]
+    then
+      sed -i 's|__OPENID_LOGOUT_TOKEN_PARAM__|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/OPENID_LOGOUT_TOKEN_PARAM/d'  /config/authOidc/openIdParameters.properties
+    fi
   fi
+  # Set env var if secrets are passed using mounted volumes
+  [ -f /config/secrets/oidc-config/clientId ] && export OPENID_CLIENT_ID=$(cat /config/secrets/oidc-config/clientId)
+  [ -f /config/secrets/oidc-config/clientSecret ] && export OPENID_CLIENT_SECRET=$(cat /config/secrets/oidc-config/clientSecret)
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdParameters.properties
   sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
 
@@ -64,6 +74,9 @@ if [ -s "/config/auth/openIdWebSecurity.xml" ]
     sed -i 's|__OPENID_SERVER_URL__|'$OPENID_SERVER_URL'|g' /config/authOidc/openIdWebSecurity.xml
     sed -i 's|__OPENID_PROVIDER__|'$OPENID_PROVIDER'|g' /config/authOidc/openIdWebSecurity.xml
   fi
+  # Set env var if secrets are passed using mounted volumes
+  [ -f /config/secrets/oidc-config/clientId ] && export OPENID_CLIENT_ID=$(cat /config/secrets/oidc-config/clientId)
+  [ -f /config/secrets/oidc-config/clientSecret ] && export OPENID_CLIENT_SECRET=$(cat /config/secrets/oidc-config/clientSecret)
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdWebSecurity.xml
   sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdWebSecurity.xml
 fi
@@ -152,6 +165,16 @@ then
      else
         echo "OAuth config : no provided OPENID_LOGOUT_URL"
         sed -i '/logoutURL/d' /config/OdmOidcProviders.json
+     fi
+
+     OPENID_LOGOUT_TOKEN_PARAM=$(grep OPENID_LOGOUT_TOKEN_PARAM /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_TOKEN_PARAM=//g")
+     if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]
+     then
+        echo "OAuth config : set logout URL to $OPENID_LOGOUT_TOKEN_PARAM"
+        sed -i 's|OPENID_LOGOUT_TOKEN_PARAM|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_LOGOUT_TOKEN_PARAM"
+        sed -i '/logoutTokenParam/d' /config/OdmOidcProviders.json
      fi
 
      OPENID_GRANT_TYPE=$(grep OPENID_GRANT_TYPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_GRANT_TYPE=//g")
@@ -284,7 +307,6 @@ then
 	sed -i 's|odm-decisionrunner|'$DECISIONRUNNER_NAME'|g' $DC_SERVER_CONFIG
 fi
 
-
 if [ -n "$ENABLE_TLS" ]
 then
  echo "Update decision server and runner protocol to https in $DC_SERVER_CONFIG"
@@ -342,6 +364,18 @@ if [ -n "$DEMO" ]
 then
   echo "Update flag to allow update of existing server definition in $DC_SERVER_CONFIG"
         sed -i 's|false|true|g' $DC_SERVER_CONFIG
+fi
+
+if [ -n "$DECISION_MODEL_DISABLED" ]
+then
+  echo "Update decision model enabled to $DECISION_MODEL_DISABLED in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  sed -i 's|DECISION_MODEL_DISABLED|'$DECISION_MODEL_DISABLED'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  if [[ "$DECISION_MODEL_DISABLED" == "true" ]]; then
+  	echo "Remove decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  	sed -i '/decisionmodel/d' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+  else
+	echo "Keep decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
+  fi
 fi
 
 if [ -s "/config/auth/ldap-configurations.xml" ]

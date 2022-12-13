@@ -37,5 +37,5 @@ then
 
   echo "copy /config/OdmOidcProvidersRD.json and /config/security/truststore.jks to /config/apps/decisioncenter.war/assets/ "
   cp /config/OdmOidcProvidersRD.json /config/apps/decisioncenter.war/assets/  
-  cp /config/security/truststore.jks /config/apps/decisioncenter.war/assets/
 fi
+cp /config/security/truststore.jks /config/apps/decisioncenter.war/assets/
