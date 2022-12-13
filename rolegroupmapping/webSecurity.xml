@@ -64,7 +64,7 @@
    <federatedRepository id="vmm">
         <primaryRealm name="o=defaultWIMFileBasedRealm">
 		<participatingBaseEntry name="o=BasicRegistry"/>
-                <participatingBaseEntry name="o=ibm.com"/>givenName
+                <participatingBaseEntry name="o=ibm.com"/>
 		<userDisplayNameMapping inputProperty="principalName" outputProperty="givenName"/>
        	<!--	<userDisplayNameMapping inputProperty="principalName" outputProperty="mail"/> givenName/displayName -->
         </primaryRealm>
