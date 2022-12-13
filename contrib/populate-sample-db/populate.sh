@@ -23,6 +23,7 @@ done
 
 type jq >& /dev/null || (echo "jq must be installed!" && exit 1)
 
+# Get Decision Service https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Loan%20Validation%20Service.zip?raw=1
 echo -n "$(date) - ### Upload Loan Validation Service to DC:  "
 curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Loan_Validation_Service_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
 if [[ $? != 0 ]]; then
@@ -42,6 +43,24 @@ fi
 decisionServiceId=$(echo ${curl_result} | jq -r '.decisionService.id')
 if [[ "${decisionServiceId}" == "null" ]]; then
   decisionServiceId=4ea8ed3f-98a0-4b25-853c-6cc857215ae8
+fi
+
+
+# Get Decision Service https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Miniloan%20Service.zip?raw=1
+echo -n "$(date) - ### Upload Miniloan Service to DC:  "
+curl_result=$(curl --silent --insecure --request POST "${DC_URL}/decisioncenter-api/v1/decisionservices/import" --header "accept: */*" --header "Content-Type: multipart/form-data" --form "file=@$(dirname "$0")/Miniloan_Service_main.zip;type=application/zip" --user ${DC_USER}:${DC_USER})
+if [[ $? != 0 ]]; then
+  echo "Could not connect to ${DC_URL};  please check that DC is up and running."
+  exit 1
+fi
+status=$(echo ${curl_result} | jq -r '.status')
+if [[ "${status}" == "null" ]]; then
+  echo "COMPLETED"
+else
+  echo ${status}
+fi
+if [[ "${status}" == "BAD_REQUEST" ]]; then
+  echo ${curl_result} | jq -r '.reason'
 fi
 
 echo -n "$(date) - ### Get elements Ids from DC:  "

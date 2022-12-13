@@ -34,7 +34,6 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.1.0/p2
 
-
 -	**Sample projects**:
 
 	Two decision services can be directly used in Decision Center when you set the SAMPLE option to true as described in the Usage section below:
