@@ -35,9 +35,9 @@ function parse_args {
       print_usage
       exit 0
       ;;
-    c)  DC_URL=$OPTARG
+    c)  DC_URL=${OPTARG%/}
       ;;
-    r)  RES_URL=$OPTARG
+    r)  RES_URL=${OPTARG%/}
       ;;
     :)  echo "Invalid option: -$OPTARG requires an argument"
       print_usage
