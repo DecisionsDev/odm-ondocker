@@ -59,29 +59,52 @@ function parse_args {
 }
 
 #===========================
+# Function to set authentication arguments for curl request
+
+# ODM_CREDS is defined
+# openIdUrl is optionally defined
+
+function setAuthentication {
+  # Define authentication
+  if [[ ! -z $openIdUrl ]]; then
+    clientId="${ODM_CREDS%:*}"
+    clientSecret="${ODM_CREDS##*:}"
+
+    # Get bearer token
+    get_token_result=$(curl --silent -k -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=${clientId}&scope=openid&client_secret=${clientSecret}&grant_type=client_credentials" "${openIdUrl}/protocol/openid-connect/token")
+    access_token=$(echo ${get_token_result} | jq -r '.access_token')
+
+    authArgs+=(-H "Authorization: Bearer ${access_token}")
+  else
+    authArgs+=(--user ${ODM_CREDS})
+  fi
+}
+
+#===========================
 # Function to run curl request
 # - $1 request - ex: POST
 # - $2 url "${DC_URL}/decisioncenter-api/v1/decisionservices/import"
 # - $3 (Optional) zip or json file to import - ex: Loan_Validation_Service.zip
 function curlRequest {
+  extraArgs=()
   if [[ ! -z $3 ]]; then
     filename=$3
     extension="${filename##*.}"
     case "$extension" in
     zip)
-      curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: multipart/form-data" --form "file=@$(dirname $0)/${filename};type=application/zip" --user ${DC_USER}:${DC_USER})
+      extraArgs+=(--header "Content-Type: multipart/form-data" --form "file=@$(dirname $0)/${filename};type=application/zip")
       ;;
     json)
-      curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --header "Content-Type: application/json" -d "@$(dirname $0)/${filename}" --user ${DC_USER}:${DC_USER})
+      extraArgs+=(--header "Content-Type: application/json" -d "@$(dirname $0)/${filename}")
       ;;
     :)
       echo "Invalid file type: only json and zip are supported"
       exit -1
       ;;
     esac
-  else
-    curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" --user ${DC_USER}:${DC_USER})
   fi
+
+  curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" "${extraArgs[@]}" "${authArgs[@]}")
   if [[ $? != 0 ]]; then
     echo "Could not connect to $2;  please check that the component is up and running."
     exit 1
@@ -224,11 +247,14 @@ function main {
   # 4. Verify the RuleApp is present in RES
   # 5. Executing the RuleApp in DSR
 
-  DC_USER=odmAdmin
+  # Need to set ODM_CREDS and openIdUrl
   decisionServiceId="null"
   deploymentsIds=[]
+  authArgs=()
 
   parse_args "$@"
+
+  setAuthentication
 
   importDecisionService Loan_Validation_Service.zip
   if [[ "${decisionServiceId}" == "null" ]]; then
