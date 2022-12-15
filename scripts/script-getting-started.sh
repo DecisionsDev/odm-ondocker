@@ -169,17 +169,17 @@ function runTestSuite {
   echo -n "$(date) - ### Wait for ${test_suite_name} to be completed in DC:  "
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
-  while [[ ${testReport_status} != "COMPLETED" ]]; do
-    sleep 10
+  while [[ ${testReport_status} == "STARTING" ]]; do
+    sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   done
-  echo $testReport_status
+  echo "DONE"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
   echo -n "$(date) - ### Test report status in DC:  "
-  if [[ $testReports_errors != 0 ]]; then
+  if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
     echo "FAILED"
     exit 1
   else
