@@ -189,7 +189,14 @@ function runTestSuite {
 function getDeploymentIds {
   echo -n "$(date) - ### Get deployments Ids from DC:  "
   deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments)
-  echo "DONE"
+  error_message=$(echo ${deployments} | jq -r '.error')
+  if [[ "${error_message}" == "null" ]]; then
+    echo "DONE"
+  else
+    echo "ERROR"
+    echo ${deployments} | jq -r '.reason'
+    exit 1
+  fi
   # Set deployment ids
   deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
 }
