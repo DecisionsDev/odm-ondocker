@@ -10,26 +10,27 @@ function print_usage {
   me=`basename "$0"`
   cat <<EOF
 
-Usage: $me -c <DC_URL> -r <RES_URL> [-h]
+Usage: $me -c <DC_URL> -r <RES_URL> -s <DSR_URL> [-h]
 
 The script validates an ODM deployment.
 
 Required options:
     -c  # URL of the Decision Center instance to test.
     -r  # URl of the Decision Server Console (RES) instance to test.
+    -s  # URl of the Decision Server Runtime instance to test.
 
 Optional:
     -h  # Displays this help page
 
 Example:
-    ${me} -c https://<DC_ROUTE> -r https://<RES_ROUTE>
+    ${me} -c https://<DC_ROUTE> -r https://<RES_ROUTE> -s https://<DSR_ROUTE>
 
 EOF
   exit 0
 }
 
 function parse_args {
-  while getopts "h?c:r:" opt; do
+  while getopts "h?c:r:s:" opt; do
     case "$opt" in
     h|\?)
       print_usage
@@ -38,6 +39,8 @@ function parse_args {
     c)  DC_URL=${OPTARG%/}
       ;;
     r)  RES_URL=${OPTARG%/}
+      ;;
+    s)  DSR_URL=${OPTARG%/}
       ;;
     :)  echo "Invalid option: -$OPTARG requires an argument"
       print_usage
@@ -229,12 +232,13 @@ function verifyRuleApp {
 }
 
 #===========================
-# Function to test Loan Validation in RES
+# Function to test a RuleSet in DSR
 # - $1 path of the RuleSet to test
 # - $2 json file in local directory
+# - $3 response file
 function testRuleSet {
-  echo -n "$(date) - ### Test RuleSet in RES:  "
-  curl_result=$(curlRequest POST ${RES_URL}/DecisionService/rest/$1 $2)
+  echo -n "$(date) - ### Test RuleSet $1 in DSR:  "
+  curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2)
 
   error_message=$(echo ${curl_result} | jq -r '.message')
   if [[ "${error_message}" == "null" ]]; then
@@ -242,6 +246,15 @@ function testRuleSet {
   else
     echo "ERROR"
     echo ${curl_result} | jq -r '.details'
+  fi
+
+  echo -n "$(date) - ### Check RuleSet test result in DSR:  "
+  diff=$(diff <(echo ${curl_result} | jq -S .) <(jq -S . $3))
+  if [[ "${diff}" == "" ]]; then
+    echo "SUCCEDED"
+  else
+    echo "FAILED"
+    echo ${diff}
   fi
 }
 
@@ -279,7 +292,7 @@ function main {
     verifyRuleApp $deploymentId
   done
 
-  testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json
+  testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
 
 }
 main "$@"
