@@ -58,7 +58,7 @@ OPENID_PROVIDER=$(grep OPENID_PROVIDER /config/authOidc/openIdParameters.propert
 echo "will update Decision Service Execution with $DSE_URL in OAUTH mode with provider $OPENID_PROVIDER"
 
 retry=0
-while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/62293377-13e9-457f-b756-7710357ca1ab" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DSE_URL\",\"authenticationKind\": \"OAUTH\",\"authenticationProvider\": \"$OPENID_PROVIDER\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do 
+while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/0f263d8b-1dda-493c-9e55-8b7bdd9ff721" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DSE_URL\",\"authenticationKind\": \"OAUTH\",\"authenticationProvider\": \"$OPENID_PROVIDER\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do 
 	echo "retry updating Decision Service Execution with $DSE_URL in OAUTH mode with provider $OPENID_PROVIDER"
 	sleep 5
 	retry=$((retry + 1))
@@ -71,7 +71,7 @@ else
 fi
 echo "will update Test and Simulation Execution with $DR_URL in OAUTH mode with provider $OPENID_PROVIDER"
 retry=0
-while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/f4f01813-1ec1-4c89-b773-3d9e2afafab1" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DR_URL\",\"authenticationKind\": \"OAUTH\",\"authenticationProvider\": \"$OPENID_PROVIDER\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200)  && ( $retry -lt 10) ]];do
+while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/1bd2444a-f2d0-40fe-9cf6-9c51a1f58618" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DR_URL\",\"authenticationKind\": \"OAUTH\",\"authenticationProvider\": \"$OPENID_PROVIDER\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200)  && ( $retry -lt 10) ]];do
         echo "retry updating Test and Simulation Execution with $DR_URL in OAUTH mode with provider $OPENID_PROVIDER"
         sleep 5
 	retry=$((retry + 1))
@@ -86,7 +86,7 @@ fi
 else
 echo "will update Decision Service Execution with $DSE_URL"
 retry=0
-while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/62293377-13e9-457f-b756-7710357ca1ab" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DSE_URL\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do
+while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/0f263d8b-1dda-493c-9e55-8b7bdd9ff721" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DSE_URL\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do
         echo "retry updating Decision Service Execution with $DSE_URL"
         sleep 5
         retry=$((retry + 1))
@@ -100,7 +100,7 @@ fi
 
 echo "will update Test and Simulation Execution with $DR_URL"
 retry=0
-while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/f4f01813-1ec1-4c89-b773-3d9e2afafab1" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DR_URL\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200)  && ( $retry -lt 10) ]];do
+while [[ ("$(curl -X POST "$CURL_URL/decisioncenter-api/v1/servers/1bd2444a-f2d0-40fe-9cf6-9c51a1f58618" -H "Content-Type: application/json;charset=UTF-8" -d "{ \"url\": \"$DR_URL\" }" -H "authorization: Basic b2RtQWRtaW46b2RtQWRtaW4=" -w "%{http_code}" -s -o /dev/null)" != 200)  && ( $retry -lt 10) ]];do
         echo "try updating Test and Simulation Execution with $DR_URL"
         sleep 5
         retry=$((retry + 1))

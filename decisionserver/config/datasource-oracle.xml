@@ -11,7 +11,7 @@
                                serverName="dbserver"
                                portNumber="DB_PORT_NUMBER"
 			       URL="DB_URL"
-                               connectionProperties="javax.net.ssl.trustStorePassword=ORACLE_TRUSTSTORE_PASSWORD;javax.net.ssl.trustStore=/opt/ibm/wlp/usr/servers/defaultServer/resources/security/truststore.jks;javax.net.ssl.trustStoreType=JKS;oracle.net.ssl_server_dn_match=false"
+                               connectionProperties="javax.net.ssl.trustStorePassword=ORACLE_TRUSTSTORE_PASSWORD;javax.net.ssl.trustStore=/opt/ibm/wlp/usr/servers/defaultServer/security/truststore.jks;javax.net.ssl.trustStoreType=JKS;oracle.net.ssl_server_dn_match=false"
                                user="odmusr"
                                password="odmpwd"/>
     </dataSource>
