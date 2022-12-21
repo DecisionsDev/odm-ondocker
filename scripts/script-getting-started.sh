@@ -9,6 +9,7 @@
 
 # Constants
 RED="\033[0;31m"
+GREEN="\033[0;32m"
 NC="\033[0m"
 
 function print_usage {
@@ -76,6 +77,14 @@ function error {
   echo -e "${RED}$1${NC}"
   echo -e "${RED}$2${NC}"
   exit $3
+}
+
+#===========================
+# Function to echo success message
+# - $1 message
+
+function echo_success {
+  echo -e "${GREEN}$1${NC}"
 }
 
 #===========================
@@ -152,7 +161,7 @@ function importDecisionService {
   # Check status
   status=$(echo ${curl_result} | jq -r '.status')
   if [[ "${status}" == "null" ]]; then
-    echo "COMPLETED"
+    echo_success "COMPLETED"
   else
     echo ${status}
   fi
@@ -175,7 +184,7 @@ function setDecisionServiceId {
 
     decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
     [[ "${decisionServiceId}" == "null" ]] && error "ERROR" "Decision Service ${decision_service_name} not found" 1
-    echo "DONE"
+    echo_success "DONE"
   fi
 }
 
@@ -203,7 +212,7 @@ function runTestSuite {
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   done
-  echo "DONE"
+  echo_success "DONE"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
@@ -211,7 +220,7 @@ function runTestSuite {
   if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
     error "FAILED" "The test failed or has errors please check the report created." 1
   else
-    echo "SUCCEEDED"
+    echo_success "SUCCEEDED"
   fi
 }
 
@@ -223,7 +232,7 @@ function getDeploymentIds {
 
   # Set deployment ids
   deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
-  [[ ! -z "${deploymentsIds}" ]] && echo "DONE" || error "ERROR" "No deployment found in the given decision service" 1
+  [[ ! -z "${deploymentsIds}" ]] && echo_success "DONE" || error "ERROR" "No deployment found in the given decision service" 1
 }
 
 #===========================
@@ -236,7 +245,7 @@ function deployRuleApp {
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   deployment_status=$(echo $curl_result | jq -r '.status')
-  [[ "${deployment_status}" == "COMPLETED" ]] && echo "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
+  [[ "${deployment_status}" == "COMPLETED" ]] && echo_success "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
 }
 
 #===========================
@@ -249,7 +258,7 @@ function verifyRuleApp {
   ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
 
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
-  echo "DONE"
+  echo_success "DONE"
   echo "The RuleApp contains the following rulesets:"
   echo $ruleapps_rulesets
 }
@@ -264,11 +273,11 @@ function testRuleSet {
   curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2) || error "ERROR $?" "${curl_result}" $?
 
   error_message=$(echo ${curl_result} | jq -r '.message')
-  [[ "${error_message}" == "null" ]] && echo "COMPLETED" || echo "ERROR" "$(echo ${curl_result} | jq -r '.details')" 1
+  [[ "${error_message}" == "null" ]] && echo_success "COMPLETED" || echo "ERROR" "$(echo ${curl_result} | jq -r '.details')" 1
 
   echo -n "$(date) - ### Check RuleSet test result in DSR:  "
   diff=$(diff <(echo ${curl_result} | jq -S .) <(jq -S . $3))
-  [[ "${diff}" == "" ]] && echo "SUCCEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
+  [[ "${diff}" == "" ]] && echo_success "SUCCEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
 }
 
 function main {
