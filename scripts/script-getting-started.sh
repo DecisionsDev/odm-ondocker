@@ -240,13 +240,13 @@ function deployRuleApp {
 }
 
 #===========================
-# Function to verify the rulesApp deplyment in RES
+# Function to verify the rulesApp deployment in RES
 # - $1 deployments id
 function verifyRuleApp {
   deploymentsId=$1
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
-  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0)
+  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
 
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
   echo "DONE"
