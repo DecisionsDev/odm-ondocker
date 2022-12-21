@@ -171,8 +171,10 @@ function setDecisionServiceId {
   if [[ "${decisionServiceId}" == "null" ]]; then
     decision_service_name=$1
     echo -n "$(date) - ### Get ${decision_service_name} id to DC:  "
-    get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20})
+    get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "ERROR $?" "${get_decisionserviceid_result}" $?
+
     decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
+    [[ "${decisionServiceId}" == "null" ]] && error "ERROR" "Decision Service ${decision_service_name} not found" 1
     echo "DONE"
   fi
 }
