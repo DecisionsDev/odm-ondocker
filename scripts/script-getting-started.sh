@@ -107,12 +107,22 @@ function curlRequest {
     esac
   fi
 
-  curl_result=$(curl --silent --insecure --request $1 $2 --header "accept: application/json" "${extraArgs[@]}" "${authArgs[@]}")
-  if [[ $? != 0 ]]; then
-    echo "Could not connect to $2;  please check that the component is up and running."
+  curl_result=$(curl --silent --insecure -w "|%{http_code}" --request $1 $2 --header "accept: application/json" "${extraArgs[@]}" "${authArgs[@]}")
+  
+  # Handle curl errors
+  exit_code=$?
+  if [[ $exit_code != 0 ]]; then
+    echo "Could not connect to $2; please check that the component is up and running at this url."
     exit 1
   fi
-  echo $curl_result
+
+  # Handle http errors
+  http_code="${curl_result##*|}"
+  body="${curl_result%|*}"
+  echo $body
+  if [[ $http_code -ne 200 ]]; then
+    exit $http_code
+  fi
 }
 
 #===========================
