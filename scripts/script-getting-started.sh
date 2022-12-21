@@ -219,17 +219,11 @@ function runTestSuite {
 # Function to get the deployments Ids in Decision Center
 function getDeploymentIds {
   echo -n "$(date) - ### Get deployments Ids from DC:  "
-  deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments)
-  error_message=$(echo ${deployments} | jq -r '.error')
-  if [[ "${error_message}" == "null" ]]; then
-    echo "DONE"
-  else
-    echo "ERROR"
-    echo ${deployments} | jq -r '.reason'
-    exit 1
-  fi
+  deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "ERROR $?" "${deployments}" $?
+
   # Set deployment ids
   deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
+  [[ ! -z "${deploymentsIds}" ]] && echo "DONE" || error "ERROR" "No deployment found in the given decision service" 1
 }
 
 #===========================
