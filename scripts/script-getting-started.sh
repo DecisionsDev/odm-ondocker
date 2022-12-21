@@ -186,21 +186,21 @@ function runTestSuite {
   test_suite_name=$1
   echo -n "$(date) - ### Run ${test_suite_name} in DC:  "
   # Get Main Scoring test suite id
-  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20})
+  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20}) || error "ERROR $?" "${get_testSuiteId_result}" $?
   testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
 
   # Run Main Scoring test suite
-  run_testSuite_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run)
+  run_testSuite_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run) || error "ERROR $?" "${run_testSuite_result}" $?
   run_testSuite_status=$(echo ${run_testSuite_result} | jq -r '.status')
   echo $run_testSuite_status
   testReportId=$(echo ${run_testSuite_result} | jq -r '.id')
 
   echo -n "$(date) - ### Wait for ${test_suite_name} to be completed in DC:  "
-  get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
+  get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   while [[ ${testReport_status} == "STARTING" ]]; do
     sleep 2
-    get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId})
+    get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   done
   echo "DONE"
@@ -209,8 +209,7 @@ function runTestSuite {
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
   echo -n "$(date) - ### Test report status in DC:  "
   if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
-    echo "FAILED"
-    exit 1
+    error "FAILED" "The test failed or has errors please check the report created." 1
   else
     echo "SUCCEEDED"
   fi
