@@ -261,24 +261,14 @@ function verifyRuleApp {
 # - $3 response file
 function testRuleSet {
   echo -n "$(date) - ### Test RuleSet $1 in DSR:  "
-  curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2)
+  curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2) || error "ERROR $?" "${curl_result}" $?
 
   error_message=$(echo ${curl_result} | jq -r '.message')
-  if [[ "${error_message}" == "null" ]]; then
-    echo "COMPLETED"
-  else
-    echo "ERROR"
-    echo ${curl_result} | jq -r '.details'
-  fi
+  [[ "${error_message}" == "null" ]] && echo "COMPLETED" || echo "ERROR" "$(echo ${curl_result} | jq -r '.details')" 1
 
   echo -n "$(date) - ### Check RuleSet test result in DSR:  "
   diff=$(diff <(echo ${curl_result} | jq -S .) <(jq -S . $3))
-  if [[ "${diff}" == "" ]]; then
-    echo "SUCCEDED"
-  else
-    echo "FAILED"
-    echo ${diff}
-  fi
+  [[ "${diff}" == "" ]] && echo "SUCCEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
 }
 
 function main {
