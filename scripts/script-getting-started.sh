@@ -233,9 +233,10 @@ function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
-  curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy)
+  curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
-  echo $curl_result | jq -r '.status'
+  deployment_status=$(echo $curl_result | jq -r '.status')
+  [[ "${deployment_status}" == "COMPLETED" ]] && echo "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
 }
 
 #===========================
