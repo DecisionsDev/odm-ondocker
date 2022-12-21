@@ -6,6 +6,11 @@
 # * Authentication mechanism : OpenID or BasicAuth
 # * Credential: (ClientID/ClientSecret or Username/Password)
 
+
+# Constants
+RED="\033[0;31m"
+NC="\033[0m"
+
 function print_usage {
   me=`basename "$0"`
   cat <<EOF
@@ -59,6 +64,18 @@ function parse_args {
     print_usage
     exit -1
   fi
+}
+
+#===========================
+# Function to echo error message and exit script
+# - $1 error title
+# - $2 error message
+# - $3 return code
+
+function error {
+  echo -e "${RED}$1${NC}"
+  echo -e "${RED}$2${NC}"
+  exit $3
 }
 
 #===========================
