@@ -71,12 +71,12 @@ function parse_args {
 # Function to echo error message and exit script
 # - $1 error title
 # - $2 error message
-# - $3 return code
+# - $3 return code - default value is 1
 
 function error {
   echo -e "${RED}$1${NC}"
   echo -e "${RED}$2${NC}"
-  exit $3
+  exit "${3:-1}"
 }
 
 #===========================
