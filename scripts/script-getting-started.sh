@@ -16,37 +16,48 @@ function print_usage {
   me=`basename "$0"`
   cat <<EOF
 
-Usage: $me -c <DC_URL> -r <RES_URL> -s <DSR_URL> [-h]
+Usage: $me -c <config_files> [-h]
 
 The script validates an ODM deployment.
 
-Required options:
-    -c  # URL of the Decision Center instance to test.
-    -r  # URl of the Decision Server Console (RES) instance to test.
-    -s  # URl of the Decision Server Runtime instance to test.
-
-Optional:
+Optional script parameters:
+    -c  # Properties files containing the configuration of the ODM instance to test
+          Default value is './config.properties'
     -h  # Displays this help page
 
 Example:
-    ${me} -c https://<DC_ROUTE> -r https://<RES_ROUTE> -s https://<DSR_ROUTE>
+    ${me} -c ./config.properties
 
 EOF
-  exit 0
+}
+
+function print_config_requirement {
+  cat <<EOF
+
+The configuration file should define the following variables:
+
+ODM components configuration:
+  - DC_URL      # URL of the Decision Center instance to test.
+  - RES_URL     # URl of the Decision Server Console (RES) instance to test.
+  - DSR_URL     # URl of the Decision Server Runtime instance to test.
+Authentication
+  - ODM_CREDS   # Credentials to connect to ODM
+                - in basic authentication mode use the format 'user:password'
+                - in openID authentication mode, use the format 'clientId:clientSecret'
+  - openIdUrl   # [Optional] URL of the OpenId Server
+
+EOF
 }
 
 function parse_args {
-  while getopts "h?c:r:s:" opt; do
+  while getopts "h?c:" opt; do
     case "$opt" in
     h|\?)
       print_usage
       exit 0
       ;;
-    c)  DC_URL=${OPTARG%/}
-      ;;
-    r)  RES_URL=${OPTARG%/}
-      ;;
-    s)  DSR_URL=${OPTARG%/}
+    c)  CONFIG_FILE=${OPTARG}
+        [[ -f ${CONFIG_FILE} ]] && source $CONFIG_FILE || error "File $CONFIG_FILE not found"
       ;;
     :)  echo "Invalid option: -$OPTARG requires an argument"
       print_usage
@@ -54,16 +65,22 @@ function parse_args {
       ;;
     esac
   done
+  # Check required parameters
   if [ -z $DC_URL ]; then
-    echo "Option -c is required"
-    print_usage
-    exit -1
+    print_config_requirement
+    error "DC_URL variable should be defined in ${CONFIG_FILE}"
   fi
-
   if [ -z $RES_URL ]; then
-    echo "Option -r is required"
-    print_usage
-    exit -1
+    print_config_requirement
+    error "RES_URL variable should be defined in ${CONFIG_FILE}"
+  fi
+  if [ -z $DSR_URL ]; then
+    print_config_requirement
+    error "DSR_URL variable should be defined in ${CONFIG_FILE}"
+  fi
+  if [ -z $ODM_CREDS ]; then
+    print_config_requirement
+    error "ODM_CREDS variable should be defined in ${CONFIG_FILE}"
   fi
 }
 
@@ -134,7 +151,7 @@ function curlRequest {
   fi
 
   curl_result=$(curl --silent --insecure -w "|%{http_code}" --request $1 $2 --header "accept: application/json" "${extraArgs[@]}" "${authArgs[@]}")
-  
+
   # Handle curl errors
   exit_code=$?
   if [[ $exit_code != 0 ]]; then
@@ -289,7 +306,6 @@ function main {
   # 4. Verify the RuleApp is present in RES
   # 5. Executing the RuleApp in DSR
 
-  # Need to set ODM_CREDS and openIdUrl
   decisionServiceId="null"
   deploymentsIds=[]
   authArgs=()
