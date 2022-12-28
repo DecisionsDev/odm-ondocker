@@ -255,11 +255,12 @@ function getDeploymentIds {
 }
 
 #===========================
-# Function to generate and deploy rulesApp in Decision Center
+# Function to generate and deploy ruleApp in Decision Center
 # - $1 deployment id
+# - $2 ruleApp name
 function deployRuleApp {
   deploymentId=$1
-  ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
+  ruleapp_name=$2
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
@@ -268,11 +269,10 @@ function deployRuleApp {
 }
 
 #===========================
-# Function to verify the rulesApp deployment in RES
-# - $1 deployments id
+# Function to verify the ruleApp deployment in RES
+# - $1 ruleApp name
 function verifyRuleApp {
-  deploymentsId=$1
-  ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
+  ruleapp_name=$1
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
   ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
 
@@ -325,11 +325,9 @@ function main {
 
   getDeploymentIds
   for deploymentId in ${deploymentsIds[@]}; do
-    deployRuleApp $deploymentId
-  done
-
-  for deploymentId in ${deploymentsIds[@]}; do
-    verifyRuleApp $deploymentId
+    ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
+    deployRuleApp $deploymentId $ruleapp_name
+    verifyRuleApp $ruleapp_name
   done
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
