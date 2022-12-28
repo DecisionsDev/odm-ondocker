@@ -16,17 +16,18 @@ function print_usage {
   me=`basename "$0"`
   cat <<EOF
 
-Usage: $me -c <config_files> [-h]
+Usage: $me [-f <config_files>] [-c] [-h]
 
 The script validates an ODM deployment.
 
 Optional script parameters:
-    -c  # Properties files containing the configuration of the ODM instance to test
+    -f  # Properties files containing the configuration of the ODM instance to test
           Default value is './config.properties'
+    -c  # Clean the created ruleApps
     -h  # Displays this help page
 
 Example:
-    ${me} -c ./config.properties
+    ${me} -f ./config.properties -c
 
 EOF
 }
@@ -50,14 +51,16 @@ EOF
 }
 
 function parse_args {
-  while getopts "h?c:" opt; do
+  while getopts "h?f:c" opt; do
     case "$opt" in
     h|\?)
       print_usage
       exit 0
       ;;
-    c)  CONFIG_FILE=${OPTARG}
+    f)  CONFIG_FILE=${OPTARG}
         [[ -f ${CONFIG_FILE} ]] && source $CONFIG_FILE || error "File $CONFIG_FILE not found"
+      ;;
+    c)  CLEAN=true
       ;;
     :)  echo "Invalid option: -$OPTARG requires an argument"
       print_usage
@@ -299,14 +302,26 @@ function testRuleSet {
   [[ "${diff}" == "" ]] && echo_success "SUCCEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
 }
 
+#===========================
+# Function to delete a ruleApp deployment in RES
+# - $1 ruleApp name
+function deleteRuleApp {
+  ruleapp_name=$1
+  echo -n "$(date) - ### Delete RuleApp ${ruleapp_name}/1.0 in RES:  "
+  ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
+
+  echo_success "DONE"
+}
+
 function main {
   # Scenario:
   # ------------------------------
   # 1. Import the decision service
   # 2. Run Main Scoring test suite
-  # 3. Generate and deploying the RuleApp
-  # 4. Verify the RuleApp is present in RES
-  # 5. Executing the RuleApp in DSR
+  # 3. Generate and deploying the RuleApps
+  # 4. Verify the RuleApps are present in RES
+  # 5. Executing a RuleApp in DSR
+  # 6. Deleting the RuleApps
 
   decisionServiceId="null"
   deploymentsIds=[]
@@ -331,6 +346,28 @@ function main {
   done
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
+
+  echo "The test is successful."
+
+  if [[ ${CLEAN} ]]; then
+    choice="Yes"
+  else
+    read -p "Do you want to delete the ruleApp created (y/n)? " choice
+  fi
+
+  case "$choice" in
+    [yY][eE][sS]|[yY])
+      for deploymentId in ${deploymentsIds[@]}; do
+        ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
+        deleteRuleApp $ruleapp_name
+      done
+      exit 0
+      ;;
+    *)
+      echo "Exiting script."
+      exit 0
+      ;;
+  esac
 
 }
 main "$@"
