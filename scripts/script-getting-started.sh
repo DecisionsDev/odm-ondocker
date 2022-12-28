@@ -23,7 +23,7 @@ The script validates an ODM deployment.
 Optional script parameters:
     -f  # Properties files containing the configuration of the ODM instance to test
           Default value is './config.properties'
-    -c  # Clean the created ruleApps
+    -c  # Automatically cleans the created ruleApps at the end of the test
     -h  # Displays this help page
 
 Example:
@@ -45,7 +45,7 @@ Authentication
   - ODM_CREDS   # Credentials to connect to ODM
                 - in basic authentication mode use the format 'user:password'
                 - in openID authentication mode, use the format 'clientId:clientSecret'
-  - openIdUrl   # [Optional] URL of the OpenId Server
+  - openIdUrl   # [Optional] URL of the OpenId Server, required in openID authentication mode
 
 EOF
 }
@@ -318,7 +318,7 @@ function main {
   # ------------------------------
   # 1. Import the decision service
   # 2. Run Main Scoring test suite
-  # 3. Generate and deploying the RuleApps
+  # 3. Generate and deploy the RuleApps
   # 4. Verify the RuleApps are present in RES
   # 5. Executing a RuleApp in DSR
   # 6. Deleting the RuleApps
