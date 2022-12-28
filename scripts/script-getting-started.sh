@@ -224,12 +224,14 @@ function runTestSuite {
   echo -n "$(date) - ### Wait for ${test_suite_name} to be completed in DC:  "
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
-  while [[ ${testReport_status} == "STARTING" ]]; do
+  i=0
+  while [[ ${testReport_status} == "STARTING" ]] && [[ $i -lt 10 ]]; do
     sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
+    i+=1
   done
-  echo_success "DONE"
+  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still staring after 20s"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
