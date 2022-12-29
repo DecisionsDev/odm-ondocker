@@ -247,14 +247,13 @@ function runTestSuite {
 }
 
 #===========================
-# Function to get the deployments Ids in Decision Center
-function getDeploymentIds {
-  echo -n "$(date) - ### Get deployments Ids from DC:  "
+# Function to get the deployments information in Decision Center
+function getDeploymentInfo {
   deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "ERROR $?" "${deployments}" $?
 
-  # Set deployment ids
-  deploymentsIds=$(echo ${deployments} | jq -r '.elements | map(.id) | .[]')
-  [[ ! -z "${deploymentsIds}" ]] && echo_success "DONE" || error "ERROR" "No deployment found in the given decision service" 1
+  # Set deployment information
+  deploymentsInfo=$(echo -n ${deployments} | jq -c '[.elements[] | {id: .id, ruleAppName: .ruleAppName, ruleAppVersion: .ruleAppVersion}]')
+  [[ ! -z "${deploymentsInfo}" ]] && echo ${deploymentsInfo} || error "ERROR" "No deployment found in the given decision service"
 }
 
 #===========================
@@ -313,6 +312,32 @@ function deleteRuleApp {
   echo_success "DONE"
 }
 
+#===========================
+# Function to clean after test
+# - $1 deployment information
+function clean {
+  if [[ ${CLEAN} ]]; then
+    choice="Yes"
+  else
+    read -p "Do you want to delete the ruleApp created (y/n)? " choice
+  fi
+
+  case "$choice" in
+    [yY][eE][sS]|[yY])
+      deploymentsList=$1
+      # Clean ruleApps in RES
+      echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
+        deleteRuleApp ${ruleAppName}
+      done
+      exit 0
+      ;;
+    *)
+      echo "Exiting script."
+      exit 0
+      ;;
+  esac
+}
+
 function main {
   # Scenario:
   # ------------------------------
@@ -324,7 +349,6 @@ function main {
   # 6. Deleting the RuleApps
 
   decisionServiceId="null"
-  deploymentsIds=[]
   authArgs=()
 
   parse_args "$@"
@@ -338,36 +362,15 @@ function main {
 
   runTestSuite "Main Scoring test suite"
 
-  getDeploymentIds
-  for deploymentId in ${deploymentsIds[@]}; do
-    ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
-    deployRuleApp $deploymentId $ruleapp_name
-    verifyRuleApp $ruleapp_name
+  deploymentsList=$(getDeploymentInfo)
+  echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
+    deployRuleApp ${deploymentId} ${ruleAppName}
+    verifyRuleApp ${ruleAppName}
   done
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
 
   echo "The test is successful."
-
-  if [[ ${CLEAN} ]]; then
-    choice="Yes"
-  else
-    read -p "Do you want to delete the ruleApp created (y/n)? " choice
-  fi
-
-  case "$choice" in
-    [yY][eE][sS]|[yY])
-      for deploymentId in ${deploymentsIds[@]}; do
-        ruleapp_name=$(echo ${deployments} | jq -r ".elements[] | select(.id == \"${deploymentId}\").ruleAppName")
-        deleteRuleApp $ruleapp_name
-      done
-      exit 0
-      ;;
-    *)
-      echo "Exiting script."
-      exit 0
-      ;;
-  esac
-
+  clean ${deploymentsList}
 }
 main "$@"
