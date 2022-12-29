@@ -188,31 +188,27 @@ function importDecisionService {
   if [[ "${status}" == "BAD_REQUEST" ]]; then
     echo ${curl_result} | jq -r '.reason'
   fi
-
-  # Set decisionServiceId
-  decisionServiceId=$(echo ${curl_result} | jq -r '.decisionService.id')
 }
 
 #===========================
 # Function to get a Decision Service id in Decision Center
 # - $1 Decision Service name
-function setDecisionServiceId {
-  if [[ "${decisionServiceId}" == "null" ]]; then
-    decision_service_name=$1
-    echo -n "$(date) - ### Get ${decision_service_name} id to DC:  "
-    get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "ERROR $?" "${get_decisionserviceid_result}" $?
+function getDecisionServiceId {
+  decision_service_name=$1
+  get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "ERROR $?" "${get_decisionserviceid_result}" $?
 
-    decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
-    [[ "${decisionServiceId}" == "null" ]] && error "ERROR" "Decision Service ${decision_service_name} not found" 1
-    echo_success "DONE"
-  fi
+  decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
+  [[ "${decisionServiceId}" == "null" ]] && error "ERROR" "Decision Service ${decision_service_name} not found" 1
+  echo ${decisionServiceId}
 }
 
 #===========================
 # Function to run the Main Scoring Test Suite in Decision Center
-# - $1 test suite name
+# - $1 Decision Service id
+# - $2 test suite name
 function runTestSuite {
-  test_suite_name=$1
+  decisionServiceId=$1
+  test_suite_name=$2
   echo -n "$(date) - ### Run ${test_suite_name} in DC:  "
   # Get Main Scoring test suite id
   get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20}) || error "ERROR $?" "${get_testSuiteId_result}" $?
@@ -248,7 +244,9 @@ function runTestSuite {
 
 #===========================
 # Function to get the deployments information in Decision Center
+# - $1 Decision Service id
 function getDeploymentInfo {
+  decisionServiceId=$1
   deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "ERROR $?" "${deployments}" $?
 
   # Set deployment information
@@ -354,21 +352,16 @@ function main {
   # 5. Executing a RuleApp in DSR
   # 6. Deleting the RuleApps
 
-  decisionServiceId="null"
   authArgs=()
-
   parse_args "$@"
-
   setAuthentication
 
   importDecisionService Loan_Validation_Service.zip
-  if [[ "${decisionServiceId}" == "null" ]]; then
-    setDecisionServiceId "Loan Validation Service"
-  fi
+  decisionServiceId=$(getDecisionServiceId "Loan Validation Service")
 
-  runTestSuite "Main Scoring test suite"
+  runTestSuite "${decisionServiceId}" "Main Scoring test suite"
 
-  deploymentsList=$(getDeploymentInfo)
+  deploymentsList=$(getDeploymentInfo ${decisionServiceId})
   echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
     deployRuleApp ${deploymentId} ${ruleAppName} ${ruleAppVersion}
     verifyRuleApp ${ruleAppName} ${ruleAppVersion}
