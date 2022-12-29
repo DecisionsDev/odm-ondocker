@@ -260,10 +260,12 @@ function getDeploymentInfo {
 # Function to generate and deploy ruleApp in Decision Center
 # - $1 deployment id
 # - $2 ruleApp name
+# - $3 ruleApp version
 function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$2
-  echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name} to DC:  "
+  ruleapp_version=$3
+  echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   deployment_status=$(echo $curl_result | jq -r '.status')
@@ -273,10 +275,12 @@ function deployRuleApp {
 #===========================
 # Function to verify the ruleApp deployment in RES
 # - $1 ruleApp name
+# - $2 ruleApp version
 function verifyRuleApp {
   ruleapp_name=$1
-  echo -n "$(date) - ### Get RuleApp ${ruleapp_name} in RES:  "
-  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
+  ruleapp_version=$2
+  echo -n "$(date) - ### Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
   echo_success "DONE"
@@ -304,10 +308,12 @@ function testRuleSet {
 #===========================
 # Function to delete a ruleApp deployment in RES
 # - $1 ruleApp name
+# - $2 ruleApp version
 function deleteRuleApp {
   ruleapp_name=$1
-  echo -n "$(date) - ### Delete RuleApp ${ruleapp_name}/1.0 in RES:  "
-  ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/1.0) || error "ERROR $?" "${ruleapps_result}" $?
+  ruleapp_version=$2
+  echo -n "$(date) - ### Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   echo_success "DONE"
 }
@@ -327,7 +333,7 @@ function clean {
       deploymentsList=$1
       # Clean ruleApps in RES
       echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
-        deleteRuleApp ${ruleAppName}
+        deleteRuleApp ${ruleAppName} ${ruleAppVersion}
       done
       exit 0
       ;;
@@ -364,8 +370,8 @@ function main {
 
   deploymentsList=$(getDeploymentInfo)
   echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
-    deployRuleApp ${deploymentId} ${ruleAppName}
-    verifyRuleApp ${ruleAppName}
+    deployRuleApp ${deploymentId} ${ruleAppName} ${ruleAppVersion}
+    verifyRuleApp ${ruleAppName} ${ruleAppVersion}
   done
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
