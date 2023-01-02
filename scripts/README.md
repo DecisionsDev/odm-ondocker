@@ -1,4 +1,4 @@
-The script [script-getting-started.sh](./script-getting-started.sh) can be used to validate the installation of ODM.
+The script [validate-odm.sh](./validate-odm.sh) can be used to validate the installation of ODM.
 
 The script performs the following scenario:
 1. Import the decision service
@@ -22,7 +22,7 @@ The script performs the following scenario:
 ## Usage
 
 ```
-./script-getting-started.sh [-f <config_files>] [-c] [-h]
+./validate-odm.sh [-f <config_files>] [-c] [-h]
 ```
 
 Optional script parameters:
@@ -52,10 +52,10 @@ You can fill the [config.properties.template](./config.properties.template) file
 
 * To validate an ODM instance described in the default `config.properties` file and clean at the end of the test:
   ```
-  ./script-getting-started.sh -c
+  ./validate-odm.sh -c
   ```
 
 * To validate an ODM instance described in a custom `path/config-test.properties` file
   ```
-  ./script-getting-started.sh -f path/config-test.properties
+  ./validate-odm.sh -f path/config-test.properties
   ```
