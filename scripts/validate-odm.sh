@@ -293,7 +293,7 @@ function testRuleSet {
 
   echo -n "$(date) - ### Check RuleSet test result in DSR:  "
   diff=$(diff <(echo ${curl_result} | jq -S .) <(jq -S . $3))
-  [[ "${diff}" == "" ]] && echo_success "SUCCEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
+  [[ "${diff}" == "" ]] && echo_success "SUCCEEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
 }
 
 #===========================
@@ -349,7 +349,15 @@ function main {
   parse_args "$@"
   setAuthentication
 
-  importDecisionService Loan_Validation_Service.zip
+  filename="Loan_Validation_Service.zip"
+  # Download Loan_Validation_Service.zip if it does not exist
+  if [[ ! -f ${filename} ]]; then
+    echo -n "$(date) - ### Loan_Validation_Service.zip does not exist locally. Downloading...  "
+    url="https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Loan%20Validation%20Service.zip?raw=1"
+    wget -q ${url} -O ${filename} && echo_success "DONE" || error "ERROR" "Error downloading file from ${url}" $?
+  fi
+
+  importDecisionService ${filename}
   decisionServiceId=$(getDecisionServiceId "Loan Validation Service")
 
   runTestSuite "${decisionServiceId}" "Main Scoring test suite"
