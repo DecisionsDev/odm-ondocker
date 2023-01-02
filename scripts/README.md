@@ -27,7 +27,7 @@ The script performs the following scenario:
 
 Optional script parameters:
 - `-f` :  The path of the properties files containing the configuration of the ODM instance to validate. Default value is `./config.properties`
-- `-c` :  Automatically cleans the created ruleApps at the end of the test.
+- `-c` :  Cleans the created ruleApps at the end of the test.
 - `-h` :  Displays the help page.
 
 ### Configuration file

@@ -16,7 +16,7 @@ The script validates an ODM deployment.
 Optional script parameters:
     -f  # Properties files containing the configuration of the ODM instance to test
           Default value is './config.properties'
-    -c  # Automatically cleans the created ruleApps at the end of the test
+    -c  # Cleans the created ruleApps at the end of the test
     -h  # Displays this help page
 
 Example:
@@ -314,25 +314,13 @@ function deleteRuleApp {
 # - $1 deployment information
 function clean {
   if [[ ${CLEAN} ]]; then
-    choice="Yes"
-  else
-    read -p "Do you want to delete the ruleApp created (y/n)? " choice
+    deploymentsList=$1
+    # Clean ruleApps in RES
+    echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
+      deleteRuleApp ${ruleAppName} ${ruleAppVersion}
+    done
+    exit 0
   fi
-
-  case "$choice" in
-    [yY][eE][sS]|[yY])
-      deploymentsList=$1
-      # Clean ruleApps in RES
-      echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
-        deleteRuleApp ${ruleAppName} ${ruleAppVersion}
-      done
-      exit 0
-      ;;
-    *)
-      echo "Exiting script."
-      exit 0
-      ;;
-  esac
 }
 
 function main {
