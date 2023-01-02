@@ -44,7 +44,7 @@ The script configuration file requires the following parameters to be defined:
     - `ODM_CREDS` : Credentials to connect to ODM using the format `<user>:<password>`
   - To use *openID* authentication mode, define:
     - `ODM_CREDS` : Credentials to get the token using the format `<clientId>:<clientSecret>`
-    - `openIdUrl` : URL of the OpenId Server
+    - `OPENID_URL` : URL of the OpenId Server
 
 You can fill the [config.properties.template](./config.properties.template) file with your configuration.
 

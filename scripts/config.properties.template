@@ -6,4 +6,4 @@ DSR_URL=<DSR_URL>
 ODM_CREDS=<user>:<password>
 ## OpenID Authentication
 # ODM_CREDS=<clientId>:<clientSecret>
-# openIdUrl=<openIdUrl>
+# OPENID_URL=<openIdUrl>

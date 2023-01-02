@@ -38,7 +38,7 @@ Authentication
   - ODM_CREDS   # Credentials to connect to ODM
                 - in basic authentication mode use the format 'user:password'
                 - in openID authentication mode, use the format 'clientId:clientSecret'
-  - openIdUrl   # [Optional] URL of the OpenId Server, required in openID authentication mode
+  - OPENID_URL   # [Optional] URL of the OpenId Server, required in openID authentication mode
 
 EOF
 }
@@ -104,16 +104,16 @@ function echo_success {
 # Function to set authentication arguments for curl request
 
 # ODM_CREDS is defined
-# openIdUrl is optionally defined
+# OPENID_URL is optionally defined
 
 function setAuthentication {
   # Define authentication
-  if [[ ! -z $openIdUrl ]]; then
+  if [[ ! -z $OPENID_URL ]]; then
     clientId="${ODM_CREDS%:*}"
     clientSecret="${ODM_CREDS##*:}"
 
     # Get bearer token
-    get_token_result=$(curl --silent -k -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=${clientId}&scope=openid&client_secret=${clientSecret}&grant_type=client_credentials" "${openIdUrl}/protocol/openid-connect/token")
+    get_token_result=$(curl --silent -k -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=${clientId}&scope=openid&client_secret=${clientSecret}&grant_type=client_credentials" "${OPENID_URL}/protocol/openid-connect/token")
     access_token=$(echo ${get_token_result} | jq -r '.access_token')
 
     authArgs+=(-H "Authorization: Bearer ${access_token}")
