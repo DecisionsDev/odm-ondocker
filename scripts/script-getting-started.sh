@@ -1,11 +1,4 @@
 #!/bin/bash
-#
-# Automatically validate and ODM deployment
-# Parameters
-# * URL of the components : DC, RES , DSR
-# * Authentication mechanism : OpenID or BasicAuth
-# * Credential: (ClientID/ClientSecret or Username/Password)
-
 
 # Constants
 RED="\033[0;31m"
@@ -349,8 +342,8 @@ function main {
   # 2. Run Main Scoring test suite
   # 3. Generate and deploy the RuleApps
   # 4. Verify the RuleApps are present in RES
-  # 5. Executing a RuleApp in DSR
-  # 6. Deleting the RuleApps
+  # 5. Execute a RuleApp in DSR
+  # 6. Delete the RuleApps
 
   authArgs=()
   parse_args "$@"

@@ -5,13 +5,19 @@ The script performs the following scenario:
 2. Run Main Scoring test suite
 3. Generate and deploy the RuleApps
 4. Verify the RuleApps are present in RES
-5. Executing a RuleApp in DSR
-6. [Optional] Deleting the RuleApps
+5. Execute a RuleApp in DSR
+6. [Optional] Delete the RuleApps
 
 ## Prerequisites
 
-- Install ODM for Developers, and note the URLs of your instances the Decision Center (DC), the Decision Server Console (RES)  and the Decision Server Runtime (DSR) components.
-- The script configuration requires a properties file containing the ODM endpoints and authentication parameters. Refer to [Parameters](#Parameters) for more information.
+- Start ODM components.
+  You can use ODM docker images, ODM on K8S chart or and ODM instance deployed with the CP4BA operator.
+- Take a note of the endpoints of your components:
+  - Decision Center (DC)
+  - Decision Server Console (RES)
+  - Decision Server Runtime (DSR) components
+- Update the configuration file with the ODM endpoints and authentication parameters.
+  Refer to [Parameters](#Parameters) for more information.
 
 ## Usage
 
@@ -24,7 +30,7 @@ Optional script parameters:
 - `-c` :  Automatically cleans the created ruleApps at the end of the test.
 - `-h` :  Displays the help page.
 
-### Parameters
+### Configuration file
 
 The script configuration file requires the following parameters to be defined:
 
