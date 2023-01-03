@@ -166,14 +166,18 @@ function importDecisionService {
 
   # Check status
   status=$(echo ${curl_result} | jq -r '.status')
-  if [[ "${status}" == "null" ]]; then
+  case "${status}" in
+  "null")
     echo_success "COMPLETED"
-  else
+    ;;
+  "BAD_REQUEST")
     echo ${status}
-  fi
-  if [[ "${status}" == "BAD_REQUEST" ]]; then
     echo ${curl_result} | jq -r '.reason'
-  fi
+    ;;
+  *)
+    error "${status}" "$(echo ${curl_result} | jq -r '.reason')"
+    ;;
+  esac
 }
 
 #===========================
