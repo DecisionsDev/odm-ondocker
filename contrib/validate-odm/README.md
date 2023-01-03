@@ -16,25 +16,24 @@ The script performs the following scenario:
   - Decision Center (DC)
   - Decision Server Console (RES)
   - Decision Server Runtime (DSR) components
-- Update the configuration file with the ODM endpoints and authentication parameters.
-  Refer to [Parameters](#Parameters) for more information.
+- Set the required environment variables manually or use a `.env` file.
+  Refer to [Environment Variables](#Environment-Variables) for more information.
 
 ## Usage
 
 ```
-./validate-odm.sh [-f <config_files>] [-c] [-h]
+./validate-odm.sh [-c] [-h]
 ```
 
 Optional script parameters:
-- `-f` :  The path of the properties files containing the configuration of the ODM instance to validate. Default value is `./config.properties`
 - `-c` :  Cleans the created ruleApps at the end of the test.
 - `-h` :  Displays the help page.
 
-### Configuration file
+### Environment Variables
 
-The script configuration file requires the following parameters to be defined:
+The script configuration file requires the following environment variables to be defined manually or in a `.env` file:
 
-* **ODM components endpoints**
+* **ODM endpoints configuration**
   - `DC_URL`  : URL of the Decision Center instance to test.
   - `RES_URL` : URL of the Decision Server Console (RES) instance to test.
   - `DSR_URL` : URL of the Decision Server Runtime instance to test.
@@ -46,16 +45,21 @@ The script configuration file requires the following parameters to be defined:
     - `ODM_CREDS` : Credentials to get the token using the format `<clientId>:<clientSecret>`
     - `OPENID_URL` : URL of the OpenId Server
 
-You can fill the [config.properties.template](./config.properties.template) file with your configuration.
+You can fill the [.env.template](./.env.template) file with your configuration.
 
 ### Examples
 
-* To validate an ODM instance described in the default `config.properties` file and clean at the end of the test:
+* To validate an ODM instance described in the `.env` file and clean at the end of the test:
   ```
   ./validate-odm.sh -c
   ```
 
-* To validate an ODM instance described in a custom `path/config-test.properties` file
+* To validate an ODM instance setting environment variables manually:
   ```
-  ./validate-odm.sh -f path/config-test.properties
+  export DC_URL=https://<clusterip>:<dc-port>
+  export RES_URL=https://<clusterip>:<res-port>
+  export DSR_URL=https://<clusterip>:<dsr-port>
+  export ODM_CREDS=odmAdmin:odmAdmin
+
+  ./validate-odm.sh
   ```

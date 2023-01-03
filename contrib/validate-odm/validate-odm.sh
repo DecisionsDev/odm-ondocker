@@ -9,75 +9,68 @@ function print_usage {
   me=`basename "$0"`
   cat <<EOF
 
-Usage: $me [-f <config_files>] [-c] [-h]
+Usage: $me [-c] [-h]
 
 The script validates an ODM deployment.
 
+You have to define the following environment variables manually or in a .env file:
+  - DC_URL      # URL of the Decision Center instance to test.
+  - RES_URL     # URl of the Decision Server Console (RES) instance to test.
+  - DSR_URL     # URl of the Decision Server Runtime instance to test.
+  - ODM_CREDS   # Credentials to connect to ODM
+                - in basic authentication mode use the format 'user:password'
+                - in openID authentication mode, use the format 'clientId:clientSecret'
+  - OPENID_URL  # [Optional] URL of the OpenId Server, required in openID authentication mode
+
 Optional script parameters:
-    -f  # Properties files containing the configuration of the ODM instance to test
-          Default value is './config.properties'
     -c  # Cleans the created ruleApps at the end of the test
     -h  # Displays this help page
 
 Example:
-    ${me} -f ./config.properties -c
-
-EOF
-}
-
-function print_config_requirement {
-  cat <<EOF
-
-The configuration file should define the following variables:
-
-ODM components configuration:
-  - DC_URL      # URL of the Decision Center instance to test.
-  - RES_URL     # URl of the Decision Server Console (RES) instance to test.
-  - DSR_URL     # URl of the Decision Server Runtime instance to test.
-Authentication
-  - ODM_CREDS   # Credentials to connect to ODM
-                - in basic authentication mode use the format 'user:password'
-                - in openID authentication mode, use the format 'clientId:clientSecret'
-  - OPENID_URL   # [Optional] URL of the OpenId Server, required in openID authentication mode
+    ${me} -c
 
 EOF
 }
 
 function parse_args {
+  # Set environment variables
+  set -a
+  [[ -f ".env" ]] && source .env
+  set +a
+
+  # Check required environment variables
+  if [ -z $DC_URL ]; then
+    print_usage
+    error "DC_URL environment variable should be defined. Please export it manually or set it in a .env file."
+  fi
+  if [ -z $RES_URL ]; then
+    print_usage
+    error "RES_URL environment variable should be defined"
+  fi
+  if [ -z $DSR_URL ]; then
+    print_usage
+    error "DSR_URL environment variable should be defined"
+  fi
+  if [ -z $ODM_CREDS ]; then
+    print_usage
+    error "ODM_CREDS environment variable should be defined"
+  fi
+
   while getopts "h?f:c" opt; do
     case "$opt" in
     h|\?)
       print_usage
       exit 0
       ;;
-    f)  CONFIG_FILE=${OPTARG}
-        [[ -f ${CONFIG_FILE} ]] && source $CONFIG_FILE || error "File $CONFIG_FILE not found"
-      ;;
     c)  CLEAN=true
       ;;
-    :)  echo "Invalid option: -$OPTARG requires an argument"
+    :)  echo "Invalid option: -${OPTARG} requires an argument"
       print_usage
       exit -1
       ;;
     esac
   done
-  # Check required parameters
-  if [ -z $DC_URL ]; then
-    print_config_requirement
-    error "DC_URL variable should be defined in ${CONFIG_FILE}"
-  fi
-  if [ -z $RES_URL ]; then
-    print_config_requirement
-    error "RES_URL variable should be defined in ${CONFIG_FILE}"
-  fi
-  if [ -z $DSR_URL ]; then
-    print_config_requirement
-    error "DSR_URL variable should be defined in ${CONFIG_FILE}"
-  fi
-  if [ -z $ODM_CREDS ]; then
-    print_config_requirement
-    error "ODM_CREDS variable should be defined in ${CONFIG_FILE}"
-  fi
+
 }
 
 #===========================
