@@ -185,10 +185,10 @@ function importDecisionService {
 # - $1 Decision Service name
 function getDecisionServiceId {
   decision_service_name=$1
-  get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "ERROR $?" "${get_decisionserviceid_result}" $?
+  get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "${get_decisionserviceid_result}" "" 1
 
   decisionServiceId=$(echo ${get_decisionserviceid_result} | jq -r '.elements[0].id')
-  [[ "${decisionServiceId}" == "null" ]] && error "ERROR" "Decision Service ${decision_service_name} not found" 1
+  [[ "${decisionServiceId}" == "null" ]] && error "Decision Service ${decision_service_name} not found" "" 1
   echo ${decisionServiceId}
 }
 
@@ -201,7 +201,7 @@ function runTestSuite {
   test_suite_name=$2
   echo -n "$(date) - ### Run ${test_suite_name} in DC:  "
   # Get Main Scoring test suite id
-  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20}) || error "ERROR $?" "${get_testSuiteId_result}" $?
+  get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20}) || error "ERROR" "${get_testSuiteId_result}" $?
   testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
 
   # Run Main Scoring test suite
@@ -237,11 +237,11 @@ function runTestSuite {
 # - $1 Decision Service id
 function getDeploymentInfo {
   decisionServiceId=$1
-  deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "ERROR $?" "${deployments}" $?
+  deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "${deployments}" "" $?
 
   # Set deployment information
   deploymentsInfo=$(echo -n ${deployments} | jq -c '[.elements[] | {id: .id, ruleAppName: .ruleAppName, ruleAppVersion: .ruleAppVersion}]')
-  [[ ! -z "${deploymentsInfo}" ]] && echo ${deploymentsInfo} || error "ERROR" "No deployment found in the given decision service"
+  [[ ! -z "${deploymentsInfo}" ]] && echo ${deploymentsInfo} || error "No deployment found in the given decision service" ""
 }
 
 #===========================
@@ -371,11 +371,11 @@ function main {
   fi
 
   importDecisionService ${filename}
-  decisionServiceId=$(getDecisionServiceId "Loan Validation Service")
+  decisionServiceId=$(getDecisionServiceId "Loan Validation Service") || error "ERROR" "${decisionServiceId}" $?
 
   runTestSuite "${decisionServiceId}" "Main Scoring test suite"
 
-  deploymentsList=$(getDeploymentInfo ${decisionServiceId})
+  deploymentsList=$(getDeploymentInfo ${decisionServiceId}) || error "ERROR" "${deploymentsList}" $?
   echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
     deployRuleApp ${deploymentId} ${ruleAppName} ${ruleAppVersion}
     verifyRuleApp ${ruleAppName} ${ruleAppVersion}
