@@ -259,8 +259,34 @@ function deployRuleApp {
   echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
+  # Set deployment creation timestamp
+  deployment_date=$(echo $curl_result | jq -r '.name' | cut -d' ' -f2-) # Report 2023-01-03_11-28-39-945
+  date="${deployment_date%_*}"
+  time="${deployment_date##*_}"
+  formated_time=$(echo ${time%-*}.${time##*-} | tr - :)
+  deployment_timestamp=$(date -d "${date}T${formated_time}Z" +%s)
+
   deployment_status=$(echo $curl_result | jq -r '.status')
   [[ "${deployment_status}" == "COMPLETED" ]] && echo_success "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
+}
+
+#===========================
+# Function to verify the ruleSet deployed in RES
+# - $1 ruleApp name
+# - $2 ruleApp version
+# - $3 ruleSet name
+function verifyRuleSet {
+  ruleapp_name=$1
+  ruleapp_version=$2
+  ruleset_name=$3
+  rulesets_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}/${ruleset_name}) || error "ERROR $?" "${rulesets_result}" $?
+
+  # Get the last ruleSet version
+  read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
+  echo -n "$(date) - ### Verify last RuleSet deployed ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} in RES:  "
+
+  creation_timestamp=$(date -d ${creation_date} +%s)
+  [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
 }
 
 #===========================
@@ -273,10 +299,11 @@ function verifyRuleApp {
   echo -n "$(date) - ### Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
-  ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | .[]')
+  ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | unique | .[]')
   echo_success "DONE"
-  echo "The RuleApp contains the following rulesets:"
-  echo $ruleapps_rulesets
+  for ruleset_name in ${ruleapps_rulesets[@]}; do
+    verifyRuleSet $ruleapp_name $ruleapp_version $ruleset_name
+  done
 }
 
 #===========================
