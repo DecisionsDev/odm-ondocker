@@ -161,7 +161,7 @@ function curlRequest {
 # Function to import a Decision Service in Decision Center
 # - $1 local zip file name
 function importDecisionService {
-  echo -n "$(date) - ### Upload Decision Service to DC:  "
+  echo -n "📥  Upload Decision Service to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
 
   # Check status
@@ -199,18 +199,16 @@ function getDecisionServiceId {
 function runTestSuite {
   decisionServiceId=$1
   test_suite_name=$2
-  echo -n "$(date) - ### Run ${test_suite_name} in DC:  "
+  echo "🧪   Running ${test_suite_name} in DC ...  "
   # Get Main Scoring test suite id
   get_testSuiteId_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/testsuites?q=name%3A${test_suite_name// /%20}) || error "ERROR" "${get_testSuiteId_result}" $?
   testSuiteId=$(echo ${get_testSuiteId_result} | jq -r '.elements[0].id')
 
   # Run Main Scoring test suite
   run_testSuite_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/testsuites/${testSuiteId}/run) || error "ERROR $?" "${run_testSuite_result}" $?
-  run_testSuite_status=$(echo ${run_testSuite_result} | jq -r '.status')
-  echo $run_testSuite_status
   testReportId=$(echo ${run_testSuite_result} | jq -r '.id')
 
-  echo -n "$(date) - ### Wait for ${test_suite_name} to be completed in DC:  "
+  echo -n "    ▪ Wait for ${test_suite_name} to be completed in DC:  "
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   i=0
@@ -224,7 +222,7 @@ function runTestSuite {
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
-  echo -n "$(date) - ### Test report status in DC:  "
+  echo -n "    ▪ Test report status in DC:  "
   if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
     error "FAILED" "The test failed or has errors please check the report created." 1
   else
@@ -253,7 +251,7 @@ function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$2
   ruleapp_version=$3
-  echo -n "$(date) - ### Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
+  echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   # Set deployment creation timestamp
@@ -280,7 +278,7 @@ function verifyRuleSet {
 
   # Get the last ruleSet version
   read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
-  echo -n "$(date) - ### Verify last RuleSet deployed ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} in RES:  "
+  echo -n "    ▪ Verify last RuleSet deployed ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} in RES:  "
 
   creation_timestamp=$(date -d ${creation_date} +%s)
   [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
@@ -293,7 +291,8 @@ function verifyRuleSet {
 function verifyRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
-  echo -n "$(date) - ### Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  echo "🔎  Verifying test_deployment RuleApp deployment ..."
+  echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | unique | .[]')
@@ -309,13 +308,14 @@ function verifyRuleApp {
 # - $2 json file in local directory
 # - $3 response file
 function testRuleSet {
-  echo -n "$(date) - ### Test RuleSet $1 in DSR:  "
+  echo "🧪   Running RuleSet test ..."
+  echo -n "    ▪ Test RuleSet $1 in DSR:  "
   curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2) || error "ERROR $?" "${curl_result}" $?
 
   error_message=$(echo ${curl_result} | jq -r '.message')
   [[ "${error_message}" == "null" ]] && echo_success "COMPLETED" || echo "ERROR" "$(echo ${curl_result} | jq -r '.details')" 1
 
-  echo -n "$(date) - ### Check RuleSet test result in DSR:  "
+  echo -n "    ▪ Check RuleSet test result in DSR:  "
   diff=$(diff <(echo ${curl_result} | jq -S .) <(jq -S . $3))
   [[ "${diff}" == "" ]] && echo_success "SUCCEEDED" || error "FAILED" "There are differencies with the expected response :\n${diff}" 1
 }
@@ -327,7 +327,7 @@ function testRuleSet {
 function deleteRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
-  echo -n "$(date) - ### Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  echo -n "    ▪ Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   echo_success "DONE"
@@ -338,12 +338,12 @@ function deleteRuleApp {
 # - $1 deployment information
 function clean {
   if [[ ${CLEAN} ]]; then
+    echo "🗑️   Cleaning ..."
     deploymentsList=$1
     # Clean ruleApps in RES
     echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
       deleteRuleApp ${ruleAppName} ${ruleAppVersion}
     done
-    exit 0
   fi
 }
 
@@ -383,7 +383,7 @@ function main {
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
 
-  echo "The test is successful."
   clean ${deploymentsList}
+  echo_success "🎉  ODM has been successfully validated!"
 }
 main "$@"
