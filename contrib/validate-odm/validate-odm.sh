@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# Performs a validation scenario on an ODM deployment.
 
 # Constants
 RED="\033[0;31m"
@@ -23,7 +25,7 @@ You have to define the following environment variables manually or in a .env fil
   - OPENID_URL  # [Optional] URL of the OpenId Server, required in openID authentication mode
 
 Optional script parameters:
-    -c  # Cleans the created ruleApps at the end of the test
+    -c  # Cleans the created RuleApps at the end of the test
     -h  # Displays this help page
 
 Example:
@@ -75,6 +77,11 @@ function parse_args {
 
 #===========================
 # Function to echo error message and exit script
+# Writes message in red and exit with error code
+# Globals:
+# - RED
+# - NC
+# Arguments:
 # - $1 error title
 # - $2 error message
 # - $3 return code - default value is 1
@@ -87,6 +94,11 @@ function error {
 
 #===========================
 # Function to echo success message
+# Writes message in green
+# Globals:
+# - GREEN
+# - NC
+# Arguments:
 # - $1 message
 
 function echo_success {
@@ -95,9 +107,11 @@ function echo_success {
 
 #===========================
 # Function to set authentication arguments for curl request
-
-# ODM_CREDS is defined
-# OPENID_URL is optionally defined
+# Sets authArgs for basic or openId authentication mode
+# Globals:
+# - ODM_CREDS
+# - OPENID_URL (optional)
+# - authArgs
 
 function setAuthentication {
   # Define authentication
@@ -117,11 +131,20 @@ function setAuthentication {
 
 #===========================
 # Function to run curl request
-# - $1 request - ex: POST
-# - $2 url "${DC_URL}/decisioncenter-api/v1/decisionservices/import"
-# - $3 (Optional) zip or json file to import - ex: Loan_Validation_Service.zip
+# Runs curl request and echo curl command result
+# If curl does not return 200, exits with the http error code
+# Globals:
+# - authArgs
+# Arguments:
+# - $1 request
+# - $2 url
+# - $3 (Optional) zip or json file to post
+# Outputs:
+#   writes curl command result
+
 function curlRequest {
   extraArgs=()
+  # Set appropriate curl arguments given file to post
   if [[ ! -z $3 ]]; then
     filename=$3
     extension="${filename##*.}"
@@ -159,7 +182,14 @@ function curlRequest {
 
 #===========================
 # Function to import a Decision Service in Decision Center
+# Imports a zip file Decision Service
+# Globals:
+# - DC_URL
+# Arguments:
 # - $1 local zip file name
+# Outputs:
+#   writes status
+
 function importDecisionService {
   echo -n "📥  Upload Decision Service to DC:  "
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
@@ -182,7 +212,13 @@ function importDecisionService {
 
 #===========================
 # Function to get a Decision Service id in Decision Center
+# Globals:
+# - DC_URL
+# Arguments:
 # - $1 Decision Service name
+# Outputs:
+# - writes desision service id
+
 function getDecisionServiceId {
   decision_service_name=$1
   get_decisionserviceid_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices?q=name%3A${decision_service_name// /%20}) || error "${get_decisionserviceid_result}" "" 1
@@ -193,9 +229,16 @@ function getDecisionServiceId {
 }
 
 #===========================
-# Function to run the Main Scoring Test Suite in Decision Center
+# Function to run a Test Suite in Decision Center
+# Starts the test suite and reports the status when the test is completed
+# Globals:
+# - DC_URL
+# Arguments:
 # - $1 Decision Service id
 # - $2 test suite name
+# Outputs:
+# - writes test status
+
 function runTestSuite {
   decisionServiceId=$1
   test_suite_name=$2
@@ -232,7 +275,13 @@ function runTestSuite {
 
 #===========================
 # Function to get the deployments information in Decision Center
+# Globals:
+# - DC_URL
+# Arguments:
 # - $1 Decision Service id
+# Outputs:
+# - writes json array of deployments
+
 function getDeploymentInfo {
   decisionServiceId=$1
   deployments=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/decisionservices/${decisionServiceId}/deployments) || error "${deployments}" "" $?
@@ -243,10 +292,18 @@ function getDeploymentInfo {
 }
 
 #===========================
-# Function to generate and deploy ruleApp in Decision Center
+# Function to deploy a RuleApp in Decision Center
+# Deploys the RuleApp and set the deployment creation timestamp
+# Globals:
+# - DC_URL
+# - deployment_timestamp
+# Arguments:
 # - $1 deployment id
 # - $2 ruleApp name
 # - $3 ruleApp version
+# Outputs:
+# - writes deployment status
+
 function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$2
@@ -255,7 +312,7 @@ function deployRuleApp {
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   # Set deployment creation timestamp
-  deployment_date=$(echo $curl_result | jq -r '.name' | cut -d' ' -f2-) # Report 2023-01-03_11-28-39-945
+  deployment_date=$(echo $curl_result | jq -r '.name' | cut -d' ' -f2-) # format: Report 2023-01-03_11-28-39-945
   date="${deployment_date%_*}"
   time="${deployment_date##*_}"
   formated_time=$(echo ${time%-*}.${time##*-} | tr - :)
@@ -266,10 +323,19 @@ function deployRuleApp {
 }
 
 #===========================
-# Function to verify the ruleSet deployed in RES
+# Function to verify the last RuleSet deployed in RES
+# Checks if last RuleSet has been created
+# after the date of the RuleApp deployment
+# Globals:
+# - RES_URL
+# - deployment_timestamp
+# Arguments:
 # - $1 ruleApp name
 # - $2 ruleApp version
 # - $3 ruleSet name
+# Outputs:
+# - writes ruleSet validation status
+
 function verifyRuleSet {
   ruleapp_name=$1
   ruleapp_version=$2
@@ -285,28 +351,43 @@ function verifyRuleSet {
 }
 
 #===========================
-# Function to verify the ruleApp deployment in RES
+# Function to verify the RuleApp deployment in RES
+# Checks that the RuleApp is available in the RES console
+# Globals:
+# - RES_URL
+# Arguments:
 # - $1 ruleApp name
 # - $2 ruleApp version
+# Outputs:
+# - writes ruleApp validation status
+
 function verifyRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
   echo "🔎  Verifying test_deployment RuleApp deployment ..."
   echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
-  ruleapps_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
+  ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
-  ruleapps_rulesets=$(echo $ruleapps_result | jq -r '.rulesets | map(.name) | unique | .[]')
+  ruleapp_rulesets=$(echo $ruleapp_result | jq -r '.rulesets | map(.name) | unique | .[]')
   echo_success "DONE"
-  for ruleset_name in ${ruleapps_rulesets[@]}; do
+  for ruleset_name in ${ruleapp_rulesets[@]}; do
     verifyRuleSet $ruleapp_name $ruleapp_version $ruleset_name
   done
 }
 
 #===========================
 # Function to test a RuleSet in DSR
-# - $1 path of the RuleSet to test
-# - $2 json file in local directory
-# - $3 response file
+# Runs a specific RuleSet with given input and
+# compares the result to expected response
+# Globals:
+# - DSR_URL
+# Arguments:
+# - $1 path of the ruleSet to test
+# - $2 json input file in local directory
+# - $3 json response file in local directory
+# Outputs:
+# - writes test status
+
 function testRuleSet {
   echo "🧪   Running RuleSet test ..."
   echo -n "    ▪ Test RuleSet $1 in DSR:  "
@@ -321,9 +402,15 @@ function testRuleSet {
 }
 
 #===========================
-# Function to delete a ruleApp deployment in RES
+# Function to delete a RuleApp deployment in RES
+# Globals:
+# - RES_URL
+# Arguments:
 # - $1 ruleApp name
 # - $2 ruleApp version
+# Outputs:
+# - writes deletion status
+
 function deleteRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
@@ -335,7 +422,12 @@ function deleteRuleApp {
 
 #===========================
 # Function to clean after test
+# Clean all ruleApps from a given deployment list
+# Arguments:
 # - $1 deployment information
+# Outputs:
+# - writes logs
+
 function clean {
   if [[ ${CLEAN} ]]; then
     echo "🗑️   Cleaning ..."
@@ -350,12 +442,12 @@ function clean {
 function main {
   # Scenario:
   # ------------------------------
-  # 1. Import the decision service
-  # 2. Run Main Scoring test suite
-  # 3. Generate and deploy the RuleApps
-  # 4. Verify the RuleApps are present in RES
-  # 5. Execute a RuleApp in DSR
-  # 6. Delete the RuleApps
+  # 1. Import a decision service
+  # 2. Run a test suite
+  # 3. Deploy the RuleApps
+  # 4. Verify the deployment in RES
+  # 5. Execute a RuleSet in DSR
+  # 6. [Optional] Delete the RuleApps in RES
 
   authArgs=()
   parse_args "$@"
