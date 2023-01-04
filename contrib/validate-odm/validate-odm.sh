@@ -473,7 +473,7 @@ function main {
     verifyRuleApp ${ruleAppName} ${ruleAppVersion}
   done
 
-  testRuleSet production_deployment/1.0/loan_validation_production/1.0 loan_validation_test.json loan_validation_test_response.json
+  testRuleSet production_deployment/1.0/loan_validation_production/1.0 test-ruleset/loan_validation_test.json test-ruleset/loan_validation_test_response.json
 
   clean ${deploymentsList}
   echo_success "🎉  ODM has been successfully validated!"

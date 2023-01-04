@@ -1,3 +1,5 @@
+# validate-odm.sh
+
 The script [validate-odm.sh](./validate-odm.sh) can be used to validate the installation of ODM.
 
 The script performs the following scenario:
@@ -45,9 +47,14 @@ The script configuration file requires the following environment variables to be
     - `ODM_CREDS` : Credentials to get the token using the format `<clientId>:<clientSecret>`
     - `OPENID_URL` : URL of the OpenId Server
 
-You can fill the [.env.template](./.env.template) file with your configuration.
+> **Note**  
+> You can fill the provided [.env.template](./.env.template) file with your configuration:
+> ```
+> $ mv .env.template .env
+> $ vi .env
+> ```
 
-### Examples
+## Examples
 
 * To validate an ODM instance described in the `.env` file and clean at the end of the test:
   ```
