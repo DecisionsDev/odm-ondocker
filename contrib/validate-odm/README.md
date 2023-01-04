@@ -58,7 +58,7 @@ The script configuration file requires the following environment variables to be
 
 * To validate an ODM instance described in the `.env` file and clean at the end of the test:
   ```
-  ./validate-odm.sh -c
+  $ ./validate-odm.sh -c
   📥  Upload Decision Service to DC:  COMPLETED
   🧪  Running Main Scoring test suite in DC ...  
       ▪ Wait for Main Scoring test suite to be completed in DC:  DONE
@@ -81,12 +81,12 @@ The script configuration file requires the following environment variables to be
   🎉  ODM has been successfully validated!
   ```
 
-* To validate an ODM instance by setting environment variables manually:
+* To validate an ODM instance using basic authentication and setting environment variables manually:
   ```
-  export DC_URL=https://<clusterip>:<dc-port>
-  export RES_URL=https://<clusterip>:<res-port>
-  export DSR_URL=https://<clusterip>:<dsr-port>
-  export ODM_CREDS=<user>:<password>
+  $ export DC_URL=https://<clusterip>:<dc-port>
+  $ export RES_URL=https://<clusterip>:<res-port>
+  $ export DSR_URL=https://<clusterip>:<dsr-port>
+  $ export ODM_CREDS=<user>:<password>
 
-  ./validate-odm.sh
+  $ ./validate-odm.sh
   ```
