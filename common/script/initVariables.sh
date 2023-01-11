@@ -21,12 +21,6 @@ then
   export ODM_CONTEXT_ROOT=""
 fi
 
-if [ ! "$DECISION_MODEL_DISABLED" ]
-then
-  echo  "DECISION_MODEL_DISABLED unset : set to true"
-  export DECISION_MODEL_DISABLED=true
-fi
-
 if [ -s "$SCRIPT/init/container.env" ]
 then
     set -o allexport

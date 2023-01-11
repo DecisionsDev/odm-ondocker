@@ -171,8 +171,6 @@
 		<Context docBase="decisioncenter-api" path="/decisioncenter-api" reloadable="false">
 			<ResourceLink global="jdbc/ilogDataSource" name="jdbc/ilogDataSource" type="javax.sql.DataSource"/>
 		</Context>
-		<Context docBase="decisionmodel" path="/decisionmodel" reloadable="false">
-		</Context>
 		<!-- Context paths for RES webapps and loggers -->
 		<Context docBase="res" path="/res" debug="0" reloadable="true"	crossContext="true">
 			<Logger className="org.apache.catalina.logger.FileLogger" prefix="localhost_res_log." suffix=".txt" timestamp="true"/>

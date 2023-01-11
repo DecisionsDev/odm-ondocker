@@ -1,5 +1,0 @@
-	<!-- Decision Model -->
-	<application id="decisionmodel" context-root="${ODM_CONTEXT_ROOT}/decisionmodel" location="${server.config.dir}/apps/decisionmodel.war" name="decisionmodel">
-		<classloader delegation="parentLast" />
-	</application>
-
