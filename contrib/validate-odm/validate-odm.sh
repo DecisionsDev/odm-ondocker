@@ -259,7 +259,7 @@ function runTestSuite {
     sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
-    i+=1
+    ((i++))
   done
   [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still staring after 20s"
 
