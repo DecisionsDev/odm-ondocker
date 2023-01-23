@@ -195,7 +195,7 @@ function importDecisionService {
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
 
   # Check status
-  status=$(echo ${curl_result} | jq -r '.status')
+  status=$(echo ${curl_result} | jq -r '.status' 2> /dev/null) || error "ERROR" "${curl_result}" 1
   case "${status}" in
   "null")
     echo_success "COMPLETED"
@@ -455,7 +455,7 @@ function main {
 
   filename="Loan_Validation_Service.zip"
   # Download Loan_Validation_Service.zip if it does not exist or is not a valid zip file
-  unzip -q -t ${filename} > /dev/null 2>&1
+  unzip -q -t ${filename} &> /dev/null
   if [[ $? != 0 ]]; then
     echo -n "$(date) - ### Loan_Validation_Service.zip does not exist locally. Downloading...  "
     url="https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Loan%20Validation%20Service.zip?raw=1"
