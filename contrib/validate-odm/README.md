@@ -2,6 +2,8 @@
 
 The script [validate-odm.sh](./validate-odm.sh) can be used to validate the installation of ODM.
 
+![Script Logs](images/script-logs.gif)
+
 The script performs the following scenario:
 1. Import a decision service
 2. Run a test suite

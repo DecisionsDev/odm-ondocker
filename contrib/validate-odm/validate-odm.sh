@@ -6,6 +6,7 @@
 RED="\033[0;31m"
 GREEN="\033[0;32m"
 NC="\033[0m"
+SPIN_PID=""
 
 function print_usage {
   me=`basename "$0"`
@@ -76,18 +77,60 @@ function parse_args {
 }
 
 #===========================
+# Function to print a spinner when the script is waiting for information
+# Should be launched in background
+
+function spin {
+  frames=( '-' '/' '|' '\' )
+  while [[ 1 ]]; do
+      for frame in ${frames[@]};
+      do
+          echo -en "\b${frame}"
+          sleep 0.25
+      done
+  done
+}
+
+#===========================
+# Function to start the spinner
+# Sets the SPIN_PID variable
+# Globals:
+# - SPIN_PID
+
+function startSpin {
+  spin &
+  SPIN_PID=$!
+}
+
+#===========================
+# Function to stop the spinner
+# Sets the SPIN_PID variable to null after killing the process
+# Globals:
+# - SPIN_PID
+
+function stopSpin {
+  kill $SPIN_PID 2>/dev/null
+  wait $SPIN_PID 2>/dev/null
+  SPIN_PID=""
+}
+
+#===========================
 # Function to echo error message and exit script
 # Writes message in red and exit with error code
+# Stops the spinner if it was started
 # Globals:
 # - RED
 # - NC
+# - SPIN_PID
 # Arguments:
 # - $1 error title
 # - $2 error message
 # - $3 return code - default value is 1
 
 function error {
-  echo -e "${RED}$1${NC}"
+  title="${RED}$1${NC}"
+  [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && title="\b${title}"
+  echo -e "${title}"
   echo -e "${RED}$2${NC}"
   exit "${3:-1}"
 }
@@ -95,14 +138,18 @@ function error {
 #===========================
 # Function to echo success message
 # Writes message in green
+# Stops the spinner if it was started
 # Globals:
 # - GREEN
 # - NC
+# - SPIN_PID
 # Arguments:
 # - $1 message
 
 function echo_success {
-  echo -e "${GREEN}$1${NC}"
+  message="${GREEN}$1${NC}"
+  [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && message="\b${message}"
+  echo -e "${message}"
 }
 
 #===========================
@@ -192,6 +239,7 @@ function curlRequest {
 
 function importDecisionService {
   echo -n "📥  Upload Decision Service to DC:  "
+  startSpin
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
 
   # Check status
@@ -201,7 +249,8 @@ function importDecisionService {
     echo_success "COMPLETED"
     ;;
   "BAD_REQUEST")
-    echo ${status}
+    [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && status="\b${status}"
+    echo -e ${status}
     echo ${curl_result} | jq -r '.reason'
     ;;
   *)
@@ -255,6 +304,7 @@ function runTestSuite {
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   i=0
+  startSpin
   while [[ ${testReport_status} == "STARTING" ]] && [[ $i -lt 10 ]]; do
     sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
@@ -309,6 +359,7 @@ function deployRuleApp {
   ruleapp_name=$2
   ruleapp_version=$3
   echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
+  startSpin
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   # Set deployment creation timestamp
@@ -366,6 +417,7 @@ function verifyRuleApp {
   ruleapp_version=$2
   echo "🔎  Verifying test_deployment RuleApp deployment ..."
   echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  startSpin
   ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   ruleapp_rulesets=$(echo $ruleapp_result | jq -r '.rulesets | map(.name) | unique | .[]')
@@ -391,6 +443,7 @@ function verifyRuleApp {
 function testRuleSet {
   echo "🧪   Running RuleSet test ..."
   echo -n "    ▪ Test RuleSet $1 in DSR:  "
+  startSpin
   curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2) || error "ERROR $?" "${curl_result}" $?
 
   error_message=$(echo ${curl_result} | jq -r '.message')
@@ -415,6 +468,7 @@ function deleteRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
   echo -n "    ▪ Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
+  startSpin
   ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
 
   echo_success "DONE"
