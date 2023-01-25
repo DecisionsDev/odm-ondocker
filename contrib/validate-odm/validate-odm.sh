@@ -59,7 +59,7 @@ function parse_args {
     error "ODM_CREDS environment variable should be defined"
   fi
 
-  while getopts "h?f:c" opt; do
+  while getopts "h?c" opt; do
     case "$opt" in
     h|\?)
       print_usage
@@ -129,7 +129,7 @@ function stopSpin {
 
 function error {
   title="${RED}$1${NC}"
-  [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && title="\b${title}"
+  [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && title="\b${title}"
   echo -e "${title}"
   echo -e "${RED}$2${NC}"
   exit "${3:-1}"
@@ -148,7 +148,7 @@ function error {
 
 function echo_success {
   message="${GREEN}$1${NC}"
-  [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && message="\b${message}"
+  [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && message="\b${message}"
   echo -e "${message}"
 }
 
@@ -162,7 +162,7 @@ function echo_success {
 
 function setAuthentication {
   # Define authentication
-  if [[ ! -z $OPENID_URL ]]; then
+  if [[ -n $OPENID_URL ]]; then
     clientId="${ODM_CREDS%:*}"
     clientSecret="${ODM_CREDS##*:}"
 
@@ -192,7 +192,7 @@ function setAuthentication {
 function curlRequest {
   extraArgs=()
   # Set appropriate curl arguments given file to post
-  if [[ ! -z $3 ]]; then
+  if [[ -n $3 ]]; then
     filename=$3
     extension="${filename##*.}"
     case "$extension" in
@@ -249,7 +249,7 @@ function importDecisionService {
     echo_success "COMPLETED"
     ;;
   "BAD_REQUEST")
-    [[ ! -z $SPIN_PID ]] && stopSpin $SPIN_PID && status="\b${status}"
+    [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && status="\b${status}"
     echo -e ${status}
     echo ${curl_result} | jq -r '.reason'
     ;;
@@ -311,12 +311,12 @@ function runTestSuite {
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
     ((i++))
   done
-  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still staring after 20s"
+  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still starting after 20s"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
   echo -n "    ▪ Test report status in DC:  "
-  if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
+  if [[ $testReports_errors != 0 || ${testReport_status} == "FAILED" ]]; then
     error "FAILED" "The test failed or has errors please check the report created." 1
   else
     echo_success "SUCCEEDED"
@@ -338,11 +338,11 @@ function getDeploymentInfo {
 
   # Set deployment information
   deploymentsInfo=$(echo -n ${deployments} | jq -c '[.elements[] | {id: .id, ruleAppName: .ruleAppName, ruleAppVersion: .ruleAppVersion}]')
-  [[ ! -z "${deploymentsInfo}" ]] && echo ${deploymentsInfo} || error "No deployment found in the given decision service" ""
+  [[ -n ${deploymentsInfo} ]] && echo ${deploymentsInfo} || error "No deployment found in the given decision service" ""
 }
 
 #===========================
-# Function to deploy a RuleApp in Decision Center
+# Function to deploy a RuleApp from Decision Center to RES
 # Deploys the RuleApp and set the deployment creation timestamp
 # Globals:
 # - DC_URL
@@ -358,7 +358,7 @@ function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$2
   ruleapp_version=$3
-  echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
+  echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} from DC to RES:  "
   startSpin
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
@@ -371,34 +371,6 @@ function deployRuleApp {
 
   deployment_status=$(echo $curl_result | jq -r '.status')
   [[ "${deployment_status}" == "COMPLETED" ]] && echo_success "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
-}
-
-#===========================
-# Function to verify the last RuleSet deployed in RES
-# Checks if last RuleSet has been created
-# after the date of the RuleApp deployment
-# Globals:
-# - RES_URL
-# - deployment_timestamp
-# Arguments:
-# - $1 ruleApp name
-# - $2 ruleApp version
-# - $3 ruleSet name
-# Outputs:
-# - writes ruleSet validation status
-
-function verifyRuleSet {
-  ruleapp_name=$1
-  ruleapp_version=$2
-  ruleset_name=$3
-  rulesets_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}/${ruleset_name}) || error "ERROR $?" "${rulesets_result}" $?
-
-  # Get the last ruleSet version
-  read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
-  echo -n "    ▪ Verify last RuleSet deployed ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} in RES:  "
-
-  creation_timestamp=$(date -d ${creation_date} +%s)
-  [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
 }
 
 #===========================
@@ -415,7 +387,7 @@ function verifyRuleSet {
 function verifyRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
-  echo "🔎  Verifying test_deployment RuleApp deployment ..."
+  echo "🔎  Verifying ${ruleapp_name} RuleApp deployment ..."
   echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   startSpin
   ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapp_result}" $?
@@ -423,8 +395,34 @@ function verifyRuleApp {
   ruleapp_rulesets=$(echo $ruleapp_result | jq -r '.rulesets | map(.name) | unique | .[]')
   echo_success "DONE"
   for ruleset_name in ${ruleapp_rulesets[@]}; do
-    verifyRuleSet $ruleapp_name $ruleapp_version $ruleset_name
+    verifyRuleSet $ruleset_name
   done
+}
+
+#===========================
+# Function to verify the last RuleSet deployed in RES
+# Checks if last RuleSet has been created
+# after the date of the RuleApp deployment
+# Globals:
+# - RES_URL
+# - ruleapp_name
+# - ruleapp_version
+# - deployment_timestamp
+# Arguments:
+# - $1 ruleSet name
+# Outputs:
+# - writes ruleSet validation status
+
+function verifyRuleSet {
+  ruleset_name=$1
+  rulesets_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}/${ruleset_name}) || error "ERROR $?" "${rulesets_result}" $?
+
+  # Get the last ruleSet version
+  read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
+  echo -n "    ▪ Verify last RuleSet ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} deployed in RES:  "
+
+  creation_timestamp=$(date -d ${creation_date} +%s)
+  [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
 }
 
 #===========================
