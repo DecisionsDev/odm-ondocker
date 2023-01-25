@@ -418,7 +418,7 @@ function verifyRuleApp {
   echo "🔎  Verifying test_deployment RuleApp deployment ..."
   echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   startSpin
-  ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
+  ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapp_result}" $?
 
   ruleapp_rulesets=$(echo $ruleapp_result | jq -r '.rulesets | map(.name) | unique | .[]')
   echo_success "DONE"
@@ -469,7 +469,7 @@ function deleteRuleApp {
   ruleapp_version=$2
   echo -n "    ▪ Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
   startSpin
-  ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
+  ruleapp_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapp_result}" $?
 
   echo_success "DONE"
 }
@@ -525,7 +525,7 @@ function main {
   echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
     deployRuleApp ${deploymentId} ${ruleAppName} ${ruleAppVersion}
     verifyRuleApp ${ruleAppName} ${ruleAppVersion}
-  done
+  done || error "" "" $?
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 test-ruleset/loan_validation_test.json test-ruleset/loan_validation_test_response.json
 
