@@ -26,6 +26,12 @@ fi
 
 if [ -n "$OPENID_CONFIG" ]
 then
+  if [ -n "$DISABLE_LOGIN_PANEL" ]
+  then
+    echo "disable Business Console Basic Auth Login Panel"
+    echo "<%response.sendRedirect(\"/decisioncenter\");%>" > /config/apps/decisioncenter.war/WEB-INF/views/login.jsp
+  fi
+
   if [ -s "/config/auth/openIdParameters.properties" ]
   then
     echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
