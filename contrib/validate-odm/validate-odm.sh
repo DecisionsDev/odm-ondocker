@@ -6,6 +6,7 @@
 RED="\033[0;31m"
 GREEN="\033[0;32m"
 NC="\033[0m"
+SPIN_PID=""
 
 function print_usage {
   me=`basename "$0"`
@@ -58,7 +59,7 @@ function parse_args {
     error "ODM_CREDS environment variable should be defined"
   fi
 
-  while getopts "h?f:c" opt; do
+  while getopts "h?c" opt; do
     case "$opt" in
     h|\?)
       print_usage
@@ -76,18 +77,60 @@ function parse_args {
 }
 
 #===========================
+# Function to print a spinner when the script is waiting for information
+# Should be launched in background
+
+function spin {
+  frames=( '-' '/' '|' '\' )
+  while [[ 1 ]]; do
+      for frame in ${frames[@]};
+      do
+          echo -en "\b${frame}"
+          sleep 0.25
+      done
+  done
+}
+
+#===========================
+# Function to start the spinner
+# Sets the SPIN_PID variable
+# Globals:
+# - SPIN_PID
+
+function startSpin {
+  spin &
+  SPIN_PID=$!
+}
+
+#===========================
+# Function to stop the spinner
+# Sets the SPIN_PID variable to null after killing the process
+# Globals:
+# - SPIN_PID
+
+function stopSpin {
+  kill $SPIN_PID 2>/dev/null
+  wait $SPIN_PID 2>/dev/null
+  SPIN_PID=""
+}
+
+#===========================
 # Function to echo error message and exit script
 # Writes message in red and exit with error code
+# Stops the spinner if it was started
 # Globals:
 # - RED
 # - NC
+# - SPIN_PID
 # Arguments:
 # - $1 error title
 # - $2 error message
 # - $3 return code - default value is 1
 
 function error {
-  echo -e "${RED}$1${NC}"
+  title="${RED}$1${NC}"
+  [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && title="\b${title}"
+  echo -e "${title}"
   echo -e "${RED}$2${NC}"
   exit "${3:-1}"
 }
@@ -95,14 +138,18 @@ function error {
 #===========================
 # Function to echo success message
 # Writes message in green
+# Stops the spinner if it was started
 # Globals:
 # - GREEN
 # - NC
+# - SPIN_PID
 # Arguments:
 # - $1 message
 
 function echo_success {
-  echo -e "${GREEN}$1${NC}"
+  message="${GREEN}$1${NC}"
+  [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && message="\b${message}"
+  echo -e "${message}"
 }
 
 #===========================
@@ -115,7 +162,7 @@ function echo_success {
 
 function setAuthentication {
   # Define authentication
-  if [[ ! -z $OPENID_URL ]]; then
+  if [[ -n $OPENID_URL ]]; then
     clientId="${ODM_CREDS%:*}"
     clientSecret="${ODM_CREDS##*:}"
 
@@ -145,7 +192,7 @@ function setAuthentication {
 function curlRequest {
   extraArgs=()
   # Set appropriate curl arguments given file to post
-  if [[ ! -z $3 ]]; then
+  if [[ -n $3 ]]; then
     filename=$3
     extension="${filename##*.}"
     case "$extension" in
@@ -192,16 +239,18 @@ function curlRequest {
 
 function importDecisionService {
   echo -n "📥  Upload Decision Service to DC:  "
+  startSpin
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/decisionservices/import $1)
 
   # Check status
-  status=$(echo ${curl_result} | jq -r '.status')
+  status=$(echo ${curl_result} | jq -r '.status' 2> /dev/null) || error "ERROR" "${curl_result}" 1
   case "${status}" in
   "null")
     echo_success "COMPLETED"
     ;;
   "BAD_REQUEST")
-    echo ${status}
+    [[ -n $SPIN_PID ]] && stopSpin $SPIN_PID && status="\b${status}"
+    echo -e ${status}
     echo ${curl_result} | jq -r '.reason'
     ;;
   *)
@@ -255,18 +304,19 @@ function runTestSuite {
   get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   i=0
+  startSpin
   while [[ ${testReport_status} == "STARTING" ]] && [[ $i -lt 10 ]]; do
     sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
-    i+=1
+    ((i++))
   done
-  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still staring after 20s"
+  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still starting after 20s"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
   echo -n "    ▪ Test report status in DC:  "
-  if [[ $testReports_errors != 0 ]] || [[ ${testReport_status} == "FAILED" ]]; then
+  if [[ $testReports_errors != 0 || ${testReport_status} == "FAILED" ]]; then
     error "FAILED" "The test failed or has errors please check the report created." 1
   else
     echo_success "SUCCEEDED"
@@ -288,11 +338,11 @@ function getDeploymentInfo {
 
   # Set deployment information
   deploymentsInfo=$(echo -n ${deployments} | jq -c '[.elements[] | {id: .id, ruleAppName: .ruleAppName, ruleAppVersion: .ruleAppVersion}]')
-  [[ ! -z "${deploymentsInfo}" ]] && echo ${deploymentsInfo} || error "No deployment found in the given decision service" ""
+  [[ -n ${deploymentsInfo} ]] && echo ${deploymentsInfo} || error "No deployment found in the given decision service" ""
 }
 
 #===========================
-# Function to deploy a RuleApp in Decision Center
+# Function to deploy a RuleApp from Decision Center to RES
 # Deploys the RuleApp and set the deployment creation timestamp
 # Globals:
 # - DC_URL
@@ -308,7 +358,8 @@ function deployRuleApp {
   deploymentId=$1
   ruleapp_name=$2
   ruleapp_version=$3
-  echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} to DC:  "
+  echo -n "🚀  Deploy RuleApp ${ruleapp_name}/${ruleapp_version} from DC to RES:  "
+  startSpin
   curl_result=$(curlRequest POST ${DC_URL}/decisioncenter-api/v1/deployments/${deploymentId}/deploy) || error "ERROR $?" "${curl_result}" $?
 
   # Set deployment creation timestamp
@@ -320,34 +371,6 @@ function deployRuleApp {
 
   deployment_status=$(echo $curl_result | jq -r '.status')
   [[ "${deployment_status}" == "COMPLETED" ]] && echo_success "${deployment_status}" || error "ERROR" "The status of ${ruleapp_name} is: ${deployment_status}" 1
-}
-
-#===========================
-# Function to verify the last RuleSet deployed in RES
-# Checks if last RuleSet has been created
-# after the date of the RuleApp deployment
-# Globals:
-# - RES_URL
-# - deployment_timestamp
-# Arguments:
-# - $1 ruleApp name
-# - $2 ruleApp version
-# - $3 ruleSet name
-# Outputs:
-# - writes ruleSet validation status
-
-function verifyRuleSet {
-  ruleapp_name=$1
-  ruleapp_version=$2
-  ruleset_name=$3
-  rulesets_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}/${ruleset_name}) || error "ERROR $?" "${rulesets_result}" $?
-
-  # Get the last ruleSet version
-  read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
-  echo -n "    ▪ Verify last RuleSet deployed ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} in RES:  "
-
-  creation_timestamp=$(date -d ${creation_date} +%s)
-  [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
 }
 
 #===========================
@@ -364,15 +387,42 @@ function verifyRuleSet {
 function verifyRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
-  echo "🔎  Verifying test_deployment RuleApp deployment ..."
+  echo "🔎  Verifying ${ruleapp_name} RuleApp deployment ..."
   echo -n "    ▪ Get RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
-  ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
+  startSpin
+  ruleapp_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapp_result}" $?
 
   ruleapp_rulesets=$(echo $ruleapp_result | jq -r '.rulesets | map(.name) | unique | .[]')
   echo_success "DONE"
   for ruleset_name in ${ruleapp_rulesets[@]}; do
-    verifyRuleSet $ruleapp_name $ruleapp_version $ruleset_name
+    verifyRuleSet $ruleset_name
   done
+}
+
+#===========================
+# Function to verify the last RuleSet deployed in RES
+# Checks if last RuleSet has been created
+# after the date of the RuleApp deployment
+# Globals:
+# - RES_URL
+# - ruleapp_name
+# - ruleapp_version
+# - deployment_timestamp
+# Arguments:
+# - $1 ruleSet name
+# Outputs:
+# - writes ruleSet validation status
+
+function verifyRuleSet {
+  ruleset_name=$1
+  rulesets_result=$(curlRequest GET ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}/${ruleset_name}) || error "ERROR $?" "${rulesets_result}" $?
+
+  # Get the last ruleSet version
+  read ruleset_version creation_date < <(echo "${rulesets_result}" | jq -r 'sort_by(.version | split(".") | map(tonumber)) | .[-1] | .version + " " + .creationDate')
+  echo -n "    ▪ Verify last RuleSet ${ruleapp_name}/${ruleapp_version}/${ruleset_name}/${ruleset_version} deployed in RES:  "
+
+  creation_timestamp=$(date -d ${creation_date} +%s)
+  [[ $creation_timestamp -ge $deployment_timestamp ]] && echo_success "SUCCEEDED" || error "ERROR" "The last deployed ruleSet version has been created before the deployment" 1
 }
 
 #===========================
@@ -391,6 +441,7 @@ function verifyRuleApp {
 function testRuleSet {
   echo "🧪   Running RuleSet test ..."
   echo -n "    ▪ Test RuleSet $1 in DSR:  "
+  startSpin
   curl_result=$(curlRequest POST ${DSR_URL}/DecisionService/rest/$1 $2) || error "ERROR $?" "${curl_result}" $?
 
   error_message=$(echo ${curl_result} | jq -r '.message')
@@ -415,7 +466,8 @@ function deleteRuleApp {
   ruleapp_name=$1
   ruleapp_version=$2
   echo -n "    ▪ Delete RuleApp ${ruleapp_name}/${ruleapp_version} in RES:  "
-  ruleapps_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapps_result}" $?
+  startSpin
+  ruleapp_result=$(curlRequest DELETE ${RES_URL}/res/api/v1/ruleapps/${ruleapp_name}/${ruleapp_version}) || error "ERROR $?" "${ruleapp_result}" $?
 
   echo_success "DONE"
 }
@@ -455,7 +507,7 @@ function main {
 
   filename="Loan_Validation_Service.zip"
   # Download Loan_Validation_Service.zip if it does not exist or is not a valid zip file
-  unzip -q -t ${filename} > /dev/null 2>&1
+  unzip -q -t ${filename} &> /dev/null
   if [[ $? != 0 ]]; then
     echo -n "$(date) - ### Loan_Validation_Service.zip does not exist locally. Downloading...  "
     url="https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Loan%20Validation%20Service.zip?raw=1"
@@ -471,7 +523,7 @@ function main {
   echo "${deploymentsList}" | jq -r '.[] | .id + " " + .ruleAppName + " " + .ruleAppVersion' | while read deploymentId ruleAppName ruleAppVersion; do
     deployRuleApp ${deploymentId} ${ruleAppName} ${ruleAppVersion}
     verifyRuleApp ${ruleAppName} ${ruleAppVersion}
-  done
+  done || error "" "" $?
 
   testRuleSet production_deployment/1.0/loan_validation_production/1.0 test-ruleset/loan_validation_test.json test-ruleset/loan_validation_test_response.json
 

@@ -4,13 +4,6 @@ IBM Operational Decision Manager on Docker
 [![Build and test](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml/badge.svg?branch=vnext-release)](https://github.com/DecisionsDev/odm-ondocker/actions/workflows/build-and-test.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/lgrateau/odm-ondocker)
 
 [![GitHub release](https://img.shields.io/github/release/DecisionsDev/odm-ondocker.svg)](https://github.com/DecisionsDev/odm-ondocker/releases) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-<p align="center">
-  <a href="https://join.slack.com/t/odmdev/shared_invite/enQtMjU0NzIwMjM1MTg0LTQyYTMzNGQ4NzJkMDYxMDU5MDRmYTM4MjcxN2RiMzNmZWZmY2UzYzRhMjk0N2FmZjU2YzJlMTRmN2FhZDY4NmQ">
-        Follow us on slack
-        <br>
-        <img src="https://a.slack-edge.com/436da/marketing/img/meta/favicon-32.png">
-  </a>
-</p>
 
 
 #  Deploy IBM Operational Decision Manager  on Docker from Dev to Production
@@ -18,7 +11,7 @@ IBM Operational Decision Manager on Docker
 This repository centralizes the material to deploy IBM Operational Decision Manager in Docker.
 It includes Docker files and Docker compose descriptors. Docker files are used to build images of ODM runtimes. And docker-compose descriptor can be used to group this build, push to your repository and run your topology from Development to production.
 
-[IBM ODM](https://www.ibm.com/docs/en/odm/8.11.0) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
+[IBM ODM](https://www.ibm.com/docs/en/odm/8.11.1) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
 
 
 ![Flow](docs/images/Architecture.png "Architecture")
