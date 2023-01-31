@@ -19,7 +19,10 @@ The script performs the following scenario:
 ## Prerequisites
 
 - Start ODM components.
-  You can use ODM docker images, ODM on K8S chart or and ODM instance deployed with the CP4BA operator.
+  You can use ODM docker images or ODM instance deployed using the ODM on K8S chart.
+  > **Warning**  
+  > ODM instance installed using CP4BA operator are not supported.
+
 - Take a note of the endpoints of your components:
   - Decision Center (DC)
   - Decision Server Console (RES)
