@@ -1,5 +1,9 @@
 # validate-odm.sh
 
+[![Download latest version of the zip](https://img.shields.io/badge/-Download%20zip-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggZD0iTTUuOTc1IDIwLjA1cS0uOSAwLTEuNTI1LS42MjUtLjYyNS0uNjI1LS42MjUtMS41MjV2LTMuMzI1aDIuMTVWMTcuOUgxOHYtMy4zMjVoMi4xNVYxNy45cTAgLjktLjYyNSAxLjUyNS0uNjI1LjYyNS0xLjUyNS42MjVaTTEyIDE1Ljc3NSA2LjkyNSAxMC43bDEuNS0xLjUgMi41IDIuNXYtOGgyLjE1djhsMi41LTIuNSAxLjUgMS41WiIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPgo=)](https://github.com/DecisionsDev/odm-ondocker/releases/latest/download/validate-odm-script.zip)
+<!-- WARNING: Do not modify the link -->
+<!-- The url is automatically updated by the publish.yml workflow -->
+
 The script [validate-odm.sh](./validate-odm.sh) can be used to validate the installation of ODM.
 
 ![Script Logs](images/script-logs.gif)
@@ -15,11 +19,15 @@ The script performs the following scenario:
 ## Prerequisites
 
 - Start ODM components.
-  You can use ODM docker images, ODM on K8S chart or and ODM instance deployed with the CP4BA operator.
+  You can use ODM docker images or ODM instance deployed using the ODM on K8S chart.
+  > **Warning**  
+  > ODM instance installed using CP4BA operator are not supported.
+
 - Take a note of the endpoints of your components:
   - Decision Center (DC)
   - Decision Server Console (RES)
   - Decision Server Runtime (DSR) components
+- Download and extract the zip file containing the script and resources.
 - Set the required environment variables manually or use a `.env` file.
   Refer to [Environment Variables](#Environment-Variables) for more information.
 
