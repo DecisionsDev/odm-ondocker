@@ -1,0 +1,33 @@
+name: Create branch from release
+on:
+  release:
+    types: [published]
+
+jobs:
+  create-branch:
+    name: Create branch and update Download link in README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Get branch name to create
+        run: |
+          tag_name="${{ github.event.release.tag_name }}"
+          echo "branch_name=${tag_name##*v}" >> $GITHUB_ENV
+      - name: Create branch
+        run: |
+          git checkout -b ${{ env.branch_name }}
+      - name: Udpate Download link in README
+        run: |
+          search="releases/latest/download"
+          replace="releases/download/${{ github.event.release.tag_name }}"
+          sed -i "s|${search}|${replace}|" README.md
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Commit
+        run: |
+          git add README.md
+          git commit -m "Update Download link with tagged asset url"
+          git push origin refs/heads/${{ env.branch_name }}
