@@ -1,0 +1,52 @@
+{
+	"report": {
+		"borrower": {
+			"firstName": "string",
+			"lastName": "string",
+			"birth": "2008-09-29T01:49:45.000+0000",
+			"SSN": {
+				"areaNumber": "string",
+				"groupCode": "string",
+				"serialNumber": "string"
+			},
+			"yearlyIncome": 3,
+			"zipCode": "string",
+			"creditScore": 3,
+			"spouse": {
+				"birth": "2022-12-08T14:13:09.850+0000",
+				"SSN": {
+					"areaNumber": "",
+					"groupCode": "",
+					"serialNumber": ""
+				},
+				"yearlyIncome": 0,
+				"creditScore": 0,
+				"latestBankruptcy": {
+					"chapter": 0
+				}
+			},
+			"latestBankruptcy": {
+				"date": "2014-09-18T23:18:33.000+0000",
+				"chapter": 3,
+				"reason": "string"
+			}
+		},
+		"loan": {
+			"numberOfMonthlyPayments": 3,
+			"startDate": "2006-08-19T17:27:14.000+0000",
+			"amount": 3,
+			"loanToValue": 1.051732E7
+		},
+		"validData": true,
+		"insuranceRequired": true,
+		"insuranceRate": 0.02,
+		"approved": true,
+		"messages": [],
+		"yearlyInterestRate": 0.0,
+		"monthlyRepayment": 0.0,
+		"insurance": "2%",
+		"message": "",
+		"yearlyRepayment": 0.0
+	},
+	"__DecisionID__": "string"
+}
