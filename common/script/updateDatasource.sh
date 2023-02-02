@@ -118,7 +118,26 @@ then
                 *db2* )
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
-		sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+                if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
+		then
+			echo "configure DB2 SSL with DB_SSL_TRUSTSTORE_PASSWORD"
+			sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+		else
+			echo "configure DB2 SSL with DEFAULT_TRUSTSTORE_PASSWORD"
+			DEFAULT_TRUSTSTORE_PASSWORD=changeme
+			if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
+			then
+				DEFAULT_TRUSTSTORE_PASSWORD=changeit
+				if [ -n "$ROOTCA_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/sslTruststorePassword ]
+				then
+					# Set env var if secrets are passed using mounted volumes
+					[ -f /config/secrets/dba-env-context/sslTruststorePassword ] && export ROOTCA_TRUSTSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/sslTruststorePassword)
+					echo "change default truststore password with provided Root CA truststore password"
+					DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_TRUSTSTORE_PASSWORD
+				fi
+			fi
+			sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/security/truststore.jks" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+		fi
 		;;
 	esac
 fi
