@@ -1,6 +1,12 @@
 #!/bin/bash
 # Using -Xshareclasses:none jvm option in keytool commands to avoid jvm errors in logs on z/os
 
+if [ -s "/config/auth/tlsSecurity.xml" ]
+then
+  echo "SSL configuration with provided /config/auth/tlsSecurity.xml"
+  cp /config/auth/tlsSecurity.xml /config/tlsSecurity.xml
+fi
+
 DEFAULT_KEYSTORE_PASSWORD=changeme
 DEFAULT_TRUSTSTORE_PASSWORD=changeme
 
