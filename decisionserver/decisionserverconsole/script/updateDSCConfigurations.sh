@@ -17,6 +17,12 @@ fi
 
 if [ -n "$OPENID_CONFIG" ]
 then
+  if [ -n "$DISABLE_LOGIN_PANEL" ]
+  then
+    echo "disable RES Console Basic Auth Login Panel"
+    echo "<%response.sendRedirect(\"/res\");%>" > /config/apps/res.war/login.jsp
+  fi
+
   if [ -s "/config/auth/openIdParameters.properties" ]
   then
     echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
