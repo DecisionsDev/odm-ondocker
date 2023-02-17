@@ -118,7 +118,7 @@ then
                 *db2* )
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
-		sed -i 's|sslConnection="false"|sslConnection="true" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+		sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
 		;;
 	esac
 fi
