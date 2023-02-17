@@ -39,11 +39,15 @@ chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
+ARG CP4BAVERSION
+ARG ODMVERSION
 ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV CP4BAVERSION $CP4BAVERSION
+ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -53,7 +57,8 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/securit
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 RUN chmod -R 777 /config
-RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh
+RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
+
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR

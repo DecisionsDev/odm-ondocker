@@ -44,11 +44,15 @@ chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
+ARG CP4BAVERSION
+ARG ODMVERSION
 ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV CP4BAVERSION $CP4BAVERSION
+ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -62,7 +66,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config
-RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -90,7 +94,7 @@ ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
-
+COPY --from=oidc-liberty-builder /opt/ibm/version.txt /opt/ibm/version.txt
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 
