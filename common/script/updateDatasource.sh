@@ -135,7 +135,7 @@ then
                                 echo "Import DB2 certificate"
                                 keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias BD2_FOR_ODM -file /config/customdatasource/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
                         fi
-			keytool -importkeystore -srckeystore truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+			keytool -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 		fi
 		;;
 	esac
