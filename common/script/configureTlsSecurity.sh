@@ -131,6 +131,12 @@ if [ -d $CERTDIR ]; then
     echo "done"
 fi
 
+if [ -n "$ENABLED_CIPHERS" ]
+then
+	echo "configure enabled ciphers with $ENABLED_CIPHERS"
+	sed -i 's|ENABLED_CIPHERS|'$ENABLED_CIPHERS'|g' /config/tlsSecurity.xml
+fi
+
 if [ -f "/config/resources/ibm-public.crt" ]
 then
         echo "Importing IBM Public certificate"
