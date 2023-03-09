@@ -46,9 +46,12 @@ Optional script parameters:
 The script configuration file requires the following environment variables to be defined manually or in a `.env` file:
 
 * **ODM endpoints configuration**
-  - `DC_URL`  : URL of the Decision Center instance to test.
-  - `RES_URL` : URL of the Decision Server Console (RES) instance to test.
-  - `DSR_URL` : URL of the Decision Server Runtime instance to test.
+  - `DC_URL`  : Endpoint of the Decision Center instance to test.
+  - `RES_URL` : Endpoint of the Decision Server Console (RES) instance to test.
+  - `DSR_URL` : Endpoint of the Decision Server Runtime instance to test.
+
+  > **Note**  
+  > Endpoint corresponds to the service URL or the route URL without the context route of the application.
 
 * **Authentication configuration**
   - To use *basic* authentication mode, define:
@@ -90,6 +93,9 @@ The script configuration file requires the following environment variables to be
       ▪ Delete RuleApp production_deployment/1.0 in RES:  DONE
   🎉  ODM has been successfully validated!
   ```
+
+  > **Note**  
+  > To be able to see the emojis, a font like `fonts-noto-color-emoji` should be installed in your terminal.
 
 * To validate an ODM instance using basic authentication and setting environment variables manually:
   ```
