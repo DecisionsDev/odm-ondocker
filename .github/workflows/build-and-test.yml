@@ -60,13 +60,13 @@ jobs:
           # Required mail subject:
           subject: Github Actions job result for DecisionsDev/odm-ondocker
           # Required recipients' addresses:
-          to: pylochou@fr.ibm.com,decisionscncf@ibm.com
+          to: decisioncncf@ibm.com
           # Required sender full name (address can be skipped):
           from: Luke Skywalker # <user@example.com>
           # Optional plain body:
           body: Build job of ${{github.repository}} completed with ${{ job.status }}
           # Optional recipient of the email response:
-          reply_to: luke@example.com
+          reply_to: decisioncncf@ibm.com
           # Optional unsigned/invalid certificates allowance:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
