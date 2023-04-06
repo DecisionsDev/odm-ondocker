@@ -30,16 +30,14 @@ LABEL name="DBServer"
 LABEL io.k8s.display-name="DBServer"
 LABEL description="The Database server stores decision service artifacts."
 
-
 LABEL summary="Database server to store decisions artifacts."
 LABEL io.k8s.description="Database server to store decisions artifacts."
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
-LABEL ProductVersion=${ODMVERSION}
-LABEL ProductID="IBM Operational Decision Manager for production"
+LABEL product-version=${ODMVERSION}
+LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
-
 
 COPY --from=builder --chown=999:999 /upload /upload
 
