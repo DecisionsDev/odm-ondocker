@@ -13,7 +13,7 @@ COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${O
 COPY ./executionserver/ /executionserver/
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
-
+COPY $ODMDOCKERDIR/standalone/config/resources /config/resources
 # Loan Server Sample presence flag
 RUN set -ex; \
     if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
@@ -30,7 +30,7 @@ RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
 # Install the driver for H2 and for PostgreSQL
-RUN mkdir -p /tmp && cd /tmp && curl -LRk https://h2database.com/h2-2019-03-13.zip -o h2.zip && unzip h2.zip && mv h2/bin/*.jar /config/resources/ && \
+RUN mkdir -p /tmp && cd /tmp && \
     curl -LORk https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
