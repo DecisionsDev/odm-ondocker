@@ -22,7 +22,6 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
-RUN apk add --no-cache zip bash ca-certificates wget
 
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 RUN chmod -R a+x $SCRIPT && \

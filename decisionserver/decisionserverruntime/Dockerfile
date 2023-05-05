@@ -16,8 +16,6 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/licenses /licenses
 COPY $ODMDOCKERDIR/resources/translation /translation-work
-# Install missing require package in the alpine builder image
-RUN apk add --no-cache bash ca-certificates wget
 # Build welcome page
 RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
