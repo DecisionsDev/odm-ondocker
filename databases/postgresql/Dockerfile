@@ -36,8 +36,8 @@ LABEL io.k8s.description="Database server to store decisions artifacts."
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
-LABEL ProductVersion=${ODMVERSION}
-LABEL ProductID="IBM Operational Decision Manager for production"
+LABEL product-version=${ODMVERSION}
+LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 
