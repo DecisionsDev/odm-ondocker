@@ -84,6 +84,8 @@ LABEL io.k8s.description="Decision Center is a web application to manage and aut
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
+LABEL product-version=${ODMVERSION}
+LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 ENV APP_NAME DecisionCenter
