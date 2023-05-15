@@ -66,8 +66,6 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	    - Extract its contents to a new directory. The tutorial later refers to this directory as `<InstallDir>/miniloanservice-projects`. The size of the download file is about 13 KB.
 	    - For Decision Server console and Decision Center Business console, use the URLs and the users/passwords provided in the table below on this page.  
 
-	- [Getting started with decision modeling in the Business console](https://www.ibm.com/docs/en/odm/8.11.1?topic=tutorials-deprecated-getting-started-decision-modeling). For Decision Center Business console, use the URL and the user/password provided in the table below on this page.
-
 
 # Overview
 
