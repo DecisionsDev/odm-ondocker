@@ -12,7 +12,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.12.0?topic=manager-introducing-operational-decision)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -32,7 +32,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-8111x-rule-designer)
 
-	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.11.1.0/p2
+	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2020-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.12.0.0/p2
 
 
 -	**Sample projects**:
@@ -62,7 +62,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.12.0?topic=manager-introducing-operational-decision) site.
 
 
   # Usage
@@ -78,13 +78,13 @@ You must accept the license before you launch the image. The license is availabl
 To install the product with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory. Use the following docker command to run the image:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.11
+docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.12
 ```
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
  ```console
-docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:8.11
+docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:8.12
 ```
 
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
