@@ -1,6 +1,6 @@
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM Operational Decision Manager for Developers V8.11.1
+IBM Operational Decision Manager for Developers V8.12
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -21,9 +21,7 @@ shipped with, the Program as Licensee installed it.
 The following are Separately Licensed Code:
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-NON-IBM-LICENSE INFORMATION FOR EXCLUDED COMPONENTS 
-
-IBM Operational Decision Manager 8.11.1
+NON-IBM-LICENSE INFORMATION FOR <ODM on Prem>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -31,40 +29,28 @@ TABLE OF CONTENTS
 
 THIS NON-IBM-LICENSE FILE CONSISTS OF THE FOLLOWING SECTIONS:
 
-CC-BY-2.5  
-CC-BY-3.0
+JSON
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-CREATIVE COMMONS ATTRIBUTION 2.5 GENERIC
+JSON
 
-The Program includes some or all of the following works licensed under
-the Creative Commons.
-The url to the license is https://creativecommons.org/licenses/by/2.5/legalcode
+The Program includes some or all of the following that IBM obtained
+under a JSON license:
 
-THREADSAFE.JAVA [MongoDB-driver-core] (No Copyright)
-(https://repo1.maven.org/maven2/org/mongodb/mongodb-driver-core/3.12.7/mongodb-driver-core-3.12.7-sources.jar),
-GUARDEDBY.JAVA [JSR305] (Copyright (c) 2005 Brian Goetz)
-(https://jar-download.com/artifacts/com.google.code.findbugs/jsr305/2.0.1/source-code),
-JCIP-ANNOTATIONS (Copyright (c) 2005 Brian Goetz and Tim Peierls.)
-(https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5-sources.jar),
-FAMFAMFAM-SILK-ICONS [groovy-all-minimal] (No Copyright)
-(http://www.famfamfam.com/lab/icons/silk/)
+org.json:json 20180813 | Copyright (c) 2002 JSON.org
 
-END OF CREATIVE COMMONS ATTRIBUTION 2.5 GENERIC NON-IBM-LICENSE INFORMATION
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Copyright (c) 2002 JSON.org
 
-CREATIVE COMMONS ATTRIBUTION 3.0
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The Program includes some or all of the following works licensed under
-the Creative Commons.
-The url to the license is https://creativecommons.org/licenses/by/3.0/legalcode
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-APPLICATION.JS [Bootstrap] (Copyright 2011-2021 The Bootstrap Authors
-Copyright 2011-2021 Twitter, Inc.)
-(https://github.com/twbs/bootstrap/tree/v4.6.1)
+The Software shall be used for Good, not Evil.
 
-END OF CREATIVE COMMONS ATTRIBUTION 3.0 NON-IBM-LICENSE INFORMATION
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+END OF JSON NON-IBM-LICENSE INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 END OF NON-IBM-LICENSE INFORMATION
@@ -73,8 +59,6 @@ END OF NON-IBM-LICENSE INFORMATION
 END OF NON-IBM-LICENSE INFORMATION FILE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-
-L/N: L-ASAY-CE4DNS
-D/N: L-ASAY-CE4DNS
-P/N: L-ASAY-CE4DNS
+L/N: L-AMWV-QRBWQJ
+D/N: L-AMWV-QRBWQJ
+P/N: L-AMWV-QRBWQJ

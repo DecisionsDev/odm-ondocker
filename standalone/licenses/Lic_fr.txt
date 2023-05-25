@@ -1,541 +1,541 @@
 INFORMATIONS SUR LA LICENCE
 
-Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation de Logiciels IBM non garantis (i125-5589-06) s'appliquent.
+Les Logiciels spÃ©cifiÃ©s ci-dessous sont concÃ©dÃ©s sous licence conformÃ©ment aux dispositions des Informations sur la Licence suivantes qui s'ajoutent Ã  celles des dispositions de la licence du Logiciel prÃ©cÃ©demment acceptÃ©e par le Client et IBM. Si le Client n'a pas prÃ©cÃ©demment acceptÃ© les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation de Logiciels IBM non garantis (i125-5589-06) s'appliquent.
 
-Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
+Nom du Logiciel (RÃ©fÃ©rence du Logiciel) : 
+IBM Operational Decision Manager for Developers V8.12 (5725-B69)
 
-Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
+Les dispositions suivantes s'appliquent Ã  l'utilisation du Logiciel par le DÃ©tenteur de la Licence.
 
 Image d'Installation Multi-Produit
 
-Le Logiciel est fourni dans le cadre d'une image d'installation multi-produit. Le Détenteur de la Licence est autorisé à installer et à utiliser uniquement le Logiciel (ainsi que ses Logiciels Groupés ou Auxiliaires, le cas échéant) pour lequel il a obtenu une Autorisation d'Utilisation valide ; il n'est pas autorisé à installer ni  à utiliser les autres logiciels inclus dans l'image à moins d'avoir fait l'acquisition des Autorisations d'Utilisation appropriées.
+Le Logiciel est fourni dans le cadre d'une image d'installation multi-produit. Le DÃ©tenteur de la Licence est autorisÃ© Ã  installer et Ã  utiliser uniquement le Logiciel (ainsi que ses Logiciels GroupÃ©s ou Auxiliaires, le cas Ã©chÃ©ant) pour lequel il a obtenu une Autorisation d'Utilisation valide ; il n'est pas autorisÃ© Ã  installer ni  Ã  utiliser les autres logiciels inclus dans l'image Ã  moins d'avoir fait l'acquisition des Autorisations d'Utilisation appropriÃ©es.
 
 Logiciels Auxiliaires
 
-Le Détenteur de la Licence n'est autorisé à installer et à utiliser les Logiciels Auxiliaires indiqués ci-dessous que dans le cadre de son utilisation du Logiciel Principal au titre du présent Contrat. L'expression "dans le cadre de son utilisation" inclut uniquement les tâches liées directement ou nécessaires à l'utilisation autorisée du Logiciel Principal ou d'un Logiciel Auxiliaire. Les Logiciels Auxiliaires ne peuvent être utilisés à d'autres fins. Un Logiciel Auxiliaire peut inclure des dispositions de licence, et le cas échéant, celles-ci s'appliquent à l'utilisation de ce Logiciel Auxiliaire par le Détenteur de la Licence. En cas de contradiction entre les dispositions, celles du présent Document d'Informations sur la Licence prévalent sur celles du Logiciel Auxiliaire. Le Détenteur de la Licence doit se procurer un nombre suffisant d'Autorisations d'Utilisation du Logiciel, dans son ensemble, pour couvrir l'installation et l'utilisation par le Détenteur de la Licence de tous les Logiciels Auxiliaires, sauf si des Autorisations d'Utilisation distinctes sont fournies dans le présent Document d'Informations sur la licence. Par exemple, si le présent Logiciel a été concédé sous licence par C½urs de Processeur Virtuels (VPC) et si le Détenteur de la Licence doit installer le Logiciel Principal ou un Logiciel Auxiliaire sur une machine avec 10 VPC et un autre Logiciel Auxiliaire sur une deuxième machine avec 10 VPC, le Détenteur de la Licence devra se procurer 20 Autorisations d'Utilisation de type VPC pour le Logiciel.
+Le DÃ©tenteur de la Licence n'est autorisÃ© Ã  installer et Ã  utiliser les Logiciels Auxiliaires indiquÃ©s ci-dessous que dans le cadre de son utilisation du Logiciel Principal au titre du prÃ©sent Contrat. L'expression "dans le cadre de son utilisation" inclut uniquement les tÃ¢ches liÃ©es directement ou nÃ©cessaires Ã  l'utilisation autorisÃ©e du Logiciel Principal ou d'un Logiciel Auxiliaire. Les Logiciels Auxiliaires ne peuvent Ãªtre utilisÃ©s Ã  d'autres fins. Un Logiciel Auxiliaire peut inclure des dispositions de licence, et le cas Ã©chÃ©ant, celles-ci s'appliquent Ã  l'utilisation de ce Logiciel Auxiliaire par le DÃ©tenteur de la Licence. En cas de contradiction entre les dispositions, celles du prÃ©sent Document d'Informations sur la Licence prÃ©valent sur celles du Logiciel Auxiliaire. Le DÃ©tenteur de la Licence doit se procurer un nombre suffisant d'Autorisations d'Utilisation du Logiciel, dans son ensemble, pour couvrir l'installation et l'utilisation par le DÃ©tenteur de la Licence de tous les Logiciels Auxiliaires, sauf si des Autorisations d'Utilisation distinctes sont fournies dans le prÃ©sent Document d'Informations sur la licence. Par exemple, si le prÃ©sent Logiciel a Ã©tÃ© concÃ©dÃ© sous licence par CÅ“urs de Processeur Virtuels (VPC) et si le DÃ©tenteur de la Licence doit installer le Logiciel Principal ou un Logiciel Auxiliaire sur une machine avec 10 VPC et un autre Logiciel Auxiliaire sur une deuxiÃ¨me machine avec 10 VPC, le DÃ©tenteur de la Licence devra se procurer 20 Autorisations d'Utilisation de type VPC pour le Logiciel.
 
 Logiciels Auxiliaires :
-IBM WebSphere Liberty 22
+IBM WebSphere Liberty
 
-Restriction relative aux développeurs
+Restriction relative aux dÃ©veloppeurs
 
-Si le Logiciel porte une mention indiquant qu'il est destiné aux "Développeurs", le Détenteur de la Licence n'est autorisé à utiliser le Logiciel qu'à des fins de développement et de test d'unité en interne sur une machine de développeur spécifique. Une machine de développeur désigne un environnement de bureau physique ou virtuel exécutant un système d'exploitation principal ainsi que le Logiciel, tous deux étant accessibles et utilisés par un seul développeur désigné. 
+Si le Logiciel porte une mention indiquant qu'il est destinÃ© aux "DÃ©veloppeurs", le DÃ©tenteur de la Licence n'est autorisÃ© Ã  utiliser le Logiciel qu'Ã  des fins de dÃ©veloppement et de test d'unitÃ© en interne sur une machine de dÃ©veloppeur spÃ©cifique. Une machine de dÃ©veloppeur dÃ©signe un environnement de bureau physique ou virtuel exÃ©cutant un systÃ¨me d'exploitation principal ainsi que le Logiciel, tous deux Ã©tant accessibles et utilisÃ©s par un seul dÃ©veloppeur dÃ©signÃ©. 
 
 Code Tiers Modifiable
 
-Si, dans le fichier NOTICES, IBM identifie un code tiers comme étant un « Code Tiers Modifiable », IBM autorise le Détenteur de la Licence à 1) modifier le Code Tiers Modifiable et 2) recourir à l'ingénierie inverse sur les modules du Logiciel qui interagissent directement avec le Code Tiers Modifiable, sous réserve que le Détenteur de la Licence ait recours à cette méthode à des fins de débogage des modifications qu'il a apportées à ce code tiers. Les obligations d'IBM en matière de service et de support, le cas échéant, s'appliquent uniquement au Logiciel non modifié.
+Si, dans le fichier NOTICES, IBM identifie un code tiers comme Ã©tant un Â« Code Tiers Modifiable Â», IBM autorise le DÃ©tenteur de la Licence Ã  1) modifier le Code Tiers Modifiable et 2) recourir Ã  l'ingÃ©nierie inverse sur les modules du Logiciel qui interagissent directement avec le Code Tiers Modifiable, sous rÃ©serve que le DÃ©tenteur de la Licence ait recours Ã  cette mÃ©thode Ã  des fins de dÃ©bogage des modifications qu'il a apportÃ©es Ã  ce code tiers. Les obligations d'IBM en matiÃ¨re de service et de support, le cas Ã©chÃ©ant, s'appliquent uniquement au Logiciel non modifiÃ©.
 
 Code sous Licence Distincte
 
-Chacun des composants répertoriés dans le fichier NON_IBM_LICENSE doit être considéré comme du "Code sous Licence Distincte" concédé sous licence au Détenteur de la Licence dans le cadre des dispositions du/des contrat(s) de licence tiers applicable(s) indiqué(s) dans le(s) fichier(s) NON_IBM_LICENSE joint(s) au Logiciel et non de celles du présent Contrat. Les mises à jour ou correctifs ultérieurs du Logiciel pourront contenir du Code sous Licence Distincte supplémentaire. Ce Code sous Licence Distincte supplémentaire et les licences correspondantes seront répertoriés dans le fichier NON_IBM_LICENSE applicable joint à la mise à jour ou au correctif du Logiciel. 
+Chacun des composants rÃ©pertoriÃ©s dans le fichier NON_IBM_LICENSE doit Ãªtre considÃ©rÃ© comme du "Code sous Licence Distincte" concÃ©dÃ© sous licence au DÃ©tenteur de la Licence dans le cadre des dispositions du/des contrat(s) de licence tiers applicable(s) indiquÃ©(s) dans le(s) fichier(s) NON_IBM_LICENSE joint(s) au Logiciel et non de celles du prÃ©sent Contrat. Les mises Ã  jour ou correctifs ultÃ©rieurs du Logiciel pourront contenir du Code sous Licence Distincte supplÃ©mentaire. Ce Code sous Licence Distincte supplÃ©mentaire et les licences correspondantes seront rÃ©pertoriÃ©s dans le fichier NON_IBM_LICENSE applicable joint Ã  la mise Ã  jour ou au correctif du Logiciel. 
 
-Remarque : Sauf disposition contraire énoncée dans le Contrat de licence tiers, dans le Contrat ou dans tout autre contrat conclu entre le Détenteur de la Licence et IBM en ce qui concerne le Code sous Licence Distincte :
-(a) IBM le fournit au Détenteur de la Licence SANS GARANTIE D'AUCUNE SORTE ET NE FOURNIT AUCUNE GARANTIE OU CONDITION EXPLICITE OU IMPLICITE, Y COMPRIS, ET DE FAÇON NON LIMITATIVE, EN MATIÈRE DE DROIT DE PROPRIÉTÉ, AUCUNE GARANTIE DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, ET AUCUNE GARANTIE OU CONDITION IMPLICITE DE QUALITÉ MARCHANDE OU D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ ;
-(b) IBM ne pourra être tenue responsable pour toute demande d'indemnisation ou pour tout dommage direct et indirect, accessoire, particulier, à titre d'exemple, à caractère répressif (notamment, et de façon non limitative, perte de données, de bénéfices, de revenus, d'économies escomptées, d'activité commerciale) ou tout autre dommage.
+Remarque : Sauf disposition contraire Ã©noncÃ©e dans le Contrat de licence tiers, dans le Contrat ou dans tout autre contrat conclu entre le DÃ©tenteur de la Licence et IBM en ce qui concerne le Code sous Licence Distincte :
+(a) IBM le fournit au DÃ©tenteur de la Licence SANS GARANTIE D'AUCUNE SORTE ET NE FOURNIT AUCUNE GARANTIE OU CONDITION EXPLICITE OU IMPLICITE, Y COMPRIS, ET DE FAÃ‡ON NON LIMITATIVE, EN MATIÃˆRE DE DROIT DE PROPRIÃ‰TÃ‰, AUCUNE GARANTIE DE NON-CONTREFAÃ‡ON OU DE NON-INTERFÃ‰RENCE, ET AUCUNE GARANTIE OU CONDITION IMPLICITE DE QUALITÃ‰ MARCHANDE OU D'APTITUDE Ã€ L'EXÃ‰CUTION D'UN TRAVAIL DONNÃ‰ ;
+(b) IBM ne pourra Ãªtre tenue responsable pour toute demande d'indemnisation ou pour tout dommage direct et indirect, accessoire, particulier, Ã  titre d'exemple, Ã  caractÃ¨re rÃ©pressif (notamment, et de faÃ§on non limitative, perte de donnÃ©es, de bÃ©nÃ©fices, de revenus, d'Ã©conomies escomptÃ©es, d'activitÃ© commerciale) ou tout autre dommage.
 
-Données Personnelles
+DonnÃ©es Personnelles
 
-Le Détenteur de la Licence reconnaît et accepte qu'IBM puisse utiliser des cookies et des technologies de suivi pour collecter des informations personnelles, telles que des données statistiques concernant l'utilisation du produit et des informations dans le but d'aider à améliorer l'expérience utilisateur et/ou d'adapter les interactions aux utilisateurs conformément à la Déclaration de confidentialité IBM disponible à l'adresse suivante http://www.ibm.com/privacy/.
+Le DÃ©tenteur de la Licence reconnaÃ®t et accepte qu'IBM puisse utiliser des cookies et des technologies de suivi pour collecter des informations personnelles, telles que des donnÃ©es statistiques concernant l'utilisation du produit et des informations dans le but d'aider Ã  amÃ©liorer l'expÃ©rience utilisateur et/ou d'adapter les interactions aux utilisateurs conformÃ©ment Ã  la DÃ©claration de confidentialitÃ© IBM disponible Ã  l'adresse suivante http://www.ibm.com/privacy/.
 
-Composants Source, Échantillons et Exemples
+Composants Source, Ã‰chantillons et Exemples
 
-Le Logiciel contient des composants sous forme de code source ("Composants Source") ou d'autres éléments appelés Échantillons et Exemples, voire les deux. Le Détenteur de la Licence est autorisé à copier et à modifier les Composants Source ainsi que les Échantillons et Exemples à des fins internes dans les limites des droits de licence concédés au titre du présent Contrat ; et ce, à condition que le Détenteur de la Licence ne modifie ni ne supprime les mentions de droits d'auteur ou les Fichiers Notices contenus dans les Composants Source ou les Échantillons et Exemples. IBM fournit les Composants Source ainsi que les Échantillons et Exemples sans obligation de support. Ces Composants Source, Échantillons et Exemples sont fournis "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÈRE DE VALEUR MARCHANDE ET D'APTITUDE À UNE UTILISATION PARTICULIÈRE.
+Le Logiciel contient des composants sous forme de code source ("Composants Source") ou d'autres Ã©lÃ©ments appelÃ©s Ã‰chantillons et Exemples, voire les deux. Le DÃ©tenteur de la Licence est autorisÃ© Ã  copier et Ã  modifier les Composants Source ainsi que les Ã‰chantillons et Exemples Ã  des fins internes dans les limites des droits de licence concÃ©dÃ©s au titre du prÃ©sent Contrat ; et ce, Ã  condition que le DÃ©tenteur de la Licence ne modifie ni ne supprime les mentions de droits d'auteur ou les Fichiers Notices contenus dans les Composants Source ou les Ã‰chantillons et Exemples. IBM fournit les Composants Source ainsi que les Ã‰chantillons et Exemples sans obligation de support. Ces Composants Source, Ã‰chantillons et Exemples sont fournis "EN L'Ã‰TAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÃ‡ON OU DE NON-INTERFÃ‰RENCE, AINSI QUE LES GARANTIES IMPLICITES EN MATIÃˆRE DE VALEUR MARCHANDE ET D'APTITUDE Ã€ UNE UTILISATION PARTICULIÃˆRE.
 
-Données et services tiers
+DonnÃ©es et services tiers
 
-Le Logiciel donne accès à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu Tiers"). L'accès au Contenu Tiers est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES CONDITIONS ET GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu Tiers ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
+Le Logiciel donne accÃ¨s Ã  des services de donnÃ©es, des bases de donnÃ©es, des services Web, des logiciels ou d'autres contenus dÃ©ployÃ©s par des tiers ("Contenu Tiers"). L'accÃ¨s au Contenu Tiers est fourni "EN L'Ã‰TAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÃ‡ON OU DE NON-INTERFÃ‰RENCE, AINSI QUE LES CONDITIONS ET GARANTIES IMPLICITES DE QUALITÃ‰ MARCHANDE ET D'APTITUDE Ã€ L'EXÃ‰CUTION D'UN TRAVAIL DONNÃ‰. L'accÃ¨s peut Ãªtre rÃ©siliÃ© par lesdits tiers, Ã  tout moment et Ã  leur seule discrÃ©tion. L'accÃ¨s Ã  ce Contenu Tiers ou son utilisation peut Ãªtre autorisÃ© dans le cadre de contrats distincts entre le DÃ©tenteur de la Licence et lesdits tiers. Dans l'Ã©ventualitÃ© oÃ¹ de tels contrats distincts existeraient, IBM ne sera en aucun cas liÃ©e auxdits contrats et le DÃ©tenteur de la Licence s'engage, de maniÃ¨re explicite au titre de la prÃ©sente licence, Ã  respecter les clauses et dispositions des contrats distincts.
 
 
-L/N: L-ASAY-CE4DNS
-D/N: L-ASAY-CE4DNS
-P/N: L-ASAY-CE4DNS
+L/N: L-AMWV-QRBWQJ
+D/N: L-AMWV-QRBWQJ
+P/N: L-AMWV-QRBWQJ
 
 Conditions Internationales d'Utilisation de Logiciels IBM non garantis
 
-Chapitre 1 - Dispositions générales
+Chapitre 1 - Dispositions gÃ©nÃ©rales
 
-EN TELECHARGEANT, EN INSTALLANT, EN COPIANT LES LOGICIELS, EN Y ACCEDANT EN CLIQUANT SUR LE BOUTON « ACCEPTER » OU EN LES UTILISANT, LE DÉTENTEUR DE LICENCE ACCEPTE LES DISPOSITIONS DU PRESENT CONTRAT. SI VOUS ACCEPTEZ LES PRESENTES DISPOSITIONS POUR LE COMPTE DU DÉTENTEUR DE LICENCE, VOUS CERTIFIEZ AVOIR LA QUALITE POUR ENGAGER LE DÉTENTEUR DE LICENCE A RESPECTER LESDITES DISPOSITIONS.
+EN TELECHARGEANT, EN INSTALLANT, EN COPIANT LES LOGICIELS, EN Y ACCEDANT EN CLIQUANT SUR LE BOUTON Â«Â ACCEPTERÂ Â» OU EN LES UTILISANT, LE DÃ‰TENTEUR DE LICENCE ACCEPTE LES DISPOSITIONS DU PRESENT CONTRAT. SI VOUS ACCEPTEZ LES PRESENTES DISPOSITIONS POUR LE COMPTE DU DÃ‰TENTEUR DE LICENCE, VOUS CERTIFIEZ AVOIR LA QUALITE POUR ENGAGER LE DÃ‰TENTEUR DE LICENCE A RESPECTER LESDITES DISPOSITIONS.
 
-SI VOUS N'ACCEPTEZ PAS LES PRESENTES DISPOSITIONS OU QUE VOUS N'ETES PAS HABILITE : i) NE TELECHARGEZ PAS, N'INSTALLEZ PAS, NE COPIEZ PAS, N'ACCEDEZ PAS, NE CLIQUEZ PAS SUR LE BOUTON « ACCEPTER » ET N'UTILISEZ PAS LE LOGICIEL ; ET ii) RENVOYEZ RAPIDEMENT LE SUPPORT NON UTILISE, LA DOCUMENTATION ET LA PREUVE DE DROIT D'UTILISATION À LA PARTIE AUPRES DE LAQUELLE IL A ETE OBTENU EN VUE D'UN REMBOURSEMENT DU MONTANT PAYE. SI LE LOGICIEL A ETE TELECHARGE, DETRUISEZ TOUTES LES COPIES DU LOGICIEL.
+SI VOUS N'ACCEPTEZ PAS LES PRESENTES DISPOSITIONS OU QUE VOUS N'ETES PAS HABILITEÂ : i) NE TELECHARGEZ PAS, N'INSTALLEZ PAS, NE COPIEZ PAS, N'ACCEDEZ PAS, NE CLIQUEZ PAS SUR LE BOUTON Â«Â ACCEPTERÂ Â» ET N'UTILISEZ PAS LE LOGICIELÂ ; ET ii) RENVOYEZ RAPIDEMENT LE SUPPORT NON UTILISE, LA DOCUMENTATION ET LA PREUVE DE DROIT D'UTILISATION Ã€ LA PARTIE AUPRES DE LAQUELLE IL A ETE OBTENU EN VUE D'UN REMBOURSEMENT DU MONTANT PAYE. SI LE LOGICIEL A ETE TELECHARGE, DETRUISEZ TOUTES LES COPIES DU LOGICIEL.
 
-Les présentes Conditions Internationales d'Utilisation de Logiciels IBM non garantis (ILAN) et les Documents de Transaction applicables (conjointement le « Contrat ») constituent l'accord intégral entre le Détenteur de Licence et IBM relatif à l'utilisation d'un Logiciel. Les conditions relatives au pays incluses dans le Chapitre 2 du présent ILAN remplacent ou modifient les conditions du Chapitre 1.
+Les prÃ©sentes Conditions Internationales d'Utilisation de Logiciels IBM non garantis (ILAN) et les Documents de Transaction applicables (conjointement le Â«Â ContratÂ Â») constituent l'accord intÃ©gral entre le DÃ©tenteur de Licence et IBM relatif Ã  l'utilisation d'un Logiciel. Les conditions relatives au pays incluses dans le Chapitre 2 du prÃ©sent ILAN remplacent ou modifient les conditions du Chapitre 1.
 
-Les Documents de Transaction (DT) fournissent une description, des informations et les conditions relatives au Logiciel et à son utilisation autorisée. Les DT pour Logiciels incluent les informations sur la licence (IL), les spécifications de logiciel sous licence (SLS), devis, autorisations d'utilisation (AU) ou factures. En cas de conflit, les DT prévalent sur l'ILAN.
+Les Documents de Transaction (DT) fournissent une description, des informations et les conditions relatives au Logiciel et Ã  son utilisation autorisÃ©e. Les DT pour Logiciels incluent les informations sur la licence (IL), les spÃ©cifications de logiciel sous licence (SLS), devis, autorisations d'utilisation (AU) ou factures. En cas de conflit, les DT prÃ©valent sur l'ILAN.
 
 1. Licence de Logiciel
 
-a. Un Logiciel est un programme informatique exécutable de marque IBM et son matériel connexe et comprend des copies complètes et partielles. Les informations sur les Logiciels sont décrites dans un DT disponible sur http://www.ibm.com/software/sla (pour les programmes Passport Advantage) or http://www.ibm.com/support/knowledgecenter (pour les autres Logiciels IBM), dans le répertoire de commande de système du Logiciel, ou comme spécifié par IBM. Les politiques relatives aux logiciels IBM (telles que les copies de sauvegarde, l'utilisation temporaire et l'environnement Cloud approuvé IBM) disponibles sur http://www.ibm.com/softwarepolicies s'appliquent à l'utilisation des Logiciels par le Détenteur de Licence.
+a. Un Logiciel est un programme informatique exÃ©cutable de marque IBM et son matÃ©riel connexe et comprend des copies complÃ¨tes et partielles. Les informations sur les Logiciels sont dÃ©crites dans un DT disponible sur http://www.ibm.com/software/sla (pour les programmes Passport Advantage) or http://www.ibm.com/support/knowledgecenter (pour les autres Logiciels IBM), dans le rÃ©pertoire de commande de systÃ¨me du Logiciel, ou comme spÃ©cifiÃ© par IBM. Les politiques relatives aux logiciels IBM (telles que les copies de sauvegarde, l'utilisation temporaire et l'environnement Cloud approuvÃ© IBM) disponibles sur http://www.ibm.com/softwarepolicies s'appliquent Ã  l'utilisation des Logiciels par le DÃ©tenteur de Licence.
 
 b. Les copies des Logiciels sont soumises au droit d'auteur et sous licence.
 
-c. Le Détenteur de Licence obtient une licence non exclusive pour :
+c. Le DÃ©tenteur de Licence obtient une licence non exclusive pourÂ :
 
-(1) utiliser chaque copie d'un Logiciel, sous réserve des conditions du Contrat et, le cas échéant, dans la limite du nombre d'autorisations de licence acquises par le Détenteur de Licence (« Utilisation Autorisée ») ;
+(1) utiliser chaque copie d'un Logiciel, sous rÃ©serve des conditions du Contrat et, le cas Ã©chÃ©ant, dans la limite du nombre d'autorisations de licence acquises par le DÃ©tenteur de Licence (Â«Â Utilisation AutorisÃ©eÂ Â»)Â ;
 
-(2) effectuer et installer des copies à l'appui de ladite Utilisation Autorisée ; et
+(2) effectuer et installer des copies Ã  l'appui de ladite Utilisation AutorisÃ©eÂ ; et
 
 (3) faire une copie de sauvegarde.
 
-d. Les Logiciels peuvent être utilisés par le Détenteur de Licence, ses employés et ses sous-traitants. Le Détenteur de Licence n'est pas autorisé à louer un Logiciel ou à fournir des services de temps partagé, d'hébergement ou des services informatiques commerciaux à un tiers quel qu'il soit. D'autres droits peuvent être disponibles moyennant un supplément ou selon des modalités différentes.
+d. Les Logiciels peuvent Ãªtre utilisÃ©s par le DÃ©tenteur de Licence, ses employÃ©s et ses sous-traitants. Le DÃ©tenteur de Licence n'est pas autorisÃ© Ã  louer un Logiciel ou Ã  fournir des services de temps partagÃ©, d'hÃ©bergement ou des services informatiques commerciaux Ã  un tiers quel qu'il soit. D'autres droits peuvent Ãªtre disponibles moyennant un supplÃ©ment ou selon des modalitÃ©s diffÃ©rentes.
 
-e. La licence pour un Logiciel est concédée sous réserve que le Détenteur de Licence :
+e. La licence pour un Logiciel est concÃ©dÃ©e sous rÃ©serve que le DÃ©tenteur de LicenceÂ :
 
-(1) reproduise les mentions de droits d'auteur et d'autres marquages sur toute copie ;
+(1) reproduise les mentions de droits d'auteur et d'autres marquages sur toute copieÂ ;
 
-(2) veille à ce que toute personne utilisant le Logiciel : i) ne le fasse que pour l'usage du Détenteur de Licence dans la limite de l'Utilisation Autorisée du Détenteur de Licence et ii) respecte le présent Contrat ;
+(2) veille Ã  ce que toute personne utilisant le LogicielÂ : i) ne le fasse que pour l'usage du DÃ©tenteur de Licence dans la limite de l'Utilisation AutorisÃ©e du DÃ©tenteur de Licence et ii) respecte le prÃ©sent ContratÂ ;
 
-(3) n'effectue pas de désassemblage, de décompilation, de traduction ou d'ingénierie inverse du Logiciel, sinon expressément autorisé par la loi sans possibilité de disposition légale contraire ; et
+(3) n'effectue pas de dÃ©sassemblage, de dÃ©compilation, de traduction ou d'ingÃ©nierie inverse du Logiciel, sinon expressÃ©ment autorisÃ© par la loi sans possibilitÃ© de disposition lÃ©gale contraireÂ ; et
 
-(4) n'utilise aucun des éléments du Logiciel ou des éléments sous licence connexes séparément du Logiciel.
+(4) n'utilise aucun des Ã©lÃ©ments du Logiciel ou des Ã©lÃ©ments sous licence connexes sÃ©parÃ©ment du Logiciel.
 
-f. Si le DT d'un Logiciel (« Logiciel Principal ») indique qu'un « Logiciel Secondaire » est inclus dans le Logiciel principal, le Détenteur de Licence peut utiliser le Logiciel Secondaire sous réserve de toutes les limitations de licence du Logiciel Principal et uniquement en soutien du Logiciel Principal.
+f. Si le DT d'un Logiciel (Â«Â Logiciel PrincipalÂ Â») indique qu'un Â«Â Logiciel SecondaireÂ Â» est inclus dans le Logiciel principal, le DÃ©tenteur de Licence peut utiliser le Logiciel Secondaire sous rÃ©serve de toutes les limitations de licence du Logiciel Principal et uniquement en soutien du Logiciel Principal.
 
-g. Cette licence s'applique à toute copie du Logiciel effectuée par le Détenteur de Licence.
+g. Cette licence s'applique Ã  toute copie du Logiciel effectuÃ©e par le DÃ©tenteur de Licence.
 
-h. Une mise à jour, une correction ou un correctif d'un Logiciel est soumis aux conditions régissant le Logiciel, à moins que de nouvelles conditions ne soient fournies dans un DT mis à jour. Le Détenteur de Licence accepte ces nouvelles conditions lors de l'installation de la mise à jour, de la correction ou du correctif. Si le Logiciel est remplacé par une mise à jour, le Détenteur de Licence accepte de cesser dans les meilleurs délais l'utilisation du Logiciel remplacé.
+h. Une mise Ã  jour, une correction ou un correctif d'un Logiciel est soumis aux conditions rÃ©gissant le Logiciel, Ã  moins que de nouvelles conditions ne soient fournies dans un DT mis Ã  jour. Le DÃ©tenteur de Licence accepte ces nouvelles conditions lors de l'installation de la mise Ã  jour, de la correction ou du correctif. Si le Logiciel est remplacÃ© par une mise Ã  jour, le DÃ©tenteur de Licence accepte de cesser dans les meilleurs dÃ©lais l'utilisation du Logiciel remplacÃ©.
 
-i. Si le Détenteur de Licence n'est pas satisfait d'un Logiciel pour quelque raison que ce soit, il peut mettre fin à la licence en renvoyant le Logiciel et l'autorisation d'utilisation à IBM ou au Partenaire Commercial IBM autorisé dans un délai de 30 jours à compter de la date d'acquisition initiale dudit Logiciel pour obtenir le remboursement du montant payé. Pour un Logiciel téléchargé, contactez la partie auprès de laquelle le Détenteur de Licence a acquis le Logiciel pour obtenir des instructions de remboursement.
+i. Si le DÃ©tenteur de Licence n'est pas satisfait d'un Logiciel pour quelque raison que ce soit, il peut mettre fin Ã  la licence en renvoyant le Logiciel et l'autorisation d'utilisation Ã  IBM ou au Partenaire Commercial IBM autorisÃ© dans un dÃ©lai de 30 jours Ã  compter de la date d'acquisition initiale dudit Logiciel pour obtenir le remboursement du montant payÃ©. Pour un Logiciel tÃ©lÃ©chargÃ©, contactez la partie auprÃ¨s de laquelle le DÃ©tenteur de Licence a acquis le Logiciel pour obtenir des instructions de remboursement.
 
 2. Garanties
 
-a. IBM ne garantit pas le fonctionnement ininterrompu et sans erreur d'un Logiciel IBM, ni la correction de tous les défauts, ni la prévention contre les interruptions par des tiers. Ces garanties sont les garanties exclusives d'IBM et remplacent toutes les autres garanties, y compris les garanties ou conditions implicites de qualité, de valeur marchande, de non-contrefaçon et d'adéquation à une utilisation particulière. Les garanties d'IBM ne s'appliqueront pas en cas d'utilisation incorrecte, de modification, de dommage non causé par IBM ou de non-respect des instructions écrites fournies par IBM. Les Logiciels non-IBM sont fournis en l'état sans garantie d'aucune sorte. Les tiers peuvent accorder leurs propres garanties au Détenteur de Licence.
+a. IBM ne garantit pas le fonctionnement ininterrompu et sans erreur d'un Logiciel IBM, ni la correction de tous les dÃ©fauts, ni la prÃ©vention contre les interruptions par des tiers. Ces garanties sont les garanties exclusives d'IBM et remplacent toutes les autres garanties, y compris les garanties ou conditions implicites de qualitÃ©, de valeur marchande, de non-contrefaÃ§on et d'adÃ©quation Ã  une utilisation particuliÃ¨re. Les garanties d'IBM ne s'appliqueront pas en cas d'utilisation incorrecte, de modification, de dommage non causÃ© par IBM ou de non-respect des instructions Ã©crites fournies par IBM. Les Logiciels non-IBM sont fournis en l'Ã©tat sans garantie d'aucune sorte. Les tiers peuvent accorder leurs propres garanties au DÃ©tenteur de Licence.
 
-b. Un support supplémentaire disponible pendant ou après la période de garantie peut faire l'objet d'un accord séparé.
+b. Un support supplÃ©mentaire disponible pendant ou aprÃ¨s la pÃ©riode de garantie peut faire l'objet d'un accord sÃ©parÃ©.
 
-3. Redevances, Taxes, Paiements et Vérification
+3. Redevances, Taxes, Paiements et VÃ©rification
 
-a. Le droit du Détenteur de Licence d'utiliser un Logiciel est subordonné au paiement par le Détenteur de Licence des redevances applicables, le cas échéant, telles que spécifiées dans le contrat en vertu duquel le Détenteur de Licence a acquis les droits de licence. Le Détenteur de Licence est tenu d'acquérir des droits de licence supplémentaires avant toute augmentation de son utilisation.
+a. Le droit du DÃ©tenteur de Licence d'utiliser un Logiciel est subordonnÃ© au paiement par le DÃ©tenteur de Licence des redevances applicables, le cas Ã©chÃ©ant, telles que spÃ©cifiÃ©es dans le contrat en vertu duquel le DÃ©tenteur de Licence a acquis les droits de licence. Le DÃ©tenteur de Licence est tenu d'acquÃ©rir des droits de licence supplÃ©mentaires avant toute augmentation de son utilisation.
 
-b. Le Détenteur de Licence accepte de payer toutes les redevances applicables pour les droits acquis et tous les frais pour une utilisation dépassant les autorisations. Les redevances ne comprennent aucun droit de douane ou autres impôts, taxes ou contributions imposées à la suite des acquisitions par le Détenteur de Licence et facturées en plus des redevances. Les montants sont exigibles à réception de la facture IBM et payables dans les trente (30) jours date de facture sur un compte spécifié par IBM et des pénalités de retard peuvent s'appliquer. Le Détenteur de Licence est tenu d'acquérir des droits de licence supplémentaires avant toute augmentation de son utilisation. Sauf indication contraire dans le présent ILAN, le DT applicable ou les conditions du contrat en vertu duquel le Détenteur de Licence a acquis ses autorisations de licence, IBM n'accordera aucun crédit ou remboursement concernant les redevances déjà exigibles ou payées.
+b. Le DÃ©tenteur de Licence accepte de payer toutes les redevances applicables pour les droits acquis et tous les frais pour une utilisation dÃ©passant les autorisations. Les redevances ne comprennent aucun droit de douane ou autres impÃ´ts, taxes ou contributions imposÃ©es Ã  la suite des acquisitions par le DÃ©tenteur de Licence et facturÃ©es en plus des redevances. Les montants sont exigibles Ã  rÃ©ception de la facture IBM et payables dans les trente (30) jours date de facture sur un compte spÃ©cifiÃ© par IBM et des pÃ©nalitÃ©s de retard peuvent s'appliquer. Le DÃ©tenteur de Licence est tenu d'acquÃ©rir des droits de licence supplÃ©mentaires avant toute augmentation de son utilisation. Sauf indication contraire dans le prÃ©sent ILAN, le DT applicable ou les conditions du contrat en vertu duquel le DÃ©tenteur de Licence a acquis ses autorisations de licence, IBM n'accordera aucun crÃ©dit ou remboursement concernant les redevances dÃ©jÃ  exigibles ou payÃ©es.
 
-c. Sur la base des autorisations acquises, le Détenteur de Licence s'engage à : i) payer toute retenue à la source directement à l'entité gouvernementale appropriée lorsque la loi l'exige ; ii) fournir à IBM un certificat fiscal attestant de ce paiement ; iii) ne payer à IBM que le produit net après impôt ; et iv) coopérer pleinement avec IBM pour obtenir une renonciation ou une réduction de ces impôts et remplir et déposer rapidement tous les documents pertinents.
+c. Sur la base des autorisations acquises, le DÃ©tenteur de Licence s'engage Ã Â : i) payer toute retenue Ã  la source directement Ã  l'entitÃ© gouvernementale appropriÃ©e lorsque la loi l'exigeÂ ; ii) fournir Ã  IBM un certificat fiscal attestant de ce paiementÂ ; iii) ne payer Ã  IBM que le produit net aprÃ¨s impÃ´tÂ ; et iv) coopÃ©rer pleinement avec IBM pour obtenir une renonciation ou une rÃ©duction de ces impÃ´ts et remplir et dÃ©poser rapidement tous les documents pertinents.
 
-d. Si le Détenteur de Licence importe, exporte, transfère, accède ou utilise un Logiciel au-delà d'une frontière, le Détenteur de Licence accepte d'être responsable et de payer aux autorités tout droit de douane, taxe ou prélèvement similaire évalué par les autorités. Sont exclus les taxes et impôts qui seraient calculés sur le revenu net d'IBM.
+d. Si le DÃ©tenteur de Licence importe, exporte, transfÃ¨re, accÃ¨de ou utilise un Logiciel au-delÃ  d'une frontiÃ¨re, le DÃ©tenteur de Licence accepte d'Ãªtre responsable et de payer aux autoritÃ©s tout droit de douane, taxe ou prÃ©lÃ¨vement similaire Ã©valuÃ© par les autoritÃ©s. Sont exclus les taxes et impÃ´ts qui seraient calculÃ©s sur le revenu net d'IBM.
 
-3.1 Vérification de Licence
+3.1 VÃ©rification de Licence
 
-a. Pour tous les Logiciels sur tous les sites et pour tous les environnements, le Détenteur de Licence créera, conservera et fournira chaque année à IBM, sur demande moyennant un préavis de 30 jours : i) un rapport, dans un format demandé par IBM, utilisant les enregistrements, la sortie des outils système et d'autres informations système ; et ii) des pièces justificatives (collectivement, les « Données de Déploiement »).
+a. Pour tous les Logiciels sur tous les sites et pour tous les environnements, le DÃ©tenteur de Licence crÃ©era, conservera et fournira chaque annÃ©e Ã  IBM, sur demande moyennant un prÃ©avis de 30 joursÂ : i) un rapport, dans un format demandÃ© par IBM, utilisant les enregistrements, la sortie des outils systÃ¨me et d'autres informations systÃ¨meÂ ; et ii) des piÃ¨ces justificatives (collectivement, les Â«Â DonnÃ©es de DÃ©ploiementÂ Â»).
 
-b. Moyennant un préavis raisonnable, IBM et ses auditeurs indépendants peuvent vérifier la conformité du Détenteur de Licence avec le présent Contrat, sur tous les sites et pour tous les environnements dans lesquels le Détenteur de Licence utilise (à toutes fins) les Logiciels. Ces vérifications seront effectuées de façon à gêner le moins possible les activités du Détenteur de Licence. Elles pourront être réalisées dans les locaux du Détenteur de Licence durant les heures normales de travail. IBM aura un accord de confidentialité écrit avec l'auditeur indépendant. En plus de fournir les Données de Déploiement décrites ci-dessus, le Détenteur de Licence accepte de fournir à IBM et à ses auditeurs des informations et des Données de Déploiement supplémentaires précises sur demande.
+b. Moyennant un prÃ©avis raisonnable, IBM et ses auditeurs indÃ©pendants peuvent vÃ©rifier la conformitÃ© du DÃ©tenteur de Licence avec le prÃ©sent Contrat, sur tous les sites et pour tous les environnements dans lesquels le DÃ©tenteur de Licence utilise (Ã  toutes fins) les Logiciels. Ces vÃ©rifications seront effectuÃ©es de faÃ§on Ã  gÃªner le moins possible les activitÃ©s du DÃ©tenteur de Licence. Elles pourront Ãªtre rÃ©alisÃ©es dans les locaux du DÃ©tenteur de Licence durant les heures normales de travail. IBM aura un accord de confidentialitÃ© Ã©crit avec l'auditeur indÃ©pendant. En plus de fournir les DonnÃ©es de DÃ©ploiement dÃ©crites ci-dessus, le DÃ©tenteur de Licence accepte de fournir Ã  IBM et Ã  ses auditeurs des informations et des DonnÃ©es de DÃ©ploiement supplÃ©mentaires prÃ©cises sur demande.
 
-c. Le Détenteur de Licence commandera et paiera rapidement les redevances, aux tarifs d'IBM alors en vigueur, associés : i) à tous les déploiements excédant les autorisations indiquées sur ou par tout rapport annuel ou vérification ; ii) aux services d'abonnement et de support (S&S) applicables à ces déploiements excédentaires pour la durée de l'utilisation excédentaire ou pour deux ans, si cette durée est inférieure ; et iii) à tous les frais supplémentaires et autres obligations déterminés à la suite de cette vérification, y compris, mais sans s'y limiter, les taxes, droits et frais réglementaires.
+c. Le DÃ©tenteur de Licence commandera et paiera rapidement les redevances, aux tarifs d'IBM alors en vigueur, associÃ©sÂ : i) Ã  tous les dÃ©ploiements excÃ©dant les autorisations indiquÃ©es sur ou par tout rapport annuel ou vÃ©rificationÂ ; ii) aux services d'abonnement et de support (S&S) applicables Ã  ces dÃ©ploiements excÃ©dentaires pour la durÃ©e de l'utilisation excÃ©dentaire ou pour deux ans, si cette durÃ©e est infÃ©rieureÂ ; et iii) Ã  tous les frais supplÃ©mentaires et autres obligations dÃ©terminÃ©s Ã  la suite de cette vÃ©rification, y compris, mais sans s'y limiter, les taxes, droits et frais rÃ©glementaires.
 
-4. Responsabilité et Protection de la Propriété Intellectuelle
+4. ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle
 
-a. Quels que soient la nature, le fondement et les modalités de l'action engagée contre IBM, l'entière responsabilité d'IBM pour l'ensemble des réclamations liées au présent Contrat sera limitée au montant de tout dommage direct réel subi par le Détenteur de Licence dans la limite du plus élevé des deux montants suivants : i) 10 000,00 dollars US (ou l'équivalent en monnaie locale) ; ou ii) les montants payés (jusqu'à 12 mois de redevances s'il s'agit de redevances périodiques) pour les droits d'utilisation du Logiciel objet de l'action. La responsabilité d'IBM ne pourra être engagée au titre des atteintes à la réputation, des dommages indirects, des préjudices économiques indirects, des pertes de bénéfices, d'activité commerciale, de valeur, de revenu, de clientèle ou d'économies escomptées. Ces limites s'appliquent collectivement à IBM, ses sociétés affiliées, sous-traitants et fournisseurs.
+a. Quels que soient la nature, le fondement et les modalitÃ©s de l'action engagÃ©e contre IBM, l'entiÃ¨re responsabilitÃ© d'IBM pour l'ensemble des rÃ©clamations liÃ©es au prÃ©sent Contrat sera limitÃ©e au montant de tout dommage direct rÃ©el subi par le DÃ©tenteur de Licence dans la limite du plus Ã©levÃ© des deux montants suivantsÂ : i) 10Â 000,00 dollars US (ou l'Ã©quivalent en monnaie locale)Â ; ou ii) les montants payÃ©s (jusqu'Ã  12 mois de redevances s'il s'agit de redevances pÃ©riodiques) pour les droits d'utilisation du Logiciel objet de l'action. La responsabilitÃ© d'IBM ne pourra Ãªtre engagÃ©e au titre des atteintes Ã  la rÃ©putation, des dommages indirects, des prÃ©judices Ã©conomiques indirects, des pertes de bÃ©nÃ©fices, d'activitÃ© commerciale, de valeur, de revenu, de clientÃ¨le ou d'Ã©conomies escomptÃ©es. Ces limites s'appliquent collectivement Ã  IBM, ses sociÃ©tÃ©s affiliÃ©es, sous-traitants et fournisseurs.
 
-b. Les dommages suivants ne sont pas soumis au plafond fixé ci-dessus : dommages pour lesquels la responsabilité ne peut pas être limitée en vertu de la loi applicable.
+b. Les dommages suivants ne sont pas soumis au plafond fixÃ© ci-dessusÂ : dommages pour lesquels la responsabilitÃ© ne peut pas Ãªtre limitÃ©e en vertu de la loi applicable.
 
-c. IBM n'est pas responsable des réclamations relatives aux Produits non-IBM et à des éléments non fournis par IBM ou de toute infraction à la législation en vigueur ou aux droits de tiers occasionnés par le Contenu, la documentation, les conceptions ou spécifications du Détenteur de Licence. Le Contenu est constitué de l'ensemble des données, logiciels et informations que le Détenteur de Licence ou ses utilisateurs autorisés fournissent, autorisent l'accès ou introduisent dans un Logiciel.
+c. IBM n'est pas responsable des rÃ©clamations relatives aux Produits non-IBM et Ã  des Ã©lÃ©ments non fournis par IBM ou de toute infraction Ã  la lÃ©gislation en vigueur ou aux droits de tiers occasionnÃ©s par le Contenu, la documentation, les conceptions ou spÃ©cifications du DÃ©tenteur de Licence. Le Contenu est constituÃ© de l'ensemble des donnÃ©es, logiciels et informations que le DÃ©tenteur de Licence ou ses utilisateurs autorisÃ©s fournissent, autorisent l'accÃ¨s ou introduisent dans un Logiciel.
 
-5. Résiliation
+5. RÃ©siliation
 
-a. IBM peut mettre fin à la licence d'utilisation d'un Logiciel par le Détenteur de Licence si ce dernier ne respecte pas l'ILAN, les DT ou les accords d'acquisition, tels que le Contrat Passport Advantage International (IPAA). Le Détenteur de Licence détruira, dans les plus brefs délais, toutes les copies du Logiciel après la résiliation de la licence. Toute disposition qui, par nature, survit à la résiliation reste en vigueur jusqu'à sa complète exécution et s'applique aux ayants droit et cessionnaires des deux parties.
+a. IBM peut mettre fin Ã  la licence d'utilisation d'un Logiciel par le DÃ©tenteur de Licence si ce dernier ne respecte pas l'ILAN, les DT ou les accords d'acquisition, tels que le Contrat Passport Advantage International (IPAA). Le DÃ©tenteur de Licence dÃ©truira, dans les plus brefs dÃ©lais, toutes les copies du Logiciel aprÃ¨s la rÃ©siliation de la licence. Toute disposition qui, par nature, survit Ã  la rÃ©siliation reste en vigueur jusqu'Ã  sa complÃ¨te exÃ©cution et s'applique aux ayants droit et cessionnaires des deux parties.
 
-6. Lois Applicables et Compétence Territoriale
+6. Lois Applicables et CompÃ©tence Territoriale
 
-a. Les deux parties consentent à l'application des lois du pays dans lequel la transaction d'autorisations de licence est effectuée, nonobstant tout principe de conflit de lois. Les droits et les obligations de chaque partie s'appliquent uniquement dans le pays où la transaction est effectuée ou en accord avec IBM, dans le pays où le Logiciel est utilisé en production, étant précisé que toutes les licences ne sont valables que dans les conditions d'octroi explicitement stipulées.
+a. Les deux parties consentent Ã  l'application des lois du pays dans lequel la transaction d'autorisations de licence est effectuÃ©e, nonobstant tout principe de conflit de lois. Les droits et les obligations de chaque partie s'appliquent uniquement dans le pays oÃ¹ la transaction est effectuÃ©e ou en accord avec IBM, dans le pays oÃ¹ le Logiciel est utilisÃ© en production, Ã©tant prÃ©cisÃ© que toutes les licences ne sont valables que dans les conditions d'octroi explicitement stipulÃ©es.
 
-b. Chacune des parties est responsable du respect : i) des lois et réglementations applicables à ses activités et son Contenu; et ii) des lois et réglementations relatives au contrôle des importations et des exportations ainsi qu'aux sanctions économiques, y compris celles des Etats-Unis, qui interdisent ou limitent l'exportation, la réexportation, le transfert des produits, des technologies, des services ou des données, directement ou indirectement, à ou pour certains pays ou utilisateurs finaux.
+b. Chacune des parties est responsable du respectÂ : i) des lois et rÃ©glementations applicables Ã  ses activitÃ©s et son Contenu; et ii) des lois et rÃ©glementations relatives au contrÃ´le des importations et des exportations ainsi qu'aux sanctions Ã©conomiques, y compris celles des Etats-Unis, qui interdisent ou limitent lâ€™exportation, la rÃ©exportation, le transfert des produits, des technologies, des services ou des donnÃ©es, directement ou indirectement, Ã  ou pour certains pays ou utilisateurs finaux.
 
-c. Si l'une quelconque des clauses du Contrat pour un Logiciel est invalide ou inapplicable, les autres dispositions resteront en vigueur et conserveront leur plein effet. Le présent Contrat ne porte pas atteinte aux dispositions légales d'ordre public relatives aux droits des consommateurs. La Convention des Nations Unies sur les Contrats de vente internationale de marchandises ne s'applique pas aux transactions objet du présent Contrat.
+c. Si l'une quelconque des clauses du Contrat pour un Logiciel est invalide ou inapplicable, les autres dispositions resteront en vigueur et conserveront leur plein effet. Le prÃ©sent Contrat ne porte pas atteinte aux dispositions lÃ©gales d'ordre public relatives aux droits des consommateurs. La Convention des Nations Unies sur les Contrats de vente internationale de marchandises ne s'applique pas aux transactions objet du prÃ©sent Contrat.
 
-7. Généralités
+7. GÃ©nÃ©ralitÃ©s
 
-a. IBM est un contractant indépendant, et non un agent commercial, co-entrepreneur, partenaire ou fiduciaire du Détenteur de Licence et ne s'engage pas à exécuter les obligations réglementaires du Détenteur de Licence ou n'assume aucune responsabilité pour les opérations ou activités du Détenteur de Licence. Le Détenteur de Licence est responsable de son utilisation des Logiciels IBM et non-IBM. IBM intervient uniquement en qualité de fournisseur de services informatiques. Toute instruction d'IBM, toute utilisation recommandée par IBM ou tous conseils ou utilisations de Logiciel ne constituent pas un avis médical, clinique, juridique, comptable ou autre avis professionnel agréé. Le Détenteur de Licence doit se procurer ses propres conseils d'expert.
+a. IBM est un contractant indÃ©pendant, et non un agent commercial, co-entrepreneur, partenaire ou fiduciaire du DÃ©tenteur de Licence et ne s'engage pas Ã  exÃ©cuter les obligations rÃ©glementaires du DÃ©tenteur de Licence ou n'assume aucune responsabilitÃ© pour les opÃ©rations ou activitÃ©s du DÃ©tenteur de Licence. Le DÃ©tenteur de Licence est responsable de son utilisation des Logiciels IBM et non-IBM. IBM intervient uniquement en qualitÃ© de fournisseur de services informatiques. Toute instruction d'IBM, toute utilisation recommandÃ©e par IBM ou tous conseils ou utilisations de Logiciel ne constituent pas un avis mÃ©dical, clinique, juridique, comptable ou autre avis professionnel agrÃ©Ã©. Le DÃ©tenteur de Licence doit se procurer ses propres conseils d'expert.
 
-b. En ce qui concerne les Logiciels qu'IBM fournit au Détenteur de Licence sous une forme tangible, IBM honore ses obligations d'expédition et de livraison lors de la remise de ces Logiciels au transporteur désigné par IBM, sauf accord écrit contraire entre le Détenteur de Licence et IBM.
+b. En ce qui concerne les Logiciels qu'IBM fournit au DÃ©tenteur de Licence sous une forme tangible, IBM honore ses obligations d'expÃ©dition et de livraison lors de la remise de ces Logiciels au transporteur dÃ©signÃ© par IBM, sauf accord Ã©crit contraire entre le DÃ©tenteur de Licence et IBM.
 
-c. Le Détenteur de Licence n'est pas autorisé à utiliser le Logiciel si la défaillance dudit Logiciel pourrait entraîner un décès, des blessures corporelles ou des dommages matériels ou environnementaux.
+c. Le DÃ©tenteur de Licence n'est pas autorisÃ© Ã  utiliser le Logiciel si la dÃ©faillance dudit Logiciel pourrait entraÃ®ner un dÃ©cÃ¨s, des blessures corporelles ou des dommages matÃ©riels ou environnementaux.
 
-d. IBM et ses sociétés affiliées ainsi que leurs sous-traitants nécessitent l'utilisation de coordonnées professionnelles et de certaines données d'utilisation de compte. Ces informations ne sont pas du Contenu. Les coordonnées professionnelles sont utilisées pour communiquer et gérer les transactions commerciales avec le Détenteur de Licence. Le nom, le numéro de téléphone, l'adresse et l'e-mail professionnel ainsi que l'ID utilisateur sont des exemples de coordonnées professionnelles. Les données d'utilisation de compte sont requises pour activer, gérer, prendre en charge, administrer et améliorer les Logiciels. Les données numériques collectées par le biais de technologies de suivi telles que les cookies ou les pixels espions lors de l'utilisation des Logiciels sont des exemples de données d'utilisation de compte. La Déclaration IBM de Confidentialité à l'adresse http://www.ibm.com/privacy/ fournit des détails supplémentaires sur la collecte, l'utilisation et le traitement par IBM des coordonnées professionnelles et des données d'utilisation de compte. Lorsque le Détenteur de Licence fournit des informations à IBM et que la notification des personnes concernées ou leur consentement est requis pour le traitement de ces informations, le Détenteur de Licence devra les en aviser et obtenir leur consentement.
+d. IBM et ses sociÃ©tÃ©s affiliÃ©es ainsi que leurs sous-traitants nÃ©cessitent l'utilisation de coordonnÃ©es professionnelles et de certaines donnÃ©es d'utilisation de compte. Ces informations ne sont pas du Contenu. Les coordonnÃ©es professionnelles sont utilisÃ©es pour communiquer et gÃ©rer les transactions commerciales avec le DÃ©tenteur de Licence. Le nom, le numÃ©ro de tÃ©lÃ©phone, l'adresse et l'e-mail professionnel ainsi que l'ID utilisateur sont des exemples de coordonnÃ©es professionnelles. Les donnÃ©es d'utilisation de compte sont requises pour activer, gÃ©rer, prendre en charge, administrer et amÃ©liorer les Logiciels. Les donnÃ©es numÃ©riques collectÃ©es par le biais de technologies de suivi telles que les cookies ou les pixels espions lors de l'utilisation des Logiciels sont des exemples de donnÃ©es d'utilisation de compte. La DÃ©claration IBM de ConfidentialitÃ© Ã  l'adresse http://www.ibm.com/privacy/ fournit des dÃ©tails supplÃ©mentaires sur la collecte, l'utilisation et le traitement par IBM des coordonnÃ©es professionnelles et des donnÃ©es d'utilisation de compte. Lorsque le DÃ©tenteur de Licence fournit des informations Ã  IBM et que la notification des personnes concernÃ©es ou leur consentement est requis pour le traitement de ces informations, le DÃ©tenteur de Licence devra les en aviser et obtenir leur consentement.
 
-e. Les Partenaires Commerciaux d'IBM qui utilisent ou mettent à disposition des Produits sont indépendants d'IBM et déterminent unilatéralement leurs prix et dispositions contractuelles. IBM n'est pas responsable de leurs actions, omissions, déclarations ou offres.
+e. Les Partenaires Commerciaux d'IBM qui utilisent ou mettent Ã  disposition des Produits sont indÃ©pendants d'IBM et dÃ©terminent unilatÃ©ralement leurs prix et dispositions contractuelles. IBM n'est pas responsable de leurs actions, omissions, dÃ©clarations ou offres.
 
-f. IBM pourra proposer des Logiciels non-IBM, ou un Logiciel IBM peut donner accès à un Logiciel non-IBM, ce qui peut exiger l'acceptation des conditions tierces présentées au Détenteur de Licence. La connexion à des Logiciels non-IBM ou leur utilisation équivaut à l'acceptation de leurs conditions par le Détenteur de Licence. IBM n'est liée à aucun de ces contrats tiers et n'est pas responsable desdits Logiciels non-IBM.
+f. IBM pourra proposer des Logiciels non-IBM, ou un Logiciel IBM peut donner accÃ¨s Ã  un Logiciel non-IBM, ce qui peut exiger l'acceptation des conditions tierces prÃ©sentÃ©es au DÃ©tenteur de Licence. La connexion Ã  des Logiciels non-IBM ou leur utilisation Ã©quivaut Ã  l'acceptation de leurs conditions par le DÃ©tenteur de Licence. IBM n'est liÃ©e Ã  aucun de ces contrats tiers et n'est pas responsable desdits Logiciels non-IBM.
 
-g. Les octrois de licence pour les Logiciels ci-dessous sont fournis par International Business Machines Corporation, une société enregistrée à New York (« IBM Corporation »). La société IBM auprès de laquelle le Détenteur de Licence acquiert des droits (« IBM ») agit en tant que distributeur et livre des Logiciels et est responsable de l'application des termes du présent Contrat. Pour les autorisations acquises auprès d'un Partenaire Commercial IBM, la société IBM du pays d'acquisition est responsable de la mise en application du présent Contrat. Aucun droit ou motif d'action quel qu'il soit n'est établi pour un Détenteur de Licence au dépend d'IBM Corporation. Le Détenteur de Licence renonce à toutes réclamations et actions en justice contre IBM Corporation et accepte de se tourner uniquement vers IBM pour tous les droits et recours en lien avec les Logiciels.
+g. Les octrois de licence pour les Logiciels ci-dessous sont fournis par International Business Machines Corporation, une sociÃ©tÃ© enregistrÃ©e Ã  New York (Â«Â IBM CorporationÂ Â»). La sociÃ©tÃ© IBM auprÃ¨s de laquelle le DÃ©tenteur de Licence acquiert des droits (Â«Â IBMÂ Â») agit en tant que distributeur et livre des Logiciels et est responsable de l'application des termes du prÃ©sent Contrat. Pour les autorisations acquises auprÃ¨s d'un Partenaire Commercial IBM, la sociÃ©tÃ© IBM du pays d'acquisition est responsable de la mise en application du prÃ©sent Contrat. Aucun droit ou motif d'action quel qu'il soit n'est Ã©tabli pour un DÃ©tenteur de Licence au dÃ©pend d'IBM Corporation. Le DÃ©tenteur de Licence renonce Ã  toutes rÃ©clamations et actions en justice contre IBM Corporation et accepte de se tourner uniquement vers IBM pour tous les droits et recours en lien avec les Logiciels.
 
-h. Le Détenteur de Licence ne peut pas accorder de sous-licence, céder ou transférer la licence d'un Logiciel (sauf dans la mesure où la cession ou le transfert ne sont pas limités par la loi ou sont expressément autorisés par une DT ou par un autre accord d'IBM). IBM peut céder ses droits et obligations au titre du présent Contrat dans le cadre de la vente de la partie de l'activité d'IBM qui comprend un Logiciel. IBM peut partager le présent Accord et les documents connexes conjointement avec une cession.
+h. Le DÃ©tenteur de Licence ne peut pas accorder de sous-licence, cÃ©der ou transfÃ©rer la licence d'un Logiciel (sauf dans la mesure oÃ¹ la cession ou le transfert ne sont pas limitÃ©s par la loi ou sont expressÃ©ment autorisÃ©s par une DT ou par un autre accord d'IBM). IBM peut cÃ©der ses droits et obligations au titre du prÃ©sent Contrat dans le cadre de la vente de la partie de l'activitÃ© d'IBM qui comprend un Logiciel. IBM peut partager le prÃ©sent Accord et les documents connexes conjointement avec une cession.
 
-i. Toutes les notifications au titre du Contrat doivent être adressées par écrit et envoyées à l'adresse professionnelle spécifiée dans le contrat par lequel le Détenteur de Licence a acquis les droits de licence, à moins qu'une partie n'indique par écrit une adresse différente. Les parties consentent à l'utilisation de moyens électroniques ou télécopie pour les communications et toute communication par ces moyens équivaut à un document écrit signé. Toute reproduction du Contrat réalisée par des moyens fiables est considérée comme un original. Le Contrat prévaut sur toute transaction commerciale, discussion ou déclaration entre les parties.
+i. Toutes les notifications au titre du Contrat doivent Ãªtre adressÃ©es par Ã©crit et envoyÃ©es Ã  l'adresse professionnelle spÃ©cifiÃ©e dans le contrat par lequel le DÃ©tenteur de Licence a acquis les droits de licence, Ã  moins qu'une partie n'indique par Ã©crit une adresse diffÃ©rente. Les parties consentent Ã  l'utilisation de moyens Ã©lectroniques ou tÃ©lÃ©copie pour les communications et toute communication par ces moyens Ã©quivaut Ã  un document Ã©crit signÃ©. Toute reproduction du Contrat rÃ©alisÃ©e par des moyens fiables est considÃ©rÃ©e comme un original. Le Contrat prÃ©vaut sur toute transaction commerciale, discussion ou dÃ©claration entre les parties.
 
-j. Aucun droit ou motif d'action quel qu'il soit n'est établi pour un tiers par le présent Contrat. Les parties s'interdisent d'intenter une action en justice contre l'autre au titre du Contrat plus de deux ans après l'apparition de son fait générateur. Aucune des parties ne sera tenue responsable de l'inexécution de ses obligations non monétaires en cas de circonstances indépendantes de sa volonté. Avant de formuler une réclamation, chacune des parties accordera à l'autre un délai raisonnable pour remplir ses obligations.
+j. Aucun droit ou motif d'action quel qu'il soit n'est Ã©tabli pour un tiers par le prÃ©sent Contrat. Les parties s'interdisent d'intenter une action en justice contre l'autre au titre du Contrat plus de deux ans aprÃ¨s l'apparition de son fait gÃ©nÃ©rateur. Aucune des parties ne sera tenue responsable de l'inexÃ©cution de ses obligations non monÃ©taires en cas de circonstances indÃ©pendantes de sa volontÃ©. Avant de formuler une rÃ©clamation, chacune des parties accordera Ã  l'autre un dÃ©lai raisonnable pour remplir ses obligations.
 
-k. IBM pourra utiliser des ressources et du personnel localisés dans le monde entier, ainsi que des sous-traitants tiers pour la fourniture de Logiciels et de support de Logiciel. L'utilisation des Logiciels par le Détenteur de Licence peut entraîner le transfert de Contenu, y compris d'informations personnelles identifiables, au-delà des frontières nationales afin de fournir un support pour les Logiciels, comme décrit dans le Guide de Support des Logiciels IBM.
+k. IBM pourra utiliser des ressources et du personnel localisÃ©s dans le monde entier, ainsi que des sous-traitants tiers pour la fourniture de Logiciels et de support de Logiciel. L'utilisation des Logiciels par le DÃ©tenteur de Licence peut entraÃ®ner le transfert de Contenu, y compris d'informations personnelles identifiables, au-delÃ  des frontiÃ¨res nationales afin de fournir un support pour les Logiciels, comme dÃ©crit dans le Guide de Support des Logiciels IBM.
 
 Chapitre 2 - Dispositions Nationales Requises
 
-Pour les licences acquises dans les pays énumérés ci-dessous, les dispositions suivantes remplacent ou modifient celles stipulées dans le présent ILAN. Toutes les dispositions qui n'ont pas été modifiées par les dispositions ci-dessous restent inchangées et conservent leur plein effet.
+Pour les licences acquises dans les pays Ã©numÃ©rÃ©s ci-dessous, les dispositions suivantes remplacent ou modifient celles stipulÃ©es dans le prÃ©sent ILAN. Toutes les dispositions qui n'ont pas Ã©tÃ© modifiÃ©es par les dispositions ci-dessous restent inchangÃ©es et conservent leur plein effet.
 
 1. AMERIQUES
 
-Clause 3. Redevances, Taxes, Paiements et Vérification
+Clause 3. Redevances, Taxes, Paiements et VÃ©rification
 
-Remplacez la première et la deuxième phrase du paragraphe b par le texte suivant :
+Remplacez la premiÃ¨re et la deuxiÃ¨me phrase du paragraphe b par le texte suivantÂ :
 
-Au Brésil: Le Détenteur de Licence accepte de payer toutes les redevances applicables pour les droits acquis et tous les frais pour une utilisation dépassant les autorisations, ainsi que tous les droits de douane ou autres droits, taxes et prélèvements similaires imposés par toute autorité résultant de l'acquisition de droits par le Détenteur de Licence.
+Au BrÃ©sil: Le DÃ©tenteur de Licence accepte de payer toutes les redevances applicables pour les droits acquis et tous les frais pour une utilisation dÃ©passant les autorisations, ainsi que tous les droits de douane ou autres droits, taxes et prÃ©lÃ¨vements similaires imposÃ©s par toute autoritÃ© rÃ©sultant de l'acquisition de droits par le DÃ©tenteur de Licence.
 
-Dans le paragraphe b :
+Dans le paragraphe bÂ :
 
-Au Mexique : Dans la troisième phrase, supprimez les mots « sur un compte spécifié par IBM ».
+Au MexiqueÂ : Dans la troisiÃ¨me phrase, supprimez les mots Â«Â sur un compte spÃ©cifiÃ© par IBMÂ Â».
 
-Au Mexique : Ajoutez la nouvelle phrase suivante après la troisième phrase :
+Au MexiqueÂ : Ajoutez la nouvelle phrase suivante aprÃ¨s la troisiÃ¨me phraseÂ :
 
-Les paiements seront effectués par transfert électronique de fonds sur un compte indiqué par IBM ou au domicile d'IBM qui est situé à Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
+Les paiements seront effectuÃ©s par transfert Ã©lectronique de fonds sur un compte indiquÃ© par IBM ou au domicile d'IBM qui est situÃ© Ã  Alfonso Napoles Gandara 3111, Santa Fe PeÃ±a Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
 
-A la fin du paragraphe c, ajoutez la phrase suivante :
+A la fin du paragraphe c, ajoutez la phrase suivanteÂ :
 
-Au Canada : Lorsque les taxes sont basées sur le(s) lieu(x) bénéficiant du Logiciel, le Détenteur de Licence a l'obligation permanente de notifier à IBM ce(s) lieu(x) s'il(s) diffère(nt) de l'adresse professionnelle du Détenteur de Licence figurant dans l'Annexe ou le DT applicable.
+Au CanadaÂ : Lorsque les taxes sont basÃ©es sur le(s) lieu(x) bÃ©nÃ©ficiant du Logiciel, le DÃ©tenteur de Licence a l'obligation permanente de notifier Ã  IBM ce(s) lieu(x) s'il(s) diffÃ¨re(nt) de l'adresse professionnelle du DÃ©tenteur de Licence figurant dans l'Annexe ou le DT applicable.
 
-A la fin du paragraphe c, ajoutez la phrase suivante :
+A la fin du paragraphe c, ajoutez la phrase suivanteÂ :
 
-Aux Etats-Unis : Les parties conviennent qu'aucun bien personnel corporel (par exemple, des supports ou des publications) ne sera transféré au Détenteur de Licence si : i) IBM livre des Logiciels au Détenteur de Licence par voie électronique ; ou ii) le Détenteur de Licence demande une exonération de taxe sur les ventes ou sur l'utilisation pour les Logiciels qu'IBM livre au Détenteur de Licence par voie électronique. Lorsque les taxes sont basées sur le(s) lieu(x) bénéficiant du Logiciel, le Détenteur de Licence a l'obligation permanente de notifier à IBM ce(s) lieu(x) s'il(s) diffère(nt) de l'adresse professionnelle du Détenteur de Licence indiquée dans l'Annexe ou le DT applicable.
+Aux Etats-UnisÂ : Les parties conviennent qu'aucun bien personnel corporel (par exemple, des supports ou des publications) ne sera transfÃ©rÃ© au DÃ©tenteur de Licence siÂ : i) IBM livre des Logiciels au DÃ©tenteur de Licence par voie Ã©lectroniqueÂ ; ou ii) le DÃ©tenteur de Licence demande une exonÃ©ration de taxe sur les ventes ou sur l'utilisation pour les Logiciels qu'IBM livre au DÃ©tenteur de Licence par voie Ã©lectronique. Lorsque les taxes sont basÃ©es sur le(s) lieu(x) bÃ©nÃ©ficiant du Logiciel, le DÃ©tenteur de Licence a l'obligation permanente de notifier Ã  IBM ce(s) lieu(x) s'il(s) diffÃ¨re(nt) de l'adresse professionnelle du DÃ©tenteur de Licence indiquÃ©e dans l'Annexe ou le DT applicable.
 
-Clause 4. Responsabilité et Protection de la Propriété Intellectuelle
+Clause 4. ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle
 
-Ajoutez ce qui suit à la fin du paragraphe a :
+Ajoutez ce qui suit Ã  la fin du paragraphe aÂ :
 
-Au Pérou : Aux termes de l'article 1328 du Code Civil péruvien, les limitations et exclusions spécifiées dans cette clause ne s'appliquent pas aux dommages causés par IBM du fait d'un manquement intentionnel à ses obligations professionnelles (« dolo ») ou d'une faute lourde (« culpa inexcusable »).
+Au PÃ©rouÂ : Aux termes de l'article 1328 du Code Civil pÃ©ruvien, les limitations et exclusions spÃ©cifiÃ©es dans cette clause ne s'appliquent pas aux dommages causÃ©s par IBM du fait d'un manquement intentionnel Ã  ses obligations professionnelles (Â«Â doloÂ Â») ou d'une faute lourde (Â«Â culpa inexcusableÂ Â»).
 
-Clause 6. Lois Applicables et Compétence Territoriale
+Clause 6. Lois Applicables et CompÃ©tence Territoriale
 
-Dans le paragraphe a, remplacez la première phrase par :
+Dans le paragraphe a, remplacez la premiÃ¨re phrase parÂ :
 
-En Argentine : les deux parties consentent à l'application des lois en vigueur de la République d'Argentine, nonobstant tout principe de conflit de lois. Toute procédure relative aux droits, devoirs et obligations émanant du présent Contrat sera engagée auprès du Tribunal Commercial Ordinaire de la ville de Buenos Aires (« Ciudad Autónoma de Buenos Aires »).
+En ArgentineÂ : les deux parties consentent Ã  l'application des lois en vigueur de la RÃ©publique d'Argentine, nonobstant tout principe de conflit de lois. Toute procÃ©dure relative aux droits, devoirs et obligations Ã©manant du prÃ©sent Contrat sera engagÃ©e auprÃ¨s du Tribunal Commercial Ordinaire de la ville de Buenos Aires (Â«Â Ciudad AutÃ³noma de Buenos AiresÂ Â»).
 
-Au Chili : les deux Parties consentent à l'application des lois en vigueur du Chili, nonobstant tout principe de conflit de lois. Tout conflit, interprétation ou violation du présent Contrat que les Parties ne peuvent résoudre directement devra faire l'objet d'une procédure engagée auprès des Tribunaux Ordinaires de la ville et district de la ville de Santiago.
+Au ChiliÂ : les deux Parties consentent Ã  l'application des lois en vigueur du Chili, nonobstant tout principe de conflit de lois. Tout conflit, interprÃ©tation ou violation du prÃ©sent Contrat que les Parties ne peuvent rÃ©soudre directement devra faire l'objet d'une procÃ©dure engagÃ©e auprÃ¨s des Tribunaux Ordinaires de la ville et district de la ville de Santiago.
 
-En Colombie : les deux Parties consentent à l'application des lois en vigueur de la République de Colombie, nonobstant tout principe de conflit de lois. Tous les droits, devoirs et obligations en découlant relèvent de la compétence des magistrats de la République de Colombie.
+En ColombieÂ : les deux Parties consentent Ã  l'application des lois en vigueur de la RÃ©publique de Colombie, nonobstant tout principe de conflit de lois. Tous les droits, devoirs et obligations en dÃ©coulant relÃ¨vent de la compÃ©tence des magistrats de la RÃ©publique de Colombie.
 
-En Equateur : les deux parties acceptent l'application des lois de la République de l'Equateur, sans tenir compte des principes de conflit de lois. Tout litige découlant de ou en lien avec le présent Contrat fera l'objet d'une procédure verbale sommaire engagée auprès du Tribunal civil de la ville de Quito.
+En EquateurÂ : les deux parties acceptent l'application des lois de la RÃ©publique de l'Equateur, sans tenir compte des principes de conflit de lois. Tout litige dÃ©coulant de ou en lien avec le prÃ©sent Contrat fera l'objet d'une procÃ©dure verbale sommaire engagÃ©e auprÃ¨s du Tribunal civil de la ville de Quito.
 
-Au Venezuela : les deux Parties consentent à l'application des lois en vigueur du Venezuela, nonobstant tout principe de conflit de lois. Les Parties conviennent de soumettre tout litige émanant du présent Contrat à la compétence des Tribunaux de l'Aire Métropolitaine de la Ville de Caracas.
+Au VenezuelaÂ : les deux Parties consentent Ã  l'application des lois en vigueur du Venezuela, nonobstant tout principe de conflit de lois. Les Parties conviennent de soumettre tout litige Ã©manant du prÃ©sent Contrat Ã  la compÃ©tence des Tribunaux de l'Aire MÃ©tropolitaine de la Ville de Caracas.
 
-Au Pérou : les deux Parties consentent à l'application des lois en vigueur du Pérou, nonobstant tout principe de conflit de lois. Tout désaccord susceptible de surgir entre les Parties en lien avec l'exécution, l'interprétation ou la conformité du présent Contrat et que les Parties ne parviennent pas à résoudre directement fera l'objet d'une procédure engagée auprès des instances relevant de la compétence des Magistrats et des Tribunaux du District « Cercado de Lima ».
+Au PÃ©rouÂ : les deux Parties consentent Ã  l'application des lois en vigueur du PÃ©rou, nonobstant tout principe de conflit de lois. Tout dÃ©saccord susceptible de surgir entre les Parties en lien avec l'exÃ©cution, l'interprÃ©tation ou la conformitÃ© du prÃ©sent Contrat et que les Parties ne parviennent pas Ã  rÃ©soudre directement fera l'objet d'une procÃ©dure engagÃ©e auprÃ¨s des instances relevant de la compÃ©tence des Magistrats et des Tribunaux du District Â«Â Cercado de LimaÂ Â».
 
-En Uruguay : les deux Parties consentent à l'application des lois de l'Uruguay. Tout désaccord susceptible de surgir entre les Parties en lien avec l'exécution, l'interprétation ou la conformité du présent Contrat et que les Parties ne parviennent pas à résoudre directement fera l'objet d'une procédure engagée auprès des Tribunaux de Montevideo (« Tribunales Ordinarios de Montevideo »).
+En UruguayÂ : les deux Parties consentent Ã  l'application des lois de l'Uruguay. Tout dÃ©saccord susceptible de surgir entre les Parties en lien avec l'exÃ©cution, l'interprÃ©tation ou la conformitÃ© du prÃ©sent Contrat et que les Parties ne parviennent pas Ã  rÃ©soudre directement fera l'objet d'une procÃ©dure engagÃ©e auprÃ¨s des Tribunaux de Montevideo (Â«Â Tribunales Ordinarios de MontevideoÂ Â»).
 
-Dans le paragraphe a, dans la première phrase seulement, remplacez la phrase « du pays dans lequel la transaction est effectuée » par :
+Dans le paragraphe a, dans la premiÃ¨re phrase seulement, remplacez la phrase Â«Â du pays dans lequel la transaction est effectuÃ©eÂ Â» parÂ :
 
-Pour les pays suivants : Etats-Unis, Anguilla, Antigua-et-Barbuda, Aruba, Bahamas, Barbade, Bermudes, Bonaire, Iles Vierges britanniques, Iles Caïmans, Curaçao, Dominique, Grenade, Guyana, Jamaïque, Montserrat, Saba, Saint-Eustache, Saint-Christophe-et-Niévès, Sainte-Lucie, Saint-Martin, Saint-Vincent-et-les-Grenadines, Suriname, Tortola, Trinité-et-Tobago, Iles Turques-et-Caïques, l'Etat de New York, aux Etats-Unis.
+Pour les pays suivantsÂ : Etats-Unis, Anguilla, Antigua-et-Barbuda, Aruba, Bahamas, Barbade, Bermudes, Bonaire, Iles Vierges britanniques, Iles CaÃ¯mans, CuraÃ§ao, Dominique, Grenade, Guyana, JamaÃ¯que, Montserrat, Saba, Saint-Eustache, Saint-Christophe-et-NiÃ©vÃ¨s, Sainte-Lucie, Saint-Martin, Saint-Vincent-et-les-Grenadines, Suriname, Tortola, TrinitÃ©-et-Tobago, Iles Turques-et-CaÃ¯ques, l'Etat de New York, aux Etats-Unis.
 
-Au Canada : la Province d'Ontario et les lois fédérales du Canada applicables.
+Au CanadaÂ : la Province d'Ontario et les lois fÃ©dÃ©rales du Canada applicables.
 
-Dans la deuxième phrase du paragraphe a, remplacez la phrase « du pays où la transaction est effectuée ou, si IBM l'autorise, le pays où le produit est placé en utilisation productive » par :
+Dans la deuxiÃ¨me phrase du paragraphe a, remplacez la phrase Â«Â du pays oÃ¹ la transaction est effectuÃ©e ou, si IBM l'autorise, le pays oÃ¹ le produit est placÃ© en utilisation productiveÂ Â» parÂ :
 
-En Argentine : Argentine
+En ArgentineÂ : Argentine
 
-Au Chili : Chili
+Au ChiliÂ : Chili
 
-En Colombie : Colombie
+En ColombieÂ : Colombie
 
-En Equateur : Equateur
+En EquateurÂ : Equateur
 
-Au Mexique : Mexique
+Au MexiqueÂ : Mexique
 
-Au Pérou : Pérou
+Au PÃ©rouÂ : PÃ©rou
 
-En Uruguay : Uruguay
+En UruguayÂ : Uruguay
 
-Au Venezuela : Venezuela
+Au VenezuelaÂ : Venezuela
 
-Ajoutez ce qui suit à la fin du paragraphe b :
+Ajoutez ce qui suit Ã  la fin du paragraphe bÂ :
 
-Au Brésil : tous les litiges découlant de ou en lien avec le présent Contrat, y compris toute procédure sommaire, fera l'objet d'une procédure engagée auprès de la compétence exclusive du Parquet de la Ville de São Paulo, Etat de São Paulo, Brésil ; les Parties reconnaissent, de manière irrévocable, la compétence de l'autorité susmentionnée et s'engagent à n'en invoquer aucune autre, quelle que soit leur préférence.
+Au BrÃ©silÂ : tous les litiges dÃ©coulant de ou en lien avec le prÃ©sent Contrat, y compris toute procÃ©dure sommaire, fera l'objet d'une procÃ©dure engagÃ©e auprÃ¨s de la compÃ©tence exclusive du Parquet de la Ville de SÃ£o Paulo, Etat de SÃ£o Paulo, BrÃ©silÂ ; les Parties reconnaissent, de maniÃ¨re irrÃ©vocable, la compÃ©tence de l'autoritÃ© susmentionnÃ©e et s'engagent Ã  n'en invoquer aucune autre, quelle que soit leur prÃ©fÃ©rence.
 
-Au Mexique : les Parties conviennent de se soumettre à la compétence exclusive des tribunaux de la ville de Mexico pour la résolution de tout litige émanant du présent Contrat. Les Parties renoncent à recourir à tout autre juridiction dont relèverait leur domicile présent ou futur, ou en raison de tout autre motif.
+Au MexiqueÂ : les Parties conviennent de se soumettre Ã  la compÃ©tence exclusive des tribunaux de la ville de Mexico pour la rÃ©solution de tout litige Ã©manant du prÃ©sent Contrat. Les Parties renoncent Ã  recourir Ã  tout autre juridiction dont relÃ¨verait leur domicile prÃ©sent ou futur, ou en raison de tout autre motif.
 
-Clause 7. Généralités
+Clause 7. GÃ©nÃ©ralitÃ©s
 
-Dans le paragraphe g :
+Dans le paragraphe gÂ :
 
-Aux Etats-Unis : supprimez les 2 dernières phrases.
+Aux Etats-UnisÂ : supprimez les 2 derniÃ¨res phrases.
 
-Dans le paragraphe i, ajoutez la nouvelle phrase suivante après la première phrase :
+Dans le paragraphe i, ajoutez la nouvelle phrase suivante aprÃ¨s la premiÃ¨re phraseÂ :
 
-Au Mexique : Tout changement d'adresse doit être notifié 10 (dix) jours à l'avance, faute de quoi les notifications faites à la dernière adresse indiquée produiront tous leurs effets juridiques.
+Au MexiqueÂ : Tout changement d'adresse doit Ãªtre notifiÃ© 10 (dix) jours Ã  l'avance, faute de quoi les notifications faites Ã  la derniÃ¨re adresse indiquÃ©e produiront tous leurs effets juridiques.
 
-Dans le paragraphe j :
+Dans le paragraphe jÂ :
 
-Au Brésil : supprimez l'intégralité de la deuxième phrase : « Les parties s'interdisent d'intenter une action en justice contre l'autre au titre du Contrat plus de deux ans après l'apparition de son fait générateur ».
+Au BrÃ©silÂ : supprimez l'intÃ©gralitÃ© de la deuxiÃ¨me phraseÂ : Â«Â Les parties s'interdisent d'intenter une action en justice contre l'autre au titre du Contrat plus de deux ans aprÃ¨s l'apparition de son fait gÃ©nÃ©rateurÂ Â».
 
-Ajoutez en tant que nouveau paragraphe l dans cette clause :
+Ajoutez en tant que nouveau paragraphe l dans cette clauseÂ :
 
-Au Canada : Les deux parties acceptent de rédiger ce document en langue anglaise. Les parties ont convenu de rédiger le présent document en langue anglaise.
+Au CanadaÂ : Les deux parties acceptent de rÃ©diger ce document en langue anglaise. Les parties ont convenu de rÃ©diger le prÃ©sent document en langue anglaise.
 
 2. ASIE PACIFIQUE
 
 Clause 2. Garanties
 
-Phrase à ajouter à la fin de la clause sous la forme d'un nouveau paragraphe f :
+Phrase Ã  ajouter Ã  la fin de la clause sous la forme d'un nouveau paragraphe fÂ :
 
-En Australie : les garanties susmentionnées s'ajoutent aux droits conférés au titre de la Competition and Consumer Act de 2010, dans les limites définies par celles-ci.
+En AustralieÂ : les garanties susmentionnÃ©es s'ajoutent aux droits confÃ©rÃ©s au titre de la Competition and Consumer Act de 2010, dans les limites dÃ©finies par celles-ci.
 
-Au Japon : La responsabilité d'IBM est limitée au présent paragraphe et à la clause Responsabilité et Protection de la Propriété Intellectuelle, les Annexes applicables et les DT constituant le seul recours du Détenteur de Licence en cas de non-respect des garanties spécifiées dans cette clause.
+Au JaponÂ : La responsabilitÃ© d'IBM est limitÃ©e au prÃ©sent paragraphe et Ã  la clause ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle, les Annexes applicables et les DT constituant le seul recours du DÃ©tenteur de Licence en cas de non-respect des garanties spÃ©cifiÃ©es dans cette clause.
 
-En Nouvelle-Zélande : les garanties susmentionnées s'ajoutent aux droits conférés au titre de la Consumer Guarantee Act de 1993 ou tout autre texte de loi qui ne peuvent être limités par la loi.
+En Nouvelle-ZÃ©landeÂ : les garanties susmentionnÃ©es s'ajoutent aux droits confÃ©rÃ©s au titre de la Consumer Guarantee Act de 1993 ou tout autre texte de loi qui ne peuvent Ãªtre limitÃ©s par la loi.
 
-Clause 3. Redevances, Taxes, Paiements et Vérification
+Clause 3. Redevances, Taxes, Paiements et VÃ©rification
 
-Dans le paragraphe b. remplacez la troisième phrase par les 2 phrases suivantes :
+Dans le paragraphe b. remplacez la troisiÃ¨me phrase par les 2 phrases suivantesÂ :
 
-À Hong Kong, en Indonésie, en Corée, à Macao, en Malaisie, aux Philippines, à Singapour et au Vietnam : Les montants sont exigibles à réception de la facture et payables dans les trente (30) jours date de facture sur un compte spécifié par IBM. Si le paiement n'est pas reçu dans un délai de 30 jours à compter de la date de la facture, IBM peut facturer des frais de retard sur le montant impayé, calculés sur le nombre de jours de retard, au plus faible des deux montants suivants : i) 2 % pour chaque période de 30 jours ou partie de celle-ci ; ou ii) le montant maximum autorisé par la loi applicable.
+Ã€ Hong Kong, en IndonÃ©sie, en CorÃ©e, Ã  Macao, en Malaisie, aux Philippines, Ã  Singapour et au VietnamÂ : Les montants sont exigibles Ã  rÃ©ception de la facture et payables dans les trente (30) jours date de facture sur un compte spÃ©cifiÃ© par IBM. Si le paiement n'est pas reÃ§u dans un dÃ©lai de 30 jours Ã  compter de la date de la facture, IBM peut facturer des frais de retard sur le montant impayÃ©, calculÃ©s sur le nombre de jours de retard, au plus faible des deux montants suivantsÂ : i) 2 % pour chaque pÃ©riode de 30 jours ou partie de celle-ciÂ ; ou ii) le montant maximum autorisÃ© par la loi applicable.
 
-En Thaïlande : Les montants sont exigibles à réception de la facture et payables dans les trente (30) jours date de facture sur un compte spécifié par IBM. Si le paiement n'est pas reçu dans un délai de 30 jours à compter de la date de la facture, des frais de retard de paiement peuvent être appliqués sur le montant impayé, au taux de 1,25 % par mois, calculé sur le nombre de jours de retard de paiement.
+En ThaÃ¯landeÂ : Les montants sont exigibles Ã  rÃ©ception de la facture et payables dans les trente (30) jours date de facture sur un compte spÃ©cifiÃ© par IBM. Si le paiement n'est pas reÃ§u dans un dÃ©lai de 30 jours Ã  compter de la date de la facture, des frais de retard de paiement peuvent Ãªtre appliquÃ©s sur le montant impayÃ©, au taux de 1,25 % par mois, calculÃ© sur le nombre de jours de retard de paiement.
 
-Dans la première phrase du paragraphe c, supprimez le mot « et » avant « (iv) », et ajoutez un point-virgule et le nouveau point suivant « (v) » :
+Dans la premiÃ¨re phrase du paragraphe c, supprimez le mot Â«Â etÂ Â» avant Â«Â (iv)Â Â», et ajoutez un point-virgule et le nouveau point suivant Â«Â (v)Â Â»Â :
 
-En Inde : ; et (v) déposer des déclarations exactes de taxes déduites à la source (TDS) en temps voulu. Si un impôt, un droit, une taxe ou une redevance (les « Taxes ») n'est pas facturé sur la base des documents d'exonération fournis par le concessionnaire et que l'autorité fiscale décide ultérieurement que ces taxes auraient dû être facturées, le concessionnaire sera tenu de payer ces taxes, y compris les intérêts, les prélèvements et/ou les pénalités applicables.
+En IndeÂ :Â ; et (v) dÃ©poser des dÃ©clarations exactes de taxes dÃ©duites Ã  la source (TDS) en temps voulu. Si un impÃ´t, un droit, une taxe ou une redevance (les Â«Â TaxesÂ Â») n'est pas facturÃ© sur la base des documents d'exonÃ©ration fournis par le concessionnaire et que l'autoritÃ© fiscale dÃ©cide ultÃ©rieurement que ces taxes auraient dÃ» Ãªtre facturÃ©es, le concessionnaire sera tenu de payer ces taxes, y compris les intÃ©rÃªts, les prÃ©lÃ¨vements et/ou les pÃ©nalitÃ©s applicables.
 
-Dans la première phrase du paragraphe c, supprimez le mot « et » avant « (iv) », et remplacez le point (iv) et ajoutez un nouveau point « (v) » avec :
+Dans la premiÃ¨re phrase du paragraphe c, supprimez le mot Â«Â etÂ Â» avant Â«Â (iv)Â Â», et remplacez le point (iv) et ajoutez un nouveau point Â«Â (v)Â Â» avecÂ :
 
-À Singapour, en Malaisie, aux Philippines, en Thaïlande, en Indonésie et au Vietnam : (iv) coopérer pleinement avec IBM dans le cadre de la recherche d'une renonciation ou d'une réduction de la retenue à la source ou de tout autre impôt pour lequel le Détenteur de Licence demande une renonciation ou une réduction ; et (v) remplir, classer et tenir à jour rapidement tous les documents pertinents pour une telle renonciation, réduction ou exonération.
+Ã€ Singapour, en Malaisie, aux Philippines, en ThaÃ¯lande, en IndonÃ©sie et au VietnamÂ : (iv) coopÃ©rer pleinement avec IBM dans le cadre de la recherche d'une renonciation ou d'une rÃ©duction de la retenue Ã  la source ou de tout autre impÃ´t pour lequel le DÃ©tenteur de Licence demande une renonciation ou une rÃ©ductionÂ ; et (v) remplir, classer et tenir Ã  jour rapidement tous les documents pertinents pour une telle renonciation, rÃ©duction ou exonÃ©ration.
 
-Clause 4. Responsabilité et Protection de la Propriété Intellectuelle
+Clause 4. ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle
 
-Phrase à ajouter à la fin de la première phrase du paragraphe a :
+Phrase Ã  ajouter Ã  la fin de la premiÃ¨re phrase du paragraphe aÂ :
 
-En Australie : (par exemple sur base contractuelle ou en raison d'un préjudice, d'une négligence, en vertu de la loi ou pour toute autre raison)
+En AustralieÂ : (par exemple sur base contractuelle ou en raison d'un prÃ©judice, d'une nÃ©gligence, en vertu de la loi ou pour toute autre raison)
 
-Au paragraphe a, deuxième phrase, après le mot « spécial » et avant le mot « accessoire », ajoutez ce qui suit :
+Au paragraphe a, deuxiÃ¨me phrase, aprÃ¨s le mot Â«Â spÃ©cialÂ Â» et avant le mot Â«Â accessoireÂ Â», ajoutez ce qui suitÂ :
 
-Aux Philippines : (y compris les dommages-intérêts nominaux et exemplaires), les dommages moraux,
+Aux PhilippinesÂ : (y compris les dommages-intÃ©rÃªts nominaux et exemplaires), les dommages moraux,
 
-Ajoutez en tant que nouveau paragraphe après la fin du paragraphe a (et assurez-vous que les lettres des paragraphes sont correctement ordonnées) :
+Ajoutez en tant que nouveau paragraphe aprÃ¨s la fin du paragraphe a (et assurez-vous que les lettres des paragraphes sont correctement ordonnÃ©es)Â :
 
-En Australie : En cas de non-respect par IBM d'une garantie impliquée par le Competition and Consumer Act de 2010, la responsabilité d'IBM est limitée à la réparation ou au remplacement des biens ou à la fourniture de biens équivalents, ou au paiement du coût du remplacement des biens ou de leur réparation. Lorsque cette garantie se rapporte au droit de vente, à une possession paisible ou à un titre incontestable d'un produit en vertu de la législation australienne en matière de protection des consommateurs, aucune des limitations de la présente clause ne s'applique.
+En AustralieÂ : En cas de non-respect par IBM d'une garantie impliquÃ©e par le Competition and Consumer Act de 2010, la responsabilitÃ© d'IBM est limitÃ©e Ã  la rÃ©paration ou au remplacement des biens ou Ã  la fourniture de biens Ã©quivalents, ou au paiement du coÃ»t du remplacement des biens ou de leur rÃ©paration. Lorsque cette garantie se rapporte au droit de vente, Ã  une possession paisible ou Ã  un titre incontestable d'un produit en vertu de la lÃ©gislation australienne en matiÃ¨re de protection des consommateurs, aucune des limitations de la prÃ©sente clause ne s'applique.
 
-Clause 5. Résiliation
+Clause 5. RÃ©siliation
 
-Phrase à ajouter à la fin de la clause sous la forme d'un nouveau paragraphe b :
+Phrase Ã  ajouter Ã  la fin de la clause sous la forme d'un nouveau paragraphe bÂ :
 
-En Indonésie : Les parties renoncent aux dispositions de l'article 1266 du Code Civil Indonésien, dans la mesure où cet article énonce qu'un ordre du tribunal est nécessaire en cas de résiliation d'un contrat opposable.
+En IndonÃ©sieÂ : Les parties renoncent aux dispositions de l'article 1266 du Code Civil IndonÃ©sien, dans la mesure oÃ¹ cet article Ã©nonce qu'un ordre du tribunal est nÃ©cessaire en cas de rÃ©siliation d'un contrat opposable.
 
-Clause 6. Lois Applicables et Compétence Territoriale
+Clause 6. Lois Applicables et CompÃ©tence Territoriale
 
-Dans la deuxième phrase du deuxième paragraphe, remplacez la phrase « du pays dans lequel la transaction est effectuée » par :
+Dans la deuxiÃ¨me phrase du deuxiÃ¨me paragraphe, remplacez la phrase Â«Â du pays dans lequel la transaction est effectuÃ©eÂ Â» parÂ :
 
-Au Cambodge, au Laos : Etat de New York, Etats-Unis
+Au Cambodge, au LaosÂ : Etat de New York, Etats-Unis
 
-En Australie : l'Etat ou le Territoire dans lequel vous avez acquis la transaction
+En AustralieÂ : l'Etat ou le Territoire dans lequel vous avez acquis la transaction
 
-À Hong Kong : la Région Administrative Spéciale de Hong Kong de la République populaire de Chine
+Ã€ Hong KongÂ : la RÃ©gion Administrative SpÃ©ciale de Hong Kong de la RÃ©publique populaire de Chine
 
-À Macao : la Région Administrative Spéciale de Macao de la République populaire de Chine
+Ã€ MacaoÂ : la RÃ©gion Administrative SpÃ©ciale de Macao de la RÃ©publique populaire de Chine
 
-En Corée : la République de Corée et soumis au Tribunal du District Central de Séoul de la République de Corée
+En CorÃ©eÂ : la RÃ©publique de CorÃ©e et soumis au Tribunal du District Central de SÃ©oul de la RÃ©publique de CorÃ©e
 
-À Taïwan : Taïwan
+Ã€ TaÃ¯wanÂ : TaÃ¯wan
 
-En Inde : Inde
+En IndeÂ : Inde
 
-Au point ii) de la première phrase du paragraphe b, ajoutez ce qui suit après le mot « y compris » et avant le mot « défense » :
+Au point ii) de la premiÃ¨re phrase du paragraphe b, ajoutez ce qui suit aprÃ¨s le mot Â«Â y comprisÂ Â» et avant le mot Â«Â dÃ©fenseÂ Â»Â :
 
-Au Japon : les lois japonaises et
+Au JaponÂ : les lois japonaises et
 
-Dans la deuxième phrase du paragraphe a, remplacez la phrase « du pays où la transaction est effectuée ou, si IBM l'autorise, le pays où le produit est placé en utilisation productive » par :
+Dans la deuxiÃ¨me phrase du paragraphe a, remplacez la phrase Â«Â du pays oÃ¹ la transaction est effectuÃ©e ou, si IBM l'autorise, le pays oÃ¹ le produit est placÃ© en utilisation productiveÂ Â» parÂ :
 
-À Hong Kong : la Région Administrative Spéciale de Hong Kong de la République populaire de Chine
+Ã€ Hong KongÂ : la RÃ©gion Administrative SpÃ©ciale de Hong Kong de la RÃ©publique populaire de Chine
 
-À Macao : la Région Administrative Spéciale de Macao de la République populaire de Chine
+Ã€ MacaoÂ : la RÃ©gion Administrative SpÃ©ciale de Macao de la RÃ©publique populaire de Chine
 
-À Taïwan : Taïwan
+Ã€ TaÃ¯wanÂ : TaÃ¯wan
 
-Phrase à ajouter à la fin de la clause sous la forme d'un nouveau paragraphe d :
+Phrase Ã  ajouter Ã  la fin de la clause sous la forme d'un nouveau paragraphe dÂ :
 
-Au Cambodge, au Laos, aux Philippines, au Sri Lanka : toute contestation fera l'objet d'un arbitrage définitif à Singapour selon les règles d'arbitrage du Centre d'Arbitrage International de Singapour (les « Règles du SIAC »).
+Au Cambodge, au Laos, aux Philippines, au Sri LankaÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif Ã  Singapour selon les rÃ¨gles d'arbitrage du Centre d'Arbitrage International de Singapour (les Â«Â RÃ¨gles du SIACÂ Â»).
 
-En Inde : toute contestation fera l'objet d'un arbitrage définitif conformément à la Loi d'Arbitrage et de Conciliation de 1996 en vigueur, en langue anglaise et dans la ville de Bangalore, Inde. Un arbitre unique sera saisi si le montant faisant objet du litige est inférieur ou égal à cinq crores de roupies indiennes, alors que trois arbitres seront saisis si le montant est supérieur. En cas de remplacement d'un arbitre, les débats reprendront au point auquel ils avaient été interrompus au moment de la vacance.
+En IndeÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif conformÃ©ment Ã  la Loi d'Arbitrage et de Conciliation de 1996 en vigueur, en langue anglaise et dans la ville de Bangalore, Inde. Un arbitre unique sera saisi si le montant faisant objet du litige est infÃ©rieur ou Ã©gal Ã  cinq crores de roupies indiennes, alors que trois arbitres seront saisis si le montant est supÃ©rieur. En cas de remplacement d'un arbitre, les dÃ©bats reprendront au point auquel ils avaient Ã©tÃ© interrompus au moment de la vacance.
 
-En Indonésie : toute contestation fera l'objet d'un arbitrage définitif à Jakarta (Indonésie) selon les règles du Conseil national d'arbitrage indonésien établi en 1977 (« Badan Arbitrase Nasional Indonesia » ou « BANI »). La sentence arbitrale sera définitive et contraignante pour les parties, sans appel, et sera rédigée par écrit et exposera les constatations de fait et les conclusions de droit.
+En IndonÃ©sieÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif Ã  Jakarta (IndonÃ©sie) selon les rÃ¨gles du Conseil national d'arbitrage indonÃ©sien Ã©tabli en 1977 (Â«Â Badan Arbitrase Nasional IndonesiaÂ Â» ou Â«Â BANIÂ Â»). La sentence arbitrale sera dÃ©finitive et contraignante pour les parties, sans appel, et sera rÃ©digÃ©e par Ã©crit et exposera les constatations de fait et les conclusions de droit.
 
-Dans la République Populaire de Chine : l'une ou l'autre partie est autorisée à soumettre la réclamation à la Commission Chinoise d'Arbitrage de l'Économie et du Commerce International (China International Economic and Trade Arbitration Commission) à Pékin (RPC), à des fins d'arbitrage. Les parties conviennent de recourir à trois arbitres pour résoudre tout différend.
+Dans la RÃ©publique Populaire de ChineÂ : l'une ou l'autre partie est autorisÃ©e Ã  soumettre la rÃ©clamation Ã  la Commission Chinoise d'Arbitrage de l'Ã‰conomie et du Commerce International (China International Economic and Trade Arbitration Commission) Ã  PÃ©kin (RPC), Ã  des fins d'arbitrage. Les parties conviennent de recourir Ã  trois arbitres pour rÃ©soudre tout diffÃ©rend.
 
-Au Vietnam : toute contestation fera l'objet d'un arbitrage définitif au Vietnam selon les règles d'arbitrage du Centre d'Arbitrage International du Vietnam (les « Règles du VIAC »). Toutes les démarches et tous les documents seront en langue anglaise.
+Au VietnamÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif au Vietnam selon les rÃ¨gles d'arbitrage du Centre d'Arbitrage International du Vietnam (les Â«Â RÃ¨gles du VIACÂ Â»). Toutes les dÃ©marches et tous les documents seront en langue anglaise.
 
-Clause 7. Généralités
+Clause 7. GÃ©nÃ©ralitÃ©s
 
-Dans la deuxième phrase du paragraphe j, remplacez la phrase « deux ans » par :
+Dans la deuxiÃ¨me phrase du paragraphe j, remplacez la phrase Â«Â deux ansÂ Â» parÂ :
 
-En Inde : trois ans
+En IndeÂ : trois ans
 
-Ajoutez ceci à la fin de la clause sous forme d'un nouveau paragraphe l :
+Ajoutez ceci Ã  la fin de la clause sous forme d'un nouveau paragraphe lÂ :
 
-En Indonésie : Le présent contrat est rédigé en anglais et en bahasa indonésien. Dans la mesure où la loi applicable le permet, la version anglaise prévaudra en cas de conflit entre ces versions.
+En IndonÃ©sieÂ : Le prÃ©sent contrat est rÃ©digÃ© en anglais et en bahasa indonÃ©sien. Dans la mesure oÃ¹ la loi applicable le permet, la version anglaise prÃ©vaudra en cas de conflit entre ces versions.
 
 3. EUROPE, MOYEN-ORIENT ET AFRIQUE
 
-Clause 3. Redevances, Taxes, Paiements et Vérification
+Clause 3. Redevances, Taxes, Paiements et VÃ©rification
 
-Phrase à ajouter à la fin de la troisième phrase du paragraphe b :
+Phrase Ã  ajouter Ã  la fin de la troisiÃ¨me phrase du paragraphe bÂ :
 
-En Italie : si IBM l'exige par notification écrite au Détenteur de Licence.
+En ItalieÂ : si IBM l'exige par notification Ã©crite au DÃ©tenteur de Licence.
 
-En Ukraine : sur le montant échu à compter du jour suivant la date d'exigibilité jusqu'à la date du paiement réel, calculé au prorata pour chaque jour de retard, au taux d'intérêt égal au double du taux de remise déterminé par la Banque National d'Ukraine (NBU) pendant la période de retard (le paragraphe 6 de l'article 232 du Code de commerce ukrainien ne s'applique pas).
+En UkraineÂ : sur le montant Ã©chu Ã  compter du jour suivant la date d'exigibilitÃ© jusqu'Ã  la date du paiement rÃ©el, calculÃ© au prorata pour chaque jour de retard, au taux d'intÃ©rÃªt Ã©gal au double du taux de remise dÃ©terminÃ© par la Banque National d'Ukraine (NBU) pendant la pÃ©riode de retard (le paragraphe 6 de l'article 232 du Code de commerce ukrainien ne s'applique pas).
 
-Dans le paragraphe b, remplacez la troisième phrase par la phrase suivante :
+Dans le paragraphe b, remplacez la troisiÃ¨me phrase par la phrase suivanteÂ :
 
-En France : Les montants sont exigibles et payables dans les dix (10) jours date de facture sur un compte spécifié par IBM et des pénalités de retard égales au taux de référence de la Banque centrale européenne le plus récent majoré de 10 points s'appliquent, en plus des frais de recouvrement des créances de quarante (40) euros ou, si ces frais dépassent quarante euros, un dédommagement supplémentaire sous réserve de la justification du montant réclamé.
+En FranceÂ : Les montants sont exigibles et payables dans les dix (10) jours date de facture sur un compte spÃ©cifiÃ© par IBM et des pÃ©nalitÃ©s de retard Ã©gales au taux de rÃ©fÃ©rence de la Banque centrale europÃ©enne le plus rÃ©cent majorÃ© de 10 points s'appliquent, en plus des frais de recouvrement des crÃ©ances de quarante (40) euros ou, si ces frais dÃ©passent quarante euros, un dÃ©dommagement supplÃ©mentaire sous rÃ©serve de la justification du montant rÃ©clamÃ©.
 
-En Russie : Les montants sont exigibles à réception de la facture et payables dans les trente (30) jours date de facture sur un compte spécifié par IBM. Des frais de retard de paiement au taux de 24 % par an, calculés pour chaque jour au-delà des 30 jours, peuvent s'appliquer.
+En RussieÂ : Les montants sont exigibles Ã  rÃ©ception de la facture et payables dans les trente (30) jours date de facture sur un compte spÃ©cifiÃ© par IBM. Des frais de retard de paiement au taux de 24 % par an, calculÃ©s pour chaque jour au-delÃ  des 30 jours, peuvent s'appliquer.
 
-Phrase à ajouter à la fin de la dernière phrase du paragraphe b :
+Phrase Ã  ajouter Ã  la fin de la derniÃ¨re phrase du paragraphe bÂ :
 
-En Lituanie : , ou sauf dans les cas prévus par la loi
+En LituanieÂ : , ou sauf dans les cas prÃ©vus par la loi
 
-A la fin du paragraphe b, ajoutez la phrase suivante :
+A la fin du paragraphe b, ajoutez la phrase suivanteÂ :
 
-En Italie : En cas de non-paiement ou de paiement partiel, et également à la suite d'une procédure formelle de réclamation de crédit ou d'un procès qu'IBM peut engager, en dérogation à l'article 4 du décret législatif n. 231 du 9 octobre 2002, et conformément à l'article 7 du même décret législatif, IBM notifiera par écrit au Détenteur de Licence, par courrier recommandé avec accusé de réception, les pénalités de retard dues.
+En ItalieÂ : En cas de non-paiement ou de paiement partiel, et Ã©galement Ã  la suite d'une procÃ©dure formelle de rÃ©clamation de crÃ©dit ou d'un procÃ¨s qu'IBM peut engager, en dÃ©rogation Ã  l'article 4 du dÃ©cret lÃ©gislatif n. 231 du 9 octobre 2002, et conformÃ©ment Ã  l'article 7 du mÃªme dÃ©cret lÃ©gislatif, IBM notifiera par Ã©crit au DÃ©tenteur de Licence, par courrier recommandÃ© avec accusÃ© de rÃ©ception, les pÃ©nalitÃ©s de retard dues.
 
-Clause 4. Responsabilité et Protection de la Propriété Intellectuelle
+Clause 4. ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle
 
-Dans la première phrase du paragraphe a, insérez ce qui suit avant les mots « montants payés » :
+Dans la premiÃ¨re phrase du paragraphe a, insÃ©rez ce qui suit avant les mots Â«Â montants payÃ©sÂ Â»Â :
 
-En Belgique, France, Allemagne, Italie, Luxembourg, à Malte et en Espagne dépassera un montant de 500 000 (cinq cent mille) euros ou
+En Belgique, France, Allemagne, Italie, Luxembourg, Ã  Malte et en Espagne dÃ©passera un montant de 500Â 000 (cinq cent mille) euros ou
 
-En Irlande et au Royaume-Uni : 125 %
+En Irlande et au Royaume-UniÂ : 125 %
 
-Dans la première phrase du paragraphe a, remplacez la phrase « les dommages directs subis par le Détenteur de Licence » par :
+Dans la premiÃ¨re phrase du paragraphe a, remplacez la phrase Â«Â les dommages directs subis par le DÃ©tenteur de LicenceÂ Â» parÂ :
 
-En Espagne : et les dommages prouvés subis par le Détenteur de Licence par suite de la défaillance d'IBM
+En EspagneÂ : et les dommages prouvÃ©s subis par le DÃ©tenteur de Licence par suite de la dÃ©faillance d'IBM
 
-Dans le paragraphe a, ajoutez cette nouvelle phrase après la première phrase :
+Dans le paragraphe a, ajoutez cette nouvelle phrase aprÃ¨s la premiÃ¨re phraseÂ :
 
-En Slovaquie : se rapportant à l'article 379 du Code Commercial, Loi 513/1991 Coll. amendé et concernant les dispositions relatives à la conclusion du Contrat, en vertu duquel les deux Parties conviennent que tout dommage prévisible et potentiellement cumulatif ne dépassera pas le montant spécifié ci-dessus, qui représente le montant maximum au titre duquel est engagée la responsabilité d'IBM.
+En SlovaquieÂ : se rapportant Ã  l'article 379 du Code Commercial, Loi 513/1991 Coll. amendÃ© et concernant les dispositions relatives Ã  la conclusion du Contrat, en vertu duquel les deux Parties conviennent que tout dommage prÃ©visible et potentiellement cumulatif ne dÃ©passera pas le montant spÃ©cifiÃ© ci-dessus, qui reprÃ©sente le montant maximum au titre duquel est engagÃ©e la responsabilitÃ© d'IBM.
 
-Dans le paragraphe a, ajoutez cette nouvelle phrase avant la deuxième phrase :
+Dans le paragraphe a, ajoutez cette nouvelle phrase avant la deuxiÃ¨me phraseÂ :
 
-En Russie : IBM ne sera pas responsable de l'avantage perdu.
+En RussieÂ : IBM ne sera pas responsable de l'avantage perdu.
 
-Dans la deuxième phrase du paragraphe a, supprimez le mot :
+Dans la deuxiÃ¨me phrase du paragraphe a, supprimez le motÂ :
 
-En Irlande et au Royaume-Uni : économique
+En Irlande et au Royaume-UniÂ : Ã©conomique
 
-Dans le paragraphe a, remplacez la deuxième phrase par :
+Dans le paragraphe a, remplacez la deuxiÃ¨me phrase parÂ :
 
-En Belgique, aux Pays-Bas et au Luxembourg : la responsabilité d'IBM ne pourra être engagée au titre des atteintes à la réputation, des dommages indirects, et des pertes de bénéfices, d'activité commerciale, de valeur, de revenu, de clientèle ou d'économies escomptées, de réclamation de tiers contre le Détenteur de Licence et de perte (ou détérioration) de données.
+En Belgique, aux Pays-Bas et au LuxembourgÂ : la responsabilitÃ© d'IBM ne pourra Ãªtre engagÃ©e au titre des atteintes Ã  la rÃ©putation, des dommages indirects, et des pertes de bÃ©nÃ©fices, d'activitÃ© commerciale, de valeur, de revenu, de clientÃ¨le ou d'Ã©conomies escomptÃ©es, de rÃ©clamation de tiers contre le DÃ©tenteur de Licence et de perte (ou dÃ©tÃ©rioration) de donnÃ©es.
 
-En France : la responsabilité d'IBM ne pourra être engagée au titre des atteintes à la réputation, des dommages indirects, et des pertes de bénéfices, d'activité commerciale, de valeur, de revenu, de clientèle ou d'économies escomptées.
+En FranceÂ : la responsabilitÃ© d'IBM ne pourra Ãªtre engagÃ©e au titre des atteintes Ã  la rÃ©putation, des dommages indirects, et des pertes de bÃ©nÃ©fices, d'activitÃ© commerciale, de valeur, de revenu, de clientÃ¨le ou d'Ã©conomies escomptÃ©es.
 
-Au Portugal : IBM ne sera pas responsable des dommages indirects, y compris des pertes de bénéfices.
+Au PortugalÂ : IBM ne sera pas responsable des dommages indirects, y compris des pertes de bÃ©nÃ©fices.
 
-En Espagne : la responsabilité d'IBM ne pourra être engagée au titre des atteintes à la réputation, des pertes de bénéfices, d'activité commerciale, de valeur, de revenu, de clientèle ou d'économies escomptées.
+En EspagneÂ : la responsabilitÃ© d'IBM ne pourra Ãªtre engagÃ©e au titre des atteintes Ã  la rÃ©putation, des pertes de bÃ©nÃ©fices, d'activitÃ© commerciale, de valeur, de revenu, de clientÃ¨le ou d'Ã©conomies escomptÃ©es.
 
-Ajoutez ce qui suit à la fin du paragraphe a :
+Ajoutez ce qui suit Ã  la fin du paragraphe aÂ :
 
-En France : Les conditions du présent Contrat, y compris les conditions financières, ont été établies en fonction de la présente Clause, qui fait partie intégrante de l'économie générale du Contrat.
+En FranceÂ : Les conditions du prÃ©sent Contrat, y compris les conditions financiÃ¨res, ont Ã©tÃ© Ã©tablies en fonction de la prÃ©sente Clause, qui fait partie intÃ©grante de l'Ã©conomie gÃ©nÃ©rale du Contrat.
 
-Dans le paragraphe b, remplacez « dommages pour lesquels la responsabilité ne peut pas être limitée en vertu de la loi applicable » par :
+Dans le paragraphe b, remplacez Â«Â dommages pour lesquels la responsabilitÃ© ne peut pas Ãªtre limitÃ©e en vertu de la loi applicableÂ Â» parÂ :
 
-En Allemagne : i) les dommages corporels (y compris le décès) ; ii) les pertes ou dommages causés par une violation de la garantie assumée par IBM dans le cadre d'une transaction en vertu du présent Contrat ; et iii) causés intentionnellement ou par une négligence grave.
+En AllemagneÂ : i) les dommages corporels (y compris le dÃ©cÃ¨s)Â ; ii) les pertes ou dommages causÃ©s par une violation de la garantie assumÃ©e par IBM dans le cadre d'une transaction en vertu du prÃ©sent ContratÂ ; et iii) causÃ©s intentionnellement ou par une nÃ©gligence grave.
 
-Section 6. Lois Applicables et Compétence Territoriale
+Section 6. Lois Applicables et CompÃ©tence Territoriale
 
-Dans le paragraphe a, dans la première phrase seulement, remplacez « du pays dans lequel la transaction est effectuée » par :
+Dans le paragraphe a, dans la premiÃ¨re phrase seulement, remplacez Â«Â du pays dans lequel la transaction est effectuÃ©eÂ Â» parÂ :
 
-Albanie, Arménie, Azerbaïdjan, Belarus, Bosnie-Herzégovine, Bulgarie, Croatie, ancienne République yougoslave de Macédoine, Géorgie, Kazakhstan, Kirghizstan, Moldavie, Monténégro, Roumanie, Russie, Serbie, Tadjikistan, Turkménistan, Ukraine et Ouzbékistan : Autriche
+Albanie, ArmÃ©nie, AzerbaÃ¯djan, Belarus, Bosnie-HerzÃ©govine, Bulgarie, Croatie, ancienne RÃ©publique yougoslave de MacÃ©doine, GÃ©orgie, Kazakhstan, Kirghizstan, Moldavie, MontÃ©nÃ©gro, Roumanie, Russie, Serbie, Tadjikistan, TurkmÃ©nistan, Ukraine et OuzbÃ©kistanÂ : Autriche
 
-En Estonie, Lettonie, et Lituanie : Finlande
+En Estonie, Lettonie, et LituanieÂ : Finlande
 
-Dans les pays suivants : Algérie, Andorre, Bénin, Burkina Faso, Burundi, Cameroun, Cap-Vert, République centrafricaine, Tchad, Comores, République du Congo, Djibouti, République démocratique du Congo, Guinée équatoriale, Guyane, Polynésie française, Gabon, Guinée, Guinée-Bissau, Côte d'Ivoire, Liban, Madagascar, Mali, Mauritanie, Ile Maurice, Mayotte, Maroc, Nouvelle-Calédonie, Niger, Réunion, Sénégal, Seychelles, Togo, Tunisie, Vanuatu et Wallis-et-Futuna : France
+Dans les pays suivantsÂ : AlgÃ©rie, Andorre, BÃ©nin, Burkina Faso, Burundi, Cameroun, Cap-Vert, RÃ©publique centrafricaine, Tchad, Comores, RÃ©publique du Congo, Djibouti, RÃ©publique dÃ©mocratique du Congo, GuinÃ©e Ã©quatoriale, Guyane, PolynÃ©sie franÃ§aise, Gabon, GuinÃ©e, GuinÃ©e-Bissau, CÃ´te d'Ivoire, Liban, Madagascar, Mali, Mauritanie, Ile Maurice, Mayotte, Maroc, Nouvelle-CalÃ©donie, Niger, RÃ©union, SÃ©nÃ©gal, Seychelles, Togo, Tunisie, Vanuatu et Wallis-et-FutunaÂ : France
 
-Angola, Bahreïn, Botswana, Égypte, Erythrée, Éthiopie, Gambie, Ghana, Irak, Jordanie, Kenya, Koweït, Liberia, Malawi, Malte, Mozambique, Nigeria, Oman, Pakistan, Qatar, Rwanda, Sao Tomé-et-Principe, Arabie saoudite, Sierra Leone, Somalie, Tanzanie, Ouganda, Émirats arabes unis, Cisjordanie/Gaza, Yémen, Zambie et Zimbabwe : Angleterre
+Angola, BahreÃ¯n, Botswana, Ã‰gypte, ErythrÃ©e, Ã‰thiopie, Gambie, Ghana, Irak, Jordanie, Kenya, KoweÃ¯t, Liberia, Malawi, Malte, Mozambique, Nigeria, Oman, Pakistan, Qatar, Rwanda, Sao TomÃ©-et-Principe, Arabie saoudite, Sierra Leone, Somalie, Tanzanie, Ouganda, Ã‰mirats arabes unis, Cisjordanie/Gaza, YÃ©men, Zambie et ZimbabweÂ : Angleterre
 
-Au Liechtenstein : Suisse
+Au LiechtensteinÂ : Suisse
 
-En Afrique du Sud, Namibie, au Lesotho et au Swaziland : République d'Afrique du Sud
+En Afrique du Sud, Namibie, au Lesotho et au SwazilandÂ : RÃ©publique d'Afrique du Sud
 
-Au Royaume-Uni : Angleterre
+Au Royaume-UniÂ : Angleterre
 
-Phrase à ajouter à la fin de la première phrase du paragraphe a :
+Phrase Ã  ajouter Ã  la fin de la premiÃ¨re phrase du paragraphe aÂ :
 
-En France: Les parties conviennent que les articles 1222 et 1223 du Code Civil français ne sont pas applicables.
+En France: Les parties conviennent que les articles 1222 et 1223 du Code Civil franÃ§ais ne sont pas applicables.
 
-Ajoutez ce qui suit à la fin du paragraphe a :
+Ajoutez ce qui suit Ã  la fin du paragraphe aÂ :
 
-Albanie, Arménie, Azerbaïdjan, Belarus, Bosnie-Herzégovine, Bulgarie, Croatie, ancienne République yougoslave de Macédoine, Géorgie, Kazakhstan, Kosovo, Kirghizstan, Moldovie, Monténégro, Roumanie, Russie, Serbie, Tadjikistan, Turkménistan, Ukraine et Ouzbékistan : toute contestation en rapport avec le présent Contrat fera l'objet d'un arbitrage définitif, selon les Règles d'Arbitrage de la Chambre Economique Fédérale du Centre International d'Arbitrage de Vienne (Autriche) avec l'anglais, comme langue officielle par trois arbitres impartiaux désignés conformément aux Règles susmentionnées. Chaque partie nommera un arbitre et les arbitres nommés par les parties désigneront un président indépendant dans les 30 jours, sinon le président sera nommé par l'Instance d'arbitrage conformément aux lois viennoises. Les arbitres n'auront pas autorité à ordonner une injonction ou accorder des dommages-intérêts exclus par ou en surplus des limitations contenues dans le présent Contrat. Aucune disposition du présent Contrat n'empêchera l'une quelconque des parties de recourir à la procédure judiciaire (1) en référé pour empêcher un préjudice matériel ou une violation des clauses de confidentialité ou des droits de propriété intellectuelle, ou (2) pour déterminer la validité ou la propriété d'un droit d'auteur, d'un brevet ou d'une marque détenue ou affirmée par une Partie ou une société de son Entreprise, ou (3) pour le recouvrement de créances inférieures à 500 000 dollars US.
+Albanie, ArmÃ©nie, AzerbaÃ¯djan, Belarus, Bosnie-HerzÃ©govine, Bulgarie, Croatie, ancienne RÃ©publique yougoslave de MacÃ©doine, GÃ©orgie, Kazakhstan, Kosovo, Kirghizstan, Moldovie, MontÃ©nÃ©gro, Roumanie, Russie, Serbie, Tadjikistan, TurkmÃ©nistan, Ukraine et OuzbÃ©kistanÂ : toute contestation en rapport avec le prÃ©sent Contrat fera l'objet d'un arbitrage dÃ©finitif, selon les RÃ¨gles d'Arbitrage de la Chambre Economique FÃ©dÃ©rale du Centre International d'Arbitrage de Vienne (Autriche) avec l'anglais, comme langue officielle par trois arbitres impartiaux dÃ©signÃ©s conformÃ©ment aux RÃ¨gles susmentionnÃ©es. Chaque partie nommera un arbitre et les arbitres nommÃ©s par les parties dÃ©signeront un prÃ©sident indÃ©pendant dans les 30 jours, sinon le prÃ©sident sera nommÃ© par l'Instance d'arbitrage conformÃ©ment aux lois viennoises. Les arbitres n'auront pas autoritÃ© Ã  ordonner une injonction ou accorder des dommages-intÃ©rÃªts exclus par ou en surplus des limitations contenues dans le prÃ©sent Contrat. Aucune disposition du prÃ©sent Contrat n'empÃªchera l'une quelconque des parties de recourir Ã  la procÃ©dure judiciaire (1) en rÃ©fÃ©rÃ© pour empÃªcher un prÃ©judice matÃ©riel ou une violation des clauses de confidentialitÃ© ou des droits de propriÃ©tÃ© intellectuelle, ou (2) pour dÃ©terminer la validitÃ© ou la propriÃ©tÃ© d'un droit d'auteur, d'un brevet ou d'une marque dÃ©tenue ou affirmÃ©e par une Partie ou une sociÃ©tÃ© de son Entreprise, ou (3) pour le recouvrement de crÃ©ances infÃ©rieures Ã  500Â 000 dollars US.
 
-En Estonie, Lettonie, et Lituanie : Toute contestation résultat du présent Contrat fera l'objet d'un arbitrage définitif par l'Institut d'arbitrage de la Chambre de commerce de Finlande (FAI) (instance d'arbitrage), en vertu du règlement d'arbitrage de la Chambre de commerce de Finlande (règlement), à Helsinki, Finlande, avec l'anglais comme langue officielle, par trois arbitres impartiaux nommés conformément à ce règlement. Chaque partie nommera un arbitre et les arbitres nommés par les parties désigneront un président indépendant dans les 30 jours, sinon le président sera nommé par l'Instance d'arbitrage conformément auxdites Règles. Les arbitres n'auront pas autorité à ordonner une injonction ou accorder des dommages-intérêts exclus par ou en surplus des limitations contenues dans le présent Contrat. Aucune disposition du présent Contrat n'empêchera l'une quelconque des parties de recourir à la procédure judiciaire (1) en référé pour empêcher un préjudice matériel ou une violation des clauses de confidentialité ou des droits de propriété intellectuelle, ou (2) pour déterminer la validité ou la propriété d'un droit d'auteur, d'un brevet ou d'une marque détenue ou affirmée par une Partie ou une société de son Entreprise, ou (3) pour le recouvrement de créances inférieures à 500 000 dollars US.
+En Estonie, Lettonie, et LituanieÂ : Toute contestation rÃ©sultat du prÃ©sent Contrat fera l'objet d'un arbitrage dÃ©finitif par l'Institut d'arbitrage de la Chambre de commerce de Finlande (FAI) (instance d'arbitrage), en vertu du rÃ¨glement d'arbitrage de la Chambre de commerce de Finlande (rÃ¨glement), Ã  Helsinki, Finlande, avec l'anglais comme langue officielle, par trois arbitres impartiaux nommÃ©s conformÃ©ment Ã  ce rÃ¨glement. Chaque partie nommera un arbitre et les arbitres nommÃ©s par les parties dÃ©signeront un prÃ©sident indÃ©pendant dans les 30 jours, sinon le prÃ©sident sera nommÃ© par l'Instance d'arbitrage conformÃ©ment auxdites RÃ¨gles. Les arbitres n'auront pas autoritÃ© Ã  ordonner une injonction ou accorder des dommages-intÃ©rÃªts exclus par ou en surplus des limitations contenues dans le prÃ©sent Contrat. Aucune disposition du prÃ©sent Contrat n'empÃªchera l'une quelconque des parties de recourir Ã  la procÃ©dure judiciaire (1) en rÃ©fÃ©rÃ© pour empÃªcher un prÃ©judice matÃ©riel ou une violation des clauses de confidentialitÃ© ou des droits de propriÃ©tÃ© intellectuelle, ou (2) pour dÃ©terminer la validitÃ© ou la propriÃ©tÃ© d'un droit d'auteur, d'un brevet ou d'une marque dÃ©tenue ou affirmÃ©e par une Partie ou une sociÃ©tÃ© de son Entreprise, ou (3) pour le recouvrement de crÃ©ances infÃ©rieures Ã  500Â 000 dollars US.
 
-Dans les pays suivants : Afghanistan, Angola, Bahreïn, Botswana, Burundi, Cap-Vert, Djibouti, Egypte, Erythrée, Ethiopie, Gambie, Ghana, Irak, Jordanie, Kenya, Koweït, Liban, Libéria, Libye, Madagascar, Malawi, Mozambique, Nigeria, Oman, Pakistan, Territoires palestiniens, Qatar, Rwanda, Sao Tomé-et-Principe, Arabie saoudite, Seychelles, Sierra Leone, Somalie, Soudan du Sud, Tanzanie, Ouganda, Emirats arabes unis, Sahara occidental, Yémen, Zambie et Zimbabwe : toute contestation fera l'objet d'un arbitrage définitif par trois arbitres impartiaux désignés par Cour Internationale d'Arbitrage de Londres (CIAL), conformément à ses règles d'arbitrage, à Londres (Royaume-Uni), avec l'anglais comme langue officielle. Chaque partie nommera un arbitre et les arbitres nommés par les parties désigneront un président indépendant dans les 30 jours, sinon le président sera nommé par l'Instance d'arbitrage conformément auxdites Règles. Les arbitres n'auront pas autorité à ordonner une injonction ou accorder des dommages-intérêts exclus par ou en surplus des limitations contenues dans le présent Contrat. Aucune disposition du présent Contrat n'empêchera l'une quelconque des parties de recourir à la procédure judiciaire (1) en référé pour empêcher un préjudice matériel ou une violation des clauses de confidentialité ou des droits de propriété intellectuelle, ou (2) pour déterminer la validité ou la propriété d'un droit d'auteur, d'un brevet ou d'une marque détenue ou affirmée par une Partie ou une société de son Entreprise, ou (3) pour le recouvrement de créances inférieures à 500 000 dollars US.
+Dans les pays suivantsÂ : Afghanistan, Angola, BahreÃ¯n, Botswana, Burundi, Cap-Vert, Djibouti, Egypte, ErythrÃ©e, Ethiopie, Gambie, Ghana, Irak, Jordanie, Kenya, KoweÃ¯t, Liban, LibÃ©ria, Libye, Madagascar, Malawi, Mozambique, Nigeria, Oman, Pakistan, Territoires palestiniens, Qatar, Rwanda, Sao TomÃ©-et-Principe, Arabie saoudite, Seychelles, Sierra Leone, Somalie, Soudan du Sud, Tanzanie, Ouganda, Emirats arabes unis, Sahara occidental, YÃ©men, Zambie et ZimbabweÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif par trois arbitres impartiaux dÃ©signÃ©s par Cour Internationale d'Arbitrage de Londres (CIAL), conformÃ©ment Ã  ses rÃ¨gles d'arbitrage, Ã  Londres (Royaume-Uni), avec l'anglais comme langue officielle. Chaque partie nommera un arbitre et les arbitres nommÃ©s par les parties dÃ©signeront un prÃ©sident indÃ©pendant dans les 30 jours, sinon le prÃ©sident sera nommÃ© par l'Instance d'arbitrage conformÃ©ment auxdites RÃ¨gles. Les arbitres n'auront pas autoritÃ© Ã  ordonner une injonction ou accorder des dommages-intÃ©rÃªts exclus par ou en surplus des limitations contenues dans le prÃ©sent Contrat. Aucune disposition du prÃ©sent Contrat n'empÃªchera l'une quelconque des parties de recourir Ã  la procÃ©dure judiciaire (1) en rÃ©fÃ©rÃ© pour empÃªcher un prÃ©judice matÃ©riel ou une violation des clauses de confidentialitÃ© ou des droits de propriÃ©tÃ© intellectuelle, ou (2) pour dÃ©terminer la validitÃ© ou la propriÃ©tÃ© d'un droit d'auteur, d'un brevet ou d'une marque dÃ©tenue ou affirmÃ©e par une Partie ou une sociÃ©tÃ© de son Entreprise, ou (3) pour le recouvrement de crÃ©ances infÃ©rieures Ã  500Â 000 dollars US.
 
-Dans les pays suivants : Algérie, Bénin, Burkina Faso, Cameroun, République centrafricaine, Tchad, République du Congo, République démocratique du Congo, Guinée équatoriale, Guyane, Polynésie française, Gabon, Guinée, Guinée-Bissau, Côte d'Ivoire, Mali, Mauritanie, Ile Maurice, Maroc, Niger, Sénégal, Togo et Tunisie : toute contestation fera l'objet d'un arbitrage définitif par trois arbitres impartiaux désignés par la Cour Internationale d'Arbitrage de la CCI à Paris (France), conformément à ses règles d'arbitrage, avec le français comme langue officielle. Chaque partie nommera un arbitre et les arbitres nommés par les parties désigneront un président indépendant dans les 30 jours, sinon le président sera nommé par l'Instance d'arbitrage conformément auxdites Règles. Les arbitres n'auront pas autorité à ordonner une injonction ou accorder des dommages-intérêts exclus par ou en surplus des limitations contenues dans le présent Contrat. Aucune disposition du présent Contrat n'empêchera l'une quelconque des parties de recourir à la procédure judiciaire (1) en référé pour empêcher un préjudice matériel ou une violation des clauses de confidentialité ou des droits de propriété intellectuelle, ou (2) pour déterminer la validité ou la propriété d'un droit d'auteur, d'un brevet ou d'une marque détenue ou affirmée par une Partie ou une société de son Entreprise, ou (3) pour le recouvrement de créances inférieures à 250 000 dollars US.
+Dans les pays suivantsÂ : AlgÃ©rie, BÃ©nin, Burkina Faso, Cameroun, RÃ©publique centrafricaine, Tchad, RÃ©publique du Congo, RÃ©publique dÃ©mocratique du Congo, GuinÃ©e Ã©quatoriale, Guyane, PolynÃ©sie franÃ§aise, Gabon, GuinÃ©e, GuinÃ©e-Bissau, CÃ´te d'Ivoire, Mali, Mauritanie, Ile Maurice, Maroc, Niger, SÃ©nÃ©gal, Togo et TunisieÂ : toute contestation fera l'objet d'un arbitrage dÃ©finitif par trois arbitres impartiaux dÃ©signÃ©s par la Cour Internationale d'Arbitrage de la CCI Ã  Paris (France), conformÃ©ment Ã  ses rÃ¨gles d'arbitrage, avec le franÃ§ais comme langue officielle. Chaque partie nommera un arbitre et les arbitres nommÃ©s par les parties dÃ©signeront un prÃ©sident indÃ©pendant dans les 30 jours, sinon le prÃ©sident sera nommÃ© par l'Instance d'arbitrage conformÃ©ment auxdites RÃ¨gles. Les arbitres n'auront pas autoritÃ© Ã  ordonner une injonction ou accorder des dommages-intÃ©rÃªts exclus par ou en surplus des limitations contenues dans le prÃ©sent Contrat. Aucune disposition du prÃ©sent Contrat n'empÃªchera l'une quelconque des parties de recourir Ã  la procÃ©dure judiciaire (1) en rÃ©fÃ©rÃ© pour empÃªcher un prÃ©judice matÃ©riel ou une violation des clauses de confidentialitÃ© ou des droits de propriÃ©tÃ© intellectuelle, ou (2) pour dÃ©terminer la validitÃ© ou la propriÃ©tÃ© d'un droit d'auteur, d'un brevet ou d'une marque dÃ©tenue ou affirmÃ©e par une Partie ou une sociÃ©tÃ© de son Entreprise, ou (3) pour le recouvrement de crÃ©ances infÃ©rieures Ã  250Â 000 dollars US.
 
-En Afrique du Sud, en Namibie, au Lesotho et au Swaziland : toute contestation résultant du présent Contrat fera l'objet d'un arbitrage définitif par la Fondation d'arbitrage d'Afrique australe (AFSA) (instance d'arbitrage), en vertu du règlement d'arbitrage de l'AFSA (le règlement), à Johannesburg, en Afrique du Sud, avec l'anglais comme langue officielle, par trois arbitres impartiaux nommés conformément au règlement. Chaque partie nommera un arbitre et les arbitres nommés par les parties désigneront un président indépendant dans les 30 jours, sinon le président sera nommé par l'Instance d'arbitrage conformément auxdites Règles. Les arbitres n'auront pas autorité à ordonner une injonction ou accorder des dommages-intérêts exclus par ou en surplus des limitations contenues dans le présent Contrat. Aucune disposition du présent Contrat n'empêchera l'une quelconque des parties de recourir à la procédure judiciaire (1) en référé pour empêcher un préjudice matériel ou une violation des clauses de confidentialité ou des droits de propriété intellectuelle, ou (2) pour déterminer la validité ou la propriété d'un droit d'auteur, d'un brevet ou d'une marque détenue ou affirmée par une Partie ou une société de son Entreprise, ou (3) pour le recouvrement de créances inférieures à 250 000 dollars US.
+En Afrique du Sud, en Namibie, au Lesotho et au SwazilandÂ : toute contestation rÃ©sultant du prÃ©sent Contrat fera l'objet d'un arbitrage dÃ©finitif par la Fondation d'arbitrage d'Afrique australe (AFSA) (instance d'arbitrage), en vertu du rÃ¨glement d'arbitrage de l'AFSA (le rÃ¨glement), Ã  Johannesburg, en Afrique du Sud, avec l'anglais comme langue officielle, par trois arbitres impartiaux nommÃ©s conformÃ©ment au rÃ¨glement. Chaque partie nommera un arbitre et les arbitres nommÃ©s par les parties dÃ©signeront un prÃ©sident indÃ©pendant dans les 30 jours, sinon le prÃ©sident sera nommÃ© par l'Instance d'arbitrage conformÃ©ment auxdites RÃ¨gles. Les arbitres n'auront pas autoritÃ© Ã  ordonner une injonction ou accorder des dommages-intÃ©rÃªts exclus par ou en surplus des limitations contenues dans le prÃ©sent Contrat. Aucune disposition du prÃ©sent Contrat n'empÃªchera l'une quelconque des parties de recourir Ã  la procÃ©dure judiciaire (1) en rÃ©fÃ©rÃ© pour empÃªcher un prÃ©judice matÃ©riel ou une violation des clauses de confidentialitÃ© ou des droits de propriÃ©tÃ© intellectuelle, ou (2) pour dÃ©terminer la validitÃ© ou la propriÃ©tÃ© d'un droit d'auteur, d'un brevet ou d'une marque dÃ©tenue ou affirmÃ©e par une Partie ou une sociÃ©tÃ© de son Entreprise, ou (3) pour le recouvrement de crÃ©ances infÃ©rieures Ã  250Â 000 dollars US.
 
-En Allemagne, Andorre, Autriche, Chypre, France, Grèce, Israël, Italie, Portugal, Espagne, Suisse et Turquie : tous les différends feront l'objet d'une procédure de la compétence exclusive des tribunaux ci-dessous :
+En Allemagne, Andorre, Autriche, Chypre, France, GrÃ¨ce, IsraÃ«l, Italie, Portugal, Espagne, Suisse et TurquieÂ : tous les diffÃ©rends feront l'objet d'une procÃ©dure de la compÃ©tence exclusive des tribunaux ci-dessousÂ :
 
-en Andorre : le Tribunal de Commerce de Paris.
+en AndorreÂ : le Tribunal de Commerce de Paris.
 
-en Autriche : le tribunal de Vienne, Autriche (Centre).
+en AutricheÂ : le tribunal de Vienne, Autriche (Centre).
 
-à Chypre : le tribunal compétent de Nicosie.
+Ã  ChypreÂ : le tribunal compÃ©tent de Nicosie.
 
-en France : le Tribunal de Commerce de Paris.
+en FranceÂ : le Tribunal de Commerce de Paris.
 
-en Allemagne : les tribunaux de Stuttgart.
+en AllemagneÂ : les tribunaux de Stuttgart.
 
-en Grèce : le tribunal compétent d'Athènes.
+en GrÃ¨ceÂ : le tribunal compÃ©tent d'AthÃ¨nes.
 
-en Israël : les tribunaux de Tel Aviv-Jaffa .
+en IsraÃ«lÂ : les tribunaux de Tel Aviv-Jaffa .
 
-en Italie : les tribunaux de Milan.
+en ItalieÂ : les tribunaux de Milan.
 
-au Portugal : les tribunaux de Lisbonne.
+au PortugalÂ : les tribunaux de Lisbonne.
 
-en Espagne : les tribunaux de Madrid.
+en EspagneÂ : les tribunaux de Madrid.
 
-en Suisse : le tribunal de commerce du canton de Zurich.
+en SuisseÂ : le tribunal de commerce du canton de Zurich.
 
-en Turquie : les Tribunaux centraux d'Istanbul (Caglayan) et « Execution Directorates » d'Istanbul, République de Turquie.
+en TurquieÂ : les Tribunaux centraux d'Istanbul (Caglayan) et Â«Â Execution DirectoratesÂ Â» d'Istanbul, RÃ©publique de Turquie.
 
-aux Pays-Bas : Les parties renoncent à leurs droits en vertu du titre 7.1 (« Koop ») et de l'article 7:401 et 402 du Code civil néerlandais, ainsi qu'à leurs droits d'invoquer une dissolution totale ou partielle (« gehele of partiele ontbinding ») du présent Contrat en vertu de l'article 6:265 du Code civil néerlandais.
+aux Pays-BasÂ : Les parties renoncent Ã  leurs droits en vertu du titre 7.1 (Â«Â KoopÂ Â») et de l'article 7:401 et 402 du Code civil nÃ©erlandais, ainsi qu'Ã  leurs droits d'invoquer une dissolution totale ou partielle (Â«Â gehele of partiele ontbindingÂ Â») du prÃ©sent Contrat en vertu de l'article 6:265 du Code civil nÃ©erlandais.
 
-Clause 7. Généralités
+Clause 7. GÃ©nÃ©ralitÃ©s
 
-Insérez ce qui suit à la fin du paragraphe d :
+InsÃ©rez ce qui suit Ã  la fin du paragraphe dÂ :
 
-En Espagne : IBM respectera les demandes d'accès, de mise à jour ou de suppression des coordonnées si elles sont envoyées à l'adresse suivante : IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+En EspagneÂ : IBM respectera les demandes d'accÃ¨s, de mise Ã  jour ou de suppression des coordonnÃ©es si elles sont envoyÃ©es Ã  l'adresse suivanteÂ : IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
 
-Insérez ceci à la fin du paragraphe j :
+InsÃ©rez ceci Ã  la fin du paragraphe jÂ :
 
-En République tchèque : Conformément à l'article 1801 de la loi n° 89/2012 Coll. (le « Code civil »), les articles 1799 et 1800 du Code civil dans sa version modifiée ne s'appliquent pas aux transactions objet du présent Contrat. Le Détenteur de Licence accepte le risque d'un changement de circonstances au titre de l'article 1765 du Code civil.
+En RÃ©publique tchÃ¨queÂ : ConformÃ©ment Ã  l'article 1801 de la loi nÂ° 89/2012 Coll. (le Â«Â Code civilÂ Â»), les articles 1799 et 1800 du Code civil dans sa version modifiÃ©e ne s'appliquent pas aux transactions objet du prÃ©sent Contrat. Le DÃ©tenteur de Licence accepte le risque d'un changement de circonstances au titre de l'article 1765 du Code civil.
 
-Dans le paragraphe j :
+Dans le paragraphe jÂ :
 
-En Bulgarie, en Croatie, en Russie, en Serbie et en Slovénie : supprimez la deuxième phrase, qui dit: « Les parties s'interdisent d'intenter une action en justice au titre du Contrat plus de deux ans après l'apparition de son fait générateur ».
+En Bulgarie, en Croatie, en Russie, en Serbie et en SlovÃ©nieÂ : supprimez la deuxiÃ¨me phrase, qui dit: Â«Â Les parties s'interdisent d'intenter une action en justice au titre du Contrat plus de deux ans aprÃ¨s l'apparition de son fait gÃ©nÃ©rateurÂ Â».
 
-Dans le paragraphe j, ajoutez ceci à la fin de la deuxième phrase :
+Dans le paragraphe j, ajoutez ceci Ã  la fin de la deuxiÃ¨me phraseÂ :
 
-En Lituanie : , ou sauf dans les cas prévus par la loi
+En LituanieÂ : , ou sauf dans les cas prÃ©vus par la loi
 
-Dans le paragraphe j, remplacez la deuxième phrase par :
+Dans le paragraphe j, remplacez la deuxiÃ¨me phrase parÂ :
 
-En Pologne : Les parties s'interdisent d'intenter une action en justice découlant du présent Contrat ou s'y rapportant plus de trois ans après la naissance de la cause de l'action, à l'exception d'une action pour non-paiement qui sera intentée au plus tard deux ans après l'échéance du paiement.
+En PologneÂ : Les parties s'interdisent d'intenter une action en justice dÃ©coulant du prÃ©sent Contrat ou s'y rapportant plus de trois ans aprÃ¨s la naissance de la cause de l'action, Ã  l'exception d'une action pour non-paiement qui sera intentÃ©e au plus tard deux ans aprÃ¨s l'Ã©chÃ©ance du paiement.
 
-Dans la deuxième phrase du paragraphe j, remplacez le mot « deux » par :
+Dans la deuxiÃ¨me phrase du paragraphe j, remplacez le mot Â«Â deuxÂ Â» parÂ :
 
-Lettonie et Ukraine : trois
+Lettonie et UkraineÂ : trois
 
-Slovaquie : quatre
+SlovaquieÂ : quatre
 
-Dans le paragraphe j, ajoutez la mention suivante à la fin de la troisième phrase : « Aucune des parties ne sera tenue responsable de l'inexécution de ses obligations non monétaires en cas de circonstances indépendantes de sa volonté » :
+Dans le paragraphe j, ajoutez la mention suivante Ã  la fin de la troisiÃ¨me phraseÂ : Â«Â Aucune des parties ne sera tenue responsable de l'inexÃ©cution de ses obligations non monÃ©taires en cas de circonstances indÃ©pendantes de sa volontÃ©Â Â»Â :
 
-En Russie : , y compris, sans s'y limiter, tremblements de terre, inondations, incendies, catastrophes naturelles, grèves (à l'exclusion des grèves des employés des parties), actes de guerre, actions militaires, embargos, blocus, sanctions internationales ou gouvernementales et actions des autorités publiques de la juridiction compétente.
+En RussieÂ : , y compris, sans s'y limiter, tremblements de terre, inondations, incendies, catastrophes naturelles, grÃ¨ves (Ã  l'exclusion des grÃ¨ves des employÃ©s des parties), actes de guerre, actions militaires, embargos, blocus, sanctions internationales ou gouvernementales et actions des autoritÃ©s publiques de la juridiction compÃ©tente.
 
-Modifiez la troisième phrase du paragraphe j : « Aucune des parties ne sera tenue responsable de l'inexécution de ses obligations non monétaires en cas de circonstances indépendantes de sa volonté » comme suit :
+Modifiez la troisiÃ¨me phrase du paragraphe jÂ : Â«Â Aucune des parties ne sera tenue responsable de l'inexÃ©cution de ses obligations non monÃ©taires en cas de circonstances indÃ©pendantes de sa volontÃ©Â Â» comme suitÂ :
 
-En Ukraine : Aucune des parties n'est responsable du non-respect de ses obligations non monétaires en raison de causes ou de changements réglementaires indépendants de sa volonté, y compris, mais sans s'y limiter, les exigences en matière d'importation, d'exportation et de sanctions économiques des Etats-Unis.
+En UkraineÂ : Aucune des parties n'est responsable du non-respect de ses obligations non monÃ©taires en raison de causes ou de changements rÃ©glementaires indÃ©pendants de sa volontÃ©, y compris, mais sans s'y limiter, les exigences en matiÃ¨re d'importation, d'exportation et de sanctions Ã©conomiques des Etats-Unis.
 
-Ajoutez ce qui suit à la fin de la section, en tant que nouveau paragraphe l :
+Ajoutez ce qui suit Ã  la fin de la section, en tant que nouveau paragraphe lÂ :
 
-En Hongrie : En concluant le présent Contrat, le Détenteur de Licence confirme qu'il a été suffisamment informé de toutes les dispositions du présent Contrat et qu'il a eu l'opportunité de les négocier. Les dispositions suivantes peuvent s'écarter de façon significative des dispositions généralement appliquées par la loi hongroise et les deux parties acceptent ces dispositions en signant le Contrat : Licence de Logiciel ; Garanties ; Redevances, Taxes, Paiements et Vérification ; Responsabilité et Protection de la Propriété Intellectuelle ; Résiliation ; Lois Applicables et Compétence Territoriale; et Généralités.
+En HongrieÂ : En concluant le prÃ©sent Contrat, le DÃ©tenteur de Licence confirme qu'il a Ã©tÃ© suffisamment informÃ© de toutes les dispositions du prÃ©sent Contrat et qu'il a eu l'opportunitÃ© de les nÃ©gocier. Les dispositions suivantes peuvent s'Ã©carter de faÃ§on significative des dispositions gÃ©nÃ©ralement appliquÃ©es par la loi hongroise et les deux parties acceptent ces dispositions en signant le ContratÂ : Licence de LogicielÂ ; GarantiesÂ ; Redevances, Taxes, Paiements et VÃ©rificationÂ ; ResponsabilitÃ© et Protection de la PropriÃ©tÃ© IntellectuelleÂ ; RÃ©siliationÂ ; Lois Applicables et CompÃ©tence Territoriale; et GÃ©nÃ©ralitÃ©s.
 
-En République tchèque : Le Détenteur de Licence accepte expressément les conditions du présent contrat, qui comprennent les conditions commerciales importantes suivantes : i) limitation et exonération de responsabilité pour les défauts (Garanties) ; ii) limitation du droit du Détenteur de Licence à des dommages-intérêts (Responsabilité et Protection de la Propriété Intellectuelle) ; iii) nature contraignante des réglementations relatives à l'import-export (Lois Applicables et Compétence Territoriale) ; iv) raccourcissement des périodes de limitation (Généralités) ; v) exclusion de l'applicabilité des dispositions sur les contrats d'adhésion (Généralités) ; et vi) acceptation d'un risque de changement des circonstances (Généralités).
+En RÃ©publique tchÃ¨queÂ : Le DÃ©tenteur de Licence accepte expressÃ©ment les conditions du prÃ©sent contrat, qui comprennent les conditions commerciales importantes suivantesÂ : i) limitation et exonÃ©ration de responsabilitÃ© pour les dÃ©fauts (Garanties)Â ; ii) limitation du droit du DÃ©tenteur de Licence Ã  des dommages-intÃ©rÃªts (ResponsabilitÃ© et Protection de la PropriÃ©tÃ© Intellectuelle)Â ; iii) nature contraignante des rÃ©glementations relatives Ã  l'import-export (Lois Applicables et CompÃ©tence Territoriale)Â ; iv) raccourcissement des pÃ©riodes de limitation (GÃ©nÃ©ralitÃ©s)Â ; v) exclusion de l'applicabilitÃ© des dispositions sur les contrats d'adhÃ©sion (GÃ©nÃ©ralitÃ©s)Â ; et vi) acceptation d'un risque de changement des circonstances (GÃ©nÃ©ralitÃ©s).
 
-En Roumanie : Le Détenteur de Licence accepte expressément les clauses standard suivantes qui peuvent être considérées comme des « clauses inhabituelles » conformément aux dispositions de l'article 1203 du Code civil roumain : clauses 2, 4, 5, 8j. Le Détenteur de Licence reconnaît par la présente qu'il a été suffisamment informé de toutes les dispositions du présent Contrat, y compris des clauses mentionnées ci-dessus, qu'il a correctement analysé et compris ces dispositions et qu'il a eu la possibilité de négocier les termes de chaque clause.
+En RoumanieÂ : Le DÃ©tenteur de Licence accepte expressÃ©ment les clauses standard suivantes qui peuvent Ãªtre considÃ©rÃ©es comme des Â«Â clauses inhabituellesÂ Â» conformÃ©ment aux dispositions de l'article 1203 du Code civil roumainÂ : clauses 2, 4, 5, 8j. Le DÃ©tenteur de Licence reconnaÃ®t par la prÃ©sente qu'il a Ã©tÃ© suffisamment informÃ© de toutes les dispositions du prÃ©sent Contrat, y compris des clauses mentionnÃ©es ci-dessus, qu'il a correctement analysÃ© et compris ces dispositions et qu'il a eu la possibilitÃ© de nÃ©gocier les termes de chaque clause.
 
 i125-5589-06 (10-2021)
 
