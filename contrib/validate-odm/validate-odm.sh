@@ -305,13 +305,13 @@ function runTestSuite {
   testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
   i=0
   startSpin
-  while [[ ${testReport_status} == "STARTING" ]] && [[ $i -lt 10 ]]; do
+  while [[ ${testReport_status} == "STARTING" ]] && [[ $i -lt 30 ]]; do
     sleep 2
     get_testReport_result=$(curlRequest GET ${DC_URL}/decisioncenter-api/v1/testreports/${testReportId}) || error "ERROR $?" "${get_testReport_result}" $?
     testReport_status=$(echo ${get_testReport_result} | jq -r '.status')
     ((i++))
   done
-  [[ $i -lt 10 ]] && echo_success "DONE" || error "ERROR" "Test is still starting after 20s"
+  [[ $i -lt 30 ]] && echo_success "DONE" || error "ERROR" "Test is still starting after 60s"
 
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
@@ -511,7 +511,7 @@ function main {
   if [[ $? != 0 ]]; then
     echo -n "$(date) - ### Loan_Validation_Service.zip does not exist locally. Downloading...  "
     url="https://github.com/DecisionsDev/odm-for-dev-getting-started/blob/master/Loan%20Validation%20Service.zip?raw=1"
-    wget -q ${url} -O ${filename} && echo_success "DONE" || error "ERROR" "Error downloading file from ${url}" $?
+    curl -sL ${url} -o ${filename} && echo_success "DONE" || error "ERROR" "Error downloading file from ${url}" $?
   fi
 
   importDecisionService ${filename}
