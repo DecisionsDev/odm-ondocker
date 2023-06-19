@@ -29,10 +29,10 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	[latest release](https://docs.docker.com/engine/release-notes/#201021) (down to Engine 20.10)
 
 -	**Rule Designer development environment for ODM developers**:  
-
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-812x-rule-designer)
-
 	Use [IDE 2020-06 R (4.16) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2022-06/r). The update site is https://raw.githubusercontent.com/ODMDev/ruledesigner/8.12.0.0/p2
+
+
 
 
 -	**Sample projects**:

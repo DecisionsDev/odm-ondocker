@@ -118,6 +118,7 @@ then
                 *db2* )
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
+
                 if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
 		then
 			echo "configure DB2 SSL with DB_SSL_TRUSTSTORE_PASSWORD"

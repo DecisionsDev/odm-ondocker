@@ -313,6 +313,7 @@ function runTestSuite {
   done
   [[ $i -lt 30 ]] && echo_success "DONE" || error "ERROR" "Test is still starting after 60s"
 
+
   # Check for errors
   testReports_errors=$(echo ${get_testReport_result} | jq -r '.errors')
   echo -n "    ▪ Test report status in DC:  "
