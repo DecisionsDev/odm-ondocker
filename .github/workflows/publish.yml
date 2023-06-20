@@ -1,7 +1,7 @@
 name: Create branch from release
 on:
   release:
-    types: [published, released]
+    types: [published]
 
 jobs:
   create-branch:
