@@ -21,13 +21,13 @@ jobs:
         run: |
           search="releases/latest/download"
           replace="releases/download/${{ github.event.release.tag_name }}"
-          sed -i "s|${search}|${replace}|" README.md
+          sed -i "s|${search}|${replace}|" contrib/validate-odm/README.md
       - name: Setup git config
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: Commit
         run: |
-          git add README.md
-          git commit -m "Update Download link with tagged asset url"
+          git add contrib/validate-odm/README.md
+          git commit -m "Update Download link with tagged asset url for validate-odm script"
           git push origin refs/heads/${{ env.branch_name }}
