@@ -20,15 +20,6 @@ touch ${applicationXml}
 echo "<server>" >> ${applicationXml}
 
 addApplication decisioncenter
-
-if [ -n DECISION_MODEL_DISABLED ]
-then
-        if [ "$DECISION_MODEL_DISABLED" == "false" ]
-        then
-		echo "Add Decision Model Application"
-		addApplication decisionmodel
-	fi
-fi
 addApplication decisioncenter-api
 addApplication teamserver-dbdump
 

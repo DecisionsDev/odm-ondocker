@@ -15,8 +15,6 @@ COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
 RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
-# Install missing require package in the alpine builder image
-RUN apk add --no-cache bash ca-certificates wget
 # Build Welcome page
 RUN cd /welcomepage; mvn -B clean install  && mkdir -p $APPS
 
@@ -37,11 +35,15 @@ chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
+ARG CP4BAVERSION
+ARG ODMVERSION
 ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV CP4BAVERSION $CP4BAVERSION
+ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -52,7 +54,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 RUN chmod -R 777 /config
-RUN sed -i 's|# Pass on to the real server run|. /script/run.sh|' /opt/ibm/helpers/runtime/docker-server.sh
+RUN sed -i 's|# Pass on to the real server run|. /script/run.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -65,8 +67,8 @@ LABEL description="The Decision Server console provides a web-based graphical us
 LABEL vendor="IBM"
 LABEL summary="A web-based graphical user interface to manage Decision Server artifacts."
 LABEL version=${ODMVERSION}
-LABEL ProductVersion=${ODMVERSION}
-LABEL ProductID="IBM Operational Decision Manager for production"
+LABEL product-version=${ODMVERSION}
+LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 LABEL io.k8s.description="A web-based graphical user interface to manage Decision Server artifacts."
 LABEL io.k8s.display-name="Decision Server Console"
@@ -87,5 +89,7 @@ COPY --from=builder --chown=1001:0 /config/resources/postgres*  /config/resource
 COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
+# Version
+COPY --from=oidc-liberty-builder /opt/ibm/version.txt /opt/ibm/version.txt
 USER 1001
 EXPOSE 9080 9443 1883

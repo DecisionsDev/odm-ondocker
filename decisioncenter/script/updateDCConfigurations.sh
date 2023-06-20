@@ -26,6 +26,12 @@ fi
 
 if [ -n "$OPENID_CONFIG" ]
 then
+  if [ -n "$DISABLE_LOGIN_PANEL" ]
+  then
+    echo "disable Business Console Basic Auth Login Panel"
+    echo "<%response.sendRedirect(\"/decisioncenter\");%>" > /config/apps/decisioncenter.war/WEB-INF/views/login.jsp
+  fi
+
   if [ -s "/config/auth/openIdParameters.properties" ]
   then
     echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
@@ -366,18 +372,6 @@ then
         sed -i 's|false|true|g' $DC_SERVER_CONFIG
 fi
 
-if [ -n "$DECISION_MODEL_DISABLED" ]
-then
-  echo "Update decision model enabled to $DECISION_MODEL_DISABLED in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
-  sed -i 's|DECISION_MODEL_DISABLED|'$DECISION_MODEL_DISABLED'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-  if [[ "$DECISION_MODEL_DISABLED" == "true" ]]; then
-  	echo "Remove decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
-  	sed -i '/decisionmodel/d' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-  else
-	echo "Keep decisionmodel URL configuration in $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
-  fi
-fi
-
 if [ -s "/config/auth/ldap-configurations.xml" ]
 then
   echo "Update LDAP synchronization mode to users in decisioncenter-configuration.properties"
@@ -431,7 +425,6 @@ fi
 
 if [ -n "$ODM_CONTEXT_ROOT" ]
 then
-  sed -i 's|http://localhost:9060/decisionmodel|'http://localhost:9060$ODM_CONTEXT_ROOT/decisionmodel'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
   sed -i 's|http://localhost:9060/decisioncenter-api|'http://localhost:9060$ODM_CONTEXT_ROOT/decisioncenter-api'|g' $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
 

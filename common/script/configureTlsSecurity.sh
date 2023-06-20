@@ -1,6 +1,12 @@
 #!/bin/bash
 # Using -Xshareclasses:none jvm option in keytool commands to avoid jvm errors in logs on z/os
 
+if [ -s "/config/auth/tlsSecurity.xml" ]
+then
+  echo "SSL configuration with provided /config/auth/tlsSecurity.xml"
+  cp /config/auth/tlsSecurity.xml /config/tlsSecurity.xml
+fi
+
 DEFAULT_KEYSTORE_PASSWORD=changeme
 DEFAULT_TRUSTSTORE_PASSWORD=changeme
 
@@ -123,6 +129,12 @@ if [ -d $CERTDIR ]; then
         keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias 0$ALIASNAME -file $file -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
     done
     echo "done"
+fi
+
+if [ -n "$ENABLED_CIPHERS" ]
+then
+	echo "configure enabled ciphers with $ENABLED_CIPHERS"
+	sed -i "s|ENABLED_CIPHERS|${ENABLED_CIPHERS}|g" /config/tlsSecurity.xml
 fi
 
 if [ -f "/config/resources/ibm-public.crt" ]

@@ -17,6 +17,15 @@
         <xom.path>${odm.installation.path}/studio/tutorials/decisionservice/answer/loan-validation-xom</xom.path>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+            <!-- work-around for missing class in coveralls -->
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

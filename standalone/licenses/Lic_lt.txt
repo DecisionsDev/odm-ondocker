@@ -1,233 +1,233 @@
 LICENCIJOS INFORMACIJA
 
-Toliau nurodytos Programos licencijuojamos pagal ğias Licencijos informacijos sàlygas, kurios papildo Programos licencijos sàlygas, dël kuriø susitarë Klientas ir IBM. Jei Klientas anksèiau nëra sutikæs su Programai taikomomis licencijos sàlygomis, taikoma Programø, kurioms neteikiama garantija, tarptautinë licencinë sutartis (i125-5589-06).
+Toliau nurodytos Programos licencijuojamos pagal Å¡ias Licencijos informacijos sÄ…lygas, kurios papildo Programos licencijos sÄ…lygas, dÄ—l kuriÅ³ susitarÄ— Klientas ir IBM. Jei Klientas anksÄiau nÄ—ra sutikÄ™s su Programai taikomomis licencijos sÄ…lygomis, taikoma ProgramÅ³, kurioms neteikiama garantija, tarptautinÄ— licencinÄ— sutartis (i125-5589-06).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.12 (5725-B69)
 
-Ğios standartinës sàlygos taikomos Licenciato Programos naudojimui.
+Å ios standartinÄ—s sÄ…lygos taikomos Licenciato Programos naudojimui.
 
-Keliø produktø diegimo atvaizdas
+KeliÅ³ produktÅ³ diegimo atvaizdas
 
-Programa pateikiama kaip keliø produktø diegimo atvaizdo dalis. Licenciatas turi teisæ diegti ir naudoti tik tokià Programà (ir, jei yra, jos Sugrupuotas arba Pagalbines programas), kurios galiojanèias teises ásigijo, ir negali diegti arba naudoti jokios kitos á atvaizdà átrauktos programinës árangos, jei Licenciatas neásigijæs atskirø tos programinës árangos teisiø.
+Programa pateikiama kaip keliÅ³ produktÅ³ diegimo atvaizdo dalis. Licenciatas turi teisÄ™ diegti ir naudoti tik tokiÄ… ProgramÄ… (ir, jei yra, jos Sugrupuotas arba Pagalbines programas), kurios galiojanÄias teises Ä¯sigijo, ir negali diegti arba naudoti jokios kitos Ä¯ atvaizdÄ… Ä¯trauktos programinÄ—s Ä¯rangos, jei Licenciatas neÄ¯sigijÄ™s atskirÅ³ tos programinÄ—s Ä¯rangos teisiÅ³.
 
-Pagalbinës programos
+PagalbinÄ—s programos
 
-Licenciatas ágaliotas diegti ir naudoti toliau nurodytas Pagalbines programas tik Licenciato Pagrindinës programos naudojimui palaikyti pagal ğià Sutartá. Frazë ¥palaikyti Licenciato naudojimà´ apima tik tà naudojimà, kuris reikalingas ar kitaip tiesiogiai susijæs su Pagrindinës ar kitos Pagalbinës Programos licencijuotu naudojimu. Pagalbiniø programø negalima naudoti jokiam kitam tikslui. Pagalbinë programa gali bûti pateikiama su licencijos sàlygomis ir ğios sàlygos, jei tokiø yra, taikomos Pagalbinæ programà naudojanèiam Licencijos turëtojui. Ávykus ginèui ğiame Licencijos informacijos dokumente pateiktos sàlygos pakeièia Pagalbinës programos sàlygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisiø, kad jø pakaktø visø Licenciato Pagalbiniø programø diegimui ir naudojimui padengti, nebent ğiuo Licencijos informacijos dokumentu suteikiama papildomø teisiø. Pavyzdşiui, jei ği Programa buvo licencijuota VPC (Virtualiojo procesoriaus branduolio) pagrindu, ir Licenciatas turëtø ádiegti Pagrindinæ programà arba Pagalbinæ programà 10 VPC árenginyje, o antrame 10 VPC árenginyje - kità Pagalbinæ programà, Licenciatui reikës ásigyti 20 Programos VPC teisiø.
+Licenciatas Ä¯galiotas diegti ir naudoti toliau nurodytas Pagalbines programas tik Licenciato PagrindinÄ—s programos naudojimui palaikyti pagal Å¡iÄ… SutartÄ¯. FrazÄ— â€palaikyti Licenciato naudojimÄ…â€œ apima tik tÄ… naudojimÄ…, kuris reikalingas ar kitaip tiesiogiai susijÄ™s su PagrindinÄ—s ar kitos PagalbinÄ—s Programos licencijuotu naudojimu. PagalbiniÅ³ programÅ³ negalima naudoti jokiam kitam tikslui. PagalbinÄ— programa gali bÅ«ti pateikiama su licencijos sÄ…lygomis ir Å¡ios sÄ…lygos, jei tokiÅ³ yra, taikomos PagalbinÄ™ programÄ… naudojanÄiam Licencijos turÄ—tojui. Ä®vykus ginÄui Å¡iame Licencijos informacijos dokumente pateiktos sÄ…lygos pakeiÄia PagalbinÄ—s programos sÄ…lygas. Licenciatas turi gauti pakankamai Programos, kaip visumos, teisiÅ³, kad jÅ³ pakaktÅ³ visÅ³ Licenciato PagalbiniÅ³ programÅ³ diegimui ir naudojimui padengti, nebent Å¡iuo Licencijos informacijos dokumentu suteikiama papildomÅ³ teisiÅ³. PavyzdÅ¾iui, jei Å¡i Programa buvo licencijuota VPC (Virtualiojo procesoriaus branduolio) pagrindu, ir Licenciatas turÄ—tÅ³ Ä¯diegti PagrindinÄ™ programÄ… arba PagalbinÄ™ programÄ… 10 VPC Ä¯renginyje, o antrame 10 VPC Ä¯renginyje â€“ kitÄ… PagalbinÄ™ programÄ…, Licenciatui reikÄ—s Ä¯sigyti 20 Programos VPC teisiÅ³.
 
-Pagalbinës programos:
-IBM WebSphere Liberty 22
+PagalbinÄ—s programos:
+IBM WebSphere Liberty
 
-Kûrëjo apribojimas
+KÅ«rÄ—jo apribojimas
 
-Jei Programa paşymëta kaip skirta ¥Kûrëjams´, Licenciatas gali naudoti Programà tik kaip Licenciato vidinio kûrimo ir árenginiø testavimo paskirties dalá. Kûrëjo kompiuteris - tai fizinë arba kompiuterio virtualioji aplinka, kurioje veikia pagrindinë operacinë sistema ir Programa, prie kuriø prieigà turi ir kurias naudoja ne daugiau nei vienas nurodytas kûrëjas.
+Jei Programa paÅ¾ymÄ—ta kaip skirta â€KÅ«rÄ—jamsâ€œ, Licenciatas gali naudoti ProgramÄ… tik kaip Licenciato vidinio kÅ«rimo ir Ä¯renginiÅ³ testavimo paskirties dalÄ¯. KÅ«rÄ—jo kompiuteris â€“ tai fizinÄ— arba kompiuterio virtualioji aplinka, kurioje veikia pagrindinÄ— operacinÄ— sistema ir Programa, prie kuriÅ³ prieigÄ… turi ir kurias naudoja ne daugiau nei vienas nurodytas kÅ«rÄ—jas.
 
-Keièiamas treèiosios ğalies kodas
+KeiÄiamas treÄiosios Å¡alies kodas
 
-Jei PRANEĞIMØ faile IBM treèiosios ğalies kodà atpaşásta kaip modifikuojamà treèiosios ğalies kodà, IBM leidşia Licenciatui 1) modifikuoti modifikuojamà treèiosios ğalies kodà ir 2) nukopijuoti Programos modulius, kurie tiesiogiai siejasi su modifikuojamu treèiosios ğalies kodu, su sàlyga, kad tai daroma tik Licenciato atliktø tokio treèiosios ğalies kodo modifikacijø klaidø ğalinimo tikslais. IBM aptarnavimo ir palaikymo ásipareigojimai, jei tokiø yra, taikomi tik nemodifikuotai Programai.
+Jei PRANEÅ IMÅ² faile IBM treÄiosios Å¡alies kodÄ… atpaÅ¾Ä¯sta kaip modifikuojamÄ… treÄiosios Å¡alies kodÄ…, IBM leidÅ¾ia Licenciatui 1) modifikuoti modifikuojamÄ… treÄiosios Å¡alies kodÄ… ir 2) nukopijuoti Programos modulius, kurie tiesiogiai siejasi su modifikuojamu treÄiosios Å¡alies kodu, su sÄ…lyga, kad tai daroma tik Licenciato atliktÅ³ tokio treÄiosios Å¡alies kodo modifikacijÅ³ klaidÅ³ Å¡alinimo tikslais. IBM aptarnavimo ir palaikymo Ä¯sipareigojimai, jei tokiÅ³ yra, taikomi tik nemodifikuotai Programai.
 
 Atskirai licencijuojamas kodas
 
-Kiekvienas iğ komponentø, iğvardytø faile NON_IBM_LICENSE, laikomas ¥Atskirai licencijuojamu kodu´, kuris yra licencijuojamas Licenciatui remiantis taikomomis treèiosios ğalies licencijos sutarties (-èiø) sàlygomis, kurios iğdëstytos kartu su Programa pateikiamame faile (-uose) NON_IBM_LICENSE, o ne ğia Sutartimi. Bûsimuose Programos naujinimuose arba taisymuose gali bûti papildomø Atskirai licencijuotø kodø. Tokie papildomi Atskirai licencijuoti kodai ir susijusios licencijos iğvardijami taikomame NON_IBM_LICENSE faile, kuris pateikiamas su Programos naujinimu arba taisymu. 
+Kiekvienas iÅ¡ komponentÅ³, iÅ¡vardytÅ³ faile NON_IBM_LICENSE, laikomas â€Atskirai licencijuojamu koduâ€œ, kuris yra licencijuojamas Licenciatui remiantis taikomomis treÄiosios Å¡alies licencijos sutarties (-ÄiÅ³) sÄ…lygomis, kurios iÅ¡dÄ—stytos kartu su Programa pateikiamame faile (-uose) NON_IBM_LICENSE, o ne Å¡ia Sutartimi. BÅ«simuose Programos naujinimuose arba taisymuose gali bÅ«ti papildomÅ³ Atskirai licencijuotÅ³ kodÅ³. Tokie papildomi Atskirai licencijuoti kodai ir susijusios licencijos iÅ¡vardijami taikomame NON_IBM_LICENSE faile, kuris pateikiamas su Programos naujinimu arba taisymu. 
 
-Pastaba: nepaisant jokiø treèiosios ğalies sutarties, ğios Sutarties ar kitos sutarties, kurià Licenciatas gali sudaryti su IBM, sàlygø, susijusiø su Atskirai licencijuojamu kodu:
-(a) IBM pateikia já Licenciatui NETAIKYDAMA JOKIØ GARANTIJØ IR PANEIGIA BET KOKIAS, VISAS APIBRËŞTAS IR NUMANOMAS GARANTIJAS IR SÀLYGAS, ÁSKAITANT, BET NEAPSIRIBOJANT, NUOSAVYBËS, NEPAŞEIDŞIAMUMO AR NESIKIĞIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS BEI SÀLYGAS;
-(b) IBM neatsako uş jokius tiesioginius, netiesioginius, atsitiktinius, ypatingus, pavyzdinius, baudşiamuosius ar prieşastinius nuostolius, áskaitant, bet neapsiribojant, prarastus duomenis, prarastas santaupas ir prarastà pelnà.
+Pastaba: nepaisant jokiÅ³ treÄiosios Å¡alies sutarties, Å¡ios Sutarties ar kitos sutarties, kuriÄ… Licenciatas gali sudaryti su IBM, sÄ…lygÅ³, susijusiÅ³ su Atskirai licencijuojamu kodu:
+(a) IBM pateikia jÄ¯ Licenciatui NETAIKYDAMA JOKIÅ² GARANTIJÅ² IR PANEIGIA BET KOKIAS, VISAS APIBRÄ–Å½TAS IR NUMANOMAS GARANTIJAS IR SÄ„LYGAS, Ä®SKAITANT, BET NEAPSIRIBOJANT, NUOSAVYBÄ–S, NEPAÅ½EIDÅ½IAMUMO AR NESIKIÅ IMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS BEI SÄ„LYGAS;
+(b) IBM neatsako uÅ¾ jokius tiesioginius, netiesioginius, atsitiktinius, ypatingus, pavyzdinius, baudÅ¾iamuosius ar prieÅ¾astinius nuostolius, Ä¯skaitant, bet neapsiribojant, prarastus duomenis, prarastas santaupas ir prarastÄ… pelnÄ….
 
 Privatumas
 
-Licenciatas pripaşásta ir sutinka, kad IBM gali naudoti slapukus ir sekimo technologijas rinkti asmeninei produktø naudojimo statistikos informacijai, informacijai, skirtai tobulinti vartotojø patirtá, ir/arba informacijai apie ¥to tailor´ naudojimà remdamasi IBM privatumo tinkle strategija, pateikta http://www.ibm.com/privacy/.
+Licenciatas pripaÅ¾Ä¯sta ir sutinka, kad IBM gali naudoti slapukus ir sekimo technologijas rinkti asmeninei produktÅ³ naudojimo statistikos informacijai, informacijai, skirtai tobulinti vartotojÅ³ patirtÄ¯, ir/arba informacijai apie â€to tailorâ€œ naudojimÄ… remdamasi IBM privatumo tinkle strategija, pateikta http://www.ibm.com/privacy/.
 
-Ğaltinio komponentai ir pavyzdinë medşiaga
+Å altinio komponentai ir pavyzdinÄ— medÅ¾iaga
 
-Á Programà yra átrauktø komponentø iğeitinio kodo forma (¥Ğaltinio komponentai´) arba kita medşiaga, apibrëşta kaip Pavyzdinë medşiaga, arba abu ğie elementai. Licenciatas gali kopijuoti ir modifikuoti Ğaltinio komponentus ir Pavyzdinæ medşiagà tik naudoti viduje, nepaşeisdamas ğios Sutarties licencijos teisiø; taèiau Licenciatas negali keisti ar naikinti jokios Ğaltinio komponentuose ir Pavyzdinëje medşiagoje esanèios autoriaus teisiø informacijos ar praneğimø. IBM pateikia Ğaltinio komponentus ir Pavyzdinæ medşiagà be palaikymo ásipareigojimo ir TOKIÀ, KOKIA YRA, NESUTEIKIANT JOKIØ AIĞKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAŞEIDŞIAMUMO AR NEÁSIKIĞIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS.
+Ä® ProgramÄ… yra Ä¯trauktÅ³ komponentÅ³ iÅ¡eitinio kodo forma (â€Å altinio komponentaiâ€œ) arba kita medÅ¾iaga, apibrÄ—Å¾ta kaip PavyzdinÄ— medÅ¾iaga, arba abu Å¡ie elementai. Licenciatas gali kopijuoti ir modifikuoti Å altinio komponentus ir PavyzdinÄ™ medÅ¾iagÄ… tik naudoti viduje, nepaÅ¾eisdamas Å¡ios Sutarties licencijos teisiÅ³; taÄiau Licenciatas negali keisti ar naikinti jokios Å altinio komponentuose ir PavyzdinÄ—je medÅ¾iagoje esanÄios autoriaus teisiÅ³ informacijos ar praneÅ¡imÅ³. IBM pateikia Å altinio komponentus ir PavyzdinÄ™ medÅ¾iagÄ… be palaikymo Ä¯sipareigojimo ir TOKIÄ„, KOKIA YRA, NESUTEIKIANT JOKIÅ² AIÅ KIAI NURODYTÅ² AR NENURODYTÅ² GARANTIJÅ², Ä®SKAITANT NUOSAVYBÄ–S TEISÄ–S, NEPAÅ½EIDÅ½IAMUMO AR NEÄ®SIKIÅ IMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÄ„LYGAS.
 
-Treèiosios ğalies duomenys ir paslaugos
+TreÄiosios Å¡alies duomenys ir paslaugos
 
-Programa suteikia prieigà prie treèiosios ğalies duomenø paslaugø, duomenø baziø, şiniatinklio paslaugø, programinës árangos arba kito treèiosios ğalies turinio (bendrai - ¥Treèiosios ğalies turinys´). Prieiga prie ğio Treèiosios ğalies turinio pateikiama ¥TOKIA, KOKIA YRA´, NESUTEIKIANT JOKIØ AIĞKIAI NURODYTØ AR NENURODYTØ GARANTIJØ, ÁSKAITANT NUOSAVYBËS TEISËS, NEPAŞEIDŞIAMUMO AR NEÁSIKIĞIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÀLYGAS. Atitinkama treèioji ğalis iğskirtinai savo nuoşiûra prieigà gali bet kada nutraukti. Klientui gali tekti sudaryti su treèiosiomis ğalimis atskiras sutartis dël prieigos prie tokio Treèiosios ğalies turinio arba jo naudojimo. IBM nëra tokiø atskirø sutarèiø ğalis ir, kaip aiğkiai nurodyta ğios licencijos sàlygose, Licenciatas sutinka laikytis tokiø atskirø sutarèiø sàlygø.
+Programa suteikia prieigÄ… prie treÄiosios Å¡alies duomenÅ³ paslaugÅ³, duomenÅ³ baziÅ³, Å¾iniatinklio paslaugÅ³, programinÄ—s Ä¯rangos arba kito treÄiosios Å¡alies turinio (bendrai â€“ â€TreÄiosios Å¡alies turinysâ€œ). Prieiga prie Å¡io TreÄiosios Å¡alies turinio pateikiama â€TOKIA, KOKIA YRAâ€œ, NESUTEIKIANT JOKIÅ² AIÅ KIAI NURODYTÅ² AR NENURODYTÅ² GARANTIJÅ², Ä®SKAITANT NUOSAVYBÄ–S TEISÄ–S, NEPAÅ½EIDÅ½IAMUMO AR NEÄ®SIKIÅ IMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SÄ„LYGAS. Atitinkama treÄioji Å¡alis iÅ¡skirtinai savo nuoÅ¾iÅ«ra prieigÄ… gali bet kada nutraukti. Klientui gali tekti sudaryti su treÄiosiomis Å¡alimis atskiras sutartis dÄ—l prieigos prie tokio TreÄiosios Å¡alies turinio arba jo naudojimo. IBM nÄ—ra tokiÅ³ atskirÅ³ sutarÄiÅ³ Å¡alis ir, kaip aiÅ¡kiai nurodyta Å¡ios licencijos sÄ…lygose, Licenciatas sutinka laikytis tokiÅ³ atskirÅ³ sutarÄiÅ³ sÄ…lygÅ³.
 
 
-L/N: L-ASAY-CE4DNS
-D/N: L-ASAY-CE4DNS
-P/N: L-ASAY-CE4DNS
+L/N: L-AMWV-QRBWQJ
+D/N: L-AMWV-QRBWQJ
+P/N: L-AMWV-QRBWQJ
 
-Programø, kurioms neteikiama garantija, tarptautinë licencinë sutartis
+ProgramÅ³, kurioms neteikiama garantija, tarptautinÄ— licencinÄ— sutartis
 
-1 dalis. Bendrosios sàlygos
+1 dalis. Bendrosios sÄ…lygos
 
-ATSISIØSDAMAS, DIEGDAMAS, KOPIJUODAMAS, PASIEKDAMAS PROGRAMÀ, SPAUSDAMAS MYGTUKÀ ¥SUTINKU´ AR KITAIS BÛDAIS NAUDODAMAS PROGRAMÀ, LICENCIATAS SUTINKA SU ĞIOS SUTARTIES SÀLYGOMIS. JEIGU SU ĞIOS LICENCIJOS SÀLYGOMIS SUTINKATE LICENCIATO VARDU, JÛS PAREIĞKIATE, KAD TURITE VISUS ÁGALIOJIMUS PRISIIMTI SU ĞIOMIS SÀLYGOMIS SUSIJUSIUS ÁSIPAREIGOJIMUS LICENCIATO VARDU.
+ATSISIÅ²SDAMAS, DIEGDAMAS, KOPIJUODAMAS, PASIEKDAMAS PROGRAMÄ„, SPAUSDAMAS MYGTUKÄ„ â€SUTINKUâ€œ AR KITAIS BÅªDAIS NAUDODAMAS PROGRAMÄ„, LICENCIATAS SUTINKA SU Å IOS SUTARTIES SÄ„LYGOMIS. JEIGU SU Å IOS LICENCIJOS SÄ„LYGOMIS SUTINKATE LICENCIATO VARDU, JÅªS PAREIÅ KIATE, KAD TURITE VISUS Ä®GALIOJIMUS PRISIIMTI SU Å IOMIS SÄ„LYGOMIS SUSIJUSIUS Ä®SIPAREIGOJIMUS LICENCIATO VARDU.
 
-JEI SU ĞIOMIS SÀLYGOMIS NESUTINKATE ARBA NETURITE ÁGALIOJIMO: i) NEATSISIØSKITE, NEDIEKITE, NEKOPIJUOKITE, NEBANDYKITE PASIEKTI IR NENAUDOKITE PROGRAMOS, NESPAUSKITE MYGTUKO ¥SUTINKU´ IR ii) NEDELSDAMI GRÀŞINKITE NENAUDOTAS LAIKMENAS, DOKUMENTACIJÀ IR NUOSAVYBËS TEISËS DOKUMENTÀ ĞALIAI, IĞ KURIOS JUOS GAVOTE, KAD SUSIGRÀŞINTUMËTE UŞ PROGRAMÀ SUMOKËTUS PINIGUS. JEI PROGRAMA BUVO ATSISIØSTA, SUNAIKINKITE VISAS PROGRAMOS KOPIJAS.
+JEI SU Å IOMIS SÄ„LYGOMIS NESUTINKATE ARBA NETURITE Ä®GALIOJIMO: i) NEATSISIÅ²SKITE, NEDIEKITE, NEKOPIJUOKITE, NEBANDYKITE PASIEKTI IR NENAUDOKITE PROGRAMOS, NESPAUSKITE MYGTUKO â€SUTINKUâ€œ IR ii) NEDELSDAMI GRÄ„Å½INKITE NENAUDOTAS LAIKMENAS, DOKUMENTACIJÄ„ IR NUOSAVYBÄ–S TEISÄ–S DOKUMENTÄ„ Å ALIAI, IÅ  KURIOS JUOS GAVOTE, KAD SUSIGRÄ„Å½INTUMÄ–TE UÅ½ PROGRAMÄ„ SUMOKÄ–TUS PINIGUS. JEI PROGRAMA BUVO ATSISIÅ²STA, SUNAIKINKITE VISAS PROGRAMOS KOPIJAS.
 
-Ği Programø, kurioms neteikiama garantija, tarptautinë licensinë sutartis (angl. ¥International License Agreement for Non-Warranted Programs´ - ILAN) ir taikomi operacijø dokumentai (visi kartu - ¥Sutartis´) yra visa Licenciato ir IBM sutartis dël Programos naudojimo. Ğaliø sàlygos, átrauktos á 2 ğios ILAN dalá, pakeièia arba modifikuoja 1 dalies sàlygas.
+Å i ProgramÅ³, kurioms neteikiama garantija, tarptautinÄ— licensinÄ— sutartis (angl. â€International License Agreement for Non-Warranted Programsâ€œ - ILAN) ir taikomi operacijÅ³ dokumentai (visi kartu - â€Sutartisâ€œ) yra visa Licenciato ir IBM sutartis dÄ—l Programos naudojimo. Å aliÅ³ sÄ…lygos, Ä¯trauktos Ä¯ 2 Å¡ios ILAN dalÄ¯, pakeiÄia arba modifikuoja 1 dalies sÄ…lygas.
 
-Operacijø dokumentuose (OD) pateikiamas aprağas, informacija ir sàlygos susijusios su Programa ir teisëtu jos naudojimu. Programø OD pavyzdşiuose átraukta licencijos informacija (LI), licencijuotos programos specifikacijos (LPS), pasiûlymas, teisiø suteikimo dokumentas (TSD) arba sàskaita faktûra. Atsiradus bet kokiems prieğtaravimams, OD turi virğenybæ prieğ ILAN.
+OperacijÅ³ dokumentuose (OD) pateikiamas apraÅ¡as, informacija ir sÄ…lygos susijusios su Programa ir teisÄ—tu jos naudojimu. ProgramÅ³ OD pavyzdÅ¾iuose Ä¯traukta licencijos informacija (LI), licencijuotos programos specifikacijos (LPS), pasiÅ«lymas, teisiÅ³ suteikimo dokumentas (TSD) arba sÄ…skaita faktÅ«ra. Atsiradus bet kokiems prieÅ¡taravimams, OD turi virÅ¡enybÄ™ prieÅ¡ ILAN.
 
 1. Programos licencija
 
-a. Programa yra vykdoma IBM prekës şenklo kompiuterio programa ir su ja susijusi medşiaga ir apima visos ir dalies programos kopijas. Programos iğsami informacija aprağyta OD, kuris pasiekiamas adresu http://www.ibm.com/software/sla (programoms ¥Passport Advantage Program´) arba http://www.ibm.com/support/knowledgecenter (kitoms IBM Programoms) Programos sistemos komandø kataloge arba kitaip, kaip nurodë IBM. IBM Programinës árangos politika (pvz., atsarginë kopija, laikinas naudojimas ir IBM patvirtinta debesies aplinka), pasiekiama adresu http://www.ibm.com/softwarepolicies, taikoma Licenciato Programos naudojimui.
+a. Programa yra vykdoma IBM prekÄ—s Å¾enklo kompiuterio programa ir su ja susijusi medÅ¾iaga ir apima visos ir dalies programos kopijas. Programos iÅ¡sami informacija apraÅ¡yta OD, kuris pasiekiamas adresu http://www.ibm.com/software/sla (programoms â€Passport Advantage Programâ€œ) arba http://www.ibm.com/support/knowledgecenter (kitoms IBM Programoms) Programos sistemos komandÅ³ kataloge arba kitaip, kaip nurodÄ— IBM. IBM PrograminÄ—s Ä¯rangos politika (pvz., atsarginÄ— kopija, laikinas naudojimas ir IBM patvirtinta debesies aplinka), pasiekiama adresu http://www.ibm.com/softwarepolicies, taikoma Licenciato Programos naudojimui.
 
-b. Programos kopijoms taikomos autorinës teisës ir reikalauja licencijos.
+b. Programos kopijoms taikomos autorinÄ—s teisÄ—s ir reikalauja licencijos.
 
-c. Licenciatui suteikiama neiğimtinë licencija:
+c. Licenciatui suteikiama neiÅ¡imtinÄ— licencija:
 
-(1) naudoti kiekvienà Programos kopijà pagal Sutarties sàlygas ir, jei taikoma, atsişvelgiant á Licenciato ásigytà licencijos teisiø skaièiø (Teisëtas naudojimas);
+(1) naudoti kiekvienÄ… Programos kopijÄ… pagal Sutarties sÄ…lygas ir, jei taikoma, atsiÅ¾velgiant Ä¯ Licenciato Ä¯sigytÄ… licencijos teisiÅ³ skaiÄiÅ³ (TeisÄ—tas naudojimas);
 
-(2) kurti ir diegti kopijas, skirtas tokiam Teisëtam naudojimui palaikyti; ir
+(2) kurti ir diegti kopijas, skirtas tokiam TeisÄ—tam naudojimui palaikyti; ir
 
-(3) kurti atsarginæ kopijà.
+(3) kurti atsarginÄ™ kopijÄ….
 
-d. Programas gali naudoti Licenciatas, jo darbuotojai ir rangovai. Licenciatas negali nuomoti Programos ar teikti komerciná IT, teikti iğtekliø nuomos arba laiko iğtekliø paskirstymo paslaugas treèiosioms ğalims. Uş papildomà mokestá ir pagal kitas sàlygas galima ásigyti papildomø teisiø.
+d. Programas gali naudoti Licenciatas, jo darbuotojai ir rangovai. Licenciatas negali nuomoti Programos ar teikti komercinÄ¯ IT, teikti iÅ¡tekliÅ³ nuomos arba laiko iÅ¡tekliÅ³ paskirstymo paslaugas treÄiosioms Å¡alims. UÅ¾ papildomÄ… mokestÄ¯ ir pagal kitas sÄ…lygas galima Ä¯sigyti papildomÅ³ teisiÅ³.
 
-e. Programai suteikta licencija galioja su sàlyga, kad Licenciatas:
+e. Programai suteikta licencija galioja su sÄ…lyga, kad Licenciatas:
 
-(1) atgamina autoriø teisiø informacijà ir kitus şenklus bet kokioje kopijoje;
+(1) atgamina autoriÅ³ teisiÅ³ informacijÄ… ir kitus Å¾enklus bet kokioje kopijoje;
 
-(2) uştikrina, kad kiekvienas Programos naudotojas i) ja naudojasi Licenciato vardu Licenciato Teisëto naudojimo bûdu ir ii) laikosi ğios Sutarties sàlygø;
+(2) uÅ¾tikrina, kad kiekvienas Programos naudotojas i) ja naudojasi Licenciato vardu Licenciato TeisÄ—to naudojimo bÅ«du ir ii) laikosi Å¡ios Sutarties sÄ…lygÅ³;
 
-(3) Programos neiğmontuoja, nedekompiliuoja, neverèia ir jai netaiko atvirkğtinës inşinerijos bûdø, nebent teisës aktai tai aiğkiai leidşia be sutartinës atsisakymo galimybës; ir
+(3) Programos neiÅ¡montuoja, nedekompiliuoja, neverÄia ir jai netaiko atvirkÅ¡tinÄ—s inÅ¾inerijos bÅ«dÅ³, nebent teisÄ—s aktai tai aiÅ¡kiai leidÅ¾ia be sutartinÄ—s atsisakymo galimybÄ—s; ir
 
-(4) në vieno iğ Programos elementø ar susijusios licencijuotos medşiagos nenaudoja atskirai nuo Programos.
+(4) nÄ— vieno iÅ¡ Programos elementÅ³ ar susijusios licencijuotos medÅ¾iagos nenaudoja atskirai nuo Programos.
 
-f. Jei Programos (Pagrindinës programos) OD nurodyta, kad ¥Pagalbinë programa´ átraukta á Pagrindinæ programà, Licenciatas gali naudoti Pagalbinæ programà bet kokiems Pagrindinës programos licencijos apribojimams taikyti arba tik Pagrindinei programai palaikyti.
+f. Jei Programos (PagrindinÄ—s programos) OD nurodyta, kad â€PagalbinÄ— programaâ€œ Ä¯traukta Ä¯ PagrindinÄ™ programÄ…, Licenciatas gali naudoti PagalbinÄ™ programÄ… bet kokiems PagrindinÄ—s programos licencijos apribojimams taikyti arba tik Pagrindinei programai palaikyti.
 
-g. Ği licencija taikoma kiekvienai Licenciato padarytai Programos kopijai.
+g. Å i licencija taikoma kiekvienai Licenciato padarytai Programos kopijai.
 
-h. Programos atnaujinimui, pakeitimui ar pataisai taikomos Programos sàlygos, nebent naujos sàlygos pateikiamos atnaujintame OD. Licenciatas sutinka su naujomis sàlygomis ádiegti atnaujinimà, pakeitimà ar pataisà. Jei Programa pakeièiama atnaujinimu, Licenciatas sutinka nedelsdamas nutraukti pakeistos Programos naudojimà.
+h. Programos atnaujinimui, pakeitimui ar pataisai taikomos Programos sÄ…lygos, nebent naujos sÄ…lygos pateikiamos atnaujintame OD. Licenciatas sutinka su naujomis sÄ…lygomis Ä¯diegti atnaujinimÄ…, pakeitimÄ… ar pataisÄ…. Jei Programa pakeiÄiama atnaujinimu, Licenciatas sutinka nedelsdamas nutraukti pakeistos Programos naudojimÄ….
 
-i. Jei Licenciatas dël kokios nors prieşasties yra nepatenkintas Programa, Licenciatas gali nutraukti licencijà gràşindamas Programà ir teisiø suteikimo dokumentà IBM arba ágaliotajam IBM verslo partneriui per 30 dienø nuo pradinës tokios Programos ásigijimo datos, kad susigràşintø uş jà sumokëtus pinigus. Jei Programà atsisiuntëte, susisiekite su ğalimi, iğ kurios Licenciatas ásigijo Programà, ir paprağykite instrukcijø, kaip susigràşinti pinigus.
+i. Jei Licenciatas dÄ—l kokios nors prieÅ¾asties yra nepatenkintas Programa, Licenciatas gali nutraukti licencijÄ… grÄ…Å¾indamas ProgramÄ… ir teisiÅ³ suteikimo dokumentÄ… IBM arba Ä¯galiotajam IBM verslo partneriui per 30 dienÅ³ nuo pradinÄ—s tokios Programos Ä¯sigijimo datos, kad susigrÄ…Å¾intÅ³ uÅ¾ jÄ… sumokÄ—tus pinigus. Jei ProgramÄ… atsisiuntÄ—te, susisiekite su Å¡alimi, iÅ¡ kurios Licenciatas Ä¯sigijo ProgramÄ…, ir papraÅ¡ykite instrukcijÅ³, kaip susigrÄ…Å¾inti pinigus.
 
 2. Garantijos
 
-a. IBM negarantuoja, kad IBM Programa veiks be trikèiø ir klaidø ar kad IBM pağalins visus defektus arba iğvengs treèiøjø ğaliø trikdşiø.Ğios garantijos yra vienintelës IBM suteikiamos garantijos, kurios pakeièia visas kitas garantijas, áskaitant numanomas patenkinamos kokybës, tinkamumo parduoti, teisiø paşeidimo nebuvimo ir tinkamumo konkreèiam tikslui garantijas ar sàlygas. IBM garantijos netaikomos dël netinkamo naudojimo, modifikavimo, ne IBM sukeltos şalos arba IBM pateiktø rağytiniø instrukcijø nesilaikymo. Ne IBM Programos pateikiamos ¥tokios, kokios yra´, be jokiø garantijø.Treèiosios ğalys Licenciatui gali teikti savo garantijas.
+a. IBM negarantuoja, kad IBM Programa veiks be trikÄiÅ³ ir klaidÅ³ ar kad IBM paÅ¡alins visus defektus arba iÅ¡vengs treÄiÅ³jÅ³ Å¡aliÅ³ trikdÅ¾iÅ³.Å ios garantijos yra vienintelÄ—s IBM suteikiamos garantijos, kurios pakeiÄia visas kitas garantijas, Ä¯skaitant numanomas patenkinamos kokybÄ—s, tinkamumo parduoti, teisiÅ³ paÅ¾eidimo nebuvimo ir tinkamumo konkreÄiam tikslui garantijas ar sÄ…lygas. IBM garantijos netaikomos dÄ—l netinkamo naudojimo, modifikavimo, ne IBM sukeltos Å¾alos arba IBM pateiktÅ³ raÅ¡ytiniÅ³ instrukcijÅ³ nesilaikymo. Ne IBM Programos pateikiamos â€tokios, kokios yraâ€œ, be jokiÅ³ garantijÅ³.TreÄiosios Å¡alys Licenciatui gali teikti savo garantijas.
 
-b. Papildomas palaikymas garantiniu laikotarpiu galimas sudarius atskirà sutartá.
+b. Papildomas palaikymas garantiniu laikotarpiu galimas sudarius atskirÄ… sutartÄ¯.
 
-3. Mokesèiai, mokëjimas ir patikrinimas
+3. MokesÄiai, mokÄ—jimas ir patikrinimas
 
-a. Licenciato teisæ naudoti Programà sudaro Licenciato mokami taikomi mokesèiai, jei yra, kaip nurodyta sutartyje, pagal kurià Licenciatas ásigijo licencijos teises. Licenciatas atsakingas uş papildomø licencijos teisiø ásigijimà prieğ bet koká didesná naudojimà.
+a. Licenciato teisÄ™ naudoti ProgramÄ… sudaro Licenciato mokami taikomi mokesÄiai, jei yra, kaip nurodyta sutartyje, pagal kuriÄ… Licenciatas Ä¯sigijo licencijos teises. Licenciatas atsakingas uÅ¾ papildomÅ³ licencijos teisiÅ³ Ä¯sigijimÄ… prieÅ¡ bet kokÄ¯ didesnÄ¯ naudojimÄ….
 
-b. Licenciatas sutinka sumokëti visus ásigytø teisiø taikomus mokesèius ir mokesèius uş pertekliná teisiø naudojimà. Á mokesèius nëra átraukti jokie muito mokesèiai ar kitos rinkliavos, valdşios nustatyti mokesèiai ir panağûs bet kurios kitos institucijos nustatyti mokesèiai, taikomi Licenciato teisiø ásigijimui, ir jiems bus iğrağoma papildoma sàskaita faktûra. Sumos mokamos gavus sàskaità faktûrà iğ IBM, á kurià gali bûti átraukti delspinigiai, á IBM nurodytà sàskaità per 30 dienø nuo sàskaitos faktûros iğrağymo datos. Licenciatas atsakingas uş tinkamà papildomø licencijos teisiø ásigijimà prieğ didesnës apimties naudojimà. IBM neteikia kreditø, jei vëluojama sumokëti, ir negràşina jau sumokëtø pinigø, iğskyrus atvejus, aprağytus ğioje ILAN, taikomame OD arba sutarties, pagal kurià Licenciatas ásigijo licencijos teises, sàlygose.
+b. Licenciatas sutinka sumokÄ—ti visus Ä¯sigytÅ³ teisiÅ³ taikomus mokesÄius ir mokesÄius uÅ¾ perteklinÄ¯ teisiÅ³ naudojimÄ…. Ä® mokesÄius nÄ—ra Ä¯traukti jokie muito mokesÄiai ar kitos rinkliavos, valdÅ¾ios nustatyti mokesÄiai ir panaÅ¡Å«s bet kurios kitos institucijos nustatyti mokesÄiai, taikomi Licenciato teisiÅ³ Ä¯sigijimui, ir jiems bus iÅ¡raÅ¡oma papildoma sÄ…skaita faktÅ«ra. Sumos mokamos gavus sÄ…skaitÄ… faktÅ«rÄ… iÅ¡ IBM, Ä¯ kuriÄ… gali bÅ«ti Ä¯traukti delspinigiai, Ä¯ IBM nurodytÄ… sÄ…skaitÄ… per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros iÅ¡raÅ¡ymo datos. Licenciatas atsakingas uÅ¾ tinkamÄ… papildomÅ³ licencijos teisiÅ³ Ä¯sigijimÄ… prieÅ¡ didesnÄ—s apimties naudojimÄ…. IBM neteikia kreditÅ³, jei vÄ—luojama sumokÄ—ti, ir negrÄ…Å¾ina jau sumokÄ—tÅ³ pinigÅ³, iÅ¡skyrus atvejus, apraÅ¡ytus Å¡ioje ILAN, taikomame OD arba sutarties, pagal kuriÄ… Licenciatas Ä¯sigijo licencijos teises, sÄ…lygose.
 
-c. Atsişvelgiant á ásigytas teises Licenciatas sutinka: 1) kai to reikalauja ástatymai, bet koká iğskaièiuojamàjá mokestá tiesiogiai sumokëti atitinkamai vyriausybës institucijai; 2) IBM pateikti toká mokëjimà patvirtinanèià mokesèiø paşymà; 3) IBM mokëti tik grynàsias pajamas, atskaièius mokesèius; 4) su IBM glaudşiai bendradarbiauti, kad bûtø gautas atleidimas nuo tokiø mokesèiø arba jie bûtø sumaşinti ir nedelsiant uşpildyti ir pateikti visus atitinkamus dokumentus.
+c. AtsiÅ¾velgiant Ä¯ Ä¯sigytas teises Licenciatas sutinka: 1) kai to reikalauja Ä¯statymai, bet kokÄ¯ iÅ¡skaiÄiuojamÄ…jÄ¯ mokestÄ¯ tiesiogiai sumokÄ—ti atitinkamai vyriausybÄ—s institucijai; 2) IBM pateikti tokÄ¯ mokÄ—jimÄ… patvirtinanÄiÄ… mokesÄiÅ³ paÅ¾ymÄ…; 3) IBM mokÄ—ti tik grynÄ…sias pajamas, atskaiÄius mokesÄius; 4) su IBM glaudÅ¾iai bendradarbiauti, kad bÅ«tÅ³ gautas atleidimas nuo tokiÅ³ mokesÄiÅ³ arba jie bÅ«tÅ³ sumaÅ¾inti ir nedelsiant uÅ¾pildyti ir pateikti visus atitinkamus dokumentus.
 
-d. Jei Licenciatas importuoja, eksportuoja, perkelia, pasiekia arba naudoja Programà uşsienyje, Licenciatas sutinka prisiimti atsakomybæ uş bet kokius muito mokesèius, mokesèius ar panağias rinkliavas, kurias taiko institucija. Mokesèiai mokëtini nuo IBM grynøjø pajamø á tai neátraukiami.
+d. Jei Licenciatas importuoja, eksportuoja, perkelia, pasiekia arba naudoja ProgramÄ… uÅ¾sienyje, Licenciatas sutinka prisiimti atsakomybÄ™ uÅ¾ bet kokius muito mokesÄius, mokesÄius ar panaÅ¡ias rinkliavas, kurias taiko institucija. MokesÄiai mokÄ—tini nuo IBM grynÅ³jÅ³ pajamÅ³ Ä¯ tai neÄ¯traukiami.
 
 3.1 Licencijavimo patvirtinimas
 
-a. Licenciatas visoms Programoms visose vietose ir visose aplinkose kurs, iğlaikys ir kiekvienais metais pateiks IBM pagal uşklausà gavæs praneğimà prieğ 30 dienø: i) ataskaità IBM pageidaujamu formatu apie árağø, sistemos árankiø iğvesties ir kitos sistemos informacijos naudojimà; ir ii) palaikymo dokumentus (bendrai, ¥Diegimo duomenys´).
+a. Licenciatas visoms Programoms visose vietose ir visose aplinkose kurs, iÅ¡laikys ir kiekvienais metais pateiks IBM pagal uÅ¾klausÄ… gavÄ™s praneÅ¡imÄ… prieÅ¡ 30 dienÅ³: i) ataskaitÄ… IBM pageidaujamu formatu apie Ä¯raÅ¡Å³, sistemos Ä¯rankiÅ³ iÅ¡vesties ir kitos sistemos informacijos naudojimÄ…; ir ii) palaikymo dokumentus (bendrai, â€Diegimo duomenysâ€œ).
 
-b. Priimtinai perspëjusi IBM ir nepriklausomi auditoriai gali patikrinti, kaip Licenciatas laikosi ğios Sutarties visose svetainëse ir visose aplinkose, kuriose Licenciatas naudoja (bet kokiais tikslais) Programas. Patikrinimas bus atliktas taip, kad kuo maşiau sutrikdytø Licenciato veiklà, ir gali bûti atliekamas Licenciato patalpose darbo valandomis. IBM pateiks rağytinæ sutartá su nepriklausomu auditoriumi. Bet anksèiau aprağytø Diegimo duomenø, Licenciatas pagal uşklausà sutinka pateikti IBM ir jos auditoriams papildomos tikslios informacijos ir Diegimo duomenis.
+b. Priimtinai perspÄ—jusi IBM ir nepriklausomi auditoriai gali patikrinti, kaip Licenciatas laikosi Å¡ios Sutarties visose svetainÄ—se ir visose aplinkose, kuriose Licenciatas naudoja (bet kokiais tikslais) Programas. Patikrinimas bus atliktas taip, kad kuo maÅ¾iau sutrikdytÅ³ Licenciato veiklÄ…, ir gali bÅ«ti atliekamas Licenciato patalpose darbo valandomis. IBM pateiks raÅ¡ytinÄ™ sutartÄ¯ su nepriklausomu auditoriumi. Bet anksÄiau apraÅ¡ytÅ³ Diegimo duomenÅ³, Licenciatas pagal uÅ¾klausÄ… sutinka pateikti IBM ir jos auditoriams papildomos tikslios informacijos ir Diegimo duomenis.
 
-c. Licenciatas nedelsdamas sutvarkys ir sumokës mokesèius pagal IBM dabartinius ákainius, susijusius su i) bet kokiais diegimais, virğijanèiais nurodytus ágaliojimus arba pagal metinæ ataskaità arba patvirtinimà; ii) tokiems pertekliniams diegimams taikomomis prenumeratos ir palaikymo paslaugomis (S&S); ğio perteklinio naudojimo laikotarpiu arba dvejus metus, atsişvelgiant á tai, kuris laikotarpis trumpesnis, ir iii) kitas iğlaidas bei ásipareigojimus, nustatytus per tikrinimà, áskaitant, bet neapsiribojant, mokesèius, rinkliavas ir reguliacinius mokesèius.
+c. Licenciatas nedelsdamas sutvarkys ir sumokÄ—s mokesÄius pagal IBM dabartinius Ä¯kainius, susijusius su i) bet kokiais diegimais, virÅ¡ijanÄiais nurodytus Ä¯galiojimus arba pagal metinÄ™ ataskaitÄ… arba patvirtinimÄ…; ii) tokiems pertekliniams diegimams taikomomis prenumeratos ir palaikymo paslaugomis (S&S); Å¡io perteklinio naudojimo laikotarpiu arba dvejus metus, atsiÅ¾velgiant Ä¯ tai, kuris laikotarpis trumpesnis, ir iii) kitas iÅ¡laidas bei Ä¯sipareigojimus, nustatytus per tikrinimÄ…, Ä¯skaitant, bet neapsiribojant, mokesÄius, rinkliavas ir reguliacinius mokesÄius.
 
-4. Atsakomybë ir intelektinës nuosavybës apsauga
+4. AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsauga
 
-a. IBM atsakomybë dël visø pretenzijø, susijusiø su Sutartimi, nevirğys Licenciato patirtos faktinës tiesioginës şalos sumos: nevirğys i) 10 000 JAV doleriø (arba atitikmens vietos valiuta) arba ii) sumos, kuri buvo sumokëta (periodinio mokesèio atveju - ne daugiau nei 12 mënesiø mokesèiø suma) uş teises á Programà, dël kuriø pateikta pretenzija, neatsişvelgiant á pretenzijos pagrindà. IBM neprisiima atsakomybës uş ypatingà, atsitiktinæ, baudinæ, netiesioginæ şalà ar ekonominius ğalutinius nuostolius arba uş prarastà pelnà, verslà, vertæ, pajamas, prestişà ar numatomas santaupas. Ğie apribojimai taikomi bendrai IBM, jos susijusioms ámonëms, rangovams ir tiekëjams.
+a. IBM atsakomybÄ— dÄ—l visÅ³ pretenzijÅ³, susijusiÅ³ su Sutartimi, nevirÅ¡ys Licenciato patirtos faktinÄ—s tiesioginÄ—s Å¾alos sumos: nevirÅ¡ys i) 10Â 000 JAV doleriÅ³ (arba atitikmens vietos valiuta) arba ii) sumos, kuri buvo sumokÄ—ta (periodinio mokesÄio atveju - ne daugiau nei 12 mÄ—nesiÅ³ mokesÄiÅ³ suma) uÅ¾ teises Ä¯ ProgramÄ…, dÄ—l kuriÅ³ pateikta pretenzija, neatsiÅ¾velgiant Ä¯ pretenzijos pagrindÄ…. IBM neprisiima atsakomybÄ—s uÅ¾ ypatingÄ…, atsitiktinÄ™, baudinÄ™, netiesioginÄ™ Å¾alÄ… ar ekonominius Å¡alutinius nuostolius arba uÅ¾ prarastÄ… pelnÄ…, verslÄ…, vertÄ™, pajamas, prestiÅ¾Ä… ar numatomas santaupas. Å ie apribojimai taikomi bendrai IBM, jos susijusioms Ä¯monÄ—ms, rangovams ir tiekÄ—jams.
 
-b. Toliau nurodytoms sumoms netaikoma anksèiau nurodyta virğutinë riba: nuostoliai, kuriø neleidşia apriboti galiojantys ástatymai.
+b. Toliau nurodytoms sumoms netaikoma anksÄiau nurodyta virÅ¡utinÄ— riba: nuostoliai, kuriÅ³ neleidÅ¾ia apriboti galiojantys Ä¯statymai.
 
-c. IBM nëra atsakinga uş pretenzijas, pagrástas ne IBM produktais, IBM neteikiamomis prekëmis arba bet kokiu teisës ar treèiosios ğalies teisiø paşeidimu, atsiradusiu dël Turinio ar bet kokiø Licenciato medşiagø, konstrukcijø, specifikacijø. Turiná sudaro visi duomenys, programinë áranga ir informacija, kurià Licenciatas ar jo teisëti vartotojai pateikia, suteikia teisæ pasiekti arba átraukia á Programà.
+c. IBM nÄ—ra atsakinga uÅ¾ pretenzijas, pagrÄ¯stas ne IBM produktais, IBM neteikiamomis prekÄ—mis arba bet kokiu teisÄ—s ar treÄiosios Å¡alies teisiÅ³ paÅ¾eidimu, atsiradusiu dÄ—l Turinio ar bet kokiÅ³ Licenciato medÅ¾iagÅ³, konstrukcijÅ³, specifikacijÅ³. TurinÄ¯ sudaro visi duomenys, programinÄ— Ä¯ranga ir informacija, kuriÄ… Licenciatas ar jo teisÄ—ti vartotojai pateikia, suteikia teisÄ™ pasiekti arba Ä¯traukia Ä¯ ProgramÄ….
 
 5. Nutraukimas
 
-a. IBM gali nutraukti Licenciato Programos naudojimo licencijà, jei Licenciatas nesilaiko ğios ILAN, OD ar pirkimo sutarties, pvz., Tarptautinës ¥Passport Advantage´ sutarties (angl. ¥International Passport Advantage Agreement´ - IPAA) sàlygø. Nutraukus licencijà, Licenciatas turi nedelsdamas sunaikinti visas Programos kopijas.Bet kurios sàlygos, kurios dël savo pobûdşio tæsiasi po nutraukimo, lieka galioti iki jø ávykdymo ir taikomos ápëdiniams ir teisiø perëmëjams.
+a. IBM gali nutraukti Licenciato Programos naudojimo licencijÄ…, jei Licenciatas nesilaiko Å¡ios ILAN, OD ar pirkimo sutarties, pvz., TarptautinÄ—s â€Passport Advantageâ€œ sutarties (angl. â€International Passport Advantage Agreementâ€œ - IPAA) sÄ…lygÅ³. Nutraukus licencijÄ…, Licenciatas turi nedelsdamas sunaikinti visas Programos kopijas.Bet kurios sÄ…lygos, kurios dÄ—l savo pobÅ«dÅ¾io tÄ™siasi po nutraukimo, lieka galioti iki jÅ³ Ä¯vykdymo ir taikomos Ä¯pÄ—diniams ir teisiÅ³ perÄ—mÄ—jams.
 
-6. Taikoma teisë ir geografinë aprëptis
+6. Taikoma teisÄ— ir geografinÄ— aprÄ—ptis
 
-a. Abi ğalys sutinka, kad bûtø taikomi ğalies, kurioje vykdomas sandoris dël licencijos teisiø, teisës aktai, neatsişvelgiant á teisës principø prieğtaravimus. Kiekvienos ğalies teisës ir ásipareigojimai galioja tik toje ğalyje, kurioje vykdomas sandoris licencijos teisëms ásigyti arba, jei IBM sutinka, ğalyje, kurioje Programa yra produktyviai naudojama, iğskyrus visas licencijas - jos galioja ten, kur konkreèiai nurodyta.
+a. Abi Å¡alys sutinka, kad bÅ«tÅ³ taikomi Å¡alies, kurioje vykdomas sandoris dÄ—l licencijos teisiÅ³, teisÄ—s aktai, neatsiÅ¾velgiant Ä¯ teisÄ—s principÅ³ prieÅ¡taravimus. Kiekvienos Å¡alies teisÄ—s ir Ä¯sipareigojimai galioja tik toje Å¡alyje, kurioje vykdomas sandoris licencijos teisÄ—ms Ä¯sigyti arba, jei IBM sutinka, Å¡alyje, kurioje Programa yra produktyviai naudojama, iÅ¡skyrus visas licencijas - jos galioja ten, kur konkreÄiai nurodyta.
 
-b. Kiekviena ğalis taip pat atsako uş: 1) jos verslui ir Turiniui taikomø ástatymø ir kitø teisës aktø laikymàsi; 2) importo, eksporto ir ekonominiø sankcijø ástatymø ir kitø teisës aktø, áskaitant Jungtiniø Amerikos Valstijø ir bet kokiø taikomø jurisdikcijø gynybos prekybos kontrolës reşimo ástatymus ir kitus teisës aktus, kuriais draudşiamas ar ribojamas tiesioginis ar netiesioginis gaminiø, technologijø, paslaugø ar duomenø importas, eksportas, reeksportas ar perdavimas á tam tikras ğalis, tam tikram galutiniam naudojimui ar tam tikriems galutiniams naudotojams, laikymàsi.
+b. Kiekviena Å¡alis taip pat atsako uÅ¾: 1) jos verslui ir Turiniui taikomÅ³ Ä¯statymÅ³ ir kitÅ³ teisÄ—s aktÅ³ laikymÄ…si; 2) importo, eksporto ir ekonominiÅ³ sankcijÅ³ Ä¯statymÅ³ ir kitÅ³ teisÄ—s aktÅ³, Ä¯skaitant JungtiniÅ³ Amerikos ValstijÅ³ ir bet kokiÅ³ taikomÅ³ jurisdikcijÅ³ gynybos prekybos kontrolÄ—s reÅ¾imo Ä¯statymus ir kitus teisÄ—s aktus, kuriais draudÅ¾iamas ar ribojamas tiesioginis ar netiesioginis gaminiÅ³, technologijÅ³, paslaugÅ³ ar duomenÅ³ importas, eksportas, reeksportas ar perdavimas Ä¯ tam tikras Å¡alis, tam tikram galutiniam naudojimui ar tam tikriems galutiniams naudotojams, laikymÄ…si.
 
-c. Jeigu kuri nors ğios Programos Sutarties nuostata negalioja arba yra neágyvendinama, kitos nuostatos lieka galioti. Joks ğios Sutarties punktas neturi átakos ástatymø numatytoms vartotojø teisëms, kuriø sutartis negali panaikinti ar apriboti. Jungtiniø Tautø konvencija ¥Dël tarptautinio prekiø pirkimo-pardavimo sutarèiø´ pagal ğá Susitarimà sudaromiems sandoriams netaikoma.
+c. Jeigu kuri nors Å¡ios Programos Sutarties nuostata negalioja arba yra neÄ¯gyvendinama, kitos nuostatos lieka galioti. Joks Å¡ios Sutarties punktas neturi Ä¯takos Ä¯statymÅ³ numatytoms vartotojÅ³ teisÄ—ms, kuriÅ³ sutartis negali panaikinti ar apriboti. JungtiniÅ³ TautÅ³ konvencija â€DÄ—l tarptautinio prekiÅ³ pirkimo-pardavimo sutarÄiÅ³â€œ pagal Å¡Ä¯ SusitarimÄ… sudaromiems sandoriams netaikoma.
 
 7. Bendrosios nuostatos
 
-a. IBM yra nepriklausomas rangovas, o ne Licenciato atstovas, bendros ámonës dalininkas, partneris ar patikëtinis ir ji neásipareigoja vykdyti reglamentuose numatytus Licenciato ásipareigojimus ir neprisiima atsakomybës uş Licenciato verslà ar veiklà. Licenciatas atsako uş savo naudojimàsi IBM Programomis ir Ne IBM Programomis. IBM veikia tik kaip informacijos technologijos teikëjas. IBM pateikiamos instrukcijos, siûlomas Programos naudojimas ar patarimai nëra medicininis, klinikinis, teisinis, apskaitos arba kitoks licencijuoto profesionalo patarimas. Licenciatas privalo gauti savo eksperto patarimà.
+a. IBM yra nepriklausomas rangovas, o ne Licenciato atstovas, bendros Ä¯monÄ—s dalininkas, partneris ar patikÄ—tinis ir ji neÄ¯sipareigoja vykdyti reglamentuose numatytus Licenciato Ä¯sipareigojimus ir neprisiima atsakomybÄ—s uÅ¾ Licenciato verslÄ… ar veiklÄ…. Licenciatas atsako uÅ¾ savo naudojimÄ…si IBM Programomis ir Ne IBM Programomis. IBM veikia tik kaip informacijos technologijos teikÄ—jas. IBM pateikiamos instrukcijos, siÅ«lomas Programos naudojimas ar patarimai nÄ—ra medicininis, klinikinis, teisinis, apskaitos arba kitoks licencijuoto profesionalo patarimas. Licenciatas privalo gauti savo eksperto patarimÄ….
 
-b. Tais atvejais, kai Licenciatui IBM Programas pateikia materialios formos, IBM savo siuntimo ir pristatymo ásipareigojimus ávykdo, perdavusi Programas IBM paskirtam veşëjui, nebent Licenciatas ir IBM rağtiğkai susitarë kitaip.
+b. Tais atvejais, kai Licenciatui IBM Programas pateikia materialios formos, IBM savo siuntimo ir pristatymo Ä¯sipareigojimus Ä¯vykdo, perdavusi Programas IBM paskirtam veÅ¾Ä—jui, nebent Licenciatas ir IBM raÅ¡tiÅ¡kai susitarÄ— kitaip.
 
-c. Licenciatas negali naudoti Programos, jei jos gedimas gali sukelti mirtá, sunkø kûno suşalojimø, nuosavybës ar aplinkos paşeidimà.
+c. Licenciatas negali naudoti Programos, jei jos gedimas gali sukelti mirtÄ¯, sunkÅ³ kÅ«no suÅ¾alojimÅ³, nuosavybÄ—s ar aplinkos paÅ¾eidimÄ….
 
-d. IBM, jos antrinës ámonës ir jø rangovai turi naudoti savo ámonës informacijà ir tam tikrà paskyros naudojimo informacijà. Ği informacija nëra Turinys. Verslo kontaktinë informacija naudojama ryğiams su Licenciatu ir verslo sandoriams su juo valdyti. Verslo kontaktinës informacijos pavyzdşiai: vardas, pavardë, darbo telefonas, adresas, el. pağtas, vartotojo ID ir mokesèiø registracijos informacija. Paskyros naudojimo informacijà bûtina pateikti norint ágalinti, teikti, valdyti, palaikyti, administruoti ir tobulinti Programas. Paskyros naudojimo informacija apima pateikiamas klaidas ir skaitmeninæ informacijà, kuri Programos naudojimo metu renkama, naudojant sekimo technologijas, tokias kaip slapukai ir şiniatinklio indikatoriai.IBM privatumo nuostatos, pateikiamos http://www.ibm.com/privacy, suteikia papildomos informacijos apie tai, kaip IBM renka, naudoja ir tvarko verslo kontaktinæ informacijà ir paskyros naudojimo informacijà.Kai Licenciatas pateiks informacijà IBM, ir praneğ apie toká tvarkymà reikia informuoti asmená arba gauti jo sutikimà, Licenciatas informuos asmená ir gaus jo sutikimà.
+d. IBM, jos antrinÄ—s Ä¯monÄ—s ir jÅ³ rangovai turi naudoti savo Ä¯monÄ—s informacijÄ… ir tam tikrÄ… paskyros naudojimo informacijÄ…. Å i informacija nÄ—ra Turinys. Verslo kontaktinÄ— informacija naudojama ryÅ¡iams su Licenciatu ir verslo sandoriams su juo valdyti. Verslo kontaktinÄ—s informacijos pavyzdÅ¾iai: vardas, pavardÄ—, darbo telefonas, adresas, el. paÅ¡tas, vartotojo ID ir mokesÄiÅ³ registracijos informacija. Paskyros naudojimo informacijÄ… bÅ«tina pateikti norint Ä¯galinti, teikti, valdyti, palaikyti, administruoti ir tobulinti Programas. Paskyros naudojimo informacija apima pateikiamas klaidas ir skaitmeninÄ™ informacijÄ…, kuri Programos naudojimo metu renkama, naudojant sekimo technologijas, tokias kaip slapukai ir Å¾iniatinklio indikatoriai.IBM privatumo nuostatos, pateikiamos http://www.ibm.com/privacy, suteikia papildomos informacijos apie tai, kaip IBM renka, naudoja ir tvarko verslo kontaktinÄ™ informacijÄ… ir paskyros naudojimo informacijÄ….Kai Licenciatas pateiks informacijÄ… IBM, ir praneÅ¡ apie tokÄ¯ tvarkymÄ… reikia informuoti asmenÄ¯ arba gauti jo sutikimÄ…, Licenciatas informuos asmenÄ¯ ir gaus jo sutikimÄ….
 
-e. IBM verslo partneriai, naudojantys ar teikiantys Programà, veikia nepriklausomai nuo IBM ir vienağaliğkai nustato savo kainas ir sàlygas. IBM neatsako uş jø veiksmus, neveikimà, pareiğkimus ar pasiûlymus.
+e. IBM verslo partneriai, naudojantys ar teikiantys ProgramÄ…, veikia nepriklausomai nuo IBM ir vienaÅ¡aliÅ¡kai nustato savo kainas ir sÄ…lygas. IBM neatsako uÅ¾ jÅ³ veiksmus, neveikimÄ…, pareiÅ¡kimus ar pasiÅ«lymus.
 
-f. IBM gali siûlyti ne IBM Programas arba IBM Programa gali sudaryti sàlygas pasiekti ne IBM Programà, dël kurios gali tekti sutikti su OD arba Licenciato pateiktomis treèiøjø ğaliø sàlygomis. Ne IBM Programø susiejimas arba jø naudojimas rodo, kad Licenciatas sutinka su tomis sàlygomis. IBM nëra tokiø treèiøjø ğaliø sutarèiø dalyvë ir nëra atsakinga uş ne IBM programas.
+f. IBM gali siÅ«lyti ne IBM Programas arba IBM Programa gali sudaryti sÄ…lygas pasiekti ne IBM ProgramÄ…, dÄ—l kurios gali tekti sutikti su OD arba Licenciato pateiktomis treÄiÅ³jÅ³ Å¡aliÅ³ sÄ…lygomis. Ne IBM ProgramÅ³ susiejimas arba jÅ³ naudojimas rodo, kad Licenciatas sutinka su tomis sÄ…lygomis. IBM nÄ—ra tokiÅ³ treÄiÅ³jÅ³ Å¡aliÅ³ sutarÄiÅ³ dalyvÄ— ir nÄ—ra atsakinga uÅ¾ ne IBM programas.
 
-g. Programos Licencijos teises suteikia ámonë Niujorke ¥International Business Machines Corporation´ (¥IBM Corporation´). IBM ámonë, iğ kurios Licenciatas ásigyja teises (IBM) veikia kaip platintojas, teikia Programas ir yra atsakinga uş ğios Sutarties sàlygø laikymàsi. Jei teisës ásigyjamos iğ IBM verslo partnerio, ásigijimo ğalies IBM ámonë yra atsakinga uş ğios Sutarties sàlygø laikymàsi. Nesukuriama jokia teisë arba ieğkinio pagrindas Licencijos naudai prieğ ¥IBM Corporation´. Licenciatas atsisako bet kokiø pretenzijø ir ieğkinio pagrindo prieğ ¥IBM Corporation´ bei sutinka dël su Programomis susijusiø teisiø ir teisiø gynimo priemoniø kreiptis iğskirtinai á IBM.
+g. Programos Licencijos teises suteikia Ä¯monÄ— Niujorke â€International Business Machines Corporationâ€œ (â€IBM Corporationâ€œ). IBM Ä¯monÄ—, iÅ¡ kurios Licenciatas Ä¯sigyja teises (IBM) veikia kaip platintojas, teikia Programas ir yra atsakinga uÅ¾ Å¡ios Sutarties sÄ…lygÅ³ laikymÄ…si. Jei teisÄ—s Ä¯sigyjamos iÅ¡ IBM verslo partnerio, Ä¯sigijimo Å¡alies IBM Ä¯monÄ— yra atsakinga uÅ¾ Å¡ios Sutarties sÄ…lygÅ³ laikymÄ…si. Nesukuriama jokia teisÄ— arba ieÅ¡kinio pagrindas Licencijos naudai prieÅ¡ â€IBM Corporationâ€œ. Licenciatas atsisako bet kokiÅ³ pretenzijÅ³ ir ieÅ¡kinio pagrindo prieÅ¡ â€IBM Corporationâ€œ bei sutinka dÄ—l su Programomis susijusiÅ³ teisiÅ³ ir teisiÅ³ gynimo priemoniÅ³ kreiptis iÅ¡skirtinai Ä¯ IBM.
 
-h. Licenciatas negali suteikti, perleisti ar perduoti jokios Programos licencijos (iğskyrus atvejus, kai perleidimas ar perdavimas nëra teisiğkai ribojamas arba aiğkiai leidşiamas OD arba dël jo kitaip susitarta su IBM). IBM gali perleisti teises ir ásipareigojimus pagal ğià Sutartá, jei perleidimas susijæs su IBM verslo dalies, apimanèios Programà, pardavimu.IBM gali bendrinti ğià Sutartá ir su ja susijusius dokumentus kartu su bet kokiu perleidimu.
+h. Licenciatas negali suteikti, perleisti ar perduoti jokios Programos licencijos (iÅ¡skyrus atvejus, kai perleidimas ar perdavimas nÄ—ra teisiÅ¡kai ribojamas arba aiÅ¡kiai leidÅ¾iamas OD arba dÄ—l jo kitaip susitarta su IBM). IBM gali perleisti teises ir Ä¯sipareigojimus pagal Å¡iÄ… SutartÄ¯, jei perleidimas susijÄ™s su IBM verslo dalies, apimanÄios ProgramÄ…, pardavimu.IBM gali bendrinti Å¡iÄ… SutartÄ¯ ir su ja susijusius dokumentus kartu su bet kokiu perleidimu.
 
-i. Visi praneğimai, susijæ su Sutartimi, turi bûti pateikti rağtu ir siunèiami Sutartyje, pagal kurià Licenciatas ásigijo licencijos teises, nurodytu ámonës adresu, nebent ğalis rağtu nurodo kità adresà.Ğalys sutinka naudoti elektronines priemones bei faksimiliná ryğá praneğimams siøsti ir tokiu bûdu siøsti praneğimai prilygintini rağytiniams, pasirağytiems praneğimams. Bet kokia patikimomis priemonëmis padaryta ğios Sutarties kopija laikoma originalu. Sutartis pakeièia visus ğaliø dalykinius svarstymus, diskusijas ar pareiğkimus.
+i. Visi praneÅ¡imai, susijÄ™ su Sutartimi, turi bÅ«ti pateikti raÅ¡tu ir siunÄiami Sutartyje, pagal kuriÄ… Licenciatas Ä¯sigijo licencijos teises, nurodytu Ä¯monÄ—s adresu, nebent Å¡alis raÅ¡tu nurodo kitÄ… adresÄ….Å alys sutinka naudoti elektronines priemones bei faksimilinÄ¯ ryÅ¡Ä¯ praneÅ¡imams siÅ³sti ir tokiu bÅ«du siÅ³sti praneÅ¡imai prilygintini raÅ¡ytiniams, pasiraÅ¡ytiems praneÅ¡imams. Bet kokia patikimomis priemonÄ—mis padaryta Å¡ios Sutarties kopija laikoma originalu. Sutartis pakeiÄia visus Å¡aliÅ³ dalykinius svarstymus, diskusijas ar pareiÅ¡kimus.
 
-j. Sutartis nesukuria jokiai treèiajai ğaliai jokios teisës arba ieğkinio pagrindo. Në viena ğalis neiğkels iğ ğio Susitarimo kylanèios ar su juo susijusios teismo bylos nuo bylos prieşasties atsiradimo praëjus daugiau nei dvejiems metams. Në viena ğalis nëra atsakinga uş tai, jog dël nuo jos valios nepriklausanèiø prieşasèiø nevykdo kurio nors nepiniginio ásipareigojimo. Kiekviena ğalis suteiks kitai ğaliai pagrástas galimybes ávykdyti ásipareigojimus prieğ pateikdama reikalavimà dël to, kad kita ğalis neávykdë jos ásipareigojimø.
+j. Sutartis nesukuria jokiai treÄiajai Å¡aliai jokios teisÄ—s arba ieÅ¡kinio pagrindo. NÄ— viena Å¡alis neiÅ¡kels iÅ¡ Å¡io Susitarimo kylanÄios ar su juo susijusios teismo bylos nuo bylos prieÅ¾asties atsiradimo praÄ—jus daugiau nei dvejiems metams. NÄ— viena Å¡alis nÄ—ra atsakinga uÅ¾ tai, jog dÄ—l nuo jos valios nepriklausanÄiÅ³ prieÅ¾asÄiÅ³ nevykdo kurio nors nepiniginio Ä¯sipareigojimo. Kiekviena Å¡alis suteiks kitai Å¡aliai pagrÄ¯stas galimybes Ä¯vykdyti Ä¯sipareigojimus prieÅ¡ pateikdama reikalavimÄ… dÄ—l to, kad kita Å¡alis neÄ¯vykdÄ— jos Ä¯sipareigojimÅ³.
 
-k. IBM gali naudoti personalà ir iğteklius visame pasaulyje, áskaitant treèiøjø ğaliø rangovus, kad palaikytø Programø teikimà ir Programos palaikymà. Licenciatui naudojant Programas, siekiant palaikyti Programà, kaip aprağyta IBM programinës árangos palaikymo vadove, uş ğalies ribø gali bûti perkeliamas Turinys, áskaitant asmenis identifikuojanèià informacijà.
+k. IBM gali naudoti personalÄ… ir iÅ¡teklius visame pasaulyje, Ä¯skaitant treÄiÅ³jÅ³ Å¡aliÅ³ rangovus, kad palaikytÅ³ ProgramÅ³ teikimÄ… ir Programos palaikymÄ…. Licenciatui naudojant Programas, siekiant palaikyti ProgramÄ…, kaip apraÅ¡yta IBM programinÄ—s Ä¯rangos palaikymo vadove, uÅ¾ Å¡alies ribÅ³ gali bÅ«ti perkeliamas Turinys, Ä¯skaitant asmenis identifikuojanÄiÄ… informacijÄ….
 
-2 dalis. Pagal ğalá taikomos sàlygos
+2 dalis. Pagal Å¡alÄ¯ taikomos sÄ…lygos
 
-Ğios sàlygos pakeièia arba modifikuoja toliau iğvardytose ğalyse ásigytø licencijø sàlygas, nurodytas ğioje ILAN. Sàlygos, kuriø ğios pataisos nepakeièia, iğlieka nepakeistos ir galiojanèios.
+Å ios sÄ…lygos pakeiÄia arba modifikuoja toliau iÅ¡vardytose Å¡alyse Ä¯sigytÅ³ licencijÅ³ sÄ…lygas, nurodytas Å¡ioje ILAN. SÄ…lygos, kuriÅ³ Å¡ios pataisos nepakeiÄia, iÅ¡lieka nepakeistos ir galiojanÄios.
 
 1. AMERIKA
 
-3 skyrius. Mokesèiai, mokëjimas ir patikrinimas
+3 skyrius. MokesÄiai, mokÄ—jimas ir patikrinimas
 
-Pirmàjá ir antràjá b pastraipos sakiná pakeiskite taip:
+PirmÄ…jÄ¯ ir antrÄ…jÄ¯ b pastraipos sakinÄ¯ pakeiskite taip:
 
-Brazilijoje: Licenciatas sutinka sumokëti visus taikomus mokesèius uş ásigytas teises, bet kokius mokesèius uş pertekliná teisiø naudojimà, bet kokius muitinës ar kitus muito mokesèius, rinkliavas ar bet kurios kitos institucijos nustatytus mokesèius, taikomus Licenciatui ásigyjant teises.
+Brazilijoje: Licenciatas sutinka sumokÄ—ti visus taikomus mokesÄius uÅ¾ Ä¯sigytas teises, bet kokius mokesÄius uÅ¾ perteklinÄ¯ teisiÅ³ naudojimÄ…, bet kokius muitinÄ—s ar kitus muito mokesÄius, rinkliavas ar bet kurios kitos institucijos nustatytus mokesÄius, taikomus Licenciatui Ä¯sigyjant teises.
 
 b pastraipoje:
 
-Meksikoje: treèiajame sakinyje iğtrinti şodşius ¥á IBM nurodytà sàskaità´.
+Meksikoje: treÄiajame sakinyje iÅ¡trinti Å¾odÅ¾ius â€Ä¯ IBM nurodytÄ… sÄ…skaitÄ…â€œ.
 
-Meksikoje: pridëti ğá naujà sakiná po treèiojo sakinio:
+Meksikoje: pridÄ—ti Å¡Ä¯ naujÄ… sakinÄ¯ po treÄiojo sakinio:
 
-mokëjimai bus atliekami elektroninio pinigø pervedimo á IBM nurodytà sàskaità bûdu arba IBM nuolatinëje bûstinëje, adresu Alfonso Napoles Gandara 3111, Santa Fe Pe~na Blanca, Alvaro Obregon, Mexico City, pağto kodas 01210.
+mokÄ—jimai bus atliekami elektroninio pinigÅ³ pervedimo Ä¯ IBM nurodytÄ… sÄ…skaitÄ… bÅ«du arba IBM nuolatinÄ—je bÅ«stinÄ—je, adresu Alfonso Napoles Gandara 3111, Santa Fe PeÃ±a Blanca, Alvaro Obregon, Mexico City, paÅ¡to kodas 01210.
 
-c pastraipos pabaigoje pridëti ğá sakiná:
+c pastraipos pabaigoje pridÄ—ti Å¡Ä¯ sakinÄ¯:
 
-Kanadoje: ten, kur mokesèiai yra pagrásti vieta (-omis), gaunanèia (-iomis) naudà iğ Programos, Licenciatas yra ápareigotas praneğti IBM apie tokià (-ias) vietà (-as), jei ji (jos) skiriasi nuo Licenciato verslo vietos adreso, nurodyto taikomame Priede arba OD.
+Kanadoje: ten, kur mokesÄiai yra pagrÄ¯sti vieta (-omis), gaunanÄia (-iomis) naudÄ… iÅ¡ Programos, Licenciatas yra Ä¯pareigotas praneÅ¡ti IBM apie tokiÄ… (-ias) vietÄ… (-as), jei ji (jos) skiriasi nuo Licenciato verslo vietos adreso, nurodyto taikomame Priede arba OD.
 
-c pastraipos pabaigoje pridëti ğá sakiná:
+c pastraipos pabaigoje pridÄ—ti Å¡Ä¯ sakinÄ¯:
 
-Jungtinëse Valstijose: ğalys sutinka, kad jokia materiali asmeninë nuosavybë (pvz., laikmena arba publikacijos) nebûtø perduodama Licenciatui, jei: i) IBM teikia Programas Licenciatui elektroniniu bûdu arba ii) Licenciatas pareiğkia pretenzijà parduoti Programas, kurias IBM teikia Licenciatui elektroniniu bûdu, arba pasinaudoti atleidimu nuo mokesèiø uş ğias Programas. Ten, kur mokesèiai yra pagrásti vieta (-omis), gaunanèia (-iomis) naudà iğ Programos, Licenciatas yra ápareigotas praneğti IBM apie tokià (-ias) vietà (-as), jei ji (jos) skiriasi nuo Licenciato verslo vietos adreso, nurodyto taikomame Priede arba OD.
+JungtinÄ—se Valstijose: Å¡alys sutinka, kad jokia materiali asmeninÄ— nuosavybÄ— (pvz., laikmena arba publikacijos) nebÅ«tÅ³ perduodama Licenciatui, jei: i) IBM teikia Programas Licenciatui elektroniniu bÅ«du arba ii) Licenciatas pareiÅ¡kia pretenzijÄ… parduoti Programas, kurias IBM teikia Licenciatui elektroniniu bÅ«du, arba pasinaudoti atleidimu nuo mokesÄiÅ³ uÅ¾ Å¡ias Programas. Ten, kur mokesÄiai yra pagrÄ¯sti vieta (-omis), gaunanÄia (-iomis) naudÄ… iÅ¡ Programos, Licenciatas yra Ä¯pareigotas praneÅ¡ti IBM apie tokiÄ… (-ias) vietÄ… (-as), jei ji (jos) skiriasi nuo Licenciato verslo vietos adreso, nurodyto taikomame Priede arba OD.
 
-4 skyrius. Atsakomybë ir intelektinës nuosavybës apsauga
+4 skyrius. AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsauga
 
-Ğá atsakomybës atsisakymà áterpti a pastraipos pabaigoje:
+Å Ä¯ atsakomybÄ—s atsisakymÄ… Ä¯terpti a pastraipos pabaigoje:
 
-Peru: pagal Peru civilinio kodekso 1328 straipsná, ğie apribojimai ir iğimtys nebus taikomi tyèinio aplaidumo (¥dolo´) arba didelio neatsargumo (¥culpa inexcusable´) atvejais.
+Peru: pagal Peru civilinio kodekso 1328 straipsnÄ¯, Å¡ie apribojimai ir iÅ¡imtys nebus taikomi tyÄinio aplaidumo (â€doloâ€œ) arba didelio neatsargumo (â€culpa inexcusableâ€œ) atvejais.
 
-6 skyrius. Taikoma teisë ir geografinë aprëptis
+6 skyrius. Taikoma teisÄ— ir geografinÄ— aprÄ—ptis
 
-a pastraipoje pakeisti pirmàjá sakiná tik á:
+a pastraipoje pakeisti pirmÄ…jÄ¯ sakinÄ¯ tik Ä¯:
 
-Argentinoje: abi ğalys sutinka laikytis Argentinos Respublikos ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Visi teismo procesai, susijæ su teisëmis, prievolëmis ir ásipareigojimais, kylanèiais iğ ğios Sutarties, turi bûti perduoti Ciudad Autónoma de Buenos Aires miesto teismui, áprastai nagrinëjanèiam komercinius ginèus.
+Argentinoje: abi Å¡alys sutinka laikytis Argentinos Respublikos Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Visi teismo procesai, susijÄ™ su teisÄ—mis, prievolÄ—mis ir Ä¯sipareigojimais, kylanÄiais iÅ¡ Å¡ios Sutarties, turi bÅ«ti perduoti Ciudad AutÃ³noma de Buenos Aires miesto teismui, Ä¯prastai nagrinÄ—janÄiam komercinius ginÄus.
 
-Èilëje: abi ğalys sutinka laikytis Èilës ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Bet koks konfliktas, ğios Sutarties interpretavimas ar paşeidimas, kurio Ğalys negali iğspræsti, turi bûti perduotas Santjago miesto ir rajono bendrosios kompetencijos teismø jurisdikcijai.
+ÄŒilÄ—je: abi Å¡alys sutinka laikytis ÄŒilÄ—s Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Bet koks konfliktas, Å¡ios Sutarties interpretavimas ar paÅ¾eidimas, kurio Å alys negali iÅ¡sprÄ™sti, turi bÅ«ti perduotas Santjago miesto ir rajono bendrosios kompetencijos teismÅ³ jurisdikcijai.
 
-Kolumbijoje: abi ğalys sutinka laikytis Kolumbijos Respublikos ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Visos teisës, prievolës ir ásipareigojimai yra pavaldûs Kolumbijos Respublikos teisëjams.
+Kolumbijoje: abi Å¡alys sutinka laikytis Kolumbijos Respublikos Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Visos teisÄ—s, prievolÄ—s ir Ä¯sipareigojimai yra pavaldÅ«s Kolumbijos Respublikos teisÄ—jams.
 
-Ekvadore: abi ğalys sutinka laikytis Ekvadoro Respublikos ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Visi iğ ğios Sutarties kylantys ar su ja susijæ ginèai turi bûti pateikiami Kito civilinio teismo teisëjams ir şodiniams supaprastintiems teismo procesams.
+Ekvadore: abi Å¡alys sutinka laikytis Ekvadoro Respublikos Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Visi iÅ¡ Å¡ios Sutarties kylantys ar su ja susijÄ™ ginÄai turi bÅ«ti pateikiami Kito civilinio teismo teisÄ—jams ir Å¾odiniams supaprastintiems teismo procesams.
 
-Venesueloje: abi ğalys sutinka laikytis Venesuelos ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Ğalys sutinka bet kokius su ğia Sutartimi susijusius konfliktus, kurie tarp jø kyla, pateikti Karakaso miesto regiono teismams.
+Venesueloje: abi Å¡alys sutinka laikytis Venesuelos Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Å alys sutinka bet kokius su Å¡ia Sutartimi susijusius konfliktus, kurie tarp jÅ³ kyla, pateikti Karakaso miesto regiono teismams.
 
-Peru: abi ğalys sutinka laikytis Peru ástatymø, neatsişvelgiant á jurisdikcijø kolizijø principus. Bet kokie tarp ğaliø kylantys nesutarimai dël ğios Sutarties vykdymo, interpretavimo ar atitikties, kuriø negalima tiesiogiai iğspræsti, turi bûti pateikiami Cercado de Lima teismo apygardos teisëjø ir tribunolø jurisdikcijai ir kompetencijai.
+Peru: abi Å¡alys sutinka laikytis Peru Ä¯statymÅ³, neatsiÅ¾velgiant Ä¯ jurisdikcijÅ³ kolizijÅ³ principus. Bet kokie tarp Å¡aliÅ³ kylantys nesutarimai dÄ—l Å¡ios Sutarties vykdymo, interpretavimo ar atitikties, kuriÅ³ negalima tiesiogiai iÅ¡sprÄ™sti, turi bÅ«ti pateikiami Cercado de Lima teismo apygardos teisÄ—jÅ³ ir tribunolÅ³ jurisdikcijai ir kompetencijai.
 
-Urugvajuje: abi ğalys sutinka laikytis Urugvajaus ástatymø. Bet kokie tarp ğaliø kylantys nesutarimai dël ğios Sutarties vykdymo, interpretavimo ar atitikties, kuriø negalima tiesiogiai iğspræsti, turi bûti pateikiami Montevidëjaus teismams (Tribunales Ordinarios de Montevideo).
+Urugvajuje: abi Å¡alys sutinka laikytis Urugvajaus Ä¯statymÅ³. Bet kokie tarp Å¡aliÅ³ kylantys nesutarimai dÄ—l Å¡ios Sutarties vykdymo, interpretavimo ar atitikties, kuriÅ³ negalima tiesiogiai iÅ¡sprÄ™sti, turi bÅ«ti pateikiami MontevidÄ—jaus teismams (Tribunales Ordinarios de Montevideo).
 
-a pastraipoje tik pirmame sakinyje pakeisti frazæ ¥ğalies, kurioje vykdomas sandoris dël licencijos teisiø´ fraze:
+a pastraipoje tik pirmame sakinyje pakeisti frazÄ™ â€Å¡alies, kurioje vykdomas sandoris dÄ—l licencijos teisiÅ³â€œ fraze:
 
-Jungtinëse Valstijose, Angilijoje, Antigvoje ir Barbudoje, Aruboje, Bahamose, Barbadosase, Bermuduose, Bonere, Didşiosios Britanijos Mergeliø Salose, Kaimanø Salose, Kiurasao, Dominikoje, Grenadoje, Gajanoje, Jamaikoje, Montserate, Saboje, Sent Eustatijuje, Sent Kitse ir Nevyje, Sent Lusijoje, Sent Martene, Sent Vinsente ir Grenadinuose, Surinamyje, Tortoloje, Trinidade ir Tobage, Terkso ir Kaikoso Salose: Niujorko valstija, Jungtinës Valstijos.
+JungtinÄ—se Valstijose, Angilijoje, Antigvoje ir Barbudoje, Aruboje, Bahamose, Barbadosase, Bermuduose, Bonere, DidÅ¾iosios Britanijos MergeliÅ³ Salose, KaimanÅ³ Salose, Kiurasao, Dominikoje, Grenadoje, Gajanoje, Jamaikoje, Montserate, Saboje, Sent Eustatijuje, Sent Kitse ir Nevyje, Sent Lusijoje, Sent Martene, Sent Vinsente ir Grenadinuose, Surinamyje, Tortoloje, Trinidade ir Tobage, Terkso ir Kaikoso Salose: Niujorko valstija, JungtinÄ—s Valstijos.
 
-Kanadoje: Ontarijo provincija ir ten taikomi federaliniai Kanados teisës aktai.
+Kanadoje: Ontarijo provincija ir ten taikomi federaliniai Kanados teisÄ—s aktai.
 
-a pastraipos antrame sakinyje pakeisti frazæ ¥ğalyje, kurioje vykdomas sandoris licencijos teisëms ásigyti arba, jei IBM sutinka, ğalyje, kurioje Programa yra produktyviai naudojama´ fraze:
+a pastraipos antrame sakinyje pakeisti frazÄ™ â€Å¡alyje, kurioje vykdomas sandoris licencijos teisÄ—ms Ä¯sigyti arba, jei IBM sutinka, Å¡alyje, kurioje Programa yra produktyviai naudojamaâ€œ fraze:
 
 Argentinoje: Argentinos
 
-Èilëje: Èilës
+ÄŒilÄ—je: ÄŒilÄ—s
 
 Kolumbijoje: Kolumbijos
 
@@ -241,83 +241,83 @@ Uruguvajuje: Urugvajaus
 
 Venesueloje: Venesuelos
 
-b pastraipos pabaigoje pridëti ğiuos sakinius:
+b pastraipos pabaigoje pridÄ—ti Å¡iuos sakinius:
 
-Brazilijoje: visi iğ ğios Sutarties kylantys arba su ja susijæ ginèai, áskaitant supaprastintus procesus, turi bûti pateikiami ir svarstomi San Paulo miesto (San Paulo valstija, Brazilija) iğimtinëje teismø jurisdikcijoje, o ğalys neatğaukiamai sutinka su ğia specifine jurisdikcija, atsisakydamos bet kokios kitos, kad ir kokiø privilegijø jos turëtø:
+Brazilijoje: visi iÅ¡ Å¡ios Sutarties kylantys arba su ja susijÄ™ ginÄai, Ä¯skaitant supaprastintus procesus, turi bÅ«ti pateikiami ir svarstomi San Paulo miesto (San Paulo valstija, Brazilija) iÅ¡imtinÄ—je teismÅ³ jurisdikcijoje, o Å¡alys neatÅ¡aukiamai sutinka su Å¡ia specifine jurisdikcija, atsisakydamos bet kokios kitos, kad ir kokiÅ³ privilegijÅ³ jos turÄ—tÅ³:
 
-Meksikoje: ğalys sutinka bûti atsakingos Meksiko miesto teismø jurisdikcijai, siekdamos iğspræsti bet kokius iğ ğios Sutarties kylanèius ginèus. Ğalys atsisako bet kokios jurisdikcijos, kuriai atsako pagal savo dabartinæ ar bûsimà gyvenamàjà vietà arba dël bet kokios kitos prieşasties.
+Meksikoje: Å¡alys sutinka bÅ«ti atsakingos Meksiko miesto teismÅ³ jurisdikcijai, siekdamos iÅ¡sprÄ™sti bet kokius iÅ¡ Å¡ios Sutarties kylanÄius ginÄus. Å alys atsisako bet kokios jurisdikcijos, kuriai atsako pagal savo dabartinÄ™ ar bÅ«simÄ… gyvenamÄ…jÄ… vietÄ… arba dÄ—l bet kokios kitos prieÅ¾asties.
 
 7 skyrius. Bendrosios nuostatos
 
 g pastraipoje:
 
-Jungtinëse Valstijose: iğtrinti paskutinius 2 sakinius.
+JungtinÄ—se Valstijose: iÅ¡trinti paskutinius 2 sakinius.
 
-i pastraipoje pridëti ğá naujà sakiná po pirmojo sakinio:
+i pastraipoje pridÄ—ti Å¡Ä¯ naujÄ… sakinÄ¯ po pirmojo sakinio:
 
-Meksikoje: apie bet kokius adreso pakeitimus turi bûti praneğta prieğ 10 (değimt) dienø, kitu atveju teisiğkai galios paskutiniu nurodytu adresu pateikti praneğimai.
+Meksikoje: apie bet kokius adreso pakeitimus turi bÅ«ti praneÅ¡ta prieÅ¡ 10 (deÅ¡imt) dienÅ³, kitu atveju teisiÅ¡kai galios paskutiniu nurodytu adresu pateikti praneÅ¡imai.
 
 j pastraipoje:
 
-Brazilijoje: panaikinti visà antrà sakiná ¥Në viena ğalis neiğkels iğ Sutarties kylanèios ar su ja susijusios teismo bylos nuo bylos prieşasties atsiradimo praëjus daugiau nei dvejiems metams´.
+Brazilijoje: panaikinti visÄ… antrÄ… sakinÄ¯ â€NÄ— viena Å¡alis neiÅ¡kels iÅ¡ Sutarties kylanÄios ar su ja susijusios teismo bylos nuo bylos prieÅ¾asties atsiradimo praÄ—jus daugiau nei dvejiems metamsâ€œ.
 
-Á ğá skyriø áraukti naujà l pastraipà:
+Ä® Å¡Ä¯ skyriÅ³ Ä¯raukti naujÄ… l pastraipÄ…:
 
-Kanadoje: abi ğalys sutaria rağyti ğá dokumentà anglø kalba. Les parties ont convenu de rédiger le présent document en langue anglaise.
+Kanadoje: abi Å¡alys sutaria raÅ¡yti Å¡Ä¯ dokumentÄ… anglÅ³ kalba. Les parties ont convenu de rÃ©diger le prÃ©sent document en langue anglaise.
 
 2. AZIJA IR RAMUSIS VANDENYNAS
 
 2 skyrius. Garantijos
 
-Átraukti ğio skyriaus pabaigoje naujà f pastraipà:
+Ä®traukti Å¡io skyriaus pabaigoje naujÄ… f pastraipÄ…:
 
-Australijoje: ğios garantijos papildo visas teises ir yra apribojamos tik iki 2010 m. Konkurencijos ir vartotojø teisiø apsaugos ástatymo leidşiamos ribos.
+Australijoje: Å¡ios garantijos papildo visas teises ir yra apribojamos tik iki 2010 m. Konkurencijos ir vartotojÅ³ teisiÅ³ apsaugos Ä¯statymo leidÅ¾iamos ribos.
 
-Japonijoje: IBM atsakomybë ribojama ğia pastraipa ir skyriaus ¥Atsakomybë ir intelektinës nuosavybës apsauga´ nuostatomis, taikomais Priedais ir OD, nes Licenciato vienintelë kompensacinë priemonë uş garantijø nesilaikymà nurodyta ğiame skyriuje.
+Japonijoje: IBM atsakomybÄ— ribojama Å¡ia pastraipa ir skyriaus â€AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsaugaâ€œ nuostatomis, taikomais Priedais ir OD, nes Licenciato vienintelÄ— kompensacinÄ— priemonÄ— uÅ¾ garantijÅ³ nesilaikymÄ… nurodyta Å¡iame skyriuje.
 
-Naujojoje Zelandijoje: garantijos papildo visas teises pagal 1993 m. Vartotojø teisiø apsaugos ástatymà ar kità teisës aktà ir kuriø negalima apriboti pagal ástatymus.
+Naujojoje Zelandijoje: garantijos papildo visas teises pagal 1993 m. VartotojÅ³ teisiÅ³ apsaugos Ä¯statymÄ… ar kitÄ… teisÄ—s aktÄ… ir kuriÅ³ negalima apriboti pagal Ä¯statymus.
 
-3 skyrius. Mokesèiai, mokëjimas ir patikrinimas
+3 skyrius. MokesÄiai, mokÄ—jimas ir patikrinimas
 
-b pastraipoje treèià sakiná pakeisti ğiais 2 sakiniais:
+b pastraipoje treÄiÄ… sakinÄ¯ pakeisti Å¡iais 2 sakiniais:
 
-Honkonge, Indonezijoje, Korëjoje, Makau, Malaizijoje, Filipinuose, Singapûre ir Vietname: sumos mokamos gavus sàskaità faktûrà iğ IBM, á IBM nurodytà sàskaità, per 30 dienø nuo sàskaitos faktûros iğrağymo datos. Jei mokëjimas negaunamas per 30 dienø nuo sàskaitos faktûros datos, IBM gali iğskaityti delspinigius uş neapmokëtà sumà, apskaièiuotus pagal vëluojanèio mokesèio dienø skaièiø, ne maşiau kaip: i) 2 % uş kiekvienà 30 dienø laikotarpá ar jo dalá; arba ii) taikomais teisës aktais leidşiamà maksimalià sumà.
+Honkonge, Indonezijoje, KorÄ—joje, Makau, Malaizijoje, Filipinuose, SingapÅ«re ir Vietname: sumos mokamos gavus sÄ…skaitÄ… faktÅ«rÄ… iÅ¡ IBM, Ä¯ IBM nurodytÄ… sÄ…skaitÄ…, per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros iÅ¡raÅ¡ymo datos. Jei mokÄ—jimas negaunamas per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros datos, IBM gali iÅ¡skaityti delspinigius uÅ¾ neapmokÄ—tÄ… sumÄ…, apskaiÄiuotus pagal vÄ—luojanÄio mokesÄio dienÅ³ skaiÄiÅ³, ne maÅ¾iau kaip: i) 2 % uÅ¾ kiekvienÄ… 30 dienÅ³ laikotarpÄ¯ ar jo dalÄ¯; arba ii) taikomais teisÄ—s aktais leidÅ¾iamÄ… maksimaliÄ… sumÄ….
 
-Tailande: sumos mokamos gavus sàskaità faktûrà iğ IBM, á IBM nurodytà sàskaità per 30 dienø nuo sàskaitos faktûros iğrağymo datos. Jei mokëjimas negaunamas per 30 dienø nuo sàskaitos faktûros datos, gali bûti taikomi delspinigiai uş neapmokëtà sumà 1,25 % per mënesá tarifu, apskaièiuojami pagal vëluojanèio mokesèio dienø skaièiø.
+Tailande: sumos mokamos gavus sÄ…skaitÄ… faktÅ«rÄ… iÅ¡ IBM, Ä¯ IBM nurodytÄ… sÄ…skaitÄ… per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros iÅ¡raÅ¡ymo datos. Jei mokÄ—jimas negaunamas per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros datos, gali bÅ«ti taikomi delspinigiai uÅ¾ neapmokÄ—tÄ… sumÄ… 1,25 % per mÄ—nesÄ¯ tarifu, apskaiÄiuojami pagal vÄ—luojanÄio mokesÄio dienÅ³ skaiÄiÅ³.
 
-Pirmajame c pastraipos sakinyje pağalinti şodá ¥ir´ prieğ ¥(iv)´ ir pridëti kabliatağká, o po juo naujà punktà ¥(v)´:
+Pirmajame c pastraipos sakinyje paÅ¡alinti Å¾odÄ¯ â€irâ€œ prieÅ¡ â€(iv)â€œ ir pridÄ—ti kabliataÅ¡kÄ¯, o po juo naujÄ… punktÄ… â€(v)â€œ:
 
-Indijoje: ; ir (v) oficialiai laiku pateikti tikslias iğskaièiuotø mokesèiø (TDS) deklaracijas. Jei bet koks mokestis, prievolë ar rinkliava (¥Mokesèiai´) neapmokestinami Licenciato pateiktø atleidimo nuo mokesèiø dokumentø pagrindu ir mokesèiø institucija vëliau nustato, kad tokie Mokesèiai turëjo bûti taikomi, Licenciatas privalo sumokëti tokius Mokesèius, áskaitant visas taikomas palûkanas, rinkliavas ir (arba) baudas.
+Indijoje: ; ir (v) oficialiai laiku pateikti tikslias iÅ¡skaiÄiuotÅ³ mokesÄiÅ³ (TDS) deklaracijas. Jei bet koks mokestis, prievolÄ— ar rinkliava (â€MokesÄiaiâ€œ) neapmokestinami Licenciato pateiktÅ³ atleidimo nuo mokesÄiÅ³ dokumentÅ³ pagrindu ir mokesÄiÅ³ institucija vÄ—liau nustato, kad tokie MokesÄiai turÄ—jo bÅ«ti taikomi, Licenciatas privalo sumokÄ—ti tokius MokesÄius, Ä¯skaitant visas taikomas palÅ«kanas, rinkliavas ir (arba) baudas.
 
-Pirmajame c pastraipos sakinyje pağalinti şodá ¥ir´ prieğ ¥(iv)´, pakeisti punktà (iv) ir pridëti toká naujà punktà ¥(v)´:
+Pirmajame c pastraipos sakinyje paÅ¡alinti Å¾odÄ¯ â€irâ€œ prieÅ¡ â€(iv)â€œ, pakeisti punktÄ… (iv) ir pridÄ—ti tokÄ¯ naujÄ… punktÄ… â€(v)â€œ:
 
-Singapûre, Malaizijoje, Filipinuose, Tailande, Indonezijoje ir Vietname: (iv) visapusiğkai bendradarbiauti su IBM siekiant atleidimo nuo mokesèiø ar mokesèiø sumaşinimo arba kitø mokesèiø, nuo kuriø atleisti ar kuriuos sumaşinti prağo Licenciatas; ir v) nedelsiant uşbaigti, uşpildyti ir atnaujinti visus susijusius tokio atleidimo arba sumaşinimø dokumentus.
+SingapÅ«re, Malaizijoje, Filipinuose, Tailande, Indonezijoje ir Vietname: (iv) visapusiÅ¡kai bendradarbiauti su IBM siekiant atleidimo nuo mokesÄiÅ³ ar mokesÄiÅ³ sumaÅ¾inimo arba kitÅ³ mokesÄiÅ³, nuo kuriÅ³ atleisti ar kuriuos sumaÅ¾inti praÅ¡o Licenciatas; ir v) nedelsiant uÅ¾baigti, uÅ¾pildyti ir atnaujinti visus susijusius tokio atleidimo arba sumaÅ¾inimÅ³ dokumentus.
 
-4 skyrius. Atsakomybë ir intelektinës nuosavybës apsauga
+4 skyrius. AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsauga
 
-a pastraipoje pirmojo sakinio pabaigoje pridëti toliau nurodytà tekstà:
+a pastraipoje pirmojo sakinio pabaigoje pridÄ—ti toliau nurodytÄ… tekstÄ…:
 
-Australijoje: (pavyzdşiui, ar pagrásta sutartimi, civilinës teisës paşeidimu, aplaidumu, pagal statutà ar kitaip)
+Australijoje: (pavyzdÅ¾iui, ar pagrÄ¯sta sutartimi, civilinÄ—s teisÄ—s paÅ¾eidimu, aplaidumu, pagal statutÄ… ar kitaip)
 
-a pastraipos antrame sakinyje po şodşio ¥ypatingàjà´ ir prieğ şodá ¥atsitiktinæ´ átraukti ğá tekstà:
+a pastraipos antrame sakinyje po Å¾odÅ¾io â€ypatingÄ…jÄ…â€œ ir prieÅ¡ Å¾odÄ¯ â€atsitiktinÄ™â€œ Ä¯traukti Å¡Ä¯ tekstÄ…:
 
-Filipinuose: (áskaitant nominalià ir pavyzdinæ şalà), moralinæ,
+Filipinuose: (Ä¯skaitant nominaliÄ… ir pavyzdinÄ™ Å¾alÄ…), moralinÄ™,
 
-Pridëti kaip naujà pastraipà a pastraipos pabaigoje (ir uştikrinti, kad pastraipos bûtø tinkamai iğ naujo suşymëtos raidëmis):
+PridÄ—ti kaip naujÄ… pastraipÄ… a pastraipos pabaigoje (ir uÅ¾tikrinti, kad pastraipos bÅ«tÅ³ tinkamai iÅ¡ naujo suÅ¾ymÄ—tos raidÄ—mis):
 
-Australijoje: kai IBM paşeidşia garantijas, numanomas remiantis 2010 m. Konkurencijos ir vartotojø ástatymu, IBM ásipareigojimai apribojami prekiø pataisymu ar pakeitimu, lygiaverèiø prekiø pateikimu arba mokesèio uş prekiø keitimà ar tinkamà jø pataisymà sumokëjimu. Kai garantija susijusi su teise parduoti, netrukdomai valdyti arba su aiğkia prekës nuosavybe pagal Konkurencijos ir vartotojø ástatymo 2 priedà, netaikomas në vienas iğ ğiø apribojimø.
+Australijoje: kai IBM paÅ¾eidÅ¾ia garantijas, numanomas remiantis 2010 m. Konkurencijos ir vartotojÅ³ Ä¯statymu, IBM Ä¯sipareigojimai apribojami prekiÅ³ pataisymu ar pakeitimu, lygiaverÄiÅ³ prekiÅ³ pateikimu arba mokesÄio uÅ¾ prekiÅ³ keitimÄ… ar tinkamÄ… jÅ³ pataisymÄ… sumokÄ—jimu. Kai garantija susijusi su teise parduoti, netrukdomai valdyti arba su aiÅ¡kia prekÄ—s nuosavybe pagal Konkurencijos ir vartotojÅ³ Ä¯statymo 2 priedÄ…, netaikomas nÄ— vienas iÅ¡ Å¡iÅ³ apribojimÅ³.
 
 5 skyrius. Nutraukimas
 
-Átraukti skyriaus pabaigoje kaip naujà b pastraipà:
+Ä®traukti skyriaus pabaigoje kaip naujÄ… b pastraipÄ…:
 
-Indonezijoje: abi ğalys atsisako laikytis Indonezijos civilinio kodekso 1266 straipsnio tokia apimtimi, kiek jis reikalauja teismo nutarties dël abipusius ásipareigojimus sukurianèios sutarties nutraukimo.
+Indonezijoje: abi Å¡alys atsisako laikytis Indonezijos civilinio kodekso 1266 straipsnio tokia apimtimi, kiek jis reikalauja teismo nutarties dÄ—l abipusius Ä¯sipareigojimus sukurianÄios sutarties nutraukimo.
 
-6 skyrius. Taikoma teisë ir geografinë aprëptis
+6 skyrius. Taikoma teisÄ— ir geografinÄ— aprÄ—ptis
 
-a pastraipoje tik pirmame sakinyje pakeisti frazæ ¥ğalies, kurioje vykdomas sandoris dël licencijos teisiø´ fraze:
+a pastraipoje tik pirmame sakinyje pakeisti frazÄ™ â€Å¡alies, kurioje vykdomas sandoris dÄ—l licencijos teisiÅ³â€œ fraze:
 
-Kambodşoje, Laose: Niujorko Valstijos, JAV;
+KambodÅ¾oje, Laose: Niujorko Valstijos, JAV;
 
 Australijoje: valstijos arba teritorijos, kurioje vykdomas sandoris
 
@@ -325,17 +325,17 @@ Honkonge: Kinijos Liaudies Respublikos Honkongo Ypatingajame Administraciniame R
 
 Makau: Kinijos Liaudies Respublikos Honkongo Ypatingojo Administracinio Regiono
 
-Korëjoje: Korëjos Respublikos (taikoma Korëjos Respublikos Seulo centrinio apylinkës teismo praktika).
+KorÄ—joje: KorÄ—jos Respublikos (taikoma KorÄ—jos Respublikos Seulo centrinio apylinkÄ—s teismo praktika).
 
 Taivane: Taivano
 
 Indijoje: Indijos
 
-b pastraipos pirmame sakinyje punkte ii), po şodşio ¥áskaitant´ ir prieğ şodá ¥Jungtiniø´ pridëti:
+b pastraipos pirmame sakinyje punkte ii), po Å¾odÅ¾io â€Ä¯skaitantâ€œ ir prieÅ¡ Å¾odÄ¯ â€JungtiniÅ³â€œ pridÄ—ti:
 
-Japonijoje: Japonijos teisës aktus ir
+Japonijoje: Japonijos teisÄ—s aktus ir
 
-a pastraipos antrame sakinyje pakeisti frazæ ¥ğalyje, kurioje vykdomas sandoris licencijos teisëms ásigyti arba, jei IBM sutinka, ğalyje, kurioje Programa yra produktyviai naudojama´ fraze:
+a pastraipos antrame sakinyje pakeisti frazÄ™ â€Å¡alyje, kurioje vykdomas sandoris licencijos teisÄ—ms Ä¯sigyti arba, jei IBM sutinka, Å¡alyje, kurioje Programa yra produktyviai naudojamaâ€œ fraze:
 
 Honkonge: Kinijos Liaudies Respublikos Honkongo Ypatingajame Administraciniame Regione
 
@@ -343,141 +343,141 @@ Makau: Kinijos Liaudies Respublikos Makau Ypatingajame Administraciniame Regione
 
 Taivane: Taivane
 
-Átraukti skyriaus pabaigoje kaip naujà d pastraipà:
+Ä®traukti skyriaus pabaigoje kaip naujÄ… d pastraipÄ…:
 
-Kambodşoje, Laose, Filipinuose ir Ğri Lankoje: ginèai bus galutinai sprendşiami arbitraşo, kuris vyks Singapûre pagal Singapûro tarptautinio arbitraşo centro arbitraşo taisykles (¥SIAC taisyklës´).
+KambodÅ¾oje, Laose, Filipinuose ir Å ri Lankoje: ginÄai bus galutinai sprendÅ¾iami arbitraÅ¾o, kuris vyks SingapÅ«re pagal SingapÅ«ro tarptautinio arbitraÅ¾o centro arbitraÅ¾o taisykles (â€SIAC taisyklÄ—sâ€œ).
 
-Indijoje: Ginèai bus galutinai sprendşiami pagal tuo metu galiojantá 1996 m. Arbitraşo ir taikinimo aktà anglø kalba Bengalûre, Indijoje. Jei ginèo suma yra maşesnë arba lygi penkioms kroroms Indijos rupijø, dalyvaus vienas arbitras ir trys arbitrai, jei ği suma didesnë. Pakeitus arbitrà, teismo procesas tæsis nuo to etapo, kuriame jis buvo prieğ atsirandant laisvai vietai.
+Indijoje: GinÄai bus galutinai sprendÅ¾iami pagal tuo metu galiojantÄ¯ 1996 m. ArbitraÅ¾o ir taikinimo aktÄ… anglÅ³ kalba BengalÅ«re, Indijoje. Jei ginÄo suma yra maÅ¾esnÄ— arba lygi penkioms kroroms Indijos rupijÅ³, dalyvaus vienas arbitras ir trys arbitrai, jei Å¡i suma didesnÄ—. Pakeitus arbitrÄ…, teismo procesas tÄ™sis nuo to etapo, kuriame jis buvo prieÅ¡ atsirandant laisvai vietai.
 
-Indonezijoje: ginèai bus galutinai sprendşiami arbitraşo, kuris vyks Dşakartoje (Indonezija) ir kurá administruos Indonezijos nacionalinë arbitraşo taryba (¥Badan Arbitrase Nasional Indonesia´ arba BANI), ákurta 1977 metais, pagal Indonezijos nacionalinës arbitraşo tarybos taisykles. Arbitraşo sprendimas bus galutinis, privalomas abiem ğalims be apeliacijos teisës, pateikiamas rağtu, turi bûti iğdëstytos nustatytos bylos faktinës aplinkybës ir teisinës iğvados.
+Indonezijoje: ginÄai bus galutinai sprendÅ¾iami arbitraÅ¾o, kuris vyks DÅ¾akartoje (Indonezija) ir kurÄ¯ administruos Indonezijos nacionalinÄ— arbitraÅ¾o taryba (â€Badan Arbitrase Nasional Indonesiaâ€œ arba BANI), Ä¯kurta 1977 metais, pagal Indonezijos nacionalinÄ—s arbitraÅ¾o tarybos taisykles. ArbitraÅ¾o sprendimas bus galutinis, privalomas abiem Å¡alims be apeliacijos teisÄ—s, pateikiamas raÅ¡tu, turi bÅ«ti iÅ¡dÄ—stytos nustatytos bylos faktinÄ—s aplinkybÄ—s ir teisinÄ—s iÅ¡vados.
 
-Kinijos Liaudies Respublikoje: bet kuri ğalis gali kreiptis á Kinijos tarptautinës ekonomikos ir prekybos arbitraşo komisijà Pekine (KLR), kad arbitraşas priimtø galutiná sprendimà. Ğalys sutaria, kad sprendşiant bet kokius ginèus dalyvaus trys arbitrai.
+Kinijos Liaudies Respublikoje: bet kuri Å¡alis gali kreiptis Ä¯ Kinijos tarptautinÄ—s ekonomikos ir prekybos arbitraÅ¾o komisijÄ… Pekine (KLR), kad arbitraÅ¾as priimtÅ³ galutinÄ¯ sprendimÄ…. Å alys sutaria, kad sprendÅ¾iant bet kokius ginÄus dalyvaus trys arbitrai.
 
-Vietname: ginèai bus galutinai sprendşiami arbitraşo, kuris vyks Vietname pagal Vietnamo tarptautinio arbitraşo centro arbitraşo taisykles (VIAC taisykles).Visi teismo procesai vyks ir dokumentai bus pateikiami anglø kalba.
+Vietname: ginÄai bus galutinai sprendÅ¾iami arbitraÅ¾o, kuris vyks Vietname pagal Vietnamo tarptautinio arbitraÅ¾o centro arbitraÅ¾o taisykles (VIAC taisykles).Visi teismo procesai vyks ir dokumentai bus pateikiami anglÅ³ kalba.
 
 7 skyrius. Bendrosios nuostatos
 
-j pastraipoje antrame sakinyje pakeisti frazæ ¥dvejiems metams´ fraze:
+j pastraipoje antrame sakinyje pakeisti frazÄ™ â€dvejiems metamsâ€œ fraze:
 
 Indijoje: trejiems metams
 
-Átraukti ğio skyriaus pabaigoje ğià naujà l pastraipà:
+Ä®traukti Å¡io skyriaus pabaigoje Å¡iÄ… naujÄ… l pastraipÄ…:
 
-Indonezijoje: ği sutartis sudaryta anglø ir indonezieèiø kalbø versijomis. Tiek, kiek leidşia taikomi teisës aktai, anglø kalbos versija turi virğenybæ, jei tarp versijø aptinkami neatitikimai.
+Indonezijoje: Å¡i sutartis sudaryta anglÅ³ ir indonezieÄiÅ³ kalbÅ³ versijomis. Tiek, kiek leidÅ¾ia taikomi teisÄ—s aktai, anglÅ³ kalbos versija turi virÅ¡enybÄ™, jei tarp versijÅ³ aptinkami neatitikimai.
 
 3. EUROPA, VIDURINIAI RYTAI IR AFRIKA
 
-3 skyrius. Mokesèiai, mokëjimas ir patikrinimas
+3 skyrius. MokesÄiai, mokÄ—jimas ir patikrinimas
 
-b pastraipos treèio sakinio pabaigoje átraukti:
+b pastraipos treÄio sakinio pabaigoje Ä¯traukti:
 
-Italijoje: jei IBM Licenciatui pateikia uşklausà rağtu.
+Italijoje: jei IBM Licenciatui pateikia uÅ¾klausÄ… raÅ¡tu.
 
-Ukrainoje: , vëluojanèià sumà pradedant kità dienà po termino iki faktinio sumokëjimo dienos, uş kiekvienà vëlavimo dienà proporcingai skaièiuojant delspinigius, lygius dvigubai nuolaidos normai, nustatytai Ukrainos nacionalinio banko (NBU) (Ukrainos Prekybos kodekso 232 straipsnio 6 pastraipa netaikoma).
+Ukrainoje: , vÄ—luojanÄiÄ… sumÄ… pradedant kitÄ… dienÄ… po termino iki faktinio sumokÄ—jimo dienos, uÅ¾ kiekvienÄ… vÄ—lavimo dienÄ… proporcingai skaiÄiuojant delspinigius, lygius dvigubai nuolaidos normai, nustatytai Ukrainos nacionalinio banko (NBU) (Ukrainos Prekybos kodekso 232 straipsnio 6 pastraipa netaikoma).
 
-b pastraipoje treèià sakiná pakeisti á:
+b pastraipoje treÄiÄ… sakinÄ¯ pakeisti Ä¯:
 
-Prancûzijoje: sumas reikia sumokëti per 10 dienø nuo sàskaitos faktûros dienos á IBM nurodytà sàskaità, ir gali bûti taikomi delspinigiai, lygûs naujausiai Europos Centrinio Banko normai plius 10 punktø, papildomai prie keturiasdeğimties (40) eurø skolos surinkimo iğlaidø, arba, jei ğios iğlaidos virğija keturiasdeğimt eurø, taikoma papildoma kompensacija, patvirtinus reikalaujamà sumà).
+PrancÅ«zijoje: sumas reikia sumokÄ—ti per 10 dienÅ³ nuo sÄ…skaitos faktÅ«ros dienos Ä¯ IBM nurodytÄ… sÄ…skaitÄ…, ir gali bÅ«ti taikomi delspinigiai, lygÅ«s naujausiai Europos Centrinio Banko normai plius 10 punktÅ³, papildomai prie keturiasdeÅ¡imties (40) eurÅ³ skolos surinkimo iÅ¡laidÅ³, arba, jei Å¡ios iÅ¡laidos virÅ¡ija keturiasdeÅ¡imt eurÅ³, taikoma papildoma kompensacija, patvirtinus reikalaujamÄ… sumÄ…).
 
-Rusijoje: sumos mokamos gavus sàskaità faktûrà, á IBM nurodytà sàskaità per 30 dienø nuo sàskaitos faktûros iğrağymo datos. Gali bûti taikomi delspinigiai, 24 % per metus tarifu uş kiekvienà dienà praëjus 30 dienø.
+Rusijoje: sumos mokamos gavus sÄ…skaitÄ… faktÅ«rÄ…, Ä¯ IBM nurodytÄ… sÄ…skaitÄ… per 30 dienÅ³ nuo sÄ…skaitos faktÅ«ros iÅ¡raÅ¡ymo datos. Gali bÅ«ti taikomi delspinigiai, 24 % per metus tarifu uÅ¾ kiekvienÄ… dienÄ… praÄ—jus 30 dienÅ³.
 
-b pastraipos paskutinio sakinio pabaigoje átraukti:
+b pastraipos paskutinio sakinio pabaigoje Ä¯traukti:
 
-Lietuvoje: , iğskyrus tuomet, kai ástatymai numato kitaip
+Lietuvoje: , iÅ¡skyrus tuomet, kai Ä¯statymai numato kitaip
 
-b pastraipos pabaigoje átraukti ğià dalá:
+b pastraipos pabaigoje Ä¯traukti Å¡iÄ… dalÄ¯:
 
-Italijoje: kai nemokama arba mokama dalis, taip pat vykdant oficialià kredito reikalavimo procedûrà ar teismo procesà, kurá gali inicijuoti IBM, nukrypstant nuo Ástatyminio dekreto nr. 231, pasirağyto 2002 m. spalio 9 d., 4 straipsnio, ir laikantis to paties Ástatyminio dekreto 7 straipsnio, IBM gali Licenciatui rağtu praneğti apie mokamus delspinigius registruotuoju pağtu su gavimo patvirtinimu.
+Italijoje: kai nemokama arba mokama dalis, taip pat vykdant oficialiÄ… kredito reikalavimo procedÅ«rÄ… ar teismo procesÄ…, kurÄ¯ gali inicijuoti IBM, nukrypstant nuo Ä®statyminio dekreto nr. 231, pasiraÅ¡yto 2002 m. spalio 9 d., 4 straipsnio, ir laikantis to paties Ä®statyminio dekreto 7 straipsnio, IBM gali Licenciatui raÅ¡tu praneÅ¡ti apie mokamus delspinigius registruotuoju paÅ¡tu su gavimo patvirtinimu.
 
-4 skyrius. Atsakomybë ir intelektinës nuosavybës apsauga
+4 skyrius. AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsauga
 
-a pastraipos pirmame sakinyje, prieğ şodşius ¥sumos, kuri buvo sumokëta´ áterpti:
+a pastraipos pirmame sakinyje, prieÅ¡ Å¾odÅ¾ius â€sumos, kuri buvo sumokÄ—taâ€œ Ä¯terpti:
 
-Belgijoje, Prancûzijoje, Vokietijoje, Italijoje, Liuksemburge, Maltoje, Portugalijoje ir Ispanijoje: didesniosios iğ 500 000 EUR (penkiø ğimtø tûkstanèiø eurø) arba
+Belgijoje, PrancÅ«zijoje, Vokietijoje, Italijoje, Liuksemburge, Maltoje, Portugalijoje ir Ispanijoje: didesniosios iÅ¡ 500Â 000 EUR (penkiÅ³ Å¡imtÅ³ tÅ«kstanÄiÅ³ eurÅ³) arba
 
-Airijoje ir Jungtinëje Karalystëje: 125 %
+Airijoje ir JungtinÄ—je KaralystÄ—je: 125 %
 
-a pastraipoje pirmame sakinyje pakeisti frazæ ¥Licenciato patirtos faktinës tiesioginës şalos´ fraze:
+a pastraipoje pirmame sakinyje pakeisti frazÄ™ â€Licenciato patirtos faktinÄ—s tiesioginÄ—s Å¾alosâ€œ fraze:
 
-Ispanijoje: árodytos Licenciato patirtos şalos kaip tiesioginio IBM paşeidimo rezultato
+Ispanijoje: Ä¯rodytos Licenciato patirtos Å¾alos kaip tiesioginio IBM paÅ¾eidimo rezultato
 
-Po pirmojo a pastraipos sakinio áterpti toliau nurodytà naujà sakiná:
+Po pirmojo a pastraipos sakinio Ä¯terpti toliau nurodytÄ… naujÄ… sakinÄ¯:
 
-Slovakijoje: Pagal pataisytà prekybos kodekso § 379 Aktà Nr. 513/1991 ir atsişvelgiant á visas sàlygas, susijusias su sutarties sudarymu, abi ğalys pareiğkia, kad bendra numatoma şala, kuri gali susikaupti, nevirğys anksèiau nurodytos sumos ir tai maksimali suma, kurià IBM privalo sumokëti.
+Slovakijoje: Pagal pataisytÄ… prekybos kodekso Â§ 379 AktÄ… Nr. 513/1991 ir atsiÅ¾velgiant Ä¯ visas sÄ…lygas, susijusias su sutarties sudarymu, abi Å¡alys pareiÅ¡kia, kad bendra numatoma Å¾ala, kuri gali susikaupti, nevirÅ¡ys anksÄiau nurodytos sumos ir tai maksimali suma, kuriÄ… IBM privalo sumokÄ—ti.
 
-Prieğ antràjá a pastraipos sakiná áterpti toliau nurodytà naujà sakiná:
+PrieÅ¡ antrÄ…jÄ¯ a pastraipos sakinÄ¯ Ä¯terpti toliau nurodytÄ… naujÄ… sakinÄ¯:
 
-Rusijoje: IBM nebus atsakinga uş negautà naudà.
+Rusijoje: IBM nebus atsakinga uÅ¾ negautÄ… naudÄ….
 
-a pastraipos antrame sakinyje pağalinti şodá:
+a pastraipos antrame sakinyje paÅ¡alinti Å¾odÄ¯:
 
-Airijoje ir Jungtinëje Karalystëje: ekonominius
+Airijoje ir JungtinÄ—je KaralystÄ—je: ekonominius
 
-a pastraipoje pakeisti antràjá sakiná á:
+a pastraipoje pakeisti antrÄ…jÄ¯ sakinÄ¯ Ä¯:
 
-Belgijoje, Nyderlanduose ir Liuksemburge: IBM nebus laikoma atsakinga uş netiesioginæ ar ğalutinæ şalà, prarastà pelnà, verslo veiklà, vertæ, pajamas, reputacijà, şalà reputacijai ar numatomus sutaupymus, bet kokias treèiosios ğalies pretenzijas Klientui ir duomenø praradimà (arba şalà jiems).
+Belgijoje, Nyderlanduose ir Liuksemburge: IBM nebus laikoma atsakinga uÅ¾ netiesioginÄ™ ar Å¡alutinÄ™ Å¾alÄ…, prarastÄ… pelnÄ…, verslo veiklÄ…, vertÄ™, pajamas, reputacijÄ…, Å¾alÄ… reputacijai ar numatomus sutaupymus, bet kokias treÄiosios Å¡alies pretenzijas Klientui ir duomenÅ³ praradimÄ… (arba Å¾alÄ… jiems).
 
-Prancûzijoje: IBM nebus laikoma atsakinga uş şalà reputacijai, netiesioginæ şalà arba prarastà pelnà, verslo veiklà, vertæ, pajamas, reputacijà ar numatomus sutaupymus.
+PrancÅ«zijoje: IBM nebus laikoma atsakinga uÅ¾ Å¾alÄ… reputacijai, netiesioginÄ™ Å¾alÄ… arba prarastÄ… pelnÄ…, verslo veiklÄ…, vertÄ™, pajamas, reputacijÄ… ar numatomus sutaupymus.
 
-Portugalijoje: IBM nebus atsakinga uş netiesioginius nuostolius, áskaitant pelno praradimà.
+Portugalijoje: IBM nebus atsakinga uÅ¾ netiesioginius nuostolius, Ä¯skaitant pelno praradimÄ….
 
-Ispanijoje: IBM nebus laikoma atsakinga uş şalà reputacijai, prarastà pelnà, verslo veiklà, vertæ, pajamas, reputacijà ar numatomus sutaupymus.
+Ispanijoje: IBM nebus laikoma atsakinga uÅ¾ Å¾alÄ… reputacijai, prarastÄ… pelnÄ…, verslo veiklÄ…, vertÄ™, pajamas, reputacijÄ… ar numatomus sutaupymus.
 
-a pastraipos pabaigoje pridëti:
+a pastraipos pabaigoje pridÄ—ti:
 
-Prancûzijoje: Sutarties sàlygos, áskaitant finansines sàlygas nustatytos, atsişvelgiant á dabartiná punktà, kuris yra sudëtinës bendrosios Sutarties ekonomijos dalis.
+PrancÅ«zijoje: Sutarties sÄ…lygos, Ä¯skaitant finansines sÄ…lygas nustatytos, atsiÅ¾velgiant Ä¯ dabartinÄ¯ punktÄ…, kuris yra sudÄ—tinÄ—s bendrosios Sutarties ekonomijos dalis.
 
-b pastraipoje frazæ ¥nuostoliai, kuriø neleidşia apriboti galiojantys ástatymai´ pakeisti ğia fraze:
+b pastraipoje frazÄ™ â€nuostoliai, kuriÅ³ neleidÅ¾ia apriboti galiojantys Ä¯statymaiâ€œ pakeisti Å¡ia fraze:
 
-Vokietijoje: i) şala dël kûno suşeidimø (áskaitant mirtá); ii) nuostoliai ar şala, kurià sukëlë numanomas IBM garantijos sàlygø paşeidimas, susijæs su bet kuria operacija, atlikta laikantis ğios Sutarties; iii) nuostoliai dël tyèios arba didelio neatsargumo.
+Vokietijoje: i) Å¾ala dÄ—l kÅ«no suÅ¾eidimÅ³ (Ä¯skaitant mirtÄ¯); ii) nuostoliai ar Å¾ala, kuriÄ… sukÄ—lÄ— numanomas IBM garantijos sÄ…lygÅ³ paÅ¾eidimas, susijÄ™s su bet kuria operacija, atlikta laikantis Å¡ios Sutarties; iii) nuostoliai dÄ—l tyÄios arba didelio neatsargumo.
 
-6 skyrius. Taikoma teisë ir geografinë aprëptis
+6 skyrius. Taikoma teisÄ— ir geografinÄ— aprÄ—ptis
 
-a pastraipoje tik pirmame sakinyje pakeisti frazæ ¥ğalies, kurioje ávyko sandoris dël licencijos teisiø´ fraze:
+a pastraipoje tik pirmame sakinyje pakeisti frazÄ™ â€Å¡alies, kurioje Ä¯vyko sandoris dÄ—l licencijos teisiÅ³â€œ fraze:
 
-Albanijoje, Armënijoje, Azerbaidşane, Baltarusijoje, Bosnijoje ir Hercegovinoje, Bulgarijoje, Kroatijoje, Buvusiojoje Jugoslavijos Respublikoje Makedonijoje, Gruzijoje, Kazachstane, Kirgizijoje, Moldavijoje, Juodkalnijoje, Rumunijoje, Rusijoje, Serbijoje, Tadşikijoje, Turkmënijoje, Ukrainoje ir Uzbekijoje: Austrijos
+Albanijoje, ArmÄ—nijoje, AzerbaidÅ¾ane, Baltarusijoje, Bosnijoje ir Hercegovinoje, Bulgarijoje, Kroatijoje, Buvusiojoje Jugoslavijos Respublikoje Makedonijoje, Gruzijoje, Kazachstane, Kirgizijoje, Moldavijoje, Juodkalnijoje, Rumunijoje, Rusijoje, Serbijoje, TadÅ¾ikijoje, TurkmÄ—nijoje, Ukrainoje ir Uzbekijoje: Austrijos
 
 Estijoje, Latvijoje ir Lietuvoje: Suomijos
 
-Alşyre, Andoroje, Benine, Burkina Fase, Burundyje, Kamerûne, Şaliajame Kyğulyje, Centrinëje Afrikos Respublikoje, Èade, Komoruose, Konge, Dşibutyje, Kongo Demokratinëje Respublikoje, Pusiaujo Gvinëjoje, Prancûzø Gvianoje, Prancûzijos Polinezijoje, Gabone, Gvinëjoje, Bisau Gvinëjoje, Dramblio Kaulo Krante, Libane, Madagaskare, Malyje, Mauritanijoje, Mauricijuje, Majote, Maroke, Naujojoje Kaledonijoje, Nigeryje, Reunjone, Senegale, Seiğeliuose, Toge, Tunise, Vanuatu ir Volise ir Futûnoje: Prancûzijos
+AlÅ¾yre, Andoroje, Benine, Burkina Fase, Burundyje, KamerÅ«ne, Å½aliajame KyÅ¡ulyje, CentrinÄ—je Afrikos Respublikoje, ÄŒade, Komoruose, Konge, DÅ¾ibutyje, Kongo DemokratinÄ—je Respublikoje, Pusiaujo GvinÄ—joje, PrancÅ«zÅ³ Gvianoje, PrancÅ«zijos Polinezijoje, Gabone, GvinÄ—joje, Bisau GvinÄ—joje, Dramblio Kaulo Krante, Libane, Madagaskare, Malyje, Mauritanijoje, Mauricijuje, Majote, Maroke, Naujojoje Kaledonijoje, Nigeryje, Reunjone, Senegale, SeiÅ¡eliuose, Toge, Tunise, Vanuatu ir Volise ir FutÅ«noje: PrancÅ«zijos
 
-Angoloje, Bahreine, Botsvanoje, Egipte, Eritrëjoje, Etiopijoje, Ganoje, Gambijoje, Irake, Jordanijoje, Kenijoje, Kuveite, Liberijoje, Malavyje, Maltoje, Mozambike, Nigerijoje, Omane, Pakistane, Katare, Ruandoje, San Tomëje ir Prinsipëje, Saudo Arabijoje, Siera Leonëje, Somalyje, Tanzanijoje, Ugandoje, Jungtiniuose Arabø Emyratuose, Vakarø krante / Gazos ruoşe, Jemene, Zambijoje, Zimbabvëje: Anglijos
+Angoloje, Bahreine, Botsvanoje, Egipte, EritrÄ—joje, Etiopijoje, Ganoje, Gambijoje, Irake, Jordanijoje, Kenijoje, Kuveite, Liberijoje, Malavyje, Maltoje, Mozambike, Nigerijoje, Omane, Pakistane, Katare, Ruandoje, San TomÄ—je ir PrinsipÄ—je, Saudo Arabijoje, Siera LeonÄ—je, Somalyje, Tanzanijoje, Ugandoje, Jungtiniuose ArabÅ³ Emyratuose, VakarÅ³ krante / Gazos ruoÅ¾e, Jemene, Zambijoje, ZimbabvÄ—je: Anglijos
 
-Lichtenğteine: Ğveicarijos
+LichtenÅ¡teine: Å veicarijos
 
-Pietø Afrikos Respublikoje, Namibijoje, Lesote ir Svazilande: Pietø Afrikos Respublikos.
+PietÅ³ Afrikos Respublikoje, Namibijoje, Lesote ir Svazilande: PietÅ³ Afrikos Respublikos.
 
-Jungtinëje Karalystëje: Anglijos
+JungtinÄ—je KaralystÄ—je: Anglijos
 
-a pastraipos pirmo sakinio pabaigoje átraukti:
+a pastraipos pirmo sakinio pabaigoje Ä¯traukti:
 
-Prancûzijoje: Ğalys sutinka, kad Prancûzijos civilinio kodekso 1222 ir 1223 straipsniai yra netaikomi.
+PrancÅ«zijoje: Å alys sutinka, kad PrancÅ«zijos civilinio kodekso 1222 ir 1223 straipsniai yra netaikomi.
 
-a pastraipos pabaigoje pridëti:
+a pastraipos pabaigoje pridÄ—ti:
 
-Albanijoje, Armënijoje, Azerbaidşane, Baltarusijoje, Bosnijoje ir Hercegovinoje, Bulgarijoje, Kroatijoje, Buvusiojoje Jugoslavijos Respublikoje Makedonijoje, Gruzijoje, Kazachstane, Kosove, Kirgizijoje, Moldavijoje, Juodkalnijoje, Rumunijoje, Rusijoje, Serbijoje, Tadşikijoje, Turkmënijoje, Ukrainoje ir Uzbekijoje: visi dël ğios Sutarties kylantys ginèai bus galutinai sprendşiami Austrijos federaliniø ekonomikos rûmø Tarptautinio arbitraşo centre (Arbitraşo institucijoje) pagal ğio Arbitraşo centro Arbitraşo taisykles (Vienos taisyklës), Vienoje, Austrija (oficiali kalba - anglø), trijø neğaliğkø arbitrø, paskirtø pagal Vienos taisykles. Kiekviena ğalis paskirs vienà arbitrà, kurie bendru sutarimu per 30 dienø paskirs nepriklausomà pirmininkà. Kitu atveju pagal Vienos taisykles pirmininkà paskirs Arbitraşo institucija. Arbitrai neturës teisës priteisti nuostoliø, iğskirtø ğia Sutartimi ar virğijanèiø ğioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartá dël laikinøjø apsaugos priemoniø taikymo. Jokios sàlygos nedraudşia bet kuriai ğaliai pradëti teismo proceso, siekiant (1) laikinøjø apsaugos priemoniø taikymo norint iğvengti materialinës şalos, konfidencialumo sàlygø ar intelektinës nuosavybës teisiø paşeidimo, arba (2) nustatyti, ar bet kokios autoriø teisës, patentai arba prekës şenklai yra galiojantys ir priklauso ğaliai arba bet kuriai patronuojanèiai ámonei arba (3) surinkti skolas, nevirğijanèias 500 000,00 USD.
+Albanijoje, ArmÄ—nijoje, AzerbaidÅ¾ane, Baltarusijoje, Bosnijoje ir Hercegovinoje, Bulgarijoje, Kroatijoje, Buvusiojoje Jugoslavijos Respublikoje Makedonijoje, Gruzijoje, Kazachstane, Kosove, Kirgizijoje, Moldavijoje, Juodkalnijoje, Rumunijoje, Rusijoje, Serbijoje, TadÅ¾ikijoje, TurkmÄ—nijoje, Ukrainoje ir Uzbekijoje: visi dÄ—l Å¡ios Sutarties kylantys ginÄai bus galutinai sprendÅ¾iami Austrijos federaliniÅ³ ekonomikos rÅ«mÅ³ Tarptautinio arbitraÅ¾o centre (ArbitraÅ¾o institucijoje) pagal Å¡io ArbitraÅ¾o centro ArbitraÅ¾o taisykles (Vienos taisyklÄ—s), Vienoje, Austrija (oficiali kalba - anglÅ³), trijÅ³ neÅ¡aliÅ¡kÅ³ arbitrÅ³, paskirtÅ³ pagal Vienos taisykles. Kiekviena Å¡alis paskirs vienÄ… arbitrÄ…, kurie bendru sutarimu per 30 dienÅ³ paskirs nepriklausomÄ… pirmininkÄ…. Kitu atveju pagal Vienos taisykles pirmininkÄ… paskirs ArbitraÅ¾o institucija. Arbitrai neturÄ—s teisÄ—s priteisti nuostoliÅ³, iÅ¡skirtÅ³ Å¡ia Sutartimi ar virÅ¡ijanÄiÅ³ Å¡ioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartÄ¯ dÄ—l laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo. Jokios sÄ…lygos nedraudÅ¾ia bet kuriai Å¡aliai pradÄ—ti teismo proceso, siekiant (1) laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo norint iÅ¡vengti materialinÄ—s Å¾alos, konfidencialumo sÄ…lygÅ³ ar intelektinÄ—s nuosavybÄ—s teisiÅ³ paÅ¾eidimo, arba (2) nustatyti, ar bet kokios autoriÅ³ teisÄ—s, patentai arba prekÄ—s Å¾enklai yra galiojantys ir priklauso Å¡aliai arba bet kuriai patronuojanÄiai Ä¯monei arba (3) surinkti skolas, nevirÅ¡ijanÄias 500Â 000,00 USD.
 
-Estijoje, Latvijoje ir Lietuvoje: visi ginèai, kylantys iğ ğios Sutarties, bus galutinai sprendşiami Suomijos Prekybos Rûmø Arbitraşo Instituto (FAI) (Arbitraşo institucijos) pagal Suomijos Prekybos Rûmø Arbitraşo Taisykles (Taisykles), Helsinkyje, Suomijoje, naudojant anglø kalbà, kaip oficialià kalbà, trijø neğaliğkø arbitrø, paskirtø pagal ğias Taisykles. Kiekviena ğalis paskirs vienà arbitrà, kurie bendru sutarimu per 30 dienø paskirs nepriklausomà pirmininkà. Kitu atveju pirmininkà paskirs Arbitraşo institucija pagal Taisykles. Arbitrai neturës teisës priteisti nuostoliø, iğskirtø ğia Sutartimi ar virğijanèiø ğioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartá dël laikinøjø apsaugos priemoniø taikymo. Jokios sàlygos nedraudşia bet kuriai ğaliai pradëti teismo proceso, siekiant (1) laikinøjø apsaugos priemoniø taikymo norint iğvengti materialinës şalos, konfidencialumo sàlygø ar intelektinës nuosavybës teisiø paşeidimo, arba (2) nustatyti, ar bet kokios autoriø teisës, patentai arba prekës şenklai yra galiojantys ir priklauso ğaliai arba bet kuriai patronuojanèiai ámonei arba (3) surinkti skolas, nevirğijanèias 500 000,00 USD.
+Estijoje, Latvijoje ir Lietuvoje: visi ginÄai, kylantys iÅ¡ Å¡ios Sutarties, bus galutinai sprendÅ¾iami Suomijos Prekybos RÅ«mÅ³ ArbitraÅ¾o Instituto (FAI) (ArbitraÅ¾o institucijos) pagal Suomijos Prekybos RÅ«mÅ³ ArbitraÅ¾o Taisykles (Taisykles), Helsinkyje, Suomijoje, naudojant anglÅ³ kalbÄ…, kaip oficialiÄ… kalbÄ…, trijÅ³ neÅ¡aliÅ¡kÅ³ arbitrÅ³, paskirtÅ³ pagal Å¡ias Taisykles. Kiekviena Å¡alis paskirs vienÄ… arbitrÄ…, kurie bendru sutarimu per 30 dienÅ³ paskirs nepriklausomÄ… pirmininkÄ…. Kitu atveju pirmininkÄ… paskirs ArbitraÅ¾o institucija pagal Taisykles. Arbitrai neturÄ—s teisÄ—s priteisti nuostoliÅ³, iÅ¡skirtÅ³ Å¡ia Sutartimi ar virÅ¡ijanÄiÅ³ Å¡ioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartÄ¯ dÄ—l laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo. Jokios sÄ…lygos nedraudÅ¾ia bet kuriai Å¡aliai pradÄ—ti teismo proceso, siekiant (1) laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo norint iÅ¡vengti materialinÄ—s Å¾alos, konfidencialumo sÄ…lygÅ³ ar intelektinÄ—s nuosavybÄ—s teisiÅ³ paÅ¾eidimo, arba (2) nustatyti, ar bet kokios autoriÅ³ teisÄ—s, patentai arba prekÄ—s Å¾enklai yra galiojantys ir priklauso Å¡aliai arba bet kuriai patronuojanÄiai Ä¯monei arba (3) surinkti skolas, nevirÅ¡ijanÄias 500Â 000,00 USD.
 
-Afganistane, Angoloje, Bahreine, Botsvanoje, Burundyje, Şaliajame Kyğulyje, Dşibutyje, Egipte, Eritrëjoje, Etiopijoje, Gambijoje, Ganoje, Irake, Jordanijoje, Kenijoje, Kuveite, Libane, Liberijoje, Libijoje, Madagaskare, Malavyje, Mozambike, Nigerijoje, Omane, Pakistane, Palestinos Teritorijoje, Katare, Ruandoje, San Tomëje ir Prinsipëje, Saudo Arabijoje, Seiğeliuose, Siera Leonëje, Somalyje, Pietø Sudane, Tanzanijoje, Ugandoje, Jungtiniuose Arabø Emyratuose, Vakarø Sacharoje, Jemene, Zambijoje ir Zimbabvëje: visi ginèai, kylantys dël ğios Sutarties, bus galutinai sprendşiami Londono tarptautinio arbitraşo teisme (LCIA) (Arbitraşo institucija) pagal LCIA arbitraşo taisykles (Taisyklës), Londone, JK, naudojant anglø kalbà, kaip oficialià kalbà, trijø neğaliğkø arbitrø paskirtø pagal ğias Taisykles.Kiekviena ğalis paskirs vienà arbitrà, kurie bendru sutarimu per 30 dienø paskirs nepriklausomà pirmininkà. Kitu atveju pirmininkà paskirs Arbitraşo institucija pagal Taisykles. Arbitrai neturës teisës priteisti nuostoliø, iğskirtø ğia Sutartimi ar virğijanèiø ğioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartá dël laikinøjø apsaugos priemoniø taikymo. Jokios sàlygos nedraudşia bet kuriai ğaliai pradëti teismo proceso, siekiant (1) laikinøjø apsaugos priemoniø taikymo norint iğvengti materialinës şalos, konfidencialumo sàlygø ar intelektinës nuosavybës teisiø paşeidimo, arba (2) nustatyti, ar bet kokios autoriø teisës, patentai arba prekës şenklai yra galiojantys ir priklauso ğaliai arba bet kuriai patronuojanèiai ámonei arba (3) surinkti skolas, nevirğijanèias 500 000,00 USD.
+Afganistane, Angoloje, Bahreine, Botsvanoje, Burundyje, Å½aliajame KyÅ¡ulyje, DÅ¾ibutyje, Egipte, EritrÄ—joje, Etiopijoje, Gambijoje, Ganoje, Irake, Jordanijoje, Kenijoje, Kuveite, Libane, Liberijoje, Libijoje, Madagaskare, Malavyje, Mozambike, Nigerijoje, Omane, Pakistane, Palestinos Teritorijoje, Katare, Ruandoje, San TomÄ—je ir PrinsipÄ—je, Saudo Arabijoje, SeiÅ¡eliuose, Siera LeonÄ—je, Somalyje, PietÅ³ Sudane, Tanzanijoje, Ugandoje, Jungtiniuose ArabÅ³ Emyratuose, VakarÅ³ Sacharoje, Jemene, Zambijoje ir ZimbabvÄ—je: visi ginÄai, kylantys dÄ—l Å¡ios Sutarties, bus galutinai sprendÅ¾iami Londono tarptautinio arbitraÅ¾o teisme (LCIA) (ArbitraÅ¾o institucija) pagal LCIA arbitraÅ¾o taisykles (TaisyklÄ—s), Londone, JK, naudojant anglÅ³ kalbÄ…, kaip oficialiÄ… kalbÄ…, trijÅ³ neÅ¡aliÅ¡kÅ³ arbitrÅ³ paskirtÅ³ pagal Å¡ias Taisykles.Kiekviena Å¡alis paskirs vienÄ… arbitrÄ…, kurie bendru sutarimu per 30 dienÅ³ paskirs nepriklausomÄ… pirmininkÄ…. Kitu atveju pirmininkÄ… paskirs ArbitraÅ¾o institucija pagal Taisykles. Arbitrai neturÄ—s teisÄ—s priteisti nuostoliÅ³, iÅ¡skirtÅ³ Å¡ia Sutartimi ar virÅ¡ijanÄiÅ³ Å¡ioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartÄ¯ dÄ—l laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo. Jokios sÄ…lygos nedraudÅ¾ia bet kuriai Å¡aliai pradÄ—ti teismo proceso, siekiant (1) laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo norint iÅ¡vengti materialinÄ—s Å¾alos, konfidencialumo sÄ…lygÅ³ ar intelektinÄ—s nuosavybÄ—s teisiÅ³ paÅ¾eidimo, arba (2) nustatyti, ar bet kokios autoriÅ³ teisÄ—s, patentai arba prekÄ—s Å¾enklai yra galiojantys ir priklauso Å¡aliai arba bet kuriai patronuojanÄiai Ä¯monei arba (3) surinkti skolas, nevirÅ¡ijanÄias 500Â 000,00 USD.
 
-Alşyre, Benine, Burkina Fase, Kamerûne, Centrinëje Afrikos Respublikoje, Èade, Konge, Kongo Demokratinëje Respublikoje, Pusiaujo Gvinëjoje, Prancûzø Gvianoje, Prancûzijos Polinezijoje, Gabone, Gvinëjoje, Bisau Gvinëjoje, Dramblio Kaulo Krante, Malyje, Mauritanijoje, Mauricijuje, Maroke, Nigeryje, Senegale, Toge ir Tunise: visi ginèai, kylantys dël ğios Sutarties, bus galutinai sprendşiami Paryşiaus ICC tarptautiniame arbitraşo teisme (arbitraşo institucija) pagal jo arbitraşo taisykles (Taisyklës), Paryşiuje, Prancûzijoje, naudojant prancûzø kalbà, kaip oficialià kalbà, trijø neğaliğkø arbitrø, paskirtø pagal ğias Taisykles. Kiekviena ğalis paskirs vienà arbitrà, kurie bendru sutarimu per 30 dienø paskirs nepriklausomà pirmininkà. Kitu atveju pirmininkà paskirs Arbitraşo institucija pagal Taisykles. Arbitrai neturës teisës priteisti nuostoliø, iğskirtø ğia Sutartimi ar virğijanèiø ğioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartá dël laikinøjø apsaugos priemoniø taikymo. Jokios sàlygos nedraudşia bet kuriai ğaliai pradëti teismo proceso, siekiant (1) laikinøjø apsaugos priemoniø taikymo norint iğvengti materialinës şalos, konfidencialumo sàlygø ar intelektinës nuosavybës teisiø paşeidimo, arba (2) nustatyti, ar bet kokios autoriø teisës, patentai arba prekës şenklai yra galiojantys ir priklauso ğaliai arba bet kuriai patronuojanèiai ámonei arba (3) surinkti skolas, nevirğijanèias 250 000,00 USD.
+AlÅ¾yre, Benine, Burkina Fase, KamerÅ«ne, CentrinÄ—je Afrikos Respublikoje, ÄŒade, Konge, Kongo DemokratinÄ—je Respublikoje, Pusiaujo GvinÄ—joje, PrancÅ«zÅ³ Gvianoje, PrancÅ«zijos Polinezijoje, Gabone, GvinÄ—joje, Bisau GvinÄ—joje, Dramblio Kaulo Krante, Malyje, Mauritanijoje, Mauricijuje, Maroke, Nigeryje, Senegale, Toge ir Tunise: visi ginÄai, kylantys dÄ—l Å¡ios Sutarties, bus galutinai sprendÅ¾iami ParyÅ¾iaus ICC tarptautiniame arbitraÅ¾o teisme (arbitraÅ¾o institucija) pagal jo arbitraÅ¾o taisykles (TaisyklÄ—s), ParyÅ¾iuje, PrancÅ«zijoje, naudojant prancÅ«zÅ³ kalbÄ…, kaip oficialiÄ… kalbÄ…, trijÅ³ neÅ¡aliÅ¡kÅ³ arbitrÅ³, paskirtÅ³ pagal Å¡ias Taisykles. Kiekviena Å¡alis paskirs vienÄ… arbitrÄ…, kurie bendru sutarimu per 30 dienÅ³ paskirs nepriklausomÄ… pirmininkÄ…. Kitu atveju pirmininkÄ… paskirs ArbitraÅ¾o institucija pagal Taisykles. Arbitrai neturÄ—s teisÄ—s priteisti nuostoliÅ³, iÅ¡skirtÅ³ Å¡ia Sutartimi ar virÅ¡ijanÄiÅ³ Å¡ioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartÄ¯ dÄ—l laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo. Jokios sÄ…lygos nedraudÅ¾ia bet kuriai Å¡aliai pradÄ—ti teismo proceso, siekiant (1) laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo norint iÅ¡vengti materialinÄ—s Å¾alos, konfidencialumo sÄ…lygÅ³ ar intelektinÄ—s nuosavybÄ—s teisiÅ³ paÅ¾eidimo, arba (2) nustatyti, ar bet kokios autoriÅ³ teisÄ—s, patentai arba prekÄ—s Å¾enklai yra galiojantys ir priklauso Å¡aliai arba bet kuriai patronuojanÄiai Ä¯monei arba (3) surinkti skolas, nevirÅ¡ijanÄias 250Â 000,00 USD.
 
-Pietø Afrikoje, Namibijoje, Lesote ir Svazilande: visi ginèai, kylantys dël ğios Sutarties, bus galutinai sprendşiami Pietø Afrikos Arbitraşo Ástaigos (AFSA) (arbitraşo institucija) pagal AFSA Arbitraşo Taisykles (Taisykles), Johanesburge, Pietø Afrikoje, naudojant anglø kalbà, kaip oficialià kalbà, trijø neğaliğkø arbitrø, paskirtø pagal Taisykles. Kiekviena ğalis paskirs vienà arbitrà, kurie bendru sutarimu per 30 dienø paskirs nepriklausomà pirmininkà. Kitu atveju pirmininkà paskirs Arbitraşo institucija pagal Taisykles. Arbitrai neturës teisës priteisti nuostoliø, iğskirtø ğia Sutartimi ar virğijanèiø ğioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartá dël laikinøjø apsaugos priemoniø taikymo. Jokios sàlygos nedraudşia bet kuriai ğaliai pradëti teismo proceso, siekiant (1) laikinøjø apsaugos priemoniø taikymo norint iğvengti materialinës şalos, konfidencialumo sàlygø ar intelektinës nuosavybës teisiø paşeidimo, arba (2) nustatyti, ar bet kokios autoriø teisës, patentai arba prekës şenklai yra galiojantys ir priklauso ğaliai arba bet kuriai patronuojanèiai ámonei arba (3) surinkti skolas, nevirğijanèias 250 000,00 USD.
+PietÅ³ Afrikoje, Namibijoje, Lesote ir Svazilande: visi ginÄai, kylantys dÄ—l Å¡ios Sutarties, bus galutinai sprendÅ¾iami PietÅ³ Afrikos ArbitraÅ¾o Ä®staigos (AFSA) (arbitraÅ¾o institucija) pagal AFSA ArbitraÅ¾o Taisykles (Taisykles), Johanesburge, PietÅ³ Afrikoje, naudojant anglÅ³ kalbÄ…, kaip oficialiÄ… kalbÄ…, trijÅ³ neÅ¡aliÅ¡kÅ³ arbitrÅ³, paskirtÅ³ pagal Taisykles. Kiekviena Å¡alis paskirs vienÄ… arbitrÄ…, kurie bendru sutarimu per 30 dienÅ³ paskirs nepriklausomÄ… pirmininkÄ…. Kitu atveju pirmininkÄ… paskirs ArbitraÅ¾o institucija pagal Taisykles. Arbitrai neturÄ—s teisÄ—s priteisti nuostoliÅ³, iÅ¡skirtÅ³ Å¡ia Sutartimi ar virÅ¡ijanÄiÅ³ Å¡ioje Sutartyje nurodytus apribojimus, ar priimti teismo nutartÄ¯ dÄ—l laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo. Jokios sÄ…lygos nedraudÅ¾ia bet kuriai Å¡aliai pradÄ—ti teismo proceso, siekiant (1) laikinÅ³jÅ³ apsaugos priemoniÅ³ taikymo norint iÅ¡vengti materialinÄ—s Å¾alos, konfidencialumo sÄ…lygÅ³ ar intelektinÄ—s nuosavybÄ—s teisiÅ³ paÅ¾eidimo, arba (2) nustatyti, ar bet kokios autoriÅ³ teisÄ—s, patentai arba prekÄ—s Å¾enklai yra galiojantys ir priklauso Å¡aliai arba bet kuriai patronuojanÄiai Ä¯monei arba (3) surinkti skolas, nevirÅ¡ijanÄias 250Â 000,00 USD.
 
-Andoroje, Austrijoje, Kipre, Prancûzijoje, Vokietijoje, Graikijoje, Izraelyje, Italijoje, Portugalijoje, Ispanijoje, Ğveicarijoje ir Turkijoje: visi ginèai bus pateikti ir svarstomi ğiø iğskirtiniø jurisdikcijø kompetentinguose teismuose:
+Andoroje, Austrijoje, Kipre, PrancÅ«zijoje, Vokietijoje, Graikijoje, Izraelyje, Italijoje, Portugalijoje, Ispanijoje, Å veicarijoje ir Turkijoje: visi ginÄai bus pateikti ir svarstomi Å¡iÅ³ iÅ¡skirtiniÅ³ jurisdikcijÅ³ kompetentinguose teismuose:
 
-Andoroje: Paryşiaus komerciniame teisme.
+Andoroje: ParyÅ¾iaus komerciniame teisme.
 
-Austrijoje: Vienos teisme, Austrija (centrinëje miesto dalyje).
+Austrijoje: Vienos teisme, Austrija (centrinÄ—je miesto dalyje).
 
 Kipre: Nikosijos kompetentingame teisme.
 
-Prancûzijoje: Paryşiaus komerciniame teisme.
+PrancÅ«zijoje: ParyÅ¾iaus komerciniame teisme.
 
-Vokietijoje: Ğtutgarto teismuose.
+Vokietijoje: Å tutgarto teismuose.
 
-Graikijoje: Atënø kompetentingame teisme.
+Graikijoje: AtÄ—nÅ³ kompetentingame teisme.
 
 Izraelyje: Tel Avivo Jafa teismuose.
 
@@ -487,55 +487,55 @@ Portugalijoje: Lisabonos teismuose.
 
 Ispanijoje: Madrido teismuose.
 
-Ğveicarijoje: Ciuricho kantono komerciniame teisme.
+Å veicarijoje: Ciuricho kantono komerciniame teisme.
 
-Turkijoje: Stambulo centriniuose (¥Caglayan´) teismuose ir vykdomuosiuose direktoratuose, Turkijos Respublikoje.
+Turkijoje: Stambulo centriniuose (â€Caglayanâ€œ) teismuose ir vykdomuosiuose direktoratuose, Turkijos Respublikoje.
 
-Nyderlanduose: Ğalys atsisako savo teisiø pagal Olandijos civilinio kodekso 7.1 skyriaus (¥Koop´) ir Olandijos civilinio kodekso 7:401 ir 402 straipsnius, taip pat savo teisiø taikyti visiğkà arba daliná ğios Sutarties anuliavimà (¥gehele of partiele ontbinding´) pagal Olandijos civilinio kodekso 6:265 skyriø.
+Nyderlanduose: Å alys atsisako savo teisiÅ³ pagal Olandijos civilinio kodekso 7.1 skyriaus (â€Koopâ€œ) ir Olandijos civilinio kodekso 7:401 ir 402 straipsnius, taip pat savo teisiÅ³ taikyti visiÅ¡kÄ… arba dalinÄ¯ Å¡ios Sutarties anuliavimÄ… (â€gehele of partiele ontbindingâ€œ) pagal Olandijos civilinio kodekso 6:265 skyriÅ³.
 
 7 skyrius. Bendrosios nuostatos
 
-d pastraipos pabaigoje átraukti:
+d pastraipos pabaigoje Ä¯traukti:
 
-Ispanijoje: IBM vykdys prağymus pasiekti, atnaujinti ar panaikinti kontaktinæ informacijà, jei jie bus pateikti ğiuo adresu: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+Ispanijoje: IBM vykdys praÅ¡ymus pasiekti, atnaujinti ar panaikinti kontaktinÄ™ informacijÄ…, jei jie bus pateikti Å¡iuo adresu: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
 
-j pastraipos pabaigoje átraukti:
+j pastraipos pabaigoje Ä¯traukti:
 
-Èekijos Respublikoje: laikantis ástatymø rinkinio 89/2012 1801 (Civilinis kodeksas). (¥Civilinis kodeksas´), Civilinio kodekso (su pakeitimais) 1799 ir 1800 skyriø nuostatos netaikomos operacijoms pagal ğià Sutartá. Licenciatas prisiima rizikà dël pasikeitusiø aplinkybiø remiantis Civilinio kodekso 1765 skyriumi.
+ÄŒekijos Respublikoje: laikantis Ä¯statymÅ³ rinkinio 89/2012 1801 (Civilinis kodeksas). (â€Civilinis kodeksasâ€œ), Civilinio kodekso (su pakeitimais) 1799 ir 1800 skyriÅ³ nuostatos netaikomos operacijoms pagal Å¡iÄ… SutartÄ¯. Licenciatas prisiima rizikÄ… dÄ—l pasikeitusiÅ³ aplinkybiÅ³ remiantis Civilinio kodekso 1765 skyriumi.
 
 j pastraipoje:
 
-Bulgarijoje, Kroatijoje, Rusijoje, Serbijoje ir Slovënijoje: panaikinti antrà sakiná, kuriuo nurodoma ¥Në viena ğalis neiğkels iğ ğios Sutarties kylanèios ar su ja susijusios teismo bylos nuo bylos prieşasties atsiradimo praëjus daugiau nei dvejiems metams´.
+Bulgarijoje, Kroatijoje, Rusijoje, Serbijoje ir SlovÄ—nijoje: panaikinti antrÄ… sakinÄ¯, kuriuo nurodoma â€NÄ— viena Å¡alis neiÅ¡kels iÅ¡ Å¡ios Sutarties kylanÄios ar su ja susijusios teismo bylos nuo bylos prieÅ¾asties atsiradimo praÄ—jus daugiau nei dvejiems metamsâ€œ.
 
-j pastraipos antro sakinio pabaigoje átraukti:
+j pastraipos antro sakinio pabaigoje Ä¯traukti:
 
-Lietuvoje: , iğskyrus tuomet, kai ástatymai numato kitaip
+Lietuvoje: , iÅ¡skyrus tuomet, kai Ä¯statymai numato kitaip
 
-j pastraipoje pakeisti antràjá sakiná á:
+j pastraipoje pakeisti antrÄ…jÄ¯ sakinÄ¯ Ä¯:
 
-Lenkijoje: në viena iğ ğaliø nesiims teisiniø veiksmø dël Sutarties ar su ja susijusiø veiksmø praëjus daugiau nei trejiems metams nuo ieğkinio pagrindo atsiradimo, iğskyrus nesumokëjimo atvejus, dël kuriø nebus imamasi veiksmø praëjus daugiau nei dvejiems metams po mokëjimo termino.
+Lenkijoje: nÄ— viena iÅ¡ Å¡aliÅ³ nesiims teisiniÅ³ veiksmÅ³ dÄ—l Sutarties ar su ja susijusiÅ³ veiksmÅ³ praÄ—jus daugiau nei trejiems metams nuo ieÅ¡kinio pagrindo atsiradimo, iÅ¡skyrus nesumokÄ—jimo atvejus, dÄ—l kuriÅ³ nebus imamasi veiksmÅ³ praÄ—jus daugiau nei dvejiems metams po mokÄ—jimo termino.
 
-j pastraipos antrame sakinyje şodá ¥dvejiems´ keisti:
+j pastraipos antrame sakinyje Å¾odÄ¯ â€dvejiemsâ€œ keisti:
 
 Latvijoje ir Ukrainoje: trejiems
 
 Slovakijoje: ketveriems
 
-j pastraipos treèio sakinio pabaigoje átraukti sakiná, nurodantá: ¥Në viena ğalis nëra atsakinga uş tai, jog dël nuo jos valios nepriklausanèiø prieşasèiø nevykdo kurio nors nepiniginio ásipareigojimo´:
+j pastraipos treÄio sakinio pabaigoje Ä¯traukti sakinÄ¯, nurodantÄ¯: â€NÄ— viena Å¡alis nÄ—ra atsakinga uÅ¾ tai, jog dÄ—l nuo jos valios nepriklausanÄiÅ³ prieÅ¾asÄiÅ³ nevykdo kurio nors nepiniginio Ä¯sipareigojimoâ€œ:
 
-Rusijoje: , áskaitant, bet neapsiribojant, dël şemës drebëjimø, potvyniø, gaisrø, nenugalimos jëgos, streikø (neátraukiant ğaliø darbuotojø streikø), karo, kariniø veiksmø, embargo, blokadø, tarptautiniø ar valdşios sankcijø, taikomos jurisdikcijos institucijø veiksmø.
+Rusijoje: , Ä¯skaitant, bet neapsiribojant, dÄ—l Å¾emÄ—s drebÄ—jimÅ³, potvyniÅ³, gaisrÅ³, nenugalimos jÄ—gos, streikÅ³ (neÄ¯traukiant Å¡aliÅ³ darbuotojÅ³ streikÅ³), karo, kariniÅ³ veiksmÅ³, embargo, blokadÅ³, tarptautiniÅ³ ar valdÅ¾ios sankcijÅ³, taikomos jurisdikcijos institucijÅ³ veiksmÅ³.
 
-j pastraipos treèiame sakinyje pakeisti sakiná, nurodantá: ¥Në viena ğalis nëra atsakinga uş tai, jog dël nuo jos valios nepriklausanèiø prieşasèiø nevykdo kurio nors nepiniginio ásipareigojimo´ ğitaip:
+j pastraipos treÄiame sakinyje pakeisti sakinÄ¯, nurodantÄ¯: â€NÄ— viena Å¡alis nÄ—ra atsakinga uÅ¾ tai, jog dÄ—l nuo jos valios nepriklausanÄiÅ³ prieÅ¾asÄiÅ³ nevykdo kurio nors nepiniginio Ä¯sipareigojimoâ€œ Å¡itaip:
 
-Ukrainoje: Në viena ğalis nëra atsakinga uş tai, jog dël nuo jos valios nepriklausanèiø prieşasèiø arba reguliaciniø pakeitimø nevykdo kurio nors nepiniginio ásipareigojimo, áskaitant, bet neapsiribojant, dël JAV importo, eksporto ir ekonominiø sankcijø reikalavimø.
+Ukrainoje: NÄ— viena Å¡alis nÄ—ra atsakinga uÅ¾ tai, jog dÄ—l nuo jos valios nepriklausanÄiÅ³ prieÅ¾asÄiÅ³ arba reguliaciniÅ³ pakeitimÅ³ nevykdo kurio nors nepiniginio Ä¯sipareigojimo, Ä¯skaitant, bet neapsiribojant, dÄ—l JAV importo, eksporto ir ekonominiÅ³ sankcijÅ³ reikalavimÅ³.
 
-Skyriaus pabaigoje kaip naujà l pastraipà átraukti ğià:
+Skyriaus pabaigoje kaip naujÄ… l pastraipÄ… Ä¯traukti Å¡iÄ…:
 
-Vengrijoje: Sudaræs ğià Sutartá, Licenciatas patvirtina, kad jam pakankamai praneğta apie visas ğios Sutarties sàlygas ir jis turëjo galimybæ dël jø derëtis. Toliau nurodytos sàlygos gali gerokai skirtis nuo sàlygø, kurios paprastai taikomos pagal Vengrijos ástatymus, ir abi ğalys sutinka su tomis sàlygomis pasirağydamos Sutartá: Programos licencija; Garantijos; Rinkliavos, mokesèiai, mokëjimas ir patvirtinimas; Atsakomybë ir intelektinës nuosavybës apsauga; Nutraukimas; Taikoma teisë ir geografinë aprëptis; Bendrosios nuostatos.
+Vengrijoje: SudarÄ™s Å¡iÄ… SutartÄ¯, Licenciatas patvirtina, kad jam pakankamai praneÅ¡ta apie visas Å¡ios Sutarties sÄ…lygas ir jis turÄ—jo galimybÄ™ dÄ—l jÅ³ derÄ—tis. Toliau nurodytos sÄ…lygos gali gerokai skirtis nuo sÄ…lygÅ³, kurios paprastai taikomos pagal Vengrijos Ä¯statymus, ir abi Å¡alys sutinka su tomis sÄ…lygomis pasiraÅ¡ydamos SutartÄ¯: Programos licencija; Garantijos; Rinkliavos, mokesÄiai, mokÄ—jimas ir patvirtinimas; AtsakomybÄ— ir intelektinÄ—s nuosavybÄ—s apsauga; Nutraukimas; Taikoma teisÄ— ir geografinÄ— aprÄ—ptis; Bendrosios nuostatos.
 
-Èekijos Respublikoje: Licenciatas aiğkiai sutinka su ğios sutarties sàlygomis, kurios apima ğias svarbias komercines sàlygas: i) atsakomybës uş defektus apribojimas ir atsisakymas (Garantijos); ii) Licenciato teisës á şalà apribojimas (Atsakomybë ir Intelektinës nuosavybës apsauga); iii) ápareigojantis importo ir eksporto nuostatø pobûdis (Taikoma teisë ir Geografinë aprëptis); iv) trumpesni apribojimo laikotarpiai (Bendrosios nuostatos); v) nuostatø taikymo iğimtys prisijungimo sutartyse (Bendrosios nuostatos); vi) aplinkybiø pasikeitimo rizikos priëmimas (Bendrosios nuostatos).
+ÄŒekijos Respublikoje: Licenciatas aiÅ¡kiai sutinka su Å¡ios sutarties sÄ…lygomis, kurios apima Å¡ias svarbias komercines sÄ…lygas: i) atsakomybÄ—s uÅ¾ defektus apribojimas ir atsisakymas (Garantijos); ii) Licenciato teisÄ—s Ä¯ Å¾alÄ… apribojimas (AtsakomybÄ— ir IntelektinÄ—s nuosavybÄ—s apsauga); iii) Ä¯pareigojantis importo ir eksporto nuostatÅ³ pobÅ«dis (Taikoma teisÄ— ir GeografinÄ— aprÄ—ptis); iv) trumpesni apribojimo laikotarpiai (Bendrosios nuostatos); v) nuostatÅ³ taikymo iÅ¡imtys prisijungimo sutartyse (Bendrosios nuostatos); vi) aplinkybiÅ³ pasikeitimo rizikos priÄ—mimas (Bendrosios nuostatos).
 
-Rumunija: Licenciatas aiğkiai sutinka su toliau nurodytomis standartinëmis sàlygomis, kurios gali bûti laikomos ¥neáprastomis sàlygomis´ pagal Rumunijos civilinio kodekso 1203 straipsnio nuostatas: sàlygos 2, 4, 5, 8j. Licenciatas ğiuo pripaşásta, kad jam tinkamai praneğta apie visas ğios Sutarties nuostatas, áskaitant anksèiau minëtas sàlygas, jis tinkamai iğanalizavo ir suprato ğias nuostatas ir turëjo galimybæ derëtis dël kiekvienos iğ ğiø sàlygø.
+Rumunija: Licenciatas aiÅ¡kiai sutinka su toliau nurodytomis standartinÄ—mis sÄ…lygomis, kurios gali bÅ«ti laikomos â€neÄ¯prastomis sÄ…lygomisâ€œ pagal Rumunijos civilinio kodekso 1203 straipsnio nuostatas: sÄ…lygos 2, 4, 5, 8j. Licenciatas Å¡iuo pripaÅ¾Ä¯sta, kad jam tinkamai praneÅ¡ta apie visas Å¡ios Sutarties nuostatas, Ä¯skaitant anksÄiau minÄ—tas sÄ…lygas, jis tinkamai iÅ¡analizavo ir suprato Å¡ias nuostatas ir turÄ—jo galimybÄ™ derÄ—tis dÄ—l kiekvienos iÅ¡ Å¡iÅ³ sÄ…lygÅ³.
 
 i125-5589-06 (10-2021)
 

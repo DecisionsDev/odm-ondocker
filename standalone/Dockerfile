@@ -13,7 +13,7 @@ COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${O
 COPY ./executionserver/ /executionserver/
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
-
+COPY $ODMDOCKERDIR/standalone/config/resources /config/resources
 # Loan Server Sample presence flag
 RUN set -ex; \
     if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
@@ -30,7 +30,7 @@ RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
 # Install the driver for H2 and for PostgreSQL
-RUN mkdir -p /tmp && cd /tmp && curl -LRk https://h2database.com/h2-2019-03-13.zip -o h2.zip && unzip h2.zip && mv h2/bin/*.jar /config/resources/ && \
+RUN mkdir -p /tmp && cd /tmp && \
     curl -LORk https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
@@ -77,6 +77,7 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-8.12.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.12.zip /db812/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.1.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.1.zip /db8111/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.zip /db811/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
@@ -86,7 +87,7 @@ ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
 # Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
 RUN set -ex; \
     ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
-    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /db811 /db8111 /config/dbdata
+    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /db811 /db8111 /db812 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR

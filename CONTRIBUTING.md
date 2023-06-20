@@ -49,7 +49,7 @@ In order for us to accept pull requests, you must declare that you wrote the cod
   Developer Certificate of Origin
 Version 1.1
 
-Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
+Copyright (C) 2004, 2023 The Linux Foundation and its contributors.
 660 York Street, Suite 102,
 San Francisco, CA 94110 USA
 

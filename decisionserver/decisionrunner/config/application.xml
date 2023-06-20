@@ -9,7 +9,7 @@
 			<group name="resDeployers" />
 		</security-role>
 	</application-bnd>
-	<classloader>
+	<classloader delegation="parentLast">
 		<commonLibrary>
                         <folder dir="/config/pluginconfig" id="plugindir"  />
                 </commonLibrary>
