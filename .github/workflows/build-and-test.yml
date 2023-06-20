@@ -35,10 +35,10 @@ jobs:
           # notify_when: 'failure'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      - name: Report Status by mail
-        if: always()
-        uses: dawidd6/action-send-mail@v3
-        with:
+ #     - name: Report Status by mail
+ #       if: always()
+ #       uses: dawidd6/action-send-mail@v3
+ #       with:
           # Specify connection via URL (replaces server_address, server_port, secure,
           # username and password)
           #
@@ -48,7 +48,7 @@ jobs:
           #  * smtp+starttls://user:password@server:port
           # connection_url: ${{secrets.MAIL_CONNECTION}}
           # Required mail server address if not connection_url:
-          server_address: mx0a-001b2d01.pphosted.com
+ #         server_address: mx0a-001b2d01.pphosted.com
           # Server port, default 25:
           # server_port: 465
           # Optional whether this connection use TLS (default is true if server_port is 465)
@@ -58,17 +58,17 @@ jobs:
           # Optional (recommended) mail server password:
           # password: ${{secrets.MAIL_PASSWORD}}
           # Required mail subject:
-          subject: Github Actions job result for DecisionsDev/odm-ondocker
+ #         subject: Github Actions job result for DecisionsDev/odm-ondocker
           # Required recipients' addresses:
-          to: decisioncncf@ibm.com
+#          to: decisioncncf@ibm.com
           # Required sender full name (address can be skipped):
-          from: Luke Skywalker # <user@example.com>
+ #         from: Luke Skywalker # <user@example.com>
           # Optional plain body:
-          body: Build job of ${{github.repository}} completed with ${{ job.status }}
+  #        body: Build job of ${{github.repository}} completed with ${{ job.status }}
           # Optional recipient of the email response:
-          reply_to: decisioncncf@ibm.com
+   #       reply_to: decisioncncf@ibm.com
           # Optional unsigned/invalid certificates allowance:
-          ignore_cert: true
+    #      ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
           # convert_markdown: true
           # Optional attachments:
