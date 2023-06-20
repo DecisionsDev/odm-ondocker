@@ -1,229 +1,229 @@
 LIZENZINFORMATION
 
-Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommen folgende Bedingungen zur Anwendung Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (i125-5589-06).
+FÃ¼r die Lizenzierung der nachstehend aufgelisteten Programme gelten zusÃ¤tzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den fÃ¼r das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommen folgende Bedingungen zur Anwendung Internationale Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung (i125-5589-06).
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.12 (5725-B69)
 
-Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
+Die folgenden Standardbedingungen gelten fÃ¼r die Programmnutzung durch den Lizenznehmer.
 
 Installationsimage mit mehreren Produkten
 
-Das Programm wird als Teil eines Installationsimage bereitgestellt, das mehrere Produkte enthält. Der Lizenznehmer ist nur zur Installation und Nutzung des Programms (und seiner gebündelten Programme oder Unterstützungsprogramme, sofern vorhanden) berechtigt, für das er eine gültige Berechtigung erworben hat, und darf die darüber hinaus im Image enthaltene Software nicht installieren oder nutzen, außer wenn er separate Berechtigungen für die jeweilige Software erworben hat.
+Das Programm wird als Teil eines Installationsimage bereitgestellt, das mehrere Produkte enthÃ¤lt. Der Lizenznehmer ist nur zur Installation und Nutzung des Programms (und seiner gebÃ¼ndelten Programme oder UnterstÃ¼tzungsprogramme, sofern vorhanden) berechtigt, fÃ¼r das er eine gÃ¼ltige Berechtigung erworben hat, und darf die darÃ¼ber hinaus im Image enthaltene Software nicht installieren oder nutzen, auÃŸer wenn er separate Berechtigungen fÃ¼r die jeweilige Software erworben hat.
 
-Unterstützungsprogramme
+UnterstÃ¼tzungsprogramme
 
-Der Lizenznehmer darf die nachstehend aufgeführten Unterstützungsprogramme nur zur Unterstützung seiner Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur Unterstützung seiner Nutzung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen Unterstützungsprogramms stehen. Die Unterstützungsprogramme dürfen nicht für andere Zwecke verwendet werden. Einem Unterstützungsprogramm können Lizenzbedingungen beigefügt sein, die für die Nutzung des Unterstützungsprogramms durch den Lizenznehmer gelten. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des Unterstützungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen für das Programm als Ganzes erwerben, um die Installation und Nutzung aller Unterstützungsprogramme abzudecken, außer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm würde auf VPC-Basis (Virtual Processor Core, virtueller Prozessorkern) lizenziert und der Lizenznehmer würde das Hauptprogramm oder ein Unterstützungsprogramm auf einer 10-VPC-Maschine und ein anderes Unterstützungsprogramm auf einer zweiten 10-VPC-Maschine installieren, dann müsste er 20 VPC-Berechtigungen für das Programm erwerben.
+Der Lizenznehmer darf die nachstehend aufgefÃ¼hrten UnterstÃ¼tzungsprogramme nur zur UnterstÃ¼tzung seiner Nutzung des Hauptprogramms im Rahmen dieser Vereinbarung installieren und nutzen. Der Ausdruck "nur zur UnterstÃ¼tzung seiner Nutzung" umfasst lediglich notwendige Nutzungen oder Nutzungen, die im direkten Zusammenhang mit der lizenzierten Nutzung des Hauptprogramms oder eines anderen UnterstÃ¼tzungsprogramms stehen. Die UnterstÃ¼tzungsprogramme dÃ¼rfen nicht fÃ¼r andere Zwecke verwendet werden. Einem UnterstÃ¼tzungsprogramm kÃ¶nnen Lizenzbedingungen beigefÃ¼gt sein, die fÃ¼r die Nutzung des UnterstÃ¼tzungsprogramms durch den Lizenznehmer gelten. Im Falle eines Widerspruchs haben die Bedingungen dieses Lizenzinformationsdokuments Vorrang vor den Bedingungen des UnterstÃ¼tzungsprogramms. Der Lizenznehmer muss ausreichende Berechtigungen fÃ¼r das Programm als Ganzes erwerben, um die Installation und Nutzung aller UnterstÃ¼tzungsprogramme abzudecken, auÃŸer wenn in diesem Lizenzinformationsdokument separate Berechtigungen bereitgestellt werden. Beispiel: Angenommen, dieses Programm wÃ¼rde auf VPC-Basis (Virtual Processor Core, virtueller Prozessorkern) lizenziert und der Lizenznehmer wÃ¼rde das Hauptprogramm oder ein UnterstÃ¼tzungsprogramm auf einer 10-VPC-Maschine und ein anderes UnterstÃ¼tzungsprogramm auf einer zweiten 10-VPC-Maschine installieren, dann mÃ¼sste er 20 VPC-Berechtigungen fÃ¼r das Programm erwerben.
 
-Unterstützungsprogramme:
-IBM WebSphere Liberty 22
+UnterstÃ¼tzungsprogramme:
+IBM WebSphere Liberty
 
-Beschränkung auf Entwickler
+BeschrÃ¤nkung auf Entwickler
 
-Wenn das Programm für "Developers" bestimmt ist, kann der Lizenznehmer das Programm nur für interne Entwicklungszwecke und Komponententests auf einer Entwicklermaschine einsetzen. Eine Entwicklermaschine ist eine physische oder virtuelle Desktopumgebung, in der ein primäres Betriebssystem und das Programm ausgeführt werden, die beide für maximal einen angegebenen Entwickler zugänglich und nutzbar sind.
+Wenn das Programm fÃ¼r "Developers" bestimmt ist, kann der Lizenznehmer das Programm nur fÃ¼r interne Entwicklungszwecke und Komponententests auf einer Entwicklermaschine einsetzen. Eine Entwicklermaschine ist eine physische oder virtuelle Desktopumgebung, in der ein primÃ¤res Betriebssystem und das Programm ausgefÃ¼hrt werden, die beide fÃ¼r maximal einen angegebenen Entwickler zugÃ¤nglich und nutzbar sind.
 
 Modifizierbarer Code einer Drittpartei
 
-Soweit IBM in der NOTICES-Datei den Code einer Drittpartei als "Modifizierbaren Code einer Drittpartei" bezeichnet, ist der Lizenznehmer berechtigt, 1) den Modifizierbaren Code einer Drittpartei zu modifizieren und 2) die Programmmodule, die direkt mit dem Modifizierbaren Code einer Drittpartei verbunden sind, zurückzuentwickeln, vorausgesetzt, dies geschieht ausschließlich, um die Modifikationen des Lizenznehmers an einem solchen Code einer Drittpartei zu debuggen. Die Service- und Unterstützungsverpflichtungen von IBM gelten, sofern vorhanden, nur für das unmodifizierte Programm.
+Soweit IBM in der NOTICES-Datei den Code einer Drittpartei als "Modifizierbaren Code einer Drittpartei" bezeichnet, ist der Lizenznehmer berechtigt, 1) den Modifizierbaren Code einer Drittpartei zu modifizieren und 2) die Programmmodule, die direkt mit dem Modifizierbaren Code einer Drittpartei verbunden sind, zurÃ¼ckzuentwickeln, vorausgesetzt, dies geschieht ausschlieÃŸlich, um die Modifikationen des Lizenznehmers an einem solchen Code einer Drittpartei zu debuggen. Die Service- und UnterstÃ¼tzungsverpflichtungen von IBM gelten, sofern vorhanden, nur fÃ¼r das unmodifizierte Programm.
 
 Separat lizenzierter Code
 
-Jede in der NON_IBM_LICENSE-Datei aufgeführte Komponente gilt als "Separat lizenzierter Code", der gemäß den Bedingungen der maßgeblichen Drittanbieter-Lizenzvereinbarung und nicht gemäß dieser Vereinbarung für den Lizenznehmer lizenziert wird. Die Drittanbieter-Lizenzvereinbarungen sind in den NON_IBM_LICENSE-Dateien enthalten, die dem Programm beigepackt sind. Zukünftige Programmupdates oder Fixes können weiteren separat lizenzierten Code enthalten, der zusammen mit den zugehörigen Lizenzen in der jeweiligen NON_IBM_LICENSE-Datei aufgeführt ist, die dem Programmupdate oder Fix beigepackt ist.
+Jede in der NON_IBM_LICENSE-Datei aufgefÃ¼hrte Komponente gilt als "Separat lizenzierter Code", der gemÃ¤ÃŸ den Bedingungen der maÃŸgeblichen Drittanbieter-Lizenzvereinbarung und nicht gemÃ¤ÃŸ dieser Vereinbarung fÃ¼r den Lizenznehmer lizenziert wird. Die Drittanbieter-Lizenzvereinbarungen sind in den NON_IBM_LICENSE-Dateien enthalten, die dem Programm beigepackt sind. ZukÃ¼nftige Programmupdates oder Fixes kÃ¶nnen weiteren separat lizenzierten Code enthalten, der zusammen mit den zugehÃ¶rigen Lizenzen in der jeweiligen NON_IBM_LICENSE-Datei aufgefÃ¼hrt ist, die dem Programmupdate oder Fix beigepackt ist.
 
 Hinweis: Ungeachtet der Bedingungen in der Drittanbieter-Lizenzvereinbarung, der Vereinbarung oder einer anderen Vereinbarung zwischen dem Lizenznehmer und IBM gilt Folgendes:
-(a) IBM stellt den separat lizenzierten Code ohne jede Gewährleistung zur Verfügung und übernimmt weder ausdrücklich noch stillschweigend eine Gewährleistung für den separat lizenzierten Code; dies gilt insbesondere in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
-(b) IBM haftet nicht für unmittelbare und mittelbare Schäden oder Folgeschäden, wie beispielsweise Datenverlust, entgangene Einsparungen und entgangenen Gewinn hinsichtlich des separat lizenzierten Codes.
+(a) IBM stellt den separat lizenzierten Code ohne jede GewÃ¤hrleistung zur VerfÃ¼gung und Ã¼bernimmt weder ausdrÃ¼cklich noch stillschweigend eine GewÃ¤hrleistung fÃ¼r den separat lizenzierten Code; dies gilt insbesondere in Bezug auf RechtsmÃ¤ngel, die Freiheit von Rechten Dritter, das Recht auf NichtbeeintrÃ¤chtigung, die HandelsÃ¼blichkeit und die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck.
+(b) IBM haftet nicht fÃ¼r unmittelbare und mittelbare SchÃ¤den oder FolgeschÃ¤den, wie beispielsweise Datenverlust, entgangene Einsparungen und entgangenen Gewinn hinsichtlich des separat lizenzierten Codes.
 
 Datenschutz
 
-Der Lizenznehmer bestätigt und erklärt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Übereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
+Der Lizenznehmer bestÃ¤tigt und erklÃ¤rt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Ãœbereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
 
 Quellenkomponenten und Beispielmaterialien
 
-Das Programm enthält Komponenten in Form von Quellcode ("Quellenkomponenten") oder sonstige Materialien, die als Beispielmaterialien gekennzeichnet sind, oder beides. Der Lizenznehmer darf Quellenkomponenten und Beispielmaterialien nur zur internen Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung kopieren und bearbeiten, sofern keine in den Quellenkomponenten oder Beispielmaterialien enthaltenen Copyrightvermerke oder Eigentumshinweise geändert oder gelöscht werden. IBM stellt die Quellenkomponenten und Beispielmaterialien ohne Verpflichtung zur Unterstützung, im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung, insbesondere ohne Gewährleistung in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
+Das Programm enthÃ¤lt Komponenten in Form von Quellcode ("Quellenkomponenten") oder sonstige Materialien, die als Beispielmaterialien gekennzeichnet sind, oder beides. Der Lizenznehmer darf Quellenkomponenten und Beispielmaterialien nur zur internen Verwendung im Rahmen der Lizenzrechte dieser Vereinbarung kopieren und bearbeiten, sofern keine in den Quellenkomponenten oder Beispielmaterialien enthaltenen Copyrightvermerke oder Eigentumshinweise geÃ¤ndert oder gelÃ¶scht werden. IBM stellt die Quellenkomponenten und Beispielmaterialien ohne Verpflichtung zur UnterstÃ¼tzung, im gegenwÃ¤rtigen Zustand (auf "as-is"-Basis) und ohne jegliche GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) zur VerfÃ¼gung, insbesondere ohne GewÃ¤hrleistung in Bezug auf RechtsmÃ¤ngel, die Freiheit von Rechten Dritter, das Recht auf NichtbeeintrÃ¤chtigung, die HandelsÃ¼blichkeit und die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck.
 
 Daten und Services von Drittanbietern
 
-Das Programm ermöglicht den Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (insgesamt "Inhalte von Drittanbietern" genannt). Der Zugriff auf diese Inhalte von Drittanbietern wird im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff auf die Inhalte von Drittanbietern und deren Nutzung abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
+Das Programm ermÃ¶glicht den Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (insgesamt "Inhalte von Drittanbietern" genannt). Der Zugriff auf diese Inhalte von Drittanbietern wird im gegenwÃ¤rtigen Zustand (auf "as-is"-Basis) und ohne jegliche GewÃ¤hrleistung (ausdrÃ¼cklich oder stillschweigend) zur VerfÃ¼gung gestellt, insbesondere ohne GewÃ¤hrleistung in Bezug auf RechtsmÃ¤ngel, die Freiheit von Rechten Dritter, das Recht auf NichtbeeintrÃ¤chtigung, die HandelsÃ¼blichkeit und die VerwendungsfÃ¤higkeit fÃ¼r einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern Ã¼ber den Zugriff auf die Inhalte von Drittanbietern und deren Nutzung abschlieÃŸen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklÃ¤rt sich aufgrund der ausdrÃ¼cklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
 
-L/N: L-ASAY-CE4DNS
-D/N: L-ASAY-CE4DNS
-P/N: L-ASAY-CE4DNS
+L/N: L-AMWV-QRBWQJ
+D/N: L-AMWV-QRBWQJ
+P/N: L-AMWV-QRBWQJ
 
-Internationale Nutzungsbedingungen für Programme ohne Gewährleistung
+Internationale Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung
 
 Teil 1 - Allgemeine Bedingungen
 
-Durch Herunterladen, Installieren oder Kopieren des Programms, die Zustimmung zur Vereinbarung per Mausklick, den Zugriff auf das Programm oder eine anderweitige Nutzung des Programms erklärt sich der Lizenznehmer mit den Bedingungen dieser Vereinbarung einverstanden. Wenn Sie diese Bedingungen im Namen des Lizenznehmers akzeptieren, gewährleisten Sie, dass Sie berechtigt sind, den Lizenznehmer zur Einhaltung dieser Bedingungen zu verpflichten.
+Durch Herunterladen, Installieren oder Kopieren des Programms, die Zustimmung zur Vereinbarung per Mausklick, den Zugriff auf das Programm oder eine anderweitige Nutzung des Programms erklÃ¤rt sich der Lizenznehmer mit den Bedingungen dieser Vereinbarung einverstanden. Wenn Sie diese Bedingungen im Namen des Lizenznehmers akzeptieren, gewÃ¤hrleisten Sie, dass Sie berechtigt sind, den Lizenznehmer zur Einhaltung dieser Bedingungen zu verpflichten.
 
-Wenn Sie mit diesen Bedingungen nicht einverstanden sind oder nicht über die Berechtigung verfügen, i) dürfen Sie das Programm nicht herunterladen, installieren, kopieren, die Vereinbarung per Mausklick akzeptieren, auf das Programm zugreifen oder das Programm nutzen und ii) müssen die unbenutzten Datenträger, die Dokumentation und den Berechtigungsnachweis unverzüglich bei der Stelle, von der Sie das Programm bezogen haben, gegen Rückerstattung des gezahlten Betrags zurückgeben. Wurde das Programm heruntergeladen, müssen alle Kopien des Programms vernichtet werden.
+Wenn Sie mit diesen Bedingungen nicht einverstanden sind oder nicht Ã¼ber die Berechtigung verfÃ¼gen, i) dÃ¼rfen Sie das Programm nicht herunterladen, installieren, kopieren, die Vereinbarung per Mausklick akzeptieren, auf das Programm zugreifen oder das Programm nutzen und ii) mÃ¼ssen die unbenutzten DatentrÃ¤ger, die Dokumentation und den Berechtigungsnachweis unverzÃ¼glich bei der Stelle, von der Sie das Programm bezogen haben, gegen RÃ¼ckerstattung des gezahlten Betrags zurÃ¼ckgeben. Wurde das Programm heruntergeladen, mÃ¼ssen alle Kopien des Programms vernichtet werden.
 
-Diese Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung (International License Agreement for Non-Warranted Programs, ILAN) und die anwendbaren Auftragsdokumente (insgesamt "Vereinbarung" genannt) bilden die vollständige Vereinbarung zwischen dem Lizenznehmer und IBM in Bezug auf die Nutzung eines Programms. Die Länderspezifischen Bedingungen in Teil 2 dieser Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung ersetzen oder ändern die Bedingungen in Teil 1.
+Diese Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung (International License Agreement for Non-Warranted Programs, ILAN) und die anwendbaren Auftragsdokumente (insgesamt â€Vereinbarungâ€œ genannt) bilden die vollstÃ¤ndige Vereinbarung zwischen dem Lizenznehmer und IBM in Bezug auf die Nutzung eines Programms. Die LÃ¤nderspezifischen Bedingungen in Teil 2 dieser Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung ersetzen oder Ã¤ndern die Bedingungen in Teil 1.
 
-Die Auftragsdokumente enthalten eine Beschreibung, Informationen und Bedingungen, die sich auf das Programm und die berechtigte Nutzung des Programms beziehen. Beispiele für Auftragsdokumente für Programme sind Lizenzinformationen (LI), Lizenzprogrammspezifikationen (LPS), Angebote, Berechtigungsnachweise (Proof of Entitlement, PoE) oder Rechnungen. Bei Widersprüchen hat ein Auftragsdokument Vorrang vor den Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung.
+Die Auftragsdokumente enthalten eine Beschreibung, Informationen und Bedingungen, die sich auf das Programm und die berechtigte Nutzung des Programms beziehen. Beispiele fÃ¼r Auftragsdokumente fÃ¼r Programme sind Lizenzinformationen (LI), Lizenzprogrammspezifikationen (LPS), Angebote, Berechtigungsnachweise (Proof of Entitlement, PoE) oder Rechnungen. Bei WidersprÃ¼chen hat ein Auftragsdokument Vorrang vor den Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung.
 
 1. Programmlizenz
 
-a. Ein Programm ist ein ausführbares Computerprogramm der Marke IBM mit den zugehörigen Materialien, das vollständige und Teilkopien einschließt. Die Programmdetails werden in einem Auftragsdokument, das auf http://www.ibm.com/software/sla (für Passport Advantage Programme) oder http://www.ibm.com/support/knowledgecenter (für andere IBM Programme) verfügbar ist, im Systembefehlsverzeichnis des Programms oder an anderer Stelle, wie von IBM angegeben, beschrieben. Die IBM Softwarerichtlinien (z. B. für Sicherung, temporäre Nutzung und von IBM genehmigte Cloudumgebungen), die auf http://www.ibm.com/softwarepolicies verfügbar sind, gelten für die Nutzung von Programmen durch den Lizenznehmer.
+a. Ein Programm ist ein ausfÃ¼hrbares Computerprogramm der Marke IBM mit den zugehÃ¶rigen Materialien, das vollstÃ¤ndige und Teilkopien einschlieÃŸt. Die Programmdetails werden in einem Auftragsdokument, das auf http://www.ibm.com/software/sla (fÃ¼r Passport Advantage Programme) oder http://www.ibm.com/support/knowledgecenter (fÃ¼r andere IBM Programme) verfÃ¼gbar ist, im Systembefehlsverzeichnis des Programms oder an anderer Stelle, wie von IBM angegeben, beschrieben. Die IBM Softwarerichtlinien (z. B. fÃ¼r Sicherung, temporÃ¤re Nutzung und von IBM genehmigte Cloudumgebungen), die auf http://www.ibm.com/softwarepolicies verfÃ¼gbar sind, gelten fÃ¼r die Nutzung von Programmen durch den Lizenznehmer.
 
-b. Programmkopien sind urheberrechtlich geschützt und werden lizenziert (nicht verkauft).
+b. Programmkopien sind urheberrechtlich geschÃ¼tzt und werden lizenziert (nicht verkauft).
 
-c. Der Lizenznehmer erhält eine nicht ausschließliche Lizenz, die ihn berechtigt,
+c. Der Lizenznehmer erhÃ¤lt eine nicht ausschlieÃŸliche Lizenz, die ihn berechtigt,
 
-(1) jede Kopie eines Programms gemäß den Bedingungen der Vereinbarung und, sofern zutreffend, bis zur Anzahl der erworbenen Lizenzberechtigungen ("Berechtigte Nutzung") zu nutzen;
+(1) jede Kopie eines Programms gemÃ¤ÃŸ den Bedingungen der Vereinbarung und, sofern zutreffend, bis zur Anzahl der erworbenen Lizenzberechtigungen (â€Berechtigte Nutzungâ€œ) zu nutzen;
 
-(2) Kopien des Programms zur Unterstützung der Berechtigten Nutzung zu erstellen und zu installieren; und
+(2) Kopien des Programms zur UnterstÃ¼tzung der Berechtigten Nutzung zu erstellen und zu installieren; und
 
 (3) eine Sicherungskopie zu erstellen.
 
-d. Die Programme dürfen vom Lizenznehmer, seinen Mitarbeitern und Auftragnehmern verwendet werden. Der Lizenznehmer darf ein Programm nicht vermieten oder verleasen oder für die Bereitstellung von kommerziellen IT-, Hosting- oder Time-Sharing-Services für Dritte einsetzen. Gegen Bezahlung einer zusätzlichen Vergütung oder unter anderen Bedingungen können dem Lizenznehmer zusätzliche Rechte erteilt werden.
+d. Die Programme dÃ¼rfen vom Lizenznehmer, seinen Mitarbeitern und Auftragnehmern verwendet werden. Der Lizenznehmer darf ein Programm nicht vermieten oder verleasen oder fÃ¼r die Bereitstellung von kommerziellen IT-, Hosting- oder Time-Sharing-Services fÃ¼r Dritte einsetzen. Gegen Bezahlung einer zusÃ¤tzlichen VergÃ¼tung oder unter anderen Bedingungen kÃ¶nnen dem Lizenznehmer zusÃ¤tzliche Rechte erteilt werden.
 
-e. Die für ein Programm erteilte Lizenz unterliegt der Bedingung, dass der Lizenznehmer:
+e. Die fÃ¼r ein Programm erteilte Lizenz unterliegt der Bedingung, dass der Lizenznehmer:
 
 (1) Urheberrechtsvermerke und sonstige Kennzeichnungen auf jeder Kopie anbringt;
 
-(2) sicherstellt, dass jeder Benutzer i) das Programm bestimmungsgemäß im Rahmen der Berechtigten Nutzung verwendet und ii) diese Vereinbarung einhält;
+(2) sicherstellt, dass jeder Benutzer i) das Programm bestimmungsgemÃ¤ÃŸ im Rahmen der Berechtigten Nutzung verwendet und ii) diese Vereinbarung einhÃ¤lt;
 
-(3) das Programm nicht rückumwandelt (reverse assemble, reverse compile), in anderer Weise übersetzt oder rückentwickelt (reverse engineer), soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgeschrieben ist; und
+(3) das Programm nicht rÃ¼ckumwandelt (reverse assemble, reverse compile), in anderer Weise Ã¼bersetzt oder rÃ¼ckentwickelt (reverse engineer), soweit nicht durch gesetzliche Regelung etwas anderes zwingend vorgeschrieben ist; und
 
-(4) die Bestandteile des Programms oder zugehöriges Lizenzmaterial nicht getrennt vom Programm nutzt.
+(4) die Bestandteile des Programms oder zugehÃ¶riges Lizenzmaterial nicht getrennt vom Programm nutzt.
 
-f. Wenn im Auftragsdokument für ein Programm ("Hauptprogramm") angegeben ist, dass ein "Unterstützungsprogramm" zum Lieferumfang des Hauptprogramms gehört, darf der Lizenznehmer das Unterstützungsprogramm vorbehaltlich der für das Hauptprogramm geltenden Lizenzbeschränkungen und nur zur Unterstützung des Hauptprogramms nutzen.
+f. Wenn im Auftragsdokument fÃ¼r ein Programm (â€Hauptprogrammâ€œ) angegeben ist, dass ein â€UnterstÃ¼tzungsprogrammâ€œ zum Lieferumfang des Hauptprogramms gehÃ¶rt, darf der Lizenznehmer das UnterstÃ¼tzungsprogramm vorbehaltlich der fÃ¼r das Hauptprogramm geltenden LizenzbeschrÃ¤nkungen und nur zur UnterstÃ¼tzung des Hauptprogramms nutzen.
 
-g. Diese Lizenz gilt für jede Kopie des Programms, die der Lizenznehmer erstellt.
+g. Diese Lizenz gilt fÃ¼r jede Kopie des Programms, die der Lizenznehmer erstellt.
 
-h. Ein Update, Fix oder Patch für ein Programm unterliegt den für das Programm geltenden Bedingungen, außer wenn in einem aktualisierten Auftragsdokument neue Bedingungen bereitgestellt werden. Der Lizenznehmer akzeptiert diese neuen Bedingungen mit der Installation des Updates, Fix oder Patch. Wird ein Programm durch ein Update ersetzt, erklärt sich der Lizenznehmer damit einverstanden, die Nutzung des ersetzten Programms unverzüglich einzustellen.
+h. Ein Update, Fix oder Patch fÃ¼r ein Programm unterliegt den fÃ¼r das Programm geltenden Bedingungen, auÃŸer wenn in einem aktualisierten Auftragsdokument neue Bedingungen bereitgestellt werden. Der Lizenznehmer akzeptiert diese neuen Bedingungen mit der Installation des Updates, Fix oder Patch. Wird ein Programm durch ein Update ersetzt, erklÃ¤rt sich der Lizenznehmer damit einverstanden, die Nutzung des ersetzten Programms unverzÃ¼glich einzustellen.
 
-i. Falls der Lizenznehmer aus irgendeinem Grund mit einem Programm nicht zufrieden ist, kann er die Lizenz kündigen, indem er das Programm und den Berechtigungsnachweis innerhalb von 30 Tagen nach dem Datum des ursprünglichen Erwerbs an IBM oder den autorisierten IBM Business Partner gegen Rückerstattung des gezahlten Betrags zurückgibt. Bei einem Programm, das heruntergeladen wurde, muss sich der Lizenznehmer an die Partei wenden, von der er das Programm bezogen hat, um Anweisungen zur Rückerstattung zu erhalten.
+i. Falls der Lizenznehmer aus irgendeinem Grund mit einem Programm nicht zufrieden ist, kann er die Lizenz kÃ¼ndigen, indem er das Programm und den Berechtigungsnachweis innerhalb von 30 Tagen nach dem Datum des ursprÃ¼nglichen Erwerbs an IBM oder den autorisierten IBM Business Partner gegen RÃ¼ckerstattung des gezahlten Betrags zurÃ¼ckgibt. Bei einem Programm, das heruntergeladen wurde, muss sich der Lizenznehmer an die Partei wenden, von der er das Programm bezogen hat, um Anweisungen zur RÃ¼ckerstattung zu erhalten.
 
-2. Gewährleistungen
+2. GewÃ¤hrleistungen
 
-a. IBM gewährleistet weder den unterbrechungs- oder fehlerfreien Betrieb eines IBM Programms noch dass IBM alle Mängel beheben wird oder in der Lage ist, Unterbrechungen durch Dritte zu verhindern. Diese Gewährleistungen sind abschließend und ersetzen sämtliche sonstigen eventuell bestehenden Gewährleistungsansprüche des Lizenznehmers. Die IBM Gewährleistungen gelten nicht im Falle von unsachgemäßem Gebrauch, Änderungen, Schäden, die nicht von IBM verursacht wurden, oder bei Nichteinhaltung der von IBM bereitgestellten schriftlichen Anweisungen. Programme anderer Anbieter werden im gegenwärtigen Zustand (auf "as-is"-Basis) ohne jegliche Gewährleistungen bereitgestellt. Garantien und/oder Gewährleistungen anderer Anbieter werden ohne eigene Verpflichtung von IBM an den Lizenznehmer weitergegeben.
+a. IBM gewÃ¤hrleistet weder den unterbrechungs- oder fehlerfreien Betrieb eines IBM Programms noch dass IBM alle MÃ¤ngel beheben wird oder in der Lage ist, Unterbrechungen durch Dritte zu verhindern. Diese GewÃ¤hrleistungen sind abschlieÃŸend und ersetzen sÃ¤mtliche sonstigen eventuell bestehenden GewÃ¤hrleistungsansprÃ¼che des Lizenznehmers. Die IBM GewÃ¤hrleistungen gelten nicht im Falle von unsachgemÃ¤ÃŸem Gebrauch, Ã„nderungen, SchÃ¤den, die nicht von IBM verursacht wurden, oder bei Nichteinhaltung der von IBM bereitgestellten schriftlichen Anweisungen. Programme anderer Anbieter werden im gegenwÃ¤rtigen Zustand (auf â€as-isâ€œ-Basis) ohne jegliche GewÃ¤hrleistungen bereitgestellt. Garantien und/oder GewÃ¤hrleistungen anderer Anbieter werden ohne eigene Verpflichtung von IBM an den Lizenznehmer weitergegeben.
 
-b. Zusätzlicher Support während oder nach Ablauf des Gewährleistungszeitraums kann unter einer gesonderten Vereinbarung erbracht werden.
+b. ZusÃ¤tzlicher Support wÃ¤hrend oder nach Ablauf des GewÃ¤hrleistungszeitraums kann unter einer gesonderten Vereinbarung erbracht werden.
 
-3. Gebühren, Steuern, Zahlung und Prüfung
+3. GebÃ¼hren, Steuern, Zahlung und PrÃ¼fung
 
-a. Das Recht des Lizenznehmers zur Nutzung eines Programms ist davon abhängig, dass der Lizenznehmer alle gegebenenfalls anfallenden Gebühren bezahlt, die in der Vereinbarung angegeben sind, auf deren Basis er die Lizenzberechtigungen erworben hat. Der Lizenznehmer ist dafür verantwortlich, vor einer Erweiterung des Nutzungsumfangs zusätzliche Lizenzberechtigungen zu erwerben.
+a. Das Recht des Lizenznehmers zur Nutzung eines Programms ist davon abhÃ¤ngig, dass der Lizenznehmer alle gegebenenfalls anfallenden GebÃ¼hren bezahlt, die in der Vereinbarung angegeben sind, auf deren Basis er die Lizenzberechtigungen erworben hat. Der Lizenznehmer ist dafÃ¼r verantwortlich, vor einer Erweiterung des Nutzungsumfangs zusÃ¤tzliche Lizenzberechtigungen zu erwerben.
 
-b. Der Lizenznehmer verpflichtet sich zur Zahlung aller anfallenden Gebühren für die erworbenen Berechtigungen und aller Gebühren, die durch Nutzungsüberschreitungen entstehen. Die Gebühren verstehen sich zuzüglich aller anwendbaren Zölle, Steuern und sonstigen Abgaben, die von einer Behörde im Zusammenhang mit dem Erwerb von Berechtigungen durch den Lizenznehmer auferlegt werden. Rechnungsbeträge sind bei Erhalt der Rechnung fällig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen, es können Verzugszinsen berechnet werden. Der Lizenznehmer ist dafür verantwortlich, vor einer Erweiterung des Nutzungsumfangs zusätzliche Lizenzberechtigungen ordnungsgemäß zu erwerben. IBM gewährt keine Gutschriften oder Rückerstattungen für bereits fällige oder gezahlte Gebühren, außer wie an anderer Stelle in diesen Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung, im anwendbaren Auftragsdokument oder in den Bedingungen der Vereinbarung, unter denen der Lizenznehmer die Lizenzberechtigungen erworben hat, vorgesehen.
+b. Der Lizenznehmer verpflichtet sich zur Zahlung aller anfallenden GebÃ¼hren fÃ¼r die erworbenen Berechtigungen und aller GebÃ¼hren, die durch NutzungsÃ¼berschreitungen entstehen. Die GebÃ¼hren verstehen sich zuzÃ¼glich aller anwendbaren ZÃ¶lle, Steuern und sonstigen Abgaben, die von einer BehÃ¶rde im Zusammenhang mit dem Erwerb von Berechtigungen durch den Lizenznehmer auferlegt werden. RechnungsbetrÃ¤ge sind bei Erhalt der Rechnung fÃ¤llig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen, es kÃ¶nnen Verzugszinsen berechnet werden. Der Lizenznehmer ist dafÃ¼r verantwortlich, vor einer Erweiterung des Nutzungsumfangs zusÃ¤tzliche Lizenzberechtigungen ordnungsgemÃ¤ÃŸ zu erwerben. IBM gewÃ¤hrt keine Gutschriften oder RÃ¼ckerstattungen fÃ¼r bereits fÃ¤llige oder gezahlte GebÃ¼hren, auÃŸer wie an anderer Stelle in diesen Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung, im anwendbaren Auftragsdokument oder in den Bedingungen der Vereinbarung, unter denen der Lizenznehmer die Lizenzberechtigungen erworben hat, vorgesehen.
 
-c. Der Lizenznehmer erklärt sich für die von ihm erworbenen Berechtigungen damit einverstanden, i) Quellensteuern, soweit gesetzlich erforderlich, direkt an die zuständige Behörde zu entrichten; ii) IBM eine Steuerbescheinigung als Nachweis der geleisteten Zahlung vorzulegen; iii) IBM nur den Nettobetrag nach Steuern zu bezahlen; und iv) in dem Bestreben, eine Steuerbefreiung oder Ermäßigung dieser Steuern zu erreichen, umfassend mit IBM zusammenzuarbeiten und unverzüglich alle relevanten Dokumente auszufüllen und einzureichen.
+c. Der Lizenznehmer erklÃ¤rt sich fÃ¼r die von ihm erworbenen Berechtigungen damit einverstanden, i) Quellensteuern, soweit gesetzlich erforderlich, direkt an die zustÃ¤ndige BehÃ¶rde zu entrichten; ii) IBM eine Steuerbescheinigung als Nachweis der geleisteten Zahlung vorzulegen; iii) IBM nur den Nettobetrag nach Steuern zu bezahlen; und iv) in dem Bestreben, eine Steuerbefreiung oder ErmÃ¤ÃŸigung dieser Steuern zu erreichen, umfassend mit IBM zusammenzuarbeiten und unverzÃ¼glich alle relevanten Dokumente auszufÃ¼llen und einzureichen.
 
-d. Wenn der Lizenznehmer ein Programm importiert, exportiert, in ein anderes Land überträgt oder in einem anderen Land auf das Programm zugreift oder das Programm nutzt, trägt der Lizenznehmer alle von den Behörden festgesetzten Zölle, Steuern, Abgaben oder sonstigen Gebühren. Hiervon ausgenommen sind Steuern auf den Nettoertrag von IBM.
+d. Wenn der Lizenznehmer ein Programm importiert, exportiert, in ein anderes Land Ã¼bertrÃ¤gt oder in einem anderen Land auf das Programm zugreift oder das Programm nutzt, trÃ¤gt der Lizenznehmer alle von den BehÃ¶rden festgesetzten ZÃ¶lle, Steuern, Abgaben oder sonstigen GebÃ¼hren. Hiervon ausgenommen sind Steuern auf den Nettoertrag von IBM.
 
-3.1 Lizenzüberprüfung
+3.1 LizenzÃ¼berprÃ¼fung
 
-a. Der Lizenznehmer wird für alle Programme an allen Standorten und für alle Umgebungen i) einen Bericht in einem von IBM geforderten Format unter Verwendung von Aufzeichnungen, Ausgaben von Systemtools und anderen Systeminformationen sowie ii) unterstützende Dokumentation (insgesamt "Bereitstellungsdaten" genannt) erstellen, aufbewahren und IBM jedes Jahr innerhalb von 30 Tagen nach Anforderung bereitstellen.
+a. Der Lizenznehmer wird fÃ¼r alle Programme an allen Standorten und fÃ¼r alle Umgebungen i) einen Bericht in einem von IBM geforderten Format unter Verwendung von Aufzeichnungen, Ausgaben von Systemtools und anderen Systeminformationen sowie ii) unterstÃ¼tzende Dokumentation (insgesamt â€Bereitstellungsdatenâ€œ genannt) erstellen, aufbewahren und IBM jedes Jahr innerhalb von 30 Tagen nach Anforderung bereitstellen.
 
-b. Nach angemessener Vorankündigung sind IBM und ihre externen Prüfer dazu berechtigt, die Einhaltung dieser Vereinbarung durch den Lizenznehmer an allen Standorten und für alle Umgebungen, an denen der Lizenznehmer Programme (zu irgendeinem Zweck) nutzt, zu überprüfen. Die Prüfung findet während der üblichen Geschäftszeiten in den Räumlichkeiten des Lizenznehmers statt. IBM wird sich bemühen, den Geschäftsbetrieb des Lizenznehmers dabei so wenig wie möglich zu beeinträchtigen. IBM wird eine schriftliche Vertraulichkeitsvereinbarung mit dem externen Prüfer abschließen, die ihn zur Geheimhaltung verpflichtet. Zusätzlich zu den vorstehend beschriebenen Bereitstellungsdaten wird der Lizenznehmer IBM und ihren Prüfern auf Anforderung weitere genaue Informationen und Bereitstellungsdaten zur Verfügung stellen.
+b. Nach angemessener VorankÃ¼ndigung sind IBM und ihre externen PrÃ¼fer dazu berechtigt, die Einhaltung dieser Vereinbarung durch den Lizenznehmer an allen Standorten und fÃ¼r alle Umgebungen, an denen der Lizenznehmer Programme (zu irgendeinem Zweck) nutzt, zu Ã¼berprÃ¼fen. Die PrÃ¼fung findet wÃ¤hrend der Ã¼blichen GeschÃ¤ftszeiten in den RÃ¤umlichkeiten des Lizenznehmers statt. IBM wird sich bemÃ¼hen, den GeschÃ¤ftsbetrieb des Lizenznehmers dabei so wenig wie mÃ¶glich zu beeintrÃ¤chtigen. IBM wird eine schriftliche Vertraulichkeitsvereinbarung mit dem externen PrÃ¼fer abschlieÃŸen, die ihn zur Geheimhaltung verpflichtet. ZusÃ¤tzlich zu den vorstehend beschriebenen Bereitstellungsdaten wird der Lizenznehmer IBM und ihren PrÃ¼fern auf Anforderung weitere genaue Informationen und Bereitstellungsdaten zur VerfÃ¼gung stellen.
 
-c. Der Lizenznehmer wird unverzüglich i) alle in einem jährlichen Bericht aufgeführten oder bei einer Prüfung festgestellten Bereitstellungen, die die Berechtigungen überschreiten, sowie ii) angefallene Subscription- und Support-Services (S&S) für die über die Berechtigung hinausgehenden Bereitstellungen entweder für die Dauer der Nutzungsüberschreitung oder für zwei Jahre, je nachdem, welcher Zeitraum kürzer ist, bestellen und bezahlen und iii) alle zusätzlichen Gebühren und anderen Verbindlichkeiten, die sich aufgrund der Prüfung ergeben, einschließlich Steuern, Zöllen und behördlicher Gebühren, zu den zum jeweiligen Zeitpunkt gültigen Verrechnungssätzen von IBM begleichen.
+c. Der Lizenznehmer wird unverzÃ¼glich i) alle in einem jÃ¤hrlichen Bericht aufgefÃ¼hrten oder bei einer PrÃ¼fung festgestellten Bereitstellungen, die die Berechtigungen Ã¼berschreiten, sowie ii) angefallene Subscription- und Support-Services (S&S) fÃ¼r die Ã¼ber die Berechtigung hinausgehenden Bereitstellungen entweder fÃ¼r die Dauer der NutzungsÃ¼berschreitung oder fÃ¼r zwei Jahre, je nachdem, welcher Zeitraum kÃ¼rzer ist, bestellen und bezahlen und iii) alle zusÃ¤tzlichen GebÃ¼hren und anderen Verbindlichkeiten, die sich aufgrund der PrÃ¼fung ergeben, einschlieÃŸlich Steuern, ZÃ¶llen und behÃ¶rdlicher GebÃ¼hren, zu den zum jeweiligen Zeitpunkt gÃ¼ltigen VerrechnungssÃ¤tzen von IBM begleichen.
 
 4. Haftung und Schutz geistigen Eigentums
 
-a. Unabhängig von der Rechtsgrundlage ist die Gesamthaftung von IBM für alle Ansprüche des Lizenznehmers aus dieser Vereinbarung bei unmittelbaren/direkten Schäden begrenzt auf i) 10.000,00 US-Dollar (oder den entsprechenden Betrag in der jeweiligen Landeswährung) oder auf ii) den Betrag (bei wiederkehrenden Gebühren auf maximal 12 Monatsgebühren), den der Lizenznehmer für die Berechtigungen für das streitgegenständliche Programm bezahlt hat, wobei der jeweils höhere Betrag ausschlaggebend ist. IBM haftet nicht für spezielle oder beiläufig entstandene Schäden, Schadenersatz mit Strafcharakter, mittelbare/indirekte Schäden oder wirtschaftliche Folgeschäden oder für entgangenen Gewinn, entgangene Geschäftsabschlüsse, Wertverlust oder Umsatzverlust, Schädigung des guten Rufs oder ausgebliebene Einsparungen. Diese Haftungsbegrenzungen gelten gemeinschaftlich für IBM, ihre verbundenen Unternehmen, Auftragnehmer und Lieferanten.
+a. UnabhÃ¤ngig von der Rechtsgrundlage ist die Gesamthaftung von IBM fÃ¼r alle AnsprÃ¼che des Lizenznehmers aus dieser Vereinbarung bei unmittelbaren/direkten SchÃ¤den begrenzt auf i) 10.000,00 US-Dollar (oder den entsprechenden Betrag in der jeweiligen LandeswÃ¤hrung) oder auf ii) den Betrag (bei wiederkehrenden GebÃ¼hren auf maximal 12 MonatsgebÃ¼hren), den der Lizenznehmer fÃ¼r die Berechtigungen fÃ¼r das streitgegenstÃ¤ndliche Programm bezahlt hat, wobei der jeweils hÃ¶here Betrag ausschlaggebend ist. IBM haftet nicht fÃ¼r spezielle oder beilÃ¤ufig entstandene SchÃ¤den, Schadenersatz mit Strafcharakter, mittelbare/indirekte SchÃ¤den oder wirtschaftliche FolgeschÃ¤den oder fÃ¼r entgangenen Gewinn, entgangene GeschÃ¤ftsabschlÃ¼sse, Wertverlust oder Umsatzverlust, SchÃ¤digung des guten Rufs oder ausgebliebene Einsparungen. Diese Haftungsbegrenzungen gelten gemeinschaftlich fÃ¼r IBM, ihre verbundenen Unternehmen, Auftragnehmer und Lieferanten.
 
-b. Die folgenden Beträge fallen nicht unter die vorstehenden Begrenzungen: Schäden, für die nach geltendem Recht keine Haftungsbegrenzung zulässig ist.
+b. Die folgenden BetrÃ¤ge fallen nicht unter die vorstehenden Begrenzungen: SchÃ¤den, fÃ¼r die nach geltendem Recht keine Haftungsbegrenzung zulÃ¤ssig ist.
 
-c. IBM übernimmt keine Haftung für Ansprüche, die auf Produkte anderer Anbieter oder Produkte oder Services, die nicht von IBM bereitgestellt wurden, zurückzuführen sind; oder für Ansprüche, die auf Rechtsverletzungen oder Verletzungen der Rechte Dritter beruhen, die durch Inhalte oder Materialien, Entwürfe und Spezifikationen des Lizenznehmers verursacht wurden. Inhalte sind sämtliche Daten, Software und Informationen, die vom Lizenznehmer oder seinen berechtigten Benutzern in einem IBM Programm bereitgestellt, für den Zugriff freigegeben oder eingegeben werden.
+c. IBM Ã¼bernimmt keine Haftung fÃ¼r AnsprÃ¼che, die auf Produkte anderer Anbieter oder Produkte oder Services, die nicht von IBM bereitgestellt wurden, zurÃ¼ckzufÃ¼hren sind; oder fÃ¼r AnsprÃ¼che, die auf Rechtsverletzungen oder Verletzungen der Rechte Dritter beruhen, die durch Inhalte oder Materialien, EntwÃ¼rfe und Spezifikationen des Lizenznehmers verursacht wurden. Inhalte sind sÃ¤mtliche Daten, Software und Informationen, die vom Lizenznehmer oder seinen berechtigten Benutzern in einem IBM Programm bereitgestellt, fÃ¼r den Zugriff freigegeben oder eingegeben werden.
 
-5. Kündigung
+5. KÃ¼ndigung
 
-a. IBM kann die Lizenz eines Lizenznehmers zur Nutzung eines Programms kündigen, wenn der Lizenznehmer gegen die Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung, Auftragsdokumente oder Abnahmevereinbarungen, wie den International Passport Advantage Vertrag (IPAV), verstößt. Der Lizenznehmer verpflichtet sich, nach Beendigung einer Lizenz unverzüglich alle Programmkopien zu löschen. Bedingungen, die ihrer Natur nach nicht zeitlich befristet sind, bleiben bis zu ihrer Erfüllung in Kraft und gelten auch für eventuelle Rechtsnachfolger oder Zessionare.
+a. IBM kann die Lizenz eines Lizenznehmers zur Nutzung eines Programms kÃ¼ndigen, wenn der Lizenznehmer gegen die Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung, Auftragsdokumente oder Abnahmevereinbarungen, wie den International Passport Advantage Vertrag (IPAV), verstÃ¶ÃŸt. Der Lizenznehmer verpflichtet sich, nach Beendigung einer Lizenz unverzÃ¼glich alle Programmkopien zu lÃ¶schen. Bedingungen, die ihrer Natur nach nicht zeitlich befristet sind, bleiben bis zu ihrer ErfÃ¼llung in Kraft und gelten auch fÃ¼r eventuelle Rechtsnachfolger oder Zessionare.
 
 6. Geltendes Recht und Geltungsbereich
 
-a. Beide Vertragsparteien stimmen darin überein, dass die Gesetze des Landes zur Anwendung kommen, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, unter Ausschluss der Prinzipien des Kollisionsrechts. Alle Rechte und Pflichten der Vertragsparteien gelten nur in dem Land, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wird, mit Ausnahme von Lizenzen, die so nutzbar sind, wie dies im Einzelfall geregelt ist.
+a. Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze des Landes zur Anwendung kommen, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, unter Ausschluss der Prinzipien des Kollisionsrechts. Alle Rechte und Pflichten der Vertragsparteien gelten nur in dem Land, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wird, mit Ausnahme von Lizenzen, die so nutzbar sind, wie dies im Einzelfall geregelt ist.
 
-b. Jede Vertragspartei ist ferner für die Einhaltung i) der Gesetze und Bestimmungen, die sich auf ihre Geschäftstätigkeit und ihre Inhalte beziehen, sowie ii) der Import-, Export- und Sanktionsgesetze und -bestimmungen verantwortlich, einschließlich der Kontrollvorschriften der USA oder eines anderen Landes in Bezug auf den Handel mit Waffen, Rüstungs- und Verteidigungsgütern, die den Import, Export, Reexport oder Transfer von Produkten, Technologien, Services oder Daten, direkt oder indirekt, in bestimmte Länder, für bestimmte Nutzungsarten oder an bestimmte Endnutzer verbieten oder beschränken.
+b. Jede Vertragspartei ist ferner fÃ¼r die Einhaltung i) der Gesetze und Bestimmungen, die sich auf ihre GeschÃ¤ftstÃ¤tigkeit und ihre Inhalte beziehen, sowie ii) der Import-, Export- und Sanktionsgesetze und -bestimmungen verantwortlich, einschlieÃŸlich der Kontrollvorschriften der USA oder eines anderen Landes in Bezug auf den Handel mit Waffen, RÃ¼stungs- und VerteidigungsgÃ¼tern, die den Import, Export, Reexport oder Transfer von Produkten, Technologien, Services oder Daten, direkt oder indirekt, in bestimmte LÃ¤nder, fÃ¼r bestimmte Nutzungsarten oder an bestimmte Endnutzer verbieten oder beschrÃ¤nken.
 
-c. Falls eine der Bestimmungen dieser Vereinbarung für ein Programm im Rahmen des geltenden Rechts ungültig oder undurchführbar ist, sind die übrigen Bestimmungen davon nicht betroffen und gelten weiterhin in vollem Umfang. Gesetzlich unabdingbare Verbraucherschutzrechte haben Vorrang vor den Bedingungen dieser Vereinbarung. Die Vertragskonvention der Vereinten Nationen für den internationalen Warenverkauf kommt unter dieser Vereinbarung nicht zur Anwendung.
+c. Falls eine der Bestimmungen dieser Vereinbarung fÃ¼r ein Programm im Rahmen des geltenden Rechts ungÃ¼ltig oder undurchfÃ¼hrbar ist, sind die Ã¼brigen Bestimmungen davon nicht betroffen und gelten weiterhin in vollem Umfang. Gesetzlich unabdingbare Verbraucherschutzrechte haben Vorrang vor den Bedingungen dieser Vereinbarung. Die Vertragskonvention der Vereinten Nationen fÃ¼r den internationalen Warenverkauf kommt unter dieser Vereinbarung nicht zur Anwendung.
 
 7. Allgemeines
 
-a. IBM ist ein unabhängiger Vertragsnehmer und weder im Auftrag oder im Rahmen eines Joint Venture noch als Partner- oder Treuhandunternehmen für den Lizenznehmer tätig und übernimmt keine rechtlichen Verpflichtungen des Lizenznehmers oder die Verantwortung für die Geschäftstätigkeit oder den Geschäftsbetrieb des Lizenznehmers. Der Lizenznehmer trägt die Verantwortung für seine Nutzung von IBM Programmen und Programmen anderer Anbieter. IBM fungiert ausschließlich als Anbieter von Informationstechnologie. Alle Anweisungen, empfohlenen Vorgehensweisen, Anleitungen oder die Nutzung eines Programms durch IBM stellen keine medizinische, klinische, rechtliche, betriebswirtschaftliche oder anderweitige lizenzierte fachliche Beratung dar. Der Lizenznehmer sollte sich auf eigene Initiative von fachlich kompetenter Stelle beraten lassen.
+a. IBM ist ein unabhÃ¤ngiger Vertragsnehmer und weder im Auftrag oder im Rahmen eines Joint Venture noch als Partner- oder Treuhandunternehmen fÃ¼r den Lizenznehmer tÃ¤tig und Ã¼bernimmt keine rechtlichen Verpflichtungen des Lizenznehmers oder die Verantwortung fÃ¼r die GeschÃ¤ftstÃ¤tigkeit oder den GeschÃ¤ftsbetrieb des Lizenznehmers. Der Lizenznehmer trÃ¤gt die Verantwortung fÃ¼r seine Nutzung von IBM Programmen und Programmen anderer Anbieter. IBM fungiert ausschlieÃŸlich als Anbieter von Informationstechnologie. Alle Anweisungen, empfohlenen Vorgehensweisen, Anleitungen oder die Nutzung eines Programms durch IBM stellen keine medizinische, klinische, rechtliche, betriebswirtschaftliche oder anderweitige lizenzierte fachliche Beratung dar. Der Lizenznehmer sollte sich auf eigene Initiative von fachlich kompetenter Stelle beraten lassen.
 
-b. Werden die Programme auf Datenträgern an den Lizenznehmer geliefert, geht - sofern nicht zwischen den Vertragsparteien etwas Abweichendes schriftlich vereinbart wurde - die Gefahr auf den Lizenznehmer über, sobald IBM den Datenträger an den von IBM bestimmten Spediteur/Frachtführer ausgeliefert hat.
+b. Werden die Programme auf DatentrÃ¤gern an den Lizenznehmer geliefert, geht - sofern nicht zwischen den Vertragsparteien etwas Abweichendes schriftlich vereinbart wurde - die Gefahr auf den Lizenznehmer Ã¼ber, sobald IBM den DatentrÃ¤ger an den von IBM bestimmten Spediteur/FrachtfÃ¼hrer ausgeliefert hat.
 
-c. Der Lizenznehmer darf das Programm nicht nutzen, wenn ein Versagen des Programms zu Todesfällen, schwerwiegenden Personenschäden, Sach- oder Umweltschäden führen kann.
+c. Der Lizenznehmer darf das Programm nicht nutzen, wenn ein Versagen des Programms zu TodesfÃ¤llen, schwerwiegenden PersonenschÃ¤den, Sach- oder UmweltschÃ¤den fÃ¼hren kann.
 
-d. IBM, die mit IBM verbundenen Unternehmen und ihre jeweiligen Auftragnehmer benötigen Zugang zu geschäftsbezogenen Kontaktinformationen und Informationen zur Kontonutzung. Diese Informationen sind keine Inhalte. Geschäftsbezogene Kontaktinformationen werden zu Kommunikationszwecken und im Geschäftsverkehr mit dem Lizenznehmer verwendet. Beispiele für geschäftsbezogene Kontaktinformationen sind Name, Geschäftsadresse und -telefon, E-Mail, Benutzer-ID und Steuerregistrierungsdaten. Informationen zur Kontonutzung sind für die Aktivierung, Bereitstellung, den Betrieb, die Unterstützung, Verwaltung und Verbesserung von Programmen erforderlich. Beispiele für Informationen zur Kontonutzung sind gemeldete Fehler und digitale Informationen, die mit Tracking-Technologien, wie z. B. Cookies und Web-Beacons, bei der Nutzung der Programme erfasst werden. Weitere Informationen über die Erfassung, die Nutzung und den Umgang mit geschäftsbezogenen Informationen und Informationen zur Kontonutzung sind in der IBM Datenschutzerklärung unter http://www.ibm.com/privacy/ zu finden. Wenn der Lizenznehmer IBM Informationen bereitstellt und für die Verarbeitung dieser Informationen die Benachrichtigung der betroffenen Personen und deren Zustimmung erforderlich ist, wird der Lizenznehmer dies entsprechend veranlassen.
+d. IBM, die mit IBM verbundenen Unternehmen und ihre jeweiligen Auftragnehmer benÃ¶tigen Zugang zu geschÃ¤ftsbezogenen Kontaktinformationen und Informationen zur Kontonutzung. Diese Informationen sind keine Inhalte. GeschÃ¤ftsbezogene Kontaktinformationen werden zu Kommunikationszwecken und im GeschÃ¤ftsverkehr mit dem Lizenznehmer verwendet. Beispiele fÃ¼r geschÃ¤ftsbezogene Kontaktinformationen sind Name, GeschÃ¤ftsadresse und -telefon, E-Mail, Benutzer-ID und Steuerregistrierungsdaten. Informationen zur Kontonutzung sind fÃ¼r die Aktivierung, Bereitstellung, den Betrieb, die UnterstÃ¼tzung, Verwaltung und Verbesserung von Programmen erforderlich. Beispiele fÃ¼r Informationen zur Kontonutzung sind gemeldete Fehler und digitale Informationen, die mit Tracking-Technologien, wie z. B. Cookies und Web-Beacons, bei der Nutzung der Programme erfasst werden. Weitere Informationen Ã¼ber die Erfassung, die Nutzung und den Umgang mit geschÃ¤ftsbezogenen Informationen und Informationen zur Kontonutzung sind in der IBM DatenschutzerklÃ¤rung unter http://www.ibm.com/privacy/ zu finden. Wenn der Lizenznehmer IBM Informationen bereitstellt und fÃ¼r die Verarbeitung dieser Informationen die Benachrichtigung der betroffenen Personen und deren Zustimmung erforderlich ist, wird der Lizenznehmer dies entsprechend veranlassen.
 
-e. IBM Business Partner, die Programme verwenden oder verfügbar machen, sind von IBM unabhängig und entscheiden allein über ihre Preise und Bedingungen. IBM ist weder für deren Handlungen noch für deren Unterlassungen, Äußerungen oder Angebote verantwortlich.
+e. IBM Business Partner, die Programme verwenden oder verfÃ¼gbar machen, sind von IBM unabhÃ¤ngig und entscheiden allein Ã¼ber ihre Preise und Bedingungen. IBM ist weder fÃ¼r deren Handlungen noch fÃ¼r deren Unterlassungen, Ã„uÃŸerungen oder Angebote verantwortlich.
 
-f. IBM kann Programme anderer Anbieter anbieten oder ein IBM Programm kann den Zugriff auf Programme anderer Anbieter ermöglichen, für deren Nutzung der Lizenznehmer ggf. die in einem Auftragsdokument aufgeführten oder die angezeigten Bedingungen dieser Anbieter akzeptieren muss. Durch die Verlinkung mit Programmen anderer Anbieter oder deren Nutzung gibt der Lizenznehmer seine Zustimmung zu deren Bedingungen. IBM ist an diesen Vereinbarungen anderer Anbieter nicht beteiligt und für die Programme anderer Anbieter nicht verantwortlich.
+f. IBM kann Programme anderer Anbieter anbieten oder ein IBM Programm kann den Zugriff auf Programme anderer Anbieter ermÃ¶glichen, fÃ¼r deren Nutzung der Lizenznehmer ggf. die in einem Auftragsdokument aufgefÃ¼hrten oder die angezeigten Bedingungen dieser Anbieter akzeptieren muss. Durch die Verlinkung mit Programmen anderer Anbieter oder deren Nutzung gibt der Lizenznehmer seine Zustimmung zu deren Bedingungen. IBM ist an diesen Vereinbarungen anderer Anbieter nicht beteiligt und fÃ¼r die Programme anderer Anbieter nicht verantwortlich.
 
-g. Lizenzgeber der Programme ist die International Business Machines Corporation mit Sitz im US-Bundesstaat New York ("IBM Corporation"). Die IBM Konzerngesellschaft, über die der Lizenznehmer die Berechtigungen bezieht ("IBM"), agiert als Distributor, der die Verteilung der Programme übernimmt und für die Durchsetzung der Bedingungen dieser Vereinbarung verantwortlich ist. Wenn Berechtigungen von einem IBM Business Partner bezogen werden, ist die IBM Konzerngesellschaft im Land des Erwerbs für die Durchsetzung der Bedingungen dieser Vereinbarung verantwortlich. Aus der Vereinbarung ergeben sich keine Rechte oder Ansprüche des Lizenznehmers gegenüber der IBM Corporation. Der Lizenznehmer verzichtet auf sämtliche Rechte und Ansprüche gegen die IBM Corporation und wird sich bezüglich rechtlicher Schritte im Zusammenhang mit Programmen ausschließlich an IBM wenden.
+g. Lizenzgeber der Programme ist die International Business Machines Corporation mit Sitz im US-Bundesstaat New York (â€IBM Corporationâ€œ). Die IBM Konzerngesellschaft, Ã¼ber die der Lizenznehmer die Berechtigungen bezieht (â€IBMâ€œ), agiert als Distributor, der die Verteilung der Programme Ã¼bernimmt und fÃ¼r die Durchsetzung der Bedingungen dieser Vereinbarung verantwortlich ist. Wenn Berechtigungen von einem IBM Business Partner bezogen werden, ist die IBM Konzerngesellschaft im Land des Erwerbs fÃ¼r die Durchsetzung der Bedingungen dieser Vereinbarung verantwortlich. Aus der Vereinbarung ergeben sich keine Rechte oder AnsprÃ¼che des Lizenznehmers gegenÃ¼ber der IBM Corporation. Der Lizenznehmer verzichtet auf sÃ¤mtliche Rechte und AnsprÃ¼che gegen die IBM Corporation und wird sich bezÃ¼glich rechtlicher Schritte im Zusammenhang mit Programmen ausschlieÃŸlich an IBM wenden.
 
-h. Der Lizenznehmer ist nicht berechtigt, Unterlizenzen für Programme zu erteilen oder Programmlizenzen abzutreten oder zu übertragen (außer in dem Umfang, in dem die Abtretung oder Übertragung gesetzlich zulässig oder in einem Auftragsdokument ausdrücklich erlaubt ist oder mit IBM anderweitig vereinbart wurde). IBM kann ihre Rechte und Pflichten aus dieser Vereinbarung in Verbindung mit dem Verkauf des IBM Geschäftsteils, zu dem ein Programm gehört, abtreten. IBM kann diese Vereinbarung und zugehörige Dokumente in Verbindung mit einer Abtretung offenlegen.
+h. Der Lizenznehmer ist nicht berechtigt, Unterlizenzen fÃ¼r Programme zu erteilen oder Programmlizenzen abzutreten oder zu Ã¼bertragen (auÃŸer in dem Umfang, in dem die Abtretung oder Ãœbertragung gesetzlich zulÃ¤ssig oder in einem Auftragsdokument ausdrÃ¼cklich erlaubt ist oder mit IBM anderweitig vereinbart wurde). IBM kann ihre Rechte und Pflichten aus dieser Vereinbarung in Verbindung mit dem Verkauf des IBM GeschÃ¤ftsteils, zu dem ein Programm gehÃ¶rt, abtreten. IBM kann diese Vereinbarung und zugehÃ¶rige Dokumente in Verbindung mit einer Abtretung offenlegen.
 
-i. Alle Mitteilungen unter der Vereinbarung müssen in Schriftform erfolgen und an die Geschäftsadresse gerichtet sein, die in der Vereinbarung angegeben ist, auf deren Basis der Lizenznehmer die Lizenzberechtigungen erworben hat, sofern nicht von einer Vertragspartei eine andere Adresse schriftlich mitgeteilt wird. Die Vertragsparteien erklären sich mit der Verwendung von elektronischen Mitteln und Faxübertragungen für die Kommunikation einverstanden. Diese Kommunikation wird einem unterzeichneten Dokument gleichgestellt. Jede originalgetreue Vervielfältigung der Vereinbarung wird als Original angesehen. Die Vereinbarung setzt etwaige Handelsbräuche, Absprachen oder Erklärungen zwischen den Vertragsparteien außer Kraft.
+i. Alle Mitteilungen unter der Vereinbarung mÃ¼ssen in Schriftform erfolgen und an die GeschÃ¤ftsadresse gerichtet sein, die in der Vereinbarung angegeben ist, auf deren Basis der Lizenznehmer die Lizenzberechtigungen erworben hat, sofern nicht von einer Vertragspartei eine andere Adresse schriftlich mitgeteilt wird. Die Vertragsparteien erklÃ¤ren sich mit der Verwendung von elektronischen Mitteln und FaxÃ¼bertragungen fÃ¼r die Kommunikation einverstanden. Diese Kommunikation wird einem unterzeichneten Dokument gleichgestellt. Jede originalgetreue VervielfÃ¤ltigung der Vereinbarung wird als Original angesehen. Die Vereinbarung setzt etwaige HandelsbrÃ¤uche, Absprachen oder ErklÃ¤rungen zwischen den Vertragsparteien auÃŸer Kraft.
 
-j. Aus der Vereinbarung ergeben sich weder Rechte noch Ansprüche zugunsten Dritter. Beide Vertragsparteien kommen überein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung später als zwei Jahre nach Entstehen eines Anspruches einzuleiten. Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien für die Nichterfüllung von Verpflichtungen aus Gründen verantwortlich, die außerhalb ihres Einflussbereichs liegen. Die Vertragsparteien sind sich einig, dass eventuelle Meinungsverschiedenheiten oder Beanstandungen zunächst im partnerschaftlichen Sinne einer Lösung zugeführt werden sollen.
+j. Aus der Vereinbarung ergeben sich weder Rechte noch AnsprÃ¼che zugunsten Dritter. Beide Vertragsparteien kommen Ã¼berein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung spÃ¤ter als zwei Jahre nach Entstehen eines Anspruches einzuleiten. Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien fÃ¼r die NichterfÃ¼llung von Verpflichtungen aus GrÃ¼nden verantwortlich, die auÃŸerhalb ihres Einflussbereichs liegen. Die Vertragsparteien sind sich einig, dass eventuelle Meinungsverschiedenheiten oder Beanstandungen zunÃ¤chst im partnerschaftlichen Sinne einer LÃ¶sung zugefÃ¼hrt werden sollen.
 
-k. IBM kann Personal und Betriebsmittel an Standorten weltweit sowie externe Auftragnehmer zur Unterstützung der Bereitstellung von Programmen und Programmsupport einsetzen. Die Nutzung von Programmen durch den Lizenznehmer kann die grenzüberschreitende Übermittlung von Inhalten, einschließlich personenbezogener Daten, zur Folge haben, wie im IBM Software Support Guide beschrieben.
+k. IBM kann Personal und Betriebsmittel an Standorten weltweit sowie externe Auftragnehmer zur UnterstÃ¼tzung der Bereitstellung von Programmen und Programmsupport einsetzen. Die Nutzung von Programmen durch den Lizenznehmer kann die grenzÃ¼berschreitende Ãœbermittlung von Inhalten, einschlieÃŸlich personenbezogener Daten, zur Folge haben, wie im IBM Software Support Guide beschrieben.
 
-Teil 2 - Länderspezifische Bestimmungen
+Teil 2 - LÃ¤nderspezifische Bestimmungen
 
-Für Lizenzen, die in den unten aufgeführten Ländern erworben werden, ersetzen oder ändern die folgenden Bedingungen die referenzierten Bedingungen in Teil 1 dieser Internationalen Nutzungsbedingungen für Programme ohne Gewährleistung. Alle Bedingungen, die von diesen Änderungen oder Ergänzungen nicht betroffen sind, bleiben unverändert und behalten ihre Gültigkeit.
+FÃ¼r Lizenzen, die in den unten aufgefÃ¼hrten LÃ¤ndern erworben werden, ersetzen oder Ã¤ndern die folgenden Bedingungen die referenzierten Bedingungen in Teil 1 dieser Internationalen Nutzungsbedingungen fÃ¼r Programme ohne GewÃ¤hrleistung. Alle Bedingungen, die von diesen Ã„nderungen oder ErgÃ¤nzungen nicht betroffen sind, bleiben unverÃ¤ndert und behalten ihre GÃ¼ltigkeit.
 
-1. NORD-, MITTEL- UND SÜDAMERIKA
+1. NORD-, MITTEL- UND SÃœDAMERIKA
 
-Abschnitt 3. Gebühren, Steuern, Zahlung und Prüfung
+Abschnitt 3. GebÃ¼hren, Steuern, Zahlung und PrÃ¼fung
 
 Der erste und zweite Satz von Absatz b werden wie folgt ersetzt:
 
-In Brasilien: Der Lizenznehmer verpflichtet sich zur Zahlung aller anfallenden Gebühren für die erworbenen Berechtigungen und aller Gebühren, die durch Nutzungsüberschreitungen entstehen, sowie aller Zölle, Steuern und sonstigen Abgaben, die von einer Behörde im Zusammenhang mit dem Erwerb von Berechtigungen durch den Lizenznehmer auferlegt werden.
+In Brasilien: Der Lizenznehmer verpflichtet sich zur Zahlung aller anfallenden GebÃ¼hren fÃ¼r die erworbenen Berechtigungen und aller GebÃ¼hren, die durch NutzungsÃ¼berschreitungen entstehen, sowie aller ZÃ¶lle, Steuern und sonstigen Abgaben, die von einer BehÃ¶rde im Zusammenhang mit dem Erwerb von Berechtigungen durch den Lizenznehmer auferlegt werden.
 
 In Absatz b:
 
-In Mexiko: Im dritten Satz werden die Wörter "auf ein von IBM angegebenes Konto" gestrichen.
+In Mexiko: Im dritten Satz werden die WÃ¶rter â€auf ein von IBM angegebenes Kontoâ€œ gestrichen.
 
-In Mexiko: Der folgende neue Satz wird nach dem dritten Satz hinzugefügt:
+In Mexiko: Der folgende neue Satz wird nach dem dritten Satz hinzugefÃ¼gt:
 
-Zahlungen werden durch elektronische Überweisung auf ein von IBM angegebenes Konto oder an den IBM Geschäftssitz in Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210, ausgeführt.
+Zahlungen werden durch elektronische Ãœberweisung auf ein von IBM angegebenes Konto oder an den IBM GeschÃ¤ftssitz in Alfonso Napoles Gandara 3111, Santa Fe PeÃ±a Blanca, Alvaro Obregon, Mexico City, Zip Code 01210, ausgefÃ¼hrt.
 
-Am Ende von Absatz c wird der folgende Satz hinzugefügt:
+Am Ende von Absatz c wird der folgende Satz hinzugefÃ¼gt:
 
-In Kanada: Wenn Steuern auf dem Standort basieren, an dem das Programm eingesetzt wird, hat der Lizenznehmer eine fortdauernde Verpflichtung, IBM über die Standorte zu informieren, falls diese von der Geschäftsadresse des Lizenznehmers abweichen, die in der anwendbaren Anlage oder in dem anwendbaren Auftragsdokument angegeben ist.
+In Kanada: Wenn Steuern auf dem Standort basieren, an dem das Programm eingesetzt wird, hat der Lizenznehmer eine fortdauernde Verpflichtung, IBM Ã¼ber die Standorte zu informieren, falls diese von der GeschÃ¤ftsadresse des Lizenznehmers abweichen, die in der anwendbaren Anlage oder in dem anwendbaren Auftragsdokument angegeben ist.
 
-Am Ende von Absatz c wird der folgende Satz hinzugefügt:
+Am Ende von Absatz c wird der folgende Satz hinzugefÃ¼gt:
 
-In den USA: Die Vertragsparteien vereinbaren, dass keine beweglichen persönlichen Sachen (z. B. Datenträger oder Veröffentlichungen) an den Lizenznehmer übertragen werden, wenn i) IBM dem Lizenznehmer die Programme elektronisch liefert oder ii) der Lizenznehmer eine Befreiung von Umsatz- oder Verbrauchssteuern für die von IBM elektronisch gelieferten Programme geltend macht. Wenn Steuern auf dem Standort basieren, an dem das Programm eingesetzt wird, hat der Lizenznehmer eine fortdauernde Verpflichtung, IBM über die Standorte zu informieren, falls diese von der Geschäftsadresse des Lizenznehmers abweichen, die in der anwendbaren Anlage oder in dem anwendbaren Auftragsdokument angegeben ist.
+In den USA: Die Vertragsparteien vereinbaren, dass keine beweglichen persÃ¶nlichen Sachen (z. B. DatentrÃ¤ger oder VerÃ¶ffentlichungen) an den Lizenznehmer Ã¼bertragen werden, wenn i) IBM dem Lizenznehmer die Programme elektronisch liefert oder ii) der Lizenznehmer eine Befreiung von Umsatz- oder Verbrauchssteuern fÃ¼r die von IBM elektronisch gelieferten Programme geltend macht. Wenn Steuern auf dem Standort basieren, an dem das Programm eingesetzt wird, hat der Lizenznehmer eine fortdauernde Verpflichtung, IBM Ã¼ber die Standorte zu informieren, falls diese von der GeschÃ¤ftsadresse des Lizenznehmers abweichen, die in der anwendbaren Anlage oder in dem anwendbaren Auftragsdokument angegeben ist.
 
 Abschnitt 4. Haftung und Schutz geistigen Eigentums
 
-Der folgende Haftungsausschluss wird am Ende von Absatz a hinzugefügt:
+Der folgende Haftungsausschluss wird am Ende von Absatz a hinzugefÃ¼gt:
 
-In Peru: In Übereinstimmung mit Artikel 1328 des peruanischen Zivilrechts entfallen bei Vorsatz ("dolo") oder grober Fahrlässigkeit ("culpa inexcusable") durch IBM die in diesem Abschnitt genannten Einschränkungen und Ausschlüsse.
+In Peru: In Ãœbereinstimmung mit Artikel 1328 des peruanischen Zivilrechts entfallen bei Vorsatz (â€doloâ€œ) oder grober FahrlÃ¤ssigkeit (â€culpa inexcusableâ€œ) durch IBM die in diesem Abschnitt genannten EinschrÃ¤nkungen und AusschlÃ¼sse.
 
 Abschnitt 6. Geltendes Recht und Geltungsbereich
 
 In Absatz a wird nur der erste Satz wie folgt ersetzt:
 
-In Argentinien: Beide Vertragsparteien stimmen darin überein, dass die Gesetze der Republik Argentinien unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Verhandlungen in Bezug auf die Rechte, Pflichten und Verpflichtungen aus dieser Vereinbarung fallen in die Zuständigkeit des Handelsgerichts der autonomen Stadt Buenos Aires ("Ciudad Autónoma de Buenos Aires").
+In Argentinien: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze der Republik Argentinien unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Verhandlungen in Bezug auf die Rechte, Pflichten und Verpflichtungen aus dieser Vereinbarung fallen in die ZustÃ¤ndigkeit des Handelsgerichts der autonomen Stadt Buenos Aires (â€Ciudad AutÃ³noma de Buenos Airesâ€œ).
 
-In Chile: Beide Vertragsparteien stimmen darin überein, dass die Gesetze von Chile unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Konflikte, Auslegungen oder Verstöße gegen diese Vereinbarung, die nicht von den Parteien gelöst werden können, müssen an die zuständigen Gerichte in der Stadt und im Stadtbezirk von Santiago verwiesen werden.
+In Chile: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze von Chile unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Konflikte, Auslegungen oder VerstÃ¶ÃŸe gegen diese Vereinbarung, die nicht von den Parteien gelÃ¶st werden kÃ¶nnen, mÃ¼ssen an die zustÃ¤ndigen Gerichte in der Stadt und im Stadtbezirk von Santiago verwiesen werden.
 
-In Kolumbien: Beide Vertragsparteien stimmen darin überein, dass die Gesetze der Republik Kolumbien unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Rechte, Pflichten und Verpflichtungen unterliegen der Rechtsprechung der Richter der Republik Kolumbien.
+In Kolumbien: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze der Republik Kolumbien unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Rechte, Pflichten und Verpflichtungen unterliegen der Rechtsprechung der Richter der Republik Kolumbien.
 
-In Ecuador: Beide Vertragsparteien stimmen darin überein, dass die Gesetze der Republik Ecuador unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Sämtliche Rechtsstreitigkeiten aus oder im Zusammenhang mit dieser Vereinbarung werden an die Zivilrichter in Quito übergeben und mündlich in Schnellverfahren verhandelt.
+In Ecuador: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze der Republik Ecuador unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. SÃ¤mtliche Rechtsstreitigkeiten aus oder im Zusammenhang mit dieser Vereinbarung werden an die Zivilrichter in Quito Ã¼bergeben und mÃ¼ndlich in Schnellverfahren verhandelt.
 
-In Venezuela: Beide Vertragsparteien stimmen darin überein, dass die Gesetze von Venezuela unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Die Parteien vereinbaren, alle zwischen ihnen bestehenden Konflikte im Zusammenhang mit dieser Vereinbarung an die Gerichte im Ballungsraum von Caracas zu übergeben.
+In Venezuela: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze von Venezuela unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Die Parteien vereinbaren, alle zwischen ihnen bestehenden Konflikte im Zusammenhang mit dieser Vereinbarung an die Gerichte im Ballungsraum von Caracas zu Ã¼bergeben.
 
-In Peru: Beide Vertragsparteien stimmen darin überein, dass die Gesetze von Peru unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Unstimmigkeiten, die bei der Ausführung, Auslegung oder Einhaltung dieser Vereinbarung zwischen den Parteien entstehen und nicht direkt gelöst werden können, fallen unter die Gerichtsbarkeit und Zuständigkeit der Richter und Gerichte des 'Cercado de Lima' im Gerichtsbezirk.
+In Peru: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze von Peru unter Ausschluss der Prinzipien des Kollisionsrechts zur Anwendung kommen. Alle Unstimmigkeiten, die bei der AusfÃ¼hrung, Auslegung oder Einhaltung dieser Vereinbarung zwischen den Parteien entstehen und nicht direkt gelÃ¶st werden kÃ¶nnen, fallen unter die Gerichtsbarkeit und ZustÃ¤ndigkeit der Richter und Gerichte des 'Cercado de Lima' im Gerichtsbezirk.
 
-In Uruguay: Beide Vertragsparteien stimmen darin überein, dass die Gesetze von Uruguay zur Anwendung kommen. Alle Unstimmigkeiten, die bei der Ausführung, Auslegung oder Einhaltung dieser Vereinbarung zwischen den Parteien entstehen und nicht direkt gelöst werden können, müssen an die Gerichte in Montevideo ("Tribunales Ordinarios de Montevideo") übergeben werden.
+In Uruguay: Beide Vertragsparteien stimmen darin Ã¼berein, dass die Gesetze von Uruguay zur Anwendung kommen. Alle Unstimmigkeiten, die bei der AusfÃ¼hrung, Auslegung oder Einhaltung dieser Vereinbarung zwischen den Parteien entstehen und nicht direkt gelÃ¶st werden kÃ¶nnen, mÃ¼ssen an die Gerichte in Montevideo (â€Tribunales Ordinarios de Montevideoâ€œ) Ã¼bergeben werden.
 
-In Absatz a wird nur im ersten Satz der Teilsatz "des Landes zur Anwendung kommen, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet" wie folgt ersetzt:
+In Absatz a wird nur im ersten Satz der Teilsatz â€des Landes zur Anwendung kommen, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindetâ€œ wie folgt ersetzt:
 
 In den Vereinigten Staaten, Anguilla, Antigua/Barbuda, Aruba, Bahamas, Barbados, Bermuda, Bonaire, Britische Jungferninseln, Kaimaninseln, Curacao, Dominica, Grenada, Guyana, Jamaika, Montserrat, Saba, St. Eustatius, St. Kitts und Nevis, St. Lucia, St. Maarten, St. Vincent und die Grenadinen, Surinam, Tortola, Trinidad und Tobago, Turk- und Caicosinseln: des US-Bundesstaates New York zur Anwendung kommen.
 
 In Kanada: der Provinz Ontario und die dort geltenden Bundesgesetze Kanadas zur Anwendung kommen.
 
-Im zweiten Satz von Absatz a wird der Teilsatz "dem Land, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wird" ersetzt durch:
+Im zweiten Satz von Absatz a wird der Teilsatz â€dem Land, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wirdâ€œ ersetzt durch:
 
 In Argentinien: Argentinien
 
@@ -241,101 +241,101 @@ In Uruguay: Uruguay
 
 In Venezuela: Venezuela
 
-Die folgenden Sätze werden am Ende von Absatz b hinzugefügt:
+Die folgenden SÃ¤tze werden am Ende von Absatz b hinzugefÃ¼gt:
 
-In Brasilien: Sämtliche Rechtsstreitigkeiten aus oder im Zusammenhang mit dieser Vereinbarung, einschließlich Schnellverfahren, fallen ausschließlich in die Zuständigkeit des Forums (Gericht) der Stadt São Paulo, Bundesstaat São Paulo, Brasilien, und die Vertragsparteien erklären unwiderruflich die Zuständigkeit dieser Gerichtsbarkeit unter Verzicht auf jegliche anderen möglicherweise zuständigen Gerichtsstände.
+In Brasilien: SÃ¤mtliche Rechtsstreitigkeiten aus oder im Zusammenhang mit dieser Vereinbarung, einschlieÃŸlich Schnellverfahren, fallen ausschlieÃŸlich in die ZustÃ¤ndigkeit des Forums (Gericht) der Stadt SÃ£o Paulo, Bundesstaat SÃ£o Paulo, Brasilien, und die Vertragsparteien erklÃ¤ren unwiderruflich die ZustÃ¤ndigkeit dieser Gerichtsbarkeit unter Verzicht auf jegliche anderen mÃ¶glicherweise zustÃ¤ndigen GerichtsstÃ¤nde.
 
-In Mexiko: Die Vertragsparteien erkennen die ausschließliche Zuständigkeit der Gerichte von Mexiko-Stadt zur Beilegung sämtlicher Streitigkeiten im Zusammenhang mit dieser Vereinbarung an. Die Vertragsparteien verzichten auf jeden anderen Gerichtsstand, der ihnen aufgrund ihrer derzeitigen oder zukünftigen Geschäftssitze oder aus anderen Gründen zustehen könnte.
+In Mexiko: Die Vertragsparteien erkennen die ausschlieÃŸliche ZustÃ¤ndigkeit der Gerichte von Mexiko-Stadt zur Beilegung sÃ¤mtlicher Streitigkeiten im Zusammenhang mit dieser Vereinbarung an. Die Vertragsparteien verzichten auf jeden anderen Gerichtsstand, der ihnen aufgrund ihrer derzeitigen oder zukÃ¼nftigen GeschÃ¤ftssitze oder aus anderen GrÃ¼nden zustehen kÃ¶nnte.
 
 Abschnitt 7. Allgemeines
 
 In Absatz g:
 
-In den USA: Die beiden letzten Sätze werden gelöscht.
+In den USA: Die beiden letzten SÃ¤tze werden gelÃ¶scht.
 
-In Absatz i wird der folgende neue Satz nach dem ersten Satz hinzugefügt:
+In Absatz i wird der folgende neue Satz nach dem ersten Satz hinzugefÃ¼gt:
 
-In Mexiko: Alle Adressänderungen müssen 10 (zehn) Tage im Voraus mitgeteilt werden, anderenfalls haben die Mitteilungen an die zuletzt angegebene Adresse volle Rechtswirkung.
+In Mexiko: Alle AdressÃ¤nderungen mÃ¼ssen 10 (zehn) Tage im Voraus mitgeteilt werden, anderenfalls haben die Mitteilungen an die zuletzt angegebene Adresse volle Rechtswirkung.
 
 In Absatz j:
 
-In Brasilien: Der zweite Satz "Beide Vertragsparteien kommen überein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung später als zwei Jahre nach Entstehen eines Anspruches einzuleiten." wird gestrichen.
+In Brasilien: Der zweite Satz â€Beide Vertragsparteien kommen Ã¼berein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung spÃ¤ter als zwei Jahre nach Entstehen eines Anspruches einzuleiten.â€œ wird gestrichen.
 
-Der folgende Text wird als neuer Absatz l hinzugefügt:
+Der folgende Text wird als neuer Absatz l hinzugefÃ¼gt:
 
-In Kanada: Beide Vertragsparteien einigen sich darauf, dieses Dokument in englischer Sprache abzufassen. Les parties ont convenu de rédiger le présent document en langue anglaise.
+In Kanada: Beide Vertragsparteien einigen sich darauf, dieses Dokument in englischer Sprache abzufassen. Les parties ont convenu de rÃ©diger le prÃ©sent document en langue anglaise.
 
 2. ASIATISCH-PAZIFISCHER RAUM
 
-Abschnitt 2. Gewährleistungen
+Abschnitt 2. GewÃ¤hrleistungen
 
-Am Ende dieses Abschnitts wird der folgende Text als neuer Absatz f hinzugefügt:
+Am Ende dieses Abschnitts wird der folgende Text als neuer Absatz f hinzugefÃ¼gt:
 
-In Australien: Diese Gewährleistungen werden zusätzlich zu sonstigen Rechten gewährt, die aus dem Competition and Consumer Act 2010 ableitbar sind, und können nur in dem durch dieses Gesetz zulässigen Umfang eingeschränkt werden.
+In Australien: Diese GewÃ¤hrleistungen werden zusÃ¤tzlich zu sonstigen Rechten gewÃ¤hrt, die aus dem Competition and Consumer Act 2010 ableitbar sind, und kÃ¶nnen nur in dem durch dieses Gesetz zulÃ¤ssigen Umfang eingeschrÃ¤nkt werden.
 
-In Japan: Die Haftung von IBM und der alleinige Anspruch des Lizenznehmers bei Nichteinhaltung der in diesem Abschnitt aufgeführten Gewährleistungen sind auf diesen Absatz, den Abschnitt "Haftung und Schutz geistigen Eigentums" sowie die anwendbaren Anlagen und Auftragsdokumente begrenzt.
+In Japan: Die Haftung von IBM und der alleinige Anspruch des Lizenznehmers bei Nichteinhaltung der in diesem Abschnitt aufgefÃ¼hrten GewÃ¤hrleistungen sind auf diesen Absatz, den Abschnitt â€Haftung und Schutz geistigen Eigentumsâ€œ sowie die anwendbaren Anlagen und Auftragsdokumente begrenzt.
 
-In Neuseeland: Diese Gewährleistungen werden zusätzlich zu sonstigen Rechten gewährt, die aus dem Consumer Guarantee Act 1993 oder ähnlichen Gesetzen ableitbar sind, und können nach geltendem Recht nicht eingeschränkt können.
+In Neuseeland: Diese GewÃ¤hrleistungen werden zusÃ¤tzlich zu sonstigen Rechten gewÃ¤hrt, die aus dem Consumer Guarantee Act 1993 oder Ã¤hnlichen Gesetzen ableitbar sind, und kÃ¶nnen nach geltendem Recht nicht eingeschrÃ¤nkt kÃ¶nnen.
 
-Abschnitt 3. Gebühren, Steuern, Zahlung und Prüfung
+Abschnitt 3. GebÃ¼hren, Steuern, Zahlung und PrÃ¼fung
 
-In Absatz b wird der dritte Satz durch die beiden folgenden Sätze ersetzt:
+In Absatz b wird der dritte Satz durch die beiden folgenden SÃ¤tze ersetzt:
 
-In Hongkong, Indonesien, Korea, Macau, Malaysia, Philippinen, Singapur und Vietnam: Rechnungsbeträge sind bei Erhalt der Rechnung fällig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen. Geht die Zahlung nicht innerhalb von 30 Tagen ab dem Rechnungsdatum bei IBM ein, ist IBM berechtigt, Verzugszinsen auf den ausstehenden Betrag in Rechnung zu stellen, die für die Anzahl Tage des Zahlungsverzugs mit i) 2 % für jeden angefangenen 30-Tage-Zeitraum oder ii) dem gesetzlich zulässigen Höchstsatz berechnet werden, wobei der niedrigere Wert zur Anwendung kommt.
+In Hongkong, Indonesien, Korea, Macau, Malaysia, Philippinen, Singapur und Vietnam: RechnungsbetrÃ¤ge sind bei Erhalt der Rechnung fÃ¤llig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen. Geht die Zahlung nicht innerhalb von 30 Tagen ab dem Rechnungsdatum bei IBM ein, ist IBM berechtigt, Verzugszinsen auf den ausstehenden Betrag in Rechnung zu stellen, die fÃ¼r die Anzahl Tage des Zahlungsverzugs mit i) 2 % fÃ¼r jeden angefangenen 30-Tage-Zeitraum oder ii) dem gesetzlich zulÃ¤ssigen HÃ¶chstsatz berechnet werden, wobei der niedrigere Wert zur Anwendung kommt.
 
-In Thailand: Rechnungsbeträge sind bei Erhalt der Rechnung fällig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen. Geht die Zahlung nicht innerhalb von 30 Tagen ab dem Rechnungsdatum bei IBM ein, können Verzugszinsen auf den ausstehenden Betrag mit einem Zinssatz von 1,25 % pro Monat zur Anwendung kommen, die für die Anzahl Tage des Zahlungsverzugs berechnet werden.
+In Thailand: RechnungsbetrÃ¤ge sind bei Erhalt der Rechnung fÃ¤llig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum auf ein von IBM angegebenes Konto erfolgen. Geht die Zahlung nicht innerhalb von 30 Tagen ab dem Rechnungsdatum bei IBM ein, kÃ¶nnen Verzugszinsen auf den ausstehenden Betrag mit einem Zinssatz von 1,25 % pro Monat zur Anwendung kommen, die fÃ¼r die Anzahl Tage des Zahlungsverzugs berechnet werden.
 
-Im ersten Satz von Absatz c wird das Wort "und" vor "(iv)" gestrichen und ein Semikolon sowie der folgende neue Listenpunkt "(v)" hinzugefügt:
+Im ersten Satz von Absatz c wird das Wort â€undâ€œ vor â€(iv)â€œ gestrichen und ein Semikolon sowie der folgende neue Listenpunkt â€(v)â€œ hinzugefÃ¼gt:
 
-In Indien: ; und (v) eine korrekte Quellensteuererklärung zeitnah einzureichen. Werden Steuern, Zölle, Abgaben oder Gebühren ("Steuern") aufgrund eines vom Lizenznehmer bereitgestellten Nachweises der Steuerbefreiung nicht erhoben und legt die Steuerbehörde nachträglich fest, dass diese Steuern hätten erhoben werden müssen, dann muss der Lizenznehmer für diese Steuern aufkommen, einschließlich darauf anfallender Zinsen, Abgaben und/oder Bußgelder.
+In Indien: ; und (v) eine korrekte QuellensteuererklÃ¤rung zeitnah einzureichen. Werden Steuern, ZÃ¶lle, Abgaben oder GebÃ¼hren (â€Steuernâ€œ) aufgrund eines vom Lizenznehmer bereitgestellten Nachweises der Steuerbefreiung nicht erhoben und legt die SteuerbehÃ¶rde nachtrÃ¤glich fest, dass diese Steuern hÃ¤tten erhoben werden mÃ¼ssen, dann muss der Lizenznehmer fÃ¼r diese Steuern aufkommen, einschlieÃŸlich darauf anfallender Zinsen, Abgaben und/oder BuÃŸgelder.
 
-Im ersten Satz von Absatz c wird das Wort "und" vor "(iv)" gestrichen und Listenpunkt (iv) ersetzt und ein neuer Listenpunkt (v) hinzugefügt:
+Im ersten Satz von Absatz c wird das Wort â€undâ€œ vor â€(iv)â€œ gestrichen und Listenpunkt (iv) ersetzt und ein neuer Listenpunkt (v) hinzugefÃ¼gt:
 
-In Singapur, Malaysia, Philippinen, Thailand, Indonesien und Vietnam: (iv) in dem Bestreben, eine Steuerbefreiung oder Ermäßigung der Quellensteuer oder anderer Steuern zu erreichen, umfassend mit IBM zusammenzuarbeiten; und v) unverzüglich alle relevanten Dokumente für solche Steuerbefreiungen, Ermäßigungen oder Freistellungen auszufüllen, einzureichen und auf dem aktuellen Stand zu halten.
+In Singapur, Malaysia, Philippinen, Thailand, Indonesien und Vietnam: (iv) in dem Bestreben, eine Steuerbefreiung oder ErmÃ¤ÃŸigung der Quellensteuer oder anderer Steuern zu erreichen, umfassend mit IBM zusammenzuarbeiten; und v) unverzÃ¼glich alle relevanten Dokumente fÃ¼r solche Steuerbefreiungen, ErmÃ¤ÃŸigungen oder Freistellungen auszufÃ¼llen, einzureichen und auf dem aktuellen Stand zu halten.
 
 Abschnitt 4. Haftung und Schutz geistigen Eigentums
 
-In Absatz a wird nach "Gesamthaftung von IBM" Folgendes hinzugefügt:
+In Absatz a wird nach â€Gesamthaftung von IBMâ€œ Folgendes hinzugefÃ¼gt:
 
-In Australien: (z. B. Vertragshaftung, Verschuldenshaftung, Haftung aufgrund Fahrlässigkeit, nach dem Gesetz oder anderweitig)
+In Australien: (z. B. Vertragshaftung, Verschuldenshaftung, Haftung aufgrund FahrlÃ¤ssigkeit, nach dem Gesetz oder anderweitig)
 
-Im zweiten Satz von Absatz a wird nach dem Wort "spezielle" und vor dem Wort "oder" der folgende Text hinzugefügt:
+Im zweiten Satz von Absatz a wird nach dem Wort â€spezielleâ€œ und vor dem Wort â€oderâ€œ der folgende Text hinzugefÃ¼gt:
 
-Auf den Philippinen: (einschließlich nomineller Schäden und Schadenersatz mit Strafcharakter), moralische Schäden
+Auf den Philippinen: (einschlieÃŸlich nomineller SchÃ¤den und Schadenersatz mit Strafcharakter), moralische SchÃ¤den
 
-Am Ende von Absatz a wird ein neuer Absatz hinzugefügt (auf korrekte Abfolge der Buchstaben achten):
+Am Ende von Absatz a wird ein neuer Absatz hinzugefÃ¼gt (auf korrekte Abfolge der Buchstaben achten):
 
 In Australien: Wenn IBM nach dem Competition and Consumer Act 2010 eine Garantie verletzt, ist die Haftung von IBM auf die Reparatur oder den Ersatz von Waren oder die Lieferung gleichwertiger Ersatzwaren oder die Zahlung der Kosten, die durch den Ersatz oder die Reparatur der Waren entstehen, begrenzt. Wenn eine Garantie das Recht zum Verkauf oder zum stillschweigenden Besitz einer Ware oder den Rechtsanspruch auf eine Ware unter Schedule 2 des Competition and Consumer Act betrifft, finden diese Haftungsbegrenzungen keine Anwendung.
 
-Abschnitt 5. Kündigung
+Abschnitt 5. KÃ¼ndigung
 
-Am Ende des Abschnitts wird der folgende Text als neuer Absatz b hinzugefügt:
+Am Ende des Abschnitts wird der folgende Text als neuer Absatz b hinzugefÃ¼gt:
 
-In Indonesien: Die Vertragsparteien verzichten auf Anwendung von Artikel 1266 des indonesischen Zivilrechts, insoweit als dieser vorsieht, dass zur Beendigung einer Vereinbarung ein Gerichtsbeschluss erforderlich ist, der gegenseitige Verpflichtungen begründet.
+In Indonesien: Die Vertragsparteien verzichten auf Anwendung von Artikel 1266 des indonesischen Zivilrechts, insoweit als dieser vorsieht, dass zur Beendigung einer Vereinbarung ein Gerichtsbeschluss erforderlich ist, der gegenseitige Verpflichtungen begrÃ¼ndet.
 
 Abschnitt 6. Geltendes Recht und Geltungsbereich
 
-In Absatz a wird nur im ersten Satz der Teilsatz "des Landes zur Anwendung kommen, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet" wie folgt ersetzt:
+In Absatz a wird nur im ersten Satz der Teilsatz â€des Landes zur Anwendung kommen, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindetâ€œ wie folgt ersetzt:
 
 In Kambodscha, Laos: des US-Bundesstaates New York zur Anwendung kommen
 
-In Australien: des Bundesstaates oder Territoriums zur Anwendung kommen, in dem der Geschäftsvorgang stattfindet
+In Australien: des Bundesstaates oder Territoriums zur Anwendung kommen, in dem der GeschÃ¤ftsvorgang stattfindet
 
 In Hongkong: der Sonderverwaltungsregion Hongkong der Volksrepublik China zur Anwendung kommen
 
 In Macau: der Sonderverwaltungsregion Hongkong der Volksrepublik China zur Anwendung kommen
 
-In Korea: der Republik Korea zur Anwendung kommen, die in die Zuständigkeit des zentralen Bezirksgerichts in Seoul der Republik Korea fallen,
+In Korea: der Republik Korea zur Anwendung kommen, die in die ZustÃ¤ndigkeit des zentralen Bezirksgerichts in Seoul der Republik Korea fallen,
 
 In Taiwan: Taiwans zur Anwendung kommen
 
 In Indien: Indiens zur Anwendung kommen
 
-Im ersten Satz von Absatz b wird in Listenpunkt ii) nach dem Wort "einschließlich" und vor dem Wort "der" der folgende Text hinzugefügt:
+Im ersten Satz von Absatz b wird in Listenpunkt ii) nach dem Wort â€einschlieÃŸlichâ€œ und vor dem Wort â€derâ€œ der folgende Text hinzugefÃ¼gt:
 
 In Japan: derjenigen der Gesetze Japans und
 
-Im zweiten Satz von Absatz a wird der Teilsatz "dem Land, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wird" ersetzt durch:
+Im zweiten Satz von Absatz a wird der Teilsatz â€dem Land, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet, oder mit Zustimmung von IBM in dem Land, in dem das Programm produktiv genutzt wirdâ€œ ersetzt durch:
 
 In Hongkong: der Sonderverwaltungsregion Hongkong der Volksrepublik China
 
@@ -343,143 +343,143 @@ In Macau: der Sonderverwaltungsregion Macau der Volksrepublik China
 
 In Taiwan: Taiwan
 
-Am Ende des Abschnitts wird der folgende Text als neuer Absatz d hinzugefügt:
+Am Ende des Abschnitts wird der folgende Text als neuer Absatz d hinzugefÃ¼gt:
 
-In Kambodscha, Laos, Philippinen und Sri Lanka: Rechtsstreitigkeiten werden in Singapur durch Schiedsspruch in Übereinstimmung mit den Schiedsregeln des Singapore International Arbitration Center ("SIAC-Regeln") geregelt bzw. beigelegt.
+In Kambodscha, Laos, Philippinen und Sri Lanka: Rechtsstreitigkeiten werden in Singapur durch Schiedsspruch in Ãœbereinstimmung mit den Schiedsregeln des Singapore International Arbitration Center (â€SIAC-Regelnâ€œ) geregelt bzw. beigelegt.
 
-In Indien: Rechtsstreitigkeiten werden in Übereinstimmung mit dem Arbitration and Conciliation Act, 1996 in der jeweils aktuellen Fassung, in englischer Sprache, in Bangalore, Indien geregelt bzw. beigelegt. Beträgt der Streitwert fünf Crore Rupien oder weniger, wird nur ein Schiedsrichter ernannt, bei einem höheren Betrag werden drei Schiedsrichter ernannt. Wenn ein Schiedsrichter ausgetauscht wird, wird das Verfahren an dem Punkt fortgesetzt, an dem das Amt vakant wurde.
+In Indien: Rechtsstreitigkeiten werden in Ãœbereinstimmung mit dem Arbitration and Conciliation Act, 1996 in der jeweils aktuellen Fassung, in englischer Sprache, in Bangalore, Indien geregelt bzw. beigelegt. BetrÃ¤gt der Streitwert fÃ¼nf Crore Rupien oder weniger, wird nur ein Schiedsrichter ernannt, bei einem hÃ¶heren Betrag werden drei Schiedsrichter ernannt. Wenn ein Schiedsrichter ausgetauscht wird, wird das Verfahren an dem Punkt fortgesetzt, an dem das Amt vakant wurde.
 
-In Indonesien: Rechtsstreitigkeiten werden in Jakarta, Indonesien, durch Schiedsspruch unter Aufsicht des Indonesian National Board of Arbitration, das im Jahr 1977 eingerichtet wurde ("Badan Arbitrase Nasional Indonesia" oder "BANI"), in Übereinstimmung mit den Regeln des Indonesian National Board of Arbitration geregelt bzw. beigelegt. Der in Schriftform abzufassende Schiedsspruch ist endgültig und bindend für alle Parteien ohne Einspruchsmöglichkeit und muss eine Darlegung der Fakten sowie eine Begründung enthalten.
+In Indonesien: Rechtsstreitigkeiten werden in Jakarta, Indonesien, durch Schiedsspruch unter Aufsicht des Indonesian National Board of Arbitration, das im Jahr 1977 eingerichtet wurde (â€Badan Arbitrase Nasional Indonesiaâ€œ oder â€BANIâ€œ), in Ãœbereinstimmung mit den Regeln des Indonesian National Board of Arbitration geregelt bzw. beigelegt. Der in Schriftform abzufassende Schiedsspruch ist endgÃ¼ltig und bindend fÃ¼r alle Parteien ohne EinspruchsmÃ¶glichkeit und muss eine Darlegung der Fakten sowie eine BegrÃ¼ndung enthalten.
 
 In der Volksrepublik China: Beide Vertragsparteien haben das Recht, bei Rechtsstreitigkeiten die China International Economic and Trade Arbitration Commission in Beijing (PRC) zur Schlichtung anzurufen. Die Vertragsparteien vereinbaren, dass drei Schiedsrichter zur Beilegung der Rechtsstreitigkeit ernannt werden.
 
-In Vietnam: Rechtsstreitigkeiten werden in Vietnam durch Schiedsspruch in Übereinstimmung mit den Schiedsregeln des Vietnam International Arbitration Centre ("VIAC-Regeln") geregelt bzw. beigelegt. Die Verkehrssprache für sämtliche Verfahren (einschließlich der zugehörigen Dokumente) ist Englisch.
+In Vietnam: Rechtsstreitigkeiten werden in Vietnam durch Schiedsspruch in Ãœbereinstimmung mit den Schiedsregeln des Vietnam International Arbitration Centre (â€VIAC-Regelnâ€œ) geregelt bzw. beigelegt. Die Verkehrssprache fÃ¼r sÃ¤mtliche Verfahren (einschlieÃŸlich der zugehÃ¶rigen Dokumente) ist Englisch.
 
 Abschnitt 7. Allgemeines
 
-Im zweiten Satz von Absatz j wird die Angabe "zwei Jahre" ersetzt durch:
+Im zweiten Satz von Absatz j wird die Angabe â€zwei Jahreâ€œ ersetzt durch:
 
 In Indien: drei Jahre
 
-Am Ende dieses Abschnitts wird der folgende Text als neuer Absatz l hinzugefügt:
+Am Ende dieses Abschnitts wird der folgende Text als neuer Absatz l hinzugefÃ¼gt:
 
-In Indonesien: Diese Vereinbarung wird in englischer und indonesischer Sprache (Bahasa) erstellt. Soweit gesetzlich zulässig, hat die englische Version im Falle eines Widerspruchs zwischen den Versionen Vorrang.
+In Indonesien: Diese Vereinbarung wird in englischer und indonesischer Sprache (Bahasa) erstellt. Soweit gesetzlich zulÃ¤ssig, hat die englische Version im Falle eines Widerspruchs zwischen den Versionen Vorrang.
 
 3. EUROPA, NAHER/MITTLERER OSTEN UND AFRIKA (EMEA)
 
-Abschnitt 3. Gebühren, Steuern, Zahlung und Prüfung
+Abschnitt 3. GebÃ¼hren, Steuern, Zahlung und PrÃ¼fung
 
-In Absatz b wird der folgende Text am Ende des dritten Satzes hinzugefügt:
+In Absatz b wird der folgende Text am Ende des dritten Satzes hinzugefÃ¼gt:
 
 In Italien: sofern von IBM in einer schriftlichen Mitteilung an den Lizenznehmer verlangt.
 
-In der Ukraine: , wobei diese auf den überfälligen Betrag ab dem nächsten Tag nach dem Fälligkeitstermin bis zum Tag der tatsächlichen Zahlung anteilig für jeden Tag des Verzugs während des Verzugszeitraums mit einem Zinssatz berechnet werden, der doppelt so hoch ist wie der von der Nationalbank der Ukraine (NBU) festgelegte Diskontsatz (Artikel 232 Paragraf 6 des Handelsgesetzbuches der Ukraine kommt nicht zur Anwendung).
+In der Ukraine: , wobei diese auf den Ã¼berfÃ¤lligen Betrag ab dem nÃ¤chsten Tag nach dem FÃ¤lligkeitstermin bis zum Tag der tatsÃ¤chlichen Zahlung anteilig fÃ¼r jeden Tag des Verzugs wÃ¤hrend des Verzugszeitraums mit einem Zinssatz berechnet werden, der doppelt so hoch ist wie der von der Nationalbank der Ukraine (NBU) festgelegte Diskontsatz (Artikel 232 Paragraf 6 des Handelsgesetzbuches der Ukraine kommt nicht zur Anwendung).
 
 In Absatz b wird der dritte Satz durch den folgenden Text ersetzt:
 
-In Frankreich: Rechnungsbeträge sind innerhalb von 10 Tagen ab dem Rechnungsdatum fällig und die Zahlung muss auf ein von IBM angegebenes Konto erfolgen. Es werden Verzugszinsen in Höhe des aktuellen Zinssatzes der Europäischen Zentralbank zuzüglich 10 Prozentpunkten, zusätzlich zu Inkassokosten in Höhe von vierzig (40) Euro oder, wenn diese Kosten vierzig Euro überschreiten, einer zusätzlichen Entschädigung berechnet, vorbehaltlich einer Begründung für den geforderten Betrag.
+In Frankreich: RechnungsbetrÃ¤ge sind innerhalb von 10 Tagen ab dem Rechnungsdatum fÃ¤llig und die Zahlung muss auf ein von IBM angegebenes Konto erfolgen. Es werden Verzugszinsen in HÃ¶he des aktuellen Zinssatzes der EuropÃ¤ischen Zentralbank zuzÃ¼glich 10 Prozentpunkten, zusÃ¤tzlich zu Inkassokosten in HÃ¶he von vierzig (40) Euro oder, wenn diese Kosten vierzig Euro Ã¼berschreiten, einer zusÃ¤tzlichen EntschÃ¤digung berechnet, vorbehaltlich einer BegrÃ¼ndung fÃ¼r den geforderten Betrag.
 
-In Russland: Rechnungsbeträge sind bei Erhalt der Rechnung fällig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum durch elektronische Überweisung auf ein von IBM angegebenes Konto erfolgen. Für jeden Tag nach der 30-Tage-Frist können Verzugszinsen in Höhe von 24 % p. a. berechnet werden.
+In Russland: RechnungsbetrÃ¤ge sind bei Erhalt der Rechnung fÃ¤llig und die Zahlung muss innerhalb von 30 Tagen ab dem Rechnungsdatum durch elektronische Ãœberweisung auf ein von IBM angegebenes Konto erfolgen. FÃ¼r jeden Tag nach der 30-Tage-Frist kÃ¶nnen Verzugszinsen in HÃ¶he von 24 % p. a. berechnet werden.
 
-In Absatz b wird der folgende Text am Ende des letzten Satzes hinzugefügt:
+In Absatz b wird der folgende Text am Ende des letzten Satzes hinzugefÃ¼gt:
 
 In Litauen: , es sei denn, dies ist gesetzlich vorgeschrieben.
 
-Am Ende von Absatz b wird Folgendes hinzugefügt:
+Am Ende von Absatz b wird Folgendes hinzugefÃ¼gt:
 
-In Italien: Im Falle einer Nichtzahlung oder einer Teilzahlung sowie im Anschluss an ein formales Mahn- oder Gerichtsverfahren, das IBM abweichend von Artikel 4 des Gesetzesdekrets Nr. 231 vom 9. Oktober 2002 und gemäß Artikel 7 desselben Gesetzesdekrets einleiten kann, wird IBM den Lizenznehmer schriftlich per Einschreiben mit Rückschein über die fälligen Verzugszinsen in Kenntnis setzen.
+In Italien: Im Falle einer Nichtzahlung oder einer Teilzahlung sowie im Anschluss an ein formales Mahn- oder Gerichtsverfahren, das IBM abweichend von Artikel 4 des Gesetzesdekrets Nr. 231 vom 9. Oktober 2002 und gemÃ¤ÃŸ Artikel 7 desselben Gesetzesdekrets einleiten kann, wird IBM den Lizenznehmer schriftlich per Einschreiben mit RÃ¼ckschein Ã¼ber die fÃ¤lligen Verzugszinsen in Kenntnis setzen.
 
 Abschnitt 4. Haftung und Schutz geistigen Eigentums
 
-Im ersten Satz von Absatz a wird vor "den Betrag" Folgendes eingefügt:
+Im ersten Satz von Absatz a wird vor â€den Betragâ€œ Folgendes eingefÃ¼gt:
 
-In Belgien, Frankreich, Deutschland, Italien, Luxemburg, Malta, Portugal und Spanien: ¤ 500.000 (fünfhunderttausend Euro) oder auf
+In Belgien, Frankreich, Deutschland, Italien, Luxemburg, Malta, Portugal und Spanien: â‚¬ 500.000 (fÃ¼nfhunderttausend Euro) oder auf
 
-In Irland und im Vereinigten Königreich wird "den Betrag" ersetzt durch: 125 % des Betrags
+In Irland und im Vereinigten KÃ¶nigreich wird â€den Betragâ€œ ersetzt durch: 125 % des Betrags
 
-Im ersten Satz von Absatz a wird die Formulierung "bei unmittelbaren/direkten Schäden" ersetzt durch:
+Im ersten Satz von Absatz a wird die Formulierung â€bei unmittelbaren/direkten SchÃ¤denâ€œ ersetzt durch:
 
-In Spanien: bei nachgewiesenen Schäden, die als direkte Folge einer Pflichtverletzung seitens IBM entstanden sind,
+In Spanien: bei nachgewiesenen SchÃ¤den, die als direkte Folge einer Pflichtverletzung seitens IBM entstanden sind,
 
-In Absatz a wird nach dem ersten Satz der folgende neue Satz eingefügt:
+In Absatz a wird nach dem ersten Satz der folgende neue Satz eingefÃ¼gt:
 
-In der Slowakei: Bezugnehmend auf § 379 des Handelsgesetzbuches, Gesetz Nr. 513/1991 Sb. in der jeweils aktuellen Fassung und im Hinblick auf alle Bedingungen, die mit dem Vertragsabschluss im Zusammenhang stehen, erklären beide Vertragsparteien, dass der Schadenersatz für den gesamten vorhersehbaren Schaden den oben genannten Betrag nicht überschreiten wird und den Höchstbetrag angibt, für den IBM haftbar ist.
+In der Slowakei: Bezugnehmend auf Â§ 379 des Handelsgesetzbuches, Gesetz Nr. 513/1991 Sb. in der jeweils aktuellen Fassung und im Hinblick auf alle Bedingungen, die mit dem Vertragsabschluss im Zusammenhang stehen, erklÃ¤ren beide Vertragsparteien, dass der Schadenersatz fÃ¼r den gesamten vorhersehbaren Schaden den oben genannten Betrag nicht Ã¼berschreiten wird und den HÃ¶chstbetrag angibt, fÃ¼r den IBM haftbar ist.
 
-In Absatz a wird vor dem zweiten Satz der folgende neue Satz eingefügt:
+In Absatz a wird vor dem zweiten Satz der folgende neue Satz eingefÃ¼gt:
 
-In Russland: IBM ist nicht haftbar für entgangene Vorteile.
+In Russland: IBM ist nicht haftbar fÃ¼r entgangene Vorteile.
 
 Im zweiten Satz von Absatz a wird das folgende Wort gestrichen:
 
-In Irland und im Vereinigten Königreich: wirtschaftliche
+In Irland und im Vereinigten KÃ¶nigreich: wirtschaftliche
 
 In Absatz a wird der zweite Satz wie folgt ersetzt:
 
-In Belgien, den Niederlanden und Luxemburg: IBM übernimmt keine Haftung für mittelbare Schäden oder Folgeschäden, entgangenen Gewinn, entgangene Geschäftsabschlüsse, Wertverlust oder Umsatzverlust, Schädigung des guten Rufs, Reputationsschäden oder ausgebliebene Einsparungen, Ansprüche Dritter gegen den Lizenznehmer und Verlust (oder Beschädigung) von Daten.
+In Belgien, den Niederlanden und Luxemburg: IBM Ã¼bernimmt keine Haftung fÃ¼r mittelbare SchÃ¤den oder FolgeschÃ¤den, entgangenen Gewinn, entgangene GeschÃ¤ftsabschlÃ¼sse, Wertverlust oder Umsatzverlust, SchÃ¤digung des guten Rufs, ReputationsschÃ¤den oder ausgebliebene Einsparungen, AnsprÃ¼che Dritter gegen den Lizenznehmer und Verlust (oder BeschÃ¤digung) von Daten.
 
-In Frankreich: IBM übernimmt keine Haftung für Reputationsschäden, mittelbare Schäden oder entgangenen Gewinn, entgangene Geschäftsabschlüsse, Wertverlust oder Umsatzverlust, Schädigung des guten Rufs oder ausgebliebene Einsparungen.
+In Frankreich: IBM Ã¼bernimmt keine Haftung fÃ¼r ReputationsschÃ¤den, mittelbare SchÃ¤den oder entgangenen Gewinn, entgangene GeschÃ¤ftsabschlÃ¼sse, Wertverlust oder Umsatzverlust, SchÃ¤digung des guten Rufs oder ausgebliebene Einsparungen.
 
-In Deutschland: IBM übernimmt im Falle einfacher Fahrlässigkeit keine Haftung für mittelbare/indirekte Schäden oder wirtschaftliche Folgeschäden, Datenverlust, entgangenen Gewinn, entgangene Geschäftsabschlüsse, Wertverlust, Umsatzverlust, Schädigung des guten Rufs oder ausgebliebene Einsparungen.
+In Deutschland: IBM Ã¼bernimmt im Falle einfacher FahrlÃ¤ssigkeit keine Haftung fÃ¼r mittelbare/indirekte SchÃ¤den oder wirtschaftliche FolgeschÃ¤den, Datenverlust, entgangenen Gewinn, entgangene GeschÃ¤ftsabschlÃ¼sse, Wertverlust, Umsatzverlust, SchÃ¤digung des guten Rufs oder ausgebliebene Einsparungen.
 
-In Portugal: IBM übernimmt keine Haftung für mittelbare Schäden, einschließlich entgangenen Gewinns.
+In Portugal: IBM Ã¼bernimmt keine Haftung fÃ¼r mittelbare SchÃ¤den, einschlieÃŸlich entgangenen Gewinns.
 
-In Spanien: IBM übernimmt keine Haftung für Reputationsschäden, entgangenen Gewinn, entgangene Geschäftsabschlüsse, Wertverlust oder Umsatzverlust, Schädigung des guten Rufs oder ausgebliebene Einsparungen.
+In Spanien: IBM Ã¼bernimmt keine Haftung fÃ¼r ReputationsschÃ¤den, entgangenen Gewinn, entgangene GeschÃ¤ftsabschlÃ¼sse, Wertverlust oder Umsatzverlust, SchÃ¤digung des guten Rufs oder ausgebliebene Einsparungen.
 
-Am Ende von Absatz a wird Folgendes hinzugefügt:
+Am Ende von Absatz a wird Folgendes hinzugefÃ¼gt:
 
-In Frankreich: Die Bedingungen der Vereinbarung, einschließlich der finanziellen Bedingungen, wurden unter Berücksichtigung dieser Klausel festgelegt, die ein integraler Bestandteil für das Gleichgewicht der Vereinbarung darstellt.
+In Frankreich: Die Bedingungen der Vereinbarung, einschlieÃŸlich der finanziellen Bedingungen, wurden unter BerÃ¼cksichtigung dieser Klausel festgelegt, die ein integraler Bestandteil fÃ¼r das Gleichgewicht der Vereinbarung darstellt.
 
-In Absatz b wird "Schäden, für die nach geltendem Recht keine Haftungsbegrenzung zulässig ist." wie folgt ersetzt:
+In Absatz b wird â€SchÃ¤den, fÃ¼r die nach geltendem Recht keine Haftungsbegrenzung zulÃ¤ssig ist.â€œ wie folgt ersetzt:
 
-In Deutschland: i) Schadenersatzansprüche im Zusammenhang mit Personenschäden (einschließlich Tod); ii) Verluste oder Schäden, die durch Verletzung einer in Verbindung mit einem Geschäftsvorgang unter dieser Vereinbarung von IBM übernommenen Garantie entstanden sind; und iii) Schäden, die vorsätzlich oder grob fahrlässig verursacht wurden.
+In Deutschland: i) SchadenersatzansprÃ¼che im Zusammenhang mit PersonenschÃ¤den (einschlieÃŸlich Tod); ii) Verluste oder SchÃ¤den, die durch Verletzung einer in Verbindung mit einem GeschÃ¤ftsvorgang unter dieser Vereinbarung von IBM Ã¼bernommenen Garantie entstanden sind; und iii) SchÃ¤den, die vorsÃ¤tzlich oder grob fahrlÃ¤ssig verursacht wurden.
 
 Abschnitt 6. Geltendes Recht und Geltungsbereich
 
-In Absatz a wird nur im ersten Satz der Teilsatz "des Landes zur Anwendung kommen, in dem der Geschäftsvorgang zum Erwerb von Lizenzberechtigungen stattfindet" wie folgt ersetzt:
+In Absatz a wird nur im ersten Satz der Teilsatz â€des Landes zur Anwendung kommen, in dem der GeschÃ¤ftsvorgang zum Erwerb von Lizenzberechtigungen stattfindetâ€œ wie folgt ersetzt:
 
-In Albanien, Armenien, Aserbaidschan, Belarus, Bosnien-Herzegowina, Bulgarien, Kroatien, Ehemalige Jugoslawische Republik Mazedonien, Georgien, Kasachstan, Kirgisien, Republik Moldau, Montenegro, Rumänien, Russland, Serbien, Tadschikistan, Turkmenistan, Ukraine und Usbekistan: Österreichs zur Anwendung kommen
+In Albanien, Armenien, Aserbaidschan, Belarus, Bosnien-Herzegowina, Bulgarien, Kroatien, Ehemalige Jugoslawische Republik Mazedonien, Georgien, Kasachstan, Kirgisien, Republik Moldau, Montenegro, RumÃ¤nien, Russland, Serbien, Tadschikistan, Turkmenistan, Ukraine und Usbekistan: Ã–sterreichs zur Anwendung kommen
 
 In Estland, Lettland und Litauen: Finnlands zur Anwendung kommen
 
-In Algerien, Andorra, Benin, Burkina Faso, Burundi, Kamerun, Kap Verde, Zentralafrikanische Republik, Tschad, Komoren, Republik Kongo, Dschibuti, Demokratische Republik Kongo, Äquatorialguinea, Französisch-Guayana, Französisch-Polynesien, Gabun, Guinea, Guinea-Bissau, Elfenbeinküste, Libanon, Madagaskar, Mali, Mauretanien, Mauritius, Mayotte, Marokko, Neukaledonien, Niger, Réunion, Senegal, Seychellen, Togo, Tunesien, Vanuatu sowie Wallis und Futuna: Frankreichs zur Anwendung kommen
+In Algerien, Andorra, Benin, Burkina Faso, Burundi, Kamerun, Kap Verde, Zentralafrikanische Republik, Tschad, Komoren, Republik Kongo, Dschibuti, Demokratische Republik Kongo, Ã„quatorialguinea, FranzÃ¶sisch-Guayana, FranzÃ¶sisch-Polynesien, Gabun, Guinea, Guinea-Bissau, ElfenbeinkÃ¼ste, Libanon, Madagaskar, Mali, Mauretanien, Mauritius, Mayotte, Marokko, Neukaledonien, Niger, RÃ©union, Senegal, Seychellen, Togo, Tunesien, Vanuatu sowie Wallis und Futuna: Frankreichs zur Anwendung kommen
 
-In Angola, Bahrain, Botsuana, Ägypten, Eritrea, Äthiopien, Gambia, Ghana, Irak, Jordanien, Kenia, Kuwait, Liberia, Malawi, Malta, Mosambik, Nigeria, Oman, Pakistan, Katar, Ruanda, São Tomé und Príncipe, Saudi-Arabien, Sierra Leone, Somalia, Tansania, Uganda, Vereinigte Arabische Emirate, Westjordanland (Westbank) und Gazastreifen, Jemen, Sambia und Simbabwe: Englands zur Anwendung kommen
+In Angola, Bahrain, Botsuana, Ã„gypten, Eritrea, Ã„thiopien, Gambia, Ghana, Irak, Jordanien, Kenia, Kuwait, Liberia, Malawi, Malta, Mosambik, Nigeria, Oman, Pakistan, Katar, Ruanda, SÃ£o TomÃ© und PrÃ­ncipe, Saudi-Arabien, Sierra Leone, Somalia, Tansania, Uganda, Vereinigte Arabische Emirate, Westjordanland (Westbank) und Gazastreifen, Jemen, Sambia und Simbabwe: Englands zur Anwendung kommen
 
 In Liechtenstein: der Schweiz zur Anwendung kommen
 
-In Südafrika, Namibia, Lesotho und Swasiland: der Republik Südafrika zur Anwendung kommen
+In SÃ¼dafrika, Namibia, Lesotho und Swasiland: der Republik SÃ¼dafrika zur Anwendung kommen
 
-Im Vereinigten Königreich: Englands zur Anwendung kommen
+Im Vereinigten KÃ¶nigreich: Englands zur Anwendung kommen
 
-In Absatz a wird der folgende Text am Ende des ersten Satzes hinzugefügt:
+In Absatz a wird der folgende Text am Ende des ersten Satzes hinzugefÃ¼gt:
 
-In Frankreich: Die Vertragsparteien vereinbaren, dass die Artikel 1222 und 1223 des französischen Bürgerlichen Gesetzbuches nicht zur Anwendung kommen.
+In Frankreich: Die Vertragsparteien vereinbaren, dass die Artikel 1222 und 1223 des franzÃ¶sischen BÃ¼rgerlichen Gesetzbuches nicht zur Anwendung kommen.
 
-Am Ende von Absatz a wird Folgendes hinzugefügt:
+Am Ende von Absatz a wird Folgendes hinzugefÃ¼gt:
 
-In Albanien, Armenien, Aserbaidschan, Belarus, Bosnien-Herzegowina, Bulgarien, Kroatien, Ehemalige Jugoslawische Republik Mazedonien, Georgien, Kasachstan, Kosovo, Kirgisien, Republik Moldau, Montenegro, Rumänien, Russland, Serbien, Tadschikistan, Turkmenistan, Ukraine und Usbekistan: Sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Übereinstimmung mit den Schiedsregeln des Internationalen Schiedsgerichts (Wiener Regeln) der Wirtschaftskammer Österreichs (Schiedsstelle) in Wien, Österreich, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Übereinstimmung mit den Wiener Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhängigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemäß den Wiener Regeln ernannt. Die Schiedsrichter sind nicht ermächtigt, Unterlassungs- oder Schadenersatzansprüche zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte Höchstwerte überschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen Schäden oder Verstößen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die Gültigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
+In Albanien, Armenien, Aserbaidschan, Belarus, Bosnien-Herzegowina, Bulgarien, Kroatien, Ehemalige Jugoslawische Republik Mazedonien, Georgien, Kasachstan, Kosovo, Kirgisien, Republik Moldau, Montenegro, RumÃ¤nien, Russland, Serbien, Tadschikistan, Turkmenistan, Ukraine und Usbekistan: SÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Ãœbereinstimmung mit den Schiedsregeln des Internationalen Schiedsgerichts (Wiener Regeln) der Wirtschaftskammer Ã–sterreichs (Schiedsstelle) in Wien, Ã–sterreich, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Ãœbereinstimmung mit den Wiener Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhÃ¤ngigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemÃ¤ÃŸ den Wiener Regeln ernannt. Die Schiedsrichter sind nicht ermÃ¤chtigt, Unterlassungs- oder SchadenersatzansprÃ¼che zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte HÃ¶chstwerte Ã¼berschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen SchÃ¤den oder VerstÃ¶ÃŸen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die GÃ¼ltigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
 
-In Estland, Lettland und Litauen: Sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Übereinstimmung mit den Schiedsregeln (Regeln) der Finnischen Handelskammer (Arbitration Institute of the Finland Chamber of Commerce, FAI) (Schiedsstelle) vom Institut für Schiedsgerichtsbarkeit der Finnischen Handelskammer in Helsinki, Finnland, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Übereinstimmung mit diesen Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhängigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemäß den Regeln ernannt. Die Schiedsrichter sind nicht ermächtigt, Unterlassungs- oder Schadenersatzansprüche zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte Höchstwerte überschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen Schäden oder Verstößen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die Gültigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
+In Estland, Lettland und Litauen: SÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Ãœbereinstimmung mit den Schiedsregeln (Regeln) der Finnischen Handelskammer (Arbitration Institute of the Finland Chamber of Commerce, FAI) (Schiedsstelle) vom Institut fÃ¼r Schiedsgerichtsbarkeit der Finnischen Handelskammer in Helsinki, Finnland, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Ãœbereinstimmung mit diesen Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhÃ¤ngigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemÃ¤ÃŸ den Regeln ernannt. Die Schiedsrichter sind nicht ermÃ¤chtigt, Unterlassungs- oder SchadenersatzansprÃ¼che zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte HÃ¶chstwerte Ã¼berschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen SchÃ¤den oder VerstÃ¶ÃŸen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die GÃ¼ltigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
 
-In Afghanistan, Angola, Bahrain, Botsuana, Burundi, Kap Verde, Dschibuti, Ägypten, Eritrea, Äthiopien, Gambia, Ghana, Irak, Jordanien, Kenia, Kuwait, Libanon, Liberia, Libyen, Madagaskar, Malawi, Mosambik, Nigeria, Oman, Pakistan, palästinensische Gebiete, Katar, Ruanda, São Tomé und Príncipe, Saudi-Arabien, Seychellen, Sierra Leone, Somalia, Südsudan, Tansania, Uganda, Vereinigte Arabische Emirate, Westsahara, Jemen, Sambia und Simbabwe: Sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Übereinstimmung mit den Schiedsregeln (Regeln) des Internationalen Schiedsgerichtshofs (London Court of International Arbitration, LCIA) (Schiedsstelle) in London, Vereinigtes Königreich, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Übereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhängigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemäß den Regeln ernannt. Die Schiedsrichter sind nicht ermächtigt, Unterlassungs- oder Schadenersatzansprüche zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte Höchstwerte überschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen Schäden oder Verstößen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die Gültigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
+In Afghanistan, Angola, Bahrain, Botsuana, Burundi, Kap Verde, Dschibuti, Ã„gypten, Eritrea, Ã„thiopien, Gambia, Ghana, Irak, Jordanien, Kenia, Kuwait, Libanon, Liberia, Libyen, Madagaskar, Malawi, Mosambik, Nigeria, Oman, Pakistan, palÃ¤stinensische Gebiete, Katar, Ruanda, SÃ£o TomÃ© und PrÃ­ncipe, Saudi-Arabien, Seychellen, Sierra Leone, Somalia, SÃ¼dsudan, Tansania, Uganda, Vereinigte Arabische Emirate, Westsahara, Jemen, Sambia und Simbabwe: SÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Ãœbereinstimmung mit den Schiedsregeln (Regeln) des Internationalen Schiedsgerichtshofs (London Court of International Arbitration, LCIA) (Schiedsstelle) in London, Vereinigtes KÃ¶nigreich, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Ãœbereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhÃ¤ngigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemÃ¤ÃŸ den Regeln ernannt. Die Schiedsrichter sind nicht ermÃ¤chtigt, Unterlassungs- oder SchadenersatzansprÃ¼che zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte HÃ¶chstwerte Ã¼berschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen SchÃ¤den oder VerstÃ¶ÃŸen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die GÃ¼ltigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 500.000,00 US-Dollar einziehen zu lassen.
 
-In Algerien, Benin, Burkina Faso, Kamerun, Zentralafrikanische Republik, Tschad, Republik Kongo, Demokratische Republik Kongo, Äquatorialguinea, Französisch-Guayana, Französisch-Polynesien, Gabun, Guinea, Guinea-Bissau, Elfenbeinküste, Mali, Mauretanien, Mauritius, Marokko, Niger, Senegal, Togo und Tunesien: Sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Übereinstimmung mit den Schiedsregeln (Regeln) des Internationalen Schiedsgerichtshofs der Internationalen Handelskammer (ICC International Court of Arbitration) (Schiedsstelle) in Paris, Frankreich, geregelt bzw. beigelegt. Die offizielle Sprache ist Französisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Übereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhängigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemäß den Regeln ernannt. Die Schiedsrichter sind nicht ermächtigt, Unterlassungs- oder Schadenersatzansprüche zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte Höchstwerte überschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen Schäden oder Verstößen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die Gültigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 250.000,00 US-Dollar einziehen zu lassen.
+In Algerien, Benin, Burkina Faso, Kamerun, Zentralafrikanische Republik, Tschad, Republik Kongo, Demokratische Republik Kongo, Ã„quatorialguinea, FranzÃ¶sisch-Guayana, FranzÃ¶sisch-Polynesien, Gabun, Guinea, Guinea-Bissau, ElfenbeinkÃ¼ste, Mali, Mauretanien, Mauritius, Marokko, Niger, Senegal, Togo und Tunesien: SÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Ãœbereinstimmung mit den Schiedsregeln (Regeln) des Internationalen Schiedsgerichtshofs der Internationalen Handelskammer (ICC International Court of Arbitration) (Schiedsstelle) in Paris, Frankreich, geregelt bzw. beigelegt. Die offizielle Sprache ist FranzÃ¶sisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Ãœbereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhÃ¤ngigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemÃ¤ÃŸ den Regeln ernannt. Die Schiedsrichter sind nicht ermÃ¤chtigt, Unterlassungs- oder SchadenersatzansprÃ¼che zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte HÃ¶chstwerte Ã¼berschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen SchÃ¤den oder VerstÃ¶ÃŸen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die GÃ¼ltigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 250.000,00 US-Dollar einziehen zu lassen.
 
-In Südafrika, Namibia, Lesotho und Swasiland: Sämtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Übereinstimmung mit den Schiedsregeln (Regeln) der Arbitration Foundation of South Africa (AFSA) (Schiedsstelle) in Johannesburg, Südafrika, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Übereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhängigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemäß den Regeln ernannt. Die Schiedsrichter sind nicht ermächtigt, Unterlassungs- oder Schadenersatzansprüche zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte Höchstwerte überschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen Schäden oder Verstößen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die Gültigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 250.000,00 US-Dollar einziehen zu lassen.
+In SÃ¼dafrika, Namibia, Lesotho und Swasiland: SÃ¤mtliche Rechtsstreitigkeiten, die sich aus dieser Vereinbarung ergeben, werden in Ãœbereinstimmung mit den Schiedsregeln (Regeln) der Arbitration Foundation of South Africa (AFSA) (Schiedsstelle) in Johannesburg, SÃ¼dafrika, geregelt bzw. beigelegt. Die offizielle Sprache ist Englisch. Die Schlichtung erfolgt durch drei unparteiische Schiedsrichter, die in Ãœbereinstimmung mit den Regeln ernannt werden. Jede Partei ernennt einen Schiedsrichter und die von den Parteien ernannten Schiedsrichter bestimmen gemeinsam innerhalb von 30 Tagen einen unabhÃ¤ngigen Vorsitzenden. Anderenfalls wird der Vorsitzende von der Schiedsstelle gemÃ¤ÃŸ den Regeln ernannt. Die Schiedsrichter sind nicht ermÃ¤chtigt, Unterlassungs- oder SchadenersatzansprÃ¼che zuzuerkennen, die durch diese Vereinbarung ausgeschlossen werden oder darin festgelegte HÃ¶chstwerte Ã¼berschreiten. Durch die Bestimmungen dieser Vereinbarung ist keine Vertragspartei daran gehindert, gerichtliche Verfahren einzuleiten, (1) um eine einstweilige Anordnung zur Vermeidung von materiellen SchÃ¤den oder VerstÃ¶ÃŸen gegen Vertraulichkeitsbestimmungen oder geistige Eigentumsrechte zu erwirken, (2) um die GÃ¼ltigkeit oder das Eigentum an einem Urheberrecht, einem Patent oder einer Marke feststellen zu lassen, deren Inhaber eine Partei oder Unternehmensgesellschaft ist bzw. behauptet zu sein, oder (3) um Forderungen unter 250.000,00 US-Dollar einziehen zu lassen.
 
-In Andorra, Österreich, Zypern, Frankreich, Deutschland, Griechenland, Israel, Italien, Portugal, Spanien, Schweiz und Türkei: Sämtliche Rechtsstreitigkeiten fallen ausschließlich in die Zuständigkeit der folgenden Gerichte:
+In Andorra, Ã–sterreich, Zypern, Frankreich, Deutschland, Griechenland, Israel, Italien, Portugal, Spanien, Schweiz und TÃ¼rkei: SÃ¤mtliche Rechtsstreitigkeiten fallen ausschlieÃŸlich in die ZustÃ¤ndigkeit der folgenden Gerichte:
 
 In Andorra: des Handelsgerichts in Paris
 
-In Österreich: des Gerichts in Wien, Österreich (Innere Stadt)
+In Ã–sterreich: des Gerichts in Wien, Ã–sterreich (Innere Stadt)
 
-In Zypern: des zuständigen Gerichts in Nikosia
+In Zypern: des zustÃ¤ndigen Gerichts in Nikosia
 
 In Frankreich: des Handelsgerichts in Paris
 
 In Deutschland: der Gerichte in Stuttgart
 
-In Griechenland: des zuständigen Gerichts in Athen
+In Griechenland: des zustÃ¤ndigen Gerichts in Athen
 
 In Israel: der Gerichte in Tel Aviv-Jaffa
 
@@ -489,55 +489,55 @@ In Portugal: der Gerichte in Lissabon
 
 In Spanien: der Gerichte in Madrid
 
-In der Schweiz: des Handelsgerichts im Kanton Zürich
+In der Schweiz: des Handelsgerichts im Kanton ZÃ¼rich
 
-In der Türkei: der Zentralgerichte (Caglayan) und Execution Directorates in Istanbul, Republik Türkei
+In der TÃ¼rkei: der Zentralgerichte (Caglayan) und Execution Directorates in Istanbul, Republik TÃ¼rkei
 
-In den Niederlanden: Die Vertragsparteien verzichten auf ihre Rechte nach Titel 7.1 ('Koop') und Klauseln 7:401 und 402 des Niederländischen Bürgerlichen Gesetzbuches und auf ihre Rechte auf vollständige oder teilweise Auflösung ('gehele of partiele ontbinding') dieser Vereinbarung nach Artikel 6:265 des Niederländischen Bürgerlichen Gesetzbuches.
+In den Niederlanden: Die Vertragsparteien verzichten auf ihre Rechte nach Titel 7.1 ('Koop') und Klauseln 7:401 und 402 des NiederlÃ¤ndischen BÃ¼rgerlichen Gesetzbuches und auf ihre Rechte auf vollstÃ¤ndige oder teilweise AuflÃ¶sung ('gehele of partiele ontbinding') dieser Vereinbarung nach Artikel 6:265 des NiederlÃ¤ndischen BÃ¼rgerlichen Gesetzbuches.
 
 Abschnitt 7. Allgemeines
 
-Am Ende von Absatz d wird der folgende Text eingefügt:
+Am Ende von Absatz d wird der folgende Text eingefÃ¼gt:
 
-In Spanien: IBM wird Weisungen des Lizenznehmers nachkommen, die sich auf den Zugriff auf Kontaktinformationen, deren Aktualisierung oder Löschung beziehen, sofern diese an die folgende Adresse gerichtet sind: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
+In Spanien: IBM wird Weisungen des Lizenznehmers nachkommen, die sich auf den Zugriff auf Kontaktinformationen, deren Aktualisierung oder LÃ¶schung beziehen, sofern diese an die folgende Adresse gerichtet sind: IBM, c/ Santa Hortensia 26-28, 28002 Madrid, Departamento de Privacidad de Datos.
 
-Am Ende von Absatz j wird der folgende Text hinzugefügt:
+Am Ende von Absatz j wird der folgende Text hinzugefÃ¼gt:
 
-In Tschechien: Gemäß Paragraf 1801 des Gesetzes Nr. 89/2012 Sb. ("Bürgerliches Gesetzbuch") kommen die Paragrafen 1799 und 1800 des Bürgerlichen Gesetzbuches in der aktuellen Fassung für Geschäftsvorgänge unter dieser Vereinbarung nicht zur Anwendung. Der Lizenznehmer akzeptiert das Risiko der Veränderung der Umstände gemäß Paragraf 1765 des Bürgerlichen Gesetzbuches.
+In Tschechien: GemÃ¤ÃŸ Paragraf 1801 des Gesetzes Nr. 89/2012 Sb. (â€BÃ¼rgerliches Gesetzbuchâ€œ) kommen die Paragrafen 1799 und 1800 des BÃ¼rgerlichen Gesetzbuches in der aktuellen Fassung fÃ¼r GeschÃ¤ftsvorgÃ¤nge unter dieser Vereinbarung nicht zur Anwendung. Der Lizenznehmer akzeptiert das Risiko der VerÃ¤nderung der UmstÃ¤nde gemÃ¤ÃŸ Paragraf 1765 des BÃ¼rgerlichen Gesetzbuches.
 
 In Absatz j:
 
-In Bulgarien, Kroatien, Russland, Serbien und Slowenien: Der zweite Satz "Beide Vertragsparteien kommen überein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung später als zwei Jahre nach Entstehen eines Anspruches einzuleiten." wird gestrichen.
+In Bulgarien, Kroatien, Russland, Serbien und Slowenien: Der zweite Satz â€Beide Vertragsparteien kommen Ã¼berein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung spÃ¤ter als zwei Jahre nach Entstehen eines Anspruches einzuleiten.â€œ wird gestrichen.
 
-In Absatz j wird der folgende Text am Ende des zweiten Satzes hinzugefügt:
+In Absatz j wird der folgende Text am Ende des zweiten Satzes hinzugefÃ¼gt:
 
 In Litauen: , es sei denn, dies ist gesetzlich vorgeschrieben.
 
 In Absatz j wird der zweite Satz wie folgt ersetzt:
 
-In Polen: Beide Vertragsparteien kommen überein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung später als drei Jahre nach Entstehen eines Anspruches einzuleiten, mit Ausnahme eines Anspruches wegen Nichtzahlung, der nicht später als 2 Jahre nach Fälligkeit der Zahlung geltend gemacht werden kann.
+In Polen: Beide Vertragsparteien kommen Ã¼berein, keine rechtlichen Schritte im Zusammenhang mit dieser Vereinbarung spÃ¤ter als drei Jahre nach Entstehen eines Anspruches einzuleiten, mit Ausnahme eines Anspruches wegen Nichtzahlung, der nicht spÃ¤ter als 2 Jahre nach FÃ¤lligkeit der Zahlung geltend gemacht werden kann.
 
-Im zweiten Satz von Absatz j wird das Wort "zwei" wie folgt ersetzt:
+Im zweiten Satz von Absatz j wird das Wort â€zweiâ€œ wie folgt ersetzt:
 
 In Lettland und der Ukraine: drei
 
 In der Slowakei: vier
 
-In Absatz j wird der dritte Satz mit folgendem Wortlaut: "Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien für die Nichterfüllung von Verpflichtungen aus Gründen verantwortlich, die außerhalb ihres Einflussbereichs liegen." wie folgt ergänzt:
+In Absatz j wird der dritte Satz mit folgendem Wortlaut: â€Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien fÃ¼r die NichterfÃ¼llung von Verpflichtungen aus GrÃ¼nden verantwortlich, die auÃŸerhalb ihres Einflussbereichs liegen.â€œ wie folgt ergÃ¤nzt:
 
-In Russland: , wie beispielsweise Erdbeben, Überflutungen, Brände, unabwendbare Ereignisse (außer Arbeitsniederlegungen durch die Mitarbeiter der Vertragsparteien), Kriegshandlungen, militärische Aktionen, Embargos, Blockaden, internationale oder staatliche Sanktionen und behördliche Anordnungen der jeweiligen Rechtsordnung.
+In Russland: , wie beispielsweise Erdbeben, Ãœberflutungen, BrÃ¤nde, unabwendbare Ereignisse (auÃŸer Arbeitsniederlegungen durch die Mitarbeiter der Vertragsparteien), Kriegshandlungen, militÃ¤rische Aktionen, Embargos, Blockaden, internationale oder staatliche Sanktionen und behÃ¶rdliche Anordnungen der jeweiligen Rechtsordnung.
 
-In Absatz j wird der dritte Satz mit folgendem Wortlaut: "Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien für die Nichterfüllung von Verpflichtungen aus Gründen verantwortlich, die außerhalb ihres Einflussbereichs liegen." wie folgt geändert:
+In Absatz j wird der dritte Satz mit folgendem Wortlaut: â€Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien fÃ¼r die NichterfÃ¼llung von Verpflichtungen aus GrÃ¼nden verantwortlich, die auÃŸerhalb ihres Einflussbereichs liegen.â€œ wie folgt geÃ¤ndert:
 
-In der Ukraine: Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien für die Nichterfüllung von Verpflichtungen aus Gründen oder aufgrund von regulatorischen Änderungen verantwortlich, die außerhalb ihres Einflussbereichs liegen, einschließlich, aber nicht beschränkt auf Import- und Exportbeschränkungen oder Wirtschaftssanktionen der USA.
+In der Ukraine: Mit Ausnahme von Zahlungsverpflichtungen ist keine der Vertragsparteien fÃ¼r die NichterfÃ¼llung von Verpflichtungen aus GrÃ¼nden oder aufgrund von regulatorischen Ã„nderungen verantwortlich, die auÃŸerhalb ihres Einflussbereichs liegen, einschlieÃŸlich, aber nicht beschrÃ¤nkt auf Import- und ExportbeschrÃ¤nkungen oder Wirtschaftssanktionen der USA.
 
-Am Ende des Abschnitts wird der folgende Text als neuer Absatz l hinzugefügt:
+Am Ende des Abschnitts wird der folgende Text als neuer Absatz l hinzugefÃ¼gt:
 
-In Ungarn: Durch die Zustimmung zu dieser Vereinbarung bestätigt der Lizenznehmer, dass er ausreichend über alle Bestimmungen dieser Vereinbarung informiert wurde und die Möglichkeit hatte, die Bedingungen zu verhandeln. Die folgenden Bestimmungen können erheblich von den Bestimmungen abweichen, die allgemein nach ungarischem Recht Anwendung finden, und beide Vertragsparteien stimmen diesen Bestimmungen durch Unterzeichnung der Vereinbarung zu: Programmlizenz; Gewährleistungen; Gebühren, Steuern, Zahlung und Prüfung; Haftung und Schutz geistigen Eigentums; Kündigung; Geltendes Recht und Geltungsbereich; und Allgemeines.
+In Ungarn: Durch die Zustimmung zu dieser Vereinbarung bestÃ¤tigt der Lizenznehmer, dass er ausreichend Ã¼ber alle Bestimmungen dieser Vereinbarung informiert wurde und die MÃ¶glichkeit hatte, die Bedingungen zu verhandeln. Die folgenden Bestimmungen kÃ¶nnen erheblich von den Bestimmungen abweichen, die allgemein nach ungarischem Recht Anwendung finden, und beide Vertragsparteien stimmen diesen Bestimmungen durch Unterzeichnung der Vereinbarung zu: Programmlizenz; GewÃ¤hrleistungen; GebÃ¼hren, Steuern, Zahlung und PrÃ¼fung; Haftung und Schutz geistigen Eigentums; KÃ¼ndigung; Geltendes Recht und Geltungsbereich; und Allgemeines.
 
-In Tschechien: Der Lizenznehmer erklärt seine ausdrückliche Zustimmung zu den Bedingungen dieser Vereinbarung, insbesondere zu den folgenden Geschäftsbedingungen: i) Gewährleistungsbeschränkung und Haftungsausschluss bei Mängeln (Gewährleistungen); ii) Begrenzung von Schadenersatzansprüchen des Lizenznehmers (Haftung und Schutz geistigen Eigentums); iii) rechtliche Verbindlichkeit von Export- und Importbestimmungen (Geltendes Recht und Geltungsbereich); iv) kürzere Verjährungsfristen (Allgemeines); v) Ausschluss der Anwendbarkeit von Bestimmungen aus Adhäsionsverträgen (Allgemeines); und vi) Akzeptanz des Risikos einer Veränderung der Umstände (Allgemeines).
+In Tschechien: Der Lizenznehmer erklÃ¤rt seine ausdrÃ¼ckliche Zustimmung zu den Bedingungen dieser Vereinbarung, insbesondere zu den folgenden GeschÃ¤ftsbedingungen: i) GewÃ¤hrleistungsbeschrÃ¤nkung und Haftungsausschluss bei MÃ¤ngeln (GewÃ¤hrleistungen); ii) Begrenzung von SchadenersatzansprÃ¼chen des Lizenznehmers (Haftung und Schutz geistigen Eigentums); iii) rechtliche Verbindlichkeit von Export- und Importbestimmungen (Geltendes Recht und Geltungsbereich); iv) kÃ¼rzere VerjÃ¤hrungsfristen (Allgemeines); v) Ausschluss der Anwendbarkeit von Bestimmungen aus AdhÃ¤sionsvertrÃ¤gen (Allgemeines); und vi) Akzeptanz des Risikos einer VerÃ¤nderung der UmstÃ¤nde (Allgemeines).
 
-In Rumänien: Der Lizenznehmer erklärt seine ausdrückliche Zustimmung zu den folgenden Standardklauseln, die gemäß den Bestimmungen von Artikel 1203 des rumänischen Zivilrechts als 'ungewöhnliche Klauseln' erachtet werden können: Klauseln 2, 4, 5 und 8j. Der Lizenznehmer bestätigt hiermit, dass er ausreichend über alle Bestimmungen dieser Vereinbarung informiert wurde, einschließlich der oben erwähnten Klauseln, die Bestimmungen genau analysiert und verstanden hat und die Möglichkeit hatte, die Bedingungen jeder Klausel zu verhandeln.
+In RumÃ¤nien: Der Lizenznehmer erklÃ¤rt seine ausdrÃ¼ckliche Zustimmung zu den folgenden Standardklauseln, die gemÃ¤ÃŸ den Bestimmungen von Artikel 1203 des rumÃ¤nischen Zivilrechts als 'ungewÃ¶hnliche Klauseln' erachtet werden kÃ¶nnen: Klauseln 2, 4, 5 und 8j. Der Lizenznehmer bestÃ¤tigt hiermit, dass er ausreichend Ã¼ber alle Bestimmungen dieser Vereinbarung informiert wurde, einschlieÃŸlich der oben erwÃ¤hnten Klauseln, die Bestimmungen genau analysiert und verstanden hat und die MÃ¶glichkeit hatte, die Bedingungen jeder Klausel zu verhandeln.
 
 i125-5589-06 (10-2021)
 

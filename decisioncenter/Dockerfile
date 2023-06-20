@@ -22,7 +22,6 @@ COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
 COPY $ODMDOCKERDIR/common/features $SCRIPT
 COPY $ODMDOCKERDIR/licenses /licenses
-RUN apk add --no-cache zip bash ca-certificates wget
 
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 RUN chmod -R a+x $SCRIPT && \
@@ -35,7 +34,7 @@ COPY ./teamserver/applicationservers/WLP*/teamserver-dbdump.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
 RUN $SCRIPT/extractApp.sh decisioncenter.war && \
-    $SCRIPT/extractApp.sh decisionmodel.war && \
+    if [ -s "/config/apps/decisionmodel.war" ]; then $SCRIPT/extractApp.sh decisionmodel.war; fi && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
@@ -44,11 +43,15 @@ chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
+ARG CP4BAVERSION
+ARG ODMVERSION
 ENV ODMDOCKERDIR $ODMDOCKERDIR
+ENV CP4BAVERSION $CP4BAVERSION
+ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -62,7 +65,7 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resour
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN chmod -R 777 /config
-RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh
+RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -81,6 +84,8 @@ LABEL io.k8s.description="Decision Center is a web application to manage and aut
 
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
+LABEL product-version=${ODMVERSION}
+LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
 ENV APP_NAME DecisionCenter
@@ -90,7 +95,7 @@ ENV APPS /config/apps
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
-
+COPY --from=oidc-liberty-builder /opt/ibm/version.txt /opt/ibm/version.txt
 # Welcome page
 COPY --from=builder --chown=1001:0 /welcomepage/target/welcomepage.war $APPS
 

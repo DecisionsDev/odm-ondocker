@@ -24,8 +24,6 @@ _installation_directory/executionserver/applicationservers/WLP*/DecisionService.
 
 _installation_directory/teamserver/applicationservers/WLP*/decisioncenter.war_
 
-_installation_directory/teamserver/applicationservers/WLP*/decisionmodel.war_ (starting from ODM vnext)
-
 _installation_directory/executionserver/applicationservers/WLP*/DecisionRunner.war_
 
 ### Clone the odm-ondocker code

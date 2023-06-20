@@ -11,7 +11,12 @@
   			libraryRef="MySQLLib"/>
 
   <dataSource id="resdatasource" jndiName="jdbc/resdatasource" jdbcDriverRef="MySQLDriver" type="javax.sql.ConnectionPoolDataSource">
-    <properties databaseName="odmdb" user="odmusr" password="odmpwd" serverName="dbserver" portNumber="DB_PORT_NUMBER" />
+    <properties 
+     databaseName="odmdb"
+     user="odmusr"
+     password="odmpwd"
+     serverName="dbserver"
+     portNumber="DB_PORT_NUMBER" />
   </dataSource>
 
 </server>

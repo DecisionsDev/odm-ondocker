@@ -112,13 +112,32 @@ else
         esac
 fi
 
-if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ] || [ -f /config/customdatasource/truststore_password ]
+if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ] || [ -f /config/customdatasource/truststore_password ] || [ -f /config/customdatasource/tls.crt ]
 then
         case $DB_TYPE in
                 *db2* )
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/customdatasource/truststore_password ] && export DB_SSL_TRUSTSTORE_PASSWORD=$(cat /config/customdatasource/truststore_password)
-		sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2" sslTrustStoreLocation="/config/customdatasource/truststore.jks" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+
+                if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
+		then
+			echo "configure DB2 SSL with DB_SSL_TRUSTSTORE_PASSWORD"
+			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2" sslTrustStoreLocation="/config/customdatasource/truststore.p12" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+		else
+			echo "configure DB2 SSL with DEFAULT_TRUSTSTORE_PASSWORD"
+			DEFAULT_TRUSTSTORE_PASSWORD=changeme
+			if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
+			then
+				DEFAULT_TRUSTSTORE_PASSWORD=changeit
+			fi
+			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+                        if [ -f /config/customdatasource/tls.crt ]
+                        then
+                                echo "Import DB2 certificate"
+                                keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias BD2_FOR_ODM -file /config/customdatasource/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+                        fi
+			keytool -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+		fi
 		;;
 	esac
 fi

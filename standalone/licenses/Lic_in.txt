@@ -3,7 +3,7 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan (i125-5589-06) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V8.11.1 (5725-B69)
+IBM Operational Decision Manager for Developers V8.12 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
@@ -16,7 +16,7 @@ Program Pendukung
 Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung yang diidentifikasi di bawah ini hanya untuk mendukung penggunaan Pemegang Lisensi atas Program Utama berdasarkan Perjanjian ini. Frasa "untuk mendukung penggunaan Pemegang Lisensi" hanya akan mencakup penggunaan-penggunaan tersebut yang diperlukan atau dengan cara lain, yang terkait secara langsung dengan penggunaan yang dilisensikan atas Program Utama atau Program Pendukung lainnya. Program-program Pendukung tidak dapat digunakan untuk tujuan lainnya. Program Pendukung dapat disertai dengan syarat-syarat lisensi, dan syarat-syarat tersebut, apabila ada, berlaku untuk penggunaan Pemegang Lisensi atas Program Pendukung. Apabila terdapat ketidaksesuaian, syarat-syarat dalam dokumen Informasi tentang Lisensi ini menggantikan syarat-syarat Program Pendukung. Pemegang Lisensi harus memperoleh kepemilikan yang memadai atas Program, secara keseluruhan, untuk mencakup pemasangan dan penggunaan Pemegang Lisensi atas semua Program Pendukung, kecuali apabila kepemilikan yang terpisah diberikan di dalam dokumen Informasi Lisensi. Misalnya, jika Program ini dilisensikan pada basis Inti Prosesor Virtual (Virtual Processor Core - "VPC") dan Pemegang Lisensi memasang Program Utama atau Program Pendukung pada 10 mesin VPC dan Program Pendukung lainnya pada 10 mesin VPC kedua, Pemegang Lisensi akan diwajibkan memperoleh kepemilikan 20 VPC atas Program.
 
 Program Pendukung:
-IBM WebSphere Liberty 22
+IBM WebSphere Liberty
 
 Batasan Pengembang
 
@@ -47,9 +47,9 @@ Data dan Layanan Pihak Ketiga
 Program menyediakan akses ke layanan data, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "Konten Pihak Ketiga"). Akses ke Konten Pihak Ketiga ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan Konten Pihak Ketiga tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
 
-L/N: L-ASAY-CE4DNS
-D/N: L-ASAY-CE4DNS
-P/N: L-ASAY-CE4DNS
+L/N: L-AMWV-QRBWQJ
+D/N: L-AMWV-QRBWQJ
+P/N: L-AMWV-QRBWQJ
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan
 
@@ -183,7 +183,7 @@ Di Meksiko: Pada kalimat ketiga, hapus kata "ke akun yang ditentukan oleh IBM".
 
 Di Meksiko: Tambahkan kalimat baru berikut setelah kalimat ketiga:
 
-Pembayaran akan dilakukan melalui transfer dana elektronik ke akun yang ditetapkan oleh IBM atau di domisili IBM yang berada di Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Kota Meksiko, Kode Pos 01210.
+Pembayaran akan dilakukan melalui transfer dana elektronik ke akun yang ditetapkan oleh IBM atau di domisili IBM yang berada di Alfonso Napoles Gandara 3111, Santa Fe PeÃ±a Blanca, Alvaro Obregon, Kota Meksiko, Kode Pos 01210.
 
 Tambahkan kalimat berikut di akhir ayat c:
 
@@ -203,7 +203,7 @@ Pasal 6. Peraturan Perundang-undangan yang Mengatur dan Cakupan Geografis
 
 Pada ayat a, hanya ganti kalimat pertama dengan:
 
-Di Argentina: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Republik Argentina, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Setiap proses hukum mengenai hak, tugas, dan kewajiban yang timbul dari Perjanjian ini akan diajukan di Pengadilan Niaga Umum Kota "Ciudad Autónoma de Buenos Aires".
+Di Argentina: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Republik Argentina, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Setiap proses hukum mengenai hak, tugas, dan kewajiban yang timbul dari Perjanjian ini akan diajukan di Pengadilan Niaga Umum Kota "Ciudad AutÃ³noma de Buenos Aires".
 
 Di Chili: Kedua belah pihak menyetujui penerapan peraturan perundang-undangan Chili, tanpa memerhatikan prinsip-prinsip pertentangan hukum. Setiap ketidaksesuaian, interpretasi, atau pelanggaran yang berkaitan dengan Perjanjian ini yang tidak dapat diselesaikan oleh para Pihak harus diajukan ke yurisdiksi Pengadilan Umum kota dan distrik Santiago.
 
@@ -243,7 +243,7 @@ Di Venezuela: Venezuela
 
 Tambahkan kalimat berikut di akhir ayat b:
 
-Di Brasil: Semua sengketa yang timbul karena atau berkaitan dengan Perjanjian ini, termasuk proses hukum singkat (summary proceedings), akan diajukan di hadapan dan tunduk pada yurisdiksi eksklusif pengadilan São Paulo (Forum of the City of São Paulo), Negara Bagian São Paulo, Brasil dan para pihak setuju dengan tidak dapat dibatalkan, dengan yurisdiksi spesifik ini yang melepaskan yurisdiksi mana pun lainnya, sekali pun dengan hak istimewa.
+Di Brasil: Semua sengketa yang timbul karena atau berkaitan dengan Perjanjian ini, termasuk proses hukum singkat (summary proceedings), akan diajukan di hadapan dan tunduk pada yurisdiksi eksklusif pengadilan SÃ£o Paulo (Forum of the City of SÃ£o Paulo), Negara Bagian SÃ£o Paulo, Brasil dan para pihak setuju dengan tidak dapat dibatalkan, dengan yurisdiksi spesifik ini yang melepaskan yurisdiksi mana pun lainnya, sekali pun dengan hak istimewa.
 
 Di Meksiko: Para Pihak setuju untuk mengajukan diri ke yurisdiksi eksklusif dari pengadilan Kota Meksiko untuk menyelesaikan setiap sengketa yang timbul dari Perjanjian ini. Para Pihak mengesampingkan yurisdiksi mana pun lainnya yang mungkin berhubungan dengan mereka karena domisili saat ini atau di masa mendatang, atau untuk alasan apa pun lainnya.
 
@@ -263,7 +263,7 @@ Di Brasil: hapus seluruh kalimat kedua yang berbunyi, "Tidak satu pun pihak akan
 
 Tambahkan sebagai ayat l baru ke pasal ini:
 
-Di Kanada: Kedua belah pihak setuju untuk menulis dokumen ini dalam bahasa Inggris. Les parties ont convenu de rédiger le présent document en langue anglaise.
+Di Kanada: Kedua belah pihak setuju untuk menulis dokumen ini dalam bahasa Inggris. Les parties ont convenu de rÃ©diger le prÃ©sent document en langue anglaise.
 
 2. ASIA PASIFIK
 
@@ -373,7 +373,7 @@ Pada ayat b, tambahkan hal berikut di akhir kalimat ketiga:
 
 Di Italia: jika IBM meminta dalam pemberitahuan secara tertulis kepada Pemegang Lisensi.
 
-Di Ukraina: , sebesar jumlah yang melampaui batas waktunya dari hari berikutnya setelah tanggal jatuh tempo hingga tanggal pembayaran aktual, dihitung prorata untuk setiap hari keterlambatan, dengan suku bunga sebesar dua kali lipat dari tarif diskon yang ditentukan oleh Bank Nasional Ukraina (National Bank of Ukraine - "NBU") selama periode keterlambatan (ayat 6 pasal 232 Kitab Undang-Undang Hukum Dagang Ukraina tidak berlaku).
+Di Ukraina: , sebesar jumlah yang melampaui batas waktunya dari hari berikutnya setelah tanggal jatuh tempo hingga tanggal pembayaran aktual, dihitung prorata untuk setiap hari keterlambatan, dengan suku bunga sebesar dua kali lipat dari tarif diskon yang ditentukan oleh Bank Nasional Ukraina (National Bank of Ukraine - â€œNBUâ€) selama periode keterlambatan (ayat 6 pasal 232 Kitab Undang-Undang Hukum Dagang Ukraina tidak berlaku).
 
 Pada ayat b, ganti kalimat ketiga dengan pernyataan berikut:
 
@@ -393,7 +393,7 @@ Pasal 4. Tanggung Jawab dan Perlindungan Hak Kekayaan Intelektual
 
 Pada ayat a, di kalimat pertama, masukkan hal berikut sebelum kata "jumlah yang dibayarkan":
 
-Di Belgia, Prancis, Jerman, Italia, Luksemburg, Malta, Portugal, dan Spanyol: lebih besar dari ¤500.000 (lima ratus ribu euro) atau
+Di Belgia, Prancis, Jerman, Italia, Luksemburg, Malta, Portugal, dan Spanyol: lebih besar dari â‚¬500.000 (lima ratus ribu euro) atau
 
 Di Irlandia dan Inggris Raya: 125% dari
 
@@ -403,7 +403,7 @@ Di Spanyol: dan ganti rugi terbukti yang ditanggung oleh Pemegang Lisensi sebaga
 
 Pada ayat a, masukkan kalimat baru berikut ini setelah kalimat pertama:
 
-Di Slovakia: Mengacu pada § 379 Kitab Undang-Undang Hukum Dagang, Undang-Undang No. 513/1991 Coll. sebagaimana yang diubah dan mengenai semua ketentuan yang berkaitan dengan kesimpulan perjanjian, kedua belah pihak menyatakan bahwa total ganti rugi yang dapat diperkirakan, yang mungkin timbul, tidak akan melebihi jumlah di atas, dan jumlah ini merupakan jumlah maksimum yang menjadi tanggung jawab IBM.
+Di Slovakia: Mengacu pada Â§ 379 Kitab Undang-Undang Hukum Dagang, Undang-Undang No. 513/1991 Coll. sebagaimana yang diubah dan mengenai semua ketentuan yang berkaitan dengan kesimpulan perjanjian, kedua belah pihak menyatakan bahwa total ganti rugi yang dapat diperkirakan, yang mungkin timbul, tidak akan melebihi jumlah di atas, dan jumlah ini merupakan jumlah maksimum yang menjadi tanggung jawab IBM.
 
 Pada ayat a, masukkan kalimat baru berikut sebelum kalimat kedua:
 
@@ -501,7 +501,7 @@ Di Spanyol: IBM akan mematuhi permintaan untuk mengakses, memperbarui, atau meng
 
 Pada ayat j, tambahkan di akhir ayat:
 
-Di Republik Ceko: Sesuai dengan Pasal 1801 of Undang-Undang No. 89/2012 Coll. ("Hukum Perdata" (Civil Code)), Pasal 1799 dan Pasal 1800 pada Hukum Perdata sebagaimana yang diamendemen, tidak berlaku untuk transaksi berdasarkan Perjanjian ini. Pemegang Lisensi menerima risiko perubahan kondisi berdasarkan Pasal 1765 pada KUH Perdata.
+Di Republik Ceko: Sesuai dengan Pasal 1801 of Undang-Undang No. 89/2012 Coll. (â€œHukum Perdataâ€ (Civil Code)), Pasal 1799 dan Pasal 1800 pada Hukum Perdata sebagaimana yang diamendemen, tidak berlaku untuk transaksi berdasarkan Perjanjian ini. Pemegang Lisensi menerima risiko perubahan kondisi berdasarkan Pasal 1765 pada KUH Perdata.
 
 Pada ayat j:
 

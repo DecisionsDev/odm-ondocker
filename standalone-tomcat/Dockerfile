@@ -3,9 +3,9 @@ ARG ODMDOCKERDIR
 ARG ODMVERSION
 ARG ODMDBVERSION
 LABEL maintainer="Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
-LABEL ProductID="xxxxxxxxxxxxxxxxx"
+LABEL product-id="xxxxxxxxxxxxxxxxx"
 LABEL ProductName="Operational Decision Manager"
-LABEL ProductVersion=$ODMVERSION
+LABEL product-version=$ODMVERSION
 MAINTAINER "Rachel ORTI <rachel.orti@fr.ibm.com>, ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com"
 
 ENV ODMDOCKERDIR $ODMDOCKERDIR

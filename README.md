@@ -11,7 +11,7 @@ IBM Operational Decision Manager on Docker
 This repository centralizes the material to deploy IBM Operational Decision Manager in Docker.
 It includes Docker files and Docker compose descriptors. Docker files are used to build images of ODM runtimes. And docker-compose descriptor can be used to group this build, push to your repository and run your topology from Development to production.
 
-[IBM ODM](https://www.ibm.com/docs/en/odm/8.11.1) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
+[IBM ODM](https://www.ibm.com/docs/en/odm/8.12.0) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
 
 
 ![Flow](docs/images/Architecture.png "Architecture")
@@ -19,7 +19,7 @@ It includes Docker files and Docker compose descriptors. Docker files are used t
 In addition to this repository about ODM on Docker, there is a dedicated repository to deploy [ODM on Kubernetes](https://github.com/PierreFeillet/IBM-ODM-Kubernetes/?cm_mc_uid=48109996374214948388780&cm_mc_sid_50200000=1497520790) and the [IBM Operational Decision Manager for Developers docker image](https://hub.docker.com/r/ibmcom/odm/) in dockerhub.
 
 ## Deploying ODM Rules in the following environments
-This documentations applies to Operational Decision Management Standard V8.11.x and to earlier versions up to v8.8.x.
+This documentations applies to Operational Decision Management Standard V8.12.x and to earlier versions up to v8.8.x.
 - [ODM Standalone Docker image](docs/README_standalone.md): Explain how to build one docker image that contain all the ODM Components. (For Development purpose)
 - [ODM Standard Docker topology](docs/README_standard.md): Explain how to build and instanciate one docker image per ODM Components. (For Pre-Production purpose)
 - [ODM Clustered Docker topology](docs/README_cluster.md): Explain how to build and instanciate one docker image per ODM Components with possibility to scale the number of container. (For Production purpose)
@@ -41,4 +41,4 @@ Refer to the [Add IBM License Metering annotations](README-license-annotations.m
 [Apache 2.0](LICENSE)
 
 # Notice
-© Copyright IBM Corporation 2018.
+© Copyright IBM Corporation 2023.

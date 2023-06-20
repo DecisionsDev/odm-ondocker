@@ -13,7 +13,7 @@ Based on your deployment type, use the following annotations:
   - [IBM ODM on Kubernetes (Non-Production)](#ibm-odm-on-kubernetes-non-production)
   - [Example](#example)
 
-The annotations below are defined for ODM version 8.11.1, but you can also use them for ODM v8.10.5.1 by replacing **productVersion** value with "8.10.5.1".
+The annotations below are defined for ODM version 8.12, but you can also use them for ODM v8.10.5.1 by replacing **productVersion** value with "8.10.5.1".
 
 ## Guidance
 
@@ -31,7 +31,7 @@ The annotations below are defined for ODM version 8.11.1, but you can also use t
         annotations:
           productName: "IBM Operational Decision Manager"
           productID: "b1a07d4dc0364452aa6206bb6584061d"
-          productVersion: "8.11.1"
+          productVersion: "8.12.0.0"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -45,7 +45,7 @@ The annotations below are defined for ODM version 8.11.1, but you can also use t
         annotations:
           productName: "IBM Operational Decision Manager - Non Prod"
           productID: "e32af5770e06427faae142993c691048"
-          productVersion: "8.11.1"
+          productVersion: "8.12.0.0"
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
@@ -61,7 +61,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager - Non Prod"
         productID: "e32af5770e06427faae142993c691048"
-        productVersion: "8.11.1"
+        productVersion: "8.12.0.0"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: <containername>
 ```
@@ -84,7 +84,7 @@ spec:
       annotations:
         productName: "IBM Operational Decision Manager"
         productID: "b1a07d4dc0364452aa6206bb6584061d"
-        productVersion: "8.11.1"
+        productVersion: "8.12.0.0"
         productMetric: "PROCESSOR_VALUE_UNIT"
         productChargedContainers: my-odm-decisionserverruntime
     spec:
@@ -92,6 +92,6 @@ spec:
 
       containers:
       - name: my-odm-decisionserverruntime
-        image: my-repo/my-odm-decisionserverruntime:8.11.1-amd64
+        image: my-repo/my-odm-decisionserverruntime:8.12.0.0-amd64
         ...
 ```
