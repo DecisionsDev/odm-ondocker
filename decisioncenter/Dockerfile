@@ -29,7 +29,7 @@ RUN chmod -R a+x $SCRIPT && \
 	  if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
 # Decision Center
-RUN mkdir -p $APPS
+RUN mkdir -p $APPS && apt-get update && apt-get install unzip
 COPY ./teamserver/applicationservers/WLP*/teamserver-dbdump.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 

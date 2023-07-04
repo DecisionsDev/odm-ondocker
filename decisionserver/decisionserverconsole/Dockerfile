@@ -17,7 +17,7 @@ RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 # Build Welcome page
 RUN cd /welcomepage; mvn -B clean install  && mkdir -p $APPS
-
+RUN apt-get update && apt-get install unzip
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP*/res.war $APPS
 

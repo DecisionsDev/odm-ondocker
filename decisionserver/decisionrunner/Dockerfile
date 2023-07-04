@@ -23,8 +23,7 @@ COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN chmod -R a+x $SCRIPT && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
-
-RUN $SCRIPT/extractApp.sh DecisionRunner.war
+RUN apt-get update && apt-get install unzip && $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \

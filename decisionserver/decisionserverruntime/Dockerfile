@@ -28,7 +28,7 @@ RUN chmod -R a+x $SCRIPT && mkdir /translation && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
-
+RUN apt-get update && apt-get install unzip
 # Decision Server Runtime
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
