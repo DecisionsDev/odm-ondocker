@@ -7,7 +7,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 ENV THIRDPARTY /thirdpartylib
-RUN apk add --no-cache ca-certificates
+RUN apt-get -y add --no-cache ca-certificates
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/common/features ${SCRIPT}/
 COPY ./executionserver/ /executionserver/
