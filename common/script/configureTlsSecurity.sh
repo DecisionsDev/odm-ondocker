@@ -140,8 +140,13 @@ if [ -d $PRIVATE_CERTDIR ]; then
         echo "Importing private certificates $dir"
         if [ -d $dir ]; then
            if [ -f $dir/tls.key ]; then
-                openssl pkcs12 -export -inkey $dir/tls.key -in $dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
-                keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/$dir.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+		if [ -f /config/security/trusted-cert-volume/$dir/tls.crt ]; then
+			echo "public key /config/security/trusted-cert-volume/$dir/tls.crt has been found for the relative $dir/tls.key private key"
+                	openssl pkcs12 -export -inkey $dir/tls.key -in /config/security/trusted-cert-volume/$dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+                	keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/$dir.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+		else
+			echo "cannot register $dir/tls.key private key has the associated /config/security/trusted-cert-volume/$dir/tls.crt public key is not present"
+		fi
            else
                 echo "Couldn't find certificate $dir/tls.key skipping this certificate "
            fi
