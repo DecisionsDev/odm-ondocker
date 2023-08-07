@@ -543,3 +543,9 @@ then
   echo "Decision Center Custom Configuration with provided /config/auth/decisioncenter-configuration.properties"
   cp /config/auth/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
+
+if [ -n "$ENABLE_FIPS" ]
+then
+  echo "TO BE REMOVED : TEMPORARY FIX TO ALLOW TO LAUNCH DC IN FIPS MODE "
+  cp /config/solr-preferences.properties /config/apps/decisioncenter.war//WEB-INF/classes/com/ibm/rules/decisioncenter/web/search/preferences.properties
+fi
