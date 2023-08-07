@@ -1,11 +1,68 @@
-security.provider.1=com.ibm.crypto.fips.provider.IBMJCEFIPS
-security.provider.2=com.ibm.jsse2.IBMJSSEProvider2
-security.provider.3=com.ibm.crypto.provider.IBMJCE
-security.provider.4=com.ibm.security.jgss.IBMJGSSProvider
-security.provider.5=com.ibm.security.cert.IBMCertPath
-security.provider.6=com.ibm.security.sasl.IBMSASL
-security.provider.7=com.ibm.xml.crypto.IBMXMLCryptoProvider
-security.provider.8=com.ibm.xml.enc.IBMXMLEncProvider
-security.provider.9=org.apache.harmony.security.provider.PolicyProvider
-security.provider.10=com.ibm.security.jgss.mech.spnego.IBMSPNEGO
-jdk.tls.disabledAlgorithms=SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize < 1024, DESede, \ EC keySize < 224, 3DES_EDE_CBC, anon, NULL, DES_CBC, RSAPSS, RSASSA-PSS5
+RestrictedSecurity1.jce.provider.5 = SunJCE [{AlgorithmParameters, PBES2, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA1AndAES_128, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA1AndAES_256, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA224AndAES_128, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA224AndAES_256, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA256AndAES_128, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA256AndAES_256, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA384AndAES_128, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA384AndAES_256, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA512AndAES_128, *}, \
+    {AlgorithmParameters, PBEWithHmacSHA512AndAES_256, *}, \
+    {AlgorithmParameters, PBEWithMD5AndDES, *}, \
+    {AlgorithmParameters, PBEWithMD5AndTripleDES, *}, \
+    {AlgorithmParameters, PBEWithSHA1AndDESede, *}, \
+    {AlgorithmParameters, PBEWithSHA1AndRC2_128, *}, \
+    {AlgorithmParameters, PBEWithSHA1AndRC2_40, *}, \
+    {AlgorithmParameters, PBEWithSHA1AndRC4_128, *}, \
+    {AlgorithmParameters, PBEWithSHA1AndRC4_40, *}, \
+    {Cipher, PBEWithHmacSHA1AndAES_128, *}, \
+    {Cipher, PBEWithHmacSHA1AndAES_256, *}, \
+    {Cipher, PBEWithHmacSHA224AndAES_128, *}, \
+    {Cipher, PBEWithHmacSHA224AndAES_256, *}, \
+    {Cipher, PBEWithHmacSHA256AndAES_128, *}, \
+    {Cipher, PBEWithHmacSHA256AndAES_256, *}, \
+    {Cipher, PBEWithHmacSHA384AndAES_128, *}, \
+    {Cipher, PBEWithHmacSHA384AndAES_256, *}, \
+    {Cipher, PBEWithHmacSHA512AndAES_128, *}, \
+    {Cipher, PBEWithHmacSHA512AndAES_256, *}, \
+    {Cipher, PBEWithMD5AndDES, *}, \
+    {Cipher, PBEWithMD5AndTripleDES, *}, \
+    {Cipher, PBEWithSHA1AndDESede, *}, \
+    {Cipher, PBEWithSHA1AndRC2_128, *}, \
+    {Cipher, PBEWithSHA1AndRC2_40, *}, \
+    {Cipher, PBEWithSHA1AndRC4_128, *}, \
+    {Cipher, PBEWithSHA1AndRC4_40, *}, \
+    {Mac, HmacPBESHA1, *}, \
+    {Mac, HmacPBESHA224, *}, \
+    {Mac, HmacPBESHA256, *}, \
+    {Mac, HmacPBESHA384, *}, \
+    {Mac, HmacPBESHA512, *}, \
+    {Mac, PBEWithHmacSHA1, *}, \
+    {Mac, PBEWithHmacSHA224, *}, \
+    {Mac, PBEWithHmacSHA256, *}, \
+    {Mac, PBEWithHmacSHA384, *}, \
+    {Mac, PBEWithHmacSHA512, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA1AndAES_128, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA1AndAES_256, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA224AndAES_128, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA224AndAES_256, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA256AndAES_128, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA256AndAES_256, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA384AndAES_128, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA384AndAES_256, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA512AndAES_128, *}, \
+    {SecretKeyFactory, PBEWithHmacSHA512AndAES_256, *}, \
+    {SecretKeyFactory, PBEWithMD5AndDES, *}, \
+    {SecretKeyFactory, PBEWithMD5AndTripleDES, *}, \
+    {SecretKeyFactory, PBEWithSHA1AndDESede, *}, \
+    {SecretKeyFactory, PBEWithSHA1AndRC2_128, *}, \
+    {SecretKeyFactory, PBEWithSHA1AndRC2_40, *}, \
+    {SecretKeyFactory, PBEWithSHA1AndRC4_128, *}, \
+    {SecretKeyFactory, PBEWithSHA1AndRC4_40, *}, \
+    {SecretKeyFactory, PBKDF2WithHmacSHA1, *}, \
+    {SecretKeyFactory, PBKDF2WithHmacSHA224, *}, \
+    {SecretKeyFactory, PBKDF2WithHmacSHA256, *}, \
+    {SecretKeyFactory, PBKDF2WithHmacSHA384, *}, \
+    {SecretKeyFactory, PBKDF2WithHmacSHA512, *}]
+
