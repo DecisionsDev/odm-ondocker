@@ -175,8 +175,8 @@ fi
 
 
 echo "Change certificate format from JKS to P12"
-keytool -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
-keytool -importkeystore -srckeystore /config/security/keystore.jks -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -destkeystore /config/security/keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_KEYSTORE_PASSWORD -noprompt
+keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/keystore.jks -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -destkeystore /config/security/keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_KEYSTORE_PASSWORD -noprompt
 
 #if FIPS enabled 
 #	NSS DB
