@@ -131,6 +131,30 @@ if [ -d $CERTDIR ]; then
     echo "done"
 fi
 
+# This part allow to import a list of PEM certificate in the JVM
+ echo "Importing private certificates $dir"
+PRIVATE_CERTDIR="/config/security/private-cert-volume/"
+if [ -d $PRIVATE_CERTDIR ]; then
+    cd $PRIVATE_CERTDIR
+    for dir in *; do
+        echo "Importing private certificates $dir"
+        if [ -d $dir ]; then
+           if [ -f $dir/tls.key ]; then
+		if [ -f /config/security/trusted-cert-volume/$dir/tls.crt ]; then
+			echo "public key /config/security/trusted-cert-volume/$dir/tls.crt has been found for the relative $dir/tls.key private key"
+                	openssl pkcs12 -export -inkey $dir/tls.key -in /config/security/trusted-cert-volume/$dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+                	keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/$dir.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+		else
+			echo "cannot register $dir/tls.key private key has the associated /config/security/trusted-cert-volume/$dir/tls.crt public key is not present"
+		fi
+           else
+                echo "Couldn't find certificate $dir/tls.key skipping this certificate "
+           fi
+        fi
+    done
+    echo "done"
+fi
+
 if [ -n "$ENABLED_CIPHERS" ]
 then
 	echo "configure enabled ciphers with $ENABLED_CIPHERS"
