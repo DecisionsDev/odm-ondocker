@@ -1,5 +1,14 @@
 #!/bin/bash
 # Using -Xshareclasses:none jvm option in keytool commands to avoid jvm errors in logs on z/os
+if [ -n "$ENABLE_FIPS" ]
+then
+  if [[ $ENABLE_FIPS =~ "true" ]]
+  then
+	echo "FIPS Enabled : Use appropriate configuring keystore for FIPS"
+	# Workaround on a FIPS implementation see 
+	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
+  fi
+fi
 
 if [ -s "/config/auth/tlsSecurity.xml" ]
 then
@@ -178,6 +187,13 @@ echo "Change certificate format from JKS to P12"
 keytool -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 keytool -importkeystore -srckeystore /config/security/keystore.jks -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -destkeystore /config/security/keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_KEYSTORE_PASSWORD -noprompt
 
-#if FIPS enabled 
-#	NSS DB
-#fi
+
+if [ -n "$ENABLE_FIPS" ]
+then
+  if [[ $ENABLE_FIPS =~ "true" ]]
+  then
+	echo "FIPS Enabled importing certification in the nssdb"
+	pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
+	pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
+  fi
+fi
