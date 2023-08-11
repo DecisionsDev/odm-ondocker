@@ -45,7 +45,7 @@ ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
