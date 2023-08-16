@@ -547,5 +547,6 @@ fi
 if [ -n "$ENABLE_FIPS" ]
 then
   echo "TO BE REMOVED : TEMPORARY FIX TO ALLOW TO LAUNCH DC IN FIPS MODE "
+  mkdir -p /config/apps/decisioncenter.war/WEB-INF/classes/com/ibm/rules/decisioncenter/web/search
   cp /config/solr-preferences.properties /config/apps/decisioncenter.war/WEB-INF/classes/com/ibm/rules/decisioncenter/web/search/preferences.properties
 fi
