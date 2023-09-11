@@ -197,5 +197,6 @@ then
 	echo "FIPS Enabled importing certification in the nssdb"
 	pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
 	pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
+	for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
   fi
 fi
