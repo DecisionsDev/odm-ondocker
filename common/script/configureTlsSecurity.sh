@@ -149,12 +149,14 @@ if [ -d $PRIVATE_CERTDIR ]; then
         echo "Importing private certificates $dir"
         if [ -d $dir ]; then
            if [ -f $dir/tls.key ]; then
-		if [ -f /config/security/trusted-cert-volume/$dir/tls.crt ]; then
-			echo "public key /config/security/trusted-cert-volume/$dir/tls.crt has been found for the relative $dir/tls.key private key"
-                	openssl pkcs12 -export -inkey $dir/tls.key -in /config/security/trusted-cert-volume/$dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+		if [ -f $dir/tls.crt ]; then
+			echo "public key $dir/tls.crt has been found for the relative $dir/tls.key private key"
+                	openssl pkcs12 -export -inkey $dir/tls.key -in $dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
                 	keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/$dir.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+
+                        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias $dir -file $dir/tls.crt -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 		else
-			echo "cannot register $dir/tls.key private key has the associated /config/security/trusted-cert-volume/$dir/tls.crt public key is not present"
+			echo "cannot register $dir/tls.key private key has the associated $dir/tls.crt public key is not present"
 		fi
            else
                 echo "Couldn't find certificate $dir/tls.key skipping this certificate "
@@ -195,5 +197,6 @@ then
 	echo "FIPS Enabled importing certification in the nssdb"
 	pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
 	pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
+	for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
   fi
 fi

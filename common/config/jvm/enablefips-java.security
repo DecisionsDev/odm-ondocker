@@ -1,3 +1,4 @@
+
 RestrictedSecurity1.jce.provider.5 = SunJCE [{AlgorithmParameters, PBES2, *}, \
     {AlgorithmParameters, PBEWithHmacSHA1AndAES_128, *}, \
     {AlgorithmParameters, PBEWithHmacSHA1AndAES_256, *}, \
@@ -64,5 +65,5 @@ RestrictedSecurity1.jce.provider.5 = SunJCE [{AlgorithmParameters, PBES2, *}, \
     {SecretKeyFactory, PBKDF2WithHmacSHA224, *}, \
     {SecretKeyFactory, PBKDF2WithHmacSHA256, *}, \
     {SecretKeyFactory, PBKDF2WithHmacSHA384, *}, \
-    {SecretKeyFactory, PBKDF2WithHmacSHA512, *}]
-
+    {SecretKeyFactory, PBKDF2WithHmacSHA512, *}, \
+    {AlgorithmParameters, AES, *}]
