@@ -61,10 +61,10 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDr
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
-COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resources/ibm-public.crt
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
-RUN chmod -R 777 /config
+RUN openssl s_client -connect www.ibm.com:443 < /dev/null 2>/dev/null | openssl x509 -outform pem > /config/resources/ibm-public.crt && chown 1001:0 /config/resources/ibm-public.crt && \
+chmod -R 777 /config
 RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
 
 FROM ${FROMLIBERTY}
