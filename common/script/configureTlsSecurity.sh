@@ -189,7 +189,14 @@ echo "Change certificate format from JKS to P12"
 keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
 keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/keystore.jks -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -destkeystore /config/security/keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_KEYSTORE_PASSWORD -noprompt
 
-# In case of FIPS use nssdb keystore/trustore
-pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
-pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
-for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
+
+if [ -n "$ENABLE_FIPS" ]
+then
+  if [[ $ENABLE_FIPS =~ "true" ]]
+  then
+	echo "FIPS Enabled importing certification in the nssdb"
+	pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
+	pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
+	for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
+  fi
+fi
