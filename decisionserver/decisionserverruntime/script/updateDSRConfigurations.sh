@@ -9,10 +9,15 @@ sed -i $'/<\/web-app>/{e cat /config/basicAuth.xml\n}' web.xml
 
 if [ -s "/config/auth/runtimeWebSecurity.xml" ]
 then
-   echo "/config/auth/runtimeWebSecurity.xml found then replace oidc auth by basic auth on decision server runtime"
-   sed -i 's|webSecurity|'runtimeWebSecurity'|g' /config/server.xml
-   unset OPENID_CONFIG
-   echo "OPENID_CONFIG : $OPENID_CONFIG"
+   if [ ! -d "/config/apps/res.war" ]
+   then
+   	echo "/config/auth/runtimeWebSecurity.xml found then replace oidc auth by basic auth on decision server runtime"
+   	sed -i 's|webSecurity|'runtimeWebSecurity'|g' /config/server.xml
+   	unset OPENID_CONFIG
+   	echo "OPENID_CONFIG : $OPENID_CONFIG"
+   else
+	echo "/config/auth/runtimeWebSecurity.xml found in the RES container. Do nothing."	
+   fi
 fi
 
 
