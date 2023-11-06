@@ -25,11 +25,9 @@ Before you start, make sure you have the following prerequisites in place:
 
 To gain access to the ODM material, you will need an IBM entitlement key for downloading images from the IBM Entitled Registry.
 
-1. Sign in to the [MyIBM Container Software Library](https://myibm.ibm.com/products-services/containerlibrary) using your IBMid and associated password for the entitled software.
-
-2. On the Container software library tile, ensure your entitlement by navigating to the View library page. Then proceed to obtain the entitlement key.
-
-3. Next, use this key to log in to Docker as follows:
+   1. Sign in to the [MyIBM Container Software Library](https://myibm.ibm.com/products-services/containerlibrary) using your IBMid and associated password for the entitled software.
+   2. On the Container software library tile, ensure your entitlement by navigating to the View library page. Then proceed to obtain the entitlement key.
+   3. Next, use this key to log in to Docker as follows:
 
 ```bash
 docker login cp.icr.io -u cp -p <REGISTRYKEY>
