@@ -18,7 +18,7 @@ Before you start, make sure you have the following prerequisites in place:
 
 - Docker installed on your system
 - Docker compose installed on your system
-- Access to the Docker Hub or your private container registry
+- Access to the the IBM Entitled Registry 
 - Familiarity with the Docker command-line interface (CLI)
 
 ## 2. Preping the environment
@@ -60,7 +60,6 @@ Change the values according to the ODM Version and your targeted environment.
 If you want to push the updated images to your target registry, follow these steps:
 
 1. Log in to your targeted registry.
-
 2. Push your images using the following command. Make sure to modify the values according to your specific setup:
 
 ```bash
@@ -69,6 +68,7 @@ export SOURCETAG=8.12.0.0-amd64
 export TARGETREGISTRY=myrepo
 export TARGETTAG=8.12.0.0-amd64
 docker compose push
+```
 
 ## Best Practices
 
