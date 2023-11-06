@@ -5,9 +5,10 @@ services:
     image: $TARGETREGISTRY/dbserver:$TARGETTAG
     build:
       context: ./
-      dockerfile: ./Dockerfile
+      dockerfile: ./DbserverDockerfile
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/dbserver:$SOURCETAG
+        - USERID=26
 
   odm-decisionserverconsole:
     image: $TARGETREGISTRY/odm-decisionserverconsole:$TARGETTAG
@@ -16,6 +17,7 @@ services:
       dockerfile: ./Dockerfile
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverconsole:$SOURCETAG
+        - USERID=1001
 
   odm-decisionrunner:
     image: $TARGETREGISTRY/odm-decisionrunner:$TARGETTAG
@@ -24,6 +26,7 @@ services:
       dockerfile: ./Dockerfile
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionrunner:$SOURCETAG 
+        - USERID=1001
 
   odm-decisionserverruntime:
     image: $TARGETREGISTRY/odm-decisionserverruntime:$TARGETTAG
@@ -32,6 +35,7 @@ services:
       dockerfile: ./Dockerfile
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverruntime:$SOURCETAG 
+        - USERID=1001
 
   odm-decisioncenter:
     image: $TARGETREGISTRY/odm-decisioncenter:$TARGETTAG
@@ -40,5 +44,5 @@ services:
       dockerfile: ./Dockerfile
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisioncenter:$SOURCETAG
-
+        - USERID=1001
    

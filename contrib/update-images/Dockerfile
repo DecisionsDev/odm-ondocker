@@ -1,10 +1,6 @@
-
 ARG SOURCEIMAGE
 FROM ${SOURCEIMAGE}
-ARG DATE
-ARG LIBERTY_BRANCH
-ARG FROMLIBERTY
-ARG ARCH
+ARG USERID
 
 USER root
 
@@ -15,4 +11,4 @@ RUN set -ex; \
     dnf clean all --disableplugin=subscription-manager; \
     rm -rf /var/cache/dnf; 
 
-USER 1001
+USER $USERID
