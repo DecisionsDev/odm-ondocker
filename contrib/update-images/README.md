@@ -6,12 +6,14 @@ This guide will walk you through the process of updating your ODM Docker images 
 
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Identifying Vulnerabilities](#identifying-vulnerabilities)
-3. [Updating Docker Images](#updating-docker-images)
+1. [Prerequisites](#1-prerequisites)
+2. [Preparing the Environment](#2-preparing-the-environment)
+3. [Updating Docker Images](#3-updating-docker-images)
+   - [a. Build the Images](#a-build-the-images)
+   - [b. Optional: Push to Your Target Registry](#b-optional-push-to-your-target-registry)
 4. [Best Practices](#best-practices)
 5. [Conclusion](#conclusion)
-
+   
 ## 1. Prerequisites
 
 Before you start, make sure you have the following prerequisites in place:
