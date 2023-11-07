@@ -1,6 +1,7 @@
 # Updating ODM Docker Images with Latest CVE Fixes
 
 ## Introduction
+IBM is committed to providing monthly updates for its images, but if you want to update them more frequently, this method allows you to do so on your own.
 
 This guide will walk you through the process of updating your ODM Docker images to ensure they are protected against known security vulnerabilities and Common Vulnerabilities and Exposures (CVEs). Regularly updating your Docker images is crucial to maintaining a secure and reliable containerized environment.
 
@@ -82,6 +83,6 @@ To ensure a secure and efficient process of updating Docker images, consider the
 
 ## Conclusion
 
-By following the steps outlined in this guide and adopting best practices, you can effectively update your Docker images with the latest CVE fixes, ensuring the security and stability of your containerized applications. Regularly checking for vulnerabilities and staying up-to-date is crucial in the ever-evolving world of container security.
+By following the steps outlined in this guide and adopting best practices, you can effectively update your Docker images with the latest OS-related CVE fixes ensuring the security and stability of your containerized applications. Regularly checking for vulnerabilities and staying up-to-date is crucial in the ever-evolving world of container security.
 
 Feel free to customize and expand upon this guide to fit your specific needs and environment.
