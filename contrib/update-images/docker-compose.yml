@@ -1,0 +1,48 @@
+version: '3'
+services:
+
+  dbserver:
+    image: $TARGETREGISTRY/dbserver:$TARGETTAG
+    build:
+      context: ./
+      dockerfile: ./DbserverDockerfile
+      args:
+        - SOURCEIMAGE=$SOURCEREGISTRY/dbserver:$SOURCETAG
+        - USERID=26
+
+  odm-decisionserverconsole:
+    image: $TARGETREGISTRY/odm-decisionserverconsole:$TARGETTAG
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverconsole:$SOURCETAG
+        - USERID=1001
+
+  odm-decisionrunner:
+    image: $TARGETREGISTRY/odm-decisionrunner:$TARGETTAG
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionrunner:$SOURCETAG 
+        - USERID=1001
+
+  odm-decisionserverruntime:
+    image: $TARGETREGISTRY/odm-decisionserverruntime:$TARGETTAG
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverruntime:$SOURCETAG 
+        - USERID=1001
+
+  odm-decisioncenter:
+    image: $TARGETREGISTRY/odm-decisioncenter:$TARGETTAG
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisioncenter:$SOURCETAG
+        - USERID=1001
+   
