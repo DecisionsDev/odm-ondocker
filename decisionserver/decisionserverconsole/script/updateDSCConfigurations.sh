@@ -128,7 +128,7 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
-if [ -n "$ISTIO_ENABLED" ]
+if [ -n "$ENABLE_ISTIO" ]
 then
   echo "Add redirectToRelativeUrl to webContainer as Istio is enabled"
   sed -i 's|webContainer|webContainer redirectToRelativeUrl="true"|g' /config/server.xml
