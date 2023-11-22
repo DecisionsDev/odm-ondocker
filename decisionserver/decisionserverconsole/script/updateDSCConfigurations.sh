@@ -127,3 +127,9 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
+
+if [ -n "$ISTIO_ENABLED" ]
+then
+  echo "Add redirectToRelativeUrl to webContainer as Istio is enabled"
+  sed -i 's|webContainer|webContainer redirectToRelativeUrl="true"|g' /config/server.xml
+fi
