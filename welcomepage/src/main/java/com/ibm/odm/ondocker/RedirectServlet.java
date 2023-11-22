@@ -76,7 +76,7 @@ public class RedirectServlet extends HttpServlet {
      */
     private String generateUrl(HttpServletRequest request, String context) {
         String scheme = request.getScheme();
-        String port = request.getServerPort();
+        int port = request.getServerPort();
         String istioEnabled = System.getenv("ISTIO_ENABLED");
         System.out.println("Istio Enabled : "+istioEnabled);
         if (istioEnabled != null && istioEnabled.equalsIgnoreCase("true")){
