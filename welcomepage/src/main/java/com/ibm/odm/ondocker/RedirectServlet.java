@@ -75,6 +75,15 @@ public class RedirectServlet extends HttpServlet {
      * @return An URL.
      */
     private String generateUrl(HttpServletRequest request, String context) {
-        return request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + context;
+        String scheme = request.getScheme();
+        String port = request.getServerPort();
+        String istioEnabled = System.getenv("ISTIO_ENABLED");
+        System.out.println("Istio Enabled : "+istioEnabled);
+        if (istioEnabled != null && istioEnabled.equalsIgnoreCase("true")){
+                System.out.println("Istio Enabled : initial scheme : "+scheme);
+		scheme = "https";
+                System.out.println("Force https on Welcome Page for Istio on port : "+port);
+	}
+        return scheme + "://" + request.getServerName() + ":" + port + context;
     }
 }
