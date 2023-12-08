@@ -3,7 +3,7 @@ on: [push]
 env:
   DOCKER_COMPOSE_VERSION: 1.29.2
   ODM_FILE_NAME: odm-for-docker.zip
-  ODM_VERSION: 8.12.0.0
+  ODM_VERSION: 8.12.0.1
 jobs:
   Build-And-Test:
     runs-on: ubuntu-latest
