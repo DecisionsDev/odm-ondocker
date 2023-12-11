@@ -1,0 +1,25 @@
+<server>
+
+  <variable name="ServerHost" value="https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334"/>
+
+  <!-- Open ID Connect -->
+  <!-- Client with inbound propagation set to supported -->
+  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid" accessTokenInLtpaCookie="true"
+                       clientId="b173bdb8-fd2c-4208-aef7-773df33456bb" pkceCodeChallengeMethod="S256"
+                       signatureAlgorithm="RS256" inboundPropagation="supported"
+                       jwkEndpointUrl="${ServerHost}/discovery/v2.0/keys"
+                       issuerIdentifier="${ServerHost}/v2.0"
+                       authorizationEndpointUrl="${ServerHost}/oauth2/v2.0/authorize"
+                       tokenEndpointUrl="${ServerHost}/oauth2/v2.0/token"
+                       userIdentifier="email" groupIdentifier="groups" audiences="ALL_AUDIENCES"/>
+
+  <!-- Client with inbound propagation set to required -->
+  <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
+                       clientId="b173bdb8-fd2c-4208-aef7-773df33456bb"
+                       signatureAlgorithm="RS256" inboundPropagation="required"
+                       jwkEndpointUrl="${ServerHost}/discovery/v2.0/keys"
+                       issuerIdentifier="${ServerHost}/v2.0"
+                       authorizationEndpointUrl="${ServerHost}/oauth2/v2.0/authorize"
+                       tokenEndpointUrl="${ServerHost}/oauth2/v2.0/token"
+                       userIdentifier="aud" groupIdentifier="groups" audiences="ALL_AUDIENCES"/>
+</server>

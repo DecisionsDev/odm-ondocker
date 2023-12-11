@@ -1,0 +1,29 @@
+<server>
+  <basicRegistry id="basic" realm="basic">
+    <user name="odmAdmin" password="odmAdmin"/>
+    <group name="basicAdministrators">
+      <member name="odmAdmin" />
+    </group>
+</basicRegistry>
+<variable name="odm.resAdministrators.group2" value="group:basic/basicAdministrators"/>
+<variable name="odm.resExecutors.group2" value="group:basic/basicAdministrators"/>
+<variable name="odm.rtsAdministrators.group2" value="group:basic/basicAdministrators"/>
+
+
+<!-- group mapping to authorize users of the OKTA_ODM_GROUP group -->
+<variable name="group1" value="group:https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334/v2.0/1e21bc53-8eed-4b4e-8edd-2d8e2fdc7e27"/>
+
+<variable name="odm.rtsAdministrators.group1" value="${group1}"/>
+<variable name="odm.rtsInstallers.group1" value="${group1}"/>
+<variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
+<variable name="odm.resAdministrators.group1" value="${group1}"/>
+<variable name="odm.resDeployers.group1" value="${group1}"/>
+<variable name="odm.resMonitors.group1" value="${group1}"/>
+<variable name="odm.resExecutors.group1" value="${group1}"/>
+
+<variable name="user1" value="user:https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334/v2.0/b173bdb8-fd2c-4208-aef7-773df33456bb"/>
+
+<variable name="odm.resAdministrators.user1" value="${user1}"/>
+<variable name="odm.resDeployers.user1" value="${user1}"/>
+
+</server>

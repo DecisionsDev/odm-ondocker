@@ -10,6 +10,7 @@
         "logoutURL": "OPENID_LOGOUT_URL",
 	"clientId": "OPENID_CLIENT_ID",
 	"clientSecret": "OPENID_CLIENT_SECRET",
+        "clientAssertionAliasName": "OPENID_CLIENT_ASSERTION_ALIAS_NAME",
 	"name": "OPENID_PROVIDER"
     }
   ]

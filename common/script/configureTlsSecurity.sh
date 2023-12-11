@@ -1,5 +1,14 @@
 #!/bin/bash
 # Using -Xshareclasses:none jvm option in keytool commands to avoid jvm errors in logs on z/os
+if [ -n "$ENABLE_FIPS" ]
+then
+  if [[ $ENABLE_FIPS =~ "true" ]]
+  then
+	echo "FIPS Enabled : Use appropriate configuring keystore for FIPS"
+	# Workaround on a FIPS implementation see 
+	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
+  fi
+fi
 
 if [ -s "/config/auth/tlsSecurity.xml" ]
 then
@@ -131,6 +140,32 @@ if [ -d $CERTDIR ]; then
     echo "done"
 fi
 
+# This part allow to import a list of PEM certificate in the JVM
+ echo "Importing private certificates $dir"
+PRIVATE_CERTDIR="/config/security/private-cert-volume/"
+if [ -d $PRIVATE_CERTDIR ]; then
+    cd $PRIVATE_CERTDIR
+    for dir in *; do
+        echo "Importing private certificates $dir"
+        if [ -d $dir ]; then
+           if [ -f $dir/tls.key ]; then
+		if [ -f $dir/tls.crt ]; then
+			echo "public key $dir/tls.crt has been found for the relative $dir/tls.key private key"
+                	openssl pkcs12 -export -inkey $dir/tls.key -in $dir/tls.crt -name $dir -out /config/security/$dir.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+                	keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/$dir.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
+
+                        keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias $dir -file $dir/tls.crt -keystore $TRUSTSTORE -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+		else
+			echo "cannot register $dir/tls.key private key has the associated $dir/tls.crt public key is not present"
+		fi
+           else
+                echo "Couldn't find certificate $dir/tls.key skipping this certificate "
+           fi
+        fi
+    done
+    echo "done"
+fi
+
 if [ -n "$ENABLED_CIPHERS" ]
 then
 	echo "configure enabled ciphers with $ENABLED_CIPHERS"
@@ -147,4 +182,21 @@ if [ -f "/config/resources/ibm-docs.crt" ]
 then
         echo "Importing IBM Docs certificate"
         keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias IBM-DOCS -file /config/resources/ibm-docs.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+fi
+
+
+echo "Change certificate format from JKS to P12"
+keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -destkeystore /config/security/truststore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD -noprompt
+keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/keystore.jks -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -destkeystore /config/security/keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass $DEFAULT_KEYSTORE_PASSWORD -noprompt
+
+
+if [ -n "$ENABLE_FIPS" ]
+then
+  if [[ $ENABLE_FIPS =~ "true" ]]
+  then
+	echo "FIPS Enabled importing certification in the nssdb"
+	pk12util -i /config/security/keystore.p12 -W $DEFAULT_KEYSTORE_PASSWORD -d /etc/pki/nssdb
+	pk12util -i /config/security/truststore.p12 -W $DEFAULT_TRUSTSTORE_PASSWORD -d /etc/pki/nssdb
+	for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
+  fi
 fi

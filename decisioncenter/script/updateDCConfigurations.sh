@@ -66,11 +66,17 @@ then
   fi
   # Set env var if secrets are passed using mounted volumes
   [ -f /config/secrets/oidc-config/clientId ] && export OPENID_CLIENT_ID=$(cat /config/secrets/oidc-config/clientId)
-  [ -f /config/secrets/oidc-config/clientSecret ] && export OPENID_CLIENT_SECRET=$(cat /config/secrets/oidc-config/clientSecret)
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdParameters.properties
-  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
 
-if [ -s "/config/auth/openIdWebSecurity.xml" ]
+  if [ -n "$OPENID_MODE" ]
+  then
+    sed -i '/__OPENID_CLIENT_SECRET__/d' /config/authOidc/openIdParameters.properties
+  else
+    [ -f /config/secrets/oidc-config/clientSecret ] && export OPENID_CLIENT_SECRET=$(cat /config/secrets/oidc-config/clientSecret)
+    sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdParameters.properties
+  fi
+
+  if [ -s "/config/auth/openIdWebSecurity.xml" ]
   then
     echo "copy provided /config/auth/openIdWebSecurity.xml to /config/authOidc/openIdWebSecurity.xml"
     cp /config/auth/openIdWebSecurity.xml /config/authOidc/openIdWebSecurity.xml
@@ -84,7 +90,22 @@ if [ -s "/config/auth/openIdWebSecurity.xml" ]
   [ -f /config/secrets/oidc-config/clientId ] && export OPENID_CLIENT_ID=$(cat /config/secrets/oidc-config/clientId)
   [ -f /config/secrets/oidc-config/clientSecret ] && export OPENID_CLIENT_SECRET=$(cat /config/secrets/oidc-config/clientSecret)
   sed -i 's|__OPENID_CLIENT_ID__|'$OPENID_CLIENT_ID'|g' /config/authOidc/openIdWebSecurity.xml
-  sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdWebSecurity.xml
+
+  if [ -n "$OPENID_MODE" ]
+  then
+
+    if [ "$OPENID_MODE" == "PKCE" ]
+    then
+      sed -i 's|clientSecret=\"__OPENID_CLIENT_SECRET__\"|pkceCodeChallengeMethod=\"S256\"|g' /config/authOidc/openIdWebSecurity.xml
+    fi
+
+    if [ "$OPENID_MODE" == "PRIVATE_KEY_JWT" ]
+    then
+      sed -i 's|clientSecret=\"__OPENID_CLIENT_SECRET__\"|'tokenEndpointAuthMethod=\"private_key_jwt\" keyAliasName=\"$OPENID_KEYALIAS_NAME\" sslRef=\"odmDefaultSSLConfig\"'|g' /config/authOidc/openIdWebSecurity.xml
+    fi
+  else
+    sed -i 's|__OPENID_CLIENT_SECRET__|'$OPENID_CLIENT_SECRET'|g' /config/authOidc/openIdWebSecurity.xml
+  fi
 fi
 
 if [ -s "/config/authOidc/openIdParameters.properties" ]
@@ -151,6 +172,16 @@ then
      else
         echo "OAuth config : no provided OPENID_CLIENT_SECRET"
         sed -i '/clientSecret/d' /config/OdmOidcProviders.json
+     fi
+
+     OPENID_CLIENT_ASSERTION_ALIAS_NAME=$(grep OPENID_CLIENT_ASSERTION_ALIAS_NAME /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_ASSERTION_ALIAS_NAME=//g")
+     if [ -n "$OPENID_CLIENT_ASSERTION_ALIAS_NAME" ]
+     then
+        echo "OAuth config : set client Assertion Alias Name to $OPENID_CLIENT_ASSERTION_ALIAS_NAME"
+        sed -i 's|OPENID_CLIENT_ASSERTION_ALIAS_NAME|'$OPENID_CLIENT_ASSERTION_ALIAS_NAME'|g' /config/OdmOidcProviders.json
+     else
+        echo "OAuth config : no provided OPENID_CLIENT_SECRET"
+        sed -i '/clientAssertionAliasName/d' /config/OdmOidcProviders.json
      fi
 
      OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")

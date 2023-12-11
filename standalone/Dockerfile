@@ -7,7 +7,7 @@ ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV SCRIPT /script
 ENV APPS /config/apps
 ENV THIRDPARTY /thirdpartylib
-RUN apk add --no-cache ca-certificates
+RUN apt-get update && apt-get install unzip
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/common/features ${SCRIPT}/
 COPY ./executionserver/ /executionserver/
@@ -52,7 +52,6 @@ COPY ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 
 RUN set -ex; \
     ${SCRIPT}/extractApp.sh decisioncenter.war; \
-    ${SCRIPT}/extractApp.sh decisionmodel.war; \
     ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
     mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
 

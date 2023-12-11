@@ -1,0 +1,5 @@
+RestrictedSecurity1.jce.provider.5 = SunJCE [{AlgorithmParameters, PBEWithSHA1AndDESede, *}, \
+{AlgorithmParameters, PBEWithMD5AndDES, *}, \
+{SecretKeyFactory, PBEWithMD5AndDES, *}, \
+{Cipher, PBEWithSHA1AndDESede, *}, \
+{Mac, HmacPBESHA1, *}]
