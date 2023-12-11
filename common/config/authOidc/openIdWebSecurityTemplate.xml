@@ -6,7 +6,7 @@
   <!-- Client with inbound propagation set to supported -->
   <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid" accessTokenInLtpaCookie="true"
 		       clientId="__OPENID_CLIENT_ID__" clientSecret="__OPENID_CLIENT_SECRET__"
-		       signatureAlgorithm="RS256" inboundPropagation="supported"
+		       signatureAlgorithm="RS256" inboundPropagation="supported" tokenReuse="true"
 		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/jwk"
 		       issuerIdentifier="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__"
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/authorize"
@@ -16,7 +16,7 @@
   <!-- Client with inbound propagation set to required -->
   <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid" audiences="ALL_AUDIENCES"
 		       clientId="__OPENID_CLIENT_ID__" clientSecret="__OPENID_CLIENT_SECRET__"
-		       signatureAlgorithm="RS256" inboundPropagation="required"
+		       signatureAlgorithm="RS256" inboundPropagation="required" tokenReuse="true"
 		       jwkEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/jwk"
 		       issuerIdentifier="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__"
                        authorizationEndpointUrl="${ServerHost}/oidc/endpoint/__OPENID_PROVIDER__/authorize"

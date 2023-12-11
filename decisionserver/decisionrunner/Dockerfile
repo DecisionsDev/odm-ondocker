@@ -23,8 +23,7 @@ COPY ./executionserver/applicationservers/WLP*/DecisionRunner.war $APPS
 RUN chmod -R a+x $SCRIPT && \
     sync && \
     if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
-
-RUN $SCRIPT/extractApp.sh DecisionRunner.war
+RUN apt-get update && apt-get install unzip && $SCRIPT/extractApp.sh DecisionRunner.war
 
 RUN $SCRIPT/changeParamValue.sh ForceDatabaseTableCreation false true $APPS/DecisionRunner.war/WEB-INF/web.xml
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
@@ -40,7 +39,7 @@ ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionrunner/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config

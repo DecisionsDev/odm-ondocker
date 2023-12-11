@@ -32,8 +32,14 @@ then
   sed -i 's|OPENID_CLIENT_ID|'$OPENID_CLIENT_ID'|g' /config/OdmOidcProvidersRD.json
 
   OPENID_CLIENT_SECRET=$(grep OPENID_CLIENT_SECRET /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_SECRET=//g")
-  echo "RuleDesigner Config : set client Secret to $OPENID_CLIENT_SECRET"
-  sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProvidersRD.json
+  if [ -n "$OPENID_CLIENT_SECRET" ]
+  then
+    echo "RuleDesigner Config : set client Secret to $OPENID_CLIENT_SECRET"
+    sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProvidersRD.json
+  else
+    echo "RuleDesigner config : no provided OPENID_CLIENT_SECRET"
+    sed -i '/clientSecret/d' /config/OdmOidcProvidersRD.json
+  fi
 
   echo "copy /config/OdmOidcProvidersRD.json and /config/security/truststore.jks to /config/apps/decisioncenter.war/assets/ "
   cp /config/OdmOidcProvidersRD.json /config/apps/decisioncenter.war/assets/  

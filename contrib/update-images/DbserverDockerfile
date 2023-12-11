@@ -1,0 +1,13 @@
+ARG SOURCEIMAGE
+FROM ${SOURCEIMAGE}
+ARG USERID
+USER 0
+RUN set -ex; \
+    dnf upgrade --assumeyes --disableplugin=subscription-manager --nodocs; \
+    dnf install --assumeyes nss nss-tools unzip procps-ng net-tools --disableplugin=subscription-manager --nodocs; \
+    dnf clean all --disableplugin=subscription-manager; \
+    rm -rf /var/cache/dnf; \
+    /usr/libexec/fix-permissions /var/lib/pgsql; \
+    /usr/libexec/fix-permissions /var/run/postgresql; \
+    set +ex
+USER 26

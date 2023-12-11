@@ -29,7 +29,7 @@ RUN chmod -R a+x $SCRIPT && \
 	  if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
 
 # Decision Center
-RUN mkdir -p $APPS
+RUN mkdir -p $APPS && apt-get update && apt-get install unzip
 COPY ./teamserver/applicationservers/WLP*/teamserver-dbdump.war $APPS/
 COPY ./teamserver/applicationservers/WLP*/decision*.war $APPS/
 
@@ -51,7 +51,7 @@ ENV ODMVERSION $ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -61,10 +61,10 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDr
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
-COPY --chown=1001:0 $ODMDOCKERDIR/common/resources/ibm-public.crt /config/resources/ibm-public.crt
 
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
-RUN chmod -R 777 /config
+RUN openssl s_client -connect www.ibm.com:443 < /dev/null 2>/dev/null | openssl x509 -outform pem > /config/resources/ibm-public.crt && chown 1001:0 /config/resources/ibm-public.crt && \
+chmod -R 777 /config
 RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
 
 FROM ${FROMLIBERTY}
