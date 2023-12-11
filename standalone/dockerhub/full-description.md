@@ -32,6 +32,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-812x-rule-designer)
 	Use [IDE 2022-06 R (4.24) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2022-06/r). The update site is https://raw.githubusercontent.com/DecisionsDev/ruledesigner/8.12.0/p2
 
+
 -	**Sample projects**:
 
 	Two decision services can be directly used in Decision Center when you set the SAMPLE option to true as described in the Usage section below:

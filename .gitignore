@@ -9,6 +9,5 @@ odm-ondocker.zip
 welcomepage/target/
 welcomepage/.idea/
 welcomepage/odm-ondocker-welcomepage.iml
-
-
 /.project
+/.vscode
