@@ -21,7 +21,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 -	**Maintained by**:  IBM ODM Team.
 
 -	**Supported architectures**:  ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
- `amd64`, `ppc64le`, `s390x`
+ `amd64`, `ppc64le`, `s390x`, `arm64`
 -	**Source of this description**:
         https://github.com/ODMDev/odm-ondocker/tree/master/standalone/dockerhub
 
