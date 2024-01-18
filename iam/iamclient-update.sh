@@ -1,11 +1,11 @@
 #!/bin/sh
 
-***REMOVED***
-***REMOVED***
-export registration_url=https://cp-console.apps.9.20.212.178.nip.io//idauth/oidc/endpoint/OP/registration
-export client_name=icp4aodm-prod-odm-oidc-client-id
-export client_secret=icp4aodm-prod-odm-oidc-client-id-secret-value
-export client_id=icp4aodm-prod-odm-oidc-client-id
+export admin_username=<oauthAdmin_login>
+export admin_password=<oauthAdmin_password>
+export registration_url=https://cp-console.apps.<fyre_master_ip>.nip.io/idauth/oidc/endpoint/OP/registration
+export client_name=<ODM_OIDC_CLIENT_ID>
+export client_secret=ODM_OIDC_CLIENT_SECRET>
+export client_id=<ODM_OIDC_CLIENT_ID>
 
 # Note: the functional_user_id and functional_user_groupIds are the functional user
 # and groups for client_crendetials. This works from 19.0.0.4.
