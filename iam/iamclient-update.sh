@@ -10,10 +10,10 @@ export client_id=<ODM_OIDC_CLIENT_ID>
 # Note: the functional_user_id and functional_user_groupIds are the functional user
 # and groups for client_crendetials. This works from 19.0.0.4.
 
-curl -k -s -X POST \
+curl -k -s -X PUT \
      -H "Content-Type:application/json" \
      -u "${admin_username}:${admin_password}" \
-     -d @- "${registration_url}" <<+++
+     -d @- "${registration_url}/${client_name}" <<+++
 {
  "client_id": "${client_id}",
  "client_secret": "${client_secret}",
@@ -39,7 +39,11 @@ curl -k -s -X POST \
  "hash_len":0,
  "preauthorized_scope": "openid",
  "introspect_tokens": true,
+<<<<<<< HEAD
  "redirect_uris": ["https://localhost:9643/odm/decisioncenter/openid/redirect/odm","https://localhost:9643/decisioncenter/openid/redirect/odm","https://localhost:9743/DecisionRunner/openid/redirect/odm","https://localhost:9843/res/openid/redirect/odm","https://localhost:9943/DecisionService/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/decisioncenter/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/res/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/DecisionRunner/openid/redirect/odm","https://cpd-odm.apps.9.20.212.178.nip.io/odm/DecisionService/openid/redirect/odm","http://127.0.0.1:9081/oidcCallback","http://127.0.0.1:19081/oidcCallback","http://127.0.0.1:29081/oidcCallback","http://127.0.0.1:39081/oidcCallback","https://localhost/tokenreceiver"]
+=======
+ "redirect_uris": ["https://localhost:9643/decisioncenter/openid/redirect/odm","https://localhost:9743/DecisionRunner/openid/redirect/odm","https://localhost:9843/res/openid/redirect/odm","https://localhost:9943/DecisionService/openid/redirect/odm","https://localhost:9444/oidcclient/redirect/odm","http://127.0.0.1:9081/oidcCallback","http://127.0.0.1:19081/oidcCallback","http://127.0.0.1:29081/oidcCallback","http://127.0.0.1:39081/oidcCallback","https://localhost/tokenreceiver"]
+>>>>>>> 1282087 (first IAM config)
 }
 +++
 echo

@@ -17,7 +17,7 @@
   <variable name="odm.rtsAdministrators.group1" value="${group1}"/>
   <variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
 
-  <variable name="user1" value="user:customRealm/odmAdmin"/>
+  <variable name="user1" value="user:customRealm/082443706"/>
   <variable name="odm.resAdministrators.user1" value="${user1}"/>
   <variable name="odm.resDeployers.user1" value="${user1}"/>
   <variable name="odm.resExecutors.user1" value="${user1}"/>
