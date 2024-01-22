@@ -21,6 +21,7 @@ then
   then
     echo "disable RES Console Basic Auth Login Panel"
     echo "<%response.sendRedirect(\"/res\");%>" > /config/apps/res.war/login.jsp
+    sed -i 's|<auth-method>FORM|<auth-method>BASIC|' /config/apps/res.war/WEB-INF/web.xml
   fi
 
   if [ -s "/config/auth/openIdParameters.properties" ]
