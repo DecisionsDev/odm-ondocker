@@ -20,7 +20,6 @@ then
   if [ -n "$DISABLE_LOGIN_PANEL" ]
   then
     echo "disable RES Console Basic Auth Login Panel"
-    echo "<%response.sendRedirect(\"$ODM_CONTEXT_ROOT/res\");%>" > /config/apps/res.war/login.jsp
     sed -i 's|<auth-method>FORM|<auth-method>BASIC|' /config/apps/res.war/WEB-INF/web.xml
   fi
 
