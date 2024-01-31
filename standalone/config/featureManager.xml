@@ -8,7 +8,7 @@
 		<feature>transportSecurity-1.0</feature>
 		<feature>appSecurity-3.0</feature>
 		<feature>concurrent-1.0</feature>
-		<feature>jaxrs-2.0</feature>
-		<feature>jsonp-1.0</feature>
+		<feature>jaxrs-2.1</feature>
+		<feature>jsonp-1.1</feature>
 	</featureManager>
 </server>
