@@ -34,7 +34,7 @@
     	<include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
-	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" protocolVersion="http/1.1"/>
+	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}"/>
 
 	<variable name="defaultHostName" value="localhost" />
 
