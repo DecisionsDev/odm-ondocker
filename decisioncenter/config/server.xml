@@ -38,7 +38,7 @@
 
 	<variable name="defaultHostName" value="localhost" />
 
-	<webContainer enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
+	<webContainer invokeFlushAfterService="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
 
 	<applicationMonitor updateTrigger="mbean" />
 
