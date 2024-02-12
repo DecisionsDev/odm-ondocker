@@ -13,9 +13,9 @@ then
 fi
 
 echo "running overrideDbSample.sh"
-export DBVERSIONTOCOPY=8.10.0
-if [ -d "/db810" ]
+export DBVERSIONTOCOPY=9.0
+if [ -d "/db90" ]
 then
 rm /upload/*
-cp /db810/* /upload/
+cp /db90/* /upload/
 fi

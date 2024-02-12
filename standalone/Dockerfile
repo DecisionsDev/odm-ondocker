@@ -76,17 +76,15 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-9.0.zip ${ODMDOCKERDIR}/standalone/rtsdb-9.0.zip /db90/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.12.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.12.zip /db812/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.1.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.1.zip /db8111/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.zip /db811/
-COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
-ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
-ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
-ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
-# Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
+RUN mkdir /upload
+
 RUN set -ex; \
     ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
-    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /db811 /db8111 /db812 /config/dbdata
+    chmod -R 777 ${APPS} /upload /db811 /db8111 /db812 /db90 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR
