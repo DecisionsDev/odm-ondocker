@@ -543,3 +543,12 @@ then
   echo "Decision Center Custom Configuration with provided /config/auth/decisioncenter-configuration.properties"
   cp /config/auth/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 fi
+
+if [ -s "/config/monitor/monitor.xml" ]
+then
+  echo "/config/monitor/monitor.xml found! Configure monitoring"
+else
+  echo "No /config/monitor/monitor.xml ! Disable monitoring"
+  sed -i '/monitor/d' /config/server.xml
+  sed -i '/mpMetrics/d' /config/featureManager.xml
+fi

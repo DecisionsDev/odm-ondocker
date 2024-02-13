@@ -30,6 +30,9 @@
         <!-- include OIDC web security config -->
         <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
 
+        <!-- include agent monitor config like mpMetrics -->
+        <include optional="true" location="./monitor/monitor.xml"/>
+
     	<!-- include logging config -->
     	<include optional="true" location="./logging/logging.xml"/>
 

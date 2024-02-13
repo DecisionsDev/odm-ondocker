@@ -127,3 +127,12 @@ else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
+
+if [ -s "/config/monitor/monitor.xml" ]
+then
+  echo "/config/monitor/monitor.xml found! Configure monitoring"
+else
+  echo "No /config/monitor/monitor.xml ! Disable monitoring"
+  sed -i '/monitor/d' /config/server.xml
+  sed -i '/mpMetrics/d' /config/featureManager.xml
+fi
