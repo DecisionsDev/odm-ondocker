@@ -12,7 +12,7 @@ then
 	read -a driver_urls <<< "$DB_DRIVER_URL"
 	for url in "${driver_urls[@]}";
 	do
-	  (cd /config/resources && curl -O -k -s $url)
+	  (cd /config/resources && curl -O -L -k -s $url)
 	done
 
 	# Unzip drivers if necessary
