@@ -224,7 +224,7 @@ then
 	sed -i 's|OPENID_GRANT_TYPE|client_credentials|g' /config/OdmOidcProviders.json
      fi
 
-     echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
+     echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
      cp /config/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
   else
@@ -533,7 +533,7 @@ fi
 
 if [ -s "/config/auth/OdmOidcProviders.json" ]
 then
-  echo "Copy /config/auth/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
+  echo "Copy /config/auth/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json"
   cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
   cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
 fi
