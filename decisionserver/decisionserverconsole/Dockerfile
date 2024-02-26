@@ -28,8 +28,8 @@ RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; the
 RUN $SCRIPT/extractApp.sh res.war && $SCRIPT/extractApp.sh DecisionService.war
 
 RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-INF/web.xml && \
-		onDocker false true $APPS/res.war/WEB-INF/web.xml && \
-		$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
+	$SCRIPT/changeParamValue.sh onDocker false true $APPS/res.war/WEB-INF/web.xml && \
+	$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
