@@ -20,18 +20,19 @@ RUN set -ex; \
       touch /use_loan_server; \
       if [ -f /welcomepage/src/main/webapp/index.jsp ]; then \
         sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
-      fi; \  
+      fi; \
     fi
-
 
 RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
-# Install the driver for H2 and for PostgreSQL
-RUN mkdir -p /tmp && cd /tmp && \
-    curl -LORk https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
+# Install the driver for PostgreSQL
+RUN set -ex; \
+    cd /tmp; \
+    curl --fail --insecure --remote-name --remote-time --silent https://jdbc.postgresql.org/download/postgresql-42.7.2.jar; \
+    mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
