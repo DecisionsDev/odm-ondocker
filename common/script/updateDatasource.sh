@@ -130,7 +130,7 @@ then
 			then
 				DEFAULT_TRUSTSTORE_PASSWORD=changeit
 			fi
-			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.2,TLSv1.3" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
                         if [ -f /config/customdatasource/tls.crt ]
                         then
                                 echo "Import DB2 certificate"
