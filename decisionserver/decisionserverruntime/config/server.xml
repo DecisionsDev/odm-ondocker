@@ -1,7 +1,7 @@
 <server description="executionserver">
 
         <!-- liberty custom config start -->
-        <include optional="true" location="./customliberty/libertyConfigStart.xml"/>
+        <include optional="true" location="./libertyhook/libertyHookStart.xml"/>
 
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
@@ -49,6 +49,6 @@
         <oidcClientWebapp id="oidcClientWebapp" contextPath="${ODM_CONTEXT_ROOT}/DecisionService/openid"/>
 
         <!-- liberty custom config end -->
-        <include optional="true" location="./customliberty/libertyConfigEnd.xml"/>
+        <include optional="true" location="./libertyhook/libertyHookEnd.xml"/>
 
 </server>
