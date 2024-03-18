@@ -1,5 +1,8 @@
 <server description="executionserver">
 
+        <!-- liberty custom config start -->
+        <include optional="true" location="./libertyConfigStart.xml"/>
+
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
@@ -41,6 +44,9 @@
 
 	<webContainer deferServletLoad="false" />
 
-        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/res/openid"/>
+        <oidcClientWebapp id="oidcClientWebapp" contextPath="${ODM_CONTEXT_ROOT}/res/openid"/>
+
+        <!-- liberty custom config end -->
+        <include optional="true" location="./libertyConfigEnd.xml"/>
 
 </server>

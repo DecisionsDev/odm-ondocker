@@ -1,5 +1,8 @@
 <server description="teamserver">
 
+        <!-- liberty start custom config -->
+        <include optional="true" location="./libertyConfigStart.xml"/>
+
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
@@ -45,6 +48,9 @@
 
 	<applicationMonitor updateTrigger="mbean" />
 
-        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/decisioncenter/openid"/>
+        <oidcClientWebapp id="oidcClientWebapp" contextPath="${ODM_CONTEXT_ROOT}/decisioncenter/openid"/>
+
+        <!-- liberty custom config end -->
+        <include optional="true" location="./libertyConfigEnd.xml"/>
 
 </server>

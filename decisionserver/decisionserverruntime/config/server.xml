@@ -1,5 +1,8 @@
 <server description="executionserver">
 
+        <!-- liberty custom config start -->
+        <include optional="true" location="./libertyConfigStart.xml"/>
+
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
@@ -43,5 +46,9 @@
 
 	<webAppSecurity useAuthenticationDataForUnprotectedResource="false" />
 
-        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/DecisionService/openid"/>
+        <oidcClientWebapp id="oidcClientWebapp" contextPath="${ODM_CONTEXT_ROOT}/DecisionService/openid"/>
+
+        <!-- liberty custom config end -->
+        <include optional="true" location="./libertyConfigEnd.xml"/>
+
 </server>
