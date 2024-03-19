@@ -8,6 +8,8 @@ then
     $SCRIPT/customStart.sh
   fi
 
+  $SCRIPT/download.sh
+
   $SCRIPT/addDCApplications.sh
 
   $SCRIPT/updateDCConfigurations.sh
