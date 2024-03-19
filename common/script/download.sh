@@ -21,13 +21,13 @@ then
         if [ -f /config/download/*.tar* ]; then
                 for arch in "/config/download"/*.tar*
                 do
-                  tar -xaf $arch
+                  (cd /config/download && tar -xaf $arch)
                 done
         fi
         if [ -f /config/download/*.tgz* ]; then
                 for arch in "/config/download"/*.tgz*
                 do
-                  tar -xaf $arch
+                  (cd /config/download && tar -xaf $arch)
                 done
         fi
 fi
