@@ -89,5 +89,4 @@ COPY --from=builder  --chown=1001:0 /licenses /licenses
 # Version
 COPY --from=oidc-liberty-builder /opt/ibm/version.txt /opt/ibm/version.txt
 USER 1001
-RUN mkdir /config/download
 EXPOSE 9080 9443

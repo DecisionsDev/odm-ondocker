@@ -108,5 +108,4 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 # License
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
-RUN mkdir /config/download
 EXPOSE 9060 9453

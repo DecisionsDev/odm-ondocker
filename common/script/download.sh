@@ -4,6 +4,10 @@ if [ -n "$DOWNLOAD_URL" ]
 then
         echo "Use DOWNLOAD_URL: $DOWNLOAD_URL"
 
+	if [ ! -d /config/download ]; then
+           mkdir /config/download
+        fi
+
         # Download files from each urls
         IFS=','
         read -a download_urls <<< "$DOWNLOAD_URL"
