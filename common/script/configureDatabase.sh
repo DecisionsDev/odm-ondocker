@@ -18,13 +18,15 @@ then
 	# Unzip drivers if necessary
 	if [ -f /config/resources/*.zip ]; then
 		(cd /config/resources && unzip -q *.zip)
+                rm /config/resources/*.zip
 	fi
 
 	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
 	if [ -f /config/resources/*.tar* ]; then
 		for arch in "/config/resources"/*.tar*
 		do
-		  tar -xaf $arch
+		  (cd /config/resources && tar -xaf $arch)
+		  rm /config/resources/$arch
 		done
 	fi
 
