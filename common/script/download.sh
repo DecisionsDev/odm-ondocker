@@ -33,7 +33,7 @@ then
                 done
         fi
         if [ -f /config/download/*.tgz* ]; then
-                for arch in "/config/download"/*.tgz*
+                for arch in "/config/download"/*.tgz
                 do
                   tar -xaf $arch
 		  rm $arch
