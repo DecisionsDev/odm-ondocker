@@ -24,7 +24,7 @@ then
 		rm *.zip
         fi
 
-        # Untar download if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
+        # Untar download if necessary (.tgz, .tar, .tar.gz, .tar.bz2, .tar.xz are supported)
         if [ -f /config/download/*.tar* ]; then
                 for arch in "/config/download"/*.tar*
                 do
