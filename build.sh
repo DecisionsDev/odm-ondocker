@@ -20,13 +20,6 @@ cp -R odm-ondocker install
 
 cd install/odm-ondocker
 cp resources/.dockerignore ../
-# Optimizing the build to download webprofile package.
-source .env
-echo "Using this properties from .env file."
-cat .env
-docker run --user 'root' -v $PWD/wlp:/opt/wlp  $FROMLIBERTY  /bin/sh -c "mkdir -p /opt/wlp ;\
- installUtility download $PACKAGELIST --location=/opt/wlp"
-
 
 echo "build ODM standard docker images..."
 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build
