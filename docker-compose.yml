@@ -39,6 +39,7 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - PACKAGELIST=$PACKAGELIST
     links:
     - dbserver
     depends_on:
@@ -60,6 +61,7 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - PACKAGELIST=$PACKAGELIST
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -82,6 +84,7 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - PACKAGELIST=$PACKAGELIST
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -107,6 +110,7 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
+        - PACKAGELIST=$PACKAGELIST
     links:
     - dbserver
     depends_on:
