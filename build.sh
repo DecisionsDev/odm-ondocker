@@ -21,7 +21,6 @@ cp -R odm-ondocker install
 cd install/odm-ondocker
 cp resources/.dockerignore ../
 # Optimizing the build to download webprofile package.
-source .env
 echo "Using this properties from .env file."
 cat .env
 docker run --user 'root' -v $PWD/wlp:/opt/wlp  $FROMLIBERTY  /bin/sh -c "mkdir -p /opt/wlp ;\

@@ -1,4 +1,3 @@
-version: '3'
 services:
   dbserver:
     image: $REPOSITORY/dbserver:$ODMVERSION
