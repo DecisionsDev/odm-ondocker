@@ -17,6 +17,7 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
+        - PACKAGELIST=$PACKAGELIST
     user: "1001:0"
     environment:
     - SAMPLE=false
