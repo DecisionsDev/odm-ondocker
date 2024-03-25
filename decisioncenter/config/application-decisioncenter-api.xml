@@ -4,9 +4,9 @@
                         <privateLibrary>
                                 <fileset dir="/config/customlib" includes="*.jar" scanInterval="5s" id="customlibdir"/>
                         </privateLibrary>
-			<commonLibrary>
-                                <folder dir="/config/download" id="download-dir"  />
-                        </commonLibrary>
+			<privateLibrary>
+                                <fileset dir="/config/download" includes="*.jar" scanInterval="5s" id="downloaddir"/>
+                        </privateLibrary>
                 </classloader>
 		<application-bnd>
 			<security-role name="rtsAdministrator">
