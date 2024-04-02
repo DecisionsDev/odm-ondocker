@@ -568,3 +568,9 @@ else
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
 fi
+
+if [ -n "$DISABLE_DBDUMP" ]
+then
+  echo "Disable dbdump application"
+  rm -rf /config/apps/teamserver-dbdump.war
+fi
