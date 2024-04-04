@@ -7,18 +7,15 @@
 			</security-role>
 		</application-bnd>
 	<classloader delegation="parentLast">
-		<commonLibrary>
-			<folder dir="/config/pluginconfig" id="plugindir"  />
-		</commonLibrary>
-		<commonLibrary>
-			<folder dir="/config/extension" id="extensiondir"  />
-		</commonLibrary>
-		<commonLibrary>
-			<folder dir="/config/download" id="download-dir"  />
-		</commonLibrary>
-		<commonLibrary>
-			<folder dir="/config/integration" id="integration-dir"  />
-		</commonLibrary>
+    		<commonLibrary>
+      			<folder dir="/config/pluginconfig" id="plugindir"  />
+    		</commonLibrary>
+                <commonLibrary>
+                        <folder dir="/config/extension" id="extensiondir"  />
+                </commonLibrary>
+                <commonLibrary>
+                        <folder dir="/config/download" id="download-dir"  />
+                </commonLibrary>
   	</classloader>
 	</application>
 
