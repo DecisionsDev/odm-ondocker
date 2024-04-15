@@ -31,11 +31,8 @@
 				<folder dir="/config/pluginconfig" id="plugindir"  />
 			</commonLibrary>
 			<commonLibrary>
-				<folder dir="/config/download" id="download-dir"  />
-			</commonLibrary>
-			<commonLibrary>
-				<folder dir="/config/integration" id="integration-dir"  />
-			</commonLibrary>
+                                <folder dir="/config/download" id="download-dir"  />
+                        </commonLibrary>
 		</classloader>
 	</application>
 </server>
