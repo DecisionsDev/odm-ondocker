@@ -156,3 +156,12 @@ else
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
 fi
+
+if [ -s "/config/logstashCollector/logstashCollector.xml" ]
+then
+  echo "/config/logstashCollector/logstashCollector.xml found! Configure logstashCollector"
+else
+  echo "No /config/logstashCollector/logstashCollector.xml ! Disable logstashCollector"
+  sed -i '/logstashCollector/d' /config/server.xml
+  sed -i '/logstashCollector/d' /config/featureManager.xml
+fi

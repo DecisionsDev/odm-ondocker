@@ -36,6 +36,9 @@
         <!-- include agent monitor config like mpMetrics -->
         <include optional="true" location="./monitor/monitor.xml"/>
 
+        <!-- include logstash collector config -->
+        <include optional="true" location="./logstashCollector/logstashCollector.xml"/>
+
     	<!-- include logging config -->
     	<include optional="true" location="./logging/logging.xml"/>
 
