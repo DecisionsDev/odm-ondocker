@@ -3,7 +3,7 @@ INFORMACJE LICENCYJNE
 Programy wymienione poniżej są licencjonowane na podstawie przedstawionych poniżej warunków Informacji licencyjnych, które stanowią uzupełnienie warunków licencji na Program uzgodnionych uprzednio między Klientem a IBM. Jeśli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie mają warunki licencji Międzynarodowa Umowa Licencyjna na Programy nieobjęte Gwarancją (i125-5589-06).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Poniższe standardowe warunki mają zastosowanie do używania Programu przez Licencjobiorcę.
 
@@ -47,9 +47,9 @@ Dane i usługi osób trzecich
 Program zapewnia dostęp do usług transmisji danych, baz danych, usług WWW, oprogramowania bądź innej zawartości osób trzecich (zwanych dalej łącznie "Zawartością Osób Trzecich"). Zawartość taka jest udostępniana W STANIE, W JAKIM SIĘ ZNAJDUJE ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RĘKOJMIĘ RÓWNIEŻ WYŁĄCZA SIĘ), WYRAŹNYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŚCI GWARANCJI PRAWA WŁASNOŚCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÓW PRZYDATNOŚCI HANDLOWEJ I PRZYDATNOŚCI DO OKREŚLONEGO CELU. Ponadto odpowiednie osoby trzecie mogą w każdej chwili zaprzestać udostępniania zawartości według własnego uznania. Może być również wymagane zawarcie przez Licencjobiorcę oddzielnych umów z osobami trzecimi w celu uzyskania dostępu do Zawartości Osób Trzecich lub jej używania. IBM nie jest stroną żadnych takich oddzielnych umów, a zobowiązanie Licencjobiorcy do przestrzegania warunków takich umów jest wyraźnym warunkiem udzielenia niniejszej licencji.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Międzynarodowa Umowa Licencyjna na Programy Nieobjęte Gwarancją
 

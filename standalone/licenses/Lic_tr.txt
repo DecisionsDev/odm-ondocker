@@ -3,7 +3,7 @@ LİSANS BİLGİLERİ
 Aşağıda listelenen programlar, daha önce Müşteri ve IBM tarafından kabul edilen Program lisansı koşullarına ek olarak aşağıdaki Lisans Bilgilerinin kayıt ve koşulları kapsamında lisanslanır. Müşteri, Programa ilişkin yürürlükte olan lisans koşullarını daha önce kabul etmemişse, Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi (i125-5589-06) geçerli olur.
 
 Program Adı (Program Numarası):
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Aşağıdaki standart koşullar, Lisans Alan Tarafın Programı kullanımı için geçerlidir.
 
@@ -47,9 +47,9 @@ Program, kaynak kodu biçiminde bileşenler ("Kaynak Bileşenler") ve/veya Örne
 Program, üçüncü kişi veri hizmetlerine, veritabanlarına, Web hizmetlerine, yazılımlarına ya da diğer üçüncü kişi içeriğine (tümü "Üçüncü Kişi İçeriği") erişim sağlar. Bu Üçüncü Kişi İçeriğine erişim, MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DAHİL OLMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEKSİZİN "OLDUĞU GİBİ" esasıyla sağlanır. Bu erişim, ilgili üçüncü kişiler tarafından yalnızca kendi kararlarına bağlı olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafın bu Üçüncü Kişi İçeriğine erişmesi veya bu içeriği kullanması için üçüncü kişilerle ayrı sözleşmeler yapması gerekebilir. IBM, ayrıca yapılacak bu tür sözleşmelerin bir tarafı değildir ve bu lisansın açık bir koşulu olarak Lisans Alan Taraf ayrıca yapılan bu tür sözleşmelerin koşullarına uygun davranmayı kabul eder.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi
 

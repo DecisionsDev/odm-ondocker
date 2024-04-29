@@ -3,7 +3,7 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis (i125-5589-06).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
 
@@ -47,9 +47,9 @@ Trečiosios šalies duomenys ir paslaugos
 Programa suteikia prieigą prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „Trečiosios šalies turinys“). Prieiga prie šio Trečiosios šalies turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Klientui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio Trečiosios šalies turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis
 

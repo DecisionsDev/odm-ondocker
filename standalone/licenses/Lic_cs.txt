@@ -3,7 +3,7 @@ LICENČNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základě následujících podmínek uvedených v dokumentu Licenční informace, které doplňují licenční podmínky pro Program, s nimiž dříve Zákazník a IBM vyjádřili souhlas Pokud Zákazník dříve nevyjádřil souhlas s účinnými licenčními podmínkami pro Program, uplatní se licence Mezinárodní licenční smlouva pro programy bez záruky (i125-5589-06).
 
 Název Programu (Číslo Programu):
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
 
@@ -47,9 +47,9 @@ Data a služby třetí osoby
 Program poskytuje přístup k datovým službám třetích osob, databázím, webovým službám, softwaru nebo jinému obsahu od třetích osob (společně dále "Obsah třetích osob"). Přístup k Obsahu třetí osoby je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLI DRUHU, VÝSLOVNĚ VYJÁDŘENÉ NEBO KONKLUDENTNÍ, VČETNĚ ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ NEBO NEZASAHOVÁNÍ DO PRÁV TŘETÍCH OSOB A KONKLUDENTNÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu k Obsahu třetích osob nebo užívání tohoto Obsahu třetích osob. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Mezinárodní licenční smlouva pro Programy bez záruky
 
