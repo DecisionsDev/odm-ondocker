@@ -12,7 +12,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/8.12.0?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/9.0.0?topic=manager-introducing-operational-decision)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -29,9 +29,10 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	[latest release](https://docs.docker.com/engine/release-notes/#201021) (down to Engine 20.10)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-812x-rule-designer)
-	Use [IDE 2022-06 R (4.24) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2022-06/r). The update site is https://raw.githubusercontent.com/DecisionsDev/ruledesigner/8.12.0/p2
-
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-900x-rule-designer)
+	Use [IDE 2023-12 R (4.30) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2023-12/r).
+        Documentation available 
+	[ODM Documentation- Installing Rule Designer](https://www.ibm.com/docs/en/odm/9.0.0?topic=900-installing-rule-designer)
 
 -	**Sample projects**:
 
@@ -60,7 +61,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/8.12.0?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/9.0.0?topic=manager-introducing-operational-decision) site.
 
 
   # Usage
@@ -69,20 +70,18 @@ The ODM for Developers docker image contains all of the IBM Operational Decision
 
 > **Note**: On some operating systems like Mac OS X, you might need to increase the memory allocated to docker to be able to run the image. Allocate at least 4 GigaBytes (GB) to your docker daemon to be able to use all of the features in the docker image.
 
-> On Mac OS X, click Docker > Preferences > Advanced, and set the memory to 4 GB. You must restart docker to apply the change.
-
 The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
 You must accept the license before you launch the image. The license is available at the bottom of this page.
 To install the product with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory. Use the following docker command to run the image:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:8.12
+docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -m 2048M --memory-reservation 2048M  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:9.0
 ```
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
  ```console
-docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:8.12
+docker run -e LICENSE=accept  -m 2048M --memory-reservation 2048M -p 9060:9060 -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:9.0
 ```
 
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
