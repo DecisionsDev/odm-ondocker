@@ -3,12 +3,12 @@
     {
         "name": "ums",
         "grantType": "password",
-        "authorizationURL": "https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/authorize",
-        "tokenURL": "https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/identitytoken",
-        "introspectionURL": "https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/introspect",
-        "clientId": "ibm-odm-vtt-odm-oidc-client-id",
-        "clientSecret": "ibm-odm-vtt-odm-oidc-client-id-secret-value",
-        "logoutURL": "https://cp-console.apps.9.20.212.178.nip.io/idprovider/v1/auth/logout"
+        "authorizationURL": "https://cp-console.apps.<FYRE_MASTER_IP>.nip.io/idprovider/v1/auth/authorize",
+        "tokenURL": "https://cp-console.apps.<FYRE_MASTER_IP>.nip.io/idprovider/v1/auth/identitytoken",
+        "introspectionURL": "https://cp-console.apps.<FYRE_MASTER_IP>.nip.io/idprovider/v1/auth/introspect",
+        "clientId": "<ODM_OIDC_CLIENT_ID>",
+        "clientSecret": "<>ODM_OIDC_CLIENT_SECRET>",
+        "logoutURL": "https://cp-console.apps.<FYRE_MASTER_IP>.nip.io/idprovider/v1/auth/logout"
     }
   ]
 }

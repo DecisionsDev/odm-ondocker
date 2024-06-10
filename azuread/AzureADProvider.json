@@ -2,11 +2,11 @@
   "providers": [
     {
         "grantType": "password",
-        "authorizationURL": "https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334/oauth2/v2.0/authorize",
-        "tokenURL": "https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334/oauth2/v2.0/token",
-        "logoutURL": "https://login.microsoftonline.com/00df3463-7019-4488-aa48-b4ae46038334/oauth2/v2.0/logout",
-        "clientId": "b173bdb8-fd2c-4208-aef7-773df33456bb",
-        "scope": "b173bdb8-fd2c-4208-aef7-773df33456bb/.default",
+        "authorizationURL": "https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/authorize",
+        "tokenURL": "https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/token",
+        "logoutURL": "https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/logout",
+        "clientId": "<CLIENT_ID>",
+        "scope": "<CLIENT_ID>/.default",
         "name": "azure_ad"
     }
   ]
