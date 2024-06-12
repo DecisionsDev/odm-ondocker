@@ -73,5 +73,6 @@ RUN $SCRIPT/loadFeatures.sh $SCRIPT
 
 VOLUME ["/usr/local/tomcat/dbdata/"]
 EXPOSE 8080
+HEALTHCHECK NONE
 
 CMD ["/usr/local/tomcat/script/runserver.sh"]

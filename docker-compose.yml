@@ -13,6 +13,12 @@ services:
         - FROMPOSTGRES=$FROMPOSTGRES
         - POSTGRESUID=$POSTGRESUID
     user: "$POSTGRESUID:$POSTGRESUID"
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odmusr -d odmdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
     - 5432:5432
     environment:
@@ -39,10 +45,15 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
-    links:
-    - dbserver
     depends_on:
     - dbserver
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9443/res/login.jsf"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 50s
     ports:
     - 9080:9080
     - 1883:1883
@@ -61,12 +72,18 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
-    links:
-    - dbserver
-    - odm-decisionserverconsole
     depends_on:
-    - dbserver
-    - odm-decisionserverconsole
+      dbserver:
+        condition: service_healthy
+      odm-decisionserverconsole:
+        condition: service_healthy
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9443/DecisionRunner"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 50s
     ports:
     - 9070:9080
     - 9743:9443
@@ -86,12 +103,18 @@ services:
         - PACKAGELIST=$PACKAGELIST
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
-    links:
-    - dbserver
-    - odm-decisionserverconsole
     depends_on:
-    - dbserver
-    - odm-decisionserverconsole
+      dbserver:
+        condition: service_healthy
+      odm-decisionserverconsole:
+        condition: service_healthy
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9443/DecisionService"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 50s
     ports:
     - 9090:9080
     - 9943:9443
@@ -110,10 +133,15 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
-    links:
-    - dbserver
     depends_on:
     - dbserver
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9453/decisioncenter/healthCheck?dontCheckDecisionModel=true"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 50s
     environment:
     - JVM_ARGS="-Xmx14000m"
     ports:
