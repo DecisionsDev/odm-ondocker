@@ -1,0 +1,19 @@
+<server>
+
+        <variable name="group1" value="group:http://keycloak-keycloak.apps.kanab.cp.fyre.ibm.com/auth/realms/master/odmAdmin"/>
+
+	<variable name="odm.rtsAdministrators.group1" value="${group1}"/>
+	<variable name="odm.rtsInstallers.group1" value="${group1}"/>
+	<variable name="odm.rtsConfigManagers.group1" value="${group1}"/>
+        <variable name="odm.resAdministrators.group1" value="${group1}"/>
+        <variable name="odm.resDeployers.group1" value="${group1}"/>
+        <variable name="odm.resMonitors.group1" value="${group1}"/>
+        <variable name="odm.resExecutors.group1" value="${group1}"/>
+
+        <variable name="user1" value="user:http://keycloak-keycloak.apps.kanab.cp.fyre.ibm.com/auth/realms/master/service-account-odm"/>
+
+        <variable name="odm.rtsAdministrators.user1" value="${user1}"/>
+        <variable name="odm.resAdministrators.user1" value="${user1}"/>
+
+
+</server>

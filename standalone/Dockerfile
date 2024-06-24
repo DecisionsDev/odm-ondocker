@@ -20,18 +20,19 @@ RUN set -ex; \
       touch /use_loan_server; \
       if [ -f /welcomepage/src/main/webapp/index.jsp ]; then \
         sed -i 's/ loan-server-hidden//g' /welcomepage/src/main/webapp/index.jsp; \
-      fi; \  
+      fi; \
     fi
-
 
 RUN mkdir -p /root/.m2
 COPY $ODMDOCKERDIR/settings.xml /root/.m2/
 RUN cd /welcomepage; mvn clean install | grep -v 'Download.*'
 RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /config/resources
 
-# Install the driver for H2 and for PostgreSQL
-RUN mkdir -p /tmp && cd /tmp && \
-    curl -LORk https://jdbc.postgresql.org/download/postgresql-42.2.1.jar && mv postgres* /config/resources/
+# Install the driver for PostgreSQL
+RUN set -ex; \
+    cd /tmp; \
+    curl --fail --insecure --remote-name --remote-time --silent https://jdbc.postgresql.org/download/postgresql-42.7.2.jar; \
+    mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
 
@@ -76,21 +77,21 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-9.0.zip ${ODMDOCKERDIR}/standalone/rtsdb-9.0.zip /db90/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.12.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.12.zip /db812/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.1.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.1.zip /db8111/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.zip /db811/
-COPY ${ODMDOCKERDIR}/standalone/resdb-8.10.5.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.10.5.zip /db8105/
-ADD ${ODMDOCKERDIR}/standalone/data-8.10.3.tar.gz /db8103/
-ADD ${ODMDOCKERDIR}/standalone/data-8.10.tar.gz /db810/
-ADD ${ODMDOCKERDIR}/standalone/data-8.9.tar.gz /upload
-# Default DB Version is 8.9 Since 8.10 there is a new DB sample with additional features.
+RUN mkdir /upload
+
 RUN set -ex; \
     ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
-    chmod -R 777 ${APPS} /upload /db810 /db8103 /db8105 /db811 /db8111 /db812 /config/dbdata
+    chmod -R 777 ${APPS} /upload /db811 /db8111 /db812 /db90 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR
+ARG PACKAGELIST
 ENV ODMDOCKERDIR ${ODMDOCKERDIR}
+ENV PACKAGELIST $PACKAGELIST
 USER root
 ENV SCRIPT /script
 ENV APPS /config/apps

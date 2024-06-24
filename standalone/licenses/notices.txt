@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Operational Decision Manager for Developers V8.12
+IBM Operational Decision Manager for Developers V9.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -26,7 +26,7 @@ from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-NOTICES AND INFORMATION FOR <ODM on Prem>
+NOTICES AND INFORMATION FOR <ODM On Prem>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -34,61 +34,162 @@ TABLE OF CONTENTS
 
 THIS IBM NOTICES FILE CONSISTS OF THE FOLLOWING SECTIONS:
 
+AFL-2.1
+Apache-1.1
 Apache-2.0
 BSD-3-Clause
-MPL-1.1
-CDDL-1.1
-EPL-2.0
-LGPL-3.0
 CDDL-1.0
-MIT
-Apache-1.1
-ICU
-ISC
+CDDL-1.1
 CPL-1.0
 EPL-1.0
-AFL-2.1
-JDOM
+EPL-2.0
+ICU
+ISC
+JSON
+MIT
+MIT-0
+The Werken Company
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AFL-2.1
+
+The Program includes some or all of the following that IBM obtained
+under a AFL-2.1 license:
+
+dijit | Copyright (c) 2005-2018 The JS Foundation. Copyright (c) 2003-2004 Lawrence E. Rosen. | https://registry.npmjs.org/dijit/-/dijit-1.17.2.tgz
+dojo | Copyright (c) 2005-2018 The JS Foundation. Copyright (c) 2003-2004 Lawrence E. Rosen And Copyright (c) 2007 Yahoo! Inc. All rights reserved. Copyright ï£¿ 1991-2007 Unicode Inc. All rights reserved. | https://registry.npmjs.org/dojo/-/dojo-1.17.2.tgz
+dojox | Copyright (c) 2005-2015 The Dojo Foundation (c) 2003-2004 Lawrence E. Rosen | https://registry.npmjs.org/dojox/-/dojox-1.17.2.tgz
+
+The Academic Free License
+v.2.1
+
+This Academic Free License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following notice immediately following the copyright notice for the Original Work:
+
+Licensed under the Academic Free License version 2.1
+
+1) Grant of Copyright License. Licensor hereby grants You a world-wide, royalty-free, non-exclusive, perpetual, sublicenseable license to do the following:
+a) to reproduce the Original Work in copies;
+b) to prepare derivative works ("Derivative Works") based upon the Original Work;
+c) to distribute copies of the Original Work and Derivative Works to the public;
+d) to perform the Original Work publicly; and
+e) to display the Original Work publicly.
+2) Grant of Patent License. Licensor hereby grants You a world-wide, royalty-free, non-exclusive, perpetual, sublicenseable license, under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and Derivative Works.
+3) Grant of Source Code License. The term "Source Code" means the preferred form of the Original Work for making modifications to it and all available documentation describing how to modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
+4) Exclusions From License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor. Nothing in this License shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of Licensor except as expressly stated herein. No patent license is granted to make, use, sell or offer to sell embodiments of any patent claims other than the licensed claims defined in Section 2. No right is granted to the trademarks of Licensor even if such marks are included in the Original Work. Nothing in this License shall be interpreted to prohibit Licensor from licensing under different terms from this License any Original Work that Licensor otherwise would have a right to license.
+5) This section intentionally omitted.
+6) Attribution Rights. You must retain, in the Source Code of any Derivative Works that You create, all copyright, patent or trademark notices from the Source Code of the Original Work, as well as any notices of licensing and any descriptive text identified therein as an "Attribution Notice." You must cause the Source Code for any Derivative Works that You create to carry a prominent Attribution Notice reasonably calculated to inform recipients that You have modified the Original Work.
+7) Warranty of Provenance and Disclaimer of Warranty. Licensor warrants that the copyright in and to the Original Work and the patent rights granted herein by Licensor are owned by the Licensor or are sublicensed to You under the terms of this License with the permission of the contributor(s) of those copyrights and patent rights. Except as expressly stated in the immediately proceeding sentence, the Original Work is provided under this License on an "AS IS" BASIS and WITHOUT WARRANTY, either express or implied, including, without limitation, the warranties of NON-INFRINGEMENT, MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. This DISCLAIMER OF WARRANTY constitutes an essential part of this License. No license to Original Work is granted hereunder except under this disclaimer.
+8) Limitation of Liability. Under no circumstances and under no legal theory, whether in tort (including negligence), contract, or otherwise, shall the Licensor be liable to any person for any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or the use of the Original Work including, without limitation, damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses. This limitation of liability shall not apply to liability for death or personal injury resulting from Licensor's negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+9) Acceptance and Termination. If You distribute copies of the Original Work or a Derivative Work, You must make a reasonable effort under the circumstances to obtain the express assent of recipients to the terms of this License. Nothing else but this License (or another written agreement between Licensor and You) grants You permission to create Derivative Works based upon the Original Work or to exercise any of the rights granted in Section 1 herein, and any attempt to do so except under the terms of this License (or another written agreement between Licensor and You) is expressly prohibited by U.S. copyright law, the equivalent laws of other countries, and by international treaty. Therefore, by exercising any of the rights granted to You in Section 1 herein, You indicate Your acceptance of this License and all of its terms and conditions.
+10) Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License as of the date You commence an action, including a cross-claim or counterclaim, against Licensor or any licensee alleging that the Original Work infringes a patent. This termination provision shall not apply for an action alleging patent infringement by combinations of the Original Work with other software or hardware.
+11) Jurisdiction, Venue and Governing Law. Any action or suit relating to this License may be brought only in the courts of a jurisdiction wherein the Licensor resides or in which Licensor conducts its primary business, and under the laws of that jurisdiction excluding its conflict-of-law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. Any use of the Original Work outside the scope of this License or after its termination shall be subject to the requirements and penalties of the U.S. Copyright Act, 17 U.S.C. § 101 et seq., the equivalent laws of other countries, and international treaty. This section shall survive the termination of this License.
+12) Attorneys Fees. In any action to enforce the terms of this License or seeking damages relating thereto, the prevailing party shall be entitled to recover its costs and expenses, including, without limitation, reasonable attorneys' fees and costs incurred in connection with such action, including any appeal of such action. This section shall survive the termination of this License.
+13) Miscellaneous. This License represents the complete agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
+14) Definition of "You" in This License. "You" throughout this License, whether in upper or lower case, means an individual or a legal entity exercising rights under, and complying with all of the terms of, this License. For legal entities, "You" includes any entity that controls, is controlled by, or is under common control with you. For purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+15) Right to Use. You may use the Original Work in all ways not otherwise restricted or conditioned by this License or by law, and Licensor promises not to interfere with or be responsible for such uses by You.
+This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved.
+Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+
+END OF AFL-2.1 NOTICES AND INFORMATION
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+APACHE SOFTWARE LICENSE 1.1
+
+The Program includes some or all of the following that IBM obtained
+under the Apache License Version 1.1:
+
+oro:oro
+
+
+Apache Software License
+Version 1.1
+
+Copyright (c) 2000 The Apache Software Foundation.  All rights reserved.
+ 
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions are 
+met:
+ 
+1. Redistributions of source code must retain the above copyright 
+notice, this list of conditions and the following disclaimer.
+ 
+2. Redistributions in binary form must reproduce the above copyright 
+notice, this list of conditions and the following disclaimer in the 
+documentation and/or other materials provided with the distribution.
+
+3. The end-user documentation included with the redistribution,
+if any, must include the following acknowledgment:
+"This product includes software developed by the
+Apache Software Foundation (http://www.apache.org/)."
+Alternately, this acknowledgment may appear in the software itself,
+if and wherever such third-party acknowledgments normally appear.
+
+4. The names "Apache" and "Apache Software Foundation" must 
+not be used to endorse or promote products derived from this
+software without prior written permission. For written
+permission, please contact apache@apache.org.
+
+5. Products derived from this software may not be called "Apache",
+nor may "Apache" appear in their name, without prior written
+permission of the Apache Software Foundation.
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
+ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON 
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+=================================================================
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the Apache Software Foundation.  For more
+information on the Apache Software Foundation, please see
+<http://www.apache.org/>.
+
+Portions of this software are based upon public domain software
+originally written at the National Center for Supercomputing 
+Applications, University of Illinois, Urbana-Champaign.
+
+END OF APACHE SOFTWARE LICENSE 1.1 NOTICES AND INFORMATION
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 APACHE SOFTWARE LICENSE 2.0
 
 The Program includes some or all of the following that IBM obtained
 under the Apache License Version 2.0:
 
-FastInfoset-1.2.15.jar
-JSON4J.jar
-XmlSchema.jar
-ant-bootstrap.jar
-ant-testutil.jar
+ant-1.10.12.jar
+ant-launcher-1.10.12.jar
 axis-patched-1.4.jar
 batik-jviews-svggen-8.9.jar
-batik-jviews-tiff-8.9.jar
-batik:batik-awt-util
-bcel:bcel
 bootstrap-datepicker.min.js
 bsf:bsf
-cactus:cactus
 com.fasterxml.jackson.core:jackson-annotations
 com.fasterxml.jackson.core:jackson-core
 com.fasterxml.jackson.core:jackson-databind
+com.fasterxml.jackson.dataformat:jackson-dataformat-cbor
+com.fasterxml.jackson.dataformat:jackson-dataformat-smile
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
 com.fasterxml.jackson.datatype:jackson-datatype-jdk8
 com.fasterxml.jackson.datatype:jackson-datatype-jsr310
 com.fasterxml.jackson.module:jackson-module-jaxb-annotations
 com.fasterxml.jackson.module:jackson-module-parameter-names
-com.fasterxml.woodstox:woodstox-core
 com.fasterxml:classmate
 com.github.ben-manes.caffeine:caffeine
-com.google.code.findbugs:jsr305
-com.google.code.gson:gson
 com.google.errorprone:error_prone_annotations
 com.google.guava:failureaccess
 com.google.guava:guava
 com.google.guava:listenablefuture
-com.google.j2objc:j2objc-annotations
 com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer
 com.ibm.jbatch:com.ibm.jbatch-model
 com.ibm.jbatch:com.ibm.jbatch-ri-spi
@@ -98,34 +199,30 @@ com.rometools:rome
 com.rometools:rome-utils
 com.squareup:protoparser
 com.sun.xml.fastinfoset:FastInfoset
+com.tdunning:t-digest
+com.zaxxer:SparseBitSet
 commons-beanutils:commons-beanutils
 commons-codec:commons-codec
-commons-collections4.jar
 commons-collections:commons-collections
-commons-digester:commons-digester
-commons-discovery:commons-discovery
-commons-el-1.0.jar
+commons-digester-1.8.jar
+commons-discovery-0.2.jar
 commons-el:commons-el
 commons-fileupload:commons-fileupload
-commons-httpclient:commons-httpclient
-commons-io-2.10.0.jar
 commons-io:commons-io
 commons-lang-2.1.jar
-commons-lang-2.6.jar
 commons-lang:commons-lang
+commons-logging-1.0.4.jar
 commons-logging.jar
 commons-logging:commons-logging
 commons-logging:commons-logging-api
 commons-net:commons-net
-commons-validator:commons-validator
-derbyrun.jar
-easymock:easymock
-helloWorld:hello-main
-helloWorld:hello-xom
-helloWorld:parent
+guava-32.0.1-jre.jar
+hibernate-validator-6.2.5.Final.jar
+hppc-0.9.1.jar
 io.dropwizard.metrics:metrics-bom
 io.dropwizard.metrics:metrics-core
 io.dropwizard.metrics:metrics-jmx
+io.dropwizard.metrics:metrics-jvm
 io.netty:netty-buffer
 io.netty:netty-codec
 io.netty:netty-codec-dns
@@ -139,37 +236,55 @@ io.netty:netty-resolver
 io.netty:netty-resolver-dns
 io.netty:netty-resolver-dns-classes-macos
 io.netty:netty-resolver-dns-native-macos
-io.netty:netty-tcnative
+io.netty:netty-tcnative-boringssl-static
+io.netty:netty-tcnative-classes
 io.netty:netty-transport
 io.netty:netty-transport-classes-epoll
 io.netty:netty-transport-native-epoll
 io.netty:netty-transport-native-unix-common
-io.projectreactor.netty:reactor-netty
-io.projectreactor.netty:reactor-netty-core
-io.projectreactor.netty:reactor-netty-http
-io.projectreactor:reactor-core
+io.opentracing:opentracing-api
+io.opentracing:opentracing-noop
+io.opentracing:opentracing-util
 io.reactivex.rxjava3:rxjava
 io.swagger.core.v3:swagger-annotations
 io.swagger.core.v3:swagger-core
 io.swagger.core.v3:swagger-models
-j2ee_connector-1_5-fr.jar
-jackson-annotations-2.13.4.jar
-jackson-core-2.13.4.jar
+jakarta-regexp:jakarta-regexp
 jakarta.validation:jakarta.validation-api
+javassist-3.29.1-GA.jar
 javax.activation:javax.activation-api
-javax.batch-api-ibm-1.0-patch5407.jar
 javax.batch:javax.batch-api
-javax.inject:javax.inject
+javax.inject-1.jar
 javax.validation:validation-api
-jaxen-1.1.3-IBM-stripped-rtc89249.jar
-jdepend:jdepend
 joda-time:joda-time
-json4j-1.0.0.2.jar
-license_metric_logger_2.1.1.201507131115.jar
+kafka-clients-3.4.0.jar
 log4j:log4j
+lucene-analysis-common-9.8.0.jar
+lucene-analysis-kuromoji-9.8.0.jar
+lucene-analysis-nori-9.8.0.jar
+lucene-analysis-phonetic-9.8.0.jar
+lucene-backward-codecs-9.8.0.jar
+lucene-classification-9.8.0.jar
+lucene-codecs-9.8.0.jar
+lucene-core-9.8.0.jar
+lucene-expressions-9.8.0.jar
+lucene-grouping-9.8.0.jar
+lucene-highlighter-9.8.0.jar
+lucene-join-9.8.0.jar
+lucene-memory-9.8.0.jar
+lucene-misc-9.8.0.jar
+lucene-queries-9.8.0.jar
+lucene-queryparser-9.8.0.jar
+lucene-sandbox-9.8.0.jar
+lucene-suggest-9.8.0.jar
 net.sf.ehcache:ehcache
 net.wasdev.wlp.ant:wlp-anttasks
 net.wasdev.wlp.common:ci.common
+netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar
+netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar
+netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar
+netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar
+netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar
 org.apache.ant:ant
 org.apache.ant:ant-antlr
 org.apache.ant:ant-apache-bcel
@@ -181,129 +296,112 @@ org.apache.ant:ant-apache-resolver
 org.apache.ant:ant-apache-xalan2
 org.apache.ant:ant-commons-logging
 org.apache.ant:ant-commons-net
+org.apache.ant:ant-imageio
 org.apache.ant:ant-javamail
 org.apache.ant:ant-jdepend
 org.apache.ant:ant-jmf
 org.apache.ant:ant-jsch
 org.apache.ant:ant-junit
 org.apache.ant:ant-junit4
+org.apache.ant:ant-junitlauncher
 org.apache.ant:ant-launcher
 org.apache.ant:ant-netrexx
 org.apache.ant:ant-parent
 org.apache.ant:ant-swing
 org.apache.ant:ant-testutil
-org.apache.calcite.avatica:avatica-core
-org.apache.calcite:calcite-core
-org.apache.calcite:calcite-linq4j
+org.apache.ant:ant-xz
+org.apache.bcel:bcel
 org.apache.commons:commons-collections4
 org.apache.commons:commons-compress
 org.apache.commons:commons-lang3
 org.apache.commons:commons-math3
-org.apache.derby:derby
-org.apache.derby:derbyclient
-org.apache.derby:derbynet
-org.apache.derby:derbytools
-org.apache.geronimo.specs:geronimo-el_1.0_spec
-org.apache.httpcomponents.client5:httpclient5
-org.apache.httpcomponents.core5:httpcore5
-org.apache.httpcomponents.core5:httpcore5-h2
 org.apache.httpcomponents:httpclient
 org.apache.httpcomponents:httpcore
 org.apache.httpcomponents:httpmime
-org.apache.kafka:kafka-clients
-org.apache.lucene:lucene-analyzers-common
-org.apache.lucene:lucene-analyzers-kuromoji
-org.apache.lucene:lucene-analyzers-phonetic
-org.apache.lucene:lucene-backward-codecs
-org.apache.lucene:lucene-codecs
-org.apache.lucene:lucene-core
-org.apache.lucene:lucene-expressions
-org.apache.lucene:lucene-grouping
-org.apache.lucene:lucene-highlighter
-org.apache.lucene:lucene-join
-org.apache.lucene:lucene-memory
-org.apache.lucene:lucene-misc
-org.apache.lucene:lucene-queries
-org.apache.lucene:lucene-queryparser
-org.apache.lucene:lucene-sandbox
-org.apache.lucene:lucene-suggest
 org.apache.mina:mina-core
 org.apache.myfaces.core:myfaces-api
 org.apache.myfaces.core:myfaces-impl
 org.apache.myfaces.shared:myfaces-shared-impl
 org.apache.myfaces.shared:myfaces-shared-tomahawk
 org.apache.myfaces.tomahawk:tomahawk
-org.apache.poi:poi
-org.apache.poi:poi-ooxml
-org.apache.poi:poi-ooxml-schemas
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.jdom
-org.apache.solr:solr-core
-org.apache.solr:solr-solrj
-org.apache.struts.shale:shale-test
 org.apache.taglibs:taglibs-standard-impl
 org.apache.taglibs:taglibs-standard-spec
 org.apache.velocity:velocity-engine-core
 org.apache.ws.commons.schema:XmlSchema
-org.apache.xmlbeans:xmlbeans
-org.apache.yetus:audience-annotations
 org.apache.zookeeper:zookeeper
 org.apache.zookeeper:zookeeper-jute
-org.awaitility:awaitility
-org.easymock:easymock
-org.eclipse.jetty.http2:http2-common
-org.eclipse.jetty:jetty-client
-org.eclipse.jetty:jetty-http
-org.eclipse.jetty:jetty-io
-org.eclipse.jetty:jetty-util
+org.bitbucket.b_c:jose4j
+org.glassfish.jersey.core:jersey-client
+org.glassfish.jersey.core:jersey-common
+org.glassfish.jersey.core:jersey-server
+org.glassfish.jersey.ext:jersey-entity-filtering
+org.glassfish.jersey.inject:jersey-hk2
+org.glassfish.jersey.media:jersey-media-json-jackson
 org.hibernate.validator:hibernate-validator
 org.infinispan.protostream:protostream
-org.infinispan.protostream:protostream-processor
 org.infinispan.protostream:protostream-types
 org.infinispan:infinispan-commons
-org.infinispan:infinispan-component-processor
 org.infinispan:infinispan-core
-org.infinispan:infinispan-logging-processor
 org.javassist:javassist
 org.jboss.logging:jboss-logging
 org.jboss.threads:jboss-threads
 org.jctools:jctools-core
 org.jgroups:jgroups
-org.reflections:reflections
-org.rrd4j:rrd4j
+org.osgi:org.osgi.service.prefs
+org.slf4j:jcl-over-slf4j
 org.springdoc:springdoc-openapi-common
 org.springdoc:springdoc-openapi-security
 org.springdoc:springdoc-openapi-ui
 org.springdoc:springdoc-openapi-webmvc-core
-org.springframework.boot:spring-boot
 org.springframework.boot:spring-boot-autoconfigure
-org.springframework.boot:spring-boot-starter
-org.springframework.boot:spring-boot-starter-json
-org.springframework.boot:spring-boot-starter-logging
-org.springframework.boot:spring-boot-starter-web
-org.springframework.security:spring-security-config
 org.springframework.security:spring-security-core
-org.springframework.security:spring-security-crypto
-org.springframework.security:spring-security-web
-org.springframework:spring-aop
-org.springframework:spring-beans
-org.springframework:spring-context
-org.springframework:spring-context-support
-org.springframework:spring-core
-org.springframework:spring-expression
-org.springframework:spring-jcl
-org.springframework:spring-tx
 org.springframework:spring-web
-org.springframework:spring-webflux
 org.springframework:spring-webmvc
 org.webjars:swagger-ui
 org.wildfly.common:wildfly-common
 org.yaml:snakeyaml
+poi-4.0.1.jar
+poi-4.1.2.jar
+poi-ooxml-4.1.2.jar
+poi-ooxml-schemas-4.1.2.jar
+reactor-core-3.4.36.jar
+reactor-netty-1.0.39.jar
+reactor-netty-core-1.0.39.jar
+reactor-netty-http-1.0.39.jar
 request
-swagger-core-2.2.2.jar
-xalan:serializer
+serializer.jar
+solr-api-9.4.1.jar
+solr-core-9.4.1.jar
+solr-scripting-9.4.1.jar
+solr-solrj-9.4.1.jar
+solr-solrj-streaming-9.4.1.jar
+solr-solrj-zookeeper-9.4.1.jar
+spring-aop-5.3.33.jar
+spring-beans-5.3.33.jar
+spring-boot-2.7.18.jar
+spring-boot-starter-2.7.18.jar
+spring-boot-starter-json-2.7.18.jar
+spring-boot-starter-logging-2.7.18.jar
+spring-boot-starter-web-2.7.18.jar
+spring-context-5.3.33.jar
+spring-context-support-5.3.33.jar
+spring-core-5.3.33.jar
+spring-expression-5.3.33.jar
+spring-jcl-5.3.33.jar
+spring-security-config-5.7.12.jar
+spring-security-crypto-5.7.12.jar
+spring-security-web-5.7.12.jar
+spring-tx-5.3.33.jar
+spring-webflux-5.3.33.jar
+tomahawk-1.1.14.jar
+validation-api-2.0.1.Final.jar
+xalan.jar
 xalan:xalan
-xerces:xercesImpl
+xercesImpl-2.12.2.jar
 xml-resolver:xml-resolver
+xmlbeans-3.0.2.jar
+xmlbeans-3.1.0.jar
 
 Apache License
 Version 2.0, January 2004
@@ -492,34 +590,20 @@ BSD-3-Clause LICENSE
 The Program includes some or all of the following packages that IBM 
 obtained under the BSD-3-Clause License:
 
-com.github.virtuald:curvesapi | Copyright (c) 2005  Graph Builder
+com.github.virtuald:curvesapi | Copyright (c) 2005 And Graph Builder.
 com.jcraft:jsch | Copyright (c) 2002-2015 Atsuhiko Yamanaka, JCraft,Inc.
-com.sun.activation:jakarta.activation | Copyright (c) 1997-2020 Oracle and/or its affiliates.
-com.sun.xml.messaging.saaj:saaj-impl | Copyright (c) 1997  2022 Oracle and/or its affiliates.
-com.sun.xml.stream.buffer:streambuffer | Copyright (c) 2005  2021 Oracle and/or its affiliates.
-com.sun.xml.ws:httpspi-servlet | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-com.sun.xml.ws:jaxws-rt | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-com.sun.xml.ws:policy | Copyright (c) 1997  2022 Oracle and/or its affiliates.
-com.sun.xml.ws:rt | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-com.sun.xml.ws:rt-fi | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-com.sun.xml.ws:servlet | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-d3 | Copyright (c) 2010-2015  Michael Bostock
+com.sun.xml.ws:httpspi-servlet | Copyright (c) 1997 2018 Oracle and/or its affiliates.
+com.sun.xml.ws:jaxws-rt | Copyright (c) 1997 2018 Oracle and/or its affiliates.
+com.sun.xml.ws:rt | Copyright (c) 1997 2018 Oracle and/or its affiliates.
+com.sun.xml.ws:rt-fi | Copyright (c) 1997 2018 Oracle and/or its affiliates.
+com.sun.xml.ws:servlet | Copyright (c) 1997 2018 Oracle and/or its affiliates.
+d3 | Copyright (c) 2010-2015 Michael Bostock
+dom4j-2.1.3.jar | Copyright 2001-2023 © MetaStuff; Ltd. and DOM4J contributors.
+gridx | Copyright (c) 2005-2011, The Dojo Foundation
 jakarta.activation:jakarta.activation-api | Copyright (c) 2018 Oracle and/or its affiliates.
-jakarta.jws-api-2.1.0.jar | Copyright (c) 2007, Eclipse Foundation, Inc. and its licensors.
 jakarta.jws:jakarta.jws-api | Copyright (c) 2018 Oracle and/or its affiliates.
 jakarta.xml.bind:jakarta.xml.bind-api | Copyright (c) 2018 Oracle and/or its affiliates.
-org.codehaus.woodstox:stax2-api | Copyright (c) 2005- Tatu Saloranta
-org.dom4j:dom4j | Copyright 2001-2023 © MetaStuff, Ltd. and DOM4J contributors.
-org.glassfish.external:management-api | Copyright (c) 2019 Oracle and/or its affiliates
-org.glassfish.gmbal:gmbal | Copyright (c) 2019  2020 Oracle and/or its affiliates.
-org.glassfish.pfl:pfl-basic | Copyright (c) 1997  2018 Oracle and/or its affiliates
-org.glassfish.pfl:pfl-tf | Copyright (c) 1997  2018 Oracle and/or its affiliates.
-org.jvnet.mimepull:mimepull | Copyright (c) 1997  2021 Oracle and/or its affiliates
-org.jvnet.staxex:stax-ex | Copyright (c) 2017  2021 Oracle and/or its affiliates.
-org.ow2.asm:asm | Copyright (c) 2000-2011 INRIA, France Telecom
-org.ow2.asm:asm-analysis | Copyright (c) 2000-2011 INRIA, France Telecom
-org.ow2.asm:asm-commons | Copyright (c) 2000-2011 INRIA, France Telecom
-org.ow2.asm:asm-tree | Copyright (c) 2000-2011 INRIA, France Telecom
+jdepend:jdepend | Copyright (C) 1999-2004 Clarkware Consulting And Inc.
 
 
 Redistribution and use in source and binary forms, with or without 
@@ -551,15 +635,25 @@ END OF BSD 3-CLAUSE LICENSE NOTICES AND INFORMATION
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-MOZILLA PUBLIC LICENSE, VERSION 1.1
+COMMON DEVELOPMENT AND DISTRIBUTION LICENSE V1
 
-The Program includes some or all of the following that IBM obtained 
-under the Mozilla Public License, Version 1.1 (source code available via 
-the indicated URL): 
+The Program includes some or all of the following that IBM obtained
+under the Common Development and Distribution License V1
+(source code available via the indicated URL):
 
-js.jar | <https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype>
+com.sun.activation:javax.activation | https://repo1.maven.org/maven2/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0-sources.jar
+javax.activation-api.jar | https://mvnrepository.com/artifact/javax.activation/javax.activation-api/1.2.0
+javax.annotation:javax.annotation-api | https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-sources.jar
+javax.servlet:javax.servlet-api | https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar
+javax.servlet:jstl | https://mvnrepository.com/artifact/javax.servlet/jstl/1.1.0
+jaxrpc-api-1.1.jar | https://mvnrepository.com/artifact/javax.xml/jaxrpc-api/1.1
+jta-1.1.jar | https://mvnrepository.com/artifact/javax.transaction/jta/1.1
+org.glassfish.jaxb:txw2 | https://repo1.maven.org/maven2/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1-sources.jar
+servlet-api-2.3.jar | https://mvnrepository.com/artifact/javax.servlet/servlet-api/2.3
+txw2-2.3.1.jar | https://mvnrepository.com/artifact/org.glassfish.jaxb/txw2/2.3.1
 
-END OF MOZILLA PUBLIC LICENSE, VERSION 1.1 NOTICES AND INFORMATION
+END OF COMMON DEVELOPMENT AND DISTRIBUTION V1 LICENSE NOTICES AND INFORMATION
+
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -573,22 +667,61 @@ under the Common Development and Distribution License V1.1
 com.sun.istack:istack-commons-runtime | https://repo1.maven.org/maven2/com/sun/istack/istack-commons-runtime/3.0.5/istack-commons-runtime-3.0.5-sources.jar
 com.sun.xml.bind:jaxb-core | https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1-sources.jar
 com.sun.xml.bind:jaxb-impl | https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1-sources.jar
-istack-commons-runtime-3.0.5.jar | https://mvnrepository.com/artifact/com.sun.istack/istack-commons-runtime/3.0.5
 istack-commons-runtime-3.0.7.jar | https://mvnrepository.com/artifact/com.sun.istack/istack-commons-runtime/3.0.7
-javax.activation-api.jar | https://mvnrepository.com/artifact/javax.activation/javax.activation-api/1.2.0
-javax.xml.soap-api-1.4.0.jar | https://mvnrepository.com/artifact/javax.xml.soap/javax.xml.soap-api/1.4.0
+javax.xml.bind:jaxb-api | https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1-sources.jar
+javax.xml.soap:javax.xml.soap-api | https://repo1.maven.org/maven2/javax/xml/soap/javax.xml.soap-api/1.4.0/javax.xml.soap-api-1.4.0-sources.jar
+javax.xml.ws:jaxws-api | https://repo1.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1-sources.jar
 jaxb-api.jar | https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0
-jaxb-runtime-2.3.1.jar | https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime/2.3.1
-jaxb2 | https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core/2.3.0
-jaxrpc-api-1.1.IBM.jar | https://mvnrepository.com/artifact/javax.xml/jaxrpc-api/1.1
-jaxrpc-api-1.1.jar | https://mvnrepository.com/artifact/javax.xml/jaxrpc-api/1.1
-jaxws-api-2.3.1.jar | https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api/2.3.1
 org.glassfish.jaxb:jaxb-core | https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1-sources.jar
 org.glassfish.jaxb:jaxb-runtime | https://repo1.maven.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1-sources.jar
+org.glassfish.jaxb:txw2 | https://repo1.maven.org/maven2/org/glassfish/jaxb/txw2/2.3.0.1/txw2-2.3.0.1-sources.jar
 org.glassfish:javax.json | https://repo1.maven.org/maven2/org/glassfish/javax.json/1.1.4/javax.json-1.1.4-sources.jar
-txw2-2.3.1.jar | https://mvnrepository.com/artifact/org.glassfish.jaxb/txw2/2.3.1
+stax-ex-1.8.jar | https://mvnrepository.com/artifact/org.jvnet.staxex/stax-ex/1.8
 
 END OF COMMON DEVELOPMENT AND DISTRIBUTION V1.1 LICENSE NOTICES AND INFORMATION
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+COMMON PUBLIC LICENSE
+
+The Program includes some or all of the following that IBM obtained
+under the Common Public License (source code available via the indicated
+URL):
+
+junit-3.8.1.jar | https://mvnrepository.com/artifact/junit/junit/3.8.1
+wsdl4j-1.6.2.jar | https://mvnrepository.com/artifact/wsdl4j/wsdl4j/1.6.2
+
+END OF COMMON PUBLIC LICENSE NOTICES AND INFORMATION
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ECLIPSE PUBLIC LICENSE, VERSION 1
+
+The Program includes some or all of the following that IBM obtained
+under the Eclipse Public License (source code available via the
+indicated URL):
+
+h2.jar | https://mvnrepository.com/artifact/com.h2database/h2/2.2.224
+junit:junit | https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13-sources.jar
+org.eclipse.emf.common_2.14.0.v20180527-1134.jar | https://mvnrepository.com/artifact/com.innoventsolutions.birt.runtime/org.eclipse.emf.common_2.14.0.v20180527-1134/4.8.0
+org.eclipse.emf.common_2.6.0.v201006141136.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.common/2.6.0.v20100614-1136
+org.eclipse.emf.ecore-xmi_2.5.0.v201005211846.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.5.0.v20100521-1846
+org.eclipse.emf.ecore.xmi_2.14.0.v20180129-1548.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.14/plugins
+org.eclipse.emf.ecore_2.14.0.v20180529-1144.jar | https://central.sonatype.com/artifact/com.innoventsolutions.birt.runtime/org.eclipse.emf.ecore_2.14.0.v20180529-1144
+org.eclipse.emf.ecore_2.6.0.v201006141136.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.6/plugins
+org.eclipse.emf.mapping-2.12.0.jar | https://mvnrepository.com/artifact/org.eclipse.emf.mapping/source
+org.eclipse.emf.mapping-ecore2ecore_2.5.0.v201005211847.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.6/plugins
+org.eclipse.emf.mapping.ecore2ecore-2.11.0.jar | https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.mapping.ecore2ecore/2.11.0/
+org.eclipse.emf.mapping_2.6.0.v201006141136.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/updates/2.6/R201006141136/features
+org.eclipse.emf:org.eclipse.emf | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.14/plugins
+org.eclipse.emf:org.eclipse.emf.common | https://mvnrepository.com/artifact/com.innoventsolutions.birt.runtime/org.eclipse.emf.common_2.14.0.v20180527-1134/4.8.0
+org.eclipse.emf:org.eclipse.emf.ecore.xmi | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.xmi
+org.eclipse.emf:org.eclipse.emf.mapping.ecore2ecore | https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.mapping.ecore2ecore/2.11.0/
+org.eclipse.emf_2.7.0.v20180123-1048.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.14/plugins
+
+END OF ECLIPSE PUBLIC LICENSE, VERSION 1 NOTICES AND INFORMATION
+
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -598,977 +731,44 @@ The Program includes some or all of the following that IBM obtained
 under the Eclipse Public License (source code available via the
 indicated URL):
 
-jakarta.annotation-api-1.3.5.jar | <https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api/1.3.5>
+com.sun.mail:jakarta.mail | https://repo1.maven.org/maven2/com/sun/mail/jakarta.mail/1.6.4/jakarta.mail-1.6.4-sources.jar
 jakarta.annotation:jakarta.annotation-api | https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-sources.jar
 jakarta.transaction:jakarta.transaction-api | https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3-sources.jar
-org.glassfish.ha:ha-api | https://repo1.maven.org/maven2/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13-sources.jar
+jakarta.ws.rs:jakarta.ws.rs-api | https://repo1.maven.org/maven2/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6-sources.jar
+org.eclipse.emf.common-2.30.0.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.common/2.30.0
+org.eclipse.emf.ecore-2.36.0.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore/2.36.0
+org.eclipse.emf.ecore-edit_2.14.0.jar | https://central.sonatype.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.edit
+org.eclipse.emf.ecore-edit_2.6.0.v201006141136.jar | https://download.eclipse.org/justj/?file=modeling/emf/emf/builds/release/2.6/plugins
+org.eclipse.emf.ecore.xmi-2.16.0.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0
+org.eclipse.emf.ecore_2.36.0.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore/2.36.0
+org.eclipse.emf.edit-2.21.0.jar | https://central.sonatype.com/artifact/org.eclipse.emf/org.eclipse.emf.edit/2.21.0
+org.eclipse.emf:org.eclipse.emf.common | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.common/2.30.0
+org.eclipse.emf:org.eclipse.emf.ecore | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore/2.36.0
+org.eclipse.emf:org.eclipse.emf.ecore.change | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.change/2.16.0
+org.eclipse.emf:org.eclipse.emf.ecore.edit | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.edit/2.14.0
+org.eclipse.emf:org.eclipse.emf.ecore.xmi | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0
+org.eclipse.emf:org.eclipse.emf.edit | https://central.sonatype.com/artifact/org.eclipse.emf/org.eclipse.emf.edit/2.21.0
+org.eclipse.emf:org.eclipse.emf.mapping | https://mvnrepository.com/artifact/org.eclipse.emf.mapping/source
+org.eclipse.jetty.http2:http2-client | https://repo1.maven.org/maven2/org/eclipse/jetty/http2/http2-client/10.0.20/http2-client-10.0.20-sources.jar
+org.eclipse.jetty.http2:http2-common | https://repo1.maven.org/maven2/org/eclipse/jetty/http2/http2-common/10.0.20/http2-common-10.0.20-sources.jar
+org.eclipse.jetty.http2:http2-hpack | https://repo1.maven.org/maven2/org/eclipse/jetty/http2/http2-hpack/10.0.20/http2-hpack-10.0.20-sources.jar
+org.eclipse.jetty.http2:http2-http-client-transport | https://repo1.maven.org/maven2/org/eclipse/jetty/http2/http2-http-client-transport/10.0.20/http2-http-client-transport-10.0.20-sources.jar
+org.eclipse.jetty:jetty-alpn-client | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-alpn-client/10.0.20/jetty-alpn-client-10.0.20-sources.jar
+org.eclipse.jetty:jetty-alpn-java-client | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-alpn-java-client/10.0.20/jetty-alpn-java-client-10.0.20-sources.jar
+org.eclipse.jetty:jetty-client | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/10.0.20/jetty-client-10.0.20-sources.jar
+org.eclipse.jetty:jetty-http | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/10.0.20/jetty-http-10.0.20-sources.jar
+org.eclipse.jetty:jetty-io | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/10.0.20/jetty-io-10.0.20-sources.jar
+org.eclipse.jetty:jetty-util | https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/10.0.20/jetty-util-10.0.20-sources.jar
+org.glassfish.hk2.external:aopalliance-repackaged | https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1-sources.jar
+org.glassfish.hk2.external:jakarta.inject | https://repo1.maven.org/maven2/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1-sources.jar
+org.glassfish.hk2:hk2-api | https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1-sources.jar
+org.glassfish.hk2:hk2-locator | https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1-sources.jar
+org.glassfish.hk2:hk2-utils | https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1-sources.jar
+org.glassfish.hk2:osgi-resource-locator | https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3-sources.jar
+org.junit.platform:junit-platform-launcher | https://repo1.maven.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0-sources.jar
 org.junit:junit-bom | https://mvnrepository.com/artifact/org.junit/junit-bom/
 
 END OF ECLIPSE PUBLIC LICENSE, VERSION 2 NOTICES AND INFORMATION
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-MODIFIABLE THIRD PARTY CODE
-
-This Program includes some or all of the following Modifiable Third 
-Party Code that IBM obtained under the GNU Lesser General Public 
-License. For copies of the source code for this software, send an email 
-to <emailaddress> identifying the IBM Program and the Modifiable Third 
-Party Code for which you are requesting the source code. 
-
-checkstyle:checkstyle | Copyright (C) 2007 Free Software Foundation, Inc.
-checkstyle:checkstyle-optional | Copyright (C) 2007 Free Software Foundation, Inc.
-
-                   GNU LESSER GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007
-
- Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
-
-
-  This version of the GNU Lesser General Public License incorporates
-the terms and conditions of version 3 of the GNU General Public
-License, supplemented by the additional permissions listed below.
-
-  0. Additional Definitions.
-
-  As used herein, "this License" refers to version 3 of the GNU Lesser
-General Public License, and the "GNU GPL" refers to version 3 of the GNU
-General Public License.
-
-  "The Library" refers to a covered work governed by this License,
-other than an Application or a Combined Work as defined below.
-
-  An "Application" is any work that makes use of an interface provided
-by the Library, but which is not otherwise based on the Library.
-Defining a subclass of a class defined by the Library is deemed a mode
-of using an interface provided by the Library.
-
-  A "Combined Work" is a work produced by combining or linking an
-Application with the Library.  The particular version of the Library
-with which the Combined Work was made is also called the "Linked
-Version".
-
-  The "Minimal Corresponding Source" for a Combined Work means the
-Corresponding Source for the Combined Work, excluding any source code
-for portions of the Combined Work that, considered in isolation, are
-based on the Application, and not on the Linked Version.
-
-  The "Corresponding Application Code" for a Combined Work means the
-object code and/or source code for the Application, including any data
-and utility programs needed for reproducing the Combined Work from the
-Application, but excluding the System Libraries of the Combined Work.
-
-  1. Exception to Section 3 of the GNU GPL.
-
-  You may convey a covered work under sections 3 and 4 of this License
-without being bound by section 3 of the GNU GPL.
-
-  2. Conveying Modified Versions.
-
-  If you modify a copy of the Library, and, in your modifications, a
-facility refers to a function or data to be supplied by an Application
-that uses the facility (other than as an argument passed when the
-facility is invoked), then you may convey a copy of the modified
-version:
-
-   a) under this License, provided that you make a good faith effort to
-   ensure that, in the event an Application does not supply the
-   function or data, the facility still operates, and performs
-   whatever part of its purpose remains meaningful, or
-
-   b) under the GNU GPL, with none of the additional permissions of
-   this License applicable to that copy.
-
-  3. Object Code Incorporating Material from Library Header Files.
-
-  The object code form of an Application may incorporate material from
-a header file that is part of the Library.  You may convey such object
-code under terms of your choice, provided that, if the incorporated
-material is not limited to numerical parameters, data structure
-layouts and accessors, or small macros, inline functions and templates
-(ten or fewer lines in length), you do both of the following:
-
-   a) Give prominent notice with each copy of the object code that the
-   Library is used in it and that the Library and its use are
-   covered by this License.
-
-   b) Accompany the object code with a copy of the GNU GPL and this license
-   document.
-
-  4. Combined Works.
-
-  You may convey a Combined Work under terms of your choice that,
-taken together, effectively do not restrict modification of the
-portions of the Library contained in the Combined Work and reverse
-engineering for debugging such modifications, if you also do each of
-the following:
-
-   a) Give prominent notice with each copy of the Combined Work that
-   the Library is used in it and that the Library and its use are
-   covered by this License.
-
-   b) Accompany the Combined Work with a copy of the GNU GPL and this license
-   document.
-
-   c) For a Combined Work that displays copyright notices during
-   execution, include the copyright notice for the Library among
-   these notices, as well as a reference directing the user to the
-   copies of the GNU GPL and this license document.
-
-   d) Do one of the following:
-
-       0) Convey the Minimal Corresponding Source under the terms of this
-       License, and the Corresponding Application Code in a form
-       suitable for, and under terms that permit, the user to
-       recombine or relink the Application with a modified version of
-       the Linked Version to produce a modified Combined Work, in the
-       manner specified by section 6 of the GNU GPL for conveying
-       Corresponding Source.
-
-       1) Use a suitable shared library mechanism for linking with the
-       Library.  A suitable mechanism is one that (a) uses at run time
-       a copy of the Library already present on the user's computer
-       system, and (b) will operate properly with a modified version
-       of the Library that is interface-compatible with the Linked
-       Version.
-
-   e) Provide Installation Information, but only if you would otherwise
-   be required to provide such information under section 6 of the
-   GNU GPL, and only to the extent that such information is
-   necessary to install and execute a modified version of the
-   Combined Work produced by recombining or relinking the
-   Application with a modified version of the Linked Version. (If
-   you use option 4d0, the Installation Information must accompany
-   the Minimal Corresponding Source and Corresponding Application
-   Code. If you use option 4d1, you must provide the Installation
-   Information in the manner specified by section 6 of the GNU GPL
-   for conveying Corresponding Source.)
-
-  5. Combined Libraries.
-
-  You may place library facilities that are a work based on the
-Library side by side in a single library together with other library
-facilities that are not Applications and are not covered by this
-License, and convey such a combined library under terms of your
-choice, if you do both of the following:
-
-   a) Accompany the combined library with a copy of the same work based
-   on the Library, uncombined with any other library facilities,
-   conveyed under the terms of this License.
-
-   b) Give prominent notice with the combined library that part of it
-   is a work based on the Library, and explaining where to find the
-   accompanying uncombined form of the same work.
-
-  6. Revised Versions of the GNU Lesser General Public License.
-
-  The Free Software Foundation may publish revised and/or new versions
-of the GNU Lesser General Public License from time to time. Such new
-versions will be similar in spirit to the present version, but may
-differ in detail to address new problems or concerns.
-
-  Each version is given a distinguishing version number. If the
-Library as you received it specifies that a certain numbered version
-of the GNU Lesser General Public License "or any later version"
-applies to it, you have the option of following the terms and
-conditions either of that published version or of any later version
-published by the Free Software Foundation. If the Library as you
-received it does not specify a version number of the GNU Lesser
-General Public License, you may choose any version of the GNU Lesser
-General Public License ever published by the Free Software Foundation.
-
-  If the Library as you received it specifies that a proxy can decide
-whether future versions of the GNU Lesser General Public License shall
-apply, that proxy's public statement of acceptance of any version is
-permanent authorization for you to choose that version for the
-Library.
-
-GNU GENERAL PUBLIC LICENSE
-Version 3, 29 June 2007
-
-Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> 
-
-
-Everyone is permitted to copy and distribute verbatim copies of this 
-license document, but changing it is not allowed. 
-
-Preamble
-
-The GNU General Public License is a free, copyleft license for software 
-and other kinds of works. 
-
-The licenses for most software and other practical works are designed to 
-take away your freedom to share and change the works. By contrast, the 
-GNU General Public License is intended to guarantee your freedom to 
-share and change all versions of a program--to make sure it remains free 
-software for all its users. We, the Free Software Foundation, use the 
-GNU General Public License for most of our software; it applies also to 
-any other work released this way by its authors. You can apply it to 
-your programs, too. 
-
-When we speak of free software, we are referring to freedom, not price. 
-Our General Public Licenses are designed to make sure that you have the 
-freedom to distribute copies of free software (and charge for them if 
-you wish), that you receive source code or can get it if you want it, 
-that you can change the software or use pieces of it in new free 
-programs, and that you know you can do these things. 
-
-To protect your rights, we need to prevent others from denying you these 
-rights or asking you to surrender the rights. Therefore, you have 
-certain responsibilities if you distribute copies of the software, or if 
-you modify it: responsibilities to respect the freedom of others. 
-
-For example, if you distribute copies of such a program, whether gratis 
-or for a fee, you must pass on to the recipients the same freedoms that 
-you received. You must make sure that they, too, receive or can get the 
-source code. And you must show them these terms so they know their 
-rights. 
-
-Developers that use the GNU GPL protect your rights with two steps: (1) 
-assert copyright on the software, and (2) offer you this License giving 
-you legal permission to copy, distribute and/or modify it. 
-
-For the developers' and authors' protection, the GPL clearly explains 
-that there is no warranty for this free software. For both users' and 
-authors' sake, the GPL requires that modified versions be marked as 
-changed, so that their problems will not be attributed erroneously to 
-authors of previous versions. 
-
-Some devices are designed to deny users access to install or run 
-modified versions of the software inside them, although the manufacturer 
-can do so. This is fundamentally incompatible with the aim of protecting 
-users' freedom to change the software. The systematic pattern of such 
-abuse occurs in the area of products for individuals to use, which is 
-precisely where it is most unacceptable. Therefore, we have designed 
-this version of the GPL to prohibit the practice for those products. If 
-such problems arise substantially in other domains, we stand ready to 
-extend this provision to those domains in future versions of the GPL, as 
-needed to protect the freedom of users. 
-
-Finally, every program is threatened constantly by software patents. 
-States should not allow patents to restrict development and use of 
-software on general-purpose computers, but in those that do, we wish to 
-avoid the special danger that patents applied to a free program could 
-make it effectively proprietary. To prevent this, the GPL assures that 
-patents cannot be used to render the program non-free. 
-
-The precise terms and conditions for copying, distribution and 
-modification follow. 
-
-
-TERMS AND CONDITIONS
-0. Definitions.
-
-"This License" refers to version 3 of the GNU General Public License. 
-
-"Copyright" also means copyright-like laws that apply to other kinds 
-of works, such as semiconductor masks. 
-
-"The Program" refers to any copyrightable work licensed under this 
-License. Each licensee is addressed as "you". "Licensees" and 
-"recipients" may be individuals or organizations. 
-
-To "modify" a work means to copy from or adapt all or part of the 
-work in a fashion requiring copyright permission, other than the making 
-of an exact copy. The resulting work is called a "modified version" 
-of the earlier work or a work "based on" the earlier work. 
-
-A "covered work" means either the unmodified Program or a work based 
-on the Program. 
-
-To "propagate" a work means to do anything with it that, without 
-permission, would make you directly or secondarily liable for 
-infringement under applicable copyright law, except executing it on a 
-computer or modifying a private copy. Propagation includes copying, 
-distribution (with or without modification), making available to the 
-public, and in some countries other activities as well. 
-
-To "convey" a work means any kind of propagation that enables other 
-parties to make or receive copies. Mere interaction with a user through 
-a computer network, with no transfer of a copy, is not conveying. 
-
-An interactive user interface displays "Appropriate Legal Notices" 
-to the extent that it includes a convenient and prominently visible 
-feature that (1) displays an appropriate copyright notice, and (2) tells 
-the user that there is no warranty for the work (except to the extent 
-that warranties are provided), that licensees may convey the work under 
-this License, and how to view a copy of this License. If the interface 
-presents a list of user commands or options, such as a menu, a prominent 
-item in the list meets this criterion. 
-
-1. Source Code.
-
-The "source code" for a work means the preferred form of the work 
-for making modifications to it. "Object code" means any non-source 
-form of a work. 
-
-A "Standard Interface" means an interface that either is an official 
-standard defined by a recognized standards body, or, in the case of 
-interfaces specified for a particular programming language, one that is 
-widely used among developers working in that language. 
-
-The "System Libraries" of an executable work include anything, other 
-than the work as a whole, that (a) is included in the normal form of 
-packaging a Major Component, but which is not part of that Major 
-Component, and (b) serves only to enable use of the work with that Major 
-Component, or to implement a Standard Interface for which an 
-implementation is available to the public in source code form. A 
-"Major Component", in this context, means a major essential 
-component (kernel, window system, and so on) of the specific operating 
-system (if any) on which the executable work runs, or a compiler used to 
-produce the work, or an object code interpreter used to run it. 
-
-The "Corresponding Source" for a work in object code form means all 
-the source code needed to generate, install, and (for an executable 
-work) run the object code and to modify the work, including scripts to 
-control those activities. However, it does not include the work's System 
-Libraries, or general-purpose tools or generally available free programs 
-which are used unmodified in performing those activities but which are 
-not part of the work. For example, Corresponding Source includes 
-interface definition files associated with source files for the work, 
-and the source code for shared libraries and dynamically linked 
-subprograms that the work is specifically designed to require, such as 
-by intimate data communication or control flow between those subprograms 
-and other parts of the work. 
-
-The Corresponding Source need not include anything that users can 
-regenerate automatically from other parts of the Corresponding Source. 
-
-The Corresponding Source for a work in source code form is that same 
-work. 
-
-
-2. Basic Permissions.
-
-All rights granted under this License are granted for the term of 
-copyright on the Program, and are irrevocable provided the stated 
-conditions are met. This License explicitly affirms your unlimited 
-permission to run the unmodified Program. The output from running a 
-covered work is covered by this License only if the output, given its 
-content, constitutes a covered work. This License acknowledges your 
-rights of fair use or other equivalent, as provided by copyright law. 
-
-You may make, run and propagate covered works that you do not convey, 
-without conditions so long as your license otherwise remains in force. 
-You may convey covered works to others for the sole purpose of having 
-them make modifications exclusively for you, or provide you with 
-facilities for running those works, provided that you comply with the 
-terms of this License in conveying all material for which you do not 
-control copyright. Those thus making or running the covered works for 
-you must do so exclusively on your behalf, under your direction and 
-control, on terms that prohibit them from making any copies of your 
-copyrighted material outside their relationship with you. 
-
-Conveying under any other circumstances is permitted solely under the 
-conditions stated below. Sublicensing is not allowed; section 10 makes 
-it unnecessary. 
-
-3. Protecting Users' Legal Rights From Anti-Circumvention Law.
-
-No covered work shall be deemed part of an effective technological 
-measure under any applicable law fulfilling obligations under article 11 
-of the WIPO copyright treaty adopted on 20 December 1996, or similar 
-laws prohibiting or restricting circumvention of such measures. 
-
-When you convey a covered work, you waive any legal power to forbid 
-circumvention of technological measures to the extent such circumvention 
-is effected by exercising rights under this License with respect to the 
-covered work, and you disclaim any intention to limit operation or 
-modification of the work as a means of enforcing, against the work's 
-users, your or third parties' legal rights to forbid circumvention of 
-technological measures. 
-
-4. Conveying Verbatim Copies.
-
-You may convey verbatim copies of the Program's source code as you 
-receive it, in any medium, provided that you conspicuously and 
-appropriately publish on each copy an appropriate copyright notice; keep 
-intact all notices stating that this License and any non-permissive 
-terms added in accord with section 7 apply to the code; keep intact all 
-notices of the absence of any warranty; and give all recipients a copy 
-of this License along with the Program. 
-
-You may charge any price or no price for each copy that you convey, and 
-you may offer support or warranty protection for a fee. 
-
-5. Conveying Modified Source Versions.
-
-You may convey a work based on the Program, or the modifications to 
-produce it from the Program, in the form of source code under the terms 
-of section 4, provided that you also meet all of these conditions: 
-
-
- a) The work must carry prominent notices stating that you modified it, 
-    and giving a relevant date. 
- b) The work must carry prominent notices stating that it is released 
-    under this License and any conditions added under section 7. This 
-    requirement modifies the requirement in section 4 to "keep intact
-    all notices". 
-
- c) You must license the entire work, as a whole, under this License to 
-    anyone who comes into possession of a copy. This License will
-    therefore apply, along with any applicable section 7 additional
-    terms, to the whole of the work, and all its parts, regardless of
-    how they are packaged. This License gives no permission to license
-    the work in any other way, but it does not invalidate such 
-    permission if you have separately received it. 
-
- d) If the work has interactive user interfaces, each must display 
-    Appropriate Legal Notices; however, if the Program has interactive 
-    interfaces that do not display Appropriate Legal Notices, your
-    work need not make them do so. 
-
-A compilation of a covered work with other separate and independent 
-works, which are not by their nature extensions of the covered work, and 
-which are not combined with it such as to form a larger program, in or 
-on a volume of a storage or distribution medium, is called an 
-"aggregate" if the compilation and its resulting copyright are not 
-used to limit the access or legal rights of the compilation's users 
-beyond what the individual works permit. Inclusion of a covered work in 
-an aggregate does not cause this License to apply to the other parts of 
-the aggregate. 
-
-6. Conveying Non-Source Forms.
-
-You may convey a covered work in object code form under the terms of 
-sections 4 and 5, provided that you also convey the machine-readable 
-Corresponding Source under the terms of this License, in one of these 
-ways: 
-
- a) Convey the object code in, or embodied in, a physical product 
-    including a physical distribution medium), accompanied by the 
-    Corresponding Source fixed on a durable physical medium
-    customarily used for software interchange. 
-
- b) Convey the object code in, or embodied in, a physical product 
-    (including a physical distribution medium), accompanied by a
-    written offer, valid for at least three years and valid for 
-    as long as you offer spare parts or customer support for that
-    product model, to give anyone who possesses the object code 
-    either (1) a copy of the Corresponding Source for all the 
-    software in the product that is covered by this License, on a 
-    durable physical medium customarily used for software 
-    interchange, for a price no more than your reasonable cost of
-    physically performing this conveying of source, or (2) access
-    to copy the Corresponding Source from a network server at no charge. 
-
- c) Convey individual copies of the object code with a copy of the 
-    written offer to provide the Corresponding Source. This alternative
-    is allowed only occasionally and noncommercially, and only if you
-    received the object code with such an offer, in accord with 
-    subsection 6b. 
-
- d) Convey the object code by offering access from a designated place 
-    (gratis or for a charge), and offer equivalent access to the 
-    Corresponding Source in the same way through the same place at no 
-    further charge. You need not require recipients to copy the 
-    Corresponding Source along with the object code. If the place to
-    copy the object code is a network server, the Corresponding Source
-    may be on a different server (operated by you or a third party) 
-    that supports equivalent copying facilities, provided you maintain
-    clear directions next to the object code saying where to find the
-    Corresponding Source. Regardless of what server hosts the 
-    Corresponding Source, you remain obligated to ensure that it is 
-    available for as long as needed to satisfy these requirements. 
-
- e) Convey the object code using peer-to-peer transmission, provided you 
-    inform other peers where the object code and Corresponding Source of
-    the work are being offered to the general public at no charge under 
-    subsection 6d. 
-
-A separable portion of the object code, whose source code is excluded 
-from the Corresponding Source as a System Library, need not be included 
-in conveying the object code work. 
-
-A "User Product" is either (1) a "consumer product", which means
-any tangible personal property which is normally used for personal, 
-family, or household purposes, or (2) anything designed or sold for 
-incorporation into a dwelling. In determining whether a product is a 
-consumer product, doubtful cases shall be resolved in favor of coverage. 
-For a particular product received by a particular user, "normally 
-used" refers to a typical or common use of that class of product, 
-regardless of the status of the particular user or of the way in which 
-the particular user actually uses, or expects or is expected to use, the 
-product. A product is a consumer product regardless of whether the 
-product has substantial commercial, industrial or non-consumer uses, 
-unless such uses represent the only significant mode of use of the 
-product. 
-
-"Installation Information" for a User Product means any methods, 
-procedures, authorization keys, or other information required to install 
-and execute modified versions of a covered work in that User Product 
-from a modified version of its Corresponding Source. The information 
-must suffice to ensure that the continued functioning of the modified 
-object code is in no case prevented or interfered with solely because 
-modification has been made. 
-
-If you convey an object code work under this section in, or with, or 
-specifically for use in, a User Product, and the conveying occurs as 
-part of a transaction in which the right of possession and use of the 
-User Product is transferred to the recipient in perpetuity or for a 
-fixed term (regardless of how the transaction is characterized), the 
-Corresponding Source conveyed under this section must be accompanied by 
-the Installation Information. But this requirement does not apply if 
-neither you nor any third party retains the ability to install modified 
-object code on the User Product (for example, the work has been 
-installed in ROM). 
-
-The requirement to provide Installation Information does not include a 
-requirement to continue to provide support service, warranty, or updates 
-for a work that has been modified or installed by the recipient, or for 
-the User Product in which it has been modified or installed. Access to a 
-network may be denied when the modification itself materially and 
-adversely affects the operation of the network or violates the rules and 
-protocols for communication across the network. 
-
-Corresponding Source conveyed, and Installation Information provided, in 
-accord with this section must be in a format that is publicly documented 
-(and with an implementation available to the public in source code 
-form), and must require no special password or key for unpacking, 
-reading or copying. 
-
-7. Additional Terms.
-
-"Additional permissions" are terms that supplement the terms of this 
-License by making exceptions from one or more of its conditions. 
-Additional permissions that are applicable to the entire Program shall 
-be treated as though they were included in this License, to the extent 
-that they are valid under applicable law. If additional permissions 
-apply only to part of the Program, that part may be used separately 
-under those permissions, but the entire Program remains governed by this 
-License without regard to the additional permissions. 
-
-When you convey a copy of a covered work, you may at your option remove 
-any additional permissions from that copy, or from any part of it. 
-(Additional permissions may be written to require their own removal in 
-certain cases when you modify the work.) You may place additional 
-permissions on material, added by you to a covered work, for which you 
-have or can give appropriate copyright permission. 
-
-Notwithstanding any other provision of this License, for material you 
-add to a covered work, you may (if authorized by the copyright holders 
-of that material) supplement the terms of this License with terms: 
-
- a) Disclaiming warranty or limiting liability differently from the 
-    terms of sections 15 and 16 of this License; or 
-
- b) Requiring preservation of specified reasonable legal notices or 
-    author attributions in that material or in the Appropriate Legal
-    Notices displayed by works containing it; or 
-
- c) Prohibiting misrepresentation of the origin of that material, or 
-    requiring that modified versions of such material be marked in 
-    reasonable ways as different from the original version; or 
-
- d) Limiting the use for publicity purposes of names of licensors or 
-    authors of the material; or e) Declining to grant rights under
-    trademark law for use of some trade names, trademarks, or service
-    marks; or 
-
- f) Requiring indemnification of licensors and authors of that material 
-    by anyone who conveys the material (or modified versions of it)
-    with contractual assumptions of liability to the recipient, for any
-    liability that these contractual assumptions directly impose on
-    those licensors and authors. 
-
-All other non-permissive additional terms are considered "further 
-restrictions" within the meaning of section 10. If the Program as you 
-received it, or any part of it, contains a notice stating that it is 
-governed by this License along with a term that is a further 
-restriction, you may remove that term. If a license document contains a 
-further restriction but permits relicensing or conveying under this 
-License, you may add to a covered work material governed by the terms of 
-that license document, provided that the further restriction does not 
-survive such relicensing or conveying. 
-
-If you add terms to a covered work in accord with this section, you must 
-place, in the relevant source files, a statement of the additional terms 
-that apply to those files, or a notice indicating where to find the 
-applicable terms. 
-
-Additional terms, permissive or non-permissive, may be stated in the 
-form of a separately written license, or stated as exceptions; the above 
-requirements apply either way. 
-
-8. Termination.
-
-You may not propagate or modify a covered work except as expressly 
-provided under this License. Any attempt otherwise to propagate or 
-modify it is void, and will automatically terminate your rights under 
-this License (including any patent licenses granted under the third 
-paragraph of section 11). 
-
-However, if you cease all violation of this License, then your license 
-from a particular copyright holder is reinstated (a) provisionally, 
-unless and until the copyright holder explicitly and finally terminates 
-your license, and (b) permanently, if the copyright holder fails to 
-notify you of the violation by some reasonable means prior to 60 days 
-after the cessation. 
-
-Moreover, your license from a particular copyright holder is reinstated 
-permanently if the copyright holder notifies you of the violation by 
-some reasonable means, this is the first time you have received notice 
-of violation of this License (for any work) from that copyright holder, 
-and you cure the violation prior to 30 days after your receipt of the 
-notice. 
-
-Termination of your rights under this section does not terminate the 
-licenses of parties who have received copies or rights from you under 
-this License. If your rights have been terminated and not permanently 
-reinstated, you do not qualify to receive new licenses for the same 
-material under section 10. 
-
-9. Acceptance Not Required for Having Copies.
-
-You are not required to accept this License in order to receive or run a 
-copy of the Program. Ancillary propagation of a covered work occurring 
-solely as a consequence of using peer-to-peer transmission to receive a 
-copy likewise does not require acceptance. However, nothing other than 
-this License grants you permission to propagate or modify any covered 
-work. These actions infringe copyright if you do not accept this 
-License. Therefore, by modifying or propagating a covered work, you 
-indicate your acceptance of this License to do so. 
-
-10. Automatic Licensing of Downstream Recipients.
-
-Each time you convey a covered work, the recipient automatically 
-receives a license from the original licensors, to run, modify and 
-propagate that work, subject to this License. You are not responsible 
-for enforcing compliance by third parties with this License. 
-
-An "entity transaction" is a transaction transferring control of an 
-organization, or substantially all assets of one, or subdividing an 
-organization, or merging organizations. If propagation of a covered work 
-results from an entity transaction, each party to that transaction who 
-receives a copy of the work also receives whatever licenses to the work 
-the party's predecessor in interest had or could give under the previous 
-paragraph, plus a right to possession of the Corresponding Source of the 
-work from the predecessor in interest, if the predecessor has it or can 
-get it with reasonable efforts. 
-
-You may not impose any further restrictions on the exercise of the 
-rights granted or affirmed under this License. For example, you may not 
-impose a license fee, royalty, or other charge for exercise of rights 
-granted under this License, and you may not initiate litigation 
-(including a cross-claim or counterclaim in a lawsuit) alleging that any 
-patent claim is infringed by making, using, selling, offering for sale, 
-or importing the Program or any portion of it. 
-
-11. Patents.
-
-A "contributor" is a copyright holder who authorizes use under this 
-License of the Program or a work on which the Program is based. The work 
-thus licensed is called the contributor's "contributor version". 
-
-A contributor's "essential patent claims" are all patent claims 
-owned or controlled by the contributor, whether already acquired or 
-hereafter acquired, that would be infringed by some manner, permitted by 
-this License, of making, using, or selling its contributor version, but 
-do not include claims that would be infringed only as a consequence of 
-further modification of the contributor version. For purposes of this 
-definition, "control" includes the right to grant patent sublicenses 
-in a manner consistent with the requirements of this License. 
-
-Each contributor grants you a non-exclusive, worldwide, royalty-free 
-patent license under the contributor's essential patent claims, to make, 
-use, sell, offer for sale, import and otherwise run, modify and 
-propagate the contents of its contributor version. 
-
-In the following three paragraphs, a "patent license" is any express 
-agreement or commitment, however denominated, not to enforce a patent 
-(such as an express permission to practice a patent or covenant not to 
-sue for patent infringement). To "grant" such a patent license to a 
-party means to make such an agreement or commitment not to enforce a 
-patent against the party. 
-
-If you convey a covered work, knowingly relying on a patent license, and 
-the Corresponding Source of the work is not available for anyone to 
-copy, free of charge and under the terms of this License, through a 
-publicly available network server or other readily accessible means, 
-then you must either (1) cause the Corresponding Source to be so 
-available, or (2) arrange to deprive yourself of the benefit of the 
-patent license for this particular work, or (3) arrange, in a manner 
-consistent with the requirements of this License, to extend the patent 
-license to downstream recipients. "Knowingly relying" means you have 
-actual knowledge that, but for the patent license, your conveying the 
-covered work in a country, or your recipient's use of the covered work 
-in a country, would infringe one or more identifiable patents in that 
-country that you have reason to believe are valid. 
-
-If, pursuant to or in connection with a single transaction or 
-arrangement, you convey, or propagate by procuring conveyance of, a 
-covered work, and grant a patent license to some of the parties 
-receiving the covered work authorizing them to use, propagate, modify or 
-convey a specific copy of the covered work, then the patent license you 
-grant is automatically extended to all recipients of the covered work 
-and works based on it. 
-
-A patent license is "discriminatory" if it does not include within 
-the scope of its coverage, prohibits the exercise of, or is conditioned 
-on the non-exercise of one or more of the rights that are specifically 
-granted under this License. You may not convey a covered work if you are 
-a party to an arrangement with a third party that is in the business of 
-distributing software, under which you make payment to the third party 
-based on the extent of your activity of conveying the work, and under 
-which the third party grants, to any of the parties who would receive 
-the covered work from you, a discriminatory patent license (a) in 
-connection with copies of the covered work conveyed by you (or copies 
-made from those copies), or (b) primarily for and in connection with 
-specific products or compilations that contain the covered work, unless 
-you entered into that arrangement, or that patent license was granted, 
-prior to 28 March 2007. 
-
-Nothing in this License shall be construed as excluding or limiting any 
-implied license or other defenses to infringement that may otherwise be 
-available to you under applicable patent law. 
-
-12. No Surrender of Others' Freedom.
-
-If conditions are imposed on you (whether by court order, agreement or 
-otherwise) that contradict the conditions of this License, they do not 
-excuse you from the conditions of this License. If you cannot convey a 
-covered work so as to satisfy simultaneously your obligations under this 
-License and any other pertinent obligations, then as a consequence you 
-may not convey it at all. For example, if you agree to terms that 
-obligate you to collect a royalty for further conveying from those to 
-whom you convey the Program, the only way you could satisfy both those 
-terms and this License would be to refrain entirely from conveying the 
-Program. 
-
-13. Use with the GNU Affero General Public License.
-
-Notwithstanding any other provision of this License, you have permission 
-to link or combine any covered work with a work licensed under version 3 
-of the GNU Affero General Public License into a single combined work, 
-and to convey the resulting work. The terms of this License will 
-continue to apply to the part which is the covered work, but the special 
-requirements of the GNU Affero General Public License, section 13, 
-concerning interaction through a network will apply to the combination 
-as such. 
-
-14. Revised Versions of this License.
-
-The Free Software Foundation may publish revised and/or new versions of 
-the GNU General Public License from time to time. Such new versions will 
-be similar in spirit to the present version, but may differ in detail to 
-address new problems or concerns. 
-
-Each version is given a distinguishing version number. If the Program 
-specifies that a certain numbered version of the GNU General Public 
-License "or any later version" applies to it, you have the option of 
-following the terms and conditions either of that numbered version or of 
-any later version published by the Free Software Foundation. If the 
-Program does not specify a version number of the GNU General Public 
-License, you may choose any version ever published by the Free Software 
-Foundation. 
-
-If the Program specifies that a proxy can decide which future versions 
-of the GNU General Public License can be used, that proxy's public 
-statement of acceptance of a version permanently authorizes you to 
-choose that version for the Program. 
-
-Later license versions may give you additional or different permissions. 
-However, no additional obligations are imposed on any author or 
-copyright holder as a result of your choosing to follow a later version. 
-
-15. Disclaimer of Warranty.
-
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY 
-APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT 
-HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT 
-WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT 
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
-PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF 
-THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME 
-THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. 
-
-16. Limitation of Liability.
-
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING 
-WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR 
-CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, 
-INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES 
-ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT 
-NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES 
-SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE 
-WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN 
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
-
-17. Interpretation of Sections 15 and 16.
-
-If the disclaimer of warranty and limitation of liability provided above 
-cannot be given local legal effect according to their terms, reviewing 
-courts shall apply local law that most closely approximates an absolute 
-waiver of all civil liability in connection with the Program, unless a 
-warranty or assumption of liability accompanies a copy of the Program in 
-return for a fee. 
-
-END OF TERMS AND CONDITIONS
-
-END OF GNU LESSER GENERAL PUBLIC LICENSE, Version 3 NOTICES AND INFORMATION
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-COMMON DEVELOPMENT AND DISTRIBUTION LICENSE V1
-
-The Program includes some or all of the following that IBM obtained
-under the Common Development and Distribution License V1
-(source code available via the indicated URL):
-
-com.sun.activation:javax.activation | https://repo1.maven.org/maven2/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0-sources.jar
-javax.activation:activation | https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1-sources.jar
-javax.annotation:javax.annotation-api | https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-sources.jar
-javax.mail:mail | https://repo1.maven.org/maven2/javax/mail/mail/1.4/mail-1.4-sources.jar
-javax.servlet:javax.servlet-api | https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar
-javax.servlet:jsp-api | https://mvnrepository.com/artifact/javax.servlet/jsp-api
-javax.servlet:jstl | https://mvnrepository.com/artifact/javax.servlet/jstl
-javax.servlet:servlet-api | https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar
-javax.xml.bind:jaxb-api | https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1-sources.jar
-javax.xml.soap:javax.xml.soap-api | https://repo1.maven.org/maven2/javax/xml/soap/javax.xml.soap-api/1.4.0/javax.xml.soap-api-1.4.0-sources.jar
-javax.xml.ws:jaxws-api | https://repo1.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1-sources.jar
-jta-1.0.1B.jar | https://mvnrepository.com/artifact/javax.transaction/jta/1.0.1B
-org.glassfish.jaxb:txw2 | https://repo1.maven.org/maven2/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1-sources.jar
-saaj-api-1.2.IBM.jar | https://mvnrepository.com/artifact/javax.xml.soap/saaj-api.IBM/1.2
-servlet-api-2.3.jar | https://mvnrepository.com/artifact/javax.servlet/servlet-api/2.3
-
-END OF COMMON DEVELOPMENT AND DISTRIBUTION V1 LICENSE NOTICES AND INFORMATION
-
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-MIT LICENSE
-
-The Program includes some or all of the following that IBM obtained
-under the MIT License:
-
-args4j.jar | No Copyright Found
-args4j:args4j | No Copyright Found
-body-parser | Copyright (c) 2014 Jonathan Ong, Copyright (c) 2014-2015 Douglas Christopher Wilson
-bootstrap.min.js | Copyright 2011-2021 The Bootstrap Authors
-com.auth0:java-jwt | Copyright (c) 2015 Auth0, Inc.
-com.github.scribejava:scribejava-apis | Copyright (c) 2010 Pablo Fernandez
-com.github.scribejava:scribejava-core | Copyright (c) 2010 Pablo Fernandez
-com.github.scribejava:scribejava-java8 | Copyright (c) 2010 Pablo Fernandez
-cookie-parser | Copyright (c) 2014 TJ Holowaychuk, Copyright (c) 2015 Douglas Christopher Wilson
-dagre-d3.min.js | Copyright (c) 2012-2013 Chris Pettitt
-dateformat | Copyright (c) 2007-2009 Steven Levithan
-debug | Copyright (c) 2014-2017 TJ Holowaychuk
-Copyright (c) 2018-2021 Josh Junon
-diagrammer-lib-8.7.17.jar | No Copyright Found
-easymock:easymockclassextension | No Copyright Found
-express | Copyright (c) 2009-2014 TJ Holowaychuk, Copyright (c) 2013-2014 Roman Shtylman, Copyright (c) 2014-2015 Douglas Christopher Wilson
-express-bearer-token | Copyright (c) 2014 Tyler Kellen
-framework-8.7.17.jar | No Copyright Found
-httpunit:httpunit | Copyright © 2000-2008, Russell Gold
-io.github.classgraph:classgraph | Copyright (c) 2019 Luke Hutchison
-jquery-3.5.1.min.js | Copyright JS Foundation and other contributors, Copyright OpenJS Foundation and other contributors
-jsonwebtoken | Copyright (c) 2015 Auth0  Inc.
-log-notifier | Copyright (c) 2015 egg
-morgan | Copyright (c) 2014 Jonathan Ong, Copyright (c) 2014-2017 Douglas Christopher Wilson
-org.checkerframework:checker-qual | Copyright 2004-present by the Checker Framework developers
-org.kohsuke.metainf-services:metainf-services | No Copyright Found
-org.mockito:mockito-core | Copyright (c) 2007 Mockito contributors
-org.slf4j:slf4j-api | Copyright (c) 2004-2011 QOS.ch
-org.slf4j:slf4j-jdk14 | Copyright (c) 2004-2007 QOS.ch
-org.slf4j:slf4j-simple | Copyright (c) 2004-2011 QOS.ch
-org.webjars.bower:d3 | No Copyright Found
-org.webjars:webjars-locator-core | Copyright (c) 2013 James Ward
-serve-favicon | Copyright (c) 2010 Sencha Inc, Copyright (c) 2011 LearnBoost, Copyright (c) 2011 TJ Holowaychuk, Copyright (c) 2014-2017 Douglas Christopher Wilson
-slacknotifier | Copyright (c) 2014 Steven Sloan
-
-Permission is hereby granted, free of charge, to any person obtaining a 
-copy of this software and associated documentation files (the 
-"Software"), to deal in the Software without restriction, including 
-without limitation the rights to use, copy, modify, merge, publish, 
-distribute, sublicense, and/or sell copies of the Software, and to 
-permit persons to whom the Software is furnished to do so, subject to 
-the following conditions: 
-
-The above copyright notice and this permission notice shall be included 
-in all copies or substantial portions of the Software. 
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
-
-END OF MIT LICENSE NOTICES AND INFORMATION
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-APACHE SOFTWARE LICENSE 1.1
-
-The Program includes some or all of the following that IBM obtained
-under the Apache License Version 1.1:
-
-oro:oro
-regexp:regexp
-
-
-Apache Software License
-Version 1.1
-
-Copyright (c) 2000 The Apache Software Foundation.  All rights reserved.
- 
-Redistribution and use in source and binary forms, with or without 
-modification, are permitted provided that the following conditions are 
-met:
- 
-1. Redistributions of source code must retain the above copyright 
-notice, this list of conditions and the following disclaimer.
- 
-2. Redistributions in binary form must reproduce the above copyright 
-notice, this list of conditions and the following disclaimer in the 
-documentation and/or other materials provided with the distribution.
-
-3. The end-user documentation included with the redistribution,
-if any, must include the following acknowledgment:
-"This product includes software developed by the
-Apache Software Foundation (http://www.apache.org/)."
-Alternately, this acknowledgment may appear in the software itself,
-if and wherever such third-party acknowledgments normally appear.
-
-4. The names "Apache" and "Apache Software Foundation" must 
-not be used to endorse or promote products derived from this
-software without prior written permission. For written
-permission, please contact apache@apache.org.
-
-5. Products derived from this software may not be called "Apache",
-nor may "Apache" appear in their name, without prior written
-permission of the Apache Software Foundation.
-
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
-ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
-USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON 
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-=================================================================
-
-This software consists of voluntary contributions made by many
-individuals on behalf of the Apache Software Foundation.  For more
-information on the Apache Software Foundation, please see
-<http://www.apache.org/>.
-
-Portions of this software are based upon public domain software
-originally written at the National Center for Supercomputing 
-Applications, University of Illinois, Urbana-Champaign.
-
-END OF APACHE SOFTWARE LICENSE 1.1 NOTICES AND INFORMATION
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1578,8 +778,8 @@ INTERNATIONAL COMPONENTS FOR UNICODE LICENSE
 The Program includes some or all of the following that IBM obtained under
 the INTERNATIONAL COMPONENTS FOR UNICODE LICENSE.
 
-com.ibm.icu:icu4j
-com.ibm.icu:icu4j-charset
+icu4j-71.1.jar
+icu4j-charset-71.1.jar
 
 ICU License - ICU 1.8.1 and later 
 
@@ -1967,8 +1167,9 @@ ISC LICENSE
 The Program includes some or all of the following that IBM obtained
 under the ISC License.
 
-d3.min.js | Copyright 2010-2021 Mike Bostock
-request-promise | Copyright (c) 2020, Nicolai Kamenzky, Ty Abonil, and contributors
+com.j256.simplemagic:simplemagic | Copyright 2021 And Gray Watson
+org.webjars.bower:d3 | Copyright (c) 2010-2014, Michael Bostock
+request-promise | Copyright (c) 2017 And Nicolai Kamenzky And Ty Abonil And and contributors
 
 ISC License
 
@@ -1989,130 +1190,123 @@ END OF ISC LICENSE NOTICES AND INFORMATION
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-COMMON PUBLIC LICENSE
+JSON
 
 The Program includes some or all of the following that IBM obtained
-under the Common Public License (source code available via the indicated
-URL):
+under a JSON license:
 
-junit:junit | https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1-sources.jar
-wsdl4j:wsdl4j | https://repo1.maven.org/maven2/wsdl4j/wsdl4j/1.6.2/wsdl4j-1.6.2-sources.jar
+org.json:json | Copyright (c) 2002 JSON.org | https://repo1.maven.org/maven2/org/json/json/20180813/json-20180813-sources.jar
 
-END OF COMMON PUBLIC LICENSE NOTICES AND INFORMATION
+JSON License
+
+Copyright (c) 2002 JSON.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+The Software shall be used for Good, not Evil.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+END OF JSON NOTICES AND INFORMATION
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MIT LICENSE
+
+The Program includes some or all of the following that IBM obtained
+under the MIT License:
+
+args4j.jar | Copyright (c) 2013 Kohsuke Kawaguchi and other contributors
+args4j:args4j | Copyright (c) 2013 Kohsuke Kawaguchi and other contributors
+body-parser | Copyright (c) 2014 Jonathan Ong And Copyright (c) 2014-2015 Douglas Christopher Wilson
+bootstrap.min.js | Copyright 2011-2021 The Bootstrap Authors
+ch.randelshofer:fastdoubleparser | Copyright (c) 2023 Werner Randelshofer Switzerland.
+classgraph-4.8.138.jar | Copyright (c) 2019 Luke Hutchison
+com.github.scribejava:scribejava-apis | Copyright (c) 2010 Pablo Fernandez
+com.github.scribejava:scribejava-core | Copyright (c) 2010 Pablo Fernandez
+com.github.scribejava:scribejava-java8 | Copyright (c) 2010 Pablo Fernandez
+com.microsoft.sqlserver:mssql-jdbc | Copyright(c) Microsoft Corporation
+cookie-parser | Copyright (c) 2014 TJ Holowaychuk And Copyright (c) 2015 Douglas Christopher Wilson
+dateformat | Copyright (c) 2007-2009 Steven Levithan
+debug | Copyright (c) 2014-2017 TJ Holowaychuk And Copyright (c) 2018-2021 Josh Junon
+express | Copyright (c) 2009-2014 TJ Holowaychuk And Copyright (c) 2013-2014 Roman Shtylman And Copyright (c) 2014-2015 Douglas Christopher Wilson
+express-bearer-token | Copyright (c) 2014 Tyler Kellen
+io.github.classgraph:classgraph | Copyright (c) 2019 Luke Hutchison
+java-jwt-3.8.0.jar | Copyright (c) 2015 Auth0 And Inc.
+jquery-3.5.1.min.js | Copyright JS Foundation and other contributors And Copyright OpenJS Foundation and other contributors https://openjsf.org/
+jsonwebtoken | Copyright (c) 2015 Auth0 And Inc
+morgan | Copyright (c) 2014 Jonathan Ong And Copyright (c) 2014-2017 Douglas Christopher Wilson
+org.slf4j:slf4j-api | Copyright (c) 2004-2011 QOS.ch
+org.slf4j:slf4j-jdk14 | Copyright (c) 2004-2007 QOS.ch
+org.slf4j:slf4j-simple | Copyright (c) 2004-2011 QOS.ch
+org.webjars:webjars-locator-core | Copyright (c) 2013 James Ward
+serve-favicon | Copyright (c) 2010 Sencha Inc And Copyright (c) 2011 LearnBoost And Copyright (c) 2011 TJ Holowaychuk And Copyright (c) 2014-2017 Douglas Christopher Wilson
+svgdom-1.0.jar | Copyright (c) 2017-2018 Ulrich-Matthias Schäfer
+
+Permission is hereby granted, free of charge, to any person obtaining a 
+copy of this software and associated documentation files (the 
+"Software"), to deal in the Software without restriction, including 
+without limitation the rights to use, copy, modify, merge, publish, 
+distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to 
+the following conditions: 
+
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+END OF MIT LICENSE NOTICES AND INFORMATION
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ECLIPSE PUBLIC LICENSE, VERSION 1
+MIT-0
 
 The Program includes some or all of the following that IBM obtained
-under the Eclipse Public License (source code available via the
-indicated URL):
+under a MIT-0 license:
 
-aspectj:aspectjrt | https://mvnrepository.com/artifact/org.aspectj/aspectjrt
-ch.qos.logback:logback-classic | https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7-sources.jar
-ch.qos.logback:logback-core | https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7-sources.jar
-com.h2database:h2 | https://repo1.maven.org/maven2/com/h2database/h2/2.1.210/h2-2.1.210-sources.jar
-jaxws-rt-2.3.3.jar | https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt/2.3.3
-mapping-2.6.0.v201006141136.jar | https://mvnrepository.com/artifact/org.eclipse.emf.mapping/source
-mapping-ecore2ecore-2.5.0.v201005211847.jar | https://download.eclipse.org/modeling/emf/emf/javadoc/2.4.3/org/eclipse/emf/mapping/ecore2ecore/package-use.html#org.eclipse.emf.mapping.ecore2ecore
-org.eclipse.emf.ecore-edit_2.6.0.v201006141136.jar | https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore/2.6.0.v20100614-1136
-org.eclipse.emf.mapping-ecore2ecore_2.5.0.v201005211847.jar | https://mvnrepository.com/artifact/org.eclipse.emf.mapping/ecore2ecore
-org.eclipse.emf.mapping_2.6.0.v201006141136.jar | https://mvnrepository.com/artifact/org.eclipse.emf.mapping/source
-org.eclipse.emf:org.eclipse.emf.common | https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.common/2.6.0.v20100614-1136/org.eclipse.emf.common-2.6.0.v20100614-1136-sources.jar
-org.eclipse.emf:org.eclipse.emf.ecore | https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore/2.6.0.v20100614-1136/org.eclipse.emf.ecore-2.6.0.v20100614-1136-sources.jar
-org.eclipse.emf:org.eclipse.emf.ecore.xmi | https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore.xmi/2.5.0.v20100521-1846/org.eclipse.emf.ecore.xmi-2.5.0.v20100521-1846-sources.jar
-org.eclipse.jetty.http2:http2-client | <https://mvnrepository.com/artifact/org.eclipse.jetty.http2/http2-client>
-org.eclipse.jetty.http2:http2-hpack | <https://mvnrepository.com/artifact/org.eclipse.jetty.http2/http2-hpack>
-org.eclipse.jetty.http2:http2-http-client-transport | <https://mvnrepository.com/artifact/org.eclipse.jetty.http2/http2-http-client-transport>
-org.eclipse.jetty:jetty-alpn-client | <https://mvnrepository.com/artifact/org.eclipse.jetty.alpn>
-org.eclipse.jetty:jetty-alpn-java-client | <https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-alpn-java-client/9.4.44.v20210927>
-org.eclipse.orion.client.editor | https://projects.eclipse.org/projects/ecd.orion
-svgdom-1.0.jar | https://mvnrepository.com/artifact/org.w3c.dom/svg/1.1.0
+reactive-streams-1.0.4.jar | No Copyright Found | https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams/1.0.4
 
-END OF ECLIPSE PUBLIC LICENSE, VERSION 1 NOTICES AND INFORMATION
+MIT No Attribution
 
+Copyright <YEAR> <COPYRIGHT HOLDER>
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.
 
-AFL-2.1
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-The Program includes some or all of the following that IBM obtained
-under a AFL-2.1 license:
-
-dijit 1.17.2 | https://registry.npmjs.org/dijit/-/dijit-1.17.2.tgz
-dojo 1.17.2 | https://registry.npmjs.org/dojo/-/dojo-1.17.2.tgz
-dojox 1.17.2 | https://registry.npmjs.org/dojox/-/dojox-1.17.2.tgz
-gridx 1.3.8
-
-
-The Academic Free License
-v.2.1
-
-This Academic Free License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following notice immediately following the copyright notice for the Original Work:
-
-Licensed under the Academic Free License version 2.1
-
-    1) Grant of Copyright License. Licensor hereby grants You a world-wide, royalty-free, non-exclusive, perpetual, sublicenseable license to do the following:
-        a) to reproduce the Original Work in copies;
-        b) to prepare derivative works ("Derivative Works") based upon the Original Work;
-        c) to distribute copies of the Original Work and Derivative Works to the public;
-        d) to perform the Original Work publicly; and
-        e) to display the Original Work publicly.
-    2) Grant of Patent License. Licensor hereby grants You a world-wide, royalty-free, non-exclusive, perpetual, sublicenseable license, under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and Derivative Works.
-    3) Grant of Source Code License. The term "Source Code" means the preferred form of the Original Work for making modifications to it and all available documentation describing how to modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
-    4) Exclusions From License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor. Nothing in this License shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of Licensor except as expressly stated herein. No patent license is granted to make, use, sell or offer to sell embodiments of any patent claims other than the licensed claims defined in Section 2. No right is granted to the trademarks of Licensor even if such marks are included in the Original Work. Nothing in this License shall be interpreted to prohibit Licensor from licensing under different terms from this License any Original Work that Licensor otherwise would have a right to license.
-    5) This section intentionally omitted.
-    6) Attribution Rights. You must retain, in the Source Code of any Derivative Works that You create, all copyright, patent or trademark notices from the Source Code of the Original Work, as well as any notices of licensing and any descriptive text identified therein as an "Attribution Notice." You must cause the Source Code for any Derivative Works that You create to carry a prominent Attribution Notice reasonably calculated to inform recipients that You have modified the Original Work.
-    7) Warranty of Provenance and Disclaimer of Warranty. Licensor warrants that the copyright in and to the Original Work and the patent rights granted herein by Licensor are owned by the Licensor or are sublicensed to You under the terms of this License with the permission of the contributor(s) of those copyrights and patent rights. Except as expressly stated in the immediately proceeding sentence, the Original Work is provided under this License on an "AS IS" BASIS and WITHOUT WARRANTY, either express or implied, including, without limitation, the warranties of NON-INFRINGEMENT, MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. This DISCLAIMER OF WARRANTY constitutes an essential part of this License. No license to Original Work is granted hereunder except under this disclaimer.
-    8) Limitation of Liability. Under no circumstances and under no legal theory, whether in tort (including negligence), contract, or otherwise, shall the Licensor be liable to any person for any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or the use of the Original Work including, without limitation, damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses. This limitation of liability shall not apply to liability for death or personal injury resulting from Licensor's negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
-    9) Acceptance and Termination. If You distribute copies of the Original Work or a Derivative Work, You must make a reasonable effort under the circumstances to obtain the express assent of recipients to the terms of this License. Nothing else but this License (or another written agreement between Licensor and You) grants You permission to create Derivative Works based upon the Original Work or to exercise any of the rights granted in Section 1 herein, and any attempt to do so except under the terms of this License (or another written agreement between Licensor and You) is expressly prohibited by U.S. copyright law, the equivalent laws of other countries, and by international treaty. Therefore, by exercising any of the rights granted to You in Section 1 herein, You indicate Your acceptance of this License and all of its terms and conditions.
-    10) Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License as of the date You commence an action, including a cross-claim or counterclaim, against Licensor or any licensee alleging that the Original Work infringes a patent. This termination provision shall not apply for an action alleging patent infringement by combinations of the Original Work with other software or hardware.
-    11) Jurisdiction, Venue and Governing Law. Any action or suit relating to this License may be brought only in the courts of a jurisdiction wherein the Licensor resides or in which Licensor conducts its primary business, and under the laws of that jurisdiction excluding its conflict-of-law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. Any use of the Original Work outside the scope of this License or after its termination shall be subject to the requirements and penalties of the U.S. Copyright Act, 17 U.S.C. § 101 et seq., the equivalent laws of other countries, and international treaty. This section shall survive the termination of this License.
-    12) Attorneys Fees. In any action to enforce the terms of this License or seeking damages relating thereto, the prevailing party shall be entitled to recover its costs and expenses, including, without limitation, reasonable attorneys' fees and costs incurred in connection with such action, including any appeal of such action. This section shall survive the termination of this License.
-    13) Miscellaneous. This License represents the complete agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
-    14) Definition of "You" in This License. "You" throughout this License, whether in upper or lower case, means an individual or a legal entity exercising rights under, and complying with all of the terms of, this License. For legal entities, "You" includes any entity that controls, is controlled by, or is under common control with you. For purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
-    15) Right to Use. You may use the Original Work in all ways not otherwise restricted or conditioned by this License or by law, and Licensor promises not to interfere with or be responsible for such uses by You.
-
-This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved.
-Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
-
-
-END OF AFL-2.1 NOTICES AND INFORMATION
+END OF MIT-0 NOTICES AND INFORMATION
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-JDOM
+The Werken Company
 
 The Program includes some or all of the following that IBM obtained
-under a JDOM license:
+under a The Werken Company license:
 
-org.jdom:jdom2 2.0.6 | Copyright (C) 2000-2012 Jason Hunter & Brett McLaughlin. | https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6-sources.jar
+jaxen-1.1.3-IBM-stripped-rtc89249.jar | No copyright found | https://mvnrepository.com/artifact/jaxen/jaxen/1.1.3
 
-Copyright (C) 2000-2012 Jason Hunter & Brett McLaughlin.
+Jaxen Version 1.1.3
+Copyright 2003-2006 The Werken Company. All Rights Reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1.	Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2.	Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and /or other materials provided with the distribution.
+3.	Neither the name of the Jaxen Project nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
 
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the disclaimer that follows these conditions in the documentation and/or other materials provided with the distribution.
-
-3. The name "JDOM" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact <request_AT_jdom_DOT_org>.
-
-4. Products derived from this software may not be called "JDOM", nor may "JDOM" appear in their name, without prior written permission from the JDOM Project Management <request_AT_jdom_DOT_org>. In addition, we request (but do not require) that you include in the end-user documentation provided with the redistribution and/or in the software itself an acknowledgement equivalent to the following:
-
-"This product includes software developed by the JDOM Project (http://www.jdom.org/)."
-
-Alternatively, the acknowledgment may be graphical using the logos available at http://www.jdom.org/images/logos.
-
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE JDOM AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-END OF JDOM NOTICES AND INFORMATION
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+END OF The Werken Company NOTICES AND INFORMATION
 
 END OF NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -2120,6 +1314,6 @@ END OF NOTICES AND INFORMATION
 END OF NOTICES AND INFORMATION FILE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A

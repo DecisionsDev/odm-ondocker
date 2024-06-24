@@ -3,7 +3,7 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih določb in pogojev licenčne informacije, ki veljajo poleg pogojev licence za program, s katerimi naročnik in IBM predhodno soglašata. Če naročnik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenčna pogodba za programe brez garancije (i125-5589-06).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
@@ -47,9 +47,9 @@ Podatki in storitve drugih ponudnikov
 Program omogoča dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAKŠEN, KOT JE", BREZ JAMSTEV KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TRŽNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepuščeno izključno njeni presoji. Imetnik licence bo morda moral skleniti ločene pogodbe z drugimi ponudniki, ki mu bodo omogočale dostop do takšne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakršnekoli ločene pogodbe in imetnik licence kot izrecni pogoj te licence soglaša, da bo ravnal v skladu z določbami takšnih ločenih pogodb.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Mednarodna licenčna pogodba za programe brez garancije
 

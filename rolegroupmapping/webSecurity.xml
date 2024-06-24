@@ -44,7 +44,7 @@
 	<member name="resExecutor" />
       </group>
     </basicRegistry>
-
+<!--
     <ldapRegistry baseDN="o=ibm.com" host="bluepages.ibm.com" id="LDAPRegistry" ignoreCase="true" ldapType="IBM Tivoli Directory Server" port="389" recursiveSearch="true">
        <ldapEntityType name="PersonAccount">
             <objectClass>ibmPerson</objectClass>
@@ -60,42 +60,42 @@
             groupFilter="(&amp;(cn=%v)(objectclass=groupOfUniqueNames))"
             groupMemberIdMap="groupOfUniqueNames:uniqueMember" />
     </ldapRegistry>
-
+-->
    <federatedRepository id="vmm">
         <primaryRealm name="o=defaultWIMFileBasedRealm">
 		<participatingBaseEntry name="o=BasicRegistry"/>
-                <participatingBaseEntry name="o=ibm.com"/>
+   <!--             <participatingBaseEntry name="o=ibm.com"/>
 		<userDisplayNameMapping inputProperty="principalName" outputProperty="givenName"/>
-       	<!--	<userDisplayNameMapping inputProperty="principalName" outputProperty="mail"/> givenName/displayName -->
+       		<userDisplayNameMapping inputProperty="principalName" outputProperty="mail"/> givenName/displayName -->
         </primaryRealm>
     </federatedRepository>
 
   <!-- Grant access to the role rtsAdministrator for the groups basicRtsAdministrators in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.rtsAdministrators.group1" value="group:o=defaultWIMFileBasedRealm/basicRtsAdministrators"/>
  <!-- <variable name="odm.rtsAdministrators.user1" value="uid=082443706,c=fr,ou=bluepages,o=ibm.com"/> -->
-  <variable name="odm.rtsAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.rtsAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role rtsInstaller for the groups basicRtsInstallers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.rtsInstallers.group1" value="group:basicRealm/basicRtsInstallers"/>
-  <variable name="odm.rtsInstallers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.rtsInstallers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role rtsConfigManager for the groups basicRtsConfigManagers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.rtsConfigManagers.group1" value="group:basicRealm/basicRtsConfigManagers"/>
-  <variable name="odm.rtsConfigManagers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.rtsConfigManagers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role resAdministrator for the groups basicResAdministrators in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resAdministrators.group1" value="group:o=defaultWIMFileBasedRealm/basicResAdministrators"/>
-  <variable name="odm.resAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.resAdministrators.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role resDeployers for the groups basicResDeployers in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resDeployers.group1" value="group:o=defaultWIMFileBasedRealm/basicResDeployers"/>
-  <variable name="odm.resDeployers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.resDeployers.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role resMonitors for the groups basicResMonitors in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resMonitors.group1" value="group:o=defaultWIMFileBasedRealm/basicResMonitors"/>
-  <variable name="odm.resMonitors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.resMonitors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 
   <!-- Grant access to the role resExecutors for the groups basicResExecutors in basic registry and FRLAB~SrvOdmVttAdmin in LDAP -->
   <variable name="odm.resExecutors.group1" value="group:o=defaultWIMFileBasedRealm/basicResExecutors"/>
-  <variable name="odm.resExecutors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/>
+ <!-- <variable name="odm.resExecutors.group2" value="group:o=defaultWIMFileBasedRealm/cn=FRLAB~SrvOdmVttAdmin,ou=memberlist,ou=ibmgroups,o=ibm.com"/> -->
 </server>

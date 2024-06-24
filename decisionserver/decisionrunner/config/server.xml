@@ -1,5 +1,8 @@
 <server description="executionserver">
 
+        <!-- liberty custom config start -->
+        <include optional="true" location="./libertyhook/libertyHookStart.xml"/>
+
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
@@ -30,14 +33,24 @@
         <!-- include OIDC web security config -->
         <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
 
+        <!-- include agent monitor config like mpMetrics -->
+        <include optional="true" location="./monitor/monitor.xml"/>
+
+        <!-- include logstash collector config -->
+        <include optional="true" location="./logstashCollector/logstashCollector.xml"/>
+
 	<!-- include logging config -->
         <include optional="true" location="./logging/logging.xml"/>
 
 	<!-- http endpoint -->
-  	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" />
+  	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="${HTTP_PORT}" httpsPort="${HTTPS_PORT}" accessLoggingRef="accessLogging"/>
 
 	<!-- Managed executor service for Decision Runner -->
 	<managedExecutorService jndiName="concurrent/drExecutorService"/>
 
-        <oidcClientWebapp contextPath="${ODM_CONTEXT_ROOT}/DecisionRunner/openid"/>
+        <oidcClientWebapp id="oidcClientWebapp" contextPath="${ODM_CONTEXT_ROOT}/DecisionRunner/openid"/>
+
+        <!-- liberty custom config end -->
+        <include optional="true" location="./libertyhook/libertyHookEnd.xml"/>
+
 </server>

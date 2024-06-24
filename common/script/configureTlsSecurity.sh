@@ -89,7 +89,7 @@ fi
 if [[ (-f "/config/security/volume/tls.crt") && (-f "/config/security/volume/tls.key")]]
 then
         echo "generating /config/security/keystore.jks and truststore.jks using provided /config/security/volume/tls.key and tls.crt"
-        openssl pkcs12 -export -inkey /config/security/volume/tls.key -in /config/security/volume/tls.crt -name "certificate" -out /config/security/mycert.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
+        openssl pkcs12 -export -inkey /config/security/volume/tls.key -in /config/security/volume/tls.crt -name "ODM" -out /config/security/mycert.p12 -passout pass:$DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/keystore.jks
         keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/truststore.jks

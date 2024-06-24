@@ -12,6 +12,11 @@
 				<group name="resMonitors" />
 			</security-role>
 		</application-bnd>
+                <classloader delegation="parentLast">
+                        <commonLibrary>
+                                <folder dir="/config/download" id="download-dir"  />
+                        </commonLibrary>
+                </classloader>
 	</application>
 
 	<!-- Decision Server Runtime -->
@@ -25,6 +30,9 @@
 			<commonLibrary>
 				<folder dir="/config/pluginconfig" id="plugindir"  />
 			</commonLibrary>
+			<commonLibrary>
+                                <folder dir="/config/download" id="download-dir"  />
+                        </commonLibrary>
 		</classloader>
 	</application>
 </server>

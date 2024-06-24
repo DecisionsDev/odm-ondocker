@@ -8,6 +8,8 @@ then
                 $SCRIPT/customStart.sh
         fi
 
+        $SCRIPT/download.sh
+
         if [ -n "$USERS_PASSWORD" ]
         then
         echo "Set password for defaut users"

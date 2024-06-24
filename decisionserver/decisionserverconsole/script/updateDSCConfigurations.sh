@@ -20,7 +20,7 @@ then
   if [ -n "$DISABLE_LOGIN_PANEL" ]
   then
     echo "disable RES Console Basic Auth Login Panel"
-    echo "<%response.sendRedirect(\"/res\");%>" > /config/apps/res.war/login.jsp
+    sed -i 's|<auth-method>FORM|<auth-method>BASIC|' /config/apps/res.war/WEB-INF/web.xml
   fi
 
   if [ -s "/config/auth/openIdParameters.properties" ]
@@ -126,4 +126,22 @@ then
 else
   echo "Prefix decision server console cookie names with $HOSTNAME"
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
+fi
+
+if [ -s "/config/monitor/monitor.xml" ]
+then
+  echo "/config/monitor/monitor.xml found! Configure monitoring"
+else
+  echo "No /config/monitor/monitor.xml ! Disable monitoring"
+  sed -i '/monitor/d' /config/server.xml
+  sed -i '/mpMetrics/d' /config/featureManager.xml
+fi
+
+if [ -s "/config/logstashCollector/logstashCollector.xml" ]
+then
+  echo "/config/logstashCollector/logstashCollector.xml found! Configure logstashCollector"
+else
+  echo "No /config/logstashCollector/logstashCollector.xml ! Disable logstashCollector"
+  sed -i '/logstashCollector/d' /config/server.xml
+  sed -i '/logstashCollector/d' /config/featureManager.xml
 fi

@@ -28,7 +28,8 @@ RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; the
 RUN $SCRIPT/extractApp.sh res.war && $SCRIPT/extractApp.sh DecisionService.war
 
 RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-INF/web.xml && \
-		$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
+	$SCRIPT/changeParamValue.sh onDocker false true $APPS/res.war/WEB-INF/web.xml && \
+	$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
 chmod -R 777 $APPS
@@ -37,9 +38,11 @@ FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
 ARG CP4BAVERSION
 ARG ODMVERSION
+ARG PACKAGELIST
 ENV ODMDOCKERDIR $ODMDOCKERDIR
 ENV CP4BAVERSION $CP4BAVERSION
 ENV ODMVERSION $ODMVERSION
+ENV PACKAGELIST $PACKAGELIST
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/

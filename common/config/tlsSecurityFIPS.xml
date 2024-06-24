@@ -1,5 +1,8 @@
 <server>
   <sslDefault sslRef="odmDefaultSSLConfig" />
-  <ssl id="odmDefaultSSLConfig" keyStoreRef="odmDefaultKeyStore"  sslProtocol="TLSv1.2" enabledCiphers="ENABLED_CIPHERS" />
+  <ssl id="odmDefaultSSLConfig" keyStoreRef="odmDefaultKeyStore"  sslProtocol="TLSv1.2,TLSv1.3" enabledCiphers="ENABLED_CIPHERS" />
   <keyStore id="odmDefaultKeyStore" location="/config/jvm/pkcs11cfg.cfg" type="PKCS11-NSS-FIPS" fileBased="false" password="__KEYSTORE_PASSWORD__" provider="SunPKCS11-NSS-FIPS"/>
+
+ <!-- Specify whether the HTTP channel creates an I/O exception when an inbound connection is closed while still in use by the servlet. -->
+  <httpOptions id="defaultHttpOptions" ThrowIOEForInboundConnections="false"/>
 </server>

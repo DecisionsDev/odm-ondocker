@@ -147,3 +147,21 @@ else
     sed -i '/<group name="rtsDeployers"/d' /config/application.xml
   fi
 fi
+
+if [ -s "/config/monitor/monitor.xml" ]
+then
+  echo "/config/monitor/monitor.xml found! Configure monitoring"
+else
+  echo "No /config/monitor/monitor.xml ! Disable monitoring"
+  sed -i '/monitor/d' /config/server.xml
+  sed -i '/mpMetrics/d' /config/featureManager.xml
+fi
+
+if [ -s "/config/logstashCollector/logstashCollector.xml" ]
+then
+  echo "/config/logstashCollector/logstashCollector.xml found! Configure logstashCollector"
+else
+  echo "No /config/logstashCollector/logstashCollector.xml ! Disable logstashCollector"
+  sed -i '/logstashCollector/d' /config/server.xml
+  sed -i '/logstashCollector/d' /config/featureManager.xml
+fi

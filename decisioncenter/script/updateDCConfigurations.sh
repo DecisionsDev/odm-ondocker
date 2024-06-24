@@ -519,10 +519,26 @@ then
   echo $outputvar > /config/apps/decisioncenter.war/WEB-INF/web.xml
 fi
 
+if [ -s "/config/download/web.xml" ]
+then
+ echo "Update web.xml for Decision Center customization"
+ PATTERN="<?-- Add your custom servlets here if needed -->"
+ CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
+ REPLACE=$(cat /config/download/web.xml)
+ outputvar="${CONTENT//$PATTERN/$REPLACE}"
+ echo $outputvar > /config/apps/decisioncenter.war/WEB-INF/web.xml
+fi
+
 if [ -s "/config/customlib/js" ]
 then
   echo "Update javascript for Decision Center customization"
   cp -r /config/customlib/js/* /config/apps/decisioncenter.war/js
+fi
+
+if [ -s "/config/download/js" ]
+then
+ echo "Update javascript for Decision Center customization"
+ cp -r /config/download/js/* /config/apps/decisioncenter.war/js
 fi
 
 if [ -s "/config/auth/server-configurations.json" ]
@@ -533,7 +549,7 @@ fi
 
 if [ -s "/config/auth/OdmOidcProviders.json" ]
 then
-  echo "Copy /config/auth/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/config/OdmOidcProviders.json"
+  echo "Copy /config/auth/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json"
   cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
   cp /config/auth/OdmOidcProviders.json $APPS/decisioncenter-api.war/WEB-INF/classes/OdmOidcProviders.json
 fi
@@ -542,4 +558,28 @@ if [ -s "/config/auth/decisioncenter-configuration.properties" ]
 then
   echo "Decision Center Custom Configuration with provided /config/auth/decisioncenter-configuration.properties"
   cp /config/auth/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+fi
+
+if [ -s "/config/monitor/monitor.xml" ]
+then
+  echo "/config/monitor/monitor.xml found! Configure monitoring"
+else
+  echo "No /config/monitor/monitor.xml ! Disable monitoring"
+  sed -i '/monitor/d' /config/server.xml
+  sed -i '/mpMetrics/d' /config/featureManager.xml
+fi
+
+if [ -s "/config/logstashCollector/logstashCollector.xml" ]
+then
+  echo "/config/logstashCollector/logstashCollector.xml found! Configure logstashCollector"
+else
+  echo "No /config/logstashCollector/logstashCollector.xml ! Disable logstashCollector"
+  sed -i '/logstashCollector/d' /config/server.xml
+  sed -i '/logstashCollector/d' /config/featureManager.xml
+fi
+
+if [ -n "$DISABLE_DBDUMP" ]
+then
+  echo "Disable dbdump application"
+  rm -rf /config/apps/teamserver-dbdump.war
 fi

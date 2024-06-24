@@ -21,14 +21,14 @@
 				minPoolSize="10"
 				connectionTimout="10s"
 				agedTimeout="30m"/>
-	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;MODE=HSQLDB;LOCK_TIMEOUT=40000;auto_server=true"
+	    <properties URL="jdbc:h2:${server.config.dir}/dbdata/rtsdb;LOCK_TIMEOUT=40000;auto_server=true"
 					user="rts"
 					password="rts"/>
 	</dataSource>
 
 	<!-- RES datasource -->
 	<dataSource id="res-h2Embedded" jndiName="jdbc/resdatasource" jdbcDriverRef="H2Driver">
-		<properties URL="jdbc:h2:${server.config.dir}/dbdata/resdb;MODE=HSQLDB;auto_server=true" user="res" password="res"/>
+		<properties URL="jdbc:h2:${server.config.dir}/dbdata/resdb;NON_KEYWORDS=VALUE;auto_server=true" user="res" password="res"/>
 	</dataSource>
 
 </server>

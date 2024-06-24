@@ -3,7 +3,7 @@ INFORMATIONS SUR LA LICENCE
 Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation de Logiciels IBM non garantis (i125-5589-06) s'appliquent.
 
 Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V8.12 (5725-B69)
+IBM Operational Decision Manager for Developers V9.0 (5725-B69)
 
 Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
@@ -47,9 +47,9 @@ Données et services tiers
 Le Logiciel donne accès à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu Tiers"). L'accès au Contenu Tiers est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES CONDITIONS ET GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu Tiers ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
 
 
-L/N: L-AMWV-QRBWQJ
-D/N: L-AMWV-QRBWQJ
-P/N: L-AMWV-QRBWQJ
+L/N: L-RBPW-WQTC4A
+D/N: L-RBPW-WQTC4A
+P/N: L-RBPW-WQTC4A
 
 Conditions Internationales d'Utilisation de Logiciels IBM non garantis
 

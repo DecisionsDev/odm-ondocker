@@ -13,8 +13,13 @@ fi
 
 if [ ! -f $INITFLAG ] ; then
 	if [ "${SAMPLE}" = "true" ] ; then
-		echo "$(date) - Restore ODM sample database "
- 		pg_restore -Fc -d odmdb /upload/data.dump
+		echo "$(date) - Restore ODM sample database"
+  		if [[ -f /run/postgresql/secrets/db-user ]]; then
+    			PG_RESTORE_USER=$(cat /run/postgresql/secrets/db-user)
+       		else
+	 		PG_RESTORE_USER=odmusr
+		fi
+ 		pg_restore --dbname=odmdb --format=c --no-owner --role=${PG_RESTORE_USER} /upload/data.dump
 
         echo "$(date) - Database restored successfully"
 		echo ""

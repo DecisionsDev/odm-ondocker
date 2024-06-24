@@ -12,19 +12,21 @@ then
 	read -a driver_urls <<< "$DB_DRIVER_URL"
 	for url in "${driver_urls[@]}";
 	do
-	  (cd /config/resources && curl -O -k -s $url)
+	  (cd /config/resources && curl -O -L -k -s $url)
 	done
 
 	# Unzip drivers if necessary
 	if [ -f /config/resources/*.zip ]; then
 		(cd /config/resources && unzip -q *.zip)
+                rm /config/resources/*.zip
 	fi
 
 	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
 	if [ -f /config/resources/*.tar* ]; then
 		for arch in "/config/resources"/*.tar*
 		do
-		  tar -xaf $arch
+		  (cd /config/resources && tar -xaf $arch)
+		  rm /config/resources/$arch
 		done
 	fi
 

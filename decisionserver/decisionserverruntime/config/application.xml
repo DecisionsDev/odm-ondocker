@@ -13,6 +13,9 @@
                 <commonLibrary>
                         <folder dir="/config/extension" id="extensiondir"  />
                 </commonLibrary>
+                <commonLibrary>
+                        <folder dir="/config/download" id="download-dir"  />
+                </commonLibrary>
   	</classloader>
 	</application>
 
