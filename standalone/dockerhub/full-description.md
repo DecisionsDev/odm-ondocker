@@ -29,7 +29,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	[latest release](https://docs.docker.com/engine/release-notes/#201021) (down to Engine 20.10)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v-900x-rule-designer)
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v900-rule-designer)
 
 	Use [IDE 2023-12 R (4.30) Modeling Tools Packages](https://www.eclipse.org/downloads/packages/release/2023-12/r).
         Eclipse 2023-12 uses Java Development Kit (JDK) 17. You can download the JDK from [IBM Semeru Runtimes Downloads](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/).
