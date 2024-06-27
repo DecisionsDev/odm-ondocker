@@ -137,7 +137,7 @@ services:
     - dbserver
     restart: always
     healthcheck:
-      test: ["CMD", "curl", "-k", "-f", "https://localhost:9453/decisioncenter/healthCheck?dontCheckDecisionModel=true"]
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9453/decisioncenter/healthCheck"]
       interval: 30s
       timeout: 5s
       retries: 5
