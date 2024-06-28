@@ -92,3 +92,4 @@ COPY --from=builder  --chown=1001:0 /licenses /licenses
 COPY --from=oidc-liberty-builder /opt/ibm/version.txt /opt/ibm/version.txt
 USER 1001
 EXPOSE 9080 9443
+HEALTHCHECK NONE

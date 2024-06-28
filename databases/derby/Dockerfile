@@ -48,4 +48,5 @@ RUN \
 	echo "killasgroup=true" >> /etc/supervisor.conf
 VOLUME ["/dbs"]
 EXPOSE 1527
+HEALTHCHECK NONE
 CMD supervisord -c /etc/supervisor.conf

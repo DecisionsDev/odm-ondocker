@@ -143,6 +143,7 @@ COPY --from=builder --chown=1001:0 ${SCRIPT} ${SCRIPT}
 # VOLUME ["/config/dbdata/"]
 USER 1001
 EXPOSE 9060 9453
+HEALTHCHECK NONE
 
 ENTRYPOINT ["/script/runserver.sh"]
 CMD ["/script/runserver.sh"]

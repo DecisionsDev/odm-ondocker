@@ -56,6 +56,7 @@ COPY --from=builder --chown=999:999 /tmp/restore.sh  /docker-entrypoint-initdb.d
 COPY --from=builder  --chown=999:0 /licenses /licenses
 COPY --from=builder  --chown=999:0 /licenses /licenses
 USER 999
+HEALTHCHECK NONE
 ENTRYPOINT ["/usr/local/bin/rundb.sh"]
 
 CMD ["postgres"]

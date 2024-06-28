@@ -111,3 +111,4 @@ COPY --from=builder --chown=1001:0 $SCRIPT $SCRIPT
 COPY --from=builder  --chown=1001:0 /licenses /licenses
 USER 1001
 EXPOSE 9060 9453
+HEALTHCHECK NONE
