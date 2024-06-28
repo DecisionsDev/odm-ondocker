@@ -1,0 +1,14 @@
+{
+    "ignorePatterns": [
+      {
+        "pattern": "^http://localhost"
+      }
+    ],
+      "replacementPatterns": [
+      {
+        "pattern": "^/LICENSE",
+        "replacement": "{{BASEURL}}/LICENSE"
+      }
+    ],
+    "timeout": "20s"
+  }
