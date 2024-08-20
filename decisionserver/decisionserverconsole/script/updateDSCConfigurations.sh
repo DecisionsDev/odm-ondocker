@@ -145,3 +145,11 @@ else
   sed -i '/logstashCollector/d' /config/server.xml
   sed -i '/logstashCollector/d' /config/featureManager.xml
 fi
+
+if [ -n "$ENABLE_AUDIT" ]
+then
+  echo "audit is enabled"
+else
+  echo "audit is disabled"
+  sed -i '/audit/d' /config/featureManager.xml
+fi

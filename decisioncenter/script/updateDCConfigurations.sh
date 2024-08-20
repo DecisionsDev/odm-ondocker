@@ -583,3 +583,11 @@ then
   echo "Disable dbdump application"
   rm -rf /config/apps/teamserver-dbdump.war
 fi
+
+if [ -n "$ENABLE_AUDIT" ]
+then
+  echo "audit is enabled"
+else
+  echo "audit is disabled"
+  sed -i '/audit/d' /config/featureManager.xml
+fi

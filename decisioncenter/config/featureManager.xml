@@ -12,5 +12,6 @@
 		<feature>monitor-1.0</feature>
 		<feature>mpMetrics-3.0</feature>
 		<feature>logstashCollector-1.0</feature>
+		<feature>audit-1.0</feature>
 	</featureManager>
 </server>
