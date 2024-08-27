@@ -100,4 +100,5 @@ For support and debugging purposes, the Decision Center container is embedding D
 
 If ```http://<host>:<port>/decisioncenter``` is the URL to access the Decision Center service, you can access DBDump at the following URL : ```http://<host>:<port>/decisioncenter-dbdump```
 
+<!-- markdown-link-check-disable-next-line -->
 DBDump usage is following the same usage than explained at https://www.ibm.com/support/pages/decision-center-database-export-utility
