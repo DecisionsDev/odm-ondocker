@@ -1,5 +1,15 @@
-- repo: git@github.ibm.com:Whitewater/whitewater-detect-secrets
-  rev: master
-  hooks:
-    -   id: detect-secrets # pragma: whitelist secret
-        args: [--baseline, .secrets.baseline, --no-keyword-scan ]
+repos:
+  - repo: https://github.com/ibm/detect-secrets
+    # If you desire to use a specific version of detect-secrets, you can replace  with other git revisions such as branch, tag or commit sha.
+    # You are encouraged to use static refs such as tags, instead of branch name
+    #
+    # Running "pre-commit autoupdate" automatically updates rev to latest tag
+    rev: master
+    hooks:
+      - id: detect-secrets # pragma: whitelist secret
+        # Add options for detect-secrets-hook binary. You can run `detect-secrets-hook --help` to list out all possible options.
+        # You may also run `pre-commit run detect-secrets` to preview the scan result.
+        # when "--baseline" without "--use-all-plugins", pre-commit scan with just plugins in baseline file
+        # when "--baseline" with "--use-all-plugins", pre-commit scan with all available plugins
+        # add "--fail-on-unaudited" to fail pre-commit for unaudited potential secrets
+        args: [--baseline, .secrets.baseline]
