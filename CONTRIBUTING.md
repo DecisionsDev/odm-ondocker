@@ -239,15 +239,13 @@ You will get notified about the status of your pull request based on your GitHub
 
 ## 7. Request is Reviewed and Merged
 
-Your request will be reviewed.  It may be merged directly, or you may receive feedback or questions on your pull
-request.
+Your request will be reviewed.  It may be merged directly, or you may receive feedback or questions on your pull request.
 
+## 8. Miscellaneous links
 
-[help documentation]: http://help.github.com/send-pull-requests
-[bug database]: ../../issues
-[ml-users]: mailto:odmdev_open_source_user@wwpdl.vnet.ibm.com
-[Creating a Pull Request]: https://help.github.com/articles/creating-a-pull-request
-[Fork a Repo]: https://help.github.com/articles/fork-a-repo
-[coding guidelines]: https://github.com/ibm-js/sdk/blob/master/GUIDELINES.md
-[interactive rebase]: http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages
-[rebasing]: http://git-scm.com/book/en/Git-Branching-Rebasing
+- [Bug database](https://github.com/DecisionsDev/odm-ondocker/issues)
+- [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request)
+- [Fork a Repository](https://help.github.com/articles/fork-a-repo)
+- [Coding guidelines](https://github.com/ibm-js/sdk/blob/master/GUIDELINES.md)
+- [Interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)
+- [Rebasing](http://git-scm.com/book/en/Git-Branching-Rebasing)
