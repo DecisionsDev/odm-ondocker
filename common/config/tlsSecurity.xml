@@ -1,6 +1,6 @@
 <server>
   <sslDefault sslRef="odmDefaultSSLConfig" />
-  <ssl id="odmDefaultSSLConfig" keyStoreRef="odmDefaultKeyStore" trustStoreRef="odmDefaultTrustStore" sslProtocol="TLSv1.2,TLSv1.3" enabledCiphers="ENABLED_CIPHERS" />
+  <ssl id="odmDefaultSSLConfig" verifyHostname="false" keyStoreRef="odmDefaultKeyStore" trustStoreRef="odmDefaultTrustStore" sslProtocol="TLSv1.2,TLSv1.3" enabledCiphers="ENABLED_CIPHERS" />
   <keyStore id="odmDefaultKeyStore" location="/config/security/keystore.p12" password="__KEYSTORE_PASSWORD__" type="PKCS12" />
   <keyStore id="odmDefaultTrustStore" location="/config/security/truststore.p12" password="__TRUSTSTORE_PASSWORD__" type="PKCS12" />
       
