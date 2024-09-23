@@ -31,7 +31,7 @@ RUN mkdir -p /config/dbdata /config/resources && chmod -R 777 /config/dbdata /co
 # Install the driver for PostgreSQL
 RUN set -ex; \
     cd /tmp; \
-    curl --fail --insecure --remote-name --remote-time --silent https://jdbc.postgresql.org/download/postgresql-42.7.2.jar; \
+    curl --fail --insecure --remote-name --remote-time --silent https://jdbc.postgresql.org/download/postgresql-42.7.4.jar; \
     mv postgres* /config/resources/
 
 RUN chmod -R a+x $SCRIPT && mkdir $APPS
