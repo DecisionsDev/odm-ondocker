@@ -64,25 +64,18 @@ FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
 ARG DECISIONSERVERCONSOLE_NAME
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
-
+LABEL org.opencontainers.image.authors="ODMDev <odmdev_open_source_user@wwpdl.vnet.ibm.com>, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 LABEL name="Decision Server Runtime"
 LABEL io.k8s.display-name="Decision Server Runtime"
 LABEL description="The Decision Service Runtime exposes a decision service as \
  a web service with REST/JSON endpoints."
-
-
 LABEL summary="The Decision Server Runtime REST API."
 LABEL io.k8s.description="The Decision Server Runtime REST API."
-
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
 LABEL product-version=${ODMVERSION}
 LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
-
-
 
 ENV APP_NAME DecisionServerRuntime
 ENV ODMDOCKERDIR $ODMDOCKERDIR
