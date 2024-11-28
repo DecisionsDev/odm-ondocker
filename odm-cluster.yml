@@ -60,7 +60,7 @@ services:
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
     labels:
-      - "traefik.http.routers.whoami.rule=Host(`localhost`)"
+    - "traefik.http.routers.whoami.rule=Host(`localhost`)"
     depends_on:
     - traefik
     links:
@@ -121,11 +121,11 @@ services:
     image: "traefik:v3.1"
     container_name: "traefik"
     command:
-      #- "--log.level=DEBUG"
-      - "--api.insecure=true"
-      - "--providers.docker=true"
+    #- "--log.level=DEBUG"
+    - "--api.insecure=true"
+    - "--providers.docker=true"
     ports:
-      - "80:80"
-      - "8080:8080"
+    - "80:80"
+    - "8080:8080"
     volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    - "/var/run/docker.sock:/var/run/docker.sock:ro"
