@@ -3,7 +3,6 @@
 echo "Update Decision Center configurations"
 
 DC_SERVER_CONFIG="/config/server-configurations.json"
-mv /config/new-server-configurations.json /config/server-configurations.json
 
 if [ -n "$OPENID_CONFIG" ]
 then

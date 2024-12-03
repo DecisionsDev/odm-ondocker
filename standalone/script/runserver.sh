@@ -45,7 +45,7 @@ if [ ! -f /config/initialized.flag ] ; then
 	touch /config/initialized.flag
 fi;
 
-cp /config/new-decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
+cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 if [ -n "$RELEASE_NAME" ]
 then
