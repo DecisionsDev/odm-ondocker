@@ -230,8 +230,8 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
         <h2>Additional Resources</h2>
         <ul>
           <li><a href="https://www.ibm.com/docs/en/odm/9.0.0" target="_blank">ODM Documentation</a></li>
-          <li><a href="https://github.com/DecisionsDev/odm-for-container-getting-started/tree/9.0.0" target="_blank">Getting Started</a></li>
-          <li><a href="https://www.ibm.com/community/automation/digital-business-automation/business-rules-management/" target="_blank">IBM Business Automation Community</a></li>
+          <li><a href="https://github.com/DecisionsDev/odm-for-container-getting-started/tree/master" target="_blank">Getting Started</a></li>
+          <li><a href="https://community.ibm.com/community/user/automation/home" target="_blank">IBM Business Automation Community</a></li>
           <li><a href="https://github.com/ODMDev/odm-ondocker/issues" target="_blank">To report an issue</a></li>
         </ul>
       </article>
