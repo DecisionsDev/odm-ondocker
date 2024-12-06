@@ -83,7 +83,7 @@ docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -e SAMPLE=true icr.io/cp
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
  ```console
-docker run -e LICENSE=accept -p 9443:9443 -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:9.0
+docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 -u $(id -u) -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:9.0
 ```
 
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
