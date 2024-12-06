@@ -244,7 +244,6 @@ request.
 
 
 [help documentation]: http://help.github.com/send-pull-requests
-[bug database]: ../../issues
 [ml-users]: mailto:odmdev_open_source_user@wwpdl.vnet.ibm.com
 [Creating a Pull Request]: https://help.github.com/articles/creating-a-pull-request
 [Fork a Repo]: https://help.github.com/articles/fork-a-repo

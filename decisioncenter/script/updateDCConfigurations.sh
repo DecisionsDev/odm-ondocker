@@ -515,8 +515,22 @@ then
   PATTERN="<?-- Add your custom servlets here if needed -->"
   CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
   REPLACE=$(cat /config/customlib/web.xml)
-  outputvar="${CONTENT//$PATTERN/$REPLACE}"
-  echo $outputvar > /config/apps/decisioncenter.war/WEB-INF/web.xml
+  outputvar=${CONTENT//$PATTERN/$REPLACE}
+  echo "$outputvar" > /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
+  sed 's/\r$//' /config/apps/decisioncenter.war/WEB-INF/temp_web.xml > /config/apps/decisioncenter.war/WEB-INF/web.xml
+  rm /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
+fi
+
+if [ -s "/config/download/web.xml" ]
+then
+ echo "Update web.xml for Decision Center customization"
+ PATTERN="<?-- Add your custom servlets here if needed -->"
+ CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
+ REPLACE=$(cat /config/download/web.xml)
+ outputvar=${CONTENT//$PATTERN/$REPLACE}
+ echo "$outputvar" > /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
+ sed 's/\r$//' /config/apps/decisioncenter.war/WEB-INF/temp_web.xml > /config/apps/decisioncenter.war/WEB-INF/web.xml
+ rm /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
 fi
 
 if [ -s "/config/download/web.xml" ]
@@ -582,4 +596,12 @@ if [ -n "$DISABLE_DBDUMP" ]
 then
   echo "Disable dbdump application"
   rm -rf /config/apps/teamserver-dbdump.war
+fi
+
+if [ -n "$ENABLE_AUDIT" ]
+then
+  echo "audit is enabled"
+else
+  echo "audit is disabled"
+  sed -i '/audit/d' /config/featureManager.xml
 fi

@@ -7,9 +7,10 @@
 		<feature>jdbc-4.1</feature>
 		<feature>ldapRegistry-3.0</feature>
 		<feature>openidConnectClient-1.0</feature>	
-        <feature>transportSecurity-1.0</feature>
+        	<feature>transportSecurity-1.0</feature>
 		<feature>monitor-1.0</feature>
-        <feature>mpMetrics-3.0</feature>
+                <feature>mpMetrics-3.0</feature>
 		<feature>logstashCollector-1.0</feature>
+                <feature>audit-2.0</feature>
 	</featureManager>
 </server>

@@ -1,0 +1,25 @@
+name: Check Markdown links
+
+#on:
+#  push:
+#    branches:
+#      - master
+#  pull_request:
+#    branches: [master]
+on: push
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: technote-space/get-diff-action@v6
+        with:
+          PATTERNS: |
+            **/**.md
+
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+          config-file: '.md_check_config.json'
+

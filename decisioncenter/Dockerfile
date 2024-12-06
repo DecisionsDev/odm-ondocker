@@ -72,18 +72,14 @@ RUN sed -i 's|# Pass on to the real server run|. /script/rundc.sh|' /opt/ibm/hel
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+LABEL org.opencontainers.image.authors="ODMDev <odmdev_open_source_user@wwpdl.vnet.ibm.com>, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 LABEL name="Decision Center"
 LABEL io.k8s.display-name="Decision Center"
 LABEL description="Decision Center is a web application where business users author, model, and manage decisions\
  with limited or no dependence on the IT department."
-
-
 LABEL summary="Decision Center is a web application to manage and author decisions."
 LABEL io.k8s.description="Decision Center is a web application to manage and author decisions."
-
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
 LABEL product-version=${ODMVERSION}

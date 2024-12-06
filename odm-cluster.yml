@@ -59,9 +59,14 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+    labels:
+    - "traefik.http.routers.whoami.rule=Host(`localhost`)"
+    depends_on:
+    - traefik
     links:
     - dbserver
     - odm-decisionserverconsole
+    - traefik
     environment:
     - EXCLUDE_PORTS=9443
     ports:
@@ -112,12 +117,15 @@ services:
     - 9453:9453
 
   # The load balancer for the Runtime.
-  lb:
-    image: dockercloud/haproxy
-    links:
-    - odm-decisionserverruntime
-    volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+  traefik:
+    image: "traefik:v3.1"
+    container_name: "traefik"
+    command:
+    #- "--log.level=DEBUG"
+    - "--api.insecure=true"
+    - "--providers.docker=true"
     ports:
-    - 80:80
-    - 1936:1936
+    - "80:80"
+    - "8080:8080"
+    volumes:
+    - "/var/run/docker.sock:/var/run/docker.sock:ro"

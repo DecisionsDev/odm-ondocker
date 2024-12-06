@@ -73,6 +73,18 @@ then
   sed -i 's|"loginPassword": ".*"|'\"loginPassword\":\"$USERS_PASSWORD\"'|g' /config/server-configurations.json
 fi
 
+if [ -s "/config/download/web.xml" ]
+then
+  echo "Update web.xml for Decision Center customization"
+  PATTERN="<?-- Add your custom servlets here if needed -->"
+  CONTENT=$(cat /config/apps/decisioncenter.war/WEB-INF/web.xml)
+  REPLACE=$(cat /config/download/web.xml)
+  outputvar=${CONTENT//$PATTERN/$REPLACE}
+  echo "$outputvar" > /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
+  sed 's/\r$//' /config/apps/decisioncenter.war/WEB-INF/temp_web.xml > /config/apps/decisioncenter.war/WEB-INF/web.xml
+  rm /config/apps/decisioncenter.war/WEB-INF/temp_web.xml
+fi
+
 $SCRIPT/configureDatabase.sh h2
 
 $SCRIPT/updateDatasource.sh

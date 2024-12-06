@@ -61,8 +61,8 @@ RUN sed -i 's|# Pass on to the real server run|. /script/run.sh|' /opt/ibm/helpe
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
+
+LABEL org.opencontainers.image.authors="ODMDev <odmdev_open_source_user@wwpdl.vnet.ibm.com>, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 LABEL name="Decision Server Console"
 LABEL description="The Decision Server console provides a web-based graphical user interface to \
  manage and monitor RuleApps, ruleset archives, JavaPrr XOMs and libraries, and decision services."

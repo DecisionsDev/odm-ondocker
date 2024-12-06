@@ -57,21 +57,18 @@ RUN sed -i 's|# Pass on to the real server run|. /script/rundr.sh|' /opt/ibm/hel
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
 ARG ODMVERSION
-LABEL maintainer="ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
-MAINTAINER ODMDev odmdev_open_source_user@wwpdl.vnet.ibm.com, Laurent GRATEAU <laurent.grateau@fr.ibm.com>
 
+LABEL org.opencontainers.image.authors="ODMDev <odmdev_open_source_user@wwpdl.vnet.ibm.com>, Laurent GRATEAU <laurent.grateau@fr.ibm.com>"
 LABEL name="Decision Runner"
 LABEL io.k8s.display-name="Decision Runner"
 LABEL description="The Decision Runner runs tests and simulations against rules."
 LABEL summary="The Decision Runner runs tests and simulations against rules."
 LABEL io.k8s.description="The Decision Runner runs tests and simulations against rules."
-
 LABEL vendor="IBM"
 LABEL version=${ODMVERSION}
 LABEL product-version=${ODMVERSION}
 LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
-
 
 ENV APP_NAME DecisionRunner
 ENV ODMDOCKERDIR $ODMDOCKERDIR
