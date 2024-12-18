@@ -2,27 +2,7 @@
 
 echo "Update Decision Center configurations"
 
-FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
-echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
-
-FIND_OAUTH_SERVER_UTIL_CLASS="$($SCRIPT/findOAuthServerUtilClass.sh)"
-echo "FIND_OAUTH_SERVER_UTIL_CLASS set to $FIND_OAUTH_SERVER_UTIL_CLASS"
-
-if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
-then
-  echo "ServerExt class found then set DC_SERVER_CONFIG to /config/server-configurations.json"
-  DC_SERVER_CONFIG="/config/server-configurations.json"
-else
-  echo "ServerExt class not found. Use old way Decision Center server configuration"
-fi
-
-if [ "$FIND_OAUTH_SERVER_UTIL_CLASS" == "matches" ]
-then
-  echo "OAuthServerUtil class found replace /config/server-configurations.json by /config/new-server-configurations.json"
-  mv /config/new-server-configurations.json /config/server-configurations.json
-else
-  echo "OAuthServerUtil class not found"
-fi
+DC_SERVER_CONFIG="/config/server-configurations.json"
 
 if [ -n "$OPENID_CONFIG" ]
 then
