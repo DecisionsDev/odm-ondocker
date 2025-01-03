@@ -13,7 +13,7 @@ if [ ! -f /config/initializeddb.flag ] ; then
 		odmVersion=$(java -cp ${engineJarFile} ilog.rules.tools.IlrVersion | sed -ne "s/Decision Server \(.*\)/\1/p")
 		[ -d /config/dbdata ] || mkdir -p /config/dbdata
 		cp -R /upload/* /config/dbdata/
-		if [[ "${odmVersion}" =~ "9.0.0" || "${odmVersion}" =~ "8.11" || "${odmVersion}" =~ "8.11.1" || "${odmVersion}" =~ "8.12" ]]; then
+		if [[ "${odmVersion}" =~ "9.0.1" || "${odmVersion}" =~ "9.0.0" || "${odmVersion}" =~ "8.11" || "${odmVersion}" =~ "8.11.1" || "${odmVersion}" =~ "8.12" ]]; then
 			cd /config/dbdata
 			java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./resdb" -user res -password res -script /upload/resdb*.zip -options compression zip
 			java -cp /opt/ibm/wlp/usr/servers/defaultServer/resources/h2*.jar org.h2.tools.RunScript -url "jdbc:h2:file:./rtsdb" -user rts -password rts -script /upload/rtsdb*.zip -options compression zip
