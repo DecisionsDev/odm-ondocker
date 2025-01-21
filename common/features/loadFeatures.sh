@@ -56,13 +56,13 @@ function loadFeatures() {
   if [ ! "$featureDir" ]
   then
     echo "ERROR: Please specify the feature directory with the first argument to load features."
-    return 0
+    return 1
   fi
 
   if [ ! "$currentVersion" ]
   then
     echo "ERROR: Current version is unknown, skip loading features."
-    return 0
+    return 1
   fi
 
   if [ -f "$featureFile" ]
@@ -100,7 +100,7 @@ function loadFeatures() {
 if [ ! "$1" ]
 then
   echo "ERROR: Please specify feature directory."
-  return 0
+  return 1
 fi
 
 # $1 feature directory
