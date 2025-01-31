@@ -5,7 +5,7 @@ if [ ! -f /config/initialized ]
 then
         if [ -s "$SCRIPT/customStart.sh" ]
         then
-                . $SCRIPT/customStart.sh
+          . $SCRIPT/customStart.sh
         fi
 
         $SCRIPT/download.sh
@@ -34,7 +34,7 @@ then
 
         if [ -s "$SCRIPT/customEnd.sh" ]
         then
-                $SCRIPT/customEnd.sh
+          . $SCRIPT/customEnd.sh
         fi
         touch /config/initialized
 fi
