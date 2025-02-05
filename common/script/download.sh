@@ -20,13 +20,13 @@ if [ -n "$DOWNLOAD_URL" ]; then
         shopt -s nullglob
 
         # Unzip download if necessary
-        for arch in *zip; do
+        for arch in *.zip; do
                 unzip -q ${arch}
                 rm ${arch}
         done
 
         # Untar download if necessary (.tgz, .tar, .tar.gz, .tar.bz2, .tar.xz are supported)
-        for arch in *tar* *tgz; do
+        for arch in *.tar* *.tgz; do
                 tar -xaf ${arch}
                 rm ${arch}
         done
