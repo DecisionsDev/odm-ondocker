@@ -1,0 +1,18 @@
+<server>
+	<!-- Web application security -->
+	<basicRegistry id="decisionassistantregistry" realm="customRealm">
+		<!-- ODM super user -->
+		<user name="AIAssistant" password="AIAssistant4TheBest"/>
+	
+		<!-- Groups for Decision Center -->
+		<group name="rtsAdministrators">
+			<member name="AIAssistant"/>
+		</group>
+		<group name="rtsInstallers">
+			<member name="AIAssistant"/>
+		</group>
+		<group name="rtsConfigManagers">
+			<member name="AIAssistant"/>
+		</group>
+	</basicRegistry>
+</server>

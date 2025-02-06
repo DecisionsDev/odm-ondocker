@@ -9,6 +9,9 @@
 	<!-- Web security -->
 	<include optional="true" location="./webSecurity.xml"/>
 
+	<!-- Web security for Decision Assistant -->
+	<include optional="true" location="./webSecurityDecisionAssistant.xml"/>
+
 	<!-- application declarations -->
 
 	<!-- welcomepage -->

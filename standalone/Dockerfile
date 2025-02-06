@@ -54,7 +54,8 @@ COPY ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 RUN set -ex; \
     ${SCRIPT}/extractApp.sh decisioncenter.war; \
     ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
-    mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
+    mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config; \
+    if [ -s "/config/apps/decision-assistant.war" ]; then $SCRIPT/extractApp.sh decision-assistant.war; fi 
 
 RUN ${SCRIPT}/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties ${APPS}/decisioncenter.war/WEB-INF/web.xml
 
