@@ -6,7 +6,9 @@ then
   if [[ $ENABLE_DECISION_ASSISTANT =~ "true" ]]
   then
     echo "Configure Decision Assistant Web App"
-    cp webSecurity_DecisionAssistant.xml webSecurityDecisionAssistant.xml
+    cp /config/decisionassistant/webSecurityDecisionAssistant.xml /config/webSecurityDecisionAssistant.xml
+
+    cp /config/decisionassistant/decisionassistant.properties /config/apps/decision-assistant.war/WEB-INF/classes/genai.properties
   fi
 fi
 
