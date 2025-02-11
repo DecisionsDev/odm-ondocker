@@ -12,6 +12,8 @@ then
 
   $SCRIPT/addDCApplications.sh
 
+  $SCRIPT/enableDecisionAssistant.sh
+
   $SCRIPT/updateDCConfigurations.sh
 
   if [ -n "$USERS_PASSWORD" ]

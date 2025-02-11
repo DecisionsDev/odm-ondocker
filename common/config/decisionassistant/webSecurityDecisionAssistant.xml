@@ -1,0 +1,8 @@
+<server>
+<!-- Web application security -->
+	<basicRegistry id="basic" realm="customRealm">
+		<user name="AIAssistant" password="AIAssistant4TheBest"/>
+	</basicRegistry>
+
+
+</server>

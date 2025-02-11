@@ -23,6 +23,15 @@ addApplication decisioncenter
 addApplication decisioncenter-api
 addApplication teamserver-dbdump
 
+if [ -n "$ENABLE_DECISION_ASSISTANT" ]
+then
+  if [[ $ENABLE_DECISION_ASSISTANT =~ "true" ]]
+  then
+    echo "Enabling Decision Assistant Web App"
+    addApplication decision-assistant
+  fi
+fi
+
 echo "</server>" >> ${applicationXml}
 
 

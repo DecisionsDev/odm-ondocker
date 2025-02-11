@@ -11,6 +11,7 @@
 		<application-bnd>
 			<security-role name="rtsAdministrator">
 				<group name="rtsAdministrators" />
+     			<user name="dcAdmAI" access-id="user:customRealm/AIAssistant"/>
 			</security-role>
 			<security-role name="rtsInstaller">
 				<group name="rtsInstallers" />

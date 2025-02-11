@@ -579,3 +579,17 @@ else
   echo "audit is disabled"
   sed -i '/audit/d' /config/featureManager.xml
 fi
+
+if [ -n "$ENABLE_DECISION_ASSISTANT" ]
+then
+  if [[ $ENABLE_DECISION_ASSISTANT != "true" ]]
+  then
+    echo "Remove Decision Assistant User"
+    sed -i '/webSecurityDecisionAssistant/d' /config/server.xml
+    sed -i '/dcAdmAI/d' /config/application.xml
+  fi
+else
+  echo "Remove Decision Assistant User"
+  sed -i '/webSecurityDecisionAssistant/d' /config/server.xml
+  sed -i '/dcAdmAI/d' /config/application.xml
+fi
