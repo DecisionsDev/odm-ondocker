@@ -103,6 +103,7 @@ RUN set -ex; \
     mv /opt/wlppackage/*.sh ${SCRIPT}; \
     $SCRIPT/installFeatures.sh
     
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses    
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/decisionassistant /config/decisionassistant
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application_standalone.xml /config/decisionrunner_application.xml
