@@ -29,8 +29,11 @@
 
         <!-- include web security config -->
         <include optional="true" location="./auth/webSecurity.xml"/>
+	
+	!-- Web security for Decision Assistant -->
+	<include optional="true" location="./webSecurityDecisionAssistant.xml"/>
 
-        <!-- include OIDC web security config -->
+	<!-- include OIDC web security config -->
         <include optional="true" location="./authOidc/openIdWebSecurity.xml"/>
 
         <!-- include agent monitor config like mpMetrics -->
