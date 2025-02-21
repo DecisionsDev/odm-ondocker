@@ -124,10 +124,10 @@ fi
 
 # This part allow to import a list of PEM certificate in the JVM
  echo "Importing trusted certificates $dir"
+TRUSTSTORE=/config/security/truststore.jks
 CERTDIR="/config/security/trusted-cert-volume/"
 if [ -d $CERTDIR ]; then
     cd $CERTDIR
-    TRUSTSTORE=/config/security/truststore.jks
     i=0
     for file in $(find . -name "*.crt")
     do
