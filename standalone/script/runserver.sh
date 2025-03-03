@@ -85,8 +85,6 @@ $SCRIPT/configureTlsSecurity.sh
 
 $SCRIPT/addDCApplications.sh /config/decisioncenter_application.xml
 
-$SCRIPT/enableDecisionAssistant.sh
-
 $SCRIPT/setTimeZone.sh
 
 . $SCRIPT/setUTF8Locale.sh

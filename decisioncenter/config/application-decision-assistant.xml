@@ -1,4 +1,0 @@
-	<!-- Decision Center Rest Api-->
-	<application id="decision-assistant" context-root="${ODM_CONTEXT_ROOT}/decision-assistant" location="${server.config.dir}/apps/decision-assistant.war" name="decision-assistant">
-
-	</application>

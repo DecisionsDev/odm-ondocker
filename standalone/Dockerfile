@@ -14,7 +14,6 @@ COPY ./executionserver/ /executionserver/
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/standalone/config/resources /config/resources
-
 # Loan Server Sample presence flag
 RUN set -ex; \
     if [ -d /executionserver/samples/rulesetexecution/loan-server ]; then \
@@ -55,8 +54,7 @@ COPY ./teamserver/applicationservers/WLP*/decision*.war ${APPS}/
 RUN set -ex; \
     ${SCRIPT}/extractApp.sh decisioncenter.war; \
     ${SCRIPT}/extractApp.sh decisioncenter-api.war; \
-    mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config; \
-    if [ -s "/config/apps/decision-assistant.war" ]; then $SCRIPT/extractApp.sh decision-assistant.war; fi 
+    mkdir -p ${APPS}/decisioncenter.war/WEB-INF/classes/config
 
 RUN ${SCRIPT}/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties ${APPS}/decisioncenter.war/WEB-INF/web.xml
 
@@ -102,9 +100,8 @@ RUN set -ex; \
     mkdir ${SCRIPT}; \
     mv /opt/wlppackage/*.sh ${SCRIPT}; \
     $SCRIPT/installFeatures.sh
-    
-COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses    
-COPY --chown=1001:0 $ODMDOCKERDIR/common/config/decisionassistant /config/decisionassistant
+
+COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionrunner/config/application_standalone.xml /config/decisionrunner_application.xml
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisionserver/decisionserverconsole/config/application.xml /config/decisionserverconsole_application.xml
