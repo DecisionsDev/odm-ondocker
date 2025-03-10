@@ -8,7 +8,7 @@
   <version>1.0</version>
   <packaging>war</packaging>
   <properties>
-    <maven.compiler.version>17</maven.compiler.version>
+    <maven.compiler.version>21</maven.compiler.version>
   </properties>
   <build>
    <plugins>
