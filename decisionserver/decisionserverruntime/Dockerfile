@@ -35,9 +35,6 @@ COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
 chmod -R 777 $APPS 
 
-# TODO TO BE REMOVED JUST A TEMPORARY WORKAROUND FOR JAKARTA MOVE
-RUN rm /config/apps/DecisionService.war/WEB-INF/lib/taglibs-standard-*.jar
-# END OF WORKAROUND
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
