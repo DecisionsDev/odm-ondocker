@@ -139,7 +139,7 @@ services:
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
     - ${PWD}/rolegroupmapping/group-security-configurations.xml:/config/auth/group-security-configurations.xml
-    - ${PWD}/rolegroupmapping/ldap-configurations.xml:/config/auth/ldap-configurations.xml
+#    - ${PWD}/rolegroupmapping/ldap-configurations.xml:/config/auth/ldap-configurations.xml
 #    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
 #    - ${PWD}/rolegroupmapping/truststore.jks:/config/security/truststore.jks
 
