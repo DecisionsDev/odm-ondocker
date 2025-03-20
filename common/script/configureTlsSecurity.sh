@@ -94,6 +94,8 @@ then
         keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/truststore.jks
         keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias ODM -file /config/security/volume/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -storetype jks -noprompt
+
+		sed -i 's|<ssl |<ssl serverKeyAlias="odm" |' /config/tlsSecurity.xml
 fi
 # End - Configuration for the TLS security
 
