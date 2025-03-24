@@ -3,6 +3,7 @@
 		<web-resource-name>Decision Service</web-resource-name>
 		<url-pattern>/ws/*</url-pattern>
 		<url-pattern>/rest/*</url-pattern>
+		<url-pattern>/run.jsp</url-pattern>
 	</web-resource-collection>
 	<auth-constraint>
 		<role-name>resExecutors</role-name>
