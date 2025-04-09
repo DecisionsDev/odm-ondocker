@@ -1,6 +1,5 @@
 RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-withPKCS11.desc.name = Custom OpenJCEPlusFIPS Cryptographic Module FIPS 140-3 with PKCS11 Support
 RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-withPKCS11.extends = RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-Weakly-Enforced
-RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-withPKCS11.javax.net.ssl.keyStore = PKCS12
 RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-withPKCS11.jce.provider.13 = sun.security.pkcs11.SunPKCS11 ${java.home}/conf/security/nss.fips.cfg
 RestrictedSecurity.OpenJCEPlusFIPS.FIPS140-3-withPKCS11.jce.provider.6 = com.sun.crypto.provider.SunJCE [+ \
   {AlgorithmParameters, PBES2, *}, \
