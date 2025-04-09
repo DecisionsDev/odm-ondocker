@@ -5,7 +5,7 @@
 		invalidationTimeout="8h"
 		cookieSecure="true"
 		cookieHttpOnly="true"/>
-  <ltpa expiration="8h" keysFileName="${server.config.dir}/resources/security/ltpa.keys"/>
+  <ltpa expiration="8h" keysPassword="{aes}ARCRM0U6arPJbg7KEDjSehlpyLgtJs+G+dPl2P19l8YrLWtYU2xgVhdYkUoO8RIJHTqc4NEYTtFjPRAZe1J18oKbmcvaz6VkWjfRMUmihlffTGeRub5qRJeFplgeYJIXD/pYlSAzP674ncvqMA==" keysFileName="${server.config.dir}/resources/security/ltpa.keys"/>
   <webAppSecurity includePathInWASReqURL="true"
 		ssoCookieName="LTPATOKEN2_DS_RELEASE_NAME"
 		ssoRequiresSSL="true"

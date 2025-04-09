@@ -1,7 +1,6 @@
 -Duser.timezone=Europe/Paris
 -Dcom.ibm.jsse2.overrideDefaultTLS=true
--Dcom.ibm.jsse2.usefipsprovider=true
--Dcom.ibm.jsse2.sp800-131=transition
--Dcom.ibm.jsse2.usefipsProviderName=IBMJCEFIPS
--Dsecurity.overridePropertiesFile=true
--Djava.security.properties==file://localhost/opt/ibm/wlp/usr/servers/defaultServer/jvm/enablefips-java.security
+-Djdk.nativeDigest=false
+-Dsemeru.fips=true
+-Dsemeru.customprofile=OpenJCEPlusFIPS.FIPS140-3-withPKCS11
+-Djava.security.properties=/opt/ibm/wlp/usr/servers/defaultServer/jvm/enablefips-java.security
