@@ -8,6 +8,7 @@
 
 	<!-- http session config -->
 	<include optional="true" location="./httpSession.xml"/>
+	<include optional="true" location="./ltpa.xml"/>
 
 	<!-- datasource config -->
 	<include optional="true" location="./datasource.xml"/>
