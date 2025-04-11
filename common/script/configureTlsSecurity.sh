@@ -4,9 +4,9 @@ if [ -n "$ENABLE_FIPS" ]
 then
   if [[ $ENABLE_FIPS =~ "true" ]]
   then
-	echo "FIPS Enabled : Use appropriate configuring keystore for FIPS"
-	# Workaround on a FIPS implementation see 
+	echo "FIPS Enabled : update configuration for FIPS"
 	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
+	cp /config/ltpaFIPS.xml /config/ltpa.xml
   fi
 fi
 

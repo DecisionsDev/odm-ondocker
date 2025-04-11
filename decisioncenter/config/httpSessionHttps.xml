@@ -5,7 +5,6 @@
 		invalidationTimeout="8h"
 		cookieSecure="true"
 		cookieHttpOnly="true"/>
-  <ltpa expiration="8h" keysFileName="${server.config.dir}/resources/security/ltpa.keys"/>
   <webAppSecurity includePathInWASReqURL="true"
 		useAuthenticationDataForUnprotectedResource="true"
 		ssoCookieName="LTPATOKEN2_DC_RELEASE_NAME"

@@ -1,0 +1,3 @@
+<server>
+  <ltpa expiration="8h" keysFileName="${server.config.dir}/resources/security/ltpa.keys"/>
+</server>

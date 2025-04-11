@@ -335,11 +335,6 @@ else
  echo "Use httpSession settings for HTTP"
  cp /config/httpSessionHttp.xml /config/httpSession.xml
 fi
-if [[ $ENABLE_FIPS =~ "true" ]]
-then
-  echo "FIPS Enabled : update the ltpa element in httpSession.xml"
-  sed -i 's|keysFileName="${server.config.dir}/resources/security/ltpa.keys".*/>|keysFileName="${server.config.dir}/resources/security/ltpa-FIPS140-3.keys" keysPassword="{aes}ARCRM0U6arPJbg7KEDjSehlpyLgtJs+G+dPl2P19l8YrLWtYU2xgVhdYkUoO8RIJHTqc4NEYTtFjPRAZe1J18oKbmcvaz6VkWjfRMUmihlffTGeRub5qRJeFplgeYJIXD/pYlSAzP674ncvqMA=="/>|' /config/httpSession.xml
-fi
 
 if [ -n "$DISABLE_USE_AUTHENTICATION_DATA" ]
 then
