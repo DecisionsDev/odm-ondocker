@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 60
+sleep 100
 
 PROTOCOL=http
 
