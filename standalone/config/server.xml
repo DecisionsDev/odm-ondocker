@@ -47,7 +47,7 @@
 	<!-- http endpoint -->
 	<httpEndpoint id="defaultHttpEndpoint" enableWelcomePage="true" host="*" httpPort="9060" httpsPort="9453" />
 
-	<webContainer deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
+	<webContainer invokeFlushAfterService="false" deferServletLoad="false" enableDefaultIsElIgnoredInTag="true" enableJspMappingOverride="true" />
 
 	<applicationMonitor updateTrigger="mbean" />
 </server>
