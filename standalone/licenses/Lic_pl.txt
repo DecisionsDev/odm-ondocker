@@ -3,7 +3,7 @@ INFORMACJE LICENCYJNE
 Programy wymienione poniżej są licencjonowane na podstawie przedstawionych poniżej warunków Informacji licencyjnych, które stanowią uzupełnienie warunków licencji na Program uzgodnionych uprzednio między Klientem a IBM. Jeśli Klient nie dysponuje warunkami licencji uzgodnionymi uprzednio z IBM w odniesieniu do Programu, zastosowanie mają warunki licencji Międzynarodowa Umowa Licencyjna na Programy nieobjęte Gwarancją (i125-5589-06).
 
 Nazwa Programu (Numer Programu):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Poniższe standardowe warunki mają zastosowanie do używania Programu przez Licencjobiorcę.
 
@@ -26,14 +26,6 @@ Modyfikowany Kod Osób Trzecich
 
 Jeśli w pliku NOTICES (UWAGI) IBM określi kod osoby trzeciej jako „Modyfikowalny Kod Osób Trzecich", to IBM upoważnia Licencjobiorcę do 1) modyfikowania Modyfikowalnego Kodu Osób Trzecich oraz 2) odtwarzania kodu źródłowego modułów Programu, które bezpośrednio współpracują z Modyfikowalnym Kodem Osób Trzecich, pod warunkiem że służy to wyłącznie do debugowania modyfikacji wprowadzonych przez Licencjobiorcę w takim kodzie osoby trzeciej. Ewentualne zobowiązania IBM w zakresie serwisu i wsparcia dotyczą wyłącznie niezmodyfikowanego Programu.
 
-Kod Licencjonowany Oddzielnie
-
-Każdy z komponentów wymienionych w pliku NON_IBM_LICENSE jest uważany za "Kod Licencjonowany Oddzielnie", licencjonowany na rzecz Licencjobiorcy na warunkach stosownej umowy lub umów licencyjnych osób trzecich, przedstawionych w pliku (plikach) NON_IBM_LICENSE dołączonym (dołączonych) do Programu, nie zaś na warunkach niniejszej Umowy. Przyszłe aktualizacje lub poprawki do Programu mogą zawierać dodatkowy Kod Licencjonowany Oddzielnie. Takie dodatkowe komponenty Kodu Licencjonowanego Oddzielnie oraz związane z nimi licencje są wymienione w odpowiednim pliku NON_IBM_LICENSE dołączonym do aktualizacji lub poprawki do Programu.
-
-Uwaga: Bez względu na jakiekolwiek warunki umów licencyjnych z osobami trzecimi, niniejszej Umowy czy też jakiejkolwiek innej umowy, jaką Licencjobiorca mógł zawrzeć z IBM w związku z Kodem Licencjonowanym Oddzielnie:
-(a) IBM dostarcza Licencjobiorcy Kod Licencjonowany Oddzielnie BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RĘKOJMIĘ RÓWNIEŻ WYŁĄCZA SIĘ); ORAZ NIE UDZIELA JAKICHKOLWIEK GWARANCJI (W TYM TAKŻE WYŁĄCZA RĘKOJMIĘ) I NIE USTALA JAKICHKOLWIEK WARUNKÓW, WYRAŹNYCH CZY DOMNIEMANYCH, A W SZCZEGÓLNOŚCI NIE UDZIELA GWARANCJI PRAW WŁASNOŚCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI I WARUNKÓW PRZYDATNOŚCI HANDLOWEJ I PRZYDATNOŚCI DO OKREŚLONEGO CELU;
-(b) IBM nie ponosi odpowiedzialności za jakiekolwiek szkody bezpośrednie, pośrednie, uboczne, szczególne, szkody, których nie można było przewidzieć przy zawieraniu umowy oraz szkody związane z naruszeniem dóbr osobistych, a w szczególności utratę danych czy spodziewanych oszczędności i korzyści.
-
 Ochrona prywatności
 
 Licencjobiorca potwierdza i zgadza się na używanie przez IBM informacji cookie i technik śledzenia w celu gromadzenia danych osobowych w związku ze zbieraniem danych statystycznych dotyczących używania produktów oraz informacji mających na celu usprawnianie obsługi użytkowników i/lub dostosowywanie interakcji z użytkownikami w sposób zgodny ze Strategią Ochrony Prywatności Online IBM dostępną pod adresem http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Dane i usługi osób trzecich
 Program zapewnia dostęp do usług transmisji danych, baz danych, usług WWW, oprogramowania bądź innej zawartości osób trzecich (zwanych dalej łącznie "Zawartością Osób Trzecich"). Zawartość taka jest udostępniana W STANIE, W JAKIM SIĘ ZNAJDUJE ("AS IS"), BEZ UDZIELANIA JAKICHKOLWIEK GWARANCJI (RĘKOJMIĘ RÓWNIEŻ WYŁĄCZA SIĘ), WYRAŹNYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŚCI GWARANCJI PRAWA WŁASNOŚCI, NIENARUSZANIA PRAW OSÓB TRZECICH ORAZ DOMNIEMANYCH GWARANCJI i WARUNKÓW PRZYDATNOŚCI HANDLOWEJ I PRZYDATNOŚCI DO OKREŚLONEGO CELU. Ponadto odpowiednie osoby trzecie mogą w każdej chwili zaprzestać udostępniania zawartości według własnego uznania. Może być również wymagane zawarcie przez Licencjobiorcę oddzielnych umów z osobami trzecimi w celu uzyskania dostępu do Zawartości Osób Trzecich lub jej używania. IBM nie jest stroną żadnych takich oddzielnych umów, a zobowiązanie Licencjobiorcy do przestrzegania warunków takich umów jest wyraźnym warunkiem udzielenia niniejszej licencji.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Międzynarodowa Umowa Licencyjna na Programy Nieobjęte Gwarancją
 

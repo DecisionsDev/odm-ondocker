@@ -3,7 +3,7 @@ LICENČNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základě následujících podmínek uvedených v dokumentu Licenční informace, které doplňují licenční podmínky pro Program, s nimiž dříve Zákazník a IBM vyjádřili souhlas Pokud Zákazník dříve nevyjádřil souhlas s účinnými licenčními podmínkami pro Program, uplatní se licence Mezinárodní licenční smlouva pro programy bez záruky (i125-5589-06).
 
 Název Programu (Číslo Programu):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
 
@@ -26,14 +26,6 @@ Upravitelný kód třetí strany
 
 V případném rozsahu, v jakém IBM v souboru OZNÁMENÍ označí kód třetí strany jako „Upravitelný kód třetí strany“, IBM opravňuje Držitele licence, aby 1) upravil Upravitelný kód třetí strany a 2) zpětně analyzoval moduly Programu, které jsou přímo spojeny s Upravitelným kódem třetí strany, ovšem za předpokladu, že k tomu dochází pouze pro účely ladění změn Držitele licence takového kódu třetí strany. Případné povinnosti servisu a podpory IBM se vztahují pouze na nezměněný Program.
 
-Samostatně licencovaný kód
-
-Všechny komponenty uvedené v souboru NON_IBM_LICENSE jsou považovány za "Samostatně licencovaný kód" licencovaný Držiteli licence na základě podmínek platné licenční smlouvy (platných licenčních smluv) třetích osob, jak je uvedeno v souboru (souborech) NON_IBM_LICENSE připojeném (připojených) k Programu, nikoli ve Smlouvě. Budoucí aktualizace Programu nebo sady oprav k Programu mohou obsahovat dodatečný Samostatně licencovaný kód. Takový dodatečný Samostatně licencovaný kód a související licence jsou uvedeny v použitelném souboru "NON_IBM_LICENSE" připojeném k aktualizaci Programu nebo sadě oprav k Programu. 
-
-Poznámka: Bez ohledu na odlišné podmínky licenční smlouvy třetích osob, této Smlouvy nebo jakékoliv jiné smlouvy, kterou má Držitel licence s IBM případně uzavřenou, související se Samostatně licencovaným kódem:
-(a) IBM jej poskytuje Držiteli licence BEZ ZÁRUK JAKÉHOKOLIV DRUHU A ODMÍTÁ JAKÉKOLI A VŠECHNY VÝSLOVNĚ VYJÁDŘENÉ NEBO Z OKOLNOSTÍ VYPLÝVAJÍCÍ ZÁRUKY A PODMÍNKY, VČETNĚ - NIKOLI VŠAK POUZE - ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ PRÁV TŘETÍCH OSOB A Z OKOLNOSTÍ VYPLÝVAJÍCÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL;
-(b) IBM nenese odpovědnost za žádné přímé, nepřímé, nahodilé, zvláštní, exemplární škody ani za sankční náhrady škody nebo za následné škody včetně - nikoliv však pouze - ztráty dat, ztráty úspor a ušlého zisku.
-
 Soukromí
 
 Držitel licence potvrzuje a souhlasí s tím, že IBM může užívat soubory cookie a sledovací technologie pro účely shromažďování osobních informací v rámci sběru statistických dat týkajících se užívání produktů a informací, jejichž cílem je napomáhat zlepšení uživatelských zkušeností, a/nebo pro účely přizpůsobení interakce s uživateli, a to v souladu s Online Prohlášením IBM o ochraně soukromí, které je dostupné na adrese http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Data a služby třetí osoby
 Program poskytuje přístup k datovým službám třetích osob, databázím, webovým službám, softwaru nebo jinému obsahu od třetích osob (společně dále "Obsah třetích osob"). Přístup k Obsahu třetí osoby je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLI DRUHU, VÝSLOVNĚ VYJÁDŘENÉ NEBO KONKLUDENTNÍ, VČETNĚ ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ NEBO NEZASAHOVÁNÍ DO PRÁV TŘETÍCH OSOB A KONKLUDENTNÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu k Obsahu třetích osob nebo užívání tohoto Obsahu třetích osob. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Mezinárodní licenční smlouva pro Programy bez záruky
 

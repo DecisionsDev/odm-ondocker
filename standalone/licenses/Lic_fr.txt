@@ -3,7 +3,7 @@ INFORMATIONS SUR LA LICENCE
 Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation de Logiciels IBM non garantis (i125-5589-06) s'appliquent.
 
 Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
@@ -26,14 +26,6 @@ Code Tiers Modifiable
 
 Si, dans le fichier NOTICES, IBM identifie un code tiers comme étant un « Code Tiers Modifiable », IBM autorise le Détenteur de la Licence à 1) modifier le Code Tiers Modifiable et 2) recourir à l'ingénierie inverse sur les modules du Logiciel qui interagissent directement avec le Code Tiers Modifiable, sous réserve que le Détenteur de la Licence ait recours à cette méthode à des fins de débogage des modifications qu'il a apportées à ce code tiers. Les obligations d'IBM en matière de service et de support, le cas échéant, s'appliquent uniquement au Logiciel non modifié.
 
-Code sous Licence Distincte
-
-Chacun des composants répertoriés dans le fichier NON_IBM_LICENSE doit être considéré comme du "Code sous Licence Distincte" concédé sous licence au Détenteur de la Licence dans le cadre des dispositions du/des contrat(s) de licence tiers applicable(s) indiqué(s) dans le(s) fichier(s) NON_IBM_LICENSE joint(s) au Logiciel et non de celles du présent Contrat. Les mises à jour ou correctifs ultérieurs du Logiciel pourront contenir du Code sous Licence Distincte supplémentaire. Ce Code sous Licence Distincte supplémentaire et les licences correspondantes seront répertoriés dans le fichier NON_IBM_LICENSE applicable joint à la mise à jour ou au correctif du Logiciel. 
-
-Remarque : Sauf disposition contraire énoncée dans le Contrat de licence tiers, dans le Contrat ou dans tout autre contrat conclu entre le Détenteur de la Licence et IBM en ce qui concerne le Code sous Licence Distincte :
-(a) IBM le fournit au Détenteur de la Licence SANS GARANTIE D'AUCUNE SORTE ET NE FOURNIT AUCUNE GARANTIE OU CONDITION EXPLICITE OU IMPLICITE, Y COMPRIS, ET DE FAÇON NON LIMITATIVE, EN MATIÈRE DE DROIT DE PROPRIÉTÉ, AUCUNE GARANTIE DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, ET AUCUNE GARANTIE OU CONDITION IMPLICITE DE QUALITÉ MARCHANDE OU D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ ;
-(b) IBM ne pourra être tenue responsable pour toute demande d'indemnisation ou pour tout dommage direct et indirect, accessoire, particulier, à titre d'exemple, à caractère répressif (notamment, et de façon non limitative, perte de données, de bénéfices, de revenus, d'économies escomptées, d'activité commerciale) ou tout autre dommage.
-
 Données Personnelles
 
 Le Détenteur de la Licence reconnaît et accepte qu'IBM puisse utiliser des cookies et des technologies de suivi pour collecter des informations personnelles, telles que des données statistiques concernant l'utilisation du produit et des informations dans le but d'aider à améliorer l'expérience utilisateur et/ou d'adapter les interactions aux utilisateurs conformément à la Déclaration de confidentialité IBM disponible à l'adresse suivante http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Données et services tiers
 Le Logiciel donne accès à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu Tiers"). L'accès au Contenu Tiers est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES CONDITIONS ET GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu Tiers ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Conditions Internationales d'Utilisation de Logiciels IBM non garantis
 

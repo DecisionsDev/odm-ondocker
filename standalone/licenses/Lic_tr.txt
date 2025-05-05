@@ -3,7 +3,7 @@ LİSANS BİLGİLERİ
 Aşağıda listelenen programlar, daha önce Müşteri ve IBM tarafından kabul edilen Program lisansı koşullarına ek olarak aşağıdaki Lisans Bilgilerinin kayıt ve koşulları kapsamında lisanslanır. Müşteri, Programa ilişkin yürürlükte olan lisans koşullarını daha önce kabul etmemişse, Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi (i125-5589-06) geçerli olur.
 
 Program Adı (Program Numarası):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Aşağıdaki standart koşullar, Lisans Alan Tarafın Programı kullanımı için geçerlidir.
 
@@ -26,14 +26,6 @@ Değiştirilebilir Üçüncü Kişi Kodu
 
 IBM'in, varsa, NOTICES dosyasında üçüncü kişi kodunu "Değiştirilebilir Üçüncü Kişi Kodu" olarak tanımladığı ölçüde, IBM, Lisans Alan Tarafa 1) Değiştirilebilir Üçüncü Kişi Kodunu değiştirme ve 2) yalnızca Lisans Alan Tarafın anılan üçüncü kişi kodu üzerinde yaptığı değişikliklerinden kaynaklanan hataların ayıklanması amacıyla, Değiştirilebilir Üçüncü Kişi Kodu ile doğrudan arayüzü olan Program modülleri üzerinde tersine mühendislik gerçekleştirme yetkisi verir. Varsa, IBM'in hizmet ve destek yükümlülükleri yalnızca değişiklik yapılmamış Program için geçerlidir.
 
-Ayrı Olarak Lisanslanan Kod
-
-NON_IBM_LICENSE dosyasında listelenen bileşenlerin her biri, Lisans Alan Tarafa Programla birlikte gönderilen NON_IBM_LICENSE (IBM DIŞI LİSANS) dosyasında/dosyalarında yer alan geçerli üçüncü kişi sözleşmelerinin koşulları kapsamında lisanslanmış "Ayrı Olarak Lisanslanan Kod" olarak kabul edilir. Gelecekteki Program güncellemeleri veya düzeltmeleri, Ayrı Olarak Lisanslanan ek Kod içerebilir. Bu tür ek niteliğindeki Ayrı Olarak Lisanslanan Kod ve ilgili lisansları, Program güncellemesi veya düzeltmesi ile birlikte gönderilen ilgili NON_IBM_LICENSE (IBM DIŞI LİSANS) dosyasında belirtilir. 
-
-Not: Ayrı Olarak Lisanslanan Koda ilişkin olarak üçüncü kişi lisans sözleşmesinde, bu Sözleşmede veya Lisans Alan Tarafın IBM ile yapmış olabileceği diğer herhangi bir sözleşmede yer alan koşullara etki etmeksizin:
-(a) IBM, bunu Lisans Alan Tarafa HİÇBİR GARANTİ VERMEKSİZİN sağlar; ve MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA İLİŞKİN ZIMNİ GARANTİLER VE KOŞULLAR DAHİL, ANCAK TAMAMI BUNLARLA SINIRLI OLMAMAK ÜZERE AÇIK VE ZIMNİ TÜM GARANTİLERİ VE KOŞULLARI REDDEDER;
-(b) IBM, veri kaybı, tasarruf kaybı ve kâr kaybı da dahil, ancak tamamı bunlarla sınırlı olmamak üzere, herhangi bir doğrudan, dolaylı, arızi, özel, cezai tazminat gerektiren, ceza gerektiren veya sonuçta ortaya çıkan zararlardan sorumlu değildir.
-
 Gizlilik
 
 Lisans Alan Taraf, kullanıcı deneyiminin geliştirilmesine yardımcı olmak ve/veya http://www.ibm.com/privacy/ adresinden erişilebilecek IBM Çevrimiçi Gizlilik İlkesine (IBM Online Privacy Policy) uygun olarak kullanıcılarla etkileşimleri uyarlamak amacıyla tasarlanan kullanım istatistiklerini ve bilgilerini bir araya getirmek üzere kişisel bilgileri toplamak amacıyla IBM'in tanımlama bilgisi ve izleme teknolojilerini kullanabileceğini kabul etmiş sayılır.
@@ -47,9 +39,9 @@ Program, kaynak kodu biçiminde bileşenler ("Kaynak Bileşenler") ve/veya Örne
 Program, üçüncü kişi veri hizmetlerine, veritabanlarına, Web hizmetlerine, yazılımlarına ya da diğer üçüncü kişi içeriğine (tümü "Üçüncü Kişi İçeriği") erişim sağlar. Bu Üçüncü Kişi İçeriğine erişim, MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DAHİL OLMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEKSİZİN "OLDUĞU GİBİ" esasıyla sağlanır. Bu erişim, ilgili üçüncü kişiler tarafından yalnızca kendi kararlarına bağlı olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafın bu Üçüncü Kişi İçeriğine erişmesi veya bu içeriği kullanması için üçüncü kişilerle ayrı sözleşmeler yapması gerekebilir. IBM, ayrıca yapılacak bu tür sözleşmelerin bir tarafı değildir ve bu lisansın açık bir koşulu olarak Lisans Alan Taraf ayrıca yapılan bu tür sözleşmelerin koşullarına uygun davranmayı kabul eder.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi
 
