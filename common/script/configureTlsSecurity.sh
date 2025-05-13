@@ -66,17 +66,12 @@ then
 fi
 
 echo "Configure the TLS keystore password"
-if [ -f /tmp/shared-env.sh ]; then
-	echo "Sourcing /tmp/shared-env.sh"
-	source /tmp/shared-env.sh
-fi
 if [ -n "$KEYSTORE_PASSWORD" ] || [ -f /config/security/volume/keystore_password ]
 then
 	# Set env var if secrets are passed using mounted volumes
 	[ -f /config/security/volume/keystore_password ] && KEYSTORE_PASSWORD=$(cat /config/security/volume/keystore_password)
 	sed -i 's|__KEYSTORE_PASSWORD__|'$KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
-	DEFAULT_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
-	DEFAULT_TRUSTSTORE_PASSWORD=$KEYSTORE_PASSWORD
+        DEFAULT_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
 else
 	sed -i 's|__KEYSTORE_PASSWORD__|'$DEFAULT_KEYSTORE_PASSWORD'|g' /config/tlsSecurity.xml
 fi
@@ -86,10 +81,7 @@ then
 	# Set env var if secrets are passed using mounted volumes
 	[ -f /config/security/volume/truststore_password ] && TRUSTSTORE_PASSWORD=$(cat /config/security/volume/truststore_password)
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'$TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
-	DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
-	if [ -z "$KEYSTORE_PASSWORD" ]; then
-		DEFAULT_KEYSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
-	fi
+        DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
 else
 	sed -i 's|__TRUSTSTORE_PASSWORD__|'$DEFAULT_TRUSTSTORE_PASSWORD'|g' /config/tlsSecurity.xml
 fi
