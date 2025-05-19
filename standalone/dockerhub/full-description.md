@@ -29,7 +29,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	[latest release](https://docs.docker.com/engine/release-notes/#201021) (down to Engine 20.10)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v900-rule-designer)
+	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v95x-rule-designer)
 
 	You install Rule Designer into [Eclipse 2024-12 (4.34)](https://www.eclipse.org/downloads/packages/release/2024-12/r). Use at least [Eclipse Modeling Tool](https://www.eclipse.org/downloads/packages/release/2024-12/r/eclipse-modeling-tools) or [Eclipse IDE for Enterprise Java and Web Developers](https://www.eclipse.org/downloads/packages/release/2024-12/r/eclipse-ide-enterprise-java-and-web-developers).
     
