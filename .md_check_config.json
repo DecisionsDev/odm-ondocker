@@ -8,6 +8,10 @@
       {
         "pattern": "^/LICENSE",
         "replacement": "{{BASEURL}}/LICENSE"
+      },
+      {
+        "pattern": "https://www.ibm.com/docs",
+        "replacement": "https://ibmdocs-test.dcs.ibm.com/docs"
       }
     ],
     "timeout": "20s"
