@@ -43,10 +43,6 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 	This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.
 
-	- Shipment Pricing
-
-	This decision model service computes shipping prices based on data that includes distance, size, weight, and pick-up and drop-off points.
-
 	You can explore the decision artifacts, tests and simulations of these projects in the Business console.
 
 	- Loan-Server Web Application
