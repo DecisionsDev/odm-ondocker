@@ -49,9 +49,9 @@ To update your Docker images, follow these steps:
 
 ```bash
 export SOURCEREGISTRY=cp.icr.io/cp/cp4a/odm
-export SOURCETAG=9.0.0.0-amd64
+export SOURCETAG=9.5.0.0-amd64
 export TARGETREGISTRY=myrepo
-export TARGETTAG=9.0.0.0-amd64
+export TARGETTAG=9.5.0.0-amd64
 docker compose build
 ```
 
@@ -66,9 +66,9 @@ If you want to push the updated images to your target registry, follow these ste
 
 ```bash
 export SOURCEREGISTRY=cp.icr.io/cp/cp4a/odm
-export SOURCETAG=9.0.0.0-amd64
+export SOURCETAG=9.5.0.0-amd64
 export TARGETREGISTRY=myrepo
-export TARGETTAG=9.0.0.0-amd64
+export TARGETTAG=9.5.0.0-amd64
 docker compose push
 ```
 
