@@ -4,6 +4,7 @@ License annotations let you track usage based on the limits defined on the conta
 
 The IBM License Service needs to be installed on the Kubernetes cluster where the IBM ODM containers (predefined or custom) are deployed to track usage. Further information regarding the supported environments and installation instructions can be found on the [Installing License Service without Operator Lifecycle Manager documentation](https://www.ibm.com/docs/en/cloud-paks/foundational-services/4.12.0?topic=ilsfpcr-installing-license-service-without-operator-lifecycle-manager-olm).
 
+
 The IBM License Service processes pod annotations to track licenses. Therefore product teams must use specific metering annotations in the `spec.template.metadata.annotations` section of their Kubernetes pod template for custom ODM containers, similarly to what is provided for the predefined ODM containers
 
 Based on your deployment type, use the following annotations:
