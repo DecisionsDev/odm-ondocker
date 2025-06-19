@@ -11,7 +11,7 @@ IBM Operational Decision Manager on Docker
 This repository centralizes the material to deploy IBM Operational Decision Manager in Docker.
 It includes Docker files and Docker compose descriptors. Docker files are used to build images of ODM runtimes. And docker-compose descriptor can be used to group this build, push to your repository and run your topology from Development to production.
 
-[IBM ODM](https://www.ibm.com/docs/en/odm/9.0.0) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
+[IBM ODM](https://www.ibm.com/docs/en/odm/9.5.0) is a decisioning platform to automate your business policies. Business rules are used at the heart of the platform to implement decision logic on a business vocabulary and run it as web decision services.
 
 
 ![Flow](docs/images/Architecture.png "Architecture")
@@ -40,4 +40,4 @@ Refer to the [Add IBM License Metering annotations](README-license-annotations.m
 [Apache 2.0](LICENSE)
 
 # Notice
-© Copyright IBM Corporation 2024.
+© Copyright IBM Corporation 2025.

@@ -33,7 +33,8 @@ RUN apt-get update && apt-get install unzip
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
-chmod -R 777 $APPS
+chmod -R 777 $APPS 
+
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
@@ -51,7 +52,7 @@ RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
-COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa.keys /config/resources/security/ltpa.keys
+COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa*.keys /config/resources/security/
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources

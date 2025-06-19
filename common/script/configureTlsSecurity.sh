@@ -4,9 +4,9 @@ if [ -n "$ENABLE_FIPS" ]
 then
   if [[ $ENABLE_FIPS =~ "true" ]]
   then
-	echo "FIPS Enabled : Use appropriate configuring keystore for FIPS"
-	# Workaround on a FIPS implementation see 
+	echo "FIPS Enabled : update configuration for FIPS"
 	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
+	cp /config/ltpaFIPS.xml /config/ltpa.xml
   fi
 fi
 
@@ -94,6 +94,8 @@ then
         keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/security/mycert.p12 -srcstorepass $DEFAULT_KEYSTORE_PASSWORD -srcstoretype PKCS12 -destkeystore /config/security/keystore.jks -deststoretype JKS -deststorepass $DEFAULT_KEYSTORE_PASSWORD
         rm /config/security/truststore.jks
         keytool -J"-Xshareclasses:none" -import -v -trustcacerts -alias ODM -file /config/security/volume/tls.crt -keystore /config/security/truststore.jks -storepass $DEFAULT_TRUSTSTORE_PASSWORD -storetype jks -noprompt
+
+		sed -i 's|<ssl |<ssl serverKeyAlias="odm" |' /config/tlsSecurity.xml
 fi
 # End - Configuration for the TLS security
 
@@ -124,10 +126,10 @@ fi
 
 # This part allow to import a list of PEM certificate in the JVM
  echo "Importing trusted certificates $dir"
+TRUSTSTORE=/config/security/truststore.jks
 CERTDIR="/config/security/trusted-cert-volume/"
 if [ -d $CERTDIR ]; then
     cd $CERTDIR
-    TRUSTSTORE=/config/security/truststore.jks
     i=0
     for file in $(find . -name "*.crt")
     do

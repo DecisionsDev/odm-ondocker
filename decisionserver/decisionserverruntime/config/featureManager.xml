@@ -1,16 +1,19 @@
 <server>
   <!-- Enable features -->
 	<featureManager>
-		<feature>servlet-4.0</feature>
-		<feature>appSecurity-3.0</feature>
-		<feature>jsp-2.3</feature>
-		<feature>jdbc-4.1</feature>
+		<feature>servlet-6.0</feature>
+		<feature>appSecurity-5.0</feature>
+		<feature>pages-3.1</feature>
+		<feature>jdbc-4.3</feature>
+		<feature>concurrent-3.0</feature>
+		<feature>jndi-1.0</feature>
 		<feature>ldapRegistry-3.0</feature>
 		<feature>openidConnectClient-1.0</feature>	
         	<feature>transportSecurity-1.0</feature>
 		<feature>monitor-1.0</feature>
-                <feature>mpMetrics-3.0</feature>
+        <feature>mpMetrics-5.1</feature>
 		<feature>logstashCollector-1.0</feature>
-                <feature>audit-2.0</feature>
+        <feature>audit-2.0</feature>
 	</featureManager>
+
 </server>

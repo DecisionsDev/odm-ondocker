@@ -3,7 +3,7 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan (i125-5589-06) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
@@ -26,14 +26,6 @@ Kode Pihak Ketiga yang Dapat Dimodifikasi
 
 Apabila dalam file PEMBERITAHUAN, jika ada, IBM mengidentifikasi kode pihak ketiga sebagai "Kode Pihak Ketiga yang Dapat Dimodifikasi", IBM memberikan wewenang kepada Penerima Lisensi untuk 1) memodifikasi Kode Pihak Ketiga yang Dapat Dimodifikasi dan 2) merekayasa balik modul Program yang berinteraksi secara langsung dengan Kode Pihak Ketiga yang Dapat Dimodifikasi dengan ketentuan bahwa hal ini hanya untuk tujuan debugging modifikasi Penerima Lisensi untuk kode pihak ketiga tersebut. Kewajiban dukungan dan layanan IBM, jika ada, hanya berlaku untuk Program yang belum dimodifikasi.
 
-Kode Berlisensi Terpisah
-
-Masing-masing komponen yang tercantum dalam file NON_IBM_LICENSE dianggap sebagai "Kode Berlisensi Terpisah" yang dilisensikan kepada Pemegang Lisensi berdasarkan syarat-syarat perjanjian(-perjanjian) lisensi pihak ketiga yang berlaku, yang tercantum dalam file(-file) NON_IBM_LICENSE yang menyertai Program, dan bukan Perjanjian ini. Pembaruan atau perbaikan Program di masa mendatang dapat berisi Kode Berlisensi Terpisah tambahan. Kode Berlisensi Terpisah tambahan tersebut dan lisensi terkait tercantum dalam file NON_IBM_LICENSE yang berlaku, yang menyertai pembaruan atau perbaikan Program. 
-
-Catatan: Terlepas dari syarat-syarat apa pun dalam perjanjian lisensi pihak ketiga, Perjanjian, atau perjanjian apa pun lainnya yang dapat dimiliki oleh Pemegang Lisensi dengan IBM, sehubungan dengan Kode Berlisensi Terpisah:
-(a) IBM memberikan Kode Berlisensi Terpisah ini kepada Pemegang Lisensi TANPA JAMINAN DALAM BENTUK APA PUN DAN MENOLAK SETIAP DAN SEMUA JAMINAN DAN KETENTUAN SECARA TEGAS DAN TERSIRAT, TERMASUK, NAMUN TIDAK TERBATAS PADA, JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU;
-(b) IBM tidak bertanggung jawab atas setiap ganti rugi langsung, tak langsung, insidental, khusus, eksemplari, hukuman atau konsekuensial termasuk, tetapi tidak terbatas pada, kehilangan data, simpanan, dan laba.
-
 Privasi
 
 Pemegang Lisensi menyatakan dan setuju bahwa IBM dapat menggunakan cookie dan teknologi pelacakan untuk mengumpulkan informasi pribadi yang terkait dengan informasi dan statistik penggunaan produk yang dirancang untuk membantu meningkatkan pengalaman pengguna dan/atau untuk menyesuaikan interaksi dengan pengguna terkait dengan Kebijakan Privasi Online IBM, yang tersedia di http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Data dan Layanan Pihak Ketiga
 Program menyediakan akses ke layanan data, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "Konten Pihak Ketiga"). Akses ke Konten Pihak Ketiga ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan Konten Pihak Ketiga tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan
 

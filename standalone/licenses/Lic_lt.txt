@@ -3,7 +3,7 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis (i125-5589-06).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
 
@@ -26,14 +26,6 @@ Keičiamas trečiosios šalies kodas
 
 Jei PRANEŠIMŲ faile IBM trečiosios šalies kodą atpažįsta kaip modifikuojamą trečiosios šalies kodą, IBM leidžia Licenciatui 1) modifikuoti modifikuojamą trečiosios šalies kodą ir 2) nukopijuoti Programos modulius, kurie tiesiogiai siejasi su modifikuojamu trečiosios šalies kodu, su sąlyga, kad tai daroma tik Licenciato atliktų tokio trečiosios šalies kodo modifikacijų klaidų šalinimo tikslais. IBM aptarnavimo ir palaikymo įsipareigojimai, jei tokių yra, taikomi tik nemodifikuotai Programai.
 
-Atskirai licencijuojamas kodas
-
-Kiekvienas iš komponentų, išvardytų faile NON_IBM_LICENSE, laikomas „Atskirai licencijuojamu kodu“, kuris yra licencijuojamas Licenciatui remiantis taikomomis trečiosios šalies licencijos sutarties (-čių) sąlygomis, kurios išdėstytos kartu su Programa pateikiamame faile (-uose) NON_IBM_LICENSE, o ne šia Sutartimi. Būsimuose Programos naujinimuose arba taisymuose gali būti papildomų Atskirai licencijuotų kodų. Tokie papildomi Atskirai licencijuoti kodai ir susijusios licencijos išvardijami taikomame NON_IBM_LICENSE faile, kuris pateikiamas su Programos naujinimu arba taisymu. 
-
-Pastaba: nepaisant jokių trečiosios šalies sutarties, šios Sutarties ar kitos sutarties, kurią Licenciatas gali sudaryti su IBM, sąlygų, susijusių su Atskirai licencijuojamu kodu:
-(a) IBM pateikia jį Licenciatui NETAIKYDAMA JOKIŲ GARANTIJŲ IR PANEIGIA BET KOKIAS, VISAS APIBRĖŽTAS IR NUMANOMAS GARANTIJAS IR SĄLYGAS, ĮSKAITANT, BET NEAPSIRIBOJANT, NUOSAVYBĖS, NEPAŽEIDŽIAMUMO AR NESIKIŠIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS BEI SĄLYGAS;
-(b) IBM neatsako už jokius tiesioginius, netiesioginius, atsitiktinius, ypatingus, pavyzdinius, baudžiamuosius ar priežastinius nuostolius, įskaitant, bet neapsiribojant, prarastus duomenis, prarastas santaupas ir prarastą pelną.
-
 Privatumas
 
 Licenciatas pripažįsta ir sutinka, kad IBM gali naudoti slapukus ir sekimo technologijas rinkti asmeninei produktų naudojimo statistikos informacijai, informacijai, skirtai tobulinti vartotojų patirtį, ir/arba informacijai apie „to tailor“ naudojimą remdamasi IBM privatumo tinkle strategija, pateikta http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Trečiosios šalies duomenys ir paslaugos
 Programa suteikia prieigą prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „Trečiosios šalies turinys“). Prieiga prie šio Trečiosios šalies turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Klientui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio Trečiosios šalies turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis
 

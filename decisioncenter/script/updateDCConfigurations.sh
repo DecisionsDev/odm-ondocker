@@ -2,27 +2,7 @@
 
 echo "Update Decision Center configurations"
 
-FIND_SERVER_EXT_CLASS="$($SCRIPT/findServerExtClass.sh)"
-echo "FIND_SERVER_EXT_CLASS set to $FIND_SERVER_EXT_CLASS"
-
-FIND_OAUTH_SERVER_UTIL_CLASS="$($SCRIPT/findOAuthServerUtilClass.sh)"
-echo "FIND_OAUTH_SERVER_UTIL_CLASS set to $FIND_OAUTH_SERVER_UTIL_CLASS"
-
-if [ "$FIND_SERVER_EXT_CLASS" == "matches" ]
-then
-  echo "ServerExt class found then set DC_SERVER_CONFIG to /config/server-configurations.json"
-  DC_SERVER_CONFIG="/config/server-configurations.json"
-else
-  echo "ServerExt class not found. Use old way Decision Center server configuration"
-fi
-
-if [ "$FIND_OAUTH_SERVER_UTIL_CLASS" == "matches" ]
-then
-  echo "OAuthServerUtil class found replace /config/server-configurations.json by /config/new-server-configurations.json"
-  mv /config/new-server-configurations.json /config/server-configurations.json
-else
-  echo "OAuthServerUtil class not found"
-fi
+DC_SERVER_CONFIG="/config/server-configurations.json"
 
 if [ -n "$OPENID_CONFIG" ]
 then
@@ -120,7 +100,7 @@ then
   then
      echo "OAuth config : set provider to $OPENID_PROVIDER"
      sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' $DC_SERVER_CONFIG
-     sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' /config/new-decisioncenter-configuration.properties
+     sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' /config/decisioncenter-configuration.properties
 
      sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' /config/OdmOidcProviders.json
 
@@ -230,7 +210,7 @@ then
   else
      sed -i 's|"OPENID_PROVIDER"|'null'|g' $DC_SERVER_CONFIG
   fi
-  echo "OAuth config : set AUTH_SCHEME to oidc in /config/new-decisioncenter-configuration.properties"
+  echo "OAuth config : set AUTH_SCHEME to oidc in /config/decisioncenter-configuration.properties"
 
 
   if [ -n "$DC_REFERER_LIST" ]
@@ -252,10 +232,10 @@ then
   	done
   fi
 
-  echo "OAuth config : set DC_REFERER_LIST to $DC_REFERER_LIST in /config/new-decisioncenter-configuration.properties"
-  sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/new-decisioncenter-configuration.properties
+  echo "OAuth config : set DC_REFERER_LIST to $DC_REFERER_LIST in /config/decisioncenter-configuration.properties"
+  sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/decisioncenter-configuration.properties
   # Issue with DC_REFERER_LIST when built with a comma
-  sed -i 's/__COMMA__/,/g' /config/new-decisioncenter-configuration.properties
+  sed -i 's/__COMMA__/,/g' /config/decisioncenter-configuration.properties
 
   echo "replace rtsAdministators/rtsConfigManagers/rtsInstallers group in /config/application.xml"
   sed -i $'/<group name="rtsAdministrators"/{e cat /config/authOidc/rtsAdministrators.xml\n}' /config/application.xml
@@ -280,16 +260,16 @@ else
   if [ -n "$DC_REFERER_LIST" ]
   then
         echo "BASIC_AUTH config : provided DC_REFERER_LIST"
-	sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/new-decisioncenter-configuration.properties
+	sed -i 's|DC_REFERER_LIST|'$DC_REFERER_LIST'|g' /config/decisioncenter-configuration.properties
   else
-  	echo "BASIC_AUTH config : remove entry with DC_REFERER_LIST in /config/new-decisioncenter-configuration.properties"
-  	sed -i '/DC_REFERER_LIST/d' /config/new-decisioncenter-configuration.properties
+  	echo "BASIC_AUTH config : remove entry with DC_REFERER_LIST in /config/decisioncenter-configuration.properties"
+  	sed -i '/DC_REFERER_LIST/d' /config/decisioncenter-configuration.properties
   fi
 
-  echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/new-decisioncenter-configuration.properties"
-  sed -i '/scheme=oidc/d' /config/new-decisioncenter-configuration.properties
-  echo "BASIC_AUTH config : remove oidc provider entry in /config/new-decisioncenter-configuration.properties"
-  sed -i '/OdmOidcProviders/d' /config/new-decisioncenter-configuration.properties
+  echo "BASIC_AUTH config : remove entry SCHEME with oidc in /config/decisioncenter-configuration.properties"
+  sed -i '/scheme=oidc/d' /config/decisioncenter-configuration.properties
+  echo "BASIC_AUTH config : remove oidc provider entry in /config/decisioncenter-configuration.properties"
+  sed -i '/OdmOidcProviders/d' /config/decisioncenter-configuration.properties
   echo "BASIC_AUTH config : remove authFilters from server.xml"
   sed -i '/authFilters/d' /config/server.xml
   echo "BASIC_AUTH config : remove openIdWebSecurity from server.xml"
@@ -324,14 +304,8 @@ else
 	DC_SERVER_CONFIG="/config/apps/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties"
 fi
 
-if [ "$DC_SERVER_CONFIG" == "/config/server-configurations.json" ]
-then
-  echo "Update decisioncenter-configuration.properties with /config/server-configurations.json"
-	cp /config/new-decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-else
-  echo "Use old decisioncenter-configuration.properties definition"
-	cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
-fi
+echo "Update decisioncenter-configuration.properties with /config/server-configurations.json"
+cp /config/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/classes/config/decisioncenter-configuration.properties
 
 if [ -n "$DECISIONSERVERCONSOLE_NAME" ]
 then

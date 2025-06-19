@@ -3,7 +3,7 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih določb in pogojev licenčne informacije, ki veljajo poleg pogojev licence za program, s katerimi naročnik in IBM predhodno soglašata. Če naročnik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenčna pogodba za programe brez garancije (i125-5589-06).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
@@ -26,14 +26,6 @@ Spremenljiva koda drugega ponudnika
 
 Če v datoteki OBVESTILA IBM identificira kodo drugega ponudnika kot »spremenljivo kodo drugega ponudnika«, IBM pooblasti imetnika licence, da 1) spremeni spremenljivo kodo drugega ponudnika in 2) izvede obratni inženiring programskih modulov, ki se neposredno povezujejo s spremenljivo kodo drugega ponudnika, pod pogojem, da je samo za namen odpravljanja napak pri spremembah imetnika licence takšne kode drugega ponudnika. IBM-ove obveznosti glede storitve in podpore, če obstajajo, veljajo samo za nespremenjen program.
 
-Ločeno licencirana koda
-
-Vsaka komponenta, navedena v datoteki NON_IBM_LICENSE, šteje za "ločeno licencirano kodo", ki je licencirana imetniku licence na podlagi pogojev ustreznih licenčnih pogodb drugih ponudnikov, določenih v datotekah NON_IBM_LICENSE, ki so priložene programu in ne tej pogodbi. Nadaljnje posodobitve ali popravki programa lahko vsebujejo dodatno ločeno licencirano kodo. Takšna dodatna, ločeno licencirana koda in povezane licence so navedeni v ustrezni datoteki NON_IBM_LICENSE, priloženi posodobitvi ali popravku programa. 
-
-Opomba: ne glede na katerekoli pogoje v licenčni pogodbi drugega ponudnika velja za to pogodbo ali katerokoli drugo pogodbo, ki jo sklene imetnik licence z IBM-om glede ločeno licencirane kode, naslednje:
-(a) IBM jo zagotovi imetniku licence BREZ VSAKRŠNIH JAMSTEV IN ZAVRAČA KATERAKOLI IN VSA IZRECNA TER ZAKONSKA JAMSTVA IN POGOJE, KAR MED DRUGIM VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE;
-(b) IBM ni odgovoren za nobeno neposredno, posredno, naključno, posebno, eksemplarično, kazensko ali posledično škodo, kar vključuje tudi izgubo podatkov, prihrankov in dobičkov, vendar ni omejeno nanje.
-
 Zasebnost
 
 Imetnik licence soglaša, da lahko IBM uporablja tehnologije piškotkov in sledenja za zbiranje osebnih podatkov pri zbiranju statistik in informacij o uporabi podatkov, ki so ustvarjene za izboljšanje uporabniške izkušnje in/ali za oblikovanje interakcij z uporabniki v skladu z IBM-vim spletnim pravilnikom o zasebnosti, ki je na voljo na spletnem mestu http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Podatki in storitve drugih ponudnikov
 Program omogoča dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAKŠEN, KOT JE", BREZ JAMSTEV KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TRŽNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepuščeno izključno njeni presoji. Imetnik licence bo morda moral skleniti ločene pogodbe z drugimi ponudniki, ki mu bodo omogočale dostop do takšne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakršnekoli ločene pogodbe in imetnik licence kot izrecni pogoj te licence soglaša, da bo ravnal v skladu z določbami takšnih ločenih pogodb.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Mednarodna licenčna pogodba za programe brez garancije
 

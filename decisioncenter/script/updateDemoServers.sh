@@ -1,6 +1,19 @@
 #!/bin/bash
 
-sleep 60
+if [ -n "$ODM_CONTEXT_ROOT" ];
+then
+  DC_URL=http://localhost:9060"$ODM_CONTEXT_ROOT"/decisioncenter/healthCheck
+else
+  DC_URL=http://localhost:9060/decisioncenter/healthCheck
+fi
+
+echo "check $DC_URL is up and running"
+retry=0
+while [[ ("$(curl "$DC_URL" -w "%{http_code}" -s -o /dev/null)" != 200) && ( $retry -lt 10) ]];do
+        echo "retry $DC_URL"
+        sleep 10
+        retry=$((retry + 1))
+done
 
 PROTOCOL=http
 

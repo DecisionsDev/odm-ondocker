@@ -3,7 +3,7 @@ INFORMAÇÕES DA LICENÇA
 Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições da seguinte Informação sobre a Licença a seguir, além dos termos de licença do Programa acordados anteriormente pelo Cliente e pela IBM. Se o Cliente não tiver acordado anteriormente com os termos de licença em vigor para o Programa, o Contrato Internacional de Licença para Programas Sem Garantia (i125-5589-06) será aplicável.
 
 Nome do Programa (Número do Programa):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Os termos padrão a seguir se aplicam o uso do Programa pelo Licenciado.
 
@@ -26,14 +26,6 @@ Código Modificável de Terceiros
 
 Modificável de Terceiros", a IBM autorizará o Licenciado a 1) modificar o Código Modificável de Terceiros e 2) fazer engenharia reversa dos módulos do Programa que interagem diretamente com o Código Modificável de Terceiros, contanto que seja apenas com o propósito de depurar as modificações do Licenciado para tal código de terceiros. As obrigações de serviço e suporte da IBM, se houver, se aplicarão apenas ao Programa não modificado.
 
-Código licenciado separadamente
-
-Todos os componentes listados no arquivo NON_IBM_LICENSE são considerados "Código Licenciado Separadamente" fornecido ao Licenciado sob os termos dos contratos/acordos de licença de terceiros aplicáveis definidos nos arquivos NON_IBM_LICENSE que acompanham o Programa, e não este Contrato. Futuras atualizações/actualizações ou correções/correcções do Programa podem conter Código Licenciado Separadamente adicional. Esse Código Licenciado Separadamente adicional e as licenças relacionadas estão listadas no arquivo NON_IBM_LICENSE aplicável que acompanha a atualização ou a correção do Programa.
-
-Nota: não obstante qualquer um dos termos do contrato/acordo de licença de terceiros, o Contrato/Acordo ou qualquer outro contrato que o Licenciado possa ter com a IBM relacionado ao Código Licenciado Separadamente:
-(a) a IBM o fornece ao Licenciado SEM GARANTIAS DE QUALQUER TIPO E RENUNCIA TODA E QUALQUER GARANTIA EXPRESSA E IMPLÍCITA E CONDIÇÕES QUE INCLUAM, ENTRE OUTRAS, GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM DETERMINADO PROPÓSITO/FIM;
-(b) a IBM não é responsável por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares, punitivos ou consequentes, incluindo, entre outros, dados perdidos, economias perdidas e lucros cessantes.
-
 Privacidade
 
 O Licenciado reconhece e concorda que a IBM pode usar/utilizar cookie e tecnologias de rastreamento para coletar as informações pessoais para reunir as estatísticas de uso/utilização do produto e as informações designadas para ajudar a melhorar a experiência do usuário/utilizador e/ou para customizar as interações/interacções com os usuários/utilizadores de acordo com a Política de Privacidade Online da IBM, disponível em http://www.ibm.com/privacy/.
@@ -47,9 +39,9 @@ Dados e serviços de terceiros
 O Programa fornece acesso a serviços de dados, bancos de dados, serviços da web, softwares ou outros conteúdos de terceiros (todos, "Conteúdo de Terceiros"). O acesso a este Conteúdo de Terceiros é fornecido "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM DETERMINADO PROPÓSITO/FIM. O acesso pode ser rescindido/posto termo pelos terceiros interessados, a seu exclusivo critério e a qualquer momento. Pode ser necessário que o Licenciado celebre contratos/acordos separados com terceiros para o acesso ou o/a uso/utilização desse Conteúdo de Terceiros. A IBM não é uma parte em tais contratos/acordos separados e, como uma condição expressa desta licença, o Licenciado concorda em cumprir com os termos desses contratos/acordos separados.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Contrato Internacional de Licença para Programas Sem Garantia
 

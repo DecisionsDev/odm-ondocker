@@ -1,9 +1,7 @@
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-         version="3.1">
-
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    metadata-complete="false" version="6.0" 
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
     <servlet>
         <servlet-name>RedirectServlet</servlet-name>
         <servlet-class>com.ibm.odm.ondocker.RedirectServlet</servlet-class>
@@ -16,7 +14,7 @@
 
 
     <error-page>
-        <exception-type>javax.servlet.ServletException</exception-type>
+        <exception-type>jakarta.servlet.ServletException</exception-type>
         <location>/AppExceptionHandler</location>
     </error-page>
 

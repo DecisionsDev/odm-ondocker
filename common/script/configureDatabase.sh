@@ -3,36 +3,38 @@
 defaultDatabase=$1
 
 # Begin - Configuration for the database
-if [ -n "$DB_DRIVER_URL" ]
-then
+if [ -n "$DB_DRIVER_URL" ]; then
+
 	echo "Use DB_DRIVER_URL: $DB_DRIVER_URL"
+
+	cd /config/resources
 
 	# Download drivers from each urls
 	IFS=','
 	read -a driver_urls <<< "$DB_DRIVER_URL"
-	for url in "${driver_urls[@]}";
-	do
-	  (cd /config/resources && curl -O -L -k -s $url)
+	for url in "${driver_urls[@]}"; do
+		curl -O -L -k -s $url
 	done
 
-	# Unzip drivers if necessary
-	if [ -f /config/resources/*.zip ]; then
-		(cd /config/resources && unzip -q *.zip)
-                rm /config/resources/*.zip
-	fi
+	shopt -s nullglob
 
-	# Untar drivers if necessary (.tar, .tar.gz, .tar.bz2, .tar.xz are supported)
-	if [ -f /config/resources/*.tar* ]; then
-		for arch in "/config/resources"/*.tar*
-		do
-		  (cd /config/resources && tar -xaf $arch)
-		  rm /config/resources/$arch
-		done
-	fi
+	# Unzip drivers if necessary
+	for arch in *.zip; do
+		unzip -q ${arch}
+		rm ${arch}
+	done
+
+	# Untar drivers if necessary (.tgz, .tar, .tar.gz, .tar.bz2, .tar.xz are supported)
+	for arch in *.tar* *.tgz; do
+		tar -xaf ${arch}
+		rm ${arch}
+	done
+
+	cd -
 
 	# Replace default driver files
-	for custom_driver_path in "/config/resources/jdbc"/*
-	do
+	for custom_driver_path in "/config/resources/jdbc"/*; do
+
 		case $custom_driver_path in
 			*postgres* )
 					rm /config/resources/postgres*
@@ -51,7 +53,9 @@ then
 					mv /config/resources/jdbc/oracle/* /config/resources
 					;;
 		esac
+
 	done
+
 fi
 
 if [ -n "$DB_TYPE" ]

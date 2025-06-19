@@ -29,7 +29,7 @@ The script performs the following scenario:
   - Decision Server Runtime (DSR) components
 - Download and extract the zip file containing the script and resources.
 - Set the required environment variables manually or use a `.env` file.
-  Refer to [Environment Variables](#Environment-Variables) for more information.
+  Refer to [Environment Variables](#environment-variables) for more information.
 
 ## Usage
 

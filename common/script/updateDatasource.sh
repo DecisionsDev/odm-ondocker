@@ -122,7 +122,7 @@ then
                 if [ -n "$DB_SSL_TRUSTSTORE_PASSWORD" ]
 		then
 			echo "configure DB2 SSL with DB_SSL_TRUSTSTORE_PASSWORD"
-			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.3" sslTrustStoreLocation="/config/customdatasource/truststore.p12" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+			sed -i 's|sslConnection="false"|sslConnection="true" sslClientHostnameValidation="OFF" sslVersion="TLSv1.3" sslTrustStoreLocation="/config/customdatasource/truststore.p12" sslTrustStorePassword="'$DB_SSL_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
 		else
 			echo "configure DB2 SSL with DEFAULT_TRUSTSTORE_PASSWORD"
 			DEFAULT_TRUSTSTORE_PASSWORD=changeme
@@ -130,7 +130,7 @@ then
 			then
 				DEFAULT_TRUSTSTORE_PASSWORD=changeit
 			fi
-			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.3" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
+			sed -i 's|sslConnection="false"|sslConnection="true" sslClientHostnameValidation="OFF" sslVersion="TLSv1.3" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
                         if [ -f /config/customdatasource/tls.crt ]
                         then
                                 echo "Import DB2 certificate"

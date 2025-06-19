@@ -3,7 +3,7 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommen folgende Bedingungen zur Anwendung Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (i125-5589-06).
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V9.0 (5725-B69)
+IBM Operational Decision Manager for Developers V9.5 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
 
@@ -26,14 +26,6 @@ Modifizierbarer Code einer Drittpartei
 
 Soweit IBM in der NOTICES-Datei den Code einer Drittpartei als "Modifizierbaren Code einer Drittpartei" bezeichnet, ist der Lizenznehmer berechtigt, 1) den Modifizierbaren Code einer Drittpartei zu modifizieren und 2) die Programmmodule, die direkt mit dem Modifizierbaren Code einer Drittpartei verbunden sind, zurückzuentwickeln, vorausgesetzt, dies geschieht ausschließlich, um die Modifikationen des Lizenznehmers an einem solchen Code einer Drittpartei zu debuggen. Die Service- und Unterstützungsverpflichtungen von IBM gelten, sofern vorhanden, nur für das unmodifizierte Programm.
 
-Separat lizenzierter Code
-
-Jede in der NON_IBM_LICENSE-Datei aufgeführte Komponente gilt als "Separat lizenzierter Code", der gemäß den Bedingungen der maßgeblichen Drittanbieter-Lizenzvereinbarung und nicht gemäß dieser Vereinbarung für den Lizenznehmer lizenziert wird. Die Drittanbieter-Lizenzvereinbarungen sind in den NON_IBM_LICENSE-Dateien enthalten, die dem Programm beigepackt sind. Zukünftige Programmupdates oder Fixes können weiteren separat lizenzierten Code enthalten, der zusammen mit den zugehörigen Lizenzen in der jeweiligen NON_IBM_LICENSE-Datei aufgeführt ist, die dem Programmupdate oder Fix beigepackt ist.
-
-Hinweis: Ungeachtet der Bedingungen in der Drittanbieter-Lizenzvereinbarung, der Vereinbarung oder einer anderen Vereinbarung zwischen dem Lizenznehmer und IBM gilt Folgendes:
-(a) IBM stellt den separat lizenzierten Code ohne jede Gewährleistung zur Verfügung und übernimmt weder ausdrücklich noch stillschweigend eine Gewährleistung für den separat lizenzierten Code; dies gilt insbesondere in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
-(b) IBM haftet nicht für unmittelbare und mittelbare Schäden oder Folgeschäden, wie beispielsweise Datenverlust, entgangene Einsparungen und entgangenen Gewinn hinsichtlich des separat lizenzierten Codes.
-
 Datenschutz
 
 Der Lizenznehmer bestätigt und erklärt sich damit einverstanden, dass IBM beim Zusammenstellen von Produktverwendungsstatistiken und -informationen Cookie- und Tracking-Technologien zur Erfassung personenbezogener Informationen verwenden kann, die dazu vorgesehen sind, das Benutzererlebnis zu verbessern und/oder die Interaktionen mit Benutzern in Übereinstimmung mit der IBM Datenschutzrichtlinie anzupassen, die unter http://www.ibm.com/privacy/ zu finden ist.
@@ -47,9 +39,9 @@ Daten und Services von Drittanbietern
 Das Programm ermöglicht den Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (insgesamt "Inhalte von Drittanbietern" genannt). Der Zugriff auf diese Inhalte von Drittanbietern wird im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff auf die Inhalte von Drittanbietern und deren Nutzung abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
 
-L/N: L-RBPW-WQTC4A
-D/N: L-RBPW-WQTC4A
-P/N: L-RBPW-WQTC4A
+L/N: L-XFJS-ENV5LE
+D/N: L-XFJS-ENV5LE
+P/N: L-XFJS-ENV5LE
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung
 

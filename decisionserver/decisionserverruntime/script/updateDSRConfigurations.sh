@@ -100,7 +100,7 @@ fi
 
 function updateXuPropertyInRaXml() {
 	result="$(xmllint --shell ra.xml 2>&1 >/dev/null << EOF
-setns x=http://java.sun.com/xml/ns/j2ee
+setns x=https://jakarta.ee/xml/ns/jakartaee
 cd x:connector/x:resourceadapter/x:outbound-resourceadapter/x:connection-definition/x:config-property[x:config-property-name='$1']/x:config-property-value
 set $value
 save
@@ -168,7 +168,7 @@ function updateContextParamPropertyInWebXml() {
   if grep -q "<param-name>$1</param-name>" $APPS/DecisionService.war/WEB-INF/web.xml; then
     echo "Setting parameter $1 to $2 in the web.xml file"
 	  result="$(xmllint --shell $APPS/DecisionService.war/WEB-INF/web.xml 2>&1 >/dev/null << EOF
-setns x=http://java.sun.com/xml/ns/j2ee
+setns x=https://jakarta.ee/xml/ns/jakartaee
 cd x:web-app/x:context-param[x:param-name='$1']/x:param-value
 set $2
 save
