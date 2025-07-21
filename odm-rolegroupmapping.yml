@@ -96,6 +96,8 @@ services:
         - PACKAGELIST=$PACKAGELIST
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
+      - DSR_ROLE_GROUP_MAPPING=true
+      # - KEYSTORE_PASSWORD=changeit
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -105,9 +107,6 @@ services:
     ports:
     - 9090:9080
     - 9943:9443
-    environment:
-    - DSR_ROLE_GROUP_MAPPING=true
-#    - KEYSTORE_PASSWORD=changeit
     volumes:
     - ${PWD}/rolegroupmapping/webSecurity.xml:/config/auth/webSecurity.xml
 #    - ${PWD}/rolegroupmapping/keystore.jks:/config/security/keystore.jks
