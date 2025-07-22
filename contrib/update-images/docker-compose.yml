@@ -1,4 +1,3 @@
-version: '3'
 services:
 
   dbserver:
@@ -25,7 +24,7 @@ services:
       context: ./
       dockerfile: ./Dockerfile
       args:
-        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionrunner:$SOURCETAG 
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionrunner:$SOURCETAG
         - USERID=1001
 
   odm-decisionserverruntime:
@@ -34,7 +33,7 @@ services:
       context: ./
       dockerfile: ./Dockerfile
       args:
-        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverruntime:$SOURCETAG 
+        - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisionserverruntime:$SOURCETAG
         - USERID=1001
 
   odm-decisioncenter:
@@ -45,4 +44,3 @@ services:
       args:
         - SOURCEIMAGE=$SOURCEREGISTRY/odm-decisioncenter:$SOURCETAG
         - USERID=1001
-   
