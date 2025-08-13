@@ -9,7 +9,7 @@ $SCRIPT/enableMetering.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then
 	if [ "$SAMPLE" = "true" ] ; then
-		engineJarFile=$(ls ${APPS}/*/WEB-INF/lib/*engine*.jar | sed -n 1p)
+		engineJarFile=$(ls ${APPS}/*/WEB-INF/lib/jrules*engine*.jar | sed -n 1p)
 		odmVersion=$(java -cp ${engineJarFile} ilog.rules.tools.IlrVersion | sed -ne "s/Decision Server \(.*\)/\1/p")
 		[ -d /config/dbdata ] || mkdir -p /config/dbdata
 		cp -R /upload/* /config/dbdata/
