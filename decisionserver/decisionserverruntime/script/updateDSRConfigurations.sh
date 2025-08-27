@@ -164,7 +164,7 @@ else
         sed -i 's|RELEASE_NAME|'$HOSTNAME'|g' /config/httpSession.xml
 fi
 
-function updateContextParamPropertyInWebXml() {
+function updateContextInitParamInWebXml() {
   action="$1"        # update | remove
   paramName="$2"     # <param-name>
   paramValue="$3"    # <param-value>, required for update
@@ -263,7 +263,7 @@ EOF
       
     *)
       echo "Invalid action: $action"
-      echo "Usage: updateContextParamPropertyInWebXml <update|remove> <paramName> [paramValue] <context-param|init-param>"
+      echo "Usage: updateContextInitParamInWebXml <update|remove> <paramName> [paramValue] <context-param|init-param>"
       return 1
       ;;
   esac
@@ -289,10 +289,11 @@ function applyWebXmlChangesFromFile() {
       continue
     fi
 
-    # Remove case: -paramName
-    if [[ "$line" =~ ^-(.+)$ ]]; then
+    # Remove case: -paramName or -paramName=paramValue
+    if [[ "$line" =~ ^-([[:alnum:]._-]+)([=].*)? ]]; then
+      paramName="${BASH_REMATCH[1]}"
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      updateContextParamPropertyInWebXml remove "${BASH_REMATCH[1]}" "" "$scope"
+      updateContextInitParamInWebXml remove "$paramName" "" "$scope"
 
     # Add/Remove case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
@@ -305,7 +306,7 @@ function applyWebXmlChangesFromFile() {
         if [[ -n "$paramValue" ]]; then
             paramValue=$(echo "$paramValue" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g;')
         fi
-        updateContextParamPropertyInWebXml update "$paramName" "$paramValue" "$scope"
+        updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope"
       else
         echo "No action as the scope: $scope should be either context-param or init-param. Check your configuration file."
       fi
