@@ -304,7 +304,9 @@ function applyWebXmlChangesFromFile() {
         paramValue="${paramValue//\\#/\\#}"  # allow escaped "#"
         # Escape special characters & < > " ' in parameter value
         if [[ -n "$paramValue" ]]; then
-            paramValue=$(echo "$paramValue" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g;')
+          paramValue="${paramValue//&/&amp;}"
+          paramValue="${paramValue//</&lt;}"
+          paramValue="${paramValue//>/&gt;}"
         fi
         updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope"
       else
