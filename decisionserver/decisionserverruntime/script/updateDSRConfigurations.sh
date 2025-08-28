@@ -176,11 +176,11 @@ function updateContextInitParamInWebXml() {
       if [[ "$scope" == "context-param" ]]; then
         searchContextParam=$(xmllint --xpath "boolean(//*[local-name()='web-app']/*[local-name()='context-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
         if [[ $searchContextParam == "true" ]]; then
-          currentContextParamValue=$(xmllint --xpath "string(//*[local-name()='context-param'][*[local-name()='param-name' and text()='$paramName']]/*[local-name()='param-value'])" $webXml 2>/dev/null)
+          currentContextParamValue=$(xmllint --xpath "string(//*[local-name()='context-param'][*[local-name()='param-name' and text()='$paramName']]/*[local-name()='param-value'])" "$webXml" 2>/dev/null)
           if [[ "$currentContextParamValue" == "$paramValue" ]]; then
             echo "$scope '$paramName' already has value '$paramValue'. No update needed."
           else          
-            result="$(xmllint --shell $webXml 2>&1 >/dev/null << EOF 
+            result="$(xmllint --shell "$webXml" 2>&1 >/dev/null << EOF 
 setns x=https://jakarta.ee/xml/ns/jakartaee
 cd x:web-app/x:context-param[x:param-name='$paramName']/x:param-value
 set $paramValue
@@ -200,7 +200,7 @@ EOF
 \t\t<param-name>'$paramName'</param-name>\
 \t\t<param-value>'$paramValue'</param-value>\
 \t</context-param>
-' $webXml
+' "$webXml"
         fi
       elif [ "$scope" = "init-param" ]; then
         searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter']/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
@@ -239,11 +239,7 @@ EOF
         searchContextParam=$(xmllint --xpath "boolean(//*[local-name()='web-app']/*[local-name()='context-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
         if [[ $searchContextParam == "true" ]]; then
           echo "Removing $scope: $paramName"
-          sed -i "/<context-param>/{:a;N;/<\/context-param>/!ba;/<param-name>$paramName<\/param-name>/d}" $webXml
-          
-          #xmlstarlet ed -P -L \
-          #  -N x="https://jakarta.ee/xml/ns/jakartaee" \
-          #  -d "//x:web-app/x:context-param[x:param-name='$paramName']" $webXml
+          sed -i "/<context-param>/{:a;N;/<\/context-param>/!ba;/<param-name>$paramName<\/param-name>/d}" "$webXml"
         else
           echo "'$paramName' not found in $scope. No removal needed."
         fi
@@ -251,10 +247,7 @@ EOF
         searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter']/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
         if [[ $searchInitParam == "true" ]]; then
           echo "Removing $scope: $paramName"
-          sed -i "/<init-param>/{:a;N;/<\/init-param>/!ba;/<param-name>$paramName<\/param-name>/d}" $webXml
-          #xmlstarlet ed -P -L \
-          #  -N x="https://jakarta.ee/xml/ns/jakartaee" \
-          #  -d "//x:web-app/x:filter/x:init-param[x:param-name='$paramName']" $webXml
+          sed -i "/<init-param>/{:a;N;/<\/init-param>/!ba;/<param-name>$paramName<\/param-name>/d}" "$webXml"
         else
           echo "'$paramName' not found in $scope. No removal needed."
         fi
@@ -301,9 +294,12 @@ function applyWebXmlChangesFromFile() {
       if [[ "$scope" == "context-param" || "$scope" == "init-param" ]]; then
         paramName="${BASH_REMATCH[1]}"
         paramValue="${BASH_REMATCH[2]}"
-        paramValue="${paramValue//\\#/\\#}"  # allow escaped "#"
-        # Escape special characters & < > " ' in parameter value
+
         if [[ -n "$paramValue" ]]; then
+          # Allow escaped "#"
+          paramValue="${paramValue//\\#/\\#}"  
+
+          # Escape special characters & < > in parameter value
           paramValue="${paramValue//&/&amp;}"
           paramValue="${paramValue//</&lt;}"
           paramValue="${paramValue//>/&gt;}"
