@@ -288,7 +288,7 @@ function applyWebXmlChangesFromFile() {
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
       updateContextInitParamInWebXml remove "$paramName" "" "$scope"
 
-    # Add/Remove case: paramName=paramValue
+    # Add/Update case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
       if [[ "$scope" == "context-param" || "$scope" == "init-param" ]]; then
@@ -303,8 +303,10 @@ function applyWebXmlChangesFromFile() {
           paramValue="${paramValue//&/&amp;}"
           paramValue="${paramValue//</&lt;}"
           paramValue="${paramValue//>/&gt;}"
+          updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope"
+        else
+          echo "The param value of $paramName is null. No action taken. Check your configuration file."
         fi
-        updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope"
       else
         echo "No action as the scope: $scope should be either context-param or init-param. Check your configuration file."
       fi
