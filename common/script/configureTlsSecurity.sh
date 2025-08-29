@@ -202,3 +202,9 @@ then
 	for cert in $(certutil -L -d /etc/pki/nssdb | tail -n +5 | awk '{print $1}'); do certutil -M -n ${cert} -t CT,CT,CT -d /etc/pki/nssdb; done
   fi
 fi
+
+if [[ $ENABLE_MTLS =~ "true" ]]
+then
+  echo "MTLS Enabled : update ssl configuration"
+  sed -i 's|clientAuthentication="false"|clientAuthentication="true"|g' /config/tlsSecurity.xml
+fi
