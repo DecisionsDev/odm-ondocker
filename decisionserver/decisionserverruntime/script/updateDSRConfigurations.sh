@@ -217,7 +217,7 @@ save
 EOF
 )"
           	if [[ "$result" != *"error"* ]]; then
-		          echo "Updated $scope '$paramName' from '$currentContextParamValue' to '$paramValue' in the web.xml file"
+		          echo "Updated $scope '$paramName' from '$currentInitParamValue' to '$paramValue' in the web.xml file"
 	          else
 		          echo "Unable to set property '$paramName' in the web.xml file"
 	          fi
