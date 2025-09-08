@@ -169,7 +169,7 @@ function updateContextInitParamInWebXml() {
   paramName="$2"     # <param-name>
   paramValue="$3"    # <param-value>, required for update
   scope="$4"         # context-param | init-param
-  webXml= "$APPS/DecisionService.war/WEB-INF/web.xml" # web.xml to be updated
+  webXml="$APPS/DecisionService.war/WEB-INF/web.xml" # web.xml to be updated
 
   case "$action" in
     update)
