@@ -169,7 +169,7 @@ function updateContextInitParamInWebXml() {
   paramName="$2"     # <param-name>
   paramValue="$3"    # <param-value>, required for update
   scope="$4"         # context-param | init-param
-  webXml="$APPS/DecisionService.war/WEB-INF/web.xml" # web.xml to be updated
+  webXml="$APPS/$5"  # web.xml to be updated. Can be from res.war or DecisionService.war
 
   case "$action" in
     update)
@@ -263,7 +263,8 @@ EOF
 }
 
 function applyWebXmlChangesFromFile() {
-  propertyFile="$1"
+  webXmlFile="$1"
+  propertyFile="$2"
   scope=""  # current section: context-param or init-param
 
   while IFS= read -r line || [[ -n "$line" ]]; do
@@ -286,7 +287,7 @@ function applyWebXmlChangesFromFile() {
     if [[ "$line" =~ ^-([[:alnum:]._-]+)([=].*)? ]]; then
       paramName="${BASH_REMATCH[1]}"
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      updateContextInitParamInWebXml remove "$paramName" "" "$scope"
+      updateContextInitParamInWebXml remove "$paramName" "" "$scope" "$webXmlFile"
 
     # Add/Update case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
@@ -296,14 +297,20 @@ function applyWebXmlChangesFromFile() {
         paramValue="${BASH_REMATCH[2]}"
 
         if [[ -n "$paramValue" ]]; then
-          # Allow escaped "#"
-          paramValue="${paramValue//\\#/\\#}"  
+          # First, replace escaped # with a temporary placeholder
+          paramValue="${paramValue//\\#/ESCAPED_HASH_PLACEHOLDER}"
+            
+          # Strip inline comments (# ...)
+          paramValue="$(echo "$paramValue" | sed 's/[[:space:]]*#.*$//')"
+            
+          # Finally, restore escaped # characters
+          paramValue="${paramValue//ESCAPED_HASH_PLACEHOLDER/#}"
 
           # Escape special characters & < > in parameter value
           paramValue="${paramValue//&/&amp;}"
           paramValue="${paramValue//</&lt;}"
           paramValue="${paramValue//>/&gt;}"
-          updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope"
+          updateContextInitParamInWebXml update "$paramName" "$paramValue" "$scope" "$webXmlFile"
         else
           echo "The param value of $paramName is null. No action taken. Check your configuration file."
         fi
@@ -316,9 +323,11 @@ function applyWebXmlChangesFromFile() {
   done < "$propertyFile"
 }
 
-if [ -f "/config/web-configuration.properties" ]; then
-	echo "Configure context-param or init-param properties in the web.xml"
-  applyWebXmlChangesFromFile "/config/web-configuration.properties"
+webXmlToConfigure="$1"
+configFile="$2"
+if [ -f "$configFile" ]; then
+	echo "Configure context-param or init-param properties based on $configFile to $webXmlToConfigure"
+  applyWebXmlChangesFromFile "$webXmlToConfigure" "$configFile"
 else
   echo "Web-configuration.properties file not provided. No changes to web.xml file."
 fi
