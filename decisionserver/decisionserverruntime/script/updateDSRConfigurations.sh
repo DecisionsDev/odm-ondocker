@@ -169,7 +169,7 @@ function updateContextInitParamInWebXml() {
   paramName="$2"     # <param-name>
   paramValue="$3"    # <param-value>, required for update
   scope="$4"         # context-param | init-param
-  webXml="$APPS/$5"  # web.xml to be updated. Can be from res.war or DecisionService.war
+  webXml="$APPS/$5"        # web.xml to be updated
 
   case "$action" in
     update)
@@ -195,23 +195,24 @@ EOF
           fi
         else
           echo "Adding $scope '$paramName' with value '$paramValue'"
-          sed -i '/<\/web-app>/i\
+          sed -i '/<\/context-param>/!b;x;s/^/1/;/^1$/!{x;b};x;a\
 \t<context-param>\
 \t\t<param-name>'$paramName'</param-name>\
 \t\t<param-value>'$paramValue'</param-value>\
 \t</context-param>
 ' "$webXml"
         fi
-      elif [ "$scope" = "init-param" ]; then
-        searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter']/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
+      elif [[ "$scope" =~ ^filter:(.+)$ ]]; then
+        filterName="${BASH_REMATCH[1]}"
+        searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter'][*[local-name()='filter-name' and text()='$filterName']]/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
         if [[ $searchInitParam == "true" ]]; then        
-          currentInitParamValue=$(xmllint --xpath "string(//*[local-name()='filter']//*[local-name()='init-param'][*[local-name()='param-name' and text()='$paramName']]/*[local-name()='param-value'])" "$webXml" 2>/dev/null)
+          currentInitParamValue=$(xmllint --xpath "string(//*[local-name()='filter'][*[local-name()='filter-name' and text()='$filterName']]/*[local-name()='init-param'][*[local-name()='param-name' and text()='$paramName']]/*[local-name()='param-value'])" "$webXml" 2>/dev/null)
           if [[ "$currentInitParamValue" == "$paramValue" ]]; then
             echo "$scope '$paramName' already has value '$paramValue'. No update needed."
           else
             result="$(xmllint --shell "$webXml" 2>&1 >/dev/null<< EOF
 setns x=https://jakarta.ee/xml/ns/jakartaee
-cd x:web-app/x:filter/x:init-param[x:param-name='$paramName']/x:param-value
+cd x:web-app/x:filter[x:filter-name='$filterName']/x:init-param[x:param-name='$paramName']/x:param-value
 set $paramValue
 save
 EOF
@@ -223,13 +224,19 @@ EOF
 	          fi
           fi
         else
-          echo "Adding $scope '$paramName' with value '$paramValue'"
-          sed -i '/<\/filter>/i\
-\t\t<init-param>\
-\t\t\t<param-name>'$paramName'</param-name>\
-\t\t\t<param-value>'$paramValue'</param-value>\
-\t\t</init-param>
-' "$webXml"
+          searchFilter=$(xmllint --xpath "boolean(//*[local-name()='filter'][*[local-name()='filter-name' and text()='$filterName']])" "$webXml")
+          if [[ $searchFilter == "true" ]]; then
+            echo "Adding $scope '$paramName' with value '$paramValue'"
+            sed -i "/<filter>/,/<\/filter>/{/<filter-name>$filterName<\/filter-name>/,/<\/filter>/{/<filter-class>[^<]*<\/filter-class>/a\\
+\\t\\t<init-param>\\
+\\t\\t\\t<param-name>$paramName</param-name>\\
+\\t\\t\\t<param-value>$paramValue</param-value>\\
+\\t\\t</init-param>
+  }
+}" "$webXml"
+          else
+            echo "Filter $filterName not found. $paramName with value $paramValue will not be added"
+          fi
         fi
       fi
       ;;
@@ -243,11 +250,13 @@ EOF
         else
           echo "'$paramName' not found in $scope. No removal needed."
         fi
-      elif [ "$scope" = "init-param" ]; then
-        searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter']/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
+      elif [[ "$scope" =~ ^filter:(.+)$ ]]; then
+        filterName="${BASH_REMATCH[1]}"
+        searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter'][*[local-name()='filter-name' and text()='$filterName']]/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
         if [[ $searchInitParam == "true" ]]; then
           echo "Removing $scope: $paramName"
-          sed -i "/<init-param>/{:a;N;/<\/init-param>/!ba;/<param-name>$paramName<\/param-name>/d}" "$webXml"
+          # Removes the <init-param> block containing $paramName from the filter with name $filterName in the web.xml file
+          sed -i "/<filter>/,/<\/filter>/{ /<filter-name>$filterName<\/filter-name>/,/<\/filter>/{ /<init-param>/{:a;N;/<\/init-param>/!ba;/<param-name>$paramName<\/param-name>/d} } }" "$webXml"
         else
           echo "'$paramName' not found in $scope. No removal needed."
         fi
@@ -265,7 +274,7 @@ EOF
 function applyWebXmlChangesFromFile() {
   webXmlFile="$1"
   propertyFile="$2"
-  scope=""  # current section: context-param or init-param
+  scope=""  # valid section: context-param / filter:RequestFilter / filter:response-headers
 
   while IFS= read -r line || [[ -n "$line" ]]; do
     # Trim whitespace
@@ -274,12 +283,17 @@ function applyWebXmlChangesFromFile() {
     # Skip empty or commented lines
     [[ -z "$line" || "$line" =~ ^# ]] && continue
 
-    # Section headers [context-param] / [init-param]
+    # Detect section headers [context-param] / [filter:RequestFilter] / [filter:response-headers]
     if [[ "$line" =~ ^\[(.+)\]$ ]]; then
-      case "${BASH_REMATCH[1]}" in
-        context-param|init-param) scope="${BASH_REMATCH[1]}" ;;
-        *) echo "Warning: Unknown section [${BASH_REMATCH[1]}]" ; scope="unknown" ;;
-      esac
+      section="${BASH_REMATCH[1]}"
+      if [[ "$section" == "context-param" ]]; then
+        scope="context-param"
+      elif [[ "$section" =~ ^filter:(.+)$ ]]; then
+        scope=$section
+      else
+        echo "Warning: Unknown section [$section]"
+        scope="unknown"
+      fi
       continue
     fi
 
@@ -292,7 +306,7 @@ function applyWebXmlChangesFromFile() {
     # Add/Update case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      if [[ "$scope" == "context-param" || "$scope" == "init-param" ]]; then
+      if [[ "$scope" == "context-param" || "$scope" == "filter:RequestFilter" || "$scope" == "filter:response-headers" ]]; then
         paramName="${BASH_REMATCH[1]}"
         paramValue="${BASH_REMATCH[2]}"
 
@@ -300,7 +314,7 @@ function applyWebXmlChangesFromFile() {
           # First, replace escaped # with a temporary placeholder
           paramValue="${paramValue//\\#/ESCAPED_HASH_PLACEHOLDER}"
             
-          # Strip inline comments (# ...)
+          # Strip tailing comments
           paramValue="$(echo "$paramValue" | sed 's/[[:space:]]*#.*$//')"
             
           # Finally, restore escaped # characters
@@ -315,7 +329,7 @@ function applyWebXmlChangesFromFile() {
           echo "The param value of $paramName is null. No action taken. Check your configuration file."
         fi
       else
-        echo "No action as the scope: $scope should be either context-param or init-param. Check your configuration file."
+        echo "No action as the scope: $scope should be context-param, filter:response-headers, or filter:RequestFilter. Check your configuration file."
       fi
     else
       echo "Skipping invalid line: $line"
@@ -326,7 +340,7 @@ function applyWebXmlChangesFromFile() {
 webXmlToConfigure="$1"
 configFile="$2"
 if [ -f "$configFile" ]; then
-	echo "Configure context-param or init-param properties based on $configFile to $webXmlToConfigure"
+	echo "Configure context-param or filter's init-param properties based on $configFile to $webXmlToConfigure"
   applyWebXmlChangesFromFile "$webXmlToConfigure" "$configFile"
 else
   echo "Web-configuration.properties file not provided. No changes to web.xml file."
