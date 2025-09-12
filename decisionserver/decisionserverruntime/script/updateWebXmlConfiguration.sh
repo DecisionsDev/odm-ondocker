@@ -40,6 +40,31 @@ EOF
 \t</context-param>
 ' "$webXml"
         fi
+      elif [[ "$scope" =~ ^servlet:(.+)$ ]]; then
+        servletName="${BASH_REMATCH[1]}"
+        searchServletParam=$(xmllint --xpath "boolean(//*[local-name()='servlet'][*[local-name()='servlet-name' and text()='$servletName']]/*[local-name()='multipart-config']/*[local-name()='$paramName'])" "$webXml")
+        # Only update if the element exists
+        if [[ "$searchServletParam" == "true" ]]; then
+          currentServletParamValue=$(xmllint --xpath "string(//*[local-name()='servlet'][*[local-name()='servlet-name' and text()='$servletName']]/*[local-name()='multipart-config']/*[local-name()='$paramName'])" "$webXml" 2>/dev/null)
+          if [[ "$currentServletParamValue" == "$paramValue" ]]; then
+            echo "'$scope' '$paramName' already has value '$paramValue'. No update needed."
+          else
+            result="$(xmllint --shell "$webXml" 2>&1 >/dev/null<< EOF
+setns x=https://jakarta.ee/xml/ns/jakartaee
+cd x:web-app/x:servlet[x:servlet-name='$servletName']/x:multipart-config/x:$paramName
+set $paramValue
+save
+EOF
+)"
+            if [[ "$result" != *"error"* ]]; then
+		          echo "Updated $scope '$paramName' from '$currentServletParamValue' to '$paramValue' in the web.xml file"
+	          else
+		          echo "Unable to set property '$paramName' in the web.xml file"
+	          fi
+          fi
+        else
+          echo "'$paramName' does not exist in '$scope'. No update needed."
+        fi
       elif [[ "$scope" =~ ^filter:(.+)$ ]]; then
         filterName="${BASH_REMATCH[1]}"
         searchInitParam=$(xmllint --xpath "boolean(//*[local-name()='filter'][*[local-name()='filter-name' and text()='$filterName']]/*[local-name()='init-param']/*[local-name()='param-name' and text()='$paramName'])" "$webXml")
@@ -103,7 +128,7 @@ EOF
       
     *)
       echo "Invalid action: $action"
-      echo "Usage: updateContextInitParamInWebXml <update|remove> <paramName> [paramValue] <context-param|init-param>"
+      echo "Usage: updateContextInitParamInWebXml <update|remove> <paramName> [paramValue] <context-param|filter:response-headers|servlet:RESTManagementService>"
       return 1
       ;;
   esac
@@ -112,7 +137,7 @@ EOF
 function applyWebXmlChangesFromFile() {
   webXmlFile="$1"
   propertyFile="$2"
-  scope=""  # valid section: context-param / filter:RequestFilter / filter:response-headers
+  scope=""  # valid section: context-param / filter:response-headers / servlet:RESTManagementService
 
   while IFS= read -r line || [[ -n "$line" ]]; do
     # Trim whitespace
@@ -121,12 +146,12 @@ function applyWebXmlChangesFromFile() {
     # Skip empty or commented lines
     [[ -z "$line" || "$line" =~ ^# ]] && continue
 
-    # Detect section headers [context-param] / [filter:RequestFilter] / [filter:response-headers]
+    # Detect section headers [context-param] / [filter:response-headers] / [servlet:RESTManagementService]
     if [[ "$line" =~ ^\[(.+)\]$ ]]; then
       section="${BASH_REMATCH[1]}"
       if [[ "$section" == "context-param" ]]; then
         scope="context-param"
-      elif [[ "$section" =~ ^filter:(.+)$ ]]; then
+      elif [[ "$section" =~ ^filter:(.+)$ || "$section" =~ ^servlet:(.+)$ ]]; then
         scope=$section
       else
         echo "Warning: Unknown section [$section]"
@@ -139,12 +164,17 @@ function applyWebXmlChangesFromFile() {
     if [[ "$line" =~ ^-([[:alnum:]._-]+)([=].*)? ]]; then
       paramName="${BASH_REMATCH[1]}"
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      updateContextInitParamInWebXml remove "$paramName" "" "$scope" "$webXmlFile"
+
+      if [[ "$scope" == "context-param" || "$scope" == "filter:response-headers" ]]; then
+        updateContextInitParamInWebXml remove "$paramName" "" "$scope" "$webXmlFile"       
+      else
+        echo "No removal of the property of servlet or RequestFilter element."
+      fi
 
     # Add/Update case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      if [[ "$scope" == "context-param" || "$scope" == "filter:RequestFilter" || "$scope" == "filter:response-headers" ]]; then
+      if [[ "$scope" == "context-param" || "$scope" == "filter:response-headers" || "$scope" == "servlet:RESTManagementService" ]]; then
         paramName="${BASH_REMATCH[1]}"
         paramValue="${BASH_REMATCH[2]}"
 
@@ -167,7 +197,7 @@ function applyWebXmlChangesFromFile() {
           echo "The param value of $paramName is null. No action taken. Check your configuration file."
         fi
       else
-        echo "No action as the scope: $scope should be context-param, filter:response-headers, or filter:RequestFilter. Check your configuration file."
+        echo "No updating for $scope. Only for context-param, filter:response-headers, or servlet:RESTManagementService. Check your configuration file."
       fi
     else
       echo "Skipping invalid line: $line"
