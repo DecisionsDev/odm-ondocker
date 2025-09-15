@@ -128,7 +128,7 @@ EOF
       
     *)
       echo "Invalid action: $action"
-      echo "Usage: updateContextInitParamInWebXml <update|remove> <paramName> [paramValue] <context-param|filter:response-headers|servlet:RESTManagementService>"
+      echo "Usage: updateContextInitParamInWebXml <update|remove> <paramName> [paramValue] <context-param|filter:response-headers|servlet:FrontendUploadServlet>"
       return 1
       ;;
   esac
@@ -137,7 +137,7 @@ EOF
 function applyWebXmlChangesFromFile() {
   webXmlFile="$1"
   propertyFile="$2"
-  scope=""  # valid section: context-param / filter:response-headers / servlet:RESTManagementService
+  scope=""  # valid section: context-param / filter:response-headers / servlet:FrontendUploadServlet
 
   while IFS= read -r line || [[ -n "$line" ]]; do
     # Trim whitespace
@@ -146,7 +146,7 @@ function applyWebXmlChangesFromFile() {
     # Skip empty or commented lines
     [[ -z "$line" || "$line" =~ ^# ]] && continue
 
-    # Detect section headers [context-param] / [filter:response-headers] / [servlet:RESTManagementService]
+    # Detect section headers [context-param] / [filter:response-headers] / [servlet:FrontendUploadServlet]
     if [[ "$line" =~ ^\[(.+)\]$ ]]; then
       section="${BASH_REMATCH[1]}"
       if [[ "$section" == "context-param" ]]; then
@@ -174,7 +174,7 @@ function applyWebXmlChangesFromFile() {
     # Add/Update case: paramName=paramValue
     elif [[ "$line" =~ ^([^=]+)=(.*)$ ]]; then
       [[ -z "$scope" ]] && scope="context-param"   # default if missing
-      if [[ "$scope" == "context-param" || "$scope" == "filter:response-headers" || "$scope" == "servlet:RESTManagementService" ]]; then
+      if [[ "$scope" == "context-param" || "$scope" == "filter:response-headers" || "$scope" == "servlet:FrontendUploadServlet" ]]; then
         paramName="${BASH_REMATCH[1]}"
         paramValue="${BASH_REMATCH[2]}"
 
@@ -197,7 +197,7 @@ function applyWebXmlChangesFromFile() {
           echo "The param value of $paramName is null. No action taken. Check your configuration file."
         fi
       else
-        echo "No updating for $scope. Only for context-param, filter:response-headers, or servlet:RESTManagementService. Check your configuration file."
+        echo "No updating for $scope. Only for context-param, filter:response-headers, or servlet:FrontendUploadServlet. Check your configuration file."
       fi
     else
       echo "Skipping invalid line: $line"
