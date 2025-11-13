@@ -6,5 +6,5 @@ then
   return 0
 fi
 
-classOAuthServerUtilFind=$(grep com.ibm.rules.decisioncenter.model.oauth.OAuthServerUtil $APPS/**/WEB-INF/lib/*teamserver-model*.jar)
+classOAuthServerUtilFind=$(grep com.ibm.rules.decisioncenter.model.oauth.OAuthServerUtil $APPS/**/WEB-INF/lib/*teamserver-model*.jar 2>&1)
 echo ${classOAuthServerUtilFind##* }
