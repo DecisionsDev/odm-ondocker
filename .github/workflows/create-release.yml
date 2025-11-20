@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Get version from tag
         run: |
           tag_name="${{ github.ref_name }}"
@@ -36,7 +36,7 @@ jobs:
     needs: create-release
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Create zip file
         run: |
           cd contrib
