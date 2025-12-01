@@ -1,4 +1,3 @@
-version: '2'
 services:
   dbserver:
     image: postgres:9.5.10

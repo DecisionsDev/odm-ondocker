@@ -26,7 +26,11 @@ then
 
         $SCRIPT/updateDatasource.sh
 
-        $SCRIPT/updateDSRConfigurations.sh
+        $SCRIPT/updateDSRConfigurations.sh 
+        
+        $SCRIPT/updateWebXmlConfiguration.sh "res.war/WEB-INF/web.xml" "/config/res/web-configuration.properties"
+
+        $SCRIPT/updateWebXmlConfiguration.sh "DecisionService.war/WEB-INF/web.xml" "/config/web-configuration.properties"
 
         $SCRIPT/configureSwidTag.sh
 

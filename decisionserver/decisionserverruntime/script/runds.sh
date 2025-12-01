@@ -17,8 +17,10 @@ then
         fi
 
         $SCRIPT/enableMetering.sh
-
+        
         $SCRIPT/updateDSRConfigurations.sh
+
+        $SCRIPT/updateWebXmlConfiguration.sh "DecisionService.war/WEB-INF/web.xml" "/config/web-configuration.properties"
 
         $SCRIPT/configureTcpipNotification.sh
 

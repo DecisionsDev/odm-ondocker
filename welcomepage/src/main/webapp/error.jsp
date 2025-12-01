@@ -176,10 +176,10 @@
 <body>
 
 <%
-    Throwable exception = ((Throwable)request.getAttribute("javax.servlet.error.exception"));
-    Integer errorCode = (Integer)request.getAttribute("javax.servlet.error.status_code");
-    String servletName = (String)request.getAttribute("javax.servlet.error.servlet_name");
-    String requestUri = (String)request.getAttribute("javax.servlet.error.request_uri");
+    Throwable exception = ((Throwable)request.getAttribute("jakarta.servlet.error.exception"));
+    Integer errorCode = (Integer)request.getAttribute("jakarta.servlet.error.status_code");
+    String servletName = (String)request.getAttribute("jakarta.servlet.error.servlet_name");
+    String requestUri = (String)request.getAttribute("jakarta.servlet.error.request_uri");
 %>
 
 <div class="background"></div>
