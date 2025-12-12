@@ -8,7 +8,6 @@
 		<feature>appSecurity-5.0</feature>
 		<feature>concurrent-3.0</feature>
 		<feature>jndi-1.0</feature>
-		<feature>ssl-1.0</feature>
 
 		<feature>ldapRegistry-3.0</feature>
       	<feature>openidConnectClient-1.0</feature>	
