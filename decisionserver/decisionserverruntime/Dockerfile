@@ -3,12 +3,9 @@ ARG FROMLIBERTYBUILD
 ARG FROMDOCKERBUILD
 FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV SCRIPT /script
-ENV APPS /config/apps
+ENV APPS=/config/apps ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script
 
-RUN mkdir -p $SCRIPT && \
-		mkdir -p /config/resources
+RUN mkdir -p $SCRIPT /config/resources
 
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/decisionserver/decisionserverruntime/script $SCRIPT
@@ -33,7 +30,7 @@ RUN apt-get update && apt-get install unzip
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
 RUN $SCRIPT/manageLicense.sh && $SCRIPT/extractApp.sh DecisionService.war && \
-chmod -R 777 $APPS 
+chmod -R 777 $APPS
 
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
@@ -41,13 +38,9 @@ ARG ODMDOCKERDIR
 ARG CP4BAVERSION
 ARG ODMVERSION
 ARG PACKAGELIST
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CP4BAVERSION $CP4BAVERSION
-ENV ODMVERSION $ODMVERSION
-ENV PACKAGELIST $PACKAGELIST
+ENV CP4BAVERSION=$CP4BAVERSION ODMDOCKERDIR=$ODMDOCKERDIR ODMVERSION=$ODMVERSION PACKAGELIST=$PACKAGELIST SCRIPT=/script
 USER root
-ENV SCRIPT /script
-COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
+COPY $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
 RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverruntime/config /config
@@ -59,7 +52,6 @@ COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
 RUN chmod -R 777 /config
 RUN sed -i 's|# Pass on to the real server run|. /script/runds.sh|' /opt/ibm/helpers/runtime/docker-server.sh && $SCRIPT/generateVersionFile.sh
-
 
 FROM ${FROMLIBERTY}
 ARG ODMDOCKERDIR
@@ -78,12 +70,7 @@ LABEL product-version=${ODMVERSION}
 LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
-ENV APP_NAME DecisionServerRuntime
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV SCRIPT /script
-ENV APPS /config/apps
-ENV CONNECTION_POOL_SIZE 60
-ENV DECISIONSERVERCONSOLE_NAME $DECISIONSERVERCONSOLE_NAME
+ENV APP_NAME=DecisionServerRuntime APPS=/config/apps CONNECTION_POOL_SIZE=60 DECISIONSERVERCONSOLE_NAME=$DECISIONSERVERCONSOLE_NAME ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh
