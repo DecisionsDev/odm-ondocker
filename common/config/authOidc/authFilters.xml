@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server>
     <authFilter id="browserAuthFilter">
-		<requestHeader id="allowBasicAuth" matchType="notContain" name="Authorization" value="Basic" />
+		<requestHeader id="allowBasicAuth" matchType="notContain" name="Authorization" />
     </authFilter>
 
 	<authFilter id="apiAuthFilter">
-	<!-- This line is to support OIDC and BA by detecting the header -->
-		<requestHeader id="allowBasicAuth" matchType="contains" name="Authorization" value="Bearer" />
+		<requestHeader id="allowBasicAuth" matchType="contains" name="Authorization" />
     </authFilter>
 </server>
