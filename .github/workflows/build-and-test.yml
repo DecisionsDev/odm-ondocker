@@ -25,6 +25,7 @@ jobs:
           ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
           ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
           ODM_URL: ${{ secrets.ODM_URL }}
+      - run: sudo chmod +x /usr/local/bin/docker-compose
       - run: sudo docker-compose up -d
       - run: sh test/suite.sh
       - name: Report Status
