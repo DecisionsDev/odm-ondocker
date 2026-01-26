@@ -33,7 +33,7 @@ check_for_docker_url () {
     echo "Test $dockerurl availability in $dockerimg image."
 
     docker exec -u 0:0 -ti $dockerimg bash -c " \
-        yum install -y iputils
+        microdnf -y install iputils
         ping -q -c5 $dockerurl > /dev/null && \
         if [ $? -eq 0 ] ; then \
             echo \"OK: $dockerimg\"; \
