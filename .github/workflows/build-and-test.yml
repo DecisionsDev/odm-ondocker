@@ -22,6 +22,8 @@ jobs:
           ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
           ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
           ODM_URL: ${{ secrets.ODM_URL }}
+      - name: Enable SAMPLE data in docker-compose
+        run: sed -i 's/^#\(.*SAMPLE=true\)/\1/' docker-compose.yml
       - run: sudo docker compose up -d
       - run: sh test/suite.sh
       - name: Report Status by slack

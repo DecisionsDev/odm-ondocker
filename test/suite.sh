@@ -50,8 +50,8 @@ check_for_docker_url () {
 
 wait_for_url http://localhost:9070/DecisionRunner
 wait_for_url http://localhost:9090/DecisionService resExecutor resExecutor
-wait_for_url http://localhost:9060/decisioncenter
-wait_for_url http://localhost:9080/res
+wait_for_url http://localhost:9060/odm/decisioncenter-api/v1/decisionservices rtsAdmin rtsAdmin
+wait_for_url http://localhost:9080/res/api/v1/ruleapps resAdmin resAdmin
 wait_for_url http://localhost:9080/DecisionService resExecutor resExecutor
 
 check_for_docker_url odm-ondocker_odm-decisionrunner_1        dbserver
