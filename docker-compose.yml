@@ -130,10 +130,10 @@ services:
         - PACKAGELIST=$PACKAGELIST
     healthcheck:
       test: curl -k -f http://localhost:9060/decisioncenter/healthCheck || exit 1
-      interval: 5s
+      interval: 10s
       timeout: 10s
       retries: 30
-      start_period: 10s
+      start_period: 30s
     links:
     - dbserver
     depends_on:
