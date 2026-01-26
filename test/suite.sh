@@ -54,13 +54,13 @@ wait_for_url http://localhost:9060/decisioncenter-api/v1/decisionservices rtsAdm
 wait_for_url http://localhost:9080/res/api/v1/ruleapps resAdmin resAdmin
 wait_for_url http://localhost:9080/DecisionService resExecutor resExecutor
 
-check_for_docker_url odm-ondocker_odm-decisionrunner_1        dbserver
-check_for_docker_url odm-ondocker_odm-decisionserverruntime_1 dbserver
-check_for_docker_url odm-ondocker_odm-decisionserverconsole_1 dbserver
-check_for_docker_url odm-ondocker_odm-decisioncenter_1        dbserver
-check_for_docker_url odm-ondocker_odm-decisioncenter_1        odm-decisionrunner
-check_for_docker_url odm-ondocker_odm-decisioncenter_1        odm-decisionserverconsole
-check_for_docker_url odm-ondocker_odm-decisionserverruntime_1 odm-decisionserverconsole
+check_for_docker_url odm-ondocker-odm-decisionrunner-1        dbserver
+check_for_docker_url odm-ondocker-odm-decisionserverruntime-1 dbserver
+check_for_docker_url odm-ondocker-odm-decisionserverconsole-1 dbserver
+check_for_docker_url odm-ondocker-odm-decisioncenter-1        dbserver
+check_for_docker_url odm-ondocker-odm-decisioncenter-1        odm-decisionrunner
+check_for_docker_url odm-ondocker-odm-decisioncenter-1        odm-decisionserverconsole
+check_for_docker_url odm-ondocker-odm-decisionserverruntime-1 odm-decisionserverconsole
 
 
 exit $ret
