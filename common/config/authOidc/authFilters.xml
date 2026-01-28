@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server>
-    <authFilter id="browserAuthFilter">
-		<requestHeader id="missingAuthHeader" matchType="notContain" name="Authorization" />
-    </authFilter>
+	<authFilter id="browserAuthFilter">
+		<requestHeader id="missingAuthHeader" matchType="notContain" name="Authorization" value="Basic" />
+	</authFilter>
 
 	<authFilter id="apiAuthFilter">
-		<requestHeader id="featuringAuthHeader" matchType="contains" name="Authorization" />
-    </authFilter>
+		<requestHeader id="featuringAuthHeader" matchType="contains" name="Authorization" value="Bearer" />
+	</authFilter>
 </server>
