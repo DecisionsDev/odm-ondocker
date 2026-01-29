@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server>
 	<authFilter id="browserAuthFilter">
-		<requestHeader id="missingAuthHeader" matchType="notContain" name="Authorization" value="Basic" />
+		<requestHeader id="missingAuthHeader" matchType="notContain" name="Authorization" />
 	</authFilter>
 
 	<authFilter id="apiAuthFilter">
