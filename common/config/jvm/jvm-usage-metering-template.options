@@ -1,0 +1,8 @@
+### Usage Metering properties ###
+
+-Dmetering.logger.pattern=/opt/ibm/wlp/usr/servers/defaultServer/apps/decisioncenter.war/assets/metering.log
+-Dmetering.logger.limit=50000000
+-Dmetering.logger.count=50
+-Dmetering.logger.force.logging=true
+-Dcom.ibm.rules.metering.log.usages=true
+-Dcom.ibm.rules.metering.enable=true
