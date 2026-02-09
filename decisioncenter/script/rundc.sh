@@ -12,6 +12,8 @@ then
 
   $SCRIPT/addDCApplications.sh
 
+  $SCRIPT/enableUsageMetering.sh
+
   $SCRIPT/updateDCConfigurations.sh
 
   if [ -n "$USERS_PASSWORD" ]
