@@ -8,6 +8,7 @@
         "logoutTokenParam": "OPENID_LOGOUT_TOKEN_PARAM",
         "tokenFormat": "OPENID_TOKEN_FORMAT",
         "logoutURL": "OPENID_LOGOUT_URL",
+        "postLogoutRedirectUri": "DC_OPENID_POST_LOGOUT_REDIRECT_URI",
 	"clientId": "OPENID_CLIENT_ID",
 	"clientSecret": "OPENID_CLIENT_SECRET",
         "clientAssertionAliasName": "OPENID_CLIENT_ASSERTION_ALIAS_NAME",
