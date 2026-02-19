@@ -23,6 +23,13 @@ fi
 
 if [ -n "$OPENID_CONFIG" ]
 then
+
+  if [ -s "/config/auth/authFilters.xml" ]
+  then
+    echo "copy provided /config/auth/authFilters.xml to /config/authOidc/authFilters.xml"
+    cp /config/auth/authFilters.xml /config/authOidc/authFilters.xml
+  fi
+
   if [ -s "/config/auth/openIdParameters.properties" ]
   then
     echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
