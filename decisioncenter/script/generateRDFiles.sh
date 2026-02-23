@@ -41,13 +41,13 @@ then
     sed -i '/clientSecret/d' /config/OdmOidcProvidersRD.json
   fi
 
-  SCOPE=$(grep SCOPE /config/authOidc/openIdParameters.properties | sed "s/SCOPE=//g")
-  if [ -n "$SCOPE" ]
+  OPENID_SCOPE=$(grep OPENID_SCOPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_SCOPE=//g")
+  if [ -n "$OPENID_SCOPE" ]
   then
-    echo "RuleDesigner Config : set scope to $SCOPE"
-    sed -i 's|SCOPE|'$SCOPE'|g' /config/OdmOidcProvidersRD.json
+    echo "RuleDesigner Config : set scope to $OPENID_SCOPE"
+    sed -i 's|OPENID_SCOPE|'$OPENID_SCOPE'|g' /config/OdmOidcProvidersRD.json
   else
-    echo "RuleDesigner config : no provided SCOPE"
+    echo "RuleDesigner config : no provided OPENID_SCOPE"
     sed -i '/scope/d' /config/OdmOidcProvidersRD.json
   fi
 

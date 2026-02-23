@@ -85,11 +85,11 @@ then
       sed -i '/DS_OPENID_POST_LOGOUT_REDIRECT_URI/d'  /config/authOidc/openIdParameters.properties
     fi
 
-    if [ -n "$SCOPE" ]
+    if [ -n "$OPENID_SCOPE" ]
     then
-      sed -i 's|__SCOPE__|'$SCOPE'|g' /config/authOidc/openIdParameters.properties
+      sed -i 's|__OPENID_SCOPE__|'$OPENID_SCOPE'|g' /config/authOidc/openIdParameters.properties
     else
-      sed -i '/SCOPE/d'  /config/authOidc/openIdParameters.properties
+      sed -i '/OPENID_SCOPE/d'  /config/authOidc/openIdParameters.properties
     fi
   fi
   # Set env var if secrets are passed using mounted volumes
@@ -164,7 +164,7 @@ then
      update_oidc_parameter "OPENID_LOGOUT_TOKEN_PARAM" "logoutTokenParam" "logoutTokenParam parameter"
      update_oidc_parameter "DC_OPENID_POST_LOGOUT_REDIRECT_URI" "postLogoutRedirectUri" "Decision Center postLogoutRedirectUri parameter"
      update_oidc_parameter "OPENID_GRANT_TYPE" "grantType" "grantType" "client_credentials"
-     update_oidc_parameter "SCOPE" "scope" "scope"
+     update_oidc_parameter "OPENID_SCOPE" "scope" "scope"
 
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
