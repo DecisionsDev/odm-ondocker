@@ -6,6 +6,7 @@
         "tokenURL": "OPENID_TOKEN_URL",
 	"clientId": "OPENID_CLIENT_ID",
         "clientSecret": "OPENID_CLIENT_SECRET",
+        "scope": "SCOPE",
 	"callbackPort": "9081",
         "callbackHttps": true
     }

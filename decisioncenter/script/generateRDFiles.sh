@@ -41,6 +41,16 @@ then
     sed -i '/clientSecret/d' /config/OdmOidcProvidersRD.json
   fi
 
+  SCOPE=$(grep SCOPE /config/authOidc/openIdParameters.properties | sed "s/SCOPE=//g")
+  if [ -n "$SCOPE" ]
+  then
+    echo "RuleDesigner Config : set scope to $SCOPE"
+    sed -i 's|SCOPE|'$SCOPE'|g' /config/OdmOidcProvidersRD.json
+  else
+    echo "RuleDesigner config : no provided SCOPE"
+    sed -i '/scope/d' /config/OdmOidcProvidersRD.json
+  fi
+
   echo "copy /config/OdmOidcProvidersRD.json and /config/security/truststore.jks to /config/apps/decisioncenter.war/assets/ "
   cp /config/OdmOidcProvidersRD.json /config/apps/decisioncenter.war/assets/  
 fi
