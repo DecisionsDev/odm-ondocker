@@ -202,6 +202,7 @@
             <h2 class="secondary">Developer Edition</h2>
             <ul>
               <li><a href="/decisioncenter" target="_blank">Decision Center Business Console</a></li>
+              <li><a href="/decisioncenter-api" target="_blank">Decision Center Business Console Swagger UI</a></li>
               <li><a href="/res" target="_blank">Decision Server Console</a></li>
               <li><a href="/DecisionService" target="_blank">Decision Server Runtime</a></li>
               <li><a href="/DecisionRunner" target="_blank">Decision Runner</a></li>
@@ -211,7 +212,7 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
 %>
             <h2 class="secondary loan-server-hidden">Sample</h2>
             <ul>
-             <li class=" loan-server-hidden"><a href="/loan-server" target="_blank">Loan Server</a></li>
+             <li class=" loan-server-hidden"><a href="/loan-server" target="_blank">Loan application web app</a></li>
             </ul>
 <%
 }
@@ -231,7 +232,7 @@ if(System.getenv("SAMPLE") != null && System.getenv("SAMPLE").equals("true")) {
         <ul>
           <li><a href="https://www.ibm.com/docs/en/odm/9.5.0" target="_blank">ODM Documentation</a></li>
           <li><a href="https://github.com/DecisionsDev/odm-for-container-getting-started/tree/master" target="_blank">Getting Started</a></li>
-          <li><a href="https://community.ibm.com/community/user/automation/home" target="_blank">IBM Business Automation Community</a></li>
+          <li><a href="https://community.ibm.com/community/user/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022" target="_blank">IBM ODM Community (TechXchange)</a></li>
           <li><a href="https://github.com/ODMDev/odm-ondocker/issues" target="_blank">To report an issue</a></li>
         </ul>
       </article>
