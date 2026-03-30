@@ -23,7 +23,7 @@ fi
 if [ -n "$NO_AUTH" ]
 then
         echo "replace resExecutors group in /config/application.xml by special-subject EVERYONE"
-        sed -i $'/<group name="resExecutors"/<special-subject type="EVERYONE"' /config/application.xml
+        sed -i $'s/<group name="resExecutors"/<special-subject type="EVERYONE"/' /config/application.xml
 fi
 
 if [ -n "$OPENID_CONFIG" ]
