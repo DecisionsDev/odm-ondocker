@@ -3,6 +3,9 @@
 	<!-- feature manager -->
 	<include optional="true" location="./featureManager.xml"/>
 
+        <!-- SSO configuration -->
+	<include optional="true" location="./ltpa.xml"/>
+
 	<!-- Datasource and libraries -->
 	<include optional="true" location="./datasource.xml"/>
 

@@ -10,6 +10,7 @@ ENV THIRDPARTY /thirdpartylib
 RUN apt-get update && apt-get install unzip
 
 COPY ${ODMDOCKERDIR}/decisioncenter/script ${ODMDOCKERDIR}/standalone/script ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/common/features ${SCRIPT}/
+COPY ${ODMDOCKERDIR}/common/config/ltpa.xml /config/ltpa.xml
 COPY ./executionserver/ /executionserver/
 # Welcome page
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
