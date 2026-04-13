@@ -110,6 +110,7 @@ COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/securit
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/config/ltpa.xml /config/ltpa.xml 
 
 RUN chmod -R 777 /config
 
