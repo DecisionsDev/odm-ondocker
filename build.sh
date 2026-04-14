@@ -22,13 +22,13 @@ cd install/odm-ondocker
 cp resources/.dockerignore ../
 
 echo "build ODM standard docker images..."
-DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build
+DOCKER_BUILDKIT=1 docker compose -f docker-compose.yml build
 
 echo "build ODM standalone docker image..."
-DOCKER_BUILDKIT=1 docker-compose -f odm-standalone.yml build
+DOCKER_BUILDKIT=1 docker compose -f odm-standalone.yml build
 
 # echo "build ODM standalone tomcat8 docker image..."
 # docker-compose -f odm-standalone-tomcat.yml build
 
 echo "build ODM cluster docker images..."
-DOCKER_BUILDKIT=1 docker-compose -f odm-cluster.yml build
+DOCKER_BUILDKIT=1 docker compose -f odm-cluster.yml build
