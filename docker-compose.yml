@@ -1,3 +1,8 @@
+secrets:
+  artifactory_username:
+    environment: ARTIFACTORY_USERNAME
+  artifactory_token:
+    environment: ARTIFACTORY_TOKEN
 services:
   dbserver:
     image: $REPOSITORY/dbserver:$ODMVERSION
@@ -39,6 +44,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_username
+        - artifactory_token
     healthcheck:
       test: curl -k -f http://localhost:9080/res/login.jsp || exit 1
       interval: 5s
@@ -67,6 +75,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_username
+        - artifactory_token
     healthcheck:
       test: curl -k -f http://localhost:9080/DecisionRunner || exit 1
       interval: 5s
@@ -96,6 +107,9 @@ services:
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_username
+        - artifactory_token
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -128,6 +142,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_username
+        - artifactory_token
     healthcheck:
       test: curl -k -f http://localhost:9060/decisioncenter/healthCheck || exit 1
       interval: 10s

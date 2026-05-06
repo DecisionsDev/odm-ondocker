@@ -34,7 +34,15 @@ ENV CP4BAVERSION=$CP4BAVERSION ODMDOCKERDIR=$ODMDOCKERDIR ODMVERSION=$ODMVERSION
 USER root
 ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
+RUN --mount=type=secret,id=artifactory_username \
+	--mount=type=secret,id=artifactory_token \
+    if [[ -n "$ARTIFACTORY_USERNAME" ]] ; then \
+    mkdir -p /opt/ibm/wlp/etc \
+    && echo "mavenCentralMirror.url=https://na.artifactory.swg-devops.com/artifactory/hyc-decisions-team-proxy-maven-virtual" > /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.user=$(cat /run/secrets/artifactory_username)" >> /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.password=$(cat /run/secrets/artifactory_token)" >> /opt/ibm/wlp/etc/featureUtility.properties; \
+	fi
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml && rm -f /opt/ibm/wlp/etc/featureUtility.properties
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionrunner/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
