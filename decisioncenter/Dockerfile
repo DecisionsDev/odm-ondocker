@@ -52,6 +52,7 @@ RUN --mount=type=secret,id=artifactory_user \
     && echo "mavenCentralMirror.user=$(cat /run/secrets/artifactory_user)" >> /opt/ibm/wlp/etc/featureUtility.properties \
     && echo "mavenCentralMirror.password=$(cat /run/secrets/artifactory_token)" >> /opt/ibm/wlp/etc/featureUtility.properties; \
 	fi
+RUN cat /opt/ibm/wlp/etc/featureUtility.properties
 RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml && rm -f /opt/ibm/wlp/etc/featureUtility.properties
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
