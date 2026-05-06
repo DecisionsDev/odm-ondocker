@@ -44,6 +44,7 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+        - ARTIFACTORY_USER=decisioncncf@ibm.com
       secrets:
         - artifactory_user
         - artifactory_token
@@ -75,6 +76,7 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+        - ARTIFACTORY_USER=decisioncncf@ibm.com
       secrets:
         - artifactory_user
         - artifactory_token
@@ -107,6 +109,7 @@ services:
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - PACKAGELIST=$PACKAGELIST
+        - ARTIFACTORY_USER=decisioncncf@ibm.com
       secrets:
         - artifactory_user
         - artifactory_token
@@ -142,6 +145,7 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+        - ARTIFACTORY_USER=decisioncncf@ibm.com
       secrets:
         - artifactory_user
         - artifactory_token
