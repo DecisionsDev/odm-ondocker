@@ -1,3 +1,8 @@
+secrets:
+  artifactory_user:
+    environment: ARTIFACTORY_USER
+  artifactory_token:
+    environment: ARTIFACTORY_TOKEN
 services:
   dbserver:
     image: $REPOSITORY/dbserver:$ODMVERSION
@@ -39,6 +44,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_user
+        - artifactory_token
     links:
     - dbserver
     depends_on:
@@ -61,6 +69,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_user
+        - artifactory_token
     links:
     - dbserver
     - odm-decisionserverconsole
@@ -84,6 +95,9 @@ services:
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_user
+        - artifactory_token
     environment:
       - DECISIONSERVERCONSOLE_NAME=odm-decisionserverconsole
     links:
@@ -110,6 +124,9 @@ services:
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - PACKAGELIST=$PACKAGELIST
+      secrets:
+        - artifactory_user
+        - artifactory_token
     links:
     - dbserver
     depends_on:
