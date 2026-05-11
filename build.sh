@@ -28,6 +28,8 @@ docker run --user 'root' -v $PWD/wlp:/opt/wlp  $FROMLIBERTY  /bin/sh -c "mkdir -
  installUtility download $PACKAGELIST --location=/opt/wlp"
 
 echo "build ODM standard docker images..."
+export ARTIFACTORY_USER
+export ARTIFACTORY_TOKEN
 DOCKER_BUILDKIT=1 docker compose -f docker-compose.yml build
 
 echo "build ODM standalone docker image..."
