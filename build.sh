@@ -28,6 +28,8 @@ cp resources/.dockerignore ../
 # installUtility download $PACKAGELIST --location=/opt/wlp"
 
 echo "build ODM standard docker images..."
+export ARTIFACTORY_USER
+export ARTIFACTORY_TOKEN
 DOCKER_BUILDKIT=1 docker compose -f docker-compose.yml build
 
 echo "build ODM standalone docker image..."
