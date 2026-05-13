@@ -26,7 +26,6 @@ This documentations applies to Operational Decision Management Standard V9.0.x a
 - [ODM integration with Business Automation Intelligence](contrib/bai-singlenode/README.md): Explain how to demonstrate ODM with BAI for Server with minimal effort.
 
 # References
-- [DevWorks article : Deploy an IBM Operational Decision Manager topology with Docker Compose ](https://www.ibm.com/developerworks/library/mw-1612-grateau-trs/1612-grateau.html)
 - [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 # Issues and contributions
