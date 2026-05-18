@@ -1,4 +1,8 @@
-version: '2'
+secrets:
+  artifactory_user:
+    environment: ARTIFACTORY_USER
+  artifactory_token:
+    environment: ARTIFACTORY_TOKEN
 services:
   # This following property is defined in the .env file. It's allow to customize your docker images.
   # ODMVERSION : The Operational Decision Management version
@@ -17,6 +21,9 @@ services:
         - FROMLIBERTY=$FROMLIBERTY
         - FROMLIBERTYBUILD=$FROMLIBERTY
         - FROMDOCKERBUILD=$FROMDOCKERBUILD
+      secrets:
+        - artifactory_user
+        - artifactory_token
     user: "1001:0"
     environment:
     - SAMPLE=false
