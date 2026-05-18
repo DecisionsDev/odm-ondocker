@@ -1,7 +1,7 @@
 name: Build and test
 on: [push]
 env:
-  DOCKER_COMPOSE_VERSION: 1.29.2
+  DOCKER_COMPOSE_VERSION: v5.1.3
   ODM_FILE_NAME: odm-for-docker.zip
   ODM_VERSION: 8.12.0.0
 jobs:
