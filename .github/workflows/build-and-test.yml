@@ -1,7 +1,7 @@
 name: Build and test
 on: [push]
 env:
-  DOCKER_COMPOSE_VERSION: 1.29.2
+  DOCKER_COMPOSE_VERSION: v5.1.3
   ODM_FILE_NAME: odm-for-docker.zip
   ODM_VERSION: 8.11.0.1
 jobs:
@@ -24,6 +24,7 @@ jobs:
       - run: bash build.sh
         env:
           ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          ARTIFACTORY_TOKEN: ${{ secrets.ARTIFACTORY_PASSWORD }}
           ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
           ODM_URL: ${{ secrets.ODM_URL }}
       - run: sudo docker-compose up -d
