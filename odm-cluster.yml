@@ -134,7 +134,7 @@ services:
 
   # The load balancer for the Runtime.
   traefik:
-    image: "traefik:v3.1"
+    image: "traefik:v3.7.1"
     container_name: "traefik"
     command:
     #- "--log.level=DEBUG"
