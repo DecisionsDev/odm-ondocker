@@ -3,7 +3,7 @@ INFORMAÇÕES DA LICENÇA
 Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições da seguinte Informação sobre a Licença a seguir, além dos termos de licença do Programa acordados anteriormente pelo Cliente e pela IBM. Se o Cliente não tiver acordado anteriormente com os termos de licença em vigor para o Programa, o Contrato Internacional de Licença para Programas Sem Garantia (i125-5589-06) será aplicável.
 
 Nome do Programa (Número do Programa):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Os termos padrão a seguir se aplicam o uso do Programa pelo Licenciado.
 
@@ -17,14 +17,31 @@ O Licenciado está autorizado a instalar e usar/utilizar os Programas de Apoio i
 
 Programas de Apoio:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Limitação do desenvolvedor
 
 Se o Programa tiver sido designado para "Desenvolvedores", o Licenciado poderá usá-lo/utilizá-lo apenas como parte de seu ambiente de teste e desenvolvimento interno em uma máquina de desenvolvedor. Uma máquina de usuário/utilizador de desenvolvimento é um ambiente de área de trabalho físico ou virtual que executa um sistema operacional/operativo original e o Programa, e que ambos estejam acessíveis e sejam usados/utilizados por não mais que um Desenvolvedor/Responsável pelo Desenvolvimento especificado.
 
+Componentes não usados/utilizados para estabelecer titularidades obrigatórias
+
+O Licenciado pode instalar e usar/utilizar os componentes a seguir do Programa, sob os termos da licença, mas eles não são usados/utilizados ​​para determinar o número de titularidades necessárias para o Programa.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Código Modificável de Terceiros
 
 Modificável de Terceiros", a IBM autorizará o Licenciado a 1) modificar o Código Modificável de Terceiros e 2) fazer engenharia reversa dos módulos do Programa que interagem diretamente com o Código Modificável de Terceiros, contanto que seja apenas com o propósito de depurar as modificações do Licenciado para tal código de terceiros. As obrigações de serviço e suporte da IBM, se houver, se aplicarão apenas ao Programa não modificado.
+
+Código licenciado separadamente
+
+Todos os componentes listados no arquivo NON_IBM_LICENSE são considerados "Código Licenciado Separadamente" fornecido ao Licenciado sob os termos dos contratos/acordos de licença de terceiros aplicáveis definidos nos arquivos NON_IBM_LICENSE que acompanham o Programa, e não este Contrato. Futuras atualizações/actualizações ou correções/correcções do Programa podem conter Código Licenciado Separadamente adicional. Esse Código Licenciado Separadamente adicional e as licenças relacionadas estão listadas no arquivo NON_IBM_LICENSE aplicável que acompanha a atualização ou a correção do Programa.
+
+Nota: não obstante qualquer um dos termos do contrato/acordo de licença de terceiros, o Contrato/Acordo ou qualquer outro contrato que o Licenciado possa ter com a IBM relacionado ao Código Licenciado Separadamente:
+(a) a IBM o fornece ao Licenciado SEM GARANTIAS DE QUALQUER TIPO E RENUNCIA TODA E QUALQUER GARANTIA EXPRESSA E IMPLÍCITA E CONDIÇÕES QUE INCLUAM, ENTRE OUTRAS, GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM DETERMINADO PROPÓSITO/FIM;
+(b) a IBM não é responsável por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares, punitivos ou consequentes, incluindo, entre outros, dados perdidos, economias perdidas e lucros cessantes.
 
 Privacidade
 
@@ -38,10 +55,20 @@ Dados e serviços de terceiros
 
 O Programa fornece acesso a serviços de dados, bancos de dados, serviços da web, softwares ou outros conteúdos de terceiros (todos, "Conteúdo de Terceiros"). O acesso a este Conteúdo de Terceiros é fornecido "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO GARANTIA DE TÍTULO, NÃO VIOLAÇÃO OU NÃO INTERFERÊNCIA E GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UM DETERMINADO PROPÓSITO/FIM. O acesso pode ser rescindido/posto termo pelos terceiros interessados, a seu exclusivo critério e a qualquer momento. Pode ser necessário que o Licenciado celebre contratos/acordos separados com terceiros para o acesso ou o/a uso/utilização desse Conteúdo de Terceiros. A IBM não é uma parte em tais contratos/acordos separados e, como uma condição expressa desta licença, o Licenciado concorda em cumprir com os termos desses contratos/acordos separados.
 
+Além do apresentado acima, os termos a seguir se aplicam ao uso do Programa pelo Licenciado.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Uso de Dados de medição de uso
+O Programa permite o uso de um painel de medição de uso (o "Painel") que permite a exibição e o monitoramento de certos dados e métricas relacionados à implementação e ao uso de programas de software IBM e não IBM por parte do Licenciado, bem como ao ambiente de computação no qual eles estão implementados ("Dados de Medição de Uso"). O uso do Painel requer registro no Red Hat Marketplace ou IBM Software Central. O uso do Painel pelo Licenciado e o uso e compartilhamento dos Dados de Medição de Uso pela IBM são governados pelos termos da Descrição do Serviço para o Red Hat Marketplace, operado pela IBM, disponível aqui: https://www.ibm.com/support/customer/csol/terms?id=i126-8719, e, se o Licenciado ativar ou usar o Painel, o Licenciado concordará com estes termos.
+Dados de Implementação e Uso
+O Programa pode, por padrão, coletar determinados dados e métricas referentes à implementação ou ao uso do Programa e/ou dos Programas de Pacotes Configuráveis ("Dados de Implementação e Uso"). Os Dados de Implementação e Uso podem incluir, por exemplo, informações quantitativas relacionadas a métricas de licença (como o número de VPCs, recursos, usuários ou outras métricas de licença implementadas, consumidas ou gerenciadas pelo Programa ou Programa de Pacote Configurável) e outras métricas quantitativas relacionadas ao uso do Programa ou Programa de Pacote Configurável ou de seus recursos (como chamadas de API, eventos, armazenamento, interações com a interface com o usuário). Os Dados de Implementação e Uso também podem incluir informações sobre o ambiente em que o Programa ou Programa de Pacote Configurável está implementado, como arquitetura, sistema operacional, provedor de nuvem, localização, informações do cluster e número de nós. Os Dados de Implementação e Uso não incluem informações pessoais ou o conteúdo dos dados do Licenciado gerenciados pelo Programa ou Programa de Pacote Configurável. Cada Programa de Pacote Configurável também pode coletar outros dados de implementação e uso sob seus próprios termos de licença.
+A menos que o Licenciado desative o recurso de Dados de Implementação e Uso no Programa, a IBM pode receber Dados de Implementação e Uso do Programa implementado pelo Licenciado. Em todos esses casos, os Dados de Implementação e Uso poderão ser enviados aos servidores da IBM e/ou serviços de coleta e análise de dados fornecidos à IBM por um ou mais terceiros. A IBM pode usar esses Dados de implementação e uso para fins internos de negócios, incluindo gerenciamento, planejamento, suporte, melhoria e aprimoramento de seus produtos e serviços. Além disso, a IBM pode usá-los para oferecer suporte e orientar o Licenciado quanto ao uso dos programas de software IBM (como desempenho, implementação e planejamento de capacidade) e oferecer outros produtos e serviços IBM ao Licenciado. A IBM pode compartilhar esses Dados de implementação e uso com suas afiliadas, contratados e parceiros de negócios ao redor do mundo para esses fins.
+O Licenciado poderá desativar o recurso de Dados de Implementação e Uso a qualquer momento ao consultar a documentação do Programa em https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering para obter instruções detalhadas sobre como desativar o recurso.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Contrato Internacional de Licença para Programas Sem Garantia
 

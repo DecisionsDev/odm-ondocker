@@ -3,7 +3,7 @@ INFORMACIÓN SOBRE LICENCIA
 Los Programas que se enumeran a continuación se licencian bajo los siguientes términos y condiciones de Licencia, además de los términos de licencia del Programa acordados previamente entre el Cliente e IBM. Si el Cliente no ha aceptado con anterioridad los términos de la licencia aplicables al Programa, se aplicará Acuerdo Internacional de Licencia para Programas sin Garantía (i125-5589-06).
 
 Nombre de Programa (Número de Programa):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Los términos estándar siguientes se aplican al uso por parte del Licenciatario del Programa.
 
@@ -17,14 +17,31 @@ El Licenciatario está autorizado para instalar y utilizar los Programas de Sopo
 
 Programas de Soporte:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Limitación del Desarrollador
 
 Si el Programa se conoce como "Para Desarrolladores", el Licenciatario solo puede utilizar el Programa como parte del desarrollo interno y de las pruebas unitarias del Licenciatario en una máquina de desarrollo. Una máquina de desarrollo es un entorno de escritorio virtual o físico que ejecuta un sistema operativo principal y el Programa, siendo ambos accesibles y utilizables sólo por un desarrollador especificado.
 
+Componentes No Utilizados para Establecer Autorizaciones Necesarias
+
+El Licenciatario puede instalar y utilizar los siguientes componentes del Programa, de conformidad con los términos de la licencia, pero estos componentes no se utilizarán para determinar el número de autorizaciones requeridas para el Programa.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Código de terceros modificable
 
 Si en el archivo AVISOS IBM identifica código de terceros como "Código de Terceros Modificable", IBM autoriza al Titular de la Licencia 1) modificar el Código de Terceros Modificable y a 2) realizar ingeniería inversa de los módulos del Programa que interactúan directamente con el Código de Terceros Modificable proporcionado que es solo para fines de depuración de las modificaciones del Titular de la Licencia de dicho código de terceros. Las obligaciones de servicio y soporte de IBM, si existen, se aplican solo al Programa no modificado.
+
+Código con Licencia por Separado
+
+El Código con Licencia por Separado de cada uno de los componentes listados en el archivo NON_IBM_LICENSE se licencia al Licenciatario de acuerdo con los términos que se establecen en el correspondiente acuerdo de licencia de terceros en el archivo NON_IBM_LICENSE que acompaña al Programa y no con arreglo al presente Acuerdo. Las futuras actualizaciones o correcciones del Programa pueden contener otros componentes del Código con Licencia por Separado. Dicho Código con Licencia por Separado adicional y sus correspondientes licencias se listarán en el archivo NON_IBM_LICENSE aplicable que acompaña a la actualización o a la corrección del Programa.
+
+Nota: Independientemente de los términos del acuerdo de licencia de terceros, del Acuerdo o de cualquier otro acuerdo que el Licenciatario pudiera tener con IBM, respecto al Código con Licencia por Separado:
+(a) IBM los proporciona al Licenciatario SIN GARANTÍA DE NINGÚN TIPO Y NO OTORGA NINGUNA GARANTÍA NI CONDICIÓN EXPLÍCITA O IMPLÍCITA INCLUIDAS, PERO SIN LIMITACIONES, LA GARANTÍA DE TÍTULO, DE NO INCUMPLIMIENTO O NO INTERFERENCIA Y LAS GARANTÍAS Y CONDICIONES IMPLÍCITAS DE COMERCIALIZACIÓN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA;
+(b) IBM no es responsable de ningún daño directo, indirecto, incidental, especial, ejemplar, punitivo ni consecuencial, incluidas sin limitarse a, la pérdida de datos, la pérdida de ahorros y la pérdida de beneficios.
 
 Privacidad
 
@@ -38,10 +55,20 @@ Servicios y Datos de Terceros
 
 El Programa proporciona acceso a servicios de datos, bases de datos, servicios web, software u otro contenido de terceros (conjuntamente, "Contenido de Terceros"). El acceso a este Contenido de Terceros se proporciona "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI IMPLÍCITA NI EXPLÍCITA, INCLUIDAS LA GARANTÍA DE TÍTULO, LA GARANTÍA DE NO VULNERACIÓN DE DERECHOS DE TERCEROS O DE NO INJERENCIA Y LAS GARANTÍAS Y CONDICIONES IMPLÍCITAS DE COMERCIALIZACIÓN E IDONEIDAD PARA UNA FINALIDAD DETERMINADA. Los terceros correspondientes podrán interrumpir el acceso a su entera discreción y en cualquier momento. Es posible que sea necesario que el Licenciatario celebre acuerdos independientes con el tercero relativos al acceso o al uso del Contenido de Terceros en cuestión. IBM no es parte de dichos acuerdos independientes y, como condición expresa de la presente licencia, el Licenciatario acepta cumplir los términos de dichos acuerdos independientes.
 
+Además de lo indicado, los términos siguientes se aplican al uso por parte del Licenciatario del Programa.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Uso de Datos de Medición de Uso
+El Programa permite utilizar un panel de control de medición de uso (el "Panel de control") que permite la visualización y la supervisión de determinados datos y métricas relativos al despliegue y uso por parte del Licenciatario de programas de software de IBM y no de IBM, así como del entorno informático en el que están desplegados ("Datos de Medición de Uso"). El uso del Panel de control requiere registro en Red Hat Marketplace o en IBM Software Central. El uso por parte del Licenciatario del Panel de control y el uso y la compartición por parte de IBM de los Datos de Medición de Uso se rigen por los términos de la Descripción de Servicio de Red Hat Marketplace, operado por IBM, disponible aquí: https://www.ibm.com/support/customer/csol/terms?id=i126-8719, y si el Licenciatario habilita o utiliza el Panel de control, el Licenciatario acepta dichos términos.
+Datos de Despliegue y Uso
+El Programa puede recopilar de forma predeterminada ciertos datos y métricas con respecto al despliegue o uso del Programa y/o los Programas Empaquetados por parte del Licenciatario ("Datos de Despliegue y Uso"). Los Datos de Despliegue y Uso pueden incluir, por ejemplo, información cuantitativa relacionada con métricas de licencia (por ejemplo, el número de VPC, recursos, usuarios u otra métrica de licencia desplegada, consumida o gestionada por el Programa o Programa Empaquetado), y otras métricas cuantitativas relacionadas con el uso del Programa o Programa Empaquetado o sus características (por ejemplo, llamadas API, sucesos, almacenamiento, interacciones con la interfaz de usuario). Los Datos de Despliegue y Uso también pueden incluir información sobre el entorno en el que se ha desplegado el Programa o Programa Empaquetado como, por ejemplo, la arquitectura, sistema operativo, proveedor de cloud, ubicación, información del clúster y el número de nodos. Los Datos de Despliegue y Uso no incluyen datos personales ni el contenido de los datos del Licenciatario gestionados por el Programa o Programa Empaquetado. Cada Programa Empaquetado también puede recopilar otros datos de despliegue y uso bajo sus propios términos de licencia.
+A menos que el Licenciatario desactive la función de Datos de Despliegue y Uso en el Programa, IBM podrá recibir Datos de Despliegue y Uso del Programa desplegado por el Licenciatario. En estos casos, los Datos de Despliegue y Uso se podrán enviar a los servidores de IBM y/o a los servicios de recopilación y análisis de datos proporcionados a IBM por uno o varios terceros, e IBM podrá utilizar dichos Datos de Despliegue y Uso para fines empresariales internos de IBM, incluyendo la gestión, planificación, soporte, mejora y perfeccionamiento de los productos y servicios de IBM, y para dar soporte y asesorar al Licenciatario en relación con el uso por parte del Licenciatario de los programas de software de IBM (p. ej., rendimiento, despliegue y planificación de la capacidad) y para ofrecer otros productos y servicios de IBM al Licenciatario, y podrá compartir dichos Datos de Despliegue y Uso con sus filiales, contratistas y socios comerciales en todo el mundo para estos fines.
+El Licenciatario puede desactivar la función de Datos de Despliegue y Uso en cualquier momento consultando la documentación del Programa disponible en https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering para obtener instrucciones detalladas sobre cómo desactivar la función.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Acuerdo Internacional de Licencia para Programas sin Garantía
 

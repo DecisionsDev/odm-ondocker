@@ -3,7 +3,7 @@ LICENCIJOS INFORMACIJA
 Toliau nurodytos Programos licencijuojamos pagal šias Licencijos informacijos sąlygas, kurios papildo Programos licencijos sąlygas, dėl kurių susitarė Klientas ir IBM. Jei Klientas anksčiau nėra sutikęs su Programai taikomomis licencijos sąlygomis, taikoma Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis (i125-5589-06).
 
 Programos pavadinimas (Programos numeris):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Šios standartinės sąlygos taikomos Licenciato Programos naudojimui.
 
@@ -17,14 +17,31 @@ Licenciatas įgaliotas diegti ir naudoti toliau nurodytas Pagalbines programas t
 
 Pagalbinės programos:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Kūrėjo apribojimas
 
 Jei Programa pažymėta kaip skirta „Kūrėjams“, Licenciatas gali naudoti Programą tik kaip Licenciato vidinio kūrimo ir įrenginių testavimo paskirties dalį. Kūrėjo kompiuteris – tai fizinė arba kompiuterio virtualioji aplinka, kurioje veikia pagrindinė operacinė sistema ir Programa, prie kurių prieigą turi ir kurias naudoja ne daugiau nei vienas nurodytas kūrėjas.
 
+Suteikiant būtinas teises nenaudojami komponentai
+
+Licenciatas gali diegti ir naudoti toliau nurodytus Programos komponentus pagal licencijos sąlygas, tačiau šie komponentai nenaudojami Programai reikalingų teisių skaičiui nustatyti.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Keičiamas trečiosios šalies kodas
 
 Jei PRANEŠIMŲ faile IBM trečiosios šalies kodą atpažįsta kaip modifikuojamą trečiosios šalies kodą, IBM leidžia Licenciatui 1) modifikuoti modifikuojamą trečiosios šalies kodą ir 2) nukopijuoti Programos modulius, kurie tiesiogiai siejasi su modifikuojamu trečiosios šalies kodu, su sąlyga, kad tai daroma tik Licenciato atliktų tokio trečiosios šalies kodo modifikacijų klaidų šalinimo tikslais. IBM aptarnavimo ir palaikymo įsipareigojimai, jei tokių yra, taikomi tik nemodifikuotai Programai.
+
+Atskirai licencijuojamas kodas
+
+Kiekvienas iš komponentų, išvardytų faile NON_IBM_LICENSE, laikomas „Atskirai licencijuojamu kodu“, kuris yra licencijuojamas Licenciatui remiantis taikomomis trečiosios šalies licencijos sutarties (-čių) sąlygomis, kurios išdėstytos kartu su Programa pateikiamame faile (-uose) NON_IBM_LICENSE, o ne šia Sutartimi. Būsimuose Programos naujinimuose arba taisymuose gali būti papildomų Atskirai licencijuotų kodų. Tokie papildomi Atskirai licencijuoti kodai ir susijusios licencijos išvardijami taikomame NON_IBM_LICENSE faile, kuris pateikiamas su Programos naujinimu arba taisymu. 
+
+Pastaba: nepaisant jokių trečiosios šalies sutarties, šios Sutarties ar kitos sutarties, kurią Licenciatas gali sudaryti su IBM, sąlygų, susijusių su Atskirai licencijuojamu kodu:
+(a) IBM pateikia jį Licenciatui NETAIKYDAMA JOKIŲ GARANTIJŲ IR PANEIGIA BET KOKIAS, VISAS APIBRĖŽTAS IR NUMANOMAS GARANTIJAS IR SĄLYGAS, ĮSKAITANT, BET NEAPSIRIBOJANT, NUOSAVYBĖS, NEPAŽEIDŽIAMUMO AR NESIKIŠIMO GARANTIJAS IR NUMANOMAS TINKAMUMO PREKYBAI IR TAM TIKRAM TIKSLUI GARANTIJAS BEI SĄLYGAS;
+(b) IBM neatsako už jokius tiesioginius, netiesioginius, atsitiktinius, ypatingus, pavyzdinius, baudžiamuosius ar priežastinius nuostolius, įskaitant, bet neapsiribojant, prarastus duomenis, prarastas santaupas ir prarastą pelną.
 
 Privatumas
 
@@ -38,10 +55,20 @@ Trečiosios šalies duomenys ir paslaugos
 
 Programa suteikia prieigą prie trečiosios šalies duomenų paslaugų, duomenų bazių, žiniatinklio paslaugų, programinės įrangos arba kito trečiosios šalies turinio (bendrai – „Trečiosios šalies turinys“). Prieiga prie šio Trečiosios šalies turinio pateikiama „TOKIA, KOKIA YRA“, NESUTEIKIANT JOKIŲ AIŠKIAI NURODYTŲ AR NENURODYTŲ GARANTIJŲ, ĮSKAITANT NUOSAVYBĖS TEISĖS, NEPAŽEIDŽIAMUMO AR NEĮSIKIŠIMO GARANTIJAS IR NENURODYTAS TINKAMUMO PREKIAUTI IR TAM TIKRAM TIKSLUI GARANTIJAS IR SĄLYGAS. Atitinkama trečioji šalis išskirtinai savo nuožiūra prieigą gali bet kada nutraukti. Klientui gali tekti sudaryti su trečiosiomis šalimis atskiras sutartis dėl prieigos prie tokio Trečiosios šalies turinio arba jo naudojimo. IBM nėra tokių atskirų sutarčių šalis ir, kaip aiškiai nurodyta šios licencijos sąlygose, Licenciatas sutinka laikytis tokių atskirų sutarčių sąlygų.
 
+Be anksčiau nurodytos informacijos, toliau nurodytos sąlygos taikomos Licenciato Programos naudojimui.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Naudojimo matavimo duomenų naudojimas
+Programa leidžia naudoti naudojimo matavimo informacijos suvestinę (toliau – Informacijos suvestinė), kuri įgalina tam tikrų su Licenciato IBM ir ne IBM programinės įrangos diegimu ir naudojimu susijusių duomenų ir metrikų bei kompiuterinės aplinkos, kurioje jie yra įdiegti (toliau – Naudojimo matavimo duomenys), pateikimą ir stebėjimą. Norint naudotis Informacijos suvestine, reikia užsiregistruoti „Red Hat Marketplace“ arba „IBM Software Central“. Licenciato naudojimąsi Informacijos suvestine ir IBM naudojimąsi Naudojimo matavimo duomenimis bei dalijimąsi jais reglamentuoja „Red Hat Marketplace, Operated by IBM“ paslaugos aprašo sąlygos, pateikiamos šiuo adresu: https://www.ibm.com/support/customer/csol/terms?id=i126-8719, ir, jei Licenciatas įgalina arba naudojasi Informacijos suvestine, Licenciatas sutinka su tomis sąlygomis.
+Diegimo ir naudojimo duomenys
+Pagal numatytuosius nustatymus Programa gali rinkti tam tikrus duomenis ir parametrus, susijusius su Licenciato vykdomu Programos ir (arba) Pridėtinių programų diegimu bei naudojimu (toliau – Diegimo ir naudojimo duomenys). Diegimo ir naudojimo duomenys gali, pavyzdžiui, apimti su kiekybiniais licencijų parametrais susijusią informaciją (pvz., VPC, išteklių, naudotojų skaičių bei kitus licencijos parametrus, kuriuos diegia, sunaudoja arba valdo Programa arba Pridėtinė programa) ir kitus kiekybinius parametrus, susijusius su Programos, Pridėtinės programos arba jų funkcijų naudojimu (pvz., API iškvietas, įvykius, atmintinę, naudotojo sąsajų sąveikas). Diegimo ir naudojimo duomenys taip pat gali apimti informaciją apie aplinką, kurioje yra įdiegta Programa arba Pridėtinė programa, pvz., informaciją apie architektūrą, operacinę sistemą, debesijos teikėją, vietą, klasterio informaciją, mazgų skaičių. Diegimo ir naudojimo duomenys neapima asmeninės informacijos bei Licenciato duomenų, kuriuos tvarko Programa arba Pridėtinė programa, turinio. Kiekviena Pridėtinė programa taip pat gali rinkti ir kitus Diegimo ir naudojimo duomenis pagal jos licencines sąlygas.
+Jei Licenciatas Programoje neišjungia Diegimo ir naudojimo duomenų funkcijos, IBM gali gauti Licenciato įdiegtos Programos diegimo ir naudojimo duomenis. Visais tokiais atvejais Diegimo ir naudojimo duomenys gali būti siunčiami į IBM serverius ir (arba) duomenų rinkimo ir analizės paslaugas, kurias IBM bendrovei teikia viena ar daugiau trečiųjų šalių, o IBM gali naudoti tokius Diegimo ir naudojimo duomenis IBM vidiniais verslo tikslais, įskaitant valdymą, planavimą, palaikymą, IBM produktų bei paslaugų gerinimą ir tobulinimą, bei kad galėtų palaikyti Licenciatą ir jam patarti Licenciato naudojimosi IBM programinės įrangos programomis klausimais (pvz., veikimo našumo, diegimo ir pajėgumų planavimo klausimais) ir pasiūlyti Licenciatui kitus IBM produktus bei paslaugas; šiais tikslais tokiais Diegimo ir naudojimo duomenimis IBM gali dalytis su savo asocijuotosiomis įmonėmis, rangovais ir verslo partneriais visame pasaulyje.
+Licenciatas gali bet kada išjungti Diegimo ir naudojimo duomenų funkciją, pasiskaitydamas Programos dokumentaciją, esančią adresu https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering, kur pateikiama išsami instrukcija, kaip išjungti funkciją.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Programų, kurioms neteikiama garantija, tarptautinė licencinė sutartis
 

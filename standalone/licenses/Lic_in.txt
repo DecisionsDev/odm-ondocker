@@ -3,7 +3,7 @@ INFORMASI LISENSI
 Program-program yang tercantum di bawah ini dilisensikan dengan syarat dan ketentuan Informasi Lisensi berikut ini selain syarat lisensi Program yang sebelumnya telah disetujui oleh Klien dan IBM. Apabila Klien sebelumnya tidak menyetujui syarat lisensi yang berlaku untuk Program, Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan (i125-5589-06) akan berlaku.
 
 Nama Program (Nomor Program):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Syarat-syarat standar berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
@@ -17,14 +17,31 @@ Pemegang Lisensi berhak memasang dan menggunakan Program Pendukung yang diidenti
 
 Program Pendukung:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Batasan Pengembang
 
 Apabila Program ditetapkan untuk "Para Pengembang", Pemegang Lisensi hanya dapat menggunakan Program sebagai bagian dari pengembangan internal Pemegang Lisensi dan pengujian unit pada mesin pengembang. Mesin pengembang adalah lingkungan desktop fisik atau virtual, yang menjalankan sistem operasi utama dan Program, yang keduanya dapat diakses dan digunakan oleh tidak lebih dari satu pengembang yang ditetapkan.
 
+Komponen yang Tidak Digunakan untuk Menetapkan Kepemilikan yang Diperlukan
+
+Pemegang Lisensi dapat memasang dan menggunakan komponen-komponen Program berikut, berdasarkan syarat-syarat lisensi, tetapi komponen-komponen ini tidak digunakan untuk menentukan jumlah kepemilikan yang diperlukan untuk Program.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Kode Pihak Ketiga yang Dapat Dimodifikasi
 
 Apabila dalam file PEMBERITAHUAN, jika ada, IBM mengidentifikasi kode pihak ketiga sebagai "Kode Pihak Ketiga yang Dapat Dimodifikasi", IBM memberikan wewenang kepada Penerima Lisensi untuk 1) memodifikasi Kode Pihak Ketiga yang Dapat Dimodifikasi dan 2) merekayasa balik modul Program yang berinteraksi secara langsung dengan Kode Pihak Ketiga yang Dapat Dimodifikasi dengan ketentuan bahwa hal ini hanya untuk tujuan debugging modifikasi Penerima Lisensi untuk kode pihak ketiga tersebut. Kewajiban dukungan dan layanan IBM, jika ada, hanya berlaku untuk Program yang belum dimodifikasi.
+
+Kode Berlisensi Terpisah
+
+Masing-masing komponen yang tercantum dalam file NON_IBM_LICENSE dianggap sebagai "Kode Berlisensi Terpisah" yang dilisensikan kepada Pemegang Lisensi berdasarkan syarat-syarat perjanjian(-perjanjian) lisensi pihak ketiga yang berlaku, yang tercantum dalam file(-file) NON_IBM_LICENSE yang menyertai Program, dan bukan Perjanjian ini. Pembaruan atau perbaikan Program di masa mendatang dapat berisi Kode Berlisensi Terpisah tambahan. Kode Berlisensi Terpisah tambahan tersebut dan lisensi terkait tercantum dalam file NON_IBM_LICENSE yang berlaku, yang menyertai pembaruan atau perbaikan Program. 
+
+Catatan: Terlepas dari syarat-syarat apa pun dalam perjanjian lisensi pihak ketiga, Perjanjian, atau perjanjian apa pun lainnya yang dapat dimiliki oleh Pemegang Lisensi dengan IBM, sehubungan dengan Kode Berlisensi Terpisah:
+(a) IBM memberikan Kode Berlisensi Terpisah ini kepada Pemegang Lisensi TANPA JAMINAN DALAM BENTUK APA PUN DAN MENOLAK SETIAP DAN SEMUA JAMINAN DAN KETENTUAN SECARA TEGAS DAN TERSIRAT, TERMASUK, NAMUN TIDAK TERBATAS PADA, JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU;
+(b) IBM tidak bertanggung jawab atas setiap ganti rugi langsung, tak langsung, insidental, khusus, eksemplari, hukuman atau konsekuensial termasuk, tetapi tidak terbatas pada, kehilangan data, simpanan, dan laba.
 
 Privasi
 
@@ -38,10 +55,20 @@ Data dan Layanan Pihak Ketiga
 
 Program menyediakan akses ke layanan data, basis data, layanan web, perangkat lunak pihak ketiga atau konten pihak ketiga lainnya (semuanya disebut sebagai "Konten Pihak Ketiga"). Akses ke Konten Pihak Ketiga ini diberikan "SEBAGAIMANA ADANYA", TANPA ADANYA JAMINAN DALAM BENTUK APA PUN, SECARA TEGAS ATAU TERSIRAT, TERMASUK JAMINAN HAK MILIK, TIDAK ADANYA PELANGGARAN ATAU TIDAK ADANYA GANGGUAN SERTA JAMINAN DAN KETENTUAN SECARA TERSIRAT TENTANG KELAYAKAN UNTUK DIPERJUALBELIKAN DAN KESESUAIAN UNTUK TUJUAN TERTENTU. Akses dapat diakhiri oleh para pihak ketiga yang relevan atas kebijakan mereka semata-mata sewaktu-waktu. Pemegang Lisensi dapat diwajibkan untuk mengadakan perjanjian-perjanjian terpisah dengan para pihak ketiga untuk akses ke atau penggunaan Konten Pihak Ketiga tersebut. IBM bukanlah suatu pihak dalam perjanjian-perjanjian terpisah tersebut dan sebagai ketentuan tegas dari lisensi ini, Pemegang Lisensi setuju untuk mematuhi syarat-syarat dari perjanjian-perjanjian terpisah tersebut.
 
+Selain hal-hal di atas, syarat-syarat berikut ini berlaku untuk penggunaan Program oleh Pemegang Lisensi.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Penggunaan Data Pengukuran Penggunaan
+Program memungkinkan penggunaan dasbor pengukuran penggunaan ("Dasbor") yang memungkinkan tampilan dan pemantauan data dan metrik tertentu terkait penyebaran dan penggunaan Penerima Lisensi atas program perangkat lunak IBM dan non-IBM, serta lingkungan komputasi yang padanya program disebarkan ("Data Pengukuran Penggunaan"). Penggunaan Dasbor memerlukan pendaftaran di Red Hat Marketplace atau IBM Software Central. Penggunaan Dasbor oleh Penerima Lisensi dan penggunaan serta pembagian Data Pengukuran Penggunaan oleh IBM diatur oleh syarat-syarat Uraian Layanan untuk Red Hat Marketplace, yang Dioperasikan oleh IBM dan tersedia di sini: https://www.ibm.com/support/customer/csol/terms?id=i126-8719, dan jika Penerima Lisensi mengaktifkan atau menggunakan Dasbor, Penerima Lisensi menyetujui persyaratan tersebut.
+Data Penyebaran dan Penggunaan
+Program secara default dapat mengumpulkan data dan metrik tertentu mengenai penyebaran atau penggunaan Program dan/atau Program Bundel oleh Penerima Lisensi ("Data Penyebaran dan Penggunaan"). Data Penggunaan dan Penyebaran dapat menyertakan, contohnya, informasi terkait metrik lisensi kuantitatif (misalnya jumlah VPC, sumber daya, pengguna, atau metrik lisensi lain yang disebarkan, dikonsumsi, atau dikelola oleh Program atau Program yang Dibundel), dan metrik kuantitatif lain yang terkait dengan penggunaan Program atau Program yang Dibundel atau fitur-fiturnya (misalnya panggilan API, peristiwa, penyimpanan, interaksi antarmuka pengguna). Data Penyebaran dan Penggunaan juga dapat mencakup informasi mengenai lingkungan di mana Program atau Program yang Dibundel disebarkan, seperti arsitektur, sistem operasi, penyedia cloud, lokasi, informasi klaster, jumlah node. Data Penyebaran dan Penggunaan tidak menyertakan data pribadi, atau konten data Penerima Lisensi yang dikelola oleh Program atau Program yang Dibundel. Setiap Program yang Dibundel juga dapat mengumpulkan data penyebaran dan penggunaan lainnya berdasarkan syarat-syarat lisensi sendiri.
+Kecuali Penerima Lisensi menonaktifkan fitur Data Penyebaran dan Penggunaan dalam Program, IBM dapat menerima Data Penyebaran dan Penggunaan dari Program yang disebarkan oleh Penerima Lisensi. Dalam semua kasus tersebut, Data Penggunaan dan Penyebaran dapat dikirimkan ke server IBM dan/atau pengumpulan data serta layanan analitis yang diberikan kepada IBM oleh satu pihak ketiga atau lebih, dan IBM dapat menggunakan Data Penggunaan dan Penyebaran tersebut untuk tujuan bisnis internal IBM, termasuk manajemen, perencanaan, dukungan, perbaikan, dan peningkatan produk serta layanan IBM, dan untuk mendukung dan memberi saran kepada Penerima Lisensi mengenai penggunaan program perangkat lunak IBM oleh Penerima Lisensi (misalnya kinerja, perencanaan penyebaran dan kapasitas) dan untuk penawaran produk serta layanan IBM lainnya kepada Penerima Lisensi, dan dapat membagikan Data Penggunaan dan Penyebaran tersebut dengan afiliasi, kontraktor, dan mitra bisnisnya di seluruh dunia untuk tujuan-tujuan ini.
+Penerima Lisensi dapat menonaktifkan fitur Data Penyebaran dan Penggunaan kapan saja dengan merujuk pada dokumentasi Program di https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering untuk instruksi mendetail mengenai cara menonaktifkan fitur tersebut.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Perjanjian Lisensi Internasional untuk Program Tanpa Jaminan
 

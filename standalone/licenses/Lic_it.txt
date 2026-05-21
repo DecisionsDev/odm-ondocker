@@ -3,7 +3,7 @@ INFORMAZIONI RELATIVE ALLA LICENZA
 I Programmi elencati di seguito sono concessi in licenza in base alle seguenti clausole e condizioni License Information in aggiunta alle clausole della licenza del Programma precedentemente accettate dal Cliente e IBM. Se il Cliente non ha accettato precedentemente le clausole della licenza in vigore per il Programma, si applica Accordo Internazionale di Licenza per Programmi senza Garanzia (i125-5589-06).
 
 Nome Programma (Numero Programma):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Le seguenti clausole standard si applicano all'utilizzo del Programma da parte del licenziatario.
 
@@ -17,14 +17,31 @@ Il licenziatario è autorizzato ad installare e utilizzare i Programmi di Suppor
 
 Programmi di Supporto:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Limitazione per lo sviluppatore
 
 Se il Programma è designato per "Sviluppatori", il licenziatario è autorizzato ad utilizzare il Programma solo come parte dell'attività di sviluppo interno e test di unità del licenziatario stesso su una macchina dello sviluppatore. Una macchina dello sviluppatore è un ambiente desktop fisico o virtuale, che esegue un sistema operativo primario e il Programma, entrambi accessibili e utilizzati da più di uno sviluppatore specificato. 
 
+Componenti non utilizzate per stabilire le titolarità richieste
+
+Il licenziatario è autorizzato ad installare e utilizzare le seguenti componenti del Programma, nel rispetto dei termini della licenza, ma tali componenti non saranno utilizzate per determinare il numero di titolarità richieste per il Programma.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Codice di Terze Parti Modificabile
 
 Se e nei limiti in cui, nei file NOTICES, IBM dovesse identificare codice di terze parti come "Codice di Terze Parti Modificabile", IBM autorizza il Licenziatario a 1) modificare il Codice di Terze Parti Modificabile e 2) eseguire il reverse engineer dei moduli del Programma che si interfacciano direttamente con il Codice di Terze Parti Modificabile a condizione che sia solo allo scopo di eseguire il debug delle modifiche del Licenziatario per tale codice di terze parti. Gli obblighi di servizio e supporto di IBM, se esistenti, si applicano solo al Programma non modificato.
+
+Codice concesso in licenza separatamente
+
+Ognuna delle componenti elencate nel file NON_IBM_LICENSE viene considerata "Codice concesso in licenza separatamente", concessa in licenza al licenziatario nel rispetto dei termini dell'/degli accordo/i di licenza di terze parti applicabile/i esposto/i nel/i file NON_IBM_LICENSE accluso/i al Programma e non del presente Accordo. Futuri aggiornamenti o fix al Programma possono contenere ulteriore Codice concesso in licenza separatamente. Tale Codice concesso in licenza separatamente aggiuntivo e le relative licenze sono elencati nel file NON_IBM_LICENSE applicabile, che accompagna l'aggiornamento o fix al Programma. 
+
+Nota: Fatti salvi eventuali termini presenti nell'accordo di licenza di terza parte, l'Accordo, o in qualsiasi altro accordo il licenziatario possa avere in corso con IBM, per quanto riguarda il Codice concesso in licenza separatamente:
+(a) IBM lo fornisce al licenziatario SENZA GARANZIA DI ALCUN TIPO E NEGA IN TOTO QUALSIASI GARANZIA E CONDIZIONE ESPRESSA E IMPLICITA INCLUSE, SOLO A TITOLO ESEMPLIFICATIVO, LA GARANZIA DI TITOLO, DI NON VIOLAZIONE O NON INTERFERENZA E LE GARANZIE E CONDIZIONI IMPLICITE DI COMMERCIABILITÀ E IDONEITÀ PER UNO SCOPO PARTICOLARE;
+(b) IBM non deve ritenersi responsabile di eventuali danni diretti, indiretti, incidentali, speciali, esemplari, punitivi o consequenziali, che includono, solo a titolo esemplificativo, perdita di dati, perdita di risparmi o mancati profitti:
 
 Privacy
 
@@ -38,10 +55,20 @@ Servizi e dati di terze parti
 
 Il Programma consente l'accesso a servizi dati, database, servizi web, software o altri contenuti di terze parti (complessivamente, "Contenuto di terza parte"). L'accesso a questo Contenuto di terza parte è fornito "NELLO STATO IN CUI SI TROVA", SENZA GARANZIE, ESPRESSE O IMPLICITE, INCLUSE GARANZIE DI TITOLARITÀ', FUNZIONAMENTO ININTERROTTO O INTERFERENZA E LE GARANZIE E LE CONDIZIONI IMPLICITE DI COMMERCIABILITÀ E IDONEITÀ PER UNO SCOPO PARTICOLARE. L'accesso può essere terminato dalle terze parti pertinenti in qualsiasi momento e a loro unica discrezione. Al licenziatario può essere richiesto di stipulare accordi separati con le terze parti in relazione alla disponibilità o all'uso di tale Contenuto di terza parte. IBM non è una parte di nessuno di tali accordi a parte e come espressa condizione della presente licenza, il licenziatario accetta di rispettare le clausole di tali accordo a parte.
 
+Inoltre, le seguenti clausole si applicano all'utilizzo del Programma da parte del licenziatario.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Uso della Misurazione dell'Utilizzo dei Dati
+Il Programma consente l'utilizzo di un dashboard per la misurazione dell'utilizzo (il "Dashboard") che consente la visualizzazione e il monitoraggio di determinati dati e metriche inerenti l'implementazione e l'utilizzo dei programmi software IBM e non-IBM da parte del licenziatario, come anche l'ambiente di elaborazione su cui sono implementati ("Dati di Misurazione dell'Utilizzo"). Per utilizzare il Dashboard, è necessario effettuare la registrazione su Red Hat Marketplace o IBM Software Central. L'utilizzo del Dashboard da parte del Licenziatario e l'uso e la condivisione dei Dati di Misurazione dell'Utilizzo da parte di IBM sono regolati dai termini della Descrizione dei Servizi di Red Hat Marketplace, gestito da IBM, disponibile qui: https://www.ibm.com/support/customer/csol/terms?id=i126-8719. Abilitando o utilizzando il Dashboard, il Licenziatario accetta i suddetti termini.
+Dati di Distribuzione e Utilizzo
+Il Programma può raccogliere per impostazione predefinita determinati dati e parametri riguardanti la distribuzione o l'utilizzo del Programma e/o dei Programmi in Bundle da parte del Licenziatario ("Dati di Distribuzione e Utilizzo"). I dati di distribuzione e utilizzo possono includere, ad esempio, informazioni quantitative relative alle metriche di licenza (ad esempio il numero di VPC, le risorse, gli utenti o altre metriche di licenza distribuite, consumate o gestite dal Programma o dal Programma in bundle) e altre metriche quantitative relative utilizzo del Programma o del Programma in bundle o delle loro funzionalità (ad esempio chiamate API, eventi, memorizzazione, interazioni con l'interfaccia utente). I Dati di Distribuzione e Utilizzo possono anche contenere informazioni relative all'ambiente in cui è distribuito il Programma o il Programma in Bundle, come, ad esempio, l'architettura, il sistema operativo, il provider cloud, l'ubicazione, le informazioni sul cluster e il numero di nodi. I Dati di Distribuzione e Utilizzo non includono i dati personali o il contenuto dei dati del Licenziatario gestiti dal Programma o dal Programma in Bundle. Ciascun Programma in Bundle può anche raccogliere altri dati di distribuzione e utilizzo in conformità con i termini della propria licenza.
+A meno che il Licenziatario non disabiliti la funzionalità Dati di Distribuzione e Utilizzo nel Programma, IBM può ricevere Dati di Distribuzione e Utilizzo dal Programma distribuito dal Licenziatario. In tutti questi casi, i Dati di Distribuzione e Utilizzo possono essere inviati ai server IBM e/o ai servizi di raccolta e analisi dei dati forniti a IBM da una o più terze parti e IBM può utilizzare tali Dati di Distribuzione e di Utilizzo per scopi aziendali interni di IBM, tra cui la gestione, la pianificazione, il supporto, il miglioramento e il potenziamento dei prodotti e dei servizi IBM, nonché per supportare e consigliare il Licenziatario in merito all'utilizzo dei programmi software IBM (ad esempio, la pianificazione delle prestazioni e della capacità) e per offrire altri prodotti e servizi IBM al Licenziatario, e può condividere tali Dati di distribuzione e di utilizzo con le sue affiliate, i suoi appaltatori e i suoi partner commerciali in tutto il mondo per questi scopi.
+Il Licenziatario può disabilitare la funzionalità dei Dati di Distribuzione e Utilizzo in qualsiasi momento facendo riferimento alla documentazione del Programma all'indirizzo https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering per istruzioni dettagliate su come disabilitare la funzionalità.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Accordo Internazionale di Licenza per Programmi senza Garanzia
 
