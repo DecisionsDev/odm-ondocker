@@ -13,8 +13,11 @@
 			</security-role>
 		</application-bnd>
                 <classloader delegation="parentLast">
+                        <privateLibrary>
+                                <folder dir="/config/download" id="download-resources"/>
+                        </privateLibrary>
 			<privateLibrary>
-                                <fileset dir="/config/download" includes="*.jar" scanInterval="5s" id="downloaddir"/>
+                                <fileset dir="/config/download" includes="*.jar" scanInterval="5s" id="download-jars"/>
                         </privateLibrary>
                 </classloader>
 	</application>
@@ -27,11 +30,14 @@
 			</security-role>
 		</application-bnd>
 		<classloader delegation="parentLast">
-			<commonLibrary>
-				<folder dir="/config/pluginconfig" id="plugindir"  />
-			</commonLibrary>
 			<privateLibrary>
-                                <fileset dir="/config/download" includes="*.jar" scanInterval="5s" id="downloaddir"/>
+				<folder dir="/config/pluginconfig" id="pluginconfig-resources"  />
+			</privateLibrary>
+                        <privateLibrary>
+                                <folder dir="/config/download" id="download-resources"/>
+                        </privateLibrary>
+			<privateLibrary>
+                                <fileset dir="/config/download" includes="*.jar" scanInterval="5s" id="download-jars"/>
                         </privateLibrary>	
 		</classloader>
 	</application>
