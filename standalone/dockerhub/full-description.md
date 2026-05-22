@@ -12,7 +12,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/9.5.0?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/9.6.0?topic=overview-introduction)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -29,13 +29,8 @@ docker pull icr.io/cpopen/odm-k8s/odm
 	[latest release](https://docs.docker.com/engine/release-notes/#201021) (down to Engine 28.x)
 
 -	**Rule Designer development environment for ODM developers**:  
-	Available from the [Eclipse marketplace](https://marketplace.eclipse.org/content/ibm-operational-decision-manager-developers-v95x-rule-designer)
-
-	You install Rule Designer into [Eclipse 2024-12 (4.34)](https://www.eclipse.org/downloads/packages/release/2024-12/r). Use at least [Eclipse Modeling Tool](https://www.eclipse.org/downloads/packages/release/2024-12/r/eclipse-modeling-tools) or [Eclipse IDE for Enterprise Java and Web Developers](https://www.eclipse.org/downloads/packages/release/2024-12/r/eclipse-ide-enterprise-java-and-web-developers).
-    
-	Eclipse 2024-12 uses Java Development Kit (JDK) 21. You can download the JDK from [IBM Semeru Runtimes Downloads](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/).
-
-	More informations on [ODM Documentation- Installing Rule Designer](https://www.ibm.com/docs/en/odm/9.5.0?topic=950-installing-rule-designer)
+	
+	More informations on [ODM Documentation- Installing Rule Designer](https://www.ibm.com/docs/en/odm/9.6.0?topic=ird-installing-ready-use-rule-designer)
 
 -	**Sample projects**:
 
@@ -60,7 +55,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/9.5.0?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/9.6.0?topic=overview-introduction) site.
 
 
   # Usage
