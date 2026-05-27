@@ -12,7 +12,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 # Quick reference
 
 -	**Where to get help**:
-  * [ODM Documentation](https://www.ibm.com/docs/en/odm/9.5.0?topic=manager-introducing-operational-decision)
+  * [ODM Documentation](https://www.ibm.com/docs/en/odm/9.6.0?topic=overview-introduction)
   * [IBM Business Automation Community](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)
 
 -	**Where to file issues**:  
@@ -65,7 +65,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 # Overview
 
-  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/9.5.0?topic=manager-introducing-operational-decision) site.
+  The image in this repository contains IBM Operational Decision Manager for Developers based on the IBM Websphere Application Server Liberty for Developer image. See the license section below for restrictions on the use of this image. For more information about IBM Operational Decision Manager, see the [ODM Documentation](https://www.ibm.com/docs/en/odm/9.6.0?topic=overview-introduction) site.
 
 
   # Usage
