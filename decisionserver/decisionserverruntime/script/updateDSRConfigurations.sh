@@ -196,6 +196,7 @@ else
   echo "No /config/monitor/monitor.xml ! Disable monitoring"
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
+  sed -i '/restConnector/d' /config/featureManager.xml
 fi
 
 if [ -s "/config/logstashCollector/logstashCollector.xml" ]
