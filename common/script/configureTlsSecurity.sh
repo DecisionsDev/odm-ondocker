@@ -45,7 +45,7 @@ then
 		# Set env var if secrets are passed using mounted volumes
 		[ -f /config/secrets/dba-password ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password)
 		echo "change default keystore password with provided Root CA keystore password"
-		DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
+		DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 	fi
 else
         echo "no file /shared/tls/truststore/jks/trusts.jks"
