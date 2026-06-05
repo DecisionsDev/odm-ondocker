@@ -25,10 +25,10 @@ then
 	cp /shared/tls/keystore/jks/server.jks /config/security/keystore.jks
         DEFAULT_KEYSTORE_PASSWORD=changeit
 
-	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password ]
+	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
 	then
 		# Set env var if secrets are passed using mounted volumes
-		[ -f /config/secrets/dba-password ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password)
+		[ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
 		echo "change default keystore password with provided Root CA keystore password"
 		DEFAULT_KEYSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 	fi
@@ -40,10 +40,10 @@ then
 	cp /shared/tls/truststore/jks/trusts.jks /config/security/truststore.jks
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
 
-	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password ]
+	if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
 	then
 		# Set env var if secrets are passed using mounted volumes
-		[ -f /config/secrets/dba-password ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password)
+		[ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
 		echo "change default keystore password with provided Root CA keystore password"
 		DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 	fi
