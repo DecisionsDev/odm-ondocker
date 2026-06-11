@@ -32,7 +32,7 @@ docker pull icr.io/cpopen/odm-k8s/odm
 
 	You have three options for installing Rule Designer, which you use to create decision services to implement your business logic.
 
-	Your options include a ready-to-use version and online and offline versions that use an existing Eclipse installation. For the online and offline installations, you must have [Eclipse 2025-12](https://www.eclipse.org/downloads/packages/release/2025-12/r) (v3.8). The ready-to-use version is the preferred installation — no Eclipse or Java installation required.
+	Your options include a ready-to-use version and online and offline versions that use an existing Eclipse installation. For the online and offline installations, you must have [Eclipse 2025-12](https://www.eclipse.org/downloads/packages/release/2025-12/r) (v4.38). The ready-to-use version is the preferred installation — no Eclipse or Java installation required.
 
 	| Option | Description |
 	|---|---|
