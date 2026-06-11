@@ -5,7 +5,7 @@ then
   if [[ $ENABLE_FIPS =~ "true" ]]
   then
 	echo "FIPS Enabled : update configuration for FIPS"
-	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
+#	cp /config/tlsSecurityFIPS.xml /config/tlsSecurity.xml
 	cp /config/ltpaFIPS.xml /config/ltpa.xml
   fi
 fi
