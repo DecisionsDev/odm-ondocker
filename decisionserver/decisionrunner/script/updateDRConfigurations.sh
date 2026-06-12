@@ -88,6 +88,13 @@ fi
 
 if [ -n "$OPENID_CONFIG" ]
 then
+
+  if [ -s "/config/auth/authFilters.xml" ]
+  then
+    echo "copy provided /config/auth/authFilters.xml to /config/authOidc/authFilters.xml"
+    cp /config/auth/authFilters.xml /config/authOidc/authFilters.xml
+  fi
+
   if [ -s "/config/auth/openIdParameters.properties" ]
   then
     echo "copy provided /config/auth/openIdParameters.properties to /config/authOidc/openIdParameters.properties"
@@ -155,6 +162,7 @@ else
   echo "No /config/monitor/monitor.xml ! Disable monitoring"
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
+  sed -i '/restConnector/d' /config/featureManager.xml
 fi
 
 if [ -s "/config/logstashCollector/logstashCollector.xml" ]

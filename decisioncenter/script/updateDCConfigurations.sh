@@ -4,12 +4,39 @@ echo "Update Decision Center configurations"
 
 DC_SERVER_CONFIG="/config/server-configurations.json"
 
+# Function to update OIDC parameter in OdmOidcProviders.json
+update_oidc_parameter() {
+   local param_name=$1
+   local json_key=$2
+   local display_name=$3
+   local default_value=$4
+   
+   local param_value=$(grep "$param_name" /config/authOidc/openIdParameters.properties | sed "s/$param_name=//g")
+   
+   if [ -n "$param_value" ]; then
+      echo "OAuth config : set $display_name to $param_value"
+      sed -i "s|$param_name|$param_value|g" /config/OdmOidcProviders.json
+   elif [ -n "$default_value" ]; then
+      echo "OAuth config : no provided $param_name then set default $display_name to $default_value"
+      sed -i "s|$param_name|$default_value|g" /config/OdmOidcProviders.json
+   else
+      echo "OAuth config : no provided $param_name"
+      sed -i "/$json_key/d" /config/OdmOidcProviders.json
+   fi
+}
+
 if [ -n "$OPENID_CONFIG" ]
 then
   if [ -n "$DISABLE_LOGIN_PANEL" ]
   then
     echo "disable Business Console Basic Auth Login Panel"
     echo "<%response.sendRedirect(\"/decisioncenter\");%>" > /config/apps/decisioncenter.war/WEB-INF/views/login.jsp
+  fi
+
+  if [ -s "/config/auth/authFilters.xml" ]
+  then
+    echo "copy provided /config/auth/authFilters.xml to /config/authOidc/authFilters.xml"
+    cp /config/auth/authFilters.xml /config/authOidc/authFilters.xml
   fi
 
   if [ -s "/config/auth/openIdParameters.properties" ]
@@ -42,6 +69,27 @@ then
       sed -i 's|__OPENID_LOGOUT_TOKEN_PARAM__|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/authOidc/openIdParameters.properties
     else
       sed -i '/OPENID_LOGOUT_TOKEN_PARAM/d'  /config/authOidc/openIdParameters.properties
+    fi
+
+    if [ -n "$DC_OPENID_POST_LOGOUT_REDIRECT_URI" ]
+    then
+      sed -i 's|__DC_OPENID_POST_LOGOUT_REDIRECT_URI__|'$DC_OPENID_POST_LOGOUT_REDIRECT_URI'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/DC_OPENID_POST_LOGOUT_REDIRECT_URI/d'  /config/authOidc/openIdParameters.properties
+    fi
+
+    if [ -n "$DS_OPENID_POST_LOGOUT_REDIRECT_URI" ]
+    then
+      sed -i 's|__DS_OPENID_POST_LOGOUT_REDIRECT_URI__|'$DS_OPENID_POST_LOGOUT_REDIRECT_URI'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/DS_OPENID_POST_LOGOUT_REDIRECT_URI/d'  /config/authOidc/openIdParameters.properties
+    fi
+
+    if [ -n "$OPENID_SCOPE" ]
+    then
+      sed -i 's|__OPENID_SCOPE__|'$OPENID_SCOPE'|g' /config/authOidc/openIdParameters.properties
+    else
+      sed -i '/OPENID_SCOPE/d'  /config/authOidc/openIdParameters.properties
     fi
   fi
   # Set env var if secrets are passed using mounted volumes
@@ -104,105 +152,19 @@ then
 
      sed -i 's|OPENID_PROVIDER|'$OPENID_PROVIDER'|g' /config/OdmOidcProviders.json
 
-     OPENID_AUTHORIZATION_URL=$(grep OPENID_AUTHORIZATION_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_AUTHORIZATION_URL=//g")
-     if [ -n "$OPENID_AUTHORIZATION_URL" ]
-     then
-     	echo "OAuth config : set authorization URL to $OPENID_AUTHORIZATION_URL"
-     	sed -i 's|OPENID_AUTHORIZATION_URL|'$OPENID_AUTHORIZATION_URL'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_AUTHORIZATION_URL"
-        sed -i '/authorizationURL/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_TOKEN_URL=$(grep OPENID_TOKEN_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_URL=//g")
-     if [ -n "$OPENID_TOKEN_URL" ]
-     then
-     	echo "OAuth config : set token URL to $OPENID_TOKEN_URL"
-     	sed -i 's|OPENID_TOKEN_URL|'$OPENID_TOKEN_URL'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_TOKEN_URL"
-        sed -i '/tokenURL/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_INTROSPECTION_URL=$(grep OPENID_INTROSPECTION_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_INTROSPECTION_URL=//g")
-     if [ -n "$OPENID_INTROSPECTION_URL" ]
-     then
-     	echo "OAuth config : set introspection URL to $OPENID_INTROSPECTION_URL"
-     	sed -i 's|OPENID_INTROSPECTION_URL|'$OPENID_INTROSPECTION_URL'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_INTROSPECTION_URL"
-        sed -i '/introspectionURL/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_CLIENT_ID=$(grep OPENID_CLIENT_ID /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_ID=//g")
-     if [ -n "$OPENID_CLIENT_ID" ]
-     then
-     	echo "OAuth config : set client ID to $OPENID_CLIENT_ID"
-     	sed -i 's|OPENID_CLIENT_ID|'$OPENID_CLIENT_ID'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_CLIENT_ID"
-        sed -i '/clientId/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_CLIENT_SECRET=$(grep OPENID_CLIENT_SECRET /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_SECRET=//g")
-     if [ -n "$OPENID_CLIENT_SECRET" ]
-     then
-     	echo "OAuth config : set client Secret to $OPENID_CLIENT_SECRET"
-     	sed -i 's|OPENID_CLIENT_SECRET|'$OPENID_CLIENT_SECRET'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_CLIENT_SECRET"
-        sed -i '/clientSecret/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_CLIENT_ASSERTION_ALIAS_NAME=$(grep OPENID_CLIENT_ASSERTION_ALIAS_NAME /config/authOidc/openIdParameters.properties | sed "s/OPENID_CLIENT_ASSERTION_ALIAS_NAME=//g")
-     if [ -n "$OPENID_CLIENT_ASSERTION_ALIAS_NAME" ]
-     then
-        echo "OAuth config : set client Assertion Alias Name to $OPENID_CLIENT_ASSERTION_ALIAS_NAME"
-        sed -i 's|OPENID_CLIENT_ASSERTION_ALIAS_NAME|'$OPENID_CLIENT_ASSERTION_ALIAS_NAME'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_CLIENT_SECRET"
-        sed -i '/clientAssertionAliasName/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_TOKEN_FORMAT=$(grep OPENID_TOKEN_FORMAT /config/authOidc/openIdParameters.properties | sed "s/OPENID_TOKEN_FORMAT=//g")
-     if [ -n "$OPENID_TOKEN_FORMAT" ]
-     then
-	echo "OAuth config : set Token Format to $OPENID_TOKEN_FORMAT"
-	sed -i 's|OPENID_TOKEN_FORMAT|'$OPENID_TOKEN_FORMAT'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_TOKEN_FORMAT"
-        sed -i '/tokenFormat/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
-     if [ -n "$OPENID_LOGOUT_URL" ]
-     then
-     	echo "OAuth config : set logout URL to $OPENID_LOGOUT_URL"
-     	sed -i 's|OPENID_LOGOUT_URL|'$OPENID_LOGOUT_URL'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_LOGOUT_URL"
-        sed -i '/logoutURL/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_LOGOUT_TOKEN_PARAM=$(grep OPENID_LOGOUT_TOKEN_PARAM /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_TOKEN_PARAM=//g")
-     if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]
-     then
-        echo "OAuth config : set logout URL to $OPENID_LOGOUT_TOKEN_PARAM"
-        sed -i 's|OPENID_LOGOUT_TOKEN_PARAM|'$OPENID_LOGOUT_TOKEN_PARAM'|g' /config/OdmOidcProviders.json
-     else
-        echo "OAuth config : no provided OPENID_LOGOUT_TOKEN_PARAM"
-        sed -i '/logoutTokenParam/d' /config/OdmOidcProviders.json
-     fi
-
-     OPENID_GRANT_TYPE=$(grep OPENID_GRANT_TYPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_GRANT_TYPE=//g")
-     if [ -n "$OPENID_GRANT_TYPE" ]
-     then
-	echo "OAuth config : set grantType to $OPENID_GRANT_TYPE"
-     	sed -i 's|OPENID_GRANT_TYPE|'$OPENID_GRANT_TYPE'|g' /config/OdmOidcProviders.json
-     else
-	echo "OAuth config : no provided OPENID_GRANT_TYPE then set default grantType to client_credentials "
-	sed -i 's|OPENID_GRANT_TYPE|client_credentials|g' /config/OdmOidcProviders.json
-     fi
+     # Update all OIDC parameters using the function
+     update_oidc_parameter "OPENID_AUTHORIZATION_URL" "authorizationURL" "authorization URL"
+     update_oidc_parameter "OPENID_TOKEN_URL" "tokenURL" "token URL"
+     update_oidc_parameter "OPENID_INTROSPECTION_URL" "introspectionURL" "introspection URL"
+     update_oidc_parameter "OPENID_CLIENT_ID" "clientId" "client ID"
+     update_oidc_parameter "OPENID_CLIENT_SECRET" "clientSecret" "client Secret"
+     update_oidc_parameter "OPENID_CLIENT_ASSERTION_ALIAS_NAME" "clientAssertionAliasName" "client Assertion Alias Name"
+     update_oidc_parameter "OPENID_TOKEN_FORMAT" "tokenFormat" "Token Format"
+     update_oidc_parameter "OPENID_LOGOUT_URL" "logoutURL" "logout URL"
+     update_oidc_parameter "OPENID_LOGOUT_TOKEN_PARAM" "logoutTokenParam" "logoutTokenParam parameter"
+     update_oidc_parameter "DC_OPENID_POST_LOGOUT_REDIRECT_URI" "postLogoutRedirectUri" "Decision Center postLogoutRedirectUri parameter"
+     update_oidc_parameter "OPENID_GRANT_TYPE" "grantType" "grantType" "client_credentials"
+     update_oidc_parameter "OPENID_SCOPE" "scope" "scope"
 
      echo "Copy /config/OdmOidcProviders.json resource to $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json"
      cp /config/OdmOidcProviders.json $APPS/decisioncenter.war/WEB-INF/classes/OdmOidcProviders.json
@@ -555,6 +517,7 @@ else
   echo "No /config/monitor/monitor.xml ! Disable monitoring"
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
+  sed -i '/restConnector/d' /config/featureManager.xml
 fi
 
 if [ -s "/config/logstashCollector/logstashCollector.xml" ]

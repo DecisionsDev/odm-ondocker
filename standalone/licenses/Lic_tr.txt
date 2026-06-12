@@ -3,7 +3,7 @@ LİSANS BİLGİLERİ
 Aşağıda listelenen programlar, daha önce Müşteri ve IBM tarafından kabul edilen Program lisansı koşullarına ek olarak aşağıdaki Lisans Bilgilerinin kayıt ve koşulları kapsamında lisanslanır. Müşteri, Programa ilişkin yürürlükte olan lisans koşullarını daha önce kabul etmemişse, Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi (i125-5589-06) geçerli olur.
 
 Program Adı (Program Numarası):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Aşağıdaki standart koşullar, Lisans Alan Tarafın Programı kullanımı için geçerlidir.
 
@@ -17,14 +17,31 @@ Lisans Alan Tarafa, aşağıda tanımlanan Destekleyici Programları yalnızca b
 
 Destekleyici Programlar:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Geliştirici Sınırlaması
 
 Program "Geliştiriciler için" olarak belirlenmişse, Lisans Alan Taraf, Programı yalnızca Lisans Alan Tarafın dahili geliştirme ve birim testi amaçlarıyla bir geliştirici makinesinde devreye alabilir. Geliştirici makinesi, her ikisi de erişilebilir olan ve yalnızca tek bir belirli geliştirici tarafından kullanılan birincil işletim sistemini ve bu Programı çalıştıran fiziksel ya da sanal bir masaüstü ortamıdır.
 
+Gerekli Yetkilerin Belirlenmesi İçin Kullanılmayan Bileşenler
+
+Lisans Alan Taraf, aşağıdaki Program bileşenlerini lisans koşulları kapsamında kurabilir ve kullanabilir, ancak bu bileşenler Program için gereken yetki sayısının belirlenmesinde kullanılmaz.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Değiştirilebilir Üçüncü Kişi Kodu
 
 IBM'in, varsa, NOTICES dosyasında üçüncü kişi kodunu "Değiştirilebilir Üçüncü Kişi Kodu" olarak tanımladığı ölçüde, IBM, Lisans Alan Tarafa 1) Değiştirilebilir Üçüncü Kişi Kodunu değiştirme ve 2) yalnızca Lisans Alan Tarafın anılan üçüncü kişi kodu üzerinde yaptığı değişikliklerinden kaynaklanan hataların ayıklanması amacıyla, Değiştirilebilir Üçüncü Kişi Kodu ile doğrudan arayüzü olan Program modülleri üzerinde tersine mühendislik gerçekleştirme yetkisi verir. Varsa, IBM'in hizmet ve destek yükümlülükleri yalnızca değişiklik yapılmamış Program için geçerlidir.
+
+Ayrı Olarak Lisanslanan Kod
+
+NON_IBM_LICENSE dosyasında listelenen bileşenlerin her biri, Lisans Alan Tarafa Programla birlikte gönderilen NON_IBM_LICENSE (IBM DIŞI LİSANS) dosyasında/dosyalarında yer alan geçerli üçüncü kişi sözleşmelerinin koşulları kapsamında lisanslanmış "Ayrı Olarak Lisanslanan Kod" olarak kabul edilir. Gelecekteki Program güncellemeleri veya düzeltmeleri, Ayrı Olarak Lisanslanan ek Kod içerebilir. Bu tür ek niteliğindeki Ayrı Olarak Lisanslanan Kod ve ilgili lisansları, Program güncellemesi veya düzeltmesi ile birlikte gönderilen ilgili NON_IBM_LICENSE (IBM DIŞI LİSANS) dosyasında belirtilir. 
+
+Not: Ayrı Olarak Lisanslanan Koda ilişkin olarak üçüncü kişi lisans sözleşmesinde, bu Sözleşmede veya Lisans Alan Tarafın IBM ile yapmış olabileceği diğer herhangi bir sözleşmede yer alan koşullara etki etmeksizin:
+(a) IBM, bunu Lisans Alan Tarafa HİÇBİR GARANTİ VERMEKSİZİN sağlar; ve MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA İLİŞKİN ZIMNİ GARANTİLER VE KOŞULLAR DAHİL, ANCAK TAMAMI BUNLARLA SINIRLI OLMAMAK ÜZERE AÇIK VE ZIMNİ TÜM GARANTİLERİ VE KOŞULLARI REDDEDER;
+(b) IBM, veri kaybı, tasarruf kaybı ve kâr kaybı da dahil, ancak tamamı bunlarla sınırlı olmamak üzere, herhangi bir doğrudan, dolaylı, arızi, özel, cezai tazminat gerektiren, ceza gerektiren veya sonuçta ortaya çıkan zararlardan sorumlu değildir.
 
 Gizlilik
 
@@ -38,10 +55,20 @@ Program, kaynak kodu biçiminde bileşenler ("Kaynak Bileşenler") ve/veya Örne
 
 Program, üçüncü kişi veri hizmetlerine, veritabanlarına, Web hizmetlerine, yazılımlarına ya da diğer üçüncü kişi içeriğine (tümü "Üçüncü Kişi İçeriği") erişim sağlar. Bu Üçüncü Kişi İçeriğine erişim, MÜLKİYETE, HAK İHLALİ YAPILMAYACAĞINA VEYA MÜDAHALE EDİLMEYECEĞİNE DAİR GARANTİLER İLE BİR ÜRÜN VEYA HİZMETİN TİCARİ SATIŞ KOŞULLARINA VE BELİRLİ BİR AMACA UYGUNLUĞA DAİR ZIMNİ GARANTİLER VE KOŞULLAR DAHİL OLMAK ÜZERE, AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEKSİZİN "OLDUĞU GİBİ" esasıyla sağlanır. Bu erişim, ilgili üçüncü kişiler tarafından yalnızca kendi kararlarına bağlı olarak herhangi bir zamanda sona erdirilebilir. Lisans Alan Tarafın bu Üçüncü Kişi İçeriğine erişmesi veya bu içeriği kullanması için üçüncü kişilerle ayrı sözleşmeler yapması gerekebilir. IBM, ayrıca yapılacak bu tür sözleşmelerin bir tarafı değildir ve bu lisansın açık bir koşulu olarak Lisans Alan Taraf ayrıca yapılan bu tür sözleşmelerin koşullarına uygun davranmayı kabul eder.
 
+Yukarıdakilere ek olarak, aşağıdaki koşullar Lisans Alan Tarafın bu Programı kullanımı için geçerlidir.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Kullanım Ölçme Verilerinin Kullanımı
+Bu Program, Lisans Alan Tarafın, IBM veya IBM dışı yazılım programlarını devreye alımına ve kullanımına ve ayrıca bunların devreye alındığı bilgi işlem ortamına ilişkin belirli verilerin ve ölçülerin ("Kullanım Ölçme Verileri") görüntülenmesini ve izlenmesini sağlayan bir kullanım ölçme gösterge panosunun ("Gösterge Panosu") kullanılmasını sağlar. Gösterge Panosunun kullanımı, Red Hat Marketplace'de veya IBM Software Central'da kayıt yapılmasını gerektirir. Lisans Alan Tarafın Gösterge Panosunu kullanımı ve IBM'in Kullanım Ölçme Verilerini kullanımı ve paylaşımı, IBM tarafından işletilen Red Hat Marketplace için Hizmet Tanımının koşullarına tabidir ve şu adreste bulunur: https://www.ibm.com/support/customer/csol/terms?id=i126-8719. Ayrıca, Lisans Alan Tarafın, Gösterge Panosunu etkinleştirmesi veya kullanması halinde, Lisans Alan Taraf bu koşulları kabul eder.
+Devreye Alım ve Kullanım Verileri
+Program, varsayılan olarak Lisans Alan Tarafın Programı ve/veya Paketlenmiş Programları devreye alımına veya kullanımına ilişkin belirli verileri ("Devreye Alım ve Kullanım Verileri") elde edebilir. Devreye Alım ve Kullanım Verileri, örneğin, niceliksel lisans metrikleriyle ilgili bilgileri (örn. Program veya Paketlenmiş Program tarafından devreye alınan, kullanılan veya yönetilen sanal işlemci çekirdeklerinin, kaynakların, kullanıcıların veya diğer lisans metriklerinin sayısı) ve Programın veya veya Paketlenmiş Programın veya bunların özelliklerinin kullanımına ilişkin diğer nicel metrikleri (örneğin; API çağrıları, olaylar, depolama, kullanıcı arabirimi etkileşimleri) içerebilir. Ayrıca Devreye Alım ve Kullanım Verileri; mimari, işletim sistemi, bulut sağlayıcısı, lokasyon, küme bilgileri, düğüm sayısı gibi Programın veya Paketlenmiş Programın devreye alındığı ortamla ilgili bilgileri de içerebilir. Devreye Alım ve Kullanım Verileri, kişisel bilgileri veya Lisans Alan Tarafın Program veya Paketlenmiş Program tarafından yönetilen verilerinin içeriğini kapsamaz. Her Paketlenmiş Program, kendi lisans koşulları kapsamında başka devreye alım ve kullanım verilerini de toplayabilir.
+Lisans Alan Taraf, Programdaki Devreye Alım ve Kullanım Verileri özelliğini devre dışı bırakmadığı sürece IBM, Lisans Alan Tarafın devreye aldığı Programdan gelen Devreye Alım ve Kullanım Verilerini alabilir. Bu gibi tüm durumlarda, Devreye Alım ve Kullanım Verileri, IBM sunucularına ve/veya IBM'e bir veya daha fazla üçüncü kişi tarafından sağlanan veri toplama ve analitik hizmetlerine gönderilebilir. IBM, bu Devreye Alım ve Kullanım Verilerini IBM'in ürün ve hizmetlerinin yönetilmesi, planlanması, desteklenmesi, iyileştirilmesi ve geliştirilmesi dahil olmak üzere IBM'in dahili iş amaçları doğrultusunda ve Lisans Alan Tarafın IBM yazılım programlarını (örneğin, performans, devreye alım ve kapasite planlaması) kullanımıyla ilgili olarak Lisans Alan Tarafa destek ve danışmanlık sağlamak ve diğer IBM ürün ve hizmetlerini Lisans Alan Tarafa sunmak için kullanabilir ve bu Devreye Alım ve Kullanım Verilerini bu amaçlar doğrultusunda IBM'in dünya çapındaki bağlı şirketleri, yüklenicileri ve çözüm ortaklarıyla paylaşabilir.
+Lisans Alan Taraf, bu özelliğin nasıl devre dışı bırakılacağına ilişkin ayrıntılı yönergeler için https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering adresinde bulunan Program belgelerine bakarak Devreye Alım ve Kullanım Verileri özelliğini istediği zaman devre dışı bırakabilir.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Garanti Verilmeyen Programlar İçin Uluslararası Lisans Sözleşmesi
 

@@ -3,9 +3,7 @@ ARG FROMLIBERTYBUILD
 ARG FROMDOCKERBUILD
 FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV SCRIPT /script
-ENV APPS /config/apps
+ENV APPS=/config/apps ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 COPY $ODMDOCKERDIR/common/script $SCRIPT
 COPY $ODMDOCKERDIR/common/drivers /config/resources
@@ -20,7 +18,6 @@ RUN cd /welcomepage; mvn -B clean install  && mkdir -p $APPS
 RUN apt-get update && apt-get install unzip
 # Decision Server Console
 COPY ./executionserver/applicationservers/WLP*/res.war $APPS
-
 COPY ./executionserver/applicationservers/WLP*/DecisionService.war $APPS
 
 RUN chmod -R a+x $SCRIPT && sync && if [ ! -f /config/resources/postgres* ]; then $SCRIPT/installPostgres.sh; fi
@@ -31,22 +28,25 @@ RUN $SCRIPT/changeParamValue.sh management.protocol jmx tcpip $APPS/res.war/WEB-
 	$SCRIPT/changeParamValue.sh onDocker false true $APPS/res.war/WEB-INF/web.xml && \
 	$SCRIPT/changeParamValue.sh autoCreateSchema false true $APPS/res.war/WEB-INF/web.xml
 
-RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
-chmod -R 777 $APPS
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
 ARG CP4BAVERSION
 ARG ODMVERSION
 ARG PACKAGELIST
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CP4BAVERSION $CP4BAVERSION
-ENV ODMVERSION $ODMVERSION
-ENV PACKAGELIST $PACKAGELIST
+ENV CP4BAVERSION=$CP4BAVERSION ODMDOCKERDIR=$ODMDOCKERDIR ODMVERSION=$ODMVERSION PACKAGELIST=$PACKAGELIST SCRIPT=/script
 USER root
-ENV SCRIPT /script
-COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
+COPY $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
+RUN --mount=type=secret,id=artifactory_user \
+	--mount=type=secret,id=artifactory_token \
+    if [[ -n $(cat /run/secrets/artifactory_user) ]] ; then \
+    mkdir -p /opt/ibm/wlp/etc \
+    && echo "mavenCentralMirror.url=https://na.artifactory.swg-devops.com/artifactory/hyc-decisions-team-proxy-maven-virtual" > /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.user=$(cat /run/secrets/artifactory_user)" >> /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.password=$(cat /run/secrets/artifactory_token)" >> /opt/ibm/wlp/etc/featureUtility.properties; \
+	fi
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml && rm -f /opt/ibm/wlp/etc/featureUtility.properties
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisionserver/decisionserverconsole/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
@@ -75,11 +75,7 @@ LABEL io.openshift.tags="odm,dba,dbamc"
 LABEL io.k8s.description="A web-based graphical user interface to manage Decision Server artifacts."
 LABEL io.k8s.display-name="Decision Server Console"
 
-ENV APP_NAME DecisionServerConsole
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV SCRIPT /script
-ENV APPS /config/apps
-ENV CONNECTION_POOL_SIZE 20
+ENV APP_NAME=DecisionServerConsole APPS=/config/apps CONNECTION_POOL_SIZE=20 ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh

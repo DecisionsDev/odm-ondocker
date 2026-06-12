@@ -3,11 +3,7 @@ ARG FROMLIBERTYBUILD
 ARG FROMDOCKERBUILD
 FROM ${FROMDOCKERBUILD} AS builder
 ARG ODMDOCKERDIR
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV THIRDPARTY /thirdpartylib
-# Setup the variable
-ENV SCRIPT /script
-ENV APPS /config/apps
+ENV APPS=/config/apps ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script THIRDPARTY=/thirdpartylib
 COPY $ODMDOCKERDIR/welcomepage /welcomepage
 
 RUN mkdir -p /root/.m2
@@ -38,32 +34,33 @@ RUN $SCRIPT/extractApp.sh decisioncenter.war && \
     $SCRIPT/extractApp.sh decisioncenter-api.war && \
 	  mkdir -p $APPS/decisioncenter.war/WEB-INF/classes/config
 RUN $SCRIPT/changeParamValue.sh com.ibm.rules.decisioncenter.setup.configuration-file \.\\/config\\/decisioncenter-configuration.properties \\/config\\/decisioncenter-configuration.properties $APPS/decisioncenter.war/WEB-INF/web.xml
-RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && \
-chmod -R 777 $APPS
+RUN $SCRIPT/manageLicense.sh && $SCRIPT/loadFeatures.sh $SCRIPT && chmod -R 777 $APPS
 
 FROM ${FROMLIBERTYBUILD} AS oidc-liberty-builder
 ARG ODMDOCKERDIR
 ARG CP4BAVERSION
 ARG ODMVERSION
 ARG PACKAGELIST
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV CP4BAVERSION $CP4BAVERSION
-ENV ODMVERSION $ODMVERSION
-ENV PACKAGELIST $PACKAGELIST
+ENV CP4BAVERSION=$CP4BAVERSION ODMDOCKERDIR=$ODMDOCKERDIR ODMVERSION=$ODMVERSION PACKAGELIST=$PACKAGELIST SCRIPT=/script
+WORKDIR /opt/wlppackage
 USER root
-ENV SCRIPT /script
 COPY  $ODMDOCKERDIR/common/script $ODMDOCKERDIR/wlp* /opt/wlppackage/
-RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml
+RUN --mount=type=secret,id=artifactory_user \
+	--mount=type=secret,id=artifactory_token \
+    if [[ -n $(cat /run/secrets/artifactory_user) ]] ; then \
+    mkdir -p /opt/ibm/wlp/etc \
+    && echo "mavenCentralMirror.url=https://na.artifactory.swg-devops.com/artifactory/hyc-decisions-team-proxy-maven-virtual" > /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.user=$(cat /run/secrets/artifactory_user)" >> /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.password=$(cat /run/secrets/artifactory_token)" >> /opt/ibm/wlp/etc/featureUtility.properties; \
+	fi
+RUN mkdir $SCRIPT && mv /opt/wlppackage/*.sh $SCRIPT && $SCRIPT/installFeatures.sh && chmod a+x $SCRIPT/*.sh && touch /opt/ibm/wlp/usr/servers/defaultServer/keystore.xml && rm -f /opt/ibm/wlp/etc/featureUtility.properties
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/config /config
 COPY --chown=1001:0 $ODMDOCKERDIR/decisioncenter/script $SCRIPT
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config /config
-
 COPY --chown=1001:0 $ODMDOCKERDIR/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
-
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/ltpa*.keys /config/resources/security/
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/keystore.jks /config/security/keystore.jks
 COPY --chown=1001:0 $ODMDOCKERDIR/common/security/truststore.jks /config/security/truststore.jks
-
 COPY --chown=1001:0 $ODMDOCKERDIR/common/drivers /config/resources
 RUN openssl s_client -connect www.ibm.com:443 < /dev/null 2>/dev/null | openssl x509 -outform pem > /config/resources/ibm-public.crt && chown 1001:0 /config/resources/ibm-public.crt && \
 chmod -R 777 /config
@@ -86,10 +83,7 @@ LABEL product-version=${ODMVERSION}
 LABEL product-id="IBM Operational Decision Manager for production"
 LABEL io.openshift.tags="odm,dba,dbamc"
 
-ENV APP_NAME DecisionCenter
-ENV ODMDOCKERDIR $ODMDOCKERDIR
-ENV SCRIPT /script
-ENV APPS /config/apps
+ENV APP_NAME=DecisionCenter APPS=/config/apps ODMDOCKERDIR=$ODMDOCKERDIR SCRIPT=/script
 
 COPY --from=oidc-liberty-builder /opt/ibm/wlp /opt/ibm/wlp
 COPY --from=oidc-liberty-builder /opt/ibm/helpers/runtime/docker-server.sh /opt/ibm/helpers/runtime/docker-server.sh

@@ -3,7 +3,7 @@ LIZENZINFORMATION
 Für die Lizenzierung der nachstehend aufgelisteten Programme gelten zusätzlich zu den bereits zwischen dem Kunden und IBM vereinbarten Programmlizenzbedingungen die Bedingungen der folgenden Lizenzinformation. Falls der Kunde den für das Programm geltenden Lizenzbedingungen nicht bereits zugestimmt hat, kommen folgende Bedingungen zur Anwendung Internationale Nutzungsbedingungen für Programme ohne Gewährleistung (i125-5589-06).
 
 Programmname (Programmnummer):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Die folgenden Standardbedingungen gelten für die Programmnutzung durch den Lizenznehmer.
 
@@ -17,14 +17,31 @@ Der Lizenznehmer darf die nachstehend aufgeführten Unterstützungsprogramme nur
 
 Unterstützungsprogramme:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Beschränkung auf Entwickler
 
 Wenn das Programm für "Developers" bestimmt ist, kann der Lizenznehmer das Programm nur für interne Entwicklungszwecke und Komponententests auf einer Entwicklermaschine einsetzen. Eine Entwicklermaschine ist eine physische oder virtuelle Desktopumgebung, in der ein primäres Betriebssystem und das Programm ausgeführt werden, die beide für maximal einen angegebenen Entwickler zugänglich und nutzbar sind.
 
+Komponenten, die bei der Ermittlung der erforderlichen Berechtigungen nicht berücksichtigt werden
+
+Der Lizenznehmer darf die folgenden Programmkomponenten gemäß den Lizenzbedingungen installieren und nutzen, diese Komponenten werden bei der Ermittlung der erforderlichen Anzahl an Berechtigungen für das Programm aber nicht einbezogen.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Modifizierbarer Code einer Drittpartei
 
 Soweit IBM in der NOTICES-Datei den Code einer Drittpartei als "Modifizierbaren Code einer Drittpartei" bezeichnet, ist der Lizenznehmer berechtigt, 1) den Modifizierbaren Code einer Drittpartei zu modifizieren und 2) die Programmmodule, die direkt mit dem Modifizierbaren Code einer Drittpartei verbunden sind, zurückzuentwickeln, vorausgesetzt, dies geschieht ausschließlich, um die Modifikationen des Lizenznehmers an einem solchen Code einer Drittpartei zu debuggen. Die Service- und Unterstützungsverpflichtungen von IBM gelten, sofern vorhanden, nur für das unmodifizierte Programm.
+
+Separat lizenzierter Code
+
+Jede in der NON_IBM_LICENSE-Datei aufgeführte Komponente gilt als "Separat lizenzierter Code", der gemäß den Bedingungen der maßgeblichen Drittanbieter-Lizenzvereinbarung und nicht gemäß dieser Vereinbarung für den Lizenznehmer lizenziert wird. Die Drittanbieter-Lizenzvereinbarungen sind in den NON_IBM_LICENSE-Dateien enthalten, die dem Programm beigepackt sind. Zukünftige Programmupdates oder Fixes können weiteren separat lizenzierten Code enthalten, der zusammen mit den zugehörigen Lizenzen in der jeweiligen NON_IBM_LICENSE-Datei aufgeführt ist, die dem Programmupdate oder Fix beigepackt ist.
+
+Hinweis: Ungeachtet der Bedingungen in der Drittanbieter-Lizenzvereinbarung, der Vereinbarung oder einer anderen Vereinbarung zwischen dem Lizenznehmer und IBM gilt Folgendes:
+(a) IBM stellt den separat lizenzierten Code ohne jede Gewährleistung zur Verfügung und übernimmt weder ausdrücklich noch stillschweigend eine Gewährleistung für den separat lizenzierten Code; dies gilt insbesondere in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck.
+(b) IBM haftet nicht für unmittelbare und mittelbare Schäden oder Folgeschäden, wie beispielsweise Datenverlust, entgangene Einsparungen und entgangenen Gewinn hinsichtlich des separat lizenzierten Codes.
 
 Datenschutz
 
@@ -38,10 +55,20 @@ Daten und Services von Drittanbietern
 
 Das Programm ermöglicht den Zugriff auf Datenservices, Datenbanken, Web-Services, Software oder Inhalte von Drittanbietern (insgesamt "Inhalte von Drittanbietern" genannt). Der Zugriff auf diese Inhalte von Drittanbietern wird im gegenwärtigen Zustand (auf "as-is"-Basis) und ohne jegliche Gewährleistung (ausdrücklich oder stillschweigend) zur Verfügung gestellt, insbesondere ohne Gewährleistung in Bezug auf Rechtsmängel, die Freiheit von Rechten Dritter, das Recht auf Nichtbeeinträchtigung, die Handelsüblichkeit und die Verwendungsfähigkeit für einen bestimmten Zweck. Der Zugriff kann vom jeweiligen Drittanbieter nach eigenem Ermessen jederzeit gesperrt werden. Der Lizenznehmer muss ggf. separate Vereinbarungen mit den Drittanbietern über den Zugriff auf die Inhalte von Drittanbietern und deren Nutzung abschließen. IBM ist an solchen separaten Vereinbarungen nicht beteiligt und der Lizenznehmer erklärt sich aufgrund der ausdrücklichen Bedingung dieser Lizenz damit einverstanden, die Bedingungen der separaten Vereinbarungen einzuhalten.
 
+Zusätzlich zu den obigen Bestimmungen gelten die folgenden Bedingungen für die Programmnutzung durch den Lizenznehmer.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Verwendung von Nutzungsüberwachungsdaten
+Das Programm ermöglicht die Nutzung eines Dashboards zur Nutzungsüberwachung (das „Dashboard"), das die Anzeige und Überwachung bestimmter Daten und Metriken in Bezug auf den Einsatz und die Nutzung von IBM und Nicht-IBM Softwareprogrammen durch den Lizenznehmer sowie die Computerumgebung, auf der sie eingesetzt werden, ermöglicht („Nutzungsüberwachungsdaten"). Für die Nutzung des Dashboards ist eine Registrierung auf Red Hat Marketplace oder bei IBM Software Central erforderlich. Die Nutzung des Dashboards durch den Lizenznehmer und die Nutzung und Weitergabe von Nutzungsmessdaten durch IBM unterliegen den Bedingungen der Servicebeschreibung für den Red Hat Marketplace, betrieben von IBM, abrufbar unter: https://www.ibm.com/support/customer/csol/terms?id=i126-8719, und wenn der Lizenznehmer das Dashboard aktiviert oder nutzt, erklärt er sich mit diesen Bedingungen einverstanden.
+Bereitstellungs- und Nutzungsdaten
+Das Programm kann standardmäßig bestimmte Daten und Kennzahlen in Bezug auf die Bereitstellung oder Nutzung des Programms und/oder der Programmpakete durch den Lizenznehmer („Bereitstellungs- und Nutzungsdaten") erfassen. Zu den Einsatz- und Nutzungsdaten können beispielsweise quantitative Informationen zu Lizenzmetriken (z. B. die Anzahl der VPCs, Ressourcen, Benutzer oder andere Lizenzmetriken, die vom Programm oder Programmpaket bereitgestellt, genutzt oder verwaltet werden) und andere quantitative Metriken in Bezug auf die Nutzung des Programms oder Programmpakets oder ihrer Funktionen (z. B. API-Aufrufe, Ereignisse, Speicher, Benutzeroberflächeninteraktionen) gehören. Die Bereitstellungs- und Nutzungsdaten können auch Informationen über die Umgebung enthalten, in der das Programm oder das Programmpaket bereitgestellt wird, wie z. B. Architektur, Betriebssystem, Cloud-Anbieter, Standort, Clusterinformationen und Anzahl der Knoten. Die Bereitstellungs- und Nutzungsdaten enthalten keine personenbezogenen Daten oder Inhalte der vom Programm oder Programmpaket verwalteten Daten des Lizenznehmers. Jedes Programmpaket sammelt möglicherweise auch andere Bereitstellungs- und Nutzungsdaten gemäß seiner eigenen Lizenzbedingungen.
+Sofern der Lizenznehmer die Funktion „Bereitstellungs- und Nutzungsdaten" im Programm nicht deaktiviert, ist IBM berechtigt, Bereitstellungs- und Nutzungsdaten aus dem vom Lizenznehmer bereitgestellten Programm zu erhalten. In all diesen Fällen können die Bereitstellungs- und Nutzungsdaten an IBM-Server und/oder Datenerfassungs- und Analysedienste gesendet werden, die IBM von einer oder mehreren Vertragsparteien zur Verfügung gestellt werden, und IBM kann diese Bereitstellungs- und Nutzungsdaten für interne Geschäftszwecke von IBM verwenden, einschließlich der Verwaltung, Planung, Unterstützung, Verbesserung und Erweiterung von IBM Produkten und und zur Unterstützung und Beratung des Lizenznehmers bei der Nutzung von IBM Softwareprogrammen (z. B. Leistung, Bereitstellung und Kapazitätsplanung) sowie zur Bereitstellung anderer IBM Produkte und Services für den Lizenznehmer verwenden und kann diese Bereitstellungs- und Nutzungsdaten zu diesen Zwecken an seine verbundenen Unternehmen, Auftragnehmer und Geschäftspartner weltweit weitergeben.
+Der Lizenznehmer kann die Funktion „Bereitstellungs- und Nutzungsdaten" jederzeit inaktivieren. Detaillierte Anweisungen zur Inaktivierung der Funktion finden Sie in der Programmdokumentation unter https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Internationale Nutzungsbedingungen für Programme ohne Gewährleistung
 

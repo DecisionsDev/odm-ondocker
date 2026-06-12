@@ -3,7 +3,7 @@ INFORMATIONS SUR LA LICENCE
 Les Logiciels spécifiés ci-dessous sont concédés sous licence conformément aux dispositions des Informations sur la Licence suivantes qui s'ajoutent à celles des dispositions de la licence du Logiciel précédemment acceptée par le Client et IBM. Si le Client n'a pas précédemment accepté les dispositions de la licence en vigueur pour le Logiciel, les Conditions Internationales d'Utilisation de Logiciels IBM non garantis (i125-5589-06) s'appliquent.
 
 Nom du Logiciel (Référence du Logiciel) : 
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
@@ -17,14 +17,31 @@ Le Détenteur de la Licence n'est autorisé à installer et à utiliser les Logi
 
 Logiciels Auxiliaires :
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Restriction relative aux développeurs
 
 Si le Logiciel porte une mention indiquant qu'il est destiné aux "Développeurs", le Détenteur de la Licence n'est autorisé à utiliser le Logiciel qu'à des fins de développement et de test d'unité en interne sur une machine de développeur spécifique. Une machine de développeur désigne un environnement de bureau physique ou virtuel exécutant un système d'exploitation principal ainsi que le Logiciel, tous deux étant accessibles et utilisés par un seul développeur désigné. 
 
+Composants non pris en compte pour établir les Autorisations d'Utilisation requises
+
+Le Détenteur de la Licence est autorisé à installer et à utiliser les composants du Logiciel suivants, conformément aux dispositions de la licence, mais lesdits composants ne sont pas utilisés pour déterminer le nombre d'Autorisations d'Utilisation requises pour le Logiciel.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Code Tiers Modifiable
 
 Si, dans le fichier NOTICES, IBM identifie un code tiers comme étant un « Code Tiers Modifiable », IBM autorise le Détenteur de la Licence à 1) modifier le Code Tiers Modifiable et 2) recourir à l'ingénierie inverse sur les modules du Logiciel qui interagissent directement avec le Code Tiers Modifiable, sous réserve que le Détenteur de la Licence ait recours à cette méthode à des fins de débogage des modifications qu'il a apportées à ce code tiers. Les obligations d'IBM en matière de service et de support, le cas échéant, s'appliquent uniquement au Logiciel non modifié.
+
+Code sous Licence Distincte
+
+Chacun des composants répertoriés dans le fichier NON_IBM_LICENSE doit être considéré comme du "Code sous Licence Distincte" concédé sous licence au Détenteur de la Licence dans le cadre des dispositions du/des contrat(s) de licence tiers applicable(s) indiqué(s) dans le(s) fichier(s) NON_IBM_LICENSE joint(s) au Logiciel et non de celles du présent Contrat. Les mises à jour ou correctifs ultérieurs du Logiciel pourront contenir du Code sous Licence Distincte supplémentaire. Ce Code sous Licence Distincte supplémentaire et les licences correspondantes seront répertoriés dans le fichier NON_IBM_LICENSE applicable joint à la mise à jour ou au correctif du Logiciel. 
+
+Remarque : Sauf disposition contraire énoncée dans le Contrat de licence tiers, dans le Contrat ou dans tout autre contrat conclu entre le Détenteur de la Licence et IBM en ce qui concerne le Code sous Licence Distincte :
+(a) IBM le fournit au Détenteur de la Licence SANS GARANTIE D'AUCUNE SORTE ET NE FOURNIT AUCUNE GARANTIE OU CONDITION EXPLICITE OU IMPLICITE, Y COMPRIS, ET DE FAÇON NON LIMITATIVE, EN MATIÈRE DE DROIT DE PROPRIÉTÉ, AUCUNE GARANTIE DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, ET AUCUNE GARANTIE OU CONDITION IMPLICITE DE QUALITÉ MARCHANDE OU D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ ;
+(b) IBM ne pourra être tenue responsable pour toute demande d'indemnisation ou pour tout dommage direct et indirect, accessoire, particulier, à titre d'exemple, à caractère répressif (notamment, et de façon non limitative, perte de données, de bénéfices, de revenus, d'économies escomptées, d'activité commerciale) ou tout autre dommage.
 
 Données Personnelles
 
@@ -38,10 +55,20 @@ Données et services tiers
 
 Le Logiciel donne accès à des services de données, des bases de données, des services Web, des logiciels ou d'autres contenus déployés par des tiers ("Contenu Tiers"). L'accès au Contenu Tiers est fourni "EN L'ÉTAT", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS TOUTE GARANTIE DE TITRE, DE NON-CONTREFAÇON OU DE NON-INTERFÉRENCE, AINSI QUE LES CONDITIONS ET GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'APTITUDE À L'EXÉCUTION D'UN TRAVAIL DONNÉ. L'accès peut être résilié par lesdits tiers, à tout moment et à leur seule discrétion. L'accès à ce Contenu Tiers ou son utilisation peut être autorisé dans le cadre de contrats distincts entre le Détenteur de la Licence et lesdits tiers. Dans l'éventualité où de tels contrats distincts existeraient, IBM ne sera en aucun cas liée auxdits contrats et le Détenteur de la Licence s'engage, de manière explicite au titre de la présente licence, à respecter les clauses et dispositions des contrats distincts.
 
+En plus des dispositions ci-dessus, les dispositions suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la Licence.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Utilisation des Données de Mesure de l'Utilisation
+Le Logiciel permet d'utiliser un tableau de bord de mesure de l'utilisation (le « Tableau de bord ») qui permet l'affichage et le suivi de certaines données et métriques relatives au déploiement et à l'utilisation des logiciels IBM et non IBM par le Détenteur de la Licence, ainsi que l'environnement informatique sur lequel ils sont déployés (collectivement, les « Données de Mesure de l'Utilisation »). L'utilisation du Tableau de bord nécessite un enregistrement sur Red Hat Marketplace ou IBM Software Central. L'utilisation du Tableau de bord par le Détenteur de la Licence et l'utilisation et le partage des Données de Mesure de l'Utilisation par IBM sont régis par les dispositions du Descriptif de Services de Red Hat Marketplace, Operated by IBM, disponible à l'adresse https://www.ibm.com/support/customer/csol/terms?id=i126-8719. Si le Détenteur de la Licence active ou utilise le Tableau de bord, le Détenteur de la Licence accepte lesdites dispositions.
+Données de Déploiement et d'Utilisation
+Le Logiciel peut, par défaut, collecter certaines données et mesures concernant le déploiement ou l'utilisation par le Détenteur de la Licence du Logiciel et/ou des Logiciels Groupés (« Données de Déploiement et d'Utilisation »). Les Données de Déploiement et d'Utilisation peuvent inclure, par exemple, des informations quantitatives relatives aux unités de mesure de licence (par exemple, le nombre de VPC, de ressources, d'utilisateurs ou d'autres unités de mesure de licence déployés, consommés ou gérés par le Logiciel ou le Logiciel Groupé), ainsi que d'autres unités de mesure de licence quantitatives liées à l'utilisation du Logiciel ou du Logiciel Groupé ou de leurs fonctionnalités (par exemple, les appels d'API, les événements, le stockage, les interactions avec l'interface utilisateur). Les Données de Déploiement et d'Utilisation peuvent également inclure des informations concernant l'environnement sur lequel le Logiciel ou le Logiciel Groupé est déployé, telles que l'architecture, le système d'exploitation, le fournisseur de cloud, l'emplacement, les informations sur les clusters, le nombre de nœuds. Les Données de Déploiement et d'Utilisation ne comprennent pas les données à caractère personnel, ni le contenu des données du Détenteur de la Licence gérées par le Logiciel ou le Logiciel Groupé. Chaque Logiciel Groupé peut également collecter d'autres données de déploiement et d'utilisation en vertu de ses propres dispositions de licence.
+A moins que le Détenteur de la Licence ne désactive la fonction de Données de Déploiement et d'Utilisation du Logiciel, IBM peut recevoir des Données de Déploiement et d'Utilisation du Logiciel déployé par le Détenteur de la Licence. Dans tous ces cas, les Données de Déploiement et d'Utilisation peuvent être envoyées aux serveurs d'IBM et/ou à des services de collecte et d'analyse de données fournis à IBM par un ou plusieurs tiers, et IBM peut utiliser ces Données de Déploiement et d'Utilisation pour ses activités internes, notamment pour la gestion, la planification, l'assistance, l'amélioration et le perfectionnement des produits et services IBM, ainsi que pour assister et conseiller le Détenteur de la Licence en ce qui concerne l'utilisation par le Détenteur de la Licence des programmes logiciels IBM (par exemple, performances, déploiement et planification de capacité) et pour proposer d'autres produits et services IBM au Détenteur de la Licence. IBM peut partager ces Données de Déploiement et d'Utilisation avec ses sociétés affiliées, ses sous-traitants et ses partenaires commerciaux dans le monde entier à ces fins.
+Le Détenteur de la Licence peut désactiver la fonction de Données de Déploiement et d'Utilisation à tout moment en consultant la documentation du Logiciel à l'adresse https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering pour obtenir des instructions détaillées sur la manière de désactiver la fonction.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Conditions Internationales d'Utilisation de Logiciels IBM non garantis
 

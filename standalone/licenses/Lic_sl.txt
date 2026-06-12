@@ -3,7 +3,7 @@ PODATKI O LICENCIRANJU
 Spodaj navedeni programi so licencirani na podlagi naslednjih določb in pogojev licenčne informacije, ki veljajo poleg pogojev licence za program, s katerimi naročnik in IBM predhodno soglašata. Če naročnik predhodno ne soglaša s pogoji, ki veljajo za program, velja Mednarodna licenčna pogodba za programe brez garancije (i125-5589-06).
 
 Ime programa (Številka programa):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Za uporabo programa s strani imetnika licence veljajo naslednji standardni pogoji.
 
@@ -17,14 +17,31 @@ Imetnik licence lahko namesti in uporablja spodaj navedene podporne programe sam
 
 Podporni programi:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Omejitve za razvijalce
 
 Če je program namenjen za "razvijalce", ga lahko imetnik licence uporablja samo kot del svojega notranjega okolja za razvijanje in preizkušanje enot v napravi razvijalca. Naprava razvijalca je fizično ali navidezno namizno okolje namizja, v katerem se izvajata osnovni operacijski sistem in program, do obeh pa ima dostop in ju uporablja le en določen razvijalec.
 
+Komponente, ki niso uporabljene za vzpostavitev potrebnih pooblastil
+
+Imetnik licence lahko na podlagi licenčnih pogojev namesti in uporablja naslednje komponente programa, vendar se te komponente ne uporabljajo za določitev števila pooblastil, potrebnih za program.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Spremenljiva koda drugega ponudnika
 
 Če v datoteki OBVESTILA IBM identificira kodo drugega ponudnika kot »spremenljivo kodo drugega ponudnika«, IBM pooblasti imetnika licence, da 1) spremeni spremenljivo kodo drugega ponudnika in 2) izvede obratni inženiring programskih modulov, ki se neposredno povezujejo s spremenljivo kodo drugega ponudnika, pod pogojem, da je samo za namen odpravljanja napak pri spremembah imetnika licence takšne kode drugega ponudnika. IBM-ove obveznosti glede storitve in podpore, če obstajajo, veljajo samo za nespremenjen program.
+
+Ločeno licencirana koda
+
+Vsaka komponenta, navedena v datoteki NON_IBM_LICENSE, šteje za "ločeno licencirano kodo", ki je licencirana imetniku licence na podlagi pogojev ustreznih licenčnih pogodb drugih ponudnikov, določenih v datotekah NON_IBM_LICENSE, ki so priložene programu in ne tej pogodbi. Nadaljnje posodobitve ali popravki programa lahko vsebujejo dodatno ločeno licencirano kodo. Takšna dodatna, ločeno licencirana koda in povezane licence so navedeni v ustrezni datoteki NON_IBM_LICENSE, priloženi posodobitvi ali popravku programa. 
+
+Opomba: ne glede na katerekoli pogoje v licenčni pogodbi drugega ponudnika velja za to pogodbo ali katerokoli drugo pogodbo, ki jo sklene imetnik licence z IBM-om glede ločeno licencirane kode, naslednje:
+(a) IBM jo zagotovi imetniku licence BREZ VSAKRŠNIH JAMSTEV IN ZAVRAČA KATERAKOLI IN VSA IZRECNA TER ZAKONSKA JAMSTVA IN POGOJE, KAR MED DRUGIM VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA PRODAJNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE;
+(b) IBM ni odgovoren za nobeno neposredno, posredno, naključno, posebno, eksemplarično, kazensko ali posledično škodo, kar vključuje tudi izgubo podatkov, prihrankov in dobičkov, vendar ni omejeno nanje.
 
 Zasebnost
 
@@ -38,10 +55,20 @@ Podatki in storitve drugih ponudnikov
 
 Program omogoča dostop do podatkovnih storitev, baz podatkov, spletnih storitev, programske opreme ali druge vsebine drugih ponudnikov (skupaj "vsebina drugih ponudnikov"). Dostop do te vsebine drugih ponudnikov je ponujen "TAKŠEN, KOT JE", BREZ JAMSTEV KAKRŠNEKOLI VRSTE, PA NAJ BODO IZRECNA ALI ZAKONSKA, KAR VKLJUČUJE TUDI JAMSTVO PRAVNEGA NASLOVA, NEKRŠENJA ALI NEOVIRANJA TER ZAKONSKA JAMSTVA IN POGOJE ZA TRŽNOST TER PRIMERNOST ZA DOLOČEN NAMEN, VENDAR NI OMEJENO NANJE. Dostop lahko tretja oseba kadarkoli prekine, kar je prepuščeno izključno njeni presoji. Imetnik licence bo morda moral skleniti ločene pogodbe z drugimi ponudniki, ki mu bodo omogočale dostop do takšne vsebine drugih ponudnikov ali njeno uporabo. IBM ni pogodbena stranka kakršnekoli ločene pogodbe in imetnik licence kot izrecni pogoj te licence soglaša, da bo ravnal v skladu z določbami takšnih ločenih pogodb.
 
+Za uporabo programa s strani imetnike licence poleg zgoraj navedenih pogojev veljajo tudi naslednji pogoji.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Uporaba podatkov o merjenju uporabe
+Program omogoča uporabo nadzorne plošče za merjenje uporabe ("nadzorna plošča"), ki omogoča prikaz in nadzorovanje (monitoring) določenih podatkov in metrik glede imetnikove razmestitve in uporabe IBM-ovih programov in programov, ki niso IBM-ovi, ter uporabe računalniškega okolja, v katerem so razmeščeni ("podatki o merjenju uporabe"). Za uporabo nadzorne plošče je potrebna registracija v Red Hat Marketplace ali IBM Software Central. Imetnikovo uporabo nadzorne plošče ter IBM-ovo uporabo in skupno rabo podatkov o merjenju uporabe urejajo pogoji opisa storitve za Red Hat Marketplace, ki jih upravlja IBM, in so na voljo tukaj: https://www.ibm.com/support/customer/csol/terms?id=i126-8719. Če imetnik licence omogoči ali uporablja nadzorno ploščo, se s temi pogoji strinja.
+Podatki o razmestitvi in uporabi
+Program lahko privzeto zbira določene podatke in metrike glede razmestitve ali uporabe programa in/ali paketnih programov imetnika licence (»podatki o razmestitvi in uporabi«). Podatki o razmestitvi in uporabi lahko na primer vključujejo informacije, povezane s kvantitativnimi licenčnimi metrikami (npr. število VPC-jev, virov, uporabnikov ali drugih licenčnih metrik, ki jih razmesti, porabi ali upravlja program ali paketni program), in druge kvantitativne metrike, povezane z uporabo programa ali paketnega programa ali njihovih funkcij (npr. klici API-ja, dogodki, shramba, interakcije uporabniškega vmesnika.) Podatki o razmestitvi in uporabi lahko vključujejo tudi informacije glede okolja, v katerem je razmeščen program ali paketni program, kot so arhitektura, operacijski sistem, ponudnik oblaka, lokacija, informacije o gruči ali število vozlišč. Podatki o razmestitvi in uporabi ne vključujejo osebnih podatkov ali vsebine podatkov imetnika licence, ki jih upravlja program ali paketni program. Vsak paketni program lahko zbira tudi druge podatke o razmestitvi in uporabi pod lastnimi licenčnimi pogoji.
+Razen če imetnik licence v programu onemogoči funkcijo podatkov o razmestitvi in uporabi, lahko IBM prejme podatke o razmestitvi in uporabi iz programa, ki ga je razmestil imetnik licence. V vseh takšnih primerih se podatki o razmestitvi in uporabi lahko pošljejo v IBM-ove strežnike in/ali so storitve zbiranja in analize podatkov zagotovljene IBM-u s strani ene ali več tretjih oseb, IBM pa lahko uporabi take podatke o razmestitvi in uporabi za svoje notranje poslovne namene, vključno z upravljanjem, načrtovanjem, nudenjem podpore, izboljševanjem IBM-ovih izdelkov in storitev ter za nudenje podpore in svetovanje imetniku licence glede njegove uporabe IBM-ovih programov programske opreme (npr. zmogljivost, razmestitev in načrtovanje kapacitete), ter ponudi druge IBM-ove izdelke in storitve imetniku licence in lahko takšne podatke o razmestitvi in uporabi IBM za te namene deli s svojimi povezanimi družbami, pogodbeniki in poslovnimi partnerji po vsem svetu.
+Imetnik licence lahko kadar koli onemogoči funkcijo podatkov o razmestitvi in uporabi s sklicevanjem na programsko dokumentacijo na naslovu https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering za podrobna navodila o tem, kako onemogočiti funkcijo.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Mednarodna licenčna pogodba za programe brez garancije
 

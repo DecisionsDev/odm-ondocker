@@ -77,6 +77,7 @@ RUN set -ex; \
     ${SCRIPT}/changeParamValue.sh ForceDatabaseTableCreation false true ${APPS}/DecisionRunner.war/WEB-INF/web.xml
 
 # Sample DB
+COPY ${ODMDOCKERDIR}/standalone/resdb-9.6.zip ${ODMDOCKERDIR}/standalone/rtsdb-9.6.zip /db96/
 COPY ${ODMDOCKERDIR}/standalone/resdb-9.0.zip ${ODMDOCKERDIR}/standalone/rtsdb-9.0.zip /db90/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.12.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.12.zip /db812/
 COPY ${ODMDOCKERDIR}/standalone/resdb-8.11.1.zip ${ODMDOCKERDIR}/standalone/rtsdb-8.11.1.zip /db8111/
@@ -85,7 +86,7 @@ RUN mkdir /upload
 
 RUN set -ex; \
     ${SCRIPT}/loadFeatures.sh ${SCRIPT}; \
-    chmod -R 777 ${APPS} /upload /db811 /db8111 /db812 /db90 /config/dbdata
+    chmod -R 777 ${APPS} /upload /db811 /db8111 /db812 /db90 /db96 /config/dbdata
 
 FROM ${FROMLIBERTYBUILD} AS liberty-builder
 ARG ODMDOCKERDIR
@@ -96,10 +97,19 @@ USER root
 ENV SCRIPT /script
 ENV APPS /config/apps
 COPY ${ODMDOCKERDIR}/common/script ${ODMDOCKERDIR}/wlp* /opt/wlppackage/
+RUN --mount=type=secret,id=artifactory_user \
+	--mount=type=secret,id=artifactory_token \
+    if [[ -n $(cat /run/secrets/artifactory_user) ]] ; then \
+    mkdir -p /opt/ibm/wlp/etc \
+    && echo "mavenCentralMirror.url=https://na.artifactory.swg-devops.com/artifactory/hyc-decisions-team-proxy-maven-virtual" > /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.user=$(cat /run/secrets/artifactory_user)" >> /opt/ibm/wlp/etc/featureUtility.properties \
+    && echo "mavenCentralMirror.password=$(cat /run/secrets/artifactory_token)" >> /opt/ibm/wlp/etc/featureUtility.properties; \
+    fi
 RUN set -ex; \
     mkdir ${SCRIPT}; \
     mv /opt/wlppackage/*.sh ${SCRIPT}; \
-    $SCRIPT/installFeatures.sh
+    $SCRIPT/installFeatures.sh; \
+    rm -f /opt/ibm/wlp/etc/featureUtility.properties
 
 COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/licenses $APPS/licenses
 COPY --chown=1001:0 ${ODMDOCKERDIR}/decisioncenter/config/application-*.xml /config/
@@ -110,7 +120,7 @@ COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/keystore.jks /config/securit
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/security/truststore.jks /config/security/truststore.jks
 COPY --chown=1001:0 ${ODMDOCKERDIR}/standalone/config /config
 COPY --chown=1001:0 ${ODMDOCKERDIR}/common/config/jvm/jvm.options /config/configDropins/overrides/jvm.options
-
+COPY --chown=1001:0 ${ODMDOCKERDIR}/common/config/ltpa.xml /config/ltpa.xml 
 RUN chmod -R 777 /config
 
 FROM ${FROMLIBERTY}

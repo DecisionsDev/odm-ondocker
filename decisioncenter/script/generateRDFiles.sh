@@ -41,6 +41,16 @@ then
     sed -i '/clientSecret/d' /config/OdmOidcProvidersRD.json
   fi
 
+  OPENID_SCOPE=$(grep OPENID_SCOPE /config/authOidc/openIdParameters.properties | sed "s/OPENID_SCOPE=//g")
+  if [ -n "$OPENID_SCOPE" ]
+  then
+    echo "RuleDesigner Config : set scope to $OPENID_SCOPE"
+    sed -i 's|OPENID_SCOPE|'$OPENID_SCOPE'|g' /config/OdmOidcProvidersRD.json
+  else
+    echo "RuleDesigner config : no provided OPENID_SCOPE"
+    sed -i '/scope/d' /config/OdmOidcProvidersRD.json
+  fi
+
   echo "copy /config/OdmOidcProvidersRD.json and /config/security/truststore.jks to /config/apps/decisioncenter.war/assets/ "
   cp /config/OdmOidcProvidersRD.json /config/apps/decisioncenter.war/assets/  
 fi
@@ -51,9 +61,18 @@ if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
 then
 	DEFAULT_TRUSTSTORE_PASSWORD=changeit
 fi
+
 if [ -n "$TRUSTSTORE_PASSWORD" ] || [ -f /config/security/volume/truststore_password ]
 then
 	DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
+fi
+
+if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
+then
+  # Set env var if secrets are passed using mounted volumes
+  [ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
+  echo "change default keystore password with provided Root CA keystore password"
+  DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 fi
 
 keytool -importkeystore -srckeystore $JAVA_HOME/lib/security/cacerts -destkeystore /config/apps/decisioncenter.war/assets/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD

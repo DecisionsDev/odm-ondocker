@@ -21,6 +21,13 @@ then
   then
     echo "disable RES Console Basic Auth Login Panel"
     sed -i 's|<auth-method>FORM|<auth-method>BASIC|' /config/apps/res.war/WEB-INF/web.xml
+    sed -i 's|<form|<form style="display:none;"|' /config/apps/res.war/login.jsp
+  fi
+
+  if [ -s "/config/auth/authFilters.xml" ]
+  then
+    echo "copy provided /config/auth/authFilters.xml to /config/authOidc/authFilters.xml"
+    cp /config/auth/authFilters.xml /config/authOidc/authFilters.xml
   fi
 
   if [ -s "/config/auth/openIdParameters.properties" ]
@@ -74,14 +81,19 @@ then
   echo "OPENID_ALLOWED_DOMAINS: $OPENID_ALLOWED_DOMAINS"
   OPENID_LOGOUT_URL=$(grep OPENID_LOGOUT_URL /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_URL=//g")
   OPENID_LOGOUT_TOKEN_PARAM=$(grep OPENID_LOGOUT_TOKEN_PARAM /config/authOidc/openIdParameters.properties | sed "s/OPENID_LOGOUT_TOKEN_PARAM=//g")
+  DS_OPENID_POST_LOGOUT_REDIRECT_URI=$(grep DS_OPENID_POST_LOGOUT_REDIRECT_URI /config/authOidc/openIdParameters.properties | sed "s/DS_OPENID_POST_LOGOUT_REDIRECT_URI=//g")
   if [ -n "$OPENID_LOGOUT_URL" ]; then
   	echo "OPENID_LOGOUT_URL: $OPENID_LOGOUT_URL"
+	logoutString="logoutUrl=$OPENID_LOGOUT_URL"
 	if [ -n "$OPENID_LOGOUT_TOKEN_PARAM" ]; then
-	        echo "OPENID_LOGOUT_TOKEN_PARAM: $OPENID_LOGOUT_TOKEN_PARAM"
-		sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL,logoutTokenParam=$OPENID_LOGOUT_TOKEN_PARAM'|g' $APPS/res.war/WEB-INF/web.xml
-	else
-		sed -i 's|type=local|'type=openid,logoutUrl=$OPENID_LOGOUT_URL'|g' $APPS/res.war/WEB-INF/web.xml
+		echo "OPENID_LOGOUT_TOKEN_PARAM: $OPENID_LOGOUT_TOKEN_PARAM"
+	        logoutString="$logoutString,logoutTokenParam=$OPENID_LOGOUT_TOKEN_PARAM"
 	fi
+    	if [ -n "$DS_OPENID_POST_LOGOUT_REDIRECT_URI" ]; then
+		echo "DS_OPENID_POST_LOGOUT_REDIRECT_URI: $DS_OPENID_POST_LOGOUT_REDIRECT_URI"
+		logoutString="$logoutString,post_logout_redirect_uri=$DS_OPENID_POST_LOGOUT_REDIRECT_URI"
+    	fi
+    	sed -i 's|type=local|'type=openid,$logoutString'|g' $APPS/res.war/WEB-INF/web.xml
   else
 	sed -i 's|type=local|'type=openid'|g' $APPS/res.war/WEB-INF/web.xml
   fi
@@ -135,6 +147,7 @@ else
   echo "No /config/monitor/monitor.xml ! Disable monitoring"
   sed -i '/monitor/d' /config/server.xml
   sed -i '/mpMetrics/d' /config/featureManager.xml
+  sed -i '/restConnector/d' /config/featureManager.xml
 fi
 
 if [ -s "/config/logstashCollector/logstashCollector.xml" ]

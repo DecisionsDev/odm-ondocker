@@ -3,7 +3,7 @@ LICENČNÍ INFORMACE
 Níže uvedené Programy jsou licencovány na základě následujících podmínek uvedených v dokumentu Licenční informace, které doplňují licenční podmínky pro Program, s nimiž dříve Zákazník a IBM vyjádřili souhlas Pokud Zákazník dříve nevyjádřil souhlas s účinnými licenčními podmínkami pro Program, uplatní se licence Mezinárodní licenční smlouva pro programy bez záruky (i125-5589-06).
 
 Název Programu (Číslo Programu):
-IBM Operational Decision Manager for Developers V9.5 (5725-B69)
+IBM Operational Decision Manager for Developers V9.6 (5725-B69)
 
 Na používání Programu Držitelem licence se vztahují následující standardní podmínky.
 
@@ -17,14 +17,31 @@ Držitel licence je oprávněn nainstalovat a užívat Podpůrné programy urče
 
 Podpůrné programy:
 IBM WebSphere Liberty
+IBM(R) Semeru Runtime(TM) Certified Edition, Version 21
 
 Omezení pro vývojáře
 
 Je-li v názvu Programu uveden výraz "Pro vývojáře", může Držitel licence používat Program pouze v rámci interního vývoje a testování jednotek Držitele licence na stroji vývojáře. Stroj Vývojáře je prostředí fyzického nebo virtuálního počítače, na němž je spuštěn primární operační systém a Program, přičemž jak tento operační systém, tak i Program jsou dostupné nejvýše jednomu určenému Vývojáři a užívané nejvýše jedním určeným Vývojářem.
 
+Komponenty nepoužívané ke stanovení požadovaného počtu oprávnění
+
+Držitel licence je oprávněn nainstalovat a používat na základě licenčních podmínek následující komponenty Programu, avšak tyto komponenty nejsou rozhodující pro stanovení počtu oprávnění požadovaných pro Program.
+- Rule Designer
+- Build Command
+- Rule Execution Server (RES) console
+
+
 Upravitelný kód třetí strany
 
 V případném rozsahu, v jakém IBM v souboru OZNÁMENÍ označí kód třetí strany jako „Upravitelný kód třetí strany“, IBM opravňuje Držitele licence, aby 1) upravil Upravitelný kód třetí strany a 2) zpětně analyzoval moduly Programu, které jsou přímo spojeny s Upravitelným kódem třetí strany, ovšem za předpokladu, že k tomu dochází pouze pro účely ladění změn Držitele licence takového kódu třetí strany. Případné povinnosti servisu a podpory IBM se vztahují pouze na nezměněný Program.
+
+Samostatně licencovaný kód
+
+Všechny komponenty uvedené v souboru NON_IBM_LICENSE jsou považovány za "Samostatně licencovaný kód" licencovaný Držiteli licence na základě podmínek platné licenční smlouvy (platných licenčních smluv) třetích osob, jak je uvedeno v souboru (souborech) NON_IBM_LICENSE připojeném (připojených) k Programu, nikoli ve Smlouvě. Budoucí aktualizace Programu nebo sady oprav k Programu mohou obsahovat dodatečný Samostatně licencovaný kód. Takový dodatečný Samostatně licencovaný kód a související licence jsou uvedeny v použitelném souboru "NON_IBM_LICENSE" připojeném k aktualizaci Programu nebo sadě oprav k Programu. 
+
+Poznámka: Bez ohledu na odlišné podmínky licenční smlouvy třetích osob, této Smlouvy nebo jakékoliv jiné smlouvy, kterou má Držitel licence s IBM případně uzavřenou, související se Samostatně licencovaným kódem:
+(a) IBM jej poskytuje Držiteli licence BEZ ZÁRUK JAKÉHOKOLIV DRUHU A ODMÍTÁ JAKÉKOLI A VŠECHNY VÝSLOVNĚ VYJÁDŘENÉ NEBO Z OKOLNOSTÍ VYPLÝVAJÍCÍ ZÁRUKY A PODMÍNKY, VČETNĚ - NIKOLI VŠAK POUZE - ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ PRÁV TŘETÍCH OSOB A Z OKOLNOSTÍ VYPLÝVAJÍCÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL;
+(b) IBM nenese odpovědnost za žádné přímé, nepřímé, nahodilé, zvláštní, exemplární škody ani za sankční náhrady škody nebo za následné škody včetně - nikoliv však pouze - ztráty dat, ztráty úspor a ušlého zisku.
 
 Soukromí
 
@@ -38,10 +55,20 @@ Data a služby třetí osoby
 
 Program poskytuje přístup k datovým službám třetích osob, databázím, webovým službám, softwaru nebo jinému obsahu od třetích osob (společně dále "Obsah třetích osob"). Přístup k Obsahu třetí osoby je poskytován "JAK JE", BEZ ZÁRUKY JAKÉHOKOLI DRUHU, VÝSLOVNĚ VYJÁDŘENÉ NEBO KONKLUDENTNÍ, VČETNĚ ZÁRUKY VLASTNICKÉHO PRÁVA, NEPORUŠENÍ NEBO NEZASAHOVÁNÍ DO PRÁV TŘETÍCH OSOB A KONKLUDENTNÍCH ZÁRUK A PODMÍNEK PRODEJNOSTI NEBO VHODNOSTI PRO URČITÝ ÚČEL. Příslušné třetí strany mohou přístup kdykoliv ukončit na základě svého výlučného uvážení. Držitel licence může být povinen s třetími stranami uzavřít samostatné smlouvy o přístupu k Obsahu třetích osob nebo užívání tohoto Obsahu třetích osob. IBM není smluvní stranou žádných takových samostatných smluv. Výslovnou podmínkou této licence je to, že se Držitel licence zavazuje dodržovat podmínky těchto samostatných smluv.
 
+Kromě výše uvedeného se na použití Programu Držitelem licence vztahují následující podmínky.
 
-L/N: L-XFJS-ENV5LE
-D/N: L-XFJS-ENV5LE
-P/N: L-XFJS-ENV5LE
+Použití dat měření využití
+Program umožňuje s pomocí řídicího panelu měření využití (dále jen „Panel Dashboard“) zobrazit a monitorovat určitá data a metriky týkající se implementace a využití softwarových programů IBM a jiných softwarových programů než od IBM Držitelem licence, jakož i zobrazit a monitorovat výpočetní prostředí, ve kterém jsou implementovány („Data měření využití“). Využití panelu Dashboard vyžaduje registraci na webu Red Hat Marketplace nebo IBM Software Central. Využití panelu Dashboard Držitelem licence a použití a sdílení Dat měření využití v IBM se řídí podmínkami popisu služby na webu Red Hat Marketplace (provozován IBM), které jsou k dispozici zde: https://www.ibm.com/support/customer/csol/terms?id=i126-8719. Pokud Držitel licence povolí nebo souhlasí s používáním panelu Dashboard, souhlasí tak s těmito podmínkami.
+Data nasazení a použití
+Program může standardně shromažďovat určitá data a metriky týkající se implementace nebo použití Programu a/nebo přiložených programů Držitelem licence („Data nasazení a použití"). Data nasazení a použití mohou zahrnovat například kvantitativní licenční informace týkající se metrik (např. počet VPC, zdrojů, uživatelů nebo dalších nasazených metrik licence, spotřebovaných nebo spravovaných Programem), jakož i další kvantitativní metriky týkající se využití Programu nebo Programu v balíku nebo jejich funkcí (např. volání API, události, úložiště, interakce uživatelského rozhraní). Data nasazení a použití mohou také zahrnovat informace týkající se prostředí, ve kterém je nasazen Program nebo Program v balíku, jako je architektura, operační systém, poskytovatel cloudu, umístění, informace o klastru, počet uzlů. Data nasazení a použití nezahrnují osobní informace ani obsah dat Držitele licence spravovaných Programem nebo Programem v balíku. Každý Program v balíku může také shromažďovat jiná data nasazení a použití za vlastních licenčních podmínek.
+Pokud Držitel licence nezakáže funkci Dat nasazení a použití v Programu, může IBM přijmout Data nasazení a použití z Programu nasazeného Držitelem licence. Ve všech takových případech mohou být Data nasazení a použití odeslána do serverů IBM nebo služeb shromažďování dat a analýzy poskytovaných IBM jednou nebo více třetími osobami a IBM může taková Data nasazení a použití použít pro interní obchodní účely IBM, včetně správy, plánování, podpory, zlepšování a rozšiřování produktů a služeb IBM a pro podporu a radu Držiteli licence ohledně použití softwaru programů IBM Držitelem licence (například výkon, nasazení a plánování kapacit) a k nabízení jiných produktů a služeb Držiteli licence a IBM může pro tyto účely sdílet tato Data nasazení a použití s příbuznými společnostmi, smluvními a obchodními partnery po celém světě.
+Držitel licence může kdykoli zakázat funkci Data nasazení a použití tím, že se odkáže na dokumentaci k Programu na adrese https://www.ibm.com/docs/en/odm/9.6.0?topic=metrics-disabling-metering, kde nalezne podrobné pokyny, jak zakázat funkci.
+
+
+
+L/N: L-DHWR-YJBM3D
+D/N: L-DHWR-YJBM3D
+P/N: L-DHWR-YJBM3D
 
 Mezinárodní licenční smlouva pro Programy bez záruky
 

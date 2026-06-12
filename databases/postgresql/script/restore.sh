@@ -15,11 +15,28 @@ if [ ! -f $INITFLAG ] ; then
 	if [ "${SAMPLE}" = "true" ] ; then
 		echo "$(date) - Restore ODM sample database"
   		if [[ -f /run/postgresql/secrets/db-user ]]; then
-    			PG_RESTORE_USER=$(cat /run/postgresql/secrets/db-user)
-       		else
-	 		PG_RESTORE_USER=odmusr
+			PG_RESTORE_USER=$(cat /run/postgresql/secrets/db-user)
+		else
+			PG_RESTORE_USER=odmusr
 		fi
- 		pg_restore --dbname=odmdb --format=c --no-owner --role=${PG_RESTORE_USER} /upload/data.dump
+		if [ "${PG_RESTORE_USER}" = "odmusr" ]; then
+			pg_restore --dbname=odmdb --format=c --no-owner --role=${PG_RESTORE_USER} /upload/data.dump
+		else
+			# restore the schema to a temporary database
+			createdb tempdb
+			pg_restore --dbname=tempdb --format=c --no-owner /upload/data.dump
+
+			# rename the schema in the temporary database
+			psql -d tempdb -c "ALTER SCHEMA odmusr RENAME TO ${PG_RESTORE_USER}"
+
+			# dump the renamed schema from the temporary database
+			pg_dump --format c -n ${PG_RESTORE_USER} -f /tmp/data-new.dump tempdb
+
+			# restore the renamed schema to the odmdb database
+			pg_restore --dbname=odmdb --format=c --no-owner --role=${PG_RESTORE_USER} /tmp/data-new.dump
+
+			dropdb tempdb
+		fi
 
         echo "$(date) - Database restored successfully"
 		echo ""
