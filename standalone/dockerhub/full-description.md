@@ -74,18 +74,18 @@ The ODM for Developers docker image contains all of the IBM Operational Decision
 
 > **Note**: On some operating systems like Mac OS X, you might need to increase the memory allocated to docker to be able to run the image. Allocate at least 4 GigaBytes (GB) to your docker daemon to be able to use all of the features in the docker image.
 
-The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9443.
+The image contains a server that is preconfigured with a database accessible through HTTP port 9060 and HTTPS port 9453.
 You must accept the license before you launch the image. The license is available at the bottom of this page.
 To install the product with the sample projects, you need to specify the option -e SAMPLE=true. To be able to run simulations, you need to increase the size of the memory. Use the following docker command to run the image:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:9.6
+docker run -e LICENSE=accept -p 9060:9060 -p 9453:9453  -e SAMPLE=true icr.io/cpopen/odm-k8s/odm:9.6
 ```
 
 Some decision artifacts, like simulation definitions, version history, or snapshots, cannot be exported from the Decision Center or the Decision Server instances of the Docker image. To avoid losing this data when you delete the Docker image container, store the Decision Center and the Decision Server databases outside of the ODM for Developers Docker image container, in a local mounted host volume. To do so, run the following docker command from an empty local folder:
 
 ```console
-docker run -e LICENSE=accept -p 9060:9060 -p 9443:9443 -u $(id -u) -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:9.6
+docker run -e LICENSE=accept -p 9060:9060 -p 9453:9453 -u $(id -u) -v $PWD:/config/dbdata/ -e SAMPLE=false  icr.io/cpopen/odm-k8s/odm:9.6
 ```
 
 When you first run this command, it creates the .db files in your local folder. The following times, it reads and updates these files.
