@@ -130,6 +130,15 @@ then
 			then
 				DEFAULT_TRUSTSTORE_PASSWORD=changeit
 			fi
+
+			if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
+			then
+				# Set env var if secrets are passed using mounted volumes
+				[ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
+				echo "DB2 SSL : change default keystore password with provided Root CA keystore password"
+				DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
+			fi
+
 			sed -i 's|sslConnection="false"|sslConnection="true" sslVersion="TLSv1.3" sslTrustStoreLocation="/config/security/truststore.p12" sslTrustStorePassword="'$DEFAULT_TRUSTSTORE_PASSWORD'"|g' /config/datasource.xml
                         if [ -f /config/customdatasource/tls.crt ]
                         then

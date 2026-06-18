@@ -45,3 +45,24 @@ then
   cp /config/OdmOidcProvidersRD.json /config/apps/decisioncenter.war/assets/  
 fi
 cp /config/security/truststore.jks /config/apps/decisioncenter.war/assets/
+
+DEFAULT_TRUSTSTORE_PASSWORD=changeme
+if [ -f "/shared/tls/truststore/jks/trusts.jks" ]
+then
+	DEFAULT_TRUSTSTORE_PASSWORD=changeit
+fi
+
+if [ -n "$TRUSTSTORE_PASSWORD" ] || [ -f /config/security/volume/truststore_password ]
+then
+	DEFAULT_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
+fi
+
+if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
+then
+  # Set env var if secrets are passed using mounted volumes
+  [ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
+  echo "change default keystore password with provided Root CA keystore password"
+  DEFAULT_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
+fi
+
+keytool -importkeystore -srckeystore $JAVA_HOME/lib/security/cacerts -destkeystore /config/apps/decisioncenter.war/assets/truststore.jks -srcstorepass $DEFAULT_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
