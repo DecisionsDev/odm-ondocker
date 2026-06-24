@@ -71,10 +71,10 @@ then
                 then
                         ORACLE_TRUSTSTORE_PASSWORD=$TRUSTSTORE_PASSWORD
                 fi
-				if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password ]
+				if [ -n "$ROOTCA_KEYSTORE_PASSWORD" ] || [ -f /config/secrets/dba-password/keystorePassword ]
 				then
 					# Set env var if secrets are passed using mounted volumes
-					[ -f /config/secrets/dba-password ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password)
+					[ -f /config/secrets/dba-password/keystorePassword ] && export ROOTCA_KEYSTORE_PASSWORD=$(cat /config/secrets/dba-password/keystorePassword)
 					echo "ORACLE SSL : change default keystore password with provided Root CA keystore password"
 					ORACLE_TRUSTSTORE_PASSWORD=$ROOTCA_KEYSTORE_PASSWORD
 				fi
