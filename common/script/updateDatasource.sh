@@ -111,11 +111,15 @@ else
         case $DB_TYPE in
                 *postgres* )
         	if [ -n "$DB_SSL_MODE" ]
-        	then       
-			echo "postgres ssl: remove password from /config/datasource.xml"
-			sed -i '/odmpwd/d' /config/datasource.xml
-		fi
-                ;;
+        	then
+                if [ -n "$DB_DUAL_AUTHENTICATION_MODE" ] && [ "$DB_DUAL_AUTHENTICATION_MODE" == "true" ]
+                  echo "keep password authentication for postgres ssl as DB_DUAL_AUTHENTICATION_MODE is set"
+                else
+                  echo "postgres ssl: remove password from /config/datasource.xml"
+                  sed -i '/odmpwd/d' /config/datasource.xml
+                fi
+            fi
+            ;;
         esac
 fi
 
