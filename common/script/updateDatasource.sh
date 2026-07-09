@@ -110,9 +110,8 @@ then
 else
         case $DB_TYPE in
                 *postgres* )
-        	if [ -n "$DB_SSL_MODE" ]
-        	then
-                if [ -n "$DB_DUAL_AUTHENTICATION_MODE" ] && [ "$DB_DUAL_AUTHENTICATION_MODE" == "true" ]
+        	if [ -n "$DB_SSL_MODE" ]; then
+                if [ -n "$DB_DUAL_AUTHENTICATION_MODE" ] && [ "$DB_DUAL_AUTHENTICATION_MODE" == "true" ]; then
                   echo "keep password authentication for postgres ssl as DB_DUAL_AUTHENTICATION_MODE is set"
                 else
                   echo "postgres ssl: remove password from /config/datasource.xml"
@@ -175,7 +174,7 @@ then
         	then
 			sed -i 's|sslMode="prefer"|sslMode="require" ssl="true" sslCert="/config/security/tls.der" sslKey="/config/security/key.pk8"|g' /config/datasource.xml
 		elif [[ "$DB_SSL_MODE" =~ "verify" ]];
-		then		
+		then
 			sed -i 's|sslMode="prefer"|sslMode="'$DB_SSL_MODE'" ssl="true" sslCert="/config/security/tls.der" sslKey="/config/security/key.pk8" sslRootCert="/config/customdatasource/ca.crt"|g' /config/datasource.xml
 		fi
                 ;;
