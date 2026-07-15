@@ -99,17 +99,10 @@ then
 fi
 # End - Configuration for the TLS security
 
-if [ -f "/config/ldap/ldap.jks" ]
-then
-	if [ -n "$LDAP_TRUSTSTORE_PASSWORD" ] || [ -f /config/secrets/dba-env-context/ldapSslTruststorePassword ]
-	then
-		# Set env var if secrets are passed using mounted volumes
-		[ -f /config/secrets/dba-env-context/ldapSslTruststorePassword ] && export LDAP_TRUSTSTORE_PASSWORD=$(cat /config/secrets/dba-env-context/ldapSslTruststorePassword)
-		echo "import /config/ldap/ldap.jks in trustore using provided LDAP truststore password"
-	else
-		echo "import /config/ldap/ldap.jks in trustore using default LDAP truststore password"
-		LDAP_TRUSTSTORE_PASSWORD=changeit
-	fi
+if [ -f "/config/ldap/ldap.jks" ]; then
+
+	echo "import /config/ldap/ldap.jks in trustore using default LDAP truststore password"
+	LDAP_TRUSTSTORE_PASSWORD=changeit
 
 	i=0
 	mapfile -t trust_list < <(keytool -J"-Xshareclasses:none" -list -v -keystore /config/ldap/ldap.jks -storepass $LDAP_TRUSTSTORE_PASSWORD | grep "Alias name" | awk 'NF>1{print $NF}')
@@ -121,11 +114,13 @@ then
 	keytool -J"-Xshareclasses:none" -importkeystore -srckeystore /config/ldap/ldap.jks -destkeystore /config/security/truststore.jks -srcstorepass $LDAP_TRUSTSTORE_PASSWORD -deststorepass $DEFAULT_TRUSTSTORE_PASSWORD
 
 else
+
   echo "no /config/ldap/ldap.jks file"
+
 fi
 
 # This part allow to import a list of PEM certificate in the JVM
- echo "Importing trusted certificates $dir"
+echo "Importing trusted certificates $dir"
 TRUSTSTORE=/config/security/truststore.jks
 CERTDIR="/config/security/trusted-cert-volume/"
 if [ -d $CERTDIR ]; then
