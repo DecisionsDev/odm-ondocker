@@ -134,8 +134,8 @@ services:
 
   # The load balancer for the Runtime.
   traefik:
-    image: "traefik:v3.7.1"
-    container_name: "traefik"
+    image: traefik:v3.7.8
+    container_name: traefik
     command:
     #- "--log.level=DEBUG"
     - "--api.insecure=true"
