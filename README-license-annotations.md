@@ -2,7 +2,7 @@
 
 License annotations let you track usage based on the limits defined on the container, rather than on the underlying machine. You configure the container to be deployed with specific annotations that the IBM® License Service then uses to track usage.
 
-The IBM License Service needs to be installed on the Kubernetes cluster where the IBM ODM containers (predefined or custom) are deployed to track usage. Further information regarding the supported environments and installation instructions can be found on the [Installing License Service without Operator Lifecycle Manager documentation](https://www.ibm.com/docs/en/cloud-paks/foundational-services/4.12.0?topic=ilsfpcr-installing-license-service-without-operator-lifecycle-manager-olm).
+The IBM License Service needs to be installed on the Kubernetes cluster where the IBM ODM containers (predefined or custom) are deployed to track usage. Further information regarding the supported environments and installation instructions can be found on the [Installing License Service without Operator Lifecycle Manager documentation](https://www.ibm.com/docs/en/cloud-paks/foundational-services/4.x?topic=ilsfpcr-installing-license-service-without-operator-lifecycle-manager-olm).
 
 
 The IBM License Service processes pod annotations to track licenses. Therefore product teams must use specific metering annotations in the `spec.template.metadata.annotations` section of their Kubernetes pod template for custom ODM containers, similarly to what is provided for the predefined ODM containers
@@ -23,7 +23,7 @@ The annotations below are defined for ODM version 9.6, but you can also use them
 
 ## IBM ODM on Kubernetes (Production)
 
-- For all containers except decision-runner:
+- Use the following annotations for all the containers:
 
   ```yaml
   spec:
@@ -36,8 +36,11 @@ The annotations below are defined for ODM version 9.6, but you can also use them
           productMetric: "PROCESSOR_VALUE_UNIT"
           productChargedContainers: <containername>
   ```
+The <containername> parameter should be left empty for the Decision Server console because the *decisionServerConsole* container is not charged.
 
-- For decision-runner container:
+You can put decisioncenter, decisionserverruntime or decisionrunner for the other components.
+
+- For the Decision Runner container with a nonproduction license, use the following annotations:
 
   ```yaml
   spec:
@@ -51,9 +54,11 @@ The annotations below are defined for ODM version 9.6, but you can also use them
           productChargedContainers: <containername>
   ```
 
-  > **Note:** *Decision Runner* container is always charged in non-production mode
+  > **Note:** *Decision Runner* container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only production license.
 
 ## IBM ODM on Kubernetes (Non-Production)
+
+Use the following annotations for all the containers:
 
 ```yaml
 spec:
