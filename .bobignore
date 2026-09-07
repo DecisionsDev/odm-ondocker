@@ -1,0 +1,32 @@
+# Build artifacts
+/target
+welcomepage/target/
+
+# IDE / editor
+/.idea
+welcomepage/.idea/
+/.vscode
+
+# Secrets and credentials
+.env
+*.key
+*.pem
+*.p12
+*.jks
+*.crt
+*.csr
+secrets/
+config/credentials.json
+
+# ODM distribution (large binary, never committed)
+*.zip
+install/
+
+# Pre-commit secret scanning baseline (raw hashes, no need to expose)
+.secrets.baseline
+
+# Git internals
+.git/
+
+# Bob internal state
+.bob/
