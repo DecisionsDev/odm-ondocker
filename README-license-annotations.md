@@ -59,8 +59,8 @@ The annotations below are defined for ODM version 9.6, but you can also use them
           productChargedContainers: <containername>
   ```
 
-  > [!NOTE]
-  > - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
+> [!NOTE]
+> - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
 
 ## IBM ODM on Kubernetes (Non-Production)
 
