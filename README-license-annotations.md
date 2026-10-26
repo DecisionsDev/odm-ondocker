@@ -151,8 +151,8 @@ You can install Operational Decision Manager on Certified Kubernetes by using a 
           productCloudpakRatio: "2:5"
           productChargedContainers: "decisionrunner"
   ```
-  > [!NOTE]
-  > - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
+> [!NOTE]
+> - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
 
 ### Cloud Pak for Business Automation (Non-Production)
 
@@ -251,8 +251,8 @@ spec:
           productCloudpakRatio: "2:5"
           productChargedContainers: "decisionrunner"
   ```
-  > [!NOTE]
-  > - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
+> [!NOTE]
+> - `Decision Runner` container which is used for testing and simulation, is usually charged in non-production mode. However, it can be changed to production mode if you have only a production license.
 
 ### Decision Intelligence Enterprise Edition (Non-Production)
 
