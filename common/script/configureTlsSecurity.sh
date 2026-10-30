@@ -16,8 +16,8 @@ then
   cp /config/auth/tlsSecurity.xml /config/tlsSecurity.xml
 fi
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source ${__dir}/keystoreDefaultPwd.sh
+DEFAULT_KEYSTORE_PASSWORD=changeme
+DEFAULT_TRUSTSTORE_PASSWORD=changeme
 
 if [ -f "/shared/tls/keystore/jks/server.jks" ]
 then
