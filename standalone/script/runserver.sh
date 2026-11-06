@@ -5,6 +5,8 @@ set -e
 
 ${SCRIPT}/checkLicense.sh
 
+$SCRIPT/disableIlmtUsageMetering.sh
+
 $SCRIPT/enableMetering.sh
 
 if [ ! -f /config/initializeddb.flag ] ; then

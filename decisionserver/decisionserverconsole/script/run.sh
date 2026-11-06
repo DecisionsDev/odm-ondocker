@@ -16,6 +16,8 @@ then
         sed -i 's|password=".*"|'password=\"$USERS_PASSWORD\"'|g' /config/auth/webSecurity.xml
         fi
 
+        $SCRIPT/disableIlmtUsageMetering.sh
+
         $SCRIPT/enableMetering.sh
 
         $SCRIPT/updateDSCConfigurations.sh

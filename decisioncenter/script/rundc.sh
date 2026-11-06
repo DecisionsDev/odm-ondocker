@@ -12,6 +12,8 @@ then
 
   $SCRIPT/addDCApplications.sh
 
+  $SCRIPT/disableIlmtUsageMetering.sh
+
   $SCRIPT/enableUsageMetering.sh
 
   $SCRIPT/updateDCConfigurations.sh

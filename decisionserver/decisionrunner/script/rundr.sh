@@ -20,6 +20,8 @@ then
 
         $SCRIPT/configureTlsSecurity.sh
 
+        $SCRIPT/disableIlmtUsageMetering.sh
+
         $SCRIPT/enableDRMetering.sh
 
         $SCRIPT/configureDatabase.sh
